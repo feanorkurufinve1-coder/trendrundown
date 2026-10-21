@@ -1,0 +1,55 @@
+# Каждые 15 минут: собрать тренды, написать сводки, выложить сайт на Cloudflare.
+name: Update site
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-site
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Install
+        run: pip install pillow certifi
+
+      - name: Build site
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python trend_site.py
+
+      - name: Save data
+        run: |
+          git config user.name "trendrundown-bot"
+          git config user.email "bot@trendrundown.com"
+          git add data
+          if [ -d site/img ]; then git add site/img; fi
+          if ! git diff --cached --quiet; then
+            git commit -m "data update"
+            git pull --rebase --autostash || true
+            git push || true
+          fi
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+
+      - name: Deploy to Cloudflare
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: fe4abc11ca3641573b7c1f8010dc0290
+        run: npx --yes wrangler@4 deploy
