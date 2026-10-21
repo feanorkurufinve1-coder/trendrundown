@@ -13,7 +13,7 @@ TrendRundown — генератор сайта трендов США.
 SITE_NAME = "TrendRundown"
 SITE_URL = "https://trendrundown.com"
 TAGLINE = "Why it's trending — the short version"
-GA_ID = ""                 # код Google Analytics (G-XXXXXXX), когда появится
+GA_ID = "G-F166MQDSTT"                 # код Google Analytics (G-XXXXXXX), когда появится
 # --- Реклама Google AdSense. Пока ADSENSE_CLIENT пустой — рекламы на сайте нет. ---
 ADSENSE_CLIENT = ""        # ваш код издателя из AdSense, вида "ca-pub-1234567890123456"
 AD_SLOTS = {               # номера рекламных блоков (data-ad-slot) из AdSense → Реклама → По рекламным блокам
