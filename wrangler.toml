@@ -1,7 +1,11 @@
 # Выкладка сайта на Cloudflare (статические файлы из папки site)
 name = "trendrundown"
 compatibility_date = "2026-10-01"
-workers_dev = true
+workers_dev = false
+routes = [
+  { pattern = "trendrundown.com", custom_domain = true },
+  { pattern = "www.trendrundown.com", custom_domain = true },
+]
 
 [assets]
 directory = "./site"
