@@ -34,6 +34,10 @@ MAX_NEWS_QUERIES = 25      # сколько тем за проход допол�
 KEEP_DAYS = 120            # сколько дней хранить архив
 AI_MODEL = "claude-haiku-5-5"   # модель для сводок
 AI_PER_RUN = 15            # сколько сводок писать за проход (экономия)
+CATS = {                   # разделы сайта: тема попадает в один из них (решает ИИ)
+    "sports": "Sports", "entertainment": "Entertainment", "politics": "Politics", "business": "Business & Money",
+    "tech": "Tech & Science", "world": "World", "lifestyle": "Lifestyle", "other": "More news",
+}
 ONLY_WITH_SUMMARY = True  # публиковать только темы со сводкой ИИ (защита от санкций Google за «массовый контент»)
 MAX_NEW_PER_DAY = 20       # сколько новых тем в сутки (по времени США) получают сводку и попадают на сайт — самые крупные
 KEY_FILE = "anthropic_key.txt"  # файл с ключом API рядом с программой; нет файла — сайт работает без сводок
@@ -490,8 +494,12 @@ Rules:
 - Never add facts that are not in the sources.
 - Set "safe": false if the topic is mainly about sexual or pornographic content, nudity or leaked intimate images, graphic violence or gore videos, terrorist or extremist propaganda, instructions for weapons, drugs, self-harm or crime, hate speech, gambling promotion, scams, or naming/accusing a private person (not a public figure) or identifying a minor in a crime. Ordinary news coverage of crime, accidents, politics or deaths reported by mainstream outlets is safe.
 
+Also pick ONE category for the topic: sports, entertainment, politics, business, tech, world, lifestyle or other
+(sports = games, players, leagues; entertainment = celebrities, music, TV, movies, games; business = companies, stocks, money, jobs;
+tech = technology, science, health research, space; world = news outside the US; lifestyle = food, travel, weather, holidays, shopping).
+
 Return ONLY JSON:
-{{"safe": true or false, "safety_reason": "if not safe, why", "headline": "the concrete news that explains the searches, max 12 words — a fact, e.g. 'Barcelona beat PSG 3-1 in Paris' or 'Kickoff, TV channel and lineups for tonight's match'; never vague phrases like 'draws interest', 'trends', 'searches spike', 'ahead of'", "summary": "2 short paragraphs, 120-200 words total, separated by \\n\\n", "key_points": ["3-5 short facts"], "unknown": "one sentence on what is not known yet, or empty string"}}
+{{"safe": true or false, "safety_reason": "if not safe, why", "headline": "the concrete news that explains the searches, max 12 words — a fact, e.g. 'Barcelona beat PSG 3-1 in Paris' or 'Kickoff, TV channel and lineups for tonight's match'; never vague phrases like 'draws interest', 'trends', 'searches spike', 'ahead of'", "summary": "2 short paragraphs, 120-200 words total, separated by \\n\\n", "key_points": ["3-5 short facts"], "unknown": "one sentence on what is not known yet, or empty string", "category": "one of the categories above"}}
 
 SOURCES:
 {sources}"""
@@ -509,16 +517,18 @@ AI_TOOL = {
             "summary": {"type": "string"},
             "key_points": {"type": "array", "items": {"type": "string"}},
             "unknown": {"type": "string"},
+            "category": {"type": "string", "enum": list(CATS)},
         },
-        "required": ["safe", "headline", "summary", "key_points"],
+        "required": ["safe", "headline", "summary", "key_points", "category"],
     },
 }
 
 
-def ai_call(prompt, key):
+def ai_call(prompt, key, tool=None):
     """Запрос к Claude. Ответ приходит готовыми полями через инструмент — без разбора текста."""
-    body = json.dumps({"model": AI_MODEL, "max_tokens": 2000, "tools": [AI_TOOL],
-                       "tool_choice": {"type": "tool", "name": AI_TOOL["name"]},
+    tool = tool or AI_TOOL
+    body = json.dumps({"model": AI_MODEL, "max_tokens": 2000, "tools": [tool],
+                       "tool_choice": {"type": "tool", "name": tool["name"]},
                        "messages": [{"role": "user", "content": prompt}]}).encode()
     req = urllib.request.Request("https://api.anthropic.com/v1/messages", data=body, method="POST", headers={
         "x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"})
@@ -567,6 +577,8 @@ def write_summary(t, key):
         full = " ".join([out.get("headline", ""), out.get("summary", ""), " ".join(out.get("key_points", [])), out.get("unknown", "")])
         hits = copied(full, texts)
         if not hits:
+            if out.get("category") in CATS:
+                t["cat"] = out["category"]
             out["sources"] = [a["source"] for a in picks]
             out["made"] = now_iso(); out["n_articles"] = len(t["articles"])
             return out
@@ -579,6 +591,49 @@ def write_summary(t, key):
     return None
 
 
+CAT_TOOL = {"name": "set_categories", "description": "Category for each topic.",
+            "input_schema": {"type": "object", "properties": {"items": {"type": "array", "items": {
+                "type": "object", "properties": {"n": {"type": "integer"}, "category": {"type": "string", "enum": list(CATS)}},
+                "required": ["n", "category"]}}}, "required": ["items"]}}
+
+
+def classify_missing(store, key):
+    """Темам, у которых уже есть сводка, но нет раздела — одним коротким запросом проставить раздел."""
+    todo = [t for t in store["topics"].values() if t.get("ai") and t.get("cat") not in CATS][:40]
+    if not todo:
+        return 0
+    lines = "\n".join(f"{i}. {t['term']} — {t['ai'].get('headline', '')}" for i, t in enumerate(todo))
+    prompt = ("Assign one category to each trending US topic: sports, entertainment, politics, business, tech, world, "
+              "lifestyle or other (sports = games, players, leagues; entertainment = celebrities, music, TV, movies, games; "
+              "business = companies, stocks, money; tech = technology, science, health research; world = news outside the US; "
+              "lifestyle = food, travel, weather, holidays, shopping).\n\n" + lines)
+    try:
+        out = ai_call(prompt, key, CAT_TOOL)
+    except Exception as e:
+        log(f"разделы не проставлены: {e}")
+        return 0
+    n = 0
+    for it in out.get("items", []):
+        i, c = it.get("n"), it.get("category")
+        if isinstance(i, int) and 0 <= i < len(todo) and c in CATS:
+            todo[i]["cat"] = c; n += 1
+    return n
+
+
+def mixed_order(topics):
+    """Чередуем крупные и средние темы: по крупным конкурируют большие СМИ, по средним у нового сайта больше шансов."""
+    s = sorted(topics, key=lambda x: x["traffic"][-1][1] if x["traffic"] else 0, reverse=True)
+    half = (len(s) + 1) // 2
+    big, mid = s[:half], s[half:]
+    out = []
+    for i in range(max(len(big), len(mid))):
+        if i < len(big):
+            out.append(big[i])
+        if i < len(mid):
+            out.append(mid[i])
+    return out
+
+
 def summarize(store):
     key = api_key()
     if not key:
@@ -587,7 +642,7 @@ def summarize(store):
     today = to_et(datetime.now(timezone.utc))[0].strftime("%Y-%m-%d")
     new_today = sum(1 for x in store["topics"].values() if x.get("ai_day") == today)
     cur = [store["topics"][s] for s in store.get("current", []) if s in store["topics"]]
-    cur.sort(key=lambda x: x["traffic"][-1][1] if x["traffic"] else 0, reverse=True)   # сначала самые крупные
+    cur = mixed_order(cur)            # крупные вперемешку со средними
     for t in cur:
         if done >= AI_PER_RUN:
             break
@@ -731,7 +786,10 @@ header.top{display:flex;justify-content:space-between;align-items:baseline;gap:1
 .brand span{color:var(--accent)}
 .tag,.meta,nav,.small{font-family:"Helvetica Neue",Arial,sans-serif}
 .tag{color:var(--muted);font-size:13px}
-nav a{font-size:14px;margin-left:14px;text-decoration:none}
+nav a{font-size:14px;margin-left:14px;text-decoration:none;white-space:nowrap}
+nav{display:flex;flex-wrap:wrap;row-gap:4px}
+@media (max-width:640px){nav{flex-wrap:nowrap;overflow-x:auto;max-width:100%;padding-bottom:4px}nav a:first-child{margin-left:0}}
+.cat{color:var(--accent);text-decoration:none;font-weight:700;text-transform:uppercase;letter-spacing:.05em}
 h1{font-size:34px;line-height:1.15;margin:6px 0 10px;text-wrap:balance}
 h2{font:700 13px "Helvetica Neue",Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:30px 0 10px}
 .meta{color:var(--muted);font-size:13px}
@@ -810,6 +868,9 @@ def ads_head():
 NO_ADS = {"about.html", "privacy.html", "contact.html", "404.html"}
 
 
+NAV_CATS = []    # разделы, в которых есть темы (заполняется при сборке сайта)
+
+
 def page(title, desc, body, path, depth, extra_head="", og_img=""):
     up = "../" * depth
     canon = SITE_URL + "/" + path.replace("index.html", "").replace(".html", "")
@@ -820,7 +881,7 @@ def page(title, desc, body, path, depth, extra_head="", og_img=""):
 {f'<meta property="og:image" content="{E(SITE_URL + "/" + og_img)}"><meta name="twitter:card" content="summary_large_image">' if og_img else ''}<meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:type" content="website">
 <style>{CSS}</style>{ga_snippet()}{"" if path in NO_ADS else ads_head()}{extra_head}</head><body><div class="wrap">
 <header class="top"><a class="brand" href="{up}index.html">Trend<span>Rundown</span></a>
-<nav><a href="{up}index.html">Trending now</a><a href="{up}archive.html">Archive</a><a href="{up}about.html">About</a></nav></header>
+<nav><a href="{up}index.html">Trending now</a>{"".join(f'<a href="{up}c/{c}.html">{E(CATS[c])}</a>' for c in NAV_CATS)}<a href="{up}archive.html">Archive</a></nav></header>
 {body}
 <footer><a href="{up}about.html">About</a><a href="{up}privacy.html">Privacy</a><a href="{up}contact.html">Contact</a>
 <p>{SITE_NAME} tracks what Americans are searching for and links to the outlets covering it. Headlines belong to their publishers; every link goes to the original source.</p></footer>
@@ -859,7 +920,19 @@ def topic_summary(t):
     return " ".join(s), srcs
 
 
-def build_topic(t, related):
+def mini_cards(items):
+    out = []
+    for r in items:
+        img = (r.get("img") or {}).get("file")
+        out.append(f'<a class="card" href="{E(r["slug"])}.html">'
+                   + (f'<img src="../{E(img)}" alt="" loading="lazy">' if img else "")
+                   + f'<div class="card-top"><span class="num">{E(fmt_et(r.get("last_seen", r["first_seen"])).split(",")[0])}</span>'
+                   f'<span class="chip-s">{E(peak_label(r))}</span></div>'
+                   f'<h3>{E(r["term"])}</h3><p class="head">{E((r.get("ai") or {}).get("headline", ""))}</p></a>')
+    return '<div class="grid">' + "".join(out) + "</div>"
+
+
+def build_topic(t, related, same=()):
     summ, srcs = topic_summary(t)
     arts = t["articles"]
     latest = sorted(arts, key=lambda a: a["time"], reverse=True)
@@ -868,7 +941,17 @@ def build_topic(t, related):
                     f'<span class="meta">{E(fmt_et(a["time"]))}</span></li>' for a in latest[:25])
     timeline = "".join(f'<li><span class="meta">{E(fmt_et(a["time"]))}</span> — {E(a["source"] or "News")}: '
                        f'<a href="{E(a["url"])}" target="_blank" rel="noopener nofollow">{E(a["title"])}</a></li>' for a in arts[:12])
-    rel = "".join(f'<a class="chip" href="{E(r["slug"])}.html">{E(r["term"])}</a>' for r in related)
+    same = list(same)
+    in_cat = bool(same) and t.get("cat") in CATS and t.get("cat") != "other"
+    if not same:                      # в разделе пока пусто — показываем просто то, что сейчас в трендах
+        same, related = related[:6], related[6:]
+    rel = "".join(f'<a class="chip" href="{E(r["slug"])}.html">{E(r["term"])}</a>' for r in related[:8])
+    catname = CATS.get(t.get("cat"), "")
+    more = ""
+    if same:
+        title = f"More in {catname}" if in_cat else "Also trending"
+        more = (f'<h2 class="sec">{E(title)}</h2>' + mini_cards(same)
+                + (f'<p class="meta"><a href="../c/{t["cat"]}.html">All {E(catname)} topics →</a></p>' if in_cat else ""))
     sp = spark(t["traffic"])
     upd = t.get("last_seen", t["first_seen"])
     ld = {"@context": "https://schema.org", "@type": "Article", "headline": f"Why is {t['term']} trending?",
@@ -893,17 +976,18 @@ def build_topic(t, related):
         hero = ""
     side = ad("sidebar")
     body = f"""<div class="tp{' side' if side else ''}"><article>
-<p class="meta">Trending in the US · updated {E(fmt_et(upd))}</p>
+<p class="meta"><a href="../index.html">{SITE_NAME}</a> › {(f'<a class="cat" href="../c/{t["cat"]}.html">{E(CATS[t["cat"]])}</a> · ') if t.get("cat") in CATS else ''}updated {E(fmt_et(upd))}</p>
 <h1>Why is “{E(t['term'])}” trending?</h1>
 {hero}
 {ai_html}
+{more}
 <h2>Trend data</h2>
 <div class="box"><p style="margin:0">{summ}</p>{('<p class="meta" style="margin:10px 0 0">Search interest while it trended</p>' + sp) if sp else ''}</div>
 {ad("middle")}
 <h2>What the headlines say</h2><ul class="list">{items or '<li class="meta">Coverage is still coming in.</li>'}</ul>
 {('<h2>How the story unfolded</h2><ul class="list">' + timeline + '</ul>') if len(arts) > 2 else ''}
 {ad("multiplex") if ai else ""}
-{('<h2>Also trending</h2><div class="chips">' + rel + '</div>') if rel else ''}
+{('<h2>Other trending topics</h2><div class="chips">' + rel + '</div>') if rel else ''}
 </article><aside>{side}</aside></div>"""
     desc = (ai["headline"] + ". " if ai else "") + f"Why {t['term']} is trending in the US right now: what happened, who's reporting it, and links to {len(srcs) or 'the'} sources."
     head = f'<script type="application/ld+json">{json.dumps(ld)}</script>'
@@ -993,6 +1077,26 @@ def build_index(store):
     return page(f"{SITE_NAME} — What's trending in the US right now", "What Americans are searching for right now, and why. Every trend explained in one minute with links to the sources.", body, "index.html", 0)
 
 
+def build_category(cat, topics):
+    items = sorted([t for t in topics.values() if t.get("cat") == cat],
+                   key=lambda t: t.get("last_seen", t["first_seen"]), reverse=True)[:60]
+    cards = []
+    for t in items:
+        ai = t.get("ai") or {}
+        img = (t.get("img") or {}).get("file")
+        cards.append(f'<a class="card" href="../t/{E(t["slug"])}.html">'
+                     + (f'<img src="../{E(img)}" alt="" loading="lazy">' if img else "")
+                     + f'<div class="card-top"><span class="num">{E(fmt_et(t["first_seen"]).split(",")[0])}</span>'
+                     f'<span class="chip-s">{E(peak_label(t))} peak</span></div>'
+                     f'<h3>{E(t["term"])}</h3><p class="head">{E(ai.get("headline", ""))}</p></a>')
+    name = CATS[cat]
+    body = (f'<p class="tag">Trending in the US</p><h1 class="front">{E(name)}</h1>'
+            f'<div class="grid">{"".join(cards)}</div>' + ad("home"))
+    return page(f"{name}: what's trending now | {SITE_NAME}",
+                f"Trending {name.lower()} topics in the US, each explained in one minute with links to the sources.",
+                body, f"c/{cat}.html", 1)
+
+
 def build_archive(store):
     by_day = {}
     for t in store["topics"].values():
@@ -1015,7 +1119,8 @@ STATIC = {
 def related_for(t, lists):
     """«Also trending»: то, что сейчас на главной — чтобы читатель переходил дальше по сайту."""
     out = []
-    for x in lists:
+    same = [x for x in lists if x.get("cat") and x.get("cat") == t.get("cat")]
+    for x in same + lists:
         if x["slug"] != t["slug"] and x not in out:
             out.append(x)
     return out[:10]
@@ -1050,24 +1155,37 @@ def build_site(store):
     store = view
     live, still, week = front_lists(store)
     lists = live + still + week
+    counts = {}
+    for t in topics.values():
+        if t.get("cat") in CATS:
+            counts[t["cat"]] = counts.get(t["cat"], 0) + 1
+    NAV_CATS[:] = [c for c in CATS if counts.get(c, 0) >= 2 and c != "other"][:6]
+    by_cat = {}
+    for t in sorted(topics.values(), key=lambda x: x.get("last_seen", x["first_seen"]), reverse=True):
+        by_cat.setdefault(t.get("cat"), []).append(t)
     def w(path, text):
         p = os.path.join(OUT, path); os.makedirs(os.path.dirname(p), exist_ok=True)
         with open(p, "w", encoding="utf-8") as f:
             f.write(text)
     for t in topics.values():
-        w(f"t/{t['slug']}.html", build_topic(t, related_for(t, lists)))
+        same = [x for x in by_cat.get(t.get("cat"), []) if x["slug"] != t["slug"]][:6] if t.get("cat") in CATS else []
+        others = [x for x in related_for(t, lists) if x not in same and x.get("cat") != t.get("cat")]
+        w(f"t/{t['slug']}.html", build_topic(t, others, same))
     for s, target in store.get("alias", {}).items():
         if target in topics and s not in topics:
             url = f"{SITE_URL}/t/{target}"
             w(f"t/{s}.html", f'<!doctype html><html><head><meta charset="utf-8"><link rel="canonical" href="{E(url)}">'
                              f'<meta http-equiv="refresh" content="0; url={E(target)}.html"><title>Moved</title></head>'
                              f'<body><a href="{E(target)}.html">Continue</a></body></html>')
+    for c in counts:
+        w(f"c/{c}.html", build_category(c, topics))
     w("index.html", build_index(store))
     w("archive.html", build_archive(store))
     for fn, (title, body) in STATIC.items():
         w(fn, page(f"{title} | {SITE_NAME}", f"{title} — {SITE_NAME}", body, fn, 0))
     w("404.html", page(f"Not found | {SITE_NAME}", "Page not found", "<h1>Page not found</h1><p><a href='index.html'>See what's trending now</a></p>", "404.html", 0))
-    urls = [f"{SITE_URL}/", f"{SITE_URL}/archive"] + [f"{SITE_URL}/t/{t['slug']}" for t in topics.values()]
+    urls = ([f"{SITE_URL}/", f"{SITE_URL}/archive"] + [f"{SITE_URL}/c/{c}" for c in counts]
+            + [f"{SITE_URL}/t/{t['slug']}" for t in topics.values()])
     lm = {f"{SITE_URL}/t/{t['slug']}": t.get("last_seen", t["first_seen"]) for t in topics.values()}
     w("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
       + "".join(f"<url><loc>{E(u)}</loc>" + (f"<lastmod>{lm[u]}</lastmod>" if u in lm else "") + "</url>" for u in urls) + "</urlset>")
@@ -1094,6 +1212,10 @@ def run_once():
     if ONLY_WITH_SUMMARY and not api_key():
         log(f"ВНИМАНИЕ: нет файла {KEY_FILE} — сводки не пишутся, а без сводок темы не публикуются. Сайт будет пустым.")
     k = summarize(store)
+    if api_key():
+        c = classify_missing(store, api_key())
+        if c:
+            log(f"Проставлено разделов: {c}")
     if k:
         log(f"Написано сводок: {k}")
     save_store(store)
