@@ -667,6 +667,9 @@ def summarize(store):
     done = 0
     today = to_et(datetime.now(timezone.utc))[0].strftime("%Y-%m-%d")
     new_today = sum(1 for x in store["topics"].values() if x.get("ai_day") == today)
+    # лимит распределяем по суткам США: ночью не тратим всё, днём (когда трендов больше всего) остаётся запас
+    et_hour = to_et(datetime.now(timezone.utc))[0].hour
+    allowed = min(MAX_NEW_PER_DAY, math.ceil(MAX_NEW_PER_DAY * (et_hour + 1) / 24) + 2)
     cur = [store["topics"][s] for s in store.get("current", []) if s in store["topics"]]
     cur = mixed_order(cur)            # крупные вперемешку со средними
     for t in cur:
@@ -676,8 +679,8 @@ def summarize(store):
         vague = ai and re.search(r"draws? interest|\btrend|search|ahead of|buzz|attention", ai.get("headline", ""), re.I)
         if ai and not vague and len(t["articles"]) - ai.get("n_articles", 0) < 3:
             continue
-        if not ai and new_today >= MAX_NEW_PER_DAY:
-            continue                     # дневной лимит новых тем исчерпан; обновлять старые можно
+        if not ai and new_today >= allowed:
+            continue                     # лимит на это время суток исчерпан; обновлять старые можно
         res = write_summary(t, key)
         if res:
             if not ai:
