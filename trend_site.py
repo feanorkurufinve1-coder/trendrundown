@@ -43,6 +43,7 @@ MAX_NEW_PER_DAY = 20       # сколько новых тем в сутки (п�
 EXPLAIN = True             # объяснения: что люди начнут гуглить после новости (термины, законы, места, малоизвестные люди)
 MAX_EXPLAINERS_PER_DAY = 15   # сколько новых объяснений в сутки
 EXPLAINERS_PER_TOPIC = 2      # не больше стольких объяснений из одной новости
+AI_REVIEW = True           # второй ИИ-«редактор» проверяет каждую сводку и объяснение перед публикацией и снимает плохие
 INDEXNOW = True            # мгновенно сообщать Bing/Yahoo/DuckDuckGo о новых страницах
 KEY_FILE = "anthropic_key.txt"  # файл с ключом API рядом с программой; нет файла — сайт работает без сводок
 BLOCK_FILE = "blocklist.txt"    # ваши запреты: по одному слову/теме на строку — такие темы не публикуются и удаляются
@@ -660,6 +661,51 @@ def mixed_order(topics):
     return out
 
 
+REVIEW_PROMPT = """You are a strict fact-checking editor for a US news explainer website. Below is a DRAFT written by another AI
+and the SOURCE reports it was based on. Decide if the draft can be published.
+
+Verdict "block" if ANY of these is true:
+- it states a fact that matters (a name, number, score, date, quote, cause, accusation) that is NOT supported by the sources
+  (for a {kind} explainer, well-established general background such as a definition is allowed);
+- it presents speculation or rumor as fact, or the headline/title misleads about what happened;
+- it identifies or accuses a private individual (not a public figure), a minor, or a crime victim;
+- it is sexual, graphic, hateful, or promotes gambling, drugs, weapons or self-harm;
+- it is empty or useless: mostly says nothing is known, repeats the topic name, or does not answer the question it claims to answer;
+- it is not in clear, correct English.
+Otherwise verdict "ok". Do not block for minor style issues. Be specific in "reason" (max 25 words).
+
+DRAFT ({kind}):
+{draft}
+
+SOURCES:
+{sources}"""
+
+REVIEW_TOOL = {"name": "review", "description": "Editor's verdict.",
+               "input_schema": {"type": "object", "properties": {
+                   "verdict": {"type": "string", "enum": ["ok", "block"]},
+                   "reason": {"type": "string"}}, "required": ["verdict", "reason"]}}
+
+
+def review(store, kind, title, draft, src, key):
+    """Второй ИИ проверяет текст по источникам. True — можно публиковать. Решения пишутся в журнал data → review_log."""
+    if not (AI_REVIEW and src):
+        return True
+    try:
+        out = ai_call(REVIEW_PROMPT.format(kind=kind, draft=draft[:6000], sources="\n\n".join(src["blocks"])[:24000]),
+                      key, REVIEW_TOOL)
+    except Exception as e:
+        log(f"редактор не ответил ({title}): {e} — публикую без проверки")
+        return True
+    ok = out.get("verdict") != "block"
+    journal = store.setdefault("review_log", [])
+    journal.append({"time": now_iso(), "kind": kind, "title": title[:120], "verdict": "ok" if ok else "block",
+                    "reason": str(out.get("reason", ""))[:200]})
+    store["review_log"] = journal[-300:]
+    if not ok:
+        log(f"РЕДАКТОР СНЯЛ ({kind}) «{title}»: {out.get('reason', '')}")
+    return ok
+
+
 def summarize(store):
     key = api_key()
     if not key:
@@ -683,6 +729,13 @@ def summarize(store):
             continue                     # лимит на это время суток исчерпан; обновлять старые можно
         res = write_summary(t, key)
         if res:
+            draft = (f"{t['term']}: {res.get('headline', '')}\n\n{res.get('summary', '')}\n\nKey facts: "
+                     + "; ".join(res.get("key_points", [])) + f"\nUnknown: {res.get('unknown', '')}")
+            if not review(store, "news summary", f"{t['term']}: {res.get('headline', '')}", draft, RUN_SOURCES.get(t["slug"]), key):
+                RUN_SOURCES.pop(t["slug"], None)
+                if not ai:                       # новая тема — не публикуем; у старой оставляем прежнюю проверенную сводку
+                    t["blocked"] = "review: " + store["review_log"][-1]["reason"]
+                continue
             if not ai:
                 t["ai_day"] = today; new_today += 1
             t["ai"] = res; done += 1
@@ -809,6 +862,10 @@ def explain(store):
                 continue
             res = write_explainer(item, t, src, questions, key)
             if not res or bad_text(res.get("title", ""), ub):
+                continue
+            draft = (f"{res['title']}\n\n{res['answer']}\n\n{res['body']}\n\nIn the news: {res['in_the_news']}\n\n"
+                     + "\n".join(f"Q: {f.get('q', '')} A: {f.get('a', '')}" for f in res.get("faq", [])))
+            if not review(store, item["kind"] + " explainer", res["title"], draft, src, key):
                 continue
             page_ = {"subject": item["subject"], "kind": item["kind"], "query": item["query"],
                      "title": res["title"][:80], "answer": res["answer"], "body": res["body"],
