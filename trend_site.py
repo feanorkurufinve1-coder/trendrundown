@@ -516,7 +516,7 @@ LeBron James, Apple, the NFL, Congress). "subject" = the thing itself as people 
 "query" = the exact search, e.g. "what is a continuing resolution", "who is sam laporta", "where is sinigaglia stadium".
 
 Return ONLY JSON:
-{{"safe": true or false, "safety_reason": "if not safe, why", "headline": "the concrete news that explains the searches, max 12 words — a fact, e.g. 'Barcelona beat PSG 3-1 in Paris' or 'Kickoff, TV channel and lineups for tonight's match'; never vague phrases like 'draws interest', 'trends', 'searches spike', 'ahead of'", "summary": "2 short paragraphs, 120-200 words total, separated by \\n\\n", "key_points": ["3-5 short facts"], "unknown": "one sentence on what is not known yet, or empty string", "category": "one of the categories above", "followups": [{{"subject": "...", "query": "...", "kind": "term|law|place|organization|product|event|person|other"}}], "image_query": "2-3 plain English words for a generic stock-style photo that illustrates the story WITHOUT any specific person, e.g. 'judge gavel', 'stock market screen', 'football stadium', 'airport terminal', 'hurricane satellite'"}}
+{{"safe": true or false, "safety_reason": "if not safe, why", "headline": "the concrete news that explains the searches, max 12 words — a fact, e.g. 'Barcelona beat PSG 3-1 in Paris' or 'Kickoff, TV channel and lineups for tonight's match'; never vague phrases like 'draws interest', 'trends', 'searches spike', 'ahead of'", "summary": "2 short paragraphs, 120-200 words total, separated by \\n\\n", "key_points": ["3-5 short facts"], "unknown": "one sentence on what is not known yet, or empty string", "category": "one of the categories above", "followups": [{{"subject": "...", "query": "...", "kind": "term|law|place|organization|product|event|person|other"}}], "main_person": "full name of the ONE well-known public figure the story is mainly about (athlete, celebrity, politician), or empty string if the story is not about one specific public figure", "image_query": "2-4 plain English words to find a matching free photo. If the story is about a specific team, club, company, place, event, show or product, NAME IT (e.g. 'Real Madrid players', 'Santiago Bernabeu stadium', 'Tesla factory', 'Lambeau Field', 'Marine Corps Marathon runners'); only if it is about nothing specific, use a generic scene (e.g. 'judge gavel', 'stock market screen'). Never a private person"}}
 
 SOURCES:
 {sources}"""
@@ -536,6 +536,7 @@ AI_TOOL = {
             "unknown": {"type": "string"},
             "category": {"type": "string", "enum": list(CATS)},
             "image_query": {"type": "string"},
+            "main_person": {"type": "string"},
             "followups": {"type": "array", "items": {"type": "object", "properties": {
                 "subject": {"type": "string"}, "query": {"type": "string"},
                 "kind": {"type": "string", "enum": ["term", "law", "place", "organization", "product", "event", "person", "other"]}},
@@ -620,9 +621,11 @@ def write_summary(t, key, feedback=""):
                 if 2 < len(subj) <= 60 and latin(subj) and not bad_text(subj, user_blocks()):
                     fu.append({"subject": subj, "query": str(f.get("query", ""))[:90].strip() or subj, "kind": f.get("kind", "other")})
             t["followups"] = fu[:4]
+            mp = re.sub(r"[^\w .'\-]", "", str(out.pop("main_person", "") or "")).strip()
+            t["main_person"] = mp[:60]; t["person_checked"] = True
             iq = re.sub(r"[^A-Za-z0-9 \-]", "", str(out.pop("image_query", "") or "")).strip()
             if iq:
-                t["image_query"] = iq[:40]
+                t["image_query"] = iq[:50]; t["iq_v"] = 2
             RUN_SOURCES[t["slug"]] = {"texts": texts, "blocks": blocks,
                                       "links": [(a["source"], a["title"], a["url"]) for a in picks]}
             out["sources"] = [a["source"] for a in picks]
@@ -987,10 +990,10 @@ def _match(term, title):
     return bool(b) and (b <= a or a <= b)
 
 
-def wiki_image(t):
+def wiki_image(t, name=None):
     """Фото из Википедии, только если файл на Commons под CC / Public domain. Причину отказа пишем в журнал."""
-    term = t["term"]
-    q = urllib.parse.urlencode({"action": "query", "generator": "search", "gsrsearch": term, "gsrlimit": 3,
+    term = name or t["term"]
+    q = urllib.parse.urlencode({"action": "query", "generator": "search", "gsrsearch": term, "gsrlimit": 5,
                                 "prop": "pageimages", "piprop": "original|name", "format": "json", "formatversion": 2})
     data = json.loads(get("https://en.wikipedia.org/w/api.php?" + q))
     if "error" in data:
@@ -1005,21 +1008,21 @@ def wiki_image(t):
         if not _match(term, title):
             continue
         fname = pg.get("pageimage")
-        if not fname:
-            log(f"фото '{term}': у статьи «{title}» нет главной картинки")
-            return None
+        if not fname:                      # например, страница-неоднозначность «Ann Li» — смотрим следующую («Ann Li (tennis)»)
+            log(f"фото '{term}': у статьи «{title}» нет главной картинки — смотрю следующую")
+            continue
         q = urllib.parse.urlencode({"action": "query", "prop": "imageinfo", "iiprop": "extmetadata|url", "iiurlwidth": 800,
                                     "titles": "File:" + fname, "format": "json", "formatversion": 2})
         info = json.loads(get("https://commons.wikimedia.org/w/api.php?" + q))
         cp = (info.get("query", {}).get("pages") or [{}])[0]
         if not cp.get("imageinfo"):
             log(f"фото '{term}': картинки «{fname}» нет на Commons (несвободная) — не берём")
-            return None
+            continue
         ii = cp["imageinfo"][0]; md = ii.get("extmetadata", {})
         lic = _plain(md.get("LicenseShortName", {}).get("value", ""))
         if not re.search(r"(?i)(^cc|creative commons|public domain|pd|cc0)", lic):
             log(f"фото '{term}': лицензия «{lic}» не свободная — не берём")
-            return None
+            continue
         url = ii.get("thumburl") or ii.get("url")
         os.makedirs(os.path.join(OUT, "img"), exist_ok=True)
         ext = ".png" if url.lower().endswith(".png") else ".jpg"
@@ -1075,9 +1078,11 @@ def commons_generic(t):
     listing = "\n".join(f"{i}. {c[0].get('title', '')[5:]} — {c[4] or '(no description)'}" for i, c in enumerate(cands))
     prompt = (f"News story: {t['term']} — {(t.get('ai') or {}).get('headline', '')}\n"
               f"We need a generic illustration for it (idea: '{query}').\n"
-              "Pick the ONE image below that a reader would immediately connect with this story's subject "
-              "(right sport / setting / object). Reject images that show something else, a specific event, place or country "
-              "unrelated to the story, a recognizable private person as the main subject, or anything odd or misleading. "
+              "Pick the ONE image below that a reader would immediately connect with this story's subject. If the idea names "
+              "a specific team, club, place, company or event, the image MUST show that exact one (its players in its kit, "
+              "its stadium, its building) — not another team or place. Otherwise pick the right sport / setting / object. "
+              "Reject images of something else, an unrelated event, place or country, a private person as the main subject, "
+              "logos, or anything odd or misleading. "
               "If none fits well, answer n = -1.\n\n" + listing)
     try:
         n = int(ai_call(prompt, key, PICK_TOOL).get("n", -1))
@@ -1095,8 +1100,10 @@ def commons_generic(t):
         f.write(get(url))
     log(f"иллюстрация '{t['term']}': «{pg.get('title', '')}» по запросу «{query}» ({lic})")
     return {"file": fn, "credit": _plain(md.get("Artist", {}).get("value", ""))[:80] or "Wikimedia Commons",
-            "license": lic, "src": ii.get("descriptionurl", ""), "generic": True, "gv": 2}
+            "license": lic, "src": ii.get("descriptionurl", ""), "generic": True, "gv": 3}
 
+
+IQ_RULE = "2-4 plain English words to find a matching free photo. If the story is about a specific team, club, company, place, event, show or product, NAME IT (e.g. 'Real Madrid players', 'Santiago Bernabeu stadium', 'Tesla factory', 'Lambeau Field', 'Marine Corps Marathon runners'); only if it is about nothing specific, use a generic scene (e.g. 'judge gavel', 'stock market screen'). Never a private person."
 
 IQ_TOOL = {"name": "set_image_queries", "description": "Generic photo search words for each story.",
             "input_schema": {"type": "object", "properties": {"items": {"type": "array", "items": {
@@ -1104,15 +1111,42 @@ IQ_TOOL = {"name": "set_image_queries", "description": "Generic photo search wor
                 "required": ["n", "q"]}}}, "required": ["items"]}}
 
 
-def backfill_image_queries(store, key):
-    """Старым темам без запроса для иллюстрации — одним коротким запросом к ИИ придумать 2–3 слова."""
+PERSON_TOOL = {"name": "set_people", "description": "Main public figure of each story.",
+               "input_schema": {"type": "object", "properties": {"items": {"type": "array", "items": {
+                   "type": "object", "properties": {"n": {"type": "integer"}, "person": {"type": "string"}},
+                   "required": ["n", "person"]}}}, "required": ["items"]}}
+
+
+def backfill_people(store, key):
+    """Старым темам: о каком известном человеке новость (чтобы взять его фото, а не иллюстрацию)."""
     todo = [t for t in store["topics"].values()
-            if t.get("ai") and not t.get("img") and not t.get("image_query") and not t.get("blocked")][:40]
+            if t.get("ai") and not t.get("person_checked") and not t.get("blocked")][:40]
     if not todo:
         return 0
     lines = "\n".join(f"{i}. {t['term']} — {t['ai'].get('headline', '')}" for i, t in enumerate(todo))
-    prompt = ("For each news story give 2-3 plain English words for a generic stock-style photo that illustrates it "
-              "WITHOUT any specific person (e.g. 'judge gavel', 'stock market screen', 'basketball arena', 'tennis court').\n\n" + lines)
+    prompt = ("For each news story give the full name of the ONE well-known public figure it is mainly about "
+              "(athlete, celebrity, politician), or an empty string if it is not about one specific public figure.\n\n" + lines)
+    try:
+        out = ai_call(prompt, key, PERSON_TOOL)
+    except Exception as e:
+        log(f"люди в темах не определены: {e}")
+        return 0
+    for it in out.get("items", []):
+        i = it.get("n")
+        if isinstance(i, int) and 0 <= i < len(todo):
+            todo[i]["main_person"] = re.sub(r"[^\w .'\-]", "", str(it.get("person", ""))).strip()[:60]
+            todo[i]["person_checked"] = True
+    return len(todo)
+
+
+def backfill_image_queries(store, key):
+    """Старым темам без запроса для иллюстрации — одним коротким запросом к ИИ придумать 2–3 слова."""
+    todo = [t for t in store["topics"].values()
+            if t.get("ai") and t.get("iq_v") != 2 and not t.get("blocked")][:40]
+    if not todo:
+        return 0
+    lines = "\n".join(f"{i}. {t['term']} — {t['ai'].get('headline', '')}" for i, t in enumerate(todo))
+    prompt = ("For each news story give " + IQ_RULE + "\n\n" + lines)
     try:
         out = ai_call(prompt, key, IQ_TOOL)
     except Exception as e:
@@ -1122,15 +1156,32 @@ def backfill_image_queries(store, key):
     for it in out.get("items", []):
         i = it.get("n"); q = re.sub(r"[^A-Za-z0-9 \-]", "", str(it.get("q", ""))).strip()
         if isinstance(i, int) and 0 <= i < len(todo) and q:
-            todo[i]["image_query"] = q[:40]; n += 1
+            todo[i]["image_query"] = q[:50]; todo[i]["iq_v"] = 2; n += 1
+            if (todo[i].get("img") or {}).get("generic"):      # иллюстрацию подберём заново по новому запросу
+                todo[i].pop("img"); todo[i].pop("gen_tried", None)
     return n
 
 
 def generic_images(store, limit=12):
     n = 0
     for t in store["topics"].values():          # иллюстрации, выбранные старым способом (без проверки ИИ), подбираем заново
-        if (t.get("img") or {}).get("generic") and t["img"].get("gv") != 2:
+        if (t.get("img") or {}).get("generic") and t["img"].get("gv") != 3:
             t.pop("img"); t.pop("gen_tried", None)
+    # новость о конкретном известном человеке — сначала ищем его свободное фото
+    for t in store["topics"].values():
+        if n >= limit:
+            break
+        mp = t.get("main_person")
+        if t.get("ai") and not t.get("blocked") and mp and not t.get("person_tried") \
+                and (not t.get("img") or t["img"].get("generic")):
+            t["person_tried"] = True
+            try:
+                img = wiki_image(t, mp)
+                if img:
+                    t["img"] = img; n += 1
+            except Exception as e:
+                log(f"фото '{mp}' не скачано: {e}")
+            time.sleep(0.5)
     for t in store["topics"].values():
         if n >= limit:
             break
@@ -1799,6 +1850,7 @@ def run_once():
     if k:
         log(f"Написано сводок: {k}")
     if api_key():
+        backfill_people(store, api_key())
         backfill_image_queries(store, api_key())
     gi = generic_images(store)
     if gi:
