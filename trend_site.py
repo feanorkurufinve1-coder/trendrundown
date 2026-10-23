@@ -1096,13 +1096,13 @@ h2{font:700 13px "Helvetica Neue",Arial,sans-serif;text-transform:uppercase;lett
 footer{margin-top:40px;padding-top:14px;border-top:1px solid var(--line);color:var(--muted);font:13px "Helvetica Neue",Arial,sans-serif}
 footer a{margin-right:14px}
 svg.spark{display:block;max-width:100%}
-figure.hero{margin:6px 0 16px}figure.hero img{width:100%;max-height:440px;object-fit:cover;border-radius:4px;display:block;background:var(--chip)}
+figure.hero{margin:6px 0 16px}figure.hero img{width:100%;max-height:440px;object-fit:cover;object-position:50% 20%;border-radius:4px;display:block;background:var(--chip)}
 figure.hero figcaption{font:12px "Helvetica Neue",Arial,sans-serif;color:var(--muted);margin-top:5px}
 .wrap{max-width:1040px}
 h1.front{font-size:22px;font-family:"Helvetica Neue",Arial,sans-serif;text-transform:uppercase;letter-spacing:.06em;margin:4px 0 16px}
 .lead{display:grid;gap:18px;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:22px 24px;margin-bottom:18px}
 .lead.has-img{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}
-.lead img{width:100%;height:100%;max-height:300px;object-fit:cover;border-radius:4px}
+.lead img{width:100%;height:100%;max-height:300px;object-fit:cover;object-position:50% 20%;border-radius:4px}
 .lead-term{font:700 44px/1.05 Georgia,serif;letter-spacing:-.01em;text-transform:none;color:var(--fg);margin:10px 0 8px}
 .lead-head{font-size:19px;line-height:1.4;margin:0 0 10px}
 .lead:hover .lead-term,.card:hover h3{color:var(--accent)}
@@ -1110,7 +1110,7 @@ h1.front{font-size:22px;font-family:"Helvetica Neue",Arial,sans-serif;text-trans
 .chip-s{white-space:nowrap;background:var(--chip);color:var(--fg);font-weight:600}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
 .card{display:flex;flex-direction:column;gap:6px;text-decoration:none;background:var(--card);border:1px solid var(--line);border-top:3px solid var(--accent);border-radius:6px;padding:14px 16px;min-width:0}
-.card img{width:calc(100% + 32px);margin:-14px -16px 6px;height:150px;object-fit:cover;border-radius:3px 3px 0 0;max-width:none}
+.card img{width:calc(100% + 32px);margin:-14px -16px 6px;height:150px;object-fit:cover;object-position:50% 20%;border-radius:3px 3px 0 0;max-width:none}
 .card-top{display:flex;justify-content:space-between;align-items:center}
 .num{font:700 15px "Helvetica Neue",Arial,sans-serif;color:var(--accent)}
 .card h3{font:700 22px/1.15 Georgia,serif;margin:0;overflow-wrap:anywhere}
