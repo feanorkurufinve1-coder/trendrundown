@@ -1,5 +1,6 @@
-# Выкладка сайта на Cloudflare (статические файлы из папки site)
+# Выкладка сайта на Cloudflare: статические файлы из папки site + worker.js (счётчики смайликов)
 name = "trendrundown"
+main = "worker.js"
 compatibility_date = "2026-10-01"
 workers_dev = false
 routes = [
@@ -9,5 +10,15 @@ routes = [
 
 [assets]
 directory = "./site"
+binding = "ASSETS"
 not_found_handling = "404-page"
 html_handling = "auto-trailing-slash"
+run_worker_first = ["/api/*"]
+
+[[durable_objects.bindings]]
+name = "REACTIONS"
+class_name = "Reactions"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["Reactions"]

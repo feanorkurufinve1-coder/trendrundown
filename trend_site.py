@@ -1388,6 +1388,13 @@ a.xl{color:#0645ad;text-decoration:none;border-bottom:1px solid rgba(6,69,173,.3
 a.xl:hover{border-bottom-color:#0645ad;background:rgba(6,69,173,.06)}
 @media (prefers-color-scheme:dark){a.xl{color:#8ab4f8;border-bottom-color:rgba(138,180,248,.4)}}
 .xlinks a{display:block;margin:6px 0;font-weight:700}
+.rx{margin:18px 0 6px}
+.rx-row{display:flex;flex-wrap:wrap;gap:6px}
+.rx-b{display:inline-flex;align-items:center;gap:4px;min-width:44px;height:38px;padding:0 9px;border:1px solid var(--line);
+  border-radius:19px;background:var(--card);cursor:pointer;font:600 13px "Helvetica Neue",Arial,sans-serif;color:var(--muted)}
+.rx-b:hover{border-color:var(--accent)}
+.rx-b.on{border-color:var(--accent);background:rgba(200,60,30,.08);color:var(--fg)}
+.rx-e{font-size:19px;line-height:1}
 h2.sec{font:700 15px "Helvetica Neue",Arial,sans-serif;text-transform:uppercase;letter-spacing:.06em;margin:30px 0 12px;padding-top:14px;border-top:2px solid var(--fg)}
 @media (max-width:640px){.lead.has-img{grid-template-columns:1fr}.lead-term{font-size:32px}}
 """
@@ -1521,6 +1528,25 @@ def anchor_phrases(x):
     return res
 
 
+REACTIONS = ["👍", "👎", "😂", "😮", "😢", "😡", "❤️", "🤔", "🔥", "👏"]
+
+
+def reactions_html(page_key):
+    """Ряд смайликов под статьёй со счётчиками (счёт хранится в Cloudflare, см. worker.js)."""
+    btns = "".join(f'<button type="button" class="rx-b" data-e="{i}" aria-label="{e}"><span class="rx-e">{e}</span>'
+                   f'<span class="rx-n" data-n="{i}"></span></button>' for i, e in enumerate(REACTIONS))
+    return (f'<div class="rx" data-p="{E(page_key)}"><div class="rx-row">{btns}</div></div>'
+            "<script>(function(){var b=document.querySelector('.rx');if(!b)return;var p=b.dataset.p,k='rx:'+p,mine=null;"
+            "try{mine=localStorage.getItem(k)}catch(e){}"
+            "function show(d){if(!d||!d.counts)return;d.counts.forEach(function(n,i){var s=b.querySelector('[data-n=\"'+i+'\"]');"
+            "if(s)s.textContent=n>0?n:''});b.querySelectorAll('.rx-b').forEach(function(x){x.classList.toggle('on',x.dataset.e===String(mine))})}"
+            "fetch('/api/react?p='+encodeURIComponent(p)).then(function(r){return r.json()}).then(show).catch(function(){});"
+            "b.addEventListener('click',function(ev){var x=ev.target.closest('.rx-b');if(!x)return;mine=x.dataset.e;"
+            "try{localStorage.setItem(k,mine)}catch(e){}"
+            "fetch('/api/react',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({p:p,e:+mine})})"
+            ".then(function(r){return r.json()}).then(show).catch(function(){})})})();</script>")
+
+
 def build_topic(t, related, same=()):
     summ, srcs = topic_summary(t)
     arts = t["articles"]
@@ -1589,6 +1615,7 @@ def build_topic(t, related, same=()):
 <h1>Why is “{E(t['term'])}” trending?</h1>
 {hero}
 {ai_html}
+{reactions_html("t/" + t["slug"]) if ai else ""}
 {xblock}
 {more}
 <h2>Trend data</h2>
@@ -1749,6 +1776,7 @@ def build_explainer(x, topics):
 {ad("in_article")}
 <h2>Background</h2>{paras}
 {('<h2>What people are asking</h2>' + faq_html) if faq_html else ''}
+{reactions_html("x/" + x["slug"])}
 {ad("middle")}
 {('<h2>Sources</h2><ul class="list">' + src + '</ul>') if src else ''}
 <p class="meta">Written with AI assistance from reporting by the outlets above and checked against them. Updated {E(fmt_et(x["made"]))}.</p>
