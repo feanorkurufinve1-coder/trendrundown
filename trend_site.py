@@ -496,7 +496,9 @@ Rules:
 - Write entirely in your own words and your own structure. Never copy sentences or distinctive phrasing; never reuse more than 5 words in a row from any source. Do not quote unless a quote is essential; then keep it under 10 words and name who said it.
 - Combine facts from several outlets. Attribute claims that are not widely confirmed ("according to CNN", "People reported").
 - Neutral, plain American English, no hype, no speculation, no opinions. If outlets disagree, say so. If something is unclear, say it is unclear.
-- Never add facts that are not in the sources. Name an outlet for a fact only if that outlet's own text says it.
+- Never add facts that are not in the sources.
+- Do NOT name news outlets in the text ("according to ESPN", "Yahoo reported"). The sources are listed under the article.
+  Name an outlet only when a claim is disputed or exclusive, and only if that outlet's own text says it.
 - Many sources are headlines only. Then write shorter (80-120 words) and state only what the headlines say; never fill gaps.
 - Do not write about search interest or guess why people are searching ("fans are curious", "likely because").
 - Set "safe": false if the topic is mainly about sexual or pornographic content, nudity or leaked intimate images, graphic violence or gore videos, terrorist or extremist propaganda, instructions for weapons, drugs, self-harm or crime, hate speech, gambling promotion, scams, or naming/accusing a private person (not a public figure) or identifying a minor in a crime. Ordinary news coverage of crime, accidents, politics or deaths reported by mainstream outlets is safe.
@@ -673,14 +675,16 @@ and the SOURCE reports it was based on. Decide if the draft can be published.
 
 Verdict "block" if ANY of these is true:
 - it states a fact that matters (a name, number, score, date, quote, cause, accusation) that is NOT supported by the sources
-  (for a {kind} explainer, well-established general background such as a definition is allowed);
+  (allowed without a source: well-established, uncontroversial public knowledge such as a definition, the year a famous film
+  came out, where a city or landmark is, a famous person's well-known profession or team);
 - it presents speculation or rumor as fact, or the headline/title misleads about what happened;
 - it identifies or accuses a private individual (not a public figure), a minor, or a crime victim;
 - it is sexual, graphic, hateful, or promotes gambling, drugs, weapons or self-harm;
 - it is empty or useless: mostly says nothing is known, repeats the topic name, or does not answer the question it claims to answer;
 - it is not in clear, correct English.
-Otherwise verdict "ok". Do NOT block for: minor style issues; a fact credited to the wrong outlet when another source supports
-the fact itself; harmless generic phrasing; small date-format differences. Be specific in "reason" (max 25 words).
+Otherwise verdict "ok". Do NOT block for: minor style issues; which outlet a fact is credited to, as long as some source supports
+the fact itself; harmless generic phrasing; small date-format differences; a detail that is a reasonable plain-words reading
+of a headline. Block only for problems a careful reader would call wrong or misleading. Be specific in "reason" (max 25 words).
 
 DRAFT ({kind}):
 {draft}
@@ -798,7 +802,9 @@ Write a page that answers the search directly.
 Rules:
 - Start with a direct answer of 40-60 words: what/who it is, in plain words. Then background, then why it matters in today's news.
 - Facts about the current situation, people, numbers and dates must come ONLY from the sources below.
-- For general background (a definition, how a rule or process works) you may use well-established general knowledge, stated carefully.
+- For general background you may use well-established, uncontroversial public knowledge: a definition, how a rule works,
+  the year a famous film came out, where a city or landmark is, what a well-known organization does. Never guess beyond that.
+- Do NOT name news outlets in the text; the sources are listed on the page.
 - Never invent or guess personal details (age, family, salary, address, health). Include them only if the sources state them.
 - Answer only the people's questions that the sources (or well-established general knowledge) can answer; skip the rest.
 - Own words only; never reuse more than 5 words in a row from a source. Neutral plain American English, no hype, no opinions.
