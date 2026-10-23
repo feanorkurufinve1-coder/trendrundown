@@ -1436,6 +1436,33 @@ def mini_cards(items):
 EXPLAINERS = {}   # заполняется при сборке сайта: объяснения, видимые на сайте
 
 
+_GENERIC = {"event", "events", "the", "a", "an", "of", "in", "on", "and", "rule", "law", "act", "bill", "game", "match",
+            "tournament", "stadium", "bridge", "company", "show", "series", "season", "team", "club", "new", "us", "u.s."}
+
+
+def anchor_phrases(x):
+    """Каким словом из текста ссылаться на объяснение: само название, слова в кавычках из заголовка,
+    затем самые длинные куски названия («Pro and tell Apple event» → «Pro and tell»)."""
+    out = []
+    for q in re.findall(r'["“]([^"”]{3,60})["”]', x.get("title", "")):
+        out.append(q.strip())
+    subj = x.get("subject", "").strip()
+    out.append(subj)
+    w = subj.split()
+    for size in range(len(w) - 1, 1, -1):         # куски не короче двух слов: одно слово («Apple») слишком общее
+        for i in range(0, len(w) - size + 1):
+            part = w[i:i + size]
+            core = [p for p in part if p.lower() not in _GENERIC]
+            if not core or part[0].lower() in _GENERIC or part[-1].lower() in _GENERIC:
+                continue
+            out.append(" ".join(part))
+    seen, res = set(), []
+    for p in out:
+        if p and p.lower() not in seen:
+            seen.add(p.lower()); res.append(p)
+    return res
+
+
 def build_topic(t, related, same=()):
     summ, srcs = topic_summary(t)
     arts = t["articles"]
@@ -1475,11 +1502,15 @@ def build_topic(t, related, same=()):
         pl = [f"<p>{E(p)}</p>" for p in ai.get("summary", "").split("\n\n") if p.strip()]
         # ссылка на объяснение прямо в тексте: первое упоминание термина становится ссылкой
         for x in xs:
-            pat = re.compile(r"(?<![\w>])(" + re.escape(E(x["subject"])) + r")(?![\w<])", re.I)
-            for i, ptxt in enumerate(pl):
-                new, n = pat.subn(lambda m: f'<a class="xl" href="../x/{E(x["slug"])}.html" title="{E(x["title"])}">{m.group(1)}</a>', ptxt, count=1)
-                if n:
-                    pl[i] = new
+            done_x = False
+            for phrase in anchor_phrases(x):
+                pat = re.compile(r"(?<![\w>])(" + re.escape(E(phrase)) + r")(?![\w<])", re.I)
+                for i, ptxt in enumerate(pl):
+                    new, n = pat.subn(lambda m: f'<a class="xl" href="../x/{E(x["slug"])}.html" title="{E(x["title"])}">{m.group(1)}</a>', ptxt, count=1)
+                    if n:
+                        pl[i] = new; done_x = True
+                        break
+                if done_x:
                     break
         paras = "".join(pl[:1]) + ad("in_article") + "".join(pl[1:])
         kp = "".join(f"<li>{E(k)}</li>" for k in ai.get("key_points", []))
