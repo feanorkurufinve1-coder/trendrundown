@@ -515,7 +515,7 @@ LeBron James, Apple, the NFL, Congress). "subject" = the thing itself as people 
 "query" = the exact search, e.g. "what is a continuing resolution", "who is sam laporta", "where is sinigaglia stadium".
 
 Return ONLY JSON:
-{{"safe": true or false, "safety_reason": "if not safe, why", "headline": "the concrete news that explains the searches, max 12 words — a fact, e.g. 'Barcelona beat PSG 3-1 in Paris' or 'Kickoff, TV channel and lineups for tonight's match'; never vague phrases like 'draws interest', 'trends', 'searches spike', 'ahead of'", "summary": "2 short paragraphs, 120-200 words total, separated by \\n\\n", "key_points": ["3-5 short facts"], "unknown": "one sentence on what is not known yet, or empty string", "category": "one of the categories above", "followups": [{{"subject": "...", "query": "...", "kind": "term|law|place|organization|product|event|person|other"}}]}}
+{{"safe": true or false, "safety_reason": "if not safe, why", "headline": "the concrete news that explains the searches, max 12 words — a fact, e.g. 'Barcelona beat PSG 3-1 in Paris' or 'Kickoff, TV channel and lineups for tonight's match'; never vague phrases like 'draws interest', 'trends', 'searches spike', 'ahead of'", "summary": "2 short paragraphs, 120-200 words total, separated by \\n\\n", "key_points": ["3-5 short facts"], "unknown": "one sentence on what is not known yet, or empty string", "category": "one of the categories above", "followups": [{{"subject": "...", "query": "...", "kind": "term|law|place|organization|product|event|person|other"}}], "image_query": "2-3 plain English words for a generic stock-style photo that illustrates the story WITHOUT any specific person, e.g. 'judge gavel', 'stock market screen', 'football stadium', 'airport terminal', 'hurricane satellite'"}}
 
 SOURCES:
 {sources}"""
@@ -534,6 +534,7 @@ AI_TOOL = {
             "key_points": {"type": "array", "items": {"type": "string"}},
             "unknown": {"type": "string"},
             "category": {"type": "string", "enum": list(CATS)},
+            "image_query": {"type": "string"},
             "followups": {"type": "array", "items": {"type": "object", "properties": {
                 "subject": {"type": "string"}, "query": {"type": "string"},
                 "kind": {"type": "string", "enum": ["term", "law", "place", "organization", "product", "event", "person", "other"]}},
@@ -613,6 +614,9 @@ def write_summary(t, key, feedback=""):
                 if 2 < len(subj) <= 60 and latin(subj) and not bad_text(subj, user_blocks()):
                     fu.append({"subject": subj, "query": str(f.get("query", ""))[:90].strip() or subj, "kind": f.get("kind", "other")})
             t["followups"] = fu[:4]
+            iq = re.sub(r"[^A-Za-z0-9 \-]", "", str(out.pop("image_query", "") or "")).strip()
+            if iq:
+                t["image_query"] = iq[:40]
             RUN_SOURCES[t["slug"]] = {"texts": texts, "blocks": blocks,
                                       "links": [(a["source"], a["title"], a["url"]) for a in picks]}
             out["sources"] = [a["source"] for a in picks]
@@ -1022,6 +1026,87 @@ def wiki_image(t):
     return None
 
 
+def commons_generic(t):
+    """Иллюстрация «по смыслу» (молоток судьи, биржа, стадион) из Wikimedia Commons — только свободные лицензии."""
+    query = t.get("image_query", "")
+    if not query:
+        return None
+    q = urllib.parse.urlencode({"action": "query", "generator": "search", "gsrnamespace": 6, "gsrlimit": 15,
+                                "gsrsearch": f"{query} filetype:bitmap -logo -map -diagram", "prop": "imageinfo",
+                                "iiprop": "url|extmetadata|size|mime", "iiurlwidth": 1200, "format": "json", "formatversion": 2})
+    data = json.loads(get("https://commons.wikimedia.org/w/api.php?" + q))
+    pages = sorted(data.get("query", {}).get("pages", []), key=lambda p: p.get("index", 99))
+    for pg in pages:
+        ii = (pg.get("imageinfo") or [{}])[0]
+        if ii.get("mime") not in ("image/jpeg", "image/png"):
+            continue
+        w, h = ii.get("width", 0), ii.get("height", 0)
+        if w < 900 or w < h * 1.2:                 # нужна горизонтальная и достаточно большая
+            continue
+        md = ii.get("extmetadata", {})
+        lic = _plain(md.get("LicenseShortName", {}).get("value", ""))
+        if not re.search(r"(?i)(^cc|creative commons|public domain|pd|cc0)", lic):
+            continue
+        desc = _plain(md.get("ImageDescription", {}).get("value", "")) + " " + pg.get("title", "")
+        if bad_text(desc, user_blocks()):
+            continue
+        url = ii.get("thumburl") or ii.get("url")
+        os.makedirs(os.path.join(OUT, "img"), exist_ok=True)
+        fn = f"img/{t['slug']}.jpg"
+        with open(os.path.join(OUT, fn), "wb") as f:
+            f.write(get(url))
+        log(f"иллюстрация '{t['term']}': «{pg.get('title', '')}» по запросу «{query}» ({lic})")
+        return {"file": fn, "credit": _plain(md.get("Artist", {}).get("value", ""))[:80] or "Wikimedia Commons",
+                "license": lic, "src": ii.get("descriptionurl", ""), "generic": True}
+    log(f"иллюстрация '{t['term']}': по запросу «{query}» подходящей свободной картинки нет")
+    return None
+
+
+IQ_TOOL = {"name": "set_image_queries", "description": "Generic photo search words for each story.",
+            "input_schema": {"type": "object", "properties": {"items": {"type": "array", "items": {
+                "type": "object", "properties": {"n": {"type": "integer"}, "q": {"type": "string"}},
+                "required": ["n", "q"]}}}, "required": ["items"]}}
+
+
+def backfill_image_queries(store, key):
+    """Старым темам без запроса для иллюстрации — одним коротким запросом к ИИ придумать 2–3 слова."""
+    todo = [t for t in store["topics"].values()
+            if t.get("ai") and not t.get("img") and not t.get("image_query") and not t.get("blocked")][:40]
+    if not todo:
+        return 0
+    lines = "\n".join(f"{i}. {t['term']} — {t['ai'].get('headline', '')}" for i, t in enumerate(todo))
+    prompt = ("For each news story give 2-3 plain English words for a generic stock-style photo that illustrates it "
+              "WITHOUT any specific person (e.g. 'judge gavel', 'stock market screen', 'basketball arena', 'tennis court').\n\n" + lines)
+    try:
+        out = ai_call(prompt, key, IQ_TOOL)
+    except Exception as e:
+        log(f"запросы для иллюстраций не получены: {e}")
+        return 0
+    n = 0
+    for it in out.get("items", []):
+        i = it.get("n"); q = re.sub(r"[^A-Za-z0-9 \-]", "", str(it.get("q", ""))).strip()
+        if isinstance(i, int) and 0 <= i < len(todo) and q:
+            todo[i]["image_query"] = q[:40]; n += 1
+    return n
+
+
+def generic_images(store, limit=12):
+    n = 0
+    for t in store["topics"].values():
+        if n >= limit:
+            break
+        if t.get("ai") and not t.get("blocked") and not t.get("img") and t.get("image_query") and not t.get("gen_tried"):
+            t["gen_tried"] = True
+            try:
+                img = commons_generic(t)
+                if img:
+                    t["img"] = img; n += 1
+            except Exception as e:
+                log(f"иллюстрация '{t['term']}' не скачана: {e}")
+            time.sleep(0.5)
+    return n
+
+
 def _font(size, bold=True):
     from PIL import ImageFont
     for name in (["georgiab.ttf", "arialbd.ttf", "DejaVuSerif-Bold.ttf", "DejaVuSans-Bold.ttf"] if bold else ["arial.ttf", "DejaVuSans.ttf"]):
@@ -1314,7 +1399,7 @@ def build_topic(t, related, same=()):
     img = t.get("img"); card = t.get("card")
     if img:
         hero = (f'<figure class="hero"><img src="../{E(img["file"])}" alt="{E(t["term"])}" loading="eager">'
-                f'<figcaption>Photo: {E(img["credit"])} / <a href="{E(img["src"])}" target="_blank" rel="noopener">{E(img["license"])}</a>, via Wikimedia Commons</figcaption></figure>')
+                f'<figcaption>{"Illustration" if img.get("generic") else "Photo"}: {E(img["credit"])} / <a href="{E(img["src"])}" target="_blank" rel="noopener">{E(img["license"])}</a>, via Wikimedia Commons</figcaption></figure>')
     else:   # обложка-заглушка на странице не показывается, только в превью ссылки (og:image)
         hero = ""
     side = ad("sidebar")
@@ -1565,6 +1650,7 @@ def build_site(store):
                 tt.pop(k, None)
                 if k == "img":
                     tt["img_tried"] = 0
+                    tt.pop("gen_tried", None)
     orig = store
     view = dict(store); view["topics"] = topics
     view["current"] = [s for s in store.get("current", []) if s in topics]
@@ -1671,6 +1757,11 @@ def run_once():
             log(f"Проставлено разделов: {c}")
     if k:
         log(f"Написано сводок: {k}")
+    if api_key():
+        backfill_image_queries(store, api_key())
+    gi = generic_images(store)
+    if gi:
+        log(f"Найдено иллюстраций: {gi}")
     xn = explain(store)
     if xn:
         log(f"Написано объяснений: {xn}")
