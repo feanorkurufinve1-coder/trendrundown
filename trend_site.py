@@ -1244,7 +1244,9 @@ h1.front{font-size:22px;font-family:"Helvetica Neue",Arial,sans-serif;text-trans
 @media (min-width:1060px){.tp.side{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:40px}.tp.side aside{display:block}
 .tp aside .ad{position:sticky;top:16px;margin:0;border:0;padding:0}}
 .answer{font-size:19px;line-height:1.5;border-left-color:var(--accent)}
-a.xl{text-decoration:underline dotted;text-underline-offset:3px}
+a.xl{color:#0645ad;text-decoration:none;border-bottom:1px solid rgba(6,69,173,.35)}
+a.xl:hover{border-bottom-color:#0645ad;background:rgba(6,69,173,.06)}
+@media (prefers-color-scheme:dark){a.xl{color:#8ab4f8;border-bottom-color:rgba(138,180,248,.4)}}
 .xlinks a{display:block;margin:6px 0;font-weight:700}
 h2.sec{font:700 15px "Helvetica Neue",Arial,sans-serif;text-transform:uppercase;letter-spacing:.06em;margin:30px 0 12px;padding-top:14px;border-top:2px solid var(--fg)}
 @media (max-width:640px){.lead.has-img{grid-template-columns:1fr}.lead-term{font-size:32px}}
