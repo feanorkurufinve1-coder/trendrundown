@@ -496,7 +496,9 @@ Rules:
 - Write entirely in your own words and your own structure. Never copy sentences or distinctive phrasing; never reuse more than 5 words in a row from any source. Do not quote unless a quote is essential; then keep it under 10 words and name who said it.
 - Combine facts from several outlets. Attribute claims that are not widely confirmed ("according to CNN", "People reported").
 - Neutral, plain American English, no hype, no speculation, no opinions. If outlets disagree, say so. If something is unclear, say it is unclear.
-- Never add facts that are not in the sources.
+- Never add facts that are not in the sources. Name an outlet for a fact only if that outlet's own text says it.
+- Many sources are headlines only. Then write shorter (80-120 words) and state only what the headlines say; never fill gaps.
+- Do not write about search interest or guess why people are searching ("fans are curious", "likely because").
 - Set "safe": false if the topic is mainly about sexual or pornographic content, nudity or leaked intimate images, graphic violence or gore videos, terrorist or extremist propaganda, instructions for weapons, drugs, self-harm or crime, hate speech, gambling promotion, scams, or naming/accusing a private person (not a public figure) or identifying a minor in a crime. Ordinary news coverage of crime, accidents, politics or deaths reported by mainstream outlets is safe.
 
 Also pick ONE category for the topic: sports, entertainment, politics, business, tech, world, lifestyle or other
@@ -566,9 +568,10 @@ def ai_call(prompt, key, tool=None):
 RUN_SOURCES = {}   # тексты статей этого прохода — только в памяти, нужны для объяснений, не сохраняются
 
 
-def write_summary(t, key):
+def write_summary(t, key, feedback=""):
     picks, outlets = [], set()
-    for a in sorted(t["articles"], key=lambda a: a["time"], reverse=True):
+    # сначала статьи, которые можно прочитать целиком (ссылки Google News открываются только как заголовок)
+    for a in sorted(t["articles"], key=lambda a: ("news.google.com" not in a["url"], a["time"]), reverse=True):
         if a["source"] in outlets:
             continue
         outlets.add(a["source"]); picks.append(a)
@@ -580,9 +583,13 @@ def write_summary(t, key):
     for i, a in enumerate(picks, 1):
         body = article_text(a["url"])
         texts.append(a["title"] + " " + body)
-        blocks.append(f"[{i}] {a['source']} — {a['title']}\n{body or '(headline only)'}")
+        blocks.append(f"[{i}] {a['source']} — {a['title']}\n"
+                      + (body or "(HEADLINE ONLY — use only what this headline itself states; do not attribute any other detail to this outlet)"))
     traffic = t["traffic"][-1][2] if t["traffic"] else "unknown"
     prompt = PROMPT.format(term=t["term"], traffic=traffic, sources="\n\n".join(blocks))
+    if feedback:
+        prompt += ("\n\nAn editor rejected your previous draft for this reason: " + feedback
+                   + "\nWrite a new draft that fixes this. When unsure about a detail, leave it out.")
     for attempt in range(3):
         try:
             out = ai_call(prompt, key)
@@ -672,7 +679,8 @@ Verdict "block" if ANY of these is true:
 - it is sexual, graphic, hateful, or promotes gambling, drugs, weapons or self-harm;
 - it is empty or useless: mostly says nothing is known, repeats the topic name, or does not answer the question it claims to answer;
 - it is not in clear, correct English.
-Otherwise verdict "ok". Do not block for minor style issues. Be specific in "reason" (max 25 words).
+Otherwise verdict "ok". Do NOT block for: minor style issues; a fact credited to the wrong outlet when another source supports
+the fact itself; harmless generic phrasing; small date-format differences. Be specific in "reason" (max 25 words).
 
 DRAFT ({kind}):
 {draft}
@@ -731,7 +739,15 @@ def summarize(store):
         if res:
             draft = (f"{t['term']}: {res.get('headline', '')}\n\n{res.get('summary', '')}\n\nKey facts: "
                      + "; ".join(res.get("key_points", [])) + f"\nUnknown: {res.get('unknown', '')}")
-            if not review(store, "news summary", f"{t['term']}: {res.get('headline', '')}", draft, RUN_SOURCES.get(t["slug"]), key):
+            ok = review(store, "news summary", f"{t['term']}: {res.get('headline', '')}", draft, RUN_SOURCES.get(t["slug"]), key)
+            if not ok:                           # одна попытка исправить по замечанию редактора
+                res = write_summary(t, key, store["review_log"][-1]["reason"])
+                if res:
+                    draft = (f"{t['term']}: {res.get('headline', '')}\n\n{res.get('summary', '')}\n\nKey facts: "
+                             + "; ".join(res.get("key_points", [])) + f"\nUnknown: {res.get('unknown', '')}")
+                    ok = review(store, "news summary (fixed)", f"{t['term']}: {res.get('headline', '')}", draft,
+                                RUN_SOURCES.get(t["slug"]), key)
+            if not ok:
                 RUN_SOURCES.pop(t["slug"], None)
                 if not ai:                       # новая тема — не публикуем; у старой оставляем прежнюю проверенную сводку
                     t["blocked"] = "review: " + store["review_log"][-1]["reason"]
@@ -807,11 +823,14 @@ EXPLAIN_TOOL = {
 }
 
 
-def write_explainer(item, t, src, questions, key):
+def write_explainer(item, t, src, questions, key, feedback=""):
     ai = t.get("ai") or {}
     prompt = EXPLAIN_PROMPT.format(query=item["query"], subject=item["subject"], kind=item["kind"],
                                    headline=ai.get("headline", ""), summary=ai.get("summary", "")[:900],
                                    questions="; ".join(questions) or "(no data)", sources="\n\n".join(src["blocks"]))
+    if feedback:
+        prompt += ("\n\nAn editor rejected your previous draft for this reason: " + feedback
+                   + "\nFix it. Answer only what the sources or well-established general knowledge support; drop the rest.")
     for attempt in range(3):
         try:
             out = ai_call(prompt, key, EXPLAIN_TOOL)
@@ -866,7 +885,13 @@ def explain(store):
             draft = (f"{res['title']}\n\n{res['answer']}\n\n{res['body']}\n\nIn the news: {res['in_the_news']}\n\n"
                      + "\n".join(f"Q: {f.get('q', '')} A: {f.get('a', '')}" for f in res.get("faq", [])))
             if not review(store, item["kind"] + " explainer", res["title"], draft, src, key):
-                continue
+                res = write_explainer(item, t, src, questions, key, store["review_log"][-1]["reason"])
+                if not res or bad_text(res.get("title", ""), ub):
+                    continue
+                draft = (f"{res['title']}\n\n{res['answer']}\n\n{res['body']}\n\nIn the news: {res['in_the_news']}\n\n"
+                         + "\n".join(f"Q: {f.get('q', '')} A: {f.get('a', '')}" for f in res.get("faq", [])))
+                if not review(store, item["kind"] + " explainer (fixed)", res["title"], draft, src, key):
+                    continue
             page_ = {"subject": item["subject"], "kind": item["kind"], "query": item["query"],
                      "title": res["title"][:80], "answer": res["answer"], "body": res["body"],
                      "in_the_news": res["in_the_news"], "faq": res.get("faq", [])[:8], "questions": questions,
