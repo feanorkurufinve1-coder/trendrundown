@@ -43,6 +43,7 @@ MAX_NEW_PER_DAY = 20       # сколько новых тем в сутки (п�
 EXPLAIN = True             # объяснения: что люди начнут гуглить после новости (термины, законы, места, малоизвестные люди)
 MAX_EXPLAINERS_PER_DAY = 15   # сколько новых объяснений в сутки
 EXPLAINERS_PER_TOPIC = 2      # не больше стольких объяснений из одной новости
+MIN_FULL_ARTICLES = 1      # писать сводку, только если хотя бы столько статей удалось прочитать целиком (не одни заголовки)
 AI_REVIEW = True           # второй ИИ-«редактор» проверяет каждую сводку и объяснение перед публикацией и снимает плохие
 INDEXNOW = True            # мгновенно сообщать Bing/Yahoo/DuckDuckGo о новых страницах
 KEY_FILE = "anthropic_key.txt"  # файл с ключом API рядом с программой; нет файла — сайт работает без сводок
@@ -588,6 +589,11 @@ def write_summary(t, key, feedback=""):
         texts.append(a["title"] + " " + body)
         blocks.append(f"[{i}] {a['source']} — {a['title']}\n"
                       + (body or "(HEADLINE ONLY — use only what this headline itself states; do not attribute any other detail to this outlet)"))
+    full = sum(1 for x in texts if len(x) > 400)
+    if full < MIN_FULL_ARTICLES:
+        t["thin_at"] = len(t["articles"])        # вернёмся к теме, когда появятся новые статьи
+        log(f"'{t['term']}': только заголовки, полных статей нет — пока не пишу")
+        return None
     traffic = t["traffic"][-1][2] if t["traffic"] else "unknown"
     prompt = PROMPT.format(term=t["term"], traffic=traffic, sources="\n\n".join(blocks))
     if feedback:
@@ -741,6 +747,8 @@ def summarize(store):
         vague = ai and re.search(r"draws? interest|\btrend|search|ahead of|buzz|attention", ai.get("headline", ""), re.I)
         if ai and not vague and len(t["articles"]) - ai.get("n_articles", 0) < 3:
             continue
+        if not ai and t.get("thin_at") and len(t["articles"]) - t["thin_at"] < 2:
+            continue                     # раньше были одни заголовки; ждём новых статей
         if not ai and new_today >= allowed:
             continue                     # лимит на это время суток исчерпан; обновлять старые можно
         res = write_summary(t, key)
