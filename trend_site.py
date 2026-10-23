@@ -1034,16 +1034,24 @@ def wiki_image(t):
     return None
 
 
+PICK_TOOL = {"name": "pick_image", "description": "Choose the best illustration or none.",
+             "input_schema": {"type": "object", "properties": {"n": {"type": "integer"}, "why": {"type": "string"}},
+                              "required": ["n"]}}
+
+
 def commons_generic(t):
-    """Иллюстрация «по смыслу» (молоток судьи, биржа, стадион) из Wikimedia Commons — только свободные лицензии."""
+    """Иллюстрация «по смыслу» из Wikimedia Commons (только свободные лицензии).
+    Кандидатов отбирает ИИ по названию и описанию файла — чтобы к теннису не попал «мальчик со щёткой в Африке»."""
     query = t.get("image_query", "")
-    if not query:
+    key = api_key()
+    if not query or not key:
         return None
-    q = urllib.parse.urlencode({"action": "query", "generator": "search", "gsrnamespace": 6, "gsrlimit": 15,
+    q = urllib.parse.urlencode({"action": "query", "generator": "search", "gsrnamespace": 6, "gsrlimit": 20,
                                 "gsrsearch": f"{query} filetype:bitmap -logo -map -diagram", "prop": "imageinfo",
                                 "iiprop": "url|extmetadata|size|mime", "iiurlwidth": 1200, "format": "json", "formatversion": 2})
     data = json.loads(get("https://commons.wikimedia.org/w/api.php?" + q))
     pages = sorted(data.get("query", {}).get("pages", []), key=lambda p: p.get("index", 99))
+    cands = []
     for pg in pages:
         ii = (pg.get("imageinfo") or [{}])[0]
         if ii.get("mime") not in ("image/jpeg", "image/png"):
@@ -1055,19 +1063,39 @@ def commons_generic(t):
         lic = _plain(md.get("LicenseShortName", {}).get("value", ""))
         if not re.search(r"(?i)(^cc|creative commons|public domain|pd|cc0)", lic):
             continue
-        desc = _plain(md.get("ImageDescription", {}).get("value", "")) + " " + pg.get("title", "")
-        if bad_text(desc, user_blocks()):
+        desc = _plain(md.get("ImageDescription", {}).get("value", ""))[:300]
+        if bad_text(desc + " " + pg.get("title", ""), user_blocks()):
             continue
-        url = ii.get("thumburl") or ii.get("url")
-        os.makedirs(os.path.join(OUT, "img"), exist_ok=True)
-        fn = f"img/{t['slug']}.jpg"
-        with open(os.path.join(OUT, fn), "wb") as f:
-            f.write(get(url))
-        log(f"иллюстрация '{t['term']}': «{pg.get('title', '')}» по запросу «{query}» ({lic})")
-        return {"file": fn, "credit": _plain(md.get("Artist", {}).get("value", ""))[:80] or "Wikimedia Commons",
-                "license": lic, "src": ii.get("descriptionurl", ""), "generic": True}
-    log(f"иллюстрация '{t['term']}': по запросу «{query}» подходящей свободной картинки нет")
-    return None
+        cands.append((pg, ii, md, lic, desc))
+        if len(cands) >= 10:
+            break
+    if not cands:
+        log(f"иллюстрация '{t['term']}': по запросу «{query}» свободных картинок нет")
+        return None
+    listing = "\n".join(f"{i}. {c[0].get('title', '')[5:]} — {c[4] or '(no description)'}" for i, c in enumerate(cands))
+    prompt = (f"News story: {t['term']} — {(t.get('ai') or {}).get('headline', '')}\n"
+              f"We need a generic illustration for it (idea: '{query}').\n"
+              "Pick the ONE image below that a reader would immediately connect with this story's subject "
+              "(right sport / setting / object). Reject images that show something else, a specific event, place or country "
+              "unrelated to the story, a recognizable private person as the main subject, or anything odd or misleading. "
+              "If none fits well, answer n = -1.\n\n" + listing)
+    try:
+        n = int(ai_call(prompt, key, PICK_TOOL).get("n", -1))
+    except Exception as e:
+        log(f"иллюстрация '{t['term']}': выбор не получился: {e}")
+        return None
+    if not 0 <= n < len(cands):
+        log(f"иллюстрация '{t['term']}': среди найденных по «{query}» подходящей нет")
+        return None
+    pg, ii, md, lic, desc = cands[n]
+    url = ii.get("thumburl") or ii.get("url")
+    os.makedirs(os.path.join(OUT, "img"), exist_ok=True)
+    fn = f"img/{t['slug']}.jpg"
+    with open(os.path.join(OUT, fn), "wb") as f:
+        f.write(get(url))
+    log(f"иллюстрация '{t['term']}': «{pg.get('title', '')}» по запросу «{query}» ({lic})")
+    return {"file": fn, "credit": _plain(md.get("Artist", {}).get("value", ""))[:80] or "Wikimedia Commons",
+            "license": lic, "src": ii.get("descriptionurl", ""), "generic": True, "gv": 2}
 
 
 IQ_TOOL = {"name": "set_image_queries", "description": "Generic photo search words for each story.",
@@ -1100,6 +1128,9 @@ def backfill_image_queries(store, key):
 
 def generic_images(store, limit=12):
     n = 0
+    for t in store["topics"].values():          # иллюстрации, выбранные старым способом (без проверки ИИ), подбираем заново
+        if (t.get("img") or {}).get("generic") and t["img"].get("gv") != 2:
+            t.pop("img"); t.pop("gen_tried", None)
     for t in store["topics"].values():
         if n >= limit:
             break
