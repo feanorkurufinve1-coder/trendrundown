@@ -1043,7 +1043,8 @@ def make_card(t):
 
 def images(store):
     n = 0
-    for slug in store.get("current", []):
+    retry = [s for s, x in store["topics"].items() if x.get("ai") and not x.get("img") and x.get("img_tried") == 0][:15]
+    for slug in list(dict.fromkeys(store.get("current", []) + retry)):
         t = store["topics"].get(slug)
         if not t:
             continue
@@ -1122,6 +1123,7 @@ h1.front{font-size:22px;font-family:"Helvetica Neue",Arial,sans-serif;text-trans
 @media (min-width:1060px){.tp.side{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:40px}.tp.side aside{display:block}
 .tp aside .ad{position:sticky;top:16px;margin:0;border:0;padding:0}}
 .answer{font-size:19px;line-height:1.5;border-left-color:var(--accent)}
+a.xl{text-decoration:underline dotted;text-underline-offset:3px}
 .xlinks a{display:block;margin:6px 0;font-weight:700}
 h2.sec{font:700 15px "Helvetica Neue",Arial,sans-serif;text-transform:uppercase;letter-spacing:.06em;margin:30px 0 12px;padding-top:14px;border-top:2px solid var(--fg)}
 @media (max-width:640px){.lead.has-img{grid-template-columns:1fr}.lead-term{font-size:32px}}
@@ -1266,6 +1268,14 @@ def build_topic(t, related, same=()):
     ai_html = ""
     if ai:
         pl = [f"<p>{E(p)}</p>" for p in ai.get("summary", "").split("\n\n") if p.strip()]
+        # ссылка на объяснение прямо в тексте: первое упоминание термина становится ссылкой
+        for x in xs:
+            pat = re.compile(r"(?<![\w>])(" + re.escape(E(x["subject"])) + r")(?![\w<])", re.I)
+            for i, ptxt in enumerate(pl):
+                new, n = pat.subn(lambda m: f'<a class="xl" href="../x/{E(x["slug"])}.html" title="{E(x["title"])}">{m.group(1)}</a>', ptxt, count=1)
+                if n:
+                    pl[i] = new
+                    break
         paras = "".join(pl[:1]) + ad("in_article") + "".join(pl[1:])
         kp = "".join(f"<li>{E(k)}</li>" for k in ai.get("key_points", []))
         unk = ai.get("unknown", "")
@@ -1508,13 +1518,25 @@ def build_site(store):
     allt = store["topics"]
     topics = visible(store)
     # удалить страницы скрытых тем, если они были опубликованы раньше
-    for s in allt:
-        if s not in topics:
-            for fn in (f"t/{s}.html", f"img/{s}.jpg", f"img/{s}.png", f"img/card-{s}.png"):
+    ub0 = user_blocks()
+    for s, tt in allt.items():
+        if s in topics:
+            continue
+        really_blocked = tt.get("blocked") or bad_text(tt["term"], ub0)
+        # тема без сводки — удаляем только страницу; картинки оставляем, они понадобятся, когда сводка появится
+        for fn in ((f"t/{s}.html", f"img/{s}.jpg", f"img/{s}.png", f"img/card-{s}.png") if really_blocked else (f"t/{s}.html",)):
                 try:
                     os.remove(os.path.join(OUT, fn))
                 except FileNotFoundError:
                     pass
+    # картинка записана в данных, а файла нет (был удалён раньше) — не показываем битую, скачаем заново
+    for tt in topics.values():
+        for k in ("img", "card"):
+            f = (tt.get(k) or {}).get("file") if k == "img" else tt.get(k)
+            if f and not os.path.exists(os.path.join(OUT, f)):
+                tt.pop(k, None)
+                if k == "img":
+                    tt["img_tried"] = 0
     orig = store
     view = dict(store); view["topics"] = topics
     view["current"] = [s for s in store.get("current", []) if s in topics]
