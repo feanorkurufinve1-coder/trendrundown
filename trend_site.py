@@ -948,36 +948,49 @@ def _match(term, title):
 
 
 def wiki_image(t):
-    """Фото из Википедии, только если файл на Commons под CC / Public domain."""
-    q = urllib.parse.quote(t["term"])
-    s = json.loads(get(f"https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch={q}&srlimit=3&format=json"))
-    for hit in s.get("query", {}).get("search", []):
-        title = hit["title"]
-        if not _match(t["term"], title):
+    """Фото из Википедии, только если файл на Commons под CC / Public domain. Причину отказа пишем в журнал."""
+    term = t["term"]
+    q = urllib.parse.urlencode({"action": "query", "generator": "search", "gsrsearch": term, "gsrlimit": 3,
+                                "prop": "pageimages", "piprop": "original|name", "format": "json", "formatversion": 2})
+    data = json.loads(get("https://en.wikipedia.org/w/api.php?" + q))
+    if "error" in data:
+        log(f"фото '{term}': Википедия вернула ошибку {data['error']}")
+        return None
+    pages = sorted(data.get("query", {}).get("pages", []), key=lambda p: p.get("index", 99))
+    if not pages:
+        log(f"фото '{term}': в Википедии ничего не найдено")
+        return None
+    for pg in pages:
+        title = pg.get("title", "")
+        if not _match(term, title):
             continue
-        summ = json.loads(get("https://en.wikipedia.org/api/rest_v1/page/summary/" + urllib.parse.quote(title.replace(" ", "_"))))
-        thumb = (summ.get("thumbnail") or {}).get("source")
-        orig = (summ.get("originalimage") or {}).get("source")
-        if not thumb or not orig:
+        fname = pg.get("pageimage")
+        if not fname:
+            log(f"фото '{term}': у статьи «{title}» нет главной картинки")
             return None
-        fname = urllib.parse.unquote(orig.rsplit("/", 1)[-1])
-        info = json.loads(get("https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=extmetadata|url"
-                              f"&iiurlwidth=800&titles=File:{urllib.parse.quote(fname)}&format=json"))
-        page = next(iter(info.get("query", {}).get("pages", {}).values()), {})
-        if "imageinfo" not in page:
-            return None          # файла нет на Commons — значит, несвободный, не берём
-        ii = page["imageinfo"][0]; md = ii.get("extmetadata", {})
+        q = urllib.parse.urlencode({"action": "query", "prop": "imageinfo", "iiprop": "extmetadata|url", "iiurlwidth": 800,
+                                    "titles": "File:" + fname, "format": "json", "formatversion": 2})
+        info = json.loads(get("https://commons.wikimedia.org/w/api.php?" + q))
+        cp = (info.get("query", {}).get("pages") or [{}])[0]
+        if not cp.get("imageinfo"):
+            log(f"фото '{term}': картинки «{fname}» нет на Commons (несвободная) — не берём")
+            return None
+        ii = cp["imageinfo"][0]; md = ii.get("extmetadata", {})
         lic = _plain(md.get("LicenseShortName", {}).get("value", ""))
         if not re.search(r"(?i)(^cc|creative commons|public domain|pd|cc0)", lic):
+            log(f"фото '{term}': лицензия «{lic}» не свободная — не берём")
             return None
-        url = ii.get("thumburl") or thumb
+        url = ii.get("thumburl") or ii.get("url")
         os.makedirs(os.path.join(OUT, "img"), exist_ok=True)
         ext = ".png" if url.lower().endswith(".png") else ".jpg"
         fn = f"img/{t['slug']}{ext}"
         with open(os.path.join(OUT, fn), "wb") as f:
             f.write(get(url))
+        log(f"фото '{term}': взято «{fname}» ({lic})")
         return {"file": fn, "credit": _plain(md.get("Artist", {}).get("value", ""))[:80] or "Wikimedia Commons",
-                "license": lic, "src": ii.get("descriptionurl", ""), "wiki": summ.get("content_urls", {}).get("desktop", {}).get("page", "")}
+                "license": lic, "src": ii.get("descriptionurl", ""),
+                "wiki": "https://en.wikipedia.org/wiki/" + urllib.parse.quote(title.replace(" ", "_"))}
+    log(f"фото '{term}': нет статьи с подходящим названием (нашлось: {', '.join(p.get('title', '') for p in pages)})")
     return None
 
 
@@ -1034,8 +1047,8 @@ def images(store):
         t = store["topics"].get(slug)
         if not t:
             continue
-        if not t.get("img_tried"):
-            t["img_tried"] = True
+        if t.get("img_tried") != 2 and not t.get("img"):   # 2 = пробовали новым способом (старые темы пробуем ещё раз)
+            t["img_tried"] = 2
             try:
                 img = wiki_image(t)
                 if img:
