@@ -559,7 +559,7 @@ def ai_call(prompt, key, tool=None):
         raise RuntimeError(f"HTTP {e.code}: {e.read().decode(errors='replace')[:300]}")
     for b in data.get("content", []):
         if b.get("type") == "tool_use" and isinstance(b.get("input"), dict):
-            return b["input"]
+            return _clean(b["input"])
     txt = "".join(b.get("text", "") for b in data.get("content", []))
     m = re.search(r"\{.*\}", txt, re.S)
     if m:
@@ -807,6 +807,8 @@ Rules:
 - Do NOT name news outlets in the text; the sources are listed on the page.
 - Never invent or guess personal details (age, family, salary, address, health). Include them only if the sources state them.
 - Answer only the people's questions that the sources (or well-established general knowledge) can answer; skip the rest.
+- Answer only questions ABOUT the subject (what, who, where, when, how it works, why it matters). Skip personal advice questions:
+  health, diet, training, medical, legal, money or betting advice ("when should runners eat", "how to avoid cramps").
 - Own words only; never reuse more than 5 words in a row from a source. Neutral plain American English, no hype, no opinions.
 - Set "ok": false if this is a private individual (not a public figure), a minor, a crime victim, if the sources don't give enough to
   explain it, or if the subject is sexual, extremist, or about weapons, drugs, self-harm or gambling.
@@ -827,6 +829,26 @@ EXPLAIN_TOOL = {
             "q": {"type": "string"}, "a": {"type": "string"}}, "required": ["q", "a"]}},
     }, "required": ["ok", "title", "answer", "body", "in_the_news"]},
 }
+
+
+def _clean(o):
+    """Убирает мусор вроде \\' и \\" из ответов ИИ."""
+    if isinstance(o, str):
+        return o.replace("\\'", "'").replace('\\"', '"').strip()
+    if isinstance(o, list):
+        return [_clean(v) for v in o]
+    if isinstance(o, dict):
+        return {k: _clean(v) for k, v in o.items()}
+    return o
+
+
+def short_desc(s, n=155):
+    """Описание для Google: обрезаем по границе слова, а не посреди."""
+    s = re.sub(r"\s+", " ", s or "").strip()
+    if len(s) <= n:
+        return s
+    cut = s[:n].rsplit(" ", 1)[0].rstrip(",;:—-")
+    return cut + "…"
 
 
 def write_explainer(item, t, src, questions, key, feedback=""):
@@ -1311,7 +1333,7 @@ def build_topic(t, related, same=()):
 {ad("multiplex") if ai else ""}
 {('<h2>Other trending topics</h2><div class="chips">' + rel + '</div>') if rel else ''}
 </article><aside>{side}</aside></div>"""
-    desc = (ai["headline"] + ". " if ai else "") + f"Why {t['term']} is trending in the US right now: what happened, who's reporting it, and links to {len(srcs) or 'the'} sources."
+    desc = short_desc((ai["headline"] + ". " if ai else "") + f"Why {t['term']} is trending in the US right now: what happened, who's reporting it, and links to {len(srcs) or 'the'} sources.", 160)
     head = f'<script type="application/ld+json">{json.dumps(ld)}</script>'
     if img:
         ld["image"] = f"{SITE_URL}/{img['file']}"
@@ -1463,7 +1485,7 @@ def build_explainer(x, topics):
 {('<h2>Sources</h2><ul class="list">' + src + '</ul>') if src else ''}
 <p class="meta">Written with AI assistance from reporting by the outlets above and checked against them. Updated {E(fmt_et(x["made"]))}.</p>
 </article>"""
-    return page(x["title"] + (f" | {SITE_NAME}" if len(x["title"]) < 50 else ""), x["answer"][:155], body,
+    return page(x["title"] + (f" | {SITE_NAME}" if len(x["title"]) < 50 else ""), short_desc(x["answer"]), body,
                 f"x/{x['slug']}.html", 1, head)
 
 
