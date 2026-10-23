@@ -990,11 +990,29 @@ def _match(term, title):
     return bool(b) and (b <= a or a <= b)
 
 
+def same_person(t, name, pages):
+    """ИИ сверяет: какая из статей Википедии — тот самый человек из новости (а не тёзка-баскетболист)."""
+    key = api_key()
+    if not key:
+        return None
+    listing = "\n".join(f"{i}. {p.get('title', '')} — {p.get('description', '') or '(no description)'}" for i, p in enumerate(pages))
+    prompt = (f"News story: {t['term']} — {(t.get('ai') or {}).get('headline', '')}\n"
+              f"The story is mainly about: {name}.\n"
+              "Which Wikipedia article below is about THIS SAME person (same job and context as in the story)? "
+              "A different person with a similar name does not count. If none, answer n = -1.\n\n" + listing)
+    try:
+        n = int(ai_call(prompt, key, PICK_TOOL).get("n", -1))
+    except Exception as e:
+        log(f"фото '{name}': проверка человека не получилась: {e}")
+        return None
+    return n if 0 <= n < len(pages) else None
+
+
 def wiki_image(t, name=None):
     """Фото из Википедии, только если файл на Commons под CC / Public domain. Причину отказа пишем в журнал."""
     term = name or t["term"]
     q = urllib.parse.urlencode({"action": "query", "generator": "search", "gsrsearch": term, "gsrlimit": 5,
-                                "prop": "pageimages", "piprop": "original|name", "format": "json", "formatversion": 2})
+                                "prop": "pageimages|description", "piprop": "original|name", "format": "json", "formatversion": 2})
     data = json.loads(get("https://en.wikipedia.org/w/api.php?" + q))
     if "error" in data:
         log(f"фото '{term}': Википедия вернула ошибку {data['error']}")
@@ -1003,9 +1021,15 @@ def wiki_image(t, name=None):
     if not pages:
         log(f"фото '{term}': в Википедии ничего не найдено")
         return None
+    if name:                                  # ищем конкретного человека — сверяем, что это он, а не тёзка
+        pick = same_person(t, name, pages)
+        if pick is None:
+            log(f"фото '{name}': среди статей ({', '.join(p.get('title', '') for p in pages)}) нет именно этого человека")
+            return None
+        pages = [pages[pick]]
     for pg in pages:
         title = pg.get("title", "")
-        if not _match(term, title):
+        if not name and not _match(term, title):
             continue
         fname = pg.get("pageimage")
         if not fname:                      # например, страница-неоднозначность «Ann Li» — смотрим следующую («Ann Li (tennis)»)
@@ -1031,7 +1055,7 @@ def wiki_image(t, name=None):
             f.write(get(url))
         log(f"фото '{term}': взято «{fname}» ({lic})")
         return {"file": fn, "credit": _plain(md.get("Artist", {}).get("value", ""))[:80] or "Wikimedia Commons",
-                "license": lic, "src": ii.get("descriptionurl", ""),
+                "license": lic, "src": ii.get("descriptionurl", ""), "pv": 2 if name else 1,
                 "wiki": "https://en.wikipedia.org/wiki/" + urllib.parse.quote(title.replace(" ", "_"))}
     log(f"фото '{term}': нет статьи с подходящим названием (нашлось: {', '.join(p.get('title', '') for p in pages)})")
     return None
@@ -1124,8 +1148,9 @@ def backfill_people(store, key):
     if not todo:
         return 0
     lines = "\n".join(f"{i}. {t['term']} — {t['ai'].get('headline', '')}" for i, t in enumerate(todo))
-    prompt = ("For each news story give the full name of the ONE well-known public figure it is mainly about "
-              "(athlete, celebrity, politician), or an empty string if it is not about one specific public figure.\n\n" + lines)
+    prompt = ("For each news story give the FULL NAME (first and last name, e.g. 'Dan Sullivan', never just 'Sullivan') "
+              "of the ONE well-known public figure it is mainly about (athlete, celebrity, politician), or an empty string "
+              "if it is not about one specific public figure.\n\n" + lines)
     try:
         out = ai_call(prompt, key, PERSON_TOOL)
     except Exception as e:
@@ -1167,11 +1192,20 @@ def generic_images(store, limit=12):
     for t in store["topics"].values():          # иллюстрации, выбранные старым способом (без проверки ИИ), подбираем заново
         if (t.get("img") or {}).get("generic") and t["img"].get("gv") != 3:
             t.pop("img"); t.pop("gen_tried", None)
+    # фото людей, найденные без проверки «тот ли это человек», перепроверяем
+    for t in store["topics"].values():
+        im = t.get("img") or {}
+        if t.get("main_person") and im.get("wiki") and im.get("pv") != 2:
+            t.pop("img"); t.pop("person_tried", None); t.pop("gen_tried", None)
+        if t.get("main_person") and len(t["main_person"].split()) < 2:
+            t.pop("person_checked", None)          # была только фамилия — спросим ИИ полное имя ещё раз
     # новость о конкретном известном человеке — сначала ищем его свободное фото
     for t in store["topics"].values():
         if n >= limit:
             break
         mp = t.get("main_person")
+        if mp and len(mp.split()) < 2:
+            mp = None                                  # одна фамилия («Sullivan») — слишком много тёзок, не ищем
         if t.get("ai") and not t.get("blocked") and mp and not t.get("person_tried") \
                 and (not t.get("img") or t["img"].get("generic")):
             t["person_tried"] = True
