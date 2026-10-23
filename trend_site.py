@@ -44,6 +44,8 @@ EXPLAIN = True             # объяснения: что люди начнут 
 MAX_EXPLAINERS_PER_DAY = 15   # сколько новых объяснений в сутки
 EXPLAINERS_PER_TOPIC = 2      # не больше стольких объяснений из одной новости
 MIN_FULL_ARTICLES = 1      # писать сводку, только если хотя бы столько статей удалось прочитать целиком (не одни заголовки)
+RULES_V = 3                # версия правил для текстов; старые сводки переписываются постепенно
+REWRITE_PER_RUN = 8        # сколько старых сводок переписывать за запуск
 AI_REVIEW = True           # второй ИИ-«редактор» проверяет каждую сводку и объяснение перед публикацией и снимает плохие
 INDEXNOW = True            # мгновенно сообщать Bing/Yahoo/DuckDuckGo о новых страницах
 KEY_FILE = "anthropic_key.txt"  # файл с ключом API рядом с программой; нет файла — сайт работает без сводок
@@ -516,7 +518,7 @@ LeBron James, Apple, the NFL, Congress). "subject" = the thing itself as people 
 "query" = the exact search, e.g. "what is a continuing resolution", "who is sam laporta", "where is sinigaglia stadium".
 
 Return ONLY JSON:
-{{"safe": true or false, "safety_reason": "if not safe, why", "headline": "the concrete news that explains the searches, max 12 words — a fact, e.g. 'Barcelona beat PSG 3-1 in Paris' or 'Kickoff, TV channel and lineups for tonight's match'; never vague phrases like 'draws interest', 'trends', 'searches spike', 'ahead of'", "summary": "2 short paragraphs, 120-200 words total, separated by \\n\\n", "key_points": ["3-5 short facts"], "unknown": "one sentence on what is not known yet, or empty string", "category": "one of the categories above", "followups": [{{"subject": "...", "query": "...", "kind": "term|law|place|organization|product|event|person|other"}}], "main_person": "full name of the ONE well-known public figure the story is mainly about (athlete, celebrity, politician), or empty string if the story is not about one specific public figure", "image_query": "2-4 plain English words to find a matching free photo. If the story is about a specific team, club, company, place, event, show or product, NAME IT (e.g. 'Real Madrid players', 'Santiago Bernabeu stadium', 'Tesla factory', 'Lambeau Field', 'Marine Corps Marathon runners'); only if it is about nothing specific, use a generic scene (e.g. 'judge gavel', 'stock market screen'). Never a private person"}}
+{{"safe": true or false, "safety_reason": "if not safe, why", "headline": "the concrete news that explains the searches, max 12 words — a fact, e.g. 'Barcelona beat PSG 3-1 in Paris' or 'Kickoff, TV channel and lineups for tonight's match'; never vague phrases like 'draws interest', 'trends', 'searches spike', 'ahead of'", "summary": "2 short paragraphs, 120-200 words total, separated by \\n\\n", "key_points": ["3-5 short facts"], "unknown": "one sentence on what is not known yet, or empty string", "category": "one of the categories above", "followups": [{{"subject": "...", "query": "...", "kind": "term|law|place|organization|product|event|person|other"}}], "main_person": "if the searched term itself is a person's name, that person's FULL name; if the term is a team, club, company, place, show or thing, empty string; otherwise the FULL name of the ONE well-known public figure the story is mainly about, or empty string", "image_query": "2-4 plain English words to find a matching free photo of WHAT PEOPLE SEARCHED (the term above). If the story is about a specific team, club, company, place, event, show or product, NAME IT (e.g. 'Real Madrid players', 'Santiago Bernabeu stadium', 'Tesla factory', 'Lambeau Field', 'Marine Corps Marathon runners'); only if it is about nothing specific, use a generic scene (e.g. 'judge gavel', 'stock market screen'). Never a private person"}}
 
 SOURCES:
 {sources}"""
@@ -622,13 +624,14 @@ def write_summary(t, key, feedback=""):
                     fu.append({"subject": subj, "query": str(f.get("query", ""))[:90].strip() or subj, "kind": f.get("kind", "other")})
             t["followups"] = fu[:4]
             mp = re.sub(r"[^\w .'\-]", "", str(out.pop("main_person", "") or "")).strip()
-            t["main_person"] = mp[:60]; t["person_checked"] = True
+            t["main_person"] = mp[:60]; t["person_checked"] = 2
             iq = re.sub(r"[^A-Za-z0-9 \-]", "", str(out.pop("image_query", "") or "")).strip()
             if iq:
-                t["image_query"] = iq[:50]; t["iq_v"] = 2
+                t["image_query"] = iq[:50]; t["iq_v"] = 3
             RUN_SOURCES[t["slug"]] = {"texts": texts, "blocks": blocks,
                                       "links": [(a["source"], a["title"], a["url"]) for a in picks]}
             out["sources"] = [a["source"] for a in picks]
+            out["rules"] = RULES_V
             out["made"] = now_iso(); out["n_articles"] = len(t["articles"])
             return out
         log(f"'{t['term']}': найдено совпадение с источником ({hits[0]}…), переписываю")
@@ -743,13 +746,23 @@ def summarize(store):
     allowed = min(MAX_NEW_PER_DAY, math.ceil(MAX_NEW_PER_DAY * (et_hour + 1) / 24) + 2)
     cur = [store["topics"][s] for s in store.get("current", []) if s in store["topics"]]
     cur = mixed_order(cur)            # крупные вперемешку со средними
+    # плюс опубликованные раньше по старым правилам — переписываем постепенно
+    cur += [x for x in store["topics"].values() if x.get("ai") and x["ai"].get("rules") != RULES_V
+            and x["ai"].get("rw_tried") != RULES_V and not x.get("blocked") and x not in cur]
+    rewrites = 0
     for t in cur:
         if done >= AI_PER_RUN:
             break
         ai = t.get("ai")
         vague = ai and re.search(r"draws? interest|\btrend|search|ahead of|buzz|attention", ai.get("headline", ""), re.I)
-        if ai and not vague and len(t["articles"]) - ai.get("n_articles", 0) < 3:
+        old_rules = ai and ai.get("rules") != RULES_V and ai.get("rw_tried") != RULES_V and rewrites < REWRITE_PER_RUN
+        if ai and not vague and not old_rules and len(t["articles"]) - ai.get("n_articles", 0) < 3:
             continue
+        if old_rules:
+            rewrites += 1
+            ai["rw_tried"] = RULES_V        # одна попытка переписать; не вышло — остаётся прежний текст
+        if generic_term(t["term"]):
+            continue                     # «TV», «News Today» — слишком общие запросы, страница о них бесполезна
         if not ai and t.get("thin_at") and len(t["articles"]) - t["thin_at"] < 2:
             continue                     # раньше были одни заголовки; ждём новых статей
         if not ai and new_today >= allowed:
@@ -1032,6 +1045,9 @@ def wiki_image(t, name=None):
         if not name and not _match(term, title):
             continue
         fname = pg.get("pageimage")
+        if fname and re.search(r"(?i)logo|seal|crest|emblem|wordmark|coat.of.arms|\.svg$|flag.of", fname):
+            log(f"фото '{term}': «{fname}» — это логотип/герб, не фото — не берём")
+            fname = None
         if not fname:                      # например, страница-неоднозначность «Ann Li» — смотрим следующую («Ann Li (tennis)»)
             log(f"фото '{term}': у статьи «{title}» нет главной картинки — смотрю следующую")
             continue
@@ -1127,7 +1143,7 @@ def commons_generic(t):
             "license": lic, "src": ii.get("descriptionurl", ""), "generic": True, "gv": 3}
 
 
-IQ_RULE = "2-4 plain English words to find a matching free photo. If the story is about a specific team, club, company, place, event, show or product, NAME IT (e.g. 'Real Madrid players', 'Santiago Bernabeu stadium', 'Tesla factory', 'Lambeau Field', 'Marine Corps Marathon runners'); only if it is about nothing specific, use a generic scene (e.g. 'judge gavel', 'stock market screen'). Never a private person."
+IQ_RULE = "2-4 plain English words to find a matching free photo of WHAT PEOPLE SEARCHED (the searched term). If the story is about a specific team, club, company, place, event, show or product, NAME IT (e.g. 'Real Madrid players', 'Santiago Bernabeu stadium', 'Tesla factory', 'Lambeau Field', 'Marine Corps Marathon runners'); only if it is about nothing specific, use a generic scene (e.g. 'judge gavel', 'stock market screen'). Never a private person."
 
 IQ_TOOL = {"name": "set_image_queries", "description": "Generic photo search words for each story.",
             "input_schema": {"type": "object", "properties": {"items": {"type": "array", "items": {
@@ -1144,13 +1160,14 @@ PERSON_TOOL = {"name": "set_people", "description": "Main public figure of each 
 def backfill_people(store, key):
     """Старым темам: о каком известном человеке новость (чтобы взять его фото, а не иллюстрацию)."""
     todo = [t for t in store["topics"].values()
-            if t.get("ai") and not t.get("person_checked") and not t.get("blocked")][:40]
+            if t.get("ai") and t.get("person_checked") != 2 and not t.get("blocked")][:40]
     if not todo:
         return 0
     lines = "\n".join(f"{i}. {t['term']} — {t['ai'].get('headline', '')}" for i, t in enumerate(todo))
-    prompt = ("For each news story give the FULL NAME (first and last name, e.g. 'Dan Sullivan', never just 'Sullivan') "
-              "of the ONE well-known public figure it is mainly about (athlete, celebrity, politician), or an empty string "
-              "if it is not about one specific public figure.\n\n" + lines)
+    prompt = ("For each news story (searched term — headline) give a FULL NAME (first and last, e.g. 'Dan Sullivan', "
+              "never just 'Sullivan'): if the searched term itself is a person's name, that person; if the term is a team, "
+              "club, company, place, show or thing, an empty string; otherwise the ONE well-known public figure the story "
+              "is mainly about, or an empty string.\n\n" + lines)
     try:
         out = ai_call(prompt, key, PERSON_TOOL)
     except Exception as e:
@@ -1159,18 +1176,22 @@ def backfill_people(store, key):
     for it in out.get("items", []):
         i = it.get("n")
         if isinstance(i, int) and 0 <= i < len(todo):
-            todo[i]["main_person"] = re.sub(r"[^\w .'\-]", "", str(it.get("person", ""))).strip()[:60]
-            todo[i]["person_checked"] = True
+            tt = todo[i]
+            newp = re.sub(r"[^\w .'\-]", "", str(it.get("person", ""))).strip()[:60]
+            if newp != tt.get("main_person") and (tt.get("img") or {}).get("wiki"):
+                tt.pop("img"); tt.pop("person_tried", None); tt.pop("gen_tried", None)   # было фото другого человека
+            tt["main_person"] = newp
+            tt["person_checked"] = 2
     return len(todo)
 
 
 def backfill_image_queries(store, key):
     """Старым темам без запроса для иллюстрации — одним коротким запросом к ИИ придумать 2–3 слова."""
     todo = [t for t in store["topics"].values()
-            if t.get("ai") and t.get("iq_v") != 2 and not t.get("blocked")][:40]
+            if t.get("ai") and t.get("iq_v") != 3 and not t.get("blocked")][:40]
     if not todo:
         return 0
-    lines = "\n".join(f"{i}. {t['term']} — {t['ai'].get('headline', '')}" for i, t in enumerate(todo))
+    lines = "\n".join(f"{i}. searched: {t['term']} — {t['ai'].get('headline', '')}" for i, t in enumerate(todo))
     prompt = ("For each news story give " + IQ_RULE + "\n\n" + lines)
     try:
         out = ai_call(prompt, key, IQ_TOOL)
@@ -1181,7 +1202,7 @@ def backfill_image_queries(store, key):
     for it in out.get("items", []):
         i = it.get("n"); q = re.sub(r"[^A-Za-z0-9 \-]", "", str(it.get("q", ""))).strip()
         if isinstance(i, int) and 0 <= i < len(todo) and q:
-            todo[i]["image_query"] = q[:50]; todo[i]["iq_v"] = 2; n += 1
+            todo[i]["image_query"] = q[:50]; todo[i]["iq_v"] = 3; n += 1
             if (todo[i].get("img") or {}).get("generic"):      # иллюстрацию подберём заново по новому запросу
                 todo[i].pop("img"); todo[i].pop("gen_tried", None)
     return n
@@ -1195,6 +1216,9 @@ def generic_images(store, limit=12):
     # фото людей, найденные без проверки «тот ли это человек», перепроверяем
     for t in store["topics"].values():
         im = t.get("img") or {}
+        if re.search(r"(?i)logo|seal|crest|emblem|wordmark|coat_of_arms|flag_of", im.get("src", "")):
+            t.pop("img"); t.pop("gen_tried", None)               # старая «картинка» оказалась логотипом
+            im = {}
         if t.get("main_person") and im.get("wiki") and im.get("pv") != 2:
             t.pop("img"); t.pop("person_tried", None); t.pop("gen_tried", None)
         if t.get("main_person") and len(t["main_person"].split()) < 2:
@@ -1699,6 +1723,8 @@ def build_explainer(x, topics):
         q = f.get("q", "").strip().rstrip("?")
         if q and f.get("a"):
             faq.append({"q": q[0].upper() + q[1:] + "?", "a": f["a"]})
+    faq = [f for f in faq if not re.search(r"(?i)\b(should (i|you|runners|people)|eat|diet|cramp|injur|bet|odds|invest|"
+                                           r"lawyer|sue\b|medic|dose|avoid)", f["q"])]
     faq_html = "".join(f"<h3>{E(f['q'])}</h3><p>{E(f['a'])}</p>" for f in faq)
     newslist = "".join(f'<li><a href="../t/{E(n["slug"])}.html">{E(n["term"])}</a> — '
                        f'{E((n.get("ai") or {}).get("headline", ""))} <span class="meta">{E(fmt_et(n["first_seen"]).split(",")[0])}</span></li>'
@@ -1771,11 +1797,20 @@ def related_for(t, lists):
     return out[:10]
 
 
+GENERIC_TERMS = {"news", "news today", "today news", "tv", "weather", "sports", "sport", "crime", "jobs", "job", "flights",
+                 "fitness", "schools", "school", "music", "movies", "games", "politics", "world", "business", "us",
+                 "usa", "money", "health", "food", "travel", "shopping", "stocks", "election", "elections", "breaking news"}
+
+
+def generic_term(term):
+    return term.strip().lower() in GENERIC_TERMS
+
+
 def visible(store):
     ub = user_blocks()
     out = {}
     for s, t in store["topics"].items():
-        if t.get("blocked") or bad_text(t["term"], ub) or not t["articles"]:
+        if t.get("blocked") or bad_text(t["term"], ub) or not t["articles"] or generic_term(t["term"]):
             continue
         if ONLY_WITH_SUMMARY and not t.get("ai"):
             continue
