@@ -44,7 +44,7 @@ EXPLAIN = True             # объяснения: что люди начнут 
 MAX_EXPLAINERS_PER_DAY = 15   # сколько новых объяснений в сутки
 EXPLAINERS_PER_TOPIC = 2      # не больше стольких объяснений из одной новости
 MIN_FULL_ARTICLES = 1      # писать сводку, только если хотя бы столько статей удалось прочитать целиком (не одни заголовки)
-RULES_V = 4                # версия правил для текстов; старые сводки переписываются постепенно
+RULES_V = 5                # версия правил для текстов; старые сводки переписываются постепенно
 REWRITE_PER_RUN = 8        # сколько старых сводок переписывать за запуск
 AI_REVIEW = True           # второй ИИ-«редактор» проверяет каждую сводку и объяснение перед публикацией и снимает плохие
 INDEXNOW = True            # мгновенно сообщать Bing/Yahoo/DuckDuckGo о новых страницах
@@ -497,13 +497,15 @@ Search interest: {traffic}
 Below are reports from news outlets. Use them ONLY as sources of facts.
 Rules:
 - Write entirely in your own words and your own structure. Never copy sentences or distinctive phrasing; never reuse more than 5 words in a row from any source. Do not quote unless a quote is essential; then keep it under 10 words and name who said it.
-- Combine facts from several outlets. Attribute claims that are not widely confirmed ("according to CNN", "People reported").
+- Combine facts from several outlets into ONE story told directly, like a news anchor: "Ric Flair was taken to a hospital in Tampa
+  on Thursday." Never "according to...", "X reported", "reports say", "headlines say", "per posts on Reddit", "the outlet said".
 - Neutral, plain American English, no hype, no speculation, no opinions. If outlets disagree, say so. If something is unclear, say it is unclear.
 - Never add facts that are not in the sources.
 - Write about the NEWS itself. Never mention searches, "search interest", "drawing attention" or why people are searching —
   start straight with what happened (who, what, when).
-- Do NOT name news outlets in the text ("according to ESPN", "Yahoo reported"). The sources are listed under the article.
-  Name an outlet only when a claim is disputed or exclusive, and only if that outlet's own text says it.
+- Do NOT name news outlets, websites or social networks in the text ("according to ESPN", "Yahoo reported", "on Reddit"). The sources are listed under the article.
+  If a claim is not confirmed, say so in plain words ("this has not been confirmed") instead of naming who said it.
+  Only people in the story may be quoted ("Kerr said ..."), rarely.
 - Many sources are headlines only. Then write shorter (80-120 words) and state only what the headlines say; never fill gaps.
 - Do not write about search interest or guess why people are searching ("fans are curious", "likely because").
 - Set "safe": false if the topic is mainly about sexual or pornographic content, nudity or leaked intimate images, graphic violence or gore videos, terrorist or extremist propaganda, instructions for weapons, drugs, self-harm or crime, hate speech, gambling promotion, scams, or naming/accusing a private person (not a public figure) or identifying a minor in a crime. Ordinary news coverage of crime, accidents, politics or deaths reported by mainstream outlets is safe.
@@ -778,6 +780,8 @@ def summarize(store):
         if not ai and new_today >= allowed:
             continue                     # лимит на это время суток исчерпан; обновлять старые можно
         res = write_summary(t, key)
+        if res and re.search(r"(?i)according to|\b(reported|reports? (say|said))\b|reddit|headlines? (say|said|report)", res.get("summary", "")):
+            res = write_summary(t, key, "Do not cite outlets, reports, headlines or Reddit at all. Tell the facts directly in your own words.") or res
         if res:
             draft = (f"{t['term']}: {res.get('headline', '')}\n\n{res.get('summary', '')}\n\nKey facts: "
                      + "; ".join(res.get("key_points", [])) + f"\nUnknown: {res.get('unknown', '')}")
@@ -842,7 +846,8 @@ Rules:
 - Facts about the current situation, people, numbers and dates must come ONLY from the sources below.
 - For general background you may use well-established, uncontroversial public knowledge: a definition, how a rule works,
   the year a famous film came out, where a city or landmark is, what a well-known organization does. Never guess beyond that.
-- Do NOT name news outlets in the text; the sources are listed on the page.
+- Do NOT name news outlets, websites or social networks in the text, and never write "according to", "reported" or "reports say";
+  just state the facts directly. The sources are listed on the page.
 - Never invent or guess personal details (age, family, salary, address, health). Include them only if the sources state them.
 - Answer only the people's questions that the sources (or well-established general knowledge) can answer; skip the rest.
 - Answer only questions ABOUT the subject (what, who, where, when, how it works, why it matters). Skip personal advice questions:
