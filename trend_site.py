@@ -44,7 +44,7 @@ EXPLAIN = True             # объяснения: что люди начнут 
 MAX_EXPLAINERS_PER_DAY = 15   # сколько новых объяснений в сутки
 EXPLAINERS_PER_TOPIC = 2      # не больше стольких объяснений из одной новости
 MIN_FULL_ARTICLES = 1      # писать сводку, только если хотя бы столько статей удалось прочитать целиком (не одни заголовки)
-RULES_V = 3                # версия правил для текстов; старые сводки переписываются постепенно
+RULES_V = 4                # версия правил для текстов; старые сводки переписываются постепенно
 REWRITE_PER_RUN = 8        # сколько старых сводок переписывать за запуск
 AI_REVIEW = True           # второй ИИ-«редактор» проверяет каждую сводку и объяснение перед публикацией и снимает плохие
 INDEXNOW = True            # мгновенно сообщать Bing/Yahoo/DuckDuckGo о новых страницах
@@ -500,6 +500,8 @@ Rules:
 - Combine facts from several outlets. Attribute claims that are not widely confirmed ("according to CNN", "People reported").
 - Neutral, plain American English, no hype, no speculation, no opinions. If outlets disagree, say so. If something is unclear, say it is unclear.
 - Never add facts that are not in the sources.
+- Write about the NEWS itself. Never mention searches, "search interest", "drawing attention" or why people are searching —
+  start straight with what happened (who, what, when).
 - Do NOT name news outlets in the text ("according to ESPN", "Yahoo reported"). The sources are listed under the article.
   Name an outlet only when a claim is disputed or exclusive, and only if that outlet's own text says it.
 - Many sources are headlines only. Then write shorter (80-120 words) and state only what the headlines say; never fill gaps.
@@ -510,6 +512,9 @@ Also pick ONE category for the topic: sports, entertainment, politics, business,
 (sports = games, players, leagues; entertainment = celebrities, music, TV, movies, games; business = companies, stocks, money, jobs;
 tech = technology, science, health research, space; world = news outside the US; lifestyle = food, travel, weather, holidays, shopping).
 
+If the sources are NOT really about "{term}" (for example generic score pages, or a different team or person), set "on_topic": false
+and do not guess what people meant. Never write about what "searches" are about.
+
 Finally, predict FOLLOW-UP SEARCHES: after reading this news, what will ordinary Americans google next because they don't
 know it or want to know more? An unfamiliar term, law or rule, place, organization, product, event, or a public figure most
 people don't know well. Give 0-4 items. Rules: only things the sources explain or give facts about; never private individuals
@@ -518,7 +523,7 @@ LeBron James, Apple, the NFL, Congress). "subject" = the thing itself as people 
 "query" = the exact search, e.g. "what is a continuing resolution", "who is sam laporta", "where is sinigaglia stadium".
 
 Return ONLY JSON:
-{{"safe": true or false, "safety_reason": "if not safe, why", "headline": "the concrete news that explains the searches, max 12 words — a fact, e.g. 'Barcelona beat PSG 3-1 in Paris' or 'Kickoff, TV channel and lineups for tonight's match'; never vague phrases like 'draws interest', 'trends', 'searches spike', 'ahead of'", "summary": "2 short paragraphs, 120-200 words total, separated by \\n\\n", "key_points": ["3-5 short facts"], "unknown": "one sentence on what is not known yet, or empty string", "category": "one of the categories above", "followups": [{{"subject": "...", "query": "...", "kind": "term|law|place|organization|product|event|person|other"}}], "main_person": "if the searched term itself is a person's name, that person's FULL name; if the term is a team, club, company, place, show or thing, empty string; otherwise the FULL name of the ONE well-known public figure the story is mainly about, or empty string", "image_query": "2-4 plain English words to find a matching free photo of WHAT PEOPLE SEARCHED (the term above). Prefer objects, venues and scenes, not people (e.g. 'MMA octagon cage' rather than 'UFC fighters'). If the story is about a specific team, club, company, place, event, show or product, NAME IT (e.g. 'Real Madrid players', 'Santiago Bernabeu stadium', 'Tesla factory', 'Lambeau Field', 'Marine Corps Marathon runners'); only if it is about nothing specific, use a generic scene (e.g. 'judge gavel', 'stock market screen'). Never a private person"}}
+{{"safe": true or false, "safety_reason": "if not safe, why", "on_topic": true or false, "headline": "the concrete news that explains the searches, max 12 words — a fact, e.g. 'Barcelona beat PSG 3-1 in Paris' or 'Kickoff, TV channel and lineups for tonight's match'; never vague phrases like 'draws interest', 'trends', 'searches spike', 'ahead of'", "summary": "2 short paragraphs, 120-200 words total, separated by \\n\\n", "key_points": ["3-5 short facts"], "unknown": "one sentence on what is not known yet, or empty string", "category": "one of the categories above", "followups": [{{"subject": "...", "query": "...", "kind": "term|law|place|organization|product|event|person|other"}}], "main_person": "if the searched term itself is a person's name, that person's FULL name; if the term is a team, club, company, place, show or thing, empty string; otherwise the FULL name of the ONE well-known public figure the story is mainly about, or empty string", "image_query": "2-4 plain English words to find a matching free photo of WHAT PEOPLE SEARCHED (the term above). Prefer objects, venues and scenes, not people (e.g. 'MMA octagon cage' rather than 'UFC fighters'). If the story is about a specific team, club, company, place, event, show or product, NAME IT (e.g. 'Real Madrid players', 'Santiago Bernabeu stadium', 'Tesla factory', 'Lambeau Field', 'Marine Corps Marathon runners'); only if it is about nothing specific, use a generic scene (e.g. 'judge gavel', 'stock market screen'). Never a private person"}}
 
 SOURCES:
 {sources}"""
@@ -539,6 +544,7 @@ AI_TOOL = {
             "category": {"type": "string", "enum": list(CATS)},
             "image_query": {"type": "string"},
             "main_person": {"type": "string"},
+            "on_topic": {"type": "boolean"},
             "followups": {"type": "array", "items": {"type": "object", "properties": {
                 "subject": {"type": "string"}, "query": {"type": "string"},
                 "kind": {"type": "string", "enum": ["term", "law", "place", "organization", "product", "event", "person", "other"]}},
@@ -607,6 +613,10 @@ def write_summary(t, key, feedback=""):
             out = ai_call(prompt, key)
         except Exception as e:
             log(f"ИИ не ответил по '{t['term']}': {e}")
+            return None
+        if out.get("on_topic") is False:
+            log(f"'{t['term']}': статьи не про этот запрос (on_topic=false) — не публикую")
+            t["blocked"] = "off-topic sources"
             return None
         if out.get("safe") is False:
             log(f"'{t['term']}': ИИ пометил тему как небезопасную ({out.get('safety_reason', '')}) — скрываю")
@@ -1035,6 +1045,17 @@ def wiki_image(t, name=None):
         log(f"фото '{term}': в Википедии ничего не найдено")
         return None
     if name:                                  # ищем конкретного человека — сверяем, что это он, а не тёзка
+        hint = (t.get("image_query") or "").split()[:1]
+        if hint and hint[0].lower() not in name.lower():   # «Ann Li» → ещё «Ann Li tennis», чтобы нашёлся нужный человек
+            q2 = urllib.parse.urlencode({"action": "query", "generator": "search", "gsrsearch": f"{name} {hint[0]}",
+                                         "gsrlimit": 5, "prop": "pageimages|description", "piprop": "original|name",
+                                         "format": "json", "formatversion": 2})
+            try:
+                more = json.loads(get("https://en.wikipedia.org/w/api.php?" + q2)).get("query", {}).get("pages", [])
+                seen = {p.get("title") for p in pages}
+                pages += [p for p in sorted(more, key=lambda p: p.get("index", 99)) if p.get("title") not in seen]
+            except Exception:
+                pass
         pick = same_person(t, name, pages)
         if pick is None:
             log(f"фото '{name}': среди статей ({', '.join(p.get('title', '') for p in pages)}) нет именно этого человека")
@@ -1110,8 +1131,8 @@ def commons_generic(t):
         if bad_text(desc + " " + pg.get("title", ""), user_blocks()):
             continue
         blob = (desc + " " + pg.get("title", "")).lower()
-        if re.search(r"\b(air base|troops|soldiers?|military|army|navy|marines|airmen|visit(s|ed)?|ceremony|funeral|memorial)\b", blob) \
-                and not re.search(r"(?i)military|army|navy|war|troops|base|memorial|funeral", query + " " + t.get("term", "")):
+        if re.search(r"\b(air base|troops|soldiers?|military|army|navy|marines|airmen|visit(s|ed)?|ceremony|funeral|memorial|reception|gala|banquet|dinner|award(s)?|meeting)\b", blob) \
+                and not re.search(r"(?i)military|army|navy|war|troops|base|memorial|funeral|award|gala|dinner|meeting", query + " " + t.get("term", "")):
             continue                     # «бойцы UFC посещают авиабазу» к новости про бой не подходит
         cands.append((pg, ii, md, lic, desc))
         if len(cands) >= 10:
@@ -1227,10 +1248,16 @@ def generic_images(store, limit=12):
     for t in store["topics"].values():          # фото человека, которого нет в тексте, — убрать
         im = t.get("img") or {}
         if im.get("wiki") and t.get("main_person") and not person_in_text(t, t["main_person"]):
-            t.pop("img"); t.pop("gen_tried", None); t["person_tried"] = True
+            t.pop("img"); t.pop("gen_tried", None); t["person_tried"] = 2
     for t in store["topics"].values():          # иллюстрации, выбранные старым способом (без проверки ИИ), подбираем заново
-        if (t.get("img") or {}).get("generic") and t["img"].get("gv") != 4:
+        im = t.get("img") or {}
+        if im.get("generic") and (im.get("gv") != 4 or (
+                re.search(r"(?i)reception|gala|banquet|dinner|award|ceremony|visit", im.get("src", "") + im.get("credit", ""))
+                and not re.search(r"(?i)award|gala|dinner|ceremony|visit", t.get("term", "")))):
             t.pop("img"); t.pop("gen_tried", None)
+    for t in store["topics"].values():          # людей без фото пробуем ещё раз — уже с уточняющим поиском
+        if t.get("main_person") and t.get("person_tried") is True and (not t.get("img") or t["img"].get("generic")):
+            t["person_tried"] = None             # одна повторная попытка; после неё person_tried = 2
     # фото людей, найденные без проверки «тот ли это человек», перепроверяем
     for t in store["topics"].values():
         im = t.get("img") or {}
@@ -1252,7 +1279,7 @@ def generic_images(store, limit=12):
             mp = None                                  # человек не упомянут в тексте — лучше иллюстрация
         if t.get("ai") and not t.get("blocked") and mp and not t.get("person_tried") \
                 and (not t.get("img") or t["img"].get("generic")):
-            t["person_tried"] = True
+            t["person_tried"] = 2
             try:
                 img = wiki_image(t, mp)
                 if img:
@@ -1848,7 +1875,8 @@ def related_for(t, lists):
 
 GENERIC_TERMS = {"news", "news today", "today news", "tv", "weather", "sports", "sport", "crime", "jobs", "job", "flights",
                  "fitness", "schools", "school", "music", "movies", "games", "politics", "world", "business", "us",
-                 "usa", "money", "health", "food", "travel", "shopping", "stocks", "election", "elections", "breaking news"}
+                 "usa", "money", "health", "food", "travel", "shopping", "stocks", "election", "elections", "breaking news",
+                 "internet", "google", "facebook", "youtube", "weather today", "score", "scores", "game tonight", "live"}
 
 
 def generic_term(term):
