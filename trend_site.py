@@ -49,7 +49,7 @@ DIG = True                 # «копать»: ИИ сам ищет в инте�
 DIG_PER_DAY = 3            # для скольких самых крупных новых тем в сутки (поиск стоит денег: ~10-15 центов за тему)
 DIG_SEARCHES = 8           # сколько поисковых запросов ИИ может сделать на одну тему
 DIG_MODEL = AI_MODEL       # модель для расследования
-RULES_V = 7                # версия правил для текстов; старые сводки переписываются постепенно
+RULES_V = 8                # версия правил для текстов; старые сводки переписываются постепенно
 REWRITE_PER_RUN = 8        # сколько старых сводок переписывать за запуск
 AI_REVIEW = True           # второй ИИ-«редактор» проверяет каждую сводку и объяснение перед публикацией и снимает плохие
 INDEXNOW = True            # мгновенно сообщать Bing/Yahoo/DuckDuckGo о новых страницах
@@ -497,8 +497,12 @@ def copied(text, sources, n=8):
 STYLE_1930 = """WRITING STYLE — an American newspaper correspondent of the 1930s (New York Times, AP wire), but clear to a reader today:
 - Inverted pyramid. The first sentence carries who, what, where and when; later paragraphs add detail in falling order of importance.
 - Short paragraphs of one or two sentences, as in a newspaper column.
-- Formal, sober, exact. Past tense for events. No slang, no exclamation marks, no "you", no emojis, no hype words
-  ("shocking", "slams", "epic", "fans are buzzing").
+- Sober and exact, but NOT an official bulletin: tell it like a good reporter explaining the story to a neighbor.
+  Plain everyday words, sentences under 25 words. Past tense for events. No slang, no exclamation marks, no emojis,
+  no hype words ("shocking", "slams", "epic", "fans are buzzing").
+- Explain any jargon in a few words the first time it appears, so anyone can follow
+  (e.g. "injured reserve, the list of players sidelined for at least four games").
+- Never write about the sources themselves ("a headline says", "another outlet described", "that item is headline-only").
 - Period touches used lightly: "was rushed to a hospital", "it was learned", "officials said last night", "the former champion".
   On second reference use the surname alone (no "Mr." or "Mrs.").
 - Name days and dates exactly ("on Thursday", "Oct. 23"); never "recently".
@@ -757,6 +761,9 @@ def write_summary(t, key, feedback="", do_dig=False):
         full = " ".join([out.get("why", ""), out.get("behind", ""), out.get("headline", ""), out.get("summary", ""), " ".join(out.get("key_points", [])), out.get("unknown", "")])
         hits = copied(full, texts)
         if not hits:
+            for k in ("summary", "behind", "why", "next"):
+                if isinstance(out.get(k), str):
+                    out[k] = out[k].replace("\\n", "\n").strip()
             if out.get("category") in CATS:
                 t["cat"] = out["category"]
             fu = []
@@ -1590,7 +1597,7 @@ figure.hero figcaption{font:italic 11.5px "Old Standard TT",serif;margin-top:4px
 .chip-s{white-space:nowrap;font:italic 11.5px "Old Standard TT",serif}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:0;border-left:1px solid var(--line)}
 .card{display:flex;flex-direction:column;gap:5px;padding:12px 14px 14px;min-width:0;border-right:1px solid var(--line);border-bottom:1px solid var(--soft)}
-.card img{width:100%;height:140px;object-fit:cover;object-position:50% 20%;border:1px solid var(--line);margin-bottom:2px}
+.card img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:50% 20%;border:1px solid var(--line);margin-bottom:2px}
 .card-top{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--line);padding-bottom:2px}
 .num{font:700 10.5px "Old Standard TT",serif;letter-spacing:.14em;text-transform:uppercase}
 .card h3{font:400 30px/.95 "League Gothic","Oswald",Impact,sans-serif;margin:4px 0 0;overflow-wrap:anywhere}
@@ -1615,7 +1622,16 @@ a.xl{text-decoration:underline;text-decoration-style:dotted;text-underline-offse
 .ct th,.ct td{text-align:left;padding:6px 9px;border-bottom:1px solid var(--soft);vertical-align:top}
 .ct th{font-size:10.5px;text-transform:uppercase;letter-spacing:.14em;border-top:2px solid var(--line);border-bottom:1px solid var(--line)}
 .ct td:last-child{font-style:italic;font-size:13.5px}
-@media (max-width:700px){.lead.has-img{grid-template-columns:1fr}body{font-size:16px}}
+.ls{text-align:center;margin:4px 0 16px}
+.ls button{font:700 12px "Old Standard TT",serif;text-transform:uppercase;letter-spacing:.14em;color:var(--fg);background:transparent;
+  border:1px solid var(--line);outline:1px solid var(--line);outline-offset:2px;padding:8px 16px;margin:0 6px;cursor:pointer}
+.ls button:hover{background:var(--chip)}
+::highlight(ls-s){background-color:rgba(214,170,60,.28)}
+::highlight(ls-w){background-color:#e0b23c;color:#1a1714}
+.ls-cur{background:rgba(214,170,60,.28)}
+img.whole{object-fit:contain!important;background:var(--chip)}
+.card img,.lead img,figure.hero img{object-position:50% 22%}
+@media (max-width:700px){.lead.has-img{grid-template-columns:1fr}}
 """
 
 
@@ -1719,12 +1735,75 @@ def topic_summary(t):
     return " ".join(s), srcs
 
 
+_SHAPE = {}
+
+
+def shape(f):
+    """ Вертикальное фото (портрет) показываем целиком, а не обрезаем — чтобы не резать лица. """
+    if f in _SHAPE:
+        return _SHAPE[f]
+    cls = ""
+    try:
+        from PIL import Image
+        with Image.open(os.path.join(OUT, f)) as im:
+            w, h = im.size
+        cls = ' class="whole"' if h > w * 0.8 else ""
+    except Exception:
+        pass
+    _SHAPE[f] = cls
+    return cls
+
+
+LISTEN = True    # кнопка «Послушать статью»: читает текст голосом, встроенным в телефон/компьютер (бесплатно)
+
+
+def listen_html():
+    if not LISTEN:
+        return ""
+    return r"""<div class="ls"><button type="button" id="ls-b" hidden>&#9654; Listen to this article</button><button type="button" id="ls-s" hidden>&#9632; Stop</button></div>
+<script>(function(){var S=window.speechSynthesis,b=document.getElementById('ls-b'),s=document.getElementById('ls-s');
+if(!S||!b)return;b.hidden=false;var items=[],k=0,on=false,paused=false,HL=!!(window.CSS&&CSS.highlights&&window.Highlight),cur=null;
+function voice(){var v=S.getVoices().filter(function(x){return /^en[-_]US/i.test(x.lang)});
+var male=/andrew|christopher|guy|davis|eric|brian|roger|steffan|aaron|evan|tom\b|alex\b|fred|daniel|james|ryan/i,good=/natural|neural|premium|enhanced|online/i;
+var c=v.filter(function(x){return male.test(x.name)&&good.test(x.name)});if(c.length)return c[0];
+c=v.filter(function(x){return male.test(x.name)});if(c.length)return c[0];
+c=v.filter(function(x){return good.test(x.name)});return c[0]||v[0]||null;}
+function collect(){var a=document.querySelector('article'),out=[];if(!a)return out;
+var els=a.querySelectorAll('h1,.deck2,.answer p,p,h2,h3,li');
+for(var i=0;i<els.length;i++){var e=els[i];
+if(e.closest('.meta,figure,.ls,.rx,.ad,.list,.ct,.byline,.grid,.card,.chips,.xlinks,aside')||e.classList.contains('meta')||e.classList.contains('byline'))continue;
+if(e.tagName=='H2'&&/sources|trend data|explained|more in|also trending/i.test(e.textContent))break;
+if(e.querySelector('p,li'))continue;
+var tx=e.textContent,re=/[^.!?]+[.!?]*["'”]?\s*/g,m;
+while((m=re.exec(tx))){var st=m.index,en=m.index+m[0].length,piece=m[0].trim();if(!piece||!/[a-z0-9]/i.test(piece))continue;
+st+=m[0].length-m[0].replace(/^\s+/,'').length;out.push({el:e,start:st,end:st+piece.length,text:piece});}}
+return out;}
+function range(el,a,z){var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT),n,pos=0,r=document.createRange(),sa=false;
+while((n=w.nextNode())){var L=n.nodeValue.length;
+if(!sa&&a<=pos+L){r.setStart(n,Math.max(0,a-pos));sa=true;}
+if(sa&&z<=pos+L){r.setEnd(n,Math.max(0,z-pos));return r;}pos+=L;}return sa?r:null;}
+function mark(it,ws,we){if(HL){var r=range(it.el,it.start,it.end);if(r)CSS.highlights.set('ls-s',new Highlight(r));
+if(ws!=null){var r2=range(it.el,it.start+ws,it.start+we);if(r2)CSS.highlights.set('ls-w',new Highlight(r2));}else CSS.highlights.delete('ls-w');}
+else{if(cur&&cur!==it.el)cur.classList.remove('ls-cur');it.el.classList.add('ls-cur');}cur=it.el;}
+function clear(){if(HL){CSS.highlights.delete('ls-s');CSS.highlights.delete('ls-w');}if(cur)cur.classList.remove('ls-cur');cur=null;}
+function view(el){var r=el.getBoundingClientRect();if(r.top<70||r.bottom>window.innerHeight-70)el.scrollIntoView({block:'center',behavior:'smooth'});}
+function next(){if(!on)return;if(k>=items.length){stop();return;}var it=items[k++];
+var u=new SpeechSynthesisUtterance(it.text),v=voice();if(v)u.voice=v;u.lang='en-US';u.rate=0.93;u.pitch=0.85;
+u.onstart=function(){mark(it);view(it.el);};
+u.onboundary=function(e){if(e.name&&e.name!='word')return;var i0=e.charIndex,L=e.charLength||((it.text.slice(i0).match(/^\S+/)||[''])[0].length);mark(it,i0,i0+L);};
+u.onend=next;u.onerror=next;S.speak(u);}
+function stop(){on=false;paused=false;S.cancel();k=0;clear();b.innerHTML='&#9654; Listen to this article';s.hidden=true;}
+b.onclick=function(){if(!on){on=true;items=collect();k=0;s.hidden=false;b.innerHTML='&#10074;&#10074; Pause';next();}
+else if(!paused){S.pause();paused=true;b.innerHTML='&#9654; Continue';}else{S.resume();paused=false;b.innerHTML='&#10074;&#10074; Pause';}};
+s.onclick=stop;window.addEventListener('pagehide',stop);if(S.onvoiceschanged!==undefined)S.onvoiceschanged=function(){};})();</script>"""
+
+
 def mini_cards(items):
     out = []
     for r in items:
         img = (r.get("img") or {}).get("file")
         out.append(f'<a class="card" href="{E(r["slug"])}.html">'
-                   + (f'<img src="../{E(img)}" alt="" loading="lazy">' if img else "")
+                   + (f'<img{shape(img)} src="../{E(img)}" alt="" loading="lazy">' if img else "")
                    + f'<div class="card-top"><span class="num">{E(fmt_et(r.get("last_seen", r["first_seen"])).split(",")[0])}</span>'
                    f'<span class="chip-s">{E(peak_label(r))}</span></div>'
                    f'<h3>{E(r["term"])}</h3><p class="head">{E((r.get("ai") or {}).get("headline", ""))}</p></a>')
@@ -1761,10 +1840,13 @@ def anchor_phrases(x):
     return res
 
 
+SHOW_REACTIONS = False     # True — снова показать смайлики-реакции под статьями
 REACTIONS = ["👍", "👎", "😂", "😮", "😢", "😡", "❤️", "🤔", "🔥", "👏"]
 
 
 def reactions_html(page_key):
+    if not SHOW_REACTIONS:
+        return ""                       # смайлики под статьями выключены
     """Ряд смайликов под статьёй со счётчиками (счёт хранится в Cloudflare, см. worker.js)."""
     btns = "".join(f'<button type="button" class="rx-b" data-e="{i}" aria-label="{e}"><span class="rx-e">{e}</span>'
                    f'<span class="rx-n" data-n="{i}"></span></button>' for i, e in enumerate(REACTIONS))
@@ -1822,7 +1904,7 @@ def build_topic(t, related, same=()):
             mon = ["Jan.", "Feb.", "March", "April", "May", "June", "July", "Aug.", "Sept.", "Oct.", "Nov.", "Dec."][d0.month - 1]
             dl = f'<b class="dl">{E(dl.upper() if "," not in dl else dl.split(",")[0].upper() + "," + dl.split(",", 1)[1])}, {mon} {d0.day}</b> — '
         pl = [f'<p{" class=dc" if i == 0 and not dl else ""}>{dl if i == 0 else ""}{E(p)}</p>'
-              for i, p in enumerate(x for x in ai.get("summary", "").split("\n\n") if x.strip())]
+              for i, p in enumerate(x for x in ai.get("summary", "").replace("\\n", "\n").split("\n\n") if x.strip())]
         # ссылка на объяснение прямо в тексте: первое упоминание термина становится ссылкой
         for x in xs:
             done_x = False
@@ -1863,7 +1945,7 @@ def build_topic(t, related, same=()):
                        for h, ti, u in ai["dug"][:10]) + "</ul>") if ai.get("dug") and ai.get("behind") else ""))
     img = t.get("img"); card = t.get("card")
     if img:
-        hero = (f'<figure class="hero"><img src="../{E(img["file"])}" alt="{E(t["term"])}" loading="eager">'
+        hero = (f'<figure class="hero"><img{shape(img["file"])} src="../{E(img["file"])}" alt="{E(t["term"])}" loading="eager">'
                 f'<figcaption>{(E(img["who"]) + ". ") if img.get("who") else ""}{"Illustration" if img.get("generic") else "Photo"}: {E(img["credit"])} / <a href="{E(img["src"])}" target="_blank" rel="noopener">{E(img["license"])}</a>, via Wikimedia Commons</figcaption></figure>')
     else:   # обложка-заглушка на странице не показывается, только в превью ссылки (og:image)
         hero = ""
@@ -1874,6 +1956,7 @@ def build_topic(t, related, same=()):
 <p class="deck">Why it is trending in America today</p>
 {('<p class="deck2">' + E(ai.get("headline", "")) + '</p>') if ai and ai.get("headline") else ''}
 <hr class="dash"><p class="byline">By the Trend Rundown staff</p>
+{listen_html() if ai else ""}
 {hero}
 <div class="cols">{ai_html}</div>
 {reactions_html("t/" + t["slug"]) if ai else ""}
@@ -1951,7 +2034,7 @@ def build_index(store):
         srcs, head = info(t)
         img = (t.get("img") or {}).get("file")
         return (f'<a class="card" href="t/{E(t["slug"])}.html">'
-                + (f'<img src="{E(img)}" alt="" loading="lazy">' if img else "")
+                + (f'<img{shape(img)} src="{E(img)}" alt="" loading="lazy">' if img else "")
                 + f'<div class="card-top"><span class="num">{E(label)}</span><span class="chip-s">{E(chip)}</span></div>'
                 f'<h3>{E(t["term"])}</h3><p class="head">{E(head)}</p>'
                 + (f'<p class="snip">{E(snip(t))}</p>' if snip(t) else "")
@@ -1964,7 +2047,7 @@ def build_index(store):
         img = (t.get("img") or {}).get("file")
         tr = (t["traffic"][-1][2] if live else peak_label(t)) if t["traffic"] else ""
         parts.append(f'<a class="lead{" has-img" if img else ""}" href="t/{E(t["slug"])}.html">'
-                     + (f'<img src="{E(img)}" alt="">' if img else "")
+                     + (f'<img{shape(img)} src="{E(img)}" alt="">' if img else "")
                      + f'<div class="lead-txt"><span class="badge">#1 · {E(tr)} searches</span>'
                      f'<h2 class="lead-term">{E(t["term"])}</h2><p class="lead-head">{E(head)}</p>'
                      + (f'<hr class="dash" style="margin:8px 0"><p class="snip">{E(snip(t, 420))}</p>' if snip(t) else "")
@@ -2001,7 +2084,7 @@ def build_category(cat, topics):
         ai = t.get("ai") or {}
         img = (t.get("img") or {}).get("file")
         cards.append(f'<a class="card" href="../t/{E(t["slug"])}.html">'
-                     + (f'<img src="../{E(img)}" alt="" loading="lazy">' if img else "")
+                     + (f'<img{shape(img)} src="../{E(img)}" alt="" loading="lazy">' if img else "")
                      + f'<div class="card-top"><span class="num">{E(fmt_et(t["first_seen"]).split(",")[0])}</span>'
                      f'<span class="chip-s">{E(peak_label(t))} peak</span></div>'
                      f'<h3>{E(t["term"])}</h3><p class="head">{E(ai.get("headline", ""))}</p></a>')
@@ -2041,6 +2124,7 @@ def build_explainer(x, topics):
     body = f"""<article>
 <p class="meta"><a href="../index.html">{SITE_NAME}</a> › <a class="cat" href="../explained.html">Explained</a> · updated {E(fmt_et(x["made"]))}</p>
 <h1>{E(x["title"])}</h1>
+{listen_html()}
 <div class="box answer"><p style="margin:0">{E(x["answer"])}</p></div>
 <h2>Why it's in the news</h2><p>{E(x["in_the_news"])}</p>
 {('<ul class="list">' + newslist + '</ul>') if newslist else ''}
@@ -2954,6 +3038,7 @@ def build_cast(x):
     body = f"""<article>
 <p class="meta"><a href="../index.html">{SITE_NAME}</a> › <a class="cat" href="../cast.html">Cast guides</a> · {E(what)} · updated {E(fmt_et(x["made"]))}</p>
 <h1>{E(cast_title(x))}</h1>
+{listen_html()}
 <div class="box answer"><p style="margin:0">{E(answer)}</p></div>
 {paras}
 <h2>The cast at a glance</h2><ul class="list">{quick}</ul>
