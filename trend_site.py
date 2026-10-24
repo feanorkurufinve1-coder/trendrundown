@@ -39,12 +39,17 @@ CATS = {                   # разделы сайта: тема попадае�
     "tech": "Tech & Science", "world": "World", "lifestyle": "Lifestyle", "other": "More news",
 }
 ONLY_WITH_SUMMARY = True  # публиковать только темы со сводкой ИИ (защита от санкций Google за «массовый контент»)
-MAX_NEW_PER_DAY = 20       # сколько новых тем в сутки (по времени США) получают сводку и попадают на сайт — самые крупные
+MAX_NEW_PER_DAY = 12       # сколько новых тем в сутки (по времени США) получают сводку и попадают на сайт — самые крупные
 EXPLAIN = True             # объяснения: что люди начнут гуглить после новости (термины, законы, места, малоизвестные люди)
 MAX_EXPLAINERS_PER_DAY = 15   # сколько новых объяснений в сутки
 EXPLAINERS_PER_TOPIC = 2      # не больше стольких объяснений из одной новости
 MIN_FULL_ARTICLES = 1      # писать сводку, только если хотя бы столько статей удалось прочитать целиком (не одни заголовки)
-RULES_V = 5                # версия правил для текстов; старые сводки переписываются постепенно
+MIN_OUTLETS = 3            # и только если о теме написали хотя бы столько разных изданий — качество, а не количество
+DIG = True                 # «копать»: ИИ сам ищет в интернете предысторию и скрытую причину тренда
+DIG_PER_DAY = 3            # для скольких самых крупных новых тем в сутки (поиск стоит денег: ~10-15 центов за тему)
+DIG_SEARCHES = 8           # сколько поисковых запросов ИИ может сделать на одну тему
+DIG_MODEL = AI_MODEL       # модель для расследования
+RULES_V = 7                # версия правил для текстов; старые сводки переписываются постепенно
 REWRITE_PER_RUN = 8        # сколько старых сводок переписывать за запуск
 AI_REVIEW = True           # второй ИИ-«редактор» проверяет каждую сводку и объяснение перед публикацией и снимает плохие
 INDEXNOW = True            # мгновенно сообщать Bing/Yahoo/DuckDuckGo о новых страницах
@@ -489,7 +494,21 @@ def copied(text, sources, n=8):
     return [" ".join(g) for g in (tuple(w[i:i + n]) for i in range(len(w) - n + 1)) if g in src]
 
 
-PROMPT = """You write short, original explainers for a US website that tells readers why a topic is trending on Google.
+STYLE_1930 = """WRITING STYLE — an American newspaper correspondent of the 1930s (New York Times, AP wire), but clear to a reader today:
+- Inverted pyramid. The first sentence carries who, what, where and when; later paragraphs add detail in falling order of importance.
+- Short paragraphs of one or two sentences, as in a newspaper column.
+- Formal, sober, exact. Past tense for events. No slang, no exclamation marks, no "you", no emojis, no hype words
+  ("shocking", "slams", "epic", "fans are buzzing").
+- Period touches used lightly: "was rushed to a hospital", "it was learned", "officials said last night", "the former champion".
+  On second reference use the surname alone (no "Mr." or "Mrs.").
+- Name days and dates exactly ("on Thursday", "Oct. 23"); never "recently".
+- Plain modern words where an old word would confuse. Never use outdated terms for groups of people.
+Example of the tone (invented, do not reuse): "Ric Flair, the wrestling champion of an earlier generation, was taken to a
+hospital in Tampa on Thursday after a fall outside a restaurant. He had disclosed only days before that physicians were
+treating him for blood clots in one leg." """
+
+PROMPT = """You answer ONE question for a US website: WHY is this topic trending on Google right now? Find the cause.
+Compare all the sources: what single event or development made many people search for it at this moment?
 
 Topic people are searching for: "{term}"
 Search interest: {traffic}
@@ -501,13 +520,19 @@ Rules:
   on Thursday." Never "according to...", "X reported", "reports say", "headlines say", "per posts on Reddit", "the outlet said".
 - Neutral, plain American English, no hype, no speculation, no opinions. If outlets disagree, say so. If something is unclear, say it is unclear.
 - Never add facts that are not in the sources.
-- Write about the NEWS itself. Never mention searches, "search interest", "drawing attention" or why people are searching —
-  start straight with what happened (who, what, when).
+- "why" is the heart of the page: 1-2 sentences naming the concrete trigger and when it happened, e.g.
+  "Ric Flair is trending after he was taken to a hospital in Tampa on Thursday following a fall." Use only facts from the
+  sources; if the sources point to several triggers, name the main one and mention the second. Never guess at feelings
+  ("fans are curious") — name the event.
+- "summary" is CONTEXT, not a retelling: what led up to it, what it changes, what happens next — 2 short paragraphs.
+- If there is a RESEARCH MEMO [R], use it to find the DEEPER cause: "behind" = 1-2 paragraphs on the story behind the trend
+  (history, earlier events, connections) that most readers do not know. Only facts backed by its EVIDENCE lines; skip
+  anything listed as unconfirmed. Without a memo, or if it found nothing deeper, "behind" is an empty string.
 - Do NOT name news outlets, websites or social networks in the text ("according to ESPN", "Yahoo reported", "on Reddit"). The sources are listed under the article.
   If a claim is not confirmed, say so in plain words ("this has not been confirmed") instead of naming who said it.
   Only people in the story may be quoted ("Kerr said ..."), rarely.
 - Many sources are headlines only. Then write shorter (80-120 words) and state only what the headlines say; never fill gaps.
-- Do not write about search interest or guess why people are searching ("fans are curious", "likely because").
+- Apart from "why", do not write about searches or guess why people search.
 - Set "safe": false if the topic is mainly about sexual or pornographic content, nudity or leaked intimate images, graphic violence or gore videos, terrorist or extremist propaganda, instructions for weapons, drugs, self-harm or crime, hate speech, gambling promotion, scams, or naming/accusing a private person (not a public figure) or identifying a minor in a crime. Ordinary news coverage of crime, accidents, politics or deaths reported by mainstream outlets is safe.
 
 Also pick ONE category for the topic: sports, entertainment, politics, business, tech, world, lifestyle or other
@@ -524,8 +549,10 @@ people don't know well. Give 0-4 items. Rules: only things the sources explain o
 LeBron James, Apple, the NFL, Congress). "subject" = the thing itself as people would type it (1-5 words);
 "query" = the exact search, e.g. "what is a continuing resolution", "who is sam laporta", "where is sinigaglia stadium".
 
+{style}
+
 Return ONLY JSON:
-{{"safe": true or false, "safety_reason": "if not safe, why", "on_topic": true or false, "headline": "the concrete news that explains the searches, max 12 words — a fact, e.g. 'Barcelona beat PSG 3-1 in Paris' or 'Kickoff, TV channel and lineups for tonight's match'; never vague phrases like 'draws interest', 'trends', 'searches spike', 'ahead of'", "summary": "2 short paragraphs, 120-200 words total, separated by \\n\\n", "key_points": ["3-5 short facts"], "unknown": "one sentence on what is not known yet, or empty string", "category": "one of the categories above", "followups": [{{"subject": "...", "query": "...", "kind": "term|law|place|organization|product|event|person|other"}}], "main_person": "if the searched term itself is a person's name, that person's FULL name; if the term is a team, club, company, place, show or thing, empty string; otherwise the FULL name of the ONE well-known public figure the story is mainly about, or empty string", "image_query": "2-4 plain English words to find a matching free photo of WHAT PEOPLE SEARCHED (the term above). Prefer objects, venues and scenes, not people (e.g. 'MMA octagon cage' rather than 'UFC fighters'). If the story is about a specific team, club, company, place, event, show or product, NAME IT (e.g. 'Real Madrid players', 'Santiago Bernabeu stadium', 'Tesla factory', 'Lambeau Field', 'Marine Corps Marathon runners'); only if it is about nothing specific, use a generic scene (e.g. 'judge gavel', 'stock market screen'). Never a private person"}}
+{{"safe": true or false, "safety_reason": "if not safe, why", "on_topic": true or false, "dateline": "CITY, State abbreviation in 1930s newspaper form where the main event happened, e.g. 'TAMPA, Fla.' or 'WASHINGTON' or 'LONDON'; empty string if unclear", "why": "1-2 sentences: TERM is trending after/because <the concrete event and when>", "next": "one sentence on what happens next (next game, hearing, release date) if the sources say, else empty", "behind": "the story behind it from the research memo, or empty", "headline": "the concrete news that explains the searches, max 12 words — a fact, e.g. 'Barcelona beat PSG 3-1 in Paris' or 'Kickoff, TV channel and lineups for tonight's match'; never vague phrases like 'draws interest', 'trends', 'searches spike', 'ahead of'", "summary": "context, 2 short paragraphs, 90-160 words total, separated by \\n\\n", "key_points": ["3-5 short facts"], "unknown": "one sentence on what is not known yet, or empty string", "category": "one of the categories above", "followups": [{{"subject": "...", "query": "...", "kind": "term|law|place|organization|product|event|person|other"}}], "main_person": "if the searched term itself is a person's name, that person's FULL name; if the term is a team, club, company, place, show or thing, empty string; otherwise the FULL name of the ONE well-known public figure the story is mainly about, or empty string", "image_query": "2-4 plain English words to find a matching free photo of WHAT PEOPLE SEARCHED (the term above). Prefer objects, venues and scenes, not people (e.g. 'MMA octagon cage' rather than 'UFC fighters'). If the story is about a specific team, club, company, place, event, show or product, NAME IT (e.g. 'Real Madrid players', 'Santiago Bernabeu stadium', 'Tesla factory', 'Lambeau Field', 'Marine Corps Marathon runners'); only if it is about nothing specific, use a generic scene (e.g. 'judge gavel', 'stock market screen'). Never a private person"}}
 
 SOURCES:
 {sources}"""
@@ -539,6 +566,10 @@ AI_TOOL = {
         "properties": {
             "safe": {"type": "boolean"},
             "safety_reason": {"type": "string"},
+            "why": {"type": "string"},
+            "next": {"type": "string"},
+            "behind": {"type": "string"},
+            "dateline": {"type": "string"},
             "headline": {"type": "string"},
             "summary": {"type": "string"},
             "key_points": {"type": "array", "items": {"type": "string"}},
@@ -552,7 +583,7 @@ AI_TOOL = {
                 "kind": {"type": "string", "enum": ["term", "law", "place", "organization", "product", "event", "person", "other"]}},
                 "required": ["subject", "query", "kind"]}},
         },
-        "required": ["safe", "headline", "summary", "key_points", "category"],
+        "required": ["safe", "why", "headline", "summary", "key_points", "category"],
     },
 }
 
@@ -583,7 +614,97 @@ def ai_call(prompt, key, tool=None, max_tokens=2000):
 RUN_SOURCES = {}   # тексты статей этого прохода — только в памяти, нужны для объяснений, не сохраняются
 
 
-def write_summary(t, key, feedback=""):
+DIG_PROMPT = """You are an investigative researcher for a US website that explains WHY topics trend on Google.
+"{term}" is trending in the US right now (about {traffic} searches). Headlines so far:
+{headlines}
+
+The obvious headline is rarely the whole story. DIG, using web search:
+1. Pin down the exact trigger: what happened, when, and why it hit now.
+2. Dig into the backstory: earlier events, history, old disputes, deals, rule changes, anniversaries, past controversies
+   or long-running trends that set this up. Search for the history, not only today's news.
+3. Find the connections an ordinary reader would miss: why this matters, who is affected, what it leads to next.
+4. Check claims against more than one source. Separate confirmed facts from claims and from speculation.
+Do at most {n} searches. Prefer established news outlets, official sources and encyclopedias. Ignore rumors and gossip sites.
+
+Then write a research memo in plain English:
+TRIGGER: ...
+BACKSTORY: ... (the deeper cause, with dates)
+CONNECTIONS: ...
+WHAT'S NEXT: ...
+UNCONFIRMED: ... (claims you could not confirm)
+Every fact must come from a search result. If you found nothing deeper than the headline, say so plainly."""
+
+
+def dig(t, key):
+    """ИИ-исследователь с поиском в интернете: ищет предысторию и неочевидную причину тренда."""
+    heads = "\n".join(f"- {a['source']}: {a['title']}" for a in t["articles"][-10:])
+    traffic = t["traffic"][-1][2] if t["traffic"] else "unknown"
+    msgs = [{"role": "user", "content": DIG_PROMPT.format(term=t["term"], traffic=traffic, headlines=heads, n=DIG_SEARCHES)}]
+    tools = [{"type": "web_search_20250305", "name": "web_search", "max_uses": DIG_SEARCHES,
+              "user_location": {"type": "approximate", "country": "US"}}]
+    blocks = []
+    for _ in range(3):                       # pause_turn — продолжаем, пока ИИ не закончит
+        body = json.dumps({"model": DIG_MODEL, "max_tokens": 3000, "tools": tools, "messages": msgs}).encode()
+        req = urllib.request.Request("https://api.anthropic.com/v1/messages", data=body, method="POST", headers={
+            "x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"})
+        try:
+            with urllib.request.urlopen(req, timeout=240, context=CTX) as r:
+                data = json.loads(r.read().decode())
+        except urllib.error.HTTPError as e:
+            log(f"расследование '{t['term']}': HTTP {e.code}: {e.read().decode(errors='replace')[:200]}")
+            return None
+        except Exception as e:
+            log(f"расследование '{t['term']}': {e}")
+            return None
+        blocks += data.get("content", [])
+        if data.get("stop_reason") != "pause_turn":
+            break
+        msgs.append({"role": "assistant", "content": data["content"]})
+    memo, evidence, links, seen = [], [], [], set()
+    searches = 0
+    for b in blocks:
+        if b.get("type") == "server_tool_use":
+            searches += 1
+        if b.get("type") == "text":
+            memo.append(b.get("text", ""))
+            for c in b.get("citations") or []:
+                url = c.get("url", "")
+                if c.get("cited_text"):
+                    evidence.append(f"{c.get('title', '')} ({url}): {c['cited_text']}")
+                if url and url not in seen:
+                    seen.add(url)
+                    host = urllib.parse.urlparse(url).netloc.replace("www.", "")
+                    links.append((host, c.get("title", "") or host, url))
+    text = "".join(memo).strip()
+    if len(text) < 200 or not evidence:
+        log(f"расследование '{t['term']}': ничего надёжного не нашлось")
+        return None
+    log(f"расследование '{t['term']}': {searches} поисков, {len(links)} источников")
+    return {"memo": text[:6000], "evidence": evidence[:40], "links": links[:10], "made": now_iso(), "searches": searches}
+
+ASK_BAD = re.compile(r"(?i)nude|naked|sexy|hot\b|porn|leak|onlyfans|feet|address|phone number|net worth|dead|death|died|"
+                     r"arrest|mugshot|wife|husband|girlfriend|boyfriend|gay|religion|stream free|reddit|twitter|tiktok")
+
+
+def people_ask(term):
+    """Что ещё американцы набирают в Google вместе с этим запросом (подсказки поиска) — наши собственные данные."""
+    got = []
+    for q in (term.lower(), "why is " + term.lower(), term.lower() + " news"):
+        try:
+            got += suggest(q)
+        except Exception:
+            pass
+        time.sleep(0.3)
+    key = [w for w in words(term) if len(w) > 2] or words(term)
+    out = []
+    for s in got:
+        s = s.strip()
+        if s.lower() != term.lower() and all(k in words(s) for k in key) and not ASK_BAD.search(s) and s not in out:
+            out.append(s)
+    return out[:8]
+
+
+def write_summary(t, key, feedback="", do_dig=False):
     picks, outlets = [], set()
     # сначала статьи, которые можно прочитать целиком (ссылки Google News открываются только как заголовок)
     for a in sorted(t["articles"], key=lambda a: ("news.google.com" not in a["url"], a["time"]), reverse=True):
@@ -592,7 +713,8 @@ def write_summary(t, key, feedback=""):
         outlets.add(a["source"]); picks.append(a)
         if len(picks) >= 6:
             break
-    if len(picks) < 2:
+    if len(picks) < MIN_OUTLETS:
+        t["thin_at"] = len(t["articles"])        # мало разных источников — ждём, пока напишут другие
         return None
     texts, blocks = [], []
     for i, a in enumerate(picks, 1):
@@ -605,8 +727,16 @@ def write_summary(t, key, feedback=""):
         t["thin_at"] = len(t["articles"])        # вернёмся к теме, когда появятся новые статьи
         log(f"'{t['term']}': только заголовки, полных статей нет — пока не пишу")
         return None
+    if do_dig and not t.get("dig"):
+        d = dig(t, key)
+        t["dig"] = d or {"none": True, "made": now_iso()}
+    d = t.get("dig") or {}
+    if d.get("memo"):
+        blocks.append("[R] RESEARCH MEMO from web searches (facts below are backed by the quoted evidence):\n" + d["memo"]
+                      + "\n\nEVIDENCE (quoted from the sources):\n" + "\n".join(d["evidence"]))
+        texts.append(" ".join(x.split(": ", 1)[-1] for x in d["evidence"]))
     traffic = t["traffic"][-1][2] if t["traffic"] else "unknown"
-    prompt = PROMPT.format(term=t["term"], traffic=traffic, sources="\n\n".join(blocks))
+    prompt = PROMPT.format(term=t["term"], traffic=traffic, sources="\n\n".join(blocks), style=STYLE_1930)
     if feedback:
         prompt += ("\n\nAn editor rejected your previous draft for this reason: " + feedback
                    + "\nWrite a new draft that fixes this. When unsure about a detail, leave it out.")
@@ -624,7 +754,7 @@ def write_summary(t, key, feedback=""):
             log(f"'{t['term']}': ИИ пометил тему как небезопасную ({out.get('safety_reason', '')}) — скрываю")
             t["blocked"] = "ai: " + str(out.get("safety_reason", ""))[:200]
             return None
-        full = " ".join([out.get("headline", ""), out.get("summary", ""), " ".join(out.get("key_points", [])), out.get("unknown", "")])
+        full = " ".join([out.get("why", ""), out.get("behind", ""), out.get("headline", ""), out.get("summary", ""), " ".join(out.get("key_points", [])), out.get("unknown", "")])
         hits = copied(full, texts)
         if not hits:
             if out.get("category") in CATS:
@@ -641,8 +771,11 @@ def write_summary(t, key, feedback=""):
             if iq:
                 t["image_query"] = iq[:50]; t["iq_v"] = 4
             RUN_SOURCES[t["slug"]] = {"texts": texts, "blocks": blocks,
-                                      "links": [(a["source"], a["title"], a["url"]) for a in picks]}
+                                      "links": [(a["source"], a["title"], a["url"]) for a in picks] + list(d.get("links", []))}
+            if d.get("links"):
+                out["dug"] = [list(x) for x in d["links"]]
             out["sources"] = [a["source"] for a in picks]
+            out["asked"] = people_ask(t["term"])
             out["rules"] = RULES_V
             out["made"] = now_iso(); out["n_articles"] = len(t["articles"])
             return out
@@ -779,17 +912,21 @@ def summarize(store):
             continue                     # раньше были одни заголовки; ждём новых статей
         if not ai and new_today >= allowed:
             continue                     # лимит на это время суток исчерпан; обновлять старые можно
-        res = write_summary(t, key)
+        dig_today = store.setdefault("dig_days", {}).get(today, 0)
+        do_dig = DIG and not ai and dig_today < DIG_PER_DAY
+        res = write_summary(t, key, do_dig=do_dig)
+        if do_dig and (t.get("dig") or {}).get("made", "") >= store.get("_run_started", "~"):
+            store["dig_days"] = {today: dig_today + 1}       # считаем только сегодняшние
         if res and re.search(r"(?i)according to|\b(reported|reports? (say|said))\b|reddit|headlines? (say|said|report)", res.get("summary", "")):
             res = write_summary(t, key, "Do not cite outlets, reports, headlines or Reddit at all. Tell the facts directly in your own words.") or res
         if res:
-            draft = (f"{t['term']}: {res.get('headline', '')}\n\n{res.get('summary', '')}\n\nKey facts: "
+            draft = (f"{t['term']}: {res.get('headline', '')}\n\nWhy trending: {res.get('why', '')}\n\nBehind it: {res.get('behind', '')}\n\n{res.get('summary', '')}\n\nKey facts: "
                      + "; ".join(res.get("key_points", [])) + f"\nUnknown: {res.get('unknown', '')}")
             ok = review(store, "news summary", f"{t['term']}: {res.get('headline', '')}", draft, RUN_SOURCES.get(t["slug"]), key)
             if not ok:                           # одна попытка исправить по замечанию редактора
                 res = write_summary(t, key, store["review_log"][-1]["reason"])
                 if res:
-                    draft = (f"{t['term']}: {res.get('headline', '')}\n\n{res.get('summary', '')}\n\nKey facts: "
+                    draft = (f"{t['term']}: {res.get('headline', '')}\n\nWhy trending: {res.get('why', '')}\n\n{res.get('summary', '')}\n\nKey facts: "
                              + "; ".join(res.get("key_points", [])) + f"\nUnknown: {res.get('unknown', '')}")
                     ok = review(store, "news summary (fixed)", f"{t['term']}: {res.get('headline', '')}", draft,
                                 RUN_SOURCES.get(t["slug"]), key)
@@ -852,7 +989,8 @@ Rules:
 - Answer only the people's questions that the sources (or well-established general knowledge) can answer; skip the rest.
 - Answer only questions ABOUT the subject (what, who, where, when, how it works, why it matters). Skip personal advice questions:
   health, diet, training, medical, legal, money or betting advice ("when should runners eat", "how to avoid cramps").
-- Own words only; never reuse more than 5 words in a row from a source. Neutral plain American English, no hype, no opinions.
+- Own words only; never reuse more than 5 words in a row from a source. No hype, no opinions.
+- Tone: a 1930s American newspaper correspondent, formal and exact but clear to a modern reader; short paragraphs.
 - Set "ok": false if this is a private individual (not a public figure), a minor, a crime victim, if the sources don't give enough to
   explain it, or if the subject is sexual, extremist, or about weapons, drugs, self-harm or gambling.
 
@@ -1325,9 +1463,9 @@ def make_card(t):
         return None
     from PIL import Image, ImageDraw
     W, H = 1200, 630
-    im = Image.new("RGB", (W, H), (22, 23, 27)); d = ImageDraw.Draw(im)
-    d.rectangle([0, 0, 18, H], fill=(210, 70, 31))
-    d.text((70, 60), "WHY IT'S TRENDING", font=_font(30, False), fill=(255, 140, 100))
+    im = Image.new("RGB", (W, H), (243, 239, 228)); d = ImageDraw.Draw(im)
+    d.rectangle([40, 40, W - 40, 46], fill=(17, 17, 17)); d.rectangle([40, H - 140, W - 40, H - 137], fill=(17, 17, 17))
+    d.text((70, 60), "WHY IT'S TRENDING", font=_font(30, False), fill=(74, 74, 74))
     title = t["term"]; size = 92
     while size > 40:
         f = _font(size); lines = []; cur = ""
@@ -1343,12 +1481,11 @@ def make_card(t):
         size -= 6
     y = 130
     for ln in lines:
-        d.text((70, y), ln, font=f, fill=(240, 238, 232)); y += int(size * 1.15)
+        d.text((70, y), ln, font=f, fill=(17, 17, 17)); y += int(size * 1.15)
     tr = t["traffic"][-1][2] if t["traffic"] else ""
     sub = (f"{tr} US searches · " if tr else "") + fmt_et(t["first_seen"])
-    d.text((70, H - 120), sub, font=_font(32, False), fill=(170, 174, 182))
-    d.text((70, H - 75), "Trend", font=_font(40), fill=(240, 238, 232))
-    d.text((70 + d.textlength("Trend", font=_font(40)), H - 75), "Rundown", font=_font(40), fill=(255, 122, 77))
+    d.text((70, H - 120), sub, font=_font(32, False), fill=(74, 74, 74))
+    d.text((70, H - 75), "The Trend Rundown", font=_font(40), fill=(17, 17, 17))
     os.makedirs(os.path.join(OUT, "img"), exist_ok=True)
     fn = f"img/card-{t['slug']}.png"
     im.save(os.path.join(OUT, fn), optimize=True)
@@ -1380,80 +1517,106 @@ def images(store):
 # ---------- сайт ----------
 E = html.escape
 CSS = """
-:root{--bg:#fbfaf7;--fg:#1d1f23;--muted:#62666e;--line:#e4e1da;--card:#ffffff;--accent:#d2461f;--chip:#f1eee7}
-@media (prefers-color-scheme:dark){:root{--bg:#131417;--fg:#e8e6e1;--muted:#9a9ea6;--line:#2a2c31;--card:#1a1c20;--accent:#ff7a4d;--chip:#23252a}}
+:root{--bg:#efe9da;--fg:#141210;--muted:#3d3a35;--line:#141210;--soft:#a39d8c;--chip:#e2dbc8}
+@media (prefers-color-scheme:dark){:root{--bg:#161512;--fg:#e9e3d3;--muted:#bdb6a5;--line:#e9e3d3;--soft:#4d4a43;--chip:#24221e}}
 *{box-sizing:border-box}html,body{background:var(--bg);color:var(--fg)}
-body{margin:0;font:16px/1.55 Georgia,"Times New Roman",serif}
-a{color:inherit}a:hover{color:var(--accent)}
-.wrap{max-width:860px;margin:0 auto;padding:18px max(16px,env(safe-area-inset-left)) 48px max(16px,env(safe-area-inset-right))}
-header.top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;border-bottom:2px solid var(--fg);padding-bottom:10px;margin-bottom:18px}
-.brand{font:700 26px/1 "Helvetica Neue",Arial,sans-serif;letter-spacing:-.02em;text-decoration:none}
-.brand span{color:var(--accent)}
-.tag,.meta,nav,.small{font-family:"Helvetica Neue",Arial,sans-serif}
-.tag{color:var(--muted);font-size:13px}
-nav a{font-size:14px;margin-left:14px;text-decoration:none;white-space:nowrap}
-nav{display:flex;flex-wrap:wrap;row-gap:4px}
-@media (max-width:640px){nav{flex-wrap:nowrap;overflow-x:auto;max-width:100%;padding-bottom:4px}nav a:first-child{margin-left:0}}
-.cat{color:var(--accent);text-decoration:none;font-weight:700;text-transform:uppercase;letter-spacing:.05em}
-h1{font-size:34px;line-height:1.15;margin:6px 0 10px;text-wrap:balance}
-h2{font:700 13px "Helvetica Neue",Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:30px 0 10px}
-.meta{color:var(--muted);font-size:13px}
-.box{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);padding:14px 16px;border-radius:4px}
+body{margin:0;font:16px/1.5 "Old Standard TT","Times New Roman",serif;
+  background-image:radial-gradient(rgba(60,40,10,.05) 1px,transparent 1.2px);background-size:4px 4px}
+a{color:inherit;text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:1120px;margin:0 auto;padding:12px max(14px,env(safe-area-inset-left)) 48px max(14px,env(safe-area-inset-right))}
+/* ---------- шапка газеты ---------- */
+header.top{text-align:center;margin-bottom:14px}
+.mast{display:grid;grid-template-columns:150px 1fr 150px;align-items:center;gap:14px;border-bottom:1px solid var(--line);padding-bottom:4px}
+.ear{border:3px double var(--line);padding:5px 6px;font:700 10px/1.35 "Old Standard TT",serif;text-transform:uppercase;letter-spacing:.06em}
+.ear b{display:block;font:400 22px/1 "League Gothic","Oswald",Impact,sans-serif;letter-spacing:.02em;margin:2px 0}
+.brand{display:block;white-space:nowrap;font:400 clamp(34px,7.4vw,80px)/1.02 "UnifrakturMaguntia","UnifrakturCook","Old English Text MT",serif;letter-spacing:.005em}
+.brand:hover{text-decoration:none}
+.motto{font:italic 12px "Old Standard TT",serif;margin-top:-2px}
+.dateline{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;border-top:3px solid var(--line);border-bottom:1px solid var(--line);
+  margin-top:3px;padding:3px 2px;font:700 11px/1.4 "Old Standard TT",serif;text-transform:uppercase;letter-spacing:.1em}
+nav{display:flex;justify-content:center;flex-wrap:wrap;padding:4px 0;border-bottom:3px solid var(--line);font:700 11px "Old Standard TT",serif;text-transform:uppercase;letter-spacing:.12em}
+nav a{padding:0 11px;border-left:1px solid var(--line);white-space:nowrap}nav a:first-child{border-left:0}
+@media (max-width:700px){.mast{grid-template-columns:1fr}.ear{display:none}.dateline{justify-content:center}
+  .dateline span:first-child,.dateline span:last-child{display:none}nav{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start}}
+/* ---------- заголовки ---------- */
+.tag{font:italic 13px "Old Standard TT",serif;text-align:center;margin:6px 0}
+.meta,.small{font:italic 12.5px "Old Standard TT",serif;color:var(--muted)}
+.cat{font-style:normal;font-weight:700;text-transform:uppercase;letter-spacing:.12em}
+h1{font:400 clamp(40px,6.4vw,74px)/.95 "League Gothic","Oswald",Impact,sans-serif;text-transform:uppercase;letter-spacing:.01em;
+  margin:10px 0 6px;text-align:center;text-wrap:balance}
+.deck{font:700 15px/1.35 "Old Standard TT",serif;text-transform:uppercase;letter-spacing:.06em;text-align:center;margin:6px auto;max-width:620px}
+.deck2{font:italic 17px/1.4 "Old Standard TT",serif;text-align:center;margin:4px auto 10px;max-width:640px}
+.dash{width:70px;border:0;border-top:2px solid var(--line);margin:10px auto}
+.byline{font:700 11px "Old Standard TT",serif;text-transform:uppercase;letter-spacing:.14em;text-align:center;margin:8px 0 14px}
+h2{font:700 12px "Old Standard TT",serif;text-transform:uppercase;letter-spacing:.18em;text-align:center;margin:26px 0 10px;padding:4px 0;
+  border-top:3px solid var(--line);border-bottom:1px solid var(--line);column-span:all}
+h3{font:400 24px/1.05 "League Gothic","Oswald",Impact,sans-serif;text-transform:uppercase;letter-spacing:.02em;margin:18px 0 4px}
+h2.sec{font:400 26px/1 "League Gothic","Oswald",Impact,sans-serif;letter-spacing:.06em;margin:30px 0 0;padding:6px 0 4px;
+  border-top:5px double var(--line);border-bottom:1px solid var(--line)}
+h1.front{font:700 13px "Old Standard TT",serif;letter-spacing:.24em;margin:0 0 12px;padding:4px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+/* ---------- статья: колонки, буквица ---------- */
+article{max-width:860px;margin:0 auto}
+article p{text-align:justify;hyphens:auto;margin:0 0 .8em}
+.cols{column-count:2;column-gap:28px;column-rule:1px solid var(--soft)}
+.cols h2,.cols .box,.cols figure,.cols ul{break-inside:avoid}
+@media (max-width:760px){.cols{column-count:1}article p{text-align:left}}
+b.dl{font-weight:700;letter-spacing:.04em}
+p.dc::first-letter{float:left;font:400 64px/.82 "League Gothic","Oswald",Impact,sans-serif;padding:4px 6px 0 0}
+.box{border:1px solid var(--line);outline:1px solid var(--line);outline-offset:3px;padding:12px 16px;margin:8px 4px 14px}
+.answer{font:italic 19px/1.45 "Old Standard TT",serif}
+.answer p{text-align:center!important;margin:0}
 .list{list-style:none;padding:0;margin:0}
-.list li{padding:10px 0;border-bottom:1px solid var(--line)}
-.list .src{font:600 12px "Helvetica Neue",Arial,sans-serif;text-transform:uppercase;letter-spacing:.05em;color:var(--accent)}
-.list .t{display:block;font-size:17px;line-height:1.35;text-decoration:none;margin:2px 0}
-.trend{display:grid;grid-template-columns:44px 1fr;gap:10px;padding:12px 0;border-bottom:1px solid var(--line)}
-.rank{font:700 22px "Helvetica Neue",Arial,sans-serif;color:var(--accent);text-align:right}
-.trend a.name{font-size:21px;font-weight:700;text-decoration:none;line-height:1.2}
+.list li{padding:8px 0;border-bottom:1px solid var(--soft);break-inside:avoid}
+.list .src{font:700 10.5px "Old Standard TT",serif;text-transform:uppercase;letter-spacing:.14em}
+.list .t{display:block;font:700 16px/1.3 "Old Standard TT",serif;margin:2px 0}
+ul{padding-left:20px}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
-.chip{background:var(--chip);border-radius:20px;padding:3px 10px;font:13px "Helvetica Neue",Arial,sans-serif;text-decoration:none}
-footer{margin-top:40px;padding-top:14px;border-top:1px solid var(--line);color:var(--muted);font:13px "Helvetica Neue",Arial,sans-serif}
-footer a{margin-right:14px}
+.chip{border:1px solid var(--line);padding:1px 9px;font:12px "Old Standard TT",serif;text-transform:uppercase;letter-spacing:.06em}
+footer{margin-top:40px;padding-top:10px;border-top:5px double var(--line);font:12px "Old Standard TT",serif;text-align:center}
+footer a{margin:0 10px;text-transform:uppercase;letter-spacing:.1em;font-weight:700}
 svg.spark{display:block;max-width:100%}
-figure.hero{margin:6px 0 16px}figure.hero img{width:100%;max-height:440px;object-fit:cover;object-position:50% 20%;border-radius:4px;display:block;background:var(--chip)}
-figure.hero figcaption{font:12px "Helvetica Neue",Arial,sans-serif;color:var(--muted);margin-top:5px}
-.wrap{max-width:1040px}
-h1.front{font-size:22px;font-family:"Helvetica Neue",Arial,sans-serif;text-transform:uppercase;letter-spacing:.06em;margin:4px 0 16px}
-.lead{display:grid;gap:18px;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:22px 24px;margin-bottom:18px}
-.lead.has-img{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}
-.lead img{width:100%;height:100%;max-height:300px;object-fit:cover;object-position:50% 20%;border-radius:4px}
-.lead-term{font:700 44px/1.05 Georgia,serif;letter-spacing:-.01em;text-transform:none;color:var(--fg);margin:10px 0 8px}
-.lead-head{font-size:19px;line-height:1.4;margin:0 0 10px}
-.lead:hover .lead-term,.card:hover h3{color:var(--accent)}
-.badge,.chip-s{display:inline-block;font:700 12px "Helvetica Neue",Arial,sans-serif;letter-spacing:.04em;color:#fff;background:var(--accent);border-radius:3px;padding:3px 8px}
-.chip-s{white-space:nowrap;background:var(--chip);color:var(--fg);font-weight:600}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
-.card{display:flex;flex-direction:column;gap:6px;text-decoration:none;background:var(--card);border:1px solid var(--line);border-top:3px solid var(--accent);border-radius:6px;padding:14px 16px;min-width:0}
-.card img{width:calc(100% + 32px);margin:-14px -16px 6px;height:150px;object-fit:cover;object-position:50% 20%;border-radius:3px 3px 0 0;max-width:none}
-.card-top{display:flex;justify-content:space-between;align-items:center}
-.num{font:700 15px "Helvetica Neue",Arial,sans-serif;color:var(--accent)}
-.card h3{font:700 22px/1.15 Georgia,serif;margin:0;overflow-wrap:anywhere}
-.card .head{margin:0;font-size:15px;line-height:1.4;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-.card .meta{margin-top:auto}
-.ad{margin:30px 0;padding:10px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center;min-height:120px}
-.ad-l{font:11px "Helvetica Neue",Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
-.tp{display:block}.tp article{max-width:720px}.tp aside{display:none}
-@media (min-width:1060px){.tp.side{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:40px}.tp.side aside{display:block}
+img{filter:grayscale(1) contrast(1.15) brightness(1.03)}
+figure.hero{margin:8px 0 14px;break-inside:avoid}figure.hero img{width:100%;max-height:440px;object-fit:cover;object-position:50% 20%;display:block;border:1px solid var(--line)}
+figure.hero figcaption{font:italic 11.5px "Old Standard TT",serif;margin-top:4px;padding-bottom:4px;border-bottom:1px solid var(--line);text-align:center}
+/* ---------- первая полоса ---------- */
+.lead{display:grid;gap:20px;padding:4px 0 16px;margin-bottom:0;border-bottom:5px double var(--line)}
+.lead.has-img{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr)}
+.lead img{width:100%;height:100%;max-height:360px;object-fit:cover;object-position:50% 20%;border:1px solid var(--line)}
+.lead-term{font:400 clamp(48px,7.5vw,96px)/.9 "League Gothic","Oswald",Impact,sans-serif;text-transform:uppercase;margin:6px 0 8px;letter-spacing:.005em;
+  border:0;padding:0;text-align:left;column-span:none}
+.lead-head{font:700 17px/1.35 "Old Standard TT",serif;text-transform:uppercase;letter-spacing:.04em;margin:0 0 8px}
+.lead-txt p.snip{font-size:16px;text-align:justify}
+.lead:hover .lead-term,.card:hover h3{text-decoration:underline;text-decoration-thickness:2px}
+.badge{display:inline-block;font:700 10.5px "Old Standard TT",serif;text-transform:uppercase;letter-spacing:.16em;border-top:2px solid var(--line);border-bottom:1px solid var(--line);padding:2px 0}
+.chip-s{white-space:nowrap;font:italic 11.5px "Old Standard TT",serif}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:0;border-left:1px solid var(--line)}
+.card{display:flex;flex-direction:column;gap:5px;padding:12px 14px 14px;min-width:0;border-right:1px solid var(--line);border-bottom:1px solid var(--soft)}
+.card img{width:100%;height:140px;object-fit:cover;object-position:50% 20%;border:1px solid var(--line);margin-bottom:2px}
+.card-top{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--line);padding-bottom:2px}
+.num{font:700 10.5px "Old Standard TT",serif;letter-spacing:.14em;text-transform:uppercase}
+.card h3{font:400 30px/.95 "League Gothic","Oswald",Impact,sans-serif;margin:4px 0 0;overflow-wrap:anywhere}
+.card .head{margin:0;font:700 12.5px/1.35 "Old Standard TT",serif;text-transform:uppercase;letter-spacing:.03em;
+  display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden;border-top:1px solid var(--soft);padding-top:5px}
+.card .snip{margin:0;font-size:14px;line-height:1.45;text-align:justify;hyphens:auto;display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;overflow:hidden}
+.card .meta{margin-top:auto;padding-top:4px}
+.ad{margin:26px 0;padding:8px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center;min-height:120px}
+.ad-l{font:10.5px "Old Standard TT",serif;letter-spacing:.16em;text-transform:uppercase;margin-bottom:6px}
+.tp{display:block}.tp aside{display:none}
+@media (min-width:1080px){.tp.side{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:30px}.tp.side aside{display:block;border-left:1px solid var(--line);padding-left:18px}
 .tp aside .ad{position:sticky;top:16px;margin:0;border:0;padding:0}}
-.answer{font-size:19px;line-height:1.5;border-left-color:var(--accent)}
-a.xl{color:#0645ad;text-decoration:none;border-bottom:1px solid rgba(6,69,173,.35)}
-a.xl:hover{border-bottom-color:#0645ad;background:rgba(6,69,173,.06)}
-@media (prefers-color-scheme:dark){a.xl{color:#8ab4f8;border-bottom-color:rgba(138,180,248,.4)}}
-.xlinks a{display:block;margin:6px 0;font-weight:700}
-.ct{overflow-x:auto;margin:8px 0 16px}.ct table{border-collapse:collapse;width:100%;font:15px/1.4 "Helvetica Neue",Arial,sans-serif}
-.ct th,.ct td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
-.ct th{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
-.ct td:last-child{color:var(--muted);font-size:14px}
-.rx{margin:18px 0 6px}
-.rx-row{display:flex;flex-wrap:wrap;gap:6px}
-.rx-b{display:inline-flex;align-items:center;gap:4px;min-width:44px;height:38px;padding:0 9px;border:1px solid var(--line);
-  border-radius:19px;background:var(--card);cursor:pointer;font:600 13px "Helvetica Neue",Arial,sans-serif;color:var(--muted)}
-.rx-b:hover{border-color:var(--accent)}
-.rx-b.on{border-color:var(--accent);background:rgba(200,60,30,.08);color:var(--fg)}
-.rx-e{font-size:19px;line-height:1}
-h2.sec{font:700 15px "Helvetica Neue",Arial,sans-serif;text-transform:uppercase;letter-spacing:.06em;margin:30px 0 12px;padding-top:14px;border-top:2px solid var(--fg)}
-@media (max-width:640px){.lead.has-img{grid-template-columns:1fr}.lead-term{font-size:32px}}
+a.xl{text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;font-weight:700}
+.xlinks a{display:block;margin:5px 0;font:400 22px/1.1 "League Gothic","Oswald",Impact,sans-serif;text-transform:uppercase;letter-spacing:.02em}
+.rx{margin:22px 0 6px;text-align:center;column-span:all}
+.rx-row{display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
+.rx-b{display:inline-flex;align-items:center;gap:4px;min-width:44px;height:36px;padding:0 9px;border:1px solid var(--line);border-radius:0;
+  background:transparent;cursor:pointer;font:700 13px "Old Standard TT",serif;color:var(--fg)}
+.rx-b:hover{background:var(--chip)}.rx-b.on{background:var(--fg);color:var(--bg)}
+.rx-e{font-size:18px;line-height:1;filter:grayscale(1)}
+.ct{overflow-x:auto;margin:8px 0 16px}.ct table{border-collapse:collapse;width:100%;font:14.5px/1.4 "Old Standard TT",serif}
+.ct th,.ct td{text-align:left;padding:6px 9px;border-bottom:1px solid var(--soft);vertical-align:top}
+.ct th{font-size:10.5px;text-transform:uppercase;letter-spacing:.14em;border-top:2px solid var(--line);border-bottom:1px solid var(--line)}
+.ct td:last-child{font-style:italic;font-size:13.5px}
+@media (max-width:700px){.lead.has-img{grid-template-columns:1fr}body{font-size:16px}}
 """
 
 
@@ -1493,6 +1656,15 @@ NAV_CATS = []    # разделы, в которых есть темы (запо
 HAS_EXPLAINED = False
 
 
+def today_line():
+    d = to_et(datetime.now(timezone.utc))[0]
+    return f"{d.strftime('%A')}, {d.strftime('%B')} {d.day}, {d.year}"
+
+
+def issue_no():
+    return (to_et(datetime.now(timezone.utc))[0].date() - datetime(2026, 10, 20).date()).days + 1
+
+
 def page(title, desc, body, path, depth, extra_head="", og_img=""):
     up = "../" * depth
     canon = SITE_URL + "/" + path.replace("index.html", "").replace(".html", "")
@@ -1502,8 +1674,13 @@ def page(title, desc, body, path, depth, extra_head="", og_img=""):
 <title>{E(title)}</title><meta name="description" content="{E(desc)}">
 <link rel="canonical" href="{E(canon)}"><link rel="alternate" type="application/rss+xml" title="{SITE_NAME}" href="{up}feed.xml">
 {f'<meta property="og:image" content="{E(SITE_URL + "/" + og_img)}"><meta name="twitter:card" content="summary_large_image">' if og_img else ''}<meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
 <style>{CSS}</style>{ga_snippet()}{"" if path in NO_ADS else ads_head()}{extra_head}</head><body><div class="wrap">
-<header class="top"><a class="brand" href="{up}index.html">Trend<span>Rundown</span></a>
+<header class="top"><div class="mast"><div class="ear">Late Edition<b>Every Trend</b>Explained around the clock</div>
+<div><a class="brand" href="{up}index.html">The Trend Rundown</a><div class="motto">“{E(TAGLINE)}”</div></div>
+<div class="ear">Price<b>Free</b>All the news America searches</div></div>
+<div class="dateline"><span>Vol. I · No. {issue_no()}</span><span>{E(today_line())}</span><span>United States Edition · Price: Free</span></div>
 <nav><a href="{up}index.html">Trending now</a>{f'<a href="{up}cast.html">Cast guides</a>' if HAS_CAST else ''}{f'<a href="{up}explained.html">Explained</a>' if HAS_EXPLAINED else ''}{"".join(f'<a href="{up}c/{c}.html">{E(CATS[c])}</a>' for c in NAV_CATS)}<a href="{up}archive.html">Archive</a></nav></header>
 {body}
 <footer><a href="{up}about.html">About</a><a href="{up}privacy.html">Privacy</a><a href="{up}contact.html">Contact</a>
@@ -1640,7 +1817,13 @@ def build_topic(t, related, same=()):
     ai = t.get("ai")
     ai_html = ""
     if ai:
-        pl = [f"<p>{E(p)}</p>" for p in ai.get("summary", "").split("\n\n") if p.strip()]
+        dl = re.sub(r"[^\w .,'-]", "", ai.get("dateline", "") or "").strip(" ,")[:40]
+        if dl:
+            d0 = to_et(datetime.fromisoformat(t["first_seen"]))[0]
+            mon = ["Jan.", "Feb.", "March", "April", "May", "June", "July", "Aug.", "Sept.", "Oct.", "Nov.", "Dec."][d0.month - 1]
+            dl = f'<b class="dl">{E(dl.upper() if "," not in dl else dl.split(",")[0].upper() + "," + dl.split(",", 1)[1])}, {mon} {d0.day}</b> — '
+        pl = [f'<p{" class=dc" if i == 0 and not dl else ""}>{dl if i == 0 else ""}{E(p)}</p>'
+              for i, p in enumerate(x for x in ai.get("summary", "").split("\n\n") if x.strip())]
         # ссылка на объяснение прямо в тексте: первое упоминание термина становится ссылкой
         for x in xs:
             done_x = False
@@ -1656,10 +1839,29 @@ def build_topic(t, related, same=()):
         paras = "".join(pl[:1]) + ad("in_article") + "".join(pl[1:])
         kp = "".join(f"<li>{E(k)}</li>" for k in ai.get("key_points", []))
         unk = ai.get("unknown", "")
-        ai_html = (f'<p style="font-size:20px;line-height:1.35;margin:4px 0 14px">{E(ai.get("headline", ""))}</p>{paras}'
+        why = ai.get("why", "")
+        asked = "".join(f"<li>{E(q)}</li>" for q in ai.get("asked", []))
+        peak_ = max(t["traffic"], key=lambda x: x[1]) if t["traffic"] else None
+        facts_line = (f'Trending in the US since {E(fmt_et(t["first_seen"]))}'
+                      + (f' · about {E(peak_[2])} searches' if peak_ and peak_[2] else "")
+                      + (f' · covered by {len(srcs)} news outlets' if len(srcs) > 1 else ""))
+        if why:
+            ai_html = (f'<div class="box answer"><p style="margin:0">{E(why)}</p></div>'
+                       f'<p class="meta" style="margin:8px 0 18px">{facts_line}</p>'
+                       + (f'<h2>The story behind it</h2>' + "".join(f"<p>{E(p)}</p>" for p in ai["behind"].split("\n\n") if p.strip())
+                          if ai.get("behind") else "")
+                       + f'<h2>The background</h2>{paras}'
+                       + (f"<h2>What happens next</h2><p>{E(ai['next'])}</p>" if ai.get("next") else "")
+                       + (f"<h2>What else people are searching</h2><ul>{asked}</ul>" if asked else ""))
+        else:
+            ai_html = paras
+        ai_html = (ai_html
                    + (f"<h2>Key facts</h2><ul>{kp}</ul>" if kp else "")
                    + (f"<h2>What we don't know yet</h2><p>{E(unk)}</p>" if unk else "")
-                   + f'<p class="meta">Our summary of reporting by {E(", ".join(ai.get("sources", [])))}. Written with AI assistance and checked against the sources; read the full stories at the links below. Updated {E(fmt_et(ai["made"]))}.</p>')
+                   + f'<p class="meta">Our summary of reporting by {E(", ".join(ai.get("sources", [])))}. Written with AI assistance and checked against the sources; read the full stories at the links below. Updated {E(fmt_et(ai["made"]))}.</p>'
+                   + (('<h2>Sources from our research</h2><ul class="list">' + "".join(
+                       f'<li><span class="src">{E(h)}</span><a class="t" href="{E(u)}" target="_blank" rel="noopener nofollow">{E(ti)}</a></li>'
+                       for h, ti, u in ai["dug"][:10]) + "</ul>") if ai.get("dug") and ai.get("behind") else ""))
     img = t.get("img"); card = t.get("card")
     if img:
         hero = (f'<figure class="hero"><img src="../{E(img["file"])}" alt="{E(t["term"])}" loading="eager">'
@@ -1669,28 +1871,32 @@ def build_topic(t, related, same=()):
     side = ad("sidebar")
     body = f"""<div class="tp{' side' if side else ''}"><article>
 <p class="meta"><a href="../index.html">{SITE_NAME}</a> › {(f'<a class="cat" href="../c/{t["cat"]}.html">{E(CATS[t["cat"]])}</a> · ') if t.get("cat") in CATS else ''}updated {E(fmt_et(upd))}</p>
-<h1>Why is “{E(t['term'])}” trending?</h1>
+<h1>{E(t['term'])}</h1>
+<p class="deck">Why it is trending in America today</p>
+{('<p class="deck2">' + E(ai.get("headline", "")) + '</p>') if ai and ai.get("headline") else ''}
+<hr class="dash"><p class="byline">By the Trend Rundown staff</p>
 {hero}
-{ai_html}
+<div class="cols">{ai_html}</div>
 {reactions_html("t/" + t["slug"]) if ai else ""}
 {xblock}
 {more}
 <h2>Trend data</h2>
 <div class="box"><p style="margin:0">{summ}</p>{('<p class="meta" style="margin:10px 0 0">Search interest while it trended</p>' + sp) if sp else ''}</div>
 {ad("middle")}
-<h2>What the headlines say</h2><ul class="list">{items or '<li class="meta">Coverage is still coming in.</li>'}</ul>
+<h2>Sources: what the outlets reported</h2><ul class="list">{items or '<li class="meta">Coverage is still coming in.</li>'}</ul>
 {('<h2>How the story unfolded</h2><ul class="list">' + timeline + '</ul>') if len(arts) > 2 else ''}
 {ad("multiplex") if ai else ""}
 {('<h2>Other trending topics</h2><div class="chips">' + rel + '</div>') if rel else ''}
 </article><aside>{side}</aside></div>"""
-    desc = short_desc((ai["headline"] + ". " if ai else "") + f"Why {t['term']} is trending in the US right now: what happened, who's reporting it, and links to {len(srcs) or 'the'} sources.", 160)
+    desc = short_desc(ai["why"], 160) if ai and ai.get("why") else short_desc((ai["headline"] + ". " if ai else "") + f"Why {t['term']} is trending in the US right now: what happened, who's reporting it, and links to {len(srcs) or 'the'} sources.", 160)
     head = f'<script type="application/ld+json">{json.dumps(ld)}</script>'
     if img:
         ld["image"] = f"{SITE_URL}/{img['file']}"
     elif card:
         ld["image"] = f"{SITE_URL}/{card}"
     head = f'<script type="application/ld+json">{json.dumps(ld)}</script>'
-    title = f"{t['term']}: {ai['headline']}" if ai and ai.get("headline") else f"Why is {t['term']} trending?"
+    title = (f"Why is {t['term']} trending? {ai['headline']}" if ai and ai.get("why") and ai.get("headline")
+             else f"{t['term']}: {ai['headline']}" if ai and ai.get("headline") else f"Why is {t['term']} trending?")
     if len(title) > 70:
         title = title[:67].rsplit(" ", 1)[0] + "…"
     return page(title, desc, body, f"t/{t['slug']}.html", 1, head, card or (img or {}).get("file", ""))
@@ -1724,6 +1930,13 @@ def front_lists(store):
     return live, still[:12], week[:8]
 
 
+def snip(t, n=220):
+    """Начало заметки для первой полосы: причина тренда или первые фразы текста."""
+    ai = t.get("ai") or {}
+    s = ai.get("why") or (ai.get("summary", "").split("\n\n")[0] if ai.get("summary") else "")
+    return short_desc(s, n) if s else ""
+
+
 def build_index(store):
     live, still, week = front_lists(store)
 
@@ -1742,7 +1955,8 @@ def build_index(store):
                 + (f'<img src="{E(img)}" alt="" loading="lazy">' if img else "")
                 + f'<div class="card-top"><span class="num">{E(label)}</span><span class="chip-s">{E(chip)}</span></div>'
                 f'<h3>{E(t["term"])}</h3><p class="head">{E(head)}</p>'
-                f'<p class="meta">{E(", ".join(srcs[:2]))}</p></a>')
+                + (f'<p class="snip">{E(snip(t))}</p>' if snip(t) else "")
+                + f'<p class="meta">{E(", ".join(srcs[:2]))}</p></a>')
 
     top = live or still
     parts = []
@@ -1754,7 +1968,8 @@ def build_index(store):
                      + (f'<img src="{E(img)}" alt="">' if img else "")
                      + f'<div class="lead-txt"><span class="badge">#1 · {E(tr)} searches</span>'
                      f'<h2 class="lead-term">{E(t["term"])}</h2><p class="lead-head">{E(head)}</p>'
-                     f'<p class="meta">Since {E(fmt_et(t["first_seen"]))} · {E(", ".join(srcs[:3]))}</p></div></a>')
+                     + (f'<hr class="dash" style="margin:8px 0"><p class="snip">{E(snip(t, 420))}</p>' if snip(t) else "")
+                     + f'<p class="meta">Since {E(fmt_et(t["first_seen"]))} · {E(", ".join(srcs[:3]))}</p></div></a>')
     parts.append(ad("home"))
     rest = top[1:]
     if live:
@@ -2408,7 +2623,8 @@ Plot (from the database, rewrite in your own words): {overview}
 Below are FACTS about each cast member and the exact searches Americans type into Google about them.
 Rules:
 - Use ONLY the facts below. Never guess. Own words only; never reuse more than 5 words in a row from the facts.
-- Plain, neutral American English, no hype. Do not name websites or databases in the text.
+- Tone of a 1930s American newspaper's entertainment column: formal, exact, short paragraphs, but clear to a modern reader.
+  No hype. Do not name websites or databases in the text.
 - "intro": 2 short paragraphs (80-140 words): what the {kind} is about, when and where it comes out, who leads the cast.
 - For every person: "bio" = 1-2 sentences on who they are and their best-known work.
 - For every person: "qa" = answers to the searches listed for them, written as real questions with the same key words
