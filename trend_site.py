@@ -1441,6 +1441,10 @@ a.xl{color:#0645ad;text-decoration:none;border-bottom:1px solid rgba(6,69,173,.3
 a.xl:hover{border-bottom-color:#0645ad;background:rgba(6,69,173,.06)}
 @media (prefers-color-scheme:dark){a.xl{color:#8ab4f8;border-bottom-color:rgba(138,180,248,.4)}}
 .xlinks a{display:block;margin:6px 0;font-weight:700}
+.ct{overflow-x:auto;margin:8px 0 16px}.ct table{border-collapse:collapse;width:100%;font:15px/1.4 "Helvetica Neue",Arial,sans-serif}
+.ct th,.ct td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.ct th{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.ct td:last-child{color:var(--muted);font-size:14px}
 .rx{margin:18px 0 6px}
 .rx-row{display:flex;flex-wrap:wrap;gap:6px}
 .rx-b{display:inline-flex;align-items:center;gap:4px;min-width:44px;height:38px;padding:0 9px;border:1px solid var(--line);
@@ -2121,7 +2125,7 @@ def tv_cast(show_id, season=None):
                 guests.append({"id": f"tvm{p['id']}", "pid": p["id"], "name": p.get("name", ""), "character": name,
                                "born": p.get("birthday") or "", "died": p.get("deathday") or "",
                                "country": ((p.get("country") or {}).get("name") or ""), "url": p.get("url", ""),
-                               "episode": f"S{e['season']}E{e.get('number') or '?'}"})
+                               "episode": f"S{e['season']}E{e.get('number') or '?'}", "voice": bool(c.get("voice"))})
             time.sleep(0.3)
     return main, guests
 
@@ -2374,7 +2378,7 @@ def person_facts(c, item, today):
     born = c.get("born") or wd["born"]
     f = {"id": c["id"], "name": c["name"], "character": c.get("character", ""), "born": born,
          "place": wd["place"] or c.get("country", ""), "known": known, "bio": "", "wiki": wiki, "wiki_url": wiki_url,
-         "spouses": wd["spouses"], "former": wd["former"], "url": wiki_url or c.get("url", "")}
+         "spouses": wd["spouses"], "former": wd["former"], "url": wiki_url or c.get("url", ""), "voice": bool(c.get("voice"))}
     f["age"] = age_on(born, today) if born else None
     f["minor"] = f["age"] is not None and f["age"] < 18
     return f
@@ -2490,8 +2494,6 @@ def auto_qa(f, item):
     """Ответы, которые считает программа (возраст точно по дате рождения), а не ИИ."""
     qa = []
     t = item["title"]
-    if f["character"]:
-        qa.append({"q": f"Who does {f['name']} play in {t}?", "a": f"{f['name']} plays {f['character']} in {t}."})
     if f["born"] and not f["minor"]:
         qa.append({"q": f"How old is {f['name']}?",
                    "a": f"{f['name']} was born on {nice_date(f['born'])} and is {f['age']} years old."})
@@ -2563,10 +2565,10 @@ def make_preview(store, item, key, today, old=None):
     for i, f in enumerate(people):
         w = by_name.get(nk(f["name"]), {})
         qa = auto_qa(f, item) + ([] if f["minor"] else [q for q in w.get("qa", []) if q.get("q") and q.get("a")
-                                                        and not BAD_Q.search(q["q"])][:6])
+                                                        and not BAD_Q.search(q["q"])][:2])
         entry = {"name": f["name"], "character": f["character"], "bio": w.get("bio", ""), "qa": qa,
                  "born": "" if f["minor"] else f["born"],
-                 "wiki_url": f["wiki_url"], "url": f["url"]}
+                 "wiki_url": f["wiki_url"], "url": f["url"], "voice": f["voice"]}
         if old_img.get(f["name"]):
             entry["img"] = old_img[f["name"]]          # фото уже есть — не ищем заново
         elif i < PREVIEW_PHOTOS and not f["minor"] and not old:
@@ -2582,7 +2584,8 @@ def make_preview(store, item, key, today, old=None):
     main_ids = {f["id"] for f in people}
     roles = []
     for r in item.get("roles", []):
-        er = {"name": r["name"], "character": r["character"], "known": [], "episode": r.get("episode", "")}
+        er = {"name": r["name"], "character": r["character"], "known": [], "episode": r.get("episode", ""),
+              "voice": bool(r.get("voice"))}
         if r["id"] in main_ids:
             er["main"] = True
         elif sum(1 for x in roles if not x.get("main")) < PREVIEW_ROLES_KNOWN:
@@ -2664,8 +2667,14 @@ def previews(store):
     return done
 
 
+def animated(x):
+    return sum(1 for c in x["cast"] if c.get("voice")) * 2 >= max(1, len(x["cast"]))
+
+
 def cast_title(x):
     s = x["title"] + (f" Season {x['season']}" if x.get("season", 1) > 1 else "")
+    if animated(x):
+        return f"{s} Voice Cast: Who Voices Who and Where You've Heard Them"
     return f"{s} Cast: Who Plays Who, Ages and Where You've Seen Them"
 
 
@@ -2681,7 +2690,8 @@ def build_cast(x):
     name = x["title"] + (f" season {x['season']}" if x.get("season", 1) > 1 else "")
     lead = ", ".join(c["name"] for c in x["cast"][:3])
     answer = (f"{name} {'arrives' if future else 'came out'} {where} on {when}. The cast is led by {lead}. "
-              f"Here is who plays who, how old the actors are and where you have seen them before.")
+              + ("Here is who voices each character and where you have heard the actors before." if animated(x) else
+                 "Here is who plays who, how old the actors are and where you have seen them before."))
     hero = next((c["img"] for c in x["cast"] if c.get("img")), None)
     quick = "".join(f'<li><a class="t" href="#{slugify(c["name"])}">{E(c["name"])}</a>'
                     f'<span class="meta">{E(c["character"] or "")}</span></li>' for c in x["cast"])
@@ -2699,21 +2709,18 @@ def build_cast(x):
                        if q["q"].startswith("How old is") else q for q in c["qa"]]
         qa = "".join(f"<h3>{E(q['q'])}</h3><p>{E(q['a'])}</p>" for q in c["qa"])
         faq += c["qa"]
-        role = f" as {c['character']}" if c["character"] else ""
+        role = ((" voices " if c.get("voice") else " as ") + c["character"]) if c["character"] else ""
         parts.append(f'<h2 class="sec" id="{slugify(c["name"])}">{E(c["name"])}{E(role)}</h2>{img}<p>{E(c["bio"])}</p>{qa}')
     paras = "".join(f"<p>{E(p)}</p>" for p in x["intro"].split("\n\n") if p.strip())
-    rq = []
+    rows = []
     for r in x.get("roles", []):
-        ch = r["character"]
-        q = f"Who plays {ch} in {x['title']}?"
-        a = f"{ch} is played by {r['name']}" + (f" (episode {r['episode']})" if r.get("episode") else "")
-        if r.get("known"):
-            ks = [f"{k['title']} ({k['year']})" if k["year"] else k["title"] for k in r["known"]]
-            a += ", who you may know from " + (", ".join(ks[:-1]) + " and " + ks[-1] if len(ks) > 1 else ks[0])
-        link = (f' <a class="xl" href="#{slugify(r["name"])}">More about {E(r["name"])}</a>' if r.get("main") else "")
-        rq.append((q, a + ".", link))
-    faq = [{"q": q, "a": a} for q, a, _ in rq] + faq
-    roles_html = "".join(f"<h3>{E(q)}</h3><p>{E(a)}{l}</p>" for q, a, l in rq)
+        ks = [f"{k['title']} ({k['year']})" if k.get("year") else k["title"] for k in r.get("known", [])]
+        who = f'<a class="xl" href="#{slugify(r["name"])}">{E(r["name"])}</a>' if r.get("main") else E(r["name"])
+        note = " (voice)" if r.get("voice") else ""
+        ep = f' <span class="meta">{E(r["episode"])}</span>' if r.get("episode") else ""
+        rows.append(f"<tr><td>{E(r['character'])}{ep}</td><td>{who}{note}</td><td>{E(', '.join(ks))}</td></tr>")
+    roles_html = ('<div class="ct"><table><thead><tr><th>Character</th><th>Actor</th><th>Also seen in</th></tr></thead><tbody>'
+                  + "".join(rows) + "</tbody></table></div>") if rows else ""
     src = "".join(f'<li><a class="t" href="{E(c["wiki_url"])}" rel="nofollow" target="_blank">{E(c["name"])} — Wikipedia</a></li>'
                   for c in x["cast"] if c.get("wiki_url"))
     work = {"@context": "https://schema.org", "@type": "Movie" if x["type"] == "movie" else "TVSeries", "name": x["title"],
@@ -2737,7 +2744,7 @@ def build_cast(x):
 <h2>The cast at a glance</h2><ul class="list">{quick}</ul>
 {ad("in_article")}
 {"".join(parts)}
-{('<h2 class="sec" id="full-cast">Full cast: who plays who</h2>' + roles_html) if roles_html else ''}
+{('<h2 class="sec" id="full-cast">Full cast of ' + E(x["title"]) + ': every character and actor</h2>' + roles_html) if roles_html else ''}
 {reactions_html("w/" + x["slug"])}
 {ad("middle")}
 <h2>Sources</h2><ul class="list"><li><a class="t" href="{E(x["link"])}" rel="nofollow" target="_blank">{E(x["title"])} — {E(x["link_name"])}</a></li>{src}</ul>
