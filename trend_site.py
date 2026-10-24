@@ -2026,16 +2026,16 @@ def build_site(store):
 
 
 
-# ---------- На опережение: «кто играет» в фильмах и сериалах, которые выходят в ближайшие дни (база TMDB) ----------
+# ---------- На опережение: «кто играет» в фильмах и сериалах, которые выходят в ближайшие дни ----------
+# Сериалы — TVmaze (CC BY-SA 4.0, можно для любых целей со ссылкой), фильмы и факты об актёрах — Wikidata (CC0). Ключи не нужны.
 PREVIEW = True                 # страницы «актёры нового фильма/сериала» до премьеры
 MAX_PREVIEWS_PER_DAY = 4       # сколько таких страниц в сутки
 PREVIEW_DAYS_AHEAD = 10        # смотрим премьеры на столько дней вперёд
-PREVIEW_CAST = 8               # сколько актёров описывать
+PREVIEW_CAST = 8               # сколько актёров описывать подробно
 SKIP_BIGGEST = 2               # пропускать столько самых громких премьер (фильмов и сериалов) — там не пробиться
 PREVIEW_ROLES = 60             # для скольких ролей сделать вопрос «кто играет …» (включая эпизодические)
 PREVIEW_ROLES_KNOWN = 30       # для скольких второстепенных актёров узнать «где ещё снимался»
 PREVIEW_PHOTOS = 4             # для скольких первых актёров искать свободное фото
-TMDB_KEY_FILE = "tmdb_key.txt"
 MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October",
           "November", "December"]
 HAS_CAST = False
@@ -2043,28 +2043,7 @@ BAD_Q = re.compile(r"(?i)net worth|salary|nude|naked|hot\b|sexy|feet|shirtless|b
                    r"jewish|muslim|christian|ethnic|race|nationality|politic|trump|biden|dead|death|died|sick|ill\b|"
                    r"cancer|disease|surgery|weight|arrest|jail|dui|scandal|instagram|tiktok|twitter|address|house|phone|"
                    r"young|before and after|pregnan")
-
-
-def tmdb_key():
-    if os.environ.get("TMDB_API_KEY"):
-        return os.environ["TMDB_API_KEY"].strip()
-    try:
-        with open(os.path.join(HERE, TMDB_KEY_FILE), encoding="utf-8") as f:
-            return f.read().strip()
-    except Exception:
-        return ""
-
-
-def tmdb(path, **params):
-    key = tmdb_key()
-    headers = {"accept": "application/json", "User-Agent": f"TrendRundownBot/1.0 ({SITE_URL})"}
-    if key.startswith("eyJ"):                       # «Read Access Token» — длинный ключ
-        headers["Authorization"] = "Bearer " + key
-    else:                                            # короткий «API Key»
-        params["api_key"] = key
-    url = "https://api.themoviedb.org/3" + path + "?" + urllib.parse.urlencode(params)
-    with urllib.request.urlopen(urllib.request.Request(url, headers=headers), timeout=30, context=CTX) as r:
-        return json.loads(r.read().decode("utf-8", "replace"))
+STREAMERS = re.compile(r"(?i)netflix|amazon|prime video|apple|hulu|disney\+|max\b|hbo max|peacock|paramount\+")
 
 
 def nice_date(d):
@@ -2077,24 +2056,33 @@ def age_on(born, day):
     return d.year - b.year - ((d.month, d.day) < (b.month, b.day))
 
 
-def us_release(det):
-    """Дата выхода в США: кинотеатры (3) или онлайн (4), самая ранняя из будущих/ближайших."""
-    best = None
-    for c in (det.get("release_dates") or {}).get("results", []):
-        if c.get("iso_3166_1") != "US":
-            continue
-        for r in c.get("release_dates", []):
-            if r.get("type") in (2, 3, 4) and r.get("release_date"):
-                d = r["release_date"][:10]
-                kind = "theaters" if r["type"] in (2, 3) else "digital"
-                if best is None or d < best[0]:
-                    best = (d, kind)
-    return best
+def tvmaze(path, **params):
+    url = "https://api.tvmaze.com" + path + ("?" + urllib.parse.urlencode(params, doseq=True) if params else "")
+    for attempt in range(3):
+        try:
+            return json.loads(get(url, timeout=30).decode("utf-8", "replace"))
+        except urllib.error.HTTPError as e:
+            if e.code == 429:                     # просят не спешить
+                time.sleep(3)
+                continue
+            if e.code == 404:
+                return None
+            raise
+    return None
 
 
-def providers(det):
-    us = ((det.get("watch/providers") or {}).get("results") or {}).get("US") or {}
-    return [p.get("provider_name") for p in us.get("flatrate", [])][:3]
+def sparql(q):
+    url = "https://query.wikidata.org/sparql?" + urllib.parse.urlencode({"query": q, "format": "json"})
+    data = json.loads(get(url, timeout=60).decode("utf-8", "replace"))
+    return [{k: v.get("value", "") for k, v in row.items()} for row in data.get("results", {}).get("bindings", [])]
+
+
+def qid(uri):
+    return (uri or "").rsplit("/", 1)[-1]
+
+
+def strip_html(s):
+    return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", s or ""))).strip()
 
 
 def clean_role(s):
@@ -2102,136 +2090,292 @@ def clean_role(s):
     return "" if re.fullmatch(r"(?i)(self|himself|herself|themselves|additional voices?|extra|various)?", s) else s
 
 
-def cast_lists(raw, tv=False):
-    """Главные роли (для подробного описания) и все роли (для вопросов «кто играет …»)."""
-    out, seen = [], set()
-    for c in sorted(raw, key=lambda c: c.get("order", 999)):
-        ch = clean_role(((c.get("roles") or [{}])[0].get("character") if tv else c.get("character")) or "")
-        if c["id"] in seen or not ch:
+# ----- сериалы (TVmaze) -----
+def tv_cast(show_id, season=None):
+    """Основной состав сериала и (если серии уже вышли) приглашённые актёры этого сезона."""
+    main, seen = [], set()
+    for c in tvmaze(f"/shows/{show_id}/cast") or []:
+        p, ch = c.get("person") or {}, c.get("character") or {}
+        name = clean_role(ch.get("name", ""))
+        if c.get("self") or not p.get("id") or p["id"] in seen:
             continue
-        seen.add(c["id"])
-        out.append({"id": c["id"], "name": c["name"], "character": ch})
-    return out[:PREVIEW_CAST], out[:PREVIEW_ROLES]
-
-
-def movie_item(mid):
-    det = tmdb(f"/movie/{mid}", append_to_response="credits,release_dates,watch/providers")
-    rel = us_release(det)
-    if not rel or det.get("adult"):
-        return None
-    cast, roles = cast_lists(det.get("credits", {}).get("cast", []))
-    return {"key": f"movie-{det['id']}", "type": "movie", "id": det["id"], "title": det.get("title", ""),
-            "date": rel[0], "release": rel[1], "overview": det.get("overview", ""),
-            "genres": [g["name"] for g in det.get("genres", [])], "where": providers(det),
-            "year": rel[0][:4], "popularity": det.get("popularity", 0), "cast": cast, "roles": roles,
-            "tmdb": f"https://www.themoviedb.org/movie/{det['id']}"}
-
-
-def tv_item(tid, season=None, today="", end=""):
-    det = tmdb(f"/tv/{tid}", append_to_response="aggregate_credits,watch/providers")
-    if season is None:                                   # ищем премьеру: новый сериал или первая серия нового сезона
-        nxt = det.get("next_episode_to_air") or {}
-        first = det.get("first_air_date") or ""
-        if today <= first <= end:
-            season, date = 1, first
-        elif nxt.get("episode_number") == 1 and today <= (nxt.get("air_date") or "") <= end:
-            season, date = nxt.get("season_number", 1), nxt["air_date"]
-        else:
-            return None                                  # обычная серия, не премьера
-    else:
-        date = next((s.get("air_date") for s in det.get("seasons", []) if s.get("season_number") == season), "") \
-            or det.get("first_air_date") or ""
-    raw = det.get("aggregate_credits", {}).get("cast", [])
-    if season > 1:                                       # актёры именно этого сезона (с приглашёнными), если есть
+        seen.add(p["id"])
+        main.append({"id": f"tvm{p['id']}", "pid": p["id"], "name": p.get("name", ""), "character": name,
+                     "born": p.get("birthday") or "", "died": p.get("deathday") or "",
+                     "country": ((p.get("country") or {}).get("name") or ""), "url": p.get("url", ""),
+                     "voice": bool(c.get("voice"))})
+    guests = []
+    if season:
         try:
-            raw = tmdb(f"/tv/{tid}/season/{season}/aggregate_credits").get("cast") or raw
+            eps = [e for e in (tvmaze(f"/shows/{show_id}/episodes") or []) if e.get("season") == season and e.get("airdate")
+                   and e["airdate"] <= to_et(datetime.now(timezone.utc))[0].strftime("%Y-%m-%d")]
         except Exception:
-            pass
-    cast, roles = cast_lists(raw, tv=True)
-    return {"key": f"tv-{det['id']}-s{season}", "type": "tv", "id": det["id"], "season": season,
-            "title": det.get("name", ""), "date": date, "release": "tv", "overview": det.get("overview", ""),
-            "genres": [g["name"] for g in det.get("genres", [])], "where": providers(det),
-            "networks": [n.get("name") for n in det.get("networks", [])][:2], "year": date[:4],
-            "popularity": det.get("popularity", 0), "cast": cast, "roles": roles,
-            "tmdb": f"https://www.themoviedb.org/tv/{det['id']}"}
+            eps = []
+        for e in eps[:12]:
+            for c in tvmaze(f"/episodes/{e['id']}/guestcast") or []:
+                p, ch = c.get("person") or {}, c.get("character") or {}
+                name = clean_role(ch.get("name", ""))
+                if c.get("self") or not p.get("id") or p["id"] in seen or not name:
+                    continue
+                seen.add(p["id"])
+                guests.append({"id": f"tvm{p['id']}", "pid": p["id"], "name": p.get("name", ""), "character": name,
+                               "born": p.get("birthday") or "", "died": p.get("deathday") or "",
+                               "country": ((p.get("country") or {}).get("name") or ""), "url": p.get("url", ""),
+                               "episode": f"S{e['season']}E{e.get('number') or '?'}"})
+            time.sleep(0.3)
+    return main, guests
+
+
+def tv_item(show, season, date):
+    main, guests = tv_cast(show["id"], season if date <= to_et(datetime.now(timezone.utc))[0].strftime("%Y-%m-%d") else None)
+    where = [x for x in [(show.get("webChannel") or {}).get("name"), (show.get("network") or {}).get("name")] if x]
+    living = [c for c in main if not c["died"]]
+    return {"key": f"tv-{show['id']}-s{season}", "type": "tv", "id": f"tvm{show['id']}", "show_id": show["id"],
+            "season": season, "title": show.get("name", ""), "date": date, "release": "tv",
+            "overview": strip_html(show.get("summary")), "genres": show.get("genres", []), "where": where[:2],
+            "year": date[:4], "popularity": show.get("weight") or 0,
+            "cast": [c for c in living if c["character"]][:PREVIEW_CAST] or living[:PREVIEW_CAST],
+            "roles": [c for c in main + guests if c["character"] and not c["died"]][:PREVIEW_ROLES],
+            "link": show.get("url", ""), "link_name": "TVmaze"}
+
+
+def upcoming_tv(today, end):
+    found = {}
+    day = datetime.strptime(today, "%Y-%m-%d")
+    while day.strftime("%Y-%m-%d") <= end:
+        d = day.strftime("%Y-%m-%d")
+        for path, params in (("/schedule", {"country": "US", "date": d}), ("/schedule/web", {"date": d})):
+            try:
+                eps = tvmaze(path, **params) or []
+            except Exception as e:
+                log(f"TVmaze {path} {d}: {e}")
+                eps = []
+            for e in eps:
+                show = e.get("show") or (e.get("_embedded") or {}).get("show") or {}
+                if e.get("number") != 1 or not show.get("id") or show.get("language") != "English":
+                    continue                                   # нужна первая серия сезона
+                ch = show.get("webChannel") or show.get("network") or {}
+                country = ((ch.get("country") or {}).get("code")) or "US"   # Netflix и др. — без страны, они для всех
+                if country != "US" or re.search(r"(?i)talk show|news|sports|game show", show.get("type", "")):
+                    continue
+                k = (show["id"], e.get("season", 1))
+                if k not in found:
+                    found[k] = (show, e.get("season", 1), d)
+            time.sleep(0.3)
+        day += timedelta(days=1)
+    out = []
+    for show, season, d in sorted(found.values(), key=lambda x: -(x[0].get("weight") or 0))[:15]:
+        try:
+            out.append(tv_item(show, season, d))
+        except Exception as e:
+            log(f"TVmaze {show.get('name')}: {e}")
+    return out
+
+
+# ----- фильмы (Wikidata) -----
+def movie_item(fq, title="", date="", popularity=0, where=None):
+    rows = sparql(f"""SELECT ?actor ?actorLabel ?charLabel ?charName ?ord ?links ?born ?died ?article WHERE {{
+  wd:{fq} p:P161 ?st . ?st ps:P161 ?actor .
+  OPTIONAL {{ ?st pq:P453 ?char }} OPTIONAL {{ ?st pq:P4633 ?charName }} OPTIONAL {{ ?st pq:P1545 ?ord }}
+  OPTIONAL {{ ?actor wikibase:sitelinks ?links }} OPTIONAL {{ ?actor wdt:P569 ?born }} OPTIONAL {{ ?actor wdt:P570 ?died }}
+  OPTIONAL {{ ?article schema:about ?actor ; schema:isPartOf <https://en.wikipedia.org/> }}
+  SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }} }}""")
+    people = {}
+    for r in rows:
+        a = qid(r.get("actor"))
+        if not a or re.fullmatch(r"Q\d+", r.get("actorLabel", "")):
+            continue                                            # у актёра нет английского имени
+        ch = clean_role(r.get("charName") or ("" if re.fullmatch(r"Q\d+", r.get("charLabel", "")) else r.get("charLabel", "")))
+        p = people.setdefault(a, {"id": a, "qid": a, "name": r["actorLabel"], "character": ch, "born": (r.get("born") or "")[:10],
+                                  "died": r.get("died", ""), "ord": int(r["ord"]) if (r.get("ord") or "").isdigit() else 999,
+                                  "links": int(r.get("links") or 0), "wiki_title": urllib.parse.unquote(qid(r.get("article", ""))).replace("_", " ")})
+        if ch and not p["character"]:
+            p["character"] = ch
+    cast = sorted([p for p in people.values() if not p["died"]], key=lambda p: (p["ord"], -p["links"]))
+    ov, link = "", f"https://www.wikidata.org/wiki/{fq}"
+    try:
+        art = sparql(f"SELECT ?a WHERE {{ ?a schema:about wd:{fq} ; schema:isPartOf <https://en.wikipedia.org/> }}")
+        if art:
+            t = urllib.parse.unquote(qid(art[0]["a"])).replace("_", " ")
+            q = urllib.parse.urlencode({"action": "query", "prop": "extracts", "exintro": 1, "explaintext": 1, "titles": t,
+                                        "format": "json", "formatversion": 2})
+            ov = ((json.loads(get("https://en.wikipedia.org/w/api.php?" + q)).get("query", {}).get("pages") or [{}])[0]
+                  .get("extract", ""))[:1500]
+            link = "https://en.wikipedia.org/wiki/" + urllib.parse.quote(t.replace(" ", "_"))
+    except Exception:
+        pass
+    where = where or []
+    return {"key": f"movie-{fq}", "type": "movie", "id": fq, "title": title, "date": date,
+            "release": "digital" if any(STREAMERS.search(w) for w in where) else "theaters", "where": where,
+            "overview": ov, "genres": [], "year": date[:4], "popularity": popularity,
+            "cast": cast[:PREVIEW_CAST], "roles": [p for p in cast if p["character"]][:PREVIEW_ROLES],
+            "link": link, "link_name": "Wikipedia" if "wikipedia" in link else "Wikidata"}
+
+
+def upcoming_movies(today, end):
+    rows = sparql(f"""SELECT ?film ?filmLabel ?date ?links (GROUP_CONCAT(DISTINCT ?distLabel; separator="|") AS ?dist) WHERE {{
+  VALUES ?type {{ wd:Q11424 wd:Q24869 wd:Q506240 }}
+  ?film wdt:P31 ?type ; wikibase:sitelinks ?links ; p:P577 ?s . ?s ps:P577 ?date .
+  OPTIONAL {{ ?s pq:P291 ?place }}
+  FILTER(?date >= "{today}T00:00:00Z"^^xsd:dateTime && ?date <= "{end}T23:59:59Z"^^xsd:dateTime)
+  FILTER(!BOUND(?place) || ?place = wd:Q30)
+  FILTER NOT EXISTS {{ ?film p:P577 ?s2 . ?s2 ps:P577 ?d2 . ?s2 pq:P291 wd:Q30 . FILTER(?d2 < "{today}T00:00:00Z"^^xsd:dateTime) }}
+  OPTIONAL {{ ?film wdt:P750 ?d . ?d rdfs:label ?distLabel . FILTER(LANG(?distLabel) = "en") }}
+  SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
+}} GROUP BY ?film ?filmLabel ?date ?links ORDER BY DESC(?links) LIMIT 15""")
+    out, seen = [], set()
+    for r in rows:
+        fq = qid(r["film"])
+        if fq in seen or re.fullmatch(r"Q\d+", r.get("filmLabel", "")):
+            continue
+        seen.add(fq)
+        try:
+            out.append(movie_item(fq, r["filmLabel"], r["date"][:10], int(r.get("links") or 0),
+                                  [d for d in (r.get("dist") or "").split("|") if d][:2]))
+        except Exception as e:
+            log(f"Wikidata фильм {r.get('filmLabel')}: {e}")
+        time.sleep(0.5)
+    return out
 
 
 def upcoming_titles(today, end):
     """Фильмы и сериалы (новые и новые сезоны), которые выходят в США с today по end."""
-    out = []
+    movies, tv = [], []
     try:
-        m = tmdb("/discover/movie", region="US", sort_by="popularity.desc", include_adult="false",
-                 with_release_type="2|3|4", **{"release_date.gte": today, "release_date.lte": end})
-        for x in m.get("results", [])[:12]:
-            it = movie_item(x["id"])
-            if it and today <= it["date"] <= end:
-                out.append(it)
-            time.sleep(0.3)
+        movies = upcoming_movies(today, end)
     except Exception as e:
-        log(f"TMDB фильмы: {e}")
+        log(f"Wikidata фильмы: {e}")
     try:
-        tv = tmdb("/discover/tv", sort_by="popularity.desc", with_original_language="en", include_adult="false",
-                  watch_region="US", **{"air_date.gte": today, "air_date.lte": end})
-        for x in tv.get("results", [])[:15]:
-            it = tv_item(x["id"], None, today, end)
-            if it:
-                out.append(it)
-            time.sleep(0.3)
+        tv = upcoming_tv(today, end)
     except Exception as e:
-        log(f"TMDB сериалы: {e}")
-    out.sort(key=lambda x: -x["popularity"])
-    big = [x["key"] for x in out if x["type"] == "movie"][:SKIP_BIGGEST] + [x["key"] for x in out if x["type"] == "tv"][:SKIP_BIGGEST]
-    return [x for x in out if x["key"] not in big]     # самые громкие премьеры пропускаем: там нас обгонят крупные сайты
+        log(f"TVmaze сериалы: {e}")
+    movies.sort(key=lambda x: -x["popularity"]); tv.sort(key=lambda x: -x["popularity"])
+    out = movies[SKIP_BIGGEST:] + tv[SKIP_BIGGEST:]     # самые громкие премьеры пропускаем: там нас обгонят крупные сайты
+    return sorted(out, key=lambda x: x["date"])         # ближайшие премьеры — первыми
 
 
-def best_known(credits, skip_id):
-    other = [x for x in credits if x.get("id") != skip_id and (x.get("title") or x.get("name"))
-             and not re.search(r"(?i)^(self|himself|herself|themselves)", x.get("character") or "") and (x.get("vote_count") or 0) > 50]
-    other.sort(key=lambda x: -(x.get("vote_count") or 0))
-    known, seen = [], set()
-    for x in other:
-        ttl = x.get("title") or x.get("name")
-        if ttl in seen:
-            continue
-        seen.add(ttl)
-        known.append({"title": ttl, "year": (x.get("release_date") or x.get("first_air_date") or "")[:4],
-                      "character": x.get("character") or ""})
-        if len(known) >= 5:
-            break
-    return known
+def refresh_item(x):
+    """Свежие данные о вышедшем фильме/сериале (после премьеры добавляются роли и приглашённые актёры)."""
+    it = x["item"]
+    if it["type"] == "movie":
+        return movie_item(it["id"], it["title"], it["date"], it.get("popularity", 0), it.get("where"))
+    show = tvmaze(f"/shows/{it['show_id']}")
+    return tv_item(show, it["season"], it["date"]) if show else None
 
 
-def known_for(pid, skip_id):
-    """Где ещё снимался актёр: самые известные работы (для «где я его видел»)."""
-    return best_known(tmdb(f"/person/{pid}/combined_credits").get("cast", []), skip_id)
-
-
-def wiki_intro(name):
-    """Вступление статьи Википедии об актёре (для фактов вроде «на ком женат»). Только для чтения ИИ."""
-    q = urllib.parse.urlencode({"action": "query", "generator": "search", "gsrsearch": f"{name} actor", "gsrlimit": 3,
-                                "prop": "extracts", "exintro": 1, "explaintext": 1, "format": "json", "formatversion": 2})
+# ----- факты об актёре -----
+def wiki_person(name, title=""):
+    """Статья Википедии об актёре: вступление (для ИИ) и номер в Wikidata."""
+    params = {"action": "query", "prop": "extracts|pageprops", "exintro": 1, "explaintext": 1, "ppprop": "wikibase_item",
+              "format": "json", "formatversion": 2, "redirects": 1}
+    if title:
+        params["titles"] = title
+    else:
+        params.update({"generator": "search", "gsrsearch": f"{name} actor", "gsrlimit": 3})
     try:
-        pages = json.loads(get("https://en.wikipedia.org/w/api.php?" + q)).get("query", {}).get("pages", [])
+        pages = json.loads(get("https://en.wikipedia.org/w/api.php?" + urllib.parse.urlencode(params))).get("query", {}).get("pages", [])
     except Exception:
-        return "", ""
+        return "", "", ""
     last = name.split()[-1].lower()
-    for p in sorted(pages, key=lambda p: p.get("index", 99)):
+    for p in sorted(pages, key=lambda p: p.get("index", 0)):
         ex = p.get("extract", "")
-        if last in p.get("title", "").lower() and re.search(r"(?i)\b(actor|actress|comedian|singer|performer|rapper|model|host)\b", ex[:400]):
-            return ex[:2500], "https://en.wikipedia.org/wiki/" + urllib.parse.quote(p["title"].replace(" ", "_"))
-    return "", ""
+        if last in p.get("title", "").lower() and re.search(r"(?i)\b(actor|actress|comedian|singer|performer|rapper|model|host|voice)\b", ex[:500]):
+            return (ex[:2500], "https://en.wikipedia.org/wiki/" + urllib.parse.quote(p["title"].replace(" ", "_")),
+                    (p.get("pageprops") or {}).get("wikibase_item", ""))
+    return "", "", ""
+
+
+def wd_person(q):
+    """Из Wikidata: дата рождения, место рождения, супруги (действующие), смерть."""
+    rows = sparql(f"""SELECT ?born ?died ?placeLabel ?spouseLabel ?end WHERE {{
+  OPTIONAL {{ wd:{q} wdt:P569 ?born }} OPTIONAL {{ wd:{q} wdt:P570 ?died }} OPTIONAL {{ wd:{q} wdt:P19 ?place }}
+  OPTIONAL {{ wd:{q} p:P26 ?ss . ?ss ps:P26 ?spouse . OPTIONAL {{ ?ss pq:P582 ?end }} }}
+  SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }} }}""")
+    f = {"born": "", "died": "", "place": "", "spouses": [], "former": []}
+    for r in rows:
+        f["born"] = f["born"] or (r.get("born") or "")[:10]
+        f["died"] = f["died"] or r.get("died", "")
+        if r.get("placeLabel") and not re.fullmatch(r"Q\d+", r["placeLabel"]):
+            f["place"] = f["place"] or r["placeLabel"]
+        s = r.get("spouseLabel", "")
+        if s and not re.fullmatch(r"Q\d+", s):
+            (f["former"] if r.get("end") else f["spouses"]).append(s)
+    f["spouses"] = list(dict.fromkeys(f["spouses"])); f["former"] = list(dict.fromkeys(x for x in f["former"] if x not in f["spouses"]))
+    return f
+
+
+def wd_works(q, skip=""):
+    rows = sparql(f"""SELECT ?work ?workLabel ?links ?date WHERE {{
+  ?work wdt:P161 wd:{q} ; wikibase:sitelinks ?links . OPTIONAL {{ ?work wdt:P577 ?date }} OPTIONAL {{ ?work wdt:P580 ?date }}
+  SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }} }} ORDER BY DESC(?links) LIMIT 30""")
+    best = {}
+    for r in rows:
+        w = qid(r["work"])
+        if w == skip or re.fullmatch(r"Q\d+", r.get("workLabel", "")):
+            continue
+        yr = (r.get("date") or "")[:4]
+        b = best.setdefault(w, {"title": r["workLabel"], "year": yr, "character": "", "links": int(r.get("links") or 0)})
+        if yr and (not b["year"] or yr < b["year"]):
+            b["year"] = yr
+    return sorted(best.values(), key=lambda b: -b["links"])[:5]
+
+
+def tvm_works(pid, skip_show=None):
+    rows = tvmaze(f"/people/{pid}/castcredits", embed="show") or []
+    out, seen = [], set()
+    for r in rows:
+        s = (r.get("_embedded") or {}).get("show") or {}
+        if not s.get("name") or s.get("id") == skip_show or s["name"] in seen or r.get("self"):
+            continue
+        seen.add(s["name"])
+        out.append({"title": s["name"], "year": (s.get("premiered") or "")[:4],
+                    "character": ((r.get("_links") or {}).get("character") or {}).get("name", ""), "w": s.get("weight") or 0})
+    return sorted(out, key=lambda x: -x["w"])[:5]
+
+
+def known_for(r, item):
+    """Где ещё снимался актёр — для «где я его видел»."""
+    if r.get("qid"):
+        return wd_works(r["qid"], item["id"])
+    if r.get("pid"):
+        return tvm_works(r["pid"], item.get("show_id"))
+    return []
+
+
+def merge_known(a, b):
+    out, seen = [], set()
+    for k in a + b:
+        key = re.sub(r"\W", "", k["title"].lower())
+        if key not in seen:
+            seen.add(key); out.append(k)
+    return out[:5]
 
 
 def person_facts(c, item, today):
-    p = tmdb(f"/person/{c['id']}", append_to_response="combined_credits")
-    if p.get("deathday"):
+    wiki, wiki_url, q = wiki_person(c["name"], c.get("wiki_title", ""))
+    q = c.get("qid") or q
+    wd = {"born": "", "died": "", "place": "", "spouses": [], "former": []}
+    if q:
+        try:
+            wd = wd_person(q)
+        except Exception as e:
+            log(f"Wikidata {c['name']}: {e}")
+    if c.get("died") or wd["died"]:
         return None                                        # архивные кадры умерших актёров — не описываем
-    known = best_known(p.get("combined_credits", {}).get("cast", []), item["id"])
-    wiki, wiki_url = wiki_intro(c["name"])
-    f = {"id": c["id"], "name": c["name"], "character": c["character"], "born": p.get("birthday") or "",
-         "place": p.get("place_of_birth") or "", "known": known, "bio": (p.get("biography") or "")[:1500],
-         "wiki": wiki, "wiki_url": wiki_url, "tmdb": f"https://www.themoviedb.org/person/{c['id']}"}
-    f["age"] = age_on(f["born"], today) if f["born"] else None
+    known = []
+    try:
+        if q:
+            known = wd_works(q, item["id"] if item["type"] == "movie" else "")
+        if c.get("pid"):
+            known = merge_known(known, tvm_works(c["pid"], item.get("show_id")))
+    except Exception as e:
+        log(f"работы {c['name']}: {e}")
+    known = [k for k in known if re.sub(r"\W", "", k["title"].lower()) != re.sub(r"\W", "", item["title"].lower())]
+    born = c.get("born") or wd["born"]
+    f = {"id": c["id"], "name": c["name"], "character": c.get("character", ""), "born": born,
+         "place": wd["place"] or c.get("country", ""), "known": known, "bio": "", "wiki": wiki, "wiki_url": wiki_url,
+         "spouses": wd["spouses"], "former": wd["former"], "url": wiki_url or c.get("url", "")}
+    f["age"] = age_on(born, today) if born else None
     f["minor"] = f["age"] is not None and f["age"] < 18
     return f
 
@@ -2291,7 +2435,7 @@ PREVIEW_TOOL = {
 
 def what_line(item):
     if item["type"] == "movie":
-        return "movie", "in theaters" if item["release"] == "theaters" else "on digital platforms"
+        return "movie", ("on " + ", ".join(item["where"])) if item["release"] == "digital" and item.get("where") else "in theaters"
     where = item.get("where") or item.get("networks") or []
     what = "series" if item.get("season", 1) == 1 else f"series, season {item['season']}"
     return what, ("on " + ", ".join(where)) if where else "on TV"
@@ -2303,8 +2447,11 @@ def facts_block(f):
         lines.append(f"Born: {f['born']}" + (f" in {f['place']}" if f["place"] else ""))
     if f["known"]:
         lines.append("Known for: " + "; ".join(f"{k['title']} ({k['year']})" + (f" as {k['character']}" if k['character'] else "") for k in f["known"]))
-    if f["bio"]:
-        lines.append("Bio: " + f["bio"])
+    if not f["minor"]:
+        if f["spouses"]:
+            lines.append("Spouse (current): " + ", ".join(f["spouses"]))
+        if f["former"]:
+            lines.append("Former spouse(s): " + ", ".join(f["former"]))
     if f["wiki"] and not f["minor"]:
         lines.append("Encyclopedia intro: " + f["wiki"])
     if f.get("questions") and not f["minor"]:
@@ -2362,7 +2509,7 @@ def make_preview(store, item, key, today, old=None):
         try:
             f = person_facts(c, item, today)
         except Exception as e:
-            log(f"TMDB актёр {c['name']}: {e}")
+            log(f"актёр {c['name']}: {e}")
             continue
         if f:
             f["questions"] = [] if f["minor"] else people_questions(f["name"])
@@ -2399,7 +2546,7 @@ def make_preview(store, item, key, today, old=None):
                                                         and not BAD_Q.search(q["q"])][:6])
         entry = {"name": f["name"], "character": f["character"], "bio": w.get("bio", ""), "qa": qa,
                  "born": "" if f["minor"] else f["born"],
-                 "wiki_url": f["wiki_url"], "tmdb": f["tmdb"]}
+                 "wiki_url": f["wiki_url"], "url": f["url"]}
         if old_img.get(f["name"]):
             entry["img"] = old_img[f["name"]]          # фото уже есть — не ищем заново
         elif i < PREVIEW_PHOTOS and not f["minor"] and not old:
@@ -2415,12 +2562,13 @@ def make_preview(store, item, key, today, old=None):
     main_ids = {f["id"] for f in people}
     roles = []
     for r in item.get("roles", []):
-        er = {"name": r["name"], "character": r["character"], "known": []}
+        er = {"name": r["name"], "character": r["character"], "known": [], "episode": r.get("episode", "")}
         if r["id"] in main_ids:
             er["main"] = True
         elif sum(1 for x in roles if not x.get("main")) < PREVIEW_ROLES_KNOWN:
             try:
-                er["known"] = known_for(r["id"], item["id"])[:3]
+                er["known"] = [k for k in known_for(r, item) if re.sub(r"\W", "", k["title"].lower())
+                               != re.sub(r"\W", "", item["title"].lower())][:3]
             except Exception:
                 pass
             time.sleep(0.25)
@@ -2428,12 +2576,12 @@ def make_preview(store, item, key, today, old=None):
     return {"roles": roles, "slug": slug, "title": item["title"], "type": item["type"], "season": item.get("season", 1),
                        "date": item["date"], "release": item["release"], "where": item.get("where", []),
                        "networks": item.get("networks", []), "genres": item["genres"], "intro": res["intro"],
-                       "cast": cast, "tmdb": item["tmdb"], "made": now_iso(), "day": (old or {}).get("day", today), "new": True,
+                       "cast": cast, "link": item["link"], "link_name": item["link_name"], "made": now_iso(), "day": (old or {}).get("day", today), "new": True,
             "first": (old or {}).get("first", now_iso()), "item": item, "refreshed": bool(old)}
 
 
 def previews(store):
-    if not (PREVIEW and tmdb_key() and api_key()):
+    if not (PREVIEW and api_key()):
         return 0
     key = api_key()
     pv = store.setdefault("previews", {})
@@ -2449,9 +2597,9 @@ def previews(store):
                 and (datetime.strptime(today, "%Y-%m-%d") - datetime.strptime(x["date"], "%Y-%m-%d")).days >= 3:
             x["refreshed"] = True
             try:
-                fresh = movie_item(x["item"]["id"]) if x["type"] == "movie" else tv_item(x["item"]["id"], x.get("season", 1))
+                fresh = refresh_item(x)
             except Exception as e:
-                log(f"TMDB {x['title']}: {e}")
+                log(f"обновление {x['title']}: {e}")
                 fresh = None
             entry = make_preview(store, fresh or x["item"], key, today, old=x)
             if entry:
@@ -2498,7 +2646,7 @@ def build_cast(x):
     when = nice_date(x["date"])
     future = x["date"] >= to_et(datetime.now(timezone.utc))[0].strftime("%Y-%m-%d")
     if x["type"] == "movie":
-        where = "in theaters" if x["release"] == "theaters" else "on digital platforms"
+        where = ("on " + ", ".join(x["where"])) if x["release"] == "digital" and x.get("where") else "in theaters"
     else:
         w = x.get("where") or x.get("networks") or []
         where = ("on " + ", ".join(w)) if w else "on TV"
@@ -2530,7 +2678,7 @@ def build_cast(x):
     for r in x.get("roles", []):
         ch = r["character"]
         q = f"Who plays {ch} in {x['title']}?"
-        a = f"{ch} is played by {r['name']}"
+        a = f"{ch} is played by {r['name']}" + (f" (episode {r['episode']})" if r.get("episode") else "")
         if r.get("known"):
             ks = [f"{k['title']} ({k['year']})" if k["year"] else k["title"] for k in r["known"]]
             a += ", who you may know from " + (", ".join(ks[:-1]) + " and " + ks[-1] if len(ks) > 1 else ks[0])
@@ -2564,9 +2712,9 @@ def build_cast(x):
 {('<h2 class="sec" id="full-cast">Full cast: who plays who</h2>' + roles_html) if roles_html else ''}
 {reactions_html("w/" + x["slug"])}
 {ad("middle")}
-<h2>Sources</h2><ul class="list"><li><a class="t" href="{E(x["tmdb"])}" rel="nofollow" target="_blank">{E(x["title"])} — The Movie Database (TMDB)</a></li>{src}</ul>
-<p class="meta">Written with AI assistance from public film databases and encyclopedia entries; ages are calculated from listed birth dates.
-This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
+<h2>Sources</h2><ul class="list"><li><a class="t" href="{E(x["link"])}" rel="nofollow" target="_blank">{E(x["title"])} — {E(x["link_name"])}</a></li>{src}</ul>
+<p class="meta">Written with AI assistance from public databases and encyclopedia entries; ages are calculated from listed birth dates.
+{'Cast and schedule data: <a href="https://www.tvmaze.com/" rel="nofollow">TVmaze</a> (CC BY-SA 4.0). ' if x["type"] == "tv" else ''}Film and people data: <a href="https://www.wikidata.org/" rel="nofollow">Wikidata</a>.</p>
 </article>"""
     return page(cast_title(x), short_desc(answer), body, f"w/{x['slug']}.html", 1, head, og_img=hero["file"] if hero else "")
 
@@ -2581,6 +2729,7 @@ def build_cast_index(pv):
     return page(f"Cast guides: who's in this week's new movies and shows | {SITE_NAME}",
                 "Who plays who in new movies and TV series: actors, their ages and where you have seen them before.",
                 body, "cast.html", 0)
+
 
 
 def run_once():
