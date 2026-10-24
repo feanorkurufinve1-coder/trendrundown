@@ -1517,10 +1517,10 @@ def images(store):
 # ---------- сайт ----------
 E = html.escape
 CSS = """
-:root{--bg:#efe9da;--fg:#141210;--muted:#3d3a35;--line:#141210;--soft:#a39d8c;--chip:#e2dbc8}
-@media (prefers-color-scheme:dark){:root{--bg:#161512;--fg:#e9e3d3;--muted:#bdb6a5;--line:#e9e3d3;--soft:#4d4a43;--chip:#24221e}}
+:root{--bg:#f6f1e6;--fg:#2b2723;--muted:#5d564c;--line:#2b2723;--soft:#c9c0ae;--chip:#ebe4d4}
+@media (prefers-color-scheme:dark){:root{--bg:#1d1a16;--fg:#ddd5c4;--muted:#a59d8d;--line:#ddd5c4;--soft:#4a453c;--chip:#2a2620}}
 *{box-sizing:border-box}html,body{background:var(--bg);color:var(--fg)}
-body{margin:0;font:16px/1.5 "Old Standard TT","Times New Roman",serif}
+body{margin:0;font:18px/1.7 "Literata",Georgia,"Times New Roman",serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 a{color:inherit;text-decoration:none}a:hover{text-decoration:underline}
 .wrap{max-width:1120px;margin:0 auto;padding:12px max(14px,env(safe-area-inset-left)) 48px max(14px,env(safe-area-inset-right))}
 /* ---------- шапка газеты ---------- */
@@ -1554,20 +1554,20 @@ h2.sec{font:400 26px/1 "League Gothic","Oswald",Impact,sans-serif;letter-spacing
   border-top:5px double var(--line);border-bottom:1px solid var(--line)}
 h1.front{font:700 13px "Old Standard TT",serif;letter-spacing:.24em;margin:0 0 12px;padding:4px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 /* ---------- статья: колонки, буквица ---------- */
-article{max-width:860px;margin:0 auto}
-article p{text-align:justify;hyphens:auto;margin:0 0 .8em}
-.cols{column-count:2;column-gap:28px;column-rule:1px solid var(--soft)}
+article{max-width:700px;margin:0 auto}
+article p{text-align:left;margin:0 0 1.1em}
+.cols{max-width:680px;margin:0 auto}
 .cols h2,.cols .box,.cols figure,.cols ul{break-inside:avoid}
-@media (max-width:760px){.cols{column-count:1}article p{text-align:left}}
+@media (max-width:760px){body{font-size:17.5px}}
 b.dl{font-weight:700;letter-spacing:.04em}
 p.dc::first-letter{float:left;font:400 64px/.82 "League Gothic","Oswald",Impact,sans-serif;padding:4px 6px 0 0}
 .box{border:1px solid var(--line);outline:1px solid var(--line);outline-offset:3px;padding:12px 16px;margin:8px 4px 14px}
-.answer{font:italic 19px/1.45 "Old Standard TT",serif}
+.answer{font:italic 20px/1.6 "Literata",Georgia,serif}
 .answer p{text-align:center!important;margin:0}
 .list{list-style:none;padding:0;margin:0}
 .list li{padding:8px 0;border-bottom:1px solid var(--soft);break-inside:avoid}
 .list .src{font:700 10.5px "Old Standard TT",serif;text-transform:uppercase;letter-spacing:.14em}
-.list .t{display:block;font:700 16px/1.3 "Old Standard TT",serif;margin:2px 0}
+.list .t{display:block;font:600 17px/1.4 "Literata",Georgia,serif;margin:2px 0}
 ul{padding-left:20px}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
 .chip{border:1px solid var(--line);padding:1px 9px;font:12px "Old Standard TT",serif;text-transform:uppercase;letter-spacing:.06em}
@@ -1584,7 +1584,7 @@ figure.hero figcaption{font:italic 11.5px "Old Standard TT",serif;margin-top:4px
 .lead-term{font:400 clamp(48px,7.5vw,96px)/.9 "League Gothic","Oswald",Impact,sans-serif;text-transform:uppercase;margin:6px 0 8px;letter-spacing:.005em;
   border:0;padding:0;text-align:left;column-span:none}
 .lead-head{font:700 17px/1.35 "Old Standard TT",serif;text-transform:uppercase;letter-spacing:.04em;margin:0 0 8px}
-.lead-txt p.snip{font-size:16px;text-align:justify}
+.lead-txt p.snip{font-size:17px;line-height:1.65}
 .lead:hover .lead-term,.card:hover h3{text-decoration:underline;text-decoration-thickness:2px}
 .badge{display:inline-block;font:700 10.5px "Old Standard TT",serif;text-transform:uppercase;letter-spacing:.16em;border-top:2px solid var(--line);border-bottom:1px solid var(--line);padding:2px 0}
 .chip-s{white-space:nowrap;font:italic 11.5px "Old Standard TT",serif}
@@ -1596,7 +1596,7 @@ figure.hero figcaption{font:italic 11.5px "Old Standard TT",serif;margin-top:4px
 .card h3{font:400 30px/.95 "League Gothic","Oswald",Impact,sans-serif;margin:4px 0 0;overflow-wrap:anywhere}
 .card .head{margin:0;font:700 12.5px/1.35 "Old Standard TT",serif;text-transform:uppercase;letter-spacing:.03em;
   display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden;border-top:1px solid var(--soft);padding-top:5px}
-.card .snip{margin:0;font-size:14px;line-height:1.45;text-align:justify;hyphens:auto;display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;overflow:hidden}
+.card .snip{margin:0;font:15px/1.6 "Literata",Georgia,serif;display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;overflow:hidden}
 .card .meta{margin-top:auto;padding-top:4px}
 .ad{margin:26px 0;padding:8px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center;min-height:120px}
 .ad-l{font:10.5px "Old Standard TT",serif;letter-spacing:.16em;text-transform:uppercase;margin-bottom:6px}
@@ -1611,7 +1611,7 @@ a.xl{text-decoration:underline;text-decoration-style:dotted;text-underline-offse
   background:transparent;cursor:pointer;font:700 13px "Old Standard TT",serif;color:var(--fg)}
 .rx-b:hover{background:var(--chip)}.rx-b.on{background:var(--fg);color:var(--bg)}
 .rx-e{font-size:18px;line-height:1;filter:grayscale(1)}
-.ct{overflow-x:auto;margin:8px 0 16px}.ct table{border-collapse:collapse;width:100%;font:14.5px/1.4 "Old Standard TT",serif}
+.ct{overflow-x:auto;margin:8px 0 16px}.ct table{border-collapse:collapse;width:100%;font:15px/1.5 "Literata",Georgia,serif}
 .ct th,.ct td{text-align:left;padding:6px 9px;border-bottom:1px solid var(--soft);vertical-align:top}
 .ct th{font-size:10.5px;text-transform:uppercase;letter-spacing:.14em;border-top:2px solid var(--line);border-bottom:1px solid var(--line)}
 .ct td:last-child{font-style:italic;font-size:13.5px}
@@ -1674,7 +1674,7 @@ def page(title, desc, body, path, depth, extra_head="", og_img=""):
 <link rel="canonical" href="{E(canon)}"><link rel="alternate" type="application/rss+xml" title="{SITE_NAME}" href="{up}feed.xml">
 {f'<meta property="og:image" content="{E(SITE_URL + "/" + og_img)}"><meta name="twitter:card" content="summary_large_image">' if og_img else ''}<meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
 <style>{CSS}</style>{ga_snippet()}{"" if path in NO_ADS else ads_head()}{extra_head}</head><body><div class="wrap">
 <header class="top"><div class="mast"><div class="ear">Late Edition<b>Every Trend</b>Explained around the clock</div>
 <div><a class="brand" href="{up}index.html">The Trend Rundown</a><div class="motto">“{E(TAGLINE)}”</div></div>
