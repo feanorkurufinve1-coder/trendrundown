@@ -1857,7 +1857,11 @@ def build_archive(store):
 
 
 STATIC = {
-    "about.html": ("About", f"<h1>About {SITE_NAME}</h1><p>{SITE_NAME} watches what people across the United States are searching for on Google and, for every trending topic, puts together a one-minute rundown: when it started trending, how big the interest is, which outlets are covering it, and how the story developed.</p><p>We don't copy articles. We link to the original reporting so you can read it at the source.</p>"),
+    "about.html": ("About", f"<h1>About {SITE_NAME}</h1>"
+        f"<p>{SITE_NAME} is an independent news explainer for readers in the United States. Every day we follow what Americans are searching for on Google and, for each trending topic, publish a short, plain-English rundown of what actually happened, plus explainers that answer the questions people ask next (who is this person, what is this law, where is this place).</p>"
+        "<h2>How we work</h2><p>Every rundown is built only from reporting by established news organizations, which are linked at the bottom of each page so you can check the original. Drafts are written with the help of AI and then checked by a separate review step against those sources; anything that cannot be backed by a source is removed or the page is not published. We do not publish rumors, private individuals' personal details or sexual, violent or extremist content.</p>"
+        "<h2>Corrections</h2><p>If something on a page is wrong, email us and we will fix or remove it, usually within 24 hours. Pages are updated automatically as new reporting appears.</p>"
+        f"<h2>Contact</h2><p>{CONTACT_EMAIL}</p>"),
     "privacy.html": ("Privacy policy", f"<h1>Privacy policy</h1><p>{SITE_NAME} does not ask you to create an account and does not collect personal information directly. We use Google Analytics to understand how many people visit and which pages they read, and we may show ads served by Google. Google and its partners use cookies to serve ads based on prior visits to this and other websites. You can opt out of personalized advertising at <a href='https://www.google.com/settings/ads'>Google Ads Settings</a>.</p><p>Questions: {CONTACT_EMAIL}</p>"),
     "contact.html": ("Contact", f"<h1>Contact</h1><p>Corrections, publisher requests or anything else: <b>{CONTACT_EMAIL}</b></p><p>If you are a publisher and want a link removed, email us and we'll remove it within 24 hours.</p>"),
 }
