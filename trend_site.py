@@ -2459,7 +2459,7 @@ def facts_block(f):
     return "\n".join(lines)
 
 
-def write_preview(item, people, key, feedback=""):
+def write_preview(item, people, key, feedback="", store=None):
     what, where = what_line(item)
     prompt = PREVIEW_PROMPT.format(title=item["title"], what=what, kind="series" if item["type"] == "tv" else "movie",
                                    when=f"{nice_date(item['date'])}, {where}", overview=item["overview"] or "(none)",
@@ -2469,11 +2469,12 @@ def write_preview(item, people, key, feedback=""):
     texts = [item["overview"]] + [f["bio"] for f in people] + [f["wiki"] for f in people]
     for _ in range(2):
         try:
-            out = ai_call(prompt, key, PREVIEW_TOOL, max_tokens=4000)
+            out = ai_call(prompt, key, PREVIEW_TOOL, max_tokens=8000)
         except Exception as e:
-            log(f"гид по актёрам '{item['title']}' не написан: {e}")
+            store is not None and plog(store, f"{item['title']}: ИИ не ответил: {str(e)[:120]}")
             return None
         if not out.get("ok"):
+            store is not None and plog(store, f"{item['title']}: ИИ счёл данные слишком бедными")
             return None
         full = " ".join([out.get("intro", "")] + [p.get("bio", "") + " " + " ".join(q.get("a", "") for q in p.get("qa", []))
                                                   for p in out.get("people", [])])
@@ -2481,6 +2482,7 @@ def write_preview(item, people, key, feedback=""):
         if not hits:
             return out
         prompt += "\n\nYour draft repeated these word sequences from the facts: " + "; ".join(f'"{h}"' for h in hits[:5]) + ". Rewrite them."
+    store is not None and plog(store, f"{item['title']}: текст дважды повторял источник: {hits[:2]}")
     return None
 
 
@@ -2502,6 +2504,14 @@ def auto_qa(f, item):
     return qa
 
 
+def plog(store, msg):
+    """Журнал гидов по актёрам в data/topics.json — чтобы видеть, почему страница не вышла."""
+    log(msg)
+    j = store.setdefault("preview_log", [])
+    j.append(now_iso()[:16] + " " + msg)
+    store["preview_log"] = j[-60:]
+
+
 def make_preview(store, item, key, today, old=None):
     """Собирает факты об актёрах, пишет текст, проверяет редактором. old — прежняя версия страницы (обновление после премьеры)."""
     people = []
@@ -2516,8 +2526,9 @@ def make_preview(store, item, key, today, old=None):
             people.append(f)
         time.sleep(0.3)
     if len(people) < 3:
+        plog(store, f"{item['title']}: мало данных об актёрах ({len(people)})")
         return None
-    res = write_preview(item, people, key)
+    res = write_preview(item, people, key, store=store)
     src = {"blocks": [f"TITLE: {item['title']} — US release {item['date']} — {item['overview']}"]
            + [facts_block(f) for f in people]
            + ["NOTE: computed answers (age, role, other titles) are added by the site; saying 'public sources do not list "
@@ -2527,7 +2538,7 @@ def make_preview(store, item, key, today, old=None):
                                                     + "\n".join(f"Q: {q['q']} A: {q['a']}" for q in p.get("qa", []))
                                                     for p in res.get("people", []))
         if not review(store, "cast guide", item["title"], draft, src, key):
-            res = write_preview(item, people, key, store["review_log"][-1]["reason"])
+            res = write_preview(item, people, key, store["review_log"][-1]["reason"], store=store)
             if res:
                 draft = res["intro"] + "\n\n" + "\n\n".join(p.get("name", "") + ": " + p.get("bio", "") + "\n"
                                                             + "\n".join(f"Q: {q['q']} A: {q['a']}" for q in p.get("qa", []))
@@ -2536,12 +2547,21 @@ def make_preview(store, item, key, today, old=None):
                     res = None
     if not res:
         return None
-    by_name = {p.get("name", "").lower(): p for p in res.get("people", [])}
+    def nk(s):
+        import unicodedata
+        s = unicodedata.normalize("NFKD", re.sub(r"\(.*?\)", "", s or "")).encode("ascii", "ignore").decode().lower()
+        return re.sub(r"[^a-z]", "", s)
+    by_name = {nk(p.get("name", "")): p for p in res.get("people", [])}
+    if len(by_name) < len([p for p in res.get("people", []) if p.get("bio")]) or not any(nk(f["name"]) in by_name for f in people):
+        by_name = {nk(f["name"]): p for f, p in zip(people, res.get("people", []))}   # ИИ переписал имена — сопоставляем по порядку
+    got = sum(1 for f in people if by_name.get(nk(f["name"]), {}).get("bio"))
+    if got < len(people):
+        plog(store, f"{item['title']}: описания есть только у {got} из {len(people)} актёров")
     slug = (old or {}).get("slug") or slugify(item["title"] + ("" if item.get("season", 1) == 1 else f" season {item['season']}") + " cast")
     old_img = {c["name"]: c.get("img") for c in (old or {}).get("cast", [])}
     cast = []
     for i, f in enumerate(people):
-        w = by_name.get(f["name"].lower(), {})
+        w = by_name.get(nk(f["name"]), {})
         qa = auto_qa(f, item) + ([] if f["minor"] else [q for q in w.get("qa", []) if q.get("q") and q.get("a")
                                                         and not BAD_Q.search(q["q"])][:6])
         entry = {"name": f["name"], "character": f["character"], "bio": w.get("bio", ""), "qa": qa,
@@ -2605,6 +2625,14 @@ def previews(store):
             if entry:
                 pv[k] = entry; done += 1
                 log(f"гид по актёрам обновлён после премьеры: {x['title']}")
+    for k, x in list(pv.items()):                 # страницы без описаний актёров (сбой ИИ) — переписываем один раз
+        if x.get("slug") and x.get("item") and not x.get("redo") and not any(c.get("bio") for c in x.get("cast", [])):
+            x["redo"] = True
+            entry = make_preview(store, x["item"], key, today, old=x)
+            if entry:
+                entry["redo"] = True; entry["refreshed"] = x.get("refreshed", False)
+                pv[k] = entry; done += 1
+                plog(store, f"{x['title']}: переписан (были пустые описания)")
     made_today = sum(1 for x in pv.values() if x.get("day") == today)
     if made_today >= MAX_PREVIEWS_PER_DAY:
         return done
