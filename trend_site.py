@@ -557,10 +557,10 @@ AI_TOOL = {
 }
 
 
-def ai_call(prompt, key, tool=None):
+def ai_call(prompt, key, tool=None, max_tokens=2000):
     """Запрос к Claude. Ответ приходит готовыми полями через инструмент — без разбора текста."""
     tool = tool or AI_TOOL
-    body = json.dumps({"model": AI_MODEL, "max_tokens": 2000, "tools": [tool],
+    body = json.dumps({"model": AI_MODEL, "max_tokens": max_tokens, "tools": [tool],
                        "tool_choice": {"type": "tool", "name": tool["name"]},
                        "messages": [{"role": "user", "content": prompt}]}).encode()
     req = urllib.request.Request("https://api.anthropic.com/v1/messages", data=body, method="POST", headers={
@@ -1500,7 +1500,7 @@ def page(title, desc, body, path, depth, extra_head="", og_img=""):
 {f'<meta property="og:image" content="{E(SITE_URL + "/" + og_img)}"><meta name="twitter:card" content="summary_large_image">' if og_img else ''}<meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:type" content="website">
 <style>{CSS}</style>{ga_snippet()}{"" if path in NO_ADS else ads_head()}{extra_head}</head><body><div class="wrap">
 <header class="top"><a class="brand" href="{up}index.html">Trend<span>Rundown</span></a>
-<nav><a href="{up}index.html">Trending now</a>{f'<a href="{up}explained.html">Explained</a>' if HAS_EXPLAINED else ''}{"".join(f'<a href="{up}c/{c}.html">{E(CATS[c])}</a>' for c in NAV_CATS)}<a href="{up}archive.html">Archive</a></nav></header>
+<nav><a href="{up}index.html">Trending now</a>{f'<a href="{up}cast.html">Cast guides</a>' if HAS_CAST else ''}{f'<a href="{up}explained.html">Explained</a>' if HAS_EXPLAINED else ''}{"".join(f'<a href="{up}c/{c}.html">{E(CATS[c])}</a>' for c in NAV_CATS)}<a href="{up}archive.html">Archive</a></nav></header>
 {body}
 <footer><a href="{up}about.html">About</a><a href="{up}privacy.html">Privacy</a><a href="{up}contact.html">Contact</a>
 <p>{SITE_NAME} tracks what Americans are searching for and links to the outlets covering it. Headlines belong to their publishers; every link goes to the original source.</p></footer>
@@ -1945,8 +1945,10 @@ def build_site(store):
           if not bad_text(x["title"] + " " + x["subject"], ub)
           and (any(tt in topics for tt in x.get("topics", [])) or not any(tt in allt for tt in x.get("topics", [])))}
     EXPLAINERS.clear(); EXPLAINERS.update(ex)
-    global HAS_EXPLAINED
+    global HAS_EXPLAINED, HAS_CAST
     HAS_EXPLAINED = bool(ex)
+    pv = {k: x for k, x in store.get("previews", {}).items() if x.get("slug") and not bad_text(x["title"], ub)}
+    HAS_CAST = bool(pv)
     by_cat = {}
     for t in sorted(topics.values(), key=lambda x: x.get("last_seen", x["first_seen"]), reverse=True):
         by_cat.setdefault(t.get("cat"), []).append(t)
@@ -1976,6 +1978,10 @@ def build_site(store):
                 pass
     if ex:
         w("explained.html", build_explained_index(ex))
+    for x in pv.values():
+        w(f"w/{x['slug']}.html", build_cast(x))
+    if pv:
+        w("cast.html", build_cast_index(pv))
     w("index.html", build_index(store))
     w("archive.html", build_archive(store))
     for fn, (title, body) in STATIC.items():
@@ -1984,9 +1990,11 @@ def build_site(store):
     urls = ([f"{SITE_URL}/", f"{SITE_URL}/archive"] + ([f"{SITE_URL}/explained"] if ex else [])
             + [f"{SITE_URL}/c/{c}" for c in counts]
             + [f"{SITE_URL}/x/{x['slug']}" for x in ex.values()]
+            + ([f"{SITE_URL}/cast"] if pv else []) + [f"{SITE_URL}/w/{x['slug']}" for x in pv.values()]
             + [f"{SITE_URL}/t/{t['slug']}" for t in topics.values()])
     lm = {f"{SITE_URL}/t/{t['slug']}": t.get("last_seen", t["first_seen"]) for t in topics.values()}
     lm.update({f"{SITE_URL}/x/{x['slug']}": x["made"] for x in ex.values()})
+    lm.update({f"{SITE_URL}/w/{x['slug']}": x["made"] for x in pv.values()})
     # новостной sitemap для Google News: статьи за последние 48 часов
     fresh = [t for t in topics.values() if hours_since(t["first_seen"]) <= 48]
     w("sitemap-news.xml", '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
@@ -2000,6 +2008,7 @@ def build_site(store):
     w(f"{k}.txt", k)
     new_urls = [f"{SITE_URL}/t/{t['slug']}" for t in topics.values() if t.get("ai", {}).get("made", "") >= store.get("_run_started", "~")]
     new_urls += [f"{SITE_URL}/x/{x['slug']}" for x in ex.values() if x.pop("new", False)]
+    new_urls += [f"{SITE_URL}/w/{x['slug']}" for x in pv.values() if x.pop("new", False)]
     if new_urls:
         orig["_pending_out"] = new_urls
     w("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
@@ -2014,6 +2023,564 @@ def build_site(store):
                 f"<guid>{SITE_URL}/t/{t['slug']}</guid><pubDate>{datetime.fromisoformat(t['first_seen']).strftime('%a, %d %b %Y %H:%M:%S +0000')}</pubDate></item>" for t in items)
       + "</channel></rss>")
     return len(topics)
+
+
+
+# ---------- На опережение: «кто играет» в фильмах и сериалах, которые выходят в ближайшие дни (база TMDB) ----------
+PREVIEW = True                 # страницы «актёры нового фильма/сериала» до премьеры
+MAX_PREVIEWS_PER_DAY = 4       # сколько таких страниц в сутки
+PREVIEW_DAYS_AHEAD = 10        # смотрим премьеры на столько дней вперёд
+PREVIEW_CAST = 8               # сколько актёров описывать
+SKIP_BIGGEST = 2               # пропускать столько самых громких премьер (фильмов и сериалов) — там не пробиться
+PREVIEW_ROLES = 60             # для скольких ролей сделать вопрос «кто играет …» (включая эпизодические)
+PREVIEW_ROLES_KNOWN = 30       # для скольких второстепенных актёров узнать «где ещё снимался»
+PREVIEW_PHOTOS = 4             # для скольких первых актёров искать свободное фото
+TMDB_KEY_FILE = "tmdb_key.txt"
+MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October",
+          "November", "December"]
+HAS_CAST = False
+BAD_Q = re.compile(r"(?i)net worth|salary|nude|naked|hot\b|sexy|feet|shirtless|bikini|gay|lesbian|trans\b|religion|"
+                   r"jewish|muslim|christian|ethnic|race|nationality|politic|trump|biden|dead|death|died|sick|ill\b|"
+                   r"cancer|disease|surgery|weight|arrest|jail|dui|scandal|instagram|tiktok|twitter|address|house|phone|"
+                   r"young|before and after|pregnan")
+
+
+def tmdb_key():
+    if os.environ.get("TMDB_API_KEY"):
+        return os.environ["TMDB_API_KEY"].strip()
+    try:
+        with open(os.path.join(HERE, TMDB_KEY_FILE), encoding="utf-8") as f:
+            return f.read().strip()
+    except Exception:
+        return ""
+
+
+def tmdb(path, **params):
+    key = tmdb_key()
+    headers = {"accept": "application/json", "User-Agent": f"TrendRundownBot/1.0 ({SITE_URL})"}
+    if key.startswith("eyJ"):                       # «Read Access Token» — длинный ключ
+        headers["Authorization"] = "Bearer " + key
+    else:                                            # короткий «API Key»
+        params["api_key"] = key
+    url = "https://api.themoviedb.org/3" + path + "?" + urllib.parse.urlencode(params)
+    with urllib.request.urlopen(urllib.request.Request(url, headers=headers), timeout=30, context=CTX) as r:
+        return json.loads(r.read().decode("utf-8", "replace"))
+
+
+def nice_date(d):
+    d = datetime.strptime(d[:10], "%Y-%m-%d")
+    return f"{MONTHS[d.month - 1]} {d.day}, {d.year}"
+
+
+def age_on(born, day):
+    b = datetime.strptime(born[:10], "%Y-%m-%d"); d = datetime.strptime(day[:10], "%Y-%m-%d")
+    return d.year - b.year - ((d.month, d.day) < (b.month, b.day))
+
+
+def us_release(det):
+    """Дата выхода в США: кинотеатры (3) или онлайн (4), самая ранняя из будущих/ближайших."""
+    best = None
+    for c in (det.get("release_dates") or {}).get("results", []):
+        if c.get("iso_3166_1") != "US":
+            continue
+        for r in c.get("release_dates", []):
+            if r.get("type") in (2, 3, 4) and r.get("release_date"):
+                d = r["release_date"][:10]
+                kind = "theaters" if r["type"] in (2, 3) else "digital"
+                if best is None or d < best[0]:
+                    best = (d, kind)
+    return best
+
+
+def providers(det):
+    us = ((det.get("watch/providers") or {}).get("results") or {}).get("US") or {}
+    return [p.get("provider_name") for p in us.get("flatrate", [])][:3]
+
+
+def clean_role(s):
+    s = re.sub(r"(?i)\s*\((uncredited|credit only|archive footage)\)", "", s or "").strip(" /,")
+    return "" if re.fullmatch(r"(?i)(self|himself|herself|themselves|additional voices?|extra|various)?", s) else s
+
+
+def cast_lists(raw, tv=False):
+    """Главные роли (для подробного описания) и все роли (для вопросов «кто играет …»)."""
+    out, seen = [], set()
+    for c in sorted(raw, key=lambda c: c.get("order", 999)):
+        ch = clean_role(((c.get("roles") or [{}])[0].get("character") if tv else c.get("character")) or "")
+        if c["id"] in seen or not ch:
+            continue
+        seen.add(c["id"])
+        out.append({"id": c["id"], "name": c["name"], "character": ch})
+    return out[:PREVIEW_CAST], out[:PREVIEW_ROLES]
+
+
+def movie_item(mid):
+    det = tmdb(f"/movie/{mid}", append_to_response="credits,release_dates,watch/providers")
+    rel = us_release(det)
+    if not rel or det.get("adult"):
+        return None
+    cast, roles = cast_lists(det.get("credits", {}).get("cast", []))
+    return {"key": f"movie-{det['id']}", "type": "movie", "id": det["id"], "title": det.get("title", ""),
+            "date": rel[0], "release": rel[1], "overview": det.get("overview", ""),
+            "genres": [g["name"] for g in det.get("genres", [])], "where": providers(det),
+            "year": rel[0][:4], "popularity": det.get("popularity", 0), "cast": cast, "roles": roles,
+            "tmdb": f"https://www.themoviedb.org/movie/{det['id']}"}
+
+
+def tv_item(tid, season=None, today="", end=""):
+    det = tmdb(f"/tv/{tid}", append_to_response="aggregate_credits,watch/providers")
+    if season is None:                                   # ищем премьеру: новый сериал или первая серия нового сезона
+        nxt = det.get("next_episode_to_air") or {}
+        first = det.get("first_air_date") or ""
+        if today <= first <= end:
+            season, date = 1, first
+        elif nxt.get("episode_number") == 1 and today <= (nxt.get("air_date") or "") <= end:
+            season, date = nxt.get("season_number", 1), nxt["air_date"]
+        else:
+            return None                                  # обычная серия, не премьера
+    else:
+        date = next((s.get("air_date") for s in det.get("seasons", []) if s.get("season_number") == season), "") \
+            or det.get("first_air_date") or ""
+    raw = det.get("aggregate_credits", {}).get("cast", [])
+    if season > 1:                                       # актёры именно этого сезона (с приглашёнными), если есть
+        try:
+            raw = tmdb(f"/tv/{tid}/season/{season}/aggregate_credits").get("cast") or raw
+        except Exception:
+            pass
+    cast, roles = cast_lists(raw, tv=True)
+    return {"key": f"tv-{det['id']}-s{season}", "type": "tv", "id": det["id"], "season": season,
+            "title": det.get("name", ""), "date": date, "release": "tv", "overview": det.get("overview", ""),
+            "genres": [g["name"] for g in det.get("genres", [])], "where": providers(det),
+            "networks": [n.get("name") for n in det.get("networks", [])][:2], "year": date[:4],
+            "popularity": det.get("popularity", 0), "cast": cast, "roles": roles,
+            "tmdb": f"https://www.themoviedb.org/tv/{det['id']}"}
+
+
+def upcoming_titles(today, end):
+    """Фильмы и сериалы (новые и новые сезоны), которые выходят в США с today по end."""
+    out = []
+    try:
+        m = tmdb("/discover/movie", region="US", sort_by="popularity.desc", include_adult="false",
+                 with_release_type="2|3|4", **{"release_date.gte": today, "release_date.lte": end})
+        for x in m.get("results", [])[:12]:
+            it = movie_item(x["id"])
+            if it and today <= it["date"] <= end:
+                out.append(it)
+            time.sleep(0.3)
+    except Exception as e:
+        log(f"TMDB фильмы: {e}")
+    try:
+        tv = tmdb("/discover/tv", sort_by="popularity.desc", with_original_language="en", include_adult="false",
+                  watch_region="US", **{"air_date.gte": today, "air_date.lte": end})
+        for x in tv.get("results", [])[:15]:
+            it = tv_item(x["id"], None, today, end)
+            if it:
+                out.append(it)
+            time.sleep(0.3)
+    except Exception as e:
+        log(f"TMDB сериалы: {e}")
+    out.sort(key=lambda x: -x["popularity"])
+    big = [x["key"] for x in out if x["type"] == "movie"][:SKIP_BIGGEST] + [x["key"] for x in out if x["type"] == "tv"][:SKIP_BIGGEST]
+    return [x for x in out if x["key"] not in big]     # самые громкие премьеры пропускаем: там нас обгонят крупные сайты
+
+
+def best_known(credits, skip_id):
+    other = [x for x in credits if x.get("id") != skip_id and (x.get("title") or x.get("name"))
+             and not re.search(r"(?i)^(self|himself|herself|themselves)", x.get("character") or "") and (x.get("vote_count") or 0) > 50]
+    other.sort(key=lambda x: -(x.get("vote_count") or 0))
+    known, seen = [], set()
+    for x in other:
+        ttl = x.get("title") or x.get("name")
+        if ttl in seen:
+            continue
+        seen.add(ttl)
+        known.append({"title": ttl, "year": (x.get("release_date") or x.get("first_air_date") or "")[:4],
+                      "character": x.get("character") or ""})
+        if len(known) >= 5:
+            break
+    return known
+
+
+def known_for(pid, skip_id):
+    """Где ещё снимался актёр: самые известные работы (для «где я его видел»)."""
+    return best_known(tmdb(f"/person/{pid}/combined_credits").get("cast", []), skip_id)
+
+
+def wiki_intro(name):
+    """Вступление статьи Википедии об актёре (для фактов вроде «на ком женат»). Только для чтения ИИ."""
+    q = urllib.parse.urlencode({"action": "query", "generator": "search", "gsrsearch": f"{name} actor", "gsrlimit": 3,
+                                "prop": "extracts", "exintro": 1, "explaintext": 1, "format": "json", "formatversion": 2})
+    try:
+        pages = json.loads(get("https://en.wikipedia.org/w/api.php?" + q)).get("query", {}).get("pages", [])
+    except Exception:
+        return "", ""
+    last = name.split()[-1].lower()
+    for p in sorted(pages, key=lambda p: p.get("index", 99)):
+        ex = p.get("extract", "")
+        if last in p.get("title", "").lower() and re.search(r"(?i)\b(actor|actress|comedian|singer|performer|rapper|model|host)\b", ex[:400]):
+            return ex[:2500], "https://en.wikipedia.org/wiki/" + urllib.parse.quote(p["title"].replace(" ", "_"))
+    return "", ""
+
+
+def person_facts(c, item, today):
+    p = tmdb(f"/person/{c['id']}", append_to_response="combined_credits")
+    if p.get("deathday"):
+        return None                                        # архивные кадры умерших актёров — не описываем
+    known = best_known(p.get("combined_credits", {}).get("cast", []), item["id"])
+    wiki, wiki_url = wiki_intro(c["name"])
+    f = {"id": c["id"], "name": c["name"], "character": c["character"], "born": p.get("birthday") or "",
+         "place": p.get("place_of_birth") or "", "known": known, "bio": (p.get("biography") or "")[:1500],
+         "wiki": wiki, "wiki_url": wiki_url, "tmdb": f"https://www.themoviedb.org/person/{c['id']}"}
+    f["age"] = age_on(f["born"], today) if f["born"] else None
+    f["minor"] = f["age"] is not None and f["age"] < 18
+    return f
+
+
+def people_questions(name):
+    """Что люди в США набирают в Google про этого актёра (подсказки поиска)."""
+    got = []
+    for q in (name.lower(), name.lower() + " wife", name.lower() + " husband"):
+        try:
+            got += suggest(q)
+        except Exception:
+            pass
+        time.sleep(0.3)
+    last = name.split()[-1].lower()
+    qs = []
+    for s in got:
+        if last in s and s.lower() != name.lower() and not BAD_Q.search(s) and s not in qs:
+            qs.append(s)
+    return qs[:8]
+
+
+PREVIEW_PROMPT = """You write a "who's in it" cast guide for a US website, published a few days BEFORE the release, for people
+who will google the actors. Title: {title} ({what}). Release in the US: {when}.
+Plot (from the database, rewrite in your own words): {overview}
+
+Below are FACTS about each cast member and the exact searches Americans type into Google about them.
+Rules:
+- Use ONLY the facts below. Never guess. Own words only; never reuse more than 5 words in a row from the facts.
+- Plain, neutral American English, no hype. Do not name websites or databases in the text.
+- "intro": 2 short paragraphs (80-140 words): what the {kind} is about, when and where it comes out, who leads the cast.
+- For every person: "bio" = 1-2 sentences on who they are and their best-known work.
+- For every person: "qa" = answers to the searches listed for them, written as real questions with the same key words
+  people typed ("Who is {{name}} married to?", "Where is {{name}} from?", "Does {{name}} have kids?").
+  Each answer must repeat the key words of the question and stay 1-2 sentences.
+  If the facts do not mention a spouse and people ask about a wife/husband/marriage, answer exactly in this style:
+  "Public sources do not list a spouse for NAME." For other questions the facts cannot answer, skip the question.
+  Do NOT write questions about age, birthplace, the role or other films — those are added automatically.
+  Skip anything about health, money, religion, politics, sexuality, dating rumors or appearance.
+- People marked MINOR: only "bio" about their acting work, "qa" must be empty.
+- Set "ok": false if the facts are too thin to write anything useful.
+
+{people}"""
+
+PREVIEW_TOOL = {
+    "name": "cast_guide", "description": "Return the cast guide.",
+    "input_schema": {"type": "object", "properties": {
+        "ok": {"type": "boolean"},
+        "intro": {"type": "string"},
+        "people": {"type": "array", "items": {"type": "object", "properties": {
+            "name": {"type": "string"}, "bio": {"type": "string"},
+            "qa": {"type": "array", "items": {"type": "object", "properties": {
+                "q": {"type": "string"}, "a": {"type": "string"}}, "required": ["q", "a"]}}},
+            "required": ["name", "bio"]}},
+    }, "required": ["ok", "intro", "people"]},
+}
+
+
+def what_line(item):
+    if item["type"] == "movie":
+        return "movie", "in theaters" if item["release"] == "theaters" else "on digital platforms"
+    where = item.get("where") or item.get("networks") or []
+    what = "series" if item.get("season", 1) == 1 else f"series, season {item['season']}"
+    return what, ("on " + ", ".join(where)) if where else "on TV"
+
+
+def facts_block(f):
+    lines = [f"PERSON: {f['name']}" + (" (MINOR)" if f["minor"] else ""), f"Role in this title: {f['character'] or 'not listed'}"]
+    if f["born"] and not f["minor"]:
+        lines.append(f"Born: {f['born']}" + (f" in {f['place']}" if f["place"] else ""))
+    if f["known"]:
+        lines.append("Known for: " + "; ".join(f"{k['title']} ({k['year']})" + (f" as {k['character']}" if k['character'] else "") for k in f["known"]))
+    if f["bio"]:
+        lines.append("Bio: " + f["bio"])
+    if f["wiki"] and not f["minor"]:
+        lines.append("Encyclopedia intro: " + f["wiki"])
+    if f.get("questions") and not f["minor"]:
+        lines.append("Searches people type: " + "; ".join(f["questions"]))
+    return "\n".join(lines)
+
+
+def write_preview(item, people, key, feedback=""):
+    what, where = what_line(item)
+    prompt = PREVIEW_PROMPT.format(title=item["title"], what=what, kind="series" if item["type"] == "tv" else "movie",
+                                   when=f"{nice_date(item['date'])}, {where}", overview=item["overview"] or "(none)",
+                                   people="\n\n".join(facts_block(f) for f in people))
+    if feedback:
+        prompt += "\n\nAn editor rejected your previous draft: " + feedback + "\nFix it; drop anything the facts do not support."
+    texts = [item["overview"]] + [f["bio"] for f in people] + [f["wiki"] for f in people]
+    for _ in range(2):
+        try:
+            out = ai_call(prompt, key, PREVIEW_TOOL, max_tokens=4000)
+        except Exception as e:
+            log(f"гид по актёрам '{item['title']}' не написан: {e}")
+            return None
+        if not out.get("ok"):
+            return None
+        full = " ".join([out.get("intro", "")] + [p.get("bio", "") + " " + " ".join(q.get("a", "") for q in p.get("qa", []))
+                                                  for p in out.get("people", [])])
+        hits = copied(full, [t for t in texts if t])
+        if not hits:
+            return out
+        prompt += "\n\nYour draft repeated these word sequences from the facts: " + "; ".join(f'"{h}"' for h in hits[:5]) + ". Rewrite them."
+    return None
+
+
+def auto_qa(f, item):
+    """Ответы, которые считает программа (возраст точно по дате рождения), а не ИИ."""
+    qa = []
+    t = item["title"]
+    if f["character"]:
+        qa.append({"q": f"Who does {f['name']} play in {t}?", "a": f"{f['name']} plays {f['character']} in {t}."})
+    if f["born"] and not f["minor"]:
+        qa.append({"q": f"How old is {f['name']}?",
+                   "a": f"{f['name']} was born on {nice_date(f['born'])} and is {f['age']} years old."})
+        if f["place"]:
+            qa.append({"q": f"Where is {f['name']} from?", "a": f"{f['name']} was born in {f['place']}."})
+    if f["known"]:
+        ks = [f"{k['title']} ({k['year']})" if k["year"] else k["title"] for k in f["known"][:4]]
+        qa.append({"q": f"What else has {f['name']} been in?",
+                   "a": f"{f['name']} is known for " + (", ".join(ks[:-1]) + " and " + ks[-1] if len(ks) > 1 else ks[0]) + "."})
+    return qa
+
+
+def make_preview(store, item, key, today, old=None):
+    """Собирает факты об актёрах, пишет текст, проверяет редактором. old — прежняя версия страницы (обновление после премьеры)."""
+    people = []
+    for c in item["cast"]:
+        try:
+            f = person_facts(c, item, today)
+        except Exception as e:
+            log(f"TMDB актёр {c['name']}: {e}")
+            continue
+        if f:
+            f["questions"] = [] if f["minor"] else people_questions(f["name"])
+            people.append(f)
+        time.sleep(0.3)
+    if len(people) < 3:
+        return None
+    res = write_preview(item, people, key)
+    src = {"blocks": [f"TITLE: {item['title']} — US release {item['date']} — {item['overview']}"]
+           + [facts_block(f) for f in people]
+           + ["NOTE: computed answers (age, role, other titles) are added by the site; saying 'public sources do not list "
+              "a spouse' is correct when no spouse appears in the facts."]}
+    if res:
+        draft = res["intro"] + "\n\n" + "\n\n".join(p.get("name", "") + ": " + p.get("bio", "") + "\n"
+                                                    + "\n".join(f"Q: {q['q']} A: {q['a']}" for q in p.get("qa", []))
+                                                    for p in res.get("people", []))
+        if not review(store, "cast guide", item["title"], draft, src, key):
+            res = write_preview(item, people, key, store["review_log"][-1]["reason"])
+            if res:
+                draft = res["intro"] + "\n\n" + "\n\n".join(p.get("name", "") + ": " + p.get("bio", "") + "\n"
+                                                            + "\n".join(f"Q: {q['q']} A: {q['a']}" for q in p.get("qa", []))
+                                                            for p in res.get("people", []))
+                if not review(store, "cast guide (fixed)", item["title"], draft, src, key):
+                    res = None
+    if not res:
+        return None
+    by_name = {p.get("name", "").lower(): p for p in res.get("people", [])}
+    slug = (old or {}).get("slug") or slugify(item["title"] + ("" if item.get("season", 1) == 1 else f" season {item['season']}") + " cast")
+    old_img = {c["name"]: c.get("img") for c in (old or {}).get("cast", [])}
+    cast = []
+    for i, f in enumerate(people):
+        w = by_name.get(f["name"].lower(), {})
+        qa = auto_qa(f, item) + ([] if f["minor"] else [q for q in w.get("qa", []) if q.get("q") and q.get("a")
+                                                        and not BAD_Q.search(q["q"])][:6])
+        entry = {"name": f["name"], "character": f["character"], "bio": w.get("bio", ""), "qa": qa,
+                 "born": "" if f["minor"] else f["born"],
+                 "wiki_url": f["wiki_url"], "tmdb": f["tmdb"]}
+        if old_img.get(f["name"]):
+            entry["img"] = old_img[f["name"]]          # фото уже есть — не ищем заново
+        elif i < PREVIEW_PHOTOS and not f["minor"] and not old:
+            fake = {"term": item["title"], "slug": f"cast-{slug}-{i}", "image_query": "actor",
+                    "ai": {"headline": f"{f['name']} plays {f['character'] or 'a role'} in {item['title']}"}}
+            try:
+                im = wiki_image(fake, f["name"])
+                if im:
+                    entry["img"] = im
+            except Exception as e:
+                log(f"фото актёра {f['name']}: {e}")
+        cast.append(entry)
+    main_ids = {f["id"] for f in people}
+    roles = []
+    for r in item.get("roles", []):
+        er = {"name": r["name"], "character": r["character"], "known": []}
+        if r["id"] in main_ids:
+            er["main"] = True
+        elif sum(1 for x in roles if not x.get("main")) < PREVIEW_ROLES_KNOWN:
+            try:
+                er["known"] = known_for(r["id"], item["id"])[:3]
+            except Exception:
+                pass
+            time.sleep(0.25)
+        roles.append(er)
+    return {"roles": roles, "slug": slug, "title": item["title"], "type": item["type"], "season": item.get("season", 1),
+                       "date": item["date"], "release": item["release"], "where": item.get("where", []),
+                       "networks": item.get("networks", []), "genres": item["genres"], "intro": res["intro"],
+                       "cast": cast, "tmdb": item["tmdb"], "made": now_iso(), "day": (old or {}).get("day", today), "new": True,
+            "first": (old or {}).get("first", now_iso()), "item": item, "refreshed": bool(old)}
+
+
+def previews(store):
+    if not (PREVIEW and tmdb_key() and api_key()):
+        return 0
+    key = api_key()
+    pv = store.setdefault("previews", {})
+    now = datetime.now(timezone.utc)
+    today = to_et(now)[0].strftime("%Y-%m-%d")
+    if hours_since(store.get("preview_checked", "2000-01-01T00:00:00+00:00")) < 3:
+        return 0                                   # базу премьер смотрим раз в 3 часа
+    store["preview_checked"] = now_iso()
+    done = 0
+    # через 3+ дня после премьеры — один раз обновляем: люди уже посмотрели и спрашивают новое
+    for k, x in list(pv.items()):
+        if x.get("slug") and x.get("item") and not x.get("refreshed") and done < 1 \
+                and (datetime.strptime(today, "%Y-%m-%d") - datetime.strptime(x["date"], "%Y-%m-%d")).days >= 3:
+            x["refreshed"] = True
+            try:
+                fresh = movie_item(x["item"]["id"]) if x["type"] == "movie" else tv_item(x["item"]["id"], x.get("season", 1))
+            except Exception as e:
+                log(f"TMDB {x['title']}: {e}")
+                fresh = None
+            entry = make_preview(store, fresh or x["item"], key, today, old=x)
+            if entry:
+                pv[k] = entry; done += 1
+                log(f"гид по актёрам обновлён после премьеры: {x['title']}")
+    made_today = sum(1 for x in pv.values() if x.get("day") == today)
+    if made_today >= MAX_PREVIEWS_PER_DAY:
+        return done
+    end = (to_et(now)[0] + timedelta(days=PREVIEW_DAYS_AHEAD)).strftime("%Y-%m-%d")
+    ub = user_blocks()
+    for item in upcoming_titles(today, end):
+        if made_today >= MAX_PREVIEWS_PER_DAY:
+            break
+        if item["key"] in pv or (pv.get(item["key"] + "-x") or {}).get("tries", 0) >= 2:
+            continue
+        if bad_text(item["title"], ub) or len(item["cast"]) < 3:
+            continue
+        try:
+            sug = suggest(item["title"].lower() + " cast")
+        except Exception:
+            sug = []
+        if not any(all(w in words(s) for w in words(item["title"])[:3]) for s in sug):
+            log(f"'{item['title']}': пока не ищут в Google («… cast» нет в подсказках) — подожду")
+            continue
+        fail = pv.setdefault(item["key"] + "-x", {"tries": 0})
+        fail["tries"] += 1
+        entry = make_preview(store, item, key, today)
+        if not entry:
+            continue
+        pv.pop(item["key"] + "-x", None)
+        pv[item["key"]] = entry
+        made_today += 1; done += 1
+        log(f"гид по актёрам: {item['title']} ({item['date']})")
+    return done
+
+
+def cast_title(x):
+    s = x["title"] + (f" Season {x['season']}" if x.get("season", 1) > 1 else "")
+    return f"{s} Cast: Who Plays Who, Ages and Where You've Seen Them"
+
+
+def build_cast(x):
+    what = "movie" if x["type"] == "movie" else "series"
+    when = nice_date(x["date"])
+    future = x["date"] >= to_et(datetime.now(timezone.utc))[0].strftime("%Y-%m-%d")
+    if x["type"] == "movie":
+        where = "in theaters" if x["release"] == "theaters" else "on digital platforms"
+    else:
+        w = x.get("where") or x.get("networks") or []
+        where = ("on " + ", ".join(w)) if w else "on TV"
+    name = x["title"] + (f" season {x['season']}" if x.get("season", 1) > 1 else "")
+    lead = ", ".join(c["name"] for c in x["cast"][:3])
+    answer = (f"{name} {'arrives' if future else 'came out'} {where} on {when}. The cast is led by {lead}. "
+              f"Here is who plays who, how old the actors are and where you have seen them before.")
+    hero = next((c["img"] for c in x["cast"] if c.get("img")), None)
+    quick = "".join(f'<li><a class="t" href="#{slugify(c["name"])}">{E(c["name"])}</a>'
+                    f'<span class="meta">{E(c["character"] or "")}</span></li>' for c in x["cast"])
+    parts, faq = [], []
+    for c in x["cast"]:
+        img = ""
+        if c.get("img"):
+            im = c["img"]
+            img = (f'<figure class="hero" style="max-width:320px"><img src="../{E(im["file"])}" alt="{E(c["name"])}" loading="lazy">'
+                   f'<figcaption>{E(c["name"])}. Photo: {E(im.get("credit", ""))} / {E(im.get("license", ""))}, '
+                   f'<a href="{E(im.get("src", ""))}" rel="nofollow">via Wikimedia Commons</a></figcaption></figure>')
+        if c.get("born"):                       # возраст пересчитываем при каждой сборке — он меняется
+            c["qa"] = [dict(q, a=f"{c['name']} was born on {nice_date(c['born'])} and is "
+                               f"{age_on(c['born'], to_et(datetime.now(timezone.utc))[0].strftime('%Y-%m-%d'))} years old.")
+                       if q["q"].startswith("How old is") else q for q in c["qa"]]
+        qa = "".join(f"<h3>{E(q['q'])}</h3><p>{E(q['a'])}</p>" for q in c["qa"])
+        faq += c["qa"]
+        role = f" as {c['character']}" if c["character"] else ""
+        parts.append(f'<h2 class="sec" id="{slugify(c["name"])}">{E(c["name"])}{E(role)}</h2>{img}<p>{E(c["bio"])}</p>{qa}')
+    paras = "".join(f"<p>{E(p)}</p>" for p in x["intro"].split("\n\n") if p.strip())
+    rq = []
+    for r in x.get("roles", []):
+        ch = r["character"]
+        q = f"Who plays {ch} in {x['title']}?"
+        a = f"{ch} is played by {r['name']}"
+        if r.get("known"):
+            ks = [f"{k['title']} ({k['year']})" if k["year"] else k["title"] for k in r["known"]]
+            a += ", who you may know from " + (", ".join(ks[:-1]) + " and " + ks[-1] if len(ks) > 1 else ks[0])
+        link = (f' <a class="xl" href="#{slugify(r["name"])}">More about {E(r["name"])}</a>' if r.get("main") else "")
+        rq.append((q, a + ".", link))
+    faq = [{"q": q, "a": a} for q, a, _ in rq] + faq
+    roles_html = "".join(f"<h3>{E(q)}</h3><p>{E(a)}{l}</p>" for q, a, l in rq)
+    src = "".join(f'<li><a class="t" href="{E(c["wiki_url"])}" rel="nofollow" target="_blank">{E(c["name"])} — Wikipedia</a></li>'
+                  for c in x["cast"] if c.get("wiki_url"))
+    work = {"@context": "https://schema.org", "@type": "Movie" if x["type"] == "movie" else "TVSeries", "name": x["title"],
+            ("datePublished" if x["type"] == "movie" else "startDate"): x["date"],
+            "actor": [{"@type": "Person", "name": c["name"]} for c in x["cast"]]}
+    ld = [{"@context": "https://schema.org", "@type": "Article", "headline": cast_title(x)[:110], "datePublished": x["made"],
+           "dateModified": x["made"], "author": {"@type": "Organization", "name": SITE_NAME, "url": SITE_URL},
+           "publisher": {"@type": "Organization", "name": SITE_NAME, "url": SITE_URL},
+           "mainEntityOfPage": f"{SITE_URL}/w/{x['slug']}", "about": work}]
+    if hero:
+        ld[0]["image"] = SITE_URL + "/" + hero["file"]
+    if faq:
+        ld.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+            {"@type": "Question", "name": q["q"], "acceptedAnswer": {"@type": "Answer", "text": q["a"]}} for q in faq[:80]]})
+    head = f'<script type="application/ld+json">{json.dumps(ld)}</script>'
+    body = f"""<article>
+<p class="meta"><a href="../index.html">{SITE_NAME}</a> › <a class="cat" href="../cast.html">Cast guides</a> · {E(what)} · updated {E(fmt_et(x["made"]))}</p>
+<h1>{E(cast_title(x))}</h1>
+<div class="box answer"><p style="margin:0">{E(answer)}</p></div>
+{paras}
+<h2>The cast at a glance</h2><ul class="list">{quick}</ul>
+{ad("in_article")}
+{"".join(parts)}
+{('<h2 class="sec" id="full-cast">Full cast: who plays who</h2>' + roles_html) if roles_html else ''}
+{reactions_html("w/" + x["slug"])}
+{ad("middle")}
+<h2>Sources</h2><ul class="list"><li><a class="t" href="{E(x["tmdb"])}" rel="nofollow" target="_blank">{E(x["title"])} — The Movie Database (TMDB)</a></li>{src}</ul>
+<p class="meta">Written with AI assistance from public film databases and encyclopedia entries; ages are calculated from listed birth dates.
+This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
+</article>"""
+    return page(cast_title(x), short_desc(answer), body, f"w/{x['slug']}.html", 1, head, og_img=hero["file"] if hero else "")
+
+
+def build_cast_index(pv):
+    items = sorted([x for x in pv.values() if x.get("slug")], key=lambda x: x["date"], reverse=True)
+    rows = "".join(f'<li><a class="t" href="w/{E(x["slug"])}.html">{E(cast_title(x))}</a>'
+                   f'<span class="meta">{"Movie" if x["type"] == "movie" else "Series"} · {E(nice_date(x["date"]))} · '
+                   f'{E(", ".join(c["name"] for c in x["cast"][:3]))}</span></li>' for x in items[:300])
+    body = (f'<p class="tag">New movies and series coming out this week — who is in them</p>'
+            f'<h1 class="front">Cast guides</h1><ul class="list">{rows}</ul>')
+    return page(f"Cast guides: who's in this week's new movies and shows | {SITE_NAME}",
+                "Who plays who in new movies and TV series: actors, their ages and where you have seen them before.",
+                body, "cast.html", 0)
 
 
 def run_once():
@@ -2044,6 +2611,12 @@ def run_once():
     xn = explain(store)
     if xn:
         log(f"Написано объяснений: {xn}")
+    try:
+        pn = previews(store)
+        if pn:
+            log(f"Новых гидов по актёрам: {pn}")
+    except Exception as e:
+        log(f"гиды по актёрам: ошибка {e}")
     total = build_site(store)
     pend = store.pop("_pending_out", [])
     if pend:
