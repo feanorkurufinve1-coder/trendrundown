@@ -1520,8 +1520,7 @@ CSS = """
 :root{--bg:#efe9da;--fg:#141210;--muted:#3d3a35;--line:#141210;--soft:#a39d8c;--chip:#e2dbc8}
 @media (prefers-color-scheme:dark){:root{--bg:#161512;--fg:#e9e3d3;--muted:#bdb6a5;--line:#e9e3d3;--soft:#4d4a43;--chip:#24221e}}
 *{box-sizing:border-box}html,body{background:var(--bg);color:var(--fg)}
-body{margin:0;font:16px/1.5 "Old Standard TT","Times New Roman",serif;
-  background-image:radial-gradient(rgba(60,40,10,.05) 1px,transparent 1.2px);background-size:4px 4px}
+body{margin:0;font:16px/1.5 "Old Standard TT","Times New Roman",serif}
 a{color:inherit;text-decoration:none}a:hover{text-decoration:underline}
 .wrap{max-width:1120px;margin:0 auto;padding:12px max(14px,env(safe-area-inset-left)) 48px max(14px,env(safe-area-inset-right))}
 /* ---------- шапка газеты ---------- */
@@ -1575,7 +1574,7 @@ ul{padding-left:20px}
 footer{margin-top:40px;padding-top:10px;border-top:5px double var(--line);font:12px "Old Standard TT",serif;text-align:center}
 footer a{margin:0 10px;text-transform:uppercase;letter-spacing:.1em;font-weight:700}
 svg.spark{display:block;max-width:100%}
-img{filter:grayscale(1) contrast(1.15) brightness(1.03)}
+img{filter:none}
 figure.hero{margin:8px 0 14px;break-inside:avoid}figure.hero img{width:100%;max-height:440px;object-fit:cover;object-position:50% 20%;display:block;border:1px solid var(--line)}
 figure.hero figcaption{font:italic 11.5px "Old Standard TT",serif;margin-top:4px;padding-bottom:4px;border-bottom:1px solid var(--line);text-align:center}
 /* ---------- первая полоса ---------- */
