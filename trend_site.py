@@ -859,7 +859,9 @@ the SOURCE reports it was based on. Give one of three verdicts.
   gambling, drugs, weapons or self-harm;
 - it is empty or useless, or not clear English.
 
-"minor" — publishable, but with small slips: a harmless detail not in the sources, slightly loose wording, an outlet named.
+"minor" — publishable after small fixes: a detail not in the sources, slightly loose or wrong wording, an outlet named.
+  For "minor" you MUST also give "edits": for each slip, "find" = the exact words copied from the draft, "replace" = the
+  corrected words (or "" to delete the phrase). Fix only the slips; keep everything else as it is.
 
 "ok" — no problems.
 
@@ -880,7 +882,38 @@ SOURCES:
 REVIEW_TOOL = {"name": "review", "description": "Editor's verdict.",
                "input_schema": {"type": "object", "properties": {
                    "verdict": {"type": "string", "enum": ["ok", "minor", "block"]},
-                   "reason": {"type": "string"}}, "required": ["verdict", "reason"]}}
+                   "reason": {"type": "string"},
+                   "edits": {"type": "array", "description": "for 'minor': exact fixes to apply to the draft",
+                             "items": {"type": "object", "properties": {
+                                 "find": {"type": "string", "description": "exact text copied from the draft (a phrase or sentence)"},
+                                 "replace": {"type": "string", "description": "corrected text, or empty string to delete it"}},
+                                 "required": ["find", "replace"]}}},
+                   "required": ["verdict", "reason"]}}
+REVIEW_EDITS = []   # правки редактора из последней проверки (для «minor»)
+
+
+def apply_edits(obj, edits, keys):
+    """Редактор сам правит мелочи: заменяет или вычёркивает фразы прямо в тексте."""
+    n = 0
+    for e in edits or []:
+        f, r = str(e.get("find", "")), str(e.get("replace", ""))
+        if len(f) < 4 or f == r:
+            continue
+        for k in keys:
+            v = obj.get(k)
+            if isinstance(v, str) and f in v:
+                obj[k] = re.sub(r"[ \t]{2,}", " ", v.replace(f, r)).replace(" .", ".").replace(" ,", ",").strip()
+                n += 1
+                break
+            if isinstance(v, list):
+                for i, x in enumerate(v):
+                    if isinstance(x, str) and f in x:
+                        v[i] = x.replace(f, r).strip(); n += 1; break
+                    if isinstance(x, dict):
+                        for kk in ("q", "a"):
+                            if f in str(x.get(kk, "")):
+                                x[kk] = x[kk].replace(f, r).strip(); n += 1; break
+    return n
 
 
 def review(store, kind, title, draft, src, key):
@@ -894,6 +927,7 @@ def review(store, kind, title, draft, src, key):
         log(f"редактор не ответил ({title}): {e} — публикую без проверки")
         return True
     ok = out.get("verdict") != "block"
+    REVIEW_EDITS[:] = (out.get("edits") or []) if out.get("verdict") == "minor" else []
     journal = store.setdefault("review_log", [])
     journal.append({"time": now_iso(), "kind": kind, "title": title[:120],
                     "verdict": out.get("verdict") if out.get("verdict") in ("ok", "minor", "block") else "ok",
@@ -976,6 +1010,11 @@ def summarize(store):
                 if not ai:                       # новая тема — не публикуем; у старой оставляем прежнюю проверенную сводку
                     t["blocked"] = "review: " + store["review_log"][-1]["reason"]
                 continue
+            if REVIEW_EDITS:
+                fixed = apply_edits(res, REVIEW_EDITS, ["headline", "why", "behind", "summary", "next", "key_points", "unknown"])
+                store["review_log"][-1]["fixed"] = fixed
+                if fixed:
+                    log(f"редактор сам исправил {fixed} мест(а) в '{t['term']}'")
             if not ai:
                 t["ai_day"] = today; new_today += 1
             t["ai"] = res; done += 1
@@ -1142,6 +1181,8 @@ def explain(store):
                          + "\n".join(f"Q: {f.get('q', '')} A: {f.get('a', '')}" for f in res.get("faq", [])))
                 if not review(store, item["kind"] + " explainer (fixed)", res["title"], draft, src, key):
                     continue
+            if REVIEW_EDITS:
+                apply_edits(res, REVIEW_EDITS, ["title", "answer", "body", "in_the_news", "faq"])
             page_ = {"subject": item["subject"], "kind": item["kind"], "query": item["query"],
                      "title": res["title"][:80], "answer": res["answer"], "body": res["body"],
                      "in_the_news": res["in_the_news"], "faq": res.get("faq", [])[:8], "questions": questions,
