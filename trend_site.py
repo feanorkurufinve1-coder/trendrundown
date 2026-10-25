@@ -49,7 +49,7 @@ DIG = True                 # «копать»: ИИ сам ищет в инте�
 DIG_PER_DAY = 3            # для скольких самых крупных новых тем в сутки (поиск стоит денег: ~10-15 центов за тему)
 DIG_SEARCHES = 8           # сколько поисковых запросов ИИ может сделать на одну тему
 DIG_MODEL = AI_MODEL       # модель для расследования
-RULES_V = 8                # версия правил для текстов; старые сводки переписываются постепенно
+RULES_V = 9                # версия правил для текстов; старые сводки переписываются постепенно
 REWRITE_PER_RUN = 8        # сколько старых сводок переписывать за запуск
 AI_REVIEW = True           # второй ИИ-«редактор» проверяет каждую сводку и объяснение перед публикацией и снимает плохие
 INDEXNOW = True            # мгновенно сообщать Bing/Yahoo/DuckDuckGo о новых страницах
@@ -847,23 +847,29 @@ def mixed_order(topics):
     return out
 
 
-REVIEW_PROMPT = """You are a strict fact-checking editor for a US news explainer website. Below is a DRAFT written by another AI
-and the SOURCE reports it was based on. Decide if the draft can be published.
+REVIEW_PROMPT = """You are the fact-checking editor of a US news explainer website. Below is a DRAFT written by another AI and
+the SOURCE reports it was based on. Give one of three verdicts.
 
-Verdict "block" if ANY of these is true:
-- it states a fact that matters (a name, number, score, date, quote, cause, accusation) that is NOT supported by the sources
-  (allowed without a source: well-established, uncontroversial public knowledge such as a definition, the year a famous film
-  came out, where a city or landmark is, a famous person's well-known profession or team);
-- it presents speculation or rumor as fact, or the headline/title misleads about what happened;
-- it identifies or accuses a private individual (not a public figure), a minor, or a crime victim;
-- it is sexual, graphic, hateful, or promotes gambling, drugs, weapons or self-harm;
-- it is empty or useless: mostly says nothing is known, repeats the topic name, or does not answer the question it claims to answer;
-- it is not in clear, correct English.
-Otherwise verdict "ok". Do NOT block for: minor style issues; which outlet a fact is credited to, as long as some source supports
-the fact itself; harmless generic phrasing; small date-format differences; a detail that is a reasonable plain-words reading
-of a headline; a weekday that correctly matches a date in the sources; plain synonyms that mean the same thing (winning all
-games of a series = a sweep); a generic definition of a common term. Block only for problems a careful reader would call
-wrong or misleading. In "reason" list EVERY problem you found, briefly, so the writer can fix them all at once (max 45 words).
+"block" — ONLY for serious problems:
+- a key fact is WRONG or contradicts the sources: wrong name, wrong score or result, wrong number, wrong date, wrong
+  outcome, a quote nobody said, a wrong cause;
+- an important claim (accusation, death, arrest, injury, deal, firing, record) has no support in the sources;
+- it presents rumor or speculation as fact, or the headline misleads about what happened;
+- it identifies or accuses a private individual, a minor or a crime victim; or it is sexual, graphic, hateful, or promotes
+  gambling, drugs, weapons or self-harm;
+- it is empty or useless, or not clear English.
+
+"minor" — publishable, but with small slips: a harmless detail not in the sources, slightly loose wording, an outlet named.
+
+"ok" — no problems.
+
+These are NOT problems at all (never mention them): well-known public facts (a famous athlete's team, position or
+nationality; what a league, rule or term means, e.g. injured reserve sidelines a player for at least four games; where a
+city is; the year a famous film came out); a weekday that matches a date in the sources; synonyms (four straight wins = a
+sweep); an empty optional section; style; which outlet a fact came from.
+
+In "reason": for "block" list every serious problem briefly so the writer can fix them all at once; for "minor" list the
+slips. Max 45 words.
 
 DRAFT ({kind}):
 {draft}
@@ -873,7 +879,7 @@ SOURCES:
 
 REVIEW_TOOL = {"name": "review", "description": "Editor's verdict.",
                "input_schema": {"type": "object", "properties": {
-                   "verdict": {"type": "string", "enum": ["ok", "block"]},
+                   "verdict": {"type": "string", "enum": ["ok", "minor", "block"]},
                    "reason": {"type": "string"}}, "required": ["verdict", "reason"]}}
 
 
@@ -889,12 +895,25 @@ def review(store, kind, title, draft, src, key):
         return True
     ok = out.get("verdict") != "block"
     journal = store.setdefault("review_log", [])
-    journal.append({"time": now_iso(), "kind": kind, "title": title[:120], "verdict": "ok" if ok else "block",
+    journal.append({"time": now_iso(), "kind": kind, "title": title[:120],
+                    "verdict": out.get("verdict") if out.get("verdict") in ("ok", "minor", "block") else "ok",
                     "reason": str(out.get("reason", ""))[:200]})
     store["review_log"] = journal[-300:]
     if not ok:
         log(f"РЕДАКТОР СНЯЛ ({kind}) «{title}»: {out.get('reason', '')}")
     return ok
+
+
+def news_draft(t, res):
+    parts = [f"{t['term']}: {res.get('headline', '')}"]
+    for label, k in (("Why trending", "why"), ("Behind it", "behind"), ("", "summary"), ("What happens next", "next")):
+        if (res.get(k) or "").strip():
+            parts.append((label + ": " if label else "") + res[k])
+    if res.get("key_points"):
+        parts.append("Key facts: " + "; ".join(res["key_points"]))
+    if (res.get("unknown") or "").strip():
+        parts.append("Unknown: " + res["unknown"])
+    return "\n\n".join(parts)
 
 
 def summarize(store):
@@ -941,8 +960,7 @@ def summarize(store):
         if res and re.search(r"(?i)according to|\b(reported|reports? (say|said))\b|reddit|headlines? (say|said|report)", res.get("summary", "")):
             res = write_summary(t, key, "Do not cite outlets, reports, headlines or Reddit at all. Tell the facts directly in your own words.") or res
         if res:
-            draft = (f"{t['term']}: {res.get('headline', '')}\n\nWhy trending: {res.get('why', '')}\n\nBehind it: {res.get('behind', '')}\n\n{res.get('summary', '')}\n\nKey facts: "
-                     + "; ".join(res.get("key_points", [])) + f"\nUnknown: {res.get('unknown', '')}")
+            draft = news_draft(t, res)
             ok = review(store, "news summary", f"{t['term']}: {res.get('headline', '')}", draft, RUN_SOURCES.get(t["slug"]), key)
             for attempt in range(2):             # до двух попыток исправить по замечаниям редактора
                 if ok:
@@ -950,8 +968,7 @@ def summarize(store):
                 res = write_summary(t, key, store["review_log"][-1]["reason"])
                 if not res:
                     break
-                draft = (f"{t['term']}: {res.get('headline', '')}\n\nWhy trending: {res.get('why', '')}\n\nBehind it: {res.get('behind', '')}\n\n{res.get('summary', '')}\n\nKey facts: "
-                         + "; ".join(res.get("key_points", [])) + f"\nUnknown: {res.get('unknown', '')}")
+                draft = news_draft(t, res)
                 ok = review(store, f"news summary (fix {attempt + 1})", f"{t['term']}: {res.get('headline', '')}", draft,
                             RUN_SOURCES.get(t["slug"]), key)
             if not ok:
@@ -1198,6 +1215,23 @@ def same_person(t, name, pages):
     return n if 0 <= n < len(pages) else None
 
 
+def same_subject(t, pg):
+    """ИИ сверяет: статья Википедии «Hannibal» — про древнего полководца или про то, о чём новость (город, школа)?"""
+    key = api_key()
+    if not key:
+        return True
+    heads = "; ".join(a["title"] for a in t["articles"][-6:])
+    prompt = (f"People searched for \"{t['term']}\". News headlines about it: {heads}\n"
+              f"Wikipedia article: {pg.get('title', '')} — {pg.get('description', '') or '(no description)'}\n"
+              "Is this Wikipedia article about the SAME thing the news is about (same person, team, place, company, show)? "
+              "A different thing with the same name does not count. Answer n = 0 for yes, n = -1 for no.")
+    try:
+        return int(ai_call(prompt, key, PICK_TOOL).get("n", -1)) == 0
+    except Exception as e:
+        log(f"фото '{t['term']}': проверка темы не получилась: {e}")
+        return False
+
+
 def wiki_image(t, name=None):
     """Фото из Википедии, только если файл на Commons под CC / Public domain. Причину отказа пишем в журнал."""
     term = name or t["term"]
@@ -1232,6 +1266,9 @@ def wiki_image(t, name=None):
         title = pg.get("title", "")
         if not name and not _match(term, title):
             continue
+        if not name and not same_subject(t, pg):
+            log(f"фото '{term}': статья «{title}» про другое (тёзка) — не берём")
+            continue
         fname = pg.get("pageimage")
         if fname and re.search(r"(?i)logo|seal|crest|emblem|wordmark|coat.of.arms|\.svg$|flag.of", fname):
             log(f"фото '{term}': «{fname}» — это логотип/герб, не фото — не берём")
@@ -1259,7 +1296,7 @@ def wiki_image(t, name=None):
             f.write(get(url))
         log(f"фото '{term}': взято «{fname}» ({lic})")
         return {"file": fn, "credit": (re.sub(r"(?i)unknown author", "", _plain(md.get("Artist", {}).get("value", ""))).strip()[:80] or "Wikimedia Commons"),
-                "license": lic, "src": ii.get("descriptionurl", ""), "pv": 2 if name else 1,
+                "license": lic, "src": ii.get("descriptionurl", ""), "pv": 2 if name else 1, "sv": 1,
                 "wiki": "https://en.wikipedia.org/wiki/" + urllib.parse.quote(title.replace(" ", "_"))}
     log(f"фото '{term}': нет статьи с подходящим названием (нашлось: {', '.join(p.get('title', '') for p in pages)})")
     return None
@@ -1412,6 +1449,17 @@ def person_in_text(t, name):
 
 def generic_images(store, limit=12):
     n = 0
+    checked = 0                                  # фото по названию темы, взятые без проверки «про то ли это» (Ганнибал-полководец)
+    for t in sorted(store["topics"].values(), key=lambda x: x.get("last_seen", x["first_seen"]), reverse=True):
+        im = t.get("img") or {}
+        if checked < 12 and t.get("ai") and im.get("wiki") and im.get("pv") == 1 and not im.get("sv"):
+            checked += 1
+            title = urllib.parse.unquote(im["wiki"].rsplit("/", 1)[-1]).replace("_", " ")
+            if same_subject(t, {"title": title}):
+                im["sv"] = 1
+            else:
+                log(f"фото '{t['term']}': «{title}» — про другое, убираю")
+                t.pop("img"); t["img_tried"] = 2; t.pop("gen_tried", None)
     for t in store["topics"].values():          # фото человека, которого нет в тексте, — убрать
         im = t.get("img") or {}
         if im.get("wiki") and t.get("main_person") and not person_in_text(t, t["main_person"]):
@@ -2219,6 +2267,11 @@ def visible(store):
             continue
         if ONLY_WITH_SUMMARY and not t.get("ai"):
             continue
+        ai = t.get("ai") or {}
+        if (ai.get("rules") or 0) < 6 and ai.get("rw_tried") == RULES_V and re.search(
+                r"(?i)appears? to be tied|searches for .{0,40}(appear|seem)|may be why|is drawing search|several (separate|unrelated) headlines",
+                ai.get("summary", "") + " " + ai.get("headline", "")):
+            continue                     # старый текст-догадка, переписать по новым правилам не вышло — не показываем
         out[s] = t
     return out
 
