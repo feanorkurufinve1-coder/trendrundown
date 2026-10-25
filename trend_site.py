@@ -500,8 +500,8 @@ STYLE_1930 = """WRITING STYLE — an American newspaper correspondent of the 193
 - Sober and exact, but NOT an official bulletin: tell it like a good reporter explaining the story to a neighbor.
   Plain everyday words, sentences under 25 words. Past tense for events. No slang, no exclamation marks, no emojis,
   no hype words ("shocking", "slams", "epic", "fans are buzzing").
-- Explain any jargon in a few words the first time it appears, so anyone can follow
-  (e.g. "injured reserve, the list of players sidelined for at least four games").
+- Explain jargon with a short generic definition only (e.g. "injured reserve, the list of players sidelined for at least
+  four games") — never with new facts about the people involved.
 - Never write about the sources themselves ("a headline says", "another outlet described", "that item is headline-only").
 - Period touches used lightly: "was rushed to a hospital", "it was learned", "officials said last night", "the former champion".
   On second reference use the surname alone (no "Mr." or "Mrs.").
@@ -513,6 +513,15 @@ treating him for blood clots in one leg." """
 
 PROMPT = """You answer ONE question for a US website: WHY is this topic trending on Google right now? Find the cause.
 Compare all the sources: what single event or development made many people search for it at this moment?
+
+ACCURACY COMES BEFORE STYLE. An editor will check every fact against the sources and reject the page for any slip:
+- Copy every name, number, score, record, date and title EXACTLY as the sources give them. Never compute, convert or
+  re-order them (do not turn a date into a weekday, do not add up series results, do not call something "first-ever",
+  "only", "record" or "historic" unless a source says so).
+- Do not add facts about people's careers, contracts, past seasons or history from your own memory — only from the sources.
+  Your own knowledge is allowed ONLY for a generic one-line definition of a common term.
+- If two sources disagree or a detail is unclear, leave the detail out.
+- Short and correct beats long and colorful. When in doubt, leave it out.
 
 Topic people are searching for: "{term}"
 Search interest: {traffic}
@@ -852,7 +861,9 @@ Verdict "block" if ANY of these is true:
 - it is not in clear, correct English.
 Otherwise verdict "ok". Do NOT block for: minor style issues; which outlet a fact is credited to, as long as some source supports
 the fact itself; harmless generic phrasing; small date-format differences; a detail that is a reasonable plain-words reading
-of a headline. Block only for problems a careful reader would call wrong or misleading. Be specific in "reason" (max 25 words).
+of a headline; a weekday that correctly matches a date in the sources; plain synonyms that mean the same thing (winning all
+games of a series = a sweep); a generic definition of a common term. Block only for problems a careful reader would call
+wrong or misleading. In "reason" list EVERY problem you found, briefly, so the writer can fix them all at once (max 45 words).
 
 DRAFT ({kind}):
 {draft}
@@ -896,6 +907,9 @@ def summarize(store):
     # лимит распределяем по суткам США: ночью не тратим всё, днём (когда трендов больше всего) остаётся запас
     et_hour = to_et(datetime.now(timezone.utc))[0].hour
     allowed = min(MAX_NEW_PER_DAY, math.ceil(MAX_NEW_PER_DAY * (et_hour + 1) / 24) + 2)
+    for x in store["topics"].values():      # темы, снятые редактором по старым правилам, — ещё один шанс по новым
+        if (x.get("blocked") or "").startswith("review:") and x.get("rv_retry") != RULES_V and hours_since(x["first_seen"]) < 48:
+            x.pop("blocked"); x["rv_retry"] = RULES_V
     cur = [store["topics"][s] for s in store.get("current", []) if s in store["topics"]]
     cur = mixed_order(cur)            # крупные вперемешку со средними
     # плюс опубликованные раньше по старым правилам — переписываем постепенно
@@ -930,13 +944,16 @@ def summarize(store):
             draft = (f"{t['term']}: {res.get('headline', '')}\n\nWhy trending: {res.get('why', '')}\n\nBehind it: {res.get('behind', '')}\n\n{res.get('summary', '')}\n\nKey facts: "
                      + "; ".join(res.get("key_points", [])) + f"\nUnknown: {res.get('unknown', '')}")
             ok = review(store, "news summary", f"{t['term']}: {res.get('headline', '')}", draft, RUN_SOURCES.get(t["slug"]), key)
-            if not ok:                           # одна попытка исправить по замечанию редактора
+            for attempt in range(2):             # до двух попыток исправить по замечаниям редактора
+                if ok:
+                    break
                 res = write_summary(t, key, store["review_log"][-1]["reason"])
-                if res:
-                    draft = (f"{t['term']}: {res.get('headline', '')}\n\nWhy trending: {res.get('why', '')}\n\n{res.get('summary', '')}\n\nKey facts: "
-                             + "; ".join(res.get("key_points", [])) + f"\nUnknown: {res.get('unknown', '')}")
-                    ok = review(store, "news summary (fixed)", f"{t['term']}: {res.get('headline', '')}", draft,
-                                RUN_SOURCES.get(t["slug"]), key)
+                if not res:
+                    break
+                draft = (f"{t['term']}: {res.get('headline', '')}\n\nWhy trending: {res.get('why', '')}\n\nBehind it: {res.get('behind', '')}\n\n{res.get('summary', '')}\n\nKey facts: "
+                         + "; ".join(res.get("key_points", [])) + f"\nUnknown: {res.get('unknown', '')}")
+                ok = review(store, f"news summary (fix {attempt + 1})", f"{t['term']}: {res.get('headline', '')}", draft,
+                            RUN_SOURCES.get(t["slug"]), key)
             if not ok:
                 RUN_SOURCES.pop(t["slug"], None)
                 if not ai:                       # новая тема — не публикуем; у старой оставляем прежнюю проверенную сводку
@@ -2781,7 +2798,7 @@ def write_preview(item, people, key, feedback="", store=None):
             return None
         full = " ".join([out.get("intro", "")] + [p.get("bio", "") + " " + " ".join(q.get("a", "") for q in p.get("qa", []))
                                                   for p in out.get("people", [])])
-        hits = copied(full, [t for t in texts if t])
+        hits = copied(full, [t for t in texts if t], n=12)   # названия фильмов и ролей неизбежно совпадают — проверяем длинные куски
         if not hits:
             return out
         prompt += "\n\nYour draft repeated these word sequences from the facts: " + "; ".join(f'"{h}"' for h in hits[:5]) + ". Rewrite them."
