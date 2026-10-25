@@ -773,6 +773,8 @@ def write_summary(t, key, feedback="", do_dig=False):
             for k in ("summary", "behind", "why", "next"):
                 if isinstance(out.get(k), str):
                     out[k] = out[k].replace("\\n", "\n").strip()
+            if re.search(r"(?i)sources? (do|does) not|not (stated|given|say|said)|no (date|details)|unclear", out.get("next", "")):
+                out["next"] = ""
             if out.get("category") in CATS:
                 t["cat"] = out["category"]
             fu = []
@@ -1968,6 +1970,16 @@ def reactions_html(page_key):
             ".then(function(r){return r.json()}).then(show).catch(function(){})})})();</script>")
 
 
+def photo_who(t, img):
+    """Кто на фото: если фото взято со страницы Википедии другого человека (Том Скеррит в статье «Julia Roberts») — подписываем."""
+    if img.get("who"):
+        return img["who"]
+    if img.get("generic") or not img.get("wiki"):
+        return ""
+    title = re.sub(r"\s*\(.*?\)", "", urllib.parse.unquote(img["wiki"].rsplit("/", 1)[-1]).replace("_", " ")).strip()
+    return "" if _match(t["term"], title) else title
+
+
 def build_topic(t, related, same=()):
     summ, srcs = topic_summary(t)
     arts = t["articles"]
@@ -2038,7 +2050,8 @@ def build_topic(t, related, same=()):
                        + (f'<h2>The story behind it</h2>' + "".join(f"<p>{E(p)}</p>" for p in ai["behind"].split("\n\n") if p.strip())
                           if ai.get("behind") else "")
                        + f'<h2>The background</h2>{paras}'
-                       + (f"<h2>What happens next</h2><p>{E(ai['next'])}</p>" if ai.get("next") else "")
+                       + (f"<h2>What happens next</h2><p>{E(ai['next'])}</p>" if ai.get("next") and not re.search(
+                          r"(?i)sources? (do|does) not|not (stated|given|say|said)|no (date|details)|unclear", ai["next"]) else "")
                        + (f"<h2>What else people are searching</h2><ul>{asked}</ul>" if asked else ""))
         else:
             ai_html = paras
@@ -2052,7 +2065,7 @@ def build_topic(t, related, same=()):
     img = t.get("img"); card = t.get("card")
     if img:
         hero = (f'<figure class="hero"><img{shape(img["file"])} src="../{E(img["file"])}" alt="{E(t["term"])}" loading="eager">'
-                f'<figcaption>{(E(img["who"]) + ". ") if img.get("who") else ""}{"Illustration" if img.get("generic") else "Photo"}: {E(img["credit"])} / <a href="{E(img["src"])}" target="_blank" rel="noopener">{E(img["license"])}</a>, via Wikimedia Commons</figcaption></figure>')
+                f'<figcaption>{(E(photo_who(t, img)) + ". ") if photo_who(t, img) else ""}{"Illustration" if img.get("generic") else "Photo"}: {E(img["credit"])} / <a href="{E(img["src"])}" target="_blank" rel="noopener">{E(img["license"])}</a>, via Wikimedia Commons</figcaption></figure>')
     else:   # обложка-заглушка на странице не показывается, только в превью ссылки (og:image)
         hero = ""
     side = ad("sidebar")
@@ -2309,9 +2322,13 @@ def visible(store):
         if ONLY_WITH_SUMMARY and not t.get("ai"):
             continue
         ai = t.get("ai") or {}
+        old_txt = ai.get("summary", "") + " " + ai.get("headline", "")
+        if len(ai.get("summary", "")) < 150 or ai.get("key_points") == ["x"]:
+            continue                     # битый текст
         if (ai.get("rules") or 0) < 6 and ai.get("rw_tried") == RULES_V and re.search(
-                r"(?i)appears? to be tied|searches for .{0,40}(appear|seem)|may be why|is drawing search|several (separate|unrelated) headlines",
-                ai.get("summary", "") + " " + ai.get("headline", "")):
+                r"(?i)appears? to be tied|searches for .{0,40}(appear|seem)|may be why|is drawing search|several (separate|unrelated) headlines"
+                r"|only (the )?headlines? (were|was) available|based (only )?on the headline|headline alone|headlines? only"
+                r"|readers (looking|who want)|check the full (articles?|reports?)", old_txt):
             continue                     # старый текст-догадка, переписать по новым правилам не вышло — не показываем
         out[s] = t
     return out
