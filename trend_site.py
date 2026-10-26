@@ -775,6 +775,15 @@ def write_summary(t, key, feedback="", do_dig=False):
                     out[k] = out[k].replace("\\n", "\n").strip()
             if re.search(r"(?i)sources? (do|does) not|not (stated|given|say|said)|no (date|details)|unclear", out.get("next", "")):
                 out["next"] = ""
+            meta = re.compile(r"(?i)\b(the|these|available|our) sources?\b|\bsource \[|\bheadlines? (say|says|only|alone)\b|according to coverage")
+            for k in ("why", "behind", "summary"):
+                v = out.get(k) or ""
+                paras = []
+                for para in v.split("\n\n"):
+                    sents = re.split(r"(?<=[.!?])\s+", para)
+                    keep = [x for x in sents if not meta.search(x)] or sents[:1]
+                    paras.append(" ".join(keep))
+                out[k] = "\n\n".join(p_ for p_ in paras if p_.strip())
             if out.get("category") in CATS:
                 t["cat"] = out["category"]
             fu = []
@@ -1788,7 +1797,26 @@ def issue_no():
     return (to_et(datetime.now(timezone.utc))[0].date() - datetime(2026, 10, 20).date()).days + 1
 
 
+def clean_links(html_, path):
+    """Ссылки сразу на конечный адрес (/t/name, а не t/name.html → переадресация): Google не видит лишних переадресаций."""
+    base = path.rsplit("/", 1)[0] + "/" if "/" in path else ""
+    def fix(m):
+        up, link, anchor = m.group(1), m.group(2), m.group(3) or ""
+        if up:                                    # ../x/name.html — от корня сайта
+            full = link
+        else:                                     # name.html или t/name.html — относительно текущей папки
+            full = base + link
+        full = "" if full in ("index", "") else full
+        return f'href="/{full}{anchor}"'
+    html_ = re.sub(r'href="(?:\.\./)*index\.html"', 'href="/"', html_)
+    return re.sub(r'href="((?:\.\./)*)([\w/-]+?)\.html(#[^"]*)?"', fix, html_)
+
+
 def page(title, desc, body, path, depth, extra_head="", og_img=""):
+    return clean_links(_page(title, desc, body, path, depth, extra_head, og_img), path)
+
+
+def _page(title, desc, body, path, depth, extra_head="", og_img=""):
     up = "../" * depth
     canon = SITE_URL + "/" + path.replace("index.html", "").replace(".html", "")
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
@@ -2445,7 +2473,7 @@ def build_site(store):
       + "".join(f"<url><loc>{E(u)}</loc>" + (f"<lastmod>{lm[u]}</lastmod>" if u in lm else "") + "</url>" for u in urls) + "</urlset>")
     if ADSENSE_CLIENT:
         w("ads.txt", f"google.com, {ADSENSE_CLIENT.replace('ca-', '')}, DIRECT, f08c47fec0942fa0\n")
-    w("robots.txt", f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\nSitemap: {SITE_URL}/sitemap-news.xml\n")
+    w("robots.txt", f"User-agent: *\nAllow: /\nDisallow: /api/\nSitemap: {SITE_URL}/sitemap.xml\nSitemap: {SITE_URL}/sitemap-news.xml\n")
     items = sorted(topics.values(), key=lambda t: t["first_seen"], reverse=True)[:50]
     w("feed.xml", '<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel>'
       f"<title>{SITE_NAME}</title><link>{SITE_URL}</link><description>{E(TAGLINE)}</description>"
@@ -2909,7 +2937,14 @@ def write_preview(item, people, key, feedback="", store=None):
             return None
         full = " ".join([out.get("intro", "")] + [p.get("bio", "") + " " + " ".join(q.get("a", "") for q in p.get("qa", []))
                                                   for p in out.get("people", [])])
-        hits = copied(full, [t for t in texts if t], n=12)   # названия фильмов и ролей неизбежно совпадают — проверяем длинные куски
+        names = sorted({x for f in people for x in [f["name"]] + [k["title"] for k in f.get("known", [])]}
+                       | {r["name"] for r in item.get("roles", [])} | {item["title"]}, key=len, reverse=True)
+        def strip_names(s):                 # имена актёров и названия фильмов совпадают неизбежно — их не считаем
+            for nm in names:
+                if len(nm) > 2:
+                    s = re.sub(re.escape(nm), " ", s, flags=re.I)
+            return s
+        hits = copied(strip_names(full), [strip_names(t) for t in texts if t], n=10)
         if not hits:
             return out
         prompt += "\n\nYour draft repeated these word sequences from the facts: " + "; ".join(f'"{h}"' for h in hits[:5]) + ". Rewrite them."
