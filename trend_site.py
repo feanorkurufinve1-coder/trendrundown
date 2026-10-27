@@ -1998,6 +1998,32 @@ def reactions_html(page_key):
             ".then(function(r){return r.json()}).then(show).catch(function(){})})})();</script>")
 
 
+OUTLET = (r"(?:The )?(?:Associated Press|AP|Reuters|CNN|CNBC|NBC(?: News| Sports)?|CBS(?: News| Sports)?|ABC(?: News)?|Fox(?: News| Sports| News Digital)?|"
+          r"NPR|PBS|ESPN|Yahoo(?: Sports| Finance| News)?|USA Today|The New York Times|New York Times|NYT|Washington Post|"
+          r"Wall Street Journal|WSJ|Bloomberg(?: News)?|BBC(?: Sport| News)?|The Guardian|Guardian|The Athletic|Athletic|Sports Illustrated|"
+          r"Variety|People(?:\.com)?|TMZ(?: Sports)?|E! News|Entertainment Weekly|Billboard|Forbes|The Verge|TechCrunch|CNET|"
+          r"MarketWatch|Axios|Politico|The Hill|Newsweek|RotoWire|OneFootball|HoopsHype|MLB\.com|NFL\.com|NBA\.com|Deadline|"
+          r"Hollywood Reporter|The Independent|Daily Mail|[KW](?!NBA)[A-Z]{3}(?:-TV)?)")
+
+
+def scrub_outlets(s):
+    """Убираем из текста упоминания изданий: «по данным CNN», «как сообщает ESPN»."""
+    if not s:
+        return s
+    o = OUTLET
+    pats = [
+        (rf",? (?:according to|per|citing|as reported by) (?:a |an |the )?(?:report(?:s|ing)? (?:from|by) )?{o}(?:'s [\w ]{{1,30}}?)?(?:, which [^,.;]*)?(?=[,.;])", ""),
+        (rf"(?:^|(?<=[.!?] ))(?:According to|Per) (?:a |an |the )?(?:report(?:s|ing)? (?:from|by) )?{o}(?:'s [\w ]{{1,30}}?)?, (\w)", r"\1"),
+        (rf"(?:^|(?<=[.!?] )){o}(?: and {o})?,?(?: citing [^,]+,)? (?:reported|reports|said|says|wrote|noted|described|published)(?: that)? (\w)", r"\1"),
+        (rf",? {o} (?:reported|reports|said|says|wrote|noted)(?=[,.])", ""),
+        (r"(?i),? according to (?:the )?(?:news |media |local |several |multiple |some )?(?:reports?|coverage|headlines?|sources?)(?=[,.])", ""),
+    ]
+    for a, b in pats:
+        s = re.sub(a, b, s)
+    s = re.sub(r"(^|[.!?]\s+)([a-z])", lambda m: m.group(1) + m.group(2).upper(), s)
+    return re.sub(r"\s{2,}", " ", s).replace(" ,", ",").strip()
+
+
 def photo_who(t, img):
     """Кто на фото: если фото взято со страницы Википедии другого человека (Том Скеррит в статье «Julia Roberts») — подписываем."""
     if img.get("who"):
@@ -2006,6 +2032,25 @@ def photo_who(t, img):
         return ""
     title = re.sub(r"\s*\(.*?\)", "", urllib.parse.unquote(img["wiki"].rsplit("/", 1)[-1]).replace("_", " ")).strip()
     return "" if _match(t["term"], title) else title
+
+
+def source_line(t, ai):
+    """Короткая строка источников: только названия изданий со ссылками, без их заголовков."""
+    seen, links = set(), []
+    for a in sorted(t["articles"], key=lambda a: a["time"], reverse=True):
+        if a.get("source") and a["source"] not in seen and "news.google.com" not in a["url"]:
+            seen.add(a["source"]); links.append((a["source"], a["url"]))
+    for a in sorted(t["articles"], key=lambda a: a["time"], reverse=True):
+        if a.get("source") and a["source"] not in seen:
+            seen.add(a["source"]); links.append((a["source"], a["url"]))
+    if ai and ai.get("dug") and ai.get("behind"):
+        for h, ti, u in ai["dug"]:
+            if h not in seen:
+                seen.add(h); links.append((h, u))
+    if not links:
+        return ""
+    return ('<p class="meta" style="margin-top:26px">Sources: ' + " · ".join(
+        f'<a href="{E(u)}" target="_blank" rel="noopener nofollow">{E(n)}</a>' for n, u in links[:12]) + "</p>")
 
 
 def build_topic(t, related, same=()):
@@ -2042,6 +2087,12 @@ def build_topic(t, related, same=()):
     if t.get("cat") in CATS:
         ld["articleSection"] = CATS[t["cat"]]
     ai = t.get("ai")
+    if ai:
+        ai = dict(ai)
+        for k in ("why", "behind", "summary", "next", "unknown", "headline"):
+            if isinstance(ai.get(k), str):
+                ai[k] = "\n\n".join(scrub_outlets(x) for x in ai[k].split("\n\n"))
+        ai["key_points"] = [scrub_outlets(x) for x in ai.get("key_points", [])]
     ai_html = ""
     if ai:
         dl = re.sub(r"[^\w .,'-]", "", ai.get("dateline", "") or "").strip(" ,")[:40]
@@ -2086,10 +2137,7 @@ def build_topic(t, related, same=()):
         ai_html = (ai_html
                    + (f"<h2>Key facts</h2><ul>{kp}</ul>" if kp else "")
                    + (f"<h2>What we don't know yet</h2><p>{E(unk)}</p>" if unk else "")
-                   + f'<p class="meta">Our summary of reporting by {E(", ".join(ai.get("sources", [])))}. Written with AI assistance and checked against the sources; read the full stories at the links below. Updated {E(fmt_et(ai["made"]))}.</p>'
-                   + (('<h2>Sources from our research</h2><ul class="list">' + "".join(
-                       f'<li><span class="src">{E(h)}</span><a class="t" href="{E(u)}" target="_blank" rel="noopener nofollow">{E(ti)}</a></li>'
-                       for h, ti, u in ai["dug"][:10]) + "</ul>") if ai.get("dug") and ai.get("behind") else ""))
+                   + f'<p class="meta">Updated {E(fmt_et(ai["made"]))}.</p>')
     img = t.get("img"); card = t.get("card")
     if img:
         hero = (f'<figure class="hero"><img{shape(img["file"])} src="../{E(img["file"])}" alt="{E(t["term"])}" loading="eager">'
@@ -2102,7 +2150,7 @@ def build_topic(t, related, same=()):
 <h1>{E(t['term'])}</h1>
 <p class="deck">Why it is trending in America today</p>
 {('<p class="deck2">' + E(ai.get("headline", "")) + '</p>') if ai and ai.get("headline") else ''}
-<hr class="dash"><p class="byline">By the Trend Rundown staff</p>
+<hr class="dash"><p class="byline">The Trend Rundown</p>
 {listen_html() if ai else ""}
 {hero}
 <div class="cols">{ai_html}</div>
@@ -2112,8 +2160,7 @@ def build_topic(t, related, same=()):
 <h2>Trend data</h2>
 <div class="box"><p style="margin:0">{summ}</p>{('<p class="meta" style="margin:10px 0 0">Search interest while it trended</p>' + sp) if sp else ''}</div>
 {ad("middle")}
-<h2>Sources: what the outlets reported</h2><ul class="list">{items or '<li class="meta">Coverage is still coming in.</li>'}</ul>
-{('<h2>How the story unfolded</h2><ul class="list">' + timeline + '</ul>') if len(arts) > 2 else ''}
+{source_line(t, ai)}
 {ad("multiplex") if ai else ""}
 {('<h2>Other trending topics</h2><div class="chips">' + rel + '</div>') if rel else ''}
 </article><aside>{side}</aside></div>"""
@@ -2245,6 +2292,9 @@ def build_category(cat, topics):
 
 def build_explainer(x, topics):
     news = [topics[s] for s in reversed(x.get("topics", [])) if s in topics]
+    x = dict(x)
+    for k in ("answer", "body", "in_the_news"):
+        x[k] = "\n\n".join(scrub_outlets(p) for p in (x.get(k) or "").split("\n\n"))
     paras = "".join(f"<p>{E(p)}</p>" for p in x["body"].split("\n\n") if p.strip())
     faq = []
     for f in x.get("faq", []):
@@ -2257,8 +2307,11 @@ def build_explainer(x, topics):
     newslist = "".join(f'<li><a href="../t/{E(n["slug"])}.html">{E(n["term"])}</a> — '
                        f'{E((n.get("ai") or {}).get("headline", ""))} <span class="meta">{E(fmt_et(n["first_seen"]).split(",")[0])}</span></li>'
                        for n in news[:12])
-    src = "".join(f'<li><span class="src">{E(s)}</span><a class="t" href="{E(u)}" target="_blank" rel="noopener nofollow">{E(ti)}</a></li>'
-                  for s, ti, u in x.get("links", [])[:6])
+    seen_s = []
+    for s_, ti, u in x.get("links", []):
+        if s_ and s_ not in [a for a, _ in seen_s]:
+            seen_s.append((s_, u))
+    src = " · ".join(f'<a href="{E(u)}" target="_blank" rel="noopener nofollow">{E(s_)}</a>' for s_, u in seen_s[:8])
     ld = [{"@context": "https://schema.org", "@type": "Article", "headline": x["title"],
            "datePublished": x["first"], "dateModified": x["made"],
            "author": {"@type": "Organization", "name": SITE_NAME, "url": SITE_URL},
@@ -2280,8 +2333,8 @@ def build_explainer(x, topics):
 {('<h2>What people are asking</h2>' + faq_html) if faq_html else ''}
 {reactions_html("x/" + x["slug"])}
 {ad("middle")}
-{('<h2>Sources</h2><ul class="list">' + src + '</ul>') if src else ''}
-<p class="meta">Written with AI assistance from reporting by the outlets above and checked against them. Updated {E(fmt_et(x["made"]))}.</p>
+{('<p class="meta" style="margin-top:26px">Sources: ' + src + '</p>') if src else ''}
+<p class="meta">Updated {E(fmt_et(x["made"]))}.</p>
 </article>"""
     return page(x["title"] + (f" | {SITE_NAME}" if len(x["title"]) < 50 else ""), short_desc(x["answer"]), body,
                 f"x/{x['slug']}.html", 1, head)
@@ -3211,7 +3264,7 @@ def build_cast(x):
 {reactions_html("w/" + x["slug"])}
 {ad("middle")}
 <h2>Sources</h2><ul class="list"><li><a class="t" href="{E(x["link"])}" rel="nofollow" target="_blank">{E(x["title"])} — {E(x["link_name"])}</a></li>{src}</ul>
-<p class="meta">Written with AI assistance from public databases and encyclopedia entries; ages are calculated from listed birth dates.
+<p class="meta">Ages are calculated from listed birth dates.
 {'Cast and schedule data: <a href="https://www.tvmaze.com/" rel="nofollow">TVmaze</a> (CC BY-SA 4.0). ' if x["type"] == "tv" else ''}Film and people data: <a href="https://www.wikidata.org/" rel="nofollow">Wikidata</a>.</p>
 </article>"""
     return page(cast_title(x), short_desc(answer), body, f"w/{x['slug']}.html", 1, head, og_img=hero["file"] if hero else "")
