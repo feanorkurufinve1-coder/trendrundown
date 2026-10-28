@@ -41,8 +41,8 @@ CATS = {                   # разделы сайта: тема попадае�
 ONLY_WITH_SUMMARY = True  # публиковать только темы со сводкой ИИ (защита от санкций Google за «массовый контент»)
 MAX_NEW_PER_DAY = 12       # сколько новых тем в сутки (по времени США) получают сводку и попадают на сайт — самые крупные
 EXPLAIN = True             # объяснения: что люди начнут гуглить после новости (термины, законы, места, малоизвестные люди)
-MAX_EXPLAINERS_PER_DAY = 15   # сколько новых объяснений в сутки
-EXPLAINERS_PER_TOPIC = 2      # не больше стольких объяснений из одной новости
+MAX_EXPLAINERS_PER_DAY = 25   # сколько новых объяснений в сутки
+EXPLAINERS_PER_TOPIC = 3      # не больше стольких объяснений из одной новости (включая пояснение о самом запросе)
 MIN_FULL_ARTICLES = 1      # писать сводку, только если хотя бы столько статей удалось прочитать целиком (не одни заголовки)
 MIN_OUTLETS = 3            # и только если о теме написали хотя бы столько разных изданий — качество, а не количество
 DIG = True                 # «копать»: ИИ сам ищет в интернете предысторию и скрытую причину тренда
@@ -1149,6 +1149,20 @@ def write_explainer(item, t, src, questions, key, feedback=""):
     return None
 
 
+def term_item(t):
+    """Пояснение о самом популярном запросе: «Кто такой Яксель Лендеборг?», «Что такое Hunter's Moon?»."""
+    term = t["term"]
+    if generic_term(term) or re.search(r"(?i)\bvs\.?\b| - |score|tonight|today|stats|standings|schedule|news|stock|weather|"
+                                       r"hints|injury|trade|rumors|\d{4}", term) or len(term.split()) > 4:
+        return None                       # матчи, счёт, «сегодня» — объяснять нечего, это новость
+    mp = t.get("main_person") or ""
+    person = bool(mp) and _match(term, mp)
+    if not person and len(term.split()) == 1:
+        return None                       # одно общее слово («Coach», «Cancer») — пояснять нечего
+    return {"subject": mp if person else term, "query": ("who is " if person else "what is ") + (mp if person else term).lower(),
+            "kind": "person" if person else "other"}
+
+
 def explain(store):
     """Для свежих новостей этого прохода: предсказанные запросы → проверка подсказками Google → страница-объяснение."""
     key = api_key()
@@ -1164,7 +1178,9 @@ def explain(store):
         if not t or t.get("blocked") or not t.get("ai"):
             continue
         per_topic = 0
-        for item in t.get("followups", []):
+        for item in [term_item(t)] + t.get("followups", []):
+            if not item:
+                continue
             if made_today >= MAX_EXPLAINERS_PER_DAY or per_topic >= EXPLAINERS_PER_TOPIC:
                 break
             xs = slugify(item["subject"])
