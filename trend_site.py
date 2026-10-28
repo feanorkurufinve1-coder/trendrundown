@@ -1406,6 +1406,7 @@ def commons_generic(t):
               "logos, or anything odd or misleading. ALSO reject any image whose file name or description names particular "
               "people or a specific past occasion (e.g. 'UFC fighters X, Y visit Bagram Air Base 2007', 'Senator X at rally') — "
               "readers would think the story is about them. Prefer objects, venues and scenes without identifiable people. "
+              "If the story is about a crime, abuse, a death, an attack or a lawsuit, NEVER pick an image with people in it. "
               "If none fits well, answer n = -1.\n\n" + listing)
     try:
         n = int(ai_call(prompt, key, PICK_TOOL).get("n", -1))
@@ -1416,6 +1417,15 @@ def commons_generic(t):
         log(f"иллюстрация '{t['term']}': среди найденных по «{query}» подходящей нет")
         return None
     pg, ii, md, lic, desc = cands[n]
+    # проверка без ИИ: если в запросе названо конкретное место/компания (State Farm Arena, Royal Caribbean),
+    # то это название должно быть и в названии файла — иначе это другой стадион или другой корабль
+    names = [w.lower() for w in re.findall(r"\b[A-Z][\w'&.-]+", query)
+             if w.lower() not in {"the", "a", "an", "us", "usa", "nfl", "nba", "nhl", "mlb", "wnba", "ncaa", "pga", "ufc",
+                                  "new", "old", "game", "match", "players", "stadium", "arena", "team", "fans"}]
+    blob = (pg.get("title", "") + " " + desc).lower().replace("_", " ")
+    if names and not any(nm in blob for nm in names):
+        log(f"иллюстрация '{t['term']}': «{pg.get('title', '')}» не про {', '.join(names)} — не беру")
+        return None
     url = ii.get("thumburl") or ii.get("url")
     os.makedirs(os.path.join(OUT, "img"), exist_ok=True)
     fn = f"img/{t['slug']}.jpg"
@@ -1501,6 +1511,10 @@ def person_in_text(t, name):
 
 def generic_images(store, limit=12):
     n = 0
+    for t in store["topics"].values():          # фото, признанные неверными при проверке (не то место / не тот корабль / посторонние люди)
+        if re.search(r"KeyArena_\(2890740573\)|Ocean_Explorer_Docked|Rajiv_Gandhi_International_Cricket_Stadium|"
+                     r"Sonoma_Ranch_Road_Trail_Clean_Up|Pauley_Pavilion,_exterior", (t.get("img") or {}).get("src", "")):
+            t.pop("img"); t.pop("gen_tried", None); t["img_tried"] = 2
     checked = 0                                  # фото по названию темы, взятые без проверки «про то ли это» (Ганнибал-полководец)
     for t in sorted(store["topics"].values(), key=lambda x: x.get("last_seen", x["first_seen"]), reverse=True):
         im = t.get("img") or {}
