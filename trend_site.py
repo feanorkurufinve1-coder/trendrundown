@@ -1359,6 +1359,10 @@ PICK_TOOL = {"name": "pick_image", "description": "Choose the best illustration 
                               "required": ["n"]}}
 
 
+BAD_FILES = (r"KeyArena_\(2890740573\)|Ocean_Explorer_Docked|Rajiv_Gandhi_International_Cricket_Stadium|"
+             r"Sonoma_Ranch_Road_Trail_Clean_Up|Pauley_Pavilion,_exterior")
+
+
 def commons_generic(t):
     """Иллюстрация «по смыслу» из Wikimedia Commons (только свободные лицензии).
     Кандидатов отбирает ИИ по названию и описанию файла — чтобы к теннису не попал «мальчик со щёткой в Африке»."""
@@ -1390,6 +1394,12 @@ def commons_generic(t):
         if re.search(r"\b(air base|troops|soldiers?|military|army|navy|marines|airmen|visit(s|ed)?|ceremony|funeral|memorial|reception|gala|banquet|dinner|award(s)?|meeting)\b", blob) \
                 and not re.search(r"(?i)military|army|navy|war|troops|base|memorial|funeral|award|gala|dinner|meeting", query + " " + t.get("term", "")):
             continue                     # «бойцы UFC посещают авиабазу» к новости про бой не подходит
+        if re.search(BAD_FILES, pg.get("title", "")):
+            continue                              # фото, уже признанные неверными
+        if re.search(r"(?i)abuse|assault|sex|traffick|murder|killed|shooting|lawsuit|sues|charged|epstein|attack", 
+                     (t.get("ai") or {}).get("headline", "") + " " + t.get("term", "")) and \
+                re.search(r"(?i)\b(people|volunteers?|crowd|team|staff|clean[ -]?up|students|workers|family|group|men|women)\b", blob):
+            continue                              # к статьям о преступлениях — без фото с людьми
         cands.append((pg, ii, md, lic, desc))
         if len(cands) >= 10:
             break
@@ -1512,8 +1522,7 @@ def person_in_text(t, name):
 def generic_images(store, limit=12):
     n = 0
     for t in store["topics"].values():          # фото, признанные неверными при проверке (не то место / не тот корабль / посторонние люди)
-        if re.search(r"KeyArena_\(2890740573\)|Ocean_Explorer_Docked|Rajiv_Gandhi_International_Cricket_Stadium|"
-                     r"Sonoma_Ranch_Road_Trail_Clean_Up|Pauley_Pavilion,_exterior", (t.get("img") or {}).get("src", "")):
+        if re.search(BAD_FILES, (t.get("img") or {}).get("src", "")):
             t.pop("img"); t.pop("gen_tried", None); t["img_tried"] = 2
     checked = 0                                  # фото по названию темы, взятые без проверки «про то ли это» (Ганнибал-полководец)
     for t in sorted(store["topics"].values(), key=lambda x: x.get("last_seen", x["first_seen"]), reverse=True):
@@ -2020,6 +2029,19 @@ OUTLET = (r"(?:The )?(?:Associated Press|AP|Reuters|CNN|CNBC|NBC(?: News| Sports
           r"Hollywood Reporter|The Independent|Daily Mail|[KW](?!NBA)[A-Z]{3}(?:-TV)?)")
 
 
+META_RE = re.compile(r"(?i)\b(the|these|available|our) sources?\b|\bsources? reviewed\b|\bheadlines?\b|according to the (match )?report|"
+                     r"\b(those|the|these|other) reports? (point|say|said|suggest)|covered only by|not available from|"
+                     r"\boutlets? (say|said|report|described|published)|\bheadlined\b|\bin our feed\b|\bfull (article|text|stories)\b")
+
+
+def drop_meta(para):
+    """Убираем фразы о самих источниках («в заголовке сказано», «источники не сообщают»)."""
+    sents = re.split(r"(?<=[.!?])\s+", para)
+    own = re.compile(OUTLET + r"(?:'s|’s) (?:live |latest |match )?(?:coverage|report|preview|story|headline|article|guide|piece|analysis)")
+    keep = [x for x in sents if not META_RE.search(x) and not own.search(x)]
+    return " ".join(keep)
+
+
 def scrub_outlets(s):
     """Убираем из текста упоминания изданий: «по данным CNN», «как сообщает ESPN»."""
     if not s:
@@ -2030,7 +2052,8 @@ def scrub_outlets(s):
         (rf"(?:^|(?<=[.!?] ))(?:According to|Per) (?:a |an |the )?(?:report(?:s|ing)? (?:from|by) )?{o}(?:'s [\w ]{{1,30}}?)?, (\w)", r"\1"),
         (rf"(?:^|(?<=[.!?] )){o}(?: and {o})?,?(?: citing [^,]+,)? (?:reported|reports|said|says|wrote|noted|described|published)(?: that)? (\w)", r"\1"),
         (rf",? {o} (?:reported|reports|said|says|wrote|noted)(?=[,.])", ""),
-        (r"(?i),? according to (?:the )?(?:news |media |local |several |multiple |some )?(?:reports?|coverage|headlines?|sources?)(?=[,.])", ""),
+        (r"(?i),? according to (?:the |one |a |an )?(?:[\w-]+ ){0,3}(?:reports?|sources?|news|coverage|headlines?)(?: (?:from|on) [^,.]+)?(?=[,.])", ""),
+        (rf"(?:^|(?<=[.!?] ))According to (?:a |an |the )?(?:{o} )?(?:[\w-]+ )?(?:report|reports|story|coverage)(?: (?:from|on) [^,]+(?:, \d{{4}})?)?, (\w)", r"\1"),
     ]
     for a, b in pats:
         s = re.sub(a, b, s)
@@ -2105,8 +2128,8 @@ def build_topic(t, related, same=()):
         ai = dict(ai)
         for k in ("why", "behind", "summary", "next", "unknown", "headline"):
             if isinstance(ai.get(k), str):
-                ai[k] = "\n\n".join(scrub_outlets(x) for x in ai[k].split("\n\n"))
-        ai["key_points"] = [scrub_outlets(x) for x in ai.get("key_points", [])]
+                ai[k] = "\n\n".join(drop_meta(scrub_outlets(x)) for x in ai[k].replace("\\n", "\n").split("\n\n"))
+        ai["key_points"] = [k for k in (drop_meta(scrub_outlets(x)) for x in ai.get("key_points", [])) if k]
     ai_html = ""
     if ai:
         dl = re.sub(r"[^\w .,'-]", "", ai.get("dateline", "") or "").strip(" ,")[:40]
