@@ -1300,6 +1300,77 @@ def explain(store):
     return done
 
 
+# ---------- Search Console: по каким запросам нас уже находят ----------
+GSC_SITES = ["sc-domain:trendrundown.com", "https://trendrundown.com/"]
+
+
+def gsc_token(info):
+    """Пропуск Google для служебного пользователя (подпись ключом из секрета GSC_KEY)."""
+    import base64
+    from cryptography.hazmat.primitives import hashes, serialization
+    from cryptography.hazmat.primitives.asymmetric import padding
+    b64 = lambda b: base64.urlsafe_b64encode(b).rstrip(b"=")
+    now = int(time.time())
+    head = b64(json.dumps({"alg": "RS256", "typ": "JWT"}).encode())
+    claim = b64(json.dumps({"iss": info["client_email"], "scope": "https://www.googleapis.com/auth/webmasters.readonly",
+                            "aud": "https://oauth2.googleapis.com/token", "iat": now, "exp": now + 3600}).encode())
+    k = serialization.load_pem_private_key(info["private_key"].encode(), password=None)
+    sig = b64(k.sign(head + b"." + claim, padding.PKCS1v15(), hashes.SHA256()))
+    body = urllib.parse.urlencode({"grant_type": "urn:ietf:params:oauth:grant-type:jwt-bearer",
+                                   "assertion": (head + b"." + claim + b"." + sig).decode()}).encode()
+    req = urllib.request.Request("https://oauth2.googleapis.com/token", data=body, method="POST")
+    with urllib.request.urlopen(req, timeout=30, context=CTX) as r:
+        return json.loads(r.read().decode())["access_token"]
+
+
+def gsc_fetch(store):
+    """Раз в 12 часов: запросы и страницы за 28 дней (клики, показы, позиция). Только чтение."""
+    raw = os.environ.get("GSC_KEY", "").strip()
+    if not raw or hours_since(store.get("gsc", {}).get("fetched", "2000-01-01T00:00:00+00:00")) < 12:
+        return
+    try:
+        tok = gsc_token(json.loads(raw))
+    except Exception as e:
+        log(f"Search Console: не удалось войти: {e}")
+        store.setdefault("gsc", {})["error"] = str(e)[:200]
+        return
+    end = (datetime.now(timezone.utc) - timedelta(days=2)).strftime("%Y-%m-%d")
+    start = (datetime.now(timezone.utc) - timedelta(days=29)).strftime("%Y-%m-%d")
+    body = json.dumps({"startDate": start, "endDate": end, "dimensions": ["query", "page"], "rowLimit": 2000}).encode()
+    last = ""
+    for site in GSC_SITES:
+        url = "https://www.googleapis.com/webmasters/v3/sites/" + urllib.parse.quote(site, safe="") + "/searchAnalytics/query"
+        req = urllib.request.Request(url, data=body, method="POST", headers={
+            "Authorization": "Bearer " + tok, "Content-Type": "application/json"})
+        try:
+            with urllib.request.urlopen(req, timeout=60, context=CTX) as r:
+                data = json.loads(r.read().decode())
+        except urllib.error.HTTPError as e:
+            last = f"{site}: HTTP {e.code} {e.read().decode(errors='replace')[:150]}"
+            continue
+        rows = [{"q": x["keys"][0], "page": x["keys"][1], "clicks": x.get("clicks", 0), "impr": x.get("impressions", 0),
+                 "pos": round(x.get("position", 0), 1)} for x in data.get("rows", [])]
+        rows.sort(key=lambda x: -x["impr"])
+        store["gsc"] = {"fetched": now_iso(), "site": site, "start": start, "end": end, "rows": rows[:600],
+                        "clicks": sum(x["clicks"] for x in rows), "impr": sum(x["impr"] for x in rows)}
+        log(f"Search Console: {len(rows)} строк, кликов {store['gsc']['clicks']}, показов {store['gsc']['impr']}")
+        return
+    log(f"Search Console: нет доступа ({last})")
+    store.setdefault("gsc", {})["error"] = last[:200]
+
+
+def gsc_pages(store):
+    """Страница → её главный запрос (по показам), сумма показов, позиция."""
+    out = {}
+    for x in store.get("gsc", {}).get("rows", []):
+        path = urllib.parse.urlparse(x["page"]).path.rstrip("/")
+        p = out.setdefault(path, {"impr": 0, "clicks": 0, "best": None})
+        p["impr"] += x["impr"]; p["clicks"] += x["clicks"]
+        if not p["best"] or x["impr"] > p["best"]["impr"]:
+            p["best"] = x
+    return out
+
+
 # ---------- обновление пояснений о событиях, которые уже прошли ----------
 REFRESH_PER_DAY = 2        # сколько пояснений в сутки обновлять поиском в интернете (около 10 центов за каждое)
 REFRESH_FIRST = ["pro-and-tell-apple-event"]   # страницы, которые приносят клики (по Search Console) — обновлять первыми
@@ -1328,12 +1399,27 @@ def refresh_explainers(store):
     days = store.setdefault("refresh_days", {})
     if days.get(today, 0) >= REFRESH_PER_DAY:
         return 0
-    cands = [x for x in ex.values() if hours_since(x["made"]) > 72 and x.get("refreshed_v") != 1
-             and FUTURE_RE.search(x.get("answer", "") + " " + x.get("body", "") + " " + x.get("in_the_news", ""))]
-    cands.sort(key=lambda x: (x["slug"] not in REFRESH_FIRST, x["made"]))
+    gp = gsc_pages(store)
+    stat = lambda x: gp.get("/x/" + x["slug"], {"impr": 0, "best": None})
+    cands = []
+    for x in ex.values():
+        if hours_since(x["made"]) < 72:
+            continue
+        st = stat(x)
+        b = st["best"]
+        # Google уже показывает страницу (позиция 5–20), но заголовок не совпадает с тем, что люди вводят, — подгоняем
+        if b and st["impr"] >= 30 and 4 < b["pos"] <= 20 and x.get("targeted") != b["q"] \
+                and not all(w in words(x["title"]) for w in words(b["q"])):
+            cands.append((0, -st["impr"], x, "target", b["q"]))
+        elif x.get("refreshed_v") != 1 and FUTURE_RE.search(x.get("answer", "") + " " + x.get("body", "") + " " + x.get("in_the_news", "")):
+            cands.append((1 if x["slug"] not in REFRESH_FIRST else 0, -st["impr"], x, "update", None))
+    cands.sort(key=lambda c: (c[1], c[0]))      # сначала страницы с наибольшими показами в Google
     done = 0
-    for x in cands[:REFRESH_PER_DAY - days.get(today, 0)]:
-        x["refreshed_v"] = 1                       # одна попытка
+    for _, _, x, why, target_q in cands[:REFRESH_PER_DAY - days.get(today, 0)]:
+        if why == "target":
+            x["targeted"] = target_q
+        else:
+            x["refreshed_v"] = 1                   # одна попытка
         made = fmt_et(x["made"]).split(",")[0] + ", " + x["made"][:4]
         d = dig({"term": x["subject"], "articles": [], "traffic": []}, key,
                 REFRESH_PROMPT.format(made=made, title=x["title"], text=(x["answer"] + " " + x["body"])[:2500]))
@@ -1343,10 +1429,14 @@ def refresh_explainers(store):
             continue
         src = {"blocks": [f"[R] RESEARCH MEMO (web search {today}):\n" + d["memo"] + "\n\nEVIDENCE:\n" + "\n".join(d["evidence"])],
                "texts": [" ".join(e.split(": ", 1)[-1] for e in d["evidence"])], "links": d["links"]}
-        item = {"subject": x["subject"], "query": x.get("query", x["title"]), "kind": x.get("kind", "other")}
+        item = {"subject": x["subject"], "query": target_q or x.get("query", x["title"]), "kind": x.get("kind", "other")}
         fake = {"term": x["subject"], "ai": {"headline": x["title"], "summary": x.get("in_the_news", "")}}
-        res = write_explainer(item, fake, src, x.get("questions", []), key,
-                              "This is an UPDATE: the event has happened. Lead with what actually happened, in past tense.")
+        note = ("This is an UPDATE: the event has happened. Lead with what actually happened, in past tense." if why == "update" else
+                f'People find this page by searching "{target_q}". Answer exactly that in the first sentence, using those words; '
+                "the title must contain that phrase. Include anything new from the research memo."
+                + (" If the event has already happened, say what happened, in past tense."
+                   if FUTURE_RE.search(x.get("answer", "") + " " + x.get("body", "")) else ""))
+        res = write_explainer(item, fake, src, x.get("questions", []), key, note)
         if not res:
             continue
         draft = (f"{res['title']}\n\n{res['answer']}\n\n{res['body']}\n\nIn the news: {res['in_the_news']}\n\n"
@@ -1355,7 +1445,9 @@ def refresh_explainers(store):
             continue
         if REVIEW_EDITS:
             apply_edits(res, REVIEW_EDITS, ["title", "answer", "body", "in_the_news", "faq"])
-        x.update({"answer": res["answer"], "body": res["body"], "in_the_news": res["in_the_news"],
+        if target_q and not all(w in words(res["title"]) for w in words(target_q)):
+            res["title"] = target_q[:1].upper() + target_q[1:] + ("?" if re.match(r"(?i)(what|who|where|when|how|why|is|are|does|did|can|will)\b", target_q) else "")
+        x.update({"title": res["title"][:80] if target_q else x["title"], "answer": res["answer"], "body": res["body"], "in_the_news": res["in_the_news"],
                   "faq": res.get("faq", [])[:8], "links": (x.get("links") or [])[:4] + list(d["links"])[:6],
                   "made": now_iso(), "seen": now_iso(), "new": True})
         done += 1
@@ -3521,6 +3613,10 @@ def run_once():
     xn = explain(store)
     if xn:
         log(f"Написано объяснений: {xn}")
+    try:
+        gsc_fetch(store)
+    except Exception as e:
+        log(f"Search Console: ошибка {e}")
     try:
         rn = refresh_explainers(store)
         if rn:
