@@ -1535,11 +1535,31 @@ def person_in_text(t, name):
     return len(last) > 2 and last in text
 
 
+def other_subject(t, who):
+    """Запрос — имя/название из нескольких слов, и статья именно о нём, а фото было бы другого человека.
+    Пример: запрос «Mia Pohankova», заголовок «Teen Mia Pohankova upsets Naomi Osaka» — фото Осаки не подходит."""
+    import unicodedata
+    plain = lambda s: unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower()
+    term, who_p = plain(t["term"]), plain(who)
+    words = t["term"].split()
+    if _match(term, who_p) or len(words) < 2 or not all(w[:1].isupper() or not w[:1].isalpha() for w in words):
+        return False
+    head = plain((t.get("ai") or {}).get("headline", ""))
+    if term not in head:
+        return False
+    return who_p not in head or head.index(term) < head.index(who_p)   # главный в заголовке — запрос, а не тот, кто на фото
+
+
 def generic_images(store, limit=12):
     n = 0
     for t in store["topics"].values():          # фото, признанные неверными при проверке (не то место / не тот корабль / посторонние люди)
         if re.search(BAD_FILES, (t.get("img") or {}).get("src", "")):
             t.pop("img"); t.pop("gen_tried", None); t["img_tried"] = 2
+    for t in store["topics"].values():          # фото другого человека в статье о ком-то ещё — убрать (будет иллюстрация)
+        im = t.get("img") or {}
+        who = im.get("who") or (photo_who(t, im) if im.get("wiki") else "")
+        if who and t.get("ai") and other_subject(t, who):
+            t.pop("img"); t.pop("gen_tried", None); t["person_tried"] = 2; t["img_tried"] = 2
     checked = 0                                  # фото по названию темы, взятые без проверки «про то ли это» (Ганнибал-полководец)
     for t in sorted(store["topics"].values(), key=lambda x: x.get("last_seen", x["first_seen"]), reverse=True):
         im = t.get("img") or {}
@@ -1583,6 +1603,8 @@ def generic_images(store, limit=12):
             mp = None                                  # одна фамилия («Sullivan») — слишком много тёзок, не ищем
         if mp and not person_in_text(t, mp):
             mp = None                                  # человек не упомянут в тексте — лучше иллюстрация
+        if mp and other_subject(t, mp):
+            mp = None                                  # статья про другого (Пoганкова), а не про того, кто на фото (Осака)
         if t.get("ai") and not t.get("blocked") and mp and not t.get("person_tried") \
                 and (not t.get("img") or t["img"].get("generic")):
             t["person_tried"] = 2
