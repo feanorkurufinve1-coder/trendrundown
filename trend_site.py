@@ -561,6 +561,9 @@ people don't know well. Give 0-4 items. Rules: only things the sources explain o
 (non-public people, victims, private suspects, minors); skip household names everyone already knows (e.g. Taylor Swift,
 LeBron James, Apple, the NFL, Congress). "subject" = the thing itself as people would type it (1-5 words);
 "query" = the exact search, e.g. "what is a continuing resolution", "who is sam laporta", "where is sinigaglia stadium".
+PRIORITY: brand-new names (a new product, event name, show, law, rookie, newcomer) that most of the internet has not explained
+yet, and named FUTURE events the sources give a date for (a launch event, premiere, fight, hearing, vote, release). For a
+future event set "date" (YYYY-MM-DD, only if the sources give it) — we publish an explainer before the day comes.
 
 {style}
 
@@ -593,6 +596,7 @@ AI_TOOL = {
             "on_topic": {"type": "boolean"},
             "followups": {"type": "array", "items": {"type": "object", "properties": {
                 "subject": {"type": "string"}, "query": {"type": "string"},
+                "date": {"type": "string", "description": "for a future event: its date YYYY-MM-DD from the sources, else empty"},
                 "kind": {"type": "string", "enum": ["term", "law", "place", "organization", "product", "event", "person", "other"]}},
                 "required": ["subject", "query", "kind"]}},
         },
@@ -648,11 +652,13 @@ UNCONFIRMED: ... (claims you could not confirm)
 Every fact must come from a search result. If you found nothing deeper than the headline, say so plainly."""
 
 
-def dig(t, key):
+def dig(t, key, prompt=None):
     """ИИ-исследователь с поиском в интернете: ищет предысторию и неочевидную причину тренда."""
-    heads = "\n".join(f"- {a['source']}: {a['title']}" for a in t["articles"][-10:])
-    traffic = t["traffic"][-1][2] if t["traffic"] else "unknown"
-    msgs = [{"role": "user", "content": DIG_PROMPT.format(term=t["term"], traffic=traffic, headlines=heads, n=DIG_SEARCHES)}]
+    if prompt is None:
+        heads = "\n".join(f"- {a['source']}: {a['title']}" for a in t["articles"][-10:])
+        traffic = t["traffic"][-1][2] if t["traffic"] else "unknown"
+        prompt = DIG_PROMPT.format(term=t["term"], traffic=traffic, headlines=heads, n=DIG_SEARCHES)
+    msgs = [{"role": "user", "content": prompt}]
     tools = [{"type": "web_search_20250305", "name": "web_search", "max_uses": DIG_SEARCHES,
               "user_location": {"type": "approximate", "country": "US"}}]
     blocks = []
@@ -790,7 +796,10 @@ def write_summary(t, key, feedback="", do_dig=False):
             for f in out.pop("followups", None) or []:
                 subj = re.sub(r"\s+", " ", str(f.get("subject", ""))).strip()
                 if 2 < len(subj) <= 60 and latin(subj) and not bad_text(subj, user_blocks()):
-                    fu.append({"subject": subj, "query": str(f.get("query", ""))[:90].strip() or subj, "kind": f.get("kind", "other")})
+                    d_ = str(f.get("date", "") or "")[:10]
+                    fut = bool(re.fullmatch(r"\d{4}-\d{2}-\d{2}", d_)) and d_ >= to_et(datetime.now(timezone.utc))[0].strftime("%Y-%m-%d")
+                    fu.append({"subject": subj, "query": str(f.get("query", ""))[:90].strip() or subj, "kind": f.get("kind", "other"),
+                               "future": fut, "date": d_ if fut else ""})
             t["followups"] = fu[:4]
             mp = re.sub(r"[^\w .'\-]", "", str(out.pop("main_person", "") or "")).strip()
             t["main_person"] = mp[:60]; t["person_checked"] = 2
@@ -1070,7 +1079,10 @@ Questions Americans are typing into Google about it: {questions}
 
 Write a page that answers the search directly.
 Rules:
-- Start with a direct answer of 40-60 words: what/who it is, in plain words. Then background, then why it matters in today's news.
+- The page must match the search EXACTLY: the title contains the search phrase "{query}" word for word (you may add a
+  short tail, e.g. "Apple pro and tell event date: Oct. 28 in Los Angeles"), and the FIRST sentence of the answer repeats
+  the key words of the search and gives the concrete answer at once (a date, a name, a place, a definition) — no warm-up.
+- Then a direct answer of 40-60 words in total: what/who it is, in plain words. Then background, then why it matters now.
 - Facts about the current situation, people, numbers and dates must come ONLY from the sources below.
 - For general background you may use well-established, uncontroversial public knowledge: a definition, how a rule works,
   the year a famous film came out, where a city or landmark is, what a well-known organization does. Never guess beyond that.
@@ -1093,7 +1105,7 @@ EXPLAIN_TOOL = {
     "description": "Return the explainer page.",
     "input_schema": {"type": "object", "properties": {
         "ok": {"type": "boolean"},
-        "title": {"type": "string", "description": "the search as a question, max 60 characters, e.g. 'What is a continuing resolution?'"},
+        "title": {"type": "string", "description": "contains the search phrase word for word, max 70 characters"},
         "answer": {"type": "string", "description": "direct answer, 40-60 words"},
         "body": {"type": "string", "description": "2-3 short paragraphs of background, separated by \\n\\n"},
         "in_the_news": {"type": "string", "description": "1-2 sentences: why it is in the news now"},
@@ -1163,6 +1175,43 @@ def term_item(t):
             "kind": "person" if person else "other"}
 
 
+_WIKI_NEW = {}
+
+
+def wiki_is_new(subject):
+    """Нет статьи в Википедии или она создана меньше 60 дней назад — по этой теме хороших ответов в интернете ещё мало."""
+    if subject in _WIKI_NEW:
+        return _WIKI_NEW[subject]
+    q = urllib.parse.urlencode({"action": "query", "generator": "search", "gsrsearch": subject, "gsrlimit": 3,
+                                "prop": "revisions", "rvprop": "timestamp", "rvdir": "newer", "rvlimit": 1,
+                                "format": "json", "formatversion": 2})
+    pages = json.loads(get("https://en.wikipedia.org/w/api.php?" + q)).get("query", {}).get("pages", [])
+    new = True
+    for pg in pages:
+        if _match(subject, pg.get("title", "")):
+            first = ((pg.get("revisions") or [{}])[0].get("timestamp") or "")
+            new = bool(first) and hours_since(first.replace("Z", "+00:00")) < 24 * 60
+            break
+    _WIKI_NEW[subject] = new
+    return new
+
+
+def best_phrase(item, questions):
+    """Главная фраза страницы — как её на самом деле вводят в Google (подсказки идут от самой частой).
+    Берём подсказку с тем же вопросительным словом, что и наш вопрос («who is …»), иначе оставляем свой вопрос."""
+    own = item["query"].strip()
+    qw = (re.match(r"(?i)(what|who|where|when|how|why)\b", own) or [None])[0]
+    pick = own
+    for q in questions:
+        if ASK_BAD.search(q):
+            continue
+        if qw and q.lower().startswith(qw.lower() + " ") and all(w in words(q) for w in words(item["subject"])):
+            pick = q
+            break
+    # имя/название — с заглавных букв, как в оригинале (подсказки Google все строчными)
+    return re.sub(re.escape(item["subject"]), item["subject"], pick, flags=re.I)
+
+
 def explain(store):
     """Для свежих новостей этого прохода: предсказанные запросы → проверка подсказками Google → страница-объяснение."""
     key = api_key()
@@ -1173,16 +1222,35 @@ def explain(store):
     made_today = sum(1 for x in ex.values() if x.get("day") == today)
     done = 0
     ub = user_blocks()
+    # 1) собираем кандидатов со всех свежих новостей и ставим вперёд то, где у нас есть шанс быть первыми
+    cands = []
     for slug, src in RUN_SOURCES.items():
         t = store["topics"].get(slug)
         if not t or t.get("blocked") or not t.get("ai"):
             continue
-        per_topic = 0
+        big = max((x[1] for x in t.get("traffic", [])), default=0)
         for item in [term_item(t)] + t.get("followups", []):
-            if not item:
-                continue
-            if made_today >= MAX_EXPLAINERS_PER_DAY or per_topic >= EXPLAINERS_PER_TOPIC:
-                break
+            if item and item.get("subject"):
+                cands.append((slug, src, t, item, big))
+    scored = []
+    for slug, src, t, item, big in cands:
+        score = 0
+        if item.get("future"):
+            score += 3                          # событие впереди — пишем заранее («Pro and tell»)
+        try:
+            if wiki_is_new(item["subject"]):
+                score += 2                      # в Википедии статьи нет / она свежая — хороших ответов ещё мало
+        except Exception:
+            pass
+        scored.append((-score, -big, slug, src, t, item))
+    scored.sort(key=lambda x: (x[0], x[1]))
+    per_topic = {}
+    for _, _, slug, src, t, item in scored:
+        if made_today >= MAX_EXPLAINERS_PER_DAY:
+            break
+        if per_topic.get(slug, 0) >= EXPLAINERS_PER_TOPIC:
+            continue
+        if True:
             xs = slugify(item["subject"])
             old = ex.get(xs)
             if old:
@@ -1195,6 +1263,7 @@ def explain(store):
             if hit is False:
                 log(f"'{item['query']}' — в подсказках Google не ищут, пропускаю")
                 continue
+            item = dict(item, query=best_phrase(item, questions))   # точная формулировка из подсказок Google
             res = write_explainer(item, t, src, questions, key)
             if not res or bad_text(res.get("title", ""), ub):
                 continue
@@ -1210,6 +1279,9 @@ def explain(store):
                     continue
             if REVIEW_EDITS:
                 apply_edits(res, REVIEW_EDITS, ["title", "answer", "body", "in_the_news", "faq"])
+            if not all(w in words(res["title"]) for w in words(item["query"])):   # заголовок должен совпадать с запросом
+                qt = item["query"].strip()
+                res["title"] = qt[:1].upper() + qt[1:] + ("?" if re.match(r"(?i)(what|who|where|when|how|why|is|are|does|did|can|will)\b", qt) else "")
             page_ = {"subject": item["subject"], "kind": item["kind"], "query": item["query"],
                      "title": res["title"][:80], "answer": res["answer"], "body": res["body"],
                      "in_the_news": res["in_the_news"], "faq": res.get("faq", [])[:8], "questions": questions,
@@ -1218,13 +1290,76 @@ def explain(store):
                      "topics": (old or {}).get("topics", []) + ([slug] if slug not in (old or {}).get("topics", []) else []),
                      "slug": xs, "new": True}
             ex[xs] = page_
-            done += 1; per_topic += 1
+            done += 1; per_topic[slug] = per_topic.get(slug, 0) + 1
             if not old:
                 made_today += 1
             log(f"объяснение: {res['title']}")
     # чистим очень старые
     for s in [s for s, x in ex.items() if hours_since(x.get("seen", x["made"])) > 24 * 365]:
         ex.pop(s)
+    return done
+
+
+# ---------- обновление пояснений о событиях, которые уже прошли ----------
+REFRESH_PER_DAY = 2        # сколько пояснений в сутки обновлять поиском в интернете (около 10 центов за каждое)
+REFRESH_FIRST = ["pro-and-tell-apple-event"]   # страницы, которые приносят клики (по Search Console) — обновлять первыми
+FUTURE_RE = re.compile(r"(?i)\b(will|upcoming|is set to|are set to|expected to|could be announced|scheduled|has not (yet )?been announced|"
+                       r"not been set|no release date|later this|next week|ahead of)\b")
+REFRESH_PROMPT = """You update an explainer page on a US website. The page was written on {made} and now may be out of date.
+Page title: {title}
+Current text: {text}
+
+Search the web for what has happened SINCE {made} about this subject: results, announcements, launch details, dates,
+prices, outcomes, reactions. Do at most 6 searches; prefer official sources and established news outlets.
+Then write a research memo in plain English:
+WHAT HAPPENED: ... (with dates)
+NEW FACTS: ...
+STILL UNKNOWN: ...
+Every fact must come from a search result. If nothing new happened, say so plainly."""
+
+
+def refresh_explainers(store):
+    """Пояснения вроде «Что такое Apple Pro and tell» пишутся до события; после события обновляем их — что произошло."""
+    key = api_key()
+    if not (DIG and key):
+        return 0
+    ex = store.get("explainers", {})
+    today = to_et(datetime.now(timezone.utc))[0].strftime("%Y-%m-%d")
+    days = store.setdefault("refresh_days", {})
+    if days.get(today, 0) >= REFRESH_PER_DAY:
+        return 0
+    cands = [x for x in ex.values() if hours_since(x["made"]) > 72 and x.get("refreshed_v") != 1
+             and FUTURE_RE.search(x.get("answer", "") + " " + x.get("body", "") + " " + x.get("in_the_news", ""))]
+    cands.sort(key=lambda x: (x["slug"] not in REFRESH_FIRST, x["made"]))
+    done = 0
+    for x in cands[:REFRESH_PER_DAY - days.get(today, 0)]:
+        x["refreshed_v"] = 1                       # одна попытка
+        made = fmt_et(x["made"]).split(",")[0] + ", " + x["made"][:4]
+        d = dig({"term": x["subject"], "articles": [], "traffic": []}, key,
+                REFRESH_PROMPT.format(made=made, title=x["title"], text=(x["answer"] + " " + x["body"])[:2500]))
+        days[today] = days.get(today, 0) + 1
+        store["refresh_days"] = {today: days[today]}
+        if not d:
+            continue
+        src = {"blocks": [f"[R] RESEARCH MEMO (web search {today}):\n" + d["memo"] + "\n\nEVIDENCE:\n" + "\n".join(d["evidence"])],
+               "texts": [" ".join(e.split(": ", 1)[-1] for e in d["evidence"])], "links": d["links"]}
+        item = {"subject": x["subject"], "query": x.get("query", x["title"]), "kind": x.get("kind", "other")}
+        fake = {"term": x["subject"], "ai": {"headline": x["title"], "summary": x.get("in_the_news", "")}}
+        res = write_explainer(item, fake, src, x.get("questions", []), key,
+                              "This is an UPDATE: the event has happened. Lead with what actually happened, in past tense.")
+        if not res:
+            continue
+        draft = (f"{res['title']}\n\n{res['answer']}\n\n{res['body']}\n\nIn the news: {res['in_the_news']}\n\n"
+                 + "\n".join(f"Q: {f.get('q', '')} A: {f.get('a', '')}" for f in res.get("faq", [])))
+        if not review(store, "explainer update", res["title"], draft, src, key):
+            continue
+        if REVIEW_EDITS:
+            apply_edits(res, REVIEW_EDITS, ["title", "answer", "body", "in_the_news", "faq"])
+        x.update({"answer": res["answer"], "body": res["body"], "in_the_news": res["in_the_news"],
+                  "faq": res.get("faq", [])[:8], "links": (x.get("links") or [])[:4] + list(d["links"])[:6],
+                  "made": now_iso(), "seen": now_iso(), "new": True})
+        done += 1
+        log(f"пояснение обновлено после события: {x['title']}")
     return done
 
 
@@ -3386,6 +3521,12 @@ def run_once():
     xn = explain(store)
     if xn:
         log(f"Написано объяснений: {xn}")
+    try:
+        rn = refresh_explainers(store)
+        if rn:
+            log(f"Обновлено пояснений: {rn}")
+    except Exception as e:
+        log(f"обновление пояснений: ошибка {e}")
     try:
         pn = previews(store)
         if pn:
