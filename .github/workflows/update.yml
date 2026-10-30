@@ -25,11 +25,12 @@ jobs:
           python-version: "3.11"
 
       - name: Install
-        run: pip install pillow certifi
+        run: pip install pillow certifi cryptography
 
       - name: Build site
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GSC_KEY: ${{ secrets.GSC_KEY }}
         run: python trend_site.py
 
       - name: Save data
