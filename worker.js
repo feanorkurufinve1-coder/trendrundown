@@ -21,6 +21,10 @@ async function sha(text) {
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+    if (url.hostname.startsWith("www.")) {             // один адрес для Google: www.trendrundown.com → trendrundown.com
+      url.hostname = url.hostname.slice(4);
+      return Response.redirect(url.toString(), 301);
+    }
     if (url.pathname !== "/api/react") {
       return env.ASSETS.fetch(request);
     }
