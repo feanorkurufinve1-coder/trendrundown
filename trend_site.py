@@ -484,6 +484,22 @@ def words(s):
     return re.findall(r"[a-z0-9']+", s.lower())
 
 
+def copy_runs(text, sources, n=10):
+    """Сколько отдельных кусков текста совпадает с источниками (соседние совпадения — один кусок)."""
+    src = set()
+    for s in sources:
+        w = words(s)
+        src.update(tuple(w[i:i + n]) for i in range(len(w) - n + 1))
+    w = words(text)
+    pos = [i for i in range(len(w) - n + 1) if tuple(w[i:i + n]) in src]
+    return sum(1 for k, i in enumerate(pos) if k == 0 or i > pos[k - 1] + n)
+
+
+def cap_title(t):
+    t = (t or "").strip()
+    return t[:1].upper() + t[1:]
+
+
 def copied(text, sources, n=8):
     """Есть ли в нашем тексте куски по n слов подряд из источников."""
     src = set()
@@ -1283,7 +1299,7 @@ def explain(store):
                 qt = item["query"].strip()
                 res["title"] = qt[:1].upper() + qt[1:] + ("?" if re.match(r"(?i)(what|who|where|when|how|why|is|are|does|did|can|will)\b", qt) else "")
             page_ = {"subject": item["subject"], "kind": item["kind"], "query": item["query"],
-                     "title": res["title"][:80], "answer": res["answer"], "body": res["body"],
+                     "title": cap_title(res["title"])[:80], "answer": res["answer"], "body": res["body"],
                      "in_the_news": res["in_the_news"], "faq": res.get("faq", [])[:8], "questions": questions,
                      "links": src["links"], "from": slug, "made": now_iso(), "seen": now_iso(),
                      "first": (old or {}).get("first", now_iso()), "day": today if not old else old.get("day"),
@@ -1399,11 +1415,21 @@ def refresh_explainers(store):
     days = store.setdefault("refresh_days", {})
     if days.get(today, 0) >= REFRESH_PER_DAY:
         return 0
+    for x in ex.values():                       # заголовки с маленькой буквы («what is…») — исправляем
+        if x.get("title") and x["title"][:1].islower():
+            x["title"] = cap_title(x["title"])
     gp = gsc_pages(store)
-    stat = lambda x: gp.get("/x/" + x["slug"], {"impr": 0, "best": None})
+    def stat(x):
+        a = gp.get("/x/" + x["slug"], {"impr": 0, "clicks": 0, "best": None})
+        b = gp.get("/x/" + x["slug"] + ".html", {"impr": 0, "clicks": 0, "best": None})
+        return {"impr": a["impr"] + b["impr"], "clicks": a["clicks"] + b["clicks"], "best": a["best"] or b["best"]}
+    tries = store.setdefault("refresh_tries", {})
     cands = []
     for x in ex.values():
         if hours_since(x["made"]) < 72:
+            continue
+        tr = tries.get(x["slug"], {})
+        if tr.get("day") == today or tr.get("n", 0) >= 3:      # не чаще раза в день, не больше 3 неудачных попыток
             continue
         st = stat(x)
         b = st["best"]
@@ -1411,15 +1437,17 @@ def refresh_explainers(store):
         if b and st["impr"] >= 30 and 4 < b["pos"] <= 20 and x.get("targeted") != b["q"] \
                 and not all(w in words(x["title"]) for w in words(b["q"])):
             cands.append((0, -st["impr"], x, "target", b["q"]))
+        # Google показывает на 1-й странице, а не кликают: заголовок и начало не обещают того, что ищут, — переписываем
+        elif b and st["impr"] >= 150 and b["pos"] <= 12 and st["clicks"] / st["impr"] < 0.01 \
+                and hours_since(x.get("ctr_done", "2000-01-01T00:00:00+00:00")) > 24 * 14:
+            cands.append((0, -st["impr"], x, "ctr", b["q"]))
         elif x.get("refreshed_v") != 1 and FUTURE_RE.search(x.get("answer", "") + " " + x.get("body", "") + " " + x.get("in_the_news", "")):
             cands.append((1 if x["slug"] not in REFRESH_FIRST else 0, -st["impr"], x, "update", None))
     cands.sort(key=lambda c: (c[1], c[0]))      # сначала страницы с наибольшими показами в Google
     done = 0
     for _, _, x, why, target_q in cands[:REFRESH_PER_DAY - days.get(today, 0)]:
-        if why == "target":
-            x["targeted"] = target_q
-        else:
-            x["refreshed_v"] = 1                   # одна попытка
+        t_ = tries.setdefault(x["slug"], {})
+        t_["n"] = t_.get("n", 0) + 1; t_["day"] = today        # попытка засчитана; при успехе счётчик сбросится
         made = fmt_et(x["made"]).split(",")[0] + ", " + x["made"][:4]
         d = dig({"term": x["subject"], "articles": [], "traffic": []}, key,
                 REFRESH_PROMPT.format(made=made, title=x["title"], text=(x["answer"] + " " + x["body"])[:2500]))
@@ -1431,7 +1459,12 @@ def refresh_explainers(store):
                "texts": [" ".join(e.split(": ", 1)[-1] for e in d["evidence"])], "links": d["links"]}
         item = {"subject": x["subject"], "query": target_q or x.get("query", x["title"]), "kind": x.get("kind", "other")}
         fake = {"term": x["subject"], "ai": {"headline": x["title"], "summary": x.get("in_the_news", "")}}
+        ctr_note = (f'Google shows this page on page one for "{target_q}", but almost nobody clicks it. Work out what a person typing '
+                    f'"{target_q}" today most wants (current standings, latest result, date, price, who is involved) and give that '
+                    "right away, with fresh facts from the research memo. Write a specific title that contains the phrase and "
+                    "promises that answer (for example with the season, date or year). Lead with the freshest facts.")
         note = ("This is an UPDATE: the event has happened. Lead with what actually happened, in past tense." if why == "update" else
+                ctr_note if why == "ctr" else
                 f'People find this page by searching "{target_q}". Answer exactly that in the first sentence, using those words; '
                 "the title must contain that phrase. Include anything new from the research memo."
                 + (" If the event has already happened, say what happened, in past tense."
@@ -1447,11 +1480,18 @@ def refresh_explainers(store):
             apply_edits(res, REVIEW_EDITS, ["title", "answer", "body", "in_the_news", "faq"])
         if target_q and not all(w in words(res["title"]) for w in words(target_q)):
             res["title"] = target_q[:1].upper() + target_q[1:] + ("?" if re.match(r"(?i)(what|who|where|when|how|why|is|are|does|did|can|will)\b", target_q) else "")
-        x.update({"title": res["title"][:80] if target_q else x["title"], "answer": res["answer"], "body": res["body"], "in_the_news": res["in_the_news"],
+        x.update({"title": cap_title(res["title"])[:80] if target_q or why == "ctr" else x["title"], "answer": res["answer"], "body": res["body"], "in_the_news": res["in_the_news"],
                   "faq": res.get("faq", [])[:8], "links": (x.get("links") or [])[:4] + list(d["links"])[:6],
                   "made": now_iso(), "seen": now_iso(), "new": True})
+        tries.pop(x["slug"], None)
+        if why == "target":
+            x["targeted"] = target_q
+        elif why == "ctr":
+            x["ctr_done"] = now_iso()
+        else:
+            x["refreshed_v"] = 1
         done += 1
-        log(f"пояснение обновлено после события: {x['title']}")
+        log(f"пояснение обновлено ({why}): {x['title']}")
     return done
 
 
@@ -3300,7 +3340,7 @@ def write_preview(item, people, key, feedback="", store=None):
                     s = re.sub(re.escape(nm), " ", s, flags=re.I)
             return s
         hits = copied(strip_names(full), [strip_names(t) for t in texts if t], n=10)
-        if not hits:
+        if not hits or copy_runs(strip_names(full), [strip_names(t) for t in texts if t], n=10) <= 2:
             return out
         prompt += "\n\nYour draft repeated these word sequences from the facts: " + "; ".join(f'"{h}"' for h in hits[:5]) + ". Rewrite them."
     store is not None and plog(store, f"{item['title']}: текст дважды повторял источник: {hits[:2]}")
