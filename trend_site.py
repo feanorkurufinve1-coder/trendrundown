@@ -39,9 +39,10 @@ CATS = {                   # разделы сайта: тема попадае�
     "tech": "Tech & Science", "world": "World", "lifestyle": "Lifestyle", "other": "More news",
 }
 ONLY_WITH_SUMMARY = True  # публиковать только темы со сводкой ИИ (защита от санкций Google за «массовый контент»)
-MAX_NEW_PER_DAY = 12       # сколько новых тем в сутки (по времени США) получают сводку и попадают на сайт — самые крупные
+MAX_NEW_PER_DAY = 6        # сколько новых тем в сутки (по времени США) получают сводку и попадают на сайт — самые крупные
 EXPLAIN = True             # объяснения: что люди начнут гуглить после новости (термины, законы, места, малоизвестные люди)
-MAX_EXPLAINERS_PER_DAY = 25   # сколько новых объяснений в сутки
+MAX_EXPLAINERS_PER_DAY = 35   # сколько новых объяснений в сутки
+TREND_EXPLAIN_PER_RUN = 3     # пояснения о трендах, по которым новость не писалась (лимит новостей) — сколько за проход
 EXPLAINERS_PER_TOPIC = 3      # не больше стольких объяснений из одной новости (включая пояснение о самом запросе)
 MIN_FULL_ARTICLES = 2      # писать сводку, только если хотя бы столько статей удалось прочитать целиком (не одни заголовки)
 MIN_OUTLETS = 3            # и только если о теме написали хотя бы столько разных изданий — качество, а не количество
@@ -1228,6 +1229,50 @@ def best_phrase(item, questions):
     return re.sub(re.escape(item["subject"]), item["subject"], pick, flags=re.I)
 
 
+def term_sources(t):
+    """Статьи по тренду, для которого не писалась новость: нужно минимум 2 полных текста от разных изданий."""
+    picks, outlets = [], set()
+    for a in sorted(t["articles"], key=lambda a: ("news.google.com" not in a["url"], a["time"]), reverse=True):
+        if a["source"] not in outlets:
+            outlets.add(a["source"]); picks.append(a)
+        if len(picks) >= 5:
+            break
+    if len(picks) < 2:
+        return None
+    texts, blocks = [], []
+    for i, a in enumerate(picks, 1):
+        body = article_text(a["url"])
+        texts.append(a["title"] + " " + body)
+        blocks.append(f"[{i}] {a['source']} — {a['title']}\n" + (body or "(HEADLINE ONLY)"))
+    if sum(1 for x in texts if len(x) > 400) < 2:
+        return None
+    return {"texts": texts, "blocks": blocks, "links": [(a["source"], a["title"], a["url"]) for a in picks]}
+
+
+def trend_item(t):
+    """Тренд без новости: «who is …» или «what is …» — выбираем то, что люди реально вводят в Google."""
+    term = t["term"].strip()
+    if generic_term(term) or len(term.split()) > 4 or re.search(r"(?i)\bvs\.?\b| - |score|tonight|today|stats|standings|"
+                                                            r"schedule|news|stock|weather|hints|injury|trade|rumors|odds|"
+                                                            r"prediction|live|highlights|\d{4}", term):
+        return None
+    if len(term.split()) == 1 and not re.match(r"[A-Z]", term):
+        return None
+    best, best_n = None, 0
+    for qw in ("who is ", "what is "):
+        try:
+            got = suggest(qw + term.lower())
+        except Exception:
+            continue
+        n = sum(1 for g in got if g.lower().startswith(qw) and all(w in words(g) for w in words(term)))
+        if n > best_n:
+            best, best_n = qw, n
+        time.sleep(0.3)
+    if not best:
+        return None
+    return {"subject": term, "query": best + term, "kind": "person" if best == "who is " else "other", "trend": True}
+
+
 def explain(store):
     """Для свежих новостей этого прохода: предсказанные запросы → проверка подсказками Google → страница-объяснение."""
     key = api_key()
@@ -1248,6 +1293,22 @@ def explain(store):
         for item in [term_item(t)] + t.get("followups", []):
             if item and item.get("subject"):
                 cands.append((slug, src, t, item, big))
+    # тренды, по которым новость не писалась (лимит новостей в сутки): по ним тоже ищут «who is / what is»
+    extra = 0
+    for t in [store["topics"][s_] for s_ in store.get("current", []) if s_ in store["topics"]]:
+        if extra >= TREND_EXPLAIN_PER_RUN * 3:
+            break
+        if t.get("ai") or t.get("blocked") or t["slug"] in RUN_SOURCES or slugify(t["term"]) in ex or t.get("tx_tried"):
+            continue
+        t["tx_tried"] = True                     # одна попытка на тренд
+        item = trend_item(t)
+        try:
+            fresh = item and wiki_is_new(item["subject"])
+        except Exception:
+            fresh = False
+        if item and fresh:                       # только новые имена/вещи: где ответа в Википедии ещё нет
+            extra += 1
+            cands.append((t["slug"], None, t, item, max((x[1] for x in t.get("traffic", [])), default=0)))
     scored = []
     for slug, src, t, item, big in cands:
         score = 0
@@ -1261,11 +1322,20 @@ def explain(store):
         scored.append((-score, -big, slug, src, t, item))
     scored.sort(key=lambda x: (x[0], x[1]))
     per_topic = {}
+    trend_done = 0
     for _, _, slug, src, t, item in scored:
         if made_today >= MAX_EXPLAINERS_PER_DAY:
             break
         if per_topic.get(slug, 0) >= EXPLAINERS_PER_TOPIC:
             continue
+        if src is None:                          # тренд без новости: статьи читаем только сейчас
+            if trend_done >= TREND_EXPLAIN_PER_RUN:
+                continue
+            src = term_sources(t)
+            if not src:
+                continue
+            trend_done += 1
+            t = dict(t, ai={"headline": t["articles"][0]["title"] if t["articles"] else "", "summary": ""})
         if True:
             xs = slugify(item["subject"])
             old = ex.get(xs)
@@ -2395,6 +2465,14 @@ def source_line(t, ai):
         f'<a href="{E(u)}" target="_blank" rel="noopener nofollow">{E(n)}</a>' for n, u in links[:12]) + "</p>")
 
 
+GSC_PATHS = set()                      # страницы, которые Google уже показывает (заполняется в build_site)
+
+
+def thin_ok(t):
+    """Индексировать страницу тренда: есть свой текст или Google её уже показывает."""
+    return bool(t.get("ai")) or ("/t/" + t["slug"]) in GSC_PATHS
+
+
 def build_topic(t, related, same=()):
     summ, srcs = topic_summary(t)
     arts = t["articles"]
@@ -2513,6 +2591,8 @@ def build_topic(t, related, same=()):
     elif card:
         ld["image"] = f"{SITE_URL}/{card}"
     head = f'<script type="application/ld+json">{json.dumps(ld)}</script>'
+    if not thin_ok(t):                 # страница без своего текста — только список ссылок: Google её не показываем
+        head += '<meta name="robots" content="noindex,follow">'
     title = (f"Why is {t['term']} trending? {ai['headline']}" if ai and ai.get("why") and ai.get("headline")
              else f"{t['term']}: {ai['headline']}" if ai and ai.get("headline") else f"Why is {t['term']} trending?")
     if len(title) > 70:
@@ -2758,6 +2838,9 @@ def visible(store):
 
 
 def build_site(store):
+    GSC_PATHS.clear()
+    GSC_PATHS.update(urllib.parse.urlparse(x["page"]).path.replace(".html", "").rstrip("/")
+                     for x in store.get("gsc", {}).get("rows", []))
     os.makedirs(os.path.join(OUT, "t"), exist_ok=True)
     allt = store["topics"]
     topics = visible(store)
@@ -2844,12 +2927,12 @@ def build_site(store):
             + [f"{SITE_URL}/c/{c}" for c in counts]
             + [f"{SITE_URL}/x/{x['slug']}" for x in ex.values()]
             + ([f"{SITE_URL}/cast"] if pv else []) + [f"{SITE_URL}/w/{x['slug']}" for x in pv.values()]
-            + [f"{SITE_URL}/t/{t['slug']}" for t in topics.values()])
+            + [f"{SITE_URL}/t/{t['slug']}" for t in topics.values() if thin_ok(t)])
     lm = {f"{SITE_URL}/t/{t['slug']}": t.get("last_seen", t["first_seen"]) for t in topics.values()}
     lm.update({f"{SITE_URL}/x/{x['slug']}": x["made"] for x in ex.values()})
     lm.update({f"{SITE_URL}/w/{x['slug']}": x["made"] for x in pv.values()})
     # новостной sitemap для Google News: статьи за последние 48 часов
-    fresh = [t for t in topics.values() if hours_since(t["first_seen"]) <= 48]
+    fresh = [t for t in topics.values() if hours_since(t["first_seen"]) <= 48 and t.get("ai")]
     w("sitemap-news.xml", '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
       'xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">'
       + "".join(f"<url><loc>{SITE_URL}/t/{E(t['slug'])}</loc><news:news><news:publication><news:name>{SITE_NAME}</news:name>"
