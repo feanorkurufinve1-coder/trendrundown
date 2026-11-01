@@ -1152,6 +1152,38 @@ def short_desc(s, n=155):
     return cut + "…"
 
 
+def wiki_intro(subject, context=""):
+    """Короткая справка из Википедии (возраст, должность, клуб…) — чтобы пояснение было не только о сегодняшней новости."""
+    try:
+        q = urllib.parse.urlencode({"action": "query", "list": "search", "srsearch": subject, "srlimit": 3, "format": "json"})
+        for h in json.loads(get("https://en.wikipedia.org/w/api.php?" + q)).get("query", {}).get("search", []):
+            if _match(subject, h["title"]):
+                d = json.loads(get("https://en.wikipedia.org/api/rest_v1/page/summary/" + urllib.parse.quote(h["title"].replace(" ", "_"))))
+                cw = set(words(context))
+                about = [w for w in words(d.get("description", "") + " " + d.get("extract", "")[:300])
+                         if len(w) > 4 and w not in words(subject)]
+                same = not context or sum(1 for w in set(about) if w in cw) >= 3   # тот же человек, а не тёзка
+                if d.get("type") == "standard" and len(d.get("extract", "")) > 150 and same:
+                    return d["title"], d["extract"][:1500], d.get("content_urls", {}).get("desktop", {}).get("page", "")
+                break
+    except Exception:
+        pass
+    return None
+
+
+def add_wiki(src, subject):
+    """Добавляем справку из Википедии к источникам (и писатель, и редактор видят одно и то же)."""
+    w_ = wiki_intro(subject, " ".join(src.get("texts", []))[:20000])
+    if not w_:
+        return src
+    src = dict(src)
+    src["blocks"] = list(src["blocks"]) + [f"[W] Wikipedia background on {w_[0]} (stable facts; the news sources win if they differ):\n{w_[1]}"]
+    src["texts"] = list(src["texts"]) + [w_[1]]
+    if w_[2]:
+        src["links"] = list(src["links"]) + [("Wikipedia", w_[0], w_[2])]
+    return src
+
+
 def write_explainer(item, t, src, questions, key, feedback=""):
     ai = t.get("ai") or {}
     prompt = EXPLAIN_PROMPT.format(query=item["query"], subject=item["subject"], kind=item["kind"],
@@ -1171,7 +1203,7 @@ def write_explainer(item, t, src, questions, key, feedback=""):
         full = " ".join([out.get("answer", ""), out.get("body", ""), out.get("in_the_news", "")]
                         + [f.get("a", "") for f in out.get("faq", [])])
         hits = copied(full, src["texts"])
-        if not hits:
+        if not hits or copy_runs(full, src["texts"], n=8) <= 1:
             return out
         bad = "; ".join(f'"{h}"' for h in hits[:5])
         prompt += f"\n\nYour previous draft repeated these word sequences from the sources: {bad}. Rewrite in different words."
@@ -1182,7 +1214,7 @@ def term_item(t):
     """Пояснение о самом популярном запросе: «Кто такой Яксель Лендеборг?», «Что такое Hunter's Moon?»."""
     term = t["term"]
     if generic_term(term) or re.search(r"(?i)\bvs\.?\b| - |score|tonight|today|stats|standings|schedule|news|stock|weather|"
-                                       r"hints|injury|trade|rumors|\d{4}", term) or len(term.split()) > 4:
+                                       r"hints|injury|trade|rumors|rankings?|fantasy|picks|props|lineups?|odds|prediction|live|highlights|week \d+|\d{4}", term) or len(term.split()) > 4:
         return None                       # матчи, счёт, «сегодня» — объяснять нечего, это новость
     mp = t.get("main_person") or ""
     person = bool(mp) and _match(term, mp)
@@ -1350,6 +1382,7 @@ def explain(store):
                 log(f"'{item['query']}' — в подсказках Google не ищут, пропускаю")
                 continue
             item = dict(item, query=best_phrase(item, questions))   # точная формулировка из подсказок Google
+            src = add_wiki(src, item["subject"])
             res = write_explainer(item, t, src, questions, key)
             if not res or bad_text(res.get("title", ""), ub):
                 continue
@@ -1475,6 +1508,22 @@ STILL UNKNOWN: ...
 Every fact must come from a search result. If nothing new happened, say so plainly."""
 
 
+RESTORE_PAGES = {"ligue-1": {'title': 'What is Ligue 1?', 'answer': 'Ligue 1 is the top professional football (soccer) league in France. Clubs play each other in a season, and the table ranks them by points. The top three teams qualify directly for the UEFA Champions League, and the fourth-place team enters its qualifiers. Paris Saint-Germain and Lyon are both competing for these places this season.', 'body': "Ligue 1 is the first division of French professional football. Teams play one another, earn points for wins and draws, and are ranked in a league table. Places in the table decide entry into European competitions. The league's top three finishers enter the UEFA Champions League directly, the fourth-place team enters the Champions League qualifiers, and the fifth-place team enters the UEFA Europa League. The two bottom finishers are relegated to a lower division, and the team in sixteenth place faces a relegation play-off.\n\nThe current table, last updated on 26 October 2026, shows Olympique Lyonnais in fourth place with 14 points from seven matches, and Paris Saint-Germain in fifth place with 14 points from seven matches. Lyon has won four, drawn two and lost one, with 13 goals scored and 5 conceded. Paris Saint-Germain has also won four, drawn two and lost one, with 14 goals scored and 9 conceded. Rennes leads the table with 16 points after eight matches, and Lille and Monaco are tied on 15, and Le Havre sits bottom with 2 points.\n\nThe two clubs are due to meet in Ligue 1 on Monday, 26 October. The fixture was reportedly moved to that day, and one headline links the change to protests in Paris. Coverage of the predicted and confirmed starting lineups for the match has also been published. Paris Saint-Germain's listed starting XI includes Safonov in goal, with Hakimi as captain, and Ferran Torres among the forwards.", 'in_the_news': 'Paris Saint-Germain against Olympique Lyonnais has been moved to Monday, 26 October, and one headline ties the change to protests in Paris. Both clubs are currently in the European qualification places in the table.', 'faq': [{'q': 'What is Ligue 1 standings?', 'a': 'The standings are the league table, which ranks clubs by points. As of 26 October 2026, Rennes leads with 16 points after eight matches, and Lyon and PSG are tied on 14 points in fourth and fifth place after seven matches each.'}, {'q': 'Who are the Ligue 1 teams?', 'a': 'The table lists 18 clubs, including Rennes, Lille, Monaco, Olympique Lyonnais, Paris Saint-Germain, Paris FC, Lens, Marseille, Lorient, Nice, Toulouse, Auxerre, Brest, Angers, Le Mans, Strasbourg, Troyes and Le Havre.'}, {'q': 'When is the Ligue 1 schedule for PSG and Lyon?', 'a': 'Paris Saint-Germain and Olympique Lyonnais are due to meet on Monday, 26 October. The fixture was reportedly moved to that day.'}, {'q': 'Who are the Ligue 1 winners?', 'a': 'The sources for this page do not state the winner of the current season, so no answer is given here.'}], 'links': [['BBC', 'Paris Saint-Germain vs Olympique Lyonnais: French Ligue 1 stats & head-to-head', 'https://www.bbc.com/sport/football/live/ckpqg5048n7qt'], ['ESPN', 'PSG-Lyon match moved to Monday amid Paris protests, NFL game', 'https://www.espn.com/soccer/story/_/id/50258584/psg-lyon-match-moved-monday-paris-protests-nfl-game'], ['OneFootball', "🚨 And midway through the Ballon d'Or: the PSG-Lyon XIs", 'https://news.google.com/rss/articles/CBMilgFBVV95cUxNYXViVmJHMFExNjl6YkpYdDc3X1JXT0J5emo3NHFFb2lodkd6a1F1VnZzLVhWclBjbDZ0aWdqd0dZQTNIQXhpUkp4c0t6aUtEMXllWTRhcnY4a3FtNDdObWtRYy12WkN4MFpwTjBSWkMwdktNYmhqRm5KMF85OXNaWVpxYnVncjdYVXBXeUpUQjRYM05rWWc?oc=5'], ['Yahoo Sports', 'PSG vs Lyon – Predicted lineup and team news', 'https://news.google.com/rss/articles/CBMigwFBVV95cUxPRTA5QloyWFhvUjF0d284NDVzdGdFQlZySVdJajByRW5pZmxWOVYxV3pwNTA0Q2hEYU9Za2pNT29WOW9PQmcyTG5UQ3F5WURzU0Y4R3dpTFZ0cmNDNUlnZmxPdnBUdjkxd3IzMERCZ1JCemp1WklrSXJsd3l2UWEtSnJoQQ?oc=5']], 'made': '2026-10-26T19:20:14+00:00'}}   # неудачные переписывания — возвращаем прежний текст (один раз)
+DROP_PAGES = ["week-8-fantasy-rankings"]   # пустые страницы — убрать
+
+
+def restore_pages(store):
+    ex = store.get("explainers", {})
+    done = store.setdefault("restored", [])
+    for slug, old in RESTORE_PAGES.items():
+        if slug in ex and slug not in done:
+            ex[slug].update(old); ex[slug]["ctr_done"] = now_iso(); done.append(slug)
+            log(f"страница возвращена к прежнему тексту: {slug}")
+    for slug in DROP_PAGES:
+        if ex.pop(slug, None):
+            log(f"страница убрана: {slug}")
+
+
 def refresh_explainers(store):
     """Пояснения вроде «Что такое Apple Pro and tell» пишутся до события; после события обновляем их — что произошло."""
     key = api_key()
@@ -1483,11 +1532,12 @@ def refresh_explainers(store):
     ex = store.get("explainers", {})
     today = to_et(datetime.now(timezone.utc))[0].strftime("%Y-%m-%d")
     days = store.setdefault("refresh_days", {})
-    if days.get(today, 0) >= REFRESH_PER_DAY:
-        return 0
+    restore_pages(store)
     for x in ex.values():                       # заголовки с маленькой буквы («what is…») — исправляем
         if x.get("title") and x["title"][:1].islower():
             x["title"] = cap_title(x["title"])
+    if days.get(today, 0) >= REFRESH_PER_DAY:
+        return 0
     gp = gsc_pages(store)
     def stat(x):
         a = gp.get("/x/" + x["slug"], {"impr": 0, "clicks": 0, "best": None})
@@ -1519,20 +1569,27 @@ def refresh_explainers(store):
         t_ = tries.setdefault(x["slug"], {})
         t_["n"] = t_.get("n", 0) + 1; t_["day"] = today        # попытка засчитана; при успехе счётчик сбросится
         made = fmt_et(x["made"]).split(",")[0] + ", " + x["made"][:4]
+        rlog = store.setdefault("refresh_log", [])
+        del rlog[:-40]
+        say = lambda m: rlog.append(f"{now_iso()[:16]} {why} {x['slug']}: {m}")
         d = dig({"term": x["subject"], "articles": [], "traffic": []}, key,
                 REFRESH_PROMPT.format(made=made, title=x["title"], text=(x["answer"] + " " + x["body"])[:2500]))
         days[today] = days.get(today, 0) + 1
         store["refresh_days"] = {today: days[today]}
         if not d:
-            continue
+            say("поиск в интернете ничего не дал"); continue
+        if why == "ctr" and re.search(r"(?i)nothing new|no new (facts|information|developments)", d["memo"][:600]):
+            say("свежих фактов нет — страницу не трогаю"); continue
         src = {"blocks": [f"[R] RESEARCH MEMO (web search {today}):\n" + d["memo"] + "\n\nEVIDENCE:\n" + "\n".join(d["evidence"])],
                "texts": [" ".join(e.split(": ", 1)[-1] for e in d["evidence"])], "links": d["links"]}
         item = {"subject": x["subject"], "query": target_q or x.get("query", x["title"]), "kind": x.get("kind", "other")}
+        src = add_wiki(src, x["subject"])
         fake = {"term": x["subject"], "ai": {"headline": x["title"], "summary": x.get("in_the_news", "")}}
-        ctr_note = (f'Google shows this page on page one for "{target_q}", but almost nobody clicks it. Work out what a person typing '
-                    f'"{target_q}" today most wants (current standings, latest result, date, price, who is involved) and give that '
-                    "right away, with fresh facts from the research memo. Write a specific title that contains the phrase and "
-                    "promises that answer (for example with the season, date or year). Lead with the freshest facts.")
+        ctr_note = (f'Google shows this page on page one for "{target_q}", but almost nobody clicks it. Make it more useful: '
+                    "first a clear one-sentence answer to what it is, then the most recent facts from the research memo "
+                    f"(dated, newest first). Today is {today}; treat anything before that as past, in past tense. "
+                    "The title contains the phrase and names only what the page really contains — never promise standings, "
+                    "schedules or prices the memo does not give. Never write that sources do not give something; just leave it out.")
         note = ("This is an UPDATE: the event has happened. Lead with what actually happened, in past tense." if why == "update" else
                 ctr_note if why == "ctr" else
                 f'People find this page by searching "{target_q}". Answer exactly that in the first sentence, using those words; '
@@ -1541,11 +1598,13 @@ def refresh_explainers(store):
                    if FUTURE_RE.search(x.get("answer", "") + " " + x.get("body", "")) else ""))
         res = write_explainer(item, fake, src, x.get("questions", []), key, note)
         if not res:
-            continue
+            say("ИИ не написал текст (мало данных или повтор источника)"); continue
+        if re.search(r"(?i)\bsources? (do not|don't|give no|did not)|not in the sources", res["answer"] + " " + res["title"]):
+            say("в тексте «источники не сообщают» — не публикую"); continue
         draft = (f"{res['title']}\n\n{res['answer']}\n\n{res['body']}\n\nIn the news: {res['in_the_news']}\n\n"
                  + "\n".join(f"Q: {f.get('q', '')} A: {f.get('a', '')}" for f in res.get("faq", [])))
         if not review(store, "explainer update", res["title"], draft, src, key):
-            continue
+            say("редактор не пропустил"); continue
         if REVIEW_EDITS:
             apply_edits(res, REVIEW_EDITS, ["title", "answer", "body", "in_the_news", "faq"])
         if target_q and not all(w in words(res["title"]) for w in words(target_q)):
@@ -2511,7 +2570,7 @@ def build_topic(t, related, same=()):
         ai = dict(ai)
         for k in ("why", "behind", "summary", "next", "unknown", "headline"):
             if isinstance(ai.get(k), str):
-                ai[k] = "\n\n".join(drop_meta(scrub_outlets(x)) for x in ai[k].replace("\\n", "\n").split("\n\n"))
+                ai[k] = "\n\n".join(re.sub(r"^\s*\d+[.)]\s+", "", drop_meta(scrub_outlets(x))) for x in ai[k].replace("\\n", "\n").split("\n\n"))
         ai["key_points"] = [k for k in (drop_meta(scrub_outlets(x)) for x in ai.get("key_points", [])) if k]
     ai_html = ""
     if ai:
@@ -2716,12 +2775,12 @@ def build_explainer(x, topics):
     news = [topics[s] for s in reversed(x.get("topics", [])) if s in topics]
     x = dict(x)
     for k in ("answer", "body", "in_the_news"):
-        x[k] = "\n\n".join(scrub_outlets(p) for p in (x.get(k) or "").split("\n\n"))
+        x[k] = "\n\n".join(q for q in (drop_meta(scrub_outlets(p)) for p in (x.get(k) or "").split("\n\n")) if q.strip())
     paras = "".join(f"<p>{E(p)}</p>" for p in x["body"].split("\n\n") if p.strip())
     faq = []
     for f in x.get("faq", []):
         q = f.get("q", "").strip().rstrip("?")
-        if q and f.get("a"):
+        if q and f.get("a") and not META_RE.search(f["a"]):
             faq.append({"q": q[0].upper() + q[1:] + "?", "a": f["a"]})
     faq = [f for f in faq if not re.search(r"(?i)\b(should (i|you|runners|people)|eat|diet|cramp|injur|bet|odds|invest|"
                                            r"lawyer|sue\b|medic|dose|avoid)", f["q"])]
