@@ -517,8 +517,9 @@ STYLE_1930 = """WRITING STYLE — an American newspaper correspondent of the 193
 - Sober and exact, but NOT an official bulletin: tell it like a good reporter explaining the story to a neighbor.
   Plain everyday words, sentences under 25 words. Past tense for events. No slang, no exclamation marks, no emojis,
   no hype words ("shocking", "slams", "epic", "fans are buzzing").
-- Explain jargon with a short generic definition only (e.g. "injured reserve, the list of players sidelined for at least
-  four games") — never with new facts about the people involved.
+- Explain only jargon a typical American adult would not know, with a short generic definition (e.g. "injured reserve,
+  the list of players sidelined for at least four games") — never with new facts about the people involved. Never explain
+  what everyone knows (Apple, the NFL, soccer, Congress, an election).
 - Never write about the sources themselves ("a headline says", "another outlet described", "that item is headline-only").
 - Period touches used lightly: "was rushed to a hospital", "it was learned", "officials said last night", "the former champion".
   On second reference use the surname alone (no "Mr." or "Mrs.").
@@ -1099,7 +1100,16 @@ Rules:
 - The page must match the search EXACTLY: the title contains the search phrase "{query}" word for word (you may add a
   short tail, e.g. "Apple pro and tell event date: Oct. 28 in Los Angeles"), and the FIRST sentence of the answer repeats
   the key words of the search and gives the concrete answer at once (a date, a name, a place, a definition) — no warm-up.
-- Then a direct answer of 40-60 words in total: what/who it is, in plain words. Then background, then why it matters now.
+- Then a direct answer of 40-60 words in total: what/who it is, in plain words. Then the specifics, then why it matters now.
+- The reader is an ordinary American adult. NEVER explain what everyone knows: what Apple, Google, the NFL, the NBA,
+  the Premier League, soccer/football, a touchdown, Congress, a senator or an election is. No sentences like
+  "X is a technology company that makes phones" or "football, called soccer in the US, is the sport he plays".
+  Explain only what a typical American would really not know (a foreign league, a new law, a niche term).
+- Never repeat yourself: the body must not restate the answer. Every sentence adds a NEW concrete fact — a number,
+  a date, a name, a place, a result, an age, a position, a record. If you have no new fact, write less; short is fine.
+- For a person: age (only if a source states it), nationality, club/company/office, role or position, how they got
+  there, their best-known achievement, and what happened now. For an event or law: date, place, who is involved,
+  what exactly it does or decides, what happens next.
 - Facts about the current situation, people, numbers and dates must come ONLY from the sources below.
 - For general background you may use well-established, uncontroversial public knowledge: a definition, how a rule works,
   the year a famous film came out, where a city or landmark is, what a well-known organization does. Never guess beyond that.
@@ -1122,9 +1132,9 @@ EXPLAIN_TOOL = {
     "description": "Return the explainer page.",
     "input_schema": {"type": "object", "properties": {
         "ok": {"type": "boolean"},
-        "title": {"type": "string", "description": "contains the search phrase word for word, max 70 characters"},
+        "title": {"type": "string", "description": "contains the search phrase word for word, max 70 characters; a specific tail with a fact (date, team, role), never the word 'explained'"},
         "answer": {"type": "string", "description": "direct answer, 40-60 words"},
-        "body": {"type": "string", "description": "2-3 short paragraphs of background, separated by \\n\\n"},
+        "body": {"type": "string", "description": "1-3 short paragraphs of NEW concrete facts (no restating the answer, no common-knowledge definitions), separated by \\n\\n"},
         "in_the_news": {"type": "string", "description": "1-2 sentences: why it is in the news now"},
         "faq": {"type": "array", "items": {"type": "object", "properties": {
             "q": {"type": "string"}, "a": {"type": "string"}}, "required": ["q", "a"]}},
