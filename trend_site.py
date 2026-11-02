@@ -1194,7 +1194,10 @@ def add_wiki(src, subject):
     return src
 
 
-def write_explainer(item, t, src, questions, key, feedback=""):
+WRITE_FAIL = [""]          # почему ИИ не написал пояснение (для журнала)
+
+
+def write_explainer(item, t, src, questions, key, feedback="", max_runs=1):
     ai = t.get("ai") or {}
     prompt = EXPLAIN_PROMPT.format(query=item["query"], subject=item["subject"], kind=item["kind"],
                                    headline=ai.get("headline", ""), summary=ai.get("summary", "")[:900],
@@ -1207,14 +1210,17 @@ def write_explainer(item, t, src, questions, key, feedback=""):
             out = ai_call(prompt, key, EXPLAIN_TOOL)
         except Exception as e:
             log(f"объяснение '{item['subject']}' не написано: {e}")
+            WRITE_FAIL[0] = f"ошибка ИИ: {str(e)[:80]}"
             return None
         if not out.get("ok"):
+            WRITE_FAIL[0] = "ИИ отказался (ok=false): мало данных или тема не подходит"
             return None
         full = " ".join([out.get("answer", ""), out.get("body", ""), out.get("in_the_news", "")]
                         + [f.get("a", "") for f in out.get("faq", [])])
         hits = copied(full, src["texts"])
-        if not hits or copy_runs(full, src["texts"], n=8) <= 1:
+        if not hits or copy_runs(full, src["texts"], n=8) <= max_runs:
             return out
+        WRITE_FAIL[0] = "три раза повторял источник: " + "; ".join(hits[:2])
         bad = "; ".join(f'"{h}"' for h in hits[:5])
         prompt += f"\n\nYour previous draft repeated these word sequences from the sources: {bad}. Rewrite in different words."
     return None
@@ -1620,9 +1626,13 @@ def refresh_explainers(store):
                 "the title must contain that phrase. Include anything new from the research memo."
                 + (" If the event has already happened, say what happened, in past tense."
                    if FUTURE_RE.search(x.get("answer", "") + " " + x.get("body", "")) else ""))
-        res = write_explainer(item, fake, src, x.get("questions", []), key, note)
+        res = write_explainer(item, fake, src, x.get("questions", []), key, note, max_runs=3)
+        if not res and WRITE_FAIL[0].startswith("ИИ отказался"):
+            res = write_explainer(item, fake, src, x.get("questions", []), key, note
+                                  + " The research memo is a valid source and is enough for this page: set ok to true "
+                                    "unless the subject itself is unsafe.", max_runs=3)
         if not res:
-            say("ИИ не написал текст (мало данных или повтор источника)"); continue
+            say(WRITE_FAIL[0] or "ИИ не написал текст"); continue
         if re.search(r"(?i)\bsources? (do not|don't|give no|did not)|not in the sources", res["answer"] + " " + res["title"]):
             say("в тексте «источники не сообщают» — не публикую"); continue
         draft = (f"{res['title']}\n\n{res['answer']}\n\n{res['body']}\n\nIn the news: {res['in_the_news']}\n\n"
