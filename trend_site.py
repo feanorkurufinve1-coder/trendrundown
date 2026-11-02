@@ -1230,6 +1230,8 @@ def term_item(t):
     person = bool(mp) and _match(term, mp)
     if not person and len(term.split()) == 1:
         return None                       # одно общее слово («Coach», «Cancer») — пояснять нечего
+    if not person and re.fullmatch(r"[A-Z][a-z'\-]+(?: [A-Z][a-z'\-]+){1,2}(?: (?:Jr|Sr|II|III)\.?)?", term) and not TEAM_RE.search(term):
+        return trend_item(t)              # похоже на имя человека — по подсказкам Google решаем: «who is» или «what is»
     return {"subject": mp if person else term, "query": ("who is " if person else "what is ") + (mp if person else term).lower(),
             "kind": "person" if person else "other"}
 
@@ -1291,6 +1293,10 @@ def term_sources(t):
     return {"texts": texts, "blocks": blocks, "links": [(a["source"], a["title"], a["url"]) for a in picks]}
 
 
+TEAM_RE = re.compile(r"(?i)\b(football|basketball|baseball|soccer|hockey|university|college|state|fc|club|united|city|county|"
+                     r"school|team|league|cup|bowl|award|festival|act|bill|party|company|inc|news)\b")
+
+
 def trend_item(t):
     """Тренд без новости: «who is …» или «what is …» — выбираем то, что люди реально вводят в Google."""
     term = t["term"].strip()
@@ -1310,6 +1316,8 @@ def trend_item(t):
         if n > best_n:
             best, best_n = qw, n
         time.sleep(0.3)
+    if best == "who is " and TEAM_RE.search(term):
+        best = "what is "                 # «New Mexico Football» — это команда, а не человек
     if not best:
         return None
     return {"subject": term, "query": best + term, "kind": "person" if best == "who is " else "other", "trend": True}
@@ -1520,6 +1528,9 @@ Every fact must come from a search result. If nothing new happened, say so plain
 
 RESTORE_PAGES = {"ligue-1": {'title': 'What is Ligue 1?', 'answer': 'Ligue 1 is the top professional football (soccer) league in France. Clubs play each other in a season, and the table ranks them by points. The top three teams qualify directly for the UEFA Champions League, and the fourth-place team enters its qualifiers. Paris Saint-Germain and Lyon are both competing for these places this season.', 'body': "Ligue 1 is the first division of French professional football. Teams play one another, earn points for wins and draws, and are ranked in a league table. Places in the table decide entry into European competitions. The league's top three finishers enter the UEFA Champions League directly, the fourth-place team enters the Champions League qualifiers, and the fifth-place team enters the UEFA Europa League. The two bottom finishers are relegated to a lower division, and the team in sixteenth place faces a relegation play-off.\n\nThe current table, last updated on 26 October 2026, shows Olympique Lyonnais in fourth place with 14 points from seven matches, and Paris Saint-Germain in fifth place with 14 points from seven matches. Lyon has won four, drawn two and lost one, with 13 goals scored and 5 conceded. Paris Saint-Germain has also won four, drawn two and lost one, with 14 goals scored and 9 conceded. Rennes leads the table with 16 points after eight matches, and Lille and Monaco are tied on 15, and Le Havre sits bottom with 2 points.\n\nThe two clubs are due to meet in Ligue 1 on Monday, 26 October. The fixture was reportedly moved to that day, and one headline links the change to protests in Paris. Coverage of the predicted and confirmed starting lineups for the match has also been published. Paris Saint-Germain's listed starting XI includes Safonov in goal, with Hakimi as captain, and Ferran Torres among the forwards.", 'in_the_news': 'Paris Saint-Germain against Olympique Lyonnais has been moved to Monday, 26 October, and one headline ties the change to protests in Paris. Both clubs are currently in the European qualification places in the table.', 'faq': [{'q': 'What is Ligue 1 standings?', 'a': 'The standings are the league table, which ranks clubs by points. As of 26 October 2026, Rennes leads with 16 points after eight matches, and Lyon and PSG are tied on 14 points in fourth and fifth place after seven matches each.'}, {'q': 'Who are the Ligue 1 teams?', 'a': 'The table lists 18 clubs, including Rennes, Lille, Monaco, Olympique Lyonnais, Paris Saint-Germain, Paris FC, Lens, Marseille, Lorient, Nice, Toulouse, Auxerre, Brest, Angers, Le Mans, Strasbourg, Troyes and Le Havre.'}, {'q': 'When is the Ligue 1 schedule for PSG and Lyon?', 'a': 'Paris Saint-Germain and Olympique Lyonnais are due to meet on Monday, 26 October. The fixture was reportedly moved to that day.'}, {'q': 'Who are the Ligue 1 winners?', 'a': 'The sources for this page do not state the winner of the current season, so no answer is given here.'}], 'links': [['BBC', 'Paris Saint-Germain vs Olympique Lyonnais: French Ligue 1 stats & head-to-head', 'https://www.bbc.com/sport/football/live/ckpqg5048n7qt'], ['ESPN', 'PSG-Lyon match moved to Monday amid Paris protests, NFL game', 'https://www.espn.com/soccer/story/_/id/50258584/psg-lyon-match-moved-monday-paris-protests-nfl-game'], ['OneFootball', "🚨 And midway through the Ballon d'Or: the PSG-Lyon XIs", 'https://news.google.com/rss/articles/CBMilgFBVV95cUxNYXViVmJHMFExNjl6YkpYdDc3X1JXT0J5emo3NHFFb2lodkd6a1F1VnZzLVhWclBjbDZ0aWdqd0dZQTNIQXhpUkp4c0t6aUtEMXllWTRhcnY4a3FtNDdObWtRYy12WkN4MFpwTjBSWkMwdktNYmhqRm5KMF85OXNaWVpxYnVncjdYVXBXeUpUQjRYM05rWWc?oc=5'], ['Yahoo Sports', 'PSG vs Lyon – Predicted lineup and team news', 'https://news.google.com/rss/articles/CBMigwFBVV95cUxPRTA5QloyWFhvUjF0d284NDVzdGdFQlZySVdJajByRW5pZmxWOVYxV3pwNTA0Q2hEYU9Za2pNT29WOW9PQmcyTG5UQ3F5WURzU0Y4R3dpTFZ0cmNDNUlnZmxPdnBUdjkxd3IzMERCZ1JCemp1WklrSXJsd3l2UWEtSnJoQQ?oc=5']], 'made': '2026-10-26T19:20:14+00:00'}}   # неудачные переписывания — возвращаем прежний текст (один раз)
 DROP_PAGES = ["week-8-fantasy-rankings"]   # пустые страницы — убрать
+TITLE_FIX = {"new-mexico-football": ("What is New Mexico Football? Lobos team and 2026 ranking", "other"),
+             "darnell-washington": ("Who is Darnell Washington? Steelers tight end fined Oct. 25, 2026", "person"),
+             "michael-wilson": ("Who is Michael Wilson? Cardinals receiver, back in Week 8 vs. Cowboys", "person")}
 
 
 def restore_pages(store):
@@ -1529,6 +1540,9 @@ def restore_pages(store):
         if slug in ex and slug not in done:
             ex[slug].update(old); ex[slug]["ctr_done"] = now_iso(); done.append(slug)
             log(f"страница возвращена к прежнему тексту: {slug}")
+    for slug, (title, kind) in TITLE_FIX.items():
+        if slug in ex and ex[slug]["title"] != title and slug + ":t" not in done:
+            ex[slug]["title"] = title; ex[slug]["kind"] = kind; done.append(slug + ":t")
     for slug in DROP_PAGES:
         if ex.pop(slug, None):
             log(f"страница убрана: {slug}")
@@ -2498,6 +2512,10 @@ def scrub_outlets(s):
         (rf",? {o} (?:reported|reports|said|says|wrote|noted)(?=[,.])", ""),
         (r"(?i),? according to (?:the |one |a |an )?(?:[\w-]+ ){0,3}(?:reports?|sources?|news|coverage|headlines?)(?: (?:from|on) [^,.]+)?(?=[,.])", ""),
         (rf"(?:^|(?<=[.!?] ))According to (?:a |an |the )?(?:{o} )?(?:[\w-]+ )?(?:report|reports|story|coverage)(?: (?:from|on) [^,]+(?:, \d{{4}})?)?, (\w)", r"\1"),
+    ]
+    pats += [
+        (r"(?:^|(?<=[.!?] ))(?:[Ss]ources|[Rr]eports|[Ss]ome outlets|[Oo]utlets|[Oo]ne source)(?: also)? (?:say|said|report|reported|note|noted|indicate|indicated|show|showed)(?: that)?,? (\w)", r"\1"),
+        (r"(?:^|(?<=[.!?] ))(?:Before kickoff|Earlier|Later), (?:some |several )?(?:outlets|reports|sources) (?:reported|said|noted)(?: that)? (\w)", r"\1"),
     ]
     for a, b in pats:
         s = re.sub(a, b, s)
