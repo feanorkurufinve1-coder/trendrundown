@@ -1502,9 +1502,45 @@ def gsc_fetch(store):
         store["gsc"] = {"fetched": now_iso(), "site": site, "start": start, "end": end, "rows": rows[:600],
                         "clicks": sum(x["clicks"] for x in rows), "impr": sum(x["impr"] for x in rows)}
         log(f"Search Console: {len(rows)} строк, кликов {store['gsc']['clicks']}, показов {store['gsc']['impr']}")
+        try:
+            gsc_daily(store, tok, url)
+        except Exception as e:
+            log(f"Search Console по дням: {e}")
         return
     log(f"Search Console: нет доступа ({last})")
     store.setdefault("gsc", {})["error"] = last[:200]
+
+
+def gsc_daily(store, tok, url):
+    """По дням (включая свежие неполные данные): итог дня, страницы и запросы — чтобы видеть, откуда всплеск."""
+    def q(dims, days, limit):
+        body = json.dumps({"startDate": (datetime.now(timezone.utc) - timedelta(days=days)).strftime("%Y-%m-%d"),
+                           "endDate": datetime.now(timezone.utc).strftime("%Y-%m-%d"), "dimensions": dims,
+                           "dataState": "all", "rowLimit": limit}).encode()
+        req = urllib.request.Request(url, data=body, method="POST", headers={
+            "Authorization": "Bearer " + tok, "Content-Type": "application/json"})
+        with urllib.request.urlopen(req, timeout=60, context=CTX) as r:
+            return json.loads(r.read().decode()).get("rows", [])
+    d = store.setdefault("gsc_days", {})
+    for x in q(["date"], 30, 100):                     # итог дня — как в окне Search Console (с главной и скрытыми запросами)
+        d.setdefault(x["keys"][0], {})["total"] = [x.get("clicks", 0), x.get("impressions", 0), round(x.get("position", 0), 1)]
+    pages = {}
+    for x in q(["date", "page"], 10, 5000):
+        pages.setdefault(x["keys"][0], []).append([urllib.parse.urlparse(x["keys"][1]).path or "/", x.get("clicks", 0),
+                                                   x.get("impressions", 0), round(x.get("position", 0), 1)])
+    for day, rows in pages.items():
+        d.setdefault(day, {})["pages"] = sorted(rows, key=lambda r: (-r[1], -r[2]))[:40]
+    qs = {}
+    for x in q(["date", "query"], 10, 5000):
+        qs.setdefault(x["keys"][0], []).append([x["keys"][1], x.get("clicks", 0), x.get("impressions", 0), round(x.get("position", 0), 1)])
+    for day, rows in qs.items():
+        d.setdefault(day, {})["queries"] = sorted(rows, key=lambda r: (-r[1], -r[2]))[:40]
+    for day in sorted(d)[:-60]:
+        d.pop(day)
+    days = sorted(k for k in d if d[k].get("total"))
+    if days:
+        t = d[days[-1]]["total"]
+        log(f"Search Console за {days[-1]}: кликов {t[0]}, показов {t[1]}")
 
 
 def gsc_pages(store):
