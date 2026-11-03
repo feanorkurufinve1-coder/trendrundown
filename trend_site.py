@@ -1452,7 +1452,7 @@ def explain(store):
 GSC_SITES = ["sc-domain:trendrundown.com", "https://trendrundown.com/"]
 
 
-def gsc_token(info):
+def gsc_token(info, scope="https://www.googleapis.com/auth/webmasters.readonly"):
     """Пропуск Google для служебного пользователя (подпись ключом из секрета GSC_KEY)."""
     import base64
     from cryptography.hazmat.primitives import hashes, serialization
@@ -1460,7 +1460,7 @@ def gsc_token(info):
     b64 = lambda b: base64.urlsafe_b64encode(b).rstrip(b"=")
     now = int(time.time())
     head = b64(json.dumps({"alg": "RS256", "typ": "JWT"}).encode())
-    claim = b64(json.dumps({"iss": info["client_email"], "scope": "https://www.googleapis.com/auth/webmasters.readonly",
+    claim = b64(json.dumps({"iss": info["client_email"], "scope": scope,
                             "aud": "https://oauth2.googleapis.com/token", "iat": now, "exp": now + 3600}).encode())
     k = serialization.load_pem_private_key(info["private_key"].encode(), password=None)
     sig = b64(k.sign(head + b"." + claim, padding.PKCS1v15(), hashes.SHA256()))
@@ -1469,6 +1469,42 @@ def gsc_token(info):
     req = urllib.request.Request("https://oauth2.googleapis.com/token", data=body, method="POST")
     with urllib.request.urlopen(req, timeout=30, context=CTX) as r:
         return json.loads(r.read().decode())["access_token"]
+
+
+GA_PROPERTY = "560070593"     # ресурс Google Analytics (TrendRundown)
+
+
+def ga_fetch(store):
+    """Раз в 6 часов: Google Analytics по дням — люди, откуда пришли, сколько читали, какие страницы. Только чтение."""
+    raw = os.environ.get("GSC_KEY", "").strip()
+    if not raw or not GA_PROPERTY or hours_since(store.get("ga", {}).get("fetched", "2000-01-01T00:00:00+00:00")) < 6:
+        return
+    tok = gsc_token(json.loads(raw), "https://www.googleapis.com/auth/analytics.readonly")
+    url = f"https://analyticsdata.googleapis.com/v1beta/properties/{GA_PROPERTY}:runReport"
+    def run(dims, mets, days=30, limit=1000, order=None):
+        body = {"dateRanges": [{"startDate": f"{days}daysAgo", "endDate": "today"}],
+                "dimensions": [{"name": d} for d in dims], "metrics": [{"name": m} for m in mets], "limit": limit}
+        if order:
+            body["orderBys"] = [{"metric": {"metricName": order}, "desc": True}]
+        req = urllib.request.Request(url, data=json.dumps(body).encode(), method="POST", headers={
+            "Authorization": "Bearer " + tok, "Content-Type": "application/json"})
+        with urllib.request.urlopen(req, timeout=60, context=CTX) as r:
+            rows = json.loads(r.read().decode()).get("rows", [])
+        return [[d["value"] for d in x.get("dimensionValues", [])] + [float(m["value"]) for m in x.get("metricValues", [])] for x in rows]
+    try:
+        m = ["sessions", "engagedSessions", "totalUsers", "userEngagementDuration"]
+        ga = {"fetched": now_iso(),
+              "by_day_channel": run(["date", "sessionDefaultChannelGroup"], m, 30, 2000),
+              "by_country": run(["country"], m, 30, 30, "sessions"),
+              "pages_7d": run(["pagePath", "sessionDefaultChannelGroup"], ["screenPageViews", "userEngagementDuration"], 7, 60, "screenPageViews"),
+              "sources_7d": run(["sessionSource", "sessionMedium"], m, 7, 30, "sessions")}
+        store["ga"] = ga
+        org = [r for r in ga["by_day_channel"] if r[1] == "Organic Search"]
+        log(f"Analytics: из поиска за 30 дней {int(sum(r[2] for r in org))} сеансов")
+    except urllib.error.HTTPError as e:
+        store.setdefault("ga", {})["error"] = f"HTTP {e.code} {e.read().decode(errors='replace')[:200]}"
+        store["ga"]["fetched"] = now_iso()
+        log(f"Analytics: нет доступа ({store['ga']['error'][:120]})")
 
 
 def gsc_fetch(store):
@@ -3899,6 +3935,10 @@ def run_once():
         gsc_fetch(store)
     except Exception as e:
         log(f"Search Console: ошибка {e}")
+    try:
+        ga_fetch(store)
+    except Exception as e:
+        log(f"Analytics: ошибка {e}")
     try:
         rn = refresh_explainers(store)
         if rn:
