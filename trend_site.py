@@ -1373,10 +1373,13 @@ def explain(store):
         if item.get("future"):
             score += 3                          # событие впереди — пишем заранее («Pro and tell»)
         try:
-            if wiki_is_new(item["subject"]):
-                score += 2                      # в Википедии статьи нет / она свежая — хороших ответов ещё мало
+            fresh = wiki_is_new(item["subject"])
         except Exception:
-            pass
+            fresh = True
+        if fresh:
+            score += 2                          # в Википедии статьи нет / она свежая — хороших ответов ещё мало
+        elif item.get("kind") in ("person", "organization") and not item.get("future"):
+            continue                            # известный человек/клуб (Хиллари Клинтон, «Реал») — первыми нам не быть
         scored.append((-score, -big, slug, src, t, item))
     scored.sort(key=lambda x: (x[0], x[1]))
     per_topic = {}
@@ -1517,7 +1520,7 @@ def gsc_pages(store):
 
 
 # ---------- обновление пояснений о событиях, которые уже прошли ----------
-REFRESH_PER_DAY = 2        # сколько пояснений в сутки обновлять поиском в интернете (около 10 центов за каждое)
+REFRESH_PER_DAY = 3        # сколько пояснений в сутки обновлять поиском в интернете (около 10 центов за каждое)
 REFRESH_FIRST = ["pro-and-tell-apple-event"]   # страницы, которые приносят клики (по Search Console) — обновлять первыми
 FUTURE_RE = re.compile(r"(?i)\b(will|upcoming|is set to|are set to|expected to|could be announced|scheduled|has not (yet )?been announced|"
                        r"not been set|no release date|later this|next week|ahead of)\b")
@@ -1585,6 +1588,8 @@ def refresh_explainers(store):
             continue
         st = stat(x)
         b = st["best"]
+        if b and b["pos"] <= 3.5 and st["clicks"] >= 3:
+            continue                            # страница уже наверху и приносит клики — не трогаем («telerally»)
         # Google уже показывает страницу (позиция 5–20), но заголовок не совпадает с тем, что люди вводят, — подгоняем
         if b and st["impr"] >= 30 and 4 < b["pos"] <= 20 and x.get("targeted") != b["q"] \
                 and not all(w in words(x["title"]) for w in words(b["q"])):
@@ -2423,7 +2428,7 @@ setTimeout(function(){if(on&&!paused&&!started&&window._lsU===u){S.cancel();if(u
 u.onboundary=function(e){if(e.name&&e.name!='word')return;var i0=e.charIndex,L=e.charLength||((it.text.slice(i0).match(/^\S+/)||[''])[0].length);mark(it,i0,i0+L);};
 u.onend=next;u.onerror=next;S.speak(u);}
 function stop(){on=false;paused=false;S.cancel();k=0;clear();b.innerHTML='&#9654; Listen to this article';s.hidden=true;}
-b.onclick=function(){if(!on){S.cancel();S.resume();on=true;items=collect();k=0;s.hidden=false;b.innerHTML='&#10074;&#10074; Pause';next();}
+b.onclick=function(){if(!on){if(S.speaking||S.pending)S.cancel();if(S.paused)S.resume();on=true;items=collect();k=0;s.hidden=false;b.innerHTML='&#10074;&#10074; Pause';next();}
 else if(!paused){S.pause();paused=true;b.innerHTML='&#9654; Continue';}else{S.resume();paused=false;b.innerHTML='&#10074;&#10074; Pause';}};
 s.onclick=stop;window.addEventListener('pagehide',stop);S.getVoices();if(S.onvoiceschanged!==undefined)S.onvoiceschanged=function(){S.getVoices();};})();</script>"""
 
