@@ -485,13 +485,15 @@ def words(s):
     return re.findall(r"[a-z0-9']+", s.lower())
 
 
-def copy_runs(text, sources, n=10):
-    """Сколько отдельных кусков текста совпадает с источниками (соседние совпадения — один кусок)."""
+def copy_runs(text, sources, n=10, nums=True):
+    """Сколько отдельных кусков текста совпадает с источниками (соседние совпадения — один кусок).
+    nums=False — цифры не считаем (цены и даты совпадают неизбежно)."""
+    words_ = words if nums else (lambda x: [w for w in words(x) if not re.search(r"\d", w)])
     src = set()
     for s in sources:
-        w = words(s)
+        w = words_(s)
         src.update(tuple(w[i:i + n]) for i in range(len(w) - n + 1))
-    w = words(text)
+    w = words_(text)
     pos = [i for i in range(len(w) - n + 1) if tuple(w[i:i + n]) in src]
     return sum(1 for k, i in enumerate(pos) if k == 0 or i > pos[k - 1] + n)
 
@@ -1218,7 +1220,7 @@ def write_explainer(item, t, src, questions, key, feedback="", max_runs=1):
         full = " ".join([out.get("answer", ""), out.get("body", ""), out.get("in_the_news", "")]
                         + [f.get("a", "") for f in out.get("faq", [])])
         hits = copied(full, src["texts"])
-        if not hits or copy_runs(full, src["texts"], n=8) <= max_runs:
+        if not hits or copy_runs(full, src["texts"], n=8, nums=max_runs <= 1) <= max_runs:
             return out
         WRITE_FAIL[0] = "три раза повторял источник: " + "; ".join(hits[:2])
         bad = "; ".join(f'"{h}"' for h in hits[:5])
@@ -1579,7 +1581,7 @@ def refresh_explainers(store):
         if hours_since(x["made"]) < 72:
             continue
         tr = tries.get(x["slug"], {})
-        if tr.get("day") == today or tr.get("n", 0) >= 3:      # не чаще раза в день, не больше 3 неудачных попыток
+        if tr.get("day") == today or tr.get("n", 0) >= 5:      # не чаще раза в день, не больше 5 неудачных попыток
             continue
         st = stat(x)
         b = st["best"]
@@ -2499,6 +2501,7 @@ OUTLET = (r"(?:The )?(?:Associated Press|AP|Reuters|CNN|CNBC|NBC(?: News| Sports
 
 META_RE = re.compile(r"(?i)\b(the|these|available|our) sources?\b|\bsources? reviewed\b|\bheadlines?\b|according to the (match )?report|"
                      r"\b(those|the|these|other) reports? (point|say|said|suggest)|covered only by|not available from|"
+                     r"\b(is|are|was|were) not (stated|given|specified|listed|confirmed in)\b|"
                      r"\boutlets? (say|said|report|described|published)|\bheadlined\b|\bin our feed\b|\bfull (article|text|stories)\b")
 
 
@@ -2525,6 +2528,9 @@ def scrub_outlets(s):
     ]
     pats += [
         (r"(?:^|(?<=[.!?] ))(?:[Ss]ources|[Rr]eports|[Ss]ome outlets|[Oo]utlets|[Oo]ne source)(?: also)? (?:say|said|report|reported|note|noted|indicate|indicated|show|showed)(?: that)?,? (\w)", r"\1"),
+        (r"(?:^|(?<=[.!?] ))(?:[Ss]ources|[Rr]eports|[Oo]utlets) (?:describe|described) him as", "He is"),
+        (r"(?:^|(?<=[.!?] ))(?:[Ss]ources|[Rr]eports|[Oo]utlets) (?:describe|described) her as", "She is"),
+        (r"(?:^|(?<=[.!?] ))(?:[Ss]ources|[Rr]eports|[Oo]utlets) (?:describe|described) (?:it|the \w+) as", "It is"),
         (r"(?:^|(?<=[.!?] ))(?:Before kickoff|Earlier|Later), (?:some |several )?(?:outlets|reports|sources) (?:reported|said|noted)(?: that)? (\w)", r"\1"),
     ]
     for a, b in pats:
