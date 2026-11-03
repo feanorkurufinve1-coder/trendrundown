@@ -2531,11 +2531,12 @@ def mini_cards(items):
     return '<div class="grid">' + "".join(out) + "</div>"
 
 
-# ИИ-роботы (обучение моделей и ИИ-поиск) — тексты сайта им не отдаём. Google и Bing (обычный поиск) не трогаем.
-AI_BOTS = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User", "anthropic-ai",
-           "Google-Extended", "Applebot-Extended", "PerplexityBot", "Perplexity-User", "CCBot", "Bytespider",
-           "meta-externalagent", "Meta-ExternalFetcher", "FacebookBot", "Amazonbot", "cohere-ai", "cohere-training-data-crawler",
-           "Diffbot", "ImagesiftBot", "Omgilibot", "Timpibot", "YouBot", "DuckAssistBot", "MistralAI-User", "AI2Bot"]
+# Роботы, которые берут тексты для ОБУЧЕНИЯ ИИ-моделей, — запрещаем.
+# Роботы ИИ-поиска (ChatGPT search, Perplexity, Claude search, DuckDuckGo Assist…) читают страницу, чтобы дать на неё ссылку, — разрешены.
+# Google и Bing (обычный поиск) не трогаем.
+AI_BOTS = ["GPTBot", "ClaudeBot", "anthropic-ai", "Google-Extended", "Applebot-Extended", "CCBot", "Bytespider",
+           "meta-externalagent", "FacebookBot", "Amazonbot", "cohere-ai", "cohere-training-data-crawler",
+           "Diffbot", "ImagesiftBot", "Omgilibot", "Timpibot", "AI2Bot"]
 EXPLAINERS = {}   # заполняется при сборке сайта: объяснения, видимые на сайте
 MANUAL_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "manual")
 
