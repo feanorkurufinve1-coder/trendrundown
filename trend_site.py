@@ -2443,9 +2443,9 @@ LISTEN = True    # кнопка «Послушать статью»: читае�
 def listen_html():
     if not LISTEN:
         return ""
-    return r"""<div class="ls"><button type="button" id="ls-b" hidden>&#9654; Listen to this article</button><button type="button" id="ls-s" hidden>&#9632; Stop</button></div>
+    return r"""<div class="ls"><button type="button" id="ls-b" hidden>&#9654; Listen to this article</button><button type="button" id="ls-s" hidden>&#9632; Stop</button><span id="ls-m" class="meta" hidden></span></div>
 <script>(function(){var S=window.speechSynthesis,b=document.getElementById('ls-b'),s=document.getElementById('ls-s');
-if(!S||!b)return;b.hidden=false;var items=[],k=0,on=false,paused=false,HL=!!(window.CSS&&CSS.highlights&&window.Highlight),cur=null;
+if(!S||!b)return;b.hidden=false;var items=[],k=0,on=false,paused=false,okN=0,lastErr='',msg=document.getElementById('ls-m'),HL=!!(window.CSS&&CSS.highlights&&window.Highlight),cur=null;
 function voice(){var v=S.getVoices().filter(function(x){return /^en[-_]US/i.test(x.lang)});
 var male=/andrew|christopher|guy|davis|eric|brian|roger|steffan|aaron|evan|tom\b|alex\b|fred|daniel|james|ryan/i,good=/natural|neural|premium|enhanced|online/i;
 var c=v.filter(function(x){return male.test(x.name)&&good.test(x.name)});if(c.length)return c[0];
@@ -2472,12 +2472,13 @@ function clear(){if(HL){CSS.highlights.delete('ls-s');CSS.highlights.delete('ls-
 function view(el){var r=el.getBoundingClientRect();if(r.top<70||r.bottom>window.innerHeight-70)el.scrollIntoView({block:'center',behavior:'smooth'});}
 function next(){if(!on)return;if(k>=items.length){stop();return;}var it=items[k++];
 var u=new SpeechSynthesisUtterance(it.text),v=window._lsNoV?null:voice();if(v)u.voice=v;u.lang='en-US';u.rate=0.93;u.pitch=0.85;
-window._lsU=u;var started=false;u.onstart=function(){started=true;mark(it);view(it.el);};
+window._lsU=u;var started=false;u.onstart=function(){started=true;okN++;mark(it);view(it.el);};
 setTimeout(function(){if(on&&!paused&&!started&&window._lsU===u){S.cancel();if(u.voice){u=new SpeechSynthesisUtterance(it.text);u.lang='en-US';u.rate=0.93;window._lsU=u;u.onend=next;u.onerror=next;S.speak(u);}else next();}},2500);
 u.onboundary=function(e){if(e.name&&e.name!='word')return;var i0=e.charIndex,L=e.charLength||((it.text.slice(i0).match(/^\S+/)||[''])[0].length);mark(it,i0,i0+L);};
-u.onend=next;u.onerror=function(e){if(u.voice&&!window._lsNoV&&!(e&&/interrupted|canceled/.test(e.error))){window._lsNoV=true;k--;next();}else next();};S.speak(u);}
-function stop(){on=false;paused=false;S.cancel();k=0;clear();b.innerHTML='&#9654; Listen to this article';s.hidden=true;}
-b.onclick=function(){if(!on){if(S.speaking||S.pending)S.cancel();if(S.paused)S.resume();on=true;items=collect();k=0;s.hidden=false;b.innerHTML='&#10074;&#10074; Pause';next();}
+u.onend=next;u.onerror=function(e){lastErr=(e&&e.error)||'error';if(u.voice&&!window._lsNoV&&!(e&&/interrupted|canceled/.test(e.error))){window._lsNoV=true;k--;next();}else next();};S.speak(u);}
+function stop(){if(on&&!okN&&msg){msg.hidden=false;msg.textContent=' Your browser could not read this aloud ('+(lastErr||'no sound')+', voices: '+S.getVoices().length+'). Try Chrome or check your device text-to-speech settings.';}
+on=false;paused=false;S.cancel();k=0;clear();b.innerHTML='&#9654; Listen to this article';s.hidden=true;}
+b.onclick=function(){if(!on){okN=0;lastErr='';if(msg)msg.hidden=true;if(S.speaking||S.pending)S.cancel();if(S.paused)S.resume();on=true;items=collect();k=0;s.hidden=false;b.innerHTML='&#10074;&#10074; Pause';next();}
 else if(!paused){S.pause();paused=true;b.innerHTML='&#9654; Continue';}else{S.resume();paused=false;b.innerHTML='&#10074;&#10074; Pause';}};
 s.onclick=stop;window.addEventListener('pagehide',stop);S.getVoices();if(S.onvoiceschanged!==undefined)S.onvoiceschanged=function(){S.getVoices();};})();</script>"""
 
