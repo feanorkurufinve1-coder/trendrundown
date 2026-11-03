@@ -1849,7 +1849,12 @@ PICK_TOOL = {"name": "pick_image", "description": "Choose the best illustration 
 
 
 BAD_FILES = (r"KeyArena_\(2890740573\)|Ocean_Explorer_Docked|Rajiv_Gandhi_International_Cricket_Stadium|"
-             r"Sonoma_Ranch_Road_Trail_Clean_Up|Pauley_Pavilion,_exterior")
+             r"Sonoma_Ranch_Road_Trail_Clean_Up|Pauley_Pavilion,_exterior|Cruise_ship_Ocean_Majesty|Stadio_Maradona|"
+             r"Pro-Ukrainian_demostration_Frankfurt|Asus_Tinker_Board|Federal_Building_and_United_States_Courthouse,_Rome|"
+             r"Back_of_Eisenhower_House_and_Putting_Green")
+# страницы, где честнее без фото, чем с похожим чужим (проверено вручную)
+NO_PHOTO = {"gen-z", "avgo", "royal-caribbean", "sassuolo-vs-fiorentina", "bologna-vs-monza",
+            "doj-seeks-judges-recusal-immigration-cases", "hannibal", "pga-tour"}
 
 
 def commons_generic(t):
@@ -1885,6 +1890,10 @@ def commons_generic(t):
             continue                     # «бойцы UFC посещают авиабазу» к новости про бой не подходит
         if re.search(BAD_FILES, pg.get("title", "")):
             continue                              # фото, уже признанные неверными
+        if re.search(r"(?i)\bvs\.?\b| - ", t.get("term", "")) and re.search(r"(?i)stadi|arena|field|park|ground|court|bridge", blob):
+            teams = [w for w in words(re.sub(r"(?i)\bvs\.?\b|-", " ", t["term"])) if len(w) > 3]
+            if not any(w in blob for w in teams):
+                continue                          # стадион другой команды (Неаполь к матчу «Сассуоло») — не берём
         if re.search(r"(?i)abuse|assault|sex|traffick|murder|killed|shooting|lawsuit|sues|charged|epstein|attack", 
                      (t.get("ai") or {}).get("headline", "") + " " + t.get("term", "")) and \
                 re.search(r"(?i)\b(people|volunteers?|crowd|team|staff|clean[ -]?up|students|workers|family|group|men|women)\b", blob):
@@ -2025,6 +2034,10 @@ def other_subject(t, who):
 
 def generic_images(store, limit=12):
     n = 0
+    for s_ in NO_PHOTO:
+        t = store["topics"].get(s_)
+        if t:
+            t.pop("img", None); t["img_tried"] = 2; t["person_tried"] = 2; t["gen_tried"] = True
     for t in store["topics"].values():          # фото, признанные неверными при проверке (не то место / не тот корабль / посторонние люди)
         if re.search(BAD_FILES, (t.get("img") or {}).get("src", "")):
             t.pop("img"); t.pop("gen_tried", None); t["img_tried"] = 2
