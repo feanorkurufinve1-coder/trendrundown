@@ -2531,6 +2531,11 @@ def mini_cards(items):
     return '<div class="grid">' + "".join(out) + "</div>"
 
 
+# ИИ-роботы (обучение моделей и ИИ-поиск) — тексты сайта им не отдаём. Google и Bing (обычный поиск) не трогаем.
+AI_BOTS = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User", "anthropic-ai",
+           "Google-Extended", "Applebot-Extended", "PerplexityBot", "Perplexity-User", "CCBot", "Bytespider",
+           "meta-externalagent", "Meta-ExternalFetcher", "FacebookBot", "Amazonbot", "cohere-ai", "cohere-training-data-crawler",
+           "Diffbot", "ImagesiftBot", "Omgilibot", "Timpibot", "YouBot", "DuckAssistBot", "MistralAI-User", "AI2Bot"]
 EXPLAINERS = {}   # заполняется при сборке сайта: объяснения, видимые на сайте
 MANUAL_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "manual")
 
@@ -3176,7 +3181,8 @@ def build_site(store):
       + "".join(f"<url><loc>{E(u)}</loc>" + (f"<lastmod>{lm[u]}</lastmod>" if u in lm else "") + "</url>" for u in urls) + "</urlset>")
     if ADSENSE_CLIENT:
         w("ads.txt", f"google.com, {ADSENSE_CLIENT.replace('ca-', '')}, DIRECT, f08c47fec0942fa0\n")
-    w("robots.txt", f"User-agent: *\nAllow: /\nDisallow: /api/\nSitemap: {SITE_URL}/sitemap.xml\nSitemap: {SITE_URL}/sitemap-news.xml\n")
+    ai_block = "".join(f"User-agent: {b_}\nDisallow: /\n\n" for b_ in AI_BOTS)
+    w("robots.txt", ai_block + f"User-agent: *\nAllow: /\nDisallow: /api/\nSitemap: {SITE_URL}/sitemap.xml\nSitemap: {SITE_URL}/sitemap-news.xml\n")
     items = sorted(topics.values(), key=lambda t: t["first_seen"], reverse=True)[:50]
     w("feed.xml", '<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel>'
       f"<title>{SITE_NAME}</title><link>{SITE_URL}</link><description>{E(TAGLINE)}</description>"
