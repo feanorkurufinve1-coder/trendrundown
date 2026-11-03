@@ -2311,6 +2311,13 @@ figure.hero figcaption{font:italic 11.5px "Old Standard TT",serif;margin-top:4px
 @media (min-width:1080px){.tp.side{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:30px}.tp.side aside{display:block;border-left:1px solid var(--line);padding-left:18px}
 .tp aside .ad{position:sticky;top:16px;margin:0;border:0;padding:0}}
 a.xl{text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px;font-weight:700}
+.asks{display:grid;grid-template-columns:1fr;gap:10px;margin:6px 0 18px}
+@media(min-width:640px){.asks{grid-template-columns:1fr 1fr}}
+.asks a{display:block;padding:10px 12px;border:1px solid rgba(0,0,0,.15);border-radius:4px;color:inherit;text-decoration:none}
+.asks a:hover{border-color:currentColor}
+.asks b{display:block;font:400 21px/1.1 "League Gothic","Oswald",Impact,sans-serif;text-transform:uppercase;letter-spacing:.02em;margin-bottom:4px}
+.asks span{display:block;font-size:15px;line-height:1.4;opacity:.85}
+.asks a.more{border:0;padding:2px 0;font-weight:600}
 .xlinks a{display:block;margin:5px 0;font:400 22px/1.1 "League Gothic","Oswald",Impact,sans-serif;text-transform:uppercase;letter-spacing:.02em}
 .rx{margin:22px 0 6px;text-align:center;column-span:all}
 .rx-row{display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
@@ -2898,6 +2905,12 @@ def build_index(store):
                      f'<h2 class="lead-term">{E(t["term"])}</h2><p class="lead-head">{E(head)}</p>'
                      + (f'<hr class="dash" style="margin:8px 0"><p class="snip">{E(snip(t, 420))}</p>' if snip(t) else "")
                      + f'<p class="meta">Since {E(fmt_et(t["first_seen"]))} · {E(", ".join(srcs[:3]))}</p></div></a>')
+    xs_all = sorted(EXPLAINERS.values(), key=lambda x: x.get("first", x["made"]), reverse=True)
+    if xs_all:
+        parts.append('<h2 class="sec">What Americans are asking</h2><div class="asks">'
+                     + "".join(f'<a href="x/{E(x["slug"])}.html"><b>{E(x["title"])}</b><span>{E(short_desc(x["answer"], 130))}</span></a>'
+                               for x in xs_all[:6])
+                     + '<a class="more" href="explained.html">All explainers →</a></div>')
     parts.append(ad("home"))
     rest = top[1:]
     if live:
@@ -2907,9 +2920,9 @@ def build_index(store):
     if rest:
         parts.append('<h2 class="sec">Still being searched today</h2><div class="grid">'
                      + "".join(card(t, fmt_et(t["first_seen"], with_date=False), peak_label(t) + " peak") for t in rest) + "</div>")
-    xs = sorted(EXPLAINERS.values(), key=lambda x: x.get("seen", x["made"]), reverse=True)[:8]
+    xs = xs_all[6:14]
     if xs:
-        parts.append('<h2 class="sec">Explained today</h2><div class="xlinks">'
+        parts.append('<h2 class="sec">More explained</h2><div class="xlinks">'
                      + "".join(f'<a href="x/{E(x["slug"])}.html">{E(x["title"])} →</a>' for x in xs)
                      + '<a href="explained.html" style="font-weight:400">All explainers →</a></div>')
     if week:
@@ -2940,6 +2953,28 @@ def build_category(cat, topics):
     return page(f"{name}: what's trending now | {SITE_NAME}",
                 f"Trending {name.lower()} topics in the US, each explained in one minute with links to the sources.",
                 body, f"c/{cat}.html", 1)
+
+
+_STOP = set("about after again against their there these those which while would could should being other first since still where today years explained what when who".split())
+
+
+def related_explainers(x, k=5):
+    """Соседние пояснения: общая новость, общие слова в заголовке и тексте; иначе самые свежие."""
+    def kw(y):
+        return {w for w in words(y["title"] + " " + y.get("in_the_news", "") + " " + y.get("subject", "")) if len(w) > 4 and w not in _STOP}
+    mine, mt = kw(x), set(x.get("topics", []))
+    scored = []
+    for y in EXPLAINERS.values():
+        if y["slug"] == x["slug"]:
+            continue
+        sc = 5 * len(mt & set(y.get("topics", []))) + len(mine & kw(y))
+        scored.append((sc, y.get("first", y["made"]), y))
+    scored.sort(key=lambda r: (r[0], r[1]), reverse=True)
+    out = [y for sc, _, y in scored if sc >= 2][:k]
+    if len(out) < k:
+        fresh = sorted((r for r in scored if r[2] not in out), key=lambda r: r[1], reverse=True)
+        out += [r[2] for r in fresh[:k - len(out)]]
+    return out
 
 
 def build_explainer(x, topics):
@@ -2973,6 +3008,7 @@ def build_explainer(x, topics):
         ld.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
             {"@type": "Question", "name": f["q"], "acceptedAnswer": {"@type": "Answer", "text": f["a"]}} for f in faq]})
     head = f'<script type="application/ld+json">{json.dumps(ld)}</script>'
+    rel = related_explainers(x)
     body = f"""<article>
 <p class="meta"><a href="../index.html">{SITE_NAME}</a> › <a class="cat" href="../explained.html">Explained</a> · updated {E(fmt_et(x["made"]))}</p>
 <h1>{E(x["title"])}</h1>
@@ -2983,6 +3019,7 @@ def build_explainer(x, topics):
 {ad("in_article")}
 <h2>Background</h2>{paras}
 {('<h2>What people are asking</h2>' + faq_html) if faq_html else ''}
+{('<h2 class="sec">Also explained</h2><div class="xlinks">' + "".join(f'<a href="{E(y["slug"])}.html">{E(y["title"])} →</a>' for y in rel) + '</div>') if rel else ''}
 {reactions_html("x/" + x["slug"])}
 {ad("middle")}
 {('<p class="meta" style="margin-top:26px">Sources: ' + src + '</p>') if src else ''}
