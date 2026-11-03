@@ -2418,13 +2418,14 @@ function clear(){if(HL){CSS.highlights.delete('ls-s');CSS.highlights.delete('ls-
 function view(el){var r=el.getBoundingClientRect();if(r.top<70||r.bottom>window.innerHeight-70)el.scrollIntoView({block:'center',behavior:'smooth'});}
 function next(){if(!on)return;if(k>=items.length){stop();return;}var it=items[k++];
 var u=new SpeechSynthesisUtterance(it.text),v=voice();if(v)u.voice=v;u.lang='en-US';u.rate=0.93;u.pitch=0.85;
-u.onstart=function(){mark(it);view(it.el);};
+window._lsU=u;var started=false;u.onstart=function(){started=true;mark(it);view(it.el);};
+setTimeout(function(){if(on&&!paused&&!started&&window._lsU===u){S.cancel();if(u.voice){u=new SpeechSynthesisUtterance(it.text);u.lang='en-US';u.rate=0.93;window._lsU=u;u.onend=next;u.onerror=next;S.speak(u);}else next();}},2500);
 u.onboundary=function(e){if(e.name&&e.name!='word')return;var i0=e.charIndex,L=e.charLength||((it.text.slice(i0).match(/^\S+/)||[''])[0].length);mark(it,i0,i0+L);};
 u.onend=next;u.onerror=next;S.speak(u);}
 function stop(){on=false;paused=false;S.cancel();k=0;clear();b.innerHTML='&#9654; Listen to this article';s.hidden=true;}
-b.onclick=function(){if(!on){on=true;items=collect();k=0;s.hidden=false;b.innerHTML='&#10074;&#10074; Pause';next();}
+b.onclick=function(){if(!on){S.cancel();S.resume();on=true;items=collect();k=0;s.hidden=false;b.innerHTML='&#10074;&#10074; Pause';next();}
 else if(!paused){S.pause();paused=true;b.innerHTML='&#9654; Continue';}else{S.resume();paused=false;b.innerHTML='&#10074;&#10074; Pause';}};
-s.onclick=stop;window.addEventListener('pagehide',stop);if(S.onvoiceschanged!==undefined)S.onvoiceschanged=function(){};})();</script>"""
+s.onclick=stop;window.addEventListener('pagehide',stop);S.getVoices();if(S.onvoiceschanged!==undefined)S.onvoiceschanged=function(){S.getVoices();};})();</script>"""
 
 
 def mini_cards(items):
