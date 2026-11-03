@@ -2532,6 +2532,35 @@ def mini_cards(items):
 
 
 EXPLAINERS = {}   # заполняется при сборке сайта: объяснения, видимые на сайте
+MANUAL_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "manual")
+
+
+def manual_pages(store):
+    """Пояснения, написанные вручную (папка manual/, по файлу на страницу). Автоматика их не трогает и не перезаписывает."""
+    out = {}
+    if not os.path.isdir(MANUAL_DIR):
+        return out
+    pinged = store.setdefault("manual_pinged", [])
+    for fn in sorted(os.listdir(MANUAL_DIR)):
+        if not fn.endswith(".json"):
+            continue
+        try:
+            x = json.load(open(os.path.join(MANUAL_DIR, fn), encoding="utf-8"))
+        except Exception as e:
+            log(f"ручная страница {fn}: ошибка {e}")
+            continue
+        if not all(x.get(k) for k in ("title", "answer", "body", "subject")):
+            continue
+        x.setdefault("slug", fn[:-5]); x.setdefault("kind", "other"); x.setdefault("faq", []); x.setdefault("links", [])
+        x.setdefault("topics", []); x.setdefault("in_the_news", ""); x.setdefault("query", x["title"])
+        x.setdefault("made", now_iso()); x.setdefault("first", x["made"]); x["seen"] = x.get("updated") or x["made"]; x["manual"] = True
+        x["links"] = [tuple(l) for l in x["links"]]
+        ver = x["slug"] + "@" + (x.get("updated") or x["made"])
+        if ver not in pinged:
+            x["new"] = True; pinged.append(ver)
+        out[x["slug"]] = x
+    del pinged[:-500]
+    return out
 
 
 _GENERIC = {"event", "events", "the", "a", "an", "of", "in", "on", "and", "rule", "law", "act", "bill", "game", "match",
@@ -3075,6 +3104,7 @@ def build_site(store):
     ex = {s: x for s, x in store.get("explainers", {}).items()
           if not bad_text(x["title"] + " " + x["subject"], ub)
           and (any(tt in topics for tt in x.get("topics", [])) or not any(tt in allt for tt in x.get("topics", [])))}
+    ex.update(manual_pages(orig))         # ручные страницы важнее автоматических с тем же адресом
     EXPLAINERS.clear(); EXPLAINERS.update(ex)
     global HAS_EXPLAINED, HAS_CAST
     HAS_EXPLAINED = bool(ex)
