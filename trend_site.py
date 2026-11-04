@@ -2376,7 +2376,7 @@ footer{margin-top:40px;padding-top:10px;border-top:5px double var(--line);font:1
 footer a{margin:0 10px;text-transform:uppercase;letter-spacing:.1em;font-weight:700}
 svg.spark{display:block;max-width:100%}
 img{filter:none}
-figure.hero{margin:8px 0 14px;break-inside:avoid}figure.hero img{width:100%;max-height:440px;object-fit:cover;object-position:50% 20%;display:block;border:1px solid var(--line)}
+figure.hero{margin:8px 0 14px;break-inside:avoid}figure.hero img{width:100%;height:auto;max-height:440px;object-fit:cover;object-position:50% 20%;display:block;border:1px solid var(--line)}
 figure.hero figcaption{font:italic 11.5px "Old Standard TT",serif;margin-top:4px;padding-bottom:4px;border-bottom:1px solid var(--line);text-align:center}
 /* ---------- первая полоса ---------- */
 .lead{display:grid;gap:20px;padding:4px 0 16px;margin-bottom:0;border-bottom:5px double var(--line)}
@@ -2582,6 +2582,51 @@ def shape(f):
     return cls
 
 
+_THUMBS = {}
+
+
+def thumb(f, w):
+    """Уменьшенная копия в WebP (site/img/w<w>/…): телефоны грузят в 3–10 раз меньше. Возвращает (путь, ширина, высота)."""
+    key = (f, w)
+    if key in _THUMBS:
+        return _THUMBS[key]
+    res = (f, None, None)
+    try:
+        from PIL import Image
+        src = os.path.join(OUT, f)
+        name = os.path.splitext(os.path.basename(f))[0] + ".webp"
+        rel = f"img/w{w}/{name}"
+        dst = os.path.join(OUT, rel)
+        if not os.path.exists(dst) or os.path.getmtime(dst) < os.path.getmtime(src):
+            with Image.open(src) as im:
+                im = im.convert("RGB")
+                if im.width > w:
+                    im = im.resize((w, round(im.height * w / im.width)), Image.LANCZOS)
+                os.makedirs(os.path.dirname(dst), exist_ok=True)
+                im.save(dst, "WEBP", quality=78, method=4)
+        with Image.open(dst) as im:
+            res = (rel, im.width, im.height)
+    except Exception:
+        pass
+    _THUMBS[key] = res
+    return res
+
+
+def pic(f, up="", alt="", lazy=True, w=640, sizes=None):
+    """<img> с уменьшенной копией, размерами (чтобы страница не «прыгала») и srcset для крупного фото."""
+    if not f:
+        return ""
+    small = thumb(f, w)
+    wh = f' width="{small[1]}" height="{small[2]}"' if small[1] else ""
+    srcset = ""
+    if sizes:
+        big = thumb(f, 1200)
+        if big[1] and small[1] and big[1] > small[1]:
+            srcset = f' srcset="{up}{E(small[0])} {small[1]}w, {up}{E(big[0])} {big[1]}w" sizes="{sizes}"'
+    return (f'<img{shape(f)} src="{up}{E(small[0])}"{srcset}{wh} alt="{E(alt)}"'
+            + (' loading="lazy" decoding="async"' if lazy else ' fetchpriority="high"') + '>')
+
+
 LISTEN = True    # кнопка «Послушать статью»: читает текст голосом, встроенным в телефон/компьютер (бесплатно)
 
 
@@ -2656,7 +2701,7 @@ def mini_cards(items):
     for r in items:
         img = (r.get("img") or {}).get("file")
         out.append(f'<a class="card" href="{E(r["slug"])}.html">'
-                   + (f'<img{shape(img)} src="../{E(img)}" alt="" loading="lazy">' if img else "")
+                   + (pic(img, "../") if img else "")
                    + f'<div class="card-top"><span class="num">{E(fmt_et(r.get("last_seen", r["first_seen"])).split(",")[0])}</span>'
                    f'<span class="chip-s">{E(peak_label(r))}</span></div>'
                    f'<h3>{E(r["term"])}</h3><p class="head">{E((r.get("ai") or {}).get("headline", ""))}</p></a>')
@@ -2925,7 +2970,7 @@ def build_topic(t, related, same=()):
                    + f'<p class="meta">Updated {E(fmt_et(ai["made"]))}.</p>')
     img = t.get("img"); card = t.get("card")
     if img:
-        hero = (f'<figure class="hero"><img{shape(img["file"])} src="../{E(img["file"])}" alt="{E(t["term"])}" loading="eager">'
+        hero = (f'<figure class="hero">{pic(img["file"], "../", t["term"], lazy=False, sizes="(max-width: 700px) 100vw, 680px")}'
                 f'<figcaption>{(E(photo_who(t, img)) + ". ") if photo_who(t, img) else ""}{"Illustration" if img.get("generic") else "Photo"}: {E(img["credit"])} / <a href="{E(img["src"])}" target="_blank" rel="noopener">{E(img["license"])}</a>, via Wikimedia Commons</figcaption></figure>')
     else:   # обложка-заглушка на странице не показывается, только в превью ссылки (og:image)
         hero = ""
@@ -3018,7 +3063,7 @@ def build_index(store):
         srcs, head = info(t)
         img = (t.get("img") or {}).get("file")
         return (f'<a class="card" href="t/{E(t["slug"])}.html">'
-                + (f'<img{shape(img)} src="{E(img)}" alt="" loading="lazy">' if img else "")
+                + (pic(img) if img else "")
                 + f'<div class="card-top"><span class="num">{E(label)}</span><span class="chip-s">{E(chip)}</span></div>'
                 f'<h3>{E(t["term"])}</h3><p class="head">{E(head)}</p>'
                 + (f'<p class="snip">{E(snip(t))}</p>' if snip(t) else "")
@@ -3039,7 +3084,7 @@ def build_index(store):
         img = (t.get("img") or {}).get("file")
         tr = (t["traffic"][-1][2] if live else peak_label(t)) if t["traffic"] else ""
         parts.append(f'<a class="lead{" has-img" if img else ""}" href="t/{E(t["slug"])}.html">'
-                     + (f'<img{shape(img)} src="{E(img)}" alt="">' if img else "")
+                     + (pic(img, "", "", lazy=False, sizes="(max-width: 700px) 100vw, 680px") if img else "")
                      + f'<div class="lead-txt"><span class="badge">#1 · {E(tr)} searches</span>'
                      f'<h2 class="lead-term">{E(t["term"])}</h2><p class="lead-head">{E(head)}</p>'
                      + (f'<hr class="dash" style="margin:8px 0"><p class="snip">{E(snip(t, 420))}</p>' if snip(t) else "")
@@ -3077,7 +3122,7 @@ def build_category(cat, topics):
         ai = t.get("ai") or {}
         img = (t.get("img") or {}).get("file")
         cards.append(f'<a class="card" href="../t/{E(t["slug"])}.html">'
-                     + (f'<img{shape(img)} src="../{E(img)}" alt="" loading="lazy">' if img else "")
+                     + (pic(img, "../") if img else "")
                      + f'<div class="card-top"><span class="num">{E(fmt_et(t["first_seen"]).split(",")[0])}</span>'
                      f'<span class="chip-s">{E(peak_label(t))} peak</span></div>'
                      f'<h3>{E(t["term"])}</h3><p class="head">{E(ai.get("headline", ""))}</p></a>')
