@@ -1,0 +1,42 @@
+# Проверка скорости страниц (Google PageSpeed Insights) — запускается вручную; итог сохраняется в ветку reports.
+name: PageSpeed
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: "адреса через пробел"
+        default: "https://trendrundown.com/ https://trendrundown.com/x/telerally"
+permissions:
+  contents: write
+jobs:
+  psi:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          mkdir out && cd out
+          for u in ${{ github.event.inputs.urls }}; do
+            for s in mobile desktop; do
+              n=$(echo "$u" | sed 's#https://##; s#[/.]#_#g')_$s
+              curl -s -m 120 "https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=$u&strategy=$s&category=performance&category=accessibility&category=best-practices&category=seo" -o "$n.json"
+              python3 - "$n.json" > "$n.txt" <<'PY'
+          import json, sys
+          d = json.load(open(sys.argv[1]))
+          if "lighthouseResult" not in d:
+              print("ERROR", json.dumps(d)[:300]); sys.exit()
+          lr = d["lighthouseResult"]
+          print("scores", {k: round((v.get("score") or 0) * 100) for k, v in lr["categories"].items()})
+          a = lr["audits"]
+          for k in ["first-contentful-paint", "largest-contentful-paint", "total-blocking-time", "cumulative-layout-shift", "speed-index"]:
+              print(k, a[k]["displayValue"])
+          print("field", (d.get("loadingExperience") or {}).get("overall_category"))
+          for k, v in a.items():
+              if v.get("score") is not None and v["score"] < 0.9 and v.get("scoreDisplayMode") in ("numeric", "binary", "metricSavings"):
+                  print("ISSUE", k, "|", v.get("title"), "|", v.get("displayValue", ""))
+          PY
+            done
+          done
+          rm -f *.json
+      - run: |
+          cd out && git init -q && git checkout -q -b reports
+          git config user.name "psi-bot" && git config user.email "psi-bot@users.noreply.github.com"
+          git add -A && git commit -q -m "pagespeed" && git push -f -q "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" reports
