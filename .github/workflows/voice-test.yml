@@ -6,7 +6,7 @@ on:
         description: "slug пояснения"
         default: "telerally"
 permissions:
-  contents: read
+  contents: write
 jobs:
   voice:
     runs-on: ubuntu-latest
@@ -18,7 +18,10 @@ jobs:
       - run: sudo apt-get update -q && sudo apt-get install -y -q espeak-ng ffmpeg
       - run: pip install -q kokoro soundfile "piper-tts>=1.2"
       - run: python tools/voice_sample.py "${{ github.event.inputs.slug }}"
-      - uses: actions/upload-artifact@v4
-        with:
-          name: voice-samples
-          path: voice_out/
+      - name: Save samples to branch voice-samples
+        run: |
+          cd voice_out
+          git init -q && git checkout -q -b voice-samples
+          git config user.name "voice-bot" && git config user.email "voice-bot@users.noreply.github.com"
+          git add -A && git commit -q -m "voice samples"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" voice-samples
