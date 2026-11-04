@@ -190,5 +190,53 @@
 "hash": "932e4ff6a75d",
 "made": "2026-11-04T12:32:13+00:00",
 "sec": 122
+},
+"x/southern-district-of-new-york": {
+"file": "audio/x/southern-district-of-new-york.mp3",
+"hash": "1f882568557a",
+"made": "2026-11-04T13:52:30+00:00",
+"sec": 149
+},
+"x/fedex-cup": {
+"file": "audio/x/fedex-cup.mp3",
+"hash": "a32b2a77b9d2",
+"made": "2026-11-04T13:53:57+00:00",
+"sec": 136
+},
+"x/bryce-underwood": {
+"file": "audio/x/bryce-underwood.mp3",
+"hash": "0378d1d2eb99",
+"made": "2026-11-04T13:55:04+00:00",
+"sec": 102
+},
+"x/tommy-carr": {
+"file": "audio/x/tommy-carr.mp3",
+"hash": "42231ba37e26",
+"made": "2026-11-04T13:56:03+00:00",
+"sec": 89
+},
+"x/wbc-super-middleweight-title": {
+"file": "audio/x/wbc-super-middleweight-title.mp3",
+"hash": "681838f2a826",
+"made": "2026-11-04T13:57:08+00:00",
+"sec": 100
+},
+"x/christian-mbilli": {
+"file": "audio/x/christian-mbilli.mp3",
+"hash": "e646cac601dd",
+"made": "2026-11-04T13:58:19+00:00",
+"sec": 106
+},
+"x/injury-report": {
+"file": "audio/x/injury-report.mp3",
+"hash": "caa94e69df0f",
+"made": "2026-11-04T13:59:57+00:00",
+"sec": 146
+},
+"x/nfl-celebration-fines": {
+"file": "audio/x/nfl-celebration-fines.mp3",
+"hash": "fa0f96eb0bb1",
+"made": "2026-11-04T14:01:06+00:00",
+"sec": 104
 }
 }
