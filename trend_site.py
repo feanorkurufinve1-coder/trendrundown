@@ -1555,7 +1555,16 @@ def ga_fetch(store):
               "by_day_channel": run(["date", "sessionDefaultChannelGroup"], m, 30, 2000),
               "by_country": run(["country"], m, 30, 30, "sessions"),
               "pages_7d": run(["pagePath", "sessionDefaultChannelGroup"], ["screenPageViews", "userEngagementDuration"], 7, 60, "screenPageViews"),
-              "sources_7d": run(["sessionSource", "sessionMedium"], m, 7, 30, "sessions")}
+              "sources_7d": run(["sessionSource", "sessionMedium"], m, 7, 30, "sessions"),
+              # кто наши читатели из поиска: устройство, час (по Нью-Йорку), день недели, возраст и пол (нужны Google Signals)
+              "device_30d": run(["deviceCategory", "sessionDefaultChannelGroup"], m, 30, 50),
+              "hour_30d": run(["hour", "sessionDefaultChannelGroup"], m, 30, 200),
+              "weekday_30d": run(["dayOfWeekName", "sessionDefaultChannelGroup"], m, 30, 100)}
+        try:
+            ga["age_30d"] = run(["userAgeBracket", "sessionDefaultChannelGroup"], m, 30, 100)
+            ga["gender_30d"] = run(["userGender", "sessionDefaultChannelGroup"], m, 30, 50)
+        except Exception:
+            pass                                  # без Google Signals Google не отдаёт возраст и пол
         store["ga"] = ga
         org = [r for r in ga["by_day_channel"] if r[1] == "Organic Search"]
         log(f"Analytics: из поиска за 30 дней {int(sum(r[2] for r in org))} сеансов")
