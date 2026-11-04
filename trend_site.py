@@ -572,6 +572,9 @@ Also pick ONE category for the topic: sports, entertainment, politics, business,
 (sports = games, players, leagues; entertainment = celebrities, music, TV, movies, games; business = companies, stocks, money, jobs;
 tech = technology, science, health research, space; world = news outside the US; lifestyle = food, travel, weather, holidays, shopping).
 
+For anything upcoming (release date, price, cast, line-up, specs): state it only if the sources say it is officially
+announced; label rumors and leaks as unconfirmed, never as fact.
+
 If the sources are NOT really about "{term}" (for example generic score pages, or a different team or person), set "on_topic": false
 and do not guess what people meant. Never write about what "searches" are about.
 
@@ -1123,6 +1126,9 @@ Rules:
 - Do NOT name news outlets, websites or social networks in the text, and never write "according to", "reported" or "reports say";
   just state the facts directly. The sources are listed on the page.
 - Never invent or guess personal details (age, family, salary, address, health). Include them only if the sources state them.
+- For anything upcoming (release date or time, price, cast, line-up, specs, venue): give it ONLY if the sources say it is
+  officially announced or confirmed. If it is a rumor, leak or prediction, say so plainly ("not yet announced", "reported but
+  not confirmed by Apple"); never present a rumored or guessed date or price as fact, and never promise an answer you don't have.
 - Answer only the people's questions that the sources (or well-established general knowledge) can answer; skip the rest.
 - Answer only questions ABOUT the subject (what, who, where, when, how it works, why it matters). Skip personal advice questions:
   health, diet, training, medical, legal, money or betting advice ("when should runners eat", "how to avoid cramps").
@@ -2490,6 +2496,14 @@ def clean_links(html_, path):
     return re.sub(r'href="((?:\.\./)*)([\w/-]+?)\.html(#[^"]*)?"', fix, html_)
 
 
+# Шрифты грузим, не задерживая показ текста (media=print → all), без лишних вариантов; готический шрифт шапки — только буквы названия
+_FONTS_MAIN = ("https://fonts.googleapis.com/css2?family=League+Gothic&family=Literata:ital,wght@0,400;0,600;1,400"
+               "&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap")
+_FONTS_BRAND = "https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap&text=" + urllib.parse.quote("".join(sorted(set("The Trend Rundown" + "TrendRundown"))))
+FONT_LINKS = "".join(f'<link rel="stylesheet" href="{u}" media="print" onload="this.media=\'all\'"><noscript><link rel="stylesheet" href="{u}"></noscript>'
+                     for u in (_FONTS_MAIN, _FONTS_BRAND))
+
+
 def page(title, desc, body, path, depth, extra_head="", og_img=""):
     return clean_links(_page(title, desc, body, path, depth, extra_head, og_img), path)
 
@@ -2504,7 +2518,7 @@ def _page(title, desc, body, path, depth, extra_head="", og_img=""):
 <link rel="canonical" href="{E(canon)}"><link rel="alternate" type="application/rss+xml" title="{SITE_NAME}" href="{up}feed.xml">
 {f'<meta property="og:image" content="{E(SITE_URL + "/" + og_img)}"><meta name="twitter:card" content="summary_large_image">' if og_img else ''}<meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+{FONT_LINKS}
 <style>{CSS}</style>{ga_snippet()}{"" if path in NO_ADS else ads_head()}{extra_head}</head><body><div class="wrap">
 <header class="top"><div class="mast"><div class="ear">Late Edition<b>Every Trend</b>Explained around the clock</div>
 <div><a class="brand" href="{up}index.html">The Trend Rundown</a><div class="motto">“{E(TAGLINE)}”</div></div>
@@ -3171,7 +3185,12 @@ def build_archive(store):
 STATIC = {
     "about.html": ("About", f"<h1>About {SITE_NAME}</h1>"
         f"<p>{SITE_NAME} is an independent news explainer for readers in the United States. Every day we follow what Americans are searching for on Google and, for each trending topic, publish a short, plain-English rundown of what actually happened, plus explainers that answer the questions people ask next (who is this person, what is this law, where is this place).</p>"
-        "<h2>How we work</h2><p>Every rundown is built only from reporting by established news organizations, which are linked at the bottom of each page so you can check the original. Drafts are written with the help of AI and then checked by a separate review step against those sources; anything that cannot be backed by a source is removed or the page is not published. We do not publish rumors, private individuals' personal details or sexual, violent or extremist content.</p>"
+        "<h2>How we work</h2>"
+        "<p><b>How topics are chosen.</b> We watch Google Trends for the United States through the day. When a story breaks, we look for the names, terms and events people will want explained next, and check Google's own search suggestions to see how they ask about them.</p>"
+        "<p><b>How pages are written.</b> Each page is built from several reports by established news organizations, read in full, plus stable background from reference sources such as Wikipedia. Drafts are written with the help of AI. A separate review step then checks every claim against those sources; claims that cannot be backed are removed, and if too much is unsupported the page is not published. Sources are linked at the bottom of each page so you can check them.</p>"
+        "<p><b>What we will not do.</b> We do not report rumors as fact, give release dates, prices or line-ups that have not been officially announced, or publish private individuals' personal details or sexual, violent or extremist content.</p>"
+        "<p><b>Keeping pages current.</b> Explainers about upcoming events are updated after the event. Our most-read pages are reviewed and, when needed, rewritten every day; the \"updated\" date on a page changes only when its content does.</p>"
+        "<p><b>Audio.</b> The listen-along audio on some pages is read by a computer-generated voice.</p>"
         "<h2>Corrections</h2><p>If something on a page is wrong, email us and we will fix or remove it, usually within 24 hours. Pages are updated automatically as new reporting appears.</p>"
         f"<h2>Contact</h2><p>{CONTACT_EMAIL}</p>"),
     "privacy.html": ("Privacy policy", f"<h1>Privacy policy</h1><p>{SITE_NAME} does not ask you to create an account and does not collect personal information directly. We use Google Analytics to understand how many people visit and which pages they read, and we may show ads served by Google. Google and its partners use cookies to serve ads based on prior visits to this and other websites. You can opt out of personalized advertising at <a href='https://www.google.com/settings/ads'>Google Ads Settings</a>.</p><p>Questions: {CONTACT_EMAIL}</p>"),
