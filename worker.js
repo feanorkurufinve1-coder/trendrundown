@@ -19,6 +19,19 @@ async function sha(text) {
 }
 
 export default {
+  // Будильник: каждые 15 минут просим GitHub запустить обновление сайта (своё расписание GitHub запускает лишь раз в час).
+  // Ключ GH_TOKEN хранится в секретах Cloudflare (Workers → trendrundown → Settings → Variables and Secrets).
+  async scheduled(event, env, ctx) {
+    if (!env.GH_TOKEN) return;
+    const r = await fetch("https://api.github.com/repos/feanorkurufinve1-coder/trendrundown/actions/workflows/update.yml/dispatches", {
+      method: "POST",
+      headers: { "authorization": "Bearer " + env.GH_TOKEN, "accept": "application/vnd.github+json",
+                 "user-agent": "trendrundown-timer", "x-github-api-version": "2022-11-28" },
+      body: JSON.stringify({ ref: "main" }),
+    });
+    if (r.status !== 204) console.log("dispatch failed", r.status, await r.text());
+  },
+
   async fetch(request, env) {
     const url = new URL(request.url);
     if (url.hostname.startsWith("www.")) {             // один адрес для Google: www.trendrundown.com → trendrundown.com

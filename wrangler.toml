@@ -8,6 +8,9 @@ routes = [
   { pattern = "www.trendrundown.com", custom_domain = true },
 ]
 
+[triggers]
+crons = ["*/15 * * * *"]          # будильник: запуск обновления сайта каждые 15 минут (см. scheduled в worker.js)
+
 [assets]
 directory = "./site"
 binding = "ASSETS"
