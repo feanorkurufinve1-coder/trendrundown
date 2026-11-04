@@ -247,9 +247,9 @@
 },
 "x/champions-league-league-phase": {
 "file": "audio/x/champions-league-league-phase.mp3",
-"hash": "b0b29b568483",
-"made": "2026-11-04T15:33:33+00:00",
-"sec": 103
+"hash": "74572a742b98",
+"made": "2026-11-04T20:34:59+00:00",
+"sec": 107
 },
 "x/manuel-pellegrini": {
 "file": "audio/x/manuel-pellegrini.mp3",
@@ -472,5 +472,47 @@
 "hash": "fa6325017f90",
 "made": "2026-11-04T19:50:30+00:00",
 "sec": 115
+},
+"x/52-week-low": {
+"file": "audio/x/52-week-low.mp3",
+"hash": "97c4901e8854",
+"made": "2026-11-04T20:35:48+00:00",
+"sec": 120
+},
+"x/rivian-r2": {
+"file": "audio/x/rivian-r2.mp3",
+"hash": "244ea9210e61",
+"made": "2026-11-04T20:36:44+00:00",
+"sec": 142
+},
+"x/midterm-elections": {
+"file": "audio/x/midterm-elections.mp3",
+"hash": "0040d6d25b37",
+"made": "2026-11-04T20:37:26+00:00",
+"sec": 104
+},
+"x/michael-wilson": {
+"file": "audio/x/michael-wilson.mp3",
+"hash": "dd514e80a7da",
+"made": "2026-11-04T20:38:01+00:00",
+"sec": 86
+},
+"x/jude-bellingham": {
+"file": "audio/x/jude-bellingham.mp3",
+"hash": "a429cdf47730",
+"made": "2026-11-04T20:38:43+00:00",
+"sec": 103
+},
+"x/florida-senate-race": {
+"file": "audio/x/florida-senate-race.mp3",
+"hash": "8ddb1ba80d09",
+"made": "2026-11-04T20:39:27+00:00",
+"sec": 109
+},
+"x/proposition-12": {
+"file": "audio/x/proposition-12.mp3",
+"hash": "4c4349977ddb",
+"made": "2026-11-04T20:40:25+00:00",
+"sec": 145
 }
 }
