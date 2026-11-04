@@ -1310,30 +1310,34 @@ TEAM_RE = re.compile(r"(?i)\b(football|basketball|baseball|soccer|hockey|univers
                      r"school|team|league|cup|bowl|award|festival|act|bill|party|company|inc|news)\b")
 
 
-FU_PROMPT = """These are the latest US news headlines about the trending Google search "{term}":
+FU_PROMPT = """Here are full news articles about the trending Google search "{term}". Read them carefully.
 {heads}
 
 Predict FOLLOW-UP SEARCHES: after reading this news, what will ordinary Americans google next because they don't know it
 or want to know more? An unfamiliar term, law or rule, place, organization, product, event, or a public figure most people
-don't know well. Give 0-3 items. Only things these headlines name. Never private individuals (non-public people, victims,
+don't know well. Give 0-3 items. Only things these articles name and give facts about. Never private individuals (non-public people, victims,
 private suspects, minors). Skip household names everyone already knows (e.g. Taylor Swift, LeBron James, Apple, the NFL,
 Congress, Boston). "subject" = the thing itself as people would type it (1-5 words); "query" = the exact search, e.g.
 "what is a continuing resolution", "who is sam laporta". PRIORITY: brand-new names (a new product, event name, show, law,
-rookie, newcomer) the internet has not explained yet, and named FUTURE events with a date in the headlines (set "date")."""
+rookie, newcomer) the internet has not explained yet, and named FUTURE events with a date in the articles (set "date")."""
 
 FU_TOOL = {"name": "followups", "description": "Follow-up searches.", "input_schema": {"type": "object", "properties": {
     "followups": AI_TOOL["input_schema"]["properties"]["followups"]}, "required": ["followups"]}}
-FU_PER_RUN = 6        # сколько чужих трендов (без нашей новости) разбирать за проход: дешёвый запрос по заголовкам
+FU_PER_RUN = 4        # сколько чужих трендов (без нашей новости) читать целиком за проход
 
 
 def trend_followups(t, key):
-    """Что люди будут гуглить после этого тренда — по заголовкам всех изданий, даже если нашей новости о нём нет."""
-    heads = "\n".join(f"- {a['source']}: {a['title']}" for a in sorted(t["articles"], key=lambda a: a["time"])[-15:])
+    """Что люди будут гуглить после этого тренда — читаем статьи целиком, даже если нашей новости о нём нет.
+    Возвращает (кандидаты, источники) — источники потом идут в пояснение, второй раз не скачиваем."""
+    src = term_sources(t)
+    if not src:
+        return [], None
+    heads = "\n\n".join(b[:3000] for b in src["blocks"])
     try:
         out = ai_call(FU_PROMPT.format(term=t["term"], heads=heads), key, FU_TOOL, max_tokens=600)
     except Exception as e:
         log(f"кандидаты '{t['term']}': {e}")
-        return []
+        return [], None
     fu, today = [], to_et(datetime.now(timezone.utc))[0].strftime("%Y-%m-%d")
     for f in out.get("followups") or []:
         subj = re.sub(r"\s+", " ", str(f.get("subject", ""))).strip()
@@ -1342,7 +1346,7 @@ def trend_followups(t, key):
             fut = bool(re.fullmatch(r"\d{4}-\d{2}-\d{2}", d_)) and d_ >= today
             fu.append({"subject": subj, "query": str(f.get("query", ""))[:90].strip() or subj, "kind": f.get("kind", "other"),
                        "future": fut, "date": d_ if fut else ""})
-    return fu[:3]
+    return fu[:3], src
 
 
 def trend_item(t):
@@ -1400,8 +1404,9 @@ def explain(store):
             continue
         t["fu_done"] = True; fu_n += 1
         big = max((x[1] for x in t.get("traffic", [])), default=0)
-        for item in trend_followups(t, key):
-            cands.append((t["slug"], None, t, item, big))
+        fu, fsrc = trend_followups(t, key)
+        for item in fu:
+            cands.append((t["slug"], fsrc, t, item, big))
     # тренды, по которым новость не писалась (лимит новостей в сутки): по ним тоже ищут «who is / what is»
     extra = 0
     for t in [store["topics"][s_] for s_ in store.get("current", []) if s_ in store["topics"]]:
@@ -1440,6 +1445,8 @@ def explain(store):
             break
         if per_topic.get(slug, 0) >= EXPLAINERS_PER_TOPIC:
             continue
+        if src is not None and not t.get("ai"):
+            t = dict(t, ai={"headline": max(t["articles"], key=lambda a: a["time"])["title"] if t["articles"] else "", "summary": ""})
         if src is None:                          # тренд без новости: статьи читаем только сейчас
             if trend_done >= TREND_EXPLAIN_PER_RUN:
                 continue
