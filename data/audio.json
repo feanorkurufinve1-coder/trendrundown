@@ -286,5 +286,53 @@
 "hash": "a707b21fa984",
 "made": "2026-11-04T15:38:21+00:00",
 "sec": 59
+},
+"t/is-lamar-jackson-out-for-the-season": {
+"file": "audio/t/is-lamar-jackson-out-for-the-season.mp3",
+"hash": "10bb9afaea32",
+"made": "2026-11-04T16:34:55+00:00",
+"sec": 92
+},
+"t/ind-vs-nz-odi": {
+"file": "audio/t/ind-vs-nz-odi.mp3",
+"hash": "46b92f705b29",
+"made": "2026-11-04T16:35:35+00:00",
+"sec": 79
+},
+"t/david-flippo": {
+"file": "audio/t/david-flippo.mp3",
+"hash": "0d13c80afe8c",
+"made": "2026-11-04T16:35:50+00:00",
+"sec": 28
+},
+"t/tornado-warning": {
+"file": "audio/t/tornado-warning.mp3",
+"hash": "bcc756cd2281",
+"made": "2026-11-04T16:36:20+00:00",
+"sec": 56
+},
+"t/mogging": {
+"file": "audio/t/mogging.mp3",
+"hash": "dfe44f6a07a9",
+"made": "2026-11-04T16:37:12+00:00",
+"sec": 104
+},
+"t/when-do-they-start-counting-votes": {
+"file": "audio/t/when-do-they-start-counting-votes.mp3",
+"hash": "e4d1f964165f",
+"made": "2026-11-04T16:37:55+00:00",
+"sec": 80
+},
+"t/how-to-register-to-vote": {
+"file": "audio/t/how-to-register-to-vote.mp3",
+"hash": "449401bf484e",
+"made": "2026-11-04T16:38:37+00:00",
+"sec": 81
+},
+"t/sassuolo-vs-fiorentina": {
+"file": "audio/t/sassuolo-vs-fiorentina.mp3",
+"hash": "7230ee2c1d2e",
+"made": "2026-11-04T16:39:10+00:00",
+"sec": 63
 }
 }
