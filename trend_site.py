@@ -2978,6 +2978,14 @@ def build_index(store):
                 + f'<p class="meta">{E(", ".join(srcs[:2]))}</p></a>')
 
     top = live or still
+    if top and not top[0].get("ai"):            # главная новость — та, по которой у нас есть свой текст
+        best = next((t for t in live + still if t.get("ai")), None)
+        if best:
+            if best in live:
+                live.remove(best); live.insert(0, best)
+            else:
+                still.remove(best); live.insert(0, best)
+            top = live
     parts = []
     if top:
         t = top[0]; srcs, head = info(t)
