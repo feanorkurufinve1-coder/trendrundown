@@ -2906,11 +2906,6 @@ def build_index(store):
                      + (f'<hr class="dash" style="margin:8px 0"><p class="snip">{E(snip(t, 420))}</p>' if snip(t) else "")
                      + f'<p class="meta">Since {E(fmt_et(t["first_seen"]))} · {E(", ".join(srcs[:3]))}</p></div></a>')
     xs_all = sorted(EXPLAINERS.values(), key=lambda x: x.get("first", x["made"]), reverse=True)
-    if xs_all:
-        parts.append('<h2 class="sec">What Americans are asking</h2><div class="asks">'
-                     + "".join(f'<a href="x/{E(x["slug"])}.html"><b>{E(x["title"])}</b><span>{E(short_desc(x["answer"], 130))}</span></a>'
-                               for x in xs_all[:6])
-                     + '<a class="more" href="explained.html">All explainers →</a></div>')
     parts.append(ad("home"))
     rest = top[1:]
     if live:
@@ -2920,9 +2915,9 @@ def build_index(store):
     if rest:
         parts.append('<h2 class="sec">Still being searched today</h2><div class="grid">'
                      + "".join(card(t, fmt_et(t["first_seen"], with_date=False), peak_label(t) + " peak") for t in rest) + "</div>")
-    xs = xs_all[6:14]
+    xs = xs_all[:8]
     if xs:
-        parts.append('<h2 class="sec">More explained</h2><div class="xlinks">'
+        parts.append('<h2 class="sec">Explained today</h2><div class="xlinks">'
                      + "".join(f'<a href="x/{E(x["slug"])}.html">{E(x["title"])} →</a>' for x in xs)
                      + '<a href="explained.html" style="font-weight:400">All explainers →</a></div>')
     if week:
@@ -2970,11 +2965,7 @@ def related_explainers(x, k=5):
         sc = 5 * len(mt & set(y.get("topics", []))) + len(mine & kw(y))
         scored.append((sc, y.get("first", y["made"]), y))
     scored.sort(key=lambda r: (r[0], r[1]), reverse=True)
-    out = [y for sc, _, y in scored if sc >= 2][:k]
-    if len(out) < k:
-        fresh = sorted((r for r in scored if r[2] not in out), key=lambda r: r[1], reverse=True)
-        out += [r[2] for r in fresh[:k - len(out)]]
-    return out
+    return [y for sc, _, y in scored if sc >= 3][:k]       # только по той же теме; чужие темы не предлагаем
 
 
 def build_explainer(x, topics):
