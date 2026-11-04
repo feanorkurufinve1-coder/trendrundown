@@ -376,5 +376,53 @@
 "hash": "98bece3d5957",
 "made": "2026-11-04T17:42:38+00:00",
 "sec": 124
+},
+"t/fenerbah-e-vs-liverpool": {
+"file": "audio/t/fenerbah-e-vs-liverpool.mp3",
+"hash": "5d9a9cdf34c8",
+"made": "2026-11-04T18:32:52+00:00",
+"sec": 79
+},
+"x/marine-corps-marathon": {
+"file": "audio/x/marine-corps-marathon.mp3",
+"hash": "6a65899d70f2",
+"made": "2026-11-04T18:34:29+00:00",
+"sec": 146
+},
+"x/dirk-kuyt": {
+"file": "audio/x/dirk-kuyt.mp3",
+"hash": "e60ddb5f127f",
+"made": "2026-11-04T18:35:34+00:00",
+"sec": 99
+},
+"x/jake-fischer": {
+"file": "audio/x/jake-fischer.mp3",
+"hash": "3fa965ed34fb",
+"made": "2026-11-04T18:36:28+00:00",
+"sec": 82
+},
+"x/abdul-el-sayed": {
+"file": "audio/x/abdul-el-sayed.mp3",
+"hash": "b8aa1edbfcd5",
+"made": "2026-11-04T18:37:52+00:00",
+"sec": 130
+},
+"x/tornado-watch-vs-warning": {
+"file": "audio/x/tornado-watch-vs-warning.mp3",
+"hash": "c1e1414fbd0c",
+"made": "2026-11-04T18:38:51+00:00",
+"sec": 90
+},
+"x/tornado-warning": {
+"file": "audio/x/tornado-warning.mp3",
+"hash": "877db61ec93c",
+"made": "2026-11-04T18:40:05+00:00",
+"sec": 111
+},
+"x/collins-english-dictionary": {
+"file": "audio/x/collins-english-dictionary.mp3",
+"hash": "847be7b50260",
+"made": "2026-11-04T18:41:21+00:00",
+"sec": 117
 }
 }
