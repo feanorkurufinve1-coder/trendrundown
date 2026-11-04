@@ -42,7 +42,7 @@ ONLY_WITH_SUMMARY = True  # публиковать только темы со с
 MAX_NEW_PER_DAY = 6        # сколько новых тем в сутки (по времени США) получают сводку и попадают на сайт — самые крупные
 EXPLAIN = True             # объяснения: что люди начнут гуглить после новости (термины, законы, места, малоизвестные люди)
 MAX_EXPLAINERS_PER_DAY = 35   # сколько новых объяснений в сутки
-TREND_EXPLAIN_PER_RUN = 3     # пояснения о трендах, по которым новость не писалась (лимит новостей) — сколько за проход
+TREND_EXPLAIN_PER_RUN = 4     # пояснения о трендах, по которым новость не писалась (лимит новостей) — сколько за проход
 EXPLAINERS_PER_TOPIC = 3      # не больше стольких объяснений из одной новости (включая пояснение о самом запросе)
 MIN_FULL_ARTICLES = 2      # писать сводку, только если хотя бы столько статей удалось прочитать целиком (не одни заголовки)
 MIN_OUTLETS = 3            # и только если о теме написали хотя бы столько разных изданий — качество, а не количество
@@ -1310,6 +1310,41 @@ TEAM_RE = re.compile(r"(?i)\b(football|basketball|baseball|soccer|hockey|univers
                      r"school|team|league|cup|bowl|award|festival|act|bill|party|company|inc|news)\b")
 
 
+FU_PROMPT = """These are the latest US news headlines about the trending Google search "{term}":
+{heads}
+
+Predict FOLLOW-UP SEARCHES: after reading this news, what will ordinary Americans google next because they don't know it
+or want to know more? An unfamiliar term, law or rule, place, organization, product, event, or a public figure most people
+don't know well. Give 0-3 items. Only things these headlines name. Never private individuals (non-public people, victims,
+private suspects, minors). Skip household names everyone already knows (e.g. Taylor Swift, LeBron James, Apple, the NFL,
+Congress, Boston). "subject" = the thing itself as people would type it (1-5 words); "query" = the exact search, e.g.
+"what is a continuing resolution", "who is sam laporta". PRIORITY: brand-new names (a new product, event name, show, law,
+rookie, newcomer) the internet has not explained yet, and named FUTURE events with a date in the headlines (set "date")."""
+
+FU_TOOL = {"name": "followups", "description": "Follow-up searches.", "input_schema": {"type": "object", "properties": {
+    "followups": AI_TOOL["input_schema"]["properties"]["followups"]}, "required": ["followups"]}}
+FU_PER_RUN = 6        # сколько чужих трендов (без нашей новости) разбирать за проход: дешёвый запрос по заголовкам
+
+
+def trend_followups(t, key):
+    """Что люди будут гуглить после этого тренда — по заголовкам всех изданий, даже если нашей новости о нём нет."""
+    heads = "\n".join(f"- {a['source']}: {a['title']}" for a in sorted(t["articles"], key=lambda a: a["time"])[-15:])
+    try:
+        out = ai_call(FU_PROMPT.format(term=t["term"], heads=heads), key, FU_TOOL, max_tokens=600)
+    except Exception as e:
+        log(f"кандидаты '{t['term']}': {e}")
+        return []
+    fu, today = [], to_et(datetime.now(timezone.utc))[0].strftime("%Y-%m-%d")
+    for f in out.get("followups") or []:
+        subj = re.sub(r"\s+", " ", str(f.get("subject", ""))).strip()
+        if 2 < len(subj) <= 60 and latin(subj) and not bad_text(subj, user_blocks()):
+            d_ = str(f.get("date", "") or "")[:10]
+            fut = bool(re.fullmatch(r"\d{4}-\d{2}-\d{2}", d_)) and d_ >= today
+            fu.append({"subject": subj, "query": str(f.get("query", ""))[:90].strip() or subj, "kind": f.get("kind", "other"),
+                       "future": fut, "date": d_ if fut else ""})
+    return fu[:3]
+
+
 def trend_item(t):
     """Тренд без новости: «who is …» или «what is …» — выбираем то, что люди реально вводят в Google."""
     term = t["term"].strip()
@@ -1356,6 +1391,17 @@ def explain(store):
         for item in [term_item(t)] + t.get("followups", []):
             if item and item.get("subject"):
                 cands.append((slug, src, t, item, big))
+    # все тренды без нашей новости: по заголовкам всех изданий находим, что люди будут гуглить дальше
+    fu_n = 0
+    for t in [store["topics"][s_] for s_ in store.get("current", []) if s_ in store["topics"]]:
+        if fu_n >= FU_PER_RUN:
+            break
+        if t.get("ai") or t.get("blocked") or t["slug"] in RUN_SOURCES or t.get("fu_done") or len(t["articles"]) < 3:
+            continue
+        t["fu_done"] = True; fu_n += 1
+        big = max((x[1] for x in t.get("traffic", [])), default=0)
+        for item in trend_followups(t, key):
+            cands.append((t["slug"], None, t, item, big))
     # тренды, по которым новость не писалась (лимит новостей в сутки): по ним тоже ищут «who is / what is»
     extra = 0
     for t in [store["topics"][s_] for s_ in store.get("current", []) if s_ in store["topics"]]:
@@ -1401,7 +1447,7 @@ def explain(store):
             if not src:
                 continue
             trend_done += 1
-            t = dict(t, ai={"headline": t["articles"][0]["title"] if t["articles"] else "", "summary": ""})
+            t = dict(t, ai={"headline": max(t["articles"], key=lambda a: a["time"])["title"] if t["articles"] else "", "summary": ""})
         if True:
             xs = slugify(item["subject"])
             old = ex.get(xs)
