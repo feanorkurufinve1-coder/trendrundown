@@ -1,0 +1,24 @@
+name: Voice test
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "slug пояснения"
+        default: "telerally"
+permissions:
+  contents: read
+jobs:
+  voice:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: sudo apt-get update -q && sudo apt-get install -y -q espeak-ng ffmpeg
+      - run: pip install -q kokoro soundfile "piper-tts>=1.2"
+      - run: python tools/voice_sample.py "${{ github.event.inputs.slug }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: voice-samples
+          path: voice_out/
