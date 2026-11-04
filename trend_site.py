@@ -2483,6 +2483,29 @@ def shape(f):
 LISTEN = True    # кнопка «Послушать статью»: читает текст голосом, встроенным в телефон/компьютер (бесплатно)
 
 
+AUDIO_INDEX = os.path.join(HERE, "data", "audio.json")       # готовые озвучки (делает tools/narrate.py)
+NARRATE_QUEUE = os.path.join(HERE, "data", "narrate_queue.json")
+AUDIO = {}        # ключ "x/slug" или "t/slug" → {"file", "hash", ...}
+NARRATE = {}      # тексты для озвучки, собираются при сборке страниц
+
+
+def narr_hash(text):
+    import hashlib
+    return hashlib.sha1(text.encode()).hexdigest()[:12]
+
+
+def audio_player(key, text, depth=1):
+    """Готовая озвучка (голос Michael), если есть и текст не менялся; иначе — голос браузера."""
+    text = re.sub(r"\s+", " ", text).strip()
+    if text:
+        NARRATE[key] = text
+    a = AUDIO.get(key)
+    if a and a.get("hash") == narr_hash(text) and os.path.exists(os.path.join(OUT, a["file"])):
+        return (f'<div class="ls"><audio controls preload="none" src="{"../" * depth}{E(a["file"])}" style="width:100%;max-width:520px">'
+                f'</audio><p class="meta" style="margin:2px 0 0">Listen to this article</p></div>')
+    return listen_html()
+
+
 def listen_html():
     if not LISTEN:
         return ""
@@ -2808,7 +2831,7 @@ def build_topic(t, related, same=()):
 <p class="deck">Why it is trending in America today</p>
 {('<p class="deck2">' + E(ai.get("headline", "")) + '</p>') if ai and ai.get("headline") else ''}
 <hr class="dash"><p class="byline">The Trend Rundown</p>
-{listen_html() if ai else ""}
+{audio_player("t/" + t["slug"], ". ".join(ai.get(k_, "") for k_ in ("headline", "why", "behind", "summary", "next") if ai.get(k_))) if ai else ""}
 {hero}
 <div class="cols">{ai_html}</div>
 {reactions_html("t/" + t["slug"]) if ai else ""}
@@ -3003,7 +3026,7 @@ def build_explainer(x, topics):
     body = f"""<article>
 <p class="meta"><a href="../index.html">{SITE_NAME}</a> › <a class="cat" href="../explained.html">Explained</a> · updated {E(fmt_et(x["made"]))}</p>
 <h1>{E(x["title"])}</h1>
-{listen_html()}
+{audio_player("x/" + x["slug"], ". ".join([x["title"], x["answer"], x.get("in_the_news", ""), x["body"]]))}
 <div class="box answer"><p style="margin:0">{E(x["answer"])}</p></div>
 <h2>Why it's in the news</h2><p>{E(x["in_the_news"])}</p>
 {('<ul class="list">' + newslist + '</ul>') if newslist else ''}
@@ -3138,6 +3161,11 @@ def build_site(store):
     ex = {s: x for s, x in store.get("explainers", {}).items()
           if not bad_text(x["title"] + " " + x["subject"], ub)
           and (any(tt in topics for tt in x.get("topics", [])) or not any(tt in allt for tt in x.get("topics", [])))}
+    AUDIO.clear(); NARRATE.clear()
+    try:
+        AUDIO.update(json.load(open(AUDIO_INDEX)))
+    except Exception:
+        pass
     ex.update(manual_pages(orig))         # ручные страницы важнее автоматических с тем же адресом
     EXPLAINERS.clear(); EXPLAINERS.update(ex)
     global HAS_EXPLAINED, HAS_CAST
@@ -3211,6 +3239,26 @@ def build_site(store):
     if ADSENSE_CLIENT:
         w("ads.txt", f"google.com, {ADSENSE_CLIENT.replace('ca-', '')}, DIRECT, f08c47fec0942fa0\n")
     ai_block = "".join(f"User-agent: {b_}\nDisallow: /\n\n" for b_ in AI_BOTS)
+    # очередь на озвучку: пояснения (все) и новости за 3 дня, у которых озвучки нет или текст изменился
+    q = []
+    for key, text in NARRATE.items():
+        h = narr_hash(text)
+        if (AUDIO.get(key) or {}).get("hash") == h:
+            continue
+        if key.startswith("t/"):
+            tt = topics.get(key[2:])
+            if not tt or hours_since(tt["first_seen"]) > 72:
+                continue
+            when = tt["first_seen"]
+        else:
+            xx = ex.get(key[2:]) or {}
+            when = xx.get("first", xx.get("made", ""))
+        q.append({"key": key, "hash": h, "text": text, "when": when})
+    q.sort(key=lambda r: (("/" + r["key"]) in GSC_PATHS, r["when"]), reverse=True)   # сначала страницы, которые Google уже показывает
+    try:
+        json.dump(q[:60], open(NARRATE_QUEUE, "w"), ensure_ascii=False)
+    except Exception as e:
+        log(f"очередь озвучки: {e}")
     w("robots.txt", ai_block + f"User-agent: *\nAllow: /\nDisallow: /api/\nSitemap: {SITE_URL}/sitemap.xml\nSitemap: {SITE_URL}/sitemap-news.xml\n")
     items = sorted(topics.values(), key=lambda t: t["first_seen"], reverse=True)[:50]
     w("feed.xml", '<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel>'
