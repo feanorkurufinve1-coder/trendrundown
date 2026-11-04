@@ -46,5 +46,53 @@
 "hash": "3dd59d65e2b1",
 "made": "2026-11-04T07:10:09+00:00",
 "sec": 102
+},
+"x/swiss-indoors-basel": {
+"file": "audio/x/swiss-indoors-basel.mp3",
+"hash": "dd765cf760c5",
+"made": "2026-11-04T08:39:51+00:00",
+"sec": 59
+},
+"x/nate-eaton": {
+"file": "audio/x/nate-eaton.mp3",
+"hash": "a697f43cd102",
+"made": "2026-11-04T08:40:24+00:00",
+"sec": 52
+},
+"x/jeffery-simmons": {
+"file": "audio/x/jeffery-simmons.mp3",
+"hash": "c06da9cd4e2d",
+"made": "2026-11-04T08:41:25+00:00",
+"sec": 94
+},
+"x/joan-smalls": {
+"file": "audio/x/joan-smalls.mp3",
+"hash": "1cccaa8e6a84",
+"made": "2026-11-04T08:42:28+00:00",
+"sec": 94
+},
+"x/tri-series-cricket": {
+"file": "audio/x/tri-series-cricket.mp3",
+"hash": "3ae9f8f66124",
+"made": "2026-11-04T08:43:42+00:00",
+"sec": 110
+},
+"x/nba-draft": {
+"file": "audio/x/nba-draft.mp3",
+"hash": "938d143f16c7",
+"made": "2026-11-04T08:44:43+00:00",
+"sec": 91
+},
+"x/nba-flopping-rule": {
+"file": "audio/x/nba-flopping-rule.mp3",
+"hash": "cee9e7a93aaa",
+"made": "2026-11-04T08:45:40+00:00",
+"sec": 87
+},
+"x/senior-secured-debt": {
+"file": "audio/x/senior-secured-debt.mp3",
+"hash": "b7be5febeae1",
+"made": "2026-11-04T08:47:41+00:00",
+"sec": 179
 }
 }
