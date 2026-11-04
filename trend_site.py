@@ -1015,8 +1015,13 @@ def summarize(store):
         ai = t.get("ai")
         vague = ai and re.search(r"draws? interest|\btrend|search|ahead of|buzz|attention", ai.get("headline", ""), re.I)
         old_rules = ai and ai.get("rules") != RULES_V and ai.get("rw_tried") != RULES_V and rewrites < REWRITE_PER_RUN
-        if ai and not vague and not old_rules and len(t["articles"]) - ai.get("n_articles", 0) < 3:
-            continue
+        newest = max((a["time"] for a in t["articles"]), default="")
+        stale = ai and hours_since(ai.get("made", t["first_seen"])) > 36 and newest > ai.get("made", "") \
+            and ai.get("stale_tried") != today
+        if stale:
+            ai["stale_tried"] = today        # одна попытка обновить в день
+        if ai and not vague and not old_rules and not stale and len(t["articles"]) - ai.get("n_articles", 0) < 3:
+            continue                     # (stale: тема снова в трендах, а текст старый — «Реал» про прошлое Класико)
         if old_rules:
             rewrites += 1
             ai["rw_tried"] = RULES_V        # одна попытка переписать; не вышло — остаётся прежний текст
@@ -2880,10 +2885,13 @@ def front_lists(store):
     live.sort(key=lambda t: (t["traffic"][-1][1] if t["traffic"] else 0, t["first_seen"]), reverse=True)
     def score(t):
         return peak(t) * 0.5 ** (hours_since(t.get("last_seen", t["first_seen"])) / HALF_LIFE_H)
-    still = [t for s, t in topics.items() if s not in cur and hours_since(t.get("last_seen", t["first_seen"])) <= HOLD_HOURS]
+    fresh = lambda t: not t.get("ai") or hours_since(t["ai"].get("made", t["first_seen"])) <= 72   # старый текст — не на главную
+    live = [t for t in live if fresh(t)]
+    still = [t for s, t in topics.items() if s not in cur and hours_since(t.get("last_seen", t["first_seen"])) <= HOLD_HOURS and fresh(t)]
     still.sort(key=score, reverse=True)
     shown = {t["slug"] for t in live + still}
-    week = [t for t in topics.values() if t["slug"] not in shown and hours_since(t.get("last_seen", t["first_seen"])) <= 24 * 7]
+    week = [t for t in topics.values() if t["slug"] not in shown and hours_since(t.get("last_seen", t["first_seen"])) <= 24 * 7
+            and fresh(t) and hours_since(t["first_seen"]) <= 24 * 7]
     week.sort(key=peak, reverse=True)
     return live, still[:12], week[:8]
 
