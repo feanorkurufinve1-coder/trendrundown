@@ -1637,6 +1637,27 @@ def gsc_daily(store, tok, url):
         log(f"Search Console за {days[-1]}: кликов {t[0]}, показов {t[1]}")
 
 
+def watch_list(store):
+    """10 самых кликабельных страниц за последние 3 дня (по Search Console) — их проверяет человек/Claude (data/watch.json)."""
+    d = store.get("gsc_days", {})
+    days = sorted(k for k in d if d[k].get("pages"))[-3:]
+    tot = {}
+    for day in days:
+        for path, clicks, impr, pos in d[day]["pages"]:
+            r = tot.setdefault(path.replace(".html", "").rstrip("/") or "/", {"clicks": 0, "impr": 0, "pos": [], "by_day": {}})
+            r["clicks"] += clicks; r["impr"] += impr; r["pos"].append(pos); r["by_day"][day] = clicks
+    out = []
+    for path, r in sorted(tot.items(), key=lambda kv: (-kv[1]["clicks"], -kv[1]["impr"]))[:10]:
+        if path == "/":
+            continue
+        out.append({"page": path, "clicks_3d": r["clicks"], "impr_3d": r["impr"], "pos": round(sum(r["pos"]) / len(r["pos"]), 1),
+                    "by_day": r["by_day"], "manual": os.path.exists(os.path.join(MANUAL_DIR, path.rsplit("/", 1)[-1] + ".json"))})
+    try:
+        json.dump({"made": now_iso(), "days": days, "pages": out}, open(os.path.join(HERE, "data", "watch.json"), "w"), indent=1)
+    except Exception as e:
+        log(f"watch.json: {e}")
+
+
 def gsc_pages(store):
     """Страница → её главный запрос (по показам), сумма показов, позиция."""
     out = {}
@@ -2647,7 +2668,10 @@ def manual_pages(store):
             continue
         x.setdefault("slug", fn[:-5]); x.setdefault("kind", "other"); x.setdefault("faq", []); x.setdefault("links", [])
         x.setdefault("topics", []); x.setdefault("in_the_news", ""); x.setdefault("query", x["title"])
-        x.setdefault("made", now_iso()); x.setdefault("first", x["made"]); x["seen"] = x.get("updated") or x["made"]; x["manual"] = True
+        x.setdefault("made", now_iso()); x.setdefault("first", x["made"])
+        if x.get("updated"):
+            x["made"] = x["updated"]                 # дата правки — «updated …» на странице и dateModified для Google
+        x["seen"] = x["made"]; x["manual"] = True
         x["links"] = [tuple(l) for l in x["links"]]
         ver = x["slug"] + "@" + (x.get("updated") or x["made"])
         if ver not in pinged:
@@ -4118,6 +4142,10 @@ def run_once():
         gsc_fetch(store)
     except Exception as e:
         log(f"Search Console: ошибка {e}")
+    try:
+        watch_list(store)
+    except Exception as e:
+        log(f"watch: {e}")
     try:
         ga_fetch(store)
     except Exception as e:
