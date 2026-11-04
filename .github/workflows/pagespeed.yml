@@ -12,12 +12,17 @@ jobs:
   psi:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "22"
       - run: |
           mkdir out && cd out
           for u in ${{ github.event.inputs.urls }}; do
             for s in mobile desktop; do
               n=$(echo "$u" | sed 's#https://##; s#[/.]#_#g')_$s
-              curl -s -m 120 "https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=$u&strategy=$s&category=performance&category=accessibility&category=best-practices&category=seo" -o "$n.json"
+              if [ $s = desktop ]; then p="--preset=desktop"; else p=""; fi
+              npx --yes lighthouse@12 "$u" $p --quiet --chrome-flags="--headless=new --no-sandbox" --output=json --output-path="$n.lh.json" || true
+              python3 -c "import json,sys; d=json.load(open(sys.argv[1])); json.dump({'lighthouseResult': d}, open(sys.argv[2],'w'))" "$n.lh.json" "$n.json" || echo '{}' > "$n.json"
               python3 - "$n.json" > "$n.txt" <<'PY'
           import json, sys
           d = json.load(open(sys.argv[1]))
