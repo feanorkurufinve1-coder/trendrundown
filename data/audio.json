@@ -19,9 +19,9 @@
 },
 "x/telerally": {
 "file": "audio/x/telerally.mp3",
-"hash": "dc3137ff82cb",
-"made": "2026-11-04T07:06:09+00:00",
-"sec": 119
+"hash": "e9bca82d59d5",
+"made": "2026-11-04T17:36:01+00:00",
+"sec": 115
 },
 "x/japan-open-tennis": {
 "file": "audio/x/japan-open-tennis.mp3",
@@ -334,5 +334,47 @@
 "hash": "7230ee2c1d2e",
 "made": "2026-11-04T16:39:10+00:00",
 "sec": 63
+},
+"t/hillary-clinton": {
+"file": "audio/t/hillary-clinton.mp3",
+"hash": "d490f78a9ae2",
+"made": "2026-11-04T17:34:17+00:00",
+"sec": 84
+},
+"t/michael-wilson": {
+"file": "audio/t/michael-wilson.mp3",
+"hash": "9f62e2dc2ce0",
+"made": "2026-11-04T17:34:45+00:00",
+"sec": 45
+},
+"x/alexander-volkanovski": {
+"file": "audio/x/alexander-volkanovski.mp3",
+"hash": "58254fe859af",
+"made": "2026-11-04T17:37:00+00:00",
+"sec": 89
+},
+"x/exhibition-game": {
+"file": "audio/x/exhibition-game.mp3",
+"hash": "f23350e341a8",
+"made": "2026-11-04T17:38:37+00:00",
+"sec": 149
+},
+"x/eric-dailey-jr": {
+"file": "audio/x/eric-dailey-jr.mp3",
+"hash": "a22b878852d0",
+"made": "2026-11-04T17:39:34+00:00",
+"sec": 89
+},
+"x/pro-and-tell-apple-event": {
+"file": "audio/x/pro-and-tell-apple-event.mp3",
+"hash": "6179a9e3105e",
+"made": "2026-11-04T17:41:21+00:00",
+"sec": 174
+},
+"x/katarzyna-kawa": {
+"file": "audio/x/katarzyna-kawa.mp3",
+"hash": "98bece3d5957",
+"made": "2026-11-04T17:42:38+00:00",
+"sec": 124
 }
 }
