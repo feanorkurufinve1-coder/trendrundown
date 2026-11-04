@@ -1262,15 +1262,17 @@ def wiki_is_new(subject):
     """Нет статьи в Википедии или она создана меньше 60 дней назад — по этой теме хороших ответов в интернете ещё мало."""
     if subject in _WIKI_NEW:
         return _WIKI_NEW[subject]
-    q = urllib.parse.urlencode({"action": "query", "generator": "search", "gsrsearch": subject, "gsrlimit": 3,
-                                "prop": "revisions", "rvprop": "timestamp", "rvdir": "newer", "rvlimit": 1,
-                                "format": "json", "formatversion": 2})
-    pages = json.loads(get("https://en.wikipedia.org/w/api.php?" + q)).get("query", {}).get("pages", [])
+    # поиск статьи, потом дата её первой правки (rvlimit работает только для одной страницы — отдельный запрос)
+    q = urllib.parse.urlencode({"action": "query", "list": "search", "srsearch": subject, "srlimit": 3, "format": "json"})
+    hits = json.loads(get("https://en.wikipedia.org/w/api.php?" + q)).get("query", {}).get("search", [])
     new = True
-    for pg in pages:
-        if _match(subject, pg.get("title", "")):
+    for h in hits:
+        if _match(subject, h.get("title", "")):
+            q2 = urllib.parse.urlencode({"action": "query", "titles": h["title"], "prop": "revisions", "rvprop": "timestamp",
+                                         "rvdir": "newer", "rvlimit": 1, "format": "json", "formatversion": 2})
+            pg = (json.loads(get("https://en.wikipedia.org/w/api.php?" + q2)).get("query", {}).get("pages") or [{}])[0]
             first = ((pg.get("revisions") or [{}])[0].get("timestamp") or "")
-            new = bool(first) and hours_since(first.replace("Z", "+00:00")) < 24 * 60
+            new = not first or hours_since(first.replace("Z", "+00:00")) < 24 * 60
             break
     _WIKI_NEW[subject] = new
     return new
