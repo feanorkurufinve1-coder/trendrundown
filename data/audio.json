@@ -514,5 +514,53 @@
 "hash": "4c4349977ddb",
 "made": "2026-11-04T20:40:25+00:00",
 "sec": 145
+},
+"x/save-our-bacon-act": {
+"file": "audio/x/save-our-bacon-act.mp3",
+"hash": "db4eea22e457",
+"made": "2026-11-04T21:31:49+00:00",
+"sec": 139
+},
+"x/nick-saban": {
+"file": "audio/x/nick-saban.mp3",
+"hash": "57300e460dc1",
+"made": "2026-11-04T21:33:02+00:00",
+"sec": 116
+},
+"x/mlb-lockout": {
+"file": "audio/x/mlb-lockout.mp3",
+"hash": "42de472cb1a6",
+"made": "2026-11-04T21:34:15+00:00",
+"sec": 110
+},
+"x/nba-cup": {
+"file": "audio/x/nba-cup.mp3",
+"hash": "0829967b0f60",
+"made": "2026-11-04T21:35:41+00:00",
+"sec": 131
+},
+"x/payton-pritchard": {
+"file": "audio/x/payton-pritchard.mp3",
+"hash": "7474c2e23fcb",
+"made": "2026-11-04T21:36:43+00:00",
+"sec": 94
+},
+"x/angie-nixon": {
+"file": "audio/x/angie-nixon.mp3",
+"hash": "fac39c47dc0d",
+"made": "2026-11-04T21:37:29+00:00",
+"sec": 71
+},
+"x/itaewon-disaster": {
+"file": "audio/x/itaewon-disaster.mp3",
+"hash": "d6676a8bac69",
+"made": "2026-11-04T21:39:02+00:00",
+"sec": 142
+},
+"x/ken-calvert": {
+"file": "audio/x/ken-calvert.mp3",
+"hash": "170b24fcdd8a",
+"made": "2026-11-04T21:40:31+00:00",
+"sec": 134
 }
 }
