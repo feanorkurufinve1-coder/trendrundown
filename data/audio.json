@@ -142,5 +142,53 @@
 "hash": "9799aa74eb5c",
 "made": "2026-11-04T09:50:18+00:00",
 "sec": 93
+},
+"x/generic-congressional-ballot": {
+"file": "audio/x/generic-congressional-ballot.mp3",
+"hash": "915293562d6c",
+"made": "2026-11-04T12:27:38+00:00",
+"sec": 104
+},
+"x/optical-networking": {
+"file": "audio/x/optical-networking.mp3",
+"hash": "4861a092a37f",
+"made": "2026-11-04T12:28:21+00:00",
+"sec": 124
+},
+"x/hnry-stadium": {
+"file": "audio/x/hnry-stadium.mp3",
+"hash": "d34a4b50488a",
+"made": "2026-11-04T12:28:56+00:00",
+"sec": 99
+},
+"x/cyber-monday": {
+"file": "audio/x/cyber-monday.mp3",
+"hash": "baf0f609cd51",
+"made": "2026-11-04T12:29:39+00:00",
+"sec": 118
+},
+"x/the-one-about-matthew-perry": {
+"file": "audio/x/the-one-about-matthew-perry.mp3",
+"hash": "8cb45e7b40ba",
+"made": "2026-11-04T12:30:15+00:00",
+"sec": 99
+},
+"x/aj-dybantsa": {
+"file": "audio/x/aj-dybantsa.mp3",
+"hash": "c0517144b101",
+"made": "2026-11-04T12:30:50+00:00",
+"sec": 94
+},
+"x/france-football": {
+"file": "audio/x/france-football.mp3",
+"hash": "4acea865ac32",
+"made": "2026-11-04T12:31:28+00:00",
+"sec": 106
+},
+"x/ligue-1": {
+"file": "audio/x/ligue-1.mp3",
+"hash": "932e4ff6a75d",
+"made": "2026-11-04T12:32:13+00:00",
+"sec": 122
 }
 }
