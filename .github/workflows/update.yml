@@ -54,3 +54,12 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: fe4abc11ca3641573b7c1f8010dc0290
         run: npx --yes wrangler@4 deploy
+
+      - name: Timer key to Cloudflare (once)
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: fe4abc11ca3641573b7c1f8010dc0290
+          TIMER_TOKEN: ${{ secrets.TIMER_TOKEN }}
+        run: |
+          # ключ будильника из секретов GitHub передаём в Cloudflare; потом секрет TIMER_TOKEN на GitHub можно удалить
+          if [ -n "$TIMER_TOKEN" ]; then printf '%s' "$TIMER_TOKEN" | npx --yes wrangler@4 secret put GH_TOKEN || true; fi
