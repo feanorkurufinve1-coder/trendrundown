@@ -424,5 +424,53 @@
 "hash": "847be7b50260",
 "made": "2026-11-04T18:41:21+00:00",
 "sec": 117
+},
+"x/mogging": {
+"file": "audio/x/mogging.mp3",
+"hash": "57f4d4b51ac1",
+"made": "2026-11-04T19:41:52+00:00",
+"sec": 95
+},
+"x/mississippi-senate-election": {
+"file": "audio/x/mississippi-senate-election.mp3",
+"hash": "887b61741453",
+"made": "2026-11-04T19:43:07+00:00",
+"sec": 114
+},
+"x/scott-colom": {
+"file": "audio/x/scott-colom.mp3",
+"hash": "6aa0b2af0ceb",
+"made": "2026-11-04T19:44:30+00:00",
+"sec": 129
+},
+"x/curing-period": {
+"file": "audio/x/curing-period.mp3",
+"hash": "0615131885be",
+"made": "2026-11-04T19:45:50+00:00",
+"sec": 121
+},
+"x/same-day-voter-registration": {
+"file": "audio/x/same-day-voter-registration.mp3",
+"hash": "b82412c8e9e6",
+"made": "2026-11-04T19:47:18+00:00",
+"sec": 134
+},
+"x/serie-a-relegation-zone": {
+"file": "audio/x/serie-a-relegation-zone.mp3",
+"hash": "b163793aea4f",
+"made": "2026-11-04T19:48:26+00:00",
+"sec": 106
+},
+"x/alberto-aquilani": {
+"file": "audio/x/alberto-aquilani.mp3",
+"hash": "1603a6084ef9",
+"made": "2026-11-04T19:49:16+00:00",
+"sec": 77
+},
+"x/hillary-clinton": {
+"file": "audio/x/hillary-clinton.mp3",
+"hash": "fa6325017f90",
+"made": "2026-11-04T19:50:30+00:00",
+"sec": 115
 }
 }
