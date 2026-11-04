@@ -1240,7 +1240,7 @@ def term_item(t):
                                        r"hints|injury|trade|rumors|rankings?|fantasy|picks|props|lineups?|odds|prediction|live|highlights|week \d+|\d{4}", term) or len(term.split()) > 4:
         return None                       # матчи, счёт, «сегодня» — объяснять нечего, это новость
     mp = t.get("main_person") or ""
-    person = bool(mp) and _match(term, mp)
+    person = bool(mp) and _match(term, mp) and len(mp.split()) >= 2      # «Boston» — не человек
     if not person and len(term.split()) == 1:
         return None                       # одно общее слово («Coach», «Cancer») — пояснять нечего
     if not person and re.fullmatch(r"[A-Z][a-z'\-]+(?: [A-Z][a-z'\-]+){1,2}(?: (?:Jr|Sr|II|III)\.?)?", term) and not TEAM_RE.search(term):
