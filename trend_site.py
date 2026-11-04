@@ -2935,7 +2935,7 @@ def front_lists(store):
     topics = store["topics"]
     cur = set(store.get("current", []))
     live = [topics[s] for s in cur if s in topics]
-    live.sort(key=lambda t: (t["traffic"][-1][1] if t["traffic"] else 0, t["first_seen"]), reverse=True)
+    live.sort(key=lambda t: (bool(t.get("ai")), t["traffic"][-1][1] if t["traffic"] else 0, t["first_seen"]), reverse=True)  # с нашим текстом — вперёд
     def score(t):
         return peak(t) * 0.5 ** (hours_since(t.get("last_seen", t["first_seen"])) / HALF_LIFE_H)
     fresh = lambda t: not t.get("ai") or hours_since(t["ai"].get("made", t["first_seen"])) <= 72   # старый текст — не на главную
@@ -3315,7 +3315,8 @@ def build_site(store):
             xx = ex.get(key[2:]) or {}
             when = xx.get("first", xx.get("made", ""))
         q.append({"key": key, "hash": h, "text": text, "when": when})
-    q.sort(key=lambda r: (("/" + r["key"]) in GSC_PATHS, r["when"]), reverse=True)   # сначала страницы, которые Google уже показывает
+    # сначала свежие новости (их видно на главной), потом страницы, которые Google уже показывает, потом новые пояснения
+    q.sort(key=lambda r: (r["key"].startswith("t/"), ("/" + r["key"]) in GSC_PATHS, r["when"]), reverse=True)
     try:
         json.dump(q[:60], open(NARRATE_QUEUE, "w"), ensure_ascii=False)
     except Exception as e:
