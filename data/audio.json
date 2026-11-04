@@ -610,5 +610,53 @@
 "hash": "504f350a7768",
 "made": "2026-11-04T22:37:01+00:00",
 "sec": 93
+},
+"x/soleus-strain": {
+"file": "audio/x/soleus-strain.mp3",
+"hash": "d646fdc41f21",
+"made": "2026-11-04T23:26:54+00:00",
+"sec": 101
+},
+"x/collin-sexton": {
+"file": "audio/x/collin-sexton.mp3",
+"hash": "45ea56c96abd",
+"made": "2026-11-04T23:28:07+00:00",
+"sec": 114
+},
+"x/vitality-stadium": {
+"file": "audio/x/vitality-stadium.mp3",
+"hash": "4fe9eec51d21",
+"made": "2026-11-04T23:29:05+00:00",
+"sec": 88
+},
+"x/serbia-student-movement": {
+"file": "audio/x/serbia-student-movement.mp3",
+"hash": "5119b895f0d2",
+"made": "2026-11-04T23:30:27+00:00",
+"sec": 125
+},
+"x/nyu-langone-health": {
+"file": "audio/x/nyu-langone-health.mp3",
+"hash": "c4ecea3defa1",
+"made": "2026-11-04T23:31:56+00:00",
+"sec": 134
+},
+"x/golden-state-valkyries": {
+"file": "audio/x/golden-state-valkyries.mp3",
+"hash": "613d93cb7c89",
+"made": "2026-11-04T23:33:13+00:00",
+"sec": 116
+},
+"x/world-series": {
+"file": "audio/x/world-series.mp3",
+"hash": "0326d3798af1",
+"made": "2026-11-04T23:34:33+00:00",
+"sec": 120
+},
+"x/stadio-olimpico": {
+"file": "audio/x/stadio-olimpico.mp3",
+"hash": "735287e3cf0e",
+"made": "2026-11-04T23:35:46+00:00",
+"sec": 109
 }
 }
