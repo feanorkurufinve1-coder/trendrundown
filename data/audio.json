@@ -238,5 +238,53 @@
 "hash": "fa0f96eb0bb1",
 "made": "2026-11-04T14:01:06+00:00",
 "sec": 104
+},
+"x/injured-reserve": {
+"file": "audio/x/injured-reserve.mp3",
+"hash": "35ae58bbe314",
+"made": "2026-11-04T15:32:38+00:00",
+"sec": 105
+},
+"x/champions-league-league-phase": {
+"file": "audio/x/champions-league-league-phase.mp3",
+"hash": "b0b29b568483",
+"made": "2026-11-04T15:33:33+00:00",
+"sec": 103
+},
+"x/manuel-pellegrini": {
+"file": "audio/x/manuel-pellegrini.mp3",
+"hash": "74770f148069",
+"made": "2026-11-04T15:34:23+00:00",
+"sec": 93
+},
+"x/lask": {
+"file": "audio/x/lask.mp3",
+"hash": "ed2119be0f3b",
+"made": "2026-11-04T15:35:33+00:00",
+"sec": 134
+},
+"x/champions-league": {
+"file": "audio/x/champions-league.mp3",
+"hash": "5874d3de49c2",
+"made": "2026-11-04T15:36:22+00:00",
+"sec": 88
+},
+"x/cesc-fabregas": {
+"file": "audio/x/cesc-fabregas.mp3",
+"hash": "51d5ee7ce219",
+"made": "2026-11-04T15:37:01+00:00",
+"sec": 70
+},
+"x/premier-league": {
+"file": "audio/x/premier-league.mp3",
+"hash": "e1597fdad0a6",
+"made": "2026-11-04T15:37:49+00:00",
+"sec": 89
+},
+"x/james-reece": {
+"file": "audio/x/james-reece.mp3",
+"hash": "a707b21fa984",
+"made": "2026-11-04T15:38:21+00:00",
+"sec": 59
 }
 }
