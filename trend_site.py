@@ -1625,7 +1625,8 @@ def explain(store):
             fresh = True
         if fresh:
             score += 2                          # в Википедии статьи нет / она свежая — хороших ответов ещё мало
-        elif item.get("kind") in ("person", "organization", "place", "event") and not item.get("future"):
+        elif (item.get("kind") in ("person", "organization", "place") or (item.get("kind") == "event" and not item.get("breaking"))) \
+                and not item.get("future"):          # срочное событие само по себе новое, даже если человек в нём известен
             continue                            # известный человек/клуб/арена/давнее событие — первыми нам не быть
         if re.search(r"(?i)\bvs\.?\b|\brankings?\b|\bweek \d+\b|\bpicks?\b|\bodds\b|\bprojection model\b|\bpredictions?\b",
                      item["subject"] + " " + item.get("query", "")):
