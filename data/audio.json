@@ -880,5 +880,47 @@
 "hash": "e15fd39c57e0",
 "made": "2026-11-05T18:30:02+00:00",
 "sec": 87
+},
+"x/liv-golf-wind-down": {
+"file": "audio/x/liv-golf-wind-down.mp3",
+"hash": "1eb135a10e73",
+"made": "2026-11-05T19:37:01+00:00",
+"sec": 126
+},
+"x/oleshky-ceasefire": {
+"file": "audio/x/oleshky-ceasefire.mp3",
+"hash": "7eb06c47c98f",
+"made": "2026-11-05T19:37:39+00:00",
+"sec": 103
+},
+"x/designated-for-assignment": {
+"file": "audio/x/designated-for-assignment.mp3",
+"hash": "bd1c06bca23f",
+"made": "2026-11-05T19:38:18+00:00",
+"sec": 98
+},
+"x/how-mlb-mvp-is-voted": {
+"file": "audio/x/how-mlb-mvp-is-voted.mp3",
+"hash": "7d94c36204ca",
+"made": "2026-11-05T19:38:53+00:00",
+"sec": 96
+},
+"x/non-tender": {
+"file": "audio/x/non-tender.mp3",
+"hash": "9755d7a9936f",
+"made": "2026-11-05T19:39:32+00:00",
+"sec": 105
+},
+"x/qualifying-offer": {
+"file": "audio/x/qualifying-offer.mp3",
+"hash": "6524cc49068b",
+"made": "2026-11-05T19:40:27+00:00",
+"sec": 147
+},
+"x/rule-5-draft": {
+"file": "audio/x/rule-5-draft.mp3",
+"hash": "93ebbb98ac6b",
+"made": "2026-11-05T19:41:14+00:00",
+"sec": 121
 }
 }
