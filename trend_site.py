@@ -1624,7 +1624,7 @@ LT_PER_DAY = 6          # и не больше стольких в сутки
 LT_PREFIXES = ["what is", "what does", "what happened to", "why did", "why is", "is", "where is", "how did", "when is"]
 LT_ALPHA = "abcdefghijklmnopqrstuvwxyz"
 LT_Q = re.compile(r"(?i)^(what|why|how|is|are|does|did|where|when|who|can|will)\b|\b(meaning|explained|mean)$")
-LT_BAD = re.compile(r"(?i)\b(vs|score|odds|stats|tickets|channel|stream|live|lyrics|near me|login|price|stock|weather|"
+LT_BAD = re.compile(r"(?i)\b(vs|versus|v|result|results|win|wins|won|winner|play|playing|game|match|highlights|lineup|squad|score|odds|stats|tickets|channel|stream|live|lyrics|near me|login|price|stock|weather|"
                     r"tonight|today|time is it|net worth|age|height|wife|husband|girlfriend|boyfriend|dating|nude|died|dead)\b")
 BIG_SITES = ("wikipedia.org", "britannica.com", "merriam-webster.com", "dictionary.com", "espn.com", "mlb.com", "nfl.com",
              "nba.com", "nytimes.com", "cnn.com", "usatoday.com", "foxnews.com", "nbcnews.com", "people.com", "forbes.com",
@@ -1660,9 +1660,15 @@ def supply(q):
     except Exception as e:
         log(f"поиск для проверки конкуренции недоступен: {e}")
         return None
-    key = [w for w in words(q) if w not in STOPW and w not in ("happened", "mean", "meaning", "explained")]
-    exact = [(t, u) for t, u in res if key and all(any(w[:5] == tw[:5] for tw in words(t)) for w in key)]
-    big = [u for _, u in exact if any(b in urllib.parse.urlparse(u).netloc for b in BIG_SITES)]
+    if not res:
+        return None                                   # пустая выдача — скорее сбой поиска, чем «ответа нет»
+    key = [w for w in words(q) if w not in STOPW and w not in ("happened", "mean", "meaning", "explained", "now", "really")]
+    def covers(t):
+        tw = words(t)
+        n = sum(1 for w in key if any(w[:5] == x[:5] for x in tw))
+        return key and n >= max(1, math.ceil(len(key) * 0.7))
+    exact = [(t, u) for t, u in res if covers(t)]
+    big = [u for _, u in exact[:6] if any(b in urllib.parse.urlparse(u).netloc for b in BIG_SITES)]
     return len(exact), len(big), res
 
 
@@ -1685,7 +1691,7 @@ def longtail_candidates(store):
     # (1) тренды: самые большие текущие, у которых есть статьи
     cur = [store["topics"][s_] for s_ in store.get("current", []) if s_ in store["topics"]]
     cur = [t for t in cur if not t.get("blocked") and len(t.get("articles", [])) >= 3 and not generic_term(t["term"])
-           and hours_since(t.get("first_seen") or now_iso()) < 48]          # только свежие тренды: их вопросы — новый спрос
+           and hours_since(t.get("first_seen") or now_iso()) < 48 and not LT_BAD.search(t["term"])]          # только свежие тренды: их вопросы — новый спрос
     cur.sort(key=lambda t: -max((x[1] for x in t.get("traffic", [])), default=0))
     probes = []
     for t in cur[:4]:
