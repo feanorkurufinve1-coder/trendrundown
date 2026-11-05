@@ -1357,6 +1357,182 @@ def trend_followups(t, key):
     return fu[:3], src
 
 
+# ───────── Срочные новости: ловим событие до Google Trends и заранее отвечаем на вопросы, которые люди начнут гуглить ─────────
+NEWS_FEEDS = [
+    ("NPR", "https://feeds.npr.org/1001/rss.xml"), ("CBS News", "https://www.cbsnews.com/latest/rss/main"),
+    ("ABC News", "https://abcnews.go.com/abcnews/topstories"), ("NBC News", "https://feeds.nbcnews.com/nbcnews/public/news"),
+    ("Fox News", "https://moxie.foxnews.com/google-publisher/latest.xml"), ("The Guardian", "https://www.theguardian.com/us-news/rss"),
+    ("Al Jazeera", "https://www.aljazeera.com/xml/rss/all.xml"), ("BBC", "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml"),
+    ("The Hill", "https://thehill.com/news/feed/"), ("CNBC", "https://www.cnbc.com/id/100003114/device/rss/rss.html"),
+    ("ESPN", "https://www.espn.com/espn/rss/news"), ("Variety", "https://variety.com/feed/"), ("Deadline", "https://deadline.com/feed/"),
+    ("The Verge", "https://www.theverge.com/rss/index.xml"), ("Engadget", "https://www.engadget.com/rss.xml"),
+    ("New York Times", "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml"), ("Politico", "https://rss.politico.com/politics-news.xml"),
+]
+BREAK_PER_RUN = 1          # сколько срочных историй разбирать за проход (каждые 15 минут)
+BREAK_PER_DAY = 8          # и за сутки
+BREAK_MIN_OUTLETS = 3      # история «большая», если за 3 часа о ней написали минимум 3 разных издания
+_BSTOP = set("after amid over says said will with from that this have been were their they about into than more what when "
+             "where which would could could while news live update updates video watch report reports first last year years "
+             "week today here just still also make makes made back down only some other most like".split())
+
+
+def feed_items():
+    """Свежие статьи из лент крупных изданий США (прямые ссылки — тексты читаются)."""
+    out = []
+    for name, url in NEWS_FEEDS:
+        try:
+            root = ET.fromstring(get(url, timeout=20))
+        except Exception:
+            continue
+        items = list(root.iter("item")) or list(root.iter("{http://www.w3.org/2005/Atom}entry"))
+        for it in items[:40]:
+            title = (it.findtext("title") or it.findtext("{http://www.w3.org/2005/Atom}title") or "").strip()
+            link = (it.findtext("link") or "").strip()
+            if not link:
+                le = it.find("{http://www.w3.org/2005/Atom}link")
+                link = le.get("href", "") if le is not None else ""
+            when = it.findtext("pubDate") or it.findtext("{http://www.w3.org/2005/Atom}updated") or it.findtext("{http://www.w3.org/2005/Atom}published") or ""
+            try:
+                t = (parsedate_to_datetime(when) if "," in when else datetime.fromisoformat(when.replace("Z", "+00:00")))
+                t = t.astimezone(timezone.utc).replace(microsecond=0).isoformat()
+            except Exception:
+                continue
+            if title and link and hours_since(t) <= 6:
+                out.append({"title": html.unescape(re.sub(r"<[^>]+>", "", title)), "url": link, "source": name, "time": t})
+    return out
+
+
+def story_words(title):
+    return {w for w in words(title) if len(w) > 3 and w not in _BSTOP and not w.isdigit()}
+
+
+def clusters(items):
+    """Группируем статьи разных изданий об одном событии (общие значимые слова в заголовках)."""
+    groups = []
+    for a in sorted(items, key=lambda a: a["time"]):
+        w = story_words(a["title"])
+        best = None
+        for g in groups:
+            if len(w & g["words"]) >= 2 and len(w & g["words"]) / max(1, min(len(w), len(g["words"]))) >= 0.34:
+                best = g; break
+        if best:
+            best["items"].append(a); best["words"] |= w
+        else:
+            groups.append({"items": [a], "words": set(w)})
+    out = []
+    for g in groups:
+        srcs = {a["source"] for a in g["items"]}
+        if len(srcs) >= BREAK_MIN_OUTLETS and hours_since(min(a["time"] for a in g["items"])) <= 3:
+            out.append(g)
+    return sorted(out, key=lambda g: -len({a["source"] for a in g["items"]}))
+
+
+BREAK_PROMPT = """BREAKING US news. Several outlets just published these articles. Read them carefully.
+{arts}
+
+1) Name the event category in 1-3 words (e.g. "plane crash", "shooting", "storm", "celebrity death", "court ruling",
+   "product launch", "trade", "election result").
+2) Predict what ordinary Americans will google in the next hours and days because of this event, that the internet has
+   not explained yet. Think like the people who read this news: the place where it happened, the aircraft/vehicle/model,
+   the company or agency involved, an unfamiliar term or rule from the story, what happens next (e.g. "how long does an
+   NTSB investigation take"), the event itself ("what happened in ..."). Public figures only if named in the articles and
+   not household names. NEVER private individuals (victims, their families, crew members who are not public figures,
+   private suspects, minors) — no pages about them at all.
+Lessons from past events — what Americans really searched afterwards:
+{lessons}
+Give 0-3 follow-up searches; "query" is the exact phrase people will type. Only things these articles name and give facts about."""
+
+BREAK_TOOL = {"name": "breaking", "description": "Category and follow-up searches.", "input_schema": {"type": "object", "properties": {
+    "category": {"type": "string"}, "followups": AI_TOOL["input_schema"]["properties"]["followups"]}, "required": ["category", "followups"]}}
+
+
+def break_lessons(store):
+    log_ = [p for p in store.get("predict_log", []) if p.get("actual")]
+    lines = []
+    for p in log_[-12:]:
+        hit = [q for q in p["actual"] if q.get("ours")]
+        lines.append(f'- {p["category"]} ("{p["title"][:70]}"): people searched ' + ", ".join(f'"{q["term"]}"' for q in p["actual"][:5])
+                     + (f'; we predicted correctly: {", ".join(q["term"] for q in hit)}' if hit else "; we missed these"))
+    seed = ['- plane crash ("Learjet 60 crashes in Palm Beach County, Florida, nine killed", Nov. 1, 2026): people searched '
+            '"Palm Beach", "Florida Learjet", "avion Palm Beach"; days later, after the NTSB found the tail part, '
+            '"what does the elevator on a plane do"']
+    return "\n".join(seed + lines)
+
+
+def breaking_candidates(store, key):
+    """Срочные события из лент изданий → что люди будут гуглить → кандидаты в пояснения (с прочитанными статьями)."""
+    today = to_et(datetime.now(timezone.utc))[0].strftime("%Y-%m-%d")
+    days = store.setdefault("break_days", {})
+    if days.get(today, 0) >= BREAK_PER_DAY:
+        return []
+    try:
+        items = feed_items()
+    except Exception as e:
+        log(f"срочные новости: {e}"); return []
+    seen = store.setdefault("break_seen", [])
+    out, done = [], 0
+    for g in clusters(items):
+        if done >= BREAK_PER_RUN or days.get(today, 0) >= BREAK_PER_DAY:
+            break
+        sig = " ".join(sorted(g["words"]))[:300]
+        if any(len(set(sig.split()) & set(o.split())) >= 4 for o in seen[-300:]):
+            continue                                   # это событие уже разбирали
+        seen.append(sig); del seen[:-300]
+        picks, outlets = [], set()
+        for a in sorted(g["items"], key=lambda a: a["time"], reverse=True):
+            if a["source"] not in outlets:
+                outlets.add(a["source"]); picks.append(a)
+        texts, blocks = [], []
+        for i, a in enumerate(picks[:5], 1):
+            body = article_text(a["url"])
+            texts.append(a["title"] + " " + body)
+            blocks.append(f"[{i}] {a['source']} — {a['title']}\n" + (body or "(HEADLINE ONLY)"))
+        if sum(1 for x in texts if len(x) > 400) < 2:
+            continue
+        src = {"texts": texts, "blocks": blocks, "links": [(a["source"], a["title"], a["url"]) for a in picks[:5]]}
+        try:
+            res = ai_call(BREAK_PROMPT.format(arts="\n\n".join(b[:3000] for b in blocks), lessons=break_lessons(store)),
+                          key, BREAK_TOOL, max_tokens=700)
+        except Exception as e:
+            log(f"срочные: {e}"); continue
+        n_ = days.get(today, 0); days.clear(); days[today] = n_ + 1; done += 1
+        head = picks[0]["title"]
+        bslug = "b-" + slugify(" ".join(sorted(story_words(head), key=len, reverse=True)[:4]))[:40]
+        fu = []
+        for f in res.get("followups") or []:
+            subj = re.sub(r"\s+", " ", str(f.get("subject", ""))).strip()
+            if 2 < len(subj) <= 60 and latin(subj) and not bad_text(subj, user_blocks()):
+                fu.append({"subject": subj, "query": str(f.get("query", ""))[:90].strip() or subj,
+                           "kind": f.get("kind", "other"), "breaking": True})
+        store.setdefault("predict_log", []).append({"time": now_iso(), "title": head, "category": str(res.get("category", ""))[:40],
+                                                    "words": sorted(g["words"])[:40], "predicted": [x["query"] for x in fu[:3]]})
+        del store["predict_log"][:-200]
+        log(f"СРОЧНО ({len(outlets)} изд.): {head} → {[x['query'] for x in fu]}")
+        t = {"term": head, "slug": bslug, "articles": [], "traffic": [], "ai": {"headline": head, "summary": ""}}
+        for item in fu[:3]:
+            out.append((bslug, src, t, item, 10 ** 6))
+    return out
+
+
+def learn_breaking(store):
+    """Учимся: что люди РЕАЛЬНО загуглили после события (новые темы Google Trends за 72 часа со словами из события)
+    и совпало ли это с нашим прогнозом. Итоги идут в подсказку для следующих событий."""
+    for p in store.get("predict_log", []):
+        if p.get("actual") is not None or hours_since(p["time"]) < 24:
+            continue
+        w = set(p.get("words", []))
+        actual = []
+        for t in store.get("topics", {}).values():
+            if not (p["time"] <= t["first_seen"] <= (datetime.fromisoformat(p["time"]) + timedelta(hours=72)).isoformat()):
+                continue
+            blob = set(words(t["term"] + " " + " ".join(a["title"] for a in t["articles"][:10])))
+            if len(blob & w) >= 3:
+                ours = any(len(set(words(t["term"])) & set(words(q))) >= max(1, len(words(t["term"])) // 2) for q in p["predicted"])
+                actual.append({"term": t["term"], "traffic": t["traffic"][-1][1] if t["traffic"] else 0, "ours": ours})
+        if hours_since(p["time"]) >= 72 or actual:
+            p["actual"] = sorted(actual, key=lambda a: -a["traffic"])[:8]
+
+
 def trend_item(t):
     """Тренд без новости: «who is …» или «what is …» — выбираем то, что люди реально вводят в Google."""
     term = t["term"].strip()
@@ -1415,6 +1591,11 @@ def explain(store):
         fu, fsrc = trend_followups(t, key)
         for item in fu:
             cands.append((t["slug"], fsrc, t, item, big))
+    try:
+        cands += breaking_candidates(store, key)        # срочные события — раньше, чем они попадут в Google Trends
+        learn_breaking(store)
+    except Exception as e:
+        log(f"срочные: {e}")
     # тренды, по которым новость не писалась (лимит новостей в сутки): по ним тоже ищут «who is / what is»
     extra = 0
     for t in [store["topics"][s_] for s_ in store.get("current", []) if s_ in store["topics"]]:
@@ -1434,6 +1615,8 @@ def explain(store):
     scored = []
     for slug, src, t, item, big in cands:
         score = 0
+        if item.get("breaking"):
+            score += 5                          # срочное событие — пишем первым делом
         if item.get("future"):
             score += 3                          # событие впереди — пишем заранее («Pro and tell»)
         try:
@@ -1476,7 +1659,7 @@ def explain(store):
                 if hours_since(old["made"]) < 72 or slug == old.get("from"):
                     continue                  # недавно писали — только добавили ссылку на новую новость
             hit, questions = demand(item)
-            if hit is False:
+            if hit is False and not item.get("breaking"):     # срочное: Google ещё не успел выучить запрос — пишем заранее
                 log(f"'{item['query']}' — в подсказках Google не ищут, пропускаю")
                 continue
             item = dict(item, query=best_phrase(item, questions))   # точная формулировка из подсказок Google
@@ -1712,7 +1895,8 @@ RESTORE_PAGES = {"ligue-1": {'title': 'What is Ligue 1?', 'answer': 'Ligue 1 is 
 DROP_PAGES = ["week-8-fantasy-rankings"]   # пустые страницы — убрать
 TITLE_FIX = {"new-mexico-football": ("What is New Mexico Football? Lobos team and 2026 ranking", "other"),
              "darnell-washington": ("Who is Darnell Washington? Steelers tight end fined Oct. 25, 2026", "person"),
-             "michael-wilson": ("Who is Michael Wilson? Cardinals receiver, back in Week 8 vs. Cowboys", "person")}
+             "michael-wilson": ("Who is Michael Wilson? Cardinals receiver, back in Week 8 vs. Cowboys", "person"),
+             "aircraft-elevator": ("What does the elevator on a plane do? Learjet tail part, Florida crash, 2026", "term")}
 
 
 def restore_pages(store):
