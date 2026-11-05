@@ -10,11 +10,18 @@ jobs:
       - run: |
           mkdir out && cd out
           UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
-          curl -s -m 60 -A "$UA" "https://trends.google.com/_/TrendsUi/data/batchexecute?rpcids=i0OFE&source-path=%2Ftrending&hl=en-US&rt=c" \
-            -H "Content-Type: application/x-www-form-urlencoded;charset=UTF-8" \
-            --data-urlencode 'f.req=[[["i0OFE","[null,null,\"US\",0,\"en-US\",168,1]",null,"generic"]]]' -o batch.txt -w "batch %{http_code}\n" > codes.txt
-          curl -s -m 60 -A "$UA" "https://trends.google.com/trends/api/dailytrends?hl=en-US&tz=0&geo=US&ns=15" -o daily.txt -w "daily %{http_code}\n" >> codes.txt
-          curl -s -m 60 -A "$UA" "https://trends.google.com/trending/rss?geo=US" -o rss.txt -w "rss %{http_code}\n" >> codes.txt
+          curl -s -c jar -A "$UA" "https://trends.google.com/trending?geo=US&hours=24" -o page.html -w "page %{http_code}\n" >> codes.txt
+          i=0
+          for P in '[null,null,\"US\",0,\"en-US\",24,1]' '[null,null,\"US\",0,\"en\",24,1]' '[null,null,\"US\",0,\"en-US\",168,1]' '[\"US\",0,\"en-US\",24,1]' '[null,null,\"US\",[],\"en-US\",24,1]'; do
+            i=$((i+1))
+            curl -s -b jar -m 60 -A "$UA" "https://trends.google.com/_/TrendsUi/data/batchexecute?rpcids=i0OFE&source-path=%2Ftrending&hl=en-US&rt=c" \
+              -H "Content-Type: application/x-www-form-urlencoded;charset=UTF-8" -H "Origin: https://trends.google.com" -H "Referer: https://trends.google.com/trending?geo=US" \
+              --data-urlencode "f.req=[[[\"i0OFE\",\"$P\",null,\"generic\"]]]" -o b$i.txt -w "b$i %{http_code}\n" >> codes.txt
+            head -c 600 b$i.txt > b${i}_head.txt
+          done
+          grep -o 'i0OFE[^"]\{0,200\}' page.html | head -5 > page_rpc.txt || true
+          grep -o 'csv[^"]\{0,120\}' page.html | head -5 >> page_rpc.txt || true
+          rm -f page.html
           wc -c *.txt >> codes.txt; head -c 3000 batch.txt > batch_head.txt; head -c 1500 daily.txt > daily_head.txt
           rm -f daily.txt rss.txt
       - run: |
