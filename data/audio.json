@@ -700,5 +700,53 @@
 "hash": "7696d48b6776",
 "made": "2026-11-05T00:29:24+00:00",
 "sec": 76
+},
+"x/bruno-fernandes": {
+"file": "audio/x/bruno-fernandes.mp3",
+"hash": "da851b25981a",
+"made": "2026-11-05T01:53:34+00:00",
+"sec": 70
+},
+"x/porte-d-italie": {
+"file": "audio/x/porte-d-italie.mp3",
+"hash": "950de3925a6c",
+"made": "2026-11-05T01:54:50+00:00",
+"sec": 115
+},
+"x/real-betis": {
+"file": "audio/x/real-betis.mp3",
+"hash": "f5c9c8769ee7",
+"made": "2026-11-05T01:56:06+00:00",
+"sec": 114
+},
+"x/como-1907": {
+"file": "audio/x/como-1907.mp3",
+"hash": "8c9e3fe2e7ac",
+"made": "2026-11-05T01:57:11+00:00",
+"sec": 101
+},
+"x/premier-league-table": {
+"file": "audio/x/premier-league-table.mp3",
+"hash": "6ac8b65fee79",
+"made": "2026-11-05T01:58:24+00:00",
+"sec": 109
+},
+"x/peter-cameron": {
+"file": "audio/x/peter-cameron.mp3",
+"hash": "0cfaa17104be",
+"made": "2026-11-05T01:59:25+00:00",
+"sec": 90
+},
+"x/what-happens-at-night": {
+"file": "audio/x/what-happens-at-night.mp3",
+"hash": "b4782d07d6c7",
+"made": "2026-11-05T02:00:27+00:00",
+"sec": 95
+},
+"x/shaybah-oil-field": {
+"file": "audio/x/shaybah-oil-field.mp3",
+"hash": "317813ab7f4b",
+"made": "2026-11-05T02:01:35+00:00",
+"sec": 101
 }
 }
