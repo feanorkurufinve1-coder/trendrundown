@@ -779,6 +779,8 @@ def write_summary(t, key, feedback="", do_dig=False):
         texts.append(" ".join(x.split(": ", 1)[-1] for x in d["evidence"]))
     traffic = t["traffic"][-1][2] if t["traffic"] else "unknown"
     prompt = PROMPT.format(term=t["term"], traffic=traffic, sources="\n\n".join(blocks), style=STYLE_1930)
+    if TITLE_LESSONS:
+        prompt += "\n\n" + TITLE_LESSONS
     if feedback:
         prompt += ("\n\nAn editor rejected your previous draft for this reason: " + feedback
                    + "\nWrite a new draft that fixes this. When unsure about a detail, leave it out.")
@@ -1210,6 +1212,51 @@ def add_wiki(src, subject):
 WRITE_FAIL = [""]          # почему ИИ не написал пояснение (для журнала)
 
 
+TITLE_LESSONS = ""   # уроки по заголовкам из Search Console: что мы написали и что люди на самом деле вводили
+STOPW = set("a an the is are was were what who where when why how does do did of in on for to and or vs its it s".split())
+
+
+def title_lessons(store):
+    """Сравниваем наши заголовки с реальными запросами людей (Search Console, 28 дней): где совпало — хорошие
+    примеры, где люди искали другими словами — ошибки. Это обучение писателя на наших же данных."""
+    rows = (store.get("gsc") or {}).get("rows") or []
+    ex = store.get("explainers", {})
+    byp = {}
+    for r in rows:
+        path = urllib.parse.urlparse(r.get("page", "")).path
+        if not path.startswith("/x/") or not r.get("q"):
+            continue
+        slug = path[3:].replace(".html", "").strip("/")
+        if slug in ex:
+            a = byp.setdefault(slug, {}).setdefault(r["q"], [0, 0, 99.0])
+            a[0] += r["impr"]; a[1] += r["clicks"]; a[2] = min(a[2], r["pos"])
+    good, bad = [], []
+    for slug, qs in byp.items():
+        impr = sum(v[0] for v in qs.values())
+        if impr < 15:
+            continue
+        top = sorted(qs.items(), key=lambda kv: -kv[1][0])[:3]
+        title = ex[slug]["title"]
+        tw = set(words(title))
+        q0 = top[0][0]
+        tl = title.lower()
+        miss = [w for w in words(q0) if w not in STOPW and w not in tw and w[:5] not in tl
+                and not any(t_[:5] == w[:5] for t_ in tw)]
+        qtxt = ", ".join(f'"{q}"' for q, _ in top)
+        if top[0][1][2] <= 5 and (not miss or sum(v[1] for v in qs.values()) >= 3):
+            good.append((impr, f'- GOOD: we titled "{title}"; people typed {qtxt}; we rank in the top 5.'))
+        elif miss or not set(words(q0)[:2]) & tw:
+            bad.append((impr, f'- MISS: we titled "{title}"; people actually typed {qtxt} — '
+                              f'the title should have used their words ({", ".join(miss) or q0}).'))
+    good = [l for _, l in sorted(good, reverse=True)[:5]]
+    bad = [l for _, l in sorted(bad, reverse=True)[:8]]
+    if not (good or bad):
+        return ""
+    return ("LESSONS FROM OUR OWN GOOGLE DATA — what we titled vs. what Americans really typed. Learn the pattern: "
+            "people search with short plain words (\"where is X from\", \"X manager\", \"what does X mean\", \"is X real\"), "
+            "not with our phrasing. Put THEIR likely words in the title:\n" + "\n".join(good + bad))
+
+
 def write_explainer(item, t, src, questions, key, feedback="", max_runs=1):
     ai = t.get("ai") or {}
     prompt = EXPLAIN_PROMPT.format(query=item["query"], subject=item["subject"], kind=item["kind"],
@@ -1466,7 +1513,7 @@ def break_lessons(store):
             '"what does runoff election mean", "what is gop", "what is rino", "what does no election mean", "what are the swing states"',
             '- clock change (daylight saving time ended Nov. 1, 2026): "what does daylight saving time end mean", "did the time change last night"',
             '- new slang in the news (Collins word of the year): "mogging meaning", "what is mogging"']
-    return "\n".join(seed + lines)
+    return "\n".join(seed + lines) + (("\n\n" + TITLE_LESSONS) if TITLE_LESSONS else "")
 
 
 def breaking_candidates(store, key):
@@ -4500,8 +4547,13 @@ def build_cast_index(pv):
 
 
 def run_once():
+    global TITLE_LESSONS
     store = tidy(load_store())
     store["_run_started"] = now_iso()
+    try:
+        TITLE_LESSONS = title_lessons(store)
+    except Exception as e:
+        log(f"уроки заголовков: {e}")
     indexnow_ping(store)
     n = update(store)
     save_store(store)
