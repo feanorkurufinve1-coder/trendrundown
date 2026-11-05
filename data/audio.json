@@ -826,5 +826,17 @@
 "hash": "77c734a11b1a",
 "made": "2026-11-05T09:41:18+00:00",
 "sec": 109
+},
+"t/voice-of-logan": {
+"file": "audio/t/voice-of-logan.mp3",
+"hash": "fa31828937a5",
+"made": "2026-11-05T13:56:58+00:00",
+"sec": 69
+},
+"x/voice-of-logan": {
+"file": "audio/x/voice-of-logan.mp3",
+"hash": "1182da2e9822",
+"made": "2026-11-05T13:57:49+00:00",
+"sec": 92
 }
 }
