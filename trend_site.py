@@ -1662,11 +1662,12 @@ def supply(q):
         return None
     if not res:
         return None                                   # пустая выдача — скорее сбой поиска, чем «ответа нет»
-    key = [w for w in words(q) if w not in STOPW and w not in ("happened", "mean", "meaning", "explained", "now", "really")]
+    key = [w for w in words(q) if w not in STOPW and w not in ("happened", "mean", "meaning", "explained", "now", "really",
+                                                                "he", "she", "they", "his", "her", "still", "there", "this")]
     def covers(t):
         tw = words(t)
         n = sum(1 for w in key if any(w[:5] == x[:5] for x in tw))
-        return key and n >= max(1, math.ceil(len(key) * 0.7))
+        return key and n >= max(1, round(len(key) * 0.7))
     exact = [(t, u) for t, u in res if covers(t)]
     big = [u for _, u in exact[:6] if any(b in urllib.parse.urlparse(u).netloc for b in BIG_SITES)]
     return len(exact), len(big), res
