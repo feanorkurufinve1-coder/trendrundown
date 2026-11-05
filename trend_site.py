@@ -1783,6 +1783,28 @@ def ga_fetch(store):
         log(f"Analytics: нет доступа ({store['ga']['error'][:120]})")
 
 
+def sitemap_submit(store):
+    """Новые страницы → сообщаем Google, что карта сайта обновилась (официальный способ Search Console API).
+    Отправляем на следующем проходе, когда новая карта уже выложена на сайт; не чаще раза в 30 минут."""
+    raw = os.environ.get("GSC_KEY", "").strip()
+    sm = store.setdefault("sitemap_ping", {})
+    if not raw or not sm.get("pending") or hours_since(sm.get("last", "2000-01-01T00:00:00+00:00")) < 0.5:
+        return
+    tok = gsc_token(json.loads(raw), "https://www.googleapis.com/auth/webmasters")
+    ok = []
+    for name in ("sitemap-news.xml", "sitemap.xml"):
+        url = ("https://www.googleapis.com/webmasters/v3/sites/" + urllib.parse.quote("sc-domain:trendrundown.com", safe="")
+               + "/sitemaps/" + urllib.parse.quote(f"{SITE_URL}/{name}", safe=""))
+        req = urllib.request.Request(url, method="PUT", headers={"Authorization": "Bearer " + tok, "Content-Length": "0"})
+        try:
+            with urllib.request.urlopen(req, timeout=30, context=CTX) as r:
+                ok.append(f"{name} {r.status}")
+        except urllib.error.HTTPError as e:
+            ok.append(f"{name} HTTP {e.code} {e.read().decode(errors='replace')[:150]}")
+    sm.update({"last": now_iso(), "pending": 0, "result": ok})
+    log(f"Карта сайта отправлена в Google: {ok}")
+
+
 def gsc_fetch(store):
     """Раз в 12 часов: запросы и страницы за 28 дней (клики, показы, позиция). Только чтение."""
     raw = os.environ.get("GSC_KEY", "").strip()
@@ -3606,6 +3628,7 @@ def build_site(store):
     new_urls += [f"{SITE_URL}/w/{x['slug']}" for x in pv.values() if x.pop("new", False)]
     if new_urls:
         orig["_pending_out"] = new_urls
+        sp = orig.setdefault("sitemap_ping", {}); sp["pending"] = sp.get("pending", 0) + len(new_urls)
     w("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
       + "".join(f"<url><loc>{E(u)}</loc>" + (f"<lastmod>{lm[u]}</lastmod>" if u in lm else "") + "</url>" for u in urls) + "</urlset>")
     if ADSENSE_CLIENT:
@@ -4421,6 +4444,10 @@ def run_once():
         gsc_fetch(store)
     except Exception as e:
         log(f"Search Console: ошибка {e}")
+    try:
+        sitemap_submit(store)
+    except Exception as e:
+        log(f"карта сайта: {e}")
     try:
         watch_list(store)
     except Exception as e:
