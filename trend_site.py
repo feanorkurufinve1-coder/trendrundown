@@ -1954,6 +1954,89 @@ def restore_pages(store):
             log(f"страница убрана: {slug}")
 
 
+GT_PER_DAY = 6
+GT_PROMPT = """You write the Google search title (the <title> tag) for an existing explainer page on a US website.
+The visible headline stays as it is; this title is only what Google shows in search results.
+
+Page headline: {h1}
+Page text (the only facts you may use):
+{text}
+
+What people actually typed into Google before seeing this page (impressions, average position):
+{queries}
+
+Write ONE title, max 65 characters:
+- Start with the most-searched question or phrase, word for word as people typed it (fix only capitals and add "?" for questions).
+- If a second popular question is answered by the text, add it in the tail.
+- The tail gives the short answer or a key fact from the page text. Never promise anything the text does not answer.
+- No site name, no "explained", no clickbait, no year unless the text states it.
+Set ok=false if the page text does not answer what people searched."""
+GT_TOOL = {"name": "google_title", "description": "Google search title for the page",
+           "input_schema": {"type": "object", "properties": {
+               "ok": {"type": "boolean"}, "title": {"type": "string"}}, "required": ["ok", "title"]}}
+
+
+def google_titles(store):
+    """Двойной заголовок: на странице остаётся свой заголовок (h1), а для Google — точная фраза, которую люди вводят
+    (по данным Search Console). Текст страницы не меняется."""
+    key = api_key()
+    rows = (store.get("gsc") or {}).get("rows") or []
+    if not (key and rows):
+        return 0
+    ex = store.get("explainers", {})
+    today = to_et(datetime.now(timezone.utc))[0].strftime("%Y-%m-%d")
+    days = store.setdefault("gtitle_days", {})
+    if days.get(today, 0) >= GT_PER_DAY:
+        return 0
+    byp = {}
+    for r in rows:
+        slug = urllib.parse.urlparse(r["page"]).path
+        if not slug.startswith("/x/"):
+            continue
+        slug = slug[3:].replace(".html", "").strip("/")
+        if slug in ex and r.get("q"):
+            byp.setdefault(slug, {}).setdefault(r["q"], [0, 0, 0])
+            a = byp[slug][r["q"]]; a[0] += r["impr"]; a[1] += r["clicks"]; a[2] = r["pos"]
+    cand = []
+    for slug, qs in byp.items():
+        impr = sum(v[0] for v in qs.values())
+        top = sorted(qs.items(), key=lambda kv: -kv[1][0])[:5]
+        x = ex[slug]
+        if impr < 15 or top[0][1][2] <= 3:            # мало показов или уже в топ-3 — не трогаем
+            continue
+        sig = "|".join(q for q, _ in top[:3])
+        if x.get("gtitle_q") == sig:                  # запросы не поменялись — заголовок уже под них
+            continue
+        if x.get("gtitle_at") and (datetime.now(timezone.utc) - datetime.fromisoformat(x["gtitle_at"])).days < 10:
+            continue
+        cand.append((impr, slug, top, sig))
+    n = 0
+    for impr, slug, top, sig in sorted(cand, reverse=True):
+        if days.get(today, 0) >= GT_PER_DAY:
+            break
+        days[today] = days.get(today, 0) + 1
+        x = ex[slug]
+        text = " ".join([x.get("answer", ""), x.get("in_the_news", ""), x.get("body", "")])[:3500]
+        qtxt = "\n".join(f'- "{q}": {v[0]} impressions, position {v[2]}' for q, v in top)
+        try:
+            res = ai_call(GT_PROMPT.format(h1=x["title"], text=text, queries=qtxt), key, GT_TOOL, 300)
+        except Exception as e:
+            log(f"заголовок для Google {slug}: {e}")
+            continue
+        x["gtitle_q"] = sig; x["gtitle_at"] = now_iso()
+        t = cap_title(re.sub(r"\s+", " ", res.get("title", "")).strip().strip('"'))
+        if not res.get("ok") or not t or len(t) > 75 or bad_text(t, user_blocks()):
+            continue
+        store.setdefault("gtitle_log", []).append({"time": now_iso(), "slug": slug, "old": x.get("gtitle") or x["title"],
+                                                   "new": t, "impr": impr})
+        store["gtitle_log"] = store["gtitle_log"][-200:]
+        x["gtitle"] = t; n += 1
+        log(f"Заголовок для Google: {slug}: {t}")
+    for d in sorted(days)[:-14]:
+        days.pop(d)
+    return n
+
+
 def refresh_explainers(store):
     """Пояснения вроде «Что такое Apple Pro and tell» пишутся до события; после события обновляем их — что произошло."""
     key = api_key()
@@ -3431,7 +3514,8 @@ def build_explainer(x, topics):
 {('<p class="meta" style="margin-top:26px">Sources: ' + src + '</p>') if src else ''}
 <p class="meta">Updated {E(fmt_et(x["made"]))}.</p>
 </article>"""
-    return page(x["title"] + (f" | {SITE_NAME}" if len(x["title"]) < 50 else ""), short_desc(x["answer"]), body,
+    gt = x.get("gtitle") or x["title"]          # для Google — фраза из поиска, на странице — свой заголовок
+    return page(gt + (f" | {SITE_NAME}" if len(gt) < 50 else ""), short_desc(x["answer"]), body,
                 f"x/{x['slug']}.html", 1, head)
 
 
@@ -4459,6 +4543,12 @@ def run_once():
         ga_fetch(store)
     except Exception as e:
         log(f"Analytics: ошибка {e}")
+    try:
+        gn = google_titles(store)
+        if gn:
+            log(f"Новых заголовков для Google: {gn}")
+    except Exception as e:
+        log(f"заголовки для Google: ошибка {e}")
     try:
         rn = refresh_explainers(store)
         if rn:
