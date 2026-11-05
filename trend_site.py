@@ -1331,7 +1331,7 @@ rookie, newcomer) the internet has not explained yet, and named FUTURE events wi
 
 FU_TOOL = {"name": "followups", "description": "Follow-up searches.", "input_schema": {"type": "object", "properties": {
     "followups": AI_TOOL["input_schema"]["properties"]["followups"]}, "required": ["followups"]}}
-FU_PER_RUN = 4        # сколько чужих трендов (без нашей новости) читать целиком за проход
+FU_PER_RUN = 6        # сколько чужих трендов (без нашей новости) читать целиком за проход
 
 
 def trend_followups(t, key):
@@ -1454,9 +1454,15 @@ def break_lessons(store):
         hit = [q for q in p["actual"] if q.get("ours")]
         lines.append(f'- {p["category"]} ("{p["title"][:70]}"): people searched ' + ", ".join(f'"{q["term"]}"' for q in p["actual"][:5])
                      + (f'; we predicted correctly: {", ".join(q["term"] for q in hit)}' if hit else "; we missed these"))
-    seed = ['- plane crash ("Learjet 60 crashes in Palm Beach County, Florida, nine killed", Nov. 1, 2026): people searched '
-            '"Palm Beach", "Florida Learjet", "avion Palm Beach"; days later, after the NTSB found the tail part, '
-            '"what does the elevator on a plane do"']
+    seed = ['- plane crash ("Learjet 60 crashes in Palm Beach County, Florida, nine killed", Nov. 1, 2026; 2M+ searches): '
+            '"what is a learjet", "how fast was the learjet going", "why did the learjet crash", "what happened in west palm beach", '
+            '"did a plane crash in florida today"; days later "what does the elevator on a plane do"',
+            '- election victory speech (Abdul El-Sayed calls JD Vance "habibi", Nov. 2026): "what does habibi mean", '
+            '"what does habibi mean in arabic", then "habibi meaning" (100K) — ONE unfamiliar word from a speech beat everything else',
+            '- election night (midterms 2026): "what is a lame duck president" (50K), "what are provisional ballots", '
+            '"what does runoff election mean", "what is gop", "what is rino", "what does no election mean", "what are the swing states"',
+            '- clock change (daylight saving time ended Nov. 1, 2026): "what does daylight saving time end mean", "did the time change last night"',
+            '- new slang in the news (Collins word of the year): "mogging meaning", "what is mogging"']
     return "\n".join(seed + lines)
 
 
@@ -1582,7 +1588,9 @@ def explain(store):
                 cands.append((slug, src, t, item, big))
     # все тренды без нашей новости: по заголовкам всех изданий находим, что люди будут гуглить дальше
     fu_n = 0
-    for t in [store["topics"][s_] for s_ in store.get("current", []) if s_ in store["topics"]]:
+    cur_ = [store["topics"][s_] for s_ in store.get("current", []) if s_ in store["topics"]]
+    cur_.sort(key=lambda t: -max((x[1] for x in t.get("traffic", [])), default=0))   # самые большие тренды — первыми
+    for t in cur_:
         if fu_n >= FU_PER_RUN:
             break
         if t.get("ai") or t.get("blocked") or t["slug"] in RUN_SOURCES or t.get("fu_done") or len(t["articles"]) < 3:
