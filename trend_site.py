@@ -584,7 +584,7 @@ people don't know well. Give 0-4 items. Rules: only things the sources explain o
 (non-public people, victims, private suspects, minors); skip household names everyone already knows (e.g. Taylor Swift,
 LeBron James, Apple, the NFL, Congress). "subject" = the thing itself as people would type it (1-5 words);
 "query" = the exact search, e.g. "what is a continuing resolution", "who is sam laporta", "where is sinigaglia stadium".
-PRIORITY: brand-new names (a new product, event name, show, law, rookie, newcomer) that most of the internet has not explained
+TOP PRIORITY (this is where we win in Google): unfamiliar WORDS and TERMS from the story — new coinages and slang (e.g. \"telerally\"), jargon from politics, law, sports, finance, tech or science, acronyms, rule names, nicknames of movements. People google \"what is a X\", \"X meaning\", \"X definition\". THEN: brand-new names (a new product, event name, show, law, rookie, newcomer) that most of the internet has not explained
 yet, and named FUTURE events the sources give a date for (a launch event, premiere, fight, hearing, vote, release). For a
 future event set "date" (YYYY-MM-DD, only if the sources give it) — we publish an explainer before the day comes.
 
@@ -1145,7 +1145,7 @@ EXPLAIN_TOOL = {
     "description": "Return the explainer page.",
     "input_schema": {"type": "object", "properties": {
         "ok": {"type": "boolean"},
-        "title": {"type": "string", "description": "contains the search phrase word for word, max 70 characters; a specific tail with a fact (date, team, role), never the word 'explained'"},
+        "title": {"type": "string", "description": "contains the search phrase word for word, max 70 characters; a specific tail with a fact (date, team, role), never the word 'explained'. For a word or term, put its meaning in the tail, e.g. 'What is a telerally? Meaning of Trump\\'s phone rallies'"},
         "answer": {"type": "string", "description": "direct answer, 40-60 words"},
         "body": {"type": "string", "description": "1-3 short paragraphs of NEW concrete facts (no restating the answer, no common-knowledge definitions), separated by \\n\\n"},
         "in_the_news": {"type": "string", "description": "1-2 sentences: why it is in the news now"},
@@ -1326,7 +1326,7 @@ or want to know more? An unfamiliar term, law or rule, place, organization, prod
 don't know well. Give 0-3 items. Only things these articles name and give facts about. Never private individuals (non-public people, victims,
 private suspects, minors). Skip household names everyone already knows (e.g. Taylor Swift, LeBron James, Apple, the NFL,
 Congress, Boston). "subject" = the thing itself as people would type it (1-5 words); "query" = the exact search, e.g.
-"what is a continuing resolution", "who is sam laporta". PRIORITY: brand-new names (a new product, event name, show, law,
+"what is a continuing resolution", "who is sam laporta". TOP PRIORITY (this is where we win in Google): unfamiliar WORDS and TERMS from the story — new coinages and slang (e.g. \"telerally\"), jargon from politics, law, sports, finance, tech or science, acronyms, rule names, nicknames of movements. People google \"what is a X\", \"X meaning\", \"X definition\". THEN: brand-new names (a new product, event name, show, law,
 rookie, newcomer) the internet has not explained yet, and named FUTURE events with a date in the articles (set "date")."""
 
 FU_TOOL = {"name": "followups", "description": "Follow-up searches.", "input_schema": {"type": "object", "properties": {
@@ -1433,7 +1433,8 @@ BREAK_PROMPT = """BREAKING US news. Several outlets just published these article
 1) Name the event category in 1-3 words (e.g. "plane crash", "shooting", "storm", "celebrity death", "court ruling",
    "product launch", "trade", "election result").
 2) Predict what ordinary Americans will google in the next hours and days because of this event, that the internet has
-   not explained yet. Think like the people who read this news: the place where it happened, the aircraft/vehicle/model,
+   not explained yet. TOP PRIORITY : unfamiliar WORDS and TERMS from the story — new coinages and slang (e.g. \"telerally\"), jargon from politics, law, sports, finance, tech or science, acronyms, rule names, nicknames of movements. People google \"what is a X\", \"X meaning\", \"X definition\". 
+   Think like the people who read this news: the place where it happened, the aircraft/vehicle/model,
    the company or agency involved, an unfamiliar term or rule from the story, what happens next (e.g. "how long does an
    NTSB investigation take"), the event itself ("what happened in ..."). Public figures only if named in the articles and
    not household names. NEVER private individuals (victims, their families, crew members who are not public figures,
@@ -1617,6 +1618,8 @@ def explain(store):
         score = 0
         if item.get("breaking"):
             score += 5                          # срочное событие — пишем первым делом
+        if item.get("kind") in ("term", "law"):
+            score += 3                          # слова и термины — только они у нас выходят в топ-5 Google (данные Search Console)
         if item.get("future"):
             score += 3                          # событие впереди — пишем заранее («Pro and tell»)
         try:
