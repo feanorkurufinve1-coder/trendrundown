@@ -163,9 +163,9 @@
 },
 "x/cyber-monday": {
 "file": "audio/x/cyber-monday.mp3",
-"hash": "baf0f609cd51",
-"made": "2026-11-04T12:29:39+00:00",
-"sec": 118
+"hash": "e7a75a8a6577",
+"made": "2026-11-05T05:46:31+00:00",
+"sec": 100
 },
 "x/the-one-about-matthew-perry": {
 "file": "audio/x/the-one-about-matthew-perry.mp3",
@@ -790,5 +790,29 @@
 "hash": "5914ee8154e4",
 "made": "2026-11-05T03:38:50+00:00",
 "sec": 116
+},
+"t/joshua-wong": {
+"file": "audio/t/joshua-wong.mp3",
+"hash": "e0ddb319f9a0",
+"made": "2026-11-05T05:44:34+00:00",
+"sec": 129
+},
+"t/jimmy-kimmel-live": {
+"file": "audio/t/jimmy-kimmel-live.mp3",
+"hash": "c83db8c8790a",
+"made": "2026-11-05T05:45:25+00:00",
+"sec": 76
+},
+"x/umbrella-movement": {
+"file": "audio/x/umbrella-movement.mp3",
+"hash": "b90c2a190aee",
+"made": "2026-11-05T05:47:30+00:00",
+"sec": 94
+},
+"x/darius-acuff-jr": {
+"file": "audio/x/darius-acuff-jr.mp3",
+"hash": "d85124b129fd",
+"made": "2026-11-05T05:49:09+00:00",
+"sec": 153
 }
 }
