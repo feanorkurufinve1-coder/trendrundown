@@ -1,0 +1,19 @@
+page 200
+b1 200
+b2 200
+b3 200
+b4 200
+b5 200
+ 140 b1.txt
+ 140 b1_head.txt
+ 139 b2.txt
+ 139 b2_head.txt
+ 140 b3.txt
+ 140 b3_head.txt
+ 140 b4.txt
+ 140 b4_head.txt
+ 140 b5.txt
+ 140 b5_head.txt
+ 189 codes.txt
+  38 page_rpc.txt
+1625 total
