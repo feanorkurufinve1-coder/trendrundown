@@ -1327,14 +1327,16 @@ don't know well. Give 0-3 items. Only things these articles name and give facts 
 private suspects, minors). Skip household names everyone already knows (e.g. Taylor Swift, LeBron James, Apple, the NFL,
 Congress, Boston). "subject" = the thing itself as people would type it (1-5 words); "query" = the exact search, e.g.
 "what is a continuing resolution", "who is sam laporta". TOP PRIORITY (this is where we win in Google): unfamiliar WORDS and TERMS from the story — new coinages and slang (e.g. \"telerally\"), jargon from politics, law, sports, finance, tech or science, acronyms, rule names, nicknames of movements. People google \"what is a X\", \"X meaning\", \"X definition\". THEN: brand-new names (a new product, event name, show, law,
-rookie, newcomer) the internet has not explained yet, and named FUTURE events with a date in the articles (set "date")."""
+rookie, newcomer) the internet has not explained yet, and named FUTURE events with a date in the articles (set "date").
+Real examples — what Americans actually searched after past news (learn the pattern):
+{lessons}"""
 
 FU_TOOL = {"name": "followups", "description": "Follow-up searches.", "input_schema": {"type": "object", "properties": {
     "followups": AI_TOOL["input_schema"]["properties"]["followups"]}, "required": ["followups"]}}
 FU_PER_RUN = 6        # сколько чужих трендов (без нашей новости) читать целиком за проход
 
 
-def trend_followups(t, key):
+def trend_followups(t, key, store=None):
     """Что люди будут гуглить после этого тренда — читаем статьи целиком, даже если нашей новости о нём нет.
     Возвращает (кандидаты, источники) — источники потом идут в пояснение, второй раз не скачиваем."""
     src = term_sources(t)
@@ -1342,7 +1344,7 @@ def trend_followups(t, key):
         return [], None
     heads = "\n\n".join(b[:3000] for b in src["blocks"])
     try:
-        out = ai_call(FU_PROMPT.format(term=t["term"], heads=heads), key, FU_TOOL, max_tokens=600)
+        out = ai_call(FU_PROMPT.format(term=t["term"], heads=heads, lessons=break_lessons(store)), key, FU_TOOL, max_tokens=600)
     except Exception as e:
         log(f"кандидаты '{t['term']}': {e}")
         return [], None
@@ -1448,6 +1450,7 @@ BREAK_TOOL = {"name": "breaking", "description": "Category and follow-up searche
 
 
 def break_lessons(store):
+    store = store or {}
     log_ = [p for p in store.get("predict_log", []) if p.get("actual")]
     lines = []
     for p in log_[-12:]:
@@ -1597,7 +1600,7 @@ def explain(store):
             continue
         t["fu_done"] = True; fu_n += 1
         big = max((x[1] for x in t.get("traffic", [])), default=0)
-        fu, fsrc = trend_followups(t, key)
+        fu, fsrc = trend_followups(t, key, store)
         for item in fu:
             cands.append((t["slug"], fsrc, t, item, big))
     try:
