@@ -1,0 +1,23 @@
+# Пробное скачивание «Сейчас в тренде» (Google Trends) с разбивкой запросов — запускается вручную; итог в ветку reports.
+name: Trends probe
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          mkdir out && cd out
+          UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
+          curl -s -m 60 -A "$UA" "https://trends.google.com/_/TrendsUi/data/batchexecute?rpcids=i0OFE&source-path=%2Ftrending&hl=en-US&rt=c" \
+            -H "Content-Type: application/x-www-form-urlencoded;charset=UTF-8" \
+            --data-urlencode 'f.req=[[["i0OFE","[null,null,\"US\",0,\"en-US\",168,1]",null,"generic"]]]' -o batch.txt -w "batch %{http_code}\n" > codes.txt
+          curl -s -m 60 -A "$UA" "https://trends.google.com/trends/api/dailytrends?hl=en-US&tz=0&geo=US&ns=15" -o daily.txt -w "daily %{http_code}\n" >> codes.txt
+          curl -s -m 60 -A "$UA" "https://trends.google.com/trending/rss?geo=US" -o rss.txt -w "rss %{http_code}\n" >> codes.txt
+          wc -c *.txt >> codes.txt; head -c 3000 batch.txt > batch_head.txt; head -c 1500 daily.txt > daily_head.txt
+          rm -f daily.txt rss.txt
+      - run: |
+          cd out && git init -q && git checkout -q -b reports
+          git config user.name "probe-bot" && git config user.email "probe-bot@users.noreply.github.com"
+          git add -A && git commit -q -m "trends probe" && git push -f -q "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" reports
