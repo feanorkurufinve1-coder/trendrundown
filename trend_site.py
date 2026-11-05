@@ -3052,8 +3052,10 @@ def scrub_outlets(s):
 
 def photo_who(t, img):
     """Кто на фото: если фото взято со страницы Википедии другого человека (Том Скеррит в статье «Julia Roberts») — подписываем."""
+    year = re.search(r"[(_ ](19[5-9]\d|20[0-2]\d)[)_. ]", urllib.parse.unquote(img.get("src", "")))
+    yr = f" in {year.group(1)}" if year and int(year.group(1)) <= datetime.now().year - 2 else ""   # старое фото — пишем год
     if img.get("who"):
-        return img["who"]
+        return img["who"] + yr
     if img.get("generic") or not img.get("wiki"):
         return ""
     title = re.sub(r"\s*\(.*?\)", "", urllib.parse.unquote(img["wiki"].rsplit("/", 1)[-1]).replace("_", " ")).strip()
