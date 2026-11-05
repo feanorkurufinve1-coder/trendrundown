@@ -1,5 +1,5 @@
 {
- "made": "2026-11-05T11:16:58+00:00",
+ "made": "2026-11-05T11:31:55+00:00",
  "days": [
   "2026-11-02",
   "2026-11-03",
@@ -9,8 +9,8 @@
   {
    "page": "/x/telerally",
    "clicks_3d": 23,
-   "impr_3d": 500,
-   "pos": 4.3,
+   "impr_3d": 516,
+   "pos": 4.6,
    "by_day": {
     "2026-11-02": 18,
     "2026-11-03": 3,
@@ -21,7 +21,7 @@
   {
    "page": "/x/cyber-monday",
    "clicks_3d": 4,
-   "impr_3d": 393,
+   "impr_3d": 397,
    "pos": 21.0,
    "by_day": {
     "2026-11-02": 2,
@@ -33,8 +33,8 @@
   {
    "page": "/x/scott-colom",
    "clicks_3d": 1,
-   "impr_3d": 70,
-   "pos": 13.2,
+   "impr_3d": 262,
+   "pos": 13.1,
    "by_day": {
     "2026-11-03": 0,
     "2026-11-04": 1
@@ -44,8 +44,8 @@
   {
    "page": "/w/the-body-cast",
    "clicks_3d": 1,
-   "impr_3d": 52,
-   "pos": 9.2,
+   "impr_3d": 103,
+   "pos": 9.1,
    "by_day": {
     "2026-11-03": 1,
     "2026-11-04": 0
@@ -75,7 +75,7 @@
   {
    "page": "/x/mutual-option",
    "clicks_3d": 0,
-   "impr_3d": 538,
+   "impr_3d": 562,
    "pos": 7.8,
    "by_day": {
     "2026-11-02": 0,
@@ -87,7 +87,7 @@
   {
    "page": "/x/gen-z-regelt",
    "clicks_3d": 0,
-   "impr_3d": 126,
+   "impr_3d": 145,
    "pos": 7.9,
    "by_day": {
     "2026-11-02": 0,
@@ -97,12 +97,11 @@
    "manual": false
   },
   {
-   "page": "/x/exhibition-game",
+   "page": "/x/mississippi-senate-election",
    "clicks_3d": 0,
-   "impr_3d": 72,
-   "pos": 7.6,
+   "impr_3d": 93,
+   "pos": 11.9,
    "by_day": {
-    "2026-11-02": 0,
     "2026-11-03": 0,
     "2026-11-04": 0
    },
