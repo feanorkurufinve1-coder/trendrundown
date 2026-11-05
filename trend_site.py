@@ -1084,13 +1084,14 @@ def demand(item):
     """Ищут ли это на самом деле. Возвращает (да/нет/None если подсказки недоступны, список вопросов людей)."""
     key = [w for w in words(item["subject"]) if len(w) > 2] or words(item["subject"])
     got, failed = [], 0
-    for q in (item["subject"], item["query"]):
+    lead = "who is " if item.get("kind") == "person" else "what is "
+    for q in (item["subject"], item["query"], lead + item["subject"]):
         try:
             got += suggest(q.lower())
         except Exception:
             failed += 1
         time.sleep(0.3)
-    if failed == 2:
+    if failed == 3:
         return None, []
     qs = []
     for s in got:
@@ -1925,6 +1926,59 @@ def gsc_daily(store, tok, url):
     if days:
         t = d[days[-1]]["total"]
         log(f"Search Console за {days[-1]}: кликов {t[0]}, показов {t[1]}")
+
+
+def suggest_watch(store):
+    """Подсказки Google для ручных страниц-прогнозов (manual/): раз в сутки смотрим, что Google дописывает по теме.
+    Если наша фраза уже в подсказках — прогноз подтверждён живыми людьми (раньше, чем покажет Search Console).
+    Пишется в data/suggest.json — его читает ежедневная задача прогнозов."""
+    path = os.path.join(HERE, "data", "suggest.json")
+    try:
+        data = json.load(open(path))
+    except Exception:
+        data = {}
+    if not os.path.isdir(MANUAL_DIR):
+        return
+    n = 0
+    for fn in sorted(os.listdir(MANUAL_DIR)):
+        if not fn.endswith(".json") or n >= 30:
+            continue
+        slug = fn[:-5]
+        old = data.get(slug, {})
+        if old.get("time") and hours_since(old["time"]) < 24:
+            continue
+        try:
+            x = json.load(open(os.path.join(MANUAL_DIR, fn), encoding="utf-8"))
+        except Exception:
+            continue
+        subj = (x.get("subject") or "").split("(")[0].strip().lower()
+        query = (x.get("query") or "").lower()
+        if not subj:
+            continue
+        lead = "who is " if x.get("kind") == "person" else "what is "
+        got, fails = {}, 0
+        core = " ".join(w for w in query.split() if w not in STOPW and w not in ("happened", "mean", "meaning"))
+        for q in dict.fromkeys([subj, lead + subj, query, core]):
+            try:
+                got[q] = suggest(q)
+            except Exception:
+                fails += 1
+            time.sleep(0.3)
+        n += 1
+        if not got:
+            continue
+        allsug = [s_ for v in got.values() for s_ in v]
+        qw = [w for w in words(query) if w not in STOPW]
+        hit = any(all(w in words(s_) for w in qw) for s_ in allsug)
+        hist = (old.get("history") or [])[-13:] + [[now_iso()[:10], hit]]
+        data[slug] = {"time": now_iso(), "query": query, "in_suggest": hit, "suggest": got, "history": hist}
+    if n:
+        try:
+            json.dump(data, open(path, "w"), indent=1, ensure_ascii=False)
+            ok = sum(1 for v in data.values() if v.get("in_suggest"))
+            log(f"Подсказки Google для прогнозов: проверено {n}, наша фраза в подсказках у {ok} из {len(data)}")
+        except Exception as e:
+            log(f"suggest.json: {e}")
 
 
 def watch_list(store):
@@ -4591,6 +4645,10 @@ def run_once():
         watch_list(store)
     except Exception as e:
         log(f"watch: {e}")
+    try:
+        suggest_watch(store)
+    except Exception as e:
+        log(f"подсказки для прогнозов: {e}")
     try:
         ga_fetch(store)
     except Exception as e:
