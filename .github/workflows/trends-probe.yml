@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
+          set +e
           mkdir out && cd out
           UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
           curl -s -c jar -A "$UA" "https://trends.google.com/trending?geo=US&hours=24" -o page.html -w "page %{http_code}\n" >> codes.txt
