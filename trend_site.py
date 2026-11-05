@@ -1617,6 +1617,164 @@ def trend_item(t):
     return {"subject": term, "query": best + term, "kind": "person" if best == "who is " else "other", "trend": True}
 
 
+# ---- Длинный хвост: узкие вопросы из подсказок Google, на которые в интернете ещё нет точного ответа ----
+LT_EVERY_H = 2          # как часто копаем подсказки (часов)
+LT_PER_RUN = 2          # сколько узких вопросов за раз отдаём писателю
+LT_PER_DAY = 6          # и не больше стольких в сутки
+LT_PREFIXES = ["what is", "what does", "what happened to", "why did", "why is", "is", "where is", "how did", "when is"]
+LT_ALPHA = "abcdefghijklmnopqrstuvwxyz"
+LT_Q = re.compile(r"(?i)^(what|why|how|is|are|does|did|where|when|who|can|will)\b|\b(meaning|explained|mean)$")
+LT_BAD = re.compile(r"(?i)\b(vs|score|odds|stats|tickets|channel|stream|live|lyrics|near me|login|price|stock|weather|"
+                    r"tonight|today|time is it|net worth|age|height|wife|husband|girlfriend|boyfriend|dating|nude|died|dead)\b")
+BIG_SITES = ("wikipedia.org", "britannica.com", "merriam-webster.com", "dictionary.com", "espn.com", "mlb.com", "nfl.com",
+             "nba.com", "nytimes.com", "cnn.com", "usatoday.com", "foxnews.com", "nbcnews.com", "people.com", "forbes.com",
+             "investopedia.com", "imdb.com", "rottentomatoes.com", "apnews.com", "reuters.com", "bbc.com", "cbsnews.com",
+             "abcnews.go.com", "washingtonpost.com", "theguardian.com", "variety.com", "hollywoodreporter.com", "ign.com",
+             "gamespot.com", "si.com", "cbssports.com", "yahoo.com", "distractify.com", "screenrant.com", "netflix.com")
+
+
+def web_results(q):
+    """Что выдаёт поиск по вопросу (DuckDuckGo, без ключа): список (заголовок, адрес). Нужен, чтобы понять, есть ли уже ответ."""
+    url = "https://html.duckduckgo.com/html/?" + urllib.parse.urlencode({"q": q, "kl": "us-en"})
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                                                             "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"})
+    with urllib.request.urlopen(req, timeout=20, context=CTX) as r:
+        page = r.read().decode("utf-8", "ignore")
+    out = []
+    for href, title in re.findall(r'class="result__a"[^>]*href="([^"]+)"[^>]*>(.*?)</a>', page, re.S):
+        m = re.search(r"uddg=([^&]+)", href)
+        link = urllib.parse.unquote(m.group(1)) if m else href
+        if link.startswith("//"):
+            link = "https:" + link
+        if "duckduckgo.com" in link:
+            continue
+        out.append((html.unescape(re.sub(r"<[^>]+>", "", title)).strip(), link))
+    return out[:10]
+
+
+def supply(q):
+    """Насколько тема уже закрыта: сколько результатов прямо отвечают на вопрос (все ключевые слова в заголовке),
+    и есть ли среди них крупные сайты. Возвращает (точных, крупных, результаты) или None, если поиск недоступен."""
+    try:
+        res = web_results(q)
+    except Exception as e:
+        log(f"поиск для проверки конкуренции недоступен: {e}")
+        return None
+    key = [w for w in words(q) if w not in STOPW and w not in ("happened", "mean", "meaning", "explained")]
+    exact = [(t, u) for t, u in res if key and all(any(w[:5] == tw[:5] for tw in words(t)) for w in key)]
+    big = [u for _, u in exact if any(b in urllib.parse.urlparse(u).netloc for b in BIG_SITES)]
+    return len(exact), len(big), res
+
+
+def longtail_candidates(store):
+    """Копаем подсказки Google: (1) свежие тренды + вопросительные начала, (2) обход по алфавиту («what happened to a…»).
+    Берём только вопросы, которых раньше в подсказках не было (свежий спрос), и только там, где в поиске ещё нет
+    точного ответа (мало конкуренции). Источники для статьи — тексты из выдачи и статьи по тренду."""
+    st = store.setdefault("longtail", {})
+    if st.get("last") and hours_since(st["last"]) < LT_EVERY_H:
+        return []
+    st["last"] = now_iso()
+    today = to_et(datetime.now(timezone.utc))[0].strftime("%Y-%m-%d")
+    days = st.setdefault("days", {})
+    if days.get(today, 0) >= LT_PER_DAY:
+        return []
+    seen = st.setdefault("seen", {})            # подсказка → когда впервые увидели
+    seeds_seen = st.setdefault("seeds", {})     # запрос в подсказки → когда впервые спрашивали
+    ex = store.get("explainers", {})
+    have = {x.get("query", "").lower() for x in ex.values()} | {x.get("title", "").lower() for x in ex.values()}
+    # (1) тренды: самые большие текущие, у которых есть статьи
+    cur = [store["topics"][s_] for s_ in store.get("current", []) if s_ in store["topics"]]
+    cur = [t for t in cur if not t.get("blocked") and len(t.get("articles", [])) >= 3 and not generic_term(t["term"])
+           and hours_since(t.get("first_seen") or now_iso()) < 48]          # только свежие тренды: их вопросы — новый спрос
+    cur.sort(key=lambda t: -max((x[1] for x in t.get("traffic", [])), default=0))
+    probes = []
+    for t in cur[:4]:
+        term = t["term"].lower()
+        for pre in LT_PREFIXES[:6]:
+            probes.append((pre + " " + term, t))
+        probes.append((term + " ", t))
+    # (2) алфавит: каждый проход — следующие 6 сочетаний «начало + буква»
+    i = st.get("alpha_i", 0)
+    combos = [(pre, ch) for pre in LT_PREFIXES for ch in LT_ALPHA]
+    for k in range(6):
+        pre, ch = combos[(i + k) % len(combos)]
+        probes.append((f"{pre} {ch}", None))
+    st["alpha_i"] = (i + 6) % len(combos)
+    fresh = []
+    for q, t in probes:
+        first_time = q not in seeds_seen
+        seeds_seen.setdefault(q, now_iso())
+        try:
+            got = suggest(q)
+        except Exception:
+            continue
+        time.sleep(0.25)
+        for g in got:
+            g = g.strip().lower()
+            new = g not in seen
+            seen.setdefault(g, now_iso())
+            if not new or (first_time and t is None):   # при первом обходе буквы всё «новое» — это просто база
+                continue
+            if not LT_Q.search(g) or LT_BAD.search(g) or len(words(g)) < 3 or g in have:
+                continue
+            if t is not None and not any(w in words(g) for w in words(t["term"]) if len(w) > 2):
+                continue
+            fresh.append((g, t))
+    # чистим память подсказок старше 45 дней
+    for g in [g for g, ts in seen.items() if hours_since(ts) > 45 * 24][:5000]:
+        seen.pop(g)
+    for q in [q for q, ts in seeds_seen.items() if hours_since(ts) > 45 * 24][:2000]:
+        seeds_seen.pop(q)
+    uniq, sigs = [], set()
+    for g, t in fresh:                               # «what is X» и «what does X mean» — один и тот же вопрос
+        sig = frozenset(w for w in words(g) if w not in STOPW and w not in ("mean", "meaning", "explained"))
+        if sig and sig not in sigs:
+            sigs.add(sig); uniq.append((g, t))
+    out = []
+    lt_log = store.setdefault("longtail_log", [])
+    for g, t in uniq[:12]:
+        if len(out) >= LT_PER_RUN or days.get(today, 0) + len(out) >= LT_PER_DAY:
+            break
+        sup = supply(g)
+        if sup is None:
+            break
+        exact, big, res = sup
+        decision = "skip: answered" if (big >= 1 or exact >= 3) else "write"
+        lt_log.append({"time": now_iso(), "q": g, "seed": t["term"] if t else "alphabet", "exact": exact, "big": big,
+                       "top": [u for _, u in res[:3]], "decision": decision})
+        if decision != "write":
+            continue
+        # источники: статьи по тренду + страницы из выдачи
+        picks = [{"source": urllib.parse.urlparse(u).netloc.replace("www.", ""), "title": ti, "url": u}
+                 for ti, u in res[:6] if not any(b in u for b in ("youtube.com", "reddit.com", "tiktok.com", "facebook.com",
+                                                                 "instagram.com", "x.com/", "twitter.com", "quora.com"))]
+        if t is not None:
+            picks = [a for a in t["articles"][:4] if "news.google.com" not in a["url"]] + picks
+        texts, blocks, links = [], [], []
+        for a in picks[:6]:
+            body = article_text(a["url"])
+            if len(body) < 400:
+                continue
+            texts.append(a["title"] + " " + body)
+            blocks.append(f"[{len(blocks) + 1}] {a['source']} — {a['title']}\n" + body)
+            links.append((a["source"], a["title"], a["url"]))
+        if len(texts) < 2:
+            lt_log[-1]["decision"] = "skip: no sources"
+            continue
+        kind = "term" if re.search(r"(?i)^what (is|does|are)\b|\bmean(ing)?$", g) else "other"
+        subj = cap_title(re.sub(r"(?i)^(what is|what are|what does|what happened to|why did|why is|is|where is|how did|when is)\s+(an?\s+|the\s+)?", "", g))
+        subj = re.sub(r"(?i)\s+mean(ing)?$", "", subj).strip() or g
+        item = {"subject": subj, "query": g, "kind": kind, "longtail": True}
+        tt = t or {"slug": "lt-" + slugify(g)[:40], "term": subj, "articles": [], "traffic": []}
+        out.append((tt["slug"], {"texts": texts, "blocks": blocks, "links": links}, tt, item, 0))
+        log(f"Длинный хвост: «{g}» (из «{t['term'] if t else 'алфавит'}») — точных ответов в поиске {exact}, пишем")
+    days[today] = days.get(today, 0) + len(out)
+    for d in sorted(days)[:-14]:
+        days.pop(d)
+    store["longtail_log"] = lt_log[-300:]
+    return out
+
+
 def explain(store):
     """Для свежих новостей этого прохода: предсказанные запросы → проверка подсказками Google → страница-объяснение."""
     key = api_key()
@@ -1652,6 +1810,10 @@ def explain(store):
         for item in fu:
             cands.append((t["slug"], fsrc, t, item, big))
     try:
+        cands += longtail_candidates(store)             # узкие свежие вопросы из подсказок Google без готового ответа
+    except Exception as e:
+        log(f"длинный хвост: {e}")
+    try:
         cands += breaking_candidates(store, key)        # срочные события — раньше, чем они попадут в Google Trends
         learn_breaking(store)
     except Exception as e:
@@ -1677,6 +1839,8 @@ def explain(store):
         score = 0
         if item.get("breaking"):
             score += 5                          # срочное событие — пишем первым делом
+        if item.get("longtail"):
+            score += 5                          # узкий свежий вопрос без готового ответа в поиске — наша ниша
         if item.get("kind") in ("term", "law"):
             score += 3                          # слова и термины — только они у нас выходят в топ-5 Google (данные Search Console)
         if item.get("future"):
