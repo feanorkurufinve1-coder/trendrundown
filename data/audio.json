@@ -814,5 +814,17 @@
 "hash": "d85124b129fd",
 "made": "2026-11-05T05:49:09+00:00",
 "sec": 153
+},
+"t/michigan-proposal-results": {
+"file": "audio/t/michigan-proposal-results.mp3",
+"hash": "b00e7bda0b19",
+"made": "2026-11-05T09:40:03+00:00",
+"sec": 55
+},
+"x/alaska-ranked-choice-voting": {
+"file": "audio/x/alaska-ranked-choice-voting.mp3",
+"hash": "77c734a11b1a",
+"made": "2026-11-05T09:41:18+00:00",
+"sec": 109
 }
 }
