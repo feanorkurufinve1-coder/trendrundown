@@ -163,9 +163,9 @@
 },
 "x/cyber-monday": {
 "file": "audio/x/cyber-monday.mp3",
-"hash": "e7a75a8a6577",
-"made": "2026-11-05T05:46:31+00:00",
-"sec": 100
+"hash": "4ddc66cca11b",
+"made": "2026-11-05T16:46:58+00:00",
+"sec": 111
 },
 "x/the-one-about-matthew-perry": {
 "file": "audio/x/the-one-about-matthew-perry.mp3",
@@ -439,9 +439,9 @@
 },
 "x/scott-colom": {
 "file": "audio/x/scott-colom.mp3",
-"hash": "6aa0b2af0ceb",
-"made": "2026-11-04T19:44:30+00:00",
-"sec": 129
+"hash": "d9814c588123",
+"made": "2026-11-05T16:49:49+00:00",
+"sec": 165
 },
 "x/curing-period": {
 "file": "audio/x/curing-period.mp3",
@@ -838,5 +838,11 @@
 "hash": "1182da2e9822",
 "made": "2026-11-05T13:57:49+00:00",
 "sec": 92
+},
+"x/neocloud-companies": {
+"file": "audio/x/neocloud-companies.mp3",
+"hash": "e645f1aac92d",
+"made": "2026-11-05T16:47:59+00:00",
+"sec": 91
 }
 }
