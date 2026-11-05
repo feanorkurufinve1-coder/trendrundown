@@ -535,9 +535,9 @@
 },
 "x/nba-cup": {
 "file": "audio/x/nba-cup.mp3",
-"hash": "0829967b0f60",
-"made": "2026-11-04T21:35:41+00:00",
-"sec": 131
+"hash": "c37edcf523b3",
+"made": "2026-11-05T00:23:57+00:00",
+"sec": 108
 },
 "x/payton-pritchard": {
 "file": "audio/x/payton-pritchard.mp3",
@@ -658,5 +658,47 @@
 "hash": "735287e3cf0e",
 "made": "2026-11-04T23:35:46+00:00",
 "sec": 109
+},
+"x/rot-weiss-essen": {
+"file": "audio/x/rot-weiss-essen.mp3",
+"hash": "d265db26bcc6",
+"made": "2026-11-05T00:24:47+00:00",
+"sec": 104
+},
+"x/jasveen-sangha": {
+"file": "audio/x/jasveen-sangha.mp3",
+"hash": "021d583e5ebb",
+"made": "2026-11-05T00:25:35+00:00",
+"sec": 98
+},
+"x/hunters-moon": {
+"file": "audio/x/hunters-moon.mp3",
+"hash": "6464f744ec5a",
+"made": "2026-11-05T00:26:31+00:00",
+"sec": 115
+},
+"x/ballon-d-or": {
+"file": "audio/x/ballon-d-or.mp3",
+"hash": "049b8d5778f1",
+"made": "2026-11-05T00:27:21+00:00",
+"sec": 102
+},
+"x/chris-ballard": {
+"file": "audio/x/chris-ballard.mp3",
+"hash": "cf90342914c2",
+"made": "2026-11-05T00:28:08+00:00",
+"sec": 94
+},
+"x/parc-des-princes": {
+"file": "audio/x/parc-des-princes.mp3",
+"hash": "aad78b207434",
+"made": "2026-11-05T00:28:47+00:00",
+"sec": 80
+},
+"x/joe-buck-espn": {
+"file": "audio/x/joe-buck-espn.mp3",
+"hash": "7696d48b6776",
+"made": "2026-11-05T00:29:24+00:00",
+"sec": 76
 }
 }
