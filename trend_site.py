@@ -1442,8 +1442,11 @@ def explain(store):
             fresh = True
         if fresh:
             score += 2                          # в Википедии статьи нет / она свежая — хороших ответов ещё мало
-        elif item.get("kind") in ("person", "organization") and not item.get("future"):
-            continue                            # известный человек/клуб (Хиллари Клинтон, «Реал») — первыми нам не быть
+        elif item.get("kind") in ("person", "organization", "place", "event") and not item.get("future"):
+            continue                            # известный человек/клуб/арена/давнее событие — первыми нам не быть
+        if re.search(r"(?i)\bvs\.?\b|\brankings?\b|\bweek \d+\b|\bpicks?\b|\bodds\b|\bprojection model\b|\bpredictions?\b",
+                     item["subject"] + " " + item.get("query", "")):
+            continue                            # матчи, рейтинги недели, ставки — это не пояснения
         scored.append((-score, -big, slug, src, t, item))
     scored.sort(key=lambda x: (x[0], x[1]))
     per_topic = {}
