@@ -2316,7 +2316,9 @@ DROP_PAGES = ["week-8-fantasy-rankings"]   # пустые страницы — �
 TITLE_FIX = {"new-mexico-football": ("What is New Mexico Football? Lobos team and 2026 ranking", "other"),
              "darnell-washington": ("Who is Darnell Washington? Steelers tight end fined Oct. 25, 2026", "person"),
              "michael-wilson": ("Who is Michael Wilson? Cardinals receiver, back in Week 8 vs. Cowboys", "person"),
-             "aircraft-elevator": ("What does the elevator on a plane do? Learjet tail part, Florida crash, 2026", "term")}
+             "aircraft-elevator": ("What does the elevator on a plane do? Learjet tail part, Florida crash, 2026", "term"),
+             "oil-prices": ("What are oil prices now? Brent at $98.29 a barrel on Nov. 5, 2026", "other"),
+             "jobs-report": ("What is the jobs report? Monthly U.S. employment data from the BLS", "other")}
 
 
 def restore_pages(store):
