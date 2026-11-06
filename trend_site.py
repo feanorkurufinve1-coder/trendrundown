@@ -498,8 +498,29 @@ def copy_runs(text, sources, n=10, nums=True):
     return sum(1 for k, i in enumerate(pos) if k == 0 or i > pos[k - 1] + n)
 
 
+PROPER = ["Cyber Monday", "Black Friday", "Small Business Saturday", "Giving Tuesday", "Thanksgiving", "Christmas",
+          "Halloween", "Veterans Day", "Election Day", "Super Bowl", "World Series", "TikTok", "YouTube", "iPhone", "iPad",
+          "ChatGPT", "OpenAI", "Netflix", "Hulu", "Disney+", "HBO Max", "Prime Video", "NFL", "NBA", "MLB", "NHL", "WNBA",
+          "NCAA", "MLS", "UFC", "WWE", "FIFA", "ESPN", "CNN", "NASA", "FBI", "CIA", "IRS", "FEMA", "GOP",
+          "U.S.", "Supreme Court", "Congress", "Senate", "White House", "Republican", "Democrat", "Democratic"]
+_PROPER_RE = [(re.compile(r"(?<![\w.])" + re.escape(p_) + r"(?![\w])", re.I), p_) for p_ in PROPER]
+_Q_START = re.compile(r"(?i)^(what|who|whom|where|when|why|how|is|are|was|were|does|do|did|can|will|should)\b")
+
+
 def cap_title(t):
-    t = (t or "").strip()
+    """Грамотный заголовок: заглавная первая буква, имена собственные с заглавной (Cyber Monday, TikTok, NFL),
+    вопрос заканчивается «?», а не двоеточием («What is a telerally: …» → «What is a telerally? …»)."""
+    t = re.sub(r"\s+", " ", (t or "").strip())
+    if not t:
+        return t
+    for rx, good in _PROPER_RE:
+        t = rx.sub(good, t)
+    if _Q_START.match(t) and "?" not in t:
+        m = re.search(r"\s*[:—–-]\s+", t)
+        if m and m.start() > 6:
+            t = t[:m.start()] + "? " + t[m.end():]
+        elif len(t) < 80:
+            t += "?"
     return t[:1].upper() + t[1:]
 
 
@@ -904,7 +925,9 @@ the SOURCE reports it was based on. Give one of three verdicts.
   gambling, drugs, weapons or self-harm;
 - it is empty or useless, or not clear English.
 
-"minor" — publishable after small fixes: a detail not in the sources, slightly loose or wrong wording, an outlet named.
+"minor" — publishable after small fixes: a detail not in the sources, slightly loose or wrong wording, an outlet named,
+  or ANY English mistake: grammar ('What is Oil Prices' → 'What are oil prices'), a typo, a proper name not capitalized
+  ('cyber monday' → 'Cyber Monday'), a question in the title ending with ':' instead of '?', a missing article.
   For "minor" you MUST also give "edits": for each slip, "find" = the exact words copied from the draft, "replace" = the
   corrected words (or "" to delete the phrase). Fix only the slips; keep everything else as it is.
 
@@ -913,7 +936,7 @@ the SOURCE reports it was based on. Give one of three verdicts.
 These are NOT problems at all (never mention them): well-known public facts (a famous athlete's team, position or
 nationality; what a league, rule or term means, e.g. injured reserve sidelines a player for at least four games; where a
 city is; the year a famous film came out); a weekday that matches a date in the sources; synonyms (four straight wins = a
-sweep); an empty optional section; style; which outlet a fact came from.
+sweep); an empty optional section; style (but grammar and spelling mistakes ARE problems — fix them as "minor"); which outlet a fact came from.
 
 In "reason": for "block" list every serious problem briefly so the writer can fix them all at once; for "minor" list the
 slips. Max 45 words.
@@ -1148,7 +1171,7 @@ EXPLAIN_TOOL = {
     "description": "Return the explainer page.",
     "input_schema": {"type": "object", "properties": {
         "ok": {"type": "boolean"},
-        "title": {"type": "string", "description": "contains the search phrase word for word, max 70 characters; a specific tail with a fact (date, team, role), never the word 'explained'. For a word or term, put its meaning in the tail, e.g. 'What is a telerally? Meaning of Trump\\'s phone rallies'"},
+        "title": {"type": "string", "description": "correct English: a grammatical question ending in '?' then a short tail; 'What are' for plurals ('What are nonfarm payrolls?'), never 'What is Oil Prices'; proper names capitalized (Cyber Monday, TikTok, NFL); contains the search phrase word for word, max 70 characters; a specific tail with a fact (date, team, role), never the word 'explained'. For a word or term, put its meaning in the tail, e.g. 'What is a telerally? Meaning of Trump\\'s phone rallies'"},
         "answer": {"type": "string", "description": "direct answer, 40-60 words"},
         "body": {"type": "string", "description": "1-3 short paragraphs of NEW concrete facts (no restating the answer, no common-knowledge definitions), separated by \\n\\n"},
         "in_the_news": {"type": "string", "description": "1-2 sentences: why it is in the news now"},
@@ -3408,6 +3431,7 @@ def manual_pages(store):
             continue
         x.setdefault("slug", fn[:-5]); x.setdefault("kind", "other"); x.setdefault("faq", []); x.setdefault("links", [])
         x.setdefault("topics", []); x.setdefault("in_the_news", ""); x.setdefault("query", x["title"])
+        x["title"] = cap_title(x["title"])
         x.setdefault("made", now_iso()); x.setdefault("first", x["made"])
         if x.get("updated"):
             x["made"] = x["updated"]                 # дата правки — «updated …» на странице и dateModified для Google
