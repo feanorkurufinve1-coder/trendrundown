@@ -1006,5 +1006,53 @@
 "hash": "dcefde61e6af",
 "made": "2026-11-06T13:53:58+00:00",
 "sec": 111
+},
+"x/other-worlds-a-stranger-things-adventure": {
+"file": "audio/x/other-worlds-a-stranger-things-adventure.mp3",
+"hash": "cb72b3d87b70",
+"made": "2026-11-06T16:32:11+00:00",
+"sec": 96
+},
+"x/hank-aaron-award": {
+"file": "audio/x/hank-aaron-award.mp3",
+"hash": "e75a7edfb489",
+"made": "2026-11-06T16:33:04+00:00",
+"sec": 99
+},
+"x/how-cy-young-is-voted": {
+"file": "audio/x/how-cy-young-is-voted.mp3",
+"hash": "e740553b7ec0",
+"made": "2026-11-06T16:33:55+00:00",
+"sec": 96
+},
+"x/maine-2nd-district-ranked-choice": {
+"file": "audio/x/maine-2nd-district-ranked-choice.mp3",
+"hash": "4e73ff3fef67",
+"made": "2026-11-06T16:35:09+00:00",
+"sec": 142
+},
+"x/mlb-manager-of-the-year-voting": {
+"file": "audio/x/mlb-manager-of-the-year-voting.mp3",
+"hash": "b6a484eead5b",
+"made": "2026-11-06T16:35:55+00:00",
+"sec": 86
+},
+"x/mlb-rookie-eligibility": {
+"file": "audio/x/mlb-rookie-eligibility.mp3",
+"hash": "7b213d1602c8",
+"made": "2026-11-06T16:36:42+00:00",
+"sec": 88
+},
+"x/all-mlb-team": {
+"file": "audio/x/all-mlb-team.mp3",
+"hash": "7829c135c879",
+"made": "2026-11-06T16:37:40+00:00",
+"sec": 107
+},
+"x/murder-in-galicia-true-story": {
+"file": "audio/x/murder-in-galicia-true-story.mp3",
+"hash": "f625bd119e35",
+"made": "2026-11-06T16:38:41+00:00",
+"sec": 113
 }
 }
