@@ -964,5 +964,29 @@
 "hash": "62ab8fa56c75",
 "made": "2026-11-06T09:41:36+00:00",
 "sec": 116
+},
+"t/oil-prices": {
+"file": "audio/t/oil-prices.mp3",
+"hash": "470dbd334d0a",
+"made": "2026-11-06T12:34:25+00:00",
+"sec": 83
+},
+"x/oil-prices": {
+"file": "audio/x/oil-prices.mp3",
+"hash": "7cccf8378395",
+"made": "2026-11-06T12:35:42+00:00",
+"sec": 149
+},
+"x/cold-front": {
+"file": "audio/x/cold-front.mp3",
+"hash": "acd11b8294da",
+"made": "2026-11-06T12:36:27+00:00",
+"sec": 89
+},
+"x/brent-crude": {
+"file": "audio/x/brent-crude.mp3",
+"hash": "eb0d6dbdc4d6",
+"made": "2026-11-06T12:37:34+00:00",
+"sec": 135
 }
 }
