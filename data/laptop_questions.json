@@ -1,47 +1,917 @@
 {
- "made": "2026-11-06T06:03:52+00:00",
+ "made": "2026-11-06T14:42:06+00:00",
  "questions": [
   {
-   "q": "why is malik nabers questionable in fantasy",
+   "q": "what did ryan clark say about kyren lacy",
    "growth": 100000,
-   "seed": "malik nabers",
+   "seed": "ryan clark",
    "src": "trends_rising"
   },
   {
-   "q": "did travis etienne change his name",
+   "q": "why did ryan clark get fired from espn",
    "growth": 100000,
-   "seed": "travis etienne",
+   "seed": "ryan clark",
    "src": "trends_rising"
   },
   {
-   "q": "how long is travis etienne out",
-   "growth": 350,
-   "seed": "travis etienne",
+   "q": "why did espn fire ryan clark",
+   "growth": 100000,
+   "seed": "ryan clark",
    "src": "trends_rising"
   },
   {
-   "q": "arnold schwarzenegger last name meaning",
-   "growth": 250,
-   "seed": "arnold schwarzenegger",
+   "q": "why was ryan clark fired from espn",
+   "growth": 600,
+   "seed": "ryan clark",
    "src": "trends_rising"
   },
   {
-   "q": "will there be a season 3 of mistletoe murders",
-   "growth": 200,
-   "seed": "mistletoe murders",
+   "q": "is natalie portman british",
+   "growth": 190,
+   "seed": "natalie portman",
    "src": "trends_rising"
   },
   {
-   "q": "when did arnold schwarzenegger come to america",
-   "growth": 130,
-   "seed": "arnold schwarzenegger",
+   "q": "how long have kris jenner and corey gamble been together",
+   "growth": 170,
+   "seed": "kris jenner",
    "src": "trends_rising"
   },
   {
-   "q": "how much does an abortion cost",
-   "growth": 110,
-   "seed": "abortion",
+   "q": "where is natalie portman from",
+   "growth": 150,
+   "seed": "natalie portman",
    "src": "trends_rising"
+  },
+  {
+   "q": "how much does an abortion cost at planned parenthood",
+   "growth": 1250,
+   "seed": "how much does an abortion cost",
+   "src": "suggest"
+  },
+  {
+   "q": "where to watch mistletoe murders season 3",
+   "growth": 1250,
+   "seed": "where to watch mistletoe murders",
+   "src": "suggest"
+  },
+  {
+   "q": "will there be a season 3 of mistletoe murders on hallmark",
+   "growth": 1200,
+   "seed": "will there be a season 3 of mistletoe murders",
+   "src": "suggest"
+  },
+  {
+   "q": "abortion up to birth meaning",
+   "growth": 950,
+   "seed": "abortion up to birth",
+   "src": "suggest"
+  },
+  {
+   "q": "what did ryan clark say about kyren lacy espn",
+   "growth": 850,
+   "seed": "what did ryan clark say about kyren lacy",
+   "src": "suggest"
+  },
+  {
+   "q": "why did espn fire ryan clark on air",
+   "growth": 701,
+   "seed": "why did espn fire ryan clark",
+   "src": "suggest"
+  },
+  {
+   "q": "why did espn fire ryan clark and cam newton",
+   "growth": 700,
+   "seed": "why did espn fire ryan clark",
+   "src": "suggest"
+  },
+  {
+   "q": "what did ryan clark say about kyren lacy that got him fired",
+   "growth": 650,
+   "seed": "what did ryan clark say about kyren lacy",
+   "src": "suggest"
+  },
+  {
+   "q": "who leaked supreme court abortion decision",
+   "growth": 601,
+   "seed": "supreme court abortion leak",
+   "src": "suggest"
+  },
+  {
+   "q": "how much does an abortion cost at planned parenthood in ny",
+   "growth": 601,
+   "seed": "how much does an abortion cost",
+   "src": "suggest"
+  },
+  {
+   "q": "what 10 states allow abortion up to birth",
+   "growth": 601,
+   "seed": "what states allow abortion up to birth",
+   "src": "suggest"
+  },
+  {
+   "q": "do muslims believe in abortion rights",
+   "growth": 601,
+   "seed": "do muslims believe in abortion",
+   "src": "suggest"
+  },
+  {
+   "q": "did travis etienne change his last name",
+   "growth": 601,
+   "seed": "did travis etienne change his name",
+   "src": "suggest"
+  },
+  {
+   "q": "how long is travis etienne out for this year",
+   "growth": 601,
+   "seed": "how long is travis etienne out",
+   "src": "suggest"
+  },
+  {
+   "q": "will there be a season 3 of mistletoe murders episode",
+   "growth": 601,
+   "seed": "will there be a season 3 of mistletoe murders",
+   "src": "suggest"
+  },
+  {
+   "q": "where did roquan smith go to high school",
+   "growth": 601,
+   "seed": "where did roquan smith go to college",
+   "src": "suggest"
+  },
+  {
+   "q": "where to watch mistletoe murders season 1",
+   "growth": 601,
+   "seed": "where to watch mistletoe murders",
+   "src": "suggest"
+  },
+  {
+   "q": "arnold schwarzenegger family name meaning",
+   "growth": 601,
+   "seed": "arnold schwarzenegger last name meaning",
+   "src": "suggest"
+  },
+  {
+   "q": "did arnold schwarzenegger get shorter",
+   "growth": 601,
+   "seed": "how tall is arnold schwarzenegger really",
+   "src": "suggest"
+  },
+  {
+   "q": "when did arnold schwarzenegger go to america",
+   "growth": 601,
+   "seed": "when did arnold schwarzenegger come to america",
+   "src": "suggest"
+  },
+  {
+   "q": "why did ryan clark apologizes about kyren lacy",
+   "growth": 601,
+   "seed": "what did ryan clark say about kyren lacy",
+   "src": "suggest"
+  },
+  {
+   "q": "why was ryan clark fired from espn on air",
+   "growth": 601,
+   "seed": "why was ryan clark fired from espn",
+   "src": "suggest"
+  },
+  {
+   "q": "is natalie portman british or american",
+   "growth": 601,
+   "seed": "is natalie portman british",
+   "src": "suggest"
+  },
+  {
+   "q": "where is natalie portman parents from",
+   "growth": 601,
+   "seed": "where is natalie portman from",
+   "src": "suggest"
+  },
+  {
+   "q": "how long is elizabeth warren been a senator",
+   "growth": 601,
+   "seed": "how old is elizabeth warren senator",
+   "src": "suggest"
+  },
+  {
+   "q": "how much does an abortion cost at planned parenthood in florida",
+   "growth": 600,
+   "seed": "how much does an abortion cost",
+   "src": "suggest"
+  },
+  {
+   "q": "what us states allow abortion up to birth",
+   "growth": 600,
+   "seed": "what states allow abortion up to birth",
+   "src": "suggest"
+  },
+  {
+   "q": "did travis etienne jr change his name",
+   "growth": 600,
+   "seed": "did travis etienne change his name",
+   "src": "suggest"
+  },
+  {
+   "q": "how long is marlon humphrey out for",
+   "growth": 600,
+   "seed": "how old is marlon humphrey",
+   "src": "suggest"
+  },
+  {
+   "q": "how long is travis etienne jr out for",
+   "growth": 600,
+   "seed": "how long is travis etienne out",
+   "src": "suggest"
+  },
+  {
+   "q": "will there be a season 3 of mistletoe murders show",
+   "growth": 600,
+   "seed": "will there be a season 3 of mistletoe murders",
+   "src": "suggest"
+  },
+  {
+   "q": "where to watch mistletoe murders season 2",
+   "growth": 600,
+   "seed": "where to watch mistletoe murders",
+   "src": "suggest"
+  },
+  {
+   "q": "is kris jenner going to marry corey gamble",
+   "growth": 600,
+   "seed": "is kris jenner married to corey gamble",
+   "src": "suggest"
+  },
+  {
+   "q": "arnold schwarzenegger second name meaning",
+   "growth": 600,
+   "seed": "arnold schwarzenegger last name meaning",
+   "src": "suggest"
+  },
+  {
+   "q": "how long were kris jenner and corey gamble together",
+   "growth": 600,
+   "seed": "how long have kris jenner and corey gamble been together",
+   "src": "suggest"
+  },
+  {
+   "q": "how wealthy is arnold schwarzenegger",
+   "growth": 600,
+   "seed": "how tall is arnold schwarzenegger really",
+   "src": "suggest"
+  },
+  {
+   "q": "when did arnold schwarzenegger immigrate to america",
+   "growth": 600,
+   "seed": "when did arnold schwarzenegger come to america",
+   "src": "suggest"
+  },
+  {
+   "q": "what were ryan clark's comments about kyren lacy",
+   "growth": 600,
+   "seed": "what did ryan clark say about kyren lacy",
+   "src": "suggest"
+  },
+  {
+   "q": "why did ryan clark get fired from espn yesterday",
+   "growth": 600,
+   "seed": "why did ryan clark get fired from espn",
+   "src": "suggest"
+  },
+  {
+   "q": "is natalie portman english",
+   "growth": 600,
+   "seed": "is natalie portman british",
+   "src": "suggest"
+  },
+  {
+   "q": "where is natalie portman's family from",
+   "growth": 600,
+   "seed": "where is natalie portman from",
+   "src": "suggest"
+  },
+  {
+   "q": "how many episodes in season 2 of rosewood",
+   "growth": 600,
+   "seed": "mobland season 2 episode 8 release date",
+   "src": "suggest"
+  },
+  {
+   "q": "how much does an abortion cost at planned parenthood in ohio",
+   "growth": 561,
+   "seed": "how much does an abortion cost",
+   "src": "suggest"
+  },
+  {
+   "q": "why did travis etienne change his name to achane",
+   "growth": 561,
+   "seed": "did travis etienne change his name",
+   "src": "suggest"
+  },
+  {
+   "q": "how long is marlon humphrey contract",
+   "growth": 561,
+   "seed": "how old is marlon humphrey",
+   "src": "suggest"
+  },
+  {
+   "q": "how much does an abortion cost at planned parenthood in illinois",
+   "growth": 560,
+   "seed": "how much does an abortion cost",
+   "src": "suggest"
+  },
+  {
+   "q": "why is travis etienne changing his name",
+   "growth": 560,
+   "seed": "did travis etienne change his name",
+   "src": "suggest"
+  },
+  {
+   "q": "how big is marlon humphrey",
+   "growth": 560,
+   "seed": "how old is marlon humphrey",
+   "src": "suggest"
+  },
+  {
+   "q": "how much does an abortion cost at planned parenthood nj",
+   "growth": 559,
+   "seed": "how much does an abortion cost",
+   "src": "suggest"
+  },
+  {
+   "q": "does muslims believe in abortion",
+   "growth": 559,
+   "seed": "do muslims believe in abortion",
+   "src": "suggest"
+  },
+  {
+   "q": "will there be a season three of mistletoe murders",
+   "growth": 559,
+   "seed": "will there be a season 3 of mistletoe murders",
+   "src": "suggest"
+  },
+  {
+   "q": "where to watch mistletoe murders uk",
+   "growth": 559,
+   "seed": "where to watch mistletoe murders",
+   "src": "suggest"
+  },
+  {
+   "q": "when did arnold schwarzenegger come to the states",
+   "growth": 559,
+   "seed": "when did arnold schwarzenegger come to america",
+   "src": "suggest"
+  },
+  {
+   "q": "how much does an abortion cost at planned parenthood with insurance",
+   "growth": 558,
+   "seed": "how much does an abortion cost",
+   "src": "suggest"
+  },
+  {
+   "q": "do islam believe in abortion",
+   "growth": 558,
+   "seed": "do muslims believe in abortion",
+   "src": "suggest"
+  },
+  {
+   "q": "did travis etienne change the pronunciation of his name",
+   "growth": 558,
+   "seed": "did travis etienne change his name",
+   "src": "suggest"
+  },
+  {
+   "q": "how is marlon humphrey",
+   "growth": 558,
+   "seed": "how old is marlon humphrey",
+   "src": "suggest"
+  },
+  {
+   "q": "when did arnold schwarzenegger first come to america",
+   "growth": 558,
+   "seed": "when did arnold schwarzenegger come to america",
+   "src": "suggest"
+  },
+  {
+   "q": "how much does an abortion cost in california",
+   "growth": 557,
+   "seed": "how much does an abortion cost",
+   "src": "suggest"
+  },
+  {
+   "q": "do sunni muslims believe in abortion",
+   "growth": 557,
+   "seed": "do muslims believe in abortion",
+   "src": "suggest"
+  },
+  {
+   "q": "did travis etienne change name",
+   "growth": 557,
+   "seed": "did travis etienne change his name",
+   "src": "suggest"
+  },
+  {
+   "q": "how long has marlon humphrey been in the nfl",
+   "growth": 557,
+   "seed": "how old is marlon humphrey",
+   "src": "suggest"
+  },
+  {
+   "q": "is there gonna be a season 3 of mistletoe murders",
+   "growth": 557,
+   "seed": "will there be a season 3 of mistletoe murders",
+   "src": "suggest"
+  },
+  {
+   "q": "when did arnold schwarzenegger get american citizenship",
+   "growth": 557,
+   "seed": "when did arnold schwarzenegger come to america",
+   "src": "suggest"
+  },
+  {
+   "q": "how much does an abortion cost at planned parenthood in nc",
+   "growth": 556,
+   "seed": "how much does an abortion cost",
+   "src": "suggest"
+  },
+  {
+   "q": "what states allow abortion right up to birth",
+   "growth": 556,
+   "seed": "what states allow abortion up to birth",
+   "src": "suggest"
+  },
+  {
+   "q": "do muslims believe abortion is wrong",
+   "growth": 556,
+   "seed": "do muslims believe in abortion",
+   "src": "suggest"
+  },
+  {
+   "q": "how much did travis etienne sign for",
+   "growth": 556,
+   "seed": "did travis etienne change his name",
+   "src": "suggest"
+  },
+  {
+   "q": "how long has marlon humphrey been on the ravens",
+   "growth": 556,
+   "seed": "how old is marlon humphrey",
+   "src": "suggest"
+  },
+  {
+   "q": "why is travis etienne going by.achane",
+   "growth": 556,
+   "seed": "travis etienne achane",
+   "src": "suggest"
+  },
+  {
+   "q": "how long will travis etienne be out",
+   "growth": 556,
+   "seed": "how long is travis etienne out",
+   "src": "suggest"
+  },
+  {
+   "q": "is there a season 3 of mistletoe murders",
+   "growth": 556,
+   "seed": "will there be a season 3 of mistletoe murders",
+   "src": "suggest"
+  },
+  {
+   "q": "where to watch mistletoe murders episodes",
+   "growth": 556,
+   "seed": "where to watch mistletoe murders",
+   "src": "suggest"
+  },
+  {
+   "q": "did arnold schwarzenegger come to america legally",
+   "growth": 556,
+   "seed": "when did arnold schwarzenegger come to america",
+   "src": "suggest"
+  },
+  {
+   "q": "el nino de la tuna meaning",
+   "growth": 556,
+   "seed": "el niño de la tuna",
+   "src": "suggest"
+  },
+  {
+   "q": "how much does an abortion cost in illinois",
+   "growth": 555,
+   "seed": "how much does an abortion cost",
+   "src": "suggest"
+  },
+  {
+   "q": "what 11 states allow abortion up to birth",
+   "growth": 555,
+   "seed": "what states allow abortion up to birth",
+   "src": "suggest"
+  },
+  {
+   "q": "do muslims believe abortion is ok",
+   "growth": 555,
+   "seed": "do muslims believe in abortion",
+   "src": "suggest"
+  },
+  {
+   "q": "what happened to travis etienne",
+   "growth": 555,
+   "seed": "did travis etienne change his name",
+   "src": "suggest"
+  },
+  {
+   "q": "how long has marlon humphrey been in the league",
+   "growth": 555,
+   "seed": "how old is marlon humphrey",
+   "src": "suggest"
+  },
+  {
+   "q": "how to change your name in travis county",
+   "growth": 555,
+   "seed": "travis etienne name change",
+   "src": "suggest"
+  },
+  {
+   "q": "is travis etienne injured",
+   "growth": 555,
+   "seed": "is travis etienne playing this week",
+   "src": "suggest"
+  },
+  {
+   "q": "what is austin reed contract with the lakers",
+   "growth": 555,
+   "seed": "austin reed contract",
+   "src": "suggest"
+  },
+  {
+   "q": "what is arnold schwarzenegger's last name meaning in english",
+   "growth": 555,
+   "seed": "arnold schwarzenegger last name meaning",
+   "src": "suggest"
+  },
+  {
+   "q": "when did arnold schwarzenegger get us citizenship",
+   "growth": 555,
+   "seed": "when did arnold schwarzenegger come to america",
+   "src": "suggest"
+  },
+  {
+   "q": "is charlie kirk related to claude kirk",
+   "growth": 555,
+   "seed": "did erika kirk dress up as charlie kirk",
+   "src": "suggest"
+  },
+  {
+   "q": "how many episodes in velvet season 2",
+   "growth": 555,
+   "seed": "mobland season 2 episode 8 release date",
+   "src": "suggest"
+  },
+  {
+   "q": "does elizabeth warren take aipac",
+   "growth": 555,
+   "seed": "elizabeth warren aipac",
+   "src": "suggest"
+  },
+  {
+   "q": "how much does an abortion cost at planned parenthood pa",
+   "growth": 554,
+   "seed": "how much does an abortion cost",
+   "src": "suggest"
+  },
+  {
+   "q": "what states allow abortion up to time of birth",
+   "growth": 554,
+   "seed": "what states allow abortion up to birth",
+   "src": "suggest"
+  },
+  {
+   "q": "how long is travis etienne contract",
+   "growth": 554,
+   "seed": "how long is travis etienne out",
+   "src": "suggest"
+  },
+  {
+   "q": "will hallmark do a season 3 of mistletoe murders",
+   "growth": 554,
+   "seed": "will there be a season 3 of mistletoe murders",
+   "src": "suggest"
+  },
+  {
+   "q": "what happened to roquan smith",
+   "growth": 554,
+   "seed": "where did roquan smith go to college",
+   "src": "suggest"
+  },
+  {
+   "q": "how long was kris jenner flight attendant",
+   "growth": 554,
+   "seed": "kris jenner flight attendant",
+   "src": "suggest"
+  },
+  {
+   "q": "who is patrick schwarzenegger engaged to",
+   "growth": 554,
+   "seed": "who is arnold schwarzenegger married to",
+   "src": "suggest"
+  },
+  {
+   "q": "does arnold schwarzenegger last name mean",
+   "growth": 554,
+   "seed": "arnold schwarzenegger last name meaning",
+   "src": "suggest"
+  },
+  {
+   "q": "did arnold get shorter",
+   "growth": 554,
+   "seed": "how tall is arnold schwarzenegger really",
+   "src": "suggest"
+  },
+  {
+   "q": "when did arnold schwarzenegger move to america",
+   "growth": 554,
+   "seed": "when did arnold schwarzenegger come to america",
+   "src": "suggest"
+  },
+  {
+   "q": "is awkwafina's real name nora",
+   "growth": 554,
+   "seed": "awkwafina real name",
+   "src": "suggest"
+  },
+  {
+   "q": "upc pokemon meaning",
+   "growth": 554,
+   "seed": "upc pokemon",
+   "src": "suggest"
+  },
+  {
+   "q": "who is elizabeth warren senator",
+   "growth": 554,
+   "seed": "how old is elizabeth warren senator",
+   "src": "suggest"
+  },
+  {
+   "q": "how much does an abortion cost at planned parenthood in kansas",
+   "growth": 553,
+   "seed": "how much does an abortion cost",
+   "src": "suggest"
+  },
+  {
+   "q": "does travis etienne have a nickname",
+   "growth": 553,
+   "seed": "did travis etienne change his name",
+   "src": "suggest"
+  },
+  {
+   "q": "is marlon humphrey good",
+   "growth": 553,
+   "seed": "how old is marlon humphrey",
+   "src": "suggest"
+  },
+  {
+   "q": "is travis etienne hurt",
+   "growth": 553,
+   "seed": "travis etienne achane",
+   "src": "suggest"
+  },
+  {
+   "q": "how long is etienne contract",
+   "growth": 553,
+   "seed": "how long is travis etienne out",
+   "src": "suggest"
+  },
+  {
+   "q": "is roquan smith good",
+   "growth": 553,
+   "seed": "where did roquan smith go to college",
+   "src": "suggest"
+  },
+  {
+   "q": "did kris jenner sell her palm springs house",
+   "growth": 553,
+   "seed": "kris jenner palm springs house",
+   "src": "suggest"
+  },
+  {
+   "q": "what year did arnold schwarzenegger come to america",
+   "growth": 553,
+   "seed": "when did arnold schwarzenegger come to america",
+   "src": "suggest"
+  },
+  {
+   "q": "does elizabeth warren get aipac money",
+   "growth": 553,
+   "seed": "elizabeth warren aipac",
+   "src": "suggest"
+  },
+  {
+   "q": "how does pre mrna become mrna",
+   "growth": 553,
+   "seed": "mrna premarket",
+   "src": "suggest"
+  },
+  {
+   "q": "how much does an abortion cost at planned parenthood without insurance",
+   "growth": 552,
+   "seed": "how much does an abortion cost",
+   "src": "suggest"
+  },
+  {
+   "q": "what states have legalized abortion up to birth",
+   "growth": 552,
+   "seed": "what states allow abortion up to birth",
+   "src": "suggest"
+  },
+  {
+   "q": "do muslims support abortion",
+   "growth": 552,
+   "seed": "do muslims believe in abortion",
+   "src": "suggest"
+  },
+  {
+   "q": "did travis etienne transfer",
+   "growth": 552,
+   "seed": "did travis etienne change his name",
+   "src": "suggest"
+  },
+  {
+   "q": "how long has etienne been in the nfl",
+   "growth": 552,
+   "seed": "how long is travis etienne out",
+   "src": "suggest"
+  },
+  {
+   "q": "why was maze gone in season 3",
+   "growth": 552,
+   "seed": "will there be a season 3 of mistletoe murders",
+   "src": "suggest"
+  },
+  {
+   "q": "how much does roquan smith make",
+   "growth": 552,
+   "seed": "roquan smith college",
+   "src": "suggest"
+  },
+  {
+   "q": "where to watch hallmark mistletoe murders",
+   "growth": 552,
+   "seed": "where to watch mistletoe murders",
+   "src": "suggest"
+  },
+  {
+   "q": "does kris jenner have a palm springs house",
+   "growth": 552,
+   "seed": "kris jenner palm springs house",
+   "src": "suggest"
+  },
+  {
+   "q": "did kris jenner sell her palm springs home",
+   "growth": 552,
+   "seed": "kris jenner palm springs home",
+   "src": "suggest"
+  },
+  {
+   "q": "was kris jenner ever a flight attendant",
+   "growth": 552,
+   "seed": "kris jenner flight attendant",
+   "src": "suggest"
+  },
+  {
+   "q": "what does arnold schwarzenegger's last name mean in german",
+   "growth": 552,
+   "seed": "arnold schwarzenegger last name meaning",
+   "src": "suggest"
+  },
+  {
+   "q": "does elizabeth warren take aipac funds",
+   "growth": 552,
+   "seed": "elizabeth warren aipac",
+   "src": "suggest"
+  },
+  {
+   "q": "what is mara mara",
+   "growth": 552,
+   "seed": "mara premarket",
+   "src": "suggest"
+  },
+  {
+   "q": "thekla name meaning",
+   "growth": 551,
+   "seed": "thekla",
+   "src": "suggest"
+  },
+  {
+   "q": "how much does an abortion cost at planned parenthood in minnesota",
+   "growth": 551,
+   "seed": "how much does an abortion cost",
+   "src": "suggest"
+  },
+  {
+   "q": "what states allow abortion up till birth",
+   "growth": 551,
+   "seed": "what states allow abortion up to birth",
+   "src": "suggest"
+  },
+  {
+   "q": "do muslims think abortion is wrong",
+   "growth": 551,
+   "seed": "do muslims believe in abortion",
+   "src": "suggest"
+  },
+  {
+   "q": "does travis etienne have a son",
+   "growth": 551,
+   "seed": "did travis etienne change his name",
+   "src": "suggest"
+  },
+  {
+   "q": "will there be a mistletoe murders season 3 trailer",
+   "growth": 551,
+   "seed": "will there be a season 3 of mistletoe murders",
+   "src": "suggest"
+  },
+  {
+   "q": "where can i watch mistletoe murders",
+   "growth": 551,
+   "seed": "where to watch mistletoe murders",
+   "src": "suggest"
+  },
+  {
+   "q": "does kris jenner still have her palm springs house",
+   "growth": 551,
+   "seed": "kris jenner palm springs house",
+   "src": "suggest"
+  },
+  {
+   "q": "does kris jenner still have her palm springs home",
+   "growth": 551,
+   "seed": "kris jenner palm springs home",
+   "src": "suggest"
+  },
+  {
+   "q": "when did kris jenner become a flight attendant",
+   "growth": 551,
+   "seed": "kris jenner flight attendant",
+   "src": "suggest"
+  },
+  {
+   "q": "heat movie explained",
+   "growth": 551,
+   "seed": "heat movie burt reynolds",
+   "src": "suggest"
+  },
+  {
+   "q": "arnold schwarzenegger name meaning",
+   "growth": 551,
+   "seed": "arnold schwarzenegger last name meaning",
+   "src": "suggest"
+  },
+  {
+   "q": "how did arnold schwarzenegger get to america",
+   "growth": 551,
+   "seed": "when did arnold schwarzenegger come to america",
+   "src": "suggest"
+  },
+  {
+   "q": "is elizabeth warren still a senator",
+   "growth": 551,
+   "seed": "how old is elizabeth warren senator",
+   "src": "suggest"
+  },
+  {
+   "q": "does elizabeth warren receive aipac money",
+   "growth": 551,
+   "seed": "elizabeth warren aipac",
+   "src": "suggest"
+  },
+  {
+   "q": "mobland ending explained",
+   "growth": 550,
+   "seed": "mobland season 2 episode 8 release date",
+   "src": "suggest"
+  },
+  {
+   "q": "did elizabeth warren accept aipac money",
+   "growth": 550,
+   "seed": "elizabeth warren aipac",
+   "src": "suggest"
+  },
+  {
+   "q": "why did x money send me $5",
+   "growth": 1252,
+   "seed": "why did x",
+   "src": "suggest"
+  },
+  {
+   "q": "why did x money send me 5 dollars",
+   "growth": 1251,
+   "seed": "why did x",
+   "src": "suggest"
+  },
+  {
+   "q": "why is x money sending me $5",
+   "growth": 750,
+   "seed": "why is x",
+   "src": "suggest"
   }
  ]
 }

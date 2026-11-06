@@ -4081,7 +4081,7 @@ def build_site(store):
     w("robots.txt", ai_block + f"User-agent: *\nAllow: /\nDisallow: /api/\nSitemap: {SITE_URL}/sitemap.xml\nSitemap: {SITE_URL}/sitemap-news.xml\n")
     # темы для сборщика на ноутбуке владельца: свежие тренды за сутки (он раскапывает их «растущие запросы» в Google Trends)
     try:
-        fresh_t = [t for t in topics.values() if t.get("first_seen") and hours_since(t["first_seen"]) < 24
+        fresh_t = [t for t in allt.values() if t.get("first_seen") and hours_since(t["first_seen"]) < 24
                    and not t.get("blocked") and not generic_term(t["term"]) and not LT_BAD.search(t["term"])]
         fresh_t.sort(key=lambda t: -max((x[1] for x in t.get("traffic", [])), default=0))
         w("seeds.json", json.dumps({"made": now_iso(), "terms": [t["term"] for t in fresh_t[:80]]}, ensure_ascii=False))
