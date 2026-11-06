@@ -1591,6 +1591,15 @@ def learn_breaking(store):
             p["actual"] = sorted(actual, key=lambda a: -a["traffic"])[:8]
 
 
+COMMON_WORDS = set("""oil gas price prices cost costs report reports job jobs market markets stock stocks rate rates
+interest inflation economy weather forecast news election elections result results poll polls vote votes voting bitcoin
+crypto gold silver dow nasdaq time change daylight saving holiday holidays sale sales deal deals black friday cyber monday
+football basketball baseball soccer hockey game games team teams season playoff playoffs draft trade trades schedule
+tickets movie movies show shows music song songs album concert tour award awards war tariff tariffs shutdown government
+president senate house congress court supreme school schools snow storm rain hurricane tornado earthquake fire fires
+flu covid vaccine car cars truck trucks phone iphone update ai apple google amazon tesla netflix""".split())
+
+
 def trend_item(t):
     """Тренд без новости: «who is …» или «what is …» — выбираем то, что люди реально вводят в Google."""
     term = t["term"].strip()
@@ -1600,6 +1609,8 @@ def trend_item(t):
         return None
     if len(term.split()) == 1 and not re.match(r"[A-Z]", term):
         return None
+    if all(w in COMMON_WORDS for w in words(term)):
+        return None                       # «Oil prices», «Jobs report» — все знают, что это; в топ такие не выходят
     best, best_n = None, 0
     for qw in ("who is ", "what is "):
         try:
@@ -1614,7 +1625,10 @@ def trend_item(t):
         best = "what is "                 # «New Mexico Football» — это команда, а не человек
     if not best:
         return None
-    return {"subject": term, "query": best + term, "kind": "person" if best == "who is " else "other", "trend": True}
+    if best == "what is " and re.search(r"(?i)(?<!s)s$", term.split()[-1]) and not TEAM_RE.search(term):
+        best = "what are "
+    return {"subject": term, "query": best + term.lower() if best != "who is " else best + term,
+            "kind": "person" if best == "who is " else "other", "trend": True}
 
 
 # ---- Длинный хвост: узкие вопросы из подсказок Google, на которые в интернете ещё нет точного ответа ----
