@@ -159,6 +159,20 @@ BLOCK_PATTERNS = [
     r"\bcasino bonus", r"free spins", r"betting tips", r"crypto giveaway", r"\bhack(ed)? account", r"\bcheat codes? generator",
     # насилие над детьми и пр.
     r"\bminor(s)? (nude|sexual)", r"\bchild (abuse|porn)",
+    # ПРАВИЛО ВЛАДЕЛЬЦА: никакой религии (ни одной), ни в темах, ни в пояснениях
+    r"\breligio", r"\bgods?\b", r"\bjesus\b", r"\ballah\b", r"\bjehovah", r"\bbible", r"\bbiblical", r"\bqur'?an\b",
+    r"\bkoran\b", r"\btorah\b", r"\bgospel", r"(?<!eric )\bchurch(es)?\b", r"\bmosques?\b", r"\bsynagogue", r"\bpope\b",
+    r"\bvatican", r"\bcatholic", r"\bevangelical", r"\bchristianity\b", r"\bchristians\b", r"\bislam", r"\bmuslims?\b",
+    r"\bjudaism\b", r"\bjews?\b", r"\bjewish\b", r"\bhindu", r"\bbuddhis", r"\bsikh", r"\bmormon", r"\bscientolog",
+    r"\batheis", r"\bsatan", r"\bpastor\b", r"\bpriests?\b", r"\brabbi", r"\bimam\b", r"\bprophet", r"\bprayers?\b",
+    r"\bramadan\b", r"\beid\b", r"\byom kippur", r"\brosh hashanah", r"\bhanukk?ah", r"\bpassover\b", r"\bdiwali\b",
+    r"\bkali puja", r"\beaster\b(?! eggs?)", r"\blent\b(?= season)", r"\bholy\b", r"\bsaint (of|day)\b", r"\bheresy",
+    # ПРАВИЛО ВЛАДЕЛЬЦА: никаких незаконных вещей — наркотики, пиратство, взлом, подделки, оружие своими руками
+    r"\bcocaine\b", r"\bheroin\b", r"\bfentanyl\b", r"\bmeth(amphetamine)?\b", r"\bmdma\b", r"\becstasy pills?\b",
+    r"\blsd\b", r"\bpsilocybin", r"magic mushroom", r"\bmarijuana\b", r"\bcannabis\b", r"\bweed\b(?! killer)", r"\bthc\b",
+    r"\bkratom\b", r"\bdrug (dealer|deal|smuggling|cartel)", r"\btorrents?\b", r"pirate ?bay", r"\bpirated\b",
+    r"\b(watch|stream) .{0,30}\bfree online\b", r"\b(123|f)movies\b", r"\bcracked (software|apk|game)", r"\bkeygen\b",
+    r"\bhow to hack\b", r"\bfake ids?\b", r"\bcounterfeit", r"\bmoney laundering how",
 ]
 _BLOCK_RE = re.compile("|".join(BLOCK_PATTERNS), re.I)
 
@@ -184,8 +198,13 @@ def user_blocks():
         return []
 
 
+# имена и названия, которые только похожи на религиозные слова (спортсмены, команды, игры)
+_SAFE_RE = re.compile(r"(?i)caldwell-pope|gabriel jesus|jesus (luzardo|perdomo|sanchez|aguilar|made|tinoco)|islam makhachev|"
+                      r"holy cross|god of war|gods? of the (north|ring)|easter egg|pope (francis )?(?=memes?)", re.I)
+
+
 def bad_text(s, extra=()):
-    s = s or ""
+    s = _SAFE_RE.sub(" ", s or "")
     if _BLOCK_RE.search(s):
         return True
     low = s.lower()
@@ -923,6 +942,8 @@ the SOURCE reports it was based on. Give one of three verdicts.
 - it presents rumor or speculation as fact, or the headline misleads about what happened;
 - it identifies or accuses a private individual, a minor or a crime victim; or it is sexual, graphic, hateful, or promotes
   gambling, drugs, weapons or self-harm;
+- it is about or mentions religion in any way (a religion, church, holy day, religious figure or belief), or it is about
+  illegal goods or activities (drugs, piracy, hacking, fakes) — the site never covers these;
 - it is empty or useless, or not clear English.
 
 "minor" — publishable after small fixes: a detail not in the sources, slightly loose or wrong wording, an outlet named,
@@ -1133,6 +1154,8 @@ Questions Americans are typing into Google about it: {questions}
 
 Write a page that answers the search directly.
 Rules:
+- NEVER write about religion in any way (no religions, churches, holy days, religious figures or beliefs), and never
+  about illegal goods or activities (drugs, piracy, hacking, fakes, weapons-making). If the subject touches either, set ok=false.
 - The page must match the search EXACTLY: the title contains the search phrase "{query}" word for word (you may add a
   short tail, e.g. "Apple pro and tell event date: Oct. 28 in Los Angeles"), and the FIRST sentence of the answer repeats
   the key words of the search and gives the concrete answer at once (a date, a name, a place, a definition) — no warm-up.
