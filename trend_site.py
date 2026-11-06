@@ -572,6 +572,7 @@ hospital in Tampa on Thursday after a fall outside a restaurant. He had disclose
 treating him for blood clots in one leg." """
 
 PROMPT = """You answer ONE question for a US website: WHY is this topic trending on Google right now? Find the cause.
+- NEVER mention religion in any way (no religion, church, faith, holy day, religious figure or belief) — leave such details out.
 Compare all the sources: what single event or development made many people search for it at this moment?
 
 ACCURACY COMES BEFORE STYLE. An editor will check every fact against the sources and reject the page for any slip:
@@ -1517,6 +1518,7 @@ TEAM_RE = re.compile(r"(?i)\b(football|basketball|baseball|soccer|hockey|univers
 
 
 FU_PROMPT = """Here are full news articles about the trending Google search "{term}". Read them carefully.
+- NEVER mention religion in any way (no religion, church, faith, holy day, religious figure or belief) — leave such details out.
 {heads}
 
 Predict FOLLOW-UP SEARCHES: after reading this news, what will ordinary Americans google next because they don't know it
@@ -1628,6 +1630,7 @@ def clusters(items):
 
 
 BREAK_PROMPT = """BREAKING US news. Several outlets just published these articles. Read them carefully.
+- NEVER mention religion in any way (no religion, church, faith, holy day, religious figure or belief) — leave such details out.
 {arts}
 
 1) Name the event category in 1-3 words (e.g. "plane crash", "shooting", "storm", "celebrity death", "court ruling",
@@ -4095,6 +4098,17 @@ def generic_term(term):
     return term.strip().lower() in GENERIC_TERMS
 
 
+def topic_text(t):
+    a = t.get("ai") or {}
+    return " ".join([t.get("term", "")] + [str(a.get(k, "")) for k in ("headline", "why", "behind", "summary", "next", "unknown")]
+                    + [str(k) for k in (a.get("key_points") or [])])
+
+
+def page_text(x):
+    return " ".join([x.get("title", ""), x.get("subject", ""), x.get("answer", ""), x.get("body", ""), x.get("in_the_news", "")]
+                    + [f"{f.get('q', '')} {f.get('a', '')}" for f in x.get("faq", [])])
+
+
 def visible(store):
     ub = user_blocks()
     out = {}
@@ -4103,6 +4117,8 @@ def visible(store):
             continue
         if on_hold(store, "t", s):
             continue                     # криминал — ждёт одобрения владельца
+        if t.get("ai") and bad_text(topic_text(t), ub):
+            continue                     # правило владельца: ни слова о религии (и прочие запреты) — даже внутри текста
         if ONLY_WITH_SUMMARY and not t.get("ai"):
             continue
         ai = t.get("ai") or {}
@@ -4159,7 +4175,7 @@ def build_site(store):
     NAV_CATS[:] = [c for c in CATS if counts.get(c, 0) >= 2 and c != "other"][:6]
     ub = user_blocks()
     ex = {s: x for s, x in store.get("explainers", {}).items()
-          if not bad_text(x["title"] + " " + x["subject"], ub) and not on_hold(store, "x", s)
+          if not bad_text(page_text(x), ub) and not on_hold(store, "x", s)
           and (any(tt in topics for tt in x.get("topics", [])) or not any(tt in allt for tt in x.get("topics", [])))}
     AUDIO.clear(); NARRATE.clear()
     try:
@@ -4170,7 +4186,7 @@ def build_site(store):
     EXPLAINERS.clear(); EXPLAINERS.update(ex)
     global HAS_EXPLAINED, HAS_CAST
     HAS_EXPLAINED = bool(ex)
-    pv = {k: x for k, x in store.get("previews", {}).items() if x.get("slug") and not bad_text(x["title"], ub)}
+    pv = {k: x for k, x in store.get("previews", {}).items() if x.get("slug") and not bad_text(json.dumps(x, ensure_ascii=False), ub)}
     HAS_CAST = bool(pv)
     by_cat = {}
     for t in sorted(topics.values(), key=lambda x: x.get("last_seen", x["first_seen"]), reverse=True):
