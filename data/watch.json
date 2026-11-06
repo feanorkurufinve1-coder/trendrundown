@@ -1,5 +1,5 @@
 {
- "made": "2026-11-06T11:17:35+00:00",
+ "made": "2026-11-06T11:32:48+00:00",
  "days": [
   "2026-11-03",
   "2026-11-04",
@@ -8,56 +8,68 @@
  "pages": [
   {
    "page": "/x/telerally",
-   "clicks_3d": 5,
-   "impr_3d": 127,
+   "clicks_3d": 6,
+   "impr_3d": 138,
    "pos": 4.9,
    "by_day": {
     "2026-11-03": 3,
     "2026-11-04": 2,
-    "2026-11-05": 0
+    "2026-11-05": 1
    },
    "manual": true
   },
   {
    "page": "/x/scott-colom",
-   "clicks_3d": 3,
-   "impr_3d": 436,
-   "pos": 14.5,
+   "clicks_3d": 5,
+   "impr_3d": 529,
+   "pos": 14.6,
    "by_day": {
     "2026-11-03": 0,
     "2026-11-04": 1,
-    "2026-11-05": 2
-   },
-   "manual": true
-  },
-  {
-   "page": "/x/cyber-monday",
-   "clicks_3d": 2,
-   "impr_3d": 203,
-   "pos": 21.7,
-   "by_day": {
-    "2026-11-03": 2,
-    "2026-11-04": 0
+    "2026-11-05": 4
    },
    "manual": true
   },
   {
    "page": "/w/the-body-cast",
-   "clicks_3d": 1,
-   "impr_3d": 133,
-   "pos": 9.2,
+   "clicks_3d": 3,
+   "impr_3d": 196,
+   "pos": 9.1,
    "by_day": {
     "2026-11-03": 1,
     "2026-11-04": 0,
+    "2026-11-05": 2
+   },
+   "manual": false
+  },
+  {
+   "page": "/x/cyber-monday",
+   "clicks_3d": 2,
+   "impr_3d": 204,
+   "pos": 18.1,
+   "by_day": {
+    "2026-11-03": 2,
+    "2026-11-04": 0,
     "2026-11-05": 0
+   },
+   "manual": true
+  },
+  {
+   "page": "/x/curing-period",
+   "clicks_3d": 1,
+   "impr_3d": 7,
+   "pos": 6.8,
+   "by_day": {
+    "2026-11-04": 0,
+    "2026-11-05": 1
    },
    "manual": false
   },
   {
    "page": "/x/mutual-option",
    "clicks_3d": 0,
-   "impr_3d": 146,
-   "pos": 8.0,
+   "impr_3d": 162,
+   "pos": 7.9,
    "by_day": {
     "2026-11-03": 0,
     "2026-11-04": 0,
@@ -68,8 +80,8 @@
   {
    "page": "/x/mississippi-senate-election",
    "clicks_3d": 0,
-   "impr_3d": 117,
-   "pos": 17.9,
+   "impr_3d": 143,
+   "pos": 14.0,
    "by_day": {
     "2026-11-03": 0,
     "2026-11-04": 0,
@@ -80,8 +92,8 @@
   {
    "page": "/x/gen-z-regelt",
    "clicks_3d": 0,
-   "impr_3d": 100,
-   "pos": 7.9,
+   "impr_3d": 111,
+   "pos": 7.7,
    "by_day": {
     "2026-11-03": 0,
     "2026-11-04": 0,
@@ -92,20 +104,8 @@
   {
    "page": "/x/exhibition-game",
    "clicks_3d": 0,
-   "impr_3d": 58,
+   "impr_3d": 74,
    "pos": 7.2,
-   "by_day": {
-    "2026-11-03": 0,
-    "2026-11-04": 0,
-    "2026-11-05": 0
-   },
-   "manual": false
-  },
-  {
-   "page": "/x/tri-series-cricket",
-   "clicks_3d": 0,
-   "impr_3d": 46,
-   "pos": 8.8,
    "by_day": {
     "2026-11-03": 0,
     "2026-11-04": 0,
