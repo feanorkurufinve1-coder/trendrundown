@@ -1808,6 +1808,40 @@ def longtail_candidates(store):
     return out
 
 
+def stem_words(text):
+    """Слова без окончаний множественного числа: neoclouds → neocloud, companies → company."""
+    out = set()
+    for w in words(text):
+        if w in STOPW or len(w) < 3:
+            continue
+        if w.endswith("ies") and len(w) > 4:
+            w = w[:-3] + "y"
+        elif w.endswith("s") and not w.endswith("ss") and len(w) > 3:
+            w = w[:-1]
+        out.add(w)
+    return out
+
+
+def near_duplicate(ex, item):
+    """Есть ли уже пояснение почти о том же (за 30 дней): одно и то же главное слово темы.
+    Пример дубля: «neoclouds» и «neocloud companies»."""
+    subj = stem_words(item.get("subject", ""))
+    if not subj:
+        return None
+    for slug_, x in ex.items():
+        if hours_since(x.get("made", "2000-01-01T00:00:00+00:00")) > 30 * 24:
+            continue
+        other = stem_words(x.get("subject") or slug_.replace("-", " "))
+        if not other:
+            continue
+        common = subj & other
+        small = min(len(subj), len(other))
+        if common and (subj == other or (small >= 2 and (subj <= other or other <= subj))
+                       or len(common) / len(subj | other) >= 0.6):
+            return slug_
+    return None
+
+
 def explain(store):
     """Для свежих новостей этого прохода: предсказанные запросы → проверка подсказками Google → страница-объяснение."""
     key = api_key()
@@ -1921,6 +1955,10 @@ def explain(store):
                     old["seen"] = now_iso()
                 if hours_since(old["made"]) < 72 or slug == old.get("from"):
                     continue                  # недавно писали — только добавили ссылку на новую новость
+            dup = near_duplicate(ex, item)
+            if dup:
+                log(f"'{item['subject']}' — почти то же, что уже есть ({dup}), не пишу второй раз")
+                continue
             hit, questions = demand(item)
             if hit is False and not item.get("breaking"):     # срочное: Google ещё не успел выучить запрос — пишем заранее
                 log(f"'{item['query']}' — в подсказках Google не ищут, пропускаю")
