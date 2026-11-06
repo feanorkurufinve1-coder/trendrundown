@@ -940,5 +940,29 @@
 "hash": "d3b23e6291b5",
 "made": "2026-11-06T08:37:48+00:00",
 "sec": 137
+},
+"x/arnold-schwarzenegger-last-name": {
+"file": "audio/x/arnold-schwarzenegger-last-name.mp3",
+"hash": "fa8b8d0a7703",
+"made": "2026-11-06T09:38:00+00:00",
+"sec": 114
+},
+"x/nasdaq-100": {
+"file": "audio/x/nasdaq-100.mp3",
+"hash": "f8eba57132bf",
+"made": "2026-11-06T09:39:06+00:00",
+"sec": 104
+},
+"x/bear-market": {
+"file": "audio/x/bear-market.mp3",
+"hash": "3f58a7074938",
+"made": "2026-11-06T09:40:20+00:00",
+"sec": 114
+},
+"x/kospi": {
+"file": "audio/x/kospi.mp3",
+"hash": "62ab8fa56c75",
+"made": "2026-11-06T09:41:36+00:00",
+"sec": 116
 }
 }
