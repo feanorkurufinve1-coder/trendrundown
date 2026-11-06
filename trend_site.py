@@ -1620,7 +1620,7 @@ def trend_item(t):
 # ---- Длинный хвост: узкие вопросы из подсказок Google, на которые в интернете ещё нет точного ответа ----
 LT_EVERY_H = 2          # как часто копаем подсказки (часов)
 LT_PER_RUN = 2          # сколько узких вопросов за раз отдаём писателю
-LT_PER_DAY = 6          # и не больше стольких в сутки
+LT_PER_DAY = 10         # и не больше стольких в сутки
 LT_PREFIXES = ["what is", "what does", "what happened to", "why did", "why is", "is", "where is", "how did", "when is"]
 LT_ALPHA = "abcdefghijklmnopqrstuvwxyz"
 LT_Q = re.compile(r"(?i)^(what|why|how|is|are|does|did|where|when|who|can|will)\b|\b(meaning|explained|mean)$")
@@ -1671,6 +1671,9 @@ def supply(q):
     exact = [(t, u) for t, u in res if covers(t)]
     big = [u for _, u in exact[:6] if any(b in urllib.parse.urlparse(u).netloc for b in BIG_SITES)]
     return len(exact), len(big), res
+
+
+LAPTOP_Q = set()      # вопросы из сборщика на ноутбуке (data/laptop_questions.json)
 
 
 def longtail_candidates(store):
@@ -1732,6 +1735,27 @@ def longtail_candidates(store):
         seen.pop(g)
     for q in [q for q, ts in seeds_seen.items() if hours_since(ts) > 45 * 24][:2000]:
         seeds_seen.pop(q)
+    # вопросы, которые нашёл сборщик на ноутбуке (растущие запросы Google Trends + новые подсказки) — в начало очереди
+    try:
+        lq = json.load(open(os.path.join(HERE, "data", "laptop_questions.json"), encoding="utf-8"))
+        used = st.setdefault("laptop_used", {})
+        if hours_since(lq.get("made", "2000-01-01T00:00:00+00:00")) < 36:
+            front = []
+            for x in lq.get("questions", []):
+                g = (x.get("q") or "").strip().lower()
+                if not g or g in used or g in have or LT_BAD.search(g) or len(words(g)) < 3:
+                    continue
+                tt = next((store["topics"][s_] for s_ in store.get("current", []) if s_ in store["topics"]
+                           and all(w in words(g) for w in words(store["topics"][s_]["term"]))), None)
+                front.append((g, tt))
+                LAPTOP_Q.add(g)
+            fresh[:0] = front
+        for k in [k for k, v in used.items() if hours_since(v) > 30 * 24]:
+            used.pop(k)
+    except FileNotFoundError:
+        pass
+    except Exception as e:
+        log(f"вопросы с ноутбука: {e}")
     uniq, sigs = [], set()
     for g, t in fresh:                               # «what is X» и «what does X mean» — один и тот же вопрос
         sig = frozenset(w for w in words(g) if w not in STOPW and w not in ("mean", "meaning", "explained"))
@@ -1745,9 +1769,11 @@ def longtail_candidates(store):
         sup = supply(g)
         if sup is None:
             break
+        if g in LAPTOP_Q:
+            st.setdefault("laptop_used", {})[g] = now_iso()     # проверен — больше не берём
         exact, big, res = sup
         decision = "skip: answered" if (big >= 1 or exact >= 3) else "write"
-        lt_log.append({"time": now_iso(), "q": g, "seed": t["term"] if t else "alphabet", "exact": exact, "big": big,
+        lt_log.append({"time": now_iso(), "q": g, "seed": t["term"] if t else ("laptop" if g in LAPTOP_Q else "alphabet"), "exact": exact, "big": big,
                        "top": [u for _, u in res[:3]], "decision": decision})
         if decision != "write":
             continue
@@ -1769,12 +1795,12 @@ def longtail_candidates(store):
             lt_log[-1]["decision"] = "skip: no sources"
             continue
         kind = "term" if re.search(r"(?i)^what (is|does|are)\b|\bmean(ing)?$", g) else "other"
-        subj = cap_title(re.sub(r"(?i)^(what is|what are|what does|what happened to|why did|why is|is|where is|how did|when is)\s+(an?\s+|the\s+)?", "", g))
+        subj = cap_title(re.sub(r"(?i)^(what is|what are|what does|what happened to|why did|why is|why are|how long is|how long|how did|how does|how much|will there be|where is|where did|when is|when did|did|does|do|is|are|was)\s+(an?\s+|the\s+)?", "", g))
         subj = re.sub(r"(?i)\s+mean(ing)?$", "", subj).strip() or g
         item = {"subject": subj, "query": g, "kind": kind, "longtail": True}
         tt = t or {"slug": "lt-" + slugify(g)[:40], "term": subj, "articles": [], "traffic": []}
         out.append((tt["slug"], {"texts": texts, "blocks": blocks, "links": links}, tt, item, 0))
-        log(f"Длинный хвост: «{g}» (из «{t['term'] if t else 'алфавит'}») — точных ответов в поиске {exact}, пишем")
+        log(f"Длинный хвост: «{g}» (из «{t['term'] if t else ('ноутбука' if g in LAPTOP_Q else 'алфавита')}») — точных ответов в поиске {exact}, пишем")
     days[today] = days.get(today, 0) + len(out)
     for d in sorted(days)[:-14]:
         days.pop(d)
@@ -4015,6 +4041,14 @@ def build_site(store):
     except Exception as e:
         log(f"очередь озвучки: {e}")
     w("robots.txt", ai_block + f"User-agent: *\nAllow: /\nDisallow: /api/\nSitemap: {SITE_URL}/sitemap.xml\nSitemap: {SITE_URL}/sitemap-news.xml\n")
+    # темы для сборщика на ноутбуке владельца: свежие тренды за сутки (он раскапывает их «растущие запросы» в Google Trends)
+    try:
+        fresh_t = [t for t in topics.values() if t.get("first_seen") and hours_since(t["first_seen"]) < 24
+                   and not t.get("blocked") and not generic_term(t["term"]) and not LT_BAD.search(t["term"])]
+        fresh_t.sort(key=lambda t: -max((x[1] for x in t.get("traffic", [])), default=0))
+        w("seeds.json", json.dumps({"made": now_iso(), "terms": [t["term"] for t in fresh_t[:80]]}, ensure_ascii=False))
+    except Exception as e:
+        log(f"seeds.json: {e}")
     items = sorted(topics.values(), key=lambda t: t["first_seen"], reverse=True)[:50]
     w("feed.xml", '<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel>'
       f"<title>{SITE_NAME}</title><link>{SITE_URL}</link><description>{E(TAGLINE)}</description>"
