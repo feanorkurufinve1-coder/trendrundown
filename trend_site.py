@@ -2056,6 +2056,13 @@ def ga_fetch(store):
               "hour_30d": run(["hour", "sessionDefaultChannelGroup"], m, 30, 200),
               "weekday_30d": run(["dayOfWeekName", "sessionDefaultChannelGroup"], m, 30, 100)}
         try:
+            # озвучка (audio_play / audio_complete) и прокрутка до конца (scroll = 90% страницы) по дням и страницам
+            keep = {"audio_play", "audio_complete", "scroll", "page_view"}
+            ga["events_30d"] = [r for r in run(["date", "eventName"], ["eventCount"], 30, 3000) if r[1] in keep]
+            ga["events_pages_7d"] = [r for r in run(["pagePath", "eventName"], ["eventCount"], 7, 3000) if r[1] in keep]
+        except Exception as e:
+            log(f"GA события: {e}")
+        try:
             ga["age_30d"] = run(["userAgeBracket", "sessionDefaultChannelGroup"], m, 30, 100)
             ga["gender_30d"] = run(["userGender", "sessionDefaultChannelGroup"], m, 30, 50)
         except Exception:
@@ -3296,7 +3303,10 @@ def audio_player(key, text, depth=1):
         NARRATE[key] = text
     a = AUDIO.get(key)
     if a and a.get("hash") == narr_hash(text) and os.path.exists(os.path.join(OUT, a["file"])):
-        return (f'<div class="ls"><audio controls preload="none" src="{"../" * depth}{E(a["file"])}" style="width:100%;max-width:520px">'
+        return (f'<div class="ls"><audio controls preload="none" src="{"../" * depth}{E(a["file"])}" style="width:100%;max-width:520px"'
+                # счётчик: включили озвучку / дослушали до конца (видно в Google Analytics)
+                f' onplay="if(!this._p&&window.gtag){{this._p=1;gtag(\'event\',\'audio_play\')}}"'
+                f' onended="window.gtag&&gtag(\'event\',\'audio_complete\')">'
                 f'</audio><p class="meta" style="margin:2px 0 0">Listen to this article</p></div>')
     return listen_html()
 
