@@ -1,0 +1,50 @@
+{
+ "subject": "MLB rookie eligibility",
+ "kind": "term",
+ "query": "what makes a player a rookie in mlb",
+ "title": "What makes a player a rookie in MLB? 130 at-bats, 50 innings, 45 days",
+ "answer": "In MLB a player is still a rookie unless, in previous seasons, he went over 130 at-bats or 50 innings pitched in the majors, or 45 days on an active big-league roster during the regular season, not counting time on the injured list. Only rookies can win Rookie of the Year; the 2026 winners are announced Monday, Nov. 9.",
+ "body": "The limits count only earlier seasons, so a player can pass them during his rookie year and still win the award that year. Days on the injured list do not count toward the 45 days. The same rule decides who can appear on MLB Pipeline prospect lists.\n\nThe award, officially the Jackie Robinson Rookie of the Year, is voted on by 30 baseball writers per league. Each ranks three players, scored 5, 3 and 1 points. The 2026 finalists are Kevin McGonigle (Tigers), Parker Messick (Guardians) and Payton Tolle (Red Sox) in the American League, and Carson Benge (Mets), Sal Stewart (Reds) and JJ Wetherholt (Cardinals) in the National League. Messick is also a finalist for the AL Cy Young.",
+ "in_the_news": "The 2026 Rookie of the Year Awards open MLB's awards week on Nov. 9, 2026.",
+ "faq": [
+  {
+   "q": "How many at-bats before you lose rookie status?",
+   "a": "More than 130 at-bats in earlier seasons ends rookie status (or more than 50 innings for pitchers)."
+  },
+  {
+   "q": "Does time on the injured list count toward rookie status?",
+   "a": "No. The 45-day limit excludes days on the injured list."
+  },
+  {
+   "q": "When is the 2026 Rookie of the Year announced?",
+   "a": "Monday, Nov. 9, 2026."
+  },
+  {
+   "q": "How is Rookie of the Year voted?",
+   "a": "30 BBWAA writers per league each rank three players, worth 5, 3 and 1 points."
+  }
+ ],
+ "links": [
+  [
+   "MLB.com",
+   "Rookie eligibility (glossary)",
+   "https://www.mlb.com/glossary/rules/rookie-eligibility"
+  ],
+  [
+   "BBWAA",
+   "Voting FAQ",
+   "https://bbwaa.com/voting-faq/"
+  ],
+  [
+   "MLB.com",
+   "2026 BBWAA Awards finalists",
+   "https://www.mlb.com/cubs/news/2026-bbwaa-awards-finalists"
+  ]
+ ],
+ "topics": [
+  "mlb awards"
+ ],
+ "made": "2026-11-06T14:20:00+00:00",
+ "first": "2026-11-06T14:20:00+00:00",
+ "updated": "2026-11-06T14:20:00+00:00"
+}
