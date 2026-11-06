@@ -971,6 +971,10 @@ SOURCES:
 REVIEW_TOOL = {"name": "review", "description": "Editor's verdict.",
                "input_schema": {"type": "object", "properties": {
                    "verdict": {"type": "string", "enum": ["ok", "minor", "block"]},
+                   "crime": {"type": "boolean", "description": "true if the text is about a crime or criminal case: "
+                             "arrest, criminal charges, trial, conviction, sentence, prison, murder, shooting, stabbing, "
+                             "assault, theft, fraud, kidnapping, police investigation of a crime. Sports fouls, civil "
+                             "lawsuits and ordinary politics are NOT crime."},
                    "reason": {"type": "string"},
                    "edits": {"type": "array", "description": "for 'minor': exact fixes to apply to the draft",
                              "items": {"type": "object", "properties": {
@@ -1005,6 +1009,103 @@ def apply_edits(obj, edits, keys):
     return n
 
 
+REVIEW_CRIME = [False]      # последний вердикт редактора: текст про криминал? Тогда — только после одобрения владельца
+
+
+def hold_for_owner(store, kind, slug, title, text):
+    """ПРАВИЛО ВЛАДЕЛЬЦА: всё про криминал публикуется только после его одобрения. Возвращает True, если держим."""
+    key_ = f"{kind}:{slug}"
+    ap = store.setdefault("approvals", {})
+    if ap.get(key_) == "yes":
+        return False
+    q = store.setdefault("hold_queue", {})
+    if key_ not in q:
+        q[key_] = {"kind": kind, "slug": slug, "title": title[:160], "text": text[:700], "since": now_iso()}
+        log(f"НА ОДОБРЕНИЕ (криминал): {title}")
+    return True
+
+
+def on_hold(store, kind, slug):
+    ap = store.get("approvals", {}).get(f"{kind}:{slug}")
+    return f"{kind}:{slug}" in store.get("hold_queue", {}) and ap != "yes"
+
+
+# ---- Одобрение владельцем (криминал): уведомление и кнопки в Telegram ----
+def tg_api(method, payload):
+    tok = os.environ.get("TG_TOKEN", "").strip()
+    if not tok:
+        return None
+    req = urllib.request.Request(f"https://api.telegram.org/bot{tok}/{method}", data=json.dumps(payload).encode(),
+                                 headers={"Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=20, context=CTX) as r:
+        return json.loads(r.read().decode())
+
+
+def owner_approvals(store):
+    """Каждый запуск: 1) читаем нажатия кнопок владельца в Telegram; 2) шлём ему новые материалы на одобрение.
+    Чат владельца запоминается по первому /start; чужие нажатия игнорируются."""
+    if not os.environ.get("TG_TOKEN", "").strip():
+        return
+    st = store.setdefault("tg", {})
+    q = store.setdefault("hold_queue", {})
+    ap = store.setdefault("approvals", {})
+    try:
+        upd = tg_api("getUpdates", {"offset": st.get("offset", 0), "timeout": 0,
+                                    "allowed_updates": ["message", "callback_query"]}) or {}
+    except Exception as e:
+        log(f"Telegram: {e}")
+        return
+    for u in upd.get("result", []):
+        st["offset"] = u["update_id"] + 1
+        msg = u.get("message") or {}
+        cb = u.get("callback_query") or {}
+        chat = (msg.get("chat") or (cb.get("message") or {}).get("chat") or {}).get("id")
+        if msg.get("text", "").startswith("/start") and not st.get("chat"):
+            st["chat"] = chat
+            tg_api("sendMessage", {"chat_id": chat, "text": "Готово. Сюда будут приходить материалы о криминале — "
+                                   "публикую только после вашего ✅."})
+            continue
+        if cb and chat == st.get("chat"):
+            dec, _, k = (cb.get("data") or "").partition("|")
+            if k in q and dec in ("yes", "no"):
+                ap[k] = dec
+                if dec == "no":
+                    kind, slug = k.split(":", 1)
+                    if kind == "t" and slug in store["topics"]:
+                        store["topics"][slug]["blocked"] = "owner: no"
+                    if kind == "x":
+                        store.get("explainers", {}).pop(slug, None)
+                q.pop(k, None)
+                try:
+                    tg_api("answerCallbackQuery", {"callback_query_id": cb["id"],
+                                                   "text": "Опубликую" if dec == "yes" else "Не публикую"})
+                    tg_api("editMessageReplyMarkup", {"chat_id": chat, "message_id": cb["message"]["message_id"],
+                                                      "reply_markup": {"inline_keyboard": []}})
+                    tg_api("sendMessage", {"chat_id": chat, "reply_to_message_id": cb["message"]["message_id"],
+                                           "text": "✅ Будет на сайте в течение 15 минут" if dec == "yes" else "❌ Не публикуется"})
+                except Exception:
+                    pass
+                log(f"Владелец: {'ОДОБРИЛ' if dec == 'yes' else 'ОТКЛОНИЛ'} {k}")
+    if not st.get("chat"):
+        return
+    for k, x in list(q.items()):
+        if hours_since(x["since"]) > 72:
+            q.pop(k)                      # без ответа 3 дня — новость устарела, не публикуем
+            continue
+        if x.get("sent"):
+            continue
+        what = "Новость" if x["kind"] == "t" else "Пояснение"
+        text = f"🚨 {what} о криминале — публиковать?\n\n{x['title']}\n\n{x['text'][:600]}"
+        try:
+            tg_api("sendMessage", {"chat_id": st["chat"], "text": text, "reply_markup": {"inline_keyboard": [[
+                {"text": "✅ Публиковать", "callback_data": f"yes|{k}"},
+                {"text": "❌ Не надо", "callback_data": f"no|{k}"}]]}})
+            x["sent"] = now_iso()
+        except Exception as e:
+            log(f"Telegram отправка: {e}")
+            break
+
+
 def review(store, kind, title, draft, src, key):
     """Второй ИИ проверяет текст по источникам. True — можно публиковать. Решения пишутся в журнал data → review_log."""
     if not (AI_REVIEW and src):
@@ -1017,6 +1118,7 @@ def review(store, kind, title, draft, src, key):
         return True
     ok = out.get("verdict") != "block"
     REVIEW_EDITS[:] = (out.get("edits") or []) if out.get("verdict") == "minor" else []
+    REVIEW_CRIME[0] = bool(out.get("crime"))
     journal = store.setdefault("review_log", [])
     journal.append({"time": now_iso(), "kind": kind, "title": title[:120],
                     "verdict": out.get("verdict") if out.get("verdict") in ("ok", "minor", "block") else "ok",
@@ -1109,6 +1211,8 @@ def summarize(store):
                 store["review_log"][-1]["fixed"] = fixed
                 if fixed:
                     log(f"редактор сам исправил {fixed} мест(а) в '{t['term']}'")
+            if REVIEW_CRIME[0] and not ai:
+                hold_for_owner(store, "t", t["slug"], f"{t['term']}: {res.get('headline', '')}", res.get("summary", ""))
             if not ai:
                 t["ai_day"] = today; new_today += 1
             t["ai"] = res; done += 1
@@ -2050,6 +2154,8 @@ def explain(store):
                      "first": (old or {}).get("first", now_iso()), "day": today if not old else old.get("day"),
                      "topics": (old or {}).get("topics", []) + ([slug] if slug not in (old or {}).get("topics", []) else []),
                      "slug": xs, "new": True}
+            if REVIEW_CRIME[0] and not old:
+                hold_for_owner(store, "x", xs, page_["title"], page_["answer"])
             ex[xs] = page_
             done += 1; per_topic[slug] = per_topic.get(slug, 0) + 1
             if not old:
@@ -3457,6 +3563,8 @@ def manual_pages(store):
         x.setdefault("slug", fn[:-5]); x.setdefault("kind", "other"); x.setdefault("faq", []); x.setdefault("links", [])
         x.setdefault("topics", []); x.setdefault("in_the_news", ""); x.setdefault("query", x["title"])
         x["title"] = cap_title(x["title"])
+        if x.get("hold"):                 # ручная страница про криминал — тоже только после одобрения владельца
+            hold_for_owner(store, "x", x["slug"], x["title"], x.get("answer", ""))
         x.setdefault("made", now_iso()); x.setdefault("first", x["made"])
         if x.get("updated"):
             x["made"] = x["updated"]                 # дата правки — «updated …» на странице и dateModified для Google
@@ -3993,6 +4101,8 @@ def visible(store):
     for s, t in store["topics"].items():
         if t.get("blocked") or bad_text(t["term"], ub) or not t["articles"] or generic_term(t["term"]):
             continue
+        if on_hold(store, "t", s):
+            continue                     # криминал — ждёт одобрения владельца
         if ONLY_WITH_SUMMARY and not t.get("ai"):
             continue
         ai = t.get("ai") or {}
@@ -4049,7 +4159,7 @@ def build_site(store):
     NAV_CATS[:] = [c for c in CATS if counts.get(c, 0) >= 2 and c != "other"][:6]
     ub = user_blocks()
     ex = {s: x for s, x in store.get("explainers", {}).items()
-          if not bad_text(x["title"] + " " + x["subject"], ub)
+          if not bad_text(x["title"] + " " + x["subject"], ub) and not on_hold(store, "x", s)
           and (any(tt in topics for tt in x.get("topics", [])) or not any(tt in allt for tt in x.get("topics", [])))}
     AUDIO.clear(); NARRATE.clear()
     try:
@@ -4987,6 +5097,10 @@ def run_once():
             log(f"Новых гидов по актёрам: {pn}")
     except Exception as e:
         log(f"гиды по актёрам: ошибка {e}")
+    try:
+        owner_approvals(store)            # криминал: кнопки владельца в Telegram (до сборки — одобренное сразу выходит)
+    except Exception as e:
+        log(f"одобрение владельца: {e}")
     total = build_site(store)
     pend = store.pop("_pending_out", [])
     if pend:
