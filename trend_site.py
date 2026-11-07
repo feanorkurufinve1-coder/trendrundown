@@ -1012,7 +1012,7 @@ def apply_edits(obj, edits, keys):
 
 REVIEW_CRIME = [False]      # последний вердикт редактора: текст про криминал? Тогда — только после одобрения владельца
 # запасная проверка без ИИ: редактор иногда не ставит отметку «криминал»
-CRIME_RE = re.compile(r"(?i)\b(shooting|shootings|shot dead|gunman|gunfire|murder\w*|homicide|stabb\w*|killed|killing|"
+CRIME_RE = re.compile(r"(?i)\b(shooting|shootings|shot dead|gunman|gunfire|murder\w*|homicide|stabb\w*|"
                       r"manslaughter|arrest\w*|charged with|criminal charges?|indict\w*|convict\w*|sentenced|"
                       r"pleaded guilty|prison sentence|kidnap\w*|abduct\w*|robber\w*|carjack\w*|burglar\w*|theft|"
                       r"embezzl\w*|fraud charges|money laundering|police (say|said|investigat\w*)|suspect\w*|"
