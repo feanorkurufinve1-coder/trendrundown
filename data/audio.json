@@ -13,9 +13,9 @@
 },
 "x/mutual-option": {
 "file": "audio/x/mutual-option.mp3",
-"hash": "2032828cc9cb",
-"made": "2026-11-04T07:05:05+00:00",
-"sec": 125
+"hash": "cc00f38f6476",
+"made": "2026-11-07T05:30:47+00:00",
+"sec": 137
 },
 "x/telerally": {
 "file": "audio/x/telerally.mp3",
@@ -1096,5 +1096,23 @@
 "hash": "65fd40484b46",
 "made": "2026-11-07T03:29:43+00:00",
 "sec": 122
+},
+"t/platinum-glove": {
+"file": "audio/t/platinum-glove.mp3",
+"hash": "f15352664a03",
+"made": "2026-11-07T05:29:31+00:00",
+"sec": 80
+},
+"t/jimmy": {
+"file": "audio/t/jimmy.mp3",
+"hash": "1a16007b8167",
+"made": "2026-11-07T05:29:54+00:00",
+"sec": 59
+},
+"x/the-tonight-show-starring-jimmy-fallon": {
+"file": "audio/x/the-tonight-show-starring-jimmy-fallon.mp3",
+"hash": "b3a5db5db024",
+"made": "2026-11-07T05:31:18+00:00",
+"sec": 77
 }
 }
