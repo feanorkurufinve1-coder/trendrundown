@@ -588,7 +588,7 @@
   ]
  },
  "all-mlb-team": {
-  "time": "2026-11-06T14:16:58+00:00",
+  "time": "2026-11-07T14:17:01+00:00",
   "query": "what is the all-mlb team",
   "in_suggest": true,
   "suggest": {
@@ -633,11 +633,15 @@
    [
     "2026-11-06",
     true
+   ],
+   [
+    "2026-11-07",
+    true
    ]
   ]
  },
  "hank-aaron-award": {
-  "time": "2026-11-06T14:16:59+00:00",
+  "time": "2026-11-07T14:17:02+00:00",
   "query": "what is the hank aaron award",
   "in_suggest": true,
   "suggest": {
@@ -680,11 +684,15 @@
    [
     "2026-11-06",
     true
+   ],
+   [
+    "2026-11-07",
+    true
    ]
   ]
  },
  "how-cy-young-is-voted": {
-  "time": "2026-11-06T14:17:01+00:00",
+  "time": "2026-11-07T14:17:04+00:00",
   "query": "how is the cy young award voted",
   "in_suggest": true,
   "suggest": {
@@ -729,11 +737,15 @@
    [
     "2026-11-06",
     true
+   ],
+   [
+    "2026-11-07",
+    true
    ]
   ]
  },
  "maine-2nd-district-ranked-choice": {
-  "time": "2026-11-06T14:17:03+00:00",
+  "time": "2026-11-07T14:17:05+00:00",
   "query": "why is maine 2nd district going to ranked choice",
   "in_suggest": false,
   "suggest": {
@@ -746,11 +758,15 @@
    [
     "2026-11-06",
     false
+   ],
+   [
+    "2026-11-07",
+    false
    ]
   ]
  },
  "mlb-manager-of-the-year-voting": {
-  "time": "2026-11-06T14:17:04+00:00",
+  "time": "2026-11-07T14:17:07+00:00",
   "query": "how is mlb manager of the year voted",
   "in_suggest": false,
   "suggest": {
@@ -778,11 +794,15 @@
    [
     "2026-11-06",
     false
+   ],
+   [
+    "2026-11-07",
+    false
    ]
   ]
  },
  "mlb-rookie-eligibility": {
-  "time": "2026-11-06T14:17:06+00:00",
+  "time": "2026-11-07T14:17:08+00:00",
   "query": "what makes a player a rookie in mlb",
   "in_suggest": true,
   "suggest": {
@@ -817,25 +837,29 @@
    [
     "2026-11-06",
     true
+   ],
+   [
+    "2026-11-07",
+    true
    ]
   ]
  },
  "murder-in-galicia-true-story": {
-  "time": "2026-11-06T14:17:08+00:00",
+  "time": "2026-11-07T14:17:10+00:00",
   "query": "is murder in galicia a true story",
-  "in_suggest": false,
+  "in_suggest": true,
   "suggest": {
    "murder in galicia": [
     "murder in galicia",
     "murder in galicia netflix",
+    "murder in galicia 2026",
+    "murder in galicia true story",
+    "murder in galicia netflix review",
     "murder in galicia imdb",
     "murder in galicia series",
-    "murder in galicia 2026",
     "unprotected murder in galicia",
     "unprotected murder in galicia netflix",
-    "is galicia spain safe",
-    "is leon in galicia",
-    "what is galicia"
+    "is galicia spain safe"
    ],
    "what is murder in galicia": [],
    "is murder in galicia a true story": [],
@@ -845,11 +869,15 @@
    [
     "2026-11-06",
     false
+   ],
+   [
+    "2026-11-07",
+    true
    ]
   ]
  },
  "relief-pitcher-of-the-year": {
-  "time": "2026-11-06T14:17:09+00:00",
+  "time": "2026-11-07T14:17:11+00:00",
   "query": "what is the relief pitcher of the year award",
   "in_suggest": true,
   "suggest": {
@@ -870,11 +898,15 @@
    [
     "2026-11-06",
     true
+   ],
+   [
+    "2026-11-07",
+    true
    ]
   ]
  },
  "reminders-of-him-book": {
-  "time": "2026-11-06T14:17:11+00:00",
+  "time": "2026-11-07T14:17:12+00:00",
   "query": "is reminders of him based on a book",
   "in_suggest": true,
   "suggest": {
@@ -899,8 +931,8 @@
     "what is reminders of him playing on",
     "what is reminders of him on peacock about",
     "what is reminders of him book about",
-    "what is reminders of him on netflix about",
-    "what is reminders of him about summary"
+    "what is reminders of him about summary",
+    "what is reminders of him about spoilers"
    ],
    "is reminders of him based on a book": [
     "is reminders of him based on a book",
@@ -922,54 +954,62 @@
    [
     "2026-11-06",
     true
+   ],
+   [
+    "2026-11-07",
+    true
    ]
   ]
  },
  "what-does-habibi-mean": {
-  "time": "2026-11-06T14:17:12+00:00",
+  "time": "2026-11-07T14:17:13+00:00",
   "query": "what does habibi mean",
   "in_suggest": true,
   "suggest": {
    "habibi": [
     "habibi meaning",
     "habibi",
-    "habibi definition",
+    "habibi pac",
     "habibi meaning in english",
+    "habibi definition",
     "habibi in arabic",
     "habibi vs habibti",
+    "habibi deli",
     "habibi meaning in arabic",
-    "habibi in english",
-    "habibi pronunciation",
     "habibi grill"
    ],
    "what is habibi": [
     "what is habibi",
     "what is habibi mean",
-    "what is habibi in english",
+    "what is habibi pac",
     "what is habibi in arabic",
+    "what is habibi in english",
     "what is habibi mean in arabic",
+    "what is habibi super pac",
     "what is habibi sauce",
     "what is habibi flavor",
-    "what is habibi for a girl",
-    "what is habibi food",
-    "what is habibi funk"
+    "what is habibi for a girl"
    ],
    "what does habibi mean": [
     "what does habibi mean",
     "what does habibi mean in arabic",
     "what does habibi mean in english",
-    "what does habibi mean in arabic and english",
-    "what does habibi mean in muslim language",
+    "what does habibi mean in egypt",
     "what does habibi mean in indian",
     "what does habibi mean in spanish",
     "what does habibi mean in hebrew",
-    "what does habibi mean in egypt",
-    "what does habibi mean in lebanese"
+    "what does habibi mean in lebanese",
+    "what does habibi mean in islam",
+    "what does habibi mean in iraq"
    ]
   },
   "history": [
    [
     "2026-11-06",
+    true
+   ],
+   [
+    "2026-11-07",
     true
    ]
   ]
