@@ -1138,5 +1138,53 @@
 "hash": "6cd0ed5911fc",
 "made": "2026-11-07T12:20:03+00:00",
 "sec": 100
+},
+"x/alicias-law-the-good-wife": {
+"file": "audio/x/alicias-law-the-good-wife.mp3",
+"hash": "fa14d2b5fac1",
+"made": "2026-11-07T14:25:32+00:00",
+"sec": 85
+},
+"x/edgar-martinez-award": {
+"file": "audio/x/edgar-martinez-award.mp3",
+"hash": "29c78b947240",
+"made": "2026-11-07T14:26:34+00:00",
+"sec": 95
+},
+"x/how-is-speaker-of-the-house-elected": {
+"file": "audio/x/how-is-speaker-of-the-house-elected.mp3",
+"hash": "4d903be1ac10",
+"made": "2026-11-07T14:27:47+00:00",
+"sec": 114
+},
+"x/lame-duck-session": {
+"file": "audio/x/lame-duck-session.mp3",
+"hash": "75d9aa5c5234",
+"made": "2026-11-07T14:29:08+00:00",
+"sec": 127
+},
+"x/mlb-posting-system": {
+"file": "audio/x/mlb-posting-system.mp3",
+"hash": "5f5f48165d09",
+"made": "2026-11-07T14:30:27+00:00",
+"sec": 124
+},
+"x/record-vs-song-of-the-year": {
+"file": "audio/x/record-vs-song-of-the-year.mp3",
+"hash": "918a83e8b38a",
+"made": "2026-11-07T14:31:29+00:00",
+"sec": 98
+},
+"x/richard-avedon": {
+"file": "audio/x/richard-avedon.mp3",
+"hash": "f46d3d191806",
+"made": "2026-11-07T14:32:43+00:00",
+"sec": 114
+},
+"x/silver-slugger-award": {
+"file": "audio/x/silver-slugger-award.mp3",
+"hash": "b31702579117",
+"made": "2026-11-07T14:33:48+00:00",
+"sec": 104
 }
 }
