@@ -982,7 +982,7 @@ REVIEW_TOOL = {"name": "review", "description": "Editor's verdict.",
                                  "find": {"type": "string", "description": "exact text copied from the draft (a phrase or sentence)"},
                                  "replace": {"type": "string", "description": "corrected text, or empty string to delete it"}},
                                  "required": ["find", "replace"]}}},
-                   "required": ["verdict", "reason"]}}
+                   "required": ["verdict", "crime", "reason"]}}
 REVIEW_EDITS = []   # правки редактора из последней проверки (для «minor»)
 
 
@@ -1011,6 +1011,30 @@ def apply_edits(obj, edits, keys):
 
 
 REVIEW_CRIME = [False]      # последний вердикт редактора: текст про криминал? Тогда — только после одобрения владельца
+# запасная проверка без ИИ: редактор иногда не ставит отметку «криминал»
+CRIME_RE = re.compile(r"(?i)\b(shooting|shootings|shot dead|gunman|gunfire|murder\w*|homicide|stabb\w*|killed|killing|"
+                      r"manslaughter|arrest\w*|charged with|criminal charges?|indict\w*|convict\w*|sentenced|"
+                      r"pleaded guilty|prison sentence|kidnap\w*|abduct\w*|robber\w*|carjack\w*|burglar\w*|theft|"
+                      r"embezzl\w*|fraud charges|money laundering|police (say|said|investigat\w*)|suspect\w*|"
+                      r"assault\w*|massacre|terror attack|bomb threat|hostage\w*)\b")
+
+
+def is_crime(*texts):
+    return bool(CRIME_RE.search(" ".join(t or "" for t in texts)))
+
+
+def crime_sweep(store):
+    """Перед каждой сборкой: всё свежее (за 3 суток) про криминал, что ещё не одобрено, — в очередь владельца."""
+    ap = store.get("approvals", {})
+    for slug, x in store.get("explainers", {}).items():
+        if hours_since(x.get("made", "2000-01-01T00:00:00+00:00")) < 72 and ap.get(f"x:{slug}") != "yes" \
+                and is_crime(x.get("title"), x.get("answer"), x.get("in_the_news")):
+            hold_for_owner(store, "x", slug, x["title"], x.get("answer", ""))
+    for slug, t in store.get("topics", {}).items():
+        a = t.get("ai") or {}
+        if a and hours_since(t.get("first_seen") or "2000-01-01T00:00:00+00:00") < 72 and ap.get(f"t:{slug}") != "yes" \
+                and is_crime(a.get("headline"), a.get("why"), a.get("summary")):
+            hold_for_owner(store, "t", slug, f"{t['term']}: {a.get('headline', '')}", a.get("summary", ""))
 
 
 def hold_for_owner(store, kind, slug, title, text):
@@ -5149,6 +5173,10 @@ def run_once():
         owner_approvals(store)            # криминал: кнопки владельца в Telegram (до сборки — одобренное сразу выходит)
     except Exception as e:
         log(f"одобрение владельца: {e}")
+    try:
+        crime_sweep(store)                # криминал — только после одобрения владельца (страховка к отметке редактора)
+    except Exception as e:
+        log(f"проверка на криминал: {e}")
     total = build_site(store)
     pend = store.pop("_pending_out", [])
     if pend:
