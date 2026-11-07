@@ -1,54 +1,82 @@
 {
- "made": "2026-11-07T12:02:25+00:00",
+ "made": "2026-11-07T12:05:53+00:00",
  "days": [
-  "2026-11-04",
   "2026-11-05",
-  "2026-11-06"
+  "2026-11-06",
+  "2026-11-07"
  ],
  "pages": [
   {
    "page": "/x/scott-colom",
    "clicks_3d": 6,
-   "impr_3d": 568,
-   "pos": 15.5,
+   "impr_3d": 417,
+   "pos": 19.1,
    "by_day": {
-    "2026-11-04": 1,
     "2026-11-05": 4,
-    "2026-11-06": 1
+    "2026-11-06": 2,
+    "2026-11-07": 0
    },
    "manual": true
   },
   {
    "page": "/w/the-body-cast",
-   "clicks_3d": 3,
-   "impr_3d": 211,
-   "pos": 8.9,
+   "clicks_3d": 6,
+   "impr_3d": 225,
+   "pos": 8.5,
    "by_day": {
-    "2026-11-04": 0,
     "2026-11-05": 2,
-    "2026-11-06": 1
+    "2026-11-06": 4
    },
    "manual": false
   },
   {
-   "page": "/x/telerally",
-   "clicks_3d": 3,
-   "impr_3d": 68,
-   "pos": 4.2,
+   "page": "/x/murder-in-galicia-true-story",
+   "clicks_3d": 4,
+   "impr_3d": 28,
+   "pos": 7.2,
    "by_day": {
-    "2026-11-04": 2,
+    "2026-11-06": 4
+   },
+   "manual": true
+  },
+  {
+   "page": "/x/dane-cook-brother",
+   "clicks_3d": 1,
+   "impr_3d": 304,
+   "pos": 9.2,
+   "by_day": {
+    "2026-11-06": 1,
+    "2026-11-07": 0
+   },
+   "manual": true
+  },
+  {
+   "page": "/x/telerally",
+   "clicks_3d": 1,
+   "impr_3d": 40,
+   "pos": 3.5,
+   "by_day": {
     "2026-11-05": 1,
     "2026-11-06": 0
    },
    "manual": true
   },
   {
+   "page": "/x/under-siege-netflix-true-story",
+   "clicks_3d": 1,
+   "impr_3d": 13,
+   "pos": 5.1,
+   "by_day": {
+    "2026-11-06": 1
+   },
+   "manual": true
+  },
+  {
    "page": "/x/curing-period",
    "clicks_3d": 1,
-   "impr_3d": 7,
-   "pos": 6.8,
+   "impr_3d": 4,
+   "pos": 4.8,
    "by_day": {
-    "2026-11-04": 0,
     "2026-11-05": 1
    },
    "manual": false
@@ -56,10 +84,9 @@
   {
    "page": "/x/mississippi-senate-election",
    "clicks_3d": 0,
-   "impr_3d": 144,
-   "pos": 14.0,
+   "impr_3d": 64,
+   "pos": 14.2,
    "by_day": {
-    "2026-11-04": 0,
     "2026-11-05": 0,
     "2026-11-06": 0
    },
@@ -68,45 +95,9 @@
   {
    "page": "/x/gen-z-regelt",
    "clicks_3d": 0,
-   "impr_3d": 82,
-   "pos": 7.6,
+   "impr_3d": 62,
+   "pos": 7.8,
    "by_day": {
-    "2026-11-04": 0,
-    "2026-11-05": 0,
-    "2026-11-06": 0
-   },
-   "manual": false
-  },
-  {
-   "page": "/x/mutual-option",
-   "clicks_3d": 0,
-   "impr_3d": 60,
-   "pos": 8.2,
-   "by_day": {
-    "2026-11-04": 0,
-    "2026-11-05": 0
-   },
-   "manual": false
-  },
-  {
-   "page": "/x/cyber-monday",
-   "clicks_3d": 0,
-   "impr_3d": 56,
-   "pos": 13.6,
-   "by_day": {
-    "2026-11-04": 0,
-    "2026-11-05": 0,
-    "2026-11-06": 0
-   },
-   "manual": true
-  },
-  {
-   "page": "/x/tri-series-cricket",
-   "clicks_3d": 0,
-   "impr_3d": 49,
-   "pos": 9.6,
-   "by_day": {
-    "2026-11-04": 0,
     "2026-11-05": 0,
     "2026-11-06": 0
    },
