@@ -12,6 +12,8 @@
 - Близкие выборы → «why are results taking so long», «did X win», правила подсчёта.
 - Неделя наград MLB (9–12 нояб) → «how is X voted», «what is X award», критерии (rookie eligibility); новая награда = мало конкурентов.
 - Люди пишут слитные термины с пробелом/дефисом: «tele rally», «tele-rally», «telly rally» — в FAQ давать варианты написания.
+- Смена большинства в Конгрессе → процедурные вопросы: «when does the new congress take office», «how is the speaker elected», «lame duck session».
+- Игрок из Японии/Кореи выставлен на постинг → «who is X» + «posting system» (окно 45 дней, дедлайн).
 - Сериал по реальному делу → люди ищут по ИМЕНИ реального человека («darryl mccauley where is he now»), а не по названию шоу; Netflix-название в подсказках может отличаться («bank under siege»).
 
 ## Ближайшие события и что будут искать
@@ -28,19 +30,41 @@
 | 10 нояб | MLB Manager of the Year | how is mlb manager of the year voted | ✅ mlb-manager-of-the-year-voting |
 | 11 нояб | MLB Cy Young + НОВАЯ Relief Pitcher of the Year | how is the cy young award voted; what is the relief pitcher of the year award | ✅ how-cy-young-is-voted, relief-pitcher-of-the-year |
 | 11 нояб | MLB Awards (Лас-Вегас): All-MLB Team, Hank Aaron Award, Edgar Martinez DH | what is the all-mlb team; what is the hank aaron award | ✅ all-mlb-team, hank-aaron-award |
-| 17 нояб | Silver Slugger Awards | what is the silver slugger award | — (писать ~13 нояб) |
 | 19 нояб | Netflix: The Altruists (Julia Garner; SBF и Caroline Ellison) | is the altruists a true story | — (писать ~15 нояб) |
 | 13 нояб | Кино: Ebenezer: A Christmas Carol | who plays ebenezer / cast | — |
 | 14 нояб | Jake Paul vs Tank Davis | (занято спортсайтами — пропустить) | — |
 | 16 нояб | Номинации Grammy | who is [новый номинант Best New Artist]; record vs song of the year | — |
 | 18 нояб | CMA Awards: новые артисты Avery Anna, Carter Faith, Emily Ann Roberts, Tucker Wetmore | who is X | — (писать 14–16 нояб) |
 | 20 нояб | Кино: Hunger Games: Sunrise on the Reaping | who plays young haymitch; is it a prequel | — (писать ~15 нояб) |
+| 9 нояб – 3 янв | Конгресс: lame duck (с 9 нояб), новый Конгресс 3 янв 2027, выбор спикера (демократы взяли обе палаты) | what is a lame duck session; when does the new congress take office; how is the speaker elected | ✅ lame-duck-session, when-does-new-congress-start, how-is-speaker-of-the-house-elected |
+| 2 нояб – 16 дек | MLB постинг: Teruaki Sato, Kaima Taira, Hiromi Itoh (до 16 дек) | what is the posting system in mlb; who is teruaki sato | ✅ mlb-posting-system, teruaki-sato |
+| 11 нояб | Netflix: Avedon (Ron Howard) | who was richard avedon | ✅ richard-avedon |
+| 11 нояб | Netflix: Alicia's Law (мекс. ремейк The Good Wife) | is alicia's law based on the good wife | ✅ alicias-law-the-good-wife |
+| 11 нояб | MLB Awards: Edgar Martinez DH Award | what is the edgar martinez award | ✅ edgar-martinez-award |
+| 17 нояб | Silver Slugger (финалисты 2 нояб) | what is the silver slugger award | ✅ silver-slugger-award |
+| 16 нояб | Grammy номинации | record of the year vs song of the year | ✅ record-vs-song-of-the-year |
+| 17 нояб | MLB: дедлайн принятия qualifying offer (16:00 ET) | (есть qualifying-offer) | — |
+| 1 дек | Истекает CBA MLB, вероятен локаут (авто-страница mlb-lockout уже есть) | what is a lockout in baseball | — |
+| 25 нояб | Netflix: The Mosquito Bowl (футбол морпехов 1944, по книге Bissinger) | is the mosquito bowl a true story | — (писать ~20 нояб) |
+| 10 дек | The Game Awards (номинации ~ середина нояб) | — | — |
 | 20 нояб | Кино: I Play Rocky | is i play rocky a true story / who plays stallone | — |
 
 Правило: писать за 1–5 дней до события (Google индексирует ~2/3 новых страниц за сутки).
 Проверка: через 3–7 дней после даты сверить с Trends CSV и Search Console — угадали или нет, записать урок сюда.
 
 ## Уроки
+- 7 нояб, проверка (подсказки Google 6 нояб + GSC по 6 нояб):
+  - telerally (31 окт): ✅ 40 кликов / 891 показ всего, поз. ~2; лучшая страница.
+  - scott-colom (3 нояб): ⚠ 7 кликов / 706 показов, поз. 17–21 — тема есть, но мы низко; ищут «scott colom positions / background».
+  - cyber-monday (5 нояб): ⚠ 6 кликов / 1801 показ, поз. 10–68; ищут «when is cyber monday».
+  - dane-cook-brother (5 нояб): ✅ 1 клик / 304 показа за 6 нояб, поз. ~8; реальные фразы: «is dane cook's brother still alive», «dane cook erika», «where is darryl mccauley now», «is darryl mccauley still in prison».
+  - murder-in-galicia-true-story (6 нояб): ✅ 4 клика / 28 показов в первый же день, поз. 7; в подсказках фразы ещё нет (есть «unprotected murder in galicia»).
+  - under-siege-netflix-true-story (5 нояб): ⚠ 1 клик / 13 показов; в подсказках «bank under siege netflix true story».
+  - mlb-manager-of-the-year-voting (6 нояб): ⚠ 8 показов; точной фразы нет, ищут «mlb manager of the year voting results».
+  - designated-for-assignment, non-tender, how-mlb-mvp-is-voted, alaska-ranked-choice-voting: по 2–3 показа, фразы в подсказках есть — ждём.
+  - qualifying-offer, rule-5-draft, two-dan-sullivans-alaska: 0 показов пока.
+  - all-mlb-team, hank-aaron-award, how-cy-young-is-voted, mlb-rookie-eligibility, relief-pitcher-of-the-year, reminders-of-him-book, what-does-habibi-mean: ✅ в подсказках; GSC ещё нет (1 день).
+  - maine-2nd-district-ranked-choice: ❌ фразы нет в подсказках.
 - 6 нояб, проверка (подсказки Google 5 нояб + GSC 8 окт–4 нояб):
   - telerally (31 окт): ✅ угадали — в GSC «what is a tele rally» 124 показа / 9 кликов, поз. 2; люди пишут «tele rally» раздельно.
   - scott-colom (3 нояб): ⚠ мало — «colom» 6 показов, «scott colom race/senate», «why is scott colom … trending» по 2.

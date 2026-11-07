@@ -1,0 +1,46 @@
+{
+ "subject": "Election of the Speaker of the House",
+ "kind": "term",
+ "query": "how is the speaker of the house elected",
+ "title": "How is the speaker of the House elected? A roll-call vote of all members",
+ "answer": "The speaker of the House is elected by a roll-call vote of the full House on the first day of a new Congress. To win, a candidate needs an absolute majority of all votes cast for a person by name, which is usually 218 if every member votes. If no one gets a majority, the House votes again until someone does.",
+ "body": "According to the Congressional Research Service, \"each new House elects a Speaker by roll call vote when it first convenes,\" and the vote is repeated until a candidate wins a majority. Because absences, vacancies and members voting \"present\" reduce the number of votes cast for named candidates, a speaker can win with fewer than 218 votes. Multiple ballots are rare: nine were needed in 1923, and 15 were needed in January 2023, when Kevin McCarthy was elected. The Constitution does not require the speaker to be a member of the House, but every speaker so far has been one.\n\nBefore the floor vote, each party picks its nominee in a closed-door caucus or conference meeting. The floor vote for the 120th Congress is expected when it convenes, set by the 20th Amendment for Jan. 3, 2027. After Democrats won the House in the 2026 midterms, WSOC-TV reported that Rep. Hakeem Jeffries is the front-runner for speaker and that House Democrats are expected to hold their leadership elections in November.",
+ "in_the_news": "Democrats won control of the House in the Nov. 3, 2026, midterms, according to the AP, so the next speaker will be chosen when the new Congress convenes in January 2027.",
+ "faq": [
+  {
+   "q": "How many votes do you need to become speaker?",
+   "a": "A majority of the votes cast for named candidates. That is 218 if all 435 members vote for someone, but fewer if members are absent or vote \"present.\""
+  },
+  {
+   "q": "When is the next speaker vote?",
+   "a": "On the first day of the 120th Congress, which the 20th Amendment sets for noon on Jan. 3, 2027, unless Congress sets another day by law."
+  },
+  {
+   "q": "Does the speaker have to be a member of Congress?",
+   "a": "No. The Constitution does not require it, but every speaker in history has been a House member."
+  },
+  {
+   "q": "What is the most ballots ever needed in recent times?",
+   "a": "Fifteen, in January 2023, when Kevin McCarthy was elected. In 1923, it took nine."
+  }
+ ],
+ "links": [
+  [
+   "Congressional Research Service (via EveryCRSReport)",
+   "Speakers of the House: Elections, 1913-2025",
+   "https://www.everycrsreport.com/files/2026-04-13_RL30857_f8b446324f7e7e361e427f7eafcf31f772fcb5d3.html"
+  ],
+  [
+   "WSOC-TV",
+   "Election 2026: What's next for Congress",
+   "https://www.wsoctv.com/news/trending/election-2026-whats-next-congress/6FCYHARURVA7FLRLZHDNGTEUWY/"
+  ]
+ ],
+ "topics": [
+  "congress",
+  "midterms 2026"
+ ],
+ "made": "2026-11-07T14:00:00+00:00",
+ "first": "2026-11-07T14:00:00+00:00",
+ "updated": "2026-11-07T14:00:00+00:00"
+}
