@@ -159,6 +159,7 @@ BLOCK_PATTERNS = [
     r"\bcasino bonus", r"free spins", r"betting tips", r"crypto giveaway", r"\bhack(ed)? account", r"\bcheat codes? generator",
     # насилие над детьми и пр.
     r"\bminor(s)? (nude|sexual)", r"\bchild (abuse|porn)",
+    r"\bgoon(ing|er|ers)?\b", r"\bgyatt\b", r"\bthirst trap",
     # ПРАВИЛО ВЛАДЕЛЬЦА: никакой религии (ни одной), ни в темах, ни в пояснениях
     r"\breligio", r"\bgods?\b", r"\bjesus\b", r"\ballah\b", r"\bjehovah", r"\bbible", r"\bbiblical", r"\bqur'?an\b",
     r"\bkoran\b", r"\btorah\b", r"\bgospel", r"(?<!eric )\bchurch(es)?\b", r"\bmosques?\b", r"\bsynagogue", r"\bpope\b",
