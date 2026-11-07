@@ -1840,6 +1840,35 @@ def supply(q):
     return len(exact), len(big), res
 
 
+LT_GOSSIP = re.compile(r"(?i)\b(married|marry|wife|husband|girlfriend|boyfriend|dating|together|engaged|divorce|split|broke up|"
+                       r"pregnan|baby|kids|children|old|age|born|tall|height|weigh|weight|net worth|salary|make|makes|paid|"
+                       r"college|alive|died|dead|death|kill|suicide|feet|dress|wear|trending|popular)\b")
+LT_QFORM = re.compile(r"(?i)^(what|who|why|how|is|are|does|did|do|where|when|can|will|was|were)\b|\b(meaning|mean|explained|definition|stand for)$")
+
+
+def laptop_live():
+    """Вопросы из laptop/latest.json (сборщик на ноутбуке сам отправляет его каждые 3 часа): растущие запросы
+    Google Trends и новые подсказки. Отбрасываем сплетни, религию, незаконное и всё не в форме вопроса."""
+    path = os.path.join(HERE, "laptop", "latest.json")
+    try:
+        d = json.load(open(path, encoding="utf-8"))
+    except Exception:
+        return []
+    if hours_since(datetime.fromisoformat(d["made"]).astimezone(timezone.utc).isoformat()) > 12:
+        return []
+    out, seen = [], set()
+    cand = [(x.get("q", ""), x.get("g", 0)) for x in d.get("rising", []) if (x.get("g") or 0) >= 100]
+    cand += [(x.get("s", ""), x.get("rel") or 0) for x in d.get("new_sugg", [])]
+    for q, g in cand:
+        q = (q or "").strip().lower()
+        if (not q or q in seen or len(words(q)) < 3 or not LT_QFORM.search(q) or LT_GOSSIP.search(q)
+                or LT_BAD.search(q) or bad_text(q)):
+            continue
+        seen.add(q)
+        out.append({"q": q, "growth": g, "src": "laptop_live"})
+    return out[:150]
+
+
 LAPTOP_Q = set()      # вопросы из сборщика на ноутбуке (data/laptop_questions.json)
 
 
@@ -1905,6 +1934,9 @@ def longtail_candidates(store):
     # вопросы, которые нашёл сборщик на ноутбуке (растущие запросы Google Trends + новые подсказки) — в начало очереди
     try:
         lq = json.load(open(os.path.join(HERE, "data", "laptop_questions.json"), encoding="utf-8"))
+        live = laptop_live()
+        if live:                                     # свежие данные, которые ноутбук сам прислал на сайт
+            lq = {"made": now_iso(), "questions": live + lq.get("questions", [])}
         used = st.setdefault("laptop_used", {})
         if hours_since(lq.get("made", "2000-01-01T00:00:00+00:00")) < 36:
             front = []
