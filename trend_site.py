@@ -1842,7 +1842,7 @@ def supply(q):
 
 LT_GOSSIP = re.compile(r"(?i)\b(married|marry|wife|husband|girlfriend|boyfriend|dating|together|engaged|divorce|split|broke up|"
                        r"pregnan|baby|kids|children|old|age|born|tall|height|weigh|weight|net worth|salary|make|makes|paid|"
-                       r"college|alive|died|dead|death|kill|suicide|feet|dress|wear|trending|popular)\b")
+                       r"college|alive|died|dead|death|kill|suicide|feet|dress|wear|trending|popular|still with|in love|relationship)\b")
 LT_QFORM = re.compile(r"(?i)^(what|who|why|how|is|are|does|did|do|where|when|can|will|was|were)\b|\b(meaning|mean|explained|definition|stand for)$")
 
 
