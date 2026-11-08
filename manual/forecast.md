@@ -15,6 +15,9 @@
 - Смена большинства в Конгрессе → процедурные вопросы: «when does the new congress take office», «how is the speaker elected», «lame duck session».
 - Игрок из Японии/Кореи выставлен на постинг → «who is X» + «posting system» (окно 45 дней, дедлайн).
 - Сериал по реальному делу → люди ищут по ИМЕНИ реального человека («darryl mccauley where is he now»), а не по названию шоу; Netflix-название в подсказках может отличаться («bank under siege»).
+- Документалка Netflix о реальном человеке дала больше всего трафика сайта за всё время (dane-cook-brother: 2485 показов и 17 кликов за 7 нояб). Пик — на 2-й день после выхода. Это главный рычаг: искать доки/сериалы «о реальных людях» и писать за 1–5 дней.
+- Термины MLB (награды, non-tender, DFA): показы малые (5–50 в день), поз. 5–20 — ниша с небольшим объёмом; писать только когда нет кино/доков.
+- Победитель/финалист сразу двух наград → исторический вопрос «has anyone ever won both» (rookie + Cy Young), «who has the most X».
 
 ## Ближайшие события и что будут искать
 | Дата | Событие | Вероятный запрос (С) | Страница |
@@ -30,10 +33,10 @@
 | 10 нояб | MLB Manager of the Year | how is mlb manager of the year voted | ✅ mlb-manager-of-the-year-voting |
 | 11 нояб | MLB Cy Young + НОВАЯ Relief Pitcher of the Year | how is the cy young award voted; what is the relief pitcher of the year award | ✅ how-cy-young-is-voted, relief-pitcher-of-the-year |
 | 11 нояб | MLB Awards (Лас-Вегас): All-MLB Team, Hank Aaron Award, Edgar Martinez DH | what is the all-mlb team; what is the hank aaron award | ✅ all-mlb-team, hank-aaron-award |
-| 19 нояб | Netflix: The Altruists (Julia Garner; SBF и Caroline Ellison) | is the altruists a true story | — (писать ~15 нояб) |
+| 19 нояб | Netflix: The Altruists (Julia Garner; SBF и Caroline Ellison) | is the altruists a true story | ✅ the-altruists-true-story |
 | 13 нояб | Кино: Ebenezer: A Christmas Carol | who plays ebenezer / cast | — |
 | 14 нояб | Jake Paul vs Tank Davis | (занято спортсайтами — пропустить) | — |
-| 16 нояб | Номинации Grammy | who is [новый номинант Best New Artist]; record vs song of the year | — |
+| 16 нояб | Номинации Grammy | how are grammy nominations decided; who is [номинант Best New Artist] (писать 16–17 нояб) | ✅ how-are-grammy-nominations-decided |
 | 18 нояб | CMA Awards: новые артисты Avery Anna, Carter Faith, Emily Ann Roberts, Tucker Wetmore | who is X | — (писать 14–16 нояб) |
 | 20 нояб | Кино: Hunger Games: Sunrise on the Reaping | who plays young haymitch; is it a prequel | — (писать ~15 нояб) |
 | 9 нояб – 3 янв | Конгресс: lame duck (с 9 нояб), новый Конгресс 3 янв 2027, выбор спикера (демократы взяли обе палаты) | what is a lame duck session; when does the new congress take office; how is the speaker elected | ✅ lame-duck-session, when-does-new-congress-start, how-is-speaker-of-the-house-elected |
@@ -47,12 +50,33 @@
 | 1 дек | Истекает CBA MLB, вероятен локаут (авто-страница mlb-lockout уже есть) | what is a lockout in baseball | — |
 | 25 нояб | Netflix: The Mosquito Bowl (футбол морпехов 1944, по книге Bissinger) | is the mosquito bowl a true story | — (писать ~20 нояб) |
 | 10 дек | The Game Awards (номинации ~ середина нояб) | — | — |
-| 20 нояб | Кино: I Play Rocky | is i play rocky a true story / who plays stallone | — |
+| 20 нояб | Кино: I Play Rocky (шир. прокат; огр. с 6 нояб) | is i play rocky a true story / who plays stallone | ✅ i-play-rocky-true-story |
+| 13 нояб | Netflix: Heartland (Jessica Chastain, Carter Faith) | who is in the cast of heartland; who is carter faith | ✅ heartland-netflix-cast, carter-faith |
+| 11–12 нояб | MLB: Cy Young (Parker Messick — финалист и ROY, и Cy Young), MVP (Ohtani — шанс на 5-й) | has a rookie ever won the cy young; who has the most mvp awards | ✅ rookie-cy-young-winner, most-mvp-awards-mlb |
+| нач. дек | Выбор лидера демократов в Сенате (часть новых сенаторов против Schumer) | how is the senate majority leader chosen | ✅ how-is-senate-majority-leader-chosen |
+| 19 нояб | GTA 6 выходит (штат Leonida = Флорида) | is leonida a real place | ✅ is-leonida-a-real-place |
+| 17 нояб | HBO Max: When a Witness Recants (Harlem Park Three, Балтимор) | where are the harlem park three now | ✅ harlem-park-three |
+| 17 нояб | Paramount+: The Jigsaw Puzzle Murder (Манчестер) | — пропуск (жертва = частное лицо) | — |
+| 23 нояб | Netflix: The Trials of Karen Read | (занято гигантами) | — |
+| 24 нояб | Netflix: Rob Lowe: The Outsider | rob lowe documentary | — |
+| 25 нояб | HBO Max: The Slightest Touch (Colin Farrell, Dublin Marathon) | who is emma fogarty | — |
+| 26 нояб | Netflix: Toos: The Van der Valk Kidnapping (реальное похищение, Нидерланды) | is toos a true story | — |
+| 30 нояб | Prime: The Boy Who Stole Billions? | — | — |
+| 4 нояб | Collins: слово года «mogging» | what does mogging mean | — |
 
 Правило: писать за 1–5 дней до события (Google индексирует ~2/3 новых страниц за сутки).
 Проверка: через 3–7 дней после даты сверить с Trends CSV и Search Console — угадали или нет, записать урок сюда.
 
 ## Уроки
+- 8 нояб, проверка (подсказки Google 7 нояб + GSC по 7 нояб — лучший день: 34 клика / 3781 показ):
+  - dane-cook-brother (5 нояб): ✅✅ 17 кликов / 2485 показов, поз. 9.4 — хит; ищут «is darryl mccauley still in prison», «is dane cook's brother still alive».
+  - murder-in-galicia-true-story (6 нояб): ✅ 5 кликов / 207 показов, поз. 7.4; фраза появилась в подсказках 7 нояб.
+  - scott-colom: ⚠ 1 / 113, поз. 20. alaska-ranked-choice-voting: 2 клика / 6 показов.
+  - mlb-manager-of-the-year-voting: ⚠ 0 / 47, поз. 10.7; фразы «how is … voted» нет в подсказках.
+  - under-siege-netflix-true-story: ⚠ 0 / 39, поз. 5.3 — показы есть, кликов нет.
+  - relief-pitcher-of-the-year 0/19 (поз. 8.6), hank-aaron-award 0/12 (поз. 21), how-mlb-mvp-is-voted 0/18, non-tender 0/12, reminders-of-him-book 0/9, mlb-rookie-eligibility 0/8, designated-for-assignment 0/7, how-cy-young-is-voted 0/5 — темы угаданы, объём мал.
+  - all-mlb-team, what-does-habibi-mean, maine-2nd-district-ranked-choice, two-dan-sullivans-alaska: 0 показов 7 нояб.
+  - Страницы 7 нояб (1 день): в подсказках есть 9 из 10 фраз; ❌ нет «is alicia's law based on the good wife».
 - 7 нояб, проверка (подсказки Google 6 нояб + GSC по 6 нояб):
   - telerally (31 окт): ✅ 40 кликов / 891 показ всего, поз. ~2; лучшая страница.
   - scott-colom (3 нояб): ⚠ 7 кликов / 706 показов, поз. 17–21 — тема есть, но мы низко; ищут «scott colom positions / background».
