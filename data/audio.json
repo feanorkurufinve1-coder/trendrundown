@@ -1204,5 +1204,17 @@
 "hash": "c5c4f5f6a7e9",
 "made": "2026-11-08T01:48:08+00:00",
 "sec": 107
+},
+"t/college-football-rankings": {
+"file": "audio/t/college-football-rankings.mp3",
+"hash": "35df4e932ac1",
+"made": "2026-11-08T05:30:52+00:00",
+"sec": 60
+},
+"x/ap-top-25": {
+"file": "audio/x/ap-top-25.mp3",
+"hash": "4478f20043bb",
+"made": "2026-11-08T05:31:42+00:00",
+"sec": 78
 }
 }
