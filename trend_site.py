@@ -148,7 +148,9 @@ def now_iso():
 # Темы и заголовки с такими словами не публикуются (закон + правила рекламы Google).
 BLOCK_PATTERNS = [
     # взрослый контент
-    r"porn", r"\bxxx\b", r"onlyfans", r"\bnudes?\b", r"\bnaked\b", r"sex ?tape", r"\bescort", r"hentai", r"\bnsfw\b", r"\bleaked (photos|video|pics)",
+    r"porn", r"\bxxx\b", r"onlyfans", r"\bfansly\b", r"\bnude\w*", r"\btopless\b", r"\bexplicit (photos?|video|content|scene)",
+    r"\bsex (scene|video|clip|act)", r"\bsexual(ly)? explicit", r"\berotic", r"\bstrip ?(club|per|tease)", r"\bfetish",
+    r"\blingerie (photo|pic)", r"\bplayboy\b", r"\bcam ?girl", r"\bxvideos\b", r"\bpornhub\b", r"\bsextortion\b", r"\bnudes?\b", r"\bnaked\b", r"sex ?tape", r"\bescort", r"hentai", r"\bnsfw\b", r"\bleaked (photos|video|pics)",
     # наркотики (продажа/употребление), оружие
     r"buy (weed|cocaine|meth|fentanyl|drugs)", r"how to (make|cook) (meth|drugs|bomb|explosive)", r"\bdark ?web\b", r"ghost gun", r"3d[- ]printed gun",
     # экстремизм, терроризм, призывы
@@ -573,6 +575,8 @@ hospital in Tampa on Thursday after a fall outside a restaurant. He had disclose
 treating him for blood clots in one leg." """
 
 PROMPT = """You answer ONE question for a US website: WHY is this topic trending on Google right now? Find the cause.
+- About crimes and people: write ONLY what the sources say, word it as "police said", "prosecutors allege", "was charged
+  with", never call anyone guilty before a conviction, never name victims, witnesses, private persons or minors.
 - NEVER mention religion in any way (no religion, church, faith, holy day, religious figure or belief) — leave such details out.
 Compare all the sources: what single event or development made many people search for it at this moment?
 
@@ -944,6 +948,12 @@ the SOURCE reports it was based on. Give one of three verdicts.
 - it presents rumor or speculation as fact, or the headline misleads about what happened;
 - it identifies or accuses a private individual, a minor or a crime victim; or it is sexual, graphic, hateful, or promotes
   gambling, drugs, weapons or self-harm;
+- PEOPLE AND CRIME (the owner's top rule — never publish a lie about a person): block if the text states that a named
+  person did something criminal or shameful when the sources only say they are accused, charged, suspected or sued; if it
+  calls someone guilty before a conviction; if any detail of a crime (who, what, when, how many, amounts, sentence) differs
+  from the sources even slightly; if it repeats a rumor, a social-media claim or a single unnamed source as fact; if it
+  names a victim, a witness, a suspect who is a private person, or a minor. Accusations must be worded "police said",
+  "prosecutors allege", "was charged with", with the source of each claim.
 - it is about or mentions religion in any way (a religion, church, holy day, religious figure or belief), or it is about
   illegal goods or activities (drugs, piracy, hacking, fakes) — the site never covers these;
 - it is empty or useless, or not clear English.
@@ -1033,6 +1043,9 @@ def is_crime(*texts):
 
 def crime_sweep(store):
     """Перед каждой сборкой: всё свежее (за 3 суток) про криминал, что ещё не одобрено, — в очередь владельца."""
+    if not CRIME_HOLD:
+        store.pop("hold_queue", None)
+        return
     ap = store.get("approvals", {})
     q = store.get("hold_queue", {})
     for k in [k for k in q if k.startswith("x:") and k[2:] in store.get("explainers", {})
@@ -1052,6 +1065,8 @@ def crime_sweep(store):
 
 def hold_for_owner(store, kind, slug, title, text):
     """ПРАВИЛО ВЛАДЕЛЬЦА: всё про криминал публикуется только после его одобрения. Возвращает True, если держим."""
+    if not CRIME_HOLD:
+        return False                      # владелец разрешил публиковать криминал сразу — только строгая проверка фактов
     key_ = f"{kind}:{slug}"
     ap = store.setdefault("approvals", {})
     if ap.get(key_) == "yes":
@@ -1063,7 +1078,12 @@ def hold_for_owner(store, kind, slug, title, text):
     return True
 
 
+CRIME_HOLD = False     # True — криминал ждёт одобрения владельца в Telegram; сейчас владелец решил: публиковать сразу
+
+
 def on_hold(store, kind, slug):
+    if not CRIME_HOLD:
+        return False
     ap = store.get("approvals", {}).get(f"{kind}:{slug}")
     return f"{kind}:{slug}" in store.get("hold_queue", {}) and ap != "yes"
 
@@ -1296,6 +1316,8 @@ Questions Americans are typing into Google about it: {questions}
 
 Write a page that answers the search directly.
 Rules:
+- About crimes and people: write ONLY what the sources say, word it as "police said", "prosecutors allege", "was charged
+  with", never call anyone guilty before a conviction, never name victims, witnesses, private persons or minors.
 - NEVER write about religion in any way (no religions, churches, holy days, religious figures or beliefs), and never
   about illegal goods or activities (drugs, piracy, hacking, fakes, weapons-making). If the subject touches either, set ok=false.
 - The page must match the search EXACTLY: the title contains the search phrase "{query}" word for word (you may add a
@@ -1667,6 +1689,8 @@ def clusters(items):
 
 
 BREAK_PROMPT = """BREAKING US news. Several outlets just published these articles. Read them carefully.
+- About crimes and people: write ONLY what the sources say, word it as "police said", "prosecutors allege", "was charged
+  with", never call anyone guilty before a conviction, never name victims, witnesses, private persons or minors.
 - NEVER mention religion in any way (no religion, church, faith, holy day, religious figure or belief) — leave such details out.
 {arts}
 
