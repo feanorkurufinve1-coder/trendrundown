@@ -1,6 +1,6 @@
 {
- "made": "2026-11-08T17:46:42+00:00",
- "pages": 187,
+ "made": "2026-11-08T18:02:39+00:00",
+ "pages": 188,
  "summary": {
   "kind": {
    "event": {
@@ -53,16 +53,16 @@
     "clicks_per_page": 0.08
    },
    "term": {
-    "pages": 38,
-    "with_impr_%": 34,
+    "pages": 39,
+    "with_impr_%": 33,
     "top3_%": 8,
     "clicks": 30,
-    "clicks_per_page": 0.79
+    "clicks_per_page": 0.77
    }
   },
   "source": {
    "auto": {
-    "pages": 185,
+    "pages": 186,
     "with_impr_%": 30,
     "top3_%": 1,
     "clicks": 8,
@@ -92,11 +92,11 @@
     "clicks_per_page": 0.33
    },
    "what": {
-    "pages": 104,
-    "with_impr_%": 33,
+    "pages": 105,
+    "with_impr_%": 32,
     "top3_%": 3,
     "clicks": 32,
-    "clicks_per_page": 0.31
+    "clicks_per_page": 0.3
    },
    "where": {
     "pages": 9,
@@ -115,7 +115,7 @@
   },
   "title_matches_top_query": {
    "False": {
-    "pages": 155,
+    "pages": 156,
     "with_impr_%": 17,
     "top3_%": 1,
     "clicks": 29,
@@ -214,7 +214,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 59,
-   "age_days": 7.1,
+   "age_days": 7.2,
    "rival_exact": null,
    "impr": 143,
    "clicks": 1,
@@ -848,7 +848,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 21,
-   "age_days": 10.5,
+   "age_days": 10.6,
    "rival_exact": null,
    "impr": 6,
    "clicks": 0,
@@ -1421,7 +1421,7 @@
    "source": "auto",
    "q_word": "where",
    "title_len": 33,
-   "age_days": 14.1,
+   "age_days": 14.2,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -1631,7 +1631,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 48,
-   "age_days": 11.1,
+   "age_days": 11.2,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -1676,7 +1676,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 24,
-   "age_days": 10.5,
+   "age_days": 10.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -1691,7 +1691,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 30,
-   "age_days": 10.5,
+   "age_days": 10.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2186,7 +2186,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 74,
-   "age_days": 5.7,
+   "age_days": 5.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2201,7 +2201,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 71,
-   "age_days": 5.7,
+   "age_days": 5.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2366,7 +2366,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 53,
-   "age_days": 4.8,
+   "age_days": 4.9,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2696,7 +2696,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 66,
-   "age_days": 3.7,
+   "age_days": 3.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2771,7 +2771,7 @@
    "source": "auto",
    "q_word": "none",
    "title_len": 69,
-   "age_days": 3.6,
+   "age_days": 3.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3117,6 +3117,21 @@
    "q_word": "what",
    "title_len": 60,
    "age_days": 3.1,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
+   "slug": "consent-decree",
+   "title": "What is a consent decree? Meaning and recent DOJ cases",
+   "kind": "term",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 54,
+   "age_days": 3.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
