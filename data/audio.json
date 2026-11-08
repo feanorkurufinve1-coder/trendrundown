@@ -1216,5 +1216,29 @@
 "hash": "4478f20043bb",
 "made": "2026-11-08T05:31:42+00:00",
 "sec": 78
+},
+"t/sienna-miller": {
+"file": "audio/t/sienna-miller.mp3",
+"hash": "e99089b11c8c",
+"made": "2026-11-08T06:31:05+00:00",
+"sec": 70
+},
+"x/madden-movie": {
+"file": "audio/x/madden-movie.mp3",
+"hash": "ed0615c16f95",
+"made": "2026-11-08T06:31:37+00:00",
+"sec": 71
+},
+"x/affidavit-ballots": {
+"file": "audio/x/affidavit-ballots.mp3",
+"hash": "2cbb39ca558f",
+"made": "2026-11-08T06:32:25+00:00",
+"sec": 103
+},
+"x/provisional-ballots": {
+"file": "audio/x/provisional-ballots.mp3",
+"hash": "86b19170b6a8",
+"made": "2026-11-08T06:33:20+00:00",
+"sec": 114
 }
 }
