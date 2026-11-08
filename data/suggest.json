@@ -634,7 +634,7 @@
   ]
  },
  "all-mlb-team": {
-  "time": "2026-11-07T14:17:01+00:00",
+  "time": "2026-11-08T14:19:08+00:00",
   "query": "what is the all-mlb team",
   "in_suggest": true,
   "suggest": {
@@ -683,11 +683,15 @@
    [
     "2026-11-07",
     true
+   ],
+   [
+    "2026-11-08",
+    true
    ]
   ]
  },
  "hank-aaron-award": {
-  "time": "2026-11-07T14:17:02+00:00",
+  "time": "2026-11-08T14:19:10+00:00",
   "query": "what is the hank aaron award",
   "in_suggest": true,
   "suggest": {
@@ -695,12 +699,12 @@
     "hank aaron award",
     "hank aaron award winners",
     "hank aaron award meaning",
-    "hank aaron award voting",
     "hank aaron award 2026",
     "hank aaron award odds",
+    "hank aaron award voting",
     "hank aaron award vs mvp",
-    "hank aaron award finalists",
     "hank aaron award mlb",
+    "hank aaron award finalists",
     "hank aaron award finalists 2026"
    ],
    "what is hank aaron award": [
@@ -734,11 +738,15 @@
    [
     "2026-11-07",
     true
+   ],
+   [
+    "2026-11-08",
+    true
    ]
   ]
  },
  "how-cy-young-is-voted": {
-  "time": "2026-11-07T14:17:04+00:00",
+  "time": "2026-11-08T14:19:16+00:00",
   "query": "how is the cy young award voted",
   "in_suggest": true,
   "suggest": {
@@ -787,11 +795,15 @@
    [
     "2026-11-07",
     true
+   ],
+   [
+    "2026-11-08",
+    true
    ]
   ]
  },
  "maine-2nd-district-ranked-choice": {
-  "time": "2026-11-07T14:17:05+00:00",
+  "time": "2026-11-08T14:19:22+00:00",
   "query": "why is maine 2nd district going to ranked choice",
   "in_suggest": false,
   "suggest": {
@@ -808,11 +820,15 @@
    [
     "2026-11-07",
     false
+   ],
+   [
+    "2026-11-08",
+    false
    ]
   ]
  },
  "mlb-manager-of-the-year-voting": {
-  "time": "2026-11-07T14:17:07+00:00",
+  "time": "2026-11-08T14:19:23+00:00",
   "query": "how is mlb manager of the year voted",
   "in_suggest": false,
   "suggest": {
@@ -844,19 +860,23 @@
    [
     "2026-11-07",
     false
+   ],
+   [
+    "2026-11-08",
+    false
    ]
   ]
  },
  "mlb-rookie-eligibility": {
-  "time": "2026-11-07T14:17:08+00:00",
+  "time": "2026-11-08T14:19:25+00:00",
   "query": "what makes a player a rookie in mlb",
   "in_suggest": true,
   "suggest": {
    "mlb rookie eligibility": [
     "mlb rookie eligibility",
     "mlb rookie eligibility rules",
-    "mlb rookie eligibility date",
     "mlb rookie eligibility 2026",
+    "mlb rookie eligibility date",
     "mlb rookie eligibility date 2026",
     "mlb rookie eligibility requirements",
     "mlb rookie eligibility deadline",
@@ -887,11 +907,15 @@
    [
     "2026-11-07",
     true
+   ],
+   [
+    "2026-11-08",
+    true
    ]
   ]
  },
  "murder-in-galicia-true-story": {
-  "time": "2026-11-07T14:17:10+00:00",
+  "time": "2026-11-08T14:19:28+00:00",
   "query": "is murder in galicia a true story",
   "in_suggest": true,
   "suggest": {
@@ -900,12 +924,12 @@
     "murder in galicia netflix",
     "murder in galicia 2026",
     "murder in galicia true story",
-    "murder in galicia netflix review",
     "murder in galicia imdb",
     "murder in galicia series",
     "unprotected murder in galicia",
     "unprotected murder in galicia netflix",
-    "is galicia spain safe"
+    "is galicia spain safe",
+    "is leon in galicia"
    ],
    "what is murder in galicia": [],
    "is murder in galicia a true story": [],
@@ -919,11 +943,15 @@
    [
     "2026-11-07",
     true
+   ],
+   [
+    "2026-11-08",
+    true
    ]
   ]
  },
  "relief-pitcher-of-the-year": {
-  "time": "2026-11-07T14:17:11+00:00",
+  "time": "2026-11-08T14:19:29+00:00",
   "query": "what is the relief pitcher of the year award",
   "in_suggest": true,
   "suggest": {
@@ -948,11 +976,15 @@
    [
     "2026-11-07",
     true
+   ],
+   [
+    "2026-11-08",
+    true
    ]
   ]
  },
  "reminders-of-him-book": {
-  "time": "2026-11-07T14:17:12+00:00",
+  "time": "2026-11-08T14:19:31+00:00",
   "query": "is reminders of him based on a book",
   "in_suggest": true,
   "suggest": {
@@ -963,10 +995,10 @@
     "reminders of him book",
     "reminders of him streaming",
     "reminders of him where to watch",
+    "reminders of him filming location",
     "reminders of him colleen hoover",
     "reminders of him trailer",
-    "reminders of him soundtrack",
-    "reminders of him reviews"
+    "reminders of him where was it filmed"
    ],
    "what is reminders of him": [
     "what is reminders of him about",
@@ -1004,11 +1036,15 @@
    [
     "2026-11-07",
     true
+   ],
+   [
+    "2026-11-08",
+    true
    ]
   ]
  },
  "what-does-habibi-mean": {
-  "time": "2026-11-07T14:17:13+00:00",
+  "time": "2026-11-08T14:19:35+00:00",
   "query": "what does habibi mean",
   "in_suggest": true,
   "suggest": {
@@ -1016,37 +1052,37 @@
     "habibi meaning",
     "habibi",
     "habibi pac",
-    "habibi meaning in english",
     "habibi definition",
-    "habibi in arabic",
+    "habibi super pac",
+    "habibi meaning in english",
+    "habibi pac meaning",
+    "habibi hookah",
     "habibi vs habibti",
-    "habibi deli",
-    "habibi meaning in arabic",
-    "habibi grill"
+    "habibi jd vance"
    ],
    "what is habibi": [
     "what is habibi",
-    "what is habibi mean",
     "what is habibi pac",
+    "what is habibi mean",
     "what is habibi in arabic",
-    "what is habibi in english",
     "what is habibi mean in arabic",
-    "what is habibi super pac",
-    "what is habibi sauce",
+    "what is habibi in english",
+    "what is habibi for a girl",
     "what is habibi flavor",
-    "what is habibi for a girl"
+    "what is habibi funk",
+    "what is habibi food"
    ],
    "what does habibi mean": [
     "what does habibi mean",
     "what does habibi mean in arabic",
     "what does habibi mean in english",
+    "what does habibi mean in muslim",
+    "what does habibi mean in arabic and english",
     "what does habibi mean in egypt",
     "what does habibi mean in indian",
     "what does habibi mean in spanish",
     "what does habibi mean in hebrew",
-    "what does habibi mean in lebanese",
-    "what does habibi mean in islam",
-    "what does habibi mean in iraq"
+    "what does habibi mean in lebanese"
    ]
   },
   "history": [
@@ -1056,6 +1092,10 @@
    ],
    [
     "2026-11-07",
+    true
+   ],
+   [
+    "2026-11-08",
     true
    ]
   ]
@@ -1533,6 +1573,483 @@
     "2026-11-07",
     true
    ],
+   [
+    "2026-11-08",
+    true
+   ]
+  ]
+ },
+ "carter-faith": {
+  "time": "2026-11-08T14:19:09+00:00",
+  "query": "who is carter faith",
+  "in_suggest": true,
+  "suggest": {
+   "carter faith": [
+    "carter faith",
+    "carter faith music",
+    "carter faith age",
+    "carter faith tour",
+    "carter faith husband",
+    "carter faith songs",
+    "carter faith setlist",
+    "carter faith pearl handled pistol lyrics",
+    "carter faith nothin’ better to do",
+    "carter faith merch"
+   ],
+   "who is carter faith": [
+    "who is carter faith",
+    "who is carter faith related to",
+    "who is carter faith dating",
+    "who is carter faith parents",
+    "who is carter faith country singer",
+    "who is carter faith opening for",
+    "who is carter faith to jelly roll",
+    "who is carter faith signed to",
+    "who is carter faith married to",
+    "who is carter faith touring with"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-08",
+    true
+   ]
+  ]
+ },
+ "harlem-park-three": {
+  "time": "2026-11-08T14:19:12+00:00",
+  "query": "where are the harlem park three now",
+  "in_suggest": false,
+  "suggest": {
+   "harlem park three": [
+    "harlem park three",
+    "harlem park three movie",
+    "harlem park three case",
+    "harlem park 3 documentary",
+    "harlem park 3 baltimore",
+    "harlem park 3 settlement",
+    "is central park in harlem",
+    "is there free parking at central park",
+    "is central harlem dangerous"
+   ],
+   "what is harlem park three": [],
+   "where are the harlem park three now": [],
+   "harlem park three now": []
+  },
+  "history": [
+   [
+    "2026-11-08",
+    false
+   ]
+  ]
+ },
+ "heartland-netflix-cast": {
+  "time": "2026-11-08T14:19:13+00:00",
+  "query": "who is in the cast of heartland",
+  "in_suggest": true,
+  "suggest": {
+   "heartland": [
+    "heartland",
+    "heartland cast",
+    "heartland season 20",
+    "heartland netflix",
+    "heartland real estate",
+    "heartland season 19",
+    "heartland 2026",
+    "heartland ross lynch",
+    "heartland movie",
+    "heartland dental"
+   ],
+   "what is heartland": [
+    "what is heartland about",
+    "what is heartland streaming on",
+    "what is heartland about on netflix",
+    "what is heartland rock",
+    "what is heartland dental",
+    "what is heartland rated",
+    "what is heartland finances",
+    "what is heartland state of decay 2",
+    "what is heartland ecsi",
+    "what is heartland america"
+   ],
+   "who is in the cast of heartland": [
+    "who is in the cast of heartland",
+    "who is the cast of heartland season 17",
+    "who is the cast of heartland season 19",
+    "who died in the cast of heartland",
+    "who is the current cast of heartland",
+    "what is the cast of heartland doing now",
+    "who is the cast of christmas in the heartland",
+    "are any of the actors on heartland related"
+   ],
+   "cast heartland": [
+    "cast heartland",
+    "cast heartland season 19",
+    "cast heartland season 1",
+    "cast heartland season 18",
+    "cast heartland season 2",
+    "cast heartland season 16",
+    "cast heartland season 5",
+    "cast heartland 2026",
+    "cast heartland season 15",
+    "cast heartland season 10"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-08",
+    true
+   ]
+  ]
+ },
+ "how-are-grammy-nominations-decided": {
+  "time": "2026-11-08T14:19:14+00:00",
+  "query": "how are grammy nominations decided",
+  "in_suggest": true,
+  "suggest": {
+   "grammy nominations": [
+    "grammy nominations 2027",
+    "grammy nominations",
+    "grammy nominations 2026",
+    "grammy nominations 2027 predictions",
+    "grammy nominations announcement",
+    "grammy nominations 2025",
+    "grammy nominations 2027 voting",
+    "grammy nominations predictions",
+    "grammy nominations 2027 list",
+    "grammy nominations 2027 best new artist"
+   ],
+   "what is grammy nominations": [
+    "what is grammy nominations",
+    "what is grammy nominees",
+    "what time is grammy nominations 2026",
+    "what is katseye grammy nominations",
+    "what is the grammy nominations 2026",
+    "what is grammy awards",
+    "what is grammy awards premiere ceremony",
+    "what is grammy awards 2026",
+    "what is grammy awards all about",
+    "what is grammy awards 2025"
+   ],
+   "how are grammy nominations decided": [
+    "how are grammy nominations decided",
+    "how are grammy awards decided",
+    "how are grammy nominees chosen"
+   ],
+   "grammy nominations decided": []
+  },
+  "history": [
+   [
+    "2026-11-08",
+    true
+   ]
+  ]
+ },
+ "how-is-senate-majority-leader-chosen": {
+  "time": "2026-11-08T14:19:17+00:00",
+  "query": "how is the senate majority leader chosen",
+  "in_suggest": true,
+  "suggest": {
+   "senate majority leader": [
+    "senate majority leader",
+    "senate majority leader candidates",
+    "senate majority leader kalshi",
+    "senate majority leader chuck schumer",
+    "senate majority leader vote",
+    "senate majority leader john thune",
+    "senate majority leader options",
+    "senate majority leader reddit",
+    "senate majority leader 2026",
+    "senate majority leaders list"
+   ],
+   "what is senate majority leader": [
+    "what is senate majority leader",
+    "what is senate majority leader philippines",
+    "what is senate majority leader job",
+    "what is senate minority leader",
+    "what is senate majority whip",
+    "what is senate majority whip mean",
+    "what is the senate majority leader called",
+    "what is senate deputy majority leader",
+    "what is senate majority floor leader",
+    "what state is senate majority leader john thune from"
+   ],
+   "how is the senate majority leader chosen": [
+    "how is the senate majority leader chosen",
+    "how is the senate minority leader chosen",
+    "how is the us senate majority leader chosen",
+    "how is the us senate minority leader chosen",
+    "how is senate minority leader elected",
+    "how often is the senate majority leader elected",
+    "is the senate majority leader elected or appointed"
+   ],
+   "senate majority leader chosen": [
+    "senate majority leader chosen",
+    "senate majority leader how elected",
+    "how is the us senate majority leader chosen",
+    "how does the senate majority leader get chosen",
+    "is there a senate majority leader"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-08",
+    true
+   ]
+  ]
+ },
+ "i-play-rocky-true-story": {
+  "time": "2026-11-08T14:19:19+00:00",
+  "query": "is i play rocky a true story",
+  "in_suggest": true,
+  "suggest": {
+   "i play rocky": [
+    "i play rocky",
+    "i play rocky showtimes",
+    "i play rocky release date",
+    "i play rocky cast",
+    "i play rocky where to watch",
+    "i play rocky reviews",
+    "i play rocky trailer",
+    "i play rocky near me",
+    "i play rocky movie release date",
+    "i play rocky rotten tomatoes"
+   ],
+   "what is i play rocky": [
+    "what is i play rocky about",
+    "what is i play rocky rated",
+    "what is i play rocky based on",
+    "what is i play rocky all about",
+    "what is i play rocky streaming on",
+    "who is i play rocky directed by",
+    "what age rating is i play rocky",
+    "what will i play rocky be about",
+    "what is the play rocky horror picture show about",
+    "what is the play rocky horror show about"
+   ],
+   "is i play rocky a true story": [
+    "is i play rocky a true story",
+    "is i play rocky a true story about sylvester stallone",
+    "did rocky die in real life",
+    "is rocky based on a real person",
+    "who was supposed to play rocky",
+    "is rocky based on a true story",
+    "is rocky and creed based on a true story"
+   ],
+   "i play rocky true story": [
+    "i play rocky true story",
+    "is i play rocky a real story",
+    "is i play rocky a true story about sylvester stallone",
+    "i play rocky movie based on true story",
+    "is rocky based on a true story",
+    "did rocky die in real life",
+    "is rocky based on a real person",
+    "who was originally supposed to play rocky",
+    "who was supposed to play rocky"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-08",
+    true
+   ]
+  ]
+ },
+ "is-leonida-a-real-place": {
+  "time": "2026-11-08T14:19:20+00:00",
+  "query": "is leonida a real place",
+  "in_suggest": true,
+  "suggest": {
+   "leonida": [
+    "leonidas",
+    "leonida map",
+    "leonidas 300",
+    "leonidas chocolate",
+    "leonidas i",
+    "leonidas arkona",
+    "leonida gta 6",
+    "leonidas name meaning",
+    "leonida gta",
+    "leonidas bakugan"
+   ],
+   "what is leonida": [
+    "what is leonida",
+    "what is leonida in gta 6",
+    "what is leonida based on",
+    "what is leonidas known for",
+    "what is leonidas canon attribute",
+    "what is leonida in gta",
+    "what is leonidas last name",
+    "what is leonida based on gta 6",
+    "what is leonidas chocolate",
+    "what is leonidas full name"
+   ],
+   "is leonida a real place": [
+    "is leonida a real place",
+    "is pottiswood a real place",
+    "is husavik a real place"
+   ],
+   "leonida real place": [
+    "leonida real place"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-08",
+    true
+   ]
+  ]
+ },
+ "most-mvp-awards-mlb": {
+  "time": "2026-11-08T14:19:26+00:00",
+  "query": "who has the most mvp awards in mlb history",
+  "in_suggest": true,
+  "suggest": {
+   "mlb mvp award": [
+    "mlb mvp award",
+    "mlb mvp award winners",
+    "mlb mvp awards by year",
+    "mlb mvp award date",
+    "mlb mvp award 2026",
+    "mlb mvp award odds",
+    "mlb mvp award name",
+    "mlb mvp award history",
+    "mlb mvp award race",
+    "mlb mvp award trophy"
+   ],
+   "what is mlb mvp award": [
+    "what is mlb mvp award",
+    "what is the mlb mvp award called",
+    "what is the nl mvp award",
+    "what is the baseball mvp award",
+    "what channel is the mlb mvp award on",
+    "what does the mlb mvp award look like",
+    "how is mlb mvp determined",
+    "can a rookie win mvp mlb"
+   ],
+   "who has the most mvp awards in mlb history": [
+    "who has the most mvp awards in mlb history",
+    "who has the most mvp awards in baseball history",
+    "who has won the most mvp awards in mlb history",
+    "who has the most mvp awards in major league baseball history",
+    "who has won the most mvp awards in baseball history",
+    "who holds the record for the most mvp awards in major league baseball history",
+    "which player has won the most mvp awards in major league baseball history",
+    "who has the most mvp in mlb history",
+    "who has won the most mvp in baseball",
+    "who has won the most mlb mvps"
+   ],
+   "has most mvp awards mlb history": [
+    "most mvp awards mlb history",
+    "who has the most mvp awards in mlb history",
+    "who has won the most mvp awards in mlb history",
+    "who has the most mvp in mlb history",
+    "who has won the most mvp in baseball"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-08",
+    true
+   ]
+  ]
+ },
+ "rookie-cy-young-winner": {
+  "time": "2026-11-08T14:19:32+00:00",
+  "query": "has a rookie ever won the cy young",
+  "in_suggest": true,
+  "suggest": {
+   "cy young award": [
+    "cy young award 2026",
+    "cy young award",
+    "cy young award winners",
+    "cy young award odds",
+    "cy young award leaders",
+    "cy young award winners by year",
+    "cy young award race",
+    "cy young award 2025",
+    "cy young award winners 2026",
+    "cy young award this year"
+   ],
+   "what is cy young award": [
+    "what is cy young award",
+    "what is cy young award in baseball",
+    "what is cy young award based on",
+    "what is cy young award in mlb",
+    "what is cy young award 2025",
+    "what is nl cy young award",
+    "what is the cy young award given for",
+    "what is a cy young award winner",
+    "what is the cy young award in japan",
+    "what is the cy young award named after"
+   ],
+   "has a rookie ever won the cy young": [
+    "has a rookie ever won the cy young award",
+    "has a rookie ever won the cy young",
+    "has a rookie pitcher ever won the cy young",
+    "has a rookie ever won cy young mlb",
+    "has any rookie ever won cy young",
+    "has anyone ever won the cy young as a rookie",
+    "has a pitcher ever won rookie of the year and cy young",
+    "did nolan ryan ever win a cy young",
+    "why didn't nolan ryan ever win a cy young"
+   ],
+   "has rookie ever won cy young": [
+    "has a rookie ever won cy young",
+    "has a rookie ever won cy young mlb",
+    "has a rookie ever won cy young award",
+    "has any rookie ever won cy young",
+    "has a rookie pitcher ever won cy young",
+    "has anyone ever won cy young and rookie of the year",
+    "has anyone ever won rookie of the year and cy young in the same year",
+    "has anyone ever won the cy young as a rookie",
+    "why didn't nolan ryan ever win a cy young"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-08",
+    true
+   ]
+  ]
+ },
+ "the-altruists-true-story": {
+  "time": "2026-11-08T14:19:34+00:00",
+  "query": "is the altruists a true story",
+  "in_suggest": true,
+  "suggest": {
+   "the altruists": [
+    "the altruists",
+    "the altruists netflix",
+    "the altruists release date",
+    "the altruists trailer",
+    "the altruists cast",
+    "the altruists gta 5",
+    "the altruists trailer netflix",
+    "the altruists netflix release date",
+    "the altruists book",
+    "the altruists play"
+   ],
+   "what is the altruists": [
+    "what is the altruists about",
+    "what is the altruists based on",
+    "what does the altruists website say",
+    "what are the altruists in gta 5",
+    "what is the altruist cult gta 5",
+    "what is the altruist camp in gta v",
+    "what is the altruist cult",
+    "what is the altruist cult based on",
+    "what is the altruist role in among us",
+    "what is the altruist cult gta"
+   ],
+   "is the altruists a true story": [],
+   "altruists true story": [
+    "altruists true story",
+    "what happens to henri in mr selfridge",
+    "is henry from the invisible life of addie larue gay"
+   ]
+  },
+  "history": [
    [
     "2026-11-08",
     true
