@@ -1,6 +1,6 @@
 {
- "made": "2026-11-08T17:02:13+00:00",
- "pages": 186,
+ "made": "2026-11-08T17:04:21+00:00",
+ "pages": 187,
  "summary": {
   "kind": {
    "event": {
@@ -53,16 +53,16 @@
     "clicks_per_page": 0.08
    },
    "term": {
-    "pages": 37,
-    "with_impr_%": 32,
+    "pages": 38,
+    "with_impr_%": 34,
     "top3_%": 8,
     "clicks": 30,
-    "clicks_per_page": 0.81
+    "clicks_per_page": 0.79
    }
   },
   "source": {
    "auto": {
-    "pages": 184,
+    "pages": 185,
     "with_impr_%": 30,
     "top3_%": 1,
     "clicks": 8,
@@ -92,8 +92,8 @@
     "clicks_per_page": 0.33
    },
    "what": {
-    "pages": 103,
-    "with_impr_%": 32,
+    "pages": 104,
+    "with_impr_%": 33,
     "top3_%": 3,
     "clicks": 32,
     "clicks_per_page": 0.31
@@ -122,11 +122,11 @@
     "clicks_per_page": 0.19
    },
    "True": {
-    "pages": 31,
+    "pages": 32,
     "with_impr_%": 100,
     "top3_%": 6,
     "clicks": 13,
-    "clicks_per_page": 0.42
+    "clicks_per_page": 0.41
    }
   }
  },
@@ -1077,7 +1077,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 35,
-   "age_days": 14.1,
+   "age_days": 14.2,
    "rival_exact": null,
    "impr": 2,
    "clicks": 0,
@@ -1119,6 +1119,23 @@
    "title_matches_top_query": false,
    "top_queries": [
     "google genie 4 announcement"
+   ]
+  },
+  {
+   "slug": "game-time-decision",
+   "title": "What is a game-time decision? Meaning in the NFL injury report",
+   "kind": "term",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 62,
+   "age_days": 3.0,
+   "rival_exact": null,
+   "impr": 2,
+   "clicks": 0,
+   "best_pos": 9,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "game time decision"
    ]
   },
   {
@@ -2289,7 +2306,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 62,
-   "age_days": 4.9,
+   "age_days": 5.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2304,7 +2321,7 @@
    "source": "auto",
    "q_word": "none",
    "title_len": 74,
-   "age_days": 4.9,
+   "age_days": 5.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
