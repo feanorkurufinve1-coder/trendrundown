@@ -235,6 +235,10 @@ def slugify(s):
 
 
 SMALL = {"a", "an", "and", "as", "at", "but", "by", "for", "in", "of", "on", "or", "the", "to", "vs", "vs.", "via"}
+# частые слова в названиях: «New Zealand Election» и «New Mexico vs Nevada» — не один сюжет (только для склейки тем)
+MERGE_GENERIC = SMALL | {"new", "north", "south", "east", "west", "united", "state", "states", "city", "county", "day",
+                         "game", "news", "live", "today", "election", "results", "open", "cup", "world", "university",
+                         "college", "san", "los", "las", "st"}
 
 
 ACRO = {"nfl", "nba", "mlb", "nhl", "ncaa", "ufc", "wwe", "fbi", "cia", "usa", "us", "uk", "ai", "ceo", "gop", "nasa", "sec",
@@ -379,12 +383,12 @@ def merge_dupes(store):
         if big["slug"] in gone:
             continue
         bu = {a["url"] for a in big["articles"]}; bt = {a["title"].lower() for a in big["articles"]}
-        bw = set(words(big.get("raw", big["term"]))) - SMALL
+        bw = set(words(big.get("raw", big["term"]))) - MERGE_GENERIC
         for small in recent[i + 1:]:
             if small["slug"] in gone:
                 continue
             su = {a["url"] for a in small["articles"]}; st = {a["title"].lower() for a in small["articles"]}
-            sw = set(words(small.get("raw", small["term"]))) - SMALL
+            sw = set(words(small.get("raw", small["term"]))) - MERGE_GENERIC
             if not (bw & sw):
                 continue                                   # нет общего слова в запросах — разные сюжеты
             common = len(bu & su) + len(bt & st)
