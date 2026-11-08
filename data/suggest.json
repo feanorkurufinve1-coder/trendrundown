@@ -1061,7 +1061,7 @@
   ]
  },
  "alicias-law-the-good-wife": {
-  "time": "2026-11-07T14:02:24+00:00",
+  "time": "2026-11-08T14:03:15+00:00",
   "query": "is alicia's law based on the good wife",
   "in_suggest": false,
   "suggest": {
@@ -1095,11 +1095,15 @@
    [
     "2026-11-07",
     false
+   ],
+   [
+    "2026-11-08",
+    false
    ]
   ]
  },
  "edgar-martinez-award": {
-  "time": "2026-11-07T14:02:25+00:00",
+  "time": "2026-11-08T14:03:16+00:00",
   "query": "what is the edgar martinez award",
   "in_suggest": true,
   "suggest": {
@@ -1141,11 +1145,15 @@
    [
     "2026-11-07",
     true
+   ],
+   [
+    "2026-11-08",
+    true
    ]
   ]
  },
  "how-is-speaker-of-the-house-elected": {
-  "time": "2026-11-07T14:02:27+00:00",
+  "time": "2026-11-08T14:03:18+00:00",
   "query": "how is the speaker of the house elected",
   "in_suggest": true,
   "suggest": {
@@ -1154,7 +1162,8 @@
     "election of the speaker of the house of commons",
     "election of new speaker of the house",
     "election of speaker of the house of representatives",
-    "selection of speaker of the house"
+    "selection of speaker of the house",
+    "house speaker vote"
    ],
    "what is election of the speaker of the house": [
     "when is election for speaker of the house",
@@ -1192,11 +1201,15 @@
    [
     "2026-11-07",
     true
+   ],
+   [
+    "2026-11-08",
+    true
    ]
   ]
  },
  "lame-duck-session": {
-  "time": "2026-11-07T14:02:28+00:00",
+  "time": "2026-11-08T14:03:19+00:00",
   "query": "what is a lame duck session",
   "in_suggest": true,
   "suggest": {
@@ -1214,8 +1227,8 @@
    ],
    "what is a lame duck session": [
     "what is a lame duck session",
-    "what is a lame duck session of congress",
     "what is a lame duck session in government",
+    "what is a lame duck session of congress",
     "what is a lame duck session in politics",
     "what is a lame duck season",
     "what is lame duck session in indian parliament",
@@ -1226,26 +1239,30 @@
    ],
    "lame duck session": [
     "lame duck session",
-    "lame duck session of congress",
     "lame duck session meaning",
+    "lame duck session congress",
+    "lame duck session 2026",
     "lame duck session legislative defiance",
     "lame duck session meaning in hindi",
     "lame duck session in hindi",
     "lame duck session of parliament",
     "lame duck session meaning in tamil",
-    "lame duck session upsc",
-    "lame duck session in india"
+    "lame duck session upsc"
    ]
   },
   "history": [
    [
     "2026-11-07",
     true
+   ],
+   [
+    "2026-11-08",
+    true
    ]
   ]
  },
  "mlb-posting-system": {
-  "time": "2026-11-07T14:02:30+00:00",
+  "time": "2026-11-08T14:03:21+00:00",
   "query": "what is the posting system in mlb",
   "in_suggest": true,
   "suggest": {
@@ -1285,11 +1302,15 @@
    [
     "2026-11-07",
     true
+   ],
+   [
+    "2026-11-08",
+    true
    ]
   ]
  },
  "record-vs-song-of-the-year": {
-  "time": "2026-11-07T14:02:31+00:00",
+  "time": "2026-11-08T14:03:22+00:00",
   "query": "what is the difference between record of the year and song of the year",
   "in_suggest": true,
   "suggest": {
@@ -1326,25 +1347,29 @@
    [
     "2026-11-07",
     true
+   ],
+   [
+    "2026-11-08",
+    true
    ]
   ]
  },
  "richard-avedon": {
-  "time": "2026-11-07T14:02:32+00:00",
+  "time": "2026-11-08T14:03:23+00:00",
   "query": "who was richard avedon",
   "in_suggest": true,
   "suggest": {
    "richard avedon": [
     "richard avedon",
-    "richard avedon in the american west",
     "richard avedon photos",
-    "richard avedon documentary",
-    "richard avedon documentary ron howard",
-    "richard avedon hollywood",
-    "richard avedon books",
-    "richard avedon famous photos",
+    "richard avedon in the american west",
     "richard avedon marilyn monroe",
-    "richard avedon beatles"
+    "richard avedon books",
+    "richard avedon portraits",
+    "richard avedon famous photos",
+    "richard avedon photography",
+    "richard avedon beatles",
+    "richard avedon foundation"
    ],
    "who is richard avedon": [
     "who is richard avedon",
@@ -1374,25 +1399,29 @@
    [
     "2026-11-07",
     true
+   ],
+   [
+    "2026-11-08",
+    true
    ]
   ]
  },
  "silver-slugger-award": {
-  "time": "2026-11-07T14:02:33+00:00",
+  "time": "2026-11-08T14:03:24+00:00",
   "query": "what is the silver slugger award",
   "in_suggest": true,
   "suggest": {
    "silver slugger award": [
     "silver slugger award",
-    "silver slugger award winners",
     "silver slugger award 2026",
-    "silver slugger award winners 2026",
-    "silver slugger award announcement",
-    "silver slugger award finalists 2026",
-    "silver slugger award finalists",
     "silver slugger award 2025",
     "silver slugger award criteria",
-    "silver slugger award odds"
+    "silver slugger award odds",
+    "silver slugger award 2026 predictions",
+    "silver slugger award mlb",
+    "silver slugger award 2026 winners list",
+    "silver slugger award trophy",
+    "silver slugger award 2026 odds"
    ],
    "what is silver slugger award": [
     "what is silver slugger award",
@@ -1423,25 +1452,29 @@
    [
     "2026-11-07",
     true
+   ],
+   [
+    "2026-11-08",
+    true
    ]
   ]
  },
  "teruaki-sato": {
-  "time": "2026-11-07T14:02:34+00:00",
+  "time": "2026-11-08T14:03:25+00:00",
   "query": "who is teruaki sato",
   "in_suggest": true,
   "suggest": {
    "teruaki sato": [
     "teruaki sato",
     "teruaki sato stats",
-    "teruaki sato mlb",
     "teruaki sato yankees",
-    "teruaki sato news",
+    "teruaki sato mets",
     "teruaki sato scouting report",
-    "teruaki sato sf giants",
     "teruaki sato posting",
     "teruaki sato defense",
-    "teruaki sato padres"
+    "teruaki sato rumors",
+    "teruaki sato highlights",
+    "teruaki sato phillies"
    ],
    "who is teruaki sato": [
     "who is teruaki sato",
@@ -1455,29 +1488,42 @@
    [
     "2026-11-07",
     true
+   ],
+   [
+    "2026-11-08",
+    true
    ]
   ]
  },
  "when-does-new-congress-start": {
-  "time": "2026-11-07T14:02:36+00:00",
+  "time": "2026-11-08T14:03:27+00:00",
   "query": "when does the new congress take office",
   "in_suggest": true,
   "suggest": {
    "start of the 120th congress": [
     "start of 120th congress",
-    "start of new congress"
+    "start of new congress",
+    "first day of new congress"
    ],
-   "what is start of the 120th congress": [],
+   "what is start of the 120th congress": [
+    "what is the 120th congress",
+    "when the new congress start"
+   ],
    "when does the new congress take office": [
+    "when does the new congress take office",
+    "when do the new congress take office",
     "when does the next congress take office",
     "when will the new congress take office",
+    "when do the new congress members take office",
+    "when does congress take office",
     "when does congress take office after election",
+    "when does the newly elected congress take office",
     "what day does the new congress start"
    ],
    "new congress take office": [
     "new congress takes office",
     "when do new congress take office",
-    "when do new congress members take office",
+    "when does new congress take office",
     "when do new congress people take office",
     "what day does the new congress start"
    ]
@@ -1485,6 +1531,10 @@
   "history": [
    [
     "2026-11-07",
+    true
+   ],
+   [
+    "2026-11-08",
     true
    ]
   ]
