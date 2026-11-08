@@ -547,6 +547,10 @@ def cap_title(t):
             t = t[:m.start()] + "? " + t[m.end():]
         elif len(t) < 80:
             t += "?"
+    # «What is dark fleet tankers?» → «What are dark fleet tankers?» (множественное число, написано строчными)
+    m = re.match(r"^(What|what) is ((?:[a-z][a-z-]* ){1,4}[a-z][a-z-]*?[^s\W]s)\?", t)
+    if m and not re.search(r"(ss|us|is|ics|news|series|species)$", m.group(2)):
+        t = "What are " + m.group(2) + t[m.end() - 1:]
     return t[:1].upper() + t[1:]
 
 
