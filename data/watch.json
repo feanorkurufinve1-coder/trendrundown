@@ -1,74 +1,72 @@
 {
- "made": "2026-11-08T12:17:03+00:00",
+ "made": "2026-11-08T12:32:34+00:00",
  "days": [
-  "2026-11-05",
   "2026-11-06",
-  "2026-11-07"
+  "2026-11-07",
+  "2026-11-08"
  ],
  "pages": [
   {
-   "page": "/w/the-body-cast",
-   "clicks_3d": 10,
-   "impr_3d": 280,
-   "pos": 8.3,
+   "page": "/x/dane-cook-brother",
+   "clicks_3d": 19,
+   "impr_3d": 2885,
+   "pos": 9.7,
    "by_day": {
-    "2026-11-05": 2,
+    "2026-11-06": 2,
+    "2026-11-07": 17,
+    "2026-11-08": 0
+   },
+   "manual": true
+  },
+  {
+   "page": "/w/the-body-cast",
+   "clicks_3d": 12,
+   "impr_3d": 273,
+   "pos": 8.1,
+   "by_day": {
     "2026-11-06": 4,
-    "2026-11-07": 4
+    "2026-11-07": 8
    },
    "manual": false
   },
   {
-   "page": "/x/scott-colom",
-   "clicks_3d": 7,
-   "impr_3d": 470,
-   "pos": 18.2,
+   "page": "/x/murder-in-galicia-true-story",
+   "clicks_3d": 9,
+   "impr_3d": 243,
+   "pos": 7.3,
    "by_day": {
-    "2026-11-05": 4,
+    "2026-11-06": 4,
+    "2026-11-07": 5
+   },
+   "manual": true
+  },
+  {
+   "page": "/x/scott-colom",
+   "clicks_3d": 3,
+   "impr_3d": 272,
+   "pos": 18.9,
+   "by_day": {
     "2026-11-06": 2,
     "2026-11-07": 1
    },
    "manual": true
   },
   {
-   "page": "/x/murder-in-galicia-true-story",
-   "clicks_3d": 7,
-   "impr_3d": 105,
-   "pos": 7.3,
+   "page": "/x/alaska-ranked-choice-voting",
+   "clicks_3d": 2,
+   "impr_3d": 9,
+   "pos": 12.5,
    "by_day": {
-    "2026-11-06": 4,
-    "2026-11-07": 3
-   },
-   "manual": true
-  },
-  {
-   "page": "/x/dane-cook-brother",
-   "clicks_3d": 5,
-   "impr_3d": 938,
-   "pos": 9.1,
-   "by_day": {
-    "2026-11-06": 2,
-    "2026-11-07": 3
-   },
-   "manual": true
-  },
-  {
-   "page": "/x/telerally",
-   "clicks_3d": 1,
-   "impr_3d": 47,
-   "pos": 6.6,
-   "by_day": {
-    "2026-11-05": 1,
     "2026-11-06": 0,
-    "2026-11-07": 0
+    "2026-11-07": 2
    },
    "manual": true
   },
   {
    "page": "/x/under-siege-netflix-true-story",
    "clicks_3d": 1,
-   "impr_3d": 25,
-   "pos": 4.6,
+   "impr_3d": 54,
+   "pos": 5.0,
    "by_day": {
     "2026-11-06": 1,
     "2026-11-07": 0
@@ -76,33 +74,32 @@
    "manual": true
   },
   {
-   "page": "/x/alaska-ranked-choice-voting",
+   "page": "/w/the-chosen-season-6-cast",
    "clicks_3d": 1,
-   "impr_3d": 6,
-   "pos": 14.8,
+   "impr_3d": 31,
+   "pos": 8.6,
    "by_day": {
-    "2026-11-06": 0,
-    "2026-11-07": 1
-   },
-   "manual": true
-  },
-  {
-   "page": "/x/curing-period",
-   "clicks_3d": 1,
-   "impr_3d": 4,
-   "pos": 4.8,
-   "by_day": {
-    "2026-11-05": 1
+    "2026-11-07": 0
    },
    "manual": false
   },
   {
-   "page": "/x/mississippi-senate-election",
+   "page": "/w/ghost-soldier-cast",
    "clicks_3d": 0,
-   "impr_3d": 70,
-   "pos": 14.8,
+   "impr_3d": 96,
+   "pos": 11.8,
    "by_day": {
-    "2026-11-05": 0,
+    "2026-11-06": 0,
+    "2026-11-07": 0
+   },
+   "manual": false
+  },
+  {
+   "page": "/x/alberto-aquilani",
+   "clicks_3d": 0,
+   "impr_3d": 88,
+   "pos": 11.3,
+   "by_day": {
     "2026-11-06": 0,
     "2026-11-07": 0
    },
