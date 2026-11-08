@@ -1020,13 +1020,25 @@ CRIME_RE = re.compile(r"(?i)\b(shooting|shootings|shot dead|gunman|gunfire|murde
                       r"assault\w*|massacre|terror attack|bomb threat|hostage\w*)\b")
 
 
+FICTION_RE = re.compile(r"(?i)\b(movie|film|sequel|series|season \d|episode|character|villain|plays|played by|actor|actress|"
+                        r"novel|video game|franchise|trailer|box office|streaming)\b")
+
+
 def is_crime(*texts):
-    return bool(CRIME_RE.search(" ".join(t or "" for t in texts)))
+    t = " ".join(x or "" for x in texts)
+    if FICTION_RE.search(t) and not re.search(r"(?i)\b(true story|real case|real-life|documentary|docuseries)\b", t):
+        return False                     # кино и сериалы про вымышленные преступления — не криминальные новости
+    return bool(CRIME_RE.search(t))
 
 
 def crime_sweep(store):
     """Перед каждой сборкой: всё свежее (за 3 суток) про криминал, что ещё не одобрено, — в очередь владельца."""
     ap = store.get("approvals", {})
+    q = store.get("hold_queue", {})
+    for k in [k for k in q if k.startswith("x:") and k[2:] in store.get("explainers", {})
+              and not is_crime(store["explainers"][k[2:]].get("title"), store["explainers"][k[2:]].get("answer"),
+                               store["explainers"][k[2:]].get("in_the_news"))]:
+        q.pop(k)
     for slug, x in store.get("explainers", {}).items():
         if hours_since(x.get("made", "2000-01-01T00:00:00+00:00")) < 72 and ap.get(f"x:{slug}") != "yes" \
                 and is_crime(x.get("title"), x.get("answer"), x.get("in_the_news")):
