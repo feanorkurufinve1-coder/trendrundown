@@ -1324,6 +1324,9 @@ Questions Americans are typing into Google about it: {questions}
 
 Write a page that answers the search directly.
 Rules:
+- Look at how people actually type the question (the search phrases given). If they spell the key word in several ways
+  (with/without a space or hyphen, common misspellings), mention the variants ONCE, naturally, e.g. "also written
+  tele-rally or tele rally", and use one variant in an FAQ question. Never stuff keywords.
 - About crimes and people: write ONLY what the sources say, word it as "police said", "prosecutors allege", "was charged
   with", never call anyone guilty before a conviction, never name victims, witnesses, private persons or minors.
 - NEVER write about religion in any way (no religions, churches, holy days, religious figures or beliefs), and never
