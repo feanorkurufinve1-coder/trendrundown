@@ -1,5 +1,5 @@
 {
- "made": "2026-11-08T00:02:12+00:00",
+ "made": "2026-11-08T00:17:42+00:00",
  "days": [
   "2026-11-05",
   "2026-11-06",
@@ -7,43 +7,68 @@
  ],
  "pages": [
   {
-   "page": "/x/scott-colom",
-   "clicks_3d": 6,
-   "impr_3d": 417,
-   "pos": 19.1,
-   "by_day": {
-    "2026-11-05": 4,
-    "2026-11-06": 2,
-    "2026-11-07": 0
-   },
-   "manual": true
-  },
-  {
    "page": "/w/the-body-cast",
-   "clicks_3d": 6,
-   "impr_3d": 225,
-   "pos": 8.5,
+   "clicks_3d": 10,
+   "impr_3d": 280,
+   "pos": 8.3,
    "by_day": {
     "2026-11-05": 2,
-    "2026-11-06": 4
+    "2026-11-06": 4,
+    "2026-11-07": 4
    },
    "manual": false
   },
   {
-   "page": "/x/murder-in-galicia-true-story",
-   "clicks_3d": 4,
-   "impr_3d": 28,
-   "pos": 7.2,
+   "page": "/x/scott-colom",
+   "clicks_3d": 7,
+   "impr_3d": 470,
+   "pos": 18.2,
    "by_day": {
-    "2026-11-06": 4
+    "2026-11-05": 4,
+    "2026-11-06": 2,
+    "2026-11-07": 1
+   },
+   "manual": true
+  },
+  {
+   "page": "/x/murder-in-galicia-true-story",
+   "clicks_3d": 7,
+   "impr_3d": 105,
+   "pos": 7.3,
+   "by_day": {
+    "2026-11-06": 4,
+    "2026-11-07": 3
    },
    "manual": true
   },
   {
    "page": "/x/dane-cook-brother",
+   "clicks_3d": 5,
+   "impr_3d": 938,
+   "pos": 9.1,
+   "by_day": {
+    "2026-11-06": 2,
+    "2026-11-07": 3
+   },
+   "manual": true
+  },
+  {
+   "page": "/x/telerally",
    "clicks_3d": 1,
-   "impr_3d": 304,
-   "pos": 9.2,
+   "impr_3d": 47,
+   "pos": 6.6,
+   "by_day": {
+    "2026-11-05": 1,
+    "2026-11-06": 0,
+    "2026-11-07": 0
+   },
+   "manual": true
+  },
+  {
+   "page": "/x/under-siege-netflix-true-story",
+   "clicks_3d": 1,
+   "impr_3d": 25,
+   "pos": 4.6,
    "by_day": {
     "2026-11-06": 1,
     "2026-11-07": 0
@@ -51,23 +76,13 @@
    "manual": true
   },
   {
-   "page": "/x/telerally",
+   "page": "/x/alaska-ranked-choice-voting",
    "clicks_3d": 1,
-   "impr_3d": 40,
-   "pos": 3.5,
+   "impr_3d": 6,
+   "pos": 14.8,
    "by_day": {
-    "2026-11-05": 1,
-    "2026-11-06": 0
-   },
-   "manual": true
-  },
-  {
-   "page": "/x/under-siege-netflix-true-story",
-   "clicks_3d": 1,
-   "impr_3d": 13,
-   "pos": 5.1,
-   "by_day": {
-    "2026-11-06": 1
+    "2026-11-06": 0,
+    "2026-11-07": 1
    },
    "manual": true
   },
@@ -84,22 +99,12 @@
   {
    "page": "/x/mississippi-senate-election",
    "clicks_3d": 0,
-   "impr_3d": 64,
-   "pos": 14.2,
+   "impr_3d": 70,
+   "pos": 14.8,
    "by_day": {
     "2026-11-05": 0,
-    "2026-11-06": 0
-   },
-   "manual": false
-  },
-  {
-   "page": "/x/gen-z-regelt",
-   "clicks_3d": 0,
-   "impr_3d": 62,
-   "pos": 7.8,
-   "by_day": {
-    "2026-11-05": 0,
-    "2026-11-06": 0
+    "2026-11-06": 0,
+    "2026-11-07": 0
    },
    "manual": false
   }
