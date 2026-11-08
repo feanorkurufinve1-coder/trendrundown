@@ -2517,6 +2517,64 @@ def watch_list(store):
         log(f"watch.json: {e}")
 
 
+def learn_table(store):
+    """Изучаем, что Google поднимает, на НАШИХ данных: для каждой страницы-пояснения старше 3 дней — её признаки
+    (тип, откуда тема, вид заголовка, вопрос совпал с запросами людей, сколько точных конкурентов было при написании)
+    и результат в Google за 28 дней (показы, клики, лучшее место). Плюс сводка: какие признаки дают топ-3 и клики.
+    Пишется в data/learn.json — его читает ежедневная задача и Claude."""
+    ex = dict(store.get("explainers", {}))
+    try:
+        ex.update(manual_pages(store))       # ручные страницы-прогнозы тоже учитываем (они лучшие)
+    except Exception:
+        pass
+    rows = (store.get("gsc") or {}).get("rows") or []
+    by = {}
+    for r in rows:
+        path = urllib.parse.urlparse(r.get("page", "")).path
+        if path.startswith("/x/"):
+            slug = path[3:].replace(".html", "").strip("/")
+            b = by.setdefault(slug, {"impr": 0, "clicks": 0, "best": 99.0, "queries": []})
+            b["impr"] += r["impr"]; b["clicks"] += r["clicks"]; b["best"] = min(b["best"], r["pos"])
+            b["queries"].append((r["impr"], r["q"]))
+    comp = {l["q"]: l for l in store.get("longtail_log", [])}
+    manual = set(f[:-5] for f in os.listdir(MANUAL_DIR)) if os.path.isdir(MANUAL_DIR) else set()
+    table = []
+    for slug, x in ex.items():
+        made = x.get("made", "2000-01-01T00:00:00+00:00")
+        if hours_since(made) < 72:
+            continue
+        g = by.get(slug, {"impr": 0, "clicks": 0, "best": None, "queries": []})
+        title = x.get("title", "")
+        tq = re.match(r"(?i)^(what|who|why|how|is|are|does|did|when|where|can|will)\b", title)
+        topq = [q for _, q in sorted(g["queries"], reverse=True)[:3]]
+        tw = set(words(title))
+        match = bool(topq) and all(w in tw or w in STOPW for w in words(topq[0]))
+        c = comp.get((x.get("query") or "").lower())
+        table.append({"slug": slug, "title": title, "kind": x.get("kind"),
+                      "source": "manual" if slug in manual else ("longtail" if c else ("breaking" if x.get("breaking") else "auto")),
+                      "q_word": tq.group(1).lower() if tq else "none", "title_len": len(title),
+                      "age_days": round(hours_since(made) / 24, 1), "rival_exact": c.get("exact") if c else None,
+                      "impr": g["impr"], "clicks": g["clicks"], "best_pos": g["best"],
+                      "title_matches_top_query": match, "top_queries": topq})
+    def stats(group):
+        n = len(group)
+        if not n:
+            return None
+        return {"pages": n, "with_impr_%": round(100 * sum(1 for r in group if r["impr"]) / n),
+                "top3_%": round(100 * sum(1 for r in group if r["best_pos"] and r["best_pos"] <= 3.5) / n),
+                "clicks": sum(r["clicks"] for r in group), "clicks_per_page": round(sum(r["clicks"] for r in group) / n, 2)}
+    summary = {}
+    for key in ("kind", "source", "q_word", "title_matches_top_query"):
+        summary[key] = {v: stats([r for r in table if str(r[key]) == v]) for v in sorted({str(r[key]) for r in table})}
+        summary[key] = {k: v for k, v in summary[key].items() if v}
+    table.sort(key=lambda r: (-r["clicks"], -r["impr"]))
+    try:
+        json.dump({"made": now_iso(), "pages": len(table), "summary": summary, "table": table},
+                  open(os.path.join(HERE, "data", "learn.json"), "w"), indent=1, ensure_ascii=False)
+    except Exception as e:
+        log(f"learn.json: {e}")
+
+
 def gsc_pages(store):
     """Страница → её главный запрос (по показам), сумма показов, позиция."""
     out = {}
@@ -5191,6 +5249,10 @@ def run_once():
         watch_list(store)
     except Exception as e:
         log(f"watch: {e}")
+    try:
+        learn_table(store)
+    except Exception as e:
+        log(f"изучение результатов: {e}")
     try:
         suggest_watch(store)
     except Exception as e:
