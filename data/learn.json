@@ -1,6 +1,6 @@
 {
- "made": "2026-11-09T09:16:54+00:00",
- "pages": 205,
+ "made": "2026-11-09T09:31:58+00:00",
+ "pages": 206,
  "summary": {
   "kind": {
    "event": {
@@ -53,11 +53,11 @@
     "clicks_per_page": 0.08
    },
    "term": {
-    "pages": 51,
-    "with_impr_%": 25,
+    "pages": 52,
+    "with_impr_%": 27,
     "top3_%": 6,
     "clicks": 30,
-    "clicks_per_page": 0.59
+    "clicks_per_page": 0.58
    }
   },
   "source": {
@@ -67,6 +67,13 @@
     "top3_%": 1,
     "clicks": 8,
     "clicks_per_page": 0.04
+   },
+   "longtail": {
+    "pages": 1,
+    "with_impr_%": 100,
+    "top3_%": 0,
+    "clicks": 0,
+    "clicks_per_page": 0.0
    },
    "manual": {
     "pages": 11,
@@ -92,11 +99,11 @@
     "clicks_per_page": 0.0
    },
    "none": {
-    "pages": 16,
-    "with_impr_%": 12,
+    "pages": 17,
+    "with_impr_%": 18,
     "top3_%": 0,
     "clicks": 5,
-    "clicks_per_page": 0.31
+    "clicks_per_page": 0.29
    },
    "what": {
     "pages": 117,
@@ -129,8 +136,8 @@
   },
   "title_matches_top_query": {
    "False": {
-    "pages": 172,
-    "with_impr_%": 15,
+    "pages": 173,
+    "with_impr_%": 16,
     "top3_%": 1,
     "clicks": 29,
     "clicks_per_page": 0.17
@@ -247,7 +254,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 47,
-   "age_days": 13.0,
+   "age_days": 13.1,
    "rival_exact": null,
    "impr": 3,
    "clicks": 1,
@@ -341,7 +348,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 32,
-   "age_days": 11.0,
+   "age_days": 11.1,
    "rival_exact": null,
    "impr": 140,
    "clicks": 0,
@@ -436,7 +443,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 65,
-   "age_days": 6.6,
+   "age_days": 6.7,
    "rival_exact": null,
    "impr": 46,
    "clicks": 0,
@@ -660,7 +667,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 40,
-   "age_days": 13.9,
+   "age_days": 14.0,
    "rival_exact": null,
    "impr": 16,
    "clicks": 0,
@@ -789,7 +796,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 35,
-   "age_days": 13.9,
+   "age_days": 14.0,
    "rival_exact": null,
    "impr": 7,
    "clicks": 0,
@@ -807,7 +814,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 32,
-   "age_days": 9.6,
+   "age_days": 9.7,
    "rival_exact": null,
    "impr": 7,
    "clicks": 0,
@@ -1144,7 +1151,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 28,
-   "age_days": 12.6,
+   "age_days": 12.7,
    "rival_exact": null,
    "impr": 2,
    "clicks": 0,
@@ -1169,6 +1176,23 @@
    "title_matches_top_query": true,
    "top_queries": [
     "game time decision"
+   ]
+  },
+  {
+   "slug": "arnold-schwarzenegger-last-name",
+   "title": "Arnold schwarzenegger last name meaning: German place-name origin",
+   "kind": "term",
+   "source": "longtail",
+   "q_word": "none",
+   "title_len": 65,
+   "age_days": 3.0,
+   "rival_exact": 2,
+   "impr": 2,
+   "clicks": 0,
+   "best_pos": 9,
+   "title_matches_top_query": false,
+   "top_queries": [
+    "schwarzenegg"
    ]
   },
   {
@@ -1349,7 +1373,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 23,
-   "age_days": 15.7,
+   "age_days": 15.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -1379,7 +1403,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 49,
-   "age_days": 15.1,
+   "age_days": 15.2,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -1394,7 +1418,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 35,
-   "age_days": 15.1,
+   "age_days": 15.2,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -1529,7 +1553,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 60,
-   "age_days": 7.6,
+   "age_days": 7.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -1574,7 +1598,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 22,
-   "age_days": 13.0,
+   "age_days": 13.1,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -1769,7 +1793,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 19,
-   "age_days": 10.8,
+   "age_days": 10.9,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -1799,7 +1823,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 27,
-   "age_days": 10.5,
+   "age_days": 10.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2054,7 +2078,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 57,
-   "age_days": 7.6,
+   "age_days": 7.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2519,7 +2543,7 @@
    "source": "auto",
    "q_word": "where",
    "title_len": 66,
-   "age_days": 4.7,
+   "age_days": 4.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2684,7 +2708,7 @@
    "source": "auto",
    "q_word": "none",
    "title_len": 62,
-   "age_days": 4.4,
+   "age_days": 4.5,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2699,7 +2723,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 61,
-   "age_days": 4.4,
+   "age_days": 4.5,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2759,7 +2783,7 @@
    "source": "auto",
    "q_word": "none",
    "title_len": 67,
-   "age_days": 4.3,
+   "age_days": 4.4,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2924,7 +2948,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 69,
-   "age_days": 4.1,
+   "age_days": 4.2,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3179,7 +3203,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 54,
-   "age_days": 3.6,
+   "age_days": 3.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
