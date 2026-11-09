@@ -1,5 +1,5 @@
 {
- "made": "2026-11-09T00:32:08+00:00",
+ "made": "2026-11-09T00:47:31+00:00",
  "days": [
   "2026-11-06",
   "2026-11-07",
@@ -8,100 +8,106 @@
  "pages": [
   {
    "page": "/x/dane-cook-brother",
-   "clicks_3d": 19,
-   "impr_3d": 2885,
-   "pos": 9.7,
+   "clicks_3d": 21,
+   "impr_3d": 3078,
+   "pos": 8.9,
    "by_day": {
     "2026-11-06": 2,
-    "2026-11-07": 17,
-    "2026-11-08": 0
+    "2026-11-07": 18,
+    "2026-11-08": 1
    },
    "manual": true
   },
   {
    "page": "/w/the-body-cast",
-   "clicks_3d": 12,
-   "impr_3d": 273,
+   "clicks_3d": 13,
+   "impr_3d": 298,
    "pos": 8.1,
    "by_day": {
     "2026-11-06": 4,
-    "2026-11-07": 8
+    "2026-11-07": 8,
+    "2026-11-08": 1
    },
    "manual": false
   },
   {
    "page": "/x/murder-in-galicia-true-story",
    "clicks_3d": 9,
-   "impr_3d": 243,
-   "pos": 7.3,
+   "impr_3d": 272,
+   "pos": 7.4,
    "by_day": {
     "2026-11-06": 4,
-    "2026-11-07": 5
+    "2026-11-07": 5,
+    "2026-11-08": 0
    },
    "manual": true
   },
   {
    "page": "/x/scott-colom",
    "clicks_3d": 3,
-   "impr_3d": 272,
-   "pos": 18.9,
+   "impr_3d": 285,
+   "pos": 20.1,
    "by_day": {
     "2026-11-06": 2,
-    "2026-11-07": 1
+    "2026-11-07": 1,
+    "2026-11-08": 0
    },
    "manual": true
   },
   {
    "page": "/x/alaska-ranked-choice-voting",
    "clicks_3d": 2,
-   "impr_3d": 9,
-   "pos": 12.5,
+   "impr_3d": 12,
+   "pos": 13.1,
    "by_day": {
     "2026-11-06": 0,
-    "2026-11-07": 2
+    "2026-11-07": 2,
+    "2026-11-08": 0
    },
    "manual": true
+  },
+  {
+   "page": "/c/entertainment",
+   "clicks_3d": 2,
+   "impr_3d": 3,
+   "pos": 2.0,
+   "by_day": {
+    "2026-11-08": 2
+   },
+   "manual": false
   },
   {
    "page": "/x/under-siege-netflix-true-story",
    "clicks_3d": 1,
-   "impr_3d": 54,
-   "pos": 5.0,
+   "impr_3d": 57,
+   "pos": 5.7,
    "by_day": {
     "2026-11-06": 1,
-    "2026-11-07": 0
+    "2026-11-07": 0,
+    "2026-11-08": 0
    },
    "manual": true
   },
   {
+   "page": "/x/gen-z-regelt",
+   "clicks_3d": 1,
+   "impr_3d": 42,
+   "pos": 7.9,
+   "by_day": {
+    "2026-11-06": 0,
+    "2026-11-07": 0,
+    "2026-11-08": 1
+   },
+   "manual": false
+  },
+  {
    "page": "/w/the-chosen-season-6-cast",
    "clicks_3d": 1,
-   "impr_3d": 31,
-   "pos": 8.6,
+   "impr_3d": 33,
+   "pos": 7.3,
    "by_day": {
-    "2026-11-07": 0
-   },
-   "manual": false
-  },
-  {
-   "page": "/w/ghost-soldier-cast",
-   "clicks_3d": 0,
-   "impr_3d": 96,
-   "pos": 11.8,
-   "by_day": {
-    "2026-11-06": 0,
-    "2026-11-07": 0
-   },
-   "manual": false
-  },
-  {
-   "page": "/x/alberto-aquilani",
-   "clicks_3d": 0,
-   "impr_3d": 88,
-   "pos": 11.3,
-   "by_day": {
-    "2026-11-06": 0,
-    "2026-11-07": 0
+    "2026-11-07": 0,
+    "2026-11-08": 0
    },
    "manual": false
   }
