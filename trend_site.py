@@ -2096,9 +2096,10 @@ def longtail_candidates(store):
 
 
 # ---- TMDB: фильмы и сериалы, которые выйдут в США через 1–10 дней. Пишем «правдивая ли история / по книге ли» ЗАРАНЕЕ ----
-TMDB_PER_RUN = 2        # сколько страниц за один проход
-TMDB_PER_DAY = 8        # тест: не больше стольких в сутки
+TMDB_PER_RUN = 3        # сколько страниц за один проход
+TMDB_PER_DAY = 15        # тест: не больше стольких в сутки
 TMDB_MIN_POP = 4        # совсем неизвестное никто не ищет
+TMDB_CAST_MAX_POP = 6   # «малоизвестный актёр»: популярность в TMDB не выше этого
 TMDB_TRUE = re.compile(r"(?i)true story|real event|real person|biograph|true crime|historical figure|based on memoir")
 TMDB_BOOK = re.compile(r"(?i)based on (a )?(novel|book|young adult novel|memoir|short story|comic|graphic novel|manga)|novel or book")
 
@@ -2165,7 +2166,7 @@ def tmdb_facts(x):
             + (f" from {', '.join(nets)}" if nets else "")
             + f". US release / premiere date listed by TMDB: {x['date']}" + (f" ({x['how']} release)" if x.get("how") else "")
             + (f"; first released elsewhere {d.get('release_date')}" if x["type"] == "movie" and d.get("release_date") and d.get("release_date") < x["date"] else "")
-            + ". Genres: {', '.join(genres) or 'n/a'}.\n"
+            + f". Genres: {', '.join(genres) or 'n/a'}.\n"
             f"Overview: {d.get('overview', '')}\n"
             + (f"Cast: {'; '.join(cast)}.\n" if cast else "")
             + (f"Creators and writers: {'; '.join(crew)}.\n" if crew else "")
@@ -2191,7 +2192,7 @@ def tmdb_candidates(store):
     ex = store.get("explainers", {})
     out, checks = [], 0
     for x in tmdb_upcoming(store):
-        if len(out) >= TMDB_PER_RUN or days.get(today, 0) + len(out) >= TMDB_PER_DAY or checks >= 6:
+        if len(out) >= TMDB_PER_RUN or days.get(today, 0) + len(out) >= TMDB_PER_DAY or checks >= 8:
             break
         k_ = f"{x['type']}{x['id']}"
         if k_ in tried or bad_text(x["title"]):
@@ -2206,46 +2207,74 @@ def tmdb_candidates(store):
         if d.get("adult") or bad_text(facts) or "Documentary" in genres:
             log_.append({"time": now_iso(), "title": x["title"], "decision": "skip: blocked/documentary"}); continue
         kws = " | ".join(kw)
+        angles = []
         if TMDB_TRUE.search(kws):
-            q, subj = f"is {x['title']} a true story", f"{x['title']} true story"
+            angles.append((f"is {x['title']} a true story", f"{x['title']} true story", None))
         elif TMDB_BOOK.search(kws):
-            q, subj = f"is {x['title']} based on a book", f"{x['title']} book"
-        else:
-            log_.append({"time": now_iso(), "title": x["title"], "decision": "skip: not true story / book"}); continue
-        if slugify(subj) in ex:
-            continue
-        sup = supply(q)
-        if sup is None:
-            tried.pop(k_, None)
-            break
-        exact, big, res = sup
-        decision = "skip: answered" if (big >= 1 or exact >= 3) else "write"
-        log_.append({"time": now_iso(), "title": x["title"], "q": q, "date": x["date"], "exact": exact, "big": big,
-                     "decision": decision})
-        if decision != "write":
-            continue
-        link = f"https://www.themoviedb.org/{x['type']}/{x['id']}"
-        texts, blocks, links = [facts], [f"[1] themoviedb.org — {x['title']} (TMDB listing)\n{facts}"], [("TMDB", x["title"], link)]
-        for ti, u in res[:6]:
-            if any(b in u for b in ("youtube.com", "reddit.com", "tiktok.com", "facebook.com", "instagram.com",
-                                    "x.com/", "twitter.com", "quora.com", "themoviedb.org")):
+            angles.append((f"is {x['title']} based on a book", f"{x['title']} book", None))
+        # малоизвестные актёры: «who plays <герой> in <фильм>» — люди гуглят это прямо во время просмотра
+        for c in (d.get("credits") or {}).get("cast", [])[:6]:
+            ch = re.sub(r"\s*\(.*?\)|\s*/.*$", "", c.get("character") or "").strip()
+            if (not ch or len(ch) < 3 or re.search(r"(?i)\b(self|himself|herself|voice|narrator|uncredited|#\d)\b", ch)
+                    or (c.get("popularity") or 0) > TMDB_CAST_MAX_POP or bad_text(ch)):
                 continue
-            body = article_text(u)
-            if len(body) < 400 or not any(w in words(body) for w in words(x["title"]) if len(w) > 3):
-                continue
-            src_ = urllib.parse.urlparse(u).netloc.replace("www.", "")
-            texts.append(ti + " " + body)
-            blocks.append(f"[{len(blocks) + 1}] {src_} — {ti}\n" + body)
-            links.append((src_, ti, u))
-            if len(texts) >= 4:
+            angles.append((f"who plays {ch} in {x['title']}", f"{ch} actor in {x['title']}", c))
+            if len([a_ for a_ in angles if a_[2]]) >= 2:
                 break
-        if len(texts) < 2:                              # одной карточки TMDB мало: «чья история / какая книга» — из статей
-            log_[-1]["decision"] = "skip: no sources"
-            continue
-        item = {"subject": subj, "query": q, "kind": "other", "longtail": True, "future": True, "tmdb": True}
-        tt = {"slug": "tmdb-" + slugify(x["title"])[:40], "term": x["title"], "articles": [], "traffic": []}
-        out.append((tt["slug"], {"texts": texts, "blocks": blocks, "links": links}, tt, item, 0))
-        log(f"TMDB: «{q}» (выходит {x['date']}) — точных ответов в поиске {exact}, пишем заранее")
+        if not angles:
+            log_.append({"time": now_iso(), "title": x["title"], "decision": "skip: no angle"}); continue
+        link = f"https://www.themoviedb.org/{x['type']}/{x['id']}"
+        for q, subj, c in angles:
+            if len(out) >= TMDB_PER_RUN or checks >= 8:
+                break
+            if slugify(subj) in ex:
+                continue
+            checks += 1
+            sup = supply(q)
+            if sup is None:
+                break
+            exact, big, res = sup
+            decision = "skip: answered" if (big >= 1 or exact >= 3) else "write"
+            log_.append({"time": now_iso(), "title": x["title"], "q": q, "date": x["date"], "exact": exact, "big": big,
+                         "decision": decision})
+            if decision != "write":
+                continue
+            texts, blocks, links = [facts], [f"[1] themoviedb.org — {x['title']} (TMDB listing)\n{facts}"], [("TMDB", x["title"], link)]
+            if c:                                       # карточка актёра: только то, что есть в TMDB, без личной жизни
+                try:
+                    pd = tmdb_get(f"/person/{c['id']}", append_to_response="combined_credits", language="en-US") or {}
+                except Exception:
+                    pd = {}
+                cr = [w_ for w_ in (pd.get("combined_credits") or {}).get("cast", []) if w_.get("id") != x["id"]]
+                cr.sort(key=lambda w_: -(w_.get("vote_count") or 0))
+                known = [f"{w_.get('title') or w_.get('name')} ({(w_.get('release_date') or w_.get('first_air_date') or '')[:4]})"
+                         + (f" as {w_['character']}" if w_.get("character") else "") for w_ in cr[:8]]
+                ptxt = (f"{c['name']} plays {c.get('character')} in {x['title']} (TMDB cast list).\n"
+                        + (f"Biography (TMDB): {pd.get('biography', '')[:1500]}\n" if pd.get("biography") else "")
+                        + (f"Other credits (TMDB): {'; '.join(known)}." if known else ""))
+                texts.append(ptxt)
+                blocks.append(f"[2] themoviedb.org — {c['name']} (TMDB person page)\n{ptxt}")
+                links.append(("TMDB", c["name"], f"https://www.themoviedb.org/person/{c['id']}"))
+            for ti, u in res[:6]:
+                if len(texts) >= 4:
+                    break
+                if any(b_ in u for b_ in ("youtube.com", "reddit.com", "tiktok.com", "facebook.com", "instagram.com",
+                                          "x.com/", "twitter.com", "quora.com", "themoviedb.org")):
+                    continue
+                body = article_text(u)
+                if len(body) < 400 or not any(w in words(body) for w in words(x["title"]) if len(w) > 3):
+                    continue
+                src_ = urllib.parse.urlparse(u).netloc.replace("www.", "")
+                texts.append(ti + " " + body)
+                blocks.append(f"[{len(blocks) + 1}] {src_} — {ti}\n" + body)
+                links.append((src_, ti, u))
+            if len(texts) < 2:                          # «чья история / какая книга» — нужно хотя бы одна статья
+                log_[-1]["decision"] = "skip: no sources"
+                continue
+            item = {"subject": subj, "query": q, "kind": "other", "longtail": True, "future": True, "tmdb": True}
+            tt = {"slug": "tmdb-" + slugify(x["title"])[:40], "term": x["title"], "articles": [], "traffic": []}
+            out.append((tt["slug"], {"texts": texts, "blocks": blocks, "links": links}, tt, item, 0))
+            log(f"TMDB: «{q}» (выходит {x['date']}) — точных ответов в поиске {exact}, пишем заранее")
     days[today] = days.get(today, 0) + len(out)
     for d_ in sorted(days)[:-14]:
         days.pop(d_)
