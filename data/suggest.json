@@ -1,6 +1,6 @@
 {
  "alaska-ranked-choice-voting": {
-  "time": "2026-11-08T18:48:36+00:00",
+  "time": "2026-11-09T19:02:17+00:00",
   "query": "how does alaska ranked choice voting work",
   "in_suggest": true,
   "suggest": {
@@ -9,22 +9,22 @@
     "alaska ranked choice voting repeal",
     "alaska ranked choice voting explained",
     "alaska ranked choice voting candidates",
+    "alaska ranked choice voting referendum",
     "alaska ranked choice voting wikipedia",
     "alaska ranked choice voting reddit",
     "alaska ranked choice voting ad",
     "alaska ranked choice voting history",
-    "alaska ranked choice voting senate",
     "alaska ranked choice voting polls"
    ],
    "what is alaska ranked-choice voting": [
     "alaska ranked choice voting repeal",
     "alaska ranked choice voting explained",
     "alaska ranked choice voting candidates",
+    "alaska ranked choice voting referendum",
     "alaska ranked choice voting wikipedia",
     "alaska ranked choice voting reddit",
     "alaska ranked choice voting ad",
     "alaska ranked choice voting history",
-    "alaska ranked choice voting senate",
     "alaska ranked choice voting polls",
     "alaska ranked choice voting primary"
    ],
@@ -56,11 +56,15 @@
    [
     "2026-11-08",
     true
+   ],
+   [
+    "2026-11-09",
+    true
    ]
   ]
  },
  "cyber-monday": {
-  "time": "2026-11-08T18:48:37+00:00",
+  "time": "2026-11-09T19:02:18+00:00",
   "query": "what is cyber monday",
   "in_suggest": true,
   "suggest": {
@@ -70,11 +74,11 @@
     "cyber monday deals",
     "cyber monday date",
     "cyber monday deals 2026",
-    "cyber monday 2025",
-    "cyber monday 2027",
     "cyber monday amazon 2026",
-    "cyber monday 2026 switch 2",
-    "cyber monday stallion"
+    "cyber monday amazon",
+    "cyber monday 2027",
+    "cyber monday deals amazon",
+    "cyber monday 2025"
    ],
    "what is cyber monday": [
     "what is cyber monday",
@@ -105,25 +109,29 @@
    [
     "2026-11-08",
     true
+   ],
+   [
+    "2026-11-09",
+    true
    ]
   ]
  },
  "dane-cook-brother": {
-  "time": "2026-11-08T18:48:39+00:00",
+  "time": "2026-11-09T19:02:19+00:00",
   "query": "what happened to dane cook brother",
   "in_suggest": true,
   "suggest": {
    "darryl mccauley": [
     "darryl mccauley",
+    "darryl mccauley where is he now",
     "darryl mccauley social media",
     "darryl mccauley now",
     "darryl mccauley wife",
     "darryl mccauley facebook",
     "darryl mccauley instagram",
-    "darryl mccauley where is he now",
-    "darryl mccauley son",
     "darryl mccauley age",
-    "darryl mccauley 2026"
+    "darryl mccauley son",
+    "darryl mccauley los angeles"
    ],
    "who is darryl mccauley": [
     "what is darryl mccauley doing now",
@@ -145,12 +153,12 @@
     "dane cook brother now",
     "dane cook brother darryl",
     "dane cook brother wife",
-    "dane cook brother documentary",
     "dane cook brother theft",
     "dane cook brother social media",
-    "dane cook brother darryl now",
-    "dane cook brother stole from him",
-    "dane cook brother reddit"
+    "dane cook brother documentary",
+    "dane cook brother stole",
+    "dane cook brother money",
+    "dane cook brother age"
    ]
   },
   "history": [
@@ -169,11 +177,15 @@
    [
     "2026-11-08",
     true
+   ],
+   [
+    "2026-11-09",
+    true
    ]
   ]
  },
  "designated-for-assignment": {
-  "time": "2026-11-08T18:48:40+00:00",
+  "time": "2026-11-09T19:02:21+00:00",
   "query": "what does designated for assignment mean",
   "in_suggest": true,
   "suggest": {
@@ -241,11 +253,15 @@
    [
     "2026-11-08",
     true
+   ],
+   [
+    "2026-11-09",
+    true
    ]
   ]
  },
  "how-mlb-mvp-is-voted": {
-  "time": "2026-11-08T18:48:41+00:00",
+  "time": "2026-11-09T19:02:22+00:00",
   "query": "how is the mlb mvp voted",
   "in_suggest": true,
   "suggest": {
@@ -296,11 +312,15 @@
    [
     "2026-11-08",
     true
+   ],
+   [
+    "2026-11-09",
+    true
    ]
   ]
  },
  "non-tender": {
-  "time": "2026-11-08T18:48:43+00:00",
+  "time": "2026-11-09T19:02:24+00:00",
   "query": "what does non-tender mean in baseball",
   "in_suggest": true,
   "suggest": {
@@ -365,11 +385,15 @@
    [
     "2026-11-08",
     true
+   ],
+   [
+    "2026-11-09",
+    true
    ]
   ]
  },
  "qualifying-offer": {
-  "time": "2026-11-08T18:48:44+00:00",
+  "time": "2026-11-09T19:02:25+00:00",
   "query": "what is a qualifying offer in mlb",
   "in_suggest": true,
   "suggest": {
@@ -433,11 +457,15 @@
    [
     "2026-11-08",
     true
+   ],
+   [
+    "2026-11-09",
+    true
    ]
   ]
  },
  "rule-5-draft": {
-  "time": "2026-11-08T18:48:45+00:00",
+  "time": "2026-11-09T19:02:26+00:00",
   "query": "what is the rule 5 draft",
   "in_suggest": true,
   "suggest": {
@@ -494,11 +522,15 @@
    [
     "2026-11-08",
     true
+   ],
+   [
+    "2026-11-09",
+    true
    ]
   ]
  },
  "scott-colom": {
-  "time": "2026-11-08T18:48:46+00:00",
+  "time": "2026-11-09T19:02:27+00:00",
   "query": "who is scott colom",
   "in_suggest": true,
   "suggest": {
@@ -506,18 +538,17 @@
     "scott colom",
     "scott colom results",
     "scott colom election results",
+    "scott colom ad",
     "scott colom polls",
     "scott colom wife",
-    "scott colom race",
+    "scott colom election results today",
     "scott colom sinners ad",
-    "scott colom commercial",
-    "scott colom senate",
-    "scott colom protein ad"
+    "scott colom race",
+    "scott colom commercial"
    ],
    "who is scott colom": [
     "who is scott colom",
     "who is scott colom running against",
-    "who is scott colom twin brother",
     "who is scott colomby",
     "who is scott colomby married to",
     "who is scott base named after",
@@ -541,11 +572,15 @@
    [
     "2026-11-08",
     true
+   ],
+   [
+    "2026-11-09",
+    true
    ]
   ]
  },
  "telerally": {
-  "time": "2026-11-08T18:48:47+00:00",
+  "time": "2026-11-09T19:02:28+00:00",
   "query": "what is a telerally",
   "in_suggest": true,
   "suggest": {
@@ -587,11 +622,15 @@
    [
     "2026-11-08",
     true
+   ],
+   [
+    "2026-11-09",
+    true
    ]
   ]
  },
  "two-dan-sullivans-alaska": {
-  "time": "2026-11-08T18:48:49+00:00",
+  "time": "2026-11-09T19:02:30+00:00",
   "query": "why are there two dan sullivans on the alaska ballot",
   "in_suggest": false,
   "suggest": {
@@ -605,7 +644,6 @@
     "daniel joseph sullivan jr"
    ],
    "who is daniel j. sullivan jr.": [
-    "who is daniel j sullivan jr",
     "daniel j sullivan jr alaska",
     "daniel j sullivan jr kids",
     "daniel j sullivan jr babe ruth",
@@ -631,11 +669,15 @@
    [
     "2026-11-08",
     false
+   ],
+   [
+    "2026-11-09",
+    false
    ]
   ]
  },
  "under-siege-netflix-true-story": {
-  "time": "2026-11-08T18:48:50+00:00",
+  "time": "2026-11-09T19:02:31+00:00",
   "query": "is under siege on netflix a true story",
   "in_suggest": true,
   "suggest": {
@@ -644,12 +686,12 @@
     "under siege netflix",
     "under siege 2",
     "under siege cast",
+    "under siege netflix cast",
     "under siege 2 cast",
     "under siege 2026",
-    "under siege netflix cast",
     "under siege meaning",
-    "under siege colombia",
-    "under siege netflix review"
+    "under siege netflix review",
+    "under siege colombia"
    ],
    "what is under siege": [
     "what is under siege",
@@ -683,6 +725,10 @@
    ],
    [
     "2026-11-08",
+    true
+   ],
+   [
+    "2026-11-09",
     true
    ]
   ]
