@@ -1155,13 +1155,13 @@
   ]
  },
  "alicias-law-the-good-wife": {
-  "time": "2026-11-08T14:03:15+00:00",
+  "time": "2026-11-09T14:17:02+00:00",
   "query": "is alicia's law based on the good wife",
   "in_suggest": false,
   "suggest": {
    "alicia's law": [
-    "alicia's law",
     "alicia's law netflix",
+    "alicia's law",
     "alicia lawrence",
     "alicia lawson",
     "alicia lawyer",
@@ -1193,11 +1193,15 @@
    [
     "2026-11-08",
     false
+   ],
+   [
+    "2026-11-09",
+    false
    ]
   ]
  },
  "edgar-martinez-award": {
-  "time": "2026-11-08T14:03:16+00:00",
+  "time": "2026-11-09T14:17:03+00:00",
   "query": "what is the edgar martinez award",
   "in_suggest": true,
   "suggest": {
@@ -1243,11 +1247,15 @@
    [
     "2026-11-08",
     true
+   ],
+   [
+    "2026-11-09",
+    true
    ]
   ]
  },
  "how-is-speaker-of-the-house-elected": {
-  "time": "2026-11-08T14:03:18+00:00",
+  "time": "2026-11-09T14:17:05+00:00",
   "query": "how is the speaker of the house elected",
   "in_suggest": true,
   "suggest": {
@@ -1256,8 +1264,7 @@
     "election of the speaker of the house of commons",
     "election of new speaker of the house",
     "election of speaker of the house of representatives",
-    "selection of speaker of the house",
-    "house speaker vote"
+    "selection of speaker of the house"
    ],
    "what is election of the speaker of the house": [
     "when is election for speaker of the house",
@@ -1299,11 +1306,15 @@
    [
     "2026-11-08",
     true
+   ],
+   [
+    "2026-11-09",
+    true
    ]
   ]
  },
  "lame-duck-session": {
-  "time": "2026-11-08T14:03:19+00:00",
+  "time": "2026-11-09T14:17:06+00:00",
   "query": "what is a lame duck session",
   "in_suggest": true,
   "suggest": {
@@ -1321,8 +1332,8 @@
    ],
    "what is a lame duck session": [
     "what is a lame duck session",
+    "what is a lame duck session in congress",
     "what is a lame duck session in government",
-    "what is a lame duck session of congress",
     "what is a lame duck session in politics",
     "what is a lame duck season",
     "what is lame duck session in indian parliament",
@@ -1352,11 +1363,15 @@
    [
     "2026-11-08",
     true
+   ],
+   [
+    "2026-11-09",
+    true
    ]
   ]
  },
  "mlb-posting-system": {
-  "time": "2026-11-08T14:03:21+00:00",
+  "time": "2026-11-09T14:17:07+00:00",
   "query": "what is the posting system in mlb",
   "in_suggest": true,
   "suggest": {
@@ -1400,11 +1415,15 @@
    [
     "2026-11-08",
     true
+   ],
+   [
+    "2026-11-09",
+    true
    ]
   ]
  },
  "record-vs-song-of-the-year": {
-  "time": "2026-11-08T14:03:22+00:00",
+  "time": "2026-11-09T14:17:09+00:00",
   "query": "what is the difference between record of the year and song of the year",
   "in_suggest": true,
   "suggest": {
@@ -1445,11 +1464,15 @@
    [
     "2026-11-08",
     true
+   ],
+   [
+    "2026-11-09",
+    true
    ]
   ]
  },
  "richard-avedon": {
-  "time": "2026-11-08T14:03:23+00:00",
+  "time": "2026-11-09T14:17:10+00:00",
   "query": "who was richard avedon",
   "in_suggest": true,
   "suggest": {
@@ -1497,25 +1520,29 @@
    [
     "2026-11-08",
     true
+   ],
+   [
+    "2026-11-09",
+    true
    ]
   ]
  },
  "silver-slugger-award": {
-  "time": "2026-11-08T14:03:24+00:00",
+  "time": "2026-11-09T14:17:11+00:00",
   "query": "what is the silver slugger award",
   "in_suggest": true,
   "suggest": {
    "silver slugger award": [
     "silver slugger award",
-    "silver slugger award 2026",
+    "silver slugger award winners",
+    "silver slugger award winners 2026",
     "silver slugger award 2025",
     "silver slugger award criteria",
     "silver slugger award odds",
     "silver slugger award 2026 predictions",
+    "silver slugger award 2026",
     "silver slugger award mlb",
-    "silver slugger award 2026 winners list",
-    "silver slugger award trophy",
-    "silver slugger award 2026 odds"
+    "silver slugger award 2026 winners list"
    ],
    "what is silver slugger award": [
     "what is silver slugger award",
@@ -1550,24 +1577,28 @@
    [
     "2026-11-08",
     true
+   ],
+   [
+    "2026-11-09",
+    true
    ]
   ]
  },
  "teruaki-sato": {
-  "time": "2026-11-08T14:03:25+00:00",
+  "time": "2026-11-09T14:17:12+00:00",
   "query": "who is teruaki sato",
   "in_suggest": true,
   "suggest": {
    "teruaki sato": [
     "teruaki sato",
     "teruaki sato stats",
+    "teruaki sato mlb",
     "teruaki sato yankees",
-    "teruaki sato mets",
     "teruaki sato scouting report",
     "teruaki sato posting",
     "teruaki sato defense",
-    "teruaki sato rumors",
     "teruaki sato highlights",
+    "teruaki sato mets",
     "teruaki sato phillies"
    ],
    "who is teruaki sato": [
@@ -1586,41 +1617,25 @@
    [
     "2026-11-08",
     true
+   ],
+   [
+    "2026-11-09",
+    true
    ]
   ]
  },
  "when-does-new-congress-start": {
-  "time": "2026-11-08T14:03:27+00:00",
+  "time": "2026-11-09T14:17:13+00:00",
   "query": "when does the new congress take office",
-  "in_suggest": true,
+  "in_suggest": false,
   "suggest": {
    "start of the 120th congress": [
     "start of 120th congress",
-    "start of new congress",
-    "first day of new congress"
+    "start of new congress"
    ],
-   "what is start of the 120th congress": [
-    "what is the 120th congress",
-    "when the new congress start"
-   ],
-   "when does the new congress take office": [
-    "when does the new congress take office",
-    "when do the new congress take office",
-    "when does the next congress take office",
-    "when will the new congress take office",
-    "when do the new congress members take office",
-    "when does congress take office",
-    "when does congress take office after election",
-    "when does the newly elected congress take office",
-    "what day does the new congress start"
-   ],
-   "new congress take office": [
-    "new congress takes office",
-    "when do new congress take office",
-    "when does new congress take office",
-    "when do new congress people take office",
-    "what day does the new congress start"
-   ]
+   "what is start of the 120th congress": [],
+   "when does the new congress take office": [],
+   "new congress take office": []
   },
   "history": [
    [
@@ -1630,6 +1645,10 @@
    [
     "2026-11-08",
     true
+   ],
+   [
+    "2026-11-09",
+    false
    ]
   ]
  },
