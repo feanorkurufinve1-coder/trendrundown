@@ -1857,9 +1857,9 @@ def trend_item(t):
 
 
 # ---- Длинный хвост: узкие вопросы из подсказок Google, на которые в интернете ещё нет точного ответа ----
-LT_EVERY_H = 2          # как часто копаем подсказки (часов)
-LT_PER_RUN = 2          # сколько узких вопросов за раз отдаём писателю
-LT_PER_DAY = 10         # и не больше стольких в сутки
+LT_EVERY_H = 1          # как часто копаем подсказки (часов)
+LT_PER_RUN = 3          # сколько узких вопросов за раз отдаём писателю
+LT_PER_DAY = 30         # и не больше стольких в сутки
 LT_PREFIXES = ["what is", "what does", "what happened to", "why did", "why is", "is", "where is", "how did", "when is"]
 LT_ALPHA = "abcdefghijklmnopqrstuvwxyz"
 LT_Q = re.compile(r"(?i)^(what|why|how|is|are|does|did|where|when|who|can|will)\b|\b(meaning|explained|mean)$")
@@ -2034,7 +2034,7 @@ def longtail_candidates(store):
             sigs.add(sig); uniq.append((g, t))
     out = []
     lt_log = store.setdefault("longtail_log", [])
-    for g, t in uniq[:12]:
+    for g, t in uniq[:20]:
         if len(out) >= LT_PER_RUN or days.get(today, 0) + len(out) >= LT_PER_DAY:
             break
         sup = supply(g)
