@@ -2099,7 +2099,7 @@ def longtail_candidates(store):
 TMDB_PER_RUN = 3        # сколько страниц за один проход
 TMDB_PER_DAY = 15        # тест: не больше стольких в сутки
 TMDB_MIN_POP = 4        # совсем неизвестное никто не ищет
-TMDB_CAST_MAX_POP = 6   # «малоизвестный актёр»: популярность в TMDB не выше этого
+TMDB_CAST_MAX_POP = 10000   # берём героев всех главных актёров; занято ли — решает проверка выдачи
 TMDB_TRUE = re.compile(r"(?i)true story|real event|real person|biograph|true crime|historical figure|based on memoir")
 TMDB_BOOK = re.compile(r"(?i)based on (a )?(novel|book|young adult novel|memoir|short story|comic|graphic novel|manga)|novel or book")
 
@@ -2219,7 +2219,7 @@ def tmdb_candidates(store):
                     or (c.get("popularity") or 0) > TMDB_CAST_MAX_POP or bad_text(ch)):
                 continue
             angles.append((f"who plays {ch} in {x['title']}", f"{ch} actor in {x['title']}", c))
-            if len([a_ for a_ in angles if a_[2]]) >= 2:
+            if len([a_ for a_ in angles if a_[2]]) >= 4:
                 break
         if not angles:
             log_.append({"time": now_iso(), "title": x["title"], "decision": "skip: no angle"}); continue
