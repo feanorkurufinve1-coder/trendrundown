@@ -2451,7 +2451,8 @@ def explain(store):
                     "figures in that role; the TMDB listing is a reliable source for the cast, character names, release date and "
                     "creators. Say plainly what the listing shows; do not guess plot details or anything about private lives."])
             WRITE_FAIL[0] = ""
-            res = write_explainer(item, t, src, questions, key)
+            # у карточек фильмов короткие факты (названия, даты, «adapted from the novel by…») — их нельзя перефразировать
+            res = write_explainer(item, t, src, questions, key, max_runs=3 if item.get("tmdb") else 1)
             if not res or bad_text(res.get("title", ""), ub):
                 log(f"'{item['query']}' не написано: {WRITE_FAIL[0] or 'запрещённое слово в заголовке'}")
                 continue
