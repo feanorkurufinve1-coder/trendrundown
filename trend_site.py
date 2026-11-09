@@ -2445,8 +2445,15 @@ def explain(store):
                 continue
             item = dict(item, query=best_phrase(item, questions))   # точная формулировка из подсказок Google
             src = add_wiki(src, item["subject"])
+            if item.get("tmdb"):
+                src = dict(src, blocks=list(src["blocks"]) + [
+                    "[Note] This page is written ahead of a US release. Actors credited in a released film or series are public "
+                    "figures in that role; the TMDB listing is a reliable source for the cast, character names, release date and "
+                    "creators. Say plainly what the listing shows; do not guess plot details or anything about private lives."])
+            WRITE_FAIL[0] = ""
             res = write_explainer(item, t, src, questions, key)
             if not res or bad_text(res.get("title", ""), ub):
+                log(f"'{item['query']}' не написано: {WRITE_FAIL[0] or 'запрещённое слово в заголовке'}")
                 continue
             draft = (f"{res['title']}\n\n{res['answer']}\n\n{res['body']}\n\nIn the news: {res['in_the_news']}\n\n"
                      + "\n".join(f"Q: {f.get('q', '')} A: {f.get('a', '')}" for f in res.get("faq", [])))
