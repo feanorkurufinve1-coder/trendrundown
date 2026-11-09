@@ -3683,7 +3683,7 @@ def _page(title, desc, body, path, depth, extra_head="", og_img=""):
 <nav><a href="{up}index.html">Trending now</a>{f'<a href="{up}cast.html">Cast guides</a>' if HAS_CAST else ''}{f'<a href="{up}explained.html">Explained</a>' if HAS_EXPLAINED else ''}{"".join(f'<a href="{up}c/{c}.html">{E(CATS[c])}</a>' for c in NAV_CATS)}<a href="{up}archive.html">Archive</a></nav></header>
 {body}
 <footer><a href="{up}about.html">About</a><a href="{up}privacy.html">Privacy</a><a href="{up}contact.html">Contact</a>
-<p>{SITE_NAME} tracks what Americans are searching for and links to the outlets covering it. Headlines belong to their publishers; every link goes to the original source.</p></footer>
+<p>{SITE_NAME} tracks what Americans are searching for and links to the outlets covering it. Headlines belong to their publishers; every link goes to the original source. Movie and TV data from TMDB: this product uses the TMDB API but is not endorsed or certified by TMDB.</p></footer>
 </div></body></html>"""
 
 
