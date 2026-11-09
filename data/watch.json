@@ -1,5 +1,5 @@
 {
- "made": "2026-11-09T12:47:14+00:00",
+ "made": "2026-11-09T13:01:53+00:00",
  "days": [
   "2026-11-06",
   "2026-11-07",
@@ -9,7 +9,7 @@
   {
    "page": "/x/dane-cook-brother",
    "clicks_3d": 21,
-   "impr_3d": 3078,
+   "impr_3d": 3079,
    "pos": 8.9,
    "by_day": {
     "2026-11-06": 2,
@@ -21,8 +21,8 @@
   {
    "page": "/w/the-body-cast",
    "clicks_3d": 13,
-   "impr_3d": 298,
-   "pos": 8.1,
+   "impr_3d": 300,
+   "pos": 8.0,
    "by_day": {
     "2026-11-06": 4,
     "2026-11-07": 8,
@@ -33,7 +33,7 @@
   {
    "page": "/x/murder-in-galicia-true-story",
    "clicks_3d": 9,
-   "impr_3d": 272,
+   "impr_3d": 273,
    "pos": 7.4,
    "by_day": {
     "2026-11-06": 4,
@@ -79,7 +79,7 @@
   {
    "page": "/x/under-siege-netflix-true-story",
    "clicks_3d": 1,
-   "impr_3d": 57,
+   "impr_3d": 58,
    "pos": 5.7,
    "by_day": {
     "2026-11-06": 1,

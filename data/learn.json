@@ -1,11 +1,11 @@
 {
- "made": "2026-11-09T12:47:14+00:00",
+ "made": "2026-11-09T13:01:53+00:00",
  "pages": 215,
  "summary": {
   "kind": {
    "event": {
     "pages": 30,
-    "with_impr_%": 37,
+    "with_impr_%": 40,
     "top3_%": 0,
     "clicks": 5,
     "clicks_per_page": 0.17
@@ -19,7 +19,7 @@
    },
    "organization": {
     "pages": 16,
-    "with_impr_%": 44,
+    "with_impr_%": 31,
     "top3_%": 0,
     "clicks": 1,
     "clicks_per_page": 0.06
@@ -33,10 +33,10 @@
    },
    "person": {
     "pages": 56,
-    "with_impr_%": 32,
-    "top3_%": 2,
-    "clicks": 5,
-    "clicks_per_page": 0.09
+    "with_impr_%": 30,
+    "top3_%": 0,
+    "clicks": 14,
+    "clicks_per_page": 0.25
    },
    "place": {
     "pages": 16,
@@ -49,15 +49,15 @@
     "pages": 13,
     "with_impr_%": 23,
     "top3_%": 0,
-    "clicks": 1,
-    "clicks_per_page": 0.08
+    "clicks": 0,
+    "clicks_per_page": 0.0
    },
    "term": {
     "pages": 58,
-    "with_impr_%": 24,
+    "with_impr_%": 33,
     "top3_%": 5,
-    "clicks": 30,
-    "clicks_per_page": 0.52
+    "clicks": 29,
+    "clicks_per_page": 0.5
    }
   },
   "source": {
@@ -65,8 +65,8 @@
     "pages": 203,
     "with_impr_%": 28,
     "top3_%": 1,
-    "clicks": 8,
-    "clicks_per_page": 0.04
+    "clicks": 7,
+    "clicks_per_page": 0.03
    },
    "longtail": {
     "pages": 1,
@@ -77,10 +77,10 @@
    },
    "manual": {
     "pages": 11,
-    "with_impr_%": 27,
-    "top3_%": 18,
-    "clicks": 34,
-    "clicks_per_page": 3.09
+    "with_impr_%": 45,
+    "top3_%": 9,
+    "clicks": 42,
+    "clicks_per_page": 3.82
    }
   },
   "q_word": {
@@ -114,10 +114,10 @@
    },
    "what": {
     "pages": 125,
-    "with_impr_%": 28,
-    "top3_%": 3,
-    "clicks": 32,
-    "clicks_per_page": 0.26
+    "with_impr_%": 31,
+    "top3_%": 2,
+    "clicks": 38,
+    "clicks_per_page": 0.3
    },
    "where": {
     "pages": 9,
@@ -128,10 +128,10 @@
    },
    "who": {
     "pages": 58,
-    "with_impr_%": 33,
+    "with_impr_%": 31,
     "top3_%": 0,
-    "clicks": 5,
-    "clicks_per_page": 0.09
+    "clicks": 6,
+    "clicks_per_page": 0.1
    },
    "why": {
     "pages": 1,
@@ -143,18 +143,18 @@
   },
   "title_matches_top_query": {
    "False": {
-    "pages": 182,
+    "pages": 179,
     "with_impr_%": 15,
     "top3_%": 1,
-    "clicks": 29,
+    "clicks": 28,
     "clicks_per_page": 0.16
    },
    "True": {
-    "pages": 33,
+    "pages": 36,
     "with_impr_%": 100,
-    "top3_%": 9,
-    "clicks": 13,
-    "clicks_per_page": 0.39
+    "top3_%": 6,
+    "clicks": 21,
+    "clicks_per_page": 0.58
    }
   }
  },
@@ -168,9 +168,9 @@
    "title_len": 61,
    "age_days": 4.9,
    "rival_exact": null,
-   "impr": 543,
-   "clicks": 29,
-   "best_pos": 1,
+   "impr": 547,
+   "clicks": 28,
+   "best_pos": 1.8,
    "title_matches_top_query": false,
    "top_queries": [
     "what is a tele rally",
@@ -179,22 +179,22 @@
    ]
   },
   {
-   "slug": "pro-and-tell-apple-event",
-   "title": "Pro and tell Apple event: Oct. 28, 2026 in Los Angeles, touchscreen MacBook Pro",
-   "kind": "event",
-   "source": "auto",
-   "q_word": "none",
-   "title_len": 79,
-   "age_days": 5.3,
+   "slug": "dane-cook-brother",
+   "title": "What happened to Dane Cook's brother? The $12 million theft",
+   "kind": "person",
+   "source": "manual",
+   "q_word": "what",
+   "title_len": 59,
+   "age_days": 3.8,
    "rival_exact": null,
-   "impr": 1195,
-   "clicks": 5,
-   "best_pos": 8,
+   "impr": 1505,
+   "clicks": 8,
+   "best_pos": 4.2,
    "title_matches_top_query": true,
    "top_queries": [
-    "pro and tell",
-    "pro and tell",
-    "pro and tell event"
+    "what happened to dane cook's brother",
+    "erika mccauley dane cook",
+    "where is dane cook's brother now"
    ]
   },
   {
@@ -206,14 +206,33 @@
    "title_len": 64,
    "age_days": 4.0,
    "rival_exact": null,
-   "impr": 438,
-   "clicks": 5,
+   "impr": 530,
+   "clicks": 6,
    "best_pos": 8,
    "title_matches_top_query": true,
    "top_queries": [
     "scott colom",
     "colom",
     "scott colom positions"
+   ]
+  },
+  {
+   "slug": "pro-and-tell-apple-event",
+   "title": "Pro and tell Apple event: Oct. 28, 2026 in Los Angeles, touchscreen MacBook Pro",
+   "kind": "event",
+   "source": "auto",
+   "q_word": "none",
+   "title_len": 79,
+   "age_days": 5.3,
+   "rival_exact": null,
+   "impr": 1186,
+   "clicks": 5,
+   "best_pos": 8,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "pro and tell",
+    "pro and tell",
+    "pro and tell event"
    ]
   },
   {
@@ -225,7 +244,7 @@
    "title_len": 62,
    "age_days": 5.9,
    "rival_exact": null,
-   "impr": 565,
+   "impr": 569,
    "clicks": 1,
    "best_pos": 2,
    "title_matches_top_query": true,
@@ -244,32 +263,14 @@
    "title_len": 59,
    "age_days": 7.9,
    "rival_exact": null,
-   "impr": 143,
+   "impr": 155,
    "clicks": 1,
    "best_pos": 5,
    "title_matches_top_query": true,
    "top_queries": [
     "gen z regelt",
     "regelt",
-    "gen z regelt meaning"
-   ]
-  },
-  {
-   "slug": "the-one-about-matthew-perry",
-   "title": "What is The One About Matthew Perry on Netflix?",
-   "kind": "product",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 47,
-   "age_days": 13.2,
-   "rival_exact": null,
-   "impr": 3,
-   "clicks": 1,
-   "best_pos": 11,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "the one about matthew perry",
-    "does the one about matthew perry focus on how matthew perry died?"
+    "genz regelt"
    ]
   },
   {
@@ -281,33 +282,14 @@
    "title_len": 16,
    "age_days": 13.7,
    "rival_exact": null,
-   "impr": 2153,
+   "impr": 2151,
    "clicks": 0,
-   "best_pos": 5,
+   "best_pos": 5.7,
    "title_matches_top_query": true,
    "top_queries": [
     "ligue 1",
     "what is ligue 1",
     "ligue"
-   ]
-  },
-  {
-   "slug": "christian-mbilli",
-   "title": "Who is Christian Mbilli?",
-   "kind": "person",
-   "source": "auto",
-   "q_word": "who",
-   "title_len": 24,
-   "age_days": 14.3,
-   "rival_exact": null,
-   "impr": 191,
-   "clicks": 0,
-   "best_pos": 3.7,
-   "title_matches_top_query": false,
-   "top_queries": [
-    "where is mbilli from",
-    "mbilli where is he from",
-    "christian mbilli where is he from"
    ]
   },
   {
@@ -319,33 +301,33 @@
    "title_len": 59,
    "age_days": 9.2,
    "rival_exact": null,
-   "impr": 185,
+   "impr": 190,
    "clicks": 0,
-   "best_pos": 6,
+   "best_pos": 10.7,
    "title_matches_top_query": true,
    "top_queries": [
-    "japan open",
     "tokyo open",
+    "japan open",
     "japan open tennis"
    ]
   },
   {
-   "slug": "dane-cook-brother",
-   "title": "What happened to Dane Cook's brother? The $12 million theft",
+   "slug": "christian-mbilli",
+   "title": "Who is Christian Mbilli?",
    "kind": "person",
-   "source": "manual",
-   "q_word": "what",
-   "title_len": 59,
-   "age_days": 3.8,
+   "source": "auto",
+   "q_word": "who",
+   "title_len": 24,
+   "age_days": 14.3,
    "rival_exact": null,
-   "impr": 146,
+   "impr": 180,
    "clicks": 0,
-   "best_pos": 3,
-   "title_matches_top_query": true,
+   "best_pos": 3.7,
+   "title_matches_top_query": false,
    "top_queries": [
-    "what happened to dane cook's brother",
-    "is darryl mccauley still in prison",
-    "is dane cook's brother still alive"
+    "where is mbilli from",
+    "mbilli where is he from",
+    "christian mbilli where is he from"
    ]
   },
   {
@@ -357,7 +339,7 @@
    "title_len": 32,
    "age_days": 11.2,
    "rival_exact": null,
-   "impr": 140,
+   "impr": 144,
    "clicks": 0,
    "best_pos": 4.8,
    "title_matches_top_query": true,
@@ -376,52 +358,33 @@
    "title_len": 22,
    "age_days": 11.3,
    "rival_exact": null,
-   "impr": 98,
+   "impr": 129,
    "clicks": 0,
-   "best_pos": 10.1,
+   "best_pos": 10,
    "title_matches_top_query": false,
    "top_queries": [
     "what is an nba draft pick?",
     "what are nba draft picks?",
-    "what is nba draft"
+    "what is nba player draft"
    ]
   },
   {
-   "slug": "wta-tennis",
-   "title": "What is the WTA? Tennis tour explained",
-   "kind": "organization",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 38,
-   "age_days": 17.4,
-   "rival_exact": null,
-   "impr": 68,
-   "clicks": 0,
-   "best_pos": 5,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "wta",
-    "wta tennis",
-    "wta tour tennis"
-   ]
-  },
-  {
-   "slug": "ali-g",
-   "title": "Who is the Ali G character?",
-   "kind": "other",
+   "slug": "alberto-aquilani",
+   "title": "Who is Alberto Aquilani: Sassuolo coach, ex-Fiorentina midfielder",
+   "kind": "person",
    "source": "auto",
    "q_word": "who",
-   "title_len": 27,
-   "age_days": 12.2,
+   "title_len": 65,
+   "age_days": 6.8,
    "rival_exact": null,
-   "impr": 66,
+   "impr": 96,
    "clicks": 0,
-   "best_pos": 5,
-   "title_matches_top_query": false,
+   "best_pos": 8.3,
+   "title_matches_top_query": true,
    "top_queries": [
-    "is ali g british",
-    "where is ali g from",
-    "when did ali g first appear on tv"
+    "alberto aquilani",
+    "aquilani",
+    "sassuolo coach"
    ]
   },
   {
@@ -431,7 +394,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 24,
-   "age_days": 16.5,
+   "age_days": 16.6,
    "rival_exact": null,
    "impr": 64,
    "clicks": 0,
@@ -444,22 +407,41 @@
    ]
   },
   {
-   "slug": "alberto-aquilani",
-   "title": "Who is Alberto Aquilani: Sassuolo coach, ex-Fiorentina midfielder",
-   "kind": "person",
+   "slug": "ali-g",
+   "title": "Who is the Ali G character?",
+   "kind": "other",
    "source": "auto",
    "q_word": "who",
-   "title_len": 65,
-   "age_days": 6.8,
+   "title_len": 27,
+   "age_days": 12.2,
    "rival_exact": null,
-   "impr": 46,
+   "impr": 64,
    "clicks": 0,
-   "best_pos": 11,
+   "best_pos": 9,
+   "title_matches_top_query": false,
+   "top_queries": [
+    "is ali g british",
+    "where is ali g from",
+    "when did ali g first appear on tv"
+   ]
+  },
+  {
+   "slug": "wta-tennis",
+   "title": "What is the WTA? Tennis tour explained",
+   "kind": "organization",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 38,
+   "age_days": 17.4,
+   "rival_exact": null,
+   "impr": 62,
+   "clicks": 0,
+   "best_pos": 29.8,
    "title_matches_top_query": true,
    "top_queries": [
-    "aquilani",
-    "alberto aquilani",
-    "aquliani"
+    "wta",
+    "wta tennis",
+    "wta tour tennis"
    ]
   },
   {
@@ -490,7 +472,7 @@
    "title_len": 70,
    "age_days": 5.9,
    "rival_exact": null,
-   "impr": 38,
+   "impr": 37,
    "clicks": 0,
    "best_pos": 8.5,
    "title_matches_top_query": false,
@@ -498,6 +480,44 @@
     "mississippi senate race 2026",
     "mississippi senate election 2026",
     "senate race mississippi 2026"
+   ]
+  },
+  {
+   "slug": "game-time-decision",
+   "title": "What is a game-time decision? Meaning in the NFL injury report",
+   "kind": "term",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 62,
+   "age_days": 3.8,
+   "rival_exact": null,
+   "impr": 33,
+   "clicks": 0,
+   "best_pos": 8.7,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "game time decision",
+    "game day decision meaning",
+    "game time decision meaning"
+   ]
+  },
+  {
+   "slug": "arnold-schwarzenegger-last-name",
+   "title": "Arnold schwarzenegger last name meaning: German place-name origin",
+   "kind": "term",
+   "source": "longtail",
+   "q_word": "none",
+   "title_len": 65,
+   "age_days": 3.2,
+   "rival_exact": 2,
+   "impr": 33,
+   "clicks": 0,
+   "best_pos": 7,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "schwarzenegger meaning",
+    "schwarzenegg",
+    "arnold schwarzenegger name meaning"
    ]
   },
   {
@@ -525,7 +545,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 61,
-   "age_days": 8.9,
+   "age_days": 9.0,
    "rival_exact": null,
    "impr": 29,
    "clicks": 0,
@@ -554,34 +574,15 @@
    ]
   },
   {
-   "slug": "cesc-fabregas",
-   "title": "Who is Cesc Fabregas's coach? Como's manager",
-   "kind": "person",
-   "source": "auto",
-   "q_word": "who",
-   "title_len": 44,
-   "age_days": 15.0,
-   "rival_exact": null,
-   "impr": 21,
-   "clicks": 0,
-   "best_pos": 7,
-   "title_matches_top_query": false,
-   "top_queries": [
-    "como manager",
-    "manager of como",
-    "lake como manager"
-   ]
-  },
-  {
    "slug": "senior-secured-debt",
    "title": "What is senior secured debt?",
    "kind": "term",
    "source": "auto",
    "q_word": "what",
    "title_len": 28,
-   "age_days": 11.6,
+   "age_days": 11.7,
    "rival_exact": null,
-   "impr": 21,
+   "impr": 22,
    "clicks": 0,
    "best_pos": 6,
    "title_matches_top_query": false,
@@ -600,33 +601,14 @@
    "title_len": 38,
    "age_days": 9.9,
    "rival_exact": null,
-   "impr": 20,
+   "impr": 22,
    "clicks": 0,
    "best_pos": 25.3,
    "title_matches_top_query": false,
    "top_queries": [
-    "wti wiki",
     "west texas interm",
+    "wti wiki",
     "wti stands for"
-   ]
-  },
-  {
-   "slug": "dfb-pokal",
-   "title": "What is the DFB-Pokal?",
-   "kind": "event",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 22,
-   "age_days": 12.8,
-   "rival_exact": null,
-   "impr": 18,
-   "clicks": 0,
-   "best_pos": 8.5,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "dfb-pokal",
-    "dfb-pokal meaning",
-    "dfb pokal explained"
    ]
   },
   {
@@ -640,12 +622,29 @@
    "rival_exact": null,
    "impr": 17,
    "clicks": 0,
-   "best_pos": 24.9,
+   "best_pos": 24.4,
    "title_matches_top_query": true,
    "top_queries": [
-    "aj dybantsa",
-    "aj dybantsa age",
-    "aj dybansta"
+    "aj dybantsa"
+   ]
+  },
+  {
+   "slug": "dfb-pokal",
+   "title": "What is the DFB-Pokal?",
+   "kind": "event",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 22,
+   "age_days": 12.8,
+   "rival_exact": null,
+   "impr": 17,
+   "clicks": 0,
+   "best_pos": 8.5,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "dfb-pokal",
+    "dfb-pokal meaning",
+    "dfb pokal explained"
    ]
   },
   {
@@ -668,6 +667,25 @@
    ]
   },
   {
+   "slug": "wwe-crown-jewel-2026",
+   "title": "What is WWE Crown Jewel? Date, place and card for 2026",
+   "kind": "event",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 54,
+   "age_days": 3.0,
+   "rival_exact": null,
+   "impr": 17,
+   "clicks": 0,
+   "best_pos": 7.5,
+   "title_matches_top_query": false,
+   "top_queries": [
+    "wwe crown jewel 2026 wikipedia",
+    "wwe crown jewel 2026",
+    "crown jewel 2026 wikipedia"
+   ]
+  },
+  {
    "slug": "tommy-carr",
    "title": "Who is Tommy Carr, Michigan quarterback?",
    "kind": "person",
@@ -685,22 +703,22 @@
    ]
   },
   {
-   "slug": "james-reece",
-   "title": "Who is James Reece in The Terminal List?",
-   "kind": "other",
+   "slug": "cesc-fabregas",
+   "title": "Who is Cesc Fabregas's coach? Como's manager",
+   "kind": "person",
    "source": "auto",
    "q_word": "who",
-   "title_len": 40,
-   "age_days": 15.9,
+   "title_len": 44,
+   "age_days": 15.0,
    "rival_exact": null,
-   "impr": 12,
+   "impr": 15,
    "clicks": 0,
    "best_pos": 9.5,
-   "title_matches_top_query": true,
+   "title_matches_top_query": false,
    "top_queries": [
-    "terminal list reece",
-    "who is james reece in terminal list",
-    "reece terminal list"
+    "como manager",
+    "manager of como",
+    "lake como manager"
    ]
   },
   {
@@ -723,6 +741,25 @@
    ]
   },
   {
+   "slug": "nasdaq-100",
+   "title": "What is the Nasdaq 100? Index of 100 large non-financial firms",
+   "kind": "term",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 62,
+   "age_days": 3.2,
+   "rival_exact": null,
+   "impr": 12,
+   "clicks": 0,
+   "best_pos": 21,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "nasdaq 100 what is it",
+    "what is nasdaq 100",
+    "nasdaq100"
+   ]
+  },
+  {
    "slug": "hnry-stadium",
    "title": "Where is Hnry Stadium in Wellington?",
    "kind": "place",
@@ -739,6 +776,25 @@
     "hnry stadium wellington cricket",
     "hnry stadium, wellington",
     "wellington regional stadium"
+   ]
+  },
+  {
+   "slug": "james-reece",
+   "title": "Who is James Reece in The Terminal List?",
+   "kind": "other",
+   "source": "auto",
+   "q_word": "who",
+   "title_len": 40,
+   "age_days": 15.9,
+   "rival_exact": null,
+   "impr": 10,
+   "clicks": 0,
+   "best_pos": 10,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "terminal list reece",
+    "reece terminal list",
+    "reece in terminal list"
    ]
   },
   {
@@ -797,43 +853,6 @@
    ]
   },
   {
-   "slug": "bryce-underwood",
-   "title": "Who is Bryce Underwood of Michigan?",
-   "kind": "person",
-   "source": "auto",
-   "q_word": "who",
-   "title_len": 35,
-   "age_days": 14.1,
-   "rival_exact": null,
-   "impr": 7,
-   "clicks": 0,
-   "best_pos": 15,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "bryce underwood",
-    "bryce underwood michigan"
-   ]
-  },
-  {
-   "slug": "riverchase-galleria",
-   "title": "What is the Riverchase Galleria?",
-   "kind": "other",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 32,
-   "age_days": 9.8,
-   "rival_exact": null,
-   "impr": 7,
-   "clicks": 0,
-   "best_pos": 10,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "riverchase galleria",
-    "riverchase galleria",
-    "riverchase"
-   ]
-  },
-  {
    "slug": "katarzyna-kawa",
    "title": "Who is Katarzyna Kawa?",
    "kind": "person",
@@ -852,22 +871,20 @@
    ]
   },
   {
-   "slug": "alexander-volkanovski",
-   "title": "Who is Alexander Volkanovski?",
+   "slug": "bryce-underwood",
+   "title": "Who is Bryce Underwood of Michigan?",
    "kind": "person",
    "source": "auto",
    "q_word": "who",
-   "title_len": 29,
-   "age_days": 16.3,
+   "title_len": 35,
+   "age_days": 14.1,
    "rival_exact": null,
    "impr": 6,
    "clicks": 0,
-   "best_pos": 53,
-   "title_matches_top_query": false,
+   "best_pos": 15.2,
+   "title_matches_top_query": true,
    "top_queries": [
-    "volkanovski age",
-    "volkanovski",
-    "alexander volkanovski"
+    "bryce underwood"
    ]
   },
   {
@@ -907,22 +924,41 @@
    ]
   },
   {
-   "slug": "ali-g-in-da-house",
-   "title": "What is Ali G in Da House?",
-   "kind": "product",
+   "slug": "toray-pan-pacific-open",
+   "title": "What is the Toray Pan Pacific Open?",
+   "kind": "event",
    "source": "auto",
    "q_word": "what",
-   "title_len": 26,
-   "age_days": 12.2,
+   "title_len": 35,
+   "age_days": 10.3,
    "rival_exact": null,
-   "impr": 5,
+   "impr": 6,
    "clicks": 0,
-   "best_pos": 4,
+   "best_pos": 57,
    "title_matches_top_query": false,
    "top_queries": [
-    "ali g in da usa",
-    "ali g in da house",
-    "ali g in da hood"
+    "toray pan pacific open schedule",
+    "toray pan",
+    "pan pacific open"
+   ]
+  },
+  {
+   "slug": "riverchase-galleria",
+   "title": "What is the Riverchase Galleria?",
+   "kind": "other",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 32,
+   "age_days": 9.8,
+   "rival_exact": null,
+   "impr": 6,
+   "clicks": 0,
+   "best_pos": 10,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "riverchase galleria",
+    "riverchase galleria",
+    "riverchase"
    ]
   },
   {
@@ -944,6 +980,42 @@
    ]
   },
   {
+   "slug": "consent-decree",
+   "title": "What is a consent decree? Meaning and recent DOJ cases",
+   "kind": "term",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 54,
+   "age_days": 3.8,
+   "rival_exact": null,
+   "impr": 5,
+   "clicks": 0,
+   "best_pos": 38,
+   "title_matches_top_query": false,
+   "top_queries": [
+    "what does consent decree mean",
+    "consent decree definition"
+   ]
+  },
+  {
+   "slug": "alexander-volkanovski",
+   "title": "Who is Alexander Volkanovski?",
+   "kind": "person",
+   "source": "auto",
+   "q_word": "who",
+   "title_len": 29,
+   "age_days": 16.3,
+   "rival_exact": null,
+   "impr": 4,
+   "clicks": 0,
+   "best_pos": 53,
+   "title_matches_top_query": false,
+   "top_queries": [
+    "volkanovski age",
+    "volkanovski"
+   ]
+  },
+  {
    "slug": "nfl-celebration-fines",
    "title": "What are the NFL celebration fines in 2026?",
    "kind": "law",
@@ -959,42 +1031,6 @@
    "top_queries": [
     "do you get fined for celebrating in the nfl",
     "chase young christen miller fines"
-   ]
-  },
-  {
-   "slug": "southern-district-of-new-york",
-   "title": "What is the Southern District of New York?",
-   "kind": "organization",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 42,
-   "age_days": 13.8,
-   "rival_exact": null,
-   "impr": 4,
-   "clicks": 0,
-   "best_pos": 21,
-   "title_matches_top_query": false,
-   "top_queries": [
-    "why is the southern district of new york so powerful",
-    "manhattan federal court"
-   ]
-  },
-  {
-   "slug": "toray-pan-pacific-open",
-   "title": "What is the Toray Pan Pacific Open?",
-   "kind": "event",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 35,
-   "age_days": 10.3,
-   "rival_exact": null,
-   "impr": 4,
-   "clicks": 0,
-   "best_pos": 79.5,
-   "title_matches_top_query": false,
-   "top_queries": [
-    "toray pan pacific open schedule",
-    "toray pan"
    ]
   },
   {
@@ -1029,24 +1065,6 @@
    "title_matches_top_query": true,
    "top_queries": [
     "mogging word of year"
-   ]
-  },
-  {
-   "slug": "champions-league",
-   "title": "What is the Champions League format?",
-   "kind": "event",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 36,
-   "age_days": 15.0,
-   "rival_exact": null,
-   "impr": 3,
-   "clicks": 0,
-   "best_pos": 23,
-   "title_matches_top_query": false,
-   "top_queries": [
-    "uefa format",
-    "champions league format explained"
    ]
   },
   {
@@ -1118,6 +1136,23 @@
    ]
   },
   {
+   "slug": "champions-league",
+   "title": "What is the Champions League format?",
+   "kind": "event",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 36,
+   "age_days": 15.0,
+   "rival_exact": null,
+   "impr": 2,
+   "clicks": 0,
+   "best_pos": 38.5,
+   "title_matches_top_query": false,
+   "top_queries": [
+    "uefa format"
+   ]
+  },
+  {
    "slug": "injured-reserve",
    "title": "What is injured reserve in the NFL?",
    "kind": "term",
@@ -1132,6 +1167,23 @@
    "title_matches_top_query": false,
    "top_queries": [
     "what does nir rest mean in football"
+   ]
+  },
+  {
+   "slug": "southern-district-of-new-york",
+   "title": "What is the Southern District of New York?",
+   "kind": "organization",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 42,
+   "age_days": 13.9,
+   "rival_exact": null,
+   "impr": 2,
+   "clicks": 0,
+   "best_pos": 37,
+   "title_matches_top_query": false,
+   "top_queries": [
+    "manhattan federal court"
    ]
   },
   {
@@ -1152,6 +1204,23 @@
    ]
   },
   {
+   "slug": "the-one-about-matthew-perry",
+   "title": "What is The One About Matthew Perry on Netflix?",
+   "kind": "product",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 47,
+   "age_days": 13.2,
+   "rival_exact": null,
+   "impr": 2,
+   "clicks": 0,
+   "best_pos": 26.5,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "the one about matthew perry"
+   ]
+  },
+  {
    "slug": "genie-4",
    "title": "What is Genie 4 from Google?",
    "kind": "product",
@@ -1169,88 +1238,71 @@
    ]
   },
   {
-   "slug": "game-time-decision",
-   "title": "What is a game-time decision? Meaning in the NFL injury report",
+   "slug": "ali-g-in-da-house",
+   "title": "What is Ali G in Da House?",
+   "kind": "product",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 26,
+   "age_days": 12.2,
+   "rival_exact": null,
+   "impr": 2,
+   "clicks": 0,
+   "best_pos": 23,
+   "title_matches_top_query": false,
+   "top_queries": [
+    "ali g in da usa"
+   ]
+  },
+  {
+   "slug": "last-man-standing-match",
+   "title": "What is a Last Man Standing match in WWE? Rules and Crown Jewel 2026 bout",
    "kind": "term",
    "source": "auto",
+   "q_word": "what",
+   "title_len": 73,
+   "age_days": 3.0,
+   "rival_exact": null,
+   "impr": 2,
+   "clicks": 0,
+   "best_pos": 5.5,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "last man standing match rules wwe"
+   ]
+  },
+  {
+   "slug": "designated-for-assignment",
+   "title": "What does designated for assignment mean? DFA in baseball",
+   "kind": "term",
+   "source": "manual",
+   "q_word": "what",
+   "title_len": 57,
+   "age_days": 3.8,
+   "rival_exact": null,
+   "impr": 2,
+   "clicks": 0,
+   "best_pos": 49.5,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "what does designated for assignment in baseball mean"
+   ]
+  },
+  {
+   "slug": "non-tender",
+   "title": "What does non-tender mean in baseball? MLB deadline is Nov. 20",
+   "kind": "term",
+   "source": "manual",
    "q_word": "what",
    "title_len": 62,
    "age_days": 3.8,
    "rival_exact": null,
    "impr": 2,
    "clicks": 0,
-   "best_pos": 9,
+   "best_pos": 11,
    "title_matches_top_query": true,
    "top_queries": [
-    "game time decision"
-   ]
-  },
-  {
-   "slug": "arnold-schwarzenegger-last-name",
-   "title": "Arnold schwarzenegger last name meaning: German place-name origin",
-   "kind": "term",
-   "source": "longtail",
-   "q_word": "none",
-   "title_len": 65,
-   "age_days": 3.1,
-   "rival_exact": 2,
-   "impr": 2,
-   "clicks": 0,
-   "best_pos": 9,
-   "title_matches_top_query": false,
-   "top_queries": [
-    "schwarzenegg"
-   ]
-  },
-  {
-   "slug": "chicago-bulls",
-   "title": "What is the Chicago Bulls schedule?",
-   "kind": "organization",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 35,
-   "age_days": 12.4,
-   "rival_exact": null,
-   "impr": 1,
-   "clicks": 0,
-   "best_pos": 94,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "chicago bulls schedule"
-   ]
-  },
-  {
-   "slug": "atlanta-dream",
-   "title": "What is the Atlanta Dream WNBA team?",
-   "kind": "organization",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 36,
-   "age_days": 12.2,
-   "rival_exact": null,
-   "impr": 1,
-   "clicks": 0,
-   "best_pos": 73,
-   "title_matches_top_query": false,
-   "top_queries": [
-    "atlanta dream wiki"
-   ]
-  },
-  {
-   "slug": "darius-acuff-jr",
-   "title": "Who is Darius Acuff Jr.? Sacramento Kings rookie guard, 2026 draft",
-   "kind": "person",
-   "source": "auto",
-   "q_word": "who",
-   "title_len": 66,
-   "age_days": 8.4,
-   "rival_exact": null,
-   "impr": 1,
-   "clicks": 0,
-   "best_pos": 47,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "acuff"
+    "non-tender"
    ]
   },
   {
@@ -1275,7 +1327,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 26,
-   "age_days": 16.9,
+   "age_days": 17.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -1650,7 +1702,22 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 54,
-   "age_days": 8.9,
+   "age_days": 9.0,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
+   "slug": "chicago-bulls",
+   "title": "What is the Chicago Bulls schedule?",
+   "kind": "organization",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 35,
+   "age_days": 12.4,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -1680,6 +1747,21 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 35,
+   "age_days": 12.2,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
+   "slug": "atlanta-dream",
+   "title": "What is the Atlanta Dream WNBA team?",
+   "kind": "organization",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 36,
    "age_days": 12.2,
    "rival_exact": null,
    "impr": 0,
@@ -2041,6 +2123,21 @@
    "q_word": "who",
    "title_len": 50,
    "age_days": 8.8,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
+   "slug": "darius-acuff-jr",
+   "title": "Who is Darius Acuff Jr.? Sacramento Kings rookie guard, 2026 draft",
+   "kind": "person",
+   "source": "auto",
+   "q_word": "who",
+   "title_len": 66,
+   "age_days": 8.4,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2430,7 +2527,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 53,
-   "age_days": 5.6,
+   "age_days": 5.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2685,7 +2782,7 @@
    "source": "auto",
    "q_word": "none",
    "title_len": 70,
-   "age_days": 4.6,
+   "age_days": 4.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2700,7 +2797,7 @@
    "source": "auto",
    "q_word": "none",
    "title_len": 71,
-   "age_days": 4.6,
+   "age_days": 4.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2760,7 +2857,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 66,
-   "age_days": 4.5,
+   "age_days": 4.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3204,21 +3301,6 @@
    "top_queries": []
   },
   {
-   "slug": "consent-decree",
-   "title": "What is a consent decree? Meaning and recent DOJ cases",
-   "kind": "term",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 54,
-   "age_days": 3.8,
-   "rival_exact": null,
-   "impr": 0,
-   "clicks": 0,
-   "best_pos": null,
-   "title_matches_top_query": false,
-   "top_queries": []
-  },
-  {
    "slug": "duckworth-lewis-system",
    "title": "What is the Duckworth Lewis System? A cricket rain-revised target method",
    "kind": "term",
@@ -3300,21 +3382,6 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 63,
-   "age_days": 3.2,
-   "rival_exact": null,
-   "impr": 0,
-   "clicks": 0,
-   "best_pos": null,
-   "title_matches_top_query": false,
-   "top_queries": []
-  },
-  {
-   "slug": "nasdaq-100",
-   "title": "What is the Nasdaq 100? Index of 100 large non-financial firms",
-   "kind": "term",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 62,
    "age_days": 3.2,
    "rival_exact": null,
    "impr": 0,
@@ -3420,7 +3487,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 65,
-   "age_days": 3.0,
+   "age_days": 3.1,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3444,72 +3511,12 @@
    "top_queries": []
   },
   {
-   "slug": "wwe-crown-jewel-2026",
-   "title": "What is WWE Crown Jewel? Date, place and card for 2026",
-   "kind": "event",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 54,
-   "age_days": 3.0,
-   "rival_exact": null,
-   "impr": 0,
-   "clicks": 0,
-   "best_pos": null,
-   "title_matches_top_query": false,
-   "top_queries": []
-  },
-  {
-   "slug": "last-man-standing-match",
-   "title": "What is a Last Man Standing match in WWE? Rules and Crown Jewel 2026 bout",
-   "kind": "term",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 73,
-   "age_days": 3.0,
-   "rival_exact": null,
-   "impr": 0,
-   "clicks": 0,
-   "best_pos": null,
-   "title_matches_top_query": false,
-   "top_queries": []
-  },
-  {
-   "slug": "designated-for-assignment",
-   "title": "What does designated for assignment mean? DFA in baseball",
-   "kind": "term",
-   "source": "manual",
-   "q_word": "what",
-   "title_len": 57,
-   "age_days": 3.8,
-   "rival_exact": null,
-   "impr": 0,
-   "clicks": 0,
-   "best_pos": null,
-   "title_matches_top_query": false,
-   "top_queries": []
-  },
-  {
    "slug": "how-mlb-mvp-is-voted",
    "title": "How is the MLB MVP voted? 30 writers, results Nov. 12",
    "kind": "term",
    "source": "manual",
    "q_word": "how",
    "title_len": 53,
-   "age_days": 3.8,
-   "rival_exact": null,
-   "impr": 0,
-   "clicks": 0,
-   "best_pos": null,
-   "title_matches_top_query": false,
-   "top_queries": []
-  },
-  {
-   "slug": "non-tender",
-   "title": "What does non-tender mean in baseball? MLB deadline is Nov. 20",
-   "kind": "term",
-   "source": "manual",
-   "q_word": "what",
-   "title_len": 62,
    "age_days": 3.8,
    "rival_exact": null,
    "impr": 0,
