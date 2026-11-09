@@ -2143,7 +2143,17 @@ def tmdb_upcoming(store):
 
 def tmdb_facts(x):
     """Карточка релиза из TMDB: дата, жанры, описание, актёры, ключевые слова — первый источник для писателя."""
-    d = tmdb_get(f"/{x['type']}/{x['id']}", append_to_response="keywords,credits", language="en-US") or {}
+    d = tmdb_get(f"/{x['type']}/{x['id']}", append_to_response="keywords,credits,release_dates", language="en-US") or {}
+    if x["type"] == "movie":                       # дата выхода именно в США (кино, стриминг), а не первая в мире
+        us = [r_ for c in (d.get("release_dates") or {}).get("results", []) if c.get("iso_3166_1") == "US"
+              for r_ in c.get("release_dates", [])]
+        today_ = datetime.now(timezone.utc).date().isoformat()
+        nxt = sorted(r_["release_date"][:10] for r_ in us if r_.get("release_date", "")[:10] >= today_)
+        kinds = {2: "limited theatrical", 3: "theatrical", 4: "digital", 6: "TV"}
+        if nxt:
+            x["date"] = nxt[0]
+            x["how"] = ", ".join(sorted({kinds.get(r_.get("type"), "") for r_ in us
+                                         if r_.get("release_date", "")[:10] == nxt[0]} - {""}))
     kw = [k["name"] for k in (d.get("keywords") or {}).get("keywords", []) + (d.get("keywords") or {}).get("results", [])]
     cast = [f"{c['name']} as {c.get('character') or 'unknown role'}" for c in (d.get("credits") or {}).get("cast", [])[:8]]
     crew = [f"{c['name']} ({c['job']})" for c in (d.get("credits") or {}).get("crew", [])
@@ -2153,7 +2163,9 @@ def tmdb_facts(x):
     genres = [g["name"] for g in d.get("genres", [])]
     text = (f"{x['title']} is a {'TV series' if x['type'] == 'tv' else 'film'}"
             + (f" from {', '.join(nets)}" if nets else "")
-            + f". US release / premiere date listed by TMDB: {x['date']}. Genres: {', '.join(genres) or 'n/a'}.\n"
+            + f". US release / premiere date listed by TMDB: {x['date']}" + (f" ({x['how']} release)" if x.get("how") else "")
+            + (f"; first released elsewhere {d.get('release_date')}" if x["type"] == "movie" and d.get("release_date") and d.get("release_date") < x["date"] else "")
+            + ". Genres: {', '.join(genres) or 'n/a'}.\n"
             f"Overview: {d.get('overview', '')}\n"
             + (f"Cast: {'; '.join(cast)}.\n" if cast else "")
             + (f"Creators and writers: {'; '.join(crew)}.\n" if crew else "")
