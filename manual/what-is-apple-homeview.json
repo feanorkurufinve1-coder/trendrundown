@@ -1,0 +1,55 @@
+{
+ "subject": "Apple HomeView",
+ "kind": "product",
+ "query": "what is apple homeview",
+ "title": "What is Apple HomeView? Apple's $299 smart display, explained",
+ "answer": "Apple HomeView is Apple's first smart home display: a $299 device with a 7-inch square screen and speaker that controls smart home gadgets, plays music, makes FaceTime calls and runs Apple's new Siri AI. Apple announced it on Oct. 13, 2026, and it goes on sale in the U.S. on Friday, Nov. 13, 2026.",
+ "body": "HomeView comes in two versions at the same $299 price: a tabletop model on a domed speaker base with a tilting stainless steel hinge, and a wall-mounted model. According to 9to5Mac, the tabletop version comes in silver, starlight, rose pink and space gray, and the wall version in space gray and silver. Wall mounts made with Schneider Home start at $59.95 for a USB-C connector and $79.95 for an AC wired mount; a $129.95 Power over Ethernet mount is due in early 2027.\n\nThe 7-inch Liquid Retina display reaches 500 nits and can dim to 0.3 nits for a nightstand. A Center Stage front camera handles FaceTime calls. The device recognizes up to six people and shows each one a personal Home Screen with their messages, calendar and contacts. Preloaded apps include Calendar, Messages, Photos, FaceTime, Notes, Reminders, Music and Podcasts. It works by touch or voice, has an intercom feature and can show up to nine home camera feeds at once.\n\nSiri on HomeView can view camera feeds, adjust a thermostat, turn on lights and lock doors. People with an Apple Intelligence-capable iPhone or iPad get Siri answers that use their personal context. 9to5Mac reports HomeView will not be sold in the European Union, where Apple's Siri AI is not available.",
+ "in_the_news": "Apple's HomeView smart display, announced Oct. 13, 2026, goes on sale in the U.S. on Nov. 13.",
+ "faq": [
+  {
+   "q": "How much is Apple HomeView?",
+   "a": "$299 in the U.S., for both the tabletop and wall-mounted versions. Wall mounts cost extra."
+  },
+  {
+   "q": "When can I buy Apple HomeView?",
+   "a": "It goes on sale Friday, Nov. 13, 2026."
+  },
+  {
+   "q": "Does Apple HomeView have a camera?",
+   "a": "Yes, a front-facing Center Stage camera for FaceTime calls."
+  },
+  {
+   "q": "What colors does HomeView come in?",
+   "a": "Tabletop: silver, starlight, rose pink and space gray. Wall-mounted: space gray and silver."
+  },
+  {
+   "q": "Is Apple HomeView available in Europe?",
+   "a": "No. 9to5Mac reports it will not be sold in the EU because Apple's Siri AI is not available there."
+  }
+ ],
+ "links": [
+  [
+   "9to5Mac",
+   "Apple HomeView announced: features, price, release date",
+   "https://9to5mac.com/2026/10/13/apple-homeview-announced-features-price-release-date/"
+  ],
+  [
+   "TechCrunch",
+   "Apple makes another push into the smart home market with HomeView",
+   "https://techcrunch.com/2026/10/13/apple-makes-another-push-into-the-smart-home-market-with-homeview/"
+  ],
+  [
+   "ABC7 News",
+   "What to know about new Apple HomeView smart home display hub",
+   "https://abc7news.com/story/what-know-new-apple-homeview-smart-home-display-hub/19937996/"
+  ]
+ ],
+ "topics": [
+  "apple",
+  "tech"
+ ],
+ "made": "2026-11-09T13:58:00+00:00",
+ "first": "2026-11-09T13:58:00+00:00",
+ "updated": "2026-11-09T13:58:00+00:00"
+}

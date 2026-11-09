@@ -18,6 +18,8 @@
 - Документалка Netflix о реальном человеке дала больше всего трафика сайта за всё время (dane-cook-brother: 2485 показов и 17 кликов за 7 нояб). Пик — на 2-й день после выхода. Это главный рычаг: искать доки/сериалы «о реальных людях» и писать за 1–5 дней.
 - Термины MLB (награды, non-tender, DFA): показы малые (5–50 в день), поз. 5–20 — ниша с небольшим объёмом; писать только когда нет кино/доков.
 - Победитель/финалист сразу двух наград → исторический вопрос «has anyone ever won both» (rookie + Cy Young), «who has the most X».
+- Всплески «X meaning / slang» сразу по нескольким странным словам (carat, charred, korn, leak; loafy, roamy) — это разгадки NYT Connections/словесных игр, а не сленг. Не писать.
+- Вопросы про небо «bright star in the east this morning» растут, когда яркая планета (Венера) возвращается на утреннее небо — сезонный термин.
 
 ## Ближайшие события и что будут искать
 | Дата | Событие | Вероятный запрос (С) | Страница |
@@ -63,11 +65,28 @@
 | 26 нояб | Netflix: Toos: The Van der Valk Kidnapping (реальное похищение, Нидерланды) | is toos a true story | — |
 | 30 нояб | Prime: The Boy Who Stole Billions? | — | — |
 | 4 нояб | Collins: слово года «mogging» | what does mogging mean | — |
+| 11 нояб | Нацпарки: бесплатный вход в День ветеранов (только граждане/резиденты США; $100 для иностранцев) | are national parks free on veterans day | ✅ national-parks-free-veterans-day |
+| 12 нояб | Игра Sonic Pico Park (PS5, Xbox, Switch 2, PC) | what is pico park | ✅ what-is-pico-park |
+| 13 нояб | Apple HomeView ($299 умный дисплей) в продаже | what is apple homeview | ✅ what-is-apple-homeview |
+| 15 нояб | Netflix: Cunk on Cinema (Diane Morgan) | is philomena cunk a real person | ✅ is-philomena-cunk-real |
+| 16 нояб | Соединение Марса и Юпитера; Венера — утренняя звезда | what is the bright star in the eastern sky this morning | ✅ bright-star-eastern-sky-morning |
+| ~16 нояб | Номинации The Game Awards (церемония 10 дек; отсечка 20 нояб) | how are the game awards nominees chosen | ✅ how-are-game-awards-nominees-chosen |
+| 18 нояб | CMA Awards (ABC, ведущая Lainey Wilson) | how are cma awards voted | ✅ how-are-cma-awards-voted |
+| 20 нояб | Кино: Sunrise on the Reaping (50-е Игры, Second Quarter Quell) | what is a quarter quell | ✅ what-is-a-quarter-quell |
+| 4 нояб (прошло) | SNAP: новые требования к ассортименту магазинов (7 видов × 4 категории) | new snap rules for stores | ✅ new-snap-stocking-rules |
+| 9 нояб – | Lame duck session Конгресса; «lame duck president» растёт в Trends | what is a lame duck president | ✅ lame-duck-president |
+| 18 нояб | Netflix: Win the Mall (реалити, шопинг) | what is win the mall | — |
+| 25 нояб | Netflix: The Mosquito Bowl | is the mosquito bowl a true story | — (писать ~20 нояб) |
 
 Правило: писать за 1–5 дней до события (Google индексирует ~2/3 новых страниц за сутки).
 Проверка: через 3–7 дней после даты сверить с Trends CSV и Search Console — угадали или нет, записать урок сюда.
 
 ## Уроки
+- 9 нояб, утро (коротко; GSC последний полный день 7 нояб: 36 кликов / 3951 показ; данные за 8 нояб неполные):
+  - learn.json: заголовок совпадает с реальным запросом → 100% страниц с показами и 0.57 клика/стр. против 15% и 0.16 — точная фраза запроса в заголовке главное. Термины (term) — 0.5 клика/стр., ручные страницы 3.8 клика/стр. против 0.03 у авто.
+  - Страницы 8 нояб: 9 из 10 фраз уже в подсказках Google (carter-faith, heartland-netflix-cast, how-are-grammy-nominations-decided, how-is-senate-majority-leader-chosen, i-play-rocky-true-story, is-leonida-a-real-place, most-mvp-awards-mlb, rookie-cy-young-winner, the-altruists-true-story); ❌ нет «where are the harlem park three now». GSC по ним ещё нет.
+  - dane-cook-brother: за 3 дня 21 клик / 3079 показов, поз. 8.9; после пика 7 нояб упало до 1 клика 8 нояб — доки живут 2–3 дня.
+  - murder-in-galicia-true-story: 9 кликов / 273 показа за 3 дня, поз. 7.4.
 - 8 нояб, проверка (подсказки Google 7 нояб + GSC по 7 нояб — лучший день: 34 клика / 3781 показ):
   - dane-cook-brother (5 нояб): ✅✅ 17 кликов / 2485 показов, поз. 9.4 — хит; ищут «is darryl mccauley still in prison», «is dane cook's brother still alive».
   - murder-in-galicia-true-story (6 нояб): ✅ 5 кликов / 207 показов, поз. 7.4; фраза появилась в подсказках 7 нояб.
