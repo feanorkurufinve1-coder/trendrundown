@@ -1348,5 +1348,53 @@
 "hash": "16076df241aa",
 "made": "2026-11-09T12:41:16+00:00",
 "sec": 111
+},
+"x/bright-star-eastern-sky-morning": {
+"file": "audio/x/bright-star-eastern-sky-morning.mp3",
+"hash": "bdb7213c16cf",
+"made": "2026-11-09T15:37:29+00:00",
+"sec": 119
+},
+"x/how-are-cma-awards-voted": {
+"file": "audio/x/how-are-cma-awards-voted.mp3",
+"hash": "9c21fd7bbb34",
+"made": "2026-11-09T15:38:11+00:00",
+"sec": 112
+},
+"x/how-are-game-awards-nominees-chosen": {
+"file": "audio/x/how-are-game-awards-nominees-chosen.mp3",
+"hash": "e14b38db7f61",
+"made": "2026-11-09T15:38:59+00:00",
+"sec": 126
+},
+"x/is-philomena-cunk-real": {
+"file": "audio/x/is-philomena-cunk-real.mp3",
+"hash": "cd9fe884e5ff",
+"made": "2026-11-09T15:39:41+00:00",
+"sec": 107
+},
+"x/lame-duck-president": {
+"file": "audio/x/lame-duck-president.mp3",
+"hash": "3d17ccd17826",
+"made": "2026-11-09T15:40:31+00:00",
+"sec": 130
+},
+"x/national-parks-free-veterans-day": {
+"file": "audio/x/national-parks-free-veterans-day.mp3",
+"hash": "f4bfe683b98e",
+"made": "2026-11-09T15:41:21+00:00",
+"sec": 133
+},
+"x/new-snap-stocking-rules": {
+"file": "audio/x/new-snap-stocking-rules.mp3",
+"hash": "be1f27456d7b",
+"made": "2026-11-09T15:42:10+00:00",
+"sec": 130
+},
+"x/what-is-a-quarter-quell": {
+"file": "audio/x/what-is-a-quarter-quell.mp3",
+"hash": "2ca05fdd21fd",
+"made": "2026-11-09T15:42:50+00:00",
+"sec": 104
 }
 }
