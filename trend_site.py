@@ -41,7 +41,7 @@ CATS = {                   # разделы сайта: тема попадае�
 ONLY_WITH_SUMMARY = True  # публиковать только темы со сводкой ИИ (защита от санкций Google за «массовый контент»)
 MAX_NEW_PER_DAY = 4        # сколько новых тем в сутки (по времени США) получают сводку и попадают на сайт — самые крупные
 EXPLAIN = True             # объяснения: что люди начнут гуглить после новости (термины, законы, места, малоизвестные люди)
-MAX_EXPLAINERS_PER_DAY = 25   # сколько новых объяснений в сутки
+MAX_EXPLAINERS_PER_DAY = 40   # сколько новых объяснений в сутки
 TREND_EXPLAIN_PER_RUN = 4     # пояснения о трендах, по которым новость не писалась (лимит новостей) — сколько за проход
 EXPLAINERS_PER_TOPIC = 3      # не больше стольких объяснений из одной новости (включая пояснение о самом запросе)
 MIN_FULL_ARTICLES = 2      # писать сводку, только если хотя бы столько статей удалось прочитать целиком (не одни заголовки)
@@ -2095,6 +2095,154 @@ def longtail_candidates(store):
     return out
 
 
+# ---- TMDB: фильмы и сериалы, которые выйдут в США через 1–10 дней. Пишем «правдивая ли история / по книге ли» ЗАРАНЕЕ ----
+TMDB_PER_RUN = 2        # сколько страниц за один проход
+TMDB_PER_DAY = 8        # тест: не больше стольких в сутки
+TMDB_MIN_POP = 4        # совсем неизвестное никто не ищет
+TMDB_TRUE = re.compile(r"(?i)true story|real event|real person|biograph|true crime|historical figure|based on memoir")
+TMDB_BOOK = re.compile(r"(?i)based on (a )?(novel|book|young adult novel|memoir|short story|comic|graphic novel|manga)|novel or book")
+
+
+def tmdb_get(path, **params):
+    k = os.environ.get("TMDB_KEY", "").strip()
+    if not k:
+        return None
+    hdr = {"Accept": "application/json", "User-Agent": "trendrundown"}
+    if k.startswith("eyJ"):
+        hdr["Authorization"] = "Bearer " + k          # длинный ключ (Read Access Token)
+    else:
+        params["api_key"] = k                          # короткий API Key
+    url = "https://api.themoviedb.org/3" + path + "?" + urllib.parse.urlencode(params)
+    with urllib.request.urlopen(urllib.request.Request(url, headers=hdr), timeout=25, context=CTX) as r:
+        return json.loads(r.read().decode("utf-8"))
+
+
+def tmdb_upcoming(store):
+    """Список релизов США на ближайшие 1–10 дней (кэш на 6 часов)."""
+    st = store.setdefault("tmdb", {})
+    if st.get("list") and hours_since(st.get("list_at", "2000-01-01T00:00:00+00:00")) < 6:
+        return st["list"]
+    d0 = datetime.now(timezone.utc).date()
+    a, b = (d0 + timedelta(days=1)).isoformat(), (d0 + timedelta(days=10)).isoformat()
+    out = []
+    for page in (1, 2):
+        mv = tmdb_get("/discover/movie", region="US", **{"release_date.gte": a, "release_date.lte": b},
+                      with_release_type="2|3|4|6", sort_by="popularity.desc", include_adult="false", page=page) or {}
+        out += [{"type": "movie", "id": x["id"], "title": x.get("title", ""), "date": x.get("release_date", ""),
+                 "pop": x.get("popularity", 0)} for x in mv.get("results", [])]
+        tv = tmdb_get("/discover/tv", watch_region="US", with_watch_monetization_types="flatrate",
+                      **{"first_air_date.gte": a, "first_air_date.lte": b}, sort_by="popularity.desc",
+                      include_adult="false", page=page) or {}
+        out += [{"type": "tv", "id": x["id"], "title": x.get("name", ""), "date": x.get("first_air_date", ""),
+                 "pop": x.get("popularity", 0)} for x in tv.get("results", [])]
+    out = [x for x in out if x["title"] and (x["pop"] or 0) >= TMDB_MIN_POP]
+    out.sort(key=lambda x: -(x["pop"] or 0))
+    st["list"], st["list_at"] = out[:80], now_iso()
+    return st["list"]
+
+
+def tmdb_facts(x):
+    """Карточка релиза из TMDB: дата, жанры, описание, актёры, ключевые слова — первый источник для писателя."""
+    d = tmdb_get(f"/{x['type']}/{x['id']}", append_to_response="keywords,credits", language="en-US") or {}
+    kw = [k["name"] for k in (d.get("keywords") or {}).get("keywords", []) + (d.get("keywords") or {}).get("results", [])]
+    cast = [f"{c['name']} as {c.get('character') or 'unknown role'}" for c in (d.get("credits") or {}).get("cast", [])[:8]]
+    crew = [f"{c['name']} ({c['job']})" for c in (d.get("credits") or {}).get("crew", [])
+            if c.get("job") in ("Director", "Screenplay", "Writer", "Novel", "Author", "Creator", "Executive Producer")][:6]
+    crew += [f"{c['name']} (Creator)" for c in d.get("created_by", [])[:3]]
+    nets = [n["name"] for n in d.get("networks", [])[:3]]
+    genres = [g["name"] for g in d.get("genres", [])]
+    text = (f"{x['title']} is a {'TV series' if x['type'] == 'tv' else 'film'}"
+            + (f" from {', '.join(nets)}" if nets else "")
+            + f". US release / premiere date listed by TMDB: {x['date']}. Genres: {', '.join(genres) or 'n/a'}.\n"
+            f"Overview: {d.get('overview', '')}\n"
+            + (f"Cast: {'; '.join(cast)}.\n" if cast else "")
+            + (f"Creators and writers: {'; '.join(crew)}.\n" if crew else "")
+            + (f"TMDB keywords: {', '.join(kw[:25])}." if kw else ""))
+    return d, kw, genres, text
+
+
+def tmdb_candidates(store):
+    """Релизы ближайших дней, у которых TMDB отмечает «по реальным событиям» или «по книге». Пишем вопрос людей
+    заранее, только если в поиске ещё нет точных ответов. Источники: карточка TMDB + страницы из выдачи."""
+    if not os.environ.get("TMDB_KEY", "").strip():
+        return []
+    st = store.setdefault("tmdb", {})
+    if st.get("last") and hours_since(st["last"]) < 1:
+        return []
+    st["last"] = now_iso()
+    today = to_et(datetime.now(timezone.utc))[0].strftime("%Y-%m-%d")
+    days = st.setdefault("days", {})
+    if days.get(today, 0) >= TMDB_PER_DAY:
+        return []
+    tried = st.setdefault("tried", {})
+    log_ = st.setdefault("log", [])
+    ex = store.get("explainers", {})
+    out, checks = [], 0
+    for x in tmdb_upcoming(store):
+        if len(out) >= TMDB_PER_RUN or days.get(today, 0) + len(out) >= TMDB_PER_DAY or checks >= 6:
+            break
+        k_ = f"{x['type']}{x['id']}"
+        if k_ in tried or bad_text(x["title"]):
+            continue
+        tried[k_] = now_iso()
+        checks += 1
+        try:
+            d, kw, genres, facts = tmdb_facts(x)
+        except Exception as e:
+            log(f"TMDB {x['title']}: {e}")
+            continue
+        if d.get("adult") or bad_text(facts) or "Documentary" in genres:
+            log_.append({"time": now_iso(), "title": x["title"], "decision": "skip: blocked/documentary"}); continue
+        kws = " | ".join(kw)
+        if TMDB_TRUE.search(kws):
+            q, subj = f"is {x['title']} a true story", f"{x['title']} true story"
+        elif TMDB_BOOK.search(kws):
+            q, subj = f"is {x['title']} based on a book", f"{x['title']} book"
+        else:
+            log_.append({"time": now_iso(), "title": x["title"], "decision": "skip: not true story / book"}); continue
+        if slugify(subj) in ex:
+            continue
+        sup = supply(q)
+        if sup is None:
+            tried.pop(k_, None)
+            break
+        exact, big, res = sup
+        decision = "skip: answered" if (big >= 1 or exact >= 3) else "write"
+        log_.append({"time": now_iso(), "title": x["title"], "q": q, "date": x["date"], "exact": exact, "big": big,
+                     "decision": decision})
+        if decision != "write":
+            continue
+        link = f"https://www.themoviedb.org/{x['type']}/{x['id']}"
+        texts, blocks, links = [facts], [f"[1] themoviedb.org — {x['title']} (TMDB listing)\n{facts}"], [("TMDB", x["title"], link)]
+        for ti, u in res[:6]:
+            if any(b in u for b in ("youtube.com", "reddit.com", "tiktok.com", "facebook.com", "instagram.com",
+                                    "x.com/", "twitter.com", "quora.com", "themoviedb.org")):
+                continue
+            body = article_text(u)
+            if len(body) < 400 or not any(w in words(body) for w in words(x["title"]) if len(w) > 3):
+                continue
+            src_ = urllib.parse.urlparse(u).netloc.replace("www.", "")
+            texts.append(ti + " " + body)
+            blocks.append(f"[{len(blocks) + 1}] {src_} — {ti}\n" + body)
+            links.append((src_, ti, u))
+            if len(texts) >= 4:
+                break
+        if len(texts) < 2:                              # одной карточки TMDB мало: «чья история / какая книга» — из статей
+            log_[-1]["decision"] = "skip: no sources"
+            continue
+        item = {"subject": subj, "query": q, "kind": "other", "longtail": True, "future": True, "tmdb": True}
+        tt = {"slug": "tmdb-" + slugify(x["title"])[:40], "term": x["title"], "articles": [], "traffic": []}
+        out.append((tt["slug"], {"texts": texts, "blocks": blocks, "links": links}, tt, item, 0))
+        log(f"TMDB: «{q}» (выходит {x['date']}) — точных ответов в поиске {exact}, пишем заранее")
+    days[today] = days.get(today, 0) + len(out)
+    for d_ in sorted(days)[:-14]:
+        days.pop(d_)
+    for k_ in [k_ for k_, v in tried.items() if hours_since(v) > 30 * 24]:
+        tried.pop(k_)
+    st["log"] = log_[-200:]
+    return out
+
+
 def stem_words(text):
     """Слова без окончаний множественного числа: neoclouds → neocloud, companies → company."""
     out = set()
@@ -2167,6 +2315,10 @@ def explain(store):
         cands += longtail_candidates(store)             # узкие свежие вопросы из подсказок Google без готового ответа
     except Exception as e:
         log(f"длинный хвост: {e}")
+    try:
+        cands += tmdb_candidates(store)                 # фильмы и сериалы, которые выйдут через 1–10 дней
+    except Exception as e:
+        log(f"TMDB: {e}")
     try:
         cands += breaking_candidates(store, key)        # срочные события — раньше, чем они попадут в Google Trends
         learn_breaking(store)
@@ -2247,7 +2399,7 @@ def explain(store):
                 log(f"'{item['subject']}' — почти то же, что уже есть ({dup}), не пишу второй раз")
                 continue
             hit, questions = demand(item)
-            if hit is False and not item.get("breaking"):     # срочное: Google ещё не успел выучить запрос — пишем заранее
+            if hit is False and not item.get("breaking") and not item.get("tmdb"):     # срочное: Google ещё не успел выучить запрос — пишем заранее
                 log(f"'{item['query']}' — в подсказках Google не ищут, пропускаю")
                 continue
             item = dict(item, query=best_phrase(item, questions))   # точная формулировка из подсказок Google
