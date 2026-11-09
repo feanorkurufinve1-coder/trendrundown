@@ -1931,6 +1931,13 @@ def laptop_live():
     out, seen = [], set()
     cand = [(x.get("q", ""), x.get("g", 0)) for x in d.get("rising", []) if (x.get("g") or 0) >= 100]
     cand += [(x.get("s", ""), x.get("rel") or 0) for x in d.get("new_sugg", [])]
+    for x in d.get("reddit", []):                 # вопросы людей с Reddit («What's going on with X?»)
+        t = (x.get("t") if isinstance(x, dict) else x) or ""
+        t = re.sub(r"(?i)^(\[[^\]]*\]\s*|eli5\s*[:\-]?\s*)", "", t).strip()
+        t = re.sub(r"(?i)^what'?s\b", "what is", t)
+        t = re.sub(r"(?i)^(what|who|why|how|is|are|does|did|where|when)\b(.{8,110}?)\?.*$", r"\1\2", t)
+        if "?" not in t and len(t) <= 110 and not re.search(r"(?i)\b(i|i'm|im|me|my|mine|we|our|you|your|u)\b", t):
+            cand.append((t, 0))                   # личные вопросы («почему мой кот…») — не наше
     for q, g in cand:
         q = (q or "").strip().lower()
         if (not q or q in seen or len(words(q)) < 3 or not LT_QFORM.search(q) or LT_GOSSIP.search(q)
