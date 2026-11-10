@@ -2208,7 +2208,10 @@ def tmdb_candidates(store):
     log_ = st.setdefault("log", [])
     ex = store.get("explainers", {})
     out, checks = [], 0
+    blocked_search = False
     for x in tmdb_upcoming(store):
+        if blocked_search:
+            break
         if len(out) >= TMDB_PER_RUN or days.get(today, 0) + len(out) >= TMDB_PER_DAY or checks >= 8:
             break
         k_ = f"{x['type']}{x['id']}"
@@ -2248,7 +2251,10 @@ def tmdb_candidates(store):
                 continue
             checks += 1
             sup = supply(q)
-            if sup is None:
+            if sup is None:                             # поиск просит подождать — этот фильм попробуем в следующий раз
+                blocked_search = True
+                tried.pop(k_, None)
+                log(f"TMDB: поиск не ответил на «{q}», повторю через час")
                 break
             exact, big, res = sup
             decision = "skip: answered" if (big >= 1 or exact >= 3) else "write"
