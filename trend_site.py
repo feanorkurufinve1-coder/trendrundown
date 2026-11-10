@@ -1944,9 +1944,25 @@ def laptop_live():
         t = re.sub(r"(?i)^(\[[^\]]*\]\s*|eli5\s*[:\-]?\s*)", "", t).strip()
         t = re.sub(r"(?i)^what'?s\b", "what is", t)
         t = re.sub(r"(?i)^(what|who|why|how|is|are|does|did|where|when)\b(.{8,110}?)\?.*$", r"\1\2", t)
-        if "?" not in t and len(t) <= 110 and not re.search(r"(?i)\b(i|i'm|im|me|my|mine|we|our|you|your|u)\b", t):
-            rc.append((t, 0))                     # личные вопросы («почему мой кот…») — не наше
-    cand = rc[:60] + cand                         # живые вопросы людей — первыми
+        if ("?" not in t and len(t) <= 110 and len(t.split()) <= 14
+                and not re.search(r"(?i)\b(i|i'm|im|me|my|mine|we|our|you|your|u|anyone|anybody|else|normal|weird|"
+                                  r"unreasonable|horny|sex|sexual|penis|vagina|naked|pee|poop|ugly|fat|drunk|drinking|"
+                                  r"firearm|gun|guns|worth watching|best film|frowned)\b", t)):
+            rc.append((t, 0))                     # личные, пошлые и «мнения» — не наше
+    # Reddit — только идея. Пишем лишь то, что люди реально вводят в Google: берём подсказку Google по началу вопроса
+    rq = []
+    for t, _ in rc[:12]:
+        head = " ".join(t.lower().split()[:6])
+        try:
+            sg = [x for x in suggest(head) if len(words(x)) >= 4]
+        except Exception:
+            sg = []
+        tw = set(w for w in words(t) if len(w) > 3)
+        best = next((x for x in sg if len(tw & set(words(x))) >= max(2, len(tw) // 2)), None)
+        if best:
+            rq.append((best, 0))
+        time.sleep(0.3)
+    cand = rq + cand                              # живые вопросы людей, проверенные подсказками Google — первыми
     for q, g in cand:
         q = (q or "").strip().lower()
         if (not q or q in seen or len(words(q)) < 3 or not LT_QFORM.search(q) or LT_GOSSIP.search(q)
