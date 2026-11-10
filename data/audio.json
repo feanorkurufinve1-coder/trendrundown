@@ -1504,5 +1504,17 @@
 "hash": "d57b52aec71e",
 "made": "2026-11-10T10:42:30+00:00",
 "sec": 113
+},
+"x/connections-puzzle": {
+"file": "audio/x/connections-puzzle.mp3",
+"hash": "264e6bc572f2",
+"made": "2026-11-10T12:44:46+00:00",
+"sec": 99
+},
+"x/purple-category-connections": {
+"file": "audio/x/purple-category-connections.mp3",
+"hash": "fd94dc4ccb97",
+"made": "2026-11-10T12:45:52+00:00",
+"sec": 98
 }
 }
