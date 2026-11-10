@@ -1,5 +1,5 @@
 {
- "made": "2026-11-10T12:47:30+00:00",
+ "made": "2026-11-10T13:03:06+00:00",
  "pages": 247,
  "summary": {
   "kind": {
@@ -35,8 +35,8 @@
     "pages": 56,
     "with_impr_%": 30,
     "top3_%": 0,
-    "clicks": 14,
-    "clicks_per_page": 0.25
+    "clicks": 15,
+    "clicks_per_page": 0.27
    },
    "place": {
     "pages": 16,
@@ -55,7 +55,7 @@
    "term": {
     "pages": 79,
     "with_impr_%": 30,
-    "top3_%": 4,
+    "top3_%": 5,
     "clicks": 35,
     "clicks_per_page": 0.44
    }
@@ -78,9 +78,9 @@
    "manual": {
     "pages": 22,
     "with_impr_%": 50,
-    "top3_%": 9,
-    "clicks": 49,
-    "clicks_per_page": 2.23
+    "top3_%": 14,
+    "clicks": 50,
+    "clicks_per_page": 2.27
    }
   },
   "q_word": {
@@ -115,9 +115,9 @@
    "what": {
     "pages": 145,
     "with_impr_%": 30,
-    "top3_%": 2,
-    "clicks": 39,
-    "clicks_per_page": 0.27
+    "top3_%": 3,
+    "clicks": 40,
+    "clicks_per_page": 0.28
    },
    "when": {
     "pages": 2,
@@ -159,9 +159,9 @@
    "True": {
     "pages": 39,
     "with_impr_%": 100,
-    "top3_%": 5,
-    "clicks": 27,
-    "clicks_per_page": 0.69
+    "top3_%": 8,
+    "clicks": 28,
+    "clicks_per_page": 0.72
    }
   }
  },
@@ -175,7 +175,7 @@
    "title_len": 61,
    "age_days": 5.9,
    "rival_exact": null,
-   "impr": 547,
+   "impr": 545,
    "clicks": 28,
    "best_pos": 1.8,
    "title_matches_top_query": false,
@@ -194,8 +194,8 @@
    "title_len": 59,
    "age_days": 4.8,
    "rival_exact": null,
-   "impr": 1505,
-   "clicks": 8,
+   "impr": 1549,
+   "clicks": 9,
    "best_pos": 4.2,
    "title_matches_top_query": true,
    "top_queries": [
@@ -213,7 +213,7 @@
    "title_len": 64,
    "age_days": 5.0,
    "rival_exact": null,
-   "impr": 530,
+   "impr": 538,
    "clicks": 6,
    "best_pos": 8,
    "title_matches_top_query": true,
@@ -232,7 +232,7 @@
    "title_len": 65,
    "age_days": 3.7,
    "rival_exact": null,
-   "impr": 1701,
+   "impr": 1699,
    "clicks": 5,
    "best_pos": 10.5,
    "title_matches_top_query": true,
@@ -268,15 +268,15 @@
    "source": "manual",
    "q_word": "is",
    "title_len": 68,
-   "age_days": 3.9,
+   "age_days": 4.0,
    "rival_exact": null,
-   "impr": 18,
+   "impr": 21,
    "clicks": 2,
    "best_pos": 3.5,
    "title_matches_top_query": false,
    "top_queries": [
-    "unprotected murder in galicia true story",
     "isabel fuentes pazos",
+    "unprotected murder in galicia true story",
     "murder in galicia true story"
    ]
   },
@@ -289,7 +289,7 @@
    "title_len": 62,
    "age_days": 6.9,
    "rival_exact": null,
-   "impr": 569,
+   "impr": 570,
    "clicks": 1,
    "best_pos": 2,
    "title_matches_top_query": true,
@@ -327,7 +327,7 @@
    "title_len": 59,
    "age_days": 8.9,
    "rival_exact": null,
-   "impr": 155,
+   "impr": 156,
    "clicks": 1,
    "best_pos": 5,
    "title_matches_top_query": true,
@@ -365,7 +365,7 @@
    "title_len": 59,
    "age_days": 10.2,
    "rival_exact": null,
-   "impr": 190,
+   "impr": 191,
    "clicks": 0,
    "best_pos": 10.7,
    "title_matches_top_query": true,
@@ -441,7 +441,7 @@
    "title_len": 65,
    "age_days": 7.8,
    "rival_exact": null,
-   "impr": 96,
+   "impr": 99,
    "clicks": 0,
    "best_pos": 8.3,
    "title_matches_top_query": true,
@@ -458,7 +458,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 24,
-   "age_days": 17.5,
+   "age_days": 17.6,
    "rival_exact": null,
    "impr": 64,
    "clicks": 0,
@@ -468,25 +468,6 @@
     "phishing test",
     "phishing test in dc",
     "phishing test for employees"
-   ]
-  },
-  {
-   "slug": "ali-g",
-   "title": "Who is the Ali G character?",
-   "kind": "other",
-   "source": "auto",
-   "q_word": "who",
-   "title_len": 27,
-   "age_days": 13.2,
-   "rival_exact": null,
-   "impr": 64,
-   "clicks": 0,
-   "best_pos": 9,
-   "title_matches_top_query": false,
-   "top_queries": [
-    "is ali g british",
-    "where is ali g from",
-    "when did ali g first appear on tv"
    ]
   },
   {
@@ -506,6 +487,25 @@
     "wta",
     "wta tennis",
     "wta tour tennis"
+   ]
+  },
+  {
+   "slug": "ali-g",
+   "title": "Who is the Ali G character?",
+   "kind": "other",
+   "source": "auto",
+   "q_word": "who",
+   "title_len": 27,
+   "age_days": 13.2,
+   "rival_exact": null,
+   "impr": 62,
+   "clicks": 0,
+   "best_pos": 9,
+   "title_matches_top_query": false,
+   "top_queries": [
+    "is ali g british",
+    "where is ali g from",
+    "when did ali g first appear on tv"
    ]
   },
   {
@@ -547,6 +547,25 @@
    ]
   },
   {
+   "slug": "arnold-schwarzenegger-last-name",
+   "title": "Arnold schwarzenegger last name meaning: German place-name origin",
+   "kind": "term",
+   "source": "longtail",
+   "q_word": "none",
+   "title_len": 65,
+   "age_days": 4.2,
+   "rival_exact": 2,
+   "impr": 36,
+   "clicks": 0,
+   "best_pos": 7,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "schwarzenegger meaning",
+    "schwarzenegg",
+    "arnold schwarzenegger name meaning"
+   ]
+  },
+  {
    "slug": "game-time-decision",
    "title": "What is a game-time decision? Meaning in the NFL injury report",
    "kind": "term",
@@ -555,7 +574,7 @@
    "title_len": 62,
    "age_days": 4.8,
    "rival_exact": null,
-   "impr": 33,
+   "impr": 34,
    "clicks": 0,
    "best_pos": 8.7,
    "title_matches_top_query": true,
@@ -563,25 +582,6 @@
     "game time decision",
     "game day decision meaning",
     "game time decision meaning"
-   ]
-  },
-  {
-   "slug": "arnold-schwarzenegger-last-name",
-   "title": "Arnold schwarzenegger last name meaning: German place-name origin",
-   "kind": "term",
-   "source": "longtail",
-   "q_word": "none",
-   "title_len": 65,
-   "age_days": 4.1,
-   "rival_exact": 2,
-   "impr": 33,
-   "clicks": 0,
-   "best_pos": 7,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "schwarzenegger meaning",
-    "schwarzenegg",
-    "arnold schwarzenegger name meaning"
    ]
   },
   {
@@ -609,7 +609,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 61,
-   "age_days": 9.9,
+   "age_days": 10.0,
    "rival_exact": null,
    "impr": 29,
    "clicks": 0,
@@ -644,7 +644,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 28,
-   "age_days": 12.6,
+   "age_days": 12.7,
    "rival_exact": null,
    "impr": 22,
    "clicks": 0,
@@ -684,12 +684,31 @@
    "title_len": 19,
    "age_days": 14.6,
    "rival_exact": null,
-   "impr": 17,
+   "impr": 19,
    "clicks": 0,
-   "best_pos": 24.4,
+   "best_pos": 24.6,
    "title_matches_top_query": true,
    "top_queries": [
     "aj dybantsa"
+   ]
+  },
+  {
+   "slug": "wwe-crown-jewel-2026",
+   "title": "What is WWE Crown Jewel? Date, place and card for 2026",
+   "kind": "event",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 54,
+   "age_days": 4.0,
+   "rival_exact": null,
+   "impr": 18,
+   "clicks": 0,
+   "best_pos": 7.5,
+   "title_matches_top_query": false,
+   "top_queries": [
+    "wwe crown jewel 2026 wikipedia",
+    "wwe crown jewel 2026",
+    "crown jewel 2026 wikipedia"
    ]
   },
   {
@@ -731,22 +750,22 @@
    ]
   },
   {
-   "slug": "wwe-crown-jewel-2026",
-   "title": "What is WWE Crown Jewel? Date, place and card for 2026",
-   "kind": "event",
+   "slug": "nasdaq-100",
+   "title": "What is the Nasdaq 100? Index of 100 large non-financial firms",
+   "kind": "term",
    "source": "auto",
    "q_word": "what",
-   "title_len": 54,
-   "age_days": 4.0,
+   "title_len": 62,
+   "age_days": 4.2,
    "rival_exact": null,
    "impr": 17,
    "clicks": 0,
-   "best_pos": 7.5,
-   "title_matches_top_query": false,
+   "best_pos": 21,
+   "title_matches_top_query": true,
    "top_queries": [
-    "wwe crown jewel 2026 wikipedia",
-    "wwe crown jewel 2026",
-    "crown jewel 2026 wikipedia"
+    "nasdaq 100 what is it",
+    "what is nasdaq 100",
+    "nasdaq100"
    ]
   },
   {
@@ -786,44 +805,6 @@
    ]
   },
   {
-   "slug": "lask",
-   "title": "What is LASK football club?",
-   "kind": "organization",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 27,
-   "age_days": 16.0,
-   "rival_exact": null,
-   "impr": 12,
-   "clicks": 0,
-   "best_pos": 8,
-   "title_matches_top_query": false,
-   "top_queries": [
-    "lask country",
-    "what is lask",
-    "lask what country"
-   ]
-  },
-  {
-   "slug": "nasdaq-100",
-   "title": "What is the Nasdaq 100? Index of 100 large non-financial firms",
-   "kind": "term",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 62,
-   "age_days": 4.2,
-   "rival_exact": null,
-   "impr": 12,
-   "clicks": 0,
-   "best_pos": 21,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "nasdaq 100 what is it",
-    "what is nasdaq 100",
-    "nasdaq100"
-   ]
-  },
-  {
    "slug": "mlb-manager-of-the-year-voting",
    "title": "How is MLB Manager of the Year voted? 30 writers, 3 spots, 5-3-1",
    "kind": "term",
@@ -832,14 +813,14 @@
    "title_len": 64,
    "age_days": 3.9,
    "rival_exact": null,
-   "impr": 12,
+   "impr": 13,
    "clicks": 0,
    "best_pos": 5,
    "title_matches_top_query": false,
    "top_queries": [
     "when is manager of the year announced mlb",
-    "when do they announce manager of the year",
-    "mlb manager of the year odds"
+    "mlb manager of the year odds",
+    "when do they announce manager of the year"
    ]
   },
   {
@@ -878,6 +859,25 @@
     "terminal list reece",
     "reece terminal list",
     "reece in terminal list"
+   ]
+  },
+  {
+   "slug": "lask",
+   "title": "What is LASK football club?",
+   "kind": "organization",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 27,
+   "age_days": 16.0,
+   "rival_exact": null,
+   "impr": 10,
+   "clicks": 0,
+   "best_pos": 8.8,
+   "title_matches_top_query": false,
+   "top_queries": [
+    "lask country",
+    "lask what country",
+    "lask is from which country"
    ]
   },
   {
@@ -1045,24 +1045,6 @@
    ]
   },
   {
-   "slug": "generic-congressional-ballot",
-   "title": "What is the generic congressional ballot: party preference poll for 2026",
-   "kind": "term",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 72,
-   "age_days": 8.3,
-   "rival_exact": null,
-   "impr": 5,
-   "clicks": 0,
-   "best_pos": 6,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "what is the generic ballot",
-    "what is a generic congressional ballot"
-   ]
-  },
-  {
    "slug": "consent-decree",
    "title": "What is a consent decree? Meaning and recent DOJ cases",
    "kind": "term",
@@ -1151,6 +1133,24 @@
    ]
   },
   {
+   "slug": "last-man-standing-match",
+   "title": "What is a Last Man Standing match in WWE? Rules and Crown Jewel 2026 bout",
+   "kind": "term",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 73,
+   "age_days": 4.0,
+   "rival_exact": null,
+   "impr": 4,
+   "clicks": 0,
+   "best_pos": 5.5,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "last man standing rules wwe",
+    "last man standing match rules wwe"
+   ]
+  },
+  {
    "slug": "cybercab",
    "title": "What is a Cybercab? Tesla's two-seat robotaxi, built in Austin, Texas",
    "kind": "product",
@@ -1168,13 +1168,31 @@
    ]
   },
   {
+   "slug": "non-tender",
+   "title": "What does non-tender mean in baseball? MLB deadline is Nov. 20",
+   "kind": "term",
+   "source": "manual",
+   "q_word": "what",
+   "title_len": 62,
+   "age_days": 4.8,
+   "rival_exact": null,
+   "impr": 4,
+   "clicks": 0,
+   "best_pos": 3.5,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "what does non tender mean in baseball",
+    "non-tender"
+   ]
+  },
+  {
    "slug": "relief-pitcher-of-the-year",
    "title": "What is the Relief Pitcher of the Year award? New MLB honor, first winners Nov. 11",
    "kind": "term",
    "source": "manual",
    "q_word": "what",
    "title_len": 82,
-   "age_days": 3.9,
+   "age_days": 4.0,
    "rival_exact": null,
    "impr": 4,
    "clicks": 0,
@@ -1216,6 +1234,40 @@
    "title_matches_top_query": true,
    "top_queries": [
     "nate eaton"
+   ]
+  },
+  {
+   "slug": "generic-congressional-ballot",
+   "title": "What is the generic congressional ballot: party preference poll for 2026",
+   "kind": "term",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 72,
+   "age_days": 8.3,
+   "rival_exact": null,
+   "impr": 3,
+   "clicks": 0,
+   "best_pos": 8.3,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "what is the generic ballot"
+   ]
+  },
+  {
+   "slug": "mlb-rookie-eligibility",
+   "title": "What makes a player a rookie in MLB? 130 at-bats, 50 innings, 45 days",
+   "kind": "term",
+   "source": "manual",
+   "q_word": "what",
+   "title_len": 69,
+   "age_days": 3.9,
+   "rival_exact": null,
+   "impr": 3,
+   "clicks": 0,
+   "best_pos": 9,
+   "title_matches_top_query": false,
+   "top_queries": [
+    "what are the ininnigs pitch to qualify for a rookie in mlb"
    ]
   },
   {
@@ -1293,7 +1345,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 42,
-   "age_days": 14.8,
+   "age_days": 14.9,
    "rival_exact": null,
    "impr": 2,
    "clicks": 0,
@@ -1372,23 +1424,6 @@
    ]
   },
   {
-   "slug": "last-man-standing-match",
-   "title": "What is a Last Man Standing match in WWE? Rules and Crown Jewel 2026 bout",
-   "kind": "term",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 73,
-   "age_days": 4.0,
-   "rival_exact": null,
-   "impr": 2,
-   "clicks": 0,
-   "best_pos": 5.5,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "last man standing match rules wwe"
-   ]
-  },
-  {
    "slug": "designated-for-assignment",
    "title": "What does designated for assignment mean? DFA in baseball",
    "kind": "term",
@@ -1406,47 +1441,13 @@
    ]
   },
   {
-   "slug": "mlb-rookie-eligibility",
-   "title": "What makes a player a rookie in MLB? 130 at-bats, 50 innings, 45 days",
-   "kind": "term",
-   "source": "manual",
-   "q_word": "what",
-   "title_len": 69,
-   "age_days": 3.9,
-   "rival_exact": null,
-   "impr": 2,
-   "clicks": 0,
-   "best_pos": 8.5,
-   "title_matches_top_query": false,
-   "top_queries": [
-    "what are the ininnigs pitch to qualify for a rookie in mlb"
-   ]
-  },
-  {
-   "slug": "non-tender",
-   "title": "What does non-tender mean in baseball? MLB deadline is Nov. 20",
-   "kind": "term",
-   "source": "manual",
-   "q_word": "what",
-   "title_len": 62,
-   "age_days": 4.8,
-   "rival_exact": null,
-   "impr": 2,
-   "clicks": 0,
-   "best_pos": 11,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "non-tender"
-   ]
-  },
-  {
    "slug": "reminders-of-him-book",
    "title": "Is Reminders of Him based on a book? Yes, Colleen Hoover's 2022 novel",
    "kind": "other",
    "source": "manual",
    "q_word": "is",
    "title_len": 69,
-   "age_days": 3.9,
+   "age_days": 4.0,
    "rival_exact": null,
    "impr": 2,
    "clicks": 0,
@@ -1478,7 +1479,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 26,
-   "age_days": 17.9,
+   "age_days": 18.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -1853,7 +1854,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 54,
-   "age_days": 9.9,
+   "age_days": 10.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2678,7 +2679,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 53,
-   "age_days": 6.6,
+   "age_days": 6.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2933,7 +2934,7 @@
    "source": "auto",
    "q_word": "none",
    "title_len": 70,
-   "age_days": 5.6,
+   "age_days": 5.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2948,7 +2949,7 @@
    "source": "auto",
    "q_word": "none",
    "title_len": 71,
-   "age_days": 5.6,
+   "age_days": 5.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3008,7 +3009,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 66,
-   "age_days": 5.5,
+   "age_days": 5.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3488,7 +3489,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 60,
-   "age_days": 4.7,
+   "age_days": 4.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3638,7 +3639,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 65,
-   "age_days": 4.0,
+   "age_days": 4.1,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3773,7 +3774,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 74,
-   "age_days": 3.8,
+   "age_days": 3.9,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3818,7 +3819,7 @@
    "source": "auto",
    "q_word": "none",
    "title_len": 22,
-   "age_days": 3.2,
+   "age_days": 3.3,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3848,7 +3849,7 @@
    "source": "auto",
    "q_word": "when",
    "title_len": 80,
-   "age_days": 3.1,
+   "age_days": 3.2,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3908,7 +3909,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 80,
-   "age_days": 3.0,
+   "age_days": 3.1,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3953,7 +3954,7 @@
    "source": "manual",
    "q_word": "what",
    "title_len": 78,
-   "age_days": 3.9,
+   "age_days": 4.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4088,7 +4089,7 @@
    "source": "manual",
    "q_word": "what",
    "title_len": 76,
-   "age_days": 3.9,
+   "age_days": 4.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
