@@ -2195,7 +2195,7 @@ def tmdb_candidates(store):
         if len(out) >= TMDB_PER_RUN or days.get(today, 0) + len(out) >= TMDB_PER_DAY or checks >= 8:
             break
         k_ = f"{x['type']}{x['id']}"
-        if k_ in tried or bad_text(x["title"]):
+        if (k_ in tried and hours_since(tried[k_]) < 12) or bad_text(x["title"]):   # не вышло — пробуем снова через 12 ч
             continue
         tried[k_] = now_iso()
         checks += 1
@@ -2449,7 +2449,10 @@ def explain(store):
                 src = dict(src, blocks=list(src["blocks"]) + [
                     "[Note] This page is written ahead of a US release. Actors credited in a released film or series are public "
                     "figures in that role; the TMDB listing is a reliable source for the cast, character names, release date and "
-                    "creators. Say plainly what the listing shows; do not guess plot details or anything about private lives."])
+                    "creators. Say plainly what the listing shows; do not guess plot details or anything about private lives. "
+                    "Keep it short and stick to what the sources state outright: who plays the role, what the film or series is, "
+                    "when and where it comes out, and the actor's earlier credits. Do not explain reasons for release-date "
+                    "changes or anything else the sources only hint at."])
             WRITE_FAIL[0] = ""
             # у карточек фильмов короткие факты (названия, даты, «adapted from the novel by…») — их нельзя перефразировать
             res = write_explainer(item, t, src, questions, key, max_runs=3 if item.get("tmdb") else 1)
@@ -2459,8 +2462,10 @@ def explain(store):
             draft = (f"{res['title']}\n\n{res['answer']}\n\n{res['body']}\n\nIn the news: {res['in_the_news']}\n\n"
                      + "\n".join(f"Q: {f.get('q', '')} A: {f.get('a', '')}" for f in res.get("faq", [])))
             if not review(store, item["kind"] + " explainer", res["title"], draft, src, key):
-                res = write_explainer(item, t, src, questions, key, store["review_log"][-1]["reason"])
+                res = write_explainer(item, t, src, questions, key, store["review_log"][-1]["reason"],
+                                      max_runs=3 if item.get("tmdb") else 1)
                 if not res or bad_text(res.get("title", ""), ub):
+                    log(f"'{item['query']}' после правки не написано: {WRITE_FAIL[0]}")
                     continue
                 draft = (f"{res['title']}\n\n{res['answer']}\n\n{res['body']}\n\nIn the news: {res['in_the_news']}\n\n"
                          + "\n".join(f"Q: {f.get('q', '')} A: {f.get('a', '')}" for f in res.get("faq", [])))
