@@ -90,10 +90,31 @@
 | 18 нояб | Netflix: Win the Mall (шопинг-шоу, ведущая Haley Baylee) | what is win the mall | — писать 15–17 нояб |
 | 20 нояб | Netflix: Primetime Preacher$ | — пропуск (религия) | — |
 | 17 нояб, 21 дек | Леониды; зимнее солнцестояние | заняты гигантами — пропуск | — |
+| 12 нояб | Latin Grammys (Лас-Вегас, Univision; Edgar Barrera — 10 номинаций) | what is the difference between the latin grammys and the grammys | ✅ latin-grammys-vs-grammys |
+| 18 нояб | CMA Awards, 60-е (ABC, 7 p.m. CT) | when are the cma awards 2026 | ✅ cma-awards-2026-date |
+| 9–11 нояб | Massie: 8 статей импичмента Hegseth, голосование до 11 нояб | has a defense secretary ever been impeached; is thomas massie a republican or democrat (Breakout в Trends) | ✅ has-a-defense-secretary-been-impeached, is-thomas-massie-a-republican |
+| 1 янв 2027 (Айова 1 дек) | Medicaid: требования работы 80 ч/мес; в Trends растут «medicaid portal / why is medicaid changing» | when do medicaid work requirements start | ✅ medicaid-work-requirements-start-date |
+| 12 нояб | Netflix: The Empress, 3-й (финальный) сезон | is the empress on netflix a true story | ✅ the-empress-netflix-true-story |
+| 18 нояб | Netflix: Win the Mall (Haley Baylee) | what is win the mall on netflix | ✅ what-is-win-the-mall |
+| 12–20 нояб | Утренний «парад» планет, Марс–Юпитер 14–17 нояб, Меркурий 20 нояб | is there a planet alignment in november 2026 | ✅ planet-alignment-november-2026 |
+| 18 нояб | National Book Awards (Нью-Йорк, ведущий Kyle MacLachlan) | when are the national book awards 2026 | ✅ national-book-awards-2026 |
+| 12 нояб | Giants QB J.J. McCarthy с hip pointer играет в четверг («what is a hip pointer» +1450%) | what is a hip pointer injury | ✅ what-is-a-hip-pointer |
+| 25 нояб | Кино: Focker-In-Law (Stiller, De Niro, Ariana Grande) | focker-in-law cast / is it a sequel | — писать ~21–23 нояб |
+| 24 нояб | Полнолуние Beaver Supermoon (первое из трёх подряд) | is the november full moon a supermoon | — писать ~20–22 нояб |
+| ~19 нояб | AFBF: стоимость ужина на День благодарения | how much does thanksgiving dinner cost 2026 | — после публикации |
+| 17 нояб | Prime Video: Surviving the London Nail Bombings | — пропуск (теракт, жертвы) | — |
+| 10 нояб | Hulu: Get Huge: Looksmaxxing to Death | — пропуск (смерти, препараты) | — |
+| 10 дек (JP) | PlayStation Portal: новая японская версия с доп. памятью | — факты противоречат, только Япония | — |
 Правило: писать за 1–5 дней до события (Google индексирует ~2/3 новых страниц за сутки).
 Проверка: через 3–7 дней после даты сверить с Trends CSV и Search Console — угадали или нет, записать урок сюда.
 
 ## Уроки
+- 10 нояб, вечер (GSC: последний полный день 7 нояб — 36 кликов / 3951 показ; 8 нояб 6/230; 9 нояб 2/11 — данные ещё догружаются):
+  - learn.json: «when»-страницы — 2.5 клика/стр. (лучшее вопросительное слово), «is» — 0.67; заголовок = реальный запрос → 100% страниц с показами и 0.72 клика/стр. против 0.14. Вывод: для событий писать «when is/are X 2026» и «is X a true story».
+  - Подсказки Google по страницам 10 нояб (утро) — все 10 фраз уже в подсказках (cliff-booth-release-date, does-mlb-have-a-salary-cap, guarding-stars-book, how-to-rob-a-bank-true-story, what-does-maxxing-mean, what-does-unc-mean, what-is-a-motion-to-table, what-is-a-privileged-resolution, what-is-dandori-academy, what-is-the-bearista-cup). GSC по ним ещё нет.
+  - Страницы 7 нояб: показы только у record-vs-song-of-the-year (2, поз. 9.5), when-does-new-congress-start (2, поз. 18), silver-slugger-award (1, поз. 75) — рано судить.
+  - Trends 10 нояб: снова всплеск слов из словесной игры (flimflam, card shark, shell game, con job, kerfuffle, foofaraw) — не писали. «what is a hip pointer» вырос из-за травмы QB — травма спортсмена → термин травмы (подтверждает закономерность).
+  - Новое: депутат, проигравший праймериз, но затеявший громкое голосование → «is X a republican or democrat», «did X win the primary» (Breakout по Massie).
 - 10 нояб, утро (коротко; GSC: 7 нояб — 36 кликов / 3951 показ, 8 нояб — 6 / 230, вероятно неполные):
   - learn.json: заголовок = реальный запрос → 100% страниц с показами и 0.68 клика/стр. против 16% и 0.15; ручные 2.23 клика/стр., авто 0.03; «who» 0.1 клика/стр. — людей не писать.
   - Новое: по наградам люди спрашивают «КОГДА», а не «как голосуют»: mlb-manager-of-the-year-voting → «when is manager of the year announced mlb», relief-pitcher-of-the-year → «when is reliever of the year announced». Для событий-наград ставить дату объявления в заголовок/ответ.
