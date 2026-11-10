@@ -2147,12 +2147,13 @@ def tmdb_upcoming(store):
                       with_release_type="2|3|4|6", sort_by="popularity.desc", include_adult="false", page=page) or {}
         out += [{"type": "movie", "id": x["id"], "title": x.get("title", ""), "date": x.get("release_date", ""),
                  "pop": x.get("popularity", 0)} for x in mv.get("results", [])]
-        tv = tmdb_get("/discover/tv", watch_region="US", with_watch_monetization_types="flatrate",
+        tv = tmdb_get("/discover/tv", with_original_language="en",
                       **{"first_air_date.gte": a, "first_air_date.lte": b}, sort_by="popularity.desc",
                       include_adult="false", page=page) or {}
         out += [{"type": "tv", "id": x["id"], "title": x.get("name", ""), "date": x.get("first_air_date", ""),
                  "pop": x.get("popularity", 0)} for x in tv.get("results", [])]
-    out = [x for x in out if x["title"] and (x["pop"] or 0) >= TMDB_MIN_POP]
+    old_ = (d0 - timedelta(days=150)).isoformat()      # старые фильмы, которые просто снова выходят (Dune 2021) — не наше
+    out = [x for x in out if x["title"] and (x["pop"] or 0) >= TMDB_MIN_POP and (x["date"] or "") >= old_]
     out.sort(key=lambda x: -(x["pop"] or 0))
     st["list"], st["list_at"] = out[:80], now_iso()
     return st["list"]
