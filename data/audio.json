@@ -1570,5 +1570,47 @@
 "hash": "299584364715",
 "made": "2026-11-10T15:33:57+00:00",
 "sec": 140
+},
+"x/ring-drone-cam": {
+"file": "audio/x/ring-drone-cam.mp3",
+"hash": "ee05e67fb1d7",
+"made": "2026-11-10T16:31:56+00:00",
+"sec": 129
+},
+"x/ring-rover-cam": {
+"file": "audio/x/ring-rover-cam.mp3",
+"hash": "b906743dc54a",
+"made": "2026-11-10T16:33:21+00:00",
+"sec": 161
+},
+"x/what-is-a-hip-pointer": {
+"file": "audio/x/what-is-a-hip-pointer.mp3",
+"hash": "69f15ca9dccd",
+"made": "2026-11-10T16:34:12+00:00",
+"sec": 99
+},
+"x/what-is-win-the-mall": {
+"file": "audio/x/what-is-win-the-mall.mp3",
+"hash": "2e526c4c8b29",
+"made": "2026-11-10T16:35:03+00:00",
+"sec": 100
+},
+"x/cme-fedwatch": {
+"file": "audio/x/cme-fedwatch.mp3",
+"hash": "0af3b35379f7",
+"made": "2026-11-10T16:36:06+00:00",
+"sec": 120
+},
+"x/anthropic-ipo": {
+"file": "audio/x/anthropic-ipo.mp3",
+"hash": "785a6adac342",
+"made": "2026-11-10T16:37:12+00:00",
+"sec": 125
+},
+"x/cpi-report": {
+"file": "audio/x/cpi-report.mp3",
+"hash": "ec42ebc16586",
+"made": "2026-11-10T16:38:17+00:00",
+"sec": 122
 }
 }
