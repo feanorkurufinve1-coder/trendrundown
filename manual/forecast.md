@@ -78,10 +78,28 @@
 | 18 нояб | Netflix: Win the Mall (реалити, шопинг) | what is win the mall | — |
 | 25 нояб | Netflix: The Mosquito Bowl | is the mosquito bowl a true story | — (писать ~20 нояб) |
 
+| 10–13 нояб | Massie снова вносит privileged resolution об импичменте Hegseth; лидеры GOP могут «tabled» | what is a privileged resolution; what is a motion to table | ✅ what-is-a-privileged-resolution, what-is-a-motion-to-table |
+| 12 нояб | Pikmin 4 – Switch 2 Edition + Dandori Academy | what is dandori academy | ✅ what-is-dandori-academy |
+| 13 нояб | Кино: How to Rob a Bank (Hoult; путают с доком Netflix 2024 о Scott Scurlock) | is how to rob a bank a true story | ✅ how-to-rob-a-bank-true-story |
+| 25 нояб / 23 дек | The Further Mis-Adventures of Cliff Booth: IMAX / Netflix (в Trends «the misadventures of cliff booth release date» — Breakout) | the misadventures of cliff booth release date | ✅ cliff-booth-release-date |
+| 1 дек | MLB: истекает CBA; владельцы предлагают salary cap $258.2M с 2028 | does mlb have a salary cap | ✅ does-mlb-have-a-salary-cap |
+| 25 окт (слово года) | Dictionary.com: maxxing; шорт-лист: unc, affordability, data center, odyssey | what does maxxing mean; what does unc mean | ✅ what-does-maxxing-mean, what-does-unc-mean |
+| 18 нояб | Netflix: Guarding Stars (по роману The Bodyguard, Katherine Center) | is guarding stars based on a book | ✅ guarding-stars-book |
+| 10 нояб / 17 нояб / 1 дек | Starbucks: mystery Bearista Surprise Box / Red Cup Day / возврат оригинального Bearista | what is the bearista cup | ✅ what-is-the-bearista-cup |
+| 18 нояб | Netflix: The Law of Beasts (Польша, по реальному делу; убийца детей выходит на свободу) | is the law of beasts a true story | — писать 14–16 нояб; жертв не называть |
+| 18 нояб | Netflix: Win the Mall (шопинг-шоу, ведущая Haley Baylee) | what is win the mall | — писать 15–17 нояб |
+| 20 нояб | Netflix: Primetime Preacher$ | — пропуск (религия) | — |
+| 17 нояб, 21 дек | Леониды; зимнее солнцестояние | заняты гигантами — пропуск | — |
 Правило: писать за 1–5 дней до события (Google индексирует ~2/3 новых страниц за сутки).
 Проверка: через 3–7 дней после даты сверить с Trends CSV и Search Console — угадали или нет, записать урок сюда.
 
 ## Уроки
+- 10 нояб, утро (коротко; GSC: 7 нояб — 36 кликов / 3951 показ, 8 нояб — 6 / 230, вероятно неполные):
+  - learn.json: заголовок = реальный запрос → 100% страниц с показами и 0.68 клика/стр. против 16% и 0.15; ручные 2.23 клика/стр., авто 0.03; «who» 0.1 клика/стр. — людей не писать.
+  - Новое: по наградам люди спрашивают «КОГДА», а не «как голосуют»: mlb-manager-of-the-year-voting → «when is manager of the year announced mlb», relief-pitcher-of-the-year → «when is reliever of the year announced». Для событий-наград ставить дату объявления в заголовок/ответ.
+  - reminders-of-him-book: ищут «is reminders of him based on a TRUE STORY», а не «on a book» — для экранизаций книг давать в FAQ «is X a true story».
+  - Страницы 9 нояб (1 день): 9 из 10 фраз в подсказках Google; ❌ «new snap rules for stores». Страницы 8 нояб: ❌ по-прежнему нет «where are the harlem park three now»; остальные ✅. GSC по ним ещё нет.
+  - Всплески «flimflam / card shark / shell game / con job / fun sponge» и «loamy / loam / loafy» — снова разгадки словесной игры, не писали.
 - 9 нояб, утро (коротко; GSC последний полный день 7 нояб: 36 кликов / 3951 показ; данные за 8 нояб неполные):
   - learn.json: заголовок совпадает с реальным запросом → 100% страниц с показами и 0.57 клика/стр. против 15% и 0.16 — точная фраза запроса в заголовке главное. Термины (term) — 0.5 клика/стр., ручные страницы 3.8 клика/стр. против 0.03 у авто.
   - Страницы 8 нояб: 9 из 10 фраз уже в подсказках Google (carter-faith, heartland-netflix-cast, how-are-grammy-nominations-decided, how-is-senate-majority-leader-chosen, i-play-rocky-true-story, is-leonida-a-real-place, most-mvp-awards-mlb, rookie-cy-young-winner, the-altruists-true-story); ❌ нет «where are the harlem park three now». GSC по ним ещё нет.

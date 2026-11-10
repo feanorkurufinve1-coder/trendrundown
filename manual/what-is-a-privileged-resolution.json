@@ -1,0 +1,54 @@
+{
+ "subject": "Privileged resolution",
+ "kind": "term",
+ "query": "what is a privileged resolution",
+ "title": "What is a privileged resolution? How Massie can force a Hegseth vote",
+ "answer": "A privileged resolution is a measure the House must deal with quickly, without waiting for committee action or leadership approval. When a rank-and-file member offers one, the House has to take it up within two legislative days. Rep. Thomas Massie is using this route to force a vote on impeaching Defense Secretary Pete Hegseth.",
+ "body": "Under House Rule IX, a member can rise \"to a question of the privileges of the House\" and send a resolution to the clerk's desk, where it is read aloud. If the majority or minority leader offers it, the speaker rules on it right away. If any other member offers it, the speaker can put it off, but only to a time \"within the next two legislative days,\" according to the Congressional Research Service. Impeachment resolutions are also privileged, and Bloomberg Government and ABC News report that the same two-legislative-day clock applies to Massie's. Once a privileged resolution comes up, the House can debate it for an hour, vote on it directly, or vote on a motion to table or refer it, which can end it without a vote on the merits.\n\nMassie, a Kentucky Republican, first offered eight articles of impeachment against Hegseth as a privileged resolution on Sept. 15, 2026, Bloomberg Government reported. The articles accuse Hegseth of exceeding his constitutional authority and violating congressional war powers. No vote happened: Speaker Mike Johnson canceled the last scheduled legislative day before the midterms, and Massie told ABC News on Sept. 16 that he would have to refile when Congress returned.\n\nABC News reported on Nov. 9 that Massie could reintroduce the resolution \"as soon as Monday,\" which would start the two-day clock again. Massie lost his Republican primary and leaves Congress in January. Even if the House impeached Hegseth, removal would take a two-thirds vote in the Senate, which ABC called unlikely.",
+ "in_the_news": "Rep. Thomas Massie says he will refile his privileged impeachment resolution against Defense Secretary Pete Hegseth after the House returned on Nov. 9, 2026, forcing a floor vote within two legislative days.",
+ "faq": [
+  {
+   "q": "What does \"privileged\" mean in Congress?",
+   "a": "It means the measure gets priority on the floor and can be brought up without going through a committee or waiting for leaders to schedule it."
+  },
+  {
+   "q": "How long does the House have to vote on a privileged resolution?",
+   "a": "When a rank-and-file member offers it, the speaker can delay it only to a time within the next two legislative days. Legislative days are days the House is in session, not calendar days."
+  },
+  {
+   "q": "Can the House avoid voting on the impeachment articles themselves?",
+   "a": "Yes. Motions to table or to refer a privileged resolution are in order. A successful motion to table ends it without a direct vote on the articles."
+  },
+  {
+   "q": "What is a question of privileges of the House?",
+   "a": "A question \"affecting the rights of the House collectively, its safety, dignity, and the integrity of its proceedings,\" as defined in House Rule IX."
+  },
+  {
+   "q": "How many votes would it take to impeach Hegseth?",
+   "a": "A simple majority of the House. ABC News reported Massie would need three Republicans to join all Democrats. Removal would then need two-thirds of the Senate."
+  }
+ ],
+ "links": [
+  [
+   "ABC News",
+   "Trump says he'd 'stand by' Hegseth even if he's impeached",
+   "https://abcnews.com/Politics/defense-secretary-pete-hegseth-face-impeachment-vote/story?id=137926360"
+  ],
+  [
+   "Bloomberg Government",
+   "House to Vote on Impeaching Hegseth Under Maneuver by Massie",
+   "https://news.bgov.com/bloomberg-government-news/house-to-vote-on-impeaching-hegseth-under-maneuver-by-massie"
+  ],
+  [
+   "Congressional Research Service",
+   "Questions of Privilege in the House",
+   "https://www.everycrsreport.com/reports/98-411.html"
+  ]
+ ],
+ "topics": [
+  "congress"
+ ],
+ "made": "2026-11-10T01:53:00+00:00",
+ "first": "2026-11-10T01:53:00+00:00",
+ "updated": "2026-11-10T01:53:00+00:00"
+}
