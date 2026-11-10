@@ -1420,5 +1420,53 @@
 "hash": "9f0d99a967e3",
 "made": "2026-11-09T19:43:10+00:00",
 "sec": 110
+},
+"x/cliff-booth-release-date": {
+"file": "audio/x/cliff-booth-release-date.mp3",
+"hash": "fc68423cb433",
+"made": "2026-11-10T03:29:34+00:00",
+"sec": 111
+},
+"x/does-mlb-have-a-salary-cap": {
+"file": "audio/x/does-mlb-have-a-salary-cap.mp3",
+"hash": "ca4dff5cce1d",
+"made": "2026-11-10T03:30:16+00:00",
+"sec": 126
+},
+"x/guarding-stars-book": {
+"file": "audio/x/guarding-stars-book.mp3",
+"hash": "10d9afaee29d",
+"made": "2026-11-10T03:30:53+00:00",
+"sec": 106
+},
+"x/how-to-rob-a-bank-true-story": {
+"file": "audio/x/how-to-rob-a-bank-true-story.mp3",
+"hash": "980dbbf35a9b",
+"made": "2026-11-10T03:31:33+00:00",
+"sec": 113
+},
+"x/what-does-maxxing-mean": {
+"file": "audio/x/what-does-maxxing-mean.mp3",
+"hash": "6e9fd6b6bd42",
+"made": "2026-11-10T03:32:03+00:00",
+"sec": 91
+},
+"x/what-does-unc-mean": {
+"file": "audio/x/what-does-unc-mean.mp3",
+"hash": "d5f0b0e7a949",
+"made": "2026-11-10T03:32:34+00:00",
+"sec": 88
+},
+"x/what-is-a-motion-to-table": {
+"file": "audio/x/what-is-a-motion-to-table.mp3",
+"hash": "8ee275256ca2",
+"made": "2026-11-10T03:33:14+00:00",
+"sec": 115
+},
+"x/what-is-a-privileged-resolution": {
+"file": "audio/x/what-is-a-privileged-resolution.mp3",
+"hash": "a71227aa8d6b",
+"made": "2026-11-10T03:34:04+00:00",
+"sec": 145
 }
 }
