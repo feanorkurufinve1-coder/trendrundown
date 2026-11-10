@@ -1,18 +1,17 @@
 {
- "made": "2026-11-10T00:47:47+00:00",
+ "made": "2026-11-10T01:02:10+00:00",
  "days": [
-  "2026-11-06",
   "2026-11-07",
-  "2026-11-08"
+  "2026-11-08",
+  "2026-11-09"
  ],
  "pages": [
   {
    "page": "/x/dane-cook-brother",
-   "clicks_3d": 21,
-   "impr_3d": 3079,
+   "clicks_3d": 19,
+   "impr_3d": 2680,
    "pos": 8.9,
    "by_day": {
-    "2026-11-06": 2,
     "2026-11-07": 18,
     "2026-11-08": 1
    },
@@ -20,47 +19,34 @@
   },
   {
    "page": "/w/the-body-cast",
-   "clicks_3d": 13,
-   "impr_3d": 300,
-   "pos": 8.0,
+   "clicks_3d": 9,
+   "impr_3d": 182,
+   "pos": 7.6,
    "by_day": {
-    "2026-11-06": 4,
     "2026-11-07": 8,
-    "2026-11-08": 1
+    "2026-11-08": 1,
+    "2026-11-09": 0
    },
    "manual": false
   },
   {
    "page": "/x/murder-in-galicia-true-story",
-   "clicks_3d": 9,
-   "impr_3d": 273,
-   "pos": 7.4,
+   "clicks_3d": 5,
+   "impr_3d": 238,
+   "pos": 8.0,
    "by_day": {
-    "2026-11-06": 4,
     "2026-11-07": 5,
-    "2026-11-08": 0
-   },
-   "manual": true
-  },
-  {
-   "page": "/x/scott-colom",
-   "clicks_3d": 3,
-   "impr_3d": 285,
-   "pos": 20.1,
-   "by_day": {
-    "2026-11-06": 2,
-    "2026-11-07": 1,
-    "2026-11-08": 0
+    "2026-11-08": 0,
+    "2026-11-09": 0
    },
    "manual": true
   },
   {
    "page": "/x/alaska-ranked-choice-voting",
    "clicks_3d": 2,
-   "impr_3d": 12,
-   "pos": 13.1,
+   "impr_3d": 9,
+   "pos": 14.6,
    "by_day": {
-    "2026-11-06": 0,
     "2026-11-07": 2,
     "2026-11-08": 0
    },
@@ -69,36 +55,24 @@
   {
    "page": "/c/entertainment",
    "clicks_3d": 2,
-   "impr_3d": 3,
-   "pos": 2.0,
+   "impr_3d": 4,
+   "pos": 2.5,
    "by_day": {
-    "2026-11-08": 2
+    "2026-11-08": 2,
+    "2026-11-09": 0
    },
    "manual": false
   },
   {
-   "page": "/x/under-siege-netflix-true-story",
+   "page": "/x/scott-colom",
    "clicks_3d": 1,
-   "impr_3d": 58,
-   "pos": 5.7,
+   "impr_3d": 126,
+   "pos": 21.4,
    "by_day": {
-    "2026-11-06": 1,
-    "2026-11-07": 0,
+    "2026-11-07": 1,
     "2026-11-08": 0
    },
    "manual": true
-  },
-  {
-   "page": "/x/gen-z-regelt",
-   "clicks_3d": 1,
-   "impr_3d": 42,
-   "pos": 7.9,
-   "by_day": {
-    "2026-11-06": 0,
-    "2026-11-07": 0,
-    "2026-11-08": 1
-   },
-   "manual": false
   },
   {
    "page": "/w/the-chosen-season-6-cast",
@@ -107,6 +81,28 @@
    "pos": 7.3,
    "by_day": {
     "2026-11-07": 0,
+    "2026-11-08": 0
+   },
+   "manual": false
+  },
+  {
+   "page": "/x/gen-z-regelt",
+   "clicks_3d": 1,
+   "impr_3d": 17,
+   "pos": 7.8,
+   "by_day": {
+    "2026-11-07": 0,
+    "2026-11-08": 1
+   },
+   "manual": false
+  },
+  {
+   "page": "/c/world",
+   "clicks_3d": 1,
+   "impr_3d": 4,
+   "pos": 2.6,
+   "by_day": {
+    "2026-11-07": 1,
     "2026-11-08": 0
    },
    "manual": false
