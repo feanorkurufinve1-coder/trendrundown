@@ -4655,7 +4655,12 @@ def build_site(store):
     for pre, coll in (("x/", ex), ("w/", pv)):
         for x in coll.values():
             pth = pre + x["slug"]
-            if x.get("manual") or ("/" + pth) in GSC_PATHS:
+            if x.get("manual"):
+                continue
+            if pre == "x/":                      # 11.11: ВСЕ автоматические пояснения (дешёвый ИИ) — не в выдачу
+                NOINDEX.add(pth)
+                continue
+            if ("/" + pth) in GSC_PATHS:
                 continue
             try:
                 young = hours_since(x.get("made") or x.get("first") or "2000-01-01T00:00:00+00:00") < INDEX_GRACE_DAYS * 24
