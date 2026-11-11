@@ -484,7 +484,13 @@ def add_articles(t, items):
 CLOUD = bool(os.environ.get("GITHUB_ACTIONS"))   # программа запущена в облаке GitHub
 
 
+API_OFF = True    # 12.11: платный ИИ сайта выключен полностью — баланс не тратим. Сайт только собирает данные,
+                  # страницы пишет ежедневная задача (подписка Claude). Включить обратно: API_OFF = False
+
+
 def api_key():
+    if API_OFF:
+        return ""
     if os.environ.get("ANTHROPIC_API_KEY"):
         return os.environ["ANTHROPIC_API_KEY"].strip()
     try:
@@ -686,6 +692,8 @@ AI_TOOL = {
 
 def ai_call(prompt, key, tool=None, max_tokens=2000):
     """Запрос к Claude. Ответ приходит готовыми полями через инструмент — без разбора текста."""
+    if API_OFF:
+        raise RuntimeError("платный ИИ выключен (API_OFF)")
     tool = tool or AI_TOOL
     body = json.dumps({"model": AI_MODEL, "max_tokens": max_tokens, "tools": [tool],
                        "tool_choice": {"type": "tool", "name": tool["name"]},
@@ -733,6 +741,8 @@ Every fact must come from a search result. If you found nothing deeper than the 
 
 def dig(t, key, prompt=None):
     """ИИ-исследователь с поиском в интернете: ищет предысторию и неочевидную причину тренда."""
+    if API_OFF:
+        raise RuntimeError("платный ИИ выключен (API_OFF)")
     if prompt is None:
         heads = "\n".join(f"- {a['source']}: {a['title']}" for a in t["articles"][-10:])
         traffic = t["traffic"][-1][2] if t["traffic"] else "unknown"
