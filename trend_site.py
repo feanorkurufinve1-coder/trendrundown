@@ -41,7 +41,7 @@ CATS = {                   # разделы сайта: тема попадае�
 ONLY_WITH_SUMMARY = True  # публиковать только темы со сводкой ИИ (защита от санкций Google за «массовый контент»)
 MAX_NEW_PER_DAY = 4        # сколько новых тем в сутки (по времени США) получают сводку и попадают на сайт — самые крупные
 EXPLAIN = True             # объяснения: что люди начнут гуглить после новости (термины, законы, места, малоизвестные люди)
-MAX_EXPLAINERS_PER_DAY = 40   # сколько новых объяснений в сутки
+MAX_EXPLAINERS_PER_DAY = 10   # сколько новых объяснений в сутки
 TREND_EXPLAIN_PER_RUN = 4     # пояснения о трендах, по которым новость не писалась (лимит новостей) — сколько за проход
 EXPLAINERS_PER_TOPIC = 3      # не больше стольких объяснений из одной новости (включая пояснение о самом запросе)
 MIN_FULL_ARTICLES = 2      # писать сводку, только если хотя бы столько статей удалось прочитать целиком (не одни заголовки)
@@ -1858,8 +1858,8 @@ def trend_item(t):
 
 # ---- Длинный хвост: узкие вопросы из подсказок Google, на которые в интернете ещё нет точного ответа ----
 LT_EVERY_H = 1          # как часто копаем подсказки (часов)
-LT_PER_RUN = 3          # сколько узких вопросов за раз отдаём писателю
-LT_PER_DAY = 30         # и не больше стольких в сутки
+LT_PER_RUN = 1          # сколько узких вопросов за раз отдаём писателю
+LT_PER_DAY = 4         # и не больше стольких в сутки
 LT_PREFIXES = ["what is", "what does", "what happened to", "why did", "why is", "is", "where is", "how did", "when is"]
 LT_ALPHA = "abcdefghijklmnopqrstuvwxyz"
 LT_Q = re.compile(r"(?i)^(what|why|how|is|are|does|did|where|when|who|can|will)\b|\b(meaning|explained|mean)$")
@@ -2112,8 +2112,8 @@ def longtail_candidates(store):
 
 
 # ---- TMDB: фильмы и сериалы, которые выйдут в США через 1–10 дней. Пишем «правдивая ли история / по книге ли» ЗАРАНЕЕ ----
-TMDB_PER_RUN = 3        # сколько страниц за один проход
-TMDB_PER_DAY = 15        # тест: не больше стольких в сутки
+TMDB_PER_RUN = 1        # сколько страниц за один проход
+TMDB_PER_DAY = 3        # тест: не больше стольких в сутки
 TMDB_MIN_POP = 4        # совсем неизвестное никто не ищет
 TMDB_CAST_MAX_POP = 10000   # берём героев всех главных актёров; занято ли — решает проверка выдачи
 TMDB_TRUE = re.compile(r"(?i)true story|real event|real person|biograph|true crime|historical figure|based on memoir")
@@ -3795,7 +3795,7 @@ def _page(title, desc, body, path, depth, extra_head="", og_img=""):
 {f'<meta property="og:image" content="{E(SITE_URL + "/" + og_img)}"><meta name="twitter:card" content="summary_large_image">' if og_img else ''}<meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 {FONT_LINKS}
-<style>{CSS}</style>{ga_snippet()}{"" if path in NO_ADS else ads_head()}{extra_head}</head><body><div class="wrap">
+<style>{CSS}</style>{ga_snippet()}{"" if path in NO_ADS else ads_head()}{extra_head}{'<meta name="robots" content="noindex,follow">' if path.replace(".html", "") in NOINDEX and "noindex" not in extra_head else ""}</head><body><div class="wrap">
 <header class="top"><div class="mast"><div class="ear">Late Edition<b>Every Trend</b>Explained around the clock</div>
 <div><a class="brand" href="{up}index.html">The Trend Rundown</a><div class="motto">“{E(TAGLINE)}”</div></div>
 <div class="ear">Price<b>Free</b>All the news America searches</div></div>
@@ -4160,11 +4160,15 @@ def source_line(t, ai):
 
 
 GSC_PATHS = set()                      # страницы, которые Google уже показывает (заполняется в build_site)
+NOINDEX = set()                        # страницы, которые просим Google не брать в выдачу (слабые: без показов за 28 дней)
+INDEX_GRACE_DAYS = 14                  # новой странице даём столько дней, чтобы Google её оценил
 
 
 def thin_ok(t):
     """Индексировать страницу тренда: есть свой текст или Google её уже показывает."""
-    return bool(t.get("ai")) or ("/t/" + t["slug"]) in GSC_PATHS
+    # с 11.11: страницы-тренды (новости) в выдачу только если Google их уже показывает — короткие однотипные
+    # новости тянули вниз оценку всего сайта (Google выкинул из индекса даже хорошие пояснения)
+    return ("/t/" + t["slug"]) in GSC_PATHS
 
 
 def build_topic(t, related, same=()):
@@ -4638,6 +4642,24 @@ def build_site(store):
     HAS_EXPLAINED = bool(ex)
     pv = {k: x for k, x in store.get("previews", {}).items() if x.get("slug") and not bad_text(json.dumps(x, ensure_ascii=False), ub)}
     HAS_CAST = bool(pv)
+    # чистка выдачи: пояснения и страницы актёров без показов в Google за 28 дней и старше 14 дней — noindex
+    # (страница остаётся на сайте для читателей, но Google её не оценивает). Ручные прогнозы не трогаем.
+    NOINDEX.clear()
+    for pre, coll in (("x/", ex), ("w/", pv)):
+        for x in coll.values():
+            pth = pre + x["slug"]
+            if x.get("manual") or ("/" + pth) in GSC_PATHS:
+                continue
+            try:
+                young = hours_since(x.get("made") or x.get("first") or "2000-01-01T00:00:00+00:00") < INDEX_GRACE_DAYS * 24
+            except Exception:
+                young = False
+            if not young:
+                NOINDEX.add(pth)
+    for t in topics.values():
+        if not thin_ok(t):
+            NOINDEX.add("t/" + t["slug"])
+    log(f"В выдачу Google не пускаем {len(NOINDEX)} слабых страниц (остаются на сайте)")
     by_cat = {}
     for t in sorted(topics.values(), key=lambda x: x.get("last_seen", x["first_seen"]), reverse=True):
         by_cat.setdefault(t.get("cat"), []).append(t)
@@ -4676,16 +4698,17 @@ def build_site(store):
     for fn, (title, body) in STATIC.items():
         w(fn, page(f"{title} | {SITE_NAME}", f"{title} — {SITE_NAME}", body, fn, 0))
     w("404.html", page(f"Not found | {SITE_NAME}", "Page not found", "<h1>Page not found</h1><p><a href='index.html'>See what's trending now</a></p>", "404.html", 0))
-    urls = ([f"{SITE_URL}/", f"{SITE_URL}/archive"] + ([f"{SITE_URL}/explained"] if ex else [])
+    urls_all = ([f"{SITE_URL}/", f"{SITE_URL}/archive"] + ([f"{SITE_URL}/explained"] if ex else [])
             + [f"{SITE_URL}/c/{c}" for c in counts]
             + [f"{SITE_URL}/x/{x['slug']}" for x in ex.values()]
             + ([f"{SITE_URL}/cast"] if pv else []) + [f"{SITE_URL}/w/{x['slug']}" for x in pv.values()]
             + [f"{SITE_URL}/t/{t['slug']}" for t in topics.values() if thin_ok(t)])
+    urls = [u for u in urls_all if u[len(SITE_URL) + 1:] not in NOINDEX]     # в карту сайта — только то, что пускаем в выдачу
     lm = {f"{SITE_URL}/t/{t['slug']}": t.get("last_seen", t["first_seen"]) for t in topics.values()}
     lm.update({f"{SITE_URL}/x/{x['slug']}": x["made"] for x in ex.values()})
     lm.update({f"{SITE_URL}/w/{x['slug']}": x["made"] for x in pv.values()})
     # новостной sitemap для Google News: статьи за последние 48 часов
-    fresh = [t for t in topics.values() if hours_since(t["first_seen"]) <= 48 and t.get("ai")]
+    fresh = [t for t in topics.values() if hours_since(t["first_seen"]) <= 48 and t.get("ai") and thin_ok(t)]
     w("sitemap-news.xml", '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
       'xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">'
       + "".join(f"<url><loc>{SITE_URL}/t/{E(t['slug'])}</loc><news:news><news:publication><news:name>{SITE_NAME}</news:name>"
@@ -4695,7 +4718,8 @@ def build_site(store):
     # IndexNow: файл-ключ и список новых адресов (отправим в следующий проход, когда страницы уже будут на сайте)
     k = indexnow_key(orig)
     w(f"{k}.txt", k)
-    new_urls = [f"{SITE_URL}/t/{t['slug']}" for t in topics.values() if t.get("ai", {}).get("made", "") >= store.get("_run_started", "~")]
+    new_urls = [f"{SITE_URL}/t/{t['slug']}" for t in topics.values()
+                if t.get("ai", {}).get("made", "") >= store.get("_run_started", "~") and thin_ok(t)]
     new_urls += [f"{SITE_URL}/x/{x['slug']}" for x in ex.values() if x.pop("new", False)]
     new_urls += [f"{SITE_URL}/w/{x['slug']}" for x in pv.values() if x.pop("new", False)]
     if new_urls:
