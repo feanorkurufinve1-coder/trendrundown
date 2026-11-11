@@ -783,7 +783,7 @@
   ]
  },
  "all-mlb-team": {
-  "time": "2026-11-10T14:44:45+00:00",
+  "time": "2026-11-11T14:47:02+00:00",
   "query": "what is the all-mlb team",
   "in_suggest": true,
   "suggest": {
@@ -844,11 +844,15 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "hank-aaron-award": {
-  "time": "2026-11-10T14:44:47+00:00",
+  "time": "2026-11-11T14:47:04+00:00",
   "query": "what is the hank aaron award",
   "in_suggest": true,
   "suggest": {
@@ -907,11 +911,15 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "how-cy-young-is-voted": {
-  "time": "2026-11-10T14:44:53+00:00",
+  "time": "2026-11-11T14:47:10+00:00",
   "query": "how is the cy young award voted",
   "in_suggest": true,
   "suggest": {
@@ -972,11 +980,15 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "maine-2nd-district-ranked-choice": {
-  "time": "2026-11-10T14:44:59+00:00",
+  "time": "2026-11-11T14:47:16+00:00",
   "query": "why is maine 2nd district going to ranked choice",
   "in_suggest": false,
   "suggest": {
@@ -1005,11 +1017,15 @@
    [
     "2026-11-10",
     false
+   ],
+   [
+    "2026-11-11",
+    false
    ]
   ]
  },
  "mlb-manager-of-the-year-voting": {
-  "time": "2026-11-10T14:45:00+00:00",
+  "time": "2026-11-11T14:47:17+00:00",
   "query": "how is mlb manager of the year voted",
   "in_suggest": false,
   "suggest": {
@@ -1053,11 +1069,15 @@
    [
     "2026-11-10",
     false
+   ],
+   [
+    "2026-11-11",
+    false
    ]
   ]
  },
  "mlb-rookie-eligibility": {
-  "time": "2026-11-10T14:45:02+00:00",
+  "time": "2026-11-11T14:47:19+00:00",
   "query": "what makes a player a rookie in mlb",
   "in_suggest": true,
   "suggest": {
@@ -1108,19 +1128,23 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "murder-in-galicia-true-story": {
-  "time": "2026-11-10T14:45:05+00:00",
+  "time": "2026-11-11T14:47:22+00:00",
   "query": "is murder in galicia a true story",
-  "in_suggest": false,
+  "in_suggest": true,
   "suggest": {
    "murder in galicia": [
     "murder in galicia",
     "murder in galicia netflix",
-    "murder in galicia netflix review",
     "murder in galicia 2026",
+    "murder in galicia true story",
     "murder in galicia imdb",
     "murder in galicia series",
     "unprotected murder in galicia",
@@ -1152,11 +1176,15 @@
    [
     "2026-11-10",
     false
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "relief-pitcher-of-the-year": {
-  "time": "2026-11-10T14:45:07+00:00",
+  "time": "2026-11-11T14:47:23+00:00",
   "query": "what is the relief pitcher of the year award",
   "in_suggest": true,
   "suggest": {
@@ -1193,11 +1221,15 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "reminders-of-him-book": {
-  "time": "2026-11-10T14:45:08+00:00",
+  "time": "2026-11-11T14:47:25+00:00",
   "query": "is reminders of him based on a book",
   "in_suggest": true,
   "suggest": {
@@ -1206,10 +1238,10 @@
     "reminders of him movie",
     "reminders of him cast",
     "reminders of him book",
+    "reminders of him on netflix",
     "reminders of him streaming",
     "reminders of him where to watch",
     "reminders of him colleen hoover",
-    "reminders of him netflix",
     "reminders of him trailer",
     "reminders of him soundtrack"
    ],
@@ -1261,25 +1293,29 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "what-does-habibi-mean": {
-  "time": "2026-11-10T14:45:12+00:00",
+  "time": "2026-11-11T14:47:29+00:00",
   "query": "what does habibi mean",
   "in_suggest": true,
   "suggest": {
    "habibi": [
-    "habibi",
     "habibi meaning",
+    "habibi",
     "habibi pac",
+    "habibi meaning in english",
     "habibi definition",
     "habibi pac meaning",
-    "habibi meaning in english",
     "habibi grill",
     "habibi miami",
-    "habibi vs habibti",
-    "habibi super pac"
+    "habibi shirt",
+    "habibi vs habibti"
    ],
    "what is habibi": [
     "what is habibi",
@@ -1290,19 +1326,19 @@
     "what is habibi sauce",
     "what is habibi flavor",
     "what is habibi for a girl",
-    "what is habibi food",
-    "what is habibi funk"
+    "what is habibi mean in arabic",
+    "what is habibi food"
    ],
    "what does habibi mean": [
     "what does habibi mean",
     "what does habibi mean in arabic",
     "what does habibi mean in english",
-    "what does habibi mean in arabic and english",
     "what does habibi mean in egypt",
     "what does habibi mean in indian",
     "what does habibi mean in spanish",
     "what does habibi mean in hebrew",
     "what does habibi mean in lebanese",
+    "what does habibi mean in islam",
     "what does habibi mean in iraq"
    ]
   },
@@ -1325,6 +1361,10 @@
    ],
    [
     "2026-11-10",
+    true
+   ],
+   [
+    "2026-11-11",
     true
    ]
   ]
@@ -1904,7 +1944,7 @@
   ]
  },
  "carter-faith": {
-  "time": "2026-11-10T14:44:45+00:00",
+  "time": "2026-11-11T14:47:03+00:00",
   "query": "who is carter faith",
   "in_suggest": true,
   "suggest": {
@@ -1945,11 +1985,15 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "harlem-park-three": {
-  "time": "2026-11-10T14:44:48+00:00",
+  "time": "2026-11-11T14:47:05+00:00",
   "query": "where are the harlem park three now",
   "in_suggest": false,
   "suggest": {
@@ -1980,11 +2024,15 @@
    [
     "2026-11-10",
     false
+   ],
+   [
+    "2026-11-11",
+    false
    ]
   ]
  },
  "heartland-netflix-cast": {
-  "time": "2026-11-10T14:44:50+00:00",
+  "time": "2026-11-11T14:47:07+00:00",
   "query": "who is in the cast of heartland",
   "in_suggest": true,
   "suggest": {
@@ -1994,11 +2042,11 @@
     "heartland season 20",
     "heartland netflix",
     "heartland season 19",
+    "heartland 2026",
     "heartland credit union",
     "heartland bank",
-    "heartland dental",
-    "heartland 2026",
-    "heartland jessica chastain"
+    "heartland jessica chastain",
+    "heartland dental"
    ],
    "what is heartland": [
     "what is heartland about",
@@ -2047,11 +2095,15 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "how-are-grammy-nominations-decided": {
-  "time": "2026-11-10T14:44:51+00:00",
+  "time": "2026-11-11T14:47:08+00:00",
   "query": "how are grammy nominations decided",
   "in_suggest": true,
   "suggest": {
@@ -2059,13 +2111,13 @@
     "grammy nominations 2027",
     "grammy nominations",
     "grammy nominations 2026",
-    "grammy nominations predictions",
     "grammy nominations 2027 predictions",
-    "grammy nominations 2027 announcement",
-    "grammy nominations 2027 album of the year",
+    "grammy nominations predictions",
     "grammy nominations 2027 list",
     "grammy nominations announcement",
-    "grammy nominations 2025"
+    "grammy nominations 2027 rap",
+    "grammy nominations 2027 announcement",
+    "grammy nominations date"
    ],
    "what is grammy nominations": [
     "what is grammy nominations",
@@ -2098,52 +2150,52 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "how-is-senate-majority-leader-chosen": {
-  "time": "2026-11-10T14:44:54+00:00",
+  "time": "2026-11-11T14:47:11+00:00",
   "query": "how is the senate majority leader chosen",
   "in_suggest": true,
   "suggest": {
    "senate majority leader": [
     "senate majority leader",
+    "senate majority leader candidates",
     "senate majority leader kalshi",
+    "senate majority leader polymarket",
+    "senate majority leader odds",
     "senate majority leader 2026",
     "senate majority leader john thune",
-    "senate majority leaders list",
-    "senate majority leader now",
-    "senate majority leader since 2025",
-    "senate majority leader definition",
-    "senate majority leader 2001"
+    "senate majority leader role",
+    "senate majority leader chuck schumer"
    ],
    "what is senate majority leader": [
     "what is senate majority leader",
     "what is senate majority leader philippines",
     "what is senate majority leader job",
-    "what is senate minority leader",
     "what is senate majority whip",
     "what is senate majority whip mean",
     "what is the senate majority leader called",
     "what is senate deputy majority leader",
     "what is senate majority floor leader",
-    "what state is senate majority leader john thune from"
+    "what state is senate majority leader john thune from",
+    "what is a senate majority leader simple definition"
    ],
    "how is the senate majority leader chosen": [
     "how is the senate majority leader chosen",
     "how is the senate minority leader chosen",
     "how is the us senate majority leader chosen",
-    "how is the senate majority leader elected",
     "how is the us senate minority leader chosen",
-    "how is senate minority leader elected",
     "how often is the senate majority leader elected",
     "is the senate majority leader elected or appointed"
    ],
    "senate majority leader chosen": [
     "senate majority leader chosen",
-    "senate majority leader how elected",
     "how is the us senate majority leader chosen",
-    "how does the senate majority leader get chosen",
     "is there a senate majority leader"
    ]
   },
@@ -2159,11 +2211,15 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "i-play-rocky-true-story": {
-  "time": "2026-11-10T14:44:56+00:00",
+  "time": "2026-11-11T14:47:13+00:00",
   "query": "is i play rocky a true story",
   "in_suggest": true,
   "suggest": {
@@ -2175,8 +2231,8 @@
     "i play rocky reviews",
     "i play rocky where to watch",
     "i play rocky trailer",
-    "i play rocky near me",
     "i play rocky rotten tomatoes",
+    "i play rocky near me",
     "i play rocky movie release date"
    ],
    "what is i play rocky": [
@@ -2224,25 +2280,29 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "is-leonida-a-real-place": {
-  "time": "2026-11-10T14:44:57+00:00",
+  "time": "2026-11-11T14:47:14+00:00",
   "query": "is leonida a real place",
   "in_suggest": true,
   "suggest": {
    "leonida": [
-    "leonidas",
+    "leonida",
     "leonida map",
+    "leonida gta 6",
     "leonidas chocolate",
     "leonidas 300",
-    "leonida gta 6",
     "leonidas arkona",
     "leonidas i",
+    "leonida gta",
     "leonidas name meaning",
-    "leonida keys",
-    "leonida gta"
+    "leonidas bakugan"
    ],
    "what is leonida": [
     "what is leonida",
@@ -2277,19 +2337,23 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "most-mvp-awards-mlb": {
-  "time": "2026-11-10T14:45:03+00:00",
+  "time": "2026-11-11T14:47:20+00:00",
   "query": "who has the most mvp awards in mlb history",
   "in_suggest": true,
   "suggest": {
    "mlb mvp award": [
     "mlb mvp awards",
+    "mlb mvp awards 2026",
     "mlb mvp award winners",
     "mlb mvp award date",
-    "mlb mvp award 2026",
     "mlb mvp awards by year",
     "mlb mvp award odds",
     "mlb mvp award name",
@@ -2339,11 +2403,15 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "rookie-cy-young-winner": {
-  "time": "2026-11-10T14:45:10+00:00",
+  "time": "2026-11-11T14:47:26+00:00",
   "query": "has a rookie ever won the cy young",
   "in_suggest": true,
   "suggest": {
@@ -2406,11 +2474,15 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "the-altruists-true-story": {
-  "time": "2026-11-10T14:45:11+00:00",
+  "time": "2026-11-11T14:47:28+00:00",
   "query": "is the altruists a true story",
   "in_suggest": true,
   "suggest": {
@@ -2438,7 +2510,10 @@
     "what is the altruist role in among us",
     "what is the altruist cult gta"
    ],
-   "is the altruists a true story": [],
+   "is the altruists a true story": [
+    "is the altruists a true story",
+    "is henry from the invisible life of addie larue gay"
+   ],
    "altruists true story": [
     "altruists true story",
     "what happens to henri in mr selfridge",
@@ -2456,6 +2531,10 @@
    ],
    [
     "2026-11-10",
+    true
+   ],
+   [
+    "2026-11-11",
     true
    ]
   ]
