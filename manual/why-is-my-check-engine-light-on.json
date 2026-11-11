@@ -1,0 +1,53 @@
+{
+ "subject": "Check engine light",
+ "kind": "term",
+ "query": "why is my check engine light on",
+ "title": "Why is my check engine light on? The most common causes and what to do",
+ "answer": "Your check engine light is on because the car's onboard computer (OBD-II) detected a fault in the engine, fuel or emissions system. The most common causes are a loose or faulty gas cap, a failing oxygen sensor, worn spark plugs or ignition coils, a dirty mass airflow sensor and a failing catalytic converter. A solid light means get it checked soon; a flashing light means pull over.",
+ "body": "The light itself does not tell you which part failed; it only says the computer stored a trouble code. Cars and light trucks built since 1996 use the OBD-II system, which watches the engine, transmission and exhaust. Most causes are not emergencies, but some get expensive if ignored: an untreated misfire can send unburned fuel into the exhaust and quickly destroy the catalytic converter.\n\nWhat to check yourself, in order:\n\n1. Solid or flashing? A flashing light signals a severe misfire. Pull over safely, turn off the engine and consider a tow. With a solid light and no other symptoms, you can usually drive a short distance to get it checked.\n\n2. Gas cap. If you just refueled, make sure the cap is on tight and its seal is not cracked. A loose cap lets fuel vapor escape and is one of the most common triggers. The light will not go out right away; it can take some driving, or a technician clearing the code.\n\n3. Oil level. Low oil can set timing-related codes.\n\n4. Read the code. The OBD-II port is under the dashboard on the driver's side. You can buy a basic scanner at an auto parts store, and some chains, including O'Reilly, read codes for free in the store. Codes starting with P0300 point to misfires, P0420 to the catalytic converter, P0171 to a lean fuel mixture, and P0455 or P0457 to an evaporative leak, often the gas cap.\n\nDon't just disconnect the battery to make the light go away. It usually comes back if the fault is still there, and clearing codes also resets the car's emissions self-tests, which can cause it to fail a state inspection until they finish again.\n\nGo to a mechanic right away if the light is flashing, or if it comes with power loss, shaking, rough idle, smoke, a burning or fuel smell, or an overheating gauge. Also see a shop if the light stays on after you have tightened the gas cap and driven for a few days. If the car is under warranty, a dealer may cover the repair. Emissions parts such as the catalytic converter often carry a longer federal emissions warranty than the rest of the car.",
+ "faq": [
+  {
+   "q": "Can I drive with the check engine light on?",
+   "a": "If it is solid and the car runs normally, a short drive to get it checked is usually fine. If it is flashing, or the car shakes, loses power or smells unusual, pull over and turn the engine off."
+  },
+  {
+   "q": "Why is my check engine light flashing?",
+   "a": "A flashing light usually means a severe engine misfire. Continuing to drive can overheat and damage the catalytic converter."
+  },
+  {
+   "q": "Can a loose gas cap turn on the check engine light?",
+   "a": "Yes. It is one of the most common causes. Tighten the cap; the light may take some driving to reset."
+  },
+  {
+   "q": "Will the check engine light turn off by itself?",
+   "a": "Sometimes. Once the computer no longer detects the fault, the light can go out on its own after some driving. Otherwise a technician can clear the code after the repair."
+  },
+  {
+   "q": "Where can I get my check engine light checked for free?",
+   "a": "Some auto parts chains, including O'Reilly, read trouble codes for free in the store. A code read is not a full diagnosis."
+  }
+ ],
+ "links": [
+  [
+   "O'Reilly Auto Parts",
+   "Check engine light",
+   "https://www.oreillyauto.com/how-to-hub/articles/engine/check-engine-light"
+  ],
+  [
+   "AAA",
+   "Check engine light",
+   "https://www.aaa.com/autorepair/articles/check-engine-light"
+  ],
+  [
+   "YourMechanic",
+   "The check engine light demystified",
+   "https://www.yourmechanic.com/article/the-check-engine-light-demystified"
+  ]
+ ],
+ "topics": [
+  "cars"
+ ],
+ "made": "2026-11-11T14:10:00+00:00",
+ "first": "2026-11-11T14:10:00+00:00",
+ "updated": "2026-11-11T14:10:00+00:00"
+}

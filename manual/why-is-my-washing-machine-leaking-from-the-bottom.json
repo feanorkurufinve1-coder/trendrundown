@@ -1,0 +1,53 @@
+{
+ "subject": "Washing machine leaking from the bottom",
+ "kind": "term",
+ "query": "why is my washing machine leaking from the bottom",
+ "title": "Why is my washing machine leaking from the bottom? Causes and checks",
+ "answer": "A washing machine that leaks from the bottom most often has a problem with the drain pump or its hoses, a loose or cracked fill or drain hose, a torn door seal (on front-loaders) or a drain-filter cap that was not closed tightly. Too much detergent, or non-HE detergent in an HE washer, can also push suds out of the machine.",
+ "body": "Safety first: water and electricity don't mix. If water has reached the power cord or the wall socket, do not touch them; switch off that circuit at the breaker panel if you can reach it from a dry spot, or call an electrician. Otherwise, unplug the washer and turn off both water faucets behind it before you inspect anything or remove a panel.\n\nThe timing of the leak is the best clue:\n\nLeaks all the time, even when the washer is off: a fill hose, its connection or the water inlet valve.\n\nLeaks while filling or washing: the detergent dispenser, too many suds, a torn front-loader door seal or, on some machines, a worn tub seal.\n\nLeaks while draining: the drain pump, the drain filter, or the drain hose and the standpipe it empties into. Drain-side leaks are the most common type, according to the repair guide iFixit.\n\nWhat to check yourself:\n\n1. Dry the floor completely, then run a short cycle and watch where water first appears.\n\n2. Check the two fill hoses at the back. Tighten loose fittings by hand and look for bulges or cracks. Sears recommends replacing fill hoses every three to five years, even if they look fine.\n\n3. Check the drain hose for cracks and loose clamps. If water backs up out of the standpipe, the house drain may be clogged.\n\n4. On a front-loader, open the small panel at the bottom front and make sure the drain filter cap is screwed in fully and straight, especially if you recently cleaned it.\n\n5. Inspect the rubber door seal for tears or a section that has slipped off its lip.\n\n6. Use only HE detergent in an HE washer, and use the amount the label says.\n\nCall an appliance technician if water comes from inside the cabinet, if the pump hums or grinds while leaking, if the door seal is torn (replacing it is a fairly advanced repair) or if you see a water line around the base of the drum during the wash, which can mean a failing tub seal. Angi puts appliance pros' labor at about $45 to $200 an hour.",
+ "faq": [
+  {
+   "q": "Why is my washer leaking water when it drains?",
+   "a": "Most drain-time leaks come from the drain pump, its hose clamps, the drain filter cap or a cracked drain hose."
+  },
+  {
+   "q": "Why is my front-load washer leaking from the bottom front?",
+   "a": "Check the drain filter cap behind the small lower panel first, then the rubber door seal."
+  },
+  {
+   "q": "Can too much detergent make a washer leak?",
+   "a": "Yes. Excess detergent, or non-HE detergent in an HE washer, can create suds that escape the tub."
+  },
+  {
+   "q": "Is it safe to use a washing machine that is leaking?",
+   "a": "No. Stop using it until you find where the water is coming from. Unplug it and turn off the water first, but if the plug or wall socket is wet, leave it alone and switch off the circuit at the breaker panel instead."
+  },
+  {
+   "q": "How often should washing machine hoses be replaced?",
+   "a": "Every three to five years, according to Sears Home Services."
+  }
+ ],
+ "links": [
+  [
+   "Sears Home Services",
+   "Why is my washing machine leaking from the bottom?",
+   "https://searshomeservices.com/blog/why-is-my-washing-machine-leaking-from-the-bottom"
+  ],
+  [
+   "iFixit",
+   "Washing machine leaking",
+   "https://www.ifixit.com/Wiki/Washing_Machine_Leaking"
+  ],
+  [
+   "Angi",
+   "Top 6 reasons why your washing machine is leaking water",
+   "https://angi.com/articles/washer-leaking-water.htm"
+  ]
+ ],
+ "topics": [
+  "home appliances"
+ ],
+ "made": "2026-11-11T14:10:00+00:00",
+ "first": "2026-11-11T14:10:00+00:00",
+ "updated": "2026-11-11T14:10:00+00:00"
+}

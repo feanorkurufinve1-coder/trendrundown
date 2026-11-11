@@ -1,6 +1,10 @@
 {
  "about": "Вечные вопросы (бытовая техника, машины, телефоны, спорт-правила, деньги): в выдаче только мелкие сайты. Собрано ноутбуком 10-11.11.2026. seen_sources — что сейчас в выдаче (это конкуренты, НЕ копировать; читать как один из источников).",
- "done": [],
+ "done": [
+  "why is check engine light on",
+  "why is washing machine leaking from bottom",
+  "why does social security get taxed"
+ ],
  "queue": [
   {
    "q": "why does social security take so much",

@@ -1,0 +1,56 @@
+{
+ "subject": "Motion to refer (House procedure)",
+ "kind": "term",
+ "query": "what is a motion to refer",
+ "title": "What is a motion to refer? How the House shelved the Hegseth impeachment",
+ "answer": "A motion to refer sends a bill or resolution to a committee instead of letting the full House vote on it right away. It is a common way to sidestep a privileged impeachment resolution: on Nov. 10, 2026, the House voted 211-204 to refer Rep. Thomas Massie's articles of impeachment against Defense Secretary Pete Hegseth to the Judiciary Committee.",
+ "body": "A member who offers an impeachment resolution as \"privileged\" can force the House to deal with it within days, skipping the usual committee process. Opponents who don't want a direct up-or-down vote on impeachment can instead move to refer the resolution to a committee. If that motion passes, the articles go to the committee, which is under no obligation to act on them. Massie called the Nov. 10 vote \"a procedural motion to kill the resolution.\"\n\nThe 211-204 vote on Massie's eight articles split almost entirely along party lines. Massie was the only Republican to vote against referral, and 18 members did not vote: 11 Democrats and 7 Republicans, according to Al Jazeera. If all of the absent Democrats had voted no, the motion would have failed and the House would have faced a direct vote on impeachment. The current Congress ends on Jan. 3, 2027, and resolutions that are still in committee then expire.\n\nThe tactic has been used before. On Nov. 13, 2023, the House voted 209-201 to refer Rep. Marjorie Taylor Greene's privileged resolution to impeach Homeland Security Secretary Alejandro Mayorkas to the Homeland Security Committee, with eight Republicans joining all Democrats. Mayorkas was impeached in February 2024 after a later committee process. On House roll calls, the vote appears as \"On Motion to Refer.\"",
+ "in_the_news": "On Nov. 10, 2026, the House voted 211-204 to refer Rep. Thomas Massie's eight articles of impeachment against Defense Secretary Pete Hegseth to the Judiciary Committee, effectively ending the effort in this Congress.",
+ "faq": [
+  {
+   "q": "What does \"On Motion to Refer\" mean on a House vote?",
+   "a": "It is the roll-call label for a vote on whether to send a bill or resolution to a committee. A \"yea\" vote supports sending it to committee; a \"nay\" vote opposes that."
+  },
+  {
+   "q": "What does a motion to refer mean for Pete Hegseth?",
+   "a": "The House did not vote on impeachment itself. The 211-204 vote on Nov. 10, 2026, sent the articles to the Judiciary Committee, where they can sit without action until the Congress ends on Jan. 3, 2027."
+  },
+  {
+   "q": "What is the difference between a motion to refer and a motion to table?",
+   "a": "A motion to table, if adopted, permanently disposes of the measure. A motion to refer keeps it alive on paper but moves it to a committee, which may never act on it."
+  },
+  {
+   "q": "Can the impeachment articles come back?",
+   "a": "Only if the committee acts on them, or a member files a new resolution. Any resolution still pending when this Congress ends on Jan. 3, 2027, expires."
+  }
+ ],
+ "links": [
+  [
+   "Deseret News",
+   "Republican leaders defeat impeachment articles targeting Hegseth",
+   "https://www.deseret.com/politics/2026/11/10/house-votes-to-impeach-pete-hegseth/"
+  ],
+  [
+   "Al Jazeera",
+   "Did Democrats save Pete Hegseth from impeachment?",
+   "https://www.aljazeera.com/news/2026/11/11/did-democrats-save-pete-hegseth-from-impeachment"
+  ],
+  [
+   "Roll Call",
+   "House sidesteps effort to impeach Homeland Security chief over border policy",
+   "https://rollcall.com/2023/11/13/house-sidesteps-effort-to-impeach-homeland-security-chief-over-border-policy/"
+  ],
+  [
+   "Wikipedia",
+   "Impeachment of Alejandro Mayorkas",
+   "https://en.wikipedia.org/wiki/Impeachment_of_Alejandro_Mayorkas"
+  ]
+ ],
+ "topics": [
+  "congress",
+  "politics"
+ ],
+ "made": "2026-11-11T14:10:00+00:00",
+ "first": "2026-11-11T14:10:00+00:00",
+ "updated": "2026-11-11T14:10:00+00:00"
+}

@@ -1,0 +1,63 @@
+{
+ "subject": "Taxes on Social Security benefits",
+ "kind": "law",
+ "query": "why does social security get taxed",
+ "title": "Why does Social Security get taxed? The rules and income limits explained",
+ "answer": "Social Security benefits get taxed because Congress made them partly taxable in 1983 to shore up the program's finances, and a 1993 law raised the taxable share to as much as 85%. You owe federal income tax on benefits only if your combined income tops $25,000 for a single filer or $32,000 for a married couple filing jointly.",
+ "body": "\"Combined income\" is your adjusted gross income, plus tax-exempt interest, plus half of your Social Security benefits. Single filers with combined income of $25,000 to $34,000 may pay tax on up to 50% of their benefits, and above $34,000, on up to 85%. For married couples filing jointly, the ranges are $32,000 to $44,000 (up to 50%) and above $44,000 (up to 85%). Married people who file separately and lived with their spouse at any time during the year can owe tax on up to 85% of benefits regardless of income. No one pays tax on more than 85% of their benefits.\n\nThe main reason more retirees pay this tax every year is that the thresholds have never been adjusted for inflation, while benefits rise with annual cost-of-living increases. According to AARP, the share of recipients who pay tax on benefits rose from under 10% in 1984 to nearly half in recent years. The federal tax on benefits goes back into the Social Security and Medicare trust funds; in 2025 it brought in $57.8 billion, just under 4% of Social Security's revenue.\n\nTwo things can reduce the bill. Taxpayers 65 and older can take a new deduction of up to $6,000 each ($12,000 for a qualifying couple) for tax years 2025 through 2028; it phases out above $75,000 of modified AGI for single filers and $150,000 for couples. It lowers taxable income but does not make benefits tax-free. Most states also leave benefits alone: for tax year 2026, only Colorado, Connecticut, Minnesota, Montana, New Mexico, Rhode Island, Utah and Vermont may tax them.\n\nTo avoid a large bill in April, you can have federal tax withheld from each payment at 7%, 10%, 12% or 22%, either through your my Social Security account, by calling SSA at 1-800-772-1213 or by filing IRS Form W-4V. Your SSA-1099, mailed each January, shows the total benefits you received.",
+ "faq": [
+  {
+   "q": "At what income is Social Security not taxed?",
+   "a": "If your combined income is below $25,000 (single) or $32,000 (married filing jointly), your benefits are not subject to federal income tax."
+  },
+  {
+   "q": "How much of my Social Security is taxable?",
+   "a": "Up to 50% of benefits if combined income is $25,000-$34,000 (single) or $32,000-$44,000 (joint), and up to 85% above those levels."
+  },
+  {
+   "q": "Did the 2025 tax law end taxes on Social Security?",
+   "a": "No. It added a deduction of up to $6,000 for people 65 and older for 2025 through 2028, but benefits can still be taxed."
+  },
+  {
+   "q": "Which states tax Social Security in 2026?",
+   "a": "Colorado, Connecticut, Minnesota, Montana, New Mexico, Rhode Island, Utah and Vermont, often only above certain income levels."
+  },
+  {
+   "q": "Is SSI taxable?",
+   "a": "No. Supplemental Security Income payments are not taxable."
+  },
+  {
+   "q": "Why does Social Security come out of my paycheck?",
+   "a": "That is a different tax: workers pay a 6.2% Social Security payroll tax on wages up to an annual limit, and employers pay a matching 6.2%, to fund current benefits."
+  }
+ ],
+ "links": [
+  [
+   "IRS",
+   "Social Security benefits may be taxable",
+   "https://www.irs.gov/newsroom/dont-forget-social-security-benefits-may-be-taxable"
+  ],
+  [
+   "SSA",
+   "Income taxes and your Social Security benefit",
+   "https://www.ssa.gov/benefits/retirement/planner/taxes.html"
+  ],
+  [
+   "AARP",
+   "Things to know about Social Security and taxes",
+   "https://www.aarp.org/social-security/things-to-know-about-taxes/"
+  ],
+  [
+   "Kiplinger",
+   "Taxes on Social Security benefits: things to know for 2026",
+   "https://www.kiplinger.com/taxes/social-security-income-taxes"
+  ]
+ ],
+ "topics": [
+  "money",
+  "social security"
+ ],
+ "made": "2026-11-11T14:10:00+00:00",
+ "first": "2026-11-11T14:10:00+00:00",
+ "updated": "2026-11-11T14:10:00+00:00"
+}

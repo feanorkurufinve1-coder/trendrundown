@@ -118,10 +118,27 @@
 | 19 нояб | The Binding of Isaac: Repentance+ Online | — пропуск (религиозное название/темы) | — |
 | 13 нояб | HBO Max/TLC: Crown of Deceit (Miss Universe) | — пропуск (обвинения против конкретного человека) | — |
 | 20 нояб | HBO Max: Tony (байопик Anthony Bourdain) | is tony a true story / who plays anthony bourdain | — писать 16–18 нояб |
+| 10 нояб (прошло) | Палата 211-204 отправила импичмент Hegseth в комитет; Breakout «what does motion to refer mean» | what is a motion to refer | ✅ what-is-a-motion-to-refer |
+| 14–15 нояб | Camp Flog Gnaw (Dodger Stadium), бесплатный стрим Amazon Music/Twitch/Prime Video; Breakout «will camp flog gnaw be streamed» | will camp flog gnaw be streamed | ✅ camp-flog-gnaw-livestream |
+| 14 нояб | Kids' Choice Awards (впервые на CBS, ведущий Alex Warren) | when are the kids choice awards 2026 | ✅ kids-choice-awards-2026-date |
+| 14 нояб | UFC 334 (MSG): Nunes vs Harrison; «is amanda nunes retired» Breakout | is amanda nunes retired | ✅ is-amanda-nunes-retired |
+| 13 нояб | Apple TV: 12 12 12 (Mackie, Dornan; 8 эп., финал 25 дек) | what does 12 12 12 mean | ✅ what-does-12-12-12-mean |
+| 19 нояб | NOAA: обновление сезонного прогноза; Breakout «what does el nino mean for the pacific northwest» | what does el nino mean for the pacific northwest | ✅ el-nino-pacific-northwest |
+| 10 нояб (прошло) | Disney+: финал VisionQuest | ending explained — заняты гигантами, пропуск | — |
+| 11 нояб | Prime Video: Rings of Power S3; Hulu: Rivals S2 ч.2 | пропуск (гиганты / откровенный контент) | — |
+| 20 нояб | Prime Video: Melania, The Series | — (политика+личность; подумать 17–19 нояб) | — |
+| 24 нояб | HBO Max: The Buffalo Miracle | — проверить тему ~20 нояб | — |
+| 25 нояб | HBO Max: Andrew Tate: Toxic Empire | — пропуск (сексуальное насилие в обвинениях) | — |
 Правило: писать за 1–5 дней до события (Google индексирует ~2/3 новых страниц за сутки).
 Проверка: через 3–7 дней после даты сверить с Trends CSV и Search Console — угадали или нет, записать урок сюда.
 
 ## Уроки
+- 11 нояб, вечер (GSC: последний полный день 8 нояб — 6 кликов / 230 показов; 9 нояб 2/11; 10–11 нояб ≈0 — сайт выкинут из индекса 8–9 нояб, health.json: из 6 проверенных URL в индексе только / и /x/cyber-monday; sitemap: 252 отправлено, 0 проиндексировано):
+  - Страницы 8 нояб (3 дня) — 0 показов в GSC у всех: carter-faith, heartland-netflix-cast, how-are-grammy-nominations-decided, how-is-senate-majority-leader-chosen, i-play-rocky-true-story, is-leonida-a-real-place, most-mvp-awards-mlb, rookie-cy-young-winner, the-altruists-true-story, harlem-park-three. Причина — не тема, а выпадение сайта из индекса.
+  - Страницы 9 нояб (2 дня) — 0 показов: how-are-game-awards-nominees-chosen, is-philomena-cunk-real, new-snap-stocking-rules, how-are-cma-awards-voted, lame-duck-president, national-parks-free-veterans-day, bright-star-eastern-sky-morning, what-is-apple-homeview, what-is-pico-park, what-is-a-quarter-quell.
+  - Подсказки Google (suggest.json) по страницам 10–11 нояб: ✅ все фразы, кроме ❌ madden-movie-true-story, vienna-game-true-story (+ ранее has-a-defense-secretary, latin-grammys-vs-grammys, planet-alignment).
+  - Вывод: пока индекс не вернётся, судить о темах по GSC нельзя; писать меньше и сильнее, по Breakout-фразам с ноутбука (motion to refer, camp flog gnaw stream, amanda nunes retired, el nino PNW).
+  - Начаты вечные страницы (check engine light, стиральная машина, налог на Social Security) — проверить через 7–14 дней.
 - 11 нояб, утро (коротко; GSC: последний полный день 7 нояб — 36 кликов / 3951 показ; 8–10 нояб ещё догружаются):
   - learn.json: заголовок = реальный запрос → 100% страниц с показами и 0.72 клика/стр. против 0.13; ручные 1.56 клика/стр., авто 0.03; «when» 1.67 клика/стр. — лучшее слово, «who» 0.1. Вывод: вопрос из подсказок дословно в начале заголовка.
   - Страницы 10 нояб (вечер): 7 из 10 фраз в подсказках Google; ❌ нет «has a defense secretary ever been impeached» (ищут «can a cabinet secretary be impeached»), «what is the difference between the latin grammys and the grammys», «is there a planet alignment in november 2026» (ищут «planetary alignment november 2026»). Длинные вопросы с «difference between» и «has … ever» в подсказки не попадают — брать короткие формы.
