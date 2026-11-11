@@ -1,0 +1,50 @@
+{
+ "subject": "Super El Niño",
+ "kind": "term",
+ "query": "what is a super el nino",
+ "title": "What is a super El Niño? The record 2026 event, explained",
+ "answer": "\"Super El Niño\" is the informal name for a very strong El Niño, when sea-surface temperatures in the central Pacific's Niño 3.4 region run more than 2.0°C above normal. The 2026 event set a record: the daily anomaly hit 3.11°C on Sept. 21, 2026, beating the previous high of 3.08°C from Nov. 18, 2015.",
+ "body": "El Niño (also spelled El Nino) is a natural warming of the tropical Pacific that shifts weather worldwide. Scientists grade it by how far the Niño 3.4 region runs above average: weak at 0.5°C, moderate above 1°C, strong above 1.5°C and \"very strong\" above 2.0°C. \"Super El Niño\" is not an official category, but it is widely used for the very strong events of 1982-83, 1997-98 and 2015-16.\n\nThe current event began in June 2026, Carbon Brief reported, and by August the monthly anomaly was about 2.45°C, above the peak of every earlier event except 2015-16 (2.75°C). Fourteen seasonal models projected a peak of about 4.1°C later in 2026. El Niño usually peaks in November or December and is expected to last into 2027, when most of its effect on global temperatures will be felt.",
+ "in_the_news": "Forecasters say the record 2026 El Niño is near its peak heading into winter 2026-27.",
+ "faq": [
+  {
+   "q": "Is El Niño 2026 a super El Niño?",
+   "a": "Yes, by the usual informal definition: its Niño 3.4 anomaly passed 2.0°C and set a daily record of 3.11°C on Sept. 21, 2026."
+  },
+  {
+   "q": "What does a super El Niño mean for winter?",
+   "a": "Strong El Niños tend to shift storm tracks; NOAA and local forecasters publish regional winter outlooks."
+  },
+  {
+   "q": "When was the last super El Niño?",
+   "a": "2015-16, which peaked at a monthly anomaly of about 2.75°C. Earlier ones were 1997-98 and 1982-83."
+  },
+  {
+   "q": "How long will El Niño last?",
+   "a": "The 2026 event began in June and is expected to last into 2027."
+  },
+  {
+   "q": "What is the difference between El Niño and La Niña?",
+   "a": "El Niño is unusual warming of the tropical Pacific; La Niña is unusual cooling."
+  }
+ ],
+ "links": [
+  [
+   "Carbon Brief",
+   "Analysis: 'Super El Niño' breaks 'remarkable' all-time record",
+   "https://www.carbonbrief.org/analysis-super-el-nino-reaches-remarkable-all-time-record"
+  ],
+  [
+   "Severe Weather Europe",
+   "Fall 2026 forecast update: Super El Niño",
+   "https://www.severe-weather.eu/long-range-2/fall-2026-forecast-update-super-el-nino-split-flow-winter-2026-2027-united-states-canada-europe-fa/"
+  ]
+ ],
+ "topics": [
+  "science",
+  "weather"
+ ],
+ "made": "2026-11-11T02:05:00+00:00",
+ "first": "2026-11-11T02:05:00+00:00",
+ "updated": "2026-11-11T02:05:00+00:00"
+}

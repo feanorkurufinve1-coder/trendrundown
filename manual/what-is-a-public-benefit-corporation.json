@@ -1,0 +1,65 @@
+{
+ "subject": "Public benefit corporation (PBC)",
+ "kind": "term",
+ "query": "what is a public benefit corporation",
+ "title": "What is a public benefit corporation? Why Anthropic is a \"PBC\"",
+ "answer": "A public benefit corporation (PBC) is a for-profit company that must balance shareholders' financial interests with a specific public benefit named in its charter and with the interests of people affected by its conduct. Anthropic, the AI company now marketing its IPO, is legally \"Anthropic, PBC.\"",
+ "body": "Delaware has allowed public benefit corporations since Aug. 1, 2013. Under Section 362 of the Delaware General Corporation Law, a PBC must name one or more specific public benefits in its certificate of incorporation and must balance the stockholders' pecuniary interests, the interests of those materially affected by its conduct and that public benefit. Its name may include \"public benefit corporation,\" \"P.B.C.\" or \"PBC.\" Delaware PBCs must also report to stockholders at least every two years on how they are promoting their public benefit.\n\nA PBC is not the same as a \"B Corp.\" PBC is a legal form of company; B Corp is a separate certification that some companies seek for branding, and a PBC does not need to be certified or audited.\n\nAnthropic filed for an IPO on Oct. 26, 2026, and launched its roadshow on Nov. 10, 2026, offering 825 million Class A shares at an expected $70 to $78 each. It has applied to list on the Nasdaq Global Select Market under the ticker \"ANT.\" The company says that as a PBC it must weigh its mission of developing AI safely alongside shareholder returns.",
+ "in_the_news": "Anthropic, PBC launched its IPO roadshow on Nov. 10, 2026, and searches for \"anthropic pbc\" jumped as investors asked what the letters mean.",
+ "faq": [
+  {
+   "q": "What does PBC stand for?",
+   "a": "Public benefit corporation, a type of for-profit company that must balance profits with a stated public benefit."
+  },
+  {
+   "q": "What does PBC mean in Anthropic, PBC?",
+   "a": "It means Anthropic is organized as a public benefit corporation, so its directors must weigh its stated public benefit, not just shareholder returns."
+  },
+  {
+   "q": "Is a public benefit corporation a nonprofit?",
+   "a": "No. A PBC is a for-profit company that can raise money and pay shareholders; it just has a legal duty to balance a public benefit too."
+  },
+  {
+   "q": "What is the difference between a PBC and a B Corp?",
+   "a": "A PBC is a legal structure under state law. A B Corp is a private certification; a company can be one, both or neither."
+  },
+  {
+   "q": "When can you buy Anthropic stock?",
+   "a": "Not until the IPO prices and shares begin trading on Nasdaq under \"ANT.\" As of Nov. 10, 2026, no final price or first trading date had been announced."
+  }
+ ],
+ "links": [
+  [
+   "Anthropic",
+   "Anthropic launches roadshow for proposed initial public offering",
+   "https://www.anthropic.com/news/roadshow-launch"
+  ],
+  [
+   "Cooley GO",
+   "FAQ: Delaware Public Benefit Corporations",
+   "https://www.cooleygo.com/faq-delaware-public-benefit-corporations/"
+  ],
+  [
+   "Justia",
+   "Delaware Code Title 8, Section 362",
+   "https://law.justia.com/codes/delaware/title-8/chapter-1/subchapter-xv/section-362"
+  ],
+  [
+   "Faegre Drinker",
+   "Delaware embraces doing business in a responsible and sustainable way",
+   "https://www.faegredrinker.com/en/insights/publications/2013/8/delaware-embraces-doing-business-in-a-responsible-and-sustainable-way"
+  ],
+  [
+   "TechCrunch",
+   "Anthropic officially files for its public debut",
+   "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/"
+  ]
+ ],
+ "topics": [
+  "business",
+  "tech"
+ ],
+ "made": "2026-11-11T02:05:00+00:00",
+ "first": "2026-11-11T02:05:00+00:00",
+ "updated": "2026-11-11T02:05:00+00:00"
+}

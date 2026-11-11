@@ -1,0 +1,49 @@
+{
+ "subject": "TSA ConfirmID",
+ "kind": "law",
+ "query": "what is tsa confirmid",
+ "title": "What is TSA ConfirmID? The $45 fee if you fly without a REAL ID",
+ "answer": "TSA ConfirmID is a $45 identity-verification service for travelers 18 and older who show up for a domestic flight without a REAL ID or another accepted ID. You pay online at tsa.gov/ConfirmID, and if TSA can verify who you are, the verification covers a 10-day travel period. It started Feb. 1, 2026.",
+ "body": "To use it, you enter your legal name and travel start date at tsa.gov/ConfirmID and pay by debit or credit card, Venmo or PayPal; the receipt comes by email from Pay.gov, and someone else can pay for you. At the airport you show your government-issued ID and the receipt. TSA says verification typically takes 10 to 15 minutes but can take 30 minutes or more, so it recommends paying in advance. The AP reported that the $45 is a payment for the service, not a penalty or fine, but paying does not guarantee you will be allowed through: travelers whose identity cannot be verified may be turned away.\n\nYou do not need ConfirmID if you have another accepted ID, such as a passport or passport card, a permanent resident card, a Global Entry or NEXUS card, a military ID, a photo ID from a federally recognized tribal nation, or a digital ID in Apple Wallet or Google Wallet at participating checkpoints.",
+ "in_the_news": "Travelers flying for Thanksgiving 2026 without a REAL ID will need ConfirmID or another accepted ID at TSA checkpoints.",
+ "faq": [
+  {
+   "q": "How much is TSA ConfirmID?",
+   "a": "$45, paid online through Pay.gov."
+  },
+  {
+   "q": "How long is TSA ConfirmID good for?",
+   "a": "If approved, the verification covers a 10-day travel period."
+  },
+  {
+   "q": "Can I fly without a REAL ID in 2026?",
+   "a": "Yes, with another accepted ID such as a passport, or by paying $45 for TSA ConfirmID, which does not guarantee approval."
+  },
+  {
+   "q": "How long does TSA ConfirmID take at the airport?",
+   "a": "Usually 10 to 15 minutes, but it can take 30 minutes or more."
+  },
+  {
+   "q": "Do kids need TSA ConfirmID?",
+   "a": "The fee applies to travelers 18 and older."
+  }
+ ],
+ "links": [
+  [
+   "ABC7 Chicago / AP",
+   "No REAL ID yet? You can still fly, but it may cost $45",
+   "https://abc7chicago.com/amp/post/no-real-id-can-fly-may-cost-45-another-form-accepted/18521422/"
+  ],
+  [
+   "AAAE",
+   "Security Policy Alert: TSA Issues Guidance for ConfirmID",
+   "https://alerts.aaae.org/latest/security_011326"
+  ]
+ ],
+ "topics": [
+  "travel"
+ ],
+ "made": "2026-11-11T02:05:00+00:00",
+ "first": "2026-11-11T02:05:00+00:00",
+ "updated": "2026-11-11T02:05:00+00:00"
+}

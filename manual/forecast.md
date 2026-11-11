@@ -105,10 +105,27 @@
 | 17 нояб | Prime Video: Surviving the London Nail Bombings | — пропуск (теракт, жертвы) | — |
 | 10 нояб | Hulu: Get Huge: Looksmaxxing to Death | — пропуск (смерти, препараты) | — |
 | 10 дек (JP) | PlayStation Portal: новая японская версия с доп. памятью | — факты противоречат, только Япония | — |
+| 12 нояб | Peacock: The Good Daughter (Karin Slaughter, 2017) | is the good daughter based on a book | ✅ the-good-daughter-book |
+| 18 нояб | Hulu: Vienna Game (Венский конгресс, герцогиня Саган) | is vienna game a true story | ✅ vienna-game-true-story |
+| 18 нояб | Prime Video: Madden (Nicolas Cage, John Madden) | is madden a true story | ✅ madden-movie-true-story |
+| 18 нояб | Disney Dreamlight Valley: The Keepsake Sea | when does the keepsake sea come out | ✅ keepsake-sea-release-date |
+| 10 нояб – | Anthropic IPO, roadshow; в Trends «anthropic pbc» Breakout | what is a public benefit corporation | ✅ what-is-a-public-benefit-corporation |
+| 9 нояб (прошло) | Трамп позвонил в C-SPAN (Washington Journal Primetime); Breakout «did trump call into cspan» | did trump call into c-span | ✅ did-trump-call-into-c-span |
+| 17 нояб | MLB: дедлайн 40-man roster (защита от Rule 5) | what is the 40-man roster in baseball | ✅ 40-man-roster |
+| нояб–дек | Рекордный «super El Niño» (пик в нояб–дек) | what is a super el nino | ✅ what-is-a-super-el-nino |
+| 17 нояб | Starbucks Red Cup Day | when is red cup day 2026 | ✅ red-cup-day-2026 |
+| 24–30 нояб | Перелёты на День благодарения без REAL ID ($45 ConfirmID) | what is tsa confirmid | ✅ what-is-tsa-confirmid |
+| 19 нояб | The Binding of Isaac: Repentance+ Online | — пропуск (религиозное название/темы) | — |
+| 13 нояб | HBO Max/TLC: Crown of Deceit (Miss Universe) | — пропуск (обвинения против конкретного человека) | — |
+| 20 нояб | HBO Max: Tony (байопик Anthony Bourdain) | is tony a true story / who plays anthony bourdain | — писать 16–18 нояб |
 Правило: писать за 1–5 дней до события (Google индексирует ~2/3 новых страниц за сутки).
 Проверка: через 3–7 дней после даты сверить с Trends CSV и Search Console — угадали или нет, записать урок сюда.
 
 ## Уроки
+- 11 нояб, утро (коротко; GSC: последний полный день 7 нояб — 36 кликов / 3951 показ; 8–10 нояб ещё догружаются):
+  - learn.json: заголовок = реальный запрос → 100% страниц с показами и 0.72 клика/стр. против 0.13; ручные 1.56 клика/стр., авто 0.03; «when» 1.67 клика/стр. — лучшее слово, «who» 0.1. Вывод: вопрос из подсказок дословно в начале заголовка.
+  - Страницы 10 нояб (вечер): 7 из 10 фраз в подсказках Google; ❌ нет «has a defense secretary ever been impeached» (ищут «can a cabinet secretary be impeached»), «what is the difference between the latin grammys and the grammys», «is there a planet alignment in november 2026» (ищут «planetary alignment november 2026»). Длинные вопросы с «difference between» и «has … ever» в подсказки не попадают — брать короткие формы.
+  - Trends 11 нояб: снова всплеск слов словесной игры (scrivener, haberdasher, wainwright, hullabaloo, brouhaha) — не писали. Новое: свежее событие с сомнением в подлинности → «did X really happen / did trump call into cspan» (Breakout, т.к. раньше был фейковый звонок).
 - 10 нояб, вечер (GSC: последний полный день 7 нояб — 36 кликов / 3951 показ; 8 нояб 6/230; 9 нояб 2/11 — данные ещё догружаются):
   - learn.json: «when»-страницы — 2.5 клика/стр. (лучшее вопросительное слово), «is» — 0.67; заголовок = реальный запрос → 100% страниц с показами и 0.72 клика/стр. против 0.14. Вывод: для событий писать «when is/are X 2026» и «is X a true story».
   - Подсказки Google по страницам 10 нояб (утро) — все 10 фраз уже в подсказках (cliff-booth-release-date, does-mlb-have-a-salary-cap, guarding-stars-book, how-to-rob-a-bank-true-story, what-does-maxxing-mean, what-does-unc-mean, what-is-a-motion-to-table, what-is-a-privileged-resolution, what-is-dandori-academy, what-is-the-bearista-cup). GSC по ним ещё нет.
