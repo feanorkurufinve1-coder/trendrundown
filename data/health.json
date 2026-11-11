@@ -1,40 +1,29 @@
 {
- "checked": "2026-11-11T07:02:10+00:00",
+ "checked": "2026-11-11T13:02:27+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
-   "lastSubmitted": "2026-11-11T06:17:11.267Z",
-   "lastDownloaded": "2026-11-11T06:17:12.948Z",
+   "lastSubmitted": "2026-11-11T07:57:10.069Z",
+   "lastDownloaded": "2026-11-11T07:57:11.830Z",
    "isPending": false,
    "warnings": "0",
    "errors": "0",
    "contents": [
     {
      "type": "web",
-     "submitted": "415",
+     "submitted": "252",
      "indexed": "0"
     }
    ]
   },
   {
    "path": "https://trendrundown.com/sitemap-news.xml",
-   "lastSubmitted": "2026-11-11T06:17:11.157Z",
-   "lastDownloaded": "2026-11-11T06:17:11.825Z",
+   "lastSubmitted": "2026-11-11T07:57:09.995Z",
+   "lastDownloaded": "2026-11-11T07:57:10.756Z",
    "isPending": false,
    "warnings": "0",
-   "errors": "0",
-   "contents": [
-    {
-     "type": "web",
-     "submitted": "2",
-     "indexed": "0"
-    },
-    {
-     "type": "news",
-     "submitted": "2",
-     "indexed": "0"
-    }
-   ]
+   "errors": "1",
+   "contents": null
   }
  ],
  "urls": [
@@ -45,7 +34,7 @@
    "robotsTxtState": "ALLOWED",
    "indexingState": "INDEXING_ALLOWED",
    "pageFetchState": "SUCCESSFUL",
-   "lastCrawlTime": "2026-11-09T14:02:58Z",
+   "lastCrawlTime": "2026-11-11T07:11:00Z",
    "googleCanonical": "https://trendrundown.com/x/telerally",
    "userCanonical": "https://trendrundown.com/x/telerally"
   },
