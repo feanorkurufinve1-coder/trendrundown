@@ -1,5 +1,5 @@
 {
- "made": "2026-11-11T14:59:07+00:00",
+ "made": "2026-11-11T15:01:54+00:00",
  "pages": 287,
  "summary": {
   "kind": {
@@ -2019,7 +2019,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 19,
-   "age_days": 13.2,
+   "age_days": 13.3,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3744,7 +3744,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 63,
-   "age_days": 5.0,
+   "age_days": 5.1,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
