@@ -1,0 +1,108 @@
+{
+ "checked": "2026-11-11T07:02:10+00:00",
+ "sitemaps": [
+  {
+   "path": "https://trendrundown.com/sitemap.xml",
+   "lastSubmitted": "2026-11-11T06:17:11.267Z",
+   "lastDownloaded": "2026-11-11T06:17:12.948Z",
+   "isPending": false,
+   "warnings": "0",
+   "errors": "0",
+   "contents": [
+    {
+     "type": "web",
+     "submitted": "415",
+     "indexed": "0"
+    }
+   ]
+  },
+  {
+   "path": "https://trendrundown.com/sitemap-news.xml",
+   "lastSubmitted": "2026-11-11T06:17:11.157Z",
+   "lastDownloaded": "2026-11-11T06:17:11.825Z",
+   "isPending": false,
+   "warnings": "0",
+   "errors": "0",
+   "contents": [
+    {
+     "type": "web",
+     "submitted": "2",
+     "indexed": "0"
+    },
+    {
+     "type": "news",
+     "submitted": "2",
+     "indexed": "0"
+    }
+   ]
+  }
+ ],
+ "urls": [
+  {
+   "url": "/x/telerally",
+   "verdict": "NEUTRAL",
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "pageFetchState": "SUCCESSFUL",
+   "lastCrawlTime": "2026-11-09T14:02:58Z",
+   "googleCanonical": "https://trendrundown.com/x/telerally",
+   "userCanonical": "https://trendrundown.com/x/telerally"
+  },
+  {
+   "url": "/x/mutual-option",
+   "verdict": "NEUTRAL",
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "pageFetchState": "SUCCESSFUL",
+   "lastCrawlTime": "2026-11-03T09:16:57Z",
+   "googleCanonical": "https://trendrundown.com/x/mutual-option",
+   "userCanonical": "https://trendrundown.com/x/mutual-option"
+  },
+  {
+   "url": "/x/dane-cook-brother",
+   "verdict": "NEUTRAL",
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "pageFetchState": "SUCCESSFUL",
+   "lastCrawlTime": "2026-11-06T06:54:44Z",
+   "googleCanonical": "https://trendrundown.com/x/dane-cook-brother",
+   "userCanonical": "https://trendrundown.com/x/dane-cook-brother"
+  },
+  {
+   "url": "/x/cyber-monday",
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "pageFetchState": "SUCCESSFUL",
+   "lastCrawlTime": "2026-11-05T13:54:59Z",
+   "googleCanonical": "https://trendrundown.com/x/cyber-monday",
+   "userCanonical": "https://trendrundown.com/x/cyber-monday"
+  },
+  {
+   "url": "/w/the-body-cast",
+   "verdict": "NEUTRAL",
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "pageFetchState": "SUCCESSFUL",
+   "lastCrawlTime": "2026-11-02T15:01:19Z",
+   "googleCanonical": "https://trendrundown.com/w/the-body-cast",
+   "userCanonical": "https://trendrundown.com/w/the-body-cast"
+  },
+  {
+   "url": "/",
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "pageFetchState": "SUCCESSFUL",
+   "lastCrawlTime": "2026-11-10T04:31:52Z",
+   "googleCanonical": "https://trendrundown.com/",
+   "userCanonical": "https://trendrundown.com/"
+  }
+ ]
+}
