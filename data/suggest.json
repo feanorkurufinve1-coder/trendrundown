@@ -2424,7 +2424,7 @@
   ]
  },
  "bright-star-eastern-sky-morning": {
-  "time": "2026-11-10T14:03:03+00:00",
+  "time": "2026-11-11T14:05:07+00:00",
   "query": "what is the bright star in the eastern sky this morning",
   "in_suggest": true,
   "suggest": {
@@ -2458,11 +2458,15 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "how-are-cma-awards-voted": {
-  "time": "2026-11-10T14:03:05+00:00",
+  "time": "2026-11-11T14:05:09+00:00",
   "query": "how are cma awards voted",
   "in_suggest": true,
   "suggest": {
@@ -2503,11 +2507,15 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "how-are-game-awards-nominees-chosen": {
-  "time": "2026-11-10T14:03:06+00:00",
+  "time": "2026-11-11T14:05:11+00:00",
   "query": "how are the game awards nominees chosen",
   "in_suggest": true,
   "suggest": {
@@ -2557,25 +2565,29 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "is-philomena-cunk-real": {
-  "time": "2026-11-10T14:03:08+00:00",
+  "time": "2026-11-11T14:05:12+00:00",
   "query": "is philomena cunk a real person",
   "in_suggest": true,
   "suggest": {
    "philomena cunk": [
     "philomena cunk",
     "philomena cunk letterboxd",
-    "philomena cunk shows",
     "philomena cunk quotes",
     "philomena cunk real name",
+    "philomena cunk vision quest",
+    "philomena cunk shows",
     "philomena cunk actress",
-    "philomena cunk netflix",
+    "philomena cunk marvel",
     "philomena cunk pump up the jam",
-    "philomena cunk best moments",
-    "philomena cunk where to watch"
+    "philomena cunk netflix"
    ],
    "what is philomena cunk": [
     "what is philomena cunk",
@@ -2609,11 +2621,15 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "lame-duck-president": {
-  "time": "2026-11-10T14:03:09+00:00",
+  "time": "2026-11-11T14:05:13+00:00",
   "query": "what is a lame duck president",
   "in_suggest": true,
   "suggest": {
@@ -2662,11 +2678,15 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "national-parks-free-veterans-day": {
-  "time": "2026-11-10T14:03:10+00:00",
+  "time": "2026-11-11T14:05:15+00:00",
   "query": "are national parks free on veterans day",
   "in_suggest": true,
   "suggest": {
@@ -2696,11 +2716,15 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "new-snap-stocking-rules": {
-  "time": "2026-11-10T14:03:12+00:00",
+  "time": "2026-11-11T14:05:17+00:00",
   "query": "new snap rules for stores",
   "in_suggest": false,
   "suggest": {
@@ -2733,25 +2757,29 @@
    [
     "2026-11-10",
     false
+   ],
+   [
+    "2026-11-11",
+    false
    ]
   ]
  },
  "what-is-a-quarter-quell": {
-  "time": "2026-11-10T14:03:13+00:00",
+  "time": "2026-11-11T14:05:18+00:00",
   "query": "what is a quarter quell",
   "in_suggest": true,
   "suggest": {
    "quarter quell": [
     "quarter quell",
+    "quarter quell hunger games",
     "quarter quell meaning",
     "quarter quell quest",
-    "quarter quell hunger games",
     "quarter quell ideas",
     "quarter quell birthday party",
-    "quarter quell party",
     "quarter quell tributes",
     "quarter quell birthday",
-    "quarter quell arena"
+    "quarter quell arena",
+    "quarter quell meaning hunger games"
    ],
    "what is quarter quell": [
     "what is quarter quell",
@@ -2786,25 +2814,29 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "what-is-apple-homeview": {
-  "time": "2026-11-10T14:03:13+00:00",
+  "time": "2026-11-11T14:05:19+00:00",
   "query": "what is apple homeview",
   "in_suggest": true,
   "suggest": {
    "apple homeview": [
-    "apple homeview",
     "apple homeview review",
+    "apple homeview",
     "apple homeview release date",
-    "apple homeview reddit",
     "apple homeview review embargo",
-    "apple homeview release",
+    "apple homeview unboxing",
     "apple homeview price",
     "apple homeview ad",
     "apple homeview wall mount",
-    "apple homeview size comparison"
+    "apple homeview reddit",
+    "apple homeview compatible devices"
    ],
    "what is apple homeview": [
     "what is apple homeview",
@@ -2827,11 +2859,15 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "what-is-pico-park": {
-  "time": "2026-11-10T14:03:14+00:00",
+  "time": "2026-11-11T14:05:20+00:00",
   "query": "what is pico park",
   "in_suggest": true,
   "suggest": {
@@ -2842,10 +2878,10 @@
     "pico park sonic",
     "pico park 3",
     "pico park game",
+    "pico park pico rivera",
     "pico park classic edition",
-    "pico park free",
-    "pico park ps5",
-    "pico park 2 switch"
+    "pico park steam",
+    "pico park free"
    ],
    "what is pico park": [
     "what is pico park",
@@ -2867,6 +2903,10 @@
    ],
    [
     "2026-11-10",
+    true
+   ],
+   [
+    "2026-11-11",
     true
    ]
   ]
