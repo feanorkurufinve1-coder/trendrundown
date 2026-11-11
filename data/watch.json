@@ -1,57 +1,11 @@
 {
- "made": "2026-11-11T01:01:49+00:00",
+ "made": "2026-11-11T01:17:16+00:00",
  "days": [
-  "2026-11-07",
   "2026-11-08",
-  "2026-11-09"
+  "2026-11-09",
+  "2026-11-10"
  ],
  "pages": [
-  {
-   "page": "/x/dane-cook-brother",
-   "clicks_3d": 19,
-   "impr_3d": 2680,
-   "pos": 8.9,
-   "by_day": {
-    "2026-11-07": 18,
-    "2026-11-08": 1
-   },
-   "manual": true
-  },
-  {
-   "page": "/w/the-body-cast",
-   "clicks_3d": 9,
-   "impr_3d": 182,
-   "pos": 7.6,
-   "by_day": {
-    "2026-11-07": 8,
-    "2026-11-08": 1,
-    "2026-11-09": 0
-   },
-   "manual": false
-  },
-  {
-   "page": "/x/murder-in-galicia-true-story",
-   "clicks_3d": 5,
-   "impr_3d": 238,
-   "pos": 8.0,
-   "by_day": {
-    "2026-11-07": 5,
-    "2026-11-08": 0,
-    "2026-11-09": 0
-   },
-   "manual": true
-  },
-  {
-   "page": "/x/alaska-ranked-choice-voting",
-   "clicks_3d": 2,
-   "impr_3d": 9,
-   "pos": 14.6,
-   "by_day": {
-    "2026-11-07": 2,
-    "2026-11-08": 0
-   },
-   "manual": true
-  },
   {
    "page": "/c/entertainment",
    "clicks_3d": 2,
@@ -64,48 +18,87 @@
    "manual": false
   },
   {
-   "page": "/x/scott-colom",
+   "page": "/x/dane-cook-brother",
    "clicks_3d": 1,
-   "impr_3d": 126,
-   "pos": 21.4,
+   "impr_3d": 79,
+   "pos": 8.5,
    "by_day": {
-    "2026-11-07": 1,
-    "2026-11-08": 0
+    "2026-11-08": 1
    },
    "manual": true
   },
   {
-   "page": "/w/the-chosen-season-6-cast",
+   "page": "/w/the-body-cast",
    "clicks_3d": 1,
-   "impr_3d": 33,
-   "pos": 7.3,
+   "impr_3d": 19,
+   "pos": 7.4,
    "by_day": {
-    "2026-11-07": 0,
-    "2026-11-08": 0
+    "2026-11-08": 1,
+    "2026-11-09": 0
    },
    "manual": false
   },
   {
    "page": "/x/gen-z-regelt",
    "clicks_3d": 1,
-   "impr_3d": 17,
-   "pos": 7.8,
+   "impr_3d": 2,
+   "pos": 6.5,
    "by_day": {
-    "2026-11-07": 0,
     "2026-11-08": 1
    },
    "manual": false
   },
   {
-   "page": "/c/world",
-   "clicks_3d": 1,
-   "impr_3d": 4,
-   "pos": 2.6,
+   "page": "/x/murder-in-galicia-true-story",
+   "clicks_3d": 0,
+   "impr_3d": 29,
+   "pos": 8.3,
    "by_day": {
-    "2026-11-07": 1,
+    "2026-11-08": 0,
+    "2026-11-09": 0
+   },
+   "manual": true
+  },
+  {
+   "page": "/x/scott-colom",
+   "clicks_3d": 0,
+   "impr_3d": 12,
+   "pos": 22.5,
+   "by_day": {
+    "2026-11-08": 0
+   },
+   "manual": true
+  },
+  {
+   "page": "/x/wta-250",
+   "clicks_3d": 0,
+   "impr_3d": 9,
+   "pos": 10.0,
+   "by_day": {
     "2026-11-08": 0
    },
    "manual": false
+  },
+  {
+   "page": "/x/arnold-schwarzenegger-last-name",
+   "clicks_3d": 0,
+   "impr_3d": 6,
+   "pos": 9.2,
+   "by_day": {
+    "2026-11-08": 0
+   },
+   "manual": false
+  },
+  {
+   "page": "/x/non-tender",
+   "clicks_3d": 0,
+   "impr_3d": 6,
+   "pos": 1.0,
+   "by_day": {
+    "2026-11-08": 0,
+    "2026-11-09": 0
+   },
+   "manual": true
   }
  ]
 }
