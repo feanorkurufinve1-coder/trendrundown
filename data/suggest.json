@@ -3434,21 +3434,21 @@
   ]
  },
  "cma-awards-2026-date": {
-  "time": "2026-11-10T14:16:55+00:00",
+  "time": "2026-11-11T14:16:56+00:00",
   "query": "when are the cma awards 2026",
   "in_suggest": true,
   "suggest": {
    "cma awards 2026": [
     "cma awards 2026",
     "cma awards 2026 where to watch",
-    "cma awards 2026 tickets",
+    "cma awards 2026 nominees",
     "cma awards 2026 performers",
+    "cma awards 2026 tickets",
+    "cma awards 2026 sammy kershaw",
+    "cma awards 2026 lineup",
+    "cma awards 2026 red carpet",
     "cma awards 2026 date",
-    "cma awards 2026 controversy",
-    "cma awards 2026 nominations",
-    "cma awards 2026 host",
-    "cma awards 2026 voting",
-    "cma awards 2026 tickets ticketmaster"
+    "cma awards 2026 nominations"
    ],
    "what is cma awards 2026": [
     "what is cma awards 2026",
@@ -3478,13 +3478,17 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "has-a-defense-secretary-been-impeached": {
-  "time": "2026-11-10T14:16:56+00:00",
+  "time": "2026-11-11T14:16:57+00:00",
   "query": "has a defense secretary ever been impeached",
-  "in_suggest": false,
+  "in_suggest": true,
   "suggest": {
    "impeachment of cabinet secretaries": [
     "impeachment of cabinet secretaries",
@@ -3495,13 +3499,24 @@
     "who are trump's cabinet secretaries"
    ],
    "what is impeachment of cabinet secretaries": [],
-   "has a defense secretary ever been impeached": [],
-   "has defense secretary ever been impeached": []
+   "has a defense secretary ever been impeached": [
+    "has a defense secretary ever been impeached",
+    "has a justice ever been impeached",
+    "has a federal judge ever been impeached"
+   ],
+   "has defense secretary ever been impeached": [
+    "has a defense secretary ever been impeached",
+    "how many cabinet members have been impeached"
+   ]
   },
   "history": [
    [
     "2026-11-10",
     false
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
