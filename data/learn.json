@@ -1,5 +1,5 @@
 {
- "made": "2026-11-11T09:47:21+00:00",
+ "made": "2026-11-11T09:49:33+00:00",
  "pages": 276,
  "summary": {
   "kind": {
@@ -1959,7 +1959,7 @@
    "source": "auto",
    "q_word": "where",
    "title_len": 26,
-   "age_days": 13.6,
+   "age_days": 13.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3129,7 +3129,7 @@
    "source": "auto",
    "q_word": "none",
    "title_len": 67,
-   "age_days": 6.2,
+   "age_days": 6.3,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3144,7 +3144,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 69,
-   "age_days": 6.2,
+   "age_days": 6.3,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
