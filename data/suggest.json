@@ -1330,7 +1330,7 @@
   ]
  },
  "alicias-law-the-good-wife": {
-  "time": "2026-11-10T14:31:51+00:00",
+  "time": "2026-11-11T14:31:59+00:00",
   "query": "is alicia's law based on the good wife",
   "in_suggest": false,
   "suggest": {
@@ -1376,11 +1376,15 @@
    [
     "2026-11-10",
     false
+   ],
+   [
+    "2026-11-11",
+    false
    ]
   ]
  },
  "edgar-martinez-award": {
-  "time": "2026-11-10T14:31:52+00:00",
+  "time": "2026-11-11T14:32:01+00:00",
   "query": "what is the edgar martinez award",
   "in_suggest": true,
   "suggest": {
@@ -1434,11 +1438,15 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "how-is-speaker-of-the-house-elected": {
-  "time": "2026-11-10T14:31:54+00:00",
+  "time": "2026-11-11T14:32:03+00:00",
   "query": "how is the speaker of the house elected",
   "in_suggest": true,
   "suggest": {
@@ -1496,11 +1504,15 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "lame-duck-session": {
-  "time": "2026-11-10T14:31:55+00:00",
+  "time": "2026-11-11T14:32:06+00:00",
   "query": "what is a lame duck session",
   "in_suggest": true,
   "suggest": {
@@ -1557,11 +1569,15 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "mlb-posting-system": {
-  "time": "2026-11-10T14:31:57+00:00",
+  "time": "2026-11-11T14:32:11+00:00",
   "query": "what is the posting system in mlb",
   "in_suggest": true,
   "suggest": {
@@ -1613,11 +1629,15 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "record-vs-song-of-the-year": {
-  "time": "2026-11-10T14:31:58+00:00",
+  "time": "2026-11-11T14:32:15+00:00",
   "query": "what is the difference between record of the year and song of the year",
   "in_suggest": true,
   "suggest": {
@@ -1666,25 +1686,29 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "richard-avedon": {
-  "time": "2026-11-10T14:32:00+00:00",
+  "time": "2026-11-11T14:32:17+00:00",
   "query": "who was richard avedon",
   "in_suggest": true,
   "suggest": {
    "richard avedon": [
     "richard avedon",
-    "richard avedon netflix",
     "richard avedon photos",
+    "richard avedon netflix",
     "richard avedon in the american west",
-    "richard avedon marilyn monroe",
+    "richard avedon netflix documentary",
     "richard avedon books",
-    "richard avedon portraits",
     "richard avedon famous photos",
-    "richard avedon photography",
-    "richard avedon beatles"
+    "richard avedon marilyn monroe",
+    "richard avedon beatles",
+    "richard avedon portraits"
    ],
    "who is richard avedon": [
     "who is richard avedon",
@@ -1726,11 +1750,15 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "silver-slugger-award": {
-  "time": "2026-11-10T14:32:01+00:00",
+  "time": "2026-11-11T14:32:18+00:00",
   "query": "what is the silver slugger award",
   "in_suggest": true,
   "suggest": {
@@ -1742,9 +1770,9 @@
     "silver slugger award 2025",
     "silver slugger award criteria",
     "silver slugger award odds",
-    "silver slugger award 2026 predictions",
     "silver slugger award mlb",
-    "silver slugger award 2026 winners list"
+    "silver slugger award 2026 winners list",
+    "silver slugger award trophy"
    ],
    "what is silver slugger award": [
     "what is silver slugger award",
@@ -1787,25 +1815,29 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "teruaki-sato": {
-  "time": "2026-11-10T14:32:01+00:00",
+  "time": "2026-11-11T14:32:19+00:00",
   "query": "who is teruaki sato",
   "in_suggest": true,
   "suggest": {
    "teruaki sato": [
     "teruaki sato",
+    "teruaki sato astros",
     "teruaki sato stats",
+    "teruaki sato mlb",
     "teruaki sato yankees",
+    "teruaki sato projected contract",
+    "teruaki sato news",
+    "teruaki sato agent",
     "teruaki sato scouting report",
-    "teruaki sato posting",
-    "teruaki sato defense",
-    "teruaki sato highlights",
-    "teruaki sato mets",
-    "teruaki sato phillies",
-    "teruaki sato projected contract"
+    "teruaki sato posting"
    ],
    "who is teruaki sato": [
     "who is teruaki sato",
@@ -1831,18 +1863,19 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "when-does-new-congress-start": {
-  "time": "2026-11-10T14:32:03+00:00",
+  "time": "2026-11-11T14:32:25+00:00",
   "query": "when does the new congress take office",
   "in_suggest": false,
   "suggest": {
-   "start of the 120th congress": [
-    "start of 120th congress",
-    "first day of new congress"
-   ],
+   "start of the 120th congress": [],
    "what is start of the 120th congress": [],
    "when does the new congress take office": [],
    "new congress take office": []
@@ -1862,6 +1895,10 @@
    ],
    [
     "2026-11-10",
+    false
+   ],
+   [
+    "2026-11-11",
     false
    ]
   ]
@@ -3521,7 +3558,7 @@
   ]
  },
  "is-thomas-massie-a-republican": {
-  "time": "2026-11-10T14:16:58+00:00",
+  "time": "2026-11-11T14:32:04+00:00",
   "query": "is thomas massie a republican or democrat",
   "in_suggest": true,
   "suggest": {
@@ -3531,26 +3568,28 @@
     "thomas massie election",
     "thomas massie impeachment",
     "thomas massie reelection",
-    "thomas massie impeachment hegseth",
     "thomas massie election results",
-    "thomas massie hegseth",
-    "thomas massie district",
-    "thomas massie pete hegseth impeachment"
+    "thomas massie impeachment hegseth",
+    "thomas massie wife",
+    "thomas massie wiki",
+    "thomas massie hegseth"
    ],
    "who is thomas massie": [
     "who is thomas massie",
     "who is thomas massie of kentucky",
     "who is thomas massie in congress",
     "who is thomas massie's wife",
+    "who is thomas massie republican or democrat",
     "who is thomas massie running against",
     "who is thomas massie married to",
     "who is thomas massie's biggest donor",
     "who is thomas massie and what does he stand for",
-    "who is thomas massie opponent",
-    "who is thomas massie's new wife"
+    "who is thomas massie opponent"
    ],
    "is thomas massie a republican or democrat": [
     "is thomas massie a republican or democrat",
+    "is tom massie a republican or democrat",
+    "is representative thomas massie a democrat or republican",
     "is thomas massie a republican",
     "is thomas massie a libertarian",
     "did thomas massie win the primary",
@@ -3558,6 +3597,8 @@
    ],
    "thomas massie republican democrat": [
     "thomas massie republican or democrat",
+    "tom massie republican or democrat",
+    "rep thomas massie republican or democrat",
     "thomas massie kentucky republican or democrat",
     "is thomas massie a republican"
    ]
@@ -3566,11 +3607,15 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "latin-grammys-vs-grammys": {
-  "time": "2026-11-10T14:16:59+00:00",
+  "time": "2026-11-11T14:32:07+00:00",
   "query": "what is the difference between the latin grammys and the grammys",
   "in_suggest": false,
   "suggest": {
@@ -3602,25 +3647,29 @@
    [
     "2026-11-10",
     false
+   ],
+   [
+    "2026-11-11",
+    false
    ]
   ]
  },
  "medicaid-work-requirements-start-date": {
-  "time": "2026-11-10T14:17:01+00:00",
+  "time": "2026-11-11T14:32:09+00:00",
   "query": "when do medicaid work requirements start",
   "in_suggest": true,
   "suggest": {
    "medicaid work requirements": [
+    "medicaid work requirements iowa",
     "medicaid work requirements",
     "medicaid work requirements 2027",
-    "medicaid work requirements 2026",
     "medicaid work requirements by state",
-    "medicaid work requirements pa",
+    "medicaid work requirements 2026",
     "medicaid work requirements reddit",
-    "medicaid work requirements illinois",
-    "medicaid work requirements new york",
-    "medicaid work requirements ohio",
-    "medicaid work requirements exemptions"
+    "medicaid work requirements exemptions",
+    "medicaid work requirements lawsuit",
+    "medicaid work requirements self employed",
+    "medicaid work requirements final rule"
    ],
    "what is medicaid work requirements": [
     "what is medicaid work requirements",
@@ -3663,11 +3712,15 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "national-book-awards-2026": {
-  "time": "2026-11-10T14:17:02+00:00",
+  "time": "2026-11-11T14:32:12+00:00",
   "query": "when are the national book awards 2026",
   "in_suggest": true,
   "suggest": {
@@ -3676,12 +3729,12 @@
     "national book awards 2026 longlist",
     "national book awards 2026 dates",
     "national book awards 2026 fiction longlist",
-    "national book awards 2026 nonfiction",
     "national book awards 2026 fiction",
     "national book awards 2026 poetry",
-    "national book awards 2026 host",
     "national book awards 2026 finalists",
-    "national book awards 2026 translation"
+    "national book awards 2026 translation",
+    "national book awards 2026 nominees",
+    "national book awards 2026 shortlist"
    ],
    "what is national book awards 2026": [
     "national book awards 2026",
@@ -3703,11 +3756,15 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "planet-alignment-november-2026": {
-  "time": "2026-11-10T14:17:04+00:00",
+  "time": "2026-11-11T14:32:14+00:00",
   "query": "is there a planet alignment in november 2026",
   "in_suggest": false,
   "suggest": {
@@ -3726,11 +3783,15 @@
    [
     "2026-11-10",
     false
+   ],
+   [
+    "2026-11-11",
+    false
    ]
   ]
  },
  "the-empress-netflix-true-story": {
-  "time": "2026-11-10T14:17:05+00:00",
+  "time": "2026-11-11T14:32:20+00:00",
   "query": "is the empress on netflix a true story",
   "in_suggest": true,
   "suggest": {
@@ -3739,16 +3800,16 @@
     "the empress tarot",
     "the empress cast",
     "the empress season 3",
-    "the empress remarried",
     "the empress reversed",
     "the empress tarot meaning",
     "the empress regretted losing me",
-    "the empress season 3 release date",
+    "the empress remarried",
+    "the empress yes or no",
     "the empress tarot card"
    ],
    "what is the empress": [
-    "what is the empress about",
     "what is the empress about on netflix",
+    "what is the empress about",
     "what is the empress card in tarot",
     "what is the empress dowager",
     "what is the empress tarot card mean",
@@ -3775,11 +3836,15 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "what-is-a-hip-pointer": {
-  "time": "2026-11-10T14:17:06+00:00",
+  "time": "2026-11-11T14:32:22+00:00",
   "query": "what is a hip pointer injury",
   "in_suggest": true,
   "suggest": {
@@ -3793,7 +3858,7 @@
     "hip pointer recovery time",
     "hip pointer stretches",
     "hip pointer exercises",
-    "hip pointer bruise"
+    "hip pointer pain location"
    ],
    "what is hip pointer": [
     "what is hip pointer",
@@ -3836,11 +3901,15 @@
    [
     "2026-11-10",
     true
+   ],
+   [
+    "2026-11-11",
+    true
    ]
   ]
  },
  "what-is-win-the-mall": {
-  "time": "2026-11-10T14:17:08+00:00",
+  "time": "2026-11-11T14:32:24+00:00",
   "query": "what is win the mall on netflix",
   "in_suggest": true,
   "suggest": {
@@ -3848,8 +3917,8 @@
     "win the mall",
     "win the mall netflix",
     "win the mall netflix release date",
-    "win the mall release date",
     "win the mall netflix cast",
+    "win the mall release date",
     "win the mall show",
     "win the mall netflix trailer",
     "win the mall trailer",
@@ -3875,6 +3944,10 @@
   "history": [
    [
     "2026-11-10",
+    true
+   ],
+   [
+    "2026-11-11",
     true
    ]
   ]
