@@ -2,8 +2,7 @@
 name: Narrate
 
 on:
-  schedule:
-    - cron: "40 * * * *"
+  # 11.11: озвучка выключена (3 прослушивания за месяц) — запускается только вручную
   workflow_dispatch:
 
 permissions:

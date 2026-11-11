@@ -39,6 +39,8 @@ CATS = {                   # разделы сайта: тема попадае�
     "tech": "Tech & Science", "world": "World", "lifestyle": "Lifestyle", "other": "More news",
 }
 ONLY_WITH_SUMMARY = True  # публиковать только темы со сводкой ИИ (защита от санкций Google за «массовый контент»)
+AUTO_EXPLAIN = False       # 11.11: автоматические пояснения выключены (287 страниц → 8 кликов за 28 дней, тянули сайт вниз)
+AUDIO_ON = False           # 11.11: озвучка выключена (3 прослушивания за месяц)
 MAX_NEW_PER_DAY = 4        # сколько новых тем в сутки (по времени США) получают сводку и попадают на сайт — самые крупные
 EXPLAIN = True             # объяснения: что люди начнут гуглить после новости (термины, законы, места, малоизвестные люди)
 MAX_EXPLAINERS_PER_DAY = 10   # сколько новых объяснений в сутки
@@ -2343,6 +2345,8 @@ def near_duplicate(ex, item):
 
 def explain(store):
     """Для свежих новостей этого прохода: предсказанные запросы → проверка подсказками Google → страница-объяснение."""
+    if not AUTO_EXPLAIN:
+        return 0
     key = api_key()
     if not (EXPLAIN and key):
         return 0
@@ -3003,6 +3007,8 @@ def google_titles(store):
 
 def refresh_explainers(store):
     """Пояснения вроде «Что такое Apple Pro and tell» пишутся до события; после события обновляем их — что произошло."""
+    if not AUTO_EXPLAIN:
+        return 0
     key = api_key()
     if not (DIG and key):
         return 0
@@ -4749,7 +4755,7 @@ def build_site(store):
     # сначала свежие новости (их видно на главной), потом страницы, которые Google уже показывает, потом новые пояснения
     q.sort(key=lambda r: (r["key"].startswith("t/"), ("/" + r["key"]) in GSC_PATHS, r["when"]), reverse=True)
     try:
-        json.dump(q[:60], open(NARRATE_QUEUE, "w"), ensure_ascii=False)
+        json.dump(q[:60] if AUDIO_ON else [], open(NARRATE_QUEUE, "w"), ensure_ascii=False)
     except Exception as e:
         log(f"очередь озвучки: {e}")
     w("robots.txt", ai_block + f"User-agent: *\nAllow: /\nDisallow: /api/\nSitemap: {SITE_URL}/sitemap.xml\nSitemap: {SITE_URL}/sitemap-news.xml\n")
