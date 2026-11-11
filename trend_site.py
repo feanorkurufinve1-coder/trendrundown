@@ -25,6 +25,15 @@ AD_SLOTS = {               # номера рекламных блоков (data-
 }
 # Полоса внизу экрана на телефоне включается в AdSense: Реклама → Автоматическая реклама → «Якорные объявления».
 CONTACT_EMAIL = "hello@trendrundown.com"
+# издатель для разметки schema.org — с логотипом (иконка сайта), как требует Google для статей
+PUBLISHER_LD = {"@type": "Organization", "name": "TrendRundown", "url": "https://trendrundown.com",
+                "logo": {"@type": "ImageObject", "url": "https://trendrundown.com/icon-512.png", "width": 512, "height": 512}}
+
+
+def crumbs_ld(*items):
+    """Хлебные крошки для Google: [(название, адрес), ...]."""
+    return {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": i + 1, "name": n_, "item": u_} for i, (n_, u_) in enumerate(items)]}
 GEO = "US"
 RUN_ONCE = True            # True — один проход и выход; False — обновлять каждые INTERVAL_MIN минут
 INTERVAL_MIN = 15           # чем раньше страница появилась, тем больше трафика из Google
@@ -4217,7 +4226,7 @@ def build_topic(t, related, same=()):
     ld = {"@context": "https://schema.org", "@type": "NewsArticle", "headline": f"{t['term']}: {_h}"[:110],
           "datePublished": t["first_seen"], "dateModified": upd,
           "author": {"@type": "Organization", "name": SITE_NAME, "url": SITE_URL},
-          "publisher": {"@type": "Organization", "name": SITE_NAME, "url": SITE_URL},
+          "publisher": PUBLISHER_LD,
           "mainEntityOfPage": f"{SITE_URL}/t/{t['slug']}"}
     if t.get("cat") in CATS:
         ld["articleSection"] = CATS[t["cat"]]
@@ -4416,7 +4425,11 @@ def build_index(store):
                      + "".join(card(t, fmt_et(t["first_seen"]).split(",")[0], peak_label(t) + " peak") for t in week) + "</div>")
     body = (f'<p class="tag">{E(TAGLINE)} · Updated {E(fmt_et(store.get("updated", now_iso())))}</p>'
             f'<h1 class="front">Trending in the US right now</h1>{"".join(parts)}' if top else "<p>No trends yet — check back in a few minutes.</p>")
-    return page(f"{SITE_NAME} — What's trending in the US right now", "What Americans are searching for right now, and why. Every trend explained in one minute with links to the sources.", body, "index.html", 0)
+    site_ld = [{"@context": "https://schema.org", "@type": "WebSite", "name": SITE_NAME, "url": SITE_URL + "/"},
+               dict(PUBLISHER_LD, **{"@context": "https://schema.org", "email": CONTACT_EMAIL,
+                                     "description": "Independent explainers on what Americans are searching for."})]
+    return page(f"{SITE_NAME} — What's trending in the US right now", "What Americans are searching for right now, and why. Every trend explained in one minute with links to the sources.", body, "index.html", 0,
+                extra_head=f'<script type="application/ld+json">{json.dumps(site_ld)}</script>')
 
 
 def build_category(cat, topics):
@@ -4482,8 +4495,9 @@ def build_explainer(x, topics):
     ld = [{"@context": "https://schema.org", "@type": "Article", "headline": x["title"],
            "datePublished": x["first"], "dateModified": x["made"],
            "author": {"@type": "Organization", "name": SITE_NAME, "url": SITE_URL},
-           "publisher": {"@type": "Organization", "name": SITE_NAME, "url": SITE_URL},
-           "mainEntityOfPage": f"{SITE_URL}/x/{x['slug']}"}]
+           "publisher": PUBLISHER_LD,
+           "mainEntityOfPage": f"{SITE_URL}/x/{x['slug']}"},
+          crumbs_ld((SITE_NAME, SITE_URL + "/"), ("Explained", SITE_URL + "/explained"), (x["title"][:110], f"{SITE_URL}/x/{x['slug']}"))]
     if faq:
         ld.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
             {"@type": "Question", "name": f["q"], "acceptedAnswer": {"@type": "Answer", "text": f["a"]}} for f in faq]})
@@ -5498,8 +5512,9 @@ def build_cast(x):
             "actor": [{"@type": "Person", "name": c["name"]} for c in x["cast"]]}
     ld = [{"@context": "https://schema.org", "@type": "Article", "headline": cast_title(x)[:110], "datePublished": x["made"],
            "dateModified": x["made"], "author": {"@type": "Organization", "name": SITE_NAME, "url": SITE_URL},
-           "publisher": {"@type": "Organization", "name": SITE_NAME, "url": SITE_URL},
-           "mainEntityOfPage": f"{SITE_URL}/w/{x['slug']}", "about": work}]
+           "publisher": PUBLISHER_LD,
+           "mainEntityOfPage": f"{SITE_URL}/w/{x['slug']}", "about": work},
+          crumbs_ld((SITE_NAME, SITE_URL + "/"), ("Cast guides", SITE_URL + "/cast"), (cast_title(x)[:110], f"{SITE_URL}/w/{x['slug']}"))]
     if hero:
         ld[0]["image"] = SITE_URL + "/" + hero["file"]
     if faq:
