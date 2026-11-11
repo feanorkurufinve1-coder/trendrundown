@@ -2616,6 +2616,49 @@ def sitemap_submit(store):
     log(f"Карта сайта отправлена в Google: {ok}")
 
 
+HEALTH_URLS = ["/x/telerally", "/x/mutual-option", "/x/dane-cook-brother", "/x/cyber-monday", "/w/the-body-cast", "/"]
+
+
+def gsc_health(store):
+    """Раз в 6 часов: видит ли Google наши страницы. Карта сайта (сколько отправлено/принято, ошибки) и проверка
+    отдельных адресов (в индексе ли, когда заходил робот, не мешает ли robots.txt). Пишется в data/health.json."""
+    raw = os.environ.get("GSC_KEY", "").strip()
+    path = os.path.join(HERE, "data", "health.json")
+    try:
+        old = json.load(open(path))
+    except Exception:
+        old = {}
+    if not raw or hours_since(old.get("checked", "2000-01-01T00:00:00+00:00")) < 6:
+        return
+    tok = gsc_token(json.loads(raw))
+    site = "sc-domain:trendrundown.com"
+    out = {"checked": now_iso(), "sitemaps": [], "urls": []}
+    try:
+        req = urllib.request.Request("https://www.googleapis.com/webmasters/v3/sites/" + urllib.parse.quote(site, safe="")
+                                     + "/sitemaps", headers={"Authorization": "Bearer " + tok})
+        with urllib.request.urlopen(req, timeout=30, context=CTX) as r:
+            for sm in json.loads(r.read().decode()).get("sitemap", []):
+                out["sitemaps"].append({k: sm.get(k) for k in ("path", "lastSubmitted", "lastDownloaded", "isPending",
+                                                                  "warnings", "errors", "contents")})
+    except Exception as e:
+        out["sitemaps_error"] = str(e)[:200]
+    for u in HEALTH_URLS:
+        body = json.dumps({"inspectionUrl": SITE_URL + u, "siteUrl": site, "languageCode": "en-US"}).encode()
+        req = urllib.request.Request("https://searchconsole.googleapis.com/v1/urlInspection/index:inspect", data=body,
+                                     method="POST", headers={"Authorization": "Bearer " + tok, "Content-Type": "application/json"})
+        try:
+            with urllib.request.urlopen(req, timeout=30, context=CTX) as r:
+                ir = (json.loads(r.read().decode()).get("inspectionResult") or {}).get("indexStatusResult") or {}
+            out["urls"].append({"url": u, **{k: ir.get(k) for k in ("verdict", "coverageState", "robotsTxtState",
+                                "indexingState", "pageFetchState", "lastCrawlTime", "googleCanonical", "userCanonical")}})
+        except urllib.error.HTTPError as e:
+            out["urls"].append({"url": u, "error": f"HTTP {e.code} {e.read().decode(errors='replace')[:150]}"})
+        except Exception as e:
+            out["urls"].append({"url": u, "error": str(e)[:150]})
+    json.dump(out, open(path, "w"), ensure_ascii=False, indent=1)
+    log("Проверка индекса Google: " + "; ".join(f"{x['url']} {x.get('coverageState') or x.get('error')}" for x in out["urls"]))
+
+
 def gsc_fetch(store):
     """Раз в 12 часов: запросы и страницы за 28 дней (клики, показы, позиция). Только чтение."""
     raw = os.environ.get("GSC_KEY", "").strip()
@@ -5490,6 +5533,10 @@ def run_once():
         sitemap_submit(store)
     except Exception as e:
         log(f"карта сайта: {e}")
+    try:
+        gsc_health(store)
+    except Exception as e:
+        log(f"проверка индекса: {e}")
     try:
         watch_list(store)
     except Exception as e:
