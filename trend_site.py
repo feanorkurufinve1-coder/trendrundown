@@ -3366,6 +3366,9 @@ def wiki_image(t, name=None):
 def manual_image(store, x):
     """Фото к ручной странице. В файле страницы поле image_wiki — ТОЧНОЕ название статьи английской Википедии;
     берём её главную картинку, только если на Commons она под свободной лицензией (CC / public domain). Кэш в store."""
+    own = (x.get("image_local") or "").strip()              # своя (нарисованная нами) картинка в site/img/
+    if own and os.path.exists(os.path.join(OUT, "img", own)):
+        return {"file": "img/" + own, "own": True, "credit": "TrendRundown", "license": "", "src": ""}
     title = (x.get("image_wiki") or "").strip()
     direct = (x.get("image_file") or "").strip()            # точный файл Commons, выбранный под страницу
     if direct:
@@ -4672,7 +4675,8 @@ def build_explainer(x, topics):
     rel = related_explainers(x)
     im = x.get("img") or {}
     hero_x = (f'<figure class="hero">{pic(im["file"], "../", x["subject"], lazy=False, sizes="(max-width: 700px) 100vw, 680px")}'
-              f'<figcaption>Photo: {E(im["credit"])} / <a href="{E(im["src"])}" target="_blank" rel="noopener">{E(im["license"])}</a>, via Wikimedia Commons</figcaption></figure>'
+              + ('<figcaption>Illustration: TrendRundown (original artwork)</figcaption></figure>' if im.get("own") else
+                 f'<figcaption>Photo: {E(im["credit"])} / <a href="{E(im["src"])}" target="_blank" rel="noopener">{E(im["license"])}</a>, via Wikimedia Commons</figcaption></figure>')
               if im.get("file") else "")
     if im.get("file"):
         ld[0]["image"] = SITE_URL + "/" + im["file"]
@@ -4844,7 +4848,7 @@ def build_site(store):
         pass
     ex.update(manual_pages(orig))         # ручные страницы важнее автоматических с тем же адресом
     for x in ex.values():
-        if x.get("manual") and (x.get("image_wiki") or x.get("image_file")):
+        if x.get("manual") and (x.get("image_wiki") or x.get("image_file") or x.get("image_local")):
             x["img"] = manual_image(orig, x)
     EXPLAINERS.clear(); EXPLAINERS.update(ex)
     global HAS_EXPLAINED, HAS_CAST
