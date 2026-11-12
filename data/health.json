@@ -1,17 +1,17 @@
 {
- "checked": "2026-11-12T01:17:06+00:00",
+ "checked": "2026-11-12T07:31:56+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
    "lastSubmitted": "2026-11-12T01:17:06.356Z",
-   "lastDownloaded": "2026-11-11T07:57:11.830Z",
-   "isPending": true,
+   "lastDownloaded": "2026-11-12T01:17:08.077Z",
+   "isPending": false,
    "warnings": "0",
    "errors": "0",
    "contents": [
     {
      "type": "web",
-     "submitted": "252",
+     "submitted": "122",
      "indexed": "0"
     }
    ]
@@ -19,8 +19,8 @@
   {
    "path": "https://trendrundown.com/sitemap-news.xml",
    "lastSubmitted": "2026-11-12T01:17:06.234Z",
-   "lastDownloaded": "2026-11-11T07:57:10.756Z",
-   "isPending": true,
+   "lastDownloaded": "2026-11-12T01:17:07.044Z",
+   "isPending": false,
    "warnings": "0",
    "errors": "1",
    "contents": null
