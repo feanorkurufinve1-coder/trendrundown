@@ -2589,7 +2589,7 @@
   ]
  },
  "bright-star-eastern-sky-morning": {
-  "time": "2026-11-11T14:05:07+00:00",
+  "time": "2026-11-12T14:16:43+00:00",
   "query": "what is the bright star in the eastern sky this morning",
   "in_suggest": true,
   "suggest": {
@@ -2627,11 +2627,15 @@
    [
     "2026-11-11",
     true
+   ],
+   [
+    "2026-11-12",
+    true
    ]
   ]
  },
  "how-are-cma-awards-voted": {
-  "time": "2026-11-11T14:05:09+00:00",
+  "time": "2026-11-12T14:16:48+00:00",
   "query": "how are cma awards voted",
   "in_suggest": true,
   "suggest": {
@@ -2676,11 +2680,15 @@
    [
     "2026-11-11",
     true
+   ],
+   [
+    "2026-11-12",
+    true
    ]
   ]
  },
  "how-are-game-awards-nominees-chosen": {
-  "time": "2026-11-11T14:05:11+00:00",
+  "time": "2026-11-12T14:16:50+00:00",
   "query": "how are the game awards nominees chosen",
   "in_suggest": true,
   "suggest": {
@@ -2734,25 +2742,29 @@
    [
     "2026-11-11",
     true
+   ],
+   [
+    "2026-11-12",
+    true
    ]
   ]
  },
  "is-philomena-cunk-real": {
-  "time": "2026-11-11T14:05:12+00:00",
+  "time": "2026-11-12T14:16:55+00:00",
   "query": "is philomena cunk a real person",
   "in_suggest": true,
   "suggest": {
    "philomena cunk": [
     "philomena cunk",
-    "philomena cunk letterboxd",
+    "philomena cunk vision quest",
     "philomena cunk quotes",
     "philomena cunk real name",
-    "philomena cunk vision quest",
     "philomena cunk shows",
     "philomena cunk actress",
-    "philomena cunk marvel",
     "philomena cunk pump up the jam",
-    "philomena cunk netflix"
+    "philomena cunk netflix",
+    "philomena cunk meme",
+    "philomena cunk where to watch"
    ],
    "what is philomena cunk": [
     "what is philomena cunk",
@@ -2790,11 +2802,15 @@
    [
     "2026-11-11",
     true
+   ],
+   [
+    "2026-11-12",
+    true
    ]
   ]
  },
  "lame-duck-president": {
-  "time": "2026-11-11T14:05:13+00:00",
+  "time": "2026-11-12T14:16:58+00:00",
   "query": "what is a lame duck president",
   "in_suggest": true,
   "suggest": {
@@ -2847,11 +2863,15 @@
    [
     "2026-11-11",
     true
+   ],
+   [
+    "2026-11-12",
+    true
    ]
   ]
  },
  "national-parks-free-veterans-day": {
-  "time": "2026-11-11T14:05:15+00:00",
+  "time": "2026-11-12T14:16:59+00:00",
   "query": "are national parks free on veterans day",
   "in_suggest": true,
   "suggest": {
@@ -2885,11 +2905,15 @@
    [
     "2026-11-11",
     true
+   ],
+   [
+    "2026-11-12",
+    true
    ]
   ]
  },
  "new-snap-stocking-rules": {
-  "time": "2026-11-11T14:05:17+00:00",
+  "time": "2026-11-12T14:17:01+00:00",
   "query": "new snap rules for stores",
   "in_suggest": false,
   "suggest": {
@@ -2926,11 +2950,15 @@
    [
     "2026-11-11",
     false
+   ],
+   [
+    "2026-11-12",
+    false
    ]
   ]
  },
  "what-is-a-quarter-quell": {
-  "time": "2026-11-11T14:05:18+00:00",
+  "time": "2026-11-12T14:17:04+00:00",
   "query": "what is a quarter quell",
   "in_suggest": true,
   "suggest": {
@@ -2983,11 +3011,15 @@
    [
     "2026-11-11",
     true
+   ],
+   [
+    "2026-11-12",
+    true
    ]
   ]
  },
  "what-is-apple-homeview": {
-  "time": "2026-11-11T14:05:19+00:00",
+  "time": "2026-11-12T14:17:06+00:00",
   "query": "what is apple homeview",
   "in_suggest": true,
   "suggest": {
@@ -2995,13 +3027,13 @@
     "apple homeview review",
     "apple homeview",
     "apple homeview release date",
-    "apple homeview review embargo",
-    "apple homeview unboxing",
+    "apple homeview embargo",
     "apple homeview price",
     "apple homeview ad",
     "apple homeview wall mount",
     "apple homeview reddit",
-    "apple homeview compatible devices"
+    "apple homeview compatible devices",
+    "apple homeview costco"
    ],
    "what is apple homeview": [
     "what is apple homeview",
@@ -3028,19 +3060,23 @@
    [
     "2026-11-11",
     true
+   ],
+   [
+    "2026-11-12",
+    true
    ]
   ]
  },
  "what-is-pico-park": {
-  "time": "2026-11-11T14:05:20+00:00",
+  "time": "2026-11-12T14:17:06+00:00",
   "query": "what is pico park",
   "in_suggest": true,
   "suggest": {
    "pico park": [
     "pico park",
     "pico park 2",
-    "pico park switch",
     "pico park sonic",
+    "pico park switch",
     "pico park 3",
     "pico park game",
     "pico park pico rivera",
@@ -3072,6 +3108,10 @@
    ],
    [
     "2026-11-11",
+    true
+   ],
+   [
+    "2026-11-12",
     true
    ]
   ]
@@ -4646,7 +4686,7 @@
   ]
  },
  "camp-flog-gnaw-livestream": {
-  "time": "2026-11-11T14:02:12+00:00",
+  "time": "2026-11-12T14:16:44+00:00",
   "query": "will camp flog gnaw be streamed",
   "in_suggest": true,
   "suggest": {
@@ -4665,11 +4705,15 @@
    [
     "2026-11-11",
     true
+   ],
+   [
+    "2026-11-12",
+    true
    ]
   ]
  },
  "el-nino-pacific-northwest": {
-  "time": "2026-11-11T14:02:14+00:00",
+  "time": "2026-11-12T14:16:47+00:00",
   "query": "what does el nino mean for the pacific northwest",
   "in_suggest": true,
   "suggest": {
@@ -4710,12 +4754,12 @@
     "what does a super el nino mean for the pacific northwest weather"
    ],
    "el nino pacific northwest": [
-    "el nino pacific northwest",
     "el nino pacific northwest 2026",
     "el nino pacific northwest winter",
     "el nino pacific northwest weather",
     "el nino pacific northwest map",
     "el nino pacific northwest winter forecast",
+    "el nino pacific northwest",
     "el nino pacific northwest 2027",
     "el nino pacific northwest effects",
     "el nino pacific northwest forecast",
@@ -4726,11 +4770,15 @@
    [
     "2026-11-11",
     true
+   ],
+   [
+    "2026-11-12",
+    true
    ]
   ]
  },
  "is-amanda-nunes-retired": {
-  "time": "2026-11-11T14:02:15+00:00",
+  "time": "2026-11-12T14:16:51+00:00",
   "query": "is amanda nunes retired",
   "in_suggest": true,
   "suggest": {
@@ -4738,19 +4786,19 @@
     "amanda nunes",
     "amanda nunes record",
     "amanda nunes vs kayla harrison",
+    "amanda nunes age",
     "amanda nunes last fight",
     "amanda nunes next fight",
-    "amanda nunes age",
     "amanda nunes fight",
     "amanda nunes wife",
-    "amanda nunes vs ronda rousey",
-    "amanda nunes vs kayla harrison odds"
+    "amanda nunes retired",
+    "amanda nunes kayla harrison"
    ],
    "who is amanda nunes": [
-    "who is amanda nunes fighting",
-    "who is amanda nunes fighting next",
-    "who is amanda nunes wife",
     "who is amanda nunes",
+    "who is amanda nunes fighting next",
+    "who is amanda nunes fighting",
+    "who is amanda nunes wife",
     "who is amanda nunes married to",
     "who is amanda nunes going to fight",
     "who is amanda nunes dating",
@@ -4784,11 +4832,15 @@
    [
     "2026-11-11",
     true
+   ],
+   [
+    "2026-11-12",
+    true
    ]
   ]
  },
  "kids-choice-awards-2026-date": {
-  "time": "2026-11-11T14:02:17+00:00",
+  "time": "2026-11-12T14:16:57+00:00",
   "query": "when are the kids choice awards 2026",
   "in_suggest": true,
   "suggest": {
@@ -4830,12 +4882,12 @@
    ],
    "kids choice awards 2026": [
     "kids choice awards 2026",
-    "kids choice awards 2026 performers",
-    "kids choice awards 2026 stage",
+    "kids choice awards 2026 vote",
+    "kids choice awards 2026 where to watch",
     "kids choice awards 2026 host",
+    "kids choice awards 2026 stage",
     "kids choice awards 2026 nominees",
     "kids choice awards 2026 tickets",
-    "kids choice awards 2026 voting",
     "kids choice awards 2026 vote time",
     "kids choice awards 2026 date",
     "kids choice awards 2026 vote results"
@@ -4845,11 +4897,15 @@
    [
     "2026-11-11",
     true
+   ],
+   [
+    "2026-11-12",
+    true
    ]
   ]
  },
  "what-does-12-12-12-mean": {
-  "time": "2026-11-11T14:02:18+00:00",
+  "time": "2026-11-12T14:17:02+00:00",
   "query": "what does 12 12 12 mean",
   "in_suggest": true,
   "suggest": {
@@ -4857,18 +4913,18 @@
     "12 12 12",
     "12 12 12 movie",
     "12 12 12 release date",
+    "12 12 12 cast",
     "12 12 12 tv series",
     "12 12 12 movie 2026",
+    "12 12 12 trailer",
+    "12 12 12 episodes",
     "12 12 12 fertilizer",
-    "12 12 12 apple tv release date",
-    "12 12 12 apple tv review",
-    "12 12 12 meaning",
-    "12 12 12 angel number"
+    "12 12 12 reviews"
    ],
    "what is 12 12 12": [
-    "what is 12 12 12 about",
     "what is 12 12 12 fertilizer",
     "what is 12 12 12 fertilizer used for",
+    "what is 12 12 12",
     "what is 12 12 12 show",
     "what is 12 12 12 movie",
     "what is 12 12 12 apple",
@@ -4894,25 +4950,29 @@
    [
     "2026-11-11",
     true
+   ],
+   [
+    "2026-11-12",
+    true
    ]
   ]
  },
  "what-is-a-motion-to-refer": {
-  "time": "2026-11-11T14:02:20+00:00",
+  "time": "2026-11-12T14:17:03+00:00",
   "query": "what is a motion to refer",
   "in_suggest": true,
   "suggest": {
    "motion to refer": [
     "motion to refer",
-    "motion to refer congress",
     "motion to refer hegseth",
-    "motion to refer house of representatives",
-    "motion to refer meaning impeachment",
+    "motion to refer congress",
     "motion to refer to committee",
     "motion to refer meaning",
+    "motion to refer house of representatives",
     "motion to withdraw reference bankruptcy",
     "motion to withdraw reference",
-    "motion to refer to mediation"
+    "motion to refer to mediation",
+    "motion to confirm referee's report ny"
    ],
    "what is motion to refer": [
     "what is motion to refer",
@@ -4927,8 +4987,8 @@
     "what is movement reference number mrn"
    ],
    "what is a motion to refer": [
-    "what is a motion to refer in congress",
     "what is a motion to refer",
+    "what is a motion to refer in congress",
     "what is a motion to withdraw reference",
     "what is a motion reference unit",
     "what is a motion to refer to a committee",
@@ -4955,11 +5015,15 @@
    [
     "2026-11-11",
     true
+   ],
+   [
+    "2026-11-12",
+    true
    ]
   ]
  },
  "why-does-social-security-get-taxed": {
-  "time": "2026-11-11T14:02:21+00:00",
+  "time": "2026-11-12T14:17:13+00:00",
   "query": "why does social security get taxed",
   "in_suggest": true,
   "suggest": {
@@ -5016,11 +5080,15 @@
    [
     "2026-11-11",
     true
+   ],
+   [
+    "2026-11-12",
+    true
    ]
   ]
  },
  "why-is-my-check-engine-light-on": {
-  "time": "2026-11-11T14:02:23+00:00",
+  "time": "2026-11-12T14:17:15+00:00",
   "query": "why is my check engine light on",
   "in_suggest": true,
   "suggest": {
@@ -5076,11 +5144,15 @@
    [
     "2026-11-11",
     true
+   ],
+   [
+    "2026-11-12",
+    true
    ]
   ]
  },
  "why-is-my-washing-machine-leaking-from-the-bottom": {
-  "time": "2026-11-11T14:02:25+00:00",
+  "time": "2026-11-12T14:17:16+00:00",
   "query": "why is my washing machine leaking from the bottom",
   "in_suggest": true,
   "suggest": {
@@ -5136,6 +5208,433 @@
   "history": [
    [
     "2026-11-11",
+    true
+   ],
+   [
+    "2026-11-12",
+    true
+   ]
+  ]
+ },
+ "coachella-2027-tickets-on-sale": {
+  "time": "2026-11-12T14:16:46+00:00",
+  "query": "when do coachella 2027 tickets go on sale",
+  "in_suggest": true,
+  "suggest": {
+   "coachella 2027 tickets": [
+    "coachella 2027 tickets",
+    "coachella 2027 tickets price",
+    "coachella 2027 tickets weekend 2",
+    "coachella 2027 tickets go on sale",
+    "coachella 2027 tickets how much",
+    "coachella 2027 tickets reddit",
+    "coachella 2027 tickets release date",
+    "coachella 2027 tickets sale",
+    "coachella 2027 tickets sold out",
+    "coachella 2027 tickets resale"
+   ],
+   "what is coachella 2027 tickets": [
+    "is coachella 2027 tickets sold out"
+   ],
+   "when do coachella 2027 tickets go on sale": [
+    "when do coachella 2027 tickets go on sale",
+    "when do coachella 2027 tickets go on sale reddit",
+    "when do coachella 2027 tickets go on sale again",
+    "when did coachella 2027 tickets go on sale",
+    "what time do coachella 2027 tickets go on sale",
+    "when is coachella 2027 tickets go on sale",
+    "when do coachella 2027 go on sale",
+    "when do coachella 2027 passes go on sale",
+    "will coachella tickets go on sale again"
+   ],
+   "coachella 2027 tickets go sale": [
+    "coachella 2027 tickets go on sale",
+    "when do coachella 2027 tickets go on sale",
+    "when did coachella 2027 tickets go on sale",
+    "when do coachella 2027 tickets go on sale reddit",
+    "when do coachella 2027 tickets go on sale again",
+    "what time do coachella 2027 tickets go on sale",
+    "coachella tickets 2027 when do they go on sale",
+    "will coachella tickets go on sale again",
+    "can you resell coachella tickets",
+    "how much can you resell coachella tickets for"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-12",
+    true
+   ]
+  ]
+ },
+ "is-being-heumann-a-true-story": {
+  "time": "2026-11-12T14:16:52+00:00",
+  "query": "is being heumann a true story",
+  "in_suggest": true,
+  "suggest": {
+   "being heumann": [
+    "being heumann",
+    "being heumann showtimes",
+    "being heumann movie",
+    "being heumann reviews",
+    "being heumann release date",
+    "being heumann trailer",
+    "being heumann book",
+    "being heumann cast",
+    "being heumann movie 2026",
+    "being heumann theaters"
+   ],
+   "what is being heumann": [
+    "what is being heumann about",
+    "what is the movie being heumann about"
+   ],
+   "is being heumann a true story": [],
+   "being heumann true story": [
+    "being heumann true story",
+    "how true is the machine story",
+    "how did phillip lacasse get paralyzed",
+    "is jason street paralyzed in real life"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-12",
+    true
+   ]
+  ]
+ },
+ "is-gta-6-coming-to-pc": {
+  "time": "2026-11-12T14:16:54+00:00",
+  "query": "is gta 6 coming to pc",
+  "in_suggest": true,
+  "suggest": {
+   "grand theft auto vi on pc": [
+    "grand theft auto vi on pc",
+    "grand theft auto 6 on pc",
+    "grand theft auto 6 on pc release date",
+    "grand theft auto iv on pc",
+    "grand theft auto vi release on pc",
+    "grand theft auto vi pc release date",
+    "grand theft auto vi pc requirements",
+    "grand theft auto vi pc specs",
+    "grand theft auto vi pc pre order",
+    "grand theft auto vi pc system requirements"
+   ],
+   "what is grand theft auto vi on pc": [
+    "is grand theft auto vi on pc",
+    "grand theft auto 6 on pc release date",
+    "grand theft auto iv on pc",
+    "is gta v available on pc",
+    "is gta vcs on pc"
+   ],
+   "is gta 6 coming to pc": [
+    "is gta 6 coming to pc",
+    "is gta 6 coming to pc on launch",
+    "is gta 6 coming to pc on release",
+    "is gta 6 coming to pc first",
+    "is gta 6 coming to pc day one",
+    "is gta 6 coming to pc in november",
+    "is gta 6 coming to pc in 2027",
+    "is gta 6 coming to pc day 1",
+    "is gta 6 coming to pc sooner",
+    "is gta 6 coming to pc eventually"
+   ],
+   "gta 6 coming pc": [
+    "gta 6 coming pc",
+    "gta 6 pc coming out",
+    "gta 6 coming to pc at launch",
+    "gta 6 coming to pc first",
+    "gta 6 coming to pc day one",
+    "gta 6 coming to pc later",
+    "gta 6 coming to pc or not",
+    "gta 6 coming to pc on release",
+    "grand theft auto 6 coming to pc",
+    "will gta 6 come pc"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-12",
+    true
+   ]
+  ]
+ },
+ "what-is-a-sudden-stratospheric-warming": {
+  "time": "2026-11-12T14:17:05+00:00",
+  "query": "what is a sudden stratospheric warming",
+  "in_suggest": true,
+  "suggest": {
+   "sudden stratospheric warming": [
+    "sudden stratospheric warming",
+    "sudden stratospheric warming 2026",
+    "sudden stratospheric warming event",
+    "sudden stratospheric warming (ssw)",
+    "sudden stratospheric warming forecast",
+    "sudden stratospheric warming antarctica",
+    "sudden stratospheric warming dates",
+    "sudden stratospheric warming 2025",
+    "sudden stratospheric warming uk",
+    "sudden stratospheric warming impact"
+   ],
+   "what is sudden stratospheric warming": [
+    "what is sudden stratospheric warming",
+    "what causes sudden stratospheric warming",
+    "what does sudden stratospheric warming cause",
+    "what causes sudden stratospheric warming ssw"
+   ],
+   "what is a sudden stratospheric warming": [
+    "what is a sudden stratospheric warming",
+    "what is a sudden stratospheric warming event",
+    "what. causes a sudden stratospheric warming event",
+    "what does sudden stratospheric warming cause",
+    "what causes sudden stratospheric warming ssw",
+    "what causes sudden stratospheric warming"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-12",
+    true
+   ]
+  ]
+ },
+ "when-will-social-security-run-out": {
+  "time": "2026-11-12T14:17:08+00:00",
+  "query": "when will social security run out",
+  "in_suggest": true,
+  "suggest": {
+   "social security trust fund depletion": [
+    "social security trust fund depletion",
+    "social security trust fund depletion date",
+    "social security trust fund depletion today",
+    "social security trust fund depletion 2032",
+    "social security trust fund depletion could trigger major benefit cuts",
+    "social security trust fund depletion 2033",
+    "social security trust fund depletion update",
+    "social security trust fund depletion 2034",
+    "social security trust fund depletion by 2034 may lead to benefit cuts",
+    "social security trust fund depletion date moved to late 2032"
+   ],
+   "what is social security trust fund depletion": [
+    "what is the latest news on social security trust fund depletion and potential benefit cuts",
+    "social security trust fund depletion",
+    "social security trust fund depletion 2032",
+    "social security trust fund depletion date",
+    "social security trust fund depletion update",
+    "social security trust fund depletion 2034",
+    "social security trust fund depletion by 2034 may lead to benefit cuts",
+    "social security trust fund depletion could trigger major benefit cuts",
+    "social security trust fund depletion 2033",
+    "social security trust fund depletion date moved to late 2032"
+   ],
+   "when will social security run out": [
+    "when will social security run out",
+    "when will social security run out of money",
+    "when will social security run out completely",
+    "when will social security run out of funds",
+    "when will social security run out reddit",
+    "when will social security run out in the us",
+    "when will social security run out of numbers",
+    "when will social security run out of money or not be fully funded",
+    "when will social security run out what year",
+    "when does social security run out"
+   ],
+   "will social security run out": [
+    "will social security run out",
+    "will social security run out of money",
+    "will social security run out in 2032",
+    "will social security run out by 2050",
+    "will social security run out in 2030",
+    "will social security run out in 10 years",
+    "will social security run out by 2034",
+    "will social security run out by 2060",
+    "will social security run out of money in 2032",
+    "will social security run out in 20 years"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-12",
+    true
+   ]
+  ]
+ },
+ "why-does-my-phone-battery-go-down-while-charging": {
+  "time": "2026-11-12T14:17:09+00:00",
+  "query": "why does my phone battery go down while charging",
+  "in_suggest": true,
+  "suggest": {
+   "phone battery draining while charging": [
+    "phone battery draining while charging",
+    "phone battery draining while charging in car",
+    "phone battery draining while charging iphone",
+    "phone battery depleting while charging",
+    "mobile battery draining while charging",
+    "phone battery draining while plugged in",
+    "phone battery still draining while charging",
+    "phone battery draining fast while charging",
+    "android phone battery draining while charging",
+    "phone battery draining even while charging"
+   ],
+   "what is phone battery draining while charging": [
+    "why is phone battery draining while charging",
+    "what causes phone battery to drain while charging",
+    "phone battery draining while charging iphone",
+    "phone battery draining while charging in car",
+    "my phone battery draining while charging",
+    "android phone battery draining while charging",
+    "mobile battery draining while charging",
+    "why is my battery draining while charging",
+    "why is my phone losing battery while charging",
+    "why is my phone battery draining instead of charging"
+   ],
+   "why does my phone battery go down while charging": [
+    "why does my phone battery go down while charging",
+    "why does my phone battery go down when charging",
+    "why did my phone battery go down while charging",
+    "why does my phone battery go down when charging iphone",
+    "why is my phone battery going down while charging",
+    "why is my phone battery going down while charging iphone",
+    "why is my phone battery going down while charging in car",
+    "why does my phone battery go down while plugged in",
+    "why does your phone battery go down when charging",
+    "why does my phone battery go up and down while charging"
+   ],
+   "my phone battery go down while charging": [
+    "my phone battery goes down while charging",
+    "my phone battery goes down when charging",
+    "whys my phone battery going down while charging",
+    "why did my phone battery go down while charging",
+    "why is my phone battery going down while charging iphone",
+    "why is my phone battery going down while charging in car",
+    "why does my phone battery go down when charging",
+    "why does my phone battery go down when charging iphone",
+    "why does my phone battery go down when charging in the car",
+    "why is my phone battery going down when charging"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-12",
+    true
+   ]
+  ]
+ },
+ "why-does-my-phone-screen-keep-going-black": {
+  "time": "2026-11-12T14:17:11+00:00",
+  "query": "why does my phone screen keep going black",
+  "in_suggest": true,
+  "suggest": {
+   "phone screen going black": [
+    "phone screen going black randomly",
+    "phone screen going black",
+    "phone screen going black during calls",
+    "phone screen going black randomly iphone",
+    "phone screen goes black",
+    "phone screen goes black when calling",
+    "phone screen went black but still running",
+    "phone screen went black",
+    "phone screen gone black",
+    "phone screen turning black"
+   ],
+   "what is phone screen going black": [
+    "why is phone screen going black",
+    "what to do when phone screen goes black",
+    "what do if your phone screen goes black",
+    "phone screen going black randomly",
+    "what happens when a phone screen goes black",
+    "what does it mean when your phone screen goes black",
+    "why does a phone screen go black",
+    "why does my phone screen stay black"
+   ],
+   "why does my phone screen keep going black": [
+    "why does my phone screen keep going black",
+    "why does my phone screen keep going black on call",
+    "why does my phone screen keep going black when watching videos",
+    "why does my phone screen keep going black while on call",
+    "why does my phone screen keep going black when i cover the camera",
+    "why does my phone screen keep going black randomly",
+    "why does my phone screen keep going black iphone",
+    "why does my phone screen keep going black when i touch it",
+    "why does my phone screen keep going black for a few seconds",
+    "why does my phone screen keep going black and green"
+   ],
+   "my phone screen keep going black": [
+    "my phone screen keep going black",
+    "my phone screen keeps going black randomly",
+    "my phone screen keeps going black iphone",
+    "my phone screen keeps going black for a second",
+    "my phone screen keeps going black and white",
+    "my phone screen keeps going dark",
+    "my samsung phone screen keeps going black",
+    "my cell phone screen keeps going black",
+    "why does my phone screen keep going black",
+    "why does my phone screen keep going black when watching videos"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-12",
+    true
+   ]
+  ]
+ },
+ "why-does-social-security-come-out-of-my-paycheck": {
+  "time": "2026-11-12T14:17:12+00:00",
+  "query": "why does social security come out of my paycheck",
+  "in_suggest": true,
+  "suggest": {
+   "social security payroll tax": [
+    "social security payroll tax limit 2026",
+    "social security payroll tax",
+    "social security payroll tax cap",
+    "social security payroll tax rate",
+    "social security payroll tax limit 2027",
+    "social security payroll tax 2026",
+    "social security payroll tax cap 2026",
+    "social security payroll tax limit 2025",
+    "social security payroll tax percentage",
+    "social security payroll tax limit"
+   ],
+   "what is social security payroll tax": [
+    "what is social security payroll tax",
+    "what is social security payroll tax cap",
+    "what is social security payroll tax rate",
+    "what is social security income tax",
+    "what is social security employer tax",
+    "what is social security income tax rate",
+    "what is social security income tax cap",
+    "what is social security income tax limit",
+    "what is social security income tax percentage",
+    "what is social security income tax withheld"
+   ],
+   "why does social security come out of my paycheck": [
+    "why does social security come out of my paycheck",
+    "why does social security and medicare come out of my paycheck",
+    "why did social security not come out of my paycheck",
+    "why did social security stop coming out of my paycheck",
+    "why did social security tax stop coming out of my paycheck",
+    "does social security come out of your paycheck",
+    "why is social security taken out of my paycheck",
+    "why does social security take so much out of my paycheck",
+    "why is social security tax taken out of my paycheck",
+    "why was social security not taken out of my paycheck"
+   ],
+   "social security come out my paycheck": [
+    "does social security come out of my paycheck",
+    "social security on my paycheck",
+    "does social security come out of your paycheck pre tax",
+    "why is social security coming out of my paycheck",
+    "how much social security comes out of my paycheck",
+    "why did social security not come out of my paycheck",
+    "how much social security should come out of my paycheck",
+    "why does social security and medicare come out of my paycheck",
+    "how much does social security take out of paycheck"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-12",
     true
    ]
   ]
