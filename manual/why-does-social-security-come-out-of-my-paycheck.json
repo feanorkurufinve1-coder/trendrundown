@@ -1,0 +1,54 @@
+{
+ "subject": "Social Security payroll tax",
+ "kind": "law",
+ "query": "why does social security come out of my paycheck",
+ "title": "Why does Social Security come out of my paycheck? The 6.2% tax, explained",
+ "answer": "Social Security comes out of your paycheck because federal law requires your employer to withhold 6.2% of your wages for Social Security tax, up to $184,500 of earnings in 2026. Your employer pays a matching 6.2%. The money funds monthly benefits for retirees, disabled workers and survivors, and it earns you credits toward your own future benefits.",
+ "body": "The deduction is part of FICA, the Federal Insurance Contributions Act. It usually shows on a pay stub as \"Social Security,\" \"OASDI\" or \"FICA-SS.\" A second line, Medicare, takes another 1.45% of all wages with no cap, so most workers see 7.65% in total. Earnings above $200,000 in a year also get an extra 0.9% Medicare tax that employers do not match. If you are self-employed, you pay both halves yourself, 15.3% in total, through self-employment tax.\n\nSocial Security is mostly pay-as-you-go: today's payroll taxes pay today's benefits to about 70 million people. At the same time, your wages build your own record. In 2026, you earn one credit for each $1,890 of earnings, up to four credits a year, and most people need 40 credits, about 10 years of work, to qualify for retirement benefits. Your benefit amount is based on your highest 35 years of earnings.\n\nWhy it can feel like a lot, and what to check:\n\n1. It is a flat rate. Unlike income tax, Social Security tax has no standard deduction or brackets, so it starts with your first dollar of wages.\n\n2. A W-4 will not change it. Your W-4 adjusts federal income tax withholding only; the 6.2% is fixed by law.\n\n3. It stops at the cap. Once your wages for the year reach $184,500, Social Security withholding stops until Jan. 1. The cap rises to $192,300 in 2027. Medicare withholding continues.\n\n4. Two jobs can mean overpaying. Each employer withholds separately, so if your combined wages top the cap, you may pay more than the 2026 maximum of $11,439. You get the excess back as a credit when you file your federal tax return. If a single employer withheld too much, ask that employer to correct it.\n\n5. Check your record. Create a free my Social Security account at ssa.gov and confirm that the earnings your employers reported match your W-2s; mistakes can lower your future benefit.\n\nA few groups are not covered, including some state and local government workers who have their own pension systems and students working for the school they attend. If you are unsure whether your withholding is right, ask your payroll department or a tax professional.",
+ "faq": [
+  {
+   "q": "Why does Social Security take so much out of my paycheck?",
+   "a": "It is a flat 6.2% of wages with no deductions, plus 1.45% for Medicare, so 7.65% of each paycheck goes to the two programs."
+  },
+  {
+   "q": "Can I opt out of Social Security tax?",
+   "a": "Most workers cannot. Exceptions are narrow, such as some state and local government jobs covered by a separate pension system and students working for their own school."
+  },
+  {
+   "q": "Why did Social Security stop coming out of my paycheck?",
+   "a": "You probably reached the annual wage cap, $184,500 in 2026. Withholding resumes on Jan. 1."
+  },
+  {
+   "q": "Do I get my Social Security tax back?",
+   "a": "Not as a refund, unless you overpaid because of multiple employers. Instead, it counts toward your future benefits."
+  },
+  {
+   "q": "How much Social Security tax do I pay per paycheck?",
+   "a": "Multiply your gross wages for the pay period by 6.2%. On a $2,000 paycheck, that is $124, plus $29 for Medicare."
+  }
+ ],
+ "links": [
+  [
+   "IRS",
+   "Topic no. 751, Social Security and Medicare withholding rates",
+   "https://www.irs.gov/node/68461"
+  ],
+  [
+   "Social Security Administration",
+   "2027 Social Security changes fact sheet",
+   "https://www.ssa.gov/news/en/cola/factsheets/2027.html"
+  ],
+  [
+   "Social Security Administration",
+   "2026 Trustees Report press release",
+   "https://www.ssa.gov/news/en/press/releases/2026-06-09.html"
+  ]
+ ],
+ "topics": [
+  "money",
+  "social security"
+ ],
+ "made": "2026-11-12T14:05:00+00:00",
+ "first": "2026-11-12T14:05:00+00:00",
+ "updated": "2026-11-12T14:05:00+00:00"
+}

@@ -129,10 +129,43 @@
 | 20 нояб | Prime Video: Melania, The Series | — (политика+личность; подумать 17–19 нояб) | — |
 | 24 нояб | HBO Max: The Buffalo Miracle | — проверить тему ~20 нояб | — |
 | 25 нояб | HBO Max: Andrew Tate: Toxic Empire | — пропуск (сексуальное насилие в обвинениях) | — |
+| 13 нояб | Apple TV: Being Heumann (сидячая забастовка 504, 1977; Ruth Madeley) | is being heumann a true story | ✅ is-being-heumann-a-true-story |
+| 12–13 нояб | Coachella 2027: Amex-предпродажа 12 нояб, общая продажа 13 нояб 12:00 PT | when do coachella 2027 tickets go on sale | ✅ coachella-2027-tickets-on-sale |
+| 10 нояб – дек | Рекордно ранний разворот полярного вихря (SSW); «polar vortex forecast» 200K | what is a sudden stratospheric warming | ✅ what-is-a-sudden-stratospheric-warming |
+| 19 нояб | GTA 6 только PS5/Xbox; в Trends «whens gta 6 coming out on pc», «when will gta 6 online come out» | is gta 6 coming to pc | ✅ is-gta-6-coming-to-pc |
+| 4 кв. 2032 | Social Security: истощение фонда OASI (доклад попечителей 2026); тренд «trust fund depletion 2032» | when will social security run out | ✅ when-will-social-security-run-out |
+| 20 нояб | Paramount+: Yellowjackets, 4-й финальный сезон (10 эп., финал ~22 янв); Breakout «what is the show yellowjackets about» | is yellowjackets based on a true story | — писать 15–17 нояб |
+| 22 нояб | HBO Max: Oobah: Scams for a Better Tomorrow (журналист Oobah Butler) | who is oobah butler | — проверить 18–20 нояб |
+| 18 нояб | HBO Max: The Hotline (док) | — проверить тему 15 нояб | — |
+| 17 нояб | Hulu/Disney+: How the Tudors Lost Their Heads | — пропуск (рядом религия) | — |
+| 12 нояб | Netflix: Russell Brand: Open Secret | — пропуск (сексуальное насилие) | — |
+| 8–12 нояб | Nvidia: совет директоров расследует историю с Jensen Huang | — пропуск (личное, обвинения) | — |
 Правило: писать за 1–5 дней до события (Google индексирует ~2/3 новых страниц за сутки).
 Проверка: через 3–7 дней после даты сверить с Trends CSV и Search Console — угадали или нет, записать урок сюда.
 
 ## Уроки
+- 12 нояб, вечер (GSC: последний полный день 11 нояб — 0 кликов / 1 показ; 10 нояб 0/4; health.json 12 нояб: sitemap 122 отправлено / 0 в индексе; из 6 проверенных URL в индексе только / и /x/cyber-monday). Страницы 10 нояб (2 дня), все — 0 показов в GSC (причина — сайт вне индекса, не тема); подсказки Google:
+  - guarding-stars-book — 0 показов; фраза в подсказках ✅
+  - what-is-a-privileged-resolution — 0; ✅
+  - what-is-the-bearista-cup — 0; ✅
+  - what-does-maxxing-mean — 0; ✅
+  - how-to-rob-a-bank-true-story — 0; ✅
+  - cliff-booth-release-date — 0; ✅
+  - what-does-unc-mean — 0; ✅
+  - what-is-dandori-academy — 0; ✅
+  - does-mlb-have-a-salary-cap — 0; ✅
+  - what-is-a-motion-to-table — 0; ✅
+  - national-book-awards-2026 — 0; ✅
+  - the-empress-netflix-true-story — 0; ✅
+  - is-thomas-massie-a-republican — 0; ✅
+  - planet-alignment-november-2026 — 0; ❌ нет в подсказках
+  - what-is-a-hip-pointer — 0; ✅
+  - has-a-defense-secretary-been-impeached — 0; ✅
+  - what-is-win-the-mall — 0; ✅
+  - latin-grammys-vs-grammys — 0; ❌ нет в подсказках
+  - cma-awards-2026-date — 0; ✅
+  - medicaid-work-requirements-start-date — 0; ✅
+  - Новое: Trends с ноутбука 12 нояб — снова слова словесной игры (rheostat, palindrome, karat, flux capacitor, great scott, tee box, sand trap) — не писали. Погодный хайп (polar vortex 200K) → научный термин из прогнозов (sudden stratospheric warming).
 - 11 нояб, вечер (GSC: последний полный день 8 нояб — 6 кликов / 230 показов; 9 нояб 2/11; 10–11 нояб ≈0 — сайт выкинут из индекса 8–9 нояб, health.json: из 6 проверенных URL в индексе только / и /x/cyber-monday; sitemap: 252 отправлено, 0 проиндексировано):
   - Страницы 8 нояб (3 дня) — 0 показов в GSC у всех: carter-faith, heartland-netflix-cast, how-are-grammy-nominations-decided, how-is-senate-majority-leader-chosen, i-play-rocky-true-story, is-leonida-a-real-place, most-mvp-awards-mlb, rookie-cy-young-winner, the-altruists-true-story, harlem-park-three. Причина — не тема, а выпадение сайта из индекса.
   - Страницы 9 нояб (2 дня) — 0 показов: how-are-game-awards-nominees-chosen, is-philomena-cunk-real, new-snap-stocking-rules, how-are-cma-awards-voted, lame-duck-president, national-parks-free-veterans-day, bright-star-eastern-sky-morning, what-is-apple-homeview, what-is-pico-park, what-is-a-quarter-quell.

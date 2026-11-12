@@ -1,0 +1,60 @@
+{
+ "subject": "Social Security trust fund depletion",
+ "kind": "law",
+ "query": "when will social security run out",
+ "title": "When will Social Security run out? The trust fund date is late 2032",
+ "answer": "Social Security will not run out of money entirely, but its main retirement trust fund is projected to be depleted in the fourth quarter of 2032, according to the 2026 Trustees Report. If Congress does nothing, payroll taxes would then cover about 78% of scheduled retirement and survivor benefits, meaning an automatic cut of about 22%.",
+ "body": "Social Security has two trust funds. The Old-Age and Survivors Insurance (OASI) fund pays retirees, spouses and survivors; it is the one projected to empty in late 2032. The Disability Insurance (DI) fund is projected to stay solvent through 2100. If the two were combined, which would take an act of Congress, the joint reserves would last until the third quarter of 2034, and 83% of scheduled benefits would be payable after that. These are the trustees' intermediate projections, released June 9, 2026.\n\n\"Depleted\" means the reserves built up over past decades are used up, not that checks stop. Workers and employers keep paying payroll taxes, and those taxes would still fund most benefits. The trustees project that the payable share would slowly fall to about 62% of scheduled retirement benefits by 2100 without changes. The program has paid out more than it takes in, counting interest, since 2021: in 2025 it collected $1.45 trillion and spent $1.61 trillion, and combined reserves fell by $160 billion to $2.56 trillion. About 70 million people received benefits at the end of 2025.\n\nThe gap over the next 75 years equals 4.42% of taxable payroll, up from 3.82% in last year's report. Congress can close it by raising payroll taxes, lifting or removing the cap on taxable earnings ($184,500 in 2026, rising to $192,300 in 2027), trimming benefits, or combining those options. In 1983, when the retirement fund was months from running short, Congress passed amendments that raised payroll taxes and gradually raised the full retirement age.",
+ "in_the_news": "New reports on the shortfall, including a November 2026 AARP analysis, have revived questions about the 2032 date from the Social Security trustees' June 2026 report.",
+ "faq": [
+  {
+   "q": "Will Social Security run out in 2032?",
+   "a": "Not entirely. The retirement trust fund's reserves are projected to run out in late 2032, after which ongoing payroll taxes would cover about 78% of scheduled benefits unless Congress acts."
+  },
+  {
+   "q": "How much will Social Security benefits be cut in 2033?",
+   "a": "If Congress does nothing, about 22% at first for retirement and survivor benefits, with the gap slowly widening over later decades, based on the 2026 Trustees Report."
+  },
+  {
+   "q": "Is Social Security going broke?",
+   "a": "No. It has a funding shortfall, not zero income. Payroll taxes keep coming in, but they are not enough to pay full scheduled benefits once reserves are used up."
+  },
+  {
+   "q": "When does the combined Social Security trust fund run out?",
+   "a": "In the third quarter of 2034, if the retirement and disability funds were combined, with 83% of benefits payable afterward."
+  },
+  {
+   "q": "Will people who are already retired lose benefits?",
+   "a": "Under current law, the reduction would apply to everyone receiving OASI benefits once reserves are depleted, not just new retirees. Congress can change that."
+  }
+ ],
+ "links": [
+  [
+   "Social Security Administration",
+   "2026 Trustees Report press release",
+   "https://www.ssa.gov/news/en/press/releases/2026-06-09.html"
+  ],
+  [
+   "Social Security Administration",
+   "2026 OASDI Trustees Report: projections",
+   "https://www.ssa.gov/OACT/TR/2026/II_D_project.html"
+  ],
+  [
+   "Social Security Administration",
+   "2027 Social Security changes fact sheet",
+   "https://www.ssa.gov/news/en/cola/factsheets/2027.html"
+  ],
+  [
+   "Axios",
+   "Social Security trust fund to fall short in 2032",
+   "https://www.axios.com/2026/06/09/social-security-trust-fund-medicare"
+  ]
+ ],
+ "topics": [
+  "money",
+  "social security"
+ ],
+ "made": "2026-11-12T14:05:00+00:00",
+ "first": "2026-11-12T14:05:00+00:00",
+ "updated": "2026-11-12T14:05:00+00:00"
+}

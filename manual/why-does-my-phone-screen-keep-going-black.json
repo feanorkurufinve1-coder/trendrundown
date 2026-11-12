@@ -1,0 +1,58 @@
+{
+ "subject": "Phone screen going black",
+ "kind": "term",
+ "query": "why does my phone screen keep going black",
+ "title": "Why does my phone screen keep going black? Common causes and fixes",
+ "answer": "Your phone screen most often goes black because of a setting: a short screen timeout (Auto-Lock on iPhone), Low Power Mode cutting the timeout to 30 seconds, or the proximity sensor thinking the phone is at your ear. Less often, the cause is overheating, a software bug, or a failing display or battery.",
+ "body": "Start with the settings, since they cause most cases and cost nothing to fix.\n\n1. Screen timeout. On an iPhone, go to Settings > Display & Brightness > Auto-Lock and pick a longer time. On a Samsung Galaxy, open Settings and search for Screen timeout; Samsung allows 15 seconds to 10 minutes. Longer timeouts use more battery.\n\n2. Low Power Mode. On iPhone, Low Power Mode sets Auto-Lock to 30 seconds and lowers brightness, and you cannot choose a longer time while it is on. A yellow battery icon means it is active. It turns off by itself once the phone charges to 80%.\n\n3. Attention features. iPhones with Face ID can check whether you are looking at the screen before dimming it, and Samsung offers a similar \"Keep screen on while viewing\" option. If the screen sleeps while you are reading, make sure the feature is on: Settings > Face ID & Passcode > Attention Aware Features on iPhone, or search Settings for the Samsung option.\n\n4. Black screen during calls. The proximity sensor near the earpiece turns the screen off when it detects your face. A case, a thick screen protector or dirt over the sensor can trigger it at the wrong time. Remove the case, clean the top edge of the screen and test again. Some Samsung cases also have an \"Auto screen on and off\" setting under Settings > Advanced features > Accessories.\n\n5. Heat. Apple says an iPhone that gets too hot may dim the display or turn it black, and during navigation it can turn the screen off while directions continue. Move the phone out of the sun or off the charger and let it cool. Apple recommends using iPhone between 32° and 95°F (0° to 35°C).\n\n6. Software. Restart the phone and install any system update. On Android, a recently installed app can cause problems; starting in safe mode, which loads only built-in apps, shows whether a third-party app is to blame.\n\nWhen it is probably hardware: if the screen goes black but you still hear calls, notification sounds or vibration, the display or its connector may be failing, especially after a drop or water exposure. If the whole phone shuts off, not just the screen, an aging battery is a likely cause, particularly in cold weather. In either case, back up your data and take the phone to the manufacturer or an authorized repair shop. If the phone is bulging, very hot or smells of burning, stop using and charging it and get it inspected; do not try to open it yourself.",
+ "faq": [
+  {
+   "q": "Why does my phone screen go black when I am on a call?",
+   "a": "The proximity sensor turns the screen off when the phone is near your face. If it happens when the phone is away from your ear, a case, screen protector or dirt may be covering the sensor."
+  },
+  {
+   "q": "Why does my iPhone screen turn off after 30 seconds?",
+   "a": "Low Power Mode limits Auto-Lock to 30 seconds. Turn it off in Settings > Battery, or charge past 80%."
+  },
+  {
+   "q": "Why does my phone screen go black but the phone is still on?",
+   "a": "If sounds and vibration still work, the display or its cable may be failing. A forced restart can rule out a software freeze; if it keeps happening, the phone needs repair."
+  },
+  {
+   "q": "How do I stop my phone screen from turning off?",
+   "a": "Increase the screen timeout or Auto-Lock time, and turn off Low Power Mode or power saving if it limits that setting."
+  },
+  {
+   "q": "Can a screen protector make my screen go black?",
+   "a": "Yes, during calls. A protector or case that covers the proximity sensor can make the phone think it is against your ear."
+  }
+ ],
+ "links": [
+  [
+   "Samsung",
+   "Screen turns off while using Galaxy phone or tablet",
+   "https://www.samsung.com/us/support/troubleshoot/TSG10001446/"
+  ],
+  [
+   "Apple Support",
+   "Use Low Power Mode to save battery life on your iPhone or iPad",
+   "https://support.apple.com/101604"
+  ],
+  [
+   "Apple Support",
+   "If your iPhone or iPad gets too hot or too cold",
+   "https://support.apple.com/118431"
+  ],
+  [
+   "Apple Community",
+   "iPhone screen goes black randomly while using apps",
+   "https://discussions.apple.com/thread/256073734"
+  ]
+ ],
+ "topics": [
+  "tech"
+ ],
+ "made": "2026-11-12T14:05:00+00:00",
+ "first": "2026-11-12T14:05:00+00:00",
+ "updated": "2026-11-12T14:05:00+00:00"
+}

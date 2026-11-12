@@ -1,0 +1,64 @@
+{
+ "subject": "Sudden stratospheric warming",
+ "kind": "term",
+ "query": "what is a sudden stratospheric warming",
+ "title": "What is a sudden stratospheric warming? The polar vortex, explained",
+ "answer": "A sudden stratospheric warming (SSW) is a rapid jump in temperature high above the Arctic, roughly 10 to 30 miles up, that weakens or reverses the polar vortex winds circling the North Pole. A major one, like the record-early event that began around Nov. 10, 2026, can let Arctic air spill south over the following weeks.",
+ "body": "The polar vortex is a ring of strong west-to-east winds in the stratosphere that normally keeps the coldest air bottled up near the pole. Large atmospheric waves rising from below can slow those winds and push the vortex off the pole or split it in two. When that happens, air over the Arctic sinks and warms quickly; stratospheric temperatures can rise by more than 50°C (90°F) in a few days. Scientists call it a major warming when the average winds at 60°N, about 30 km (19 miles) up, reverse from westerly to easterly. Major SSWs happen about six times a decade, usually between January and March. German meteorologist Richard Scherhag first documented one in 1952 using weather balloons.\n\nThe November 2026 event is the earliest major warming on record. Winds around the vortex reversed as of Nov. 10, according to The Weather Network, and the previous earliest dates were Nov. 28 in both 1968 and 2025. Researchers quoted on Nov. 12 said it is too early to say whether the developing strong El Niño helped cause it.\n\nAn SSW does not create cold air; it moves it. Effects at the ground usually show up with a lag: stratospheric changes take about 10 days to work down toward the lower atmosphere and can shape weather for up to two months, according to a review in Eos, the American Geophysical Union's magazine. The typical result is a wavier jet stream, blocking patterns and more cold outbreaks in parts of North America, Europe and Asia, while some areas, including the Arctic, turn warmer than normal. This time, the outcome is unusually uncertain because the strong El Niño tends to keep the northern United States mild. NOAA physicist Amy Butler said the vortex may strengthen again quickly and that this disruption may not have much staying power, while MIT climatologist Judah Cohen said the risk of colder weather in eastern North America and northern Europe may come in late November or early December.",
+ "in_the_news": "The polar vortex reversed around Nov. 10, 2026, weeks earlier than any major warming on record, and forecasters are watching whether it brings cold air to the U.S. around Thanksgiving and in early December.",
+ "faq": [
+  {
+   "q": "What is the polar vortex?",
+   "a": "A band of strong winds about 10 to 30 miles above the Arctic that keeps the coldest air near the North Pole. When it weakens, that air can drift south."
+  },
+  {
+   "q": "Does a sudden stratospheric warming mean a cold winter?",
+   "a": "Not always. It raises the odds of cold outbreaks in parts of North America, Europe and Asia for several weeks, but where the cold lands varies, and some regions get warmer instead."
+  },
+  {
+   "q": "Will the polar vortex make Thanksgiving 2026 cold?",
+   "a": "It is uncertain. Forecasters expected a short cold snap in the eastern U.S. in mid-November, with milder air returning after it. Any bigger cold from this event would more likely arrive in late November or early December, and the strong El Niño is pushing the other way."
+  },
+  {
+   "q": "How often does a sudden stratospheric warming happen?",
+   "a": "Major ones occur about six times per decade in the Northern Hemisphere, usually in midwinter. A November event is very rare."
+  },
+  {
+   "q": "What is the difference between a polar vortex split and a displacement?",
+   "a": "In a displacement, the vortex is pushed off the pole as one piece. In a split, it breaks into two smaller vortices. Both can follow a sudden stratospheric warming."
+  },
+  {
+   "q": "Is it called SSW or sudden stratospheric warming event?",
+   "a": "Both. Forecasters often write SSW or SSW event; the abbreviation stands for sudden stratospheric warming."
+  }
+ ],
+ "links": [
+  [
+   "Eos (AGU)",
+   "How sudden stratospheric warming affects the whole atmosphere",
+   "https://eos.org/features/how-sudden-stratospheric-warming-affects-the-whole-atmosphere"
+  ],
+  [
+   "The Weather Network",
+   "The polar vortex just made a historic reversal. What now, Canada?",
+   "https://www.theweathernetwork.com/en/news/weather/forecasts/polar-vortex-is-on-the-brink-of-a-historic-reversal-what-now-canada"
+  ],
+  [
+   "KSL",
+   "This winter, it's polar vortex versus El Niño. Round one starts now",
+   "https://www.ksl.com/article/51645381/this-winter-its-polar-vortex-versus-el-nio-round-one-starts-now"
+  ],
+  [
+   "FOX Weather",
+   "How Super El Niño and the polar vortex could shape 2026",
+   "https://www.foxweather.com/weather-news/last-nationwide-white-thanksgiving-super-el-nino-polar-vortex-2026"
+  ]
+ ],
+ "topics": [
+  "weather",
+  "science"
+ ],
+ "made": "2026-11-12T14:05:00+00:00",
+ "first": "2026-11-12T14:05:00+00:00",
+ "updated": "2026-11-12T14:05:00+00:00"
+}

@@ -1,0 +1,58 @@
+{
+ "subject": "Phone battery draining while charging",
+ "kind": "term",
+ "query": "why does my phone battery go down while charging",
+ "title": "Why does my phone battery go down while charging? 7 causes and fixes",
+ "answer": "Your phone's battery goes down while charging when the phone uses power faster than the charger supplies it. The usual causes are a weak charger, cable or computer USB port, heavy use while plugged in, heat that makes the phone slow or pause charging, a dirty or loose charging port, misaligned wireless charging, or an aging battery.",
+ "body": "Work through these in order; the first few are the most common.\n\n1. Weak power source. A computer USB port or an old low-watt adapter may deliver less power than a busy phone uses. Samsung notes that fast charging may not work from a PC or standard USB port. Plug into a wall outlet with the charger made for your phone or a certified one.\n\n2. Damaged or worn cable. A frayed or loose cable can drop the connection on and off. Try a different cable, and stop using any that is damaged.\n\n3. Heavy use while charging. Games, video streaming, GPS navigation, a mobile hotspot or a very bright screen can outpace a slow charger. Close demanding apps or lock the screen for a few minutes and watch whether the percentage rises.\n\n4. Heat. Phones protect their batteries by slowing or stopping charging when they get hot. Apple says an iPhone that is too hot may slow or stop charging, including wireless charging. Take off a thick case, move the phone out of the sun or off a soft surface, and let it cool.\n\n5. Lint in the port. Pocket lint packed into the charging port can stop the plug from seating fully. Look inside with a flashlight and gently clear it with a wooden toothpick, not metal. Samsung phones also stop charging if they detect moisture in the port; let the port dry completely first.\n\n6. Wireless charging alignment. If the phone is off-center on the pad, or a card, coin or magnet sits between them, charging slows or stops. Center the phone and remove anything in between.\n\n7. Aging battery or software. Restart the phone and update its software. Then check battery health: on iPhone, in Settings > Battery; on Samsung, in the diagnostics of the Samsung Members app. A worn battery holds less charge and can drop quickly under load.\n\nIf an iPhone stops at 80% and waits, that is not a fault: Optimized Battery Charging or a charge limit is protecting the battery. Take the phone to the manufacturer or an authorized repair shop if it still loses charge on a known-good wall charger, or if the battery is swollen, the phone gets very hot while charging, or you smell burning. Unplug it in those cases and do not try to open it.",
+ "faq": [
+  {
+   "q": "Why is my phone charging but the percentage is going down?",
+   "a": "The phone is using more power than the charger supplies, often because of a weak charger or USB port, heavy use, or heat slowing the charge."
+  },
+  {
+   "q": "Why does my phone charge slowly?",
+   "a": "A low-watt adapter, a worn cable, a computer USB port, a hot phone or lint in the port are the most common causes."
+  },
+  {
+   "q": "Is it bad to use your phone while charging?",
+   "a": "Light use is fine. Heavy use, such as gaming, makes the phone hotter and slows charging."
+  },
+  {
+   "q": "Why does my iPhone stop charging at 80%?",
+   "a": "Optimized Battery Charging, a charge limit, or high temperature can hold charging at 80% to protect the battery."
+  },
+  {
+   "q": "How do I know if my phone battery needs replacing?",
+   "a": "Check battery health in settings or the manufacturer's diagnostics app. Short battery life on a good charger, sudden shutdowns or a swollen battery mean it is time for service."
+  }
+ ],
+ "links": [
+  [
+   "Apple Support",
+   "If your iPhone won't charge",
+   "https://support.apple.com/en-nz/108805"
+  ],
+  [
+   "Apple Support",
+   "If your iPhone or iPad gets too hot or too cold",
+   "https://support.apple.com/118431"
+  ],
+  [
+   "Samsung",
+   "Why your Galaxy device may appear to be charging slowly or not charging at all",
+   "https://www.samsung.com/hk_en/support/mobile-devices/galaxy-device-not-charging-or-charging-slowly/"
+  ],
+  [
+   "SlashGear",
+   "Android battery going down while charging: what to do",
+   "https://www.slashgear.com/1950623/android-battery-going-down-while-charging-fix-what-to-do/"
+  ]
+ ],
+ "topics": [
+  "tech"
+ ],
+ "made": "2026-11-12T14:05:00+00:00",
+ "first": "2026-11-12T14:05:00+00:00",
+ "updated": "2026-11-12T14:05:00+00:00"
+}
