@@ -4759,9 +4759,7 @@ def build_site(store):
     for pre, coll in (("x/", ex), ("w/", pv)):
         for x in coll.values():
             pth = pre + x["slug"]
-            if x.get("manual"):
-                if x.get("news"):                # новости (пересказ событий) — для читателей главной, не для поиска
-                    NOINDEX.add(pth)
+            if x.get("manual"):                  # всё, что написано вручную (прогнозы, вечные, новости) — в выдачу
                 continue
             if pre == "x/":                      # 11.11: ВСЕ автоматические пояснения (дешёвый ИИ) — не в выдачу
                 NOINDEX.add(pth)
