@@ -1,0 +1,47 @@
+{
+ "news": true,
+ "subject": "Consumer Price Index",
+ "kind": "event",
+ "query": "why no annual inflation rate for october cpi",
+ "title": "Why no annual inflation rate for October CPI? The 2025 shutdown gap",
+ "answer": "The Bureau of Labor Statistics reported on Nov. 10, 2026, that consumer prices rose 0.4% in October, but it did not publish the usual 12-month inflation rate. The reason: BLS collected no price data in October 2025 because of the government shutdown, so there is no year-earlier figure to compare against.",
+ "in_the_news": "The missing headline number left many people searching for \"inflation rate\" without finding one, and the 0.4% monthly rise came in hotter than economists expected, complicating the Federal Reserve's outlook.",
+ "body": "In October 2026, the overall index rose 0.4% on a seasonally adjusted basis, after a 0.6% jump in September. Core prices, which exclude food and energy, rose 0.3% for a third straight month. Food rose 0.5%, energy 0.7% and shelter 0.3%. Gasoline rose 1.0% after seasonal adjustment, even though pump prices actually dipped 0.7% before adjustment, because prices usually fall more in October.\n\nThe gap traces back to the federal shutdown that began Oct. 1, 2025. With funding lapsed, BLS staff did not collect October 2025 prices, and that month's report was never produced. BLS says it cannot calculate 12-month changes for October 2026 where the October 2025 data are missing. Monthly changes are unaffected, and analysts can still estimate annual trends by compounding the monthly figures, but there is no official year-over-year number for this month.\n\nWhat's next: the November 2026 CPI is scheduled for Thursday, Dec. 10, at 8:30 a.m. ET. Because November 2025 data were collected, that report is expected to bring back the regular annual inflation rate.",
+ "faq": [
+  {
+   "q": "What was inflation in October 2026?",
+   "a": "Prices rose 0.4% from September, seasonally adjusted. BLS did not publish a 12-month rate."
+  },
+  {
+   "q": "Why is October 2025 CPI data missing?",
+   "a": "The October 2025 government shutdown halted BLS price collection that month, so no October 2025 index exists."
+  },
+  {
+   "q": "When is the next CPI report?",
+   "a": "Thursday, Dec. 10, 2026, at 8:30 a.m. ET, covering November."
+  },
+  {
+   "q": "What was core inflation in October 2026?",
+   "a": "Core CPI, excluding food and energy, rose 0.3% for the month."
+  }
+ ],
+ "links": [
+  [
+   "U.S. Bureau of Labor Statistics",
+   "Consumer Price Index Summary - October 2026",
+   "https://www.bls.gov/news.release/cpi.nr0.htm"
+  ],
+  [
+   "CNBC",
+   "Consumer prices rose 0.4% in October, more than expected, complicating Fed's inflation fight",
+   "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html"
+  ],
+  [
+   "CPI Inflation Calculator",
+   "The Consumer Price Index Rises 0.4% In October 2026, Annual Rate Not Reported",
+   "https://cpiinflationcalculator.com/the-consumer-price-index-rises-0-4-in-october-2026-seasonally-adjusted-annual-rate-not-reported/"
+  ]
+ ],
+ "made": "2026-11-12T16:43:36+00:00",
+ "first": "2026-11-12T16:43:36+00:00"
+}

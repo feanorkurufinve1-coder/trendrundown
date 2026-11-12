@@ -1,0 +1,48 @@
+{
+ "news": true,
+ "subject": "Sierra Nevada winter storm",
+ "kind": "event",
+ "query": "sierra winter storm warning",
+ "title": "Sierra winter storm warning: up to 2 feet of snow from Friday",
+ "answer": "The National Weather Service in Sacramento issued a Winter Storm Warning on Nov. 12, 2026, for the Northern Sierra and Southern Cascades above 6,000 feet. It runs from 10 a.m. Friday, Nov. 13, to 10 a.m. Saturday, Nov. 14, with up to a foot of snow, up to 2 feet on the highest peaks, and gusts to 60 mph.",
+ "in_the_news": "It is the first significant snowstorm of the season for the Sierra, arriving ahead of a weekend when many people drive over Interstate 80 and U.S. 50 to Lake Tahoe.",
+ "body": "The warning covers Interstate 80, U.S. Highway 50, State Route 4 and State Route 108, plus Lassen Volcanic National Park. Snow levels start around 6,500 to 7,500 feet Friday and drop to 5,500 to 6,500 feet by Saturday morning, with the heaviest snow Friday night into Saturday morning. Minor amounts, about 2 inches, are possible down to 5,000 feet. Forecasters warn travel could be very difficult, with near-whiteout conditions in strong wind, downed branches and localized power outages.\n\nAfter a lull from Saturday afternoon through Sunday, a second round of snow is expected Sunday night into Monday, which could slow the Monday morning commute over the passes. A separate Winter Storm Watch covers parts of the Sierra including Yosemite through Monday, where half a foot to 2 feet is possible above 6,000 feet. Lower elevations and much of Southern California are in line for widespread rain.\n\nThe same Pacific system is forecast to move east, bringing heavy rain to South and Central Texas this weekend and to Florida around Monday and Tuesday. Before driving into the mountains, check Caltrans road conditions at quickmap.dot.ca.gov or by calling 511, and carry chains.",
+ "faq": [
+  {
+   "q": "When does the Sierra storm start?",
+   "a": "The warning begins at 10 a.m. Friday, Nov. 13, 2026, with the heaviest snow Friday night into Saturday morning."
+  },
+  {
+   "q": "How much snow will Tahoe get?",
+   "a": "Up to a foot above 6,000 feet and up to 2 feet on the highest peaks through Saturday, with more possible Sunday night into Monday."
+  },
+  {
+   "q": "Will I-80 be affected?",
+   "a": "Yes. The warning covers I-80 and U.S. 50, and travel could be very difficult, so chain controls and delays are likely."
+  },
+  {
+   "q": "Where can I check road conditions?",
+   "a": "Caltrans QuickMap at quickmap.dot.ca.gov or by calling 511."
+  }
+ ],
+ "links": [
+  [
+   "National Weather Service via Defcon Level",
+   "Winter Storm Warning issued November 12 by NWS Sacramento CA",
+   "https://www.defconlevel.com/alert/2026-11-12-nws-noaa-weather-winter-storm-warning-issued-november-12-at-12-05am-pst-until-november-14-at-10-00am-pst-by-nws-sacramento-ca"
+  ],
+  [
+   "myMotherLode.com",
+   "Sierra Nevada Winter Storm Watch For This Weekend",
+   "https://mymotherlode.com/news/local/11299889/sierra-nevada-winter-storm-watch-for-this-weekend.html"
+  ],
+  [
+   "FOX Weather",
+   "Powerful Pacific jet stream to unleash series of storms from California into the Southern US",
+   "https://www.foxweather.com/weather-news/active-pattern-nasty-storms-full-heavy-rain-sweep-across-southern-us-starting-weekend"
+  ]
+ ],
+ "image_wiki": "Sierra Nevada",
+ "made": "2026-11-12T16:43:36+00:00",
+ "first": "2026-11-12T16:43:36+00:00"
+}
