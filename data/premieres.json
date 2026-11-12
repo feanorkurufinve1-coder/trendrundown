@@ -1,0 +1,569 @@
+{
+ "made": "2026-11-12T16:17:29+00:00",
+ "about": "Премьеры сериалов и новых сезонов в США на 14 дней вперёд (TVmaze). new_series = совсем новый сериал. Сырьё для прогнозов «is X a true story», «X cast», «X season N release time».",
+ "premieres": [
+  {
+   "date": "2026-11-12",
+   "show": "Crown of Deceit: Inside the Miss Universe Scandal",
+   "season": 1,
+   "new_series": true,
+   "type": "Documentary",
+   "genres": [
+    "Drama"
+   ],
+   "network": "TLC",
+   "premiered": "2026-11-12",
+   "summary": "Crown of Deceit: Inside the Miss Universe Scandal examines allegations of misconduct, abuse of power, favoritism and competition rigging that have shaken the pageant world. Former contestants and insiders, including Taylor Hale (Miss Michigan 2021/Miss USA contestant) Noelia Voigt (Miss USA 2023) and Brittany Mason (Miss Indiana 2008/Miss USA contestant) share their experiences as concerns around ",
+   "url": "https://www.tvmaze.com/shows/95133/crown-of-deceit-inside-the-miss-universe-scandal",
+   "official": null
+  },
+  {
+   "date": "2026-11-12",
+   "show": "The Good Daughter",
+   "season": 1,
+   "new_series": true,
+   "type": "Scripted",
+   "genres": [
+    "Drama",
+    "Crime"
+   ],
+   "network": "Peacock",
+   "premiered": "2026-11-12",
+   "summary": "The Good Daughter is a suspenseful crime drama where sisters Charlotte and Samantha Quinn have spent the last twenty-eight years trying to piece together the lives that were fractured by a single night of violence. When another attack splinters the small town of Pikeville, Charlotte is the first witness on the scene. Now a lawyer like her father, she's forced to confront her own demons as the case",
+   "url": "https://www.tvmaze.com/shows/75488/the-good-daughter",
+   "official": null
+  },
+  {
+   "date": "2026-11-12",
+   "show": "Southern Charm",
+   "season": 12,
+   "new_series": false,
+   "type": "Reality",
+   "genres": [],
+   "network": "Bravo",
+   "premiered": "2014-03-02",
+   "summary": "Southern Charm goes behind the walls of Charleston, South Carolina's most aristocratic families to reveal a world of exclusivity, money and scandal that goes back generations. The fast-paced, drama-filled docu-series follows six Charleston singles — Craig Conover, Cameran Eubanks, Jenna King, Thomas Ravenel, Shepard \"Shep\" Rose, and Whitney Sudler Smith — struggling with the constraints of this ti",
+   "url": "https://www.tvmaze.com/shows/3248/southern-charm",
+   "official": "http://www.bravotv.com/southern-charm"
+  },
+  {
+   "date": "2026-11-13",
+   "show": "12 12 12",
+   "season": 1,
+   "new_series": true,
+   "type": "Scripted",
+   "genres": [
+    "Drama",
+    "Action",
+    "Crime"
+   ],
+   "network": "Apple TV",
+   "premiered": "2026-11-13",
+   "summary": "Each episode of 12 12 12 unfolds across three timelines of a heist: the 12 months of planning, the 12 hours of the heist and the 12 days following it. The series follows a disgraced FBI agent and an American career criminal as they play a zero-sum game of cat and mouse across Europe. At the center of it all is the daring, epic raid on a bank vault deep beneath the streets of Zurich.",
+   "url": "https://www.tvmaze.com/shows/84261/12-12-12",
+   "official": "https://tv.apple.com/us/show/12-12-12/umc.cmc.2xeasogpeiwbaegczytrdg1uh"
+  },
+  {
+   "date": "2026-11-13",
+   "show": "Stars and Vows: Anele & Buzza",
+   "season": 1,
+   "new_series": true,
+   "type": "Reality",
+   "genres": [
+    "Romance"
+   ],
+   "network": "Netflix",
+   "premiered": "2026-11-13",
+   "summary": "Follow media darling Anele Mdoda and her royal fiance Buzza James from pre-wedding celebrations and tense family moments to their long-awaited \"I do.\"",
+   "url": "https://www.tvmaze.com/shows/95505/stars-and-vows-anele-buzza",
+   "official": "https://www.netflix.com/title/83073030"
+  },
+  {
+   "date": "2026-11-14",
+   "show": "The Green Way Outdoors",
+   "season": 4,
+   "new_series": false,
+   "type": "Reality",
+   "genres": [
+    "Nature"
+   ],
+   "network": "History",
+   "premiered": "2023-09-02",
+   "summary": "Kyle Green travels the world with his best friends hunting for wild game and dynamic conservation stories. Join Kyle on his extreme hunting and fishing adventures as he breaks the shackles of the modern world and gains a deeper understanding of where our food comes from. Learn about the conservation of exciting species like Buffalo, Moose, and Alligator—but also learn about the damaging effects of",
+   "url": "https://www.tvmaze.com/shows/71071/the-green-way-outdoors",
+   "official": "https://www.history.com/shows/the-green-way-outdoors"
+  },
+  {
+   "date": "2026-11-14",
+   "show": "Nickelodeon Kids' Choice Awards",
+   "season": 2026,
+   "new_series": false,
+   "type": "Award Show",
+   "genres": [
+    "Family",
+    "Music"
+   ],
+   "network": "Nickelodeon",
+   "premiered": "1987-03-28",
+   "summary": "The biggest, slimiest, surprise-iest awards show is back and better than ever for the most epic night of the year!",
+   "url": "https://www.tvmaze.com/shows/7413/nickelodeon-kids-choice-awards",
+   "official": "https://www.nick.com/kids-choice-awards"
+  },
+  {
+   "date": "2026-11-14",
+   "show": "Homicide for the Holidays",
+   "season": 6,
+   "new_series": false,
+   "type": "Documentary",
+   "genres": [
+    "Drama",
+    "Crime"
+   ],
+   "network": "Oxygen True Crime",
+   "premiered": "2016-12-03",
+   "summary": "The holiday season between Thanksgiving and New Year's is often thought of as a celebratory period to spend time with friends and family. That is not always the case, though, as the period is not immune from experiencing the same types of violent crimes that occur throughout the year. This series documents stories of tragedy that struck during the holidays, with firsthand accounts from people who ",
+   "url": "https://www.tvmaze.com/shows/23045/homicide-for-the-holidays",
+   "official": "http://www.oxygen.com/homicide-for-the-holidays"
+  },
+  {
+   "date": "2026-11-14",
+   "show": "Rock and Roll Hall of Fame Induction Ceremony",
+   "season": 2026,
+   "new_series": false,
+   "type": "Award Show",
+   "genres": [
+    "Music"
+   ],
+   "network": "Disney+",
+   "premiered": "1986-01-23",
+   "summary": "Leaders in the music industry joined together in 1983 to establish the Rock and Roll Hall of Fame Foundation. One of the Foundation's many functions is to recognize the contributions of those who have had a significant impact on the evolution, development and perpetuation of rock and roll by inducting them into the Hall of Fame!",
+   "url": "https://www.tvmaze.com/shows/11052/rock-and-roll-hall-of-fame-induction-ceremony",
+   "official": "https://rockhall.com/"
+  },
+  {
+   "date": "2026-11-16",
+   "show": "America's Funniest People",
+   "season": 1,
+   "new_series": true,
+   "type": "Reality",
+   "genres": [
+    "Comedy"
+   ],
+   "network": "VH1",
+   "premiered": "2026-11-16",
+   "summary": "From savage jokes and wild stunts to outrageous pranks, questionable decisions, and unforgettable viral moments, each episode showcases the kind of social content you can't believe someone actually posted. With her fearless humor and unapologetic perspective, Ms. Pat brings her signature comedic style to the competition as three hilarious content creators go head-to-head for a cash prize.",
+   "url": "https://www.tvmaze.com/shows/95206/americas-funniest-people",
+   "official": null
+  },
+  {
+   "date": "2026-11-16",
+   "show": "Sweet Deceit",
+   "season": 2,
+   "new_series": false,
+   "type": "Reality",
+   "genres": [
+    "Food"
+   ],
+   "network": "Food Network",
+   "premiered": "2026-10-05",
+   "summary": "Sweet Deceit challenges teams of three competitors to search for deceptive, hyper-realistic sweets hiding in plain sight in real-world locations. Actor Josh Peck, who hilariously commands the on-screen hijinks as he leads contestants through four rounds as they try to identify masterfully disguised sweets created by world-class cake artists. Escalating in difficulty round by round, the teams work ",
+   "url": "https://www.tvmaze.com/shows/93951/sweet-deceit",
+   "official": null
+  },
+  {
+   "date": "2026-11-17",
+   "show": "Beat Bobby Flay: Holiday Throwdown",
+   "season": 5,
+   "new_series": false,
+   "type": "Reality",
+   "genres": [
+    "Food"
+   ],
+   "network": "Food Network",
+   "premiered": "2022-11-08",
+   "summary": "The Food Network family is challenging Bobby Flay to face his worst holiday nightmares. In each supersized hour, familiar faces battle it out to choose the final challenge and pick the teams in this epic Beat Bobby Flay Holiday Throwdown!",
+   "url": "https://www.tvmaze.com/shows/73054/beat-bobby-flay-holiday-throwdown",
+   "official": "https://www.foodnetwork.com/shows/beat-bobby-flay-holiday-throwdown"
+  },
+  {
+   "date": "2026-11-17",
+   "show": "The Circle",
+   "season": 8,
+   "new_series": false,
+   "type": "Reality",
+   "genres": [],
+   "network": "Hulu",
+   "premiered": "2020-01-01",
+   "summary": "Status and strategy collide in this social experiment and competition show where online players flirt, befriend and catfish their way toward $100,000.",
+   "url": "https://www.tvmaze.com/shows/45419/the-circle",
+   "official": "https://www.hulu.com/series/the-circle-9b7eb48e-e6a1-429a-a5af-6f7202b540d4"
+  },
+  {
+   "date": "2026-11-17",
+   "show": "7 Little Johnstons",
+   "season": 18,
+   "new_series": false,
+   "type": "Reality",
+   "genres": [
+    "Drama",
+    "Comedy",
+    "Family"
+   ],
+   "network": "TLC",
+   "premiered": "2015-03-31",
+   "summary": "Amber and Trent Johnston are living the American dream. They have been happily married for 14 years and have five children ranging from 6 to 13 years old. On paper, they might seem like your average family...yet in person, they attract a lot of attention.... because all seven members of the Johnston family – Amber, Trent, their two biological children, Jonah and Elizabeth, as well as their three a",
+   "url": "https://www.tvmaze.com/shows/1345/7-little-johnstons",
+   "official": "http://www.tlc.com/tv-shows/7-little-johnstons/"
+  },
+  {
+   "date": "2026-11-18",
+   "show": "Sweet Homes",
+   "season": 1,
+   "new_series": true,
+   "type": "Reality",
+   "genres": [],
+   "network": "Destination America",
+   "premiered": "2026-11-18",
+   "summary": "",
+   "url": "https://www.tvmaze.com/shows/95318/sweet-homes",
+   "official": "https://sweethomes.tv"
+  },
+  {
+   "date": "2026-11-18",
+   "show": "Small Town Trouble: Texas",
+   "season": 1,
+   "new_series": true,
+   "type": "Reality",
+   "genres": [],
+   "network": "Bravo",
+   "premiered": "2026-11-18",
+   "summary": "In the heart of Texas Hill Country is the picture‑perfect town of Boerne where wealth, beauty, faith and family reign supreme. Centered on a tight-knit circle of glamorous women, this series follows their lives as they raise families, run ranches and farms and manage sparkling social calendars in a town rooted in rodeos and tradition. Behind the polished smiles and Sunday sermons, however, there a",
+   "url": "https://www.tvmaze.com/shows/95155/small-town-trouble-texas",
+   "official": null
+  },
+  {
+   "date": "2026-11-18",
+   "show": "Win the Mall",
+   "season": 1,
+   "new_series": true,
+   "type": "Reality",
+   "genres": [],
+   "network": "Netflix",
+   "premiered": "2026-11-18",
+   "summary": "Do you think shopping should be considered an Olympic sport? Bargain hunt like it's a full-time job? Is retail therapy your form of … actual therapy?Then get ready for the shopping spree of a lifetime, because the new series Win the Mall is the ultimate fantasy retail experience. This high-stakes competition transforms a classic American shopping mall into a thrilling game of strategy and unexpect",
+   "url": "https://www.tvmaze.com/shows/90831/win-the-mall",
+   "official": null
+  },
+  {
+   "date": "2026-11-18",
+   "show": "Country Music Association Awards",
+   "season": 2026,
+   "new_series": false,
+   "type": "Award Show",
+   "genres": [
+    "Music"
+   ],
+   "network": "ABC",
+   "premiered": "1967-10-20",
+   "summary": "The Country Music Association Awards are presented to country music artists and broadcasters to recognize outstanding achievement in the county music industry.",
+   "url": "https://www.tvmaze.com/shows/6731/country-music-association-awards",
+   "official": "https://abc.com/shows/cma-awards"
+  },
+  {
+   "date": "2026-11-19",
+   "show": "The Altruists",
+   "season": 1,
+   "new_series": true,
+   "type": "Scripted",
+   "genres": [
+    "Drama",
+    "Crime"
+   ],
+   "network": "Netflix",
+   "premiered": "2026-11-19",
+   "summary": "The Altruists tells the story of Sam Bankman-Fried and Caroline Ellison, two hyper-smart, ambitious young idealists who tried to remake the global financial system in the blink of an eye – and then seduced, coaxed and teased each other into stealing $8 billion.",
+   "url": "https://www.tvmaze.com/shows/85058/the-altruists",
+   "official": null
+  },
+  {
+   "date": "2026-11-19",
+   "show": "Next Level Baker",
+   "season": 2,
+   "new_series": false,
+   "type": "Reality",
+   "genres": [
+    "Food"
+   ],
+   "network": "FOX",
+   "premiered": "2025-12-04",
+   "summary": "Next Level Baker will test the skills of bakers as they are challenged to create eye-popping, festive holiday delights across the franchise's three iconic levels. During the series' four special hours, only one baker will rise to the top and claim the holiday baking crown.",
+   "url": "https://www.tvmaze.com/shows/82897/next-level-baker",
+   "official": "https://www.fox.com/detail/series/SER262498WXNC/next-level-baker"
+  },
+  {
+   "date": "2026-11-19",
+   "show": "Nelly & Ashanti: We Belong Together",
+   "season": 2,
+   "new_series": false,
+   "type": "Reality",
+   "genres": [
+    "Drama",
+    "Romance"
+   ],
+   "network": "Peacock",
+   "premiered": "2025-06-26",
+   "summary": "Nelly &amp; Ashanti: We Belong Together follows the electrifying journey of this beloved couple as they reignite their love, navigate the ups and downs of newlywed life and the challenges of parenthood while juggling their thriving careers. Can this unstoppable duo prove that their love truly can conquer all? A fun-filled exploration of love's second chances.  ",
+   "url": "https://www.tvmaze.com/shows/84616/nelly-ashanti-we-belong-together",
+   "official": "https://www.peacocktv.com/watch-online/tv/nelly-and-ashanti-we-belong-together/9103439072416525112"
+  },
+  {
+   "date": "2026-11-20",
+   "show": "Melania, The Series",
+   "season": 1,
+   "new_series": true,
+   "type": "Documentary",
+   "genres": [],
+   "network": "Prime Video",
+   "premiered": "2026-11-20",
+   "summary": "The series, titled Melania, The Series, offers new insight into the behind-the-scenes life of the first lady.The Series reveals never-before-told stories, offering unprecedented insight into Melania Trump's life, including the extraordinary days immediately following the 47th Presidential Inauguration,",
+   "url": "https://www.tvmaze.com/shows/95452/melania-the-series",
+   "official": null
+  },
+  {
+   "date": "2026-11-20",
+   "show": "Yellowjackets",
+   "season": 4,
+   "new_series": false,
+   "type": "Scripted",
+   "genres": [
+    "Drama",
+    "Horror",
+    "Supernatural"
+   ],
+   "network": "Paramount+",
+   "premiered": "2021-11-14",
+   "summary": "Yellowjackets follows a girls' high school soccer team. In 1975, the Dearborn High Yellowjackets became the first team in state history to qualify for the Girls' U.S. Soccer Championship Series in Manchester, NH. They never got the chance to compete. Equal parts survival epic, horror story and pitch black coming of age, Yellowjackets tells the story of the (un)lucky survivors of a plane crash deep",
+   "url": "https://www.tvmaze.com/shows/36672/yellowjackets",
+   "official": "https://sho.com/yellowjackets"
+  },
+  {
+   "date": "2026-11-21",
+   "show": "Editorially Speaking",
+   "season": 1,
+   "new_series": true,
+   "type": "Scripted",
+   "genres": [
+    "Drama",
+    "Comedy"
+   ],
+   "network": "Tubi",
+   "premiered": "2026-11-21",
+   "summary": "Editorially Speaking follows journalists at a fictional publication called \"Editorial Magazine\" as they navigate careers, relationships, and the fashion media industry.",
+   "url": "https://www.tvmaze.com/shows/95157/editorially-speaking",
+   "official": "https://editoriallyspeakingseries.com"
+  },
+  {
+   "date": "2026-11-22",
+   "show": "Oobah: Scams for a Better Tomorrow",
+   "season": 1,
+   "new_series": true,
+   "type": "Documentary",
+   "genres": [],
+   "network": "HBO",
+   "premiered": "2026-11-22",
+   "summary": "Known for his viral stunts, including creating London's #1-rated fake restaurant, Oobah Butler sets his sights on the world's biggest industries and most powerful institutions. To infiltrate the worlds of wine, wellness, royalty, and more, Oobah hatches elaborate and increasingly audacious schemes by gaming online reviews, assuming made-up personas, and launching fake companies with entirely bogus",
+   "url": "https://www.tvmaze.com/shows/95410/oobah-scams-for-a-better-tomorrow",
+   "official": null
+  },
+  {
+   "date": "2026-11-22",
+   "show": "30 for 30",
+   "season": 5,
+   "new_series": false,
+   "type": "Documentary",
+   "genres": [
+    "Sports"
+   ],
+   "network": "ESPN",
+   "premiered": "2009-10-06",
+   "summary": "Inspired by ESPN's anniversary, ESPN Films is launching 30 for 30, an unprecedented documentary series featuring 30 of today's finest storytellers telling thirty remarkable stories from the ESPN era. On their own, each of the films will be an intimate look at a specific story, relevant to larger themes from the modern era. Collectively, these films will be a diverse mosaic of what sports has meant",
+   "url": "https://www.tvmaze.com/shows/6099/30-for-30",
+   "official": "http://espn.go.com/30for30/"
+  },
+  {
+   "date": "2026-11-23",
+   "show": "New Wave",
+   "season": 1,
+   "new_series": true,
+   "type": "Documentary",
+   "genres": [
+    "Music"
+   ],
+   "network": "MGM+",
+   "premiered": "2026-11-23",
+   "summary": "This series tells the fascinating story of New Wave music and the decade from 1977 to 1987 that brought alternative culture into the mainstream. The four-part series will take us on a journey through the rise of New Wave from its rebellious origins to its influential impact on music, fashion, and pop culture. New Wave defined a generation and reshaped the musical landscape in part by embracing wom",
+   "url": "https://www.tvmaze.com/shows/95135/new-wave",
+   "official": null
+  },
+  {
+   "date": "2026-11-23",
+   "show": "Dig",
+   "season": 1,
+   "new_series": true,
+   "type": "Scripted",
+   "genres": [
+    "Comedy"
+   ],
+   "network": "Peacock",
+   "premiered": "2026-11-23",
+   "summary": "Dig follows a team of dedicated archaeologists (and less-dedicated college students) who spend their summer working on a dig site in Greece. Their discovery of a rare artifact sends them on the adventure of a lifetime.",
+   "url": "https://www.tvmaze.com/shows/84536/dig",
+   "official": null
+  },
+  {
+   "date": "2026-11-23",
+   "show": "Sesame Street",
+   "season": 57,
+   "new_series": false,
+   "type": "Scripted",
+   "genres": [
+    "Children"
+   ],
+   "network": "Netflix",
+   "premiered": "1970-02-06",
+   "summary": "Sunny days are here! This freshly reimagined \"Sesame Street\" series features characters you love, fan-favorite segments — and new ways to play.",
+   "url": "https://www.tvmaze.com/shows/6544/sesame-street",
+   "official": "https://www.netflix.com/title/83075543"
+  },
+  {
+   "date": "2026-11-24",
+   "show": "Miss Universe Pageant",
+   "season": 2026,
+   "new_series": false,
+   "type": "Variety",
+   "genres": [],
+   "network": "REELZ",
+   "premiered": "1955-07-22",
+   "summary": "Since it's inception in 1952, the Miss Universe Pageant has given the world's most beautiful women from more than 80 countries something to vie for. Usually held in a different city each year, the live event spotlights contestants' performances in three categories: swimsuit, evening gown, and interview. Along with the coveted title, one lucky winner wins a contract with the Miss Universe Organizat",
+   "url": "https://www.tvmaze.com/shows/7117/miss-universe-pageant",
+   "official": "http://www.missuniverse.com/"
+  },
+  {
+   "date": "2026-11-25",
+   "show": "Andrew Tate: Toxic Empire",
+   "season": 1,
+   "new_series": true,
+   "type": "Documentary",
+   "genres": [
+    "Crime"
+   ],
+   "network": "Investigation Discovery",
+   "premiered": "2026-11-25",
+   "summary": "Andrew Tate: Toxic Empire investigates how brothers Andrew and Tristan Tate used social media, the promise of wealth, and controversial messaging to build a worldwide following at the center of what's become known as the \"manosphere.\" Through exclusive interviews, former followers and associates pull back the curtain on the inner workings behind the Tate brand, describing what some characterize as",
+   "url": "https://www.tvmaze.com/shows/95224/andrew-tate-toxic-empire",
+   "official": null
+  },
+  {
+   "date": "2026-11-25",
+   "show": "Blade Runner 2099",
+   "season": 1,
+   "new_series": true,
+   "type": "Scripted",
+   "genres": [
+    "Science-Fiction",
+    "Thriller"
+   ],
+   "network": "Prime Video",
+   "premiered": "2026-11-25",
+   "summary": "Fifty years after the events of Blade Runner 2049, Los Angeles has been reborn, just not by humanity. Cora, a fugitive in a final bid to stop running, takes on one last identity: a Blade Runner. Forced to partner with Olwen, a Replicant days from dying, she hunts down a runaway hiding a truth that could collapse their fragile city.",
+   "url": "https://www.tvmaze.com/shows/60458/blade-runner-2099",
+   "official": "https://www.amazon.com/gp/video/detail/B0H8MH1JP1"
+  },
+  {
+   "date": "2026-11-25",
+   "show": "Countdown to Macy's Thanksgiving Day Parade",
+   "season": 2026,
+   "new_series": false,
+   "type": "Variety",
+   "genres": [],
+   "network": "NBC",
+   "premiered": "2022-11-23",
+   "summary": "On the eve of the iconic Thanksgiving Day parade, viewers get a behind-the-scenes peek at the incredible stories behind the floats, balloons and bands on their journey to the streets of New York.",
+   "url": "https://www.tvmaze.com/shows/72509/countdown-to-macys-thanksgiving-day-parade",
+   "official": "https://www.nbc.com/countdown-to-macys-thanksgiving-parade"
+  },
+  {
+   "date": "2026-11-26",
+   "show": "Macy's Thanksgiving Day Parade",
+   "season": 2026,
+   "new_series": false,
+   "type": "Variety",
+   "genres": [],
+   "network": "NBC",
+   "premiered": "1948-11-25",
+   "summary": "Macy's Thanksgiving Day Parade is an annual parade presented by the U.S.-based department store chain Macy's. Locations: Central Park to Macy's Herald Square, New York City, New York, USA.",
+   "url": "https://www.tvmaze.com/shows/22447/macys-thanksgiving-day-parade",
+   "official": "https://www.nbc.com/macys-thanksgiving-day-parade"
+  },
+  {
+   "date": "2026-11-26",
+   "show": "The National Dog Show",
+   "season": 2026,
+   "new_series": false,
+   "type": "Reality",
+   "genres": [],
+   "network": "NBC",
+   "premiered": "2016-11-24",
+   "summary": "The National Dog Show is a conformation show sanctioned by the American Kennel Club. The National Dog Show has been ongoing since 1879 with its only interruption being the Great Depression from 1928 through 1932. The show is held by The Kennel Club of Philadelphia, a founding club of AKC. It traditionally takes place on the third from last weekend in November over two days. The National Dog show i",
+   "url": "https://www.tvmaze.com/shows/22921/the-national-dog-show",
+   "official": "http://www.nbc.com/the-national-dog-show?nbc=1"
+  },
+  {
+   "date": "2026-11-26",
+   "show": "Sweetpea",
+   "season": 2,
+   "new_series": false,
+   "type": "Scripted",
+   "genres": [
+    "Drama",
+    "Comedy",
+    "Thriller"
+   ],
+   "network": "Now",
+   "premiered": "2024-10-10",
+   "summary": "Rhiannon Lewis doesn't make much of an impression - people walk past her in the street without a second glance. That is until she is pushed over the edge and loses control. Rhiannon's life transforms, but can she keep her killer secret?",
+   "url": "https://www.tvmaze.com/shows/46251/sweetpea",
+   "official": "https://www.sky.com/watch/sweetpea"
+  },
+  {
+   "date": "2026-11-26",
+   "show": "Mickey Mouse Specials",
+   "season": 2026,
+   "new_series": false,
+   "type": "Animation",
+   "genres": [],
+   "network": "Disney+",
+   "premiered": "2021-10-07",
+   "summary": "A series of special animations featuring Mickey Mouse and his friends. ",
+   "url": "https://www.tvmaze.com/shows/70700/mickey-mouse-specials",
+   "official": null
+  },
+  {
+   "date": "2026-11-26",
+   "show": "The Hunting Wives",
+   "season": 2,
+   "new_series": false,
+   "type": "Scripted",
+   "genres": [
+    "Drama",
+    "Thriller",
+    "Mystery"
+   ],
+   "network": "Netflix",
+   "premiered": "2025-07-21",
+   "summary": "The Hunting Wives tells the story of Sophie O'Neil and her family's move from the East Coast to deep-red East Texas, where she succumbs to socialite Margo Banks‘ irresistible charms – and finds her life consumed by obsession, seduction, and murder.",
+   "url": "https://www.tvmaze.com/shows/72427/the-hunting-wives",
+   "official": "https://www.netflix.com/title/82013700"
+  }
+ ]
+}

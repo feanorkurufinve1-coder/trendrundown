@@ -1,0 +1,399 @@
+{
+ "made": "2026-11-12T16:16:51+00:00",
+ "day": "2026-11-11",
+ "about": "Всплески просмотров английской Википедии за вчера: views — просмотров вчера, before — максимум за 3 прошлых дня (null = статьи не было в топ-1000). Идеи для страниц «who is / what is»; проверять факты по новостям.",
+ "spikes": [
+  {
+   "article": "Stacy Keach",
+   "views": 562990,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Stacy_Keach"
+  },
+  {
+   "article": "VisionQuest",
+   "views": 240738,
+   "before": 71375,
+   "ratio": 3.4,
+   "url": "https://en.wikipedia.org/wiki/VisionQuest"
+  },
+  {
+   "article": "Dancing with the Stars (American TV series) season 35",
+   "views": 144202,
+   "before": 16470,
+   "ratio": 8.8,
+   "url": "https://en.wikipedia.org/wiki/Dancing_with_the_Stars_%28American_TV_series%29_season_35"
+  },
+  {
+   "article": "SS United States",
+   "views": 117540,
+   "before": 21728,
+   "ratio": 5.4,
+   "url": "https://en.wikipedia.org/wiki/SS_United_States"
+  },
+  {
+   "article": "Kaviya Maran",
+   "views": 101460,
+   "before": 16325,
+   "ratio": 6.2,
+   "url": "https://en.wikipedia.org/wiki/Kaviya_Maran"
+  },
+  {
+   "article": "James Keach",
+   "views": 99527,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/James_Keach"
+  },
+  {
+   "article": "Lucy Beaumont (comedian)",
+   "views": 87015,
+   "before": 14403,
+   "ratio": 6.0,
+   "url": "https://en.wikipedia.org/wiki/Lucy_Beaumont_%28comedian%29"
+  },
+  {
+   "article": "Anirudh Ravichander",
+   "views": 82456,
+   "before": 15246,
+   "ratio": 5.4,
+   "url": "https://en.wikipedia.org/wiki/Anirudh_Ravichander"
+  },
+  {
+   "article": "Children's Games (Bruegel)",
+   "views": 75596,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Children%27s_Games_%28Bruegel%29"
+  },
+  {
+   "article": "Harry Shum Jr.",
+   "views": 73654,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Harry_Shum_Jr."
+  },
+  {
+   "article": "Veterans Day",
+   "views": 70250,
+   "before": 19633,
+   "ratio": 3.6,
+   "url": "https://en.wikipedia.org/wiki/Veterans_Day"
+  },
+  {
+   "article": "Danny Kelly (journalist)",
+   "views": 64926,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Danny_Kelly_%28journalist%29"
+  },
+  {
+   "article": "Usman Nurmagomedov",
+   "views": 62847,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Usman_Nurmagomedov"
+  },
+  {
+   "article": "Jenna Dewan",
+   "views": 59297,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Jenna_Dewan"
+  },
+  {
+   "article": "Armistice Day",
+   "views": 55444,
+   "before": 12673,
+   "ratio": 4.4,
+   "url": "https://en.wikipedia.org/wiki/Armistice_Day"
+  },
+  {
+   "article": "The Lord of the Rings: The Rings of Power season 3",
+   "views": 53372,
+   "before": 8592,
+   "ratio": 6.2,
+   "url": "https://en.wikipedia.org/wiki/The_Lord_of_the_Rings%3A_The_Rings_of_Power_season_3"
+  },
+  {
+   "article": "Tatyana Ali",
+   "views": 51410,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Tatyana_Ali"
+  },
+  {
+   "article": "The Lord of the Rings: The Rings of Power",
+   "views": 49831,
+   "before": 12285,
+   "ratio": 4.1,
+   "url": "https://en.wikipedia.org/wiki/The_Lord_of_the_Rings%3A_The_Rings_of_Power"
+  },
+  {
+   "article": "Kalanithi Maran",
+   "views": 46978,
+   "before": 8168,
+   "ratio": 5.8,
+   "url": "https://en.wikipedia.org/wiki/Kalanithi_Maran"
+  },
+  {
+   "article": "The Body (TV series)",
+   "views": 46149,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/The_Body_%28TV_series%29"
+  },
+  {
+   "article": "Stacy Keach Sr.",
+   "views": 42983,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Stacy_Keach_Sr."
+  },
+  {
+   "article": "Virginia Madsen",
+   "views": 41855,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Virginia_Madsen"
+  },
+  {
+   "article": "Tomb of the Unknown Soldier (Arlington National Cemetery)",
+   "views": 35918,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Tomb_of_the_Unknown_Soldier_%28Arlington_National_Cemetery%29"
+  },
+  {
+   "article": "Antonio Sabàto Jr.",
+   "views": 34959,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Antonio_Sab%C3%A0to_Jr."
+  },
+  {
+   "article": "Irma P. Hall",
+   "views": 33898,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Irma_P._Hall"
+  },
+  {
+   "article": "Jane Seymour (actress)",
+   "views": 33508,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Jane_Seymour_%28actress%29"
+  },
+  {
+   "article": "Singles' Day",
+   "views": 33267,
+   "before": 8094,
+   "ratio": 4.1,
+   "url": "https://en.wikipedia.org/wiki/Singles%27_Day"
+  },
+  {
+   "article": "Dancing with the Stars (American TV series)",
+   "views": 33024,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Dancing_with_the_Stars_%28American_TV_series%29"
+  },
+  {
+   "article": "Paul George",
+   "views": 33009,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Paul_George"
+  },
+  {
+   "article": "U.S. Route 101",
+   "views": 32084,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/U.S._Route_101"
+  },
+  {
+   "article": "Peter Norman",
+   "views": 30802,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Peter_Norman"
+  },
+  {
+   "article": "Evolution of spiders",
+   "views": 30788,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Evolution_of_spiders"
+  },
+  {
+   "article": "Armistice of 11 November 1918",
+   "views": 27886,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Armistice_of_11_November_1918"
+  },
+  {
+   "article": "Carey Price",
+   "views": 27386,
+   "before": 8953,
+   "ratio": 3.1,
+   "url": "https://en.wikipedia.org/wiki/Carey_Price"
+  },
+  {
+   "article": "Katrina Law",
+   "views": 26306,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Katrina_Law"
+  },
+  {
+   "article": "Jodie Foster",
+   "views": 26091,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Jodie_Foster"
+  },
+  {
+   "article": "Marsha M. Linehan",
+   "views": 25045,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Marsha_M._Linehan"
+  },
+  {
+   "article": "Yella Beezy",
+   "views": 24967,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Yella_Beezy"
+  },
+  {
+   "article": "Maren Morris",
+   "views": 24678,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Maren_Morris"
+  },
+  {
+   "article": "Elizabeth Olsen",
+   "views": 24629,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Elizabeth_Olsen"
+  },
+  {
+   "article": "November 11",
+   "views": 24441,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/November_11"
+  },
+  {
+   "article": "Umar Nurmagomedov",
+   "views": 24250,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Umar_Nurmagomedov"
+  },
+  {
+   "article": "Merab Dvalishvili",
+   "views": 24106,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Merab_Dvalishvili"
+  },
+  {
+   "article": "Sheryl Crow",
+   "views": 23652,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Sheryl_Crow"
+  },
+  {
+   "article": "Jon Richardson",
+   "views": 23591,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Jon_Richardson"
+  },
+  {
+   "article": "Alex Clark (journalist)",
+   "views": 23527,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Alex_Clark_%28journalist%29"
+  },
+  {
+   "article": "Connor Wood (comedian)",
+   "views": 22989,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Connor_Wood_%28comedian%29"
+  },
+  {
+   "article": "Magdalenka, Masovian Voivodeship",
+   "views": 22709,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Magdalenka%2C_Masovian_Voivodeship"
+  },
+  {
+   "article": "Małgosia Tomassi",
+   "views": 22570,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Ma%C5%82gosia_Tomassi"
+  },
+  {
+   "article": "Ezra Frech",
+   "views": 22425,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Ezra_Frech"
+  },
+  {
+   "article": "Daveigh Chase",
+   "views": 21891,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Daveigh_Chase"
+  },
+  {
+   "article": "Eggcorn",
+   "views": 21283,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Eggcorn"
+  },
+  {
+   "article": "Daniella Karagach",
+   "views": 20767,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Daniella_Karagach"
+  },
+  {
+   "article": "Crispin Glover",
+   "views": 20479,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Crispin_Glover"
+  },
+  {
+   "article": "Brad Ausmus",
+   "views": 20469,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Brad_Ausmus"
+  },
+  {
+   "article": "Rex Ryan",
+   "views": 20332,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Rex_Ryan"
+  }
+ ]
+}
