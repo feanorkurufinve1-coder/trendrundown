@@ -3331,7 +3331,7 @@ def wiki_image(t, name=None):
             log(f"фото '{term}': статья «{title}» про другое (тёзка) — не берём")
             continue
         fname = pg.get("pageimage")
-        if fname and re.search(r"(?i)logo|seal|crest|emblem|wordmark|coat.of.arms|\.svg$|flag.of", fname):
+        if fname and re.search(r"(?i)logo|seal|crest|emblem|wordmark|coat.of.arms|\.svg$|flag.of", fname)):
             log(f"фото '{term}': «{fname}» — это логотип/герб, не фото — не берём")
             fname = None
         if not fname:                      # например, страница-неоднозначность «Ann Li» — смотрим следующую («Ann Li (tennis)»)
@@ -3367,6 +3367,10 @@ def manual_image(store, x):
     """Фото к ручной странице. В файле страницы поле image_wiki — ТОЧНОЕ название статьи английской Википедии;
     берём её главную картинку, только если на Commons она под свободной лицензией (CC / public domain). Кэш в store."""
     title = (x.get("image_wiki") or "").strip()
+    direct = (x.get("image_file") or "").strip()            # точный файл Commons, выбранный под страницу
+    if direct:
+        direct = re.sub(r"^(File|Файл):", "", direct).replace("_", " ")
+        title = "file:" + direct
     if not title:
         return None
     cache = store.setdefault("manual_img", {})
@@ -3378,11 +3382,14 @@ def manual_image(store, x):
         return None
     cache[key] = {"tried": now_iso()}
     try:
-        q = urllib.parse.urlencode({"action": "query", "titles": title, "redirects": 1, "prop": "pageimages",
-                                    "piprop": "name", "format": "json", "formatversion": 2})
-        pg = (json.loads(get("https://en.wikipedia.org/w/api.php?" + q)).get("query", {}).get("pages") or [{}])[0]
-        fname = pg.get("pageimage")
-        if not fname or re.search(r"(?i)logo|seal|crest|emblem|wordmark|coat.of.arms|\.svg$|flag.of", fname):
+        if direct:
+            fname = direct
+        else:
+            q = urllib.parse.urlencode({"action": "query", "titles": title, "redirects": 1, "prop": "pageimages",
+                                        "piprop": "name", "format": "json", "formatversion": 2})
+            pg = (json.loads(get("https://en.wikipedia.org/w/api.php?" + q)).get("query", {}).get("pages") or [{}])[0]
+            fname = pg.get("pageimage")
+        if not fname or (not direct and re.search(r"(?i)logo|seal|crest|emblem|wordmark|coat.of.arms|\.svg$|flag.of", fname):
             log(f"фото для '{x['slug']}': у статьи «{title}» нет подходящего фото")
             return None
         q = urllib.parse.urlencode({"action": "query", "prop": "imageinfo", "iiprop": "extmetadata|url", "iiurlwidth": 1280,
@@ -4837,7 +4844,7 @@ def build_site(store):
         pass
     ex.update(manual_pages(orig))         # ручные страницы важнее автоматических с тем же адресом
     for x in ex.values():
-        if x.get("manual") and x.get("image_wiki"):
+        if x.get("manual") and (x.get("image_wiki") or x.get("image_file")):
             x["img"] = manual_image(orig, x)
     EXPLAINERS.clear(); EXPLAINERS.update(ex)
     global HAS_EXPLAINED, HAS_CAST
