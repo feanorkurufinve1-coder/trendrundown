@@ -3331,7 +3331,7 @@ def wiki_image(t, name=None):
             log(f"фото '{term}': статья «{title}» про другое (тёзка) — не берём")
             continue
         fname = pg.get("pageimage")
-        if fname and re.search(r"(?i)logo|seal|crest|emblem|wordmark|coat.of.arms|\.svg$|flag.of", fname)):
+        if fname and re.search(r"(?i)logo|seal|crest|emblem|wordmark|coat.of.arms|\.svg$|flag.of", fname):
             log(f"фото '{term}': «{fname}» — это логотип/герб, не фото — не берём")
             fname = None
         if not fname:                      # например, страница-неоднозначность «Ann Li» — смотрим следующую («Ann Li (tennis)»)
@@ -3389,7 +3389,7 @@ def manual_image(store, x):
                                         "piprop": "name", "format": "json", "formatversion": 2})
             pg = (json.loads(get("https://en.wikipedia.org/w/api.php?" + q)).get("query", {}).get("pages") or [{}])[0]
             fname = pg.get("pageimage")
-        if not fname or (not direct and re.search(r"(?i)logo|seal|crest|emblem|wordmark|coat.of.arms|\.svg$|flag.of", fname):
+        if not fname or (not direct and re.search(r"(?i)logo|seal|crest|emblem|wordmark|coat.of.arms|\.svg$|flag.of", fname)):
             log(f"фото для '{x['slug']}': у статьи «{title}» нет подходящего фото")
             return None
         q = urllib.parse.urlencode({"action": "query", "prop": "imageinfo", "iiprop": "extmetadata|url", "iiurlwidth": 1280,
