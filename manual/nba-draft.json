@@ -1,0 +1,42 @@
+{
+ "subject": "NBA draft",
+ "kind": "event",
+ "query": "what is the nba draft",
+ "title": "What is the NBA draft? How teams pick players, explained",
+ "answer": "The NBA draft is the yearly event where the league's 30 teams take turns choosing new players, mostly from college and overseas leagues. It has two rounds and up to 60 picks, and it is usually held in late June. The teams with the worst records get the best chance at the top picks through a lottery.",
+ "in_the_news": "Fans tracking college stars and tanking teams start asking how the draft works long before June, especially when trades swap future picks.",
+ "body": "A draft pick is a team's turn to choose a player. Each team gets one first-round and one second-round pick a year, though picks are often traded, sometimes years in advance. A team that \"owns\" another team's pick gets to use that turn.\n\nThe order starts with the draft lottery, usually held in May. The 14 teams that missed the playoffs take part. Since 2019, the three worst teams each have the same 14% chance at the No. 1 pick, and the lottery decides the first four picks. After that, the rest of the first round and the whole second round go in reverse order of the regular-season record, worst to best.\n\nTo be eligible, a player must be at least 19 years old by the end of the draft year, and an American player must be at least one year out of high school. College players who still have eligibility have to declare for the draft, and they can withdraw within 10 days after the end of the NBA draft combine in mid-May and keep their college eligibility. First-round picks sign contracts on a fixed rookie salary scale; second-round deals are negotiated, and many second-rounders start on two-way contracts.",
+ "faq": [
+  {
+   "q": "What is an NBA draft pick",
+   "a": "A team's turn to select a player in the draft. Each team starts with one pick per round each year, and picks can be traded."
+  },
+  {
+   "q": "How many rounds are in the NBA draft",
+   "a": "Two rounds, with up to 60 picks in total."
+  },
+  {
+   "q": "How does the NBA draft lottery work",
+   "a": "The 14 non-playoff teams are entered, with the three worst records sharing the best odds (14% each) at the No. 1 pick. The lottery sets the top four picks."
+  },
+  {
+   "q": "How old do you have to be for the NBA draft",
+   "a": "At least 19 by the end of the calendar year of the draft, and U.S. players must be one year removed from high school."
+  }
+ ],
+ "links": [
+  [
+   "Wikipedia",
+   "NBA draft",
+   "https://en.wikipedia.org/wiki/NBA_draft"
+  ],
+  [
+   "Bleacher Report",
+   "Explaining how the NBA draft works and how the order is determined",
+   "https://bleacherreport.com/articles/2708900-explaining-how-the-nba-draft-works-and-draft-order-is-determined."
+  ]
+ ],
+ "image_wiki": "NBA draft",
+ "made": "2026-11-12T16:25:00+00:00",
+ "first": "2026-11-12T16:25:00+00:00"
+}

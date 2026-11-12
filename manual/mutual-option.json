@@ -1,0 +1,42 @@
+{
+ "subject": "Mutual option (MLB)",
+ "kind": "term",
+ "query": "what is a mutual option in baseball",
+ "title": "What is a mutual option in baseball? Both sides must say yes",
+ "answer": "A mutual option in baseball is an extra contract year that happens only if both the team and the player agree to it. If either side declines, the player becomes a free agent, and the team usually pays a smaller buyout instead. MLB option decisions are due within five days after the World Series ends.",
+ "in_the_news": "Right after the World Series, teams and players announce their option decisions, and the phrase \"mutual option declined\" appears in dozens of transaction reports.",
+ "body": "Most contract options belong to one side. With a club option, the team alone decides whether to keep the player for another year at a set salary. With a player option, the player decides. A mutual option needs both, which is why it is so rarely exercised: if the player has played well, he can usually earn more on the open market and declines; if he has played poorly, the team declines.\n\nThat makes a mutual option work a lot like a delayed buyout. The buyout is a guaranteed payment written into the contract, a fraction of the option year's salary, paid when the option is declined. Because the money is guaranteed either way, agents and teams often use mutual options to spread a contract's cost across another season on paper.\n\nOnce an option is declined, the player is a free agent and can sign with any club, including his old one. MLB's offseason calendar gives teams and players five days after the final game of the World Series to make these calls.",
+ "faq": [
+  {
+   "q": "What does mutual option declined by player mean",
+   "a": "It means the player chose not to return for the option year. He becomes a free agent, and his old team usually owes him the buyout written into the contract."
+  },
+  {
+   "q": "Who pays the buyout on a mutual option",
+   "a": "The team. The buyout is a guaranteed amount in the contract, paid to the player when the option is declined."
+  },
+  {
+   "q": "How is a mutual option different from a club option",
+   "a": "A club option lets the team decide alone. A mutual option requires both the team and the player to agree, so either side can end it."
+  },
+  {
+   "q": "When are MLB option decisions due",
+   "a": "Within five days of the end of the World Series."
+  }
+ ],
+ "links": [
+  [
+   "MLB.com",
+   "Full guide to offseason dates, rules, terms",
+   "https://www.mlb.com/news/mlb-offseason-dates-rules-and-terms"
+  ],
+  [
+   "Spotrac",
+   "2026 MLB offseason contract option decisions",
+   "https://www.spotrac.com/news/_/id/3049/2026-mlb-offseason-contract-option-decisions"
+  ]
+ ],
+ "image_wiki": "Baseball",
+ "made": "2026-11-12T16:25:00+00:00",
+ "first": "2026-11-12T16:25:00+00:00"
+}

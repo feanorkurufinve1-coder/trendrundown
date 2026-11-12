@@ -1,0 +1,27 @@
+{
+ "about": "Слабые автоматические страницы (дешёвый ИИ), по которым Google ещё показывает сайт. Переписать сильно, по тому же slug (manual/<slug>.json перекрывает автоматическую), с проверкой фактов по 2–3 источникам. Остальные слабые страницы (люди, прошедшие события) не трогаем — они закрыты от Google.",
+ "done": [
+  "exhibition-game",
+  "mutual-option",
+  "nba-draft",
+  "game-time-decision",
+  "tri-series-cricket"
+ ],
+ "queue": [
+  "ligue-1",
+  "phishing-test",
+  "wta-tennis",
+  "japan-open-tennis",
+  "west-texas-intermediate",
+  "senior-secured-debt",
+  "nasdaq-100",
+  "dfb-pokal",
+  "derby-della-madonnina",
+  "wbc-super-middleweight-title",
+  "optical-networking",
+  "fedex-cup",
+  "swiss-indoors-basel",
+  "lask",
+  "arnold-schwarzenegger-last-name"
+ ]
+}
