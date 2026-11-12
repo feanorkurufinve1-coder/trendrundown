@@ -2754,6 +2754,95 @@ def gsc_daily(store, tok, url):
         log(f"Search Console за {days[-1]}: кликов {t[0]}, показов {t[1]}")
 
 
+# ---- Сырьё для ежедневной задачи (бесплатно, без ИИ): всплески Википедии и премьеры сериалов ----
+WIKI_SKIP = re.compile(r"^(Main_Page|Special:|Wikipedia:|File:|Portal:|Help:|Template:|Category:|Talk:|User:|"
+                       r"Deaths_in_|List_of_|\d{4}_in_|Cleopatra|XXX|Pornhub|Undefined)", re.I)
+
+
+def wiki_top(day):
+    d = day.strftime("%Y/%m/%d")
+    js = json.loads(get(f"https://wikimedia.org/api/rest_v1/metrics/pageviews/top/en.wikipedia/all-access/{d}"))
+    return {a["article"]: a["views"] for a in js["items"][0]["articles"]}
+
+
+def wiki_spikes(store):
+    """Раз в 6 часов: статьи английской Википедии, которые вчера открывали намного чаще, чем в прошлые 3 дня.
+    Это то, что люди прямо сейчас бегут «проверить» — идеи для «who is / what is». (Википедия мировая, не только США.)"""
+    path = os.path.join(HERE, "data", "wiki_spikes.json")
+    try:
+        old = json.load(open(path))
+    except Exception:
+        old = {}
+    if hours_since(old.get("made", "2000-01-01T00:00:00+00:00")) < 6:
+        return
+    today = datetime.now(timezone.utc).date()
+    y = wiki_top(today - timedelta(days=1))
+    prev = [wiki_top(today - timedelta(days=k)) for k in (2, 3, 4)]
+    out = []
+    for art, v in sorted(y.items(), key=lambda kv: -kv[1])[:600]:
+        if WIKI_SKIP.search(art) or v < 20000 or bad_text(art.replace("_", " ")):
+            continue
+        base = max([p.get(art, 0) for p in prev] + [1])
+        ratio = v / base
+        if ratio >= 3 or all(art not in p for p in prev):
+            out.append({"article": art.replace("_", " "), "views": v, "before": base if base > 1 else None,
+                        "ratio": round(ratio, 1) if base > 1 else None,
+                        "url": "https://en.wikipedia.org/wiki/" + urllib.parse.quote(art)})
+    json.dump({"made": now_iso(), "day": str(today - timedelta(days=1)), "about":
+               "Всплески просмотров английской Википедии за вчера: views — просмотров вчера, before — максимум за 3 прошлых дня "
+               "(null = статьи не было в топ-1000). Идеи для страниц «who is / what is»; проверять факты по новостям.",
+               "spikes": out[:80]}, open(path, "w"), ensure_ascii=False, indent=1)
+    log(f"Википедия: всплесков за вчера {len(out)}" + (": " + ", ".join(x["article"] for x in out[:5]) if out else ""))
+
+
+def tv_premieres(store):
+    """Раз в 12 часов: премьеры сериалов и новых сезонов в США на 14 дней вперёд (TVmaze, бесплатно, без ключа)."""
+    path = os.path.join(HERE, "data", "premieres.json")
+    try:
+        old = json.load(open(path))
+    except Exception:
+        old = {}
+    if hours_since(old.get("made", "2000-01-01T00:00:00+00:00")) < 12:
+        return
+    out, seen = [], set()
+    d0 = datetime.now(timezone.utc).date()
+    for k in range(0, 15):
+        day = (d0 + timedelta(days=k)).isoformat()
+        for url in (f"https://api.tvmaze.com/schedule?country=US&date={day}", f"https://api.tvmaze.com/schedule/web?date={day}"):
+            try:
+                eps = json.loads(get(url))
+            except Exception as e:
+                log(f"TVmaze {day}: {e}")
+                continue
+            time.sleep(0.7)                                  # TVmaze просит не чаще 20 запросов за 10 секунд
+            for ep in eps:
+                if ep.get("number") != 1:                    # только первые серии: премьера сериала или нового сезона
+                    continue
+                sh = ep.get("show") or (ep.get("_embedded") or {}).get("show") or {}
+                net = (sh.get("network") or sh.get("webChannel") or {})
+                country = ((net.get("country") or {}).get("code")) if net.get("country") else None
+                if country and country != "US":
+                    continue
+                if sh.get("type") in ("News", "Talk Show", "Sports", "Game Show") or sh.get("language") not in (None, "English"):
+                    continue
+                key = (sh.get("id"), ep.get("season"))
+                if key in seen:
+                    continue
+                seen.add(key)
+                summ = re.sub(r"<[^>]+>", "", sh.get("summary") or "")[:400]
+                if bad_text((sh.get("name") or "") + " " + summ):
+                    continue
+                out.append({"date": ep.get("airdate") or day, "show": sh.get("name"), "season": ep.get("season"),
+                            "new_series": ep.get("season") == 1, "type": sh.get("type"), "genres": sh.get("genres"),
+                            "network": net.get("name"), "premiered": sh.get("premiered"), "summary": summ,
+                            "url": sh.get("url"), "official": sh.get("officialSite")})
+    out.sort(key=lambda x: (x["date"], not x["new_series"]))
+    json.dump({"made": now_iso(), "about": "Премьеры сериалов и новых сезонов в США на 14 дней вперёд (TVmaze). new_series = совсем новый "
+               "сериал. Сырьё для прогнозов «is X a true story», «X cast», «X season N release time».", "premieres": out},
+              open(path, "w"), ensure_ascii=False, indent=1)
+    log(f"TVmaze: премьер на 14 дней {len(out)}, из них новых сериалов {sum(1 for x in out if x['new_series'])}")
+
+
 def suggest_watch(store):
     """Подсказки Google для ручных страниц-прогнозов (manual/): раз в сутки смотрим, что Google дописывает по теме.
     Если наша фраза уже в подсказках — прогноз подтверждён живыми людьми (раньше, чем покажет Search Console).
@@ -5690,6 +5779,11 @@ def run_once():
         suggest_watch(store)
     except Exception as e:
         log(f"подсказки для прогнозов: {e}")
+    for fn_, name_ in ((wiki_spikes, "всплески Википедии"), (tv_premieres, "премьеры сериалов")):
+        try:
+            fn_(store)
+        except Exception as e:
+            log(f"{name_}: {e}")
     try:
         ga_fetch(store)
     except Exception as e:
