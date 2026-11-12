@@ -4578,6 +4578,8 @@ def build_index(store):
                        f'<div class="card-top"><span class="num">{E(fmt_et(x.get("first", x["made"]), with_date=False))}</span>'
                        f'<span class="chip-s">{chip}</span></div><h3>{E(x["title"])}</h3><p class="snip">{E(cut(x["answer"], 170))}</p>')
                     + "</a>")
+        li = next((i for i, x in enumerate(fresh[:4]) if (x.get("img") or {}).get("file")), 0)   # главной — свежую страницу с фото
+        fresh = [fresh[li]] + fresh[:li] + fresh[li + 1:]
         lead_html = (xcard(fresh[0], True) + '<div class="grid">' + "".join(xcard(x) for x in fresh[1:]) + "</div>"
                      + '<h2 class="sec">Trending in the US</h2>')
     body = (f'<p class="tag">{E(TAGLINE)} · Updated {E(fmt_et(store.get("updated", now_iso())))}</p>'
