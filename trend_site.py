@@ -3274,6 +3274,54 @@ def wiki_image(t, name=None):
     return None
 
 
+def manual_image(store, x):
+    """Фото к ручной странице. В файле страницы поле image_wiki — ТОЧНОЕ название статьи английской Википедии;
+    берём её главную картинку, только если на Commons она под свободной лицензией (CC / public domain). Кэш в store."""
+    title = (x.get("image_wiki") or "").strip()
+    if not title:
+        return None
+    cache = store.setdefault("manual_img", {})
+    key = x["slug"] + "|" + title
+    c = cache.get(key)
+    if c and c.get("file") and os.path.exists(os.path.join(OUT, c["file"])):
+        return c
+    if c and not c.get("file") and hours_since(c.get("tried", "2000-01-01T00:00:00+00:00")) < 48:
+        return None
+    cache[key] = {"tried": now_iso()}
+    try:
+        q = urllib.parse.urlencode({"action": "query", "titles": title, "redirects": 1, "prop": "pageimages",
+                                    "piprop": "name", "format": "json", "formatversion": 2})
+        pg = (json.loads(get("https://en.wikipedia.org/w/api.php?" + q)).get("query", {}).get("pages") or [{}])[0]
+        fname = pg.get("pageimage")
+        if not fname or re.search(r"(?i)logo|seal|crest|emblem|wordmark|coat.of.arms|\.svg$|flag.of", fname):
+            log(f"фото для '{x['slug']}': у статьи «{title}» нет подходящего фото")
+            return None
+        q = urllib.parse.urlencode({"action": "query", "prop": "imageinfo", "iiprop": "extmetadata|url", "iiurlwidth": 1280,
+                                    "titles": "File:" + fname, "format": "json", "formatversion": 2})
+        cp = (json.loads(get("https://commons.wikimedia.org/w/api.php?" + q)).get("query", {}).get("pages") or [{}])[0]
+        if not cp.get("imageinfo"):
+            log(f"фото для '{x['slug']}': «{fname}» не на Commons (несвободное) — не берём")
+            return None
+        ii = cp["imageinfo"][0]; md = ii.get("extmetadata", {})
+        lic = _plain(md.get("LicenseShortName", {}).get("value", ""))
+        if not re.search(r"(?i)(^cc|creative commons|public domain|pd|cc0)", lic):
+            log(f"фото для '{x['slug']}': лицензия «{lic}» не свободная — не берём")
+            return None
+        url = ii.get("thumburl") or ii.get("url")
+        os.makedirs(os.path.join(OUT, "img"), exist_ok=True)
+        fn = f"img/m-{x['slug']}{'.png' if url.lower().endswith('.png') else '.jpg'}"
+        with open(os.path.join(OUT, fn), "wb") as f:
+            f.write(get(url))
+        im = {"file": fn, "license": lic, "src": ii.get("descriptionurl", ""),
+              "credit": (re.sub(r"(?i)unknown author", "", _plain(md.get("Artist", {}).get("value", ""))).strip()[:80] or "Wikimedia Commons")}
+        cache[key] = im
+        log(f"фото для '{x['slug']}': взято «{fname}» ({lic})")
+        return im
+    except Exception as e:
+        log(f"фото для '{x['slug']}': {e}")
+        return None
+
+
 PICK_TOOL = {"name": "pick_image", "description": "Choose the best illustration or none.",
              "input_schema": {"type": "object", "properties": {"n": {"type": "integer"}, "why": {"type": "string"}},
                               "required": ["n"]}}
@@ -4423,8 +4471,29 @@ def build_index(store):
             parts.append(ad("home"))
         parts.append('<h2 class="sec">Biggest this week</h2><div class="grid">'
                      + "".join(card(t, fmt_et(t["first_seen"]).split(",")[0], peak_label(t) + " peak") for t in week) + "</div>")
+    # 12.11: самое свежее наверху — ручные новости и пояснения (пишутся каждый день), старые тренды ниже
+    fresh = [x for x in xs_all if x.get("manual")][:9]
+    lead_html = ""
+    if fresh:
+        def cut(t_, n_):
+            return t_ if len(t_) <= n_ else t_[:n_].rsplit(" ", 1)[0].rstrip(",;:") + "…"
+
+        def xcard(x, lead=False):
+            im = (x.get("img") or {}).get("file")
+            chip = "News" if x.get("news") else "Explained"
+            return (f'<a class="{"lead" + (" has-img" if im else "") if lead else "card"}" href="x/{E(x["slug"])}.html">'
+                    + (pic(im, "", x["subject"], lazy=not lead, sizes="(max-width: 700px) 100vw, 680px" if lead else None) if im else "")
+                    + (f'<div class="lead-txt"><span class="badge">{chip} · {E(fmt_et(x.get("first", x["made"])))}</span>'
+                       f'<h2 class="lead-term" style="font-size:clamp(26px,4.2vw,46px);line-height:1.08">{E(x["title"])}</h2>'
+                       f'<hr class="dash" style="margin:8px 0"><p class="snip">{E(cut(x["answer"], 320))}</p></div>' if lead else
+                       f'<div class="card-top"><span class="num">{E(fmt_et(x.get("first", x["made"]), with_date=False))}</span>'
+                       f'<span class="chip-s">{chip}</span></div><h3>{E(x["title"])}</h3><p class="snip">{E(cut(x["answer"], 170))}</p>')
+                    + "</a>")
+        lead_html = (xcard(fresh[0], True) + '<div class="grid">' + "".join(xcard(x) for x in fresh[1:]) + "</div>"
+                     + '<h2 class="sec">Trending in the US</h2>')
     body = (f'<p class="tag">{E(TAGLINE)} · Updated {E(fmt_et(store.get("updated", now_iso())))}</p>'
-            f'<h1 class="front">Trending in the US right now</h1>{"".join(parts)}' if top else "<p>No trends yet — check back in a few minutes.</p>")
+            f'<h1 class="front">{"Latest from TrendRundown" if fresh else "Trending in the US right now"}</h1>{lead_html}{"".join(parts)}'
+            if (top or fresh) else "<p>No trends yet — check back in a few minutes.</p>")
     site_ld = [{"@context": "https://schema.org", "@type": "WebSite", "name": SITE_NAME, "url": SITE_URL + "/"},
                dict(PUBLISHER_LD, **{"@context": "https://schema.org", "email": CONTACT_EMAIL,
                                      "description": "Independent explainers on what Americans are searching for."})]
@@ -4503,9 +4572,17 @@ def build_explainer(x, topics):
             {"@type": "Question", "name": f["q"], "acceptedAnswer": {"@type": "Answer", "text": f["a"]}} for f in faq]})
     head = f'<script type="application/ld+json">{json.dumps(ld)}</script>'
     rel = related_explainers(x)
+    im = x.get("img") or {}
+    hero_x = (f'<figure class="hero">{pic(im["file"], "../", x["subject"], lazy=False, sizes="(max-width: 700px) 100vw, 680px")}'
+              f'<figcaption>Photo: {E(im["credit"])} / <a href="{E(im["src"])}" target="_blank" rel="noopener">{E(im["license"])}</a>, via Wikimedia Commons</figcaption></figure>'
+              if im.get("file") else "")
+    if im.get("file"):
+        ld[0]["image"] = SITE_URL + "/" + im["file"]
+        head = f'<script type="application/ld+json">{json.dumps(ld)}</script>'
     body = f"""<article>
 <p class="meta"><a href="../index.html">{SITE_NAME}</a> › <a class="cat" href="../explained.html">Explained</a> · updated {E(fmt_et(x["made"]))}</p>
 <h1>{E(x["title"])}</h1>
+{hero_x}
 {audio_player("x/" + x["slug"], ". ".join([x["title"], x["answer"], x.get("in_the_news", ""), x["body"]]))}
 <div class="box answer"><p style="margin:0">{E(x["answer"])}</p></div>
 <h2>Why it's in the news</h2><p>{E(x["in_the_news"])}</p>
@@ -4668,6 +4745,9 @@ def build_site(store):
     except Exception:
         pass
     ex.update(manual_pages(orig))         # ручные страницы важнее автоматических с тем же адресом
+    for x in ex.values():
+        if x.get("manual") and x.get("image_wiki"):
+            x["img"] = manual_image(orig, x)
     EXPLAINERS.clear(); EXPLAINERS.update(ex)
     global HAS_EXPLAINED, HAS_CAST
     HAS_EXPLAINED = bool(ex)
@@ -4680,6 +4760,8 @@ def build_site(store):
         for x in coll.values():
             pth = pre + x["slug"]
             if x.get("manual"):
+                if x.get("news"):                # новости (пересказ событий) — для читателей главной, не для поиска
+                    NOINDEX.add(pth)
                 continue
             if pre == "x/":                      # 11.11: ВСЕ автоматические пояснения (дешёвый ИИ) — не в выдачу
                 NOINDEX.add(pth)
