@@ -3363,6 +3363,28 @@ def wiki_image(t, name=None):
     return None
 
 
+def stylize_sunset(src, dst):
+    """Свой рисованный «закатный» вариант свободного фото: фиолетово-оранжевые тона, контуры. Без чужих персонажей и логотипов."""
+    from PIL import Image, ImageOps, ImageFilter, ImageChops, ImageEnhance
+    im = Image.open(src).convert("RGB")
+    if im.width > 1280:
+        im = im.resize((1280, round(im.height * 1280 / im.width)), Image.LANCZOS)
+    base = im.filter(ImageFilter.ModeFilter(5)).filter(ImageFilter.SMOOTH_MORE)
+    gray = ImageOps.autocontrast(base.convert("L"), cutoff=1)
+    grad = ImageOps.colorize(gray, black="#24103f", mid="#d9488f", white="#ffd27a", midpoint=110)
+    out = Image.blend(ImageEnhance.Color(base).enhance(1.6), grad, 0.45)
+    w, h = out.size
+    sky = Image.linear_gradient("L").resize((w, h))
+    top = Image.new("RGB", (w, h), "#5b2a8c"); bot = Image.new("RGB", (w, h), "#ff8a4c")
+    tint = Image.composite(bot, top, sky)
+    out = Image.blend(out, ImageChops.soft_light(out, tint), 0.7)
+    edges = gray.filter(ImageFilter.FIND_EDGES).point(lambda v: 255 if v < 60 else max(0, 255 - (v - 60) * 4))
+    edges = edges.filter(ImageFilter.MinFilter(3)).convert("RGB")
+    out = ImageChops.multiply(out, Image.blend(Image.new("RGB", (w, h), "white"), edges, 0.45))
+    out = ImageEnhance.Contrast(out).enhance(1.12)
+    out.save(dst, "JPEG", quality=86, optimize=True)
+
+
 def manual_image(store, x):
     """Фото к ручной странице. В файле страницы поле image_wiki — ТОЧНОЕ название статьи английской Википедии;
     берём её главную картинку, только если на Commons она под свободной лицензией (CC / public domain). Кэш в store."""
@@ -4676,7 +4698,7 @@ def build_explainer(x, topics):
     im = x.get("img") or {}
     hero_x = (f'<figure class="hero">{pic(im["file"], "../", x["subject"], lazy=False, sizes="(max-width: 700px) 100vw, 680px")}'
               + ('<figcaption>Illustration: TrendRundown (original artwork)</figcaption></figure>' if im.get("own") else
-                 f'<figcaption>Photo: {E(im["credit"])} / <a href="{E(im["src"])}" target="_blank" rel="noopener">{E(im["license"])}</a>, via Wikimedia Commons</figcaption></figure>')
+                 f'<figcaption>{"Illustration based on a photo by " if im.get("styled") else "Photo: "}{E(im["credit"])} / <a href="{E(im["src"])}" target="_blank" rel="noopener">{E(im["license"])}</a>, via Wikimedia Commons{"; stylized by TrendRundown" if im.get("styled") else ""}</figcaption></figure>')
               if im.get("file") else "")
     if im.get("file"):
         ld[0]["image"] = SITE_URL + "/" + im["file"]
@@ -4849,7 +4871,21 @@ def build_site(store):
     ex.update(manual_pages(orig))         # ручные страницы важнее автоматических с тем же адресом
     for x in ex.values():
         if x.get("manual") and (x.get("image_wiki") or x.get("image_file") or x.get("image_local")):
-            x["img"] = manual_image(orig, x)
+            im = None
+            if x.get("image_wiki") or x.get("image_file"):
+                y = dict(x); y.pop("image_local", None)
+                im = manual_image(orig, y)
+                if im and x.get("image_style") == "sunset" and HAS_PIL:
+                    dst = f"img/m-{x['slug']}-sunset.jpg"
+                    try:
+                        if not os.path.exists(os.path.join(OUT, dst)):
+                            stylize_sunset(os.path.join(OUT, im["file"]), os.path.join(OUT, dst))
+                        im = dict(im, file=dst, styled=True)
+                    except Exception as e:
+                        log(f"стилизация фото '{x['slug']}' не удалась: {e}")
+            if not im and x.get("image_local"):
+                im = manual_image(orig, {"slug": x["slug"], "image_local": x["image_local"]})
+            x["img"] = im
     EXPLAINERS.clear(); EXPLAINERS.update(ex)
     global HAS_EXPLAINED, HAS_CAST
     HAS_EXPLAINED = bool(ex)
