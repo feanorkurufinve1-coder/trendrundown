@@ -1,11 +1,33 @@
 {
- "made": "2026-11-12T13:31:42+00:00",
+ "made": "2026-11-12T13:45:16+00:00",
  "days": [
   "2026-11-09",
   "2026-11-10",
   "2026-11-11"
  ],
  "pages": [
+  {
+   "page": "/x/jasveen-sangha",
+   "clicks_3d": 0,
+   "impr_3d": 4,
+   "pos": 4.3,
+   "by_day": {
+    "2026-11-10": 0,
+    "2026-11-11": 0
+   },
+   "manual": false
+  },
+  {
+   "page": "/x/rot-weiss-essen",
+   "clicks_3d": 0,
+   "impr_3d": 4,
+   "pos": 7.0,
+   "by_day": {
+    "2026-11-10": 0,
+    "2026-11-11": 0
+   },
+   "manual": false
+  },
   {
    "page": "/x/non-tender",
    "clicks_3d": 0,
@@ -26,6 +48,26 @@
     "2026-11-10": 0
    },
    "manual": true
+  },
+  {
+   "page": "/t/alexandra-eala",
+   "clicks_3d": 0,
+   "impr_3d": 3,
+   "pos": 6.0,
+   "by_day": {
+    "2026-11-11": 0
+   },
+   "manual": false
+  },
+  {
+   "page": "/x/collin-sexton",
+   "clicks_3d": 0,
+   "impr_3d": 3,
+   "pos": 4.0,
+   "by_day": {
+    "2026-11-11": 0
+   },
+   "manual": false
   },
   {
    "page": "/c/tech",
@@ -52,48 +94,6 @@
    "clicks_3d": 0,
    "impr_3d": 2,
    "pos": 8.5,
-   "by_day": {
-    "2026-11-09": 0
-   },
-   "manual": false
-  },
-  {
-   "page": "/x/mlb-manager-of-the-year-voting",
-   "clicks_3d": 0,
-   "impr_3d": 2,
-   "pos": 96.5,
-   "by_day": {
-    "2026-11-09": 0
-   },
-   "manual": true
-  },
-  {
-   "page": "/x/jasveen-sangha",
-   "clicks_3d": 0,
-   "impr_3d": 2,
-   "pos": 4.0,
-   "by_day": {
-    "2026-11-10": 0,
-    "2026-11-11": 0
-   },
-   "manual": false
-  },
-  {
-   "page": "/x/rot-weiss-essen",
-   "clicks_3d": 0,
-   "impr_3d": 2,
-   "pos": 7.0,
-   "by_day": {
-    "2026-11-10": 0,
-    "2026-11-11": 0
-   },
-   "manual": false
-  },
-  {
-   "page": "/x/oil-prices",
-   "clicks_3d": 0,
-   "impr_3d": 1,
-   "pos": 2.0,
    "by_day": {
     "2026-11-09": 0
    },
