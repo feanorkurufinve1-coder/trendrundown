@@ -1,104 +1,103 @@
 {
- "made": "2026-11-12T01:17:45+00:00",
+ "made": "2026-11-12T01:31:57+00:00",
  "days": [
-  "2026-11-08",
   "2026-11-09",
-  "2026-11-10"
+  "2026-11-10",
+  "2026-11-11"
  ],
  "pages": [
   {
-   "page": "/c/entertainment",
-   "clicks_3d": 2,
-   "impr_3d": 4,
-   "pos": 2.5,
-   "by_day": {
-    "2026-11-08": 2,
-    "2026-11-09": 0
-   },
-   "manual": false
-  },
-  {
-   "page": "/x/dane-cook-brother",
-   "clicks_3d": 1,
-   "impr_3d": 79,
-   "pos": 8.5,
-   "by_day": {
-    "2026-11-08": 1
-   },
-   "manual": true
-  },
-  {
-   "page": "/w/the-body-cast",
-   "clicks_3d": 1,
-   "impr_3d": 19,
-   "pos": 7.4,
-   "by_day": {
-    "2026-11-08": 1,
-    "2026-11-09": 0
-   },
-   "manual": false
-  },
-  {
-   "page": "/x/gen-z-regelt",
-   "clicks_3d": 1,
-   "impr_3d": 2,
-   "pos": 6.5,
-   "by_day": {
-    "2026-11-08": 1
-   },
-   "manual": false
-  },
-  {
-   "page": "/x/murder-in-galicia-true-story",
-   "clicks_3d": 0,
-   "impr_3d": 29,
-   "pos": 8.3,
-   "by_day": {
-    "2026-11-08": 0,
-    "2026-11-09": 0
-   },
-   "manual": true
-  },
-  {
-   "page": "/x/scott-colom",
-   "clicks_3d": 0,
-   "impr_3d": 12,
-   "pos": 22.5,
-   "by_day": {
-    "2026-11-08": 0
-   },
-   "manual": true
-  },
-  {
-   "page": "/x/wta-250",
-   "clicks_3d": 0,
-   "impr_3d": 9,
-   "pos": 10.0,
-   "by_day": {
-    "2026-11-08": 0
-   },
-   "manual": false
-  },
-  {
-   "page": "/x/arnold-schwarzenegger-last-name",
-   "clicks_3d": 0,
-   "impr_3d": 6,
-   "pos": 9.2,
-   "by_day": {
-    "2026-11-08": 0
-   },
-   "manual": false
-  },
-  {
    "page": "/x/non-tender",
    "clicks_3d": 0,
-   "impr_3d": 6,
-   "pos": 1.0,
+   "impr_3d": 3,
+   "pos": 4.5,
    "by_day": {
-    "2026-11-08": 0,
+    "2026-11-09": 0,
+    "2026-11-10": 0
+   },
+   "manual": true
+  },
+  {
+   "page": "/x/how-mlb-mvp-is-voted",
+   "clicks_3d": 0,
+   "impr_3d": 3,
+   "pos": 67.0,
+   "by_day": {
+    "2026-11-10": 0
+   },
+   "manual": true
+  },
+  {
+   "page": "/c/tech",
+   "clicks_3d": 0,
+   "impr_3d": 2,
+   "pos": 4.5,
+   "by_day": {
+    "2026-11-09": 0
+   },
+   "manual": false
+  },
+  {
+   "page": "/privacy",
+   "clicks_3d": 0,
+   "impr_3d": 2,
+   "pos": 1.5,
+   "by_day": {
+    "2026-11-09": 0
+   },
+   "manual": false
+  },
+  {
+   "page": "/t/meta-stock",
+   "clicks_3d": 0,
+   "impr_3d": 2,
+   "pos": 8.5,
+   "by_day": {
+    "2026-11-09": 0
+   },
+   "manual": false
+  },
+  {
+   "page": "/x/mlb-manager-of-the-year-voting",
+   "clicks_3d": 0,
+   "impr_3d": 2,
+   "pos": 96.5,
+   "by_day": {
     "2026-11-09": 0
    },
    "manual": true
+  },
+  {
+   "page": "/x/jasveen-sangha",
+   "clicks_3d": 0,
+   "impr_3d": 2,
+   "pos": 4.0,
+   "by_day": {
+    "2026-11-10": 0,
+    "2026-11-11": 0
+   },
+   "manual": false
+  },
+  {
+   "page": "/x/rot-weiss-essen",
+   "clicks_3d": 0,
+   "impr_3d": 2,
+   "pos": 7.0,
+   "by_day": {
+    "2026-11-10": 0,
+    "2026-11-11": 0
+   },
+   "manual": false
+  },
+  {
+   "page": "/x/oil-prices",
+   "clicks_3d": 0,
+   "impr_3d": 1,
+   "pos": 2.0,
+   "by_day": {
+    "2026-11-09": 0
+   },
+   "manual": false
   }
  ]
 }
