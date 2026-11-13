@@ -1,6 +1,6 @@
 {
- "made": "2026-11-13T15:41:32+00:00",
- "pages": 342,
+ "made": "2026-11-13T15:47:45+00:00",
+ "pages": 340,
  "summary": {
   "kind": {
    "event": {
@@ -18,11 +18,11 @@
     "clicks_per_page": 0.0
    },
    "organization": {
-    "pages": 16,
-    "with_impr_%": 31,
+    "pages": 15,
+    "with_impr_%": 27,
     "top3_%": 0,
     "clicks": 1,
-    "clicks_per_page": 0.06
+    "clicks_per_page": 0.07
    },
    "other": {
     "pages": 30,
@@ -53,9 +53,9 @@
     "clicks_per_page": 0.0
    },
    "term": {
-    "pages": 136,
-    "with_impr_%": 15,
-    "top3_%": 2,
+    "pages": 135,
+    "with_impr_%": 14,
+    "top3_%": 1,
     "clicks": 33,
     "clicks_per_page": 0.24
    },
@@ -69,8 +69,8 @@
   },
   "source": {
    "auto": {
-    "pages": 269,
-    "with_impr_%": 20,
+    "pages": 267,
+    "with_impr_%": 19,
     "top3_%": 0,
     "clicks": 6,
     "clicks_per_page": 0.02
@@ -134,8 +134,8 @@
     "clicks_per_page": 0.2
    },
    "what": {
-    "pages": 205,
-    "with_impr_%": 19,
+    "pages": 203,
+    "with_impr_%": 18,
     "top3_%": 1,
     "clicks": 38,
     "clicks_per_page": 0.19
@@ -178,11 +178,11 @@
     "clicks_per_page": 0.1
    },
    "True": {
-    "pages": 35,
+    "pages": 33,
     "with_impr_%": 100,
-    "top3_%": 6,
+    "top3_%": 3,
     "clicks": 26,
-    "clicks_per_page": 0.74
+    "clicks_per_page": 0.79
    }
   }
  },
@@ -321,25 +321,6 @@
    ]
   },
   {
-   "slug": "ligue-1",
-   "title": "What is Ligue 1?",
-   "kind": "organization",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 16,
-   "age_days": 17.8,
-   "rival_exact": null,
-   "impr": 2151,
-   "clicks": 0,
-   "best_pos": 5.7,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "ligue 1",
-    "what is ligue 1",
-    "ligue"
-   ]
-  },
-  {
    "slug": "japan-open-tennis",
    "title": "What is the Japan Open tennis tournament? Tokyo event guide",
    "kind": "event",
@@ -397,25 +378,6 @@
    ]
   },
   {
-   "slug": "phishing-test",
-   "title": "What is a phishing test?",
-   "kind": "term",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 24,
-   "age_days": 20.7,
-   "rival_exact": null,
-   "impr": 64,
-   "clicks": 0,
-   "best_pos": 2.5,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "phishing test",
-    "phishing test in dc",
-    "phishing test for employees"
-   ]
-  },
-  {
    "slug": "wta-tennis",
    "title": "What is the WTA? Tennis tour explained",
    "kind": "organization",
@@ -460,7 +422,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 27,
-   "age_days": 17.1,
+   "age_days": 17.2,
    "rival_exact": null,
    "impr": 41,
    "clicks": 0,
@@ -1288,7 +1250,7 @@
    "source": "auto",
    "q_word": "where",
    "title_len": 26,
-   "age_days": 17.8,
+   "age_days": 17.9,
    "rival_exact": null,
    "impr": 2,
    "clicks": 0,
@@ -1420,7 +1382,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 34,
-   "age_days": 20.8,
+   "age_days": 20.9,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2320,7 +2282,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 69,
-   "age_days": 11.7,
+   "age_days": 11.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2395,7 +2357,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 63,
-   "age_days": 10.9,
+   "age_days": 11.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3985,7 +3947,7 @@
    "source": "auto",
    "q_word": "none",
    "title_len": 78,
-   "age_days": 5.7,
+   "age_days": 5.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4000,7 +3962,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 61,
-   "age_days": 5.7,
+   "age_days": 5.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4405,7 +4367,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 65,
-   "age_days": 3.5,
+   "age_days": 3.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
