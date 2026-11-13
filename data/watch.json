@@ -1,41 +1,65 @@
 {
- "made": "2026-11-13T13:31:46+00:00",
+ "made": "2026-11-13T13:46:54+00:00",
  "days": [
-  "2026-11-09",
   "2026-11-10",
-  "2026-11-11"
+  "2026-11-11",
+  "2026-11-12"
  ],
  "pages": [
   {
    "page": "/x/jasveen-sangha",
    "clicks_3d": 0,
-   "impr_3d": 4,
-   "pos": 4.3,
+   "impr_3d": 7,
+   "pos": 3.9,
    "by_day": {
     "2026-11-10": 0,
-    "2026-11-11": 0
+    "2026-11-11": 0,
+    "2026-11-12": 0
    },
    "manual": false
   },
   {
    "page": "/x/rot-weiss-essen",
    "clicks_3d": 0,
-   "impr_3d": 4,
-   "pos": 7.0,
+   "impr_3d": 7,
+   "pos": 5.8,
    "by_day": {
     "2026-11-10": 0,
-    "2026-11-11": 0
+    "2026-11-11": 0,
+    "2026-11-12": 0
    },
    "manual": false
   },
   {
-   "page": "/x/non-tender",
+   "page": "/t/alexandra-eala",
    "clicks_3d": 0,
-   "impr_3d": 3,
-   "pos": 4.5,
+   "impr_3d": 6,
+   "pos": 5.7,
    "by_day": {
-    "2026-11-09": 0,
-    "2026-11-10": 0
+    "2026-11-11": 0,
+    "2026-11-12": 0
+   },
+   "manual": false
+  },
+  {
+   "page": "/x/collin-sexton",
+   "clicks_3d": 0,
+   "impr_3d": 6,
+   "pos": 5.0,
+   "by_day": {
+    "2026-11-11": 0,
+    "2026-11-12": 0
+   },
+   "manual": false
+  },
+  {
+   "page": "/x/relief-pitcher-of-the-year",
+   "clicks_3d": 0,
+   "impr_3d": 4,
+   "pos": 4.7,
+   "by_day": {
+    "2026-11-11": 0,
+    "2026-11-12": 0
    },
    "manual": true
   },
@@ -50,52 +74,32 @@
    "manual": true
   },
   {
-   "page": "/t/alexandra-eala",
+   "page": "/t/joshua-wong",
    "clicks_3d": 0,
-   "impr_3d": 3,
-   "pos": 6.0,
+   "impr_3d": 1,
+   "pos": 7.0,
    "by_day": {
-    "2026-11-11": 0
+    "2026-11-10": 0
    },
    "manual": false
   },
   {
-   "page": "/x/collin-sexton",
+   "page": "/t/al-horford",
    "clicks_3d": 0,
-   "impr_3d": 3,
-   "pos": 4.0,
+   "impr_3d": 1,
+   "pos": 9.0,
    "by_day": {
-    "2026-11-11": 0
+    "2026-11-10": 0
    },
    "manual": false
   },
   {
-   "page": "/c/tech",
+   "page": "/t/eberechi-eze",
    "clicks_3d": 0,
-   "impr_3d": 2,
-   "pos": 4.5,
+   "impr_3d": 1,
+   "pos": 5.0,
    "by_day": {
-    "2026-11-09": 0
-   },
-   "manual": false
-  },
-  {
-   "page": "/privacy",
-   "clicks_3d": 0,
-   "impr_3d": 2,
-   "pos": 1.5,
-   "by_day": {
-    "2026-11-09": 0
-   },
-   "manual": false
-  },
-  {
-   "page": "/t/meta-stock",
-   "clicks_3d": 0,
-   "impr_3d": 2,
-   "pos": 8.5,
-   "by_day": {
-    "2026-11-09": 0
+    "2026-11-10": 0
    },
    "manual": false
   }
