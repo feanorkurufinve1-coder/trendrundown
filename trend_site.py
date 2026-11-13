@@ -2651,11 +2651,23 @@ def gsc_health(store):
         old = json.load(open(path))
     except Exception:
         old = {}
-    if not raw or hours_since(old.get("checked", "2000-01-01T00:00:00+00:00")) < 6:
+    if not raw or (old.get("v") == 2 and hours_since(old.get("checked", "2000-01-01T00:00:00+00:00")) < 6):
         return
     tok = gsc_token(json.loads(raw))
     site = "sc-domain:trendrundown.com"
-    out = {"checked": now_iso(), "sitemaps": [], "urls": []}
+    out = {"v": 2, "checked": now_iso(), "sitemaps": [], "urls": []}
+    # 13.11: проверяем не только 6 главных, а ВСЕ ручные страницы (лимит Google — 2000 проверок в день)
+    urls = list(HEALTH_URLS)
+    try:
+        for fn in sorted(os.listdir(os.path.join(HERE, "manual"))):
+            if not fn.endswith(".json"):
+                continue
+            u = "/x/" + fn[:-5]
+            if u not in urls:
+                urls.append(u)
+    except Exception:
+        pass
+    seen_idx = old.get("first_indexed", {})
     try:
         req = urllib.request.Request("https://www.googleapis.com/webmasters/v3/sites/" + urllib.parse.quote(site, safe="")
                                      + "/sitemaps", headers={"Authorization": "Bearer " + tok})
@@ -2665,7 +2677,7 @@ def gsc_health(store):
                                                                   "warnings", "errors", "contents")})
     except Exception as e:
         out["sitemaps_error"] = str(e)[:200]
-    for u in HEALTH_URLS:
+    for u in urls:
         body = json.dumps({"inspectionUrl": SITE_URL + u, "siteUrl": site, "languageCode": "en-US"}).encode()
         req = urllib.request.Request("https://searchconsole.googleapis.com/v1/urlInspection/index:inspect", data=body,
                                      method="POST", headers={"Authorization": "Bearer " + tok, "Content-Type": "application/json"})
@@ -2678,8 +2690,17 @@ def gsc_health(store):
             out["urls"].append({"url": u, "error": f"HTTP {e.code} {e.read().decode(errors='replace')[:150]}"})
         except Exception as e:
             out["urls"].append({"url": u, "error": str(e)[:150]})
+    for x in out["urls"]:
+        if (x.get("coverageState") or "").startswith("Submitted and indexed") or x.get("verdict") == "PASS":
+            seen_idx.setdefault(x["url"], now_iso())
+    out["first_indexed"] = seen_idx
+    cnt = {}
+    for x in out["urls"]:
+        k = x.get("coverageState") or ("error" if x.get("error") else "unknown")
+        cnt[k] = cnt.get(k, 0) + 1
+    out["summary"] = cnt
     json.dump(out, open(path, "w"), ensure_ascii=False, indent=1)
-    log("Проверка индекса Google: " + "; ".join(f"{x['url']} {x.get('coverageState') or x.get('error')}" for x in out["urls"]))
+    log("Проверка индекса Google: " + "; ".join(f"{k}: {v}" for k, v in sorted(cnt.items(), key=lambda z: -z[1])))
 
 
 def gsc_fetch(store):
