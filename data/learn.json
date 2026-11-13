@@ -1,6 +1,6 @@
 {
- "made": "2026-11-13T14:01:54+00:00",
- "pages": 329,
+ "made": "2026-11-13T14:04:08+00:00",
+ "pages": 330,
  "summary": {
   "kind": {
    "event": {
@@ -58,11 +58,18 @@
     "top3_%": 2,
     "clicks": 33,
     "clicks_per_page": 0.25
+   },
+   "tool": {
+    "pages": 1,
+    "with_impr_%": 0,
+    "top3_%": 0,
+    "clicks": 0,
+    "clicks_per_page": 0.0
    }
   },
   "source": {
    "auto": {
-    "pages": 266,
+    "pages": 267,
     "with_impr_%": 20,
     "top3_%": 0,
     "clicks": 6,
@@ -127,7 +134,7 @@
     "clicks_per_page": 0.21
    },
    "what": {
-    "pages": 199,
+    "pages": 200,
     "with_impr_%": 19,
     "top3_%": 2,
     "clicks": 38,
@@ -164,7 +171,7 @@
   },
   "title_matches_top_query": {
    "False": {
-    "pages": 294,
+    "pages": 295,
     "with_impr_%": 11,
     "top3_%": 1,
     "clicks": 30,
@@ -1668,7 +1675,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 21,
-   "age_days": 17.7,
+   "age_days": 17.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -1698,7 +1705,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 34,
-   "age_days": 17.7,
+   "age_days": 17.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2838,7 +2845,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 52,
-   "age_days": 8.7,
+   "age_days": 8.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4563,6 +4570,21 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 58,
+   "age_days": 3.0,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
+   "slug": "cme-fedwatch",
+   "title": "What is CME FedWatch? A tool that tracks Fed rate cut and hike odds",
+   "kind": "tool",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 67,
    "age_days": 3.0,
    "rival_exact": null,
    "impr": 0,

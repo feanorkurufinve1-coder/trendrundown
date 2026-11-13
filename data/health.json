@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-13T08:02:16+00:00",
+ "checked": "2026-11-13T14:03:29+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -89,7 +89,7 @@
    "robotsTxtState": "ALLOWED",
    "indexingState": "INDEXING_ALLOWED",
    "pageFetchState": "SUCCESSFUL",
-   "lastCrawlTime": "2026-11-10T04:31:52Z",
+   "lastCrawlTime": "2026-11-13T09:03:55Z",
    "googleCanonical": "https://trendrundown.com/",
    "userCanonical": "https://trendrundown.com/"
   }
