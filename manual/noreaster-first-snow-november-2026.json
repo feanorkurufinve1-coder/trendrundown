@@ -1,0 +1,48 @@
+{
+ "news": true,
+ "subject": "Nor'easter",
+ "kind": "event",
+ "query": "nor'easter first snow",
+ "title": "Nor'easter first snow: Where it's snowing and when the chill ends",
+ "answer": "A nor'easter on Friday, Nov. 13, 2026, kept rain and wind along the I-95 corridor while bringing wet snow to the interior Northeast and Appalachians, the first of the season for many places. Several inches were forecast near Oneonta, New York, while New York City was expected to see mostly rain.",
+ "in_the_news": "The coastal storm followed a Thursday of severe weather that included hail and a tornado near Wilmington, Delaware, and it is pulling in the coldest air of the season, with a first freeze possible across much of the South this weekend.",
+ "body": "The best chance for accumulating snow is in higher terrain: Vermont's Green Mountains, New Hampshire's White Mountains, the Berkshires, the Adirondacks and Catskills, and the Appalachians from West Virginia to western North Carolina and eastern Tennessee, according to The Weather Channel. The Catskills could see 1 to 3 inches. Snow showers are also possible in Great Lakes snowbelts and western Upper Michigan. Drivers should expect slushy roads, especially at night, through Saturday.\n\nAlong the coast, the National Weather Service posted coastal flood warnings and advisories for Long Island and the New Jersey shore, where up to 2 feet of flooding was possible in low-lying areas, and gale warnings were in effect offshore with winds above 40 mph. Forecasters said the storm overall is not expected to be high-impact and coastal flooding should be mostly minor at high tide.\n\nBehind the storm, frost and freeze alerts cover parts of Arkansas, Mississippi, Alabama and northern Georgia through Saturday morning, with lows in the upper 20s to low 30s. Highs will stay in the 40s across much of the Midwest and Northeast, and the chill is expected to last into early next week. Forecasters note a strong El Niño expected this winter could bring a wetter season to Northeast cities.",
+ "faq": [
+  {
+   "q": "Will New York City get snow from the nor'easter?",
+   "a": "Mostly no. Forecasters expected rain in the city, with perhaps a few flakes mixing in, mainly in the Bronx, and no accumulation."
+  },
+  {
+   "q": "Where will it snow?",
+   "a": "Mainly the higher elevations of the interior Northeast — the Catskills, Adirondacks, Berkshires and the Green and White Mountains — plus the central and southern Appalachians."
+  },
+  {
+   "q": "When will the storm end?",
+   "a": "Steady rain and snow taper Friday afternoon, with lake-effect and mountain snow showers lingering into Saturday and a chilly, breezy weekend."
+  },
+  {
+   "q": "Is a freeze coming to the South?",
+   "a": "Yes. A first freeze is possible this weekend across much of the Carolinas, northern and central Georgia and northern and central Alabama."
+  }
+ ],
+ "links": [
+  [
+   "The Weather Channel",
+   "Nor'easter rain persists along I-95 with snow in interior Northeast",
+   "https://weather.com/2026/11/13/forecast/regional/noreaster-first-snow-frost-freeze"
+  ],
+  [
+   "WTKR (Scripps)",
+   "Nor'easter brings damaging winds, coastal flooding to Northeast",
+   "https://www.wtkr.com/weather/noreaster-brings-damaging-winds-coastal-flooding-to-northeast"
+  ],
+  [
+   "ABC7 New York",
+   "AccuWeather Alert: Snow north and west, coastal flooding Friday",
+   "https://abc7ny.com/live-updates/is-noreaster-coming-going-snow-nyc-updates-coastal-storm-eyewitness-news-accuweather-team/20030659/"
+  ]
+ ],
+ "image_wiki": "Nor'easter",
+ "made": "2026-11-13T16:48:00+00:00",
+ "first": "2026-11-13T16:48:00+00:00"
+}

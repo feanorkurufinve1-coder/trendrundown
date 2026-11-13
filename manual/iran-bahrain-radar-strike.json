@@ -1,0 +1,47 @@
+{
+ "news": true,
+ "subject": "Iran",
+ "kind": "event",
+ "query": "iran bahrain radar",
+ "title": "Iran Bahrain radar: Guards claim strike on US early-warning site",
+ "answer": "Iran's Revolutionary Guards said Friday, Nov. 13, 2026, that they struck a U.S. early-warning radar in Bahrain, calling it retaliation for an air strike on a telecommunications tower in Sirik, southern Iran. It is Iran's first claimed attack on U.S. military assets in a Gulf country since early September. The claim has not been independently verified.",
+ "in_the_news": "The claim breaks a fragile lull in the U.S.-Iran conflict that began in February and raises fresh concern for U.S. forces in the Gulf, where Bahrain hosts the U.S. Navy's 5th Fleet.",
+ "body": "The Guards described the attack as a \"serious warning to the U.S. to cease its strikes,\" according to the Associated Press. Iranian state media said the strike answered an air attack on a telecom tower in Sirik county in Hormozgan province, without saying who carried it out. U.S. Central Command and Bahrain's government did not immediately comment, and no casualties or damage were reported.\n\nThe Guards also said a liquefied petroleum gas tanker hit a mine and exploded Friday while trying to pass through the Strait of Hormuz, saying it had ignored warnings. That claim also could not be verified; the U.K. Maritime Trade Operations agency had no immediate report.\n\nThe conflict began Feb. 28 with U.S. and Israeli strikes on Iran. Iran answered with missile and drone attacks on U.S. bases in Gulf states, including Bahrain, and has tried to restrict shipping through the Strait of Hormuz, a key route for the world's oil; Washington responded with a naval blockade of Iranian ports. What happens next depends largely on whether the U.S. confirms the strike and how it responds.",
+ "faq": [
+  {
+   "q": "Did Iran attack a U.S. base in Bahrain?",
+   "a": "Iran's Revolutionary Guards claim they hit a U.S. early-warning radar in Bahrain on Nov. 13, 2026. The U.S. and Bahrain had not confirmed it, and the claim could not be independently verified."
+  },
+  {
+   "q": "Were any Americans hurt?",
+   "a": "No casualties were reported in initial accounts."
+  },
+  {
+   "q": "Why is Bahrain important to the U.S. military?",
+   "a": "Bahrain hosts the headquarters of the U.S. Navy's 5th Fleet, which operates across the Persian Gulf and nearby waters."
+  },
+  {
+   "q": "When did the U.S.-Iran conflict start?",
+   "a": "On Feb. 28, 2026, with U.S. and Israeli strikes on Iran."
+  }
+ ],
+ "links": [
+  [
+   "ABC News (AP)",
+   "Iran's Revolutionary Guard says it destroyed a US radar in Bahrain, and other Mideast news",
+   "https://abcnews.com/International/wireStory/irans-revolutionary-guard-destroyed-us-radar-bahrain-mideast-138102943"
+  ],
+  [
+   "Al-Monitor",
+   "Iran's Guards say they targeted a US early-warning radar in Bahrain",
+   "https://www.al-monitor.com/originals/2026/11/irans-guards-say-they-targeted-us-early-warning-radar-bahrain"
+  ],
+  [
+   "Al Arabiya",
+   "Iran's IRGC says it targeted US radar system in Bahrain",
+   "https://english.alarabiya.net/News/middle-east/2026/11/13/iran-s-irgc-says-it-targeted-us-radar-system-in-bahrain"
+  ]
+ ],
+ "made": "2026-11-13T16:48:00+00:00",
+ "first": "2026-11-13T16:48:00+00:00"
+}

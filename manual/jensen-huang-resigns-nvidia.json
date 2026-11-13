@@ -1,0 +1,53 @@
+{
+ "news": true,
+ "subject": "Jensen Huang",
+ "kind": "event",
+ "query": "why did jensen huang resign",
+ "title": "Why did Jensen Huang resign? Nvidia CEO exits after admitted affair",
+ "answer": "Jensen Huang resigned as Nvidia's president, CEO and board member, effective immediately, the company announced Thursday, Nov. 12, 2026. Nvidia gave no reason, but the exit came four days after Huang admitted to employees that he had an affair, amid reports linking him to a woman U.S. officials reportedly view as a Chinese intelligence asset.",
+ "in_the_news": "Huang co-founded Nvidia in 1993 and led it for more than three decades, turning it into the world's most valuable chipmaker on the back of the AI boom. His sudden departure leaves the company without a permanent CEO days before it reports quarterly earnings.",
+ "body": "Nvidia named Colette Kress, its chief financial officer since 2013, as interim CEO; she will keep the CFO job until a permanent successor is found. Longtime director Harvey C. Jones, a former CEO of Synopsys, became the company's first-ever board chair. The board said it will consider internal and external candidates and gave no timeline. According to a regulatory filing cited by TechCrunch, the board accepted the resignation on Wednesday, Nov. 11.\n\nThe pressure built quickly. On Oct. 29, The New York Times reported a close relationship between Huang and Alice Huang, an executive at the chip company Megaspeed whom U.S. officials had reportedly concluded is a Chinese intelligence asset; she has not been charged with a crime. House lawmakers then demanded a briefing on national security grounds. On Nov. 8, Huang told employees he had been \"unfaithful to my wife,\" and Nvidia's board said it was investigating whether he had been the target of a foreign intelligence effort. The Times and Reuters have since reported further alleged relationships, which Huang has not confirmed. Huang has not commented publicly on his resignation.\n\nInvestors reacted sharply. Nvidia shares fell as much as about 12% in early trading Thursday before paring losses to close down about 4% at $166.19, according to Yahoo Finance, leaving the company's market value near $4 trillion, down from about $4.5 trillion the previous Friday. The next test comes Tuesday, Nov. 17, when Nvidia reports third-quarter results with Kress leading the call. Congressional scrutiny is also expected to continue.",
+ "faq": [
+  {
+   "q": "Who is Nvidia's CEO now?",
+   "a": "Colette Kress, Nvidia's chief financial officer, is interim CEO while the board searches for a permanent replacement. She also remains CFO."
+  },
+  {
+   "q": "Did Nvidia say why Jensen Huang resigned?",
+   "a": "No. Nvidia's announcement did not give a reason. It followed Huang's Nov. 8 admission of an affair and the board's inquiry into whether he was targeted by a foreign intelligence effort."
+  },
+  {
+   "q": "Does Jensen Huang still own Nvidia stock?",
+   "a": "Yes. He holds more than 3.5% of the company, according to reports, and Nvidia has not said whether he will sell. He also left the board."
+  },
+  {
+   "q": "When does Nvidia report earnings?",
+   "a": "Tuesday, Nov. 17, 2026, with the earnings call at 2 p.m. Pacific time."
+  }
+ ],
+ "links": [
+  [
+   "NVIDIA",
+   "NVIDIA Announces CEO Transition",
+   "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
+  ],
+  [
+   "TechCrunch",
+   "Nvidia's Jensen Huang resigns, chipmaker names CFO Colette Kress as interim CEO",
+   "https://techcrunch.com/2026/11/12/nvidias-jensen-huang-resigns-chipmaker-names-cfo-colette-kress-as-interim-ceo/"
+  ],
+  [
+   "Forbes",
+   "Jensen Huang's Bad Week Leading To His Resignation, Explained",
+   "https://www.forbes.com/sites/alisondurkee/2026/11/13/jensen-huang-ousted-timeline-of-the-nvidia-scandal/"
+  ],
+  [
+   "Yahoo Finance",
+   "Nvidia live updates following Jensen Huang's resignation as CEO",
+   "https://finance.yahoo.com/technology/live/nvidia-live-updates-following-jensen-huangs-resignation-as-ceo-allegations-of-a-third-affair-emerge-195535310.html"
+  ]
+ ],
+ "image_wiki": "Jensen Huang",
+ "made": "2026-11-13T16:48:00+00:00",
+ "first": "2026-11-13T16:48:00+00:00"
+}
