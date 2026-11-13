@@ -4355,6 +4355,7 @@ def source_line(t, ai):
 
 
 GSC_PATHS = set()                      # страницы, которые Google уже показывает (заполняется в build_site)
+DELETED = set()                        # 13.11: слабые страницы, которые удаляем с сайта совсем (их нет, ссылки на них убираются)
 NOINDEX = set()                        # страницы, которые просим Google не брать в выдачу (слабые: без показов за 28 дней)
 INDEX_GRACE_DAYS = 14                  # новой странице даём столько дней, чтобы Google её оценил
 
@@ -4913,12 +4914,34 @@ def build_site(store):
     for t in topics.values():
         if not thin_ok(t):
             NOINDEX.add("t/" + t["slug"])
-    log(f"В выдачу Google не пускаем {len(NOINDEX)} слабых страниц (остаются на сайте)")
+    log(f"В выдачу Google не пускаем {len(NOINDEX)} слабых страниц")
+    # 13.11 (решение владельца): слабые страницы удаляем с сайта совсем — Google судит о сайте и по скрытым страницам.
+    # Автоматические пояснения x/ и страницы актёров w/ из NOINDEX — удаляем; темы t/ — если старше 3 дней
+    # (свежие темы нужны на главной, они остаются, но скрыты от Google).
+    DELETED.clear()
+    for pth in NOINDEX:
+        if pth.startswith(("x/", "w/")):
+            DELETED.add(pth)
+        elif pth.startswith("t/"):
+            tt = topics.get(pth[2:])
+            try:
+                old = not tt or hours_since(tt.get("last_seen") or tt["first_seen"]) > 72
+            except Exception:
+                old = True
+            if old:
+                DELETED.add(pth)
+    log(f"Слабые страницы удалены с сайта совсем: {len(DELETED)}")
     by_cat = {}
     for t in sorted(topics.values(), key=lambda x: x.get("last_seen", x["first_seen"]), reverse=True):
         by_cat.setdefault(t.get("cat"), []).append(t)
     def w(path, text):
         p = os.path.join(OUT, path); os.makedirs(os.path.dirname(p), exist_ok=True)
+        if path.endswith(".html") and path[:-5] in DELETED:     # удалённая слабая страница — не пишем, старый файл стираем
+            try:
+                os.remove(p)
+            except FileNotFoundError:
+                pass
+            return
         with open(p, "w", encoding="utf-8") as f:
             f.write(text)
     for t in topics.values():
@@ -5014,13 +5037,44 @@ def build_site(store):
         w("seeds.json", json.dumps({"made": now_iso(), "terms": [t["term"] for t in fresh_t[:80]]}, ensure_ascii=False))
     except Exception as e:
         log(f"seeds.json: {e}")
-    items = sorted(topics.values(), key=lambda t: t["first_seen"], reverse=True)[:50]
+    items = [t for t in sorted(topics.values(), key=lambda t: t["first_seen"], reverse=True) if "t/" + t["slug"] not in DELETED][:50]
     w("feed.xml", '<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel>'
       f"<title>{SITE_NAME}</title><link>{SITE_URL}</link><description>{E(TAGLINE)}</description>"
       + "".join(f"<item><title>Why is {E(t['term'])} trending?</title><link>{SITE_URL}/t/{t['slug']}</link>"
                 f"<guid>{SITE_URL}/t/{t['slug']}</guid><pubDate>{datetime.fromisoformat(t['first_seen']).strftime('%a, %d %b %Y %H:%M:%S +0000')}</pubDate></item>" for t in items)
       + "</channel></rss>")
+    drop_dead_links()
     return len(topics)
+
+
+def drop_dead_links():
+    """Убирает со всех страниц ссылки на удалённые слабые страницы: пункт списка — целиком, карточку — целиком,
+    ссылку внутри текста — оставляет просто текстом."""
+    if not DELETED:
+        return
+    href = r'href="(?:\.\./|/|https://trendrundown\.com/)?((?:x|w|t)/[^"#?/]+?)(?:\.html)?"'
+    li_re = re.compile(r'<li\b[^>]*>(?:(?!</li>).)*?' + href + r'(?:(?!</li>).)*?</li>', re.S)
+    a_re = re.compile(r'<a\b([^>]*?)' + href + r'([^>]*)>(.*?)</a>', re.S)
+    def li_f(m):
+        return "" if m.group(1) in DELETED else m.group(0)
+    def a_f(m):
+        if m.group(2) not in DELETED:
+            return m.group(0)
+        return m.group(4) if 'class="xl"' in (m.group(1) + m.group(3)) else ""
+    n = 0
+    for root, _, files in os.walk(OUT):
+        for fn in files:
+            if not fn.endswith(".html"):
+                continue
+            p = os.path.join(root, fn)
+            try:
+                s = open(p, encoding="utf-8").read()
+            except Exception:
+                continue
+            s2 = a_re.sub(a_f, li_re.sub(li_f, s))
+            if s2 != s:
+                open(p, "w", encoding="utf-8").write(s2); n += 1
+    log(f"ссылки на удалённые страницы убраны на {n} страницах")
 
 
 
