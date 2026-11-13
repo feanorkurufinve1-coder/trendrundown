@@ -1,399 +1,329 @@
 {
- "made": "2026-11-12T22:31:44+00:00",
- "day": "2026-11-11",
+ "made": "2026-11-13T04:32:00+00:00",
+ "day": "2026-11-12",
  "about": "Всплески просмотров английской Википедии за вчера: views — просмотров вчера, before — максимум за 3 прошлых дня (null = статьи не было в топ-1000). Идеи для страниц «who is / what is»; проверять факты по новостям.",
  "spikes": [
   {
-   "article": "Stacy Keach",
-   "views": 562990,
+   "article": "Colette Kress",
+   "views": 463931,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Stacy_Keach"
+   "url": "https://en.wikipedia.org/wiki/Colette_Kress"
   },
   {
-   "article": "VisionQuest",
-   "views": 240738,
-   "before": 71375,
-   "ratio": 3.4,
-   "url": "https://en.wikipedia.org/wiki/VisionQuest"
-  },
-  {
-   "article": "Dancing with the Stars (American TV series) season 35",
-   "views": 144202,
-   "before": 16470,
-   "ratio": 8.8,
-   "url": "https://en.wikipedia.org/wiki/Dancing_with_the_Stars_%28American_TV_series%29_season_35"
-  },
-  {
-   "article": "SS United States",
-   "views": 117540,
-   "before": 21728,
-   "ratio": 5.4,
-   "url": "https://en.wikipedia.org/wiki/SS_United_States"
-  },
-  {
-   "article": "Kaviya Maran",
-   "views": 101460,
-   "before": 16325,
-   "ratio": 6.2,
-   "url": "https://en.wikipedia.org/wiki/Kaviya_Maran"
-  },
-  {
-   "article": "James Keach",
-   "views": 99527,
+   "article": "Anthony Clark (actor)",
+   "views": 374893,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/James_Keach"
+   "url": "https://en.wikipedia.org/wiki/Anthony_Clark_%28actor%29"
   },
   {
-   "article": "Lucy Beaumont (comedian)",
-   "views": 87015,
-   "before": 14403,
-   "ratio": 6.0,
-   "url": "https://en.wikipedia.org/wiki/Lucy_Beaumont_%28comedian%29"
-  },
-  {
-   "article": "Anirudh Ravichander",
-   "views": 82456,
-   "before": 15246,
-   "ratio": 5.4,
-   "url": "https://en.wikipedia.org/wiki/Anirudh_Ravichander"
-  },
-  {
-   "article": "Children's Games (Bruegel)",
-   "views": 75596,
+   "article": "Alice Huang (executive)",
+   "views": 160121,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Children%27s_Games_%28Bruegel%29"
+   "url": "https://en.wikipedia.org/wiki/Alice_Huang_%28executive%29"
   },
   {
-   "article": "Harry Shum Jr.",
-   "views": 73654,
+   "article": "Dan Hicks (sportscaster)",
+   "views": 157094,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Harry_Shum_Jr."
-  },
-  {
-   "article": "Veterans Day",
-   "views": 70250,
-   "before": 19633,
-   "ratio": 3.6,
-   "url": "https://en.wikipedia.org/wiki/Veterans_Day"
-  },
-  {
-   "article": "Danny Kelly (journalist)",
-   "views": 64926,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Danny_Kelly_%28journalist%29"
-  },
-  {
-   "article": "Usman Nurmagomedov",
-   "views": 62847,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Usman_Nurmagomedov"
-  },
-  {
-   "article": "Jenna Dewan",
-   "views": 59297,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Jenna_Dewan"
-  },
-  {
-   "article": "Armistice Day",
-   "views": 55444,
-   "before": 12673,
-   "ratio": 4.4,
-   "url": "https://en.wikipedia.org/wiki/Armistice_Day"
-  },
-  {
-   "article": "The Lord of the Rings: The Rings of Power season 3",
-   "views": 53372,
-   "before": 8592,
-   "ratio": 6.2,
-   "url": "https://en.wikipedia.org/wiki/The_Lord_of_the_Rings%3A_The_Rings_of_Power_season_3"
-  },
-  {
-   "article": "Tatyana Ali",
-   "views": 51410,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Tatyana_Ali"
-  },
-  {
-   "article": "The Lord of the Rings: The Rings of Power",
-   "views": 49831,
-   "before": 12285,
-   "ratio": 4.1,
-   "url": "https://en.wikipedia.org/wiki/The_Lord_of_the_Rings%3A_The_Rings_of_Power"
-  },
-  {
-   "article": "Kalanithi Maran",
-   "views": 46978,
-   "before": 8168,
-   "ratio": 5.8,
-   "url": "https://en.wikipedia.org/wiki/Kalanithi_Maran"
-  },
-  {
-   "article": "The Body (TV series)",
-   "views": 46149,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/The_Body_%28TV_series%29"
-  },
-  {
-   "article": "Stacy Keach Sr.",
-   "views": 42983,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Stacy_Keach_Sr."
-  },
-  {
-   "article": "Virginia Madsen",
-   "views": 41855,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Virginia_Madsen"
+   "url": "https://en.wikipedia.org/wiki/Dan_Hicks_%28sportscaster%29"
   },
   {
    "article": "Tomb of the Unknown Soldier (Arlington National Cemetery)",
-   "views": 35918,
-   "before": null,
-   "ratio": null,
+   "views": 137779,
+   "before": 35918,
+   "ratio": 3.8,
    "url": "https://en.wikipedia.org/wiki/Tomb_of_the_Unknown_Soldier_%28Arlington_National_Cemetery%29"
   },
   {
-   "article": "Antonio Sabàto Jr.",
-   "views": 34959,
+   "article": "Hannah Storm",
+   "views": 127755,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Antonio_Sab%C3%A0to_Jr."
+   "url": "https://en.wikipedia.org/wiki/Hannah_Storm"
   },
   {
-   "article": "Irma P. Hall",
-   "views": 33898,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Irma_P._Hall"
+   "article": "Chris Malachowsky",
+   "views": 100152,
+   "before": 29692,
+   "ratio": 3.4,
+   "url": "https://en.wikipedia.org/wiki/Chris_Malachowsky"
   },
   {
-   "article": "Jane Seymour (actress)",
-   "views": 33508,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Jane_Seymour_%28actress%29"
-  },
-  {
-   "article": "Singles' Day",
-   "views": 33267,
-   "before": 8094,
-   "ratio": 4.1,
-   "url": "https://en.wikipedia.org/wiki/Singles%27_Day"
-  },
-  {
-   "article": "Dancing with the Stars (American TV series)",
-   "views": 33024,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Dancing_with_the_Stars_%28American_TV_series%29"
-  },
-  {
-   "article": "Paul George",
-   "views": 33009,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Paul_George"
-  },
-  {
-   "article": "U.S. Route 101",
-   "views": 32084,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/U.S._Route_101"
-  },
-  {
-   "article": "Peter Norman",
-   "views": 30802,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Peter_Norman"
-  },
-  {
-   "article": "Evolution of spiders",
-   "views": 30788,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Evolution_of_spiders"
-  },
-  {
-   "article": "Armistice of 11 November 1918",
-   "views": 27886,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Armistice_of_11_November_1918"
-  },
-  {
-   "article": "Carey Price",
-   "views": 27386,
-   "before": 8953,
-   "ratio": 3.1,
-   "url": "https://en.wikipedia.org/wiki/Carey_Price"
-  },
-  {
-   "article": "Katrina Law",
-   "views": 26306,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Katrina_Law"
-  },
-  {
-   "article": "Jodie Foster",
-   "views": 26091,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Jodie_Foster"
-  },
-  {
-   "article": "Marsha M. Linehan",
-   "views": 25045,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Marsha_M._Linehan"
+   "article": "Jensen Huang spying scandal",
+   "views": 97209,
+   "before": 29020,
+   "ratio": 3.3,
+   "url": "https://en.wikipedia.org/wiki/Jensen_Huang_spying_scandal"
   },
   {
    "article": "Yella Beezy",
-   "views": 24967,
-   "before": null,
-   "ratio": null,
+   "views": 96701,
+   "before": 24967,
+   "ratio": 3.9,
    "url": "https://en.wikipedia.org/wiki/Yella_Beezy"
   },
   {
-   "article": "Maren Morris",
-   "views": 24678,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Maren_Morris"
+   "article": "Curtis Priem",
+   "views": 79910,
+   "before": 24130,
+   "ratio": 3.3,
+   "url": "https://en.wikipedia.org/wiki/Curtis_Priem"
   },
   {
-   "article": "Elizabeth Olsen",
-   "views": 24629,
+   "article": "Abu Ghraib torture and prisoner abuse",
+   "views": 64718,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Elizabeth_Olsen"
+   "url": "https://en.wikipedia.org/wiki/Abu_Ghraib_torture_and_prisoner_abuse"
   },
   {
-   "article": "November 11",
-   "views": 24441,
+   "article": "Yes, Dear",
+   "views": 61246,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/November_11"
+   "url": "https://en.wikipedia.org/wiki/Yes%2C_Dear"
   },
   {
-   "article": "Umar Nurmagomedov",
-   "views": 24250,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Umar_Nurmagomedov"
+   "article": "Blanche Bruce",
+   "views": 60237,
+   "before": 18106,
+   "ratio": 3.3,
+   "url": "https://en.wikipedia.org/wiki/Blanche_Bruce"
   },
   {
-   "article": "Merab Dvalishvili",
-   "views": 24106,
+   "article": "American Airlines Flight 587",
+   "views": 59568,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Merab_Dvalishvili"
+   "url": "https://en.wikipedia.org/wiki/American_Airlines_Flight_587"
   },
   {
-   "article": "Sheryl Crow",
-   "views": 23652,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Sheryl_Crow"
+   "article": "MO3 (rapper)",
+   "views": 55463,
+   "before": 10671,
+   "ratio": 5.2,
+   "url": "https://en.wikipedia.org/wiki/MO3_%28rapper%29"
   },
   {
-   "article": "Jon Richardson",
-   "views": 23591,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Jon_Richardson"
+   "article": "Harry Kane",
+   "views": 52283,
+   "before": 11972,
+   "ratio": 4.4,
+   "url": "https://en.wikipedia.org/wiki/Harry_Kane"
   },
   {
-   "article": "Alex Clark (journalist)",
-   "views": 23527,
+   "article": "Survivor 51",
+   "views": 51255,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Alex_Clark_%28journalist%29"
+   "url": "https://en.wikipedia.org/wiki/Survivor_51"
   },
   {
-   "article": "Connor Wood (comedian)",
-   "views": 22989,
+   "article": "Vajiralongkorn",
+   "views": 46044,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Connor_Wood_%28comedian%29"
+   "url": "https://en.wikipedia.org/wiki/Vajiralongkorn"
   },
   {
-   "article": "Magdalenka, Masovian Voivodeship",
-   "views": 22709,
+   "article": "Jean Louisa Kelly",
+   "views": 39096,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Magdalenka%2C_Masovian_Voivodeship"
+   "url": "https://en.wikipedia.org/wiki/Jean_Louisa_Kelly"
   },
   {
-   "article": "Małgosia Tomassi",
-   "views": 22570,
+   "article": "Tim Cook",
+   "views": 38311,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Ma%C5%82gosia_Tomassi"
+   "url": "https://en.wikipedia.org/wiki/Tim_Cook"
   },
   {
-   "article": "Ezra Frech",
-   "views": 22425,
+   "article": "Kaylee Hottle",
+   "views": 35758,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Ezra_Frech"
+   "url": "https://en.wikipedia.org/wiki/Kaylee_Hottle"
   },
   {
-   "article": "Daveigh Chase",
-   "views": 21891,
+   "article": "Richard Posner",
+   "views": 34663,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Daveigh_Chase"
+   "url": "https://en.wikipedia.org/wiki/Richard_Posner"
   },
   {
-   "article": "Eggcorn",
-   "views": 21283,
+   "article": "Sabrina Harman",
+   "views": 33201,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Eggcorn"
+   "url": "https://en.wikipedia.org/wiki/Sabrina_Harman"
   },
   {
-   "article": "Daniella Karagach",
-   "views": 20767,
+   "article": "Hiram R. Revels",
+   "views": 30994,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Daniella_Karagach"
+   "url": "https://en.wikipedia.org/wiki/Hiram_R._Revels"
   },
   {
-   "article": "Crispin Glover",
-   "views": 20479,
+   "article": "Medgar Evers",
+   "views": 30873,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Crispin_Glover"
+   "url": "https://en.wikipedia.org/wiki/Medgar_Evers"
   },
   {
-   "article": "Brad Ausmus",
-   "views": 20469,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Brad_Ausmus"
+   "article": "Tomb of the Unknown Soldier",
+   "views": 30554,
+   "before": 8549,
+   "ratio": 3.6,
+   "url": "https://en.wikipedia.org/wiki/Tomb_of_the_Unknown_Soldier"
   },
   {
-   "article": "Rex Ryan",
-   "views": 20332,
+   "article": "Royal Gloucestershire Hussars",
+   "views": 30185,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Rex_Ryan"
+   "url": "https://en.wikipedia.org/wiki/Royal_Gloucestershire_Hussars"
+  },
+  {
+   "article": "Mike O'Malley",
+   "views": 29070,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Mike_O%27Malley"
+  },
+  {
+   "article": "Lisa Maxwell (actress)",
+   "views": 28442,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Lisa_Maxwell_%28actress%29"
+  },
+  {
+   "article": "Frankie Muniz",
+   "views": 27669,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Frankie_Muniz"
+  },
+  {
+   "article": "Watts family murders",
+   "views": 26645,
+   "before": 7833,
+   "ratio": 3.4,
+   "url": "https://en.wikipedia.org/wiki/Watts_family_murders"
+  },
+  {
+   "article": "3rd Infantry Regiment (United States)",
+   "views": 26568,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/3rd_Infantry_Regiment_%28United_States%29"
+  },
+  {
+   "article": "2026–27 UEFA Nations League",
+   "views": 25140,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Nations_League"
+  },
+  {
+   "article": "The Good Daughter (American TV series)",
+   "views": 24473,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/The_Good_Daughter_%28American_TV_series%29"
+  },
+  {
+   "article": "Death of Mary Reeser",
+   "views": 23274,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Death_of_Mary_Reeser"
+  },
+  {
+   "article": "Liza Snyder",
+   "views": 22421,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Liza_Snyder"
+  },
+  {
+   "article": "Earthquake light",
+   "views": 22333,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Earthquake_light"
+  },
+  {
+   "article": "Novaya Gazeta",
+   "views": 21824,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Novaya_Gazeta"
+  },
+  {
+   "article": "UEFA Nations League",
+   "views": 21758,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/UEFA_Nations_League"
+  },
+  {
+   "article": "Pio Esposito",
+   "views": 20993,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Pio_Esposito"
+  },
+  {
+   "article": "Empress Elisabeth of Austria",
+   "views": 20847,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Empress_Elisabeth_of_Austria"
+  },
+  {
+   "article": "The Amazing Race 39",
+   "views": 20631,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/The_Amazing_Race_39"
+  },
+  {
+   "article": "USS Oriskany",
+   "views": 20361,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/USS_Oriskany"
+  },
+  {
+   "article": "Luka Modrić",
+   "views": 20351,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Luka_Modri%C4%87"
+  },
+  {
+   "article": "In Harm's Way",
+   "views": 20278,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/In_Harm%27s_Way"
+  },
+  {
+   "article": "November 12",
+   "views": 20267,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/November_12"
   }
  ]
 }
