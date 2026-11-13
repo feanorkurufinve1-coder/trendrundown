@@ -140,10 +140,43 @@
 | 17 нояб | Hulu/Disney+: How the Tudors Lost Their Heads | — пропуск (рядом религия) | — |
 | 12 нояб | Netflix: Russell Brand: Open Secret | — пропуск (сексуальное насилие) | — |
 | 8–12 нояб | Nvidia: совет директоров расследует историю с Jensen Huang | — пропуск (личное, обвинения) | — |
+| 14 нояб (запись) / 8 дек ABC / 9 дек Disney+, Hulu | Rock & Roll Hall of Fame 2026: церемония НЕ в прямом эфире (Peacock Theater, LA) | when will the rock hall 2026 ceremony air; is it live | ✅ rock-hall-of-fame-2026-ceremony-air-date |
+| 18 нояб | Netflix: The Law of Beasts (Prawo bestii; дело Trynkiewicz, «закон о бестиях») | is the law of beasts a true story; what is the beast act poland | ✅ is-the-law-of-beasts-a-true-story |
+| 10 нояб – ~10 дек | USDA: проект правила об ограничении BBCE в SNAP (6,3 млн чел.), комментарии ~до 10 дек | what is broad-based categorical eligibility | ✅ what-is-broad-based-categorical-eligibility |
+| 11 нояб – янв 2027 | Scott Colom — первый Black сенатор от Миссисипи, избранный народом; всплеск Википедии Revels/Bruce | who was the first black senator from mississippi | ✅ first-black-senator-from-mississippi |
+| нояб (NFL/NCAA) | Breakout «what is a safety in football» | what is a safety in football | ✅ what-is-a-safety-in-football |
+| 12 нояб (прошло) | Streamer Awards 2026 (Twitch/YouTube QTCinderella), трофеи украдены | what is the sapphire award — опоздали, пропуск | — |
+| 12 нояб – 19 нояб | GTA 6: предзагрузка с 12 нояб, 212 ГБ | how big is gta 6 — заняты гигантами, пропуск | — |
+| 13 нояб (прошло) | U2 Carnaval De Luz; Xbox Series X25 ($899.99) | — вышли, пропуск | — |
+| 24 нояб | Полнолуние Beaver Supermoon | is the november full moon a supermoon | — писать ~20–22 нояб |
+| 25 нояб | Кино: Focker-In-Law | focker-in-law cast | — писать ~21–23 нояб |
+| ~19 нояб | AFBF: стоимость ужина на День благодарения | how much does thanksgiving dinner cost 2026 | — после публикации |
+| нояб–дек | Всё про Рождество/Christmas (Ebenezer и т.п.) | — пропуск (религиозный праздник, запрет владельца) | — |
 Правило: писать за 1–5 дней до события (Google индексирует ~2/3 новых страниц за сутки).
 Проверка: через 3–7 дней после даты сверить с Trends CSV и Search Console — угадали или нет, записать урок сюда.
 
 ## Уроки
+- 13 нояб, вечер (GSC: последний полный день 12 нояб — 2 клика / 8 показов, оба клика на главную; health.json 13 нояб: sitemap 122 отправлено / 0 в индексе; в индексе только / и /x/cyber-monday). Страницы 11 нояб (2–3 дня) — у всех 0 показов в GSC (причина — сайт вне индекса); подсказки Google (suggest.json 13 нояб):
+  - 40-man-roster — 0 показов; ✅ в подсказках
+  - did-trump-call-into-c-span — 0; ✅
+  - keepsake-sea-release-date — 0; ✅
+  - madden-movie-true-story — 0; ❌ нет в подсказках
+  - red-cup-day-2026 — 0; ✅
+  - the-good-daughter-book — 0; ✅
+  - vienna-game-true-story — 0; ❌
+  - what-is-a-public-benefit-corporation — 0; ✅
+  - what-is-a-super-el-nino — 0; ✅
+  - what-is-tsa-confirmid — 0; ✅
+  - camp-flog-gnaw-livestream — 0; ✅
+  - el-nino-pacific-northwest — 0; ✅
+  - is-amanda-nunes-retired — 0; ✅
+  - kids-choice-awards-2026-date — 0; ✅
+  - what-does-12-12-12-mean — 0; ✅
+  - what-is-a-motion-to-refer — 0; ✅
+  - why-does-social-security-get-taxed (вечная) — 0; ✅
+  - why-is-my-check-engine-light-on (вечная) — 0; ✅
+  - why-is-my-washing-machine-leaking-from-the-bottom (вечная) — 0; ✅
+  - Новое: всплески Википедии по историческим лицам (Revels, Bruce) объясняются свежей новостью-«первым» (Colom) → вопрос «who was the first X from Y». Церемонии, которые записываются заранее (Rock Hall), дают вопрос «is it live / when will it air».
 - 12 нояб, вечер (GSC: последний полный день 11 нояб — 0 кликов / 1 показ; 10 нояб 0/4; health.json 12 нояб: sitemap 122 отправлено / 0 в индексе; из 6 проверенных URL в индексе только / и /x/cyber-monday). Страницы 10 нояб (2 дня), все — 0 показов в GSC (причина — сайт вне индекса, не тема); подсказки Google:
   - guarding-stars-book — 0 показов; фраза в подсказках ✅
   - what-is-a-privileged-resolution — 0; ✅

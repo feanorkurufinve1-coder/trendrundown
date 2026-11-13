@@ -1,0 +1,61 @@
+{
+ "subject": "Broad-based categorical eligibility (SNAP)",
+ "kind": "law",
+ "query": "what is broad-based categorical eligibility",
+ "title": "What is broad-based categorical eligibility? The SNAP rule USDA wants to cut",
+ "answer": "Broad-based categorical eligibility (BBCE) is a SNAP policy that lets states automatically qualify households for food stamps if they receive a TANF-funded service, such as child care help or job training, rather than cash. States use it to raise SNAP's income limit up to 200% of the poverty line and drop the asset test. USDA proposed limiting it on Nov. 10, 2026.",
+ "body": "Normally, SNAP has federal limits: gross income at or below 130% of the federal poverty guidelines and net income at or below 100% for most households, plus a limit on savings and other assets. \"Categorical eligibility\" means a household that already qualifies for certain other aid is treated as eligible without being tested again. BBCE stretches that idea: when a state gives households a low-cost TANF-funded \"non-assistance\" benefit, such as child care vouchers, job training or other services, those households become categorically eligible. According to USDA's proposed rule, 46 states used BBCE as of December 2025, 41 of them have no asset limit under it, and 37 use a gross income limit above the normal 130%.\n\nWhat the Nov. 10, 2026, proposal would change: only households receiving TANF \"assistance\" as defined in federal rules (generally cash-type, ongoing help) would be automatically eligible. Noncash or in-kind TANF services would no longer count. USDA estimates that in fiscal year 2029, the first year of full effect, about 3.2 million households, or 6.3 million people (17.6% of participants), would lose SNAP because they are over the federal income or asset limits, and federal benefit spending would fall by about $44.6 billion over fiscal 2027 to 2031. About 1.78 million children would lose automatic free school meal eligibility, though USDA says about 97% of them would still qualify through the regular income application. USDA tried a similar rule in 2019; it was never finalized and was withdrawn in 2021.\n\nWhat happens next: this is a proposed rule, not a final one, so nothing changes for SNAP households yet. The public has 30 days from Federal Register publication to comment, which puts the deadline around Dec. 10, 2026, at regulations.gov (docket FNA-2026-0661). USDA must review comments before issuing any final rule, and a final rule could face court challenges. If you get SNAP, your state agency will tell you if your eligibility changes.",
+ "in_the_news": "USDA proposed the \"Reforming Categorical Eligibility\" rule on Nov. 10, 2026, saying BBCE extends benefits to households without demonstrated need; Democrats called the plan cruel.",
+ "faq": [
+  {
+   "q": "Will I lose SNAP because of the new rule?",
+   "a": "Not yet. It is only a proposed rule. If it is finalized, households above SNAP's federal income or asset limits in states that use BBCE would be most affected."
+  },
+  {
+   "q": "How many people would lose SNAP under the categorical eligibility rule?",
+   "a": "USDA estimates 6.3 million people in 3.2 million households in fiscal year 2029."
+  },
+  {
+   "q": "How do I comment on the SNAP categorical eligibility rule?",
+   "a": "Through regulations.gov, docket FNA-2026-0661, within 30 days of Federal Register publication (about Dec. 10, 2026)."
+  },
+  {
+   "q": "What is the SNAP income limit without BBCE?",
+   "a": "Gross income at or below 130% of the federal poverty guidelines and net income at or below 100% for most households."
+  },
+  {
+   "q": "What does BBCE stand for?",
+   "a": "Broad-based categorical eligibility. It is sometimes written \"broad based categorical eligibility\" without the hyphen."
+  }
+ ],
+ "links": [
+  [
+   "Federal Register (public inspection)",
+   "Supplemental Nutrition Assistance Program: Reforming Categorical Eligibility",
+   "https://public-inspection.federalregister.gov/2026-22936.pdf"
+  ],
+  [
+   "Philadelphia Inquirer / AP",
+   "Trump administration proposal would restrict SNAP eligibility",
+   "https://www.inquirer.com/news/nation-world/trump-administration-proposal-snap-food-assistance-restrict-eligibility-20261110.html"
+  ],
+  [
+   "Newsweek",
+   "USDA seeks to tighten food stamps criteria",
+   "https://newsweek.com/usda-seeks-tighten-food-stamps-criteria-rule-change-12687440"
+  ],
+  [
+   "KPTV",
+   "Trump moves to cut SNAP benefits for 6.3 million people",
+   "https://www.kptv.com/2026/11/10/trump-moves-cut-snap-benefits-63-million-people/"
+  ]
+ ],
+ "topics": [
+  "money",
+  "law"
+ ],
+ "image_file": "San Antonio Food Bank providing information and the SNAP application to help the family with their needs.jpg",
+ "made": "2026-11-13T15:40:00+00:00",
+ "first": "2026-11-13T15:40:00+00:00",
+ "updated": "2026-11-13T15:40:00+00:00"
+}

@@ -1,0 +1,55 @@
+{
+ "subject": "Wi-Fi not working on a phone",
+ "kind": "term",
+ "query": "why is wifi not working on my phone",
+ "title": "Why is Wi-Fi not working on my phone? Fixes for iPhone and Android",
+ "answer": "Most often, Wi-Fi stops working on a phone because of a temporary glitch in the phone or router, Airplane Mode or a VPN getting in the way, a saved network with an old password, or an internet outage. Start by turning Wi-Fi off and on, restarting the phone and router, and testing another device. If only your phone fails, forget the network and rejoin it.",
+ "body": "First, find out where the problem is. If other phones and laptops on the same Wi-Fi also can't get online, the problem is the router or your internet provider, not your phone. If your phone connects fine to a different network, such as at work or a friend's house, your home network is the likely cause. If the phone shows it is connected but pages won't load (\"No Internet Connection\" on iPhone), the Wi-Fi link works but the internet behind it doesn't.\n\nWhat to try, in order:\n\n1. Toggle Wi-Fi off and on, and make sure Airplane Mode is off.\n2. Restart the phone.\n3. Restart the router and modem: unplug both, wait about 15 seconds, plug them back in and wait until the lights look normal.\n4. Forget the network and rejoin it with the current password. On Android (Pixel): Settings > Network & internet > Internet > Saved networks > tap the network > Forget. On iPhone, tap the info button next to the network and choose Forget This Network.\n5. Turn off or uninstall VPN and security apps, then test again. Apple lists these as a common cause.\n6. On Android, make sure the date and time are set automatically (Settings > System > Date & time), and try Safe mode: if Wi-Fi works there, a recently installed app is the problem.\n7. If the router has separate 2.4 GHz and 5 GHz networks, try the other one. 5 GHz is faster up close; 2.4 GHz reaches farther.\n8. On public Wi-Fi in hotels, airports or cafes, open a browser to bring up the sign-in page.\n9. As a last resort, reset network settings. iPhone: Settings > General > Transfer or Reset iPhone > Reset > Reset Network Settings. Pixel: Settings > System > Reset options > Reset Bluetooth & Wi-Fi. This erases all saved Wi-Fi passwords, so have them ready.\n\nWhen to call for help: if no device in the house can get online after a router restart, contact your internet provider about an outage. If your phone can't join any Wi-Fi network anywhere, or the Wi-Fi switch is grayed out even after a restart, contact the phone maker (Apple or your Android manufacturer) or your carrier, because the Wi-Fi hardware may need service. Also install any pending system update once you are back online.",
+ "faq": [
+  {
+   "q": "Why does my phone say connected but no internet?",
+   "a": "The phone reached the router, but the router isn't getting internet. Restart the router and modem, and if other devices also fail, contact your provider."
+  },
+  {
+   "q": "Why won't my iPhone connect to Wi-Fi but other devices will?",
+   "a": "Forget the network and rejoin it, turn off any VPN or security app, restart the iPhone, and as a last step reset network settings."
+  },
+  {
+   "q": "Why is my Wi-Fi grayed out on my iPhone?",
+   "a": "Apple says to restart the device. If it stays grayed out on every network, contact Apple."
+  },
+  {
+   "q": "Why does my phone keep disconnecting from Wi-Fi?",
+   "a": "Common causes are weak signal far from the router, a crowded 2.4 GHz band, or a router that needs a restart or firmware update. Moving closer or switching bands often helps."
+  },
+  {
+   "q": "Will resetting network settings delete anything?",
+   "a": "It removes saved Wi-Fi networks and passwords and VPN settings (on Pixel, Bluetooth pairings too), but not your photos, apps or messages."
+  }
+ ],
+ "links": [
+  [
+   "Apple Support",
+   "If your iPhone or iPad won't connect to a Wi-Fi network",
+   "https://support.apple.com/111786"
+  ],
+  [
+   "Google Pixel Help",
+   "Fix Wi-Fi connection problems",
+   "https://support.google.com/pixelphone/answer/6183600"
+  ],
+  [
+   "Android Help",
+   "Fix internet connection problems on Android devices",
+   "https://support.google.com/android/answer/2651367"
+  ]
+ ],
+ "topics": [
+  "tech",
+  "phones"
+ ],
+ "image_wiki": "Smartphone",
+ "made": "2026-11-13T15:40:00+00:00",
+ "first": "2026-11-13T15:40:00+00:00",
+ "updated": "2026-11-13T15:40:00+00:00"
+}

@@ -1,0 +1,55 @@
+{
+ "subject": "Refrigerator coolant (refrigerant) smell",
+ "kind": "term",
+ "query": "what does refrigerator coolant smell like",
+ "title": "What does refrigerator coolant smell like? Signs of a leak and what to do",
+ "answer": "Refrigerator coolant (refrigerant) has little smell, but a leak is often described as a faint sweet, chemical or chloroform-like odor; newer fridges using isobutane (R-600a) can smell faintly \"gassy.\" The surest signs are a lingering smell plus a fridge that stops cooling, a hissing sound or a compressor that runs constantly. Ventilate the room and call a technician.",
+ "body": "Most chemical smells from a fridge are not coolant. Check the ordinary causes first: spoiled or spilled food, mold, a dirty drip pan under the fridge (where defrost water collects), or the plastic smell of a brand-new fridge, which usually fades within days. Empty the fridge, wash the inside with a mild cleaner, clean the drip pan and air it out. If the smell is gone, it was not a leak.\n\nSigns that point to a real refrigerant leak, roughly in order of how telling they are:\n\n1. The fridge or freezer is no longer getting cold, or food spoils sooner than it should.\n2. The compressor runs all the time or louder than usual.\n3. A hissing or bubbling sound from the back of the fridge.\n4. A sweet or chemical smell that stays after a thorough cleaning.\n5. Oily residue near the coils or tubing at the back. Water puddles usually mean a clogged defrost drain instead.\n\nWhich coolant is in your fridge matters. Older refrigerators used Freon-type refrigerants, while many newer models use isobutane, labeled R-600a, a hydrocarbon that is flammable. The refrigerant type is printed on the rating label, usually inside the fresh-food compartment or on the back.\n\nWhat to do: open windows to ventilate the room, keep flames, candles and smoking away from the fridge, and do not try to find or fix the leak yourself or puncture any tubing. Call an appliance repair technician. Only certified technicians may open and recharge a sealed refrigeration system, and they confirm leaks with an electronic detector. On an older fridge, a sealed-system repair can cost more than the appliance is worth, so ask for a repair-versus-replace estimate. If anyone feels dizzy, nauseated or gets a headache, get everyone into fresh air.\n\nOne important exception: a rotten-egg smell in the kitchen is not refrigerant. It is the odor added to natural gas, often from a stove or water heater. Leave the house right away and call your gas utility or 911 from outside.",
+ "faq": [
+  {
+   "q": "What does Freon smell like in a fridge?",
+   "a": "People describe it as faintly sweet or chloroform-like. Many leaks have almost no smell, so cooling problems are a better clue."
+  },
+  {
+   "q": "What does R-600a refrigerant smell like?",
+   "a": "Isobutane can have a faint gassy smell. Because it is flammable, ventilate the room, keep flames away and call a technician."
+  },
+  {
+   "q": "Is a refrigerator coolant leak dangerous?",
+   "a": "It can be. Some refrigerants are flammable and breathing leaked refrigerant in a closed room is not safe, so air out the room and have a technician check it."
+  },
+  {
+   "q": "Why does my fridge smell like chemicals?",
+   "a": "Most often it is spoiled food, a dirty drip pan, mold or the plastic of a new fridge. If the smell stays after cleaning and the fridge stops cooling, suspect a leak."
+  },
+  {
+   "q": "Can I recharge my refrigerator myself?",
+   "a": "No. Opening and recharging a sealed refrigeration system is work for a certified technician."
+  }
+ ],
+ "links": [
+  [
+   "HomeServe",
+   "6 signs your fridge is leaking coolant",
+   "https://www.homeserve.com/blog/home-improvement/fridge-leaking-coolant"
+  ],
+  [
+   "Easybear Appliance Repair",
+   "Why does an R-600a refrigerator sometimes smell of gas?",
+   "https://easybear-appliancerepair.com/blog/r600a-refrigerant-smell"
+  ],
+  [
+   "Federal Register / EPA",
+   "Protection of stratospheric ozone: SNAP rule for refrigerants (2018)",
+   "https://www.govinfo.gov/content/pkg/FR-2018-08-08/html/2018-16773.htm"
+  ]
+ ],
+ "topics": [
+  "home",
+  "appliances"
+ ],
+ "image_wiki": "Refrigerator",
+ "made": "2026-11-13T15:40:00+00:00",
+ "first": "2026-11-13T15:40:00+00:00",
+ "updated": "2026-11-13T15:40:00+00:00"
+}

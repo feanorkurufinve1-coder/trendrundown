@@ -1,0 +1,51 @@
+{
+ "subject": "Safety (American football score)",
+ "kind": "term",
+ "query": "what is a safety in football",
+ "title": "What is a safety in football? 2 points, and the scoring team gets the ball",
+ "answer": "A safety is a score worth two points for the defense. It happens when the offense is tackled, or the ball becomes dead, in its own end zone, or when the offense commits certain fouls there. After a safety, the team that gave it up must free-kick to the other team from its own 20-yard line, so the scoring team also gets the ball.",
+ "body": "The most common safeties:\n\n1. The quarterback or a ball carrier is tackled in his own end zone.\n2. The offense commits a foul in its own end zone, such as holding or intentional grounding, that would put the ball behind its own goal line.\n3. A fumble or blocked punt goes out of bounds through the end zone, after the offense supplied the force that sent the ball there.\n\nThe key idea is \"impetus\": it is a safety only if the team defending that end zone put the ball there itself. If a defender intercepts a pass at his own 2-yard line and his momentum carries him into the end zone, where he is downed, that is not a safety: the opponent's pass sent the ball there, and the momentum rule protects him.\n\nWhat happens after: the team that allowed the safety kicks from its own 20, not the usual kickoff spot, and the kicker may use a tee. The other team returns it like a kickoff. That is why a safety can swing a game: the defense scores, and then its offense usually gets the ball with good field position.\n\nRare variation: a safety can also happen during a try after a touchdown, such as an extra-point or two-point attempt. That one-point safety is worth one point, not two. A team pinned at its own goal line may also take an intentional safety late in a game, giving up two points to get a free kick from the 20 instead of punting from deep in its own end zone.",
+ "in_the_news": "Searches for the rule spike whenever a safety decides or swings an NFL or college game.",
+ "faq": [
+  {
+   "q": "How many points is a safety in football?",
+   "a": "Two points for the defense. On a try after a touchdown, a safety is worth one point."
+  },
+  {
+   "q": "Who gets the ball after a safety?",
+   "a": "The team that scored the safety. The other team free-kicks to it from its own 20-yard line."
+  },
+  {
+   "q": "Is a sack in the end zone a safety?",
+   "a": "Yes, if the quarterback is tackled in his own end zone."
+  },
+  {
+   "q": "Is an interception in the end zone a safety?",
+   "a": "No, in most cases. If the defender's momentum carries him into his own end zone after an interception near the goal line, the momentum rule applies and it is not a safety, because the opponent's pass put the ball there."
+  },
+  {
+   "q": "What is a one-point safety?",
+   "a": "A rare safety during an extra-point or two-point try. It counts for one point."
+  }
+ ],
+ "links": [
+  [
+   "NFL Football Operations",
+   "Dynamic Kickoff Rule Explainer",
+   "https://operations.nfl.com/updates/football-ops/new-nfl-kickoff-rule/"
+  ],
+  [
+   "Football Nation USA",
+   "What is an NFL safety and how does play restart",
+   "https://www.footballnationusa.com/post/what-is-an-nfl-safety-and-how-does-play-restart"
+  ]
+ ],
+ "topics": [
+  "sports",
+  "nfl"
+ ],
+ "image_wiki": "Safety (gridiron football score)",
+ "made": "2026-11-13T15:40:00+00:00",
+ "first": "2026-11-13T15:40:00+00:00",
+ "updated": "2026-11-13T15:40:00+00:00"
+}

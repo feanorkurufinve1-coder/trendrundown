@@ -1,0 +1,52 @@
+{
+ "subject": "Phishing test (simulated phishing)",
+ "kind": "term",
+ "query": "what is a phishing test",
+ "title": "What is a phishing test? Why your employer sends fake scam emails",
+ "answer": "A phishing test is a fake scam email, text or message that an organization sends to its own employees on purpose, to see who clicks a link, opens an attachment or enters a password. It is a training exercise: people who click usually see a warning page or are assigned a short security lesson. Nobody's account is actually stolen.",
+ "body": "How it works: the company's security team, or a vendor it hires, writes messages that imitate real attacks, such as a password-expiry notice, a package delivery alert, an HR policy update or a too-good-to-be-true gift. The platform records who opens, clicks or reports each message. Results are used to target training and to measure whether staff get better at spotting scams over time. Many employers also give employees a \"report phishing\" button and track how many people use it.\n\nDo they work? The evidence is mixed. A University of California San Diego study of more than 19,500 UC San Diego Health employees over eight months, with 10 simulated campaigns, found that the short training shown after a click reduced the chance of falling for a later phish by only about 2%, and annual mandatory training showed no significant effect. More than half of employees clicked at least one phishing link by the eighth month. The most effective lure was a fake vacation-policy update (30.8% clicked). The researchers recommended leaning more on technical defenses such as two-factor authentication and password managers.\n\nWhen tests backfire: lures about pay, bonuses, time off or gifts can damage trust. In fall 2026, Madison Square Garden Sports sent employees a test email offering a free Knicks championship ring with two designs to choose from; those who clicked had to take cybersecurity training. After the story came out in October, the company called using the rings as a lure \"an unfortunate mistake\" and said the remaining staff would receive rings in four to six weeks. A Canadian health agency apologized in 2026 after a test offering paid leave. Security experts quoted by ITPro advise keeping tests realistic but avoiding sensitive topics, and consulting HR before launching them.\n\nIf you get a suspicious email at work, don't click; use your company's report button or forward it to IT. Failing a test usually just means extra training.",
+ "in_the_news": "MSG Sports' fake championship-ring email to Knicks employees put phishing tests in the news in October 2026.",
+ "faq": [
+  {
+   "q": "What happens if I fail a phishing test at work?",
+   "a": "Usually you see a warning page or are assigned a short training module. Company policies vary, so check yours."
+  },
+  {
+   "q": "How do I know if an email is a phishing test?",
+   "a": "You often can't, and that's the point. Treat it as real: don't click, and report it with your company's report button."
+  },
+  {
+   "q": "Do phishing tests actually work?",
+   "a": "A UC San Diego study of 19,500+ health system employees found post-click training cut later click rates by only about 2%."
+  },
+  {
+   "q": "What was the Knicks phishing test?",
+   "a": "MSG Sports sent employees a fake offer of a free Knicks championship ring in fall 2026 as an internal phishing test, then called it an unfortunate mistake."
+  }
+ ],
+ "links": [
+  [
+   "UC San Diego Today",
+   "Cybersecurity training programs don't prevent employees from falling for phishing scams",
+   "https://today.ucsd.edu/story/cybersecurity-training-programs-dont-prevent-employees-from-falling-for-phishing-scams"
+  ],
+  [
+   "NBC New York",
+   "Knicks employees offered championship rings in phishing test email",
+   "https://www.nbcnewyork.com/news/local/knicks-employees-championship-rings-phishing-test-email/6562553/"
+  ],
+  [
+   "ITPro",
+   "A Canadian health board outraged staff with phishing tests offering paid leave",
+   "https://www.itpro.com/security/they-risk-damaging-confidence-a-canadian-health-board-outraged-staff-with-phishing-tests-offering-paid-leave-experts-say-shows-why-you-need-to-be-careful-with-cyber-awareness-campaigns"
+  ]
+ ],
+ "topics": [
+  "tech",
+  "security"
+ ],
+ "image_wiki": "Phishing",
+ "made": "2026-11-13T15:40:00+00:00",
+ "first": "2026-11-13T15:40:00+00:00",
+ "updated": "2026-11-13T15:40:00+00:00"
+}

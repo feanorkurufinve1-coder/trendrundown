@@ -1,0 +1,55 @@
+{
+ "subject": "Child Tax Credit (tax refund per child)",
+ "kind": "law",
+ "query": "how much tax refund per child 2026",
+ "title": "How much is the tax refund per child in 2026? Up to $2,200 credit",
+ "answer": "For returns filed in 2026 (tax year 2025), the Child Tax Credit is worth up to $2,200 per qualifying child under 17. It first lowers the tax you owe; if the credit is larger than your tax, up to $1,700 per child can come back as a refund through the Additional Child Tax Credit. The same $2,200 and $1,700 apply to tax year 2026.",
+ "body": "So there is no flat \"refund per child.\" How much you actually get back depends on your tax bill and your earnings. Example: if your federal income tax before credits is $1,000 and you have one qualifying child, $1,000 of the credit wipes out your tax, and up to $1,200 of the rest could be refundable, but no more than the $1,700 cap. The refundable part also depends on earned income: you need at least $2,500 of earned income, and the refundable amount builds up at 15% of earnings above $2,500.\n\nWho qualifies: the child must be under 17 at the end of the year; be your son, daughter, stepchild, eligible foster child, sibling, step-sibling, half-sibling, or a descendant of one of them; live with you more than half the year; not provide more than half of their own support; be claimed as your dependent; and be a U.S. citizen, national or resident alien. You, your spouse if filing jointly, and the child need Social Security numbers valid for work, issued by the return's due date.\n\nIncome limits: the full credit is available with modified adjusted gross income up to $200,000, or $400,000 for married couples filing jointly. Above that, it shrinks by $50 for each $1,000 of income over the limit. For dependents who don't qualify, such as a 17-year-old or an older relative you support, the Credit for Other Dependents is worth up to $500 each, and it is not refundable.\n\nTiming: by law, the IRS cannot send any part of a refund that includes the Additional Child Tax Credit or the Earned Income Tax Credit before mid-February, even if you file in January. Check your status with the IRS \"Where's My Refund?\" tool.",
+ "faq": [
+  {
+   "q": "How much is the child tax credit for 2025 taxes?",
+   "a": "Up to $2,200 per qualifying child, with up to $1,700 refundable."
+  },
+  {
+   "q": "How much is the child tax credit in 2026?",
+   "a": "For tax year 2026, it remains up to $2,200 per child, with up to $1,700 refundable."
+  },
+  {
+   "q": "Do I get $2,200 per child back as a refund?",
+   "a": "Not necessarily. The credit first reduces your tax; only up to $1,700 per child can be paid out as a refund beyond what you owe."
+  },
+  {
+   "q": "Can I get the child tax credit with no income?",
+   "a": "No refundable portion is available unless you have at least $2,500 of earned income."
+  },
+  {
+   "q": "When will I get my refund if I claim the child tax credit?",
+   "a": "The IRS can't issue refunds that include the Additional Child Tax Credit before mid-February."
+  }
+ ],
+ "links": [
+  [
+   "IRS",
+   "Child Tax Credit",
+   "https://www.irs.gov/credits-deductions/individuals/child-tax-credit"
+  ],
+  [
+   "IRS (Tax Tip 2025-17)",
+   "Tax benefits for parents and families",
+   "https://content.govdelivery.com/accounts/USIRS/bulletins/40c7131"
+  ],
+  [
+   "Kiplinger",
+   "Child Tax Credit 2025 and 2026",
+   "https://www.kiplinger.com/taxes/child-tax-credit"
+  ]
+ ],
+ "topics": [
+  "money",
+  "taxes"
+ ],
+ "image_wiki": "Form 1040",
+ "made": "2026-11-13T15:40:00+00:00",
+ "first": "2026-11-13T15:40:00+00:00",
+ "updated": "2026-11-13T15:40:00+00:00"
+}
