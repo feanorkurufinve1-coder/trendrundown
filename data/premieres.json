@@ -1,51 +1,7 @@
 {
- "made": "2026-11-12T16:17:29+00:00",
+ "made": "2026-11-13T04:26:13+00:00",
  "about": "Премьеры сериалов и новых сезонов в США на 14 дней вперёд (TVmaze). new_series = совсем новый сериал. Сырьё для прогнозов «is X a true story», «X cast», «X season N release time».",
  "premieres": [
-  {
-   "date": "2026-11-12",
-   "show": "Crown of Deceit: Inside the Miss Universe Scandal",
-   "season": 1,
-   "new_series": true,
-   "type": "Documentary",
-   "genres": [
-    "Drama"
-   ],
-   "network": "TLC",
-   "premiered": "2026-11-12",
-   "summary": "Crown of Deceit: Inside the Miss Universe Scandal examines allegations of misconduct, abuse of power, favoritism and competition rigging that have shaken the pageant world. Former contestants and insiders, including Taylor Hale (Miss Michigan 2021/Miss USA contestant) Noelia Voigt (Miss USA 2023) and Brittany Mason (Miss Indiana 2008/Miss USA contestant) share their experiences as concerns around ",
-   "url": "https://www.tvmaze.com/shows/95133/crown-of-deceit-inside-the-miss-universe-scandal",
-   "official": null
-  },
-  {
-   "date": "2026-11-12",
-   "show": "The Good Daughter",
-   "season": 1,
-   "new_series": true,
-   "type": "Scripted",
-   "genres": [
-    "Drama",
-    "Crime"
-   ],
-   "network": "Peacock",
-   "premiered": "2026-11-12",
-   "summary": "The Good Daughter is a suspenseful crime drama where sisters Charlotte and Samantha Quinn have spent the last twenty-eight years trying to piece together the lives that were fractured by a single night of violence. When another attack splinters the small town of Pikeville, Charlotte is the first witness on the scene. Now a lawyer like her father, she's forced to confront her own demons as the case",
-   "url": "https://www.tvmaze.com/shows/75488/the-good-daughter",
-   "official": null
-  },
-  {
-   "date": "2026-11-12",
-   "show": "Southern Charm",
-   "season": 12,
-   "new_series": false,
-   "type": "Reality",
-   "genres": [],
-   "network": "Bravo",
-   "premiered": "2014-03-02",
-   "summary": "Southern Charm goes behind the walls of Charleston, South Carolina's most aristocratic families to reveal a world of exclusivity, money and scandal that goes back generations. The fast-paced, drama-filled docu-series follows six Charleston singles — Craig Conover, Cameran Eubanks, Jenna King, Thomas Ravenel, Shepard \"Shep\" Rose, and Whitney Sudler Smith — struggling with the constraints of this ti",
-   "url": "https://www.tvmaze.com/shows/3248/southern-charm",
-   "official": "http://www.bravotv.com/southern-charm"
-  },
   {
    "date": "2026-11-13",
    "show": "12 12 12",
@@ -564,6 +520,70 @@
    "summary": "The Hunting Wives tells the story of Sophie O'Neil and her family's move from the East Coast to deep-red East Texas, where she succumbs to socialite Margo Banks‘ irresistible charms – and finds her life consumed by obsession, seduction, and murder.",
    "url": "https://www.tvmaze.com/shows/72427/the-hunting-wives",
    "official": "https://www.netflix.com/title/82013700"
+  },
+  {
+   "date": "2026-11-27",
+   "show": "Alan Carr's Great Big Bucket List",
+   "season": 1,
+   "new_series": true,
+   "type": "Reality",
+   "genres": [
+    "Comedy"
+   ],
+   "network": "Prime Video",
+   "premiered": "2026-11-27",
+   "summary": "Alan Carr's Great Big Bucket List pairs Alan Carr with his comic friends, including Jack Dee, Tom Allen and Joanne McNally and more, sending them on a mission to road-test the world's most popular bucket list activities. Across the series, our comics try as many experiences as possible - from the classic to the absurd - and debate whether each one deserves to stay on the Bucket List or never be sp",
+   "url": "https://www.tvmaze.com/shows/95442/alan-carrs-great-big-bucket-list",
+   "official": null
+  },
+  {
+   "date": "2026-11-27",
+   "show": "SpongeBob SquarePants",
+   "season": 18,
+   "new_series": false,
+   "type": "Animation",
+   "genres": [
+    "Comedy",
+    "Adventure",
+    "Fantasy"
+   ],
+   "network": "Nickelodeon",
+   "premiered": "1999-05-01",
+   "summary": "Come follow the adventures of the world's most lovable sponge and his starfish sidekick! Though they have the best intentions, SpongeBob and Patrick are always causing trouble… and plenty of laughs!When he's not at the Krusty Krab grilling up some epic Krabby Patties, SpongeBob can be found jellyfishing with Patrick, blowing bubbles, or annoying his favorite neighbor, Squidward!Bikini Bottom is ho",
+   "url": "https://www.tvmaze.com/shows/713/spongebob-squarepants",
+   "official": "http://www.nick.com/spongebob-squarepants/"
+  },
+  {
+   "date": "2026-11-27",
+   "show": "Soul Train Music Awards",
+   "season": 2026,
+   "new_series": false,
+   "type": "Award Show",
+   "genres": [
+    "Music"
+   ],
+   "network": "BET",
+   "premiered": "1987-03-23",
+   "summary": "The Soul Train Music Awards is an annual award show which previously aired in national television syndication, and honors the best in Black music and entertainment. It is produced by the makers of Soul Train, the program from which it takes its name, and features musical performances by various R&amp;B and Soul recording artists interspersed throughout the ceremonies. The special traditionally use",
+   "url": "https://www.tvmaze.com/shows/9207/soul-train-music-awards",
+   "official": "http://bet.com/shows/soul-train-awards.html"
+  },
+  {
+   "date": "2026-11-27",
+   "show": "Batwheels",
+   "season": 4,
+   "new_series": false,
+   "type": "Animation",
+   "genres": [
+    "Action",
+    "Adventure",
+    "Science-Fiction"
+   ],
+   "network": "HBO Max",
+   "premiered": "2022-09-17",
+   "summary": "Bam, Redbird, Bibi, Batwing, and Buff are thrust into hilarious hijinks and draw-dropping action as they learn important lessons about teamwork, friendship, and so much more while helping Batman, Robin, and Batgirl defend Gotham.",
+   "url": "https://www.tvmaze.com/shows/51042/batwheels",
+   "official": "https://play.max.com/show/452d85bb-bb46-4f16-bc58-26e5391d200d"
   }
  ]
 }
