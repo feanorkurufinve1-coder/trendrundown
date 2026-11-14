@@ -26,11 +26,28 @@
   }
  ],
  "links": [
-  ["CBS News", "Travelers stranded and thousands of flights canceled after FAA ground stop. Here's what we know", "https://www.cbsnews.com/news/faa-ground-stop-canceled-flights-travelers-what-we-know/"],
-  ["Airways Magazine", "FAA Orders Nationwide Departure Halt; Microsoft Outage Hits Airline Email", "https://www.airwaysmag.com/new-post/faa-ground-stop-microsoft-outage-november-13"],
-  ["LiveNOW from FOX", "Nationwide ground stop lifted, but delays will linger", "https://www.livenowfox.com/news/faa-issues-nationwide-ground-stop-due-to-extraordinary-circumstances"],
-  ["Northeastern Global News", "Are the FAA Ground Stop and Microsoft Outage Related?", "https://news.northeastern.edu/2026/11/13/faa-ground-stop-telecommunications-issue/"]
+  [
+   "CBS News",
+   "Travelers stranded and thousands of flights canceled after FAA ground stop. Here's what we know",
+   "https://www.cbsnews.com/news/faa-ground-stop-canceled-flights-travelers-what-we-know/"
+  ],
+  [
+   "Airways Magazine",
+   "FAA Orders Nationwide Departure Halt; Microsoft Outage Hits Airline Email",
+   "https://www.airwaysmag.com/new-post/faa-ground-stop-microsoft-outage-november-13"
+  ],
+  [
+   "LiveNOW from FOX",
+   "Nationwide ground stop lifted, but delays will linger",
+   "https://www.livenowfox.com/news/faa-issues-nationwide-ground-stop-due-to-extraordinary-circumstances"
+  ],
+  [
+   "Northeastern Global News",
+   "Are the FAA Ground Stop and Microsoft Outage Related?",
+   "https://news.northeastern.edu/2026/11/13/faa-ground-stop-telecommunications-issue/"
+  ]
  ],
  "made": "2026-11-14T16:55:00+00:00",
- "first": "2026-11-14T16:55:00+00:00"
+ "first": "2026-11-14T16:55:00+00:00",
+ "image_local": "own-flights-cancelled.jpg"
 }
