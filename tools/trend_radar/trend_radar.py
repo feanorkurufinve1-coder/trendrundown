@@ -28,7 +28,7 @@ import urllib.error, urllib.parse, urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 
-VERSION = "1.0"
+VERSION = "1.1"
 HERE = os.path.dirname(os.path.abspath(__file__))
 STATE = os.path.join(HERE, "radar_state.json")
 LOG = os.path.join(HERE, "radar_log.txt")
@@ -111,6 +111,9 @@ BLOCK = re.compile(r"(?i)\b(sex|sexual|sexy|porn|nsfw|nude|naked|onlyfans|fetish
                    r"torah|prayer|pray|amen|hallelujah|pastor|pope|catholic|satan|demon|spiritually|spiritual|angel number|"
                    r"weed|cocaine|meth|fentanyl|heroin|xanax|percs?|lean drink|cartel|glock|suicide|kys|self harm|rape|"
                    r"nazi|hitler|kkk)\b")
+STOP_TERMS = set("tiktok trend trends meme memes slang youtube instagram snapchat facebook twitter discord reddit roblox fortnite "
+                 "minecraft google iphone android emoji text texting chat video videos song songs dance challenge viral "
+                 "ukraine russia israel gaza china america usa trump biden".split())
 GENERIC = set("it this that he she they you i we a an the my your his her their its mean means meaning word slang "
               "someone something everyone people text mean in when if and or to of on".split())
 BIG_EXPLAINERS = ("knowyourmeme.", "dictionary.com", "urbandictionary.", "merriam-webster.", "wikipedia.org", "today.com",
@@ -341,8 +344,8 @@ def parse_title(title):
     return res
 
 
-EXPLAIN_TITLE = re.compile(r"(?i)\b(what does|what'?s (up|the deal|going on) with|what is (the|this|that)|why (is|are) (everyone|everybody|people)|"
-                           r"explain|meaning|mean\?|trend|meme|slang|reference|out of the loop)\b")
+EXPLAIN_TITLE = re.compile(r"(?i)(what does [\"“'][^\"”']{2,40}[\"”'] mean|what'?s (up|the deal) with|why (is|are) (everyone|everybody|people|kids|my students)|"
+                           r"\b(trend|meme|slang|saying|catchphrase)\b.*\?|out of the loop)")
 
 
 # =====================================================================================================
@@ -789,7 +792,8 @@ def score(c, sweeps, baseline=""):
             s += 1.5
             why.append("сленг снова пишут: свежее определение %s" % ud["newest"])
         else:
-            s -= 1
+            old_years = days_ago(ud["oldest"]) / 365.0
+            s -= 4 if old_years >= 3 else 2
             why.append("сленг старый (с %s)" % ud["oldest"])
     if c.get("ud_wotd"):
         s += 1
@@ -806,7 +810,7 @@ def score(c, sweeps, baseline=""):
         s += 2
         why.append("есть в Know Your Meme")
     if c.get("wiki"):
-        s -= 1
+        s -= 2
         why.append("есть статья Википедии: " + c["wiki"])
     big = c.get("big")
     if big is not None:
@@ -814,6 +818,10 @@ def score(c, sweeps, baseline=""):
         why.append("сильных объяснений в поиске: %d" % len(big) if big else "сильных объяснений в поиске нет")
         if not big:
             s += 2
+    if c["key"] in STOP_TERMS:
+        s -= 10
+    if len(c["key"]) <= 3 and c["layers"] <= {"google", "youtube"} and not c["fresh"]:
+        s -= 3                                           # короткие сокращения из подсказок без других подтверждений — обычно старый текстовый сленг
     if layers == 1 and not c["fresh"] and len(marks) < 2 and c["layers"] <= {"google", "youtube"}:
         s -= 3                                           # один слабый сигнал — почти наверняка шум или старое
     c["score"] = round(s, 1)
@@ -974,6 +982,39 @@ def upload(pack):
     return False
 
 
+RAW_URL = "https://raw.githubusercontent.com/%s/main/tools/trend_radar/trend_radar.py" % REPO
+
+
+def self_update():
+    """Если на сайте лежит более новая версия программы — скачивает её и перезапускается. Ничего настраивать не нужно."""
+    try:
+        code = fetch(RAW_URL + "?t=%d" % int(time.time()), tries=2, accept="text/plain")
+    except Exception as e:
+        log("Проверка обновления: не получилось (%s) — работаю на текущей версии." % str(e)[:80])
+        return
+    m = re.search(r'^VERSION = "([\d.]+)"', code, re.M)
+    if not m or "def main()" not in code:
+        return
+    new = tuple(int(x) for x in m.group(1).split("."))
+    cur = tuple(int(x) for x in VERSION.split("."))
+    if new <= cur:
+        return
+    try:
+        compile(code, "trend_radar.py", "exec")
+    except SyntaxError:
+        log("Новая версия %s повреждена — пропускаю." % m.group(1))
+        return
+    me = os.path.abspath(__file__)
+    try:
+        os.replace(me, me + ".old")
+    except Exception:
+        pass
+    with open(me, "w", encoding="utf-8") as f:
+        f.write(code)
+    log("Обновился до версии %s, перезапускаюсь..." % m.group(1))
+    os.execv(sys.executable, [sys.executable, me] + sys.argv[1:])
+
+
 def cycle(st):
     T0[0] = time.time()
     started = now_iso()
@@ -1023,6 +1064,8 @@ def main():
     st = load_state()
     while True:
         start = time.time()
+        if not QUICK:
+            self_update()
         try:
             cycle(st)
         except KeyboardInterrupt:
