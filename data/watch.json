@@ -1,20 +1,44 @@
 {
- "made": "2026-11-14T13:46:42+00:00",
+ "made": "2026-11-14T14:01:45+00:00",
  "days": [
-  "2026-11-10",
   "2026-11-11",
-  "2026-11-12"
+  "2026-11-12",
+  "2026-11-13"
  ],
  "pages": [
+  {
+   "page": "/t/alexandra-eala",
+   "clicks_3d": 0,
+   "impr_3d": 7,
+   "pos": 4.4,
+   "by_day": {
+    "2026-11-11": 0,
+    "2026-11-12": 0,
+    "2026-11-13": 0
+   },
+   "manual": false
+  },
+  {
+   "page": "/x/collin-sexton",
+   "clicks_3d": 0,
+   "impr_3d": 7,
+   "pos": 4.0,
+   "by_day": {
+    "2026-11-11": 0,
+    "2026-11-12": 0,
+    "2026-11-13": 0
+   },
+   "manual": false
+  },
   {
    "page": "/x/jasveen-sangha",
    "clicks_3d": 0,
    "impr_3d": 7,
-   "pos": 3.9,
+   "pos": 2.9,
    "by_day": {
-    "2026-11-10": 0,
     "2026-11-11": 0,
-    "2026-11-12": 0
+    "2026-11-12": 0,
+    "2026-11-13": 0
    },
    "manual": false
   },
@@ -22,33 +46,11 @@
    "page": "/x/rot-weiss-essen",
    "clicks_3d": 0,
    "impr_3d": 7,
-   "pos": 5.8,
-   "by_day": {
-    "2026-11-10": 0,
-    "2026-11-11": 0,
-    "2026-11-12": 0
-   },
-   "manual": false
-  },
-  {
-   "page": "/t/alexandra-eala",
-   "clicks_3d": 0,
-   "impr_3d": 6,
-   "pos": 5.7,
+   "pos": 3.8,
    "by_day": {
     "2026-11-11": 0,
-    "2026-11-12": 0
-   },
-   "manual": false
-  },
-  {
-   "page": "/x/collin-sexton",
-   "clicks_3d": 0,
-   "impr_3d": 6,
-   "pos": 5.0,
-   "by_day": {
-    "2026-11-11": 0,
-    "2026-11-12": 0
+    "2026-11-12": 0,
+    "2026-11-13": 0
    },
    "manual": false
   },
@@ -64,42 +66,22 @@
    "manual": true
   },
   {
-   "page": "/x/how-mlb-mvp-is-voted",
-   "clicks_3d": 0,
-   "impr_3d": 3,
-   "pos": 67.0,
-   "by_day": {
-    "2026-11-10": 0
-   },
-   "manual": true
-  },
-  {
-   "page": "/t/joshua-wong",
+   "page": "/w/the-chosen-season-6-cast",
    "clicks_3d": 0,
    "impr_3d": 1,
-   "pos": 7.0,
+   "pos": 11.0,
    "by_day": {
-    "2026-11-10": 0
+    "2026-11-12": 0
    },
    "manual": false
   },
   {
-   "page": "/t/al-horford",
+   "page": "/x/consent-decree",
    "clicks_3d": 0,
    "impr_3d": 1,
-   "pos": 9.0,
+   "pos": 10.0,
    "by_day": {
-    "2026-11-10": 0
-   },
-   "manual": false
-  },
-  {
-   "page": "/t/eberechi-eze",
-   "clicks_3d": 0,
-   "impr_3d": 1,
-   "pos": 5.0,
-   "by_day": {
-    "2026-11-10": 0
+    "2026-11-12": 0
    },
    "manual": false
   }
