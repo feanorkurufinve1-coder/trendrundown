@@ -1,6 +1,6 @@
 {
  "v": 2,
- "checked": "2026-11-14T10:31:43+00:00",
+ "checked": "2026-11-14T16:31:44+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -218,7 +218,7 @@
   {
    "url": "/x/dan-hicks-death",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -284,7 +284,7 @@
   {
    "url": "/x/el-nino-pacific-northwest",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -383,7 +383,7 @@
   {
    "url": "/x/hegseth-tomb-guard-medal",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -491,6 +491,17 @@
    "userCanonical": null
   },
   {
+   "url": "/x/how-to-vote-on-the-circle-hulu",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/i-play-rocky-true-story",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
@@ -504,7 +515,7 @@
   {
    "url": "/x/iran-bahrain-radar-strike",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -999,7 +1010,7 @@
   {
    "url": "/x/stacy-keach-death",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1151,6 +1162,17 @@
    "userCanonical": null
   },
   {
+   "url": "/x/what-is-a-ground-stop",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/what-is-a-hip-pointer",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
@@ -1230,7 +1252,7 @@
   {
    "url": "/x/what-is-a-sudden-stratospheric-warming",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1362,7 +1384,7 @@
   {
    "url": "/x/who-won-mvp-2026",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1382,9 +1404,31 @@
    "userCanonical": null
   },
   {
+   "url": "/x/why-does-my-phone-screen-go-black-during-calls",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/why-does-my-phone-screen-keep-going-black",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
+   "url": "/x/why-does-my-washing-machine-smell-like-rotten-eggs",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1439,11 +1483,22 @@
   {
    "url": "/x/why-is-wifi-not-working-on-my-phone",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
    "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
+   "url": "/x/wta-tennis",
+   "verdict": "NEUTRAL",
+   "coverageState": "Not found (404)",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "NOT_FOUND",
+   "lastCrawlTime": "2026-11-06T06:54:44Z",
    "googleCanonical": null,
    "userCanonical": null
   }
@@ -1456,7 +1511,8 @@
  "summary": {
   "Crawled - currently not indexed": 54,
   "Submitted and indexed": 3,
-  "URL is unknown to Google": 53,
-  "Discovered - currently not indexed": 19
+  "URL is unknown to Google": 57,
+  "Discovered - currently not indexed": 19,
+  "Not found (404)": 1
  }
 }
