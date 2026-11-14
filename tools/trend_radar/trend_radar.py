@@ -718,6 +718,8 @@ def build_candidates(st, extra):
     # --- Know Your Meme ---
     for url, title in extra.get("kym", {}).items():
         k = term_key(title)
+        if k in ("memes", "meme", "all", "images", "videos", "news", "editorials", "trending", "popular", "newest", "episodes"):
+            continue
         if k in C:
             C[k]["layers"].add("kym")
             C[k]["kym"] = url
@@ -812,7 +814,7 @@ def score(c, sweeps, baseline=""):
         why.append("сильных объяснений в поиске: %d" % len(big) if big else "сильных объяснений в поиске нет")
         if not big:
             s += 2
-    if layers == 1 and not c["fresh"] and rd <= 1 and len(marks) < 2 and not ({"kym", "urban"} & c["layers"]):
+    if layers == 1 and not c["fresh"] and len(marks) < 2 and c["layers"] <= {"google", "youtube"}:
         s -= 3                                           # один слабый сигнал — почти наверняка шум или старое
     c["score"] = round(s, 1)
     c["why"] = why
