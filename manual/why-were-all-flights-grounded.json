@@ -1,0 +1,36 @@
+{
+ "news": true,
+ "subject": "FAA nationwide ground stop",
+ "kind": "event",
+ "query": "why were all flights grounded",
+ "title": "Why were all flights grounded? Old FAA telecom gear overloaded",
+ "answer": "The FAA halted departures at every U.S. airport from 3:36 p.m. to about 8:20 p.m. ET on Friday, Nov. 13, 2026, after air traffic control communications became unstable. Transportation Secretary Sean Duffy said aging routers and switches were overloaded with data and began passing inconsistent information to controllers.",
+ "in_the_news": "It was the longest nationwide ground stop in 25 years, and the fallout carried into Saturday, with thousands more flights canceled as airlines moved planes and crews back into position.",
+ "body": "The trouble hit the FAA's network of en route centers, which handle planes at cruising altitude, as well as approach control facilities near airports. Duffy said not all radar and radio links were lost, but data became unreliable, so the FAA stopped new departures as a precaution. About 3,500 flights were in the air when the order came, and all landed safely, CBS News reported. FlightAware counted roughly 9,000 cancellations on Friday, and hundreds of flights that had already taken off turned back or diverted.\n\nOfficials said early findings point to old telecom hardware, not newer equipment. Duffy said the legacy routers failed while recently installed gear did not, and the administration said newer technology appeared to have overwhelmed the older system. Investigators are still working out exactly what set off the overload. Homeland Security Secretary Markwayne Mullin said there was no indication of a cyberattack, though officials were not ruling anything out while the review continued.\n\nThe outage lands in the middle of a fight over money. Congress has already approved $12.5 billion toward replacing the FAA's aging air traffic control system, and Duffy called that a down payment. The administration is now pressing lawmakers for tens of billions more, and Duffy warned against a \"patchwork fix.\" A global Microsoft email outage that began a day earlier was a separate problem, Mullin said.\n\nOn Saturday, Duffy said operations had fully resumed, but FlightAware still showed thousands of U.S. cancellations as carriers rebuilt schedules. Duffy said he expects the system to be ready for the Thanksgiving travel rush.",
+ "faq": [
+  {
+   "q": "Was the FAA ground stop a cyberattack?",
+   "a": "Officials say there is no sign of one. Homeland Security Secretary Markwayne Mullin said the failure appeared to be mechanical, and the preliminary explanation points to overloaded legacy routers. The investigation is still open."
+  },
+  {
+   "q": "How long did the nationwide ground stop last?",
+   "a": "About four hours and 45 minutes. It began at 3:36 p.m. ET on Nov. 13, 2026, and was lifted around 8:20 p.m. ET. It was only the third nationwide ground stop since 2001, after the Sept. 11 attacks and a NOTAM pilot-alert system failure in January 2023."
+  },
+  {
+   "q": "Was the ground stop caused by the Microsoft outage?",
+   "a": "No. Officials said the two were separate. Microsoft's outage, which began Nov. 12, mainly hit Outlook and other Exchange Online email services."
+  },
+  {
+   "q": "Can I get a refund for a flight canceled by the ground stop?",
+   "a": "Yes, if the airline cancels your flight and you choose not to travel, you are entitled to a refund under Department of Transportation rules. American, United and other carriers also posted travel waivers that let passengers change plans without a fee. Compensation for hotels and meals is harder to get, because a government system failure is not counted as within an airline's control."
+  }
+ ],
+ "links": [
+  ["CBS News", "Travelers stranded and thousands of flights canceled after FAA ground stop. Here's what we know", "https://www.cbsnews.com/news/faa-ground-stop-canceled-flights-travelers-what-we-know/"],
+  ["Airways Magazine", "FAA Orders Nationwide Departure Halt; Microsoft Outage Hits Airline Email", "https://www.airwaysmag.com/new-post/faa-ground-stop-microsoft-outage-november-13"],
+  ["LiveNOW from FOX", "Nationwide ground stop lifted, but delays will linger", "https://www.livenowfox.com/news/faa-issues-nationwide-ground-stop-due-to-extraordinary-circumstances"],
+  ["Northeastern Global News", "Are the FAA Ground Stop and Microsoft Outage Related?", "https://news.northeastern.edu/2026/11/13/faa-ground-stop-telecommunications-issue/"]
+ ],
+ "made": "2026-11-14T16:55:00+00:00",
+ "first": "2026-11-14T16:55:00+00:00"
+}

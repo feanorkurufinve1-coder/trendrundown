@@ -1,0 +1,37 @@
+{
+ "news": true,
+ "subject": "American Heritage riverboat collision",
+ "kind": "event",
+ "query": "new orleans cruise ship collision",
+ "title": "New Orleans cruise ship collision: Tanker capsizes docked riverboat",
+ "answer": "Around 12:30 p.m. on Friday, Nov. 13, 2026, the tanker Atlantic Asphalt struck American Cruise Lines' riverboat American Heritage while it was docked on the Mississippi River at the Port of New Orleans. The paddlewheeler rolled onto its side. Everyone aboard was accounted for, and 32 people from the riverboat were taken to hospitals, none with critical injuries.",
+ "in_the_news": "Officials called the rescue a near miracle, and the National Transportation Safety Board sent a team to find out why a large tanker lost control on one of the country's busiest commercial waterways.",
+ "body": "The American Heritage had tied up about two hours earlier so passengers could leave at the end of their cruise, port officials said. Video showed the much larger tanker hitting the riverboat. Passengers were already disembarking when the vessel began taking on water and capsized. Some people ended up in the river, while others clung to the part of the boat still above water. Harbor police, firefighters who lowered ladders from the dock, and nearby boats pulled people to safety. Mayor Helena Moreno called it a \"miracle on the Mississippi\" and said no one was unaccounted for.\n\nEstimates of how many people were aboard rose during the day, from about 129 passengers plus crew in early port reports to roughly 180 to 200 people in later counts by officials. No children were aboard, and no one on the tanker was reported hurt. Two Harbor Police officers were also treated at a hospital.\n\nCoast Guard Capt. Melanie Burnham said the tanker appears to have lost steering, but the reason is not yet known. The Coast Guard closed a stretch of the river near the site to vessel traffic while crews assessed the wreck, and NTSB investigators were due to arrive Saturday morning. American Cruise Lines, the largest U.S. river cruise operator, said it was housing passengers in hotels and working with authorities.\n\nThe American Heritage is a 300-foot paddlewheel riverboat built in 2015 as the Queen of the Mississippi and renamed in 2022. It carries about 150 passengers on cruises along the Mississippi River system.",
+ "faq": [
+  {
+   "q": "Did anyone die in the New Orleans cruise ship collision?",
+   "a": "No deaths were reported. Officials said everyone aboard was accounted for, and 32 people from the riverboat were hospitalized with injuries that were not critical."
+  },
+  {
+   "q": "What caused the tanker to hit the riverboat?",
+   "a": "The cause is under investigation. The Coast Guard said the tanker Atlantic Asphalt appears to have lost steering. The NTSB is leading the inquiry."
+  },
+  {
+   "q": "Is the Mississippi River closed in New Orleans?",
+   "a": "The Coast Guard closed a short stretch of the river around the crash site, near mile markers 93 to 96, to vessel traffic and said it would decide when to reopen it after assessing the scene."
+  },
+  {
+   "q": "Which cruise line operates the American Heritage?",
+   "a": "American Cruise Lines, which runs river and small-ship cruises in the United States. The company said guests and crew were evacuated and that it is coordinating with the Coast Guard and local authorities."
+  }
+ ],
+ "links": [
+  ["ABC News", "'Miracle': All rescued from capsized New Orleans riverboat in tanker collision", "https://abcnews.com/US/vessel-collision-port-new-orleans-emergency-crews-responding/story?id=138119847"],
+  ["Fox News", "New Orleans tanker collision leaves 32 hospitalized, all accounted for", "https://www.foxnews.com/us/tanker-slams-docked-new-orleans-river-cruiser-carrying-129-passengers-sparking-rescue"],
+  ["WDSU", "What we know about the American Heritage cruise ship struck by tanker in New Orleans", "https://www.wdsu.com/article/new-orleans-mississippi-river-cruise-ship-collision-what-we-know/74426415"],
+  ["CBS News", "River cruise ship, tanker crash in New Orleans on Mississippi River; passengers rescued", "https://www.cbsnews.com/news/tanker-cruise-collision-mississippi-river-new-orleans/"]
+ ],
+ "image_wiki": "Queen of the Mississippi (2015 ship)",
+ "made": "2026-11-14T16:55:00+00:00",
+ "first": "2026-11-14T16:55:00+00:00"
+}
