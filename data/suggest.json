@@ -7261,11 +7261,16 @@
   ]
  },
  "first-black-senator-from-mississippi": {
-  "time": "2026-11-13T15:47:47+00:00",
+  "time": "2026-11-14T16:02:07+00:00",
   "query": "who was the first black senator from mississippi",
   "in_suggest": false,
   "suggest": {
-   "hiram revels and blanche k. bruce": [],
+   "hiram revels and blanche k. bruce": [
+    "hiram revels and blanche k. bruce",
+    "hiram revels and blanche k bruce were the first two blacks to",
+    "hiram revels and blanche k. bruce were the first us senators from what state",
+    "why are hiram revels and blanche k bruce considered noteworthy figures of the reconstruction era"
+   ],
    "who is hiram revels and blanche k. bruce": [
     "who were hiram revels and blanche k bruce",
     "hiram revels and blanche k bruce were the first two blacks to"
@@ -7277,11 +7282,15 @@
    [
     "2026-11-13",
     false
+   ],
+   [
+    "2026-11-14",
+    false
    ]
   ]
  },
  "how-much-tax-refund-per-child-2026": {
-  "time": "2026-11-13T15:47:48+00:00",
+  "time": "2026-11-14T16:02:09+00:00",
   "query": "how much tax refund per child 2026",
   "in_suggest": true,
   "suggest": {
@@ -7338,17 +7347,21 @@
    [
     "2026-11-13",
     true
+   ],
+   [
+    "2026-11-14",
+    true
    ]
   ]
  },
  "is-the-law-of-beasts-a-true-story": {
-  "time": "2026-11-13T15:47:50+00:00",
+  "time": "2026-11-14T16:02:10+00:00",
   "query": "is the law of beasts a true story",
   "in_suggest": false,
   "suggest": {
    "the law of beasts": [
-    "the law of beasts netflix",
     "the law of beasts",
+    "the law of beasts netflix",
     "the law of animals",
     "my bloodline is the law of beasts",
     "what are the beasts in the bible",
@@ -7372,11 +7385,15 @@
    [
     "2026-11-13",
     false
+   ],
+   [
+    "2026-11-14",
+    false
    ]
   ]
  },
  "ligue-1": {
-  "time": "2026-11-13T15:47:50+00:00",
+  "time": "2026-11-14T16:02:11+00:00",
   "query": "what is ligue 1",
   "in_suggest": true,
   "suggest": {
@@ -7409,11 +7426,15 @@
    [
     "2026-11-13",
     true
+   ],
+   [
+    "2026-11-14",
+    true
    ]
   ]
  },
  "phishing-test": {
-  "time": "2026-11-13T15:47:51+00:00",
+  "time": "2026-11-14T16:02:12+00:00",
   "query": "what is a phishing test",
   "in_suggest": true,
   "suggest": {
@@ -7458,11 +7479,15 @@
    [
     "2026-11-13",
     true
+   ],
+   [
+    "2026-11-14",
+    true
    ]
   ]
  },
  "rock-hall-of-fame-2026-ceremony-air-date": {
-  "time": "2026-11-13T15:47:53+00:00",
+  "time": "2026-11-14T16:02:13+00:00",
   "query": "when will the rock and roll hall of fame 2026 ceremony air",
   "in_suggest": false,
   "suggest": {
@@ -7486,11 +7511,15 @@
    [
     "2026-11-13",
     false
+   ],
+   [
+    "2026-11-14",
+    false
    ]
   ]
  },
  "what-does-refrigerator-coolant-smell-like": {
-  "time": "2026-11-13T15:47:54+00:00",
+  "time": "2026-11-14T16:02:15+00:00",
   "query": "what does refrigerator coolant smell like",
   "in_suggest": true,
   "suggest": {
@@ -7542,11 +7571,15 @@
    [
     "2026-11-13",
     true
+   ],
+   [
+    "2026-11-14",
+    true
    ]
   ]
  },
  "what-is-a-safety-in-football": {
-  "time": "2026-11-13T15:47:56+00:00",
+  "time": "2026-11-14T16:02:16+00:00",
   "query": "what is a safety in football",
   "in_suggest": true,
   "suggest": {
@@ -7603,11 +7636,15 @@
    [
     "2026-11-13",
     true
+   ],
+   [
+    "2026-11-14",
+    true
    ]
   ]
  },
  "what-is-broad-based-categorical-eligibility": {
-  "time": "2026-11-13T15:47:56+00:00",
+  "time": "2026-11-14T16:02:17+00:00",
   "query": "what is broad-based categorical eligibility",
   "in_suggest": true,
   "suggest": {
@@ -7640,11 +7677,15 @@
    [
     "2026-11-13",
     true
+   ],
+   [
+    "2026-11-14",
+    true
    ]
   ]
  },
  "why-is-wifi-not-working-on-my-phone": {
-  "time": "2026-11-13T15:47:58+00:00",
+  "time": "2026-11-14T16:02:18+00:00",
   "query": "why is wifi not working on my phone",
   "in_suggest": true,
   "suggest": {
@@ -7678,6 +7719,10 @@
   "history": [
    [
     "2026-11-13",
+    true
+   ],
+   [
+    "2026-11-14",
     true
    ]
   ]
