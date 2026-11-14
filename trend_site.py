@@ -3961,6 +3961,7 @@ NO_ADS = {"about.html", "privacy.html", "contact.html", "404.html"}
 
 NAV_CATS = []    # разделы, в которых есть темы (заполняется при сборке сайта)
 HAS_EXPLAINED = False
+HAS_TRENDS = False                     # 14.11: раздел «Internet trends» — объяснения мемов, сленга, челленджей (ручные, поле trend)
 
 
 def today_line():
@@ -4016,7 +4017,7 @@ def _page(title, desc, body, path, depth, extra_head="", og_img=""):
 <div><a class="brand" href="{up}index.html">The Trend Rundown</a><div class="motto">“{E(TAGLINE)}”</div></div>
 <div class="ear">Price<b>Free</b>All the news America searches</div></div>
 <div class="dateline"><span>Vol. I · No. {issue_no()}</span><span>{E(today_line())}</span><span>United States Edition · Price: Free</span></div>
-<nav><a href="{up}index.html">Trending now</a>{f'<a href="{up}cast.html">Cast guides</a>' if HAS_CAST else ''}{f'<a href="{up}explained.html">Explained</a>' if HAS_EXPLAINED else ''}{"".join(f'<a href="{up}c/{c}.html">{E(CATS[c])}</a>' for c in NAV_CATS)}<a href="{up}archive.html">Archive</a></nav></header>
+<nav><a href="{up}index.html">Trending now</a>{f'<a href="{up}cast.html">Cast guides</a>' if HAS_CAST else ''}{f'<a href="{up}trends.html">Internet trends</a>' if HAS_TRENDS else ''}{f'<a href="{up}explained.html">Explained</a>' if HAS_EXPLAINED else ''}{"".join(f'<a href="{up}c/{c}.html">{E(CATS[c])}</a>' for c in NAV_CATS)}<a href="{up}archive.html">Archive</a></nav></header>
 {body}
 <footer><a href="{up}about.html">About</a><a href="{up}privacy.html">Privacy</a><a href="{up}contact.html">Contact</a>
 <p>{SITE_NAME} tracks what Americans are searching for and links to the outlets covering it. Headlines belong to their publishers; every link goes to the original source. Movie and TV data from TMDB: this product uses the TMDB API but is not endorsed or certified by TMDB.</p></footer>
@@ -4606,7 +4607,9 @@ def build_index(store):
                      + "".join(card(t, fmt_et(t["first_seen"], with_date=False), peak_label(t) + " peak") for t in rest) + "</div>")
     # 14.11 (владелец): пояснения и советы — НЕ на главной, только ссылка на их отдельный раздел
     if xs_all:
-        parts.append('<div class="xlinks"><a href="explained.html">Guides and explainers: how things work, terms from the news →</a></div>')
+        parts.append('<div class="xlinks">'
+                     + ('<a href="trends.html">Internet trends explained: slang, memes and challenges →</a>' if HAS_TRENDS else '')
+                     + '<a href="explained.html">Guides and explainers: how things work, terms from the news →</a></div>')
     if week:
         if rest:
             parts.append(ad("home"))
@@ -4709,7 +4712,7 @@ def build_explainer(x, topics):
            "author": {"@type": "Organization", "name": SITE_NAME, "url": SITE_URL},
            "publisher": PUBLISHER_LD,
            "mainEntityOfPage": f"{SITE_URL}/x/{x['slug']}"},
-          crumbs_ld((SITE_NAME, SITE_URL + "/"), ("Explained", SITE_URL + "/explained"), (x["title"][:110], f"{SITE_URL}/x/{x['slug']}"))]
+          crumbs_ld((SITE_NAME, SITE_URL + "/"), (("Internet trends", SITE_URL + "/trends") if x.get("trend") else ("Explained", SITE_URL + "/explained")), (x["title"][:110], f"{SITE_URL}/x/{x['slug']}"))]
     if faq:
         ld.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
             {"@type": "Question", "name": f["q"], "acceptedAnswer": {"@type": "Answer", "text": f["a"]}} for f in faq]})
@@ -4724,7 +4727,7 @@ def build_explainer(x, topics):
         ld[0]["image"] = SITE_URL + "/" + im["file"]
         head = f'<script type="application/ld+json">{json.dumps(ld)}</script>'
     body = f"""<article>
-<p class="meta"><a href="../index.html">{SITE_NAME}</a> › <a class="cat" href="../explained.html">Explained</a> · updated {E(fmt_et(x["made"]))}</p>
+<p class="meta"><a href="../index.html">{SITE_NAME}</a> › <a class="cat" href="../{"trends" if x.get("trend") else "explained"}.html">{"Internet trends" if x.get("trend") else "Explained"}</a> · updated {E(fmt_et(x["made"]))}</p>
 <h1>{E(x["title"])}</h1>
 {hero_x}
 {audio_player("x/" + x["slug"], ". ".join([x["title"], x["answer"], x.get("in_the_news", ""), x["body"]]))}
@@ -4747,7 +4750,7 @@ def build_explainer(x, topics):
 
 def build_explained_index(ex):
     # 14.11: раздел пояснений — сначала ручные (не новости), свежие сверху; новости живут на главной
-    items = sorted([x for x in ex.values() if not x.get("news")],
+    items = sorted([x for x in ex.values() if not x.get("news") and not x.get("trend")],
                    key=lambda x: (bool(x.get("manual")), x.get("first") or x.get("made") or ""), reverse=True)
     rows = "".join(f'<li><a class="t" href="x/{E(x["slug"])}.html">{E(x["title"])}</a>'
                    f'<span class="meta">{E(x["answer"][:140])}…</span></li>' for x in items[:300])
@@ -4756,6 +4759,20 @@ def build_explained_index(ex):
     return page(f"Explained: the words and names in today's news | {SITE_NAME}",
                 "Plain-English explainers for the terms, laws, places and people that show up in trending US news.",
                 body, "explained.html", 0)
+
+
+def build_trends_index(ex):
+    """14.11: раздел интернет-трендов — что значит слово, откуда мем, в чём суть челленджа. Свежие сверху."""
+    items = sorted([x for x in ex.values() if x.get("trend")], key=lambda x: x.get("first") or x.get("made") or "", reverse=True)
+    rows = "".join(f'<li><a class="t" href="x/{E(x["slug"])}.html">{E(x["title"])}</a>'
+                   f'<span class="meta">{E(x["answer"][:150])}…</span></li>' for x in items[:500])
+    body = (f'<p class="tag">Slang, memes and viral challenges, explained in plain words</p>'
+            f'<h1 class="front">Internet trends explained</h1>'
+            f'<p class="snip">What a new word means, where a meme came from, what a viral challenge is about. '
+            f'Each page is checked against several sources; newest first.</p><ul class="list">{rows}</ul>')
+    return page(f"Internet trends explained: slang, memes and challenges | {SITE_NAME}",
+                "What new slang means, where memes come from and what viral challenges are about, explained in plain English.",
+                body, "trends.html", 0)
 
 
 def build_archive(store):
@@ -4909,8 +4926,9 @@ def build_site(store):
                 im = manual_image(orig, {"slug": x["slug"], "image_local": x["image_local"]})
             x["img"] = im
     EXPLAINERS.clear(); EXPLAINERS.update(ex)
-    global HAS_EXPLAINED, HAS_CAST
+    global HAS_EXPLAINED, HAS_CAST, HAS_TRENDS
     HAS_EXPLAINED = bool(ex)
+    HAS_TRENDS = any(x.get("trend") for x in ex.values())
     pv = {k: x for k, x in store.get("previews", {}).items() if x.get("slug") and not bad_text(json.dumps(x, ensure_ascii=False), ub)}
     HAS_CAST = bool(pv)
     # чистка выдачи: пояснения и страницы актёров без показов в Google за 28 дней и старше 14 дней — noindex
@@ -4987,6 +5005,8 @@ def build_site(store):
                 pass
     if ex:
         w("explained.html", build_explained_index(ex))
+        if HAS_TRENDS:
+            w("trends.html", build_trends_index(ex))
     for x in pv.values():
         w(f"w/{x['slug']}.html", build_cast(x))
     if pv:
@@ -4996,7 +5016,7 @@ def build_site(store):
     for fn, (title, body) in STATIC.items():
         w(fn, page(f"{title} | {SITE_NAME}", f"{title} — {SITE_NAME}", body, fn, 0))
     w("404.html", page(f"Not found | {SITE_NAME}", "Page not found", "<h1>Page not found</h1><p><a href='index.html'>See what's trending now</a></p>", "404.html", 0))
-    urls_all = ([f"{SITE_URL}/", f"{SITE_URL}/archive"] + ([f"{SITE_URL}/explained"] if ex else [])
+    urls_all = ([f"{SITE_URL}/", f"{SITE_URL}/archive"] + ([f"{SITE_URL}/explained"] if ex else []) + ([f"{SITE_URL}/trends"] if HAS_TRENDS else [])
             + [f"{SITE_URL}/c/{c}" for c in counts]
             + [f"{SITE_URL}/x/{x['slug']}" for x in ex.values()]
             + ([f"{SITE_URL}/cast"] if pv else []) + [f"{SITE_URL}/w/{x['slug']}" for x in pv.values()]
