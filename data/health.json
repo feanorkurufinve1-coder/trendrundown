@@ -1,6 +1,6 @@
 {
  "v": 2,
- "checked": "2026-11-14T16:31:44+00:00",
+ "checked": "2026-11-14T22:31:49+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -141,7 +141,7 @@
   {
    "url": "/x/anthony-clark-death",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -163,7 +163,7 @@
   {
    "url": "/x/camp-flog-gnaw-livestream",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -238,9 +238,20 @@
    "userCanonical": "https://trendrundown.com/x/designated-for-assignment"
   },
   {
+   "url": "/x/did-avril-lavigne-have-a-baby",
+   "verdict": "NEUTRAL",
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "pageFetchState": "SUCCESSFUL",
+   "lastCrawlTime": "2026-11-14T17:46:35Z",
+   "googleCanonical": "https://trendrundown.com/x/did-avril-lavigne-have-a-baby",
+   "userCanonical": "https://trendrundown.com/x/did-avril-lavigne-have-a-baby"
+  },
+  {
    "url": "/x/did-scott-colom-win",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -284,7 +295,7 @@
   {
    "url": "/x/el-nino-pacific-northwest",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -383,13 +394,13 @@
   {
    "url": "/x/hegseth-tomb-guard-medal",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
-   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-   "indexingState": "INDEXING_STATE_UNSPECIFIED",
-   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
-   "lastCrawlTime": null,
-   "googleCanonical": null,
-   "userCanonical": null
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "pageFetchState": "SUCCESSFUL",
+   "lastCrawlTime": "2026-11-14T17:48:36Z",
+   "googleCanonical": "https://trendrundown.com/x/hegseth-tomb-guard-medal",
+   "userCanonical": "https://trendrundown.com/x/hegseth-tomb-guard-medal"
   },
   {
    "url": "/x/how-are-cma-awards-voted",
@@ -493,13 +504,13 @@
   {
    "url": "/x/how-to-vote-on-the-circle-hulu",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
-   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-   "indexingState": "INDEXING_STATE_UNSPECIFIED",
-   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
-   "lastCrawlTime": null,
-   "googleCanonical": null,
-   "userCanonical": null
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "pageFetchState": "SUCCESSFUL",
+   "lastCrawlTime": "2026-11-14T17:48:35Z",
+   "googleCanonical": "https://trendrundown.com/x/how-to-vote-on-the-circle-hulu",
+   "userCanonical": "https://trendrundown.com/x/how-to-vote-on-the-circle-hulu"
   },
   {
    "url": "/x/i-play-rocky-true-story",
@@ -799,6 +810,17 @@
    "userCanonical": "https://trendrundown.com/x/nba-draft"
   },
   {
+   "url": "/x/new-orleans-cruise-ship-collision",
+   "verdict": "NEUTRAL",
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "pageFetchState": "SUCCESSFUL",
+   "lastCrawlTime": "2026-11-14T17:46:37Z",
+   "googleCanonical": "https://trendrundown.com/x/new-orleans-cruise-ship-collision",
+   "userCanonical": "https://trendrundown.com/x/new-orleans-cruise-ship-collision"
+  },
+  {
    "url": "/x/new-snap-stocking-rules",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
@@ -1010,7 +1032,7 @@
   {
    "url": "/x/stacy-keach-death",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1164,13 +1186,13 @@
   {
    "url": "/x/what-is-a-ground-stop",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
-   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-   "indexingState": "INDEXING_STATE_UNSPECIFIED",
-   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
-   "lastCrawlTime": null,
-   "googleCanonical": null,
-   "userCanonical": null
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "pageFetchState": "SUCCESSFUL",
+   "lastCrawlTime": "2026-11-14T17:46:35Z",
+   "googleCanonical": "https://trendrundown.com/x/what-is-a-ground-stop",
+   "userCanonical": "https://trendrundown.com/x/what-is-a-ground-stop"
   },
   {
    "url": "/x/what-is-a-hip-pointer",
@@ -1384,13 +1406,13 @@
   {
    "url": "/x/who-won-mvp-2026",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
-   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-   "indexingState": "INDEXING_STATE_UNSPECIFIED",
-   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
-   "lastCrawlTime": null,
-   "googleCanonical": null,
-   "userCanonical": null
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "pageFetchState": "SUCCESSFUL",
+   "lastCrawlTime": "2026-11-14T17:48:37Z",
+   "googleCanonical": "https://trendrundown.com/x/who-won-mvp-2026",
+   "userCanonical": "https://trendrundown.com/x/who-won-mvp-2026"
   },
   {
    "url": "/x/why-does-my-phone-battery-go-down-while-charging",
@@ -1417,7 +1439,7 @@
   {
    "url": "/x/why-does-my-phone-screen-keep-going-black",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1428,13 +1450,13 @@
   {
    "url": "/x/why-does-my-washing-machine-smell-like-rotten-eggs",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
-   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-   "indexingState": "INDEXING_STATE_UNSPECIFIED",
-   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
-   "lastCrawlTime": null,
-   "googleCanonical": null,
-   "userCanonical": null
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "pageFetchState": "SUCCESSFUL",
+   "lastCrawlTime": "2026-11-14T17:46:36Z",
+   "googleCanonical": "https://trendrundown.com/x/why-does-my-washing-machine-smell-like-rotten-eggs",
+   "userCanonical": "https://trendrundown.com/x/why-does-my-washing-machine-smell-like-rotten-eggs"
   },
   {
    "url": "/x/why-does-social-security-come-out-of-my-paycheck",
@@ -1492,15 +1514,26 @@
    "userCanonical": null
   },
   {
+   "url": "/x/why-were-all-flights-grounded",
+   "verdict": "NEUTRAL",
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "pageFetchState": "SUCCESSFUL",
+   "lastCrawlTime": "2026-11-14T17:44:35Z",
+   "googleCanonical": "https://trendrundown.com/x/why-were-all-flights-grounded",
+   "userCanonical": "https://trendrundown.com/x/why-were-all-flights-grounded"
+  },
+  {
    "url": "/x/wta-tennis",
    "verdict": "NEUTRAL",
-   "coverageState": "Not found (404)",
+   "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
-   "indexingState": "INDEXING_STATE_UNSPECIFIED",
-   "pageFetchState": "NOT_FOUND",
-   "lastCrawlTime": "2026-11-06T06:54:44Z",
-   "googleCanonical": null,
-   "userCanonical": null
+   "indexingState": "INDEXING_ALLOWED",
+   "pageFetchState": "SUCCESSFUL",
+   "lastCrawlTime": "2026-11-14T17:48:35Z",
+   "googleCanonical": "https://trendrundown.com/x/wta-tennis",
+   "userCanonical": "https://trendrundown.com/x/wta-tennis"
   }
  ],
  "first_indexed": {
@@ -1509,10 +1542,9 @@
   "/x/ligue-1": "2026-11-13T16:25:58+00:00"
  },
  "summary": {
-  "Crawled - currently not indexed": 54,
+  "Crawled - currently not indexed": 63,
   "Submitted and indexed": 3,
-  "URL is unknown to Google": 57,
-  "Discovered - currently not indexed": 19,
-  "Not found (404)": 1
+  "URL is unknown to Google": 56,
+  "Discovered - currently not indexed": 15
  }
 }
