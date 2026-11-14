@@ -1,6 +1,6 @@
 {
  "v": 2,
- "checked": "2026-11-13T22:16:52+00:00",
+ "checked": "2026-11-14T04:17:27+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -306,7 +306,7 @@
   {
    "url": "/x/first-black-senator-from-mississippi",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -823,7 +823,7 @@
   {
    "url": "/x/october-2026-cpi-no-annual-rate",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -966,7 +966,7 @@
   {
    "url": "/x/sierra-winter-storm-warning",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1395,7 +1395,7 @@
   {
    "url": "/x/why-does-social-security-come-out-of-my-paycheck",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1456,7 +1456,7 @@
  "summary": {
   "Crawled - currently not indexed": 54,
   "Submitted and indexed": 3,
-  "URL is unknown to Google": 50,
-  "Discovered - currently not indexed": 22
+  "URL is unknown to Google": 52,
+  "Discovered - currently not indexed": 20
  }
 }
