@@ -28,7 +28,7 @@ import urllib.error, urllib.parse, urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 
-VERSION = "1.1"
+VERSION = "1.2"
 HERE = os.path.dirname(os.path.abspath(__file__))
 STATE = os.path.join(HERE, "radar_state.json")
 LOG = os.path.join(HERE, "radar_log.txt")
@@ -37,7 +37,7 @@ OUT_JSON = os.path.join(HERE, "radar.json")
 REPO = "feanorkurufinve1-coder/trendrundown"
 REPO_PATH = "laptop/radar.json"
 
-CYCLE_HOURS = 8            # как часто просыпаться (Reddit и быстрые источники — каждый раз)
+CYCLE_HOURS = 4            # как часто просыпаться (Reddit, быстрые источники и быстрый обход подсказок — каждый раз)
 SWEEP_HOURS = 20           # полный обход подсказок Google — не чаще раза в 20 часов
 FRESH_DAYS = 7             # сколько дней фраза считается «новой»
 KEEP_PHRASE_DAYS = 60
@@ -369,15 +369,23 @@ def suggest(prefix, yt=False):
     return out
 
 
-def sweep_suggest(st, health):
-    """Полный обход начал фраз. Можно прервать: продолжит с того же места."""
+FAST_FAMILIES = ("trend", "saying", "tiktok", "seed", "yt")
+
+
+def sweep_suggest(st, health, fast=False):
+    """Полный обход начал фраз (раз в сутки) или БЫСТРЫЙ (каждые 4 часа: только тренды, «почему все говорят», TikTok,
+    YouTube — чтобы ловить тренд в момент зарождения). Полный можно прервать: продолжит с того же места."""
     prefixes = build_prefixes()
     plan = [(p, f, False) for p, f in prefixes] + [(p, f, True) for p, f in YT_PREFIXES]
+    if fast:
+        plan = [x for x in plan if x[1] in FAST_FAMILIES]
     if QUICK:
         plan = plan[::37][:30] + [("what does 6", "slang", False), ("what is the ", "seed", False)]
-    start = st["cursor"] if 0 < st.get("cursor", 0) < len(plan) else 0
+    start = st["cursor"] if not fast and 0 < st.get("cursor", 0) < len(plan) else 0
     day, got, new, fails, blocked = today(), 0, 0, 0, 0
-    log("Подсказки Google/YouTube: начал фраз %d%s" % (len(plan), (", продолжаю с %d" % start) if start else ""))
+    hname = "google_suggest_fast" if fast else "google_suggest"
+    log("Подсказки Google/YouTube%s: начал фраз %d%s" % (" (быстрый обход)" if fast else "", len(plan),
+                                                         (", продолжаю с %d" % start) if start else ""))
     i = start
     while i < len(plan):
         prefix, fam, yt = plan[i]
@@ -387,8 +395,9 @@ def sweep_suggest(st, health):
         except Blocked as e:
             blocked += 1
             if blocked >= 4:
-                st["cursor"] = i
-                health.fail("google_suggest", "Google просит подождать (%s) на %d из %d; продолжу в следующий раз" % (e, i, len(plan)), got)
+                if not fast:
+                    st["cursor"] = i
+                health.fail(hname, "Google просит подождать (%s) на %d из %d; продолжу в следующий раз" % (e, i, len(plan)), got)
                 return False
             time.sleep(60 * blocked)
             continue
@@ -396,7 +405,7 @@ def sweep_suggest(st, health):
             fails += 1
             res = []
             if fails >= 25 and got == 0:
-                health.fail("google_suggest", "не отвечает: %s" % str(e)[:120])
+                health.fail(hname, "не отвечает: %s" % str(e)[:120])
                 return False
         pkey = ("yt:" if yt else "") + prefix
         first_cover = st["prefix_first"].setdefault(pkey, day)
@@ -413,11 +422,14 @@ def sweep_suggest(st, health):
                 rec[3] = max(rec[3], rel)
             got += 1
         i += 1
-        if i % 100 == 0:
+        if i % 100 == 0 and not fast:
             st["cursor"] = i
             save_state(st)
             log("  ...обошёл %d из %d начал, фраз собрано %d, новых %d" % (i, len(plan), got, new))
         time.sleep(random.uniform(0.25, 0.5) if QUICK else random.uniform(0.8, 1.6))
+    if fast:
+        health.ok(hname, got, "новых фраз %d" % new)
+        return True
     st["cursor"] = 0
     st["last_sweep"] = now_iso()
     st["sweeps"] += 1
@@ -558,7 +570,8 @@ def kym(health):
     """Новые и растущие мемы. Сайт иногда закрыт от программ — тогда просто без него."""
     out, err = {}, ""
     for url in ("https://knowyourmeme.com/memes.rss", "https://knowyourmeme.com/newsfeed.rss",
-                "https://knowyourmeme.com/memes/trending", "https://knowyourmeme.com/memes"):
+                "https://knowyourmeme.com/memes/trending", "https://knowyourmeme.com/memes",
+                "https://knowyourmeme.com/memes/researching", "https://knowyourmeme.com/memes/submissions"):
         try:
             text = fetch(url, tries=1, timeout=25)
         except Exception as e:
@@ -818,6 +831,17 @@ def score(c, sweeps, baseline=""):
         why.append("сильных объяснений в поиске: %d" % len(big) if big else "сильных объяснений в поиске нет")
         if not big:
             s += 2
+    # РАННИЙ ТРЕНД: только что появился (новая подсказка или первый раз замечен за 2 дня) + его начали обсуждать,
+    # а сильных объяснений в поиске ещё нет — писать надо сейчас, до того как он станет общеизвестным
+    recent_posts = sum(1 for p in c["reddit"] if days_ago(p.get("at", "")[:10]) <= 2)
+    just_born = any(x.get("new") and days_ago(x.get("first", "")) <= 2 for x in c["suggest"]) or \
+        (baseline and c["first_seen"] > baseline and days_ago(c["first_seen"]) <= 2)
+    big_n = len(c["big"]) if c.get("big") is not None else 0
+    c["early"] = bool(just_born and (c["fresh"] or recent_posts >= 2 or layers >= 2) and big_n <= 1
+                      and c["key"] not in STOP_TERMS and not (ud and days_ago(ud["oldest"]) > 365))
+    if c["early"]:
+        s += 3
+        why.insert(0, "РАННИЙ ТРЕНД: только появился, сильных объяснений ещё нет")
     if c["key"] in STOP_TERMS:
         s -= 10
     if len(c["key"]) <= 3 and c["layers"] <= {"google", "youtube"} and not c["fresh"]:
@@ -901,6 +925,8 @@ def make_pack(st, health, started):
              "reddit": sorted(c["reddit"], key=lambda p: p.get("at", ""), reverse=True)[:5]}
         if c.get("marks"):
             d["marks"] = sorted(c["marks"])
+        if c.get("early"):
+            d["early"] = True
         for k in ("ud", "ud_wotd", "kym", "trends", "bluesky", "wiki", "serp", "big", "comments"):
             if c.get(k):
                 d[k] = c[k]
@@ -918,6 +944,7 @@ def make_pack(st, health, started):
                     "note": ("Первый обход: «новые подсказки» появятся со второго дня, пока оценка по остальным этажам."
                              if st["sweeps"] < 2 else "")},
             "health": dict(health),
+            "early": [c["term"] for c in cands if c.get("early")][:15],
             "candidates": [slim(c) for c in cands[:MAX_CANDIDATES]],
             "reddit_questions": [{"t": p["t"][:200], "sub": p.get("sub", ""), "url": p["url"], "at": p.get("at", "")} for p in loose[:120]],
             "new_phrases": [{"q": q, "first": r[0], "days": r[2]} for q, r in newp[:250]]}
@@ -1028,7 +1055,9 @@ def cycle(st):
         sweep_suggest(st, health)
         save_state(st)
     else:
-        health["google_suggest"] = {"ok": True, "n": 0, "note": "сегодня уже обходил (%s)" % st["last_sweep"][:16]}
+        health["google_suggest"] = {"ok": True, "n": 0, "note": "полный обход уже был (%s)" % st["last_sweep"][:16]}
+        sweep_suggest(st, health, fast=True)
+        save_state(st)
     log("Свожу этажи вместе и проверяю лучших...")
     pack = make_pack(st, health, started)
     cut = (now_utc() - timedelta(days=KEEP_PHRASE_DAYS)).strftime("%Y-%m-%d")
