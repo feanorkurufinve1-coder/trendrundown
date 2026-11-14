@@ -1,0 +1,79 @@
+{
+ "subject": "FAA ground stop",
+ "kind": "term",
+ "query": "what is a ground stop",
+ "title": "What is a ground stop? How FAA ground stops work and what to do",
+ "answer": "A ground stop is an order from the Federal Aviation Administration that keeps flights on the ground at their departure airports until it is lifted. Planes already in the air keep flying. It is the FAA's most restrictive traffic tool, used when controllers can't safely handle more traffic, such as during severe weather or an equipment outage.",
+ "body": "A ground stop can cover one airport, a region, or, very rarely, the whole country. The FAA says a ground stop overrides every other traffic management measure, and no flight covered by it may take off without approval from the facility that issued it. Most ground stops are short, often under an hour, and come with an \"update time\" when controllers decide whether to extend or lift it. If a problem will last longer, the FAA usually switches to a ground delay program instead.\n\nA ground delay program is milder. Flights still operate, but each one gets an assigned departure time, called an Expect Departure Clearance Time (EDCT), so arrivals are spread out. In practice, a ground stop means \"no one leaves for now,\" while a ground delay means \"everyone leaves, but later.\"\n\nNationwide ground stops are rare. On Friday afternoon, Nov. 13, 2026, the FAA halted departures across the U.S. after communications problems hit several air route traffic control centers. Transportation Secretary Sean Duffy blamed old telecom hardware, and officials said they had found no sign of a cyberattack. The order was lifted around 8:20 p.m. ET after more than four hours, but cancellations ran into the weekend. Northeastern University called it only the second nationwide ground stop since Sept. 11, 2001. The first was on Jan. 11, 2023, when the FAA's NOTAM pilot-alert system failed and departures were halted for about an hour.\n\nWhat to do if your flight is held: check your airline's app first, since the airline, not the FAA, decides whether to delay or cancel your flight. The FAA's live map at nasstatus.faa.gov shows current ground stops and delays by airport code (times are in UTC, also called Zulu). Airlines often post free-change travel waivers. Under the Department of Transportation's refund rule, if your flight is canceled, or a domestic flight is changed by 3 hours or more (6 hours for international), and you don't accept the new option, you are entitled to a cash refund, paid automatically within 7 business days for card purchases.",
+ "in_the_news": "The FAA ordered a rare nationwide ground stop on Nov. 13, 2026, after air traffic control communications failed, and searches for \"what is a ground stop\" spiked.",
+ "faq": [
+  {
+   "q": "What does a ground stop mean at an airport?",
+   "a": "Flights headed to the affected airport, or leaving it, are held at their gates until the FAA lifts the order. Flights already airborne continue to their destination."
+  },
+  {
+   "q": "What is a nationwide ground stop?",
+   "a": "It halts departures at every U.S. airport at once. It has happened only twice since 2001: on Jan. 11, 2023, and on Nov. 13, 2026."
+  },
+  {
+   "q": "How long does a ground stop last?",
+   "a": "Usually less than an hour or two. Each one has a set update time, when the FAA decides whether to extend it, lift it, or switch to a ground delay program."
+  },
+  {
+   "q": "What is the difference between a ground stop and a ground delay?",
+   "a": "A ground stop holds all covered flights on the ground. A ground delay lets flights go but assigns each one a later departure time to space out arrivals."
+  },
+  {
+   "q": "What does FAA stand for?",
+   "a": "Federal Aviation Administration, the U.S. agency that runs air traffic control and regulates civil aviation."
+  },
+  {
+   "q": "Do I get a refund if my flight is canceled because of a ground stop?",
+   "a": "Yes, if the airline cancels the flight and you decline the rebooking it offers, you are owed a refund of the ticket price under DOT rules, regardless of the cause."
+  },
+  {
+   "q": "Where can I check if there is a ground stop right now?",
+   "a": "The FAA's National Airspace System Status page, nasstatus.faa.gov, lists active ground stops and delays by airport."
+  }
+ ],
+ "links": [
+  [
+   "FAA",
+   "ENR 1.9 Air Traffic Flow Management (ground stops and ground delay programs)",
+   "https://www.faa.gov/Air_traffic/Publications/atpubs/aip_html/part2_enr_section_1.9.html"
+  ],
+  [
+   "NBAA",
+   "Ground Stop (GS)",
+   "https://nbaa.org/aircraft-operations/airspace/tfm/tools-used-for-traffic-flow-management/ground-stop-gs/"
+  ],
+  [
+   "Fox Weather",
+   "Airport ground stops vs. ground delays",
+   "https://foxweather.com/learn/federal-aviation-administration-airport-travel-ground-stop-ground-delay-difference"
+  ],
+  [
+   "Northeastern Global News",
+   "Are the FAA ground stop and Microsoft outage related?",
+   "https://news.northeastern.edu/2026/11/13/faa-ground-stop-telecommunications-issue/"
+  ],
+  [
+   "LiveNOW from FOX",
+   "Nationwide ground stop lifted, but delays will linger",
+   "https://www.livenowfox.com/news/faa-issues-nationwide-ground-stop-due-to-extraordinary-circumstances"
+  ],
+  [
+   "U.S. DOT",
+   "What airline passengers need to know about DOT's automatic refund rule",
+   "https://www.transportation.gov/briefing-room/what-airline-passengers-need-know-about-dots-automatic-refund-rule"
+  ]
+ ],
+ "image_wiki": "Air traffic control",
+ "topics": [
+  "travel",
+  "tech"
+ ],
+ "made": "2026-11-14T14:05:00+00:00",
+ "first": "2026-11-14T14:05:00+00:00",
+ "updated": "2026-11-14T14:05:00+00:00"
+}

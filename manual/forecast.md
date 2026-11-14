@@ -22,6 +22,14 @@
 - Вопросы про небо «bright star in the east this morning» растут, когда яркая планета (Венера) возвращается на утреннее небо — сезонный термин.
 
 ## Ближайшие события и что будут искать
+| 13 нояб (прошло) | FAA: общенациональный ground stop (сбой связи ATC, ~4 ч); Breakout «what is a ground stop», «faa meaning» | what is a ground stop | ✅ what-is-a-ground-stop |
+| 17 нояб – 18 дек | Hulu: The Circle S8 (переезд с Netflix, голосование зрителей TikTok/SMS, ведущая Tinx) | how to vote on the circle hulu | ✅ how-to-vote-on-the-circle-hulu |
+| 13 нояб – | Disney+: Avengers: Endgame Encore (версия с доп. сценами), всплеск Википедии | — заняты гигантами, пропуск | — |
+| ~17–18 нояб | Пик метеорного потока Леониды | when is the leonid meteor shower 2026 — проверить конкурентов 15–16 нояб | — |
+| 18 нояб | Bravo: Small Town Trouble: Texas (Boerne, TX) | where is boerne texas — слабая тема, проверить | — |
+| 25 нояб | Prime Video: Blade Runner 2099 (Michelle Yeoh, Hunter Schafer) | is blade runner 2099 a sequel — писать 21–23 нояб | — |
+| 13 нояб | Texas CLEAR Alert (+2750% «what is a clear alert in texas») | — много местных ТВ-ответов; связано с делом о пропаже, пропуск | — |
+| 13 нояб | Круизное судно на Миссисипи у Нового Орлеана («what is a barge») | — пропуск (происшествие, пострадавшие) | — |
 | Дата | Событие | Вероятный запрос (С) | Страница |
 |---|---|---|---|
 | 6 нояб | Netflix: Funny Money (Dane Cook) | what happened to dane cook brother | ✅ dane-cook-brother |
@@ -156,6 +164,16 @@
 Проверка: через 3–7 дней после даты сверить с Trends CSV и Search Console — угадали или нет, записать урок сюда.
 
 ## Уроки
+- 14 нояб, вечер (GSC: последний полный день 12 нояб — 2 клика / 8 показов, оба на главную; 13 нояб ещё 0. health.json 14 нояб: из 127 ручных страниц в индексе 2 — /x/cyber-monday и /x/ligue-1 (first_indexed 13 нояб 16:25 UTC — для ligue-1 это через 45 мин после переписывания, т.е. старый URL, вероятно, оставался в индексе), 53 «Crawled – not indexed», 19 «Discovered», 53 неизвестны Google; sitemap 158 отправлено / 0). Страницы 12 нояб (2 дня), GSC — 0 показов у всех; фраза в подсказках Google:
+  - coachella-2027-tickets-on-sale — 0; ✅; Crawled – not indexed
+  - is-being-heumann-a-true-story — 0; ✅; Crawled – not indexed
+  - is-gta-6-coming-to-pc — 0; ✅; Crawled – not indexed
+  - what-is-a-sudden-stratospheric-warming — 0; ✅; Google ещё не знает URL
+  - when-will-social-security-run-out — 0; ✅; Crawled – not indexed
+  - why-does-my-phone-battery-go-down-while-charging (вечная) — 0; ✅; Discovered
+  - why-does-my-phone-screen-keep-going-black (вечная) — 0; ✅; Discovered
+  - why-does-social-security-come-out-of-my-paycheck (вечная) — 0; ✅; Discovered
+  - Новое: в индексе держатся только старые URL с историей показов (cyber-monday, ligue-1) — переписывать именно их выгоднее, чем ждать индексации новых. Сбой инфраструктуры (FAA ground stop) → взрыв «what is X / what does X stand for» по аббревиатуре ведомства.
 - 13 нояб, вечер (GSC: последний полный день 12 нояб — 2 клика / 8 показов, оба клика на главную; health.json 13 нояб: sitemap 122 отправлено / 0 в индексе; в индексе только / и /x/cyber-monday). Страницы 11 нояб (2–3 дня) — у всех 0 показов в GSC (причина — сайт вне индекса); подсказки Google (suggest.json 13 нояб):
   - 40-man-roster — 0 показов; ✅ в подсказках
   - did-trump-call-into-c-span — 0; ✅

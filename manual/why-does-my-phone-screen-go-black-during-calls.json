@@ -1,0 +1,55 @@
+{
+ "subject": "Phone screen going black during calls",
+ "kind": "term",
+ "query": "why does my phone screen go black during calls",
+ "title": "Why does my phone screen go black during calls? Causes and fixes",
+ "answer": "Your phone turns the screen off during calls on purpose: a proximity sensor near the earpiece detects your face so your cheek doesn't press buttons. The problem starts when the screen stays black after you move the phone away. That usually means something is covering the sensor, most often a screen protector, a case or dirt.",
+ "body": "The proximity sensor sits at the top front of the phone, next to the earpiece and front camera. It works by bouncing invisible infrared light off whatever is in front of it. If a thick, tinted or badly aligned screen protector, a case lip, a smudge or a crack sits over that spot, the phone thinks your face is still there and keeps the display dark.\n\nWhat to check, in order:\n\n1. Remove the case and look at the screen protector. If it covers the top edge unevenly, has a bubble near the earpiece or is a dark privacy protector, take it off and test a call. If you replace it, choose one that leaves the sensor area clear.\n2. Wipe the top of the screen with a soft, dry cloth.\n3. Restart the phone. If the screen is already stuck black during a call, tap the screen or, on Android, press the power button to wake it. On iPhone, pressing the side button ends the call by default; you can change that under Settings > Accessibility > Touch > Prevent Lock to End Call.\n4. Install the latest software update.\n5. On Android, make sure the phone maker's own Phone app is the default (Settings > Apps > Default apps > Phone app). Third-party dialers are a common cause. You can also clear the Phone app's cache, or uninstall its updates if the problem began right after one.\n6. Some Android phones let you turn the proximity feature off in the Phone app's call settings. The screen will then stay on during calls, but your cheek may tap buttons.\n7. As a last step, reset all settings. This doesn't delete photos or apps, but it does erase saved Wi-Fi passwords and Bluetooth pairings.\n\nWhen to get it repaired: if the problem continues with no case or protector, after updates and a settings reset, or if it began after a drop or water exposure, the sensor itself or the display may be damaged. Contact Apple, Samsung or your phone maker, or an authorized repair shop.",
+ "faq": [
+  {
+   "q": "Why does my screen stay black after a call ends?",
+   "a": "The proximity sensor is still reporting that something is in front of it. Clean the top of the screen and remove the case or screen protector, then restart the phone."
+  },
+  {
+   "q": "Can a screen protector cause a black screen during calls?",
+   "a": "Yes. It is the most common cause. A protector that covers the sensor area unevenly, or a dark privacy protector, can block the infrared light the sensor uses."
+  },
+  {
+   "q": "Where is the proximity sensor on my phone?",
+   "a": "At the top front of the phone, near the earpiece speaker and front camera. On most phones you can't see it."
+  },
+  {
+   "q": "How do I turn the screen back on during a call on iPhone?",
+   "a": "Tap the screen or move the phone away from your face. Avoid the side button, since by default it hangs up. Settings > Accessibility > Touch > Prevent Lock to End Call changes that."
+  },
+  {
+   "q": "Can I turn off the proximity sensor?",
+   "a": "On iPhone, no. Some Android phones have a proximity option in the Phone app's call settings."
+  }
+ ],
+ "links": [
+  [
+   "ASUS Support",
+   "Why does my phone screen turn black during incoming and outgoing calls?",
+   "https://www.asus.com/support/faq/1018395/"
+  ],
+  [
+   "Guiding Tech",
+   "How to fix an Android phone screen that goes black during a call",
+   "https://www.guidingtech.com/fix-android-phone-screen-goes-black-during-a-call/"
+  ],
+  [
+   "Guiding Tech",
+   "Ways to fix an iPhone screen that goes black during calls",
+   "https://www.guidingtech.com/ways-to-fix-iphone-screen-goes-black-during-call-issue"
+  ]
+ ],
+ "image_wiki": "Smartphone",
+ "topics": [
+  "tech",
+  "phones"
+ ],
+ "made": "2026-11-14T14:05:00+00:00",
+ "first": "2026-11-14T14:05:00+00:00",
+ "updated": "2026-11-14T14:05:00+00:00"
+}
