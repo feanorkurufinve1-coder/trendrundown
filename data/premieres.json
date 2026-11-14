@@ -1,39 +1,7 @@
 {
- "made": "2026-11-13T16:44:03+00:00",
+ "made": "2026-11-14T04:50:06+00:00",
  "about": "Премьеры сериалов и новых сезонов в США на 14 дней вперёд (TVmaze). new_series = совсем новый сериал. Сырьё для прогнозов «is X a true story», «X cast», «X season N release time».",
  "premieres": [
-  {
-   "date": "2026-11-13",
-   "show": "12 12 12",
-   "season": 1,
-   "new_series": true,
-   "type": "Scripted",
-   "genres": [
-    "Drama",
-    "Action",
-    "Crime"
-   ],
-   "network": "Apple TV",
-   "premiered": "2026-11-13",
-   "summary": "Each episode of 12 12 12 unfolds across three timelines of a heist: the 12 months of planning, the 12 hours of the heist and the 12 days following it. The series follows a disgraced FBI agent and an American career criminal as they play a zero-sum game of cat and mouse across Europe. At the center of it all is the daring, epic raid on a bank vault deep beneath the streets of Zurich.",
-   "url": "https://www.tvmaze.com/shows/84261/12-12-12",
-   "official": "https://tv.apple.com/us/show/12-12-12/umc.cmc.2xeasogpeiwbaegczytrdg1uh"
-  },
-  {
-   "date": "2026-11-13",
-   "show": "Stars and Vows: Anele & Buzza",
-   "season": 1,
-   "new_series": true,
-   "type": "Reality",
-   "genres": [
-    "Romance"
-   ],
-   "network": "Netflix",
-   "premiered": "2026-11-13",
-   "summary": "Follow media darling Anele Mdoda and her royal fiance Buzza James from pre-wedding celebrations and tense family moments to their long-awaited \"I do.\"",
-   "url": "https://www.tvmaze.com/shows/95505/stars-and-vows-anele-buzza",
-   "official": "https://www.netflix.com/title/83073030"
-  },
   {
    "date": "2026-11-14",
    "show": "The Green Way Outdoors",
@@ -584,6 +552,32 @@
    "summary": "Bam, Redbird, Bibi, Batwing, and Buff are thrust into hilarious hijinks and draw-dropping action as they learn important lessons about teamwork, friendship, and so much more while helping Batman, Robin, and Batgirl defend Gotham.",
    "url": "https://www.tvmaze.com/shows/51042/batwheels",
    "official": "https://play.max.com/show/452d85bb-bb46-4f16-bc58-26e5391d200d"
+  },
+  {
+   "date": "2026-11-28",
+   "show": "Salish's 12 Games of Christmas",
+   "season": 1,
+   "new_series": true,
+   "type": "Reality",
+   "genres": [],
+   "network": "Netflix",
+   "premiered": "2026-11-28",
+   "summary": "In this epic competition, Salish Matter and her friends compete for a mountain of presents while trying to keep an imposter from stealing all the gifts.",
+   "url": "https://www.tvmaze.com/shows/95533/salishs-12-games-of-christmas",
+   "official": "https://www.netflix.com/title/82723082 "
+  },
+  {
+   "date": "2026-11-28",
+   "show": "Storage Wars",
+   "season": 19,
+   "new_series": false,
+   "type": "Reality",
+   "genres": [],
+   "network": "A&E",
+   "premiered": "2010-12-01",
+   "summary": "Storage Wars follows professional buyers and their teams as they scour repossessed storage units in search of hidden treasure. Part gamblers, part detectives, these auction pros have found everything from coffins to the world's most valuable comic book collection, paying as little as ten dollars for items valued in the millions.Each episode of Storage Wars follows a group of bidders as they get a ",
+   "url": "https://www.tvmaze.com/shows/860/storage-wars",
+   "official": "http://www.aetv.com/shows/storage-wars"
   }
  ]
 }

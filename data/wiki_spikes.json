@@ -1,329 +1,238 @@
 {
- "made": "2026-11-13T22:47:28+00:00",
- "day": "2026-11-12",
+ "made": "2026-11-14T04:49:10+00:00",
+ "day": "2026-11-13",
  "about": "Всплески просмотров английской Википедии за вчера: views — просмотров вчера, before — максимум за 3 прошлых дня (null = статьи не было в топ-1000). Идеи для страниц «who is / what is»; проверять факты по новостям.",
  "spikes": [
   {
-   "article": "Colette Kress",
-   "views": 463931,
+   "article": "Chris Van Hollen",
+   "views": 204913,
+   "before": 59326,
+   "ratio": 3.5,
+   "url": "https://en.wikipedia.org/wiki/Chris_Van_Hollen"
+  },
+  {
+   "article": "Piracy",
+   "views": 201972,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Colette_Kress"
+   "url": "https://en.wikipedia.org/wiki/Piracy"
   },
   {
-   "article": "Anthony Clark (actor)",
-   "views": 374893,
+   "article": "Sam Hartman",
+   "views": 191577,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Anthony_Clark_%28actor%29"
+   "url": "https://en.wikipedia.org/wiki/Sam_Hartman"
   },
   {
-   "article": "Alice Huang (executive)",
-   "views": 160121,
+   "article": "Avril Lavigne",
+   "views": 120937,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Alice_Huang_%28executive%29"
+   "url": "https://en.wikipedia.org/wiki/Avril_Lavigne"
   },
   {
-   "article": "Dan Hicks (sportscaster)",
-   "views": 157094,
+   "article": "2026 Streamer Awards",
+   "views": 84725,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Dan_Hicks_%28sportscaster%29"
+   "url": "https://en.wikipedia.org/wiki/2026_Streamer_Awards"
   },
   {
-   "article": "Tomb of the Unknown Soldier (Arlington National Cemetery)",
-   "views": 137779,
-   "before": 35918,
-   "ratio": 3.8,
-   "url": "https://en.wikipedia.org/wiki/Tomb_of_the_Unknown_Soldier_%28Arlington_National_Cemetery%29"
-  },
-  {
-   "article": "Hannah Storm",
-   "views": 127755,
+   "article": "Cam Skattebo",
+   "views": 77860,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Hannah_Storm"
+   "url": "https://en.wikipedia.org/wiki/Cam_Skattebo"
   },
   {
-   "article": "Chris Malachowsky",
-   "views": 100152,
-   "before": 29692,
-   "ratio": 3.4,
-   "url": "https://en.wikipedia.org/wiki/Chris_Malachowsky"
-  },
-  {
-   "article": "Jensen Huang spying scandal",
-   "views": 97209,
-   "before": 29020,
-   "ratio": 3.3,
-   "url": "https://en.wikipedia.org/wiki/Jensen_Huang_spying_scandal"
-  },
-  {
-   "article": "Yella Beezy",
-   "views": 96701,
-   "before": 24967,
-   "ratio": 3.9,
-   "url": "https://en.wikipedia.org/wiki/Yella_Beezy"
-  },
-  {
-   "article": "Curtis Priem",
-   "views": 79910,
-   "before": 24130,
-   "ratio": 3.3,
-   "url": "https://en.wikipedia.org/wiki/Curtis_Priem"
-  },
-  {
-   "article": "Abu Ghraib torture and prisoner abuse",
-   "views": 64718,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Abu_Ghraib_torture_and_prisoner_abuse"
-  },
-  {
-   "article": "Yes, Dear",
-   "views": 61246,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Yes%2C_Dear"
-  },
-  {
-   "article": "Blanche Bruce",
-   "views": 60237,
-   "before": 18106,
-   "ratio": 3.3,
-   "url": "https://en.wikipedia.org/wiki/Blanche_Bruce"
-  },
-  {
-   "article": "American Airlines Flight 587",
-   "views": 59568,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/American_Airlines_Flight_587"
-  },
-  {
-   "article": "MO3 (rapper)",
-   "views": 55463,
-   "before": 10671,
-   "ratio": 5.2,
-   "url": "https://en.wikipedia.org/wiki/MO3_%28rapper%29"
-  },
-  {
-   "article": "Harry Kane",
-   "views": 52283,
-   "before": 11972,
-   "ratio": 4.4,
-   "url": "https://en.wikipedia.org/wiki/Harry_Kane"
-  },
-  {
-   "article": "Survivor 51",
-   "views": 51255,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Survivor_51"
-  },
-  {
-   "article": "Vajiralongkorn",
-   "views": 46044,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Vajiralongkorn"
-  },
-  {
-   "article": "Jean Louisa Kelly",
-   "views": 39096,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Jean_Louisa_Kelly"
-  },
-  {
-   "article": "Tim Cook",
-   "views": 38311,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Tim_Cook"
-  },
-  {
-   "article": "Kaylee Hottle",
-   "views": 35758,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Kaylee_Hottle"
-  },
-  {
-   "article": "Richard Posner",
-   "views": 34663,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Richard_Posner"
-  },
-  {
-   "article": "Sabrina Harman",
-   "views": 33201,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Sabrina_Harman"
-  },
-  {
-   "article": "Hiram R. Revels",
-   "views": 30994,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Hiram_R._Revels"
-  },
-  {
-   "article": "Medgar Evers",
-   "views": 30873,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Medgar_Evers"
-  },
-  {
-   "article": "Tomb of the Unknown Soldier",
-   "views": 30554,
-   "before": 8549,
+   "article": "J. J. McCarthy",
+   "views": 59502,
+   "before": 16540,
    "ratio": 3.6,
-   "url": "https://en.wikipedia.org/wiki/Tomb_of_the_Unknown_Soldier"
+   "url": "https://en.wikipedia.org/wiki/J._J._McCarthy"
   },
   {
-   "article": "Royal Gloucestershire Hussars",
-   "views": 30185,
+   "article": "Avengers Endgame: Encore",
+   "views": 54372,
+   "before": 13232,
+   "ratio": 4.1,
+   "url": "https://en.wikipedia.org/wiki/Avengers_Endgame%3A_Encore"
+  },
+  {
+   "article": "Sharad Kapoor",
+   "views": 53339,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Royal_Gloucestershire_Hussars"
+   "url": "https://en.wikipedia.org/wiki/Sharad_Kapoor"
   },
   {
-   "article": "Mike O'Malley",
-   "views": 29070,
+   "article": "Mahli Beardman",
+   "views": 47991,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Mike_O%27Malley"
+   "url": "https://en.wikipedia.org/wiki/Mahli_Beardman"
   },
   {
-   "article": "Lisa Maxwell (actress)",
-   "views": 28442,
+   "article": "Daayra",
+   "views": 47962,
+   "before": 8728,
+   "ratio": 5.5,
+   "url": "https://en.wikipedia.org/wiki/Daayra"
+  },
+  {
+   "article": "Ranabaali",
+   "views": 43392,
+   "before": 9678,
+   "ratio": 4.5,
+   "url": "https://en.wikipedia.org/wiki/Ranabaali"
+  },
+  {
+   "article": "Friday the 13th",
+   "views": 41286,
+   "before": 8225,
+   "ratio": 5.0,
+   "url": "https://en.wikipedia.org/wiki/Friday_the_13th"
+  },
+  {
+   "article": "Sean Duffy",
+   "views": 37183,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Lisa_Maxwell_%28actress%29"
+   "url": "https://en.wikipedia.org/wiki/Sean_Duffy"
   },
   {
-   "article": "Frankie Muniz",
-   "views": 27669,
+   "article": "Sharleen Spiteri",
+   "views": 35693,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Frankie_Muniz"
+   "url": "https://en.wikipedia.org/wiki/Sharleen_Spiteri"
   },
   {
-   "article": "Watts family murders",
-   "views": 26645,
-   "before": 7833,
-   "ratio": 3.4,
-   "url": "https://en.wikipedia.org/wiki/Watts_family_murders"
-  },
-  {
-   "article": "3rd Infantry Regiment (United States)",
-   "views": 26568,
+   "article": "2026 Microsoft outage",
+   "views": 35456,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/3rd_Infantry_Regiment_%28United_States%29"
+   "url": "https://en.wikipedia.org/wiki/2026_Microsoft_outage"
   },
   {
-   "article": "2026–27 UEFA Nations League",
-   "views": 25140,
+   "article": "Play That Funky Music",
+   "views": 35362,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/2026%E2%80%9327_UEFA_Nations_League"
+   "url": "https://en.wikipedia.org/wiki/Play_That_Funky_Music"
   },
   {
-   "article": "The Good Daughter (American TV series)",
-   "views": 24473,
+   "article": "Markwayne Mullin",
+   "views": 35255,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/The_Good_Daughter_%28American_TV_series%29"
+   "url": "https://en.wikipedia.org/wiki/Markwayne_Mullin"
   },
   {
-   "article": "Death of Mary Reeser",
-   "views": 23274,
+   "article": "Rene Haas",
+   "views": 32457,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Death_of_Mary_Reeser"
+   "url": "https://en.wikipedia.org/wiki/Rene_Haas"
   },
   {
-   "article": "Liza Snyder",
-   "views": 22421,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Liza_Snyder"
+   "article": "Howard Lutnick",
+   "views": 32315,
+   "before": 9680,
+   "ratio": 3.3,
+   "url": "https://en.wikipedia.org/wiki/Howard_Lutnick"
   },
   {
-   "article": "Earthquake light",
-   "views": 22333,
+   "article": "Stefon Diggs",
+   "views": 31339,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Earthquake_light"
+   "url": "https://en.wikipedia.org/wiki/Stefon_Diggs"
   },
   {
-   "article": "Novaya Gazeta",
-   "views": 21824,
+   "article": "Amityville murders",
+   "views": 30867,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Novaya_Gazeta"
+   "url": "https://en.wikipedia.org/wiki/Amityville_murders"
   },
   {
-   "article": "UEFA Nations League",
-   "views": 21758,
+   "article": "The Traitors: New Blood",
+   "views": 30333,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/UEFA_Nations_League"
+   "url": "https://en.wikipedia.org/wiki/The_Traitors%3A_New_Blood"
   },
   {
-   "article": "Pio Esposito",
-   "views": 20993,
+   "article": "Tyler West",
+   "views": 30160,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Pio_Esposito"
+   "url": "https://en.wikipedia.org/wiki/Tyler_West"
   },
   {
-   "article": "Empress Elisabeth of Austria",
-   "views": 20847,
+   "article": "2023 FAA system outage",
+   "views": 28635,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Empress_Elisabeth_of_Austria"
+   "url": "https://en.wikipedia.org/wiki/2023_FAA_system_outage"
   },
   {
-   "article": "The Amazing Race 39",
-   "views": 20631,
+   "article": "Jayden Daniels",
+   "views": 27930,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/The_Amazing_Race_39"
+   "url": "https://en.wikipedia.org/wiki/Jayden_Daniels"
   },
   {
-   "article": "USS Oriskany",
-   "views": 20361,
+   "article": "The End of Oak Street",
+   "views": 27570,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/USS_Oriskany"
+   "url": "https://en.wikipedia.org/wiki/The_End_of_Oak_Street"
   },
   {
-   "article": "Luka Modrić",
-   "views": 20351,
+   "article": "Friday the 13th (franchise)",
+   "views": 26973,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Luka_Modri%C4%87"
+   "url": "https://en.wikipedia.org/wiki/Friday_the_13th_%28franchise%29"
   },
   {
-   "article": "In Harm's Way",
-   "views": 20278,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/In_Harm%27s_Way"
+   "article": "Microsoft",
+   "views": 26859,
+   "before": 8628,
+   "ratio": 3.1,
+   "url": "https://en.wikipedia.org/wiki/Microsoft"
   },
   {
-   "article": "November 12",
-   "views": 20267,
+   "article": "Ian Watkins",
+   "views": 26737,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/November_12"
+   "url": "https://en.wikipedia.org/wiki/Ian_Watkins"
+  },
+  {
+   "article": "U2",
+   "views": 22166,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/U2"
+  },
+  {
+   "article": "27th Annual Latin Grammy Awards",
+   "views": 20724,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/27th_Annual_Latin_Grammy_Awards"
+  },
+  {
+   "article": "Jake Bauers",
+   "views": 20164,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Jake_Bauers"
   }
  ]
 }
