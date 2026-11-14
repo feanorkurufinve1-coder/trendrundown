@@ -6,13 +6,12 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
         with:
-          python-version: "3.8"
+          sparse-checkout: tools
       - run: |
           cd tools/trend_radar
-          python trend_radar.py --quick --no-upload || true
+          python3 trend_radar.py --quick --no-upload || true
           echo "=========== HEALTH"
-          python -c "import json;d=json.load(open('radar.json'));print(json.dumps(d['health'],ensure_ascii=False,indent=1));print(json.dumps(d['run'],ensure_ascii=False));print(json.dumps(d['candidates'][:12],ensure_ascii=False,indent=1)[:9000]);print(d['new_phrases'][:5]);print(d['reddit_questions'][:5])"
+          python3 -c "import json;d=json.load(open('radar.json'));print(json.dumps(d['health'],ensure_ascii=False,indent=1));print(json.dumps(d['run'],ensure_ascii=False));print(json.dumps(d['candidates'][:12],ensure_ascii=False,indent=1)[:9000]);print(d['new_phrases'][:5]);print(d['reddit_questions'][:5])"
           echo "=========== PHRASES SAMPLE"
-          python -c "import json;d=json.load(open('radar_state.json'));import itertools;print(list(d['phrases'].items())[:60])"
+          python3 -c "import json;d=json.load(open('radar_state.json'));import itertools;print(list(d['phrases'].items())[:60])"
