@@ -4604,18 +4604,16 @@ def build_index(store):
     if rest:
         parts.append('<h2 class="sec">Still being searched today</h2><div class="grid">'
                      + "".join(card(t, fmt_et(t["first_seen"], with_date=False), peak_label(t) + " peak") for t in rest) + "</div>")
-    xs = xs_all[:8]
-    if xs:
-        parts.append('<h2 class="sec">Explained today</h2><div class="xlinks">'
-                     + "".join(f'<a href="x/{E(x["slug"])}.html">{E(x["title"])} →</a>' for x in xs)
-                     + '<a href="explained.html" style="font-weight:400">All explainers →</a></div>')
+    # 14.11 (владелец): пояснения и советы — НЕ на главной, только ссылка на их отдельный раздел
+    if xs_all:
+        parts.append('<div class="xlinks"><a href="explained.html">Guides and explainers: how things work, terms from the news →</a></div>')
     if week:
         if rest:
             parts.append(ad("home"))
         parts.append('<h2 class="sec">Biggest this week</h2><div class="grid">'
                      + "".join(card(t, fmt_et(t["first_seen"]).split(",")[0], peak_label(t) + " peak") for t in week) + "</div>")
     # 12.11: самое свежее наверху — ручные новости и пояснения (пишутся каждый день), старые тренды ниже
-    fresh = [x for x in xs_all if x.get("manual")][:9]
+    fresh = [x for x in xs_all if x.get("manual") and x.get("news")][:9]   # 14.11: наверху главной — только новости
     lead_html = ""
     if fresh:
         def cut(t_, n_):
@@ -4748,7 +4746,9 @@ def build_explainer(x, topics):
 
 
 def build_explained_index(ex):
-    items = sorted(ex.values(), key=lambda x: x.get("seen", x["made"]), reverse=True)
+    # 14.11: раздел пояснений — сначала ручные (не новости), свежие сверху; новости живут на главной
+    items = sorted([x for x in ex.values() if not x.get("news")],
+                   key=lambda x: (bool(x.get("manual")), x.get("first") or x.get("made") or ""), reverse=True)
     rows = "".join(f'<li><a class="t" href="x/{E(x["slug"])}.html">{E(x["title"])}</a>'
                    f'<span class="meta">{E(x["answer"][:140])}…</span></li>' for x in items[:300])
     body = (f'<p class="tag">Terms, people and places from the news — explained in plain words</p>'
