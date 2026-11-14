@@ -89,14 +89,18 @@ YT_PREFIXES = ([("tiktok trend " + c, "yt") for c in LETTERS] + [("new trend " +
 
 # ---------- Reddit: разделы и поиск, где просят объяснить ----------
 REDDIT_FEEDS = [
-    ("search", 'title:"what does" mean'), ("search", 'title:"why is everyone"'), ("search", "tiktok trend explain"),
-    ("search", 'title:"what is the" trend'), ("search", 'title:"what does" slang'),
     ("r", "OutOfTheLoop"), ("r", "PeterExplainsTheJoke"), ("r", "ExplainTheJoke"), ("r", "GenZ"), ("r", "GenAlpha"),
     ("r", "teenagers"), ("r", "Teachers"), ("r", "TikTokCringe"), ("r", "tiktok"), ("r", "slang"),
     ("r", "KnowYourMeme"), ("r", "NoStupidQuestions"), ("r", "youngpeopleyoutube"), ("r", "internetculture"),
+    ("search", 'title:"what does" mean'), ("search", 'title:"why is everyone"'), ("search", "tiktok trend explain"),
+    ("search", 'title:"what is the" trend'), ("search", 'title:"what does" slang'),
 ]
 
 # слова в подсказке, по которым «what is the X …» считаем трендом
+# хвосты подсказок, по которым видно, что слово — именно интернет-сленг, а не обычный термин
+SLANG_MARK = re.compile(r"(?i)\b(in text|in a text|in slang|slang|on tiktok|tiktok|on snapchat|snapchat|on instagram|on ig|in chat|"
+                        r"in texting|texting|gen z|gen alpha|from a girl|from a guy|from a boy|urban dictionary|brainrot|meme|in gaming|"
+                        r"on twitter|on discord|in roblox|on social media)\b")
 TREND_WORDS = ("trend", "challenge", "meme", "tiktok", "filter", "dance", "sound", "song on tiktok", "theory", "test",
                "method", "rule", "core", "aesthetic", "era", "brainrot", "slang", "emoji", "prank", "hack", "game on tiktok")
 
@@ -680,6 +684,9 @@ def build_candidates(st, extra):
         c["layers"].add("youtube" if yt else "google")
         fresh = phrase_is_fresh(rec)
         c["suggest"].append({"q": phrase, "first": rec[0], "days": rec[2], "new": fresh, "yt": yt})
+        m = SLANG_MARK.search(phrase.replace(term.lower(), " ", 1))
+        if m:
+            c.setdefault("marks", set()).add(m.group(1).lower())
         c["rel"] = max(c["rel"], rec[3] or 0)
         if fresh:
             c["fresh"] += 1
@@ -789,6 +796,13 @@ def score(c, sweeps, baseline=""):
         why.append("впервые замечен %s" % c["first_seen"])
     if c["rel"] >= 900:
         s += 1
+    marks = c.get("marks") or ()
+    if marks:
+        s += min(len(marks), 4) * 0.7
+        why.append("ищут как сленг: " + ", ".join(sorted(marks)[:4]))
+    if "kym" in c["layers"]:
+        s += 2
+        why.append("есть в Know Your Meme")
     if c.get("wiki"):
         s -= 1
         why.append("есть статья Википедии: " + c["wiki"])
@@ -798,7 +812,7 @@ def score(c, sweeps, baseline=""):
         why.append("сильных объяснений в поиске: %d" % len(big) if big else "сильных объяснений в поиске нет")
         if not big:
             s += 2
-    if layers == 1 and not c["fresh"] and rd <= 1:
+    if layers == 1 and not c["fresh"] and rd <= 1 and len(marks) < 2 and not ({"kym", "urban"} & c["layers"]):
         s -= 3                                           # один слабый сигнал — почти наверняка шум или старое
     c["score"] = round(s, 1)
     c["why"] = why
@@ -875,6 +889,8 @@ def make_pack(st, health, started):
              "first_seen": c["first_seen"], "days_seen": c["days_seen"],
              "suggest": [{"q": x["q"], "first": x["first"], "new": x["new"]} for x in sg[:8]],
              "reddit": sorted(c["reddit"], key=lambda p: p.get("at", ""), reverse=True)[:5]}
+        if c.get("marks"):
+            d["marks"] = sorted(c["marks"])
         for k in ("ud", "ud_wotd", "kym", "trends", "bluesky", "wiki", "serp", "big", "comments"):
             if c.get(k):
                 d[k] = c[k]

@@ -12,6 +12,4 @@ jobs:
           cd tools/trend_radar
           python3 trend_radar.py --quick --no-upload || true
           echo "=========== HEALTH"
-          python3 -c "import json;d=json.load(open('radar.json'));print(json.dumps(d['health'],ensure_ascii=False,indent=1));print(json.dumps(d['run'],ensure_ascii=False));print(json.dumps(d['candidates'][:12],ensure_ascii=False,indent=1)[:9000]);print(d['new_phrases'][:5]);print(d['reddit_questions'][:5])"
-          echo "=========== PHRASES SAMPLE"
-          python3 -c "import json;d=json.load(open('radar_state.json'));import itertools;print(list(d['phrases'].items())[:60])"
+          python3 -c "import json;d=json.load(open('radar.json'));print({k:(v['ok'],v['n']) for k,v in d['health'].items()});[print(c['score'],'|',c['term'],'|',c['kind'],'|','; '.join(c['why']),'|',c.get('ud',{}).get('gist','')[:60],'|',c.get('big')) for c in d['candidates'][:45]]"
