@@ -1,0 +1,52 @@
+{
+ "subject": "Microsoft 364",
+ "kind": "term",
+ "trend": true,
+ "query": "what does microsoft 364 mean",
+ "title": "What does Microsoft 364 mean? The joke from the Nov. 12 outage",
+ "answer": "\"Microsoft 364\" is a joke nickname for Microsoft 365. It took off on Nov. 12, 2026, when Outlook, Teams and other Microsoft 365 apps went down for many users worldwide: if the service is named for being up 365 days a year, people joked, losing a day makes it 364.",
+ "body": "The joke works because the name Microsoft 365 suggests the service is there every day of the year. When it went down, people \"subtracted\" the lost day. You will see it used like this: \"Can't send you the file, I'm on Microsoft 364 today.\" When the problems dragged into a second day in some regions, a few people pushed it to \"Microsoft 363.\" Common versions include edited logos with the 5 crossed out or swapped for a 4.\n\nThe outage began shortly before 1 p.m. ET on Thursday, Nov. 12, 2026, when Microsoft said it was investigating reports that users couldn't reach their mailboxes. Downdetector logged more than 100,000 reports within about an hour, according to ABC News. Microsoft said the problem started during an earlier network capacity upgrade and surfaced after a network change, and that there was no sign of a cyberattack. By Friday morning, Nov. 13, Microsoft reported broad improvement in North America and Europe, and it apologized to customers.\n\nIt went viral because it hit office workers, schools and government offices at the same time, and many of them were suddenly free of email. Posts urging Microsoft engineers to \"take their time\" got millions of views on X and TikTok, and brands joined in: KitKat's U.S. account joked about taking a break, and Canva posted a mock error screen, Gulf News reported. Know Your Meme added a \"Microsoft 364\" entry within days.\n\nThe nickname is a joke, not a product. There is no Microsoft 364 plan, and the subscription is still called Microsoft 365.",
+ "in_the_news": "A worldwide Microsoft 365 outage on Nov. 12–13, 2026, knocked out Outlook and Teams for many users and turned \"Microsoft 364\" into a meme.",
+ "faq": [
+  {
+   "q": "Is Microsoft 364 a real product?",
+   "a": "No. It is a joke about the Nov. 12, 2026, outage. The real subscription is Microsoft 365."
+  },
+  {
+   "q": "Why are people saying Microsoft 363?",
+   "a": "Same joke, one step further: in some regions the problems lasted into a second day, so people \"took away\" two days from 365."
+  },
+  {
+   "q": "What caused the Microsoft outage on Nov. 12, 2026?",
+   "a": "Microsoft said a technical issue began during an earlier network capacity upgrade and surfaced after a network change. It said there was no indication of a hack or other malicious activity."
+  },
+  {
+   "q": "Is Outlook working again?",
+   "a": "Microsoft reported broad recovery on Friday, Nov. 13, though it warned that some users could still see delayed email for a while."
+  }
+ ],
+ "links": [
+  [
+   "ABC News",
+   "Outlook outage updates: Microsoft apologizes for email disruption, says there was no hack",
+   "https://abcnews.com/US/outlook-down-microsoft-outage-reported-mail/story?id=138088203"
+  ],
+  [
+   "Know Your Meme",
+   "Microsoft 364",
+   "https://knowyourmeme.com/memes/microsoft-364"
+  ],
+  [
+   "Gulf News",
+   "Outlook down, memes up: Internet has a field day with the Microsoft outage",
+   "https://gulfnews.com/technology/outlook-down-memes-up-internet-has-a-field-day-with-the-microsoft-outage-1.500746065"
+  ]
+ ],
+ "topics": [
+  "memes",
+  "tech"
+ ],
+ "made": "2026-11-15T14:00:00+00:00",
+ "first": "2026-11-15T14:00:00+00:00",
+ "updated": "2026-11-15T14:00:00+00:00"
+}

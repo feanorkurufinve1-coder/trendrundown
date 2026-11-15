@@ -164,6 +164,9 @@
 Проверка: через 3–7 дней после даты сверить с Trends CSV и Search Console — угадали или нет, записать урок сюда.
 
 ## Уроки
+- 15 нояб, вечер (GSC: последний полный день 14 нояб — 1 клик / 2 показа (клик на /x/rot-weiss-essen); 13 нояб 1/1. health.json 15 нояб: в индексе 3 URL — /, /x/cyber-monday, /x/ligue-1; 63 «Crawled – not indexed», 19 «Discovered», 52 неизвестны Google):
+  - По типам (страницы 12–13 нояб, 2–3 дня): прогноз (is-being-heumann-a-true-story, is-the-law-of-beasts-a-true-story, rock-hall-of-fame-2026-ceremony-air-date) — 0 показов, Crawled – not indexed; вечные (why-does-my-phone-battery-go-down-while-charging, why-is-wifi-not-working-on-my-phone, what-does-refrigerator-coolant-smell-like) — 0, Discovered/Crawled; тренд/обзор — сегодня первые страницы раздела /trends (microsoft 364, finland embassy, обзор недели, гид для родителей), сравнивать через 3–7 дней.
+  - Радар 15 нояб: верх списка — обрывки подсказок «why are people saying X» (daredevil/dr doom, air fryers are bad) и медицинские «X in blood test» — не тренды; свежие мемы надёжнее брать из раздела Explainers Know Your Meme за неделю (там нашлись Finland embassy, Fortnite pirate coin, Kasane Teto).
 - 14 нояб, вечер (GSC: последний полный день 12 нояб — 2 клика / 8 показов, оба на главную; 13 нояб ещё 0. health.json 14 нояб: из 127 ручных страниц в индексе 2 — /x/cyber-monday и /x/ligue-1 (first_indexed 13 нояб 16:25 UTC — для ligue-1 это через 45 мин после переписывания, т.е. старый URL, вероятно, оставался в индексе), 53 «Crawled – not indexed», 19 «Discovered», 53 неизвестны Google; sitemap 158 отправлено / 0). Страницы 12 нояб (2 дня), GSC — 0 показов у всех; фраза в подсказках Google:
   - coachella-2027-tickets-on-sale — 0; ✅; Crawled – not indexed
   - is-being-heumann-a-true-story — 0; ✅; Crawled – not indexed
