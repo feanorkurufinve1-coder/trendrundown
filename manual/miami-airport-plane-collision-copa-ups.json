@@ -1,0 +1,48 @@
+{
+ "news": true,
+ "subject": "Miami International Airport plane collision",
+ "kind": "event",
+ "query": "miami airport plane collision",
+ "title": "Miami airport plane collision: Copa jet clipped a UPS cargo plane",
+ "answer": "At about 9:15 p.m. on Saturday, Nov. 14, 2026, the wingtip of a Copa Airlines Boeing 737 struck the nose of a UPS Boeing 767 where two taxiways meet at Miami International Airport. Two people were treated at the scene for minor injuries, and no one was taken to a hospital. The FAA is investigating.",
+ "in_the_news": "The collision came one day after the FAA's nationwide ground stop, while Miami was still working through delays and cancellations, and two months after a deadly cargo jet crash at the same airport.",
+ "body": "The Copa jet had just landed from Panama City, Panama, and was taxiing to its gate with 166 passengers and six crew members aboard, according to reports. The UPS widebody was heading out for a cargo flight to Bogotá, Colombia. The FAA said controllers had instructed the UPS crew to give way to the Copa flight; on air traffic control audio, a pilot can be heard saying, \"Somebody hit us.\" Photos showed damage to the nose of the UPS aircraft. UPS said its crew was safe and that it would work with authorities to find out what happened.\n\nAirport spokesman Greg Chin said other flights were sent along different taxiways, so the collision did not disrupt operations. The cause has not been determined.\n\nThe incident adds to a tense stretch for U.S. aviation. On Friday, Nov. 13, the FAA halted departures nationwide for several hours after aging air traffic control communications gear became unstable, and FAA Administrator Bryan Bedford said schedules should be back to normal by the end of Sunday. Miami International was also the site of an Amazon cargo jet crash in September that killed five people; an initial NTSB report in that case is out, and that investigation is still open.",
+ "faq": [
+  {
+   "q": "Was anyone hurt in the Miami airport collision?",
+   "a": "Two people were treated at the scene by Miami-Dade Fire Rescue for minor injuries. Neither needed to go to a hospital."
+  },
+  {
+   "q": "Which planes collided at Miami International Airport?",
+   "a": "A Copa Airlines Boeing 737 arriving from Panama City and a UPS Boeing 767 cargo plane departing for Bogotá. The Copa jet's wingtip hit the nose of the UPS plane."
+  },
+  {
+   "q": "Did the collision delay flights in Miami?",
+   "a": "The airport said traffic was routed around the scene with no impact on operations, though Miami was still dealing with delays left over from the Nov. 13 nationwide ground stop."
+  },
+  {
+   "q": "Who is investigating?",
+   "a": "The FAA is investigating. The cause has not been released."
+  }
+ ],
+ "links": [
+  [
+   "ABC News",
+   "UPS plane, Copa Airlines flight collide on taxiway at Miami International Airport",
+   "https://abcnews.com/US/ups-plane-copa-airlines-flight-collide-taxiway-miami/story?id=138152923"
+  ],
+  [
+   "CBS Miami",
+   "UPS cargo plane, Copa Airlines jet carrying 172 people collide while taxiing at Miami International Airport",
+   "https://www.cbsnews.com/miami/news/ups-plane-copa-airlines-jet-collide-miami-international-airport/"
+  ],
+  [
+   "FOX 13",
+   "Passenger jet, cargo plane collide at Miami International Airport; 2 injured",
+   "https://www.fox13news.com/news/passenger-jet-cargo-plane-collide-miami-international-airport-2-injured"
+  ]
+ ],
+ "image_wiki": "Copa Airlines",
+ "made": "2026-11-15T16:50:00+00:00",
+ "first": "2026-11-15T16:50:00+00:00"
+}
