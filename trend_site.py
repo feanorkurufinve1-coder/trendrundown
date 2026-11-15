@@ -70,7 +70,7 @@ BLOCK_FILE = "blocklist.txt"    # ваши запреты: по одному с�
 STRICT_SOURCES = True      # True — только проверенные издания из списка TRUSTED
 # =======================
 
-import os, sys, re, json, ssl, time, html, math, subprocess, urllib.request, urllib.parse, urllib.error, base64, io
+import os, sys, re, json, ssl, time, html, math, subprocess, urllib.request, urllib.parse, urllib.error, base64, io, hashlib
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
@@ -3474,6 +3474,138 @@ def ai_image(store, x, budget):
     return None
 
 
+PIN_W, PIN_H = 1000, 1500
+PIN_THEMES = {"trend": ((59, 18, 120), (214, 41, 118)), "home": ((120, 45, 10), (230, 126, 34)),
+              "money": ((10, 70, 50), (22, 160, 110)), "default": ((12, 46, 82), (24, 120, 160))}
+PIN_HOME = re.compile(r"(?i)\b(washing|washer|dryer|fridge|refrigerator|freezer|dishwasher|oven|wi-?fi|router|phone|iphone|"
+                      r"android|screen|battery|charg\w*|tv|engine|car|tire|check engine|smell|leak|noise|broken|not working)\b")
+PIN_MONEY = re.compile(r"(?i)\b(tax|refund|social security|paycheck|irs|snap|medicaid|benefit|price|cost|\$)\b")
+
+
+def _pin_font(bold, size):
+    from PIL import ImageFont
+    name = "Poppins-Bold.ttf" if bold else "Poppins-Medium.ttf"
+    for path in (os.path.join(HERE, "assets", "fonts", name), "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"):
+        try:
+            return ImageFont.truetype(path, size)
+        except Exception:
+            continue
+    return ImageFont.load_default()
+
+
+def _pin_wrap(draw, text, font, width):
+    words, lines, cur = text.split(), [], ""
+    for w in words:
+        t = (cur + " " + w).strip()
+        if draw.textlength(t, font=font) <= width or not cur:
+            cur = t
+        else:
+            lines.append(cur)
+            cur = w
+    if cur:
+        lines.append(cur)
+    return lines
+
+
+def pin_image(x):
+    """15.11: вертикальная картинка-пин для Pinterest (1000x1500): крупный вопрос НАШИМ текстом + короткий ответ + адрес сайта.
+    Фон — наша иллюстрация (своя или нарисованная нейросетью) с затемнением; если её нет (или фото с Commons, у которых
+    лицензия требует подписи автора) — фирменный цветной фон. Файлы pins/<slug>.jpg не хранятся в git, собираются заново."""
+    if not HAS_PIL:
+        return None
+    from PIL import Image, ImageDraw, ImageFilter
+    title = re.sub(r"\s+", " ", x.get("title") or "").strip()
+    if not title:
+        return None
+    q, mark, tail = title.partition("?")
+    q = (q.strip() + "?") if mark else title
+    tail = tail.strip(" :;—–-")
+    im_info = x.get("img") or {}
+    if x.get("trend"):
+        theme = PIN_THEMES["trend"]
+    elif PIN_MONEY.search(title):
+        theme = PIN_THEMES["money"]
+    elif PIN_HOME.search(title):
+        theme = PIN_THEMES["home"]
+    else:
+        theme = PIN_THEMES["default"]
+    bg = None
+    if im_info.get("own") or im_info.get("ai"):
+        try:
+            src = Image.open(os.path.join(OUT, im_info["file"])).convert("RGB")
+            sc = max(PIN_W / src.width, PIN_H / src.height)
+            src = src.resize((int(src.width * sc) + 1, int(src.height * sc) + 1), Image.LANCZOS)
+            l, t = (src.width - PIN_W) // 2, (src.height - PIN_H) // 2
+            bg = src.crop((l, t, l + PIN_W, t + PIN_H))
+        except Exception:
+            bg = None
+    if bg is None:
+        bg = Image.new("RGB", (PIN_W, PIN_H))
+        c1, c2 = theme
+        px = bg.load()
+        for yy in range(PIN_H):
+            for xx in range(0, PIN_W, 4):
+                k = (yy / PIN_H) * 0.75 + (xx / PIN_W) * 0.25
+                col = tuple(int(c1[i] + (c2[i] - c1[i]) * k) for i in range(3))
+                for d in range(4):
+                    if xx + d < PIN_W:
+                        px[xx + d, yy] = col
+        deco = Image.new("L", (PIN_W, PIN_H), 0)
+        ImageDraw.Draw(deco).text((PIN_W - 520, PIN_H - 980), "?", font=_pin_font(True, 900), fill=38)
+        bg = Image.composite(Image.new("RGB", (PIN_W, PIN_H), (255, 255, 255)), bg, deco)
+        has_photo = False
+    else:
+        has_photo = True
+    # затемнение под текстом
+    shade = Image.new("L", (PIN_W, PIN_H), 0)
+    sd = ImageDraw.Draw(shade)
+    top = 0 if not has_photo else int(PIN_H * 0.30)
+    for yy in range(top, PIN_H):
+        a = (yy - top) / max(1, PIN_H - top)
+        sd.line([(0, yy), (PIN_W, yy)], fill=int((60 if not has_photo else 40) + (150 if has_photo else 40) * min(1, a * 1.4)))
+    bg = Image.composite(Image.new("RGB", (PIN_W, PIN_H), (0, 0, 0)), bg, shade)
+    d = ImageDraw.Draw(bg)
+    margin, width = 70, PIN_W - 140
+    # ярлык раздела
+    label = "INTERNET TRENDS" if x.get("trend") else "EXPLAINED"
+    lf = _pin_font(True, 34)
+    lw = d.textlength(label, font=lf)
+    d.rounded_rectangle([margin, 80, margin + lw + 44, 140], radius=30, fill=(255, 255, 255))
+    d.text((margin + 22, 87), label, font=lf, fill=theme[0])
+    # вопрос — подбираем размер
+    for size in (96, 88, 80, 72, 64, 58, 52):
+        qf = _pin_font(True, size)
+        qlines = _pin_wrap(d, q, qf, width)
+        if len(qlines) <= 6:
+            break
+    tf = _pin_font(False, 46)
+    tlines = _pin_wrap(d, tail, tf, width)[:3] if tail else []
+    qh = len(qlines) * int(size * 1.18)
+    th = len(tlines) * 62 + (30 if tlines else 0)
+    block = qh + th
+    y = (PIN_H - 230 - block) if has_photo else max(220, (PIN_H - block) // 2 - 40)
+    for ln in qlines:
+        d.text((margin + 3, y + 3), ln, font=qf, fill=(0, 0, 0))
+        d.text((margin, y), ln, font=qf, fill=(255, 255, 255))
+        y += int(size * 1.18)
+    if tlines:
+        y += 30
+        for ln in tlines:
+            d.text((margin, y), ln, font=tf, fill=(253, 230, 138))
+            y += 62
+    # адрес сайта
+    bf = _pin_font(True, 40)
+    d.rectangle([0, PIN_H - 120, PIN_W, PIN_H], fill=(10, 10, 14))
+    d.text((margin, PIN_H - 92), "trendrundown.com", font=bf, fill=(255, 255, 255))
+    rf = _pin_font(False, 32)
+    rt = "Read the full answer"
+    d.text((PIN_W - margin - d.textlength(rt, font=rf), PIN_H - 86), rt, font=rf, fill=(200, 200, 210))
+    os.makedirs(os.path.join(OUT, "pins"), exist_ok=True)
+    dst = f"pins/{x['slug']}.jpg"
+    bg.save(os.path.join(OUT, dst), "JPEG", quality=84, optimize=True)
+    return dst
+
+
 def manual_image(store, x):
     """Фото к ручной странице. В файле страницы поле image_wiki — ТОЧНОЕ название статьи английской Википедии;
     берём её главную картинку, только если на Commons она под свободной лицензией (CC / public domain). Кэш в store."""
@@ -5160,8 +5292,18 @@ def build_site(store):
       + "</channel></rss>")
     # 15.11: лента для Pinterest (автопубликация пинов): только ручные страницы с картинкой, без новостей, свежие сверху
     try:
-        pins = sorted([x for x in ex.values() if x.get("manual") and x.get("img") and not x.get("news")],
-                      key=lambda x: x.get("first") or x.get("made") or "", reverse=True)[:100]
+        pins = sorted([x for x in ex.values() if x.get("manual") and not x.get("news")],
+                      key=lambda x: x.get("first") or x.get("made") or "", reverse=True)[:150]
+        made = []
+        for x in pins:
+            try:
+                f = pin_image(x)
+            except Exception as e:
+                log(f"пин '{x['slug']}': {e}")
+                f = None
+            if f:
+                made.append((x, f))
+        pins = made
 
         def pdate(x):
             try:
@@ -5172,8 +5314,8 @@ def build_site(store):
           f"<title>{SITE_NAME}: explained</title><link>{SITE_URL}</link><description>Internet trends, slang and everyday questions, explained.</description>"
           + "".join(f"<item><title>{E(x['title'][:100])}</title><link>{SITE_URL}/x/{x['slug']}</link><guid>{SITE_URL}/x/{x['slug']}</guid>"
                     f"<description>{E((x.get('answer') or '')[:480])}</description><pubDate>{pdate(x)}</pubDate>"
-                    f'<enclosure url="{SITE_URL}/{E(x["img"]["file"])}" type="image/jpeg" length="0"/>'
-                    f'<media:content url="{SITE_URL}/{E(x["img"]["file"])}" medium="image"/></item>' for x in pins)
+                    f'<enclosure url="{SITE_URL}/{E(f)}" type="image/jpeg" length="0"/>'
+                    f'<media:content url="{SITE_URL}/{E(f)}" medium="image"/></item>' for x, f in pins)
           + "</channel></rss>")
     except Exception as e:
         log(f"pins.xml: {e}")

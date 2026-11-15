@@ -1,0 +1,5 @@
+Poppins (Poppins-Bold.ttf, Poppins-Medium.ttf)
+Copyright 2020 The Poppins Project Authors (https://github.com/itfoundry/Poppins)
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+License text: https://openfontlicense.org/open-font-license-official-text/
+Used only to render titles on pin images for trendrundown.com; the font files are not sold.
