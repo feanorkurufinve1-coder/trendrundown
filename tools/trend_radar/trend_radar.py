@@ -28,7 +28,7 @@ import urllib.error, urllib.parse, urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 
-VERSION = "1.3"
+VERSION = "1.4"
 HERE = os.path.dirname(os.path.abspath(__file__))
 STATE = os.path.join(HERE, "radar_state.json")
 LOG = os.path.join(HERE, "radar_log.txt")
@@ -117,7 +117,11 @@ STOP_TERMS = set("tiktok trend trends meme memes slang youtube instagram snapcha
 HEALTH = re.compile(r"(?i)\b(blood|urine|symptoms?|disease|cancer|tumou?r|diagnos\w*|infection|virus|syndrome|disorder|"
                     r"pain|ache|creatinine|eosinophils?|cholesterol|glucose|insulin|platelets?|lymphocytes?|hemoglobin|"
                     r"thyroid|liver|kidney|biopsy|mri|ct scan|x-?ray|ultrasound|test results?|lab results?|pregnan\w*|"
-                    r"medication|dosage|mg|side effects?|rash|fever|covid|flu|std|hiv|adhd|autism|bipolar|depression|anxiety)\b")
+                    r"medication|dosage|mg|side effects?|mammograms?|vaccines?|used for|shoulder|surgery|therapy|vitamins?|rash|fever|covid|flu|std|hiv|adhd|autism|bipolar|depression|anxiety)\b")
+LINK_STOP = set("what does mean meaning with that this they them their there about from have been being were will would could "
+                "should people everyone saying says said just like really when where which while going thing things meme memes "
+                "trend trends tiktok deal whats explain someone anyone know think today right water movie movies music video videos "
+                "game games world year years money phone school house president america american".split())
 GENERIC = set("it this that he she they you i we a an the my your his her their its mean means meaning word slang "
               "someone something everyone people text mean in when if and or to of on do does did go get be say saying are is was were "
               "have has at by for with from so no yes not just like all".split())
@@ -739,6 +743,27 @@ def build_candidates(st, extra):
             if BLOCK.search(p["t"]):
                 c["blocked"] = True
 
+    # --- связь «подсказка Google ↔ пост Reddit» по общим словам (air fryers are bad ↔ What's the deal with "air fryer" memes?) ---
+    def words_of(t):
+        return set(w[:-1] if w.endswith("s") and len(w) > 4 else w
+                   for w in re.findall(r"[a-z0-9]+", t.lower()) if len(w) >= 4 and w not in LINK_STOP)
+    posts = [(p, words_of(p["t"])) for p in st["posts"].values() if p.get("got", "") >= week and not BLOCK.search(p["t"])]
+    for c in list(C.values()):
+        if "reddit" in c["layers"] or not c["suggest"]:
+            continue
+        term = max(c["forms"].items(), key=lambda z: z[1])[0]
+        tw = words_of(term)
+        if not tw:
+            continue
+        for p, pw in posts:
+            common = tw & pw
+            if len(common) >= 2 or (len(tw) == 1 and common and len(next(iter(tw))) >= 5 and EXPLAIN_TITLE.search(p["t"])):
+                c["layers"].add("reddit")
+                c["reddit"].append({"t": p["t"][:200], "sub": p.get("sub", ""), "url": p["url"], "at": p.get("at", ""),
+                                    "snip": p.get("snip", "")[:300], "linked": True})
+                if len(c["reddit"]) >= 4:
+                    break
+
     # --- Urban Dictionary: слово дня ---
     for w in extra.get("ud", []):
         if good_term(w["word"]):
@@ -800,6 +825,7 @@ def build_candidates(st, extra):
 def score(c, sweeps, baseline=""):
     """Оценка: чем выше, тем вероятнее, что это свежий тренд без хорошего объяснения."""
     layers = len(c["layers"])
+    marks = c.get("marks") or ()
     s = 3.0 * layers
     why = ["этажей: %d (%s)" % (layers, ", ".join(sorted(c["layers"])))]
     if c["fresh"]:
@@ -830,7 +856,6 @@ def score(c, sweeps, baseline=""):
         why.append("впервые замечен %s" % c["first_seen"])
     if c["rel"] >= 900:
         s += 1
-    marks = c.get("marks") or ()
     if marks:
         s += min(len(marks), 4) * 0.7
         why.append("ищут как сленг: " + ", ".join(sorted(marks)[:4]))
@@ -852,8 +877,14 @@ def score(c, sweeps, baseline=""):
     just_born = any(x.get("new") and days_ago(x.get("first", "")) <= 2 for x in c["suggest"]) or \
         (baseline and c["first_seen"] > baseline and days_ago(c["first_seen"]) <= 2)
     big_n = len(c["big"]) if c.get("big") is not None else 0
+    solid = layers >= 2 or recent_posts >= 2 or c["fresh"] >= 2 or (ud and days_ago(ud["oldest"]) <= 120)
+    if c["kind"] in ("slang", "quoted") and not solid and len(marks) < 1:
+        just_born = False        # одиночное «what does X mean» без других подтверждений — обычно просто слово из словаря
     c["early"] = bool(just_born and (c["fresh"] or recent_posts >= 2 or layers >= 2) and big_n <= 1
                       and c["key"] not in STOP_TERMS and not (ud and days_ago(ud["oldest"]) > 365))
+    if c["early"] and solid:
+        s += 2
+        why.insert(0, "подтверждён несколькими сигналами")
     if c["early"]:
         s += 3
         why.insert(0, "РАННИЙ ТРЕНД: только появился, сильных объяснений ещё нет")
@@ -950,7 +981,8 @@ def make_pack(st, health, started):
     used = set(p["url"] for c in cands[:MAX_CANDIDATES] for p in c["reddit"])
     loose = [p for p in st["posts"].values() if p["url"] not in used and EXPLAIN_TITLE.search(p["t"]) and not BLOCK.search(p["t"])]
     loose.sort(key=lambda p: p.get("at", ""), reverse=True)
-    newp = [(q, r) for q, r in st["phrases"].items() if phrase_is_fresh(r) and days_ago(r[1]) <= 2 and not BLOCK.search(q)]
+    newp = [(q, r) for q, r in st["phrases"].items() if phrase_is_fresh(r) and days_ago(r[1]) <= 2 and not BLOCK.search(q)
+            and not HEALTH.search(q) and not re.search(r"(?i)\b(score|net worth|weather|price of|stock price|in math|zodiac)\b", q)]
     newp.sort(key=lambda z: (z[1][0], z[1][2]), reverse=True)
     return {"made": now_iso(), "version": VERSION,
             "run": {"started": started, "minutes": round((time.time() - T0[0]) / 60, 1), "sweeps": st["sweeps"],
