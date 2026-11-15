@@ -1,238 +1,287 @@
 {
- "made": "2026-11-14T23:03:59+00:00",
- "day": "2026-11-13",
+ "made": "2026-11-15T05:16:49+00:00",
+ "day": "2026-11-14",
  "about": "Всплески просмотров английской Википедии за вчера: views — просмотров вчера, before — максимум за 3 прошлых дня (null = статьи не было в топ-1000). Идеи для страниц «who is / what is»; проверять факты по новостям.",
  "spikes": [
   {
-   "article": "Chris Van Hollen",
-   "views": 204913,
-   "before": 59326,
-   "ratio": 3.5,
-   "url": "https://en.wikipedia.org/wiki/Chris_Van_Hollen"
-  },
-  {
-   "article": "Piracy",
-   "views": 201972,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Piracy"
-  },
-  {
-   "article": "Sam Hartman",
-   "views": 191577,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Sam_Hartman"
-  },
-  {
-   "article": "Avril Lavigne",
-   "views": 120937,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Avril_Lavigne"
-  },
-  {
-   "article": "2026 Streamer Awards",
-   "views": 84725,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/2026_Streamer_Awards"
-  },
-  {
-   "article": "Cam Skattebo",
-   "views": 77860,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Cam_Skattebo"
-  },
-  {
-   "article": "J. J. McCarthy",
-   "views": 59502,
-   "before": 16540,
-   "ratio": 3.6,
-   "url": "https://en.wikipedia.org/wiki/J._J._McCarthy"
-  },
-  {
-   "article": "Avengers Endgame: Encore",
-   "views": 54372,
-   "before": 13232,
-   "ratio": 4.1,
-   "url": "https://en.wikipedia.org/wiki/Avengers_Endgame%3A_Encore"
-  },
-  {
-   "article": "Sharad Kapoor",
-   "views": 53339,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Sharad_Kapoor"
-  },
-  {
-   "article": "Mahli Beardman",
-   "views": 47991,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Mahli_Beardman"
-  },
-  {
-   "article": "Daayra",
-   "views": 47962,
-   "before": 8728,
-   "ratio": 5.5,
-   "url": "https://en.wikipedia.org/wiki/Daayra"
-  },
-  {
-   "article": "Ranabaali",
-   "views": 43392,
-   "before": 9678,
-   "ratio": 4.5,
-   "url": "https://en.wikipedia.org/wiki/Ranabaali"
-  },
-  {
-   "article": "Friday the 13th",
-   "views": 41286,
-   "before": 8225,
-   "ratio": 5.0,
-   "url": "https://en.wikipedia.org/wiki/Friday_the_13th"
-  },
-  {
    "article": "Sean Duffy",
-   "views": 37183,
-   "before": null,
-   "ratio": null,
+   "views": 434101,
+   "before": 37183,
+   "ratio": 11.7,
    "url": "https://en.wikipedia.org/wiki/Sean_Duffy"
   },
   {
-   "article": "Sharleen Spiteri",
-   "views": 35693,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Sharleen_Spiteri"
-  },
-  {
-   "article": "2026 Microsoft outage",
-   "views": 35456,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/2026_Microsoft_outage"
-  },
-  {
-   "article": "Play That Funky Music",
-   "views": 35362,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Play_That_Funky_Music"
-  },
-  {
    "article": "Markwayne Mullin",
-   "views": 35255,
-   "before": null,
-   "ratio": null,
+   "views": 113475,
+   "before": 35255,
+   "ratio": 3.2,
    "url": "https://en.wikipedia.org/wiki/Markwayne_Mullin"
   },
   {
-   "article": "Rene Haas",
-   "views": 32457,
+   "article": "Rachel Campos-Duffy",
+   "views": 86460,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Rene_Haas"
+   "url": "https://en.wikipedia.org/wiki/Rachel_Campos-Duffy"
   },
   {
-   "article": "Howard Lutnick",
-   "views": 32315,
+   "article": "2026 FAA communication outage",
+   "views": 78787,
+   "before": 12395,
+   "ratio": 6.4,
+   "url": "https://en.wikipedia.org/wiki/2026_FAA_communication_outage"
+  },
+  {
+   "article": "James Botham",
+   "views": 75245,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/James_Botham"
+  },
+  {
+   "article": "Eurovision Song Contest Asia",
+   "views": 71577,
    "before": 9680,
-   "ratio": 3.3,
-   "url": "https://en.wikipedia.org/wiki/Howard_Lutnick"
+   "ratio": 7.4,
+   "url": "https://en.wikipedia.org/wiki/Eurovision_Song_Contest_Asia"
   },
   {
-   "article": "Stefon Diggs",
-   "views": 31339,
+   "article": "Will Joseph (rugby union, born 2002)",
+   "views": 51525,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Stefon_Diggs"
+   "url": "https://en.wikipedia.org/wiki/Will_Joseph_%28rugby_union%2C_born_2002%29"
   },
   {
-   "article": "Amityville murders",
-   "views": 30867,
+   "article": "L3Harris",
+   "views": 46131,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Amityville_murders"
+   "url": "https://en.wikipedia.org/wiki/L3Harris"
   },
   {
-   "article": "The Traitors: New Blood",
-   "views": 30333,
+   "article": "Bigg Boss (Tamil TV series) season 10",
+   "views": 45322,
+   "before": 13076,
+   "ratio": 3.5,
+   "url": "https://en.wikipedia.org/wiki/Bigg_Boss_%28Tamil_TV_series%29_season_10"
+  },
+  {
+   "article": "Michael Alfonso (politician)",
+   "views": 43925,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/The_Traitors%3A_New_Blood"
+   "url": "https://en.wikipedia.org/wiki/Michael_Alfonso_%28politician%29"
   },
   {
-   "article": "Tyler West",
-   "views": 30160,
+   "article": "Honey (TV series)",
+   "views": 42545,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Tyler_West"
+   "url": "https://en.wikipedia.org/wiki/Honey_%28TV_series%29"
   },
   {
-   "article": "2023 FAA system outage",
-   "views": 28635,
+   "article": "Jonathan Joseph (rugby union)",
+   "views": 37348,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/2023_FAA_system_outage"
+   "url": "https://en.wikipedia.org/wiki/Jonathan_Joseph_%28rugby_union%29"
   },
   {
-   "article": "Jayden Daniels",
-   "views": 27930,
+   "article": "Tyriq Withers",
+   "views": 32996,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Jayden_Daniels"
+   "url": "https://en.wikipedia.org/wiki/Tyriq_Withers"
   },
   {
-   "article": "The End of Oak Street",
-   "views": 27570,
+   "article": "Giri Babu",
+   "views": 32926,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/The_End_of_Oak_Street"
+   "url": "https://en.wikipedia.org/wiki/Giri_Babu"
   },
   {
-   "article": "Friday the 13th (franchise)",
-   "views": 26973,
+   "article": "Dasha Burns",
+   "views": 31244,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Friday_the_13th_%28franchise%29"
+   "url": "https://en.wikipedia.org/wiki/Dasha_Burns"
   },
   {
-   "article": "Microsoft",
-   "views": 26859,
-   "before": 8628,
+   "article": "Ian Johnson (American football)",
+   "views": 31133,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Ian_Johnson_%28American_football%29"
+  },
+  {
+   "article": "Liam Botham",
+   "views": 30257,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Liam_Botham"
+  },
+  {
+   "article": "Under-19 Men's Asia Cup",
+   "views": 29702,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Under-19_Men%27s_Asia_Cup"
+  },
+  {
+   "article": "Reddit",
+   "views": 27856,
+   "before": 9036,
    "ratio": 3.1,
-   "url": "https://en.wikipedia.org/wiki/Microsoft"
+   "url": "https://en.wikipedia.org/wiki/Reddit"
   },
   {
-   "article": "Ian Watkins",
-   "views": 26737,
+   "article": "Andy Serkis",
+   "views": 27391,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Ian_Watkins"
+   "url": "https://en.wikipedia.org/wiki/Andy_Serkis"
   },
   {
-   "article": "U2",
-   "views": 22166,
+   "article": "Jaime Winstone",
+   "views": 26934,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/U2"
+   "url": "https://en.wikipedia.org/wiki/Jaime_Winstone"
   },
   {
-   "article": "27th Annual Latin Grammy Awards",
-   "views": 20724,
+   "article": "Donbas",
+   "views": 26926,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/27th_Annual_Latin_Grammy_Awards"
+   "url": "https://en.wikipedia.org/wiki/Donbas"
   },
   {
-   "article": "Jake Bauers",
-   "views": 20164,
+   "article": "2026 FAA ground stop",
+   "views": 26816,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Jake_Bauers"
+   "url": "https://en.wikipedia.org/wiki/2026_FAA_ground_stop"
+  },
+  {
+   "article": "Harry Hockings",
+   "views": 26796,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Harry_Hockings"
+  },
+  {
+   "article": "Strictly Come Dancing series 24",
+   "views": 26583,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Strictly_Come_Dancing_series_24"
+  },
+  {
+   "article": "Aucanquilcha",
+   "views": 26010,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Aucanquilcha"
+  },
+  {
+   "article": "Pete Buttigieg",
+   "views": 24132,
+   "before": 7918,
+   "ratio": 3.0,
+   "url": "https://en.wikipedia.org/wiki/Pete_Buttigieg"
+  },
+  {
+   "article": "2026 Nations Championship",
+   "views": 24043,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/2026_Nations_Championship"
+  },
+  {
+   "article": "2026 New Orleans ship collision",
+   "views": 23921,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/2026_New_Orleans_ship_collision"
+  },
+  {
+   "article": "Gwen Ifill",
+   "views": 23819,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Gwen_Ifill"
+  },
+  {
+   "article": "The Real World: Boston",
+   "views": 23671,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/The_Real_World%3A_Boston"
+  },
+  {
+   "article": "Delta Goodrem",
+   "views": 23470,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Delta_Goodrem"
+  },
+  {
+   "article": "Bob Chesney",
+   "views": 22561,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Bob_Chesney"
+  },
+  {
+   "article": "Steve Camp",
+   "views": 22343,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Steve_Camp"
+  },
+  {
+   "article": "Nations Championship",
+   "views": 22284,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Nations_Championship"
+  },
+  {
+   "article": "Bryan Bedford",
+   "views": 22065,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Bryan_Bedford"
+  },
+  {
+   "article": "Aljaž Škorjanec",
+   "views": 21861,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Alja%C5%BE_%C5%A0korjanec"
+  },
+  {
+   "article": "Ann Skelly",
+   "views": 21675,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Ann_Skelly"
+  },
+  {
+   "article": "Jake Dickert",
+   "views": 20643,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Jake_Dickert"
+  },
+  {
+   "article": "American Heritage (ship)",
+   "views": 20194,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/American_Heritage_%28ship%29"
   }
  ]
 }
