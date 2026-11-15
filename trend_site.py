@@ -3961,6 +3961,7 @@ NO_ADS = {"about.html", "privacy.html", "contact.html", "404.html"}
 
 NAV_CATS = []    # разделы, в которых есть темы (заполняется при сборке сайта)
 HAS_EXPLAINED = False
+PINTEREST_VERIFY = ""                  # 15.11: код подтверждения сайта в Pinterest (p:domain_verify) — вставить, когда владелец пришлёт
 HAS_TRENDS = False                     # 14.11: раздел «Internet trends» — объяснения мемов, сленга, челленджей (ручные, поле trend)
 
 
@@ -4007,7 +4008,7 @@ def _page(title, desc, body, path, depth, extra_head="", og_img=""):
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="max-image-preview:large">
 <link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<title>{E(title)}</title><meta name="description" content="{E(desc)}">
+<title>{E(title)}</title><meta name="description" content="{E(desc)}">{f'<meta name="p:domain_verify" content="{E(PINTEREST_VERIFY)}">' if PINTEREST_VERIFY else ''}
 <link rel="canonical" href="{E(canon)}"><link rel="alternate" type="application/rss+xml" title="{SITE_NAME}" href="{up}feed.xml">
 {f'<meta property="og:image" content="{E(SITE_URL + "/" + og_img)}"><meta name="twitter:card" content="summary_large_image">' if og_img else ''}<meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -5084,6 +5085,25 @@ def build_site(store):
       + "".join(f"<item><title>Why is {E(t['term'])} trending?</title><link>{SITE_URL}/t/{t['slug']}</link>"
                 f"<guid>{SITE_URL}/t/{t['slug']}</guid><pubDate>{datetime.fromisoformat(t['first_seen']).strftime('%a, %d %b %Y %H:%M:%S +0000')}</pubDate></item>" for t in items)
       + "</channel></rss>")
+    # 15.11: лента для Pinterest (автопубликация пинов): только ручные страницы с картинкой, без новостей, свежие сверху
+    try:
+        pins = sorted([x for x in ex.values() if x.get("manual") and x.get("img") and not x.get("news")],
+                      key=lambda x: x.get("first") or x.get("made") or "", reverse=True)[:100]
+
+        def pdate(x):
+            try:
+                return datetime.fromisoformat((x.get("first") or x.get("made")).replace("Z", "+00:00")).strftime("%a, %d %b %Y %H:%M:%S +0000")
+            except Exception:
+                return ""
+        w("pins.xml", '<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel>'
+          f"<title>{SITE_NAME}: explained</title><link>{SITE_URL}</link><description>Internet trends, slang and everyday questions, explained.</description>"
+          + "".join(f"<item><title>{E(x['title'][:100])}</title><link>{SITE_URL}/x/{x['slug']}</link><guid>{SITE_URL}/x/{x['slug']}</guid>"
+                    f"<description>{E((x.get('answer') or '')[:480])}</description><pubDate>{pdate(x)}</pubDate>"
+                    f'<enclosure url="{SITE_URL}/{E(x["img"]["file"])}" type="image/jpeg" length="0"/>'
+                    f'<media:content url="{SITE_URL}/{E(x["img"]["file"])}" medium="image"/></item>' for x in pins)
+          + "</channel></rss>")
+    except Exception as e:
+        log(f"pins.xml: {e}")
     drop_dead_links()
     return len(topics)
 
