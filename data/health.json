@@ -1,6 +1,6 @@
 {
  "v": 2,
- "checked": "2026-11-15T17:02:34+00:00",
+ "checked": "2026-11-15T23:16:44+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -90,7 +90,7 @@
    "robotsTxtState": "ALLOWED",
    "indexingState": "INDEXING_ALLOWED",
    "pageFetchState": "SUCCESSFUL",
-   "lastCrawlTime": "2026-11-13T09:03:55Z",
+   "lastCrawlTime": "2026-11-15T19:19:19Z",
    "googleCanonical": "https://trendrundown.com/",
    "userCanonical": "https://trendrundown.com/"
   },
@@ -141,7 +141,7 @@
   {
    "url": "/x/anthony-clark-death",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -218,7 +218,7 @@
   {
    "url": "/x/dan-hicks-death",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -889,7 +889,7 @@
   {
    "url": "/x/noreaster-first-snow-november-2026",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1043,7 +1043,7 @@
   {
    "url": "/x/sierra-winter-storm-warning",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1087,7 +1087,7 @@
   {
    "url": "/x/stacy-keach-death",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1632,7 +1632,7 @@
  "summary": {
   "Crawled - currently not indexed": 63,
   "Submitted and indexed": 3,
-  "URL is unknown to Google": 64,
-  "Discovered - currently not indexed": 15
+  "URL is unknown to Google": 59,
+  "Discovered - currently not indexed": 20
  }
 }
