@@ -28,7 +28,7 @@ import urllib.error, urllib.parse, urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 
-VERSION = "1.2"
+VERSION = "1.3"
 HERE = os.path.dirname(os.path.abspath(__file__))
 STATE = os.path.join(HERE, "radar_state.json")
 LOG = os.path.join(HERE, "radar_log.txt")
@@ -114,8 +114,13 @@ BLOCK = re.compile(r"(?i)\b(sex|sexual|sexy|porn|nsfw|nude|naked|onlyfans|fetish
 STOP_TERMS = set("tiktok trend trends meme memes slang youtube instagram snapchat facebook twitter discord reddit roblox fortnite "
                  "minecraft google iphone android emoji text texting chat video videos song songs dance challenge viral "
                  "ukraine russia israel gaza china america usa trump biden".split())
+HEALTH = re.compile(r"(?i)\b(blood|urine|symptoms?|disease|cancer|tumou?r|diagnos\w*|infection|virus|syndrome|disorder|"
+                    r"pain|ache|creatinine|eosinophils?|cholesterol|glucose|insulin|platelets?|lymphocytes?|hemoglobin|"
+                    r"thyroid|liver|kidney|biopsy|mri|ct scan|x-?ray|ultrasound|test results?|lab results?|pregnan\w*|"
+                    r"medication|dosage|mg|side effects?|rash|fever|covid|flu|std|hiv|adhd|autism|bipolar|depression|anxiety)\b")
 GENERIC = set("it this that he she they you i we a an the my your his her their its mean means meaning word slang "
-              "someone something everyone people text mean in when if and or to of on".split())
+              "someone something everyone people text mean in when if and or to of on do does did go get be say saying are is was were "
+              "have has at by for with from so no yes not just like all".split())
 BIG_EXPLAINERS = ("knowyourmeme.", "dictionary.com", "urbandictionary.", "merriam-webster.", "wikipedia.org", "today.com",
                   "parents.com", "usatoday.", "nytimes.", "forbes.", "yahoo.", "distractify.", "dexerto.", "cnn.",
                   "people.com", "buzzfeed.", "mashable.", "theguardian.", "bbc.", "nbcnews.", "cbsnews.", "newsweek.",
@@ -276,6 +281,10 @@ def good_term(t):
     words = re.findall(r"[a-z0-9']+", t.lower())
     if not words or all(w in GENERIC for w in words):
         return False
+    if k.isalpha() and len(k) < 3:
+        return False
+    if HEALTH.search(t):
+        return False
     if words[0] in ("it", "this", "that", "he", "she", "they", "you", "i", "we", "my", "your", "if", "when", "someone"):
         return False
     return True
@@ -412,7 +421,7 @@ def sweep_suggest(st, health, fast=False):
         for s, rel in res:
             rec = st["phrases"].get(s)
             if rec is None:
-                st["phrases"][s] = [day, day, 1, rel, pkey]
+                st["phrases"][s] = [day, day, 1, rel, pkey, 1]
                 if first_cover < day:
                     new += 1
             else:
@@ -420,6 +429,9 @@ def sweep_suggest(st, health, fast=False):
                     rec[2] += 1
                 rec[1] = day
                 rec[3] = max(rec[3], rel)
+                if len(rec) < 6:
+                    rec.append(1)
+                rec[5] += 1
             got += 1
         i += 1
         if i % 100 == 0 and not fast:
@@ -441,8 +453,11 @@ def sweep_suggest(st, health, fast=False):
 
 def phrase_is_fresh(rec):
     """Новая фраза: появилась недавно И её начало мы обходили раньше (иначе это просто первый обход)."""
-    first, _last, _days, _rel, pkey = rec
-    return days_ago(first) <= FRESH_DAYS and STATE_REF["prefix_first"].get(pkey, first) < first
+    first, pkey = rec[0], rec[4]
+    hits = rec[5] if len(rec) > 5 else rec[2]
+    # Google подсказки «перемешивает»: фраза, мелькнувшая один раз, — шум. Новой считаем только ту, что
+    # появилась после первого обхода её начала И держится — видна минимум в 2 отдельных проходах.
+    return days_ago(first) <= FRESH_DAYS and STATE_REF["prefix_first"].get(pkey, first) < first and hits >= 2
 
 
 STATE_REF = {"prefix_first": {}}
