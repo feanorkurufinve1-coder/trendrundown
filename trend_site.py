@@ -3961,7 +3961,7 @@ NO_ADS = {"about.html", "privacy.html", "contact.html", "404.html"}
 
 NAV_CATS = []    # разделы, в которых есть темы (заполняется при сборке сайта)
 HAS_EXPLAINED = False
-PINTEREST_VERIFY = ""                  # 15.11: код подтверждения сайта в Pinterest (p:domain_verify) — вставить, когда владелец пришлёт
+PINTEREST_VERIFY = "38df48ae41e2b1c243e78e09cf03accd"                  # 15.11: код подтверждения сайта в Pinterest (p:domain_verify) — вставить, когда владелец пришлёт
 HAS_TRENDS = False                     # 14.11: раздел «Internet trends» — объяснения мемов, сленга, челленджей (ручные, поле trend)
 
 
