@@ -70,7 +70,7 @@ BLOCK_FILE = "blocklist.txt"    # ваши запреты: по одному с�
 STRICT_SOURCES = True      # True — только проверенные издания из списка TRUSTED
 # =======================
 
-import os, sys, re, json, ssl, time, html, math, subprocess, urllib.request, urllib.parse
+import os, sys, re, json, ssl, time, html, math, subprocess, urllib.request, urllib.parse, urllib.error, base64, io
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
@@ -3406,6 +3406,73 @@ def stylize_sunset(src, dst):
     out.save(dst, "JPEG", quality=86, optimize=True)
 
 
+AI_IMG_PER_RUN = 6        # 15.11: сколько картинок рисовать за одно обновление сайта (бесплатно: Cloudflare Workers AI, ~170 в сутки)
+AI_IMG_MODEL = "@cf/black-forest-labs/flux-1-schnell"   # лицензия Apache 2.0 — картинки можно использовать на сайте
+AI_IMG_SAFE = (", original scene, editorial illustration style, no text, no letters, no words, no logos, no brand names, "
+               "no watermark, no famous people, no characters from games, films, comics or cartoons")
+AI_IMG_BAD = re.compile(r"(?i)\b(logo|brand|trademark|mario|pikachu|pokemon|mickey|disney|marvel|batman|spider-?man|"
+                        r"sonic|kermit|muppet|simpsons|spongebob|minecraft|fortnite|roblox|gta|grand theft|celebrity|"
+                        r"taylor swift|portrait of [A-Z])\b")
+
+
+def ai_image(store, x, budget):
+    """Своя иллюстрация к ручной странице по полю image_prompt (когда свободного фото нет).
+    Рисует нейросеть FLUX.1 schnell в Cloudflare Workers AI (бесплатная квота). Файл: img/ai-<slug>.jpg."""
+    prompt = (x.get("image_prompt") or "").strip()
+    if not prompt:
+        return None
+    dst = f"img/ai-{x['slug']}.jpg"
+    if os.path.exists(os.path.join(OUT, dst)):
+        return {"file": dst, "ai": True, "credit": "TrendRundown", "license": "", "src": ""}
+    if AI_IMG_BAD.search(prompt):
+        log(f"картинка '{x['slug']}': в описании чужой персонаж/бренд/человек — не рисую, поправь image_prompt")
+        return None
+    tok = os.environ.get("CF_AI_TOKEN") or os.environ.get("CLOUDFLARE_API_TOKEN") or ""
+    acct = os.environ.get("CLOUDFLARE_ACCOUNT_ID") or ""
+    if not tok or not acct or budget[0] <= 0:
+        return None
+    fails = store.setdefault("ai_img_fail", {})
+    f = fails.get(x["slug"])
+    if f and hours_since(f["at"]) < 12:
+        return None
+    budget[0] -= 1
+    try:
+        req = urllib.request.Request(
+            f"https://api.cloudflare.com/client/v4/accounts/{acct}/ai/run/{AI_IMG_MODEL}",
+            data=json.dumps({"prompt": (prompt + AI_IMG_SAFE)[:2000], "steps": 6}).encode(),
+            headers={"Authorization": "Bearer " + tok, "Content-Type": "application/json"}, method="POST")
+        with urllib.request.urlopen(req, timeout=120) as r:
+            d = json.loads(r.read().decode())
+        b64 = (d.get("result") or {}).get("image") or ""
+        if not b64:
+            raise ValueError("пустой ответ: " + json.dumps(d)[:200])
+        raw = base64.b64decode(b64)
+        os.makedirs(os.path.join(OUT, "img"), exist_ok=True)
+        if HAS_PIL:
+            from PIL import Image
+            im = Image.open(io.BytesIO(raw)).convert("RGB")
+            im.save(os.path.join(OUT, dst), "JPEG", quality=86, optimize=True)
+        else:
+            open(os.path.join(OUT, dst), "wb").write(raw)
+        fails.pop(x["slug"], None)
+        log(f"картинка нарисована: {dst}")
+        return {"file": dst, "ai": True, "credit": "TrendRundown", "license": "", "src": ""}
+    except urllib.error.HTTPError as e:
+        body = ""
+        try:
+            body = e.read().decode()[:200]
+        except Exception:
+            pass
+        fails[x["slug"]] = {"at": now_iso(), "err": f"{e.code} {body}"}
+        log(f"картинка '{x['slug']}' не нарисована: {e.code} {body}")
+        if e.code in (401, 403):
+            budget[0] = 0      # ключ без доступа к Workers AI — дальше не пробуем в этом обновлении
+    except Exception as e:
+        fails[x["slug"]] = {"at": now_iso(), "err": str(e)[:200]}
+        log(f"картинка '{x['slug']}' не нарисована: {e}")
+    return None
+
+
 def manual_image(store, x):
     """Фото к ручной странице. В файле страницы поле image_wiki — ТОЧНОЕ название статьи английской Википедии;
     берём её главную картинку, только если на Commons она под свободной лицензией (CC / public domain). Кэш в store."""
@@ -4722,6 +4789,7 @@ def build_explainer(x, topics):
     im = x.get("img") or {}
     hero_x = (f'<figure class="hero">{pic(im["file"], "../", x["subject"], lazy=False, sizes="(max-width: 700px) 100vw, 680px")}'
               + ('<figcaption>Illustration: TrendRundown (original artwork)</figcaption></figure>' if im.get("own") else
+                 '<figcaption>Illustration: AI-generated for TrendRundown</figcaption></figure>' if im.get("ai") else
                  f'<figcaption>{"Illustration based on a photo by " if im.get("styled") else "Photo: "}{E(im["credit"])} / <a href="{E(im["src"])}" target="_blank" rel="noopener">{E(im["license"])}</a>, via Wikimedia Commons{"; stylized by TrendRundown" if im.get("styled") else ""}</figcaption></figure>')
               if im.get("file") else "")
     if im.get("file"):
@@ -4909,7 +4977,11 @@ def build_site(store):
     except Exception:
         pass
     ex.update(manual_pages(orig))         # ручные страницы важнее автоматических с тем же адресом
+    ai_budget = [AI_IMG_PER_RUN]
     for x in ex.values():
+        if x.get("manual") and x.get("image_prompt") and not (x.get("image_wiki") or x.get("image_file") or x.get("image_local")):
+            x["img"] = ai_image(orig, x, ai_budget)
+            continue
         if x.get("manual") and (x.get("image_wiki") or x.get("image_file") or x.get("image_local")):
             im = None
             if x.get("image_wiki") or x.get("image_file"):
