@@ -8208,7 +8208,7 @@
   ]
  },
  "how-to-vote-on-the-circle-hulu": {
-  "time": "2026-11-14T14:01:47+00:00",
+  "time": "2026-11-15T14:02:09+00:00",
   "query": "how to vote on the circle hulu",
   "in_suggest": false,
   "suggest": {
@@ -8221,72 +8221,79 @@
    [
     "2026-11-14",
     false
+   ],
+   [
+    "2026-11-15",
+    false
    ]
   ]
  },
  "what-is-a-ground-stop": {
-  "time": "2026-11-14T14:01:48+00:00",
+  "time": "2026-11-15T14:02:11+00:00",
   "query": "what is a ground stop",
   "in_suggest": true,
   "suggest": {
    "faa ground stop": [
     "faa ground stop",
     "faa ground stop today",
+    "faa ground stop cause",
     "faa ground stop updates",
     "faa ground stop lifted",
-    "faa ground stop status",
-    "faa ground stop cause",
-    "faa ground stop reddit",
-    "faa ground stop how long",
     "faa ground stop ai",
-    "faa ground stop 2023"
+    "faa ground stop reddit",
+    "faa ground stop status",
+    "faa ground stop today reason",
+    "faa ground stop still happening"
    ],
    "what is faa ground stop": [
     "what is faa ground stop",
-    "what is faa ground stop today",
     "what is faa ground stop mean",
-    "what is faa ground stop why",
-    "what is faa ground stop all about",
-    "what is faa ground stop issue",
-    "what is faa ground stop and why is it happening",
     "what is faa ground delay",
     "what is faa ground delay program",
-    "what does faa ground stop mean"
+    "what does faa ground stop mean",
+    "ground stop airlines",
+    "current faa ground stops",
+    "what causes a ground stop at an airport",
+    "what is a ground stop"
    ],
    "what is a ground stop": [
     "what is a ground stop",
     "what is a ground stop in aviation",
     "what is a ground stop at an airport",
     "what is a ground stop faa",
-    "what is a ground stop order",
     "what is a ground stoppage",
-    "what is a ground stop nationwide",
-    "what is a ground stop for planes",
-    "what is a ground stop order at an airport",
-    "what is a ground stop for flights"
+    "what is a ground stop order",
+    "what is a ground stop delay",
+    "what is a ground stoppage at an airport",
+    "what is a ground stop when flying",
+    "what is a ground stop at an airport mean"
    ],
    "ground stop": [
     "ground stop",
     "ground stop today",
     "ground stop faa",
     "ground stop lifted",
-    "ground stoppage",
-    "ground stop airports",
     "ground stop updates",
+    "ground stop reason",
+    "ground stoppage",
     "ground stop meaning",
-    "ground stop flights",
-    "ground stop jfk"
+    "ground stop and college football",
+    "ground stop cause"
    ]
   },
   "history": [
    [
     "2026-11-14",
     true
+   ],
+   [
+    "2026-11-15",
+    true
    ]
   ]
  },
  "why-does-my-phone-screen-go-black-during-calls": {
-  "time": "2026-11-14T14:01:50+00:00",
+  "time": "2026-11-15T14:02:12+00:00",
   "query": "why does my phone screen go black during calls",
   "in_suggest": true,
   "suggest": {
@@ -8341,11 +8348,15 @@
    [
     "2026-11-14",
     true
+   ],
+   [
+    "2026-11-15",
+    true
    ]
   ]
  },
  "why-does-my-washing-machine-smell-like-rotten-eggs": {
-  "time": "2026-11-14T14:01:52+00:00",
+  "time": "2026-11-15T14:02:14+00:00",
   "query": "why does my washing machine smell like rotten eggs",
   "in_suggest": true,
   "suggest": {
@@ -8399,11 +8410,15 @@
    [
     "2026-11-14",
     true
+   ],
+   [
+    "2026-11-15",
+    true
    ]
   ]
  },
  "wta-tennis": {
-  "time": "2026-11-14T14:01:53+00:00",
+  "time": "2026-11-15T14:02:15+00:00",
   "query": "what does wta stand for in tennis",
   "in_suggest": true,
   "suggest": {
@@ -8413,23 +8428,23 @@
     "wta live rankings",
     "wta",
     "wta finals schedule",
-    "wta finals standings",
-    "wtae",
     "wta rankings",
-    "wta finals schedule 2026",
-    "wtae news"
+    "wta finals 2026 schedule",
+    "wta trails",
+    "wta finals standings",
+    "wta finals prize money"
    ],
    "what is wta": [
-    "what is wta finals",
-    "what is wta tennis",
     "what is wta",
+    "what is wta tennis",
     "what is wtaf",
+    "what is wta finals",
     "what is wta 1000",
     "what is wta 1000 in tennis",
-    "what is wta 500 and wta 1000",
     "what is wtac",
+    "what is wta 500 and wta 1000",
     "what is wta in tennis stand for",
-    "what is wta 500"
+    "what is wtamu"
    ],
    "what does wta stand for in tennis": [
     "what does wta stand for in tennis",
@@ -8454,6 +8469,10 @@
   "history": [
    [
     "2026-11-14",
+    true
+   ],
+   [
+    "2026-11-15",
     true
    ]
   ]
