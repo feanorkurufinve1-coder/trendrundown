@@ -7716,7 +7716,7 @@
   ]
  },
  "first-black-senator-from-mississippi": {
-  "time": "2026-11-14T16:02:07+00:00",
+  "time": "2026-11-15T16:17:05+00:00",
   "query": "who was the first black senator from mississippi",
   "in_suggest": false,
   "suggest": {
@@ -7731,7 +7731,11 @@
     "hiram revels and blanche k bruce were the first two blacks to"
    ],
    "who was the first black senator from mississippi": [],
-   "first black senator from mississippi": []
+   "first black senator from mississippi": [
+    "first black politician in mississippi",
+    "first black representative in mississippi",
+    "who was the first black senator from massachusetts"
+   ]
   },
   "history": [
    [
@@ -7741,11 +7745,15 @@
    [
     "2026-11-14",
     false
+   ],
+   [
+    "2026-11-15",
+    false
    ]
   ]
  },
  "how-much-tax-refund-per-child-2026": {
-  "time": "2026-11-14T16:02:09+00:00",
+  "time": "2026-11-15T16:17:06+00:00",
   "query": "how much tax refund per child 2026",
   "in_suggest": true,
   "suggest": {
@@ -7806,11 +7814,15 @@
    [
     "2026-11-14",
     true
+   ],
+   [
+    "2026-11-15",
+    true
    ]
   ]
  },
  "is-the-law-of-beasts-a-true-story": {
-  "time": "2026-11-14T16:02:10+00:00",
+  "time": "2026-11-15T16:17:08+00:00",
   "query": "is the law of beasts a true story",
   "in_suggest": false,
   "suggest": {
@@ -7844,11 +7856,15 @@
    [
     "2026-11-14",
     false
+   ],
+   [
+    "2026-11-15",
+    false
    ]
   ]
  },
  "ligue-1": {
-  "time": "2026-11-14T16:02:11+00:00",
+  "time": "2026-11-15T16:17:09+00:00",
   "query": "what is ligue 1",
   "in_suggest": true,
   "suggest": {
@@ -7861,8 +7877,8 @@
     "ligue 1 players",
     "ligue 1 games",
     "ligue 1 teams",
-    "ligue 1 winners",
-    "ligue 1 table 2022 23"
+    "ligue 1 table 2022 23",
+    "ligue 1 winners"
    ],
    "what is ligue 1": [
     "what is ligue 1",
@@ -7885,11 +7901,15 @@
    [
     "2026-11-14",
     true
+   ],
+   [
+    "2026-11-15",
+    true
    ]
   ]
  },
  "phishing-test": {
-  "time": "2026-11-14T16:02:12+00:00",
+  "time": "2026-11-15T16:17:10+00:00",
   "query": "what is a phishing test",
   "in_suggest": true,
   "suggest": {
@@ -7938,11 +7958,15 @@
    [
     "2026-11-14",
     true
+   ],
+   [
+    "2026-11-15",
+    true
    ]
   ]
  },
  "rock-hall-of-fame-2026-ceremony-air-date": {
-  "time": "2026-11-14T16:02:13+00:00",
+  "time": "2026-11-15T16:17:11+00:00",
   "query": "when will the rock and roll hall of fame 2026 ceremony air",
   "in_suggest": false,
   "suggest": {
@@ -7970,11 +7994,15 @@
    [
     "2026-11-14",
     false
+   ],
+   [
+    "2026-11-15",
+    false
    ]
   ]
  },
  "what-does-refrigerator-coolant-smell-like": {
-  "time": "2026-11-14T16:02:15+00:00",
+  "time": "2026-11-15T16:17:13+00:00",
   "query": "what does refrigerator coolant smell like",
   "in_suggest": true,
   "suggest": {
@@ -8030,25 +8058,29 @@
    [
     "2026-11-14",
     true
+   ],
+   [
+    "2026-11-15",
+    true
    ]
   ]
  },
  "what-is-a-safety-in-football": {
-  "time": "2026-11-14T16:02:16+00:00",
+  "time": "2026-11-15T16:17:14+00:00",
   "query": "what is a safety in football",
   "in_suggest": true,
   "suggest": {
    "safety": [
     "safety pins",
     "safety",
+    "safety not guaranteed",
     "safety glasses",
     "safety razor",
     "safety insurance",
+    "safety in football",
     "safety movie",
     "safety first car seat",
-    "safety vest",
-    "safety dance",
-    "safety kleen"
+    "safety vest"
    ],
    "what is safety": [
     "what is safety in football",
@@ -8095,11 +8127,15 @@
    [
     "2026-11-14",
     true
+   ],
+   [
+    "2026-11-15",
+    true
    ]
   ]
  },
  "what-is-broad-based-categorical-eligibility": {
-  "time": "2026-11-14T16:02:17+00:00",
+  "time": "2026-11-15T16:17:15+00:00",
   "query": "what is broad-based categorical eligibility",
   "in_suggest": true,
   "suggest": {
@@ -8136,11 +8172,15 @@
    [
     "2026-11-14",
     true
+   ],
+   [
+    "2026-11-15",
+    true
    ]
   ]
  },
  "why-is-wifi-not-working-on-my-phone": {
-  "time": "2026-11-14T16:02:18+00:00",
+  "time": "2026-11-15T16:17:16+00:00",
   "query": "why is wifi not working on my phone",
   "in_suggest": true,
   "suggest": {
@@ -8178,6 +8218,10 @@
    ],
    [
     "2026-11-14",
+    true
+   ],
+   [
+    "2026-11-15",
     true
    ]
   ]
