@@ -3433,7 +3433,8 @@ def ai_image(store, x, budget):
         return None
     fails = store.setdefault("ai_img_fail", {})
     f = fails.get(x["slug"])
-    if f and hours_since(f["at"]) < 12:
+    which = "cf_ai" if os.environ.get("CF_AI_TOKEN") else "deploy"
+    if f and f.get("tok") == which and hours_since(f["at"]) < 12:   # с новым ключом пробуем сразу
         return None
     budget[0] -= 1
     try:
@@ -3463,12 +3464,12 @@ def ai_image(store, x, budget):
             body = e.read().decode()[:200]
         except Exception:
             pass
-        fails[x["slug"]] = {"at": now_iso(), "err": f"{e.code} {body}"}
+        fails[x["slug"]] = {"at": now_iso(), "err": f"{e.code} {body}", "tok": which}
         log(f"картинка '{x['slug']}' не нарисована: {e.code} {body}")
         if e.code in (401, 403):
             budget[0] = 0      # ключ без доступа к Workers AI — дальше не пробуем в этом обновлении
     except Exception as e:
-        fails[x["slug"]] = {"at": now_iso(), "err": str(e)[:200]}
+        fails[x["slug"]] = {"at": now_iso(), "err": str(e)[:200], "tok": which}
         log(f"картинка '{x['slug']}' не нарисована: {e}")
     return None
 
