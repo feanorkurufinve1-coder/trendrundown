@@ -52,8 +52,8 @@
   "sports",
   "soccer"
  ],
- "image_wiki": "Parc des Princes",
  "made": "2026-11-13T15:40:00+00:00",
  "first": "2026-11-13T15:40:00+00:00",
- "updated": "2026-11-13T15:40:00+00:00"
+ "updated": "2026-11-13T15:40:00+00:00",
+ "image_prompt": "A soccer ball on the center spot of a pitch in a large European stadium at night, no signs, realistic photo style"
 }

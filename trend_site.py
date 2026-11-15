@@ -3406,7 +3406,7 @@ def stylize_sunset(src, dst):
     out.save(dst, "JPEG", quality=86, optimize=True)
 
 
-AI_IMG_PER_RUN = 6        # 15.11: сколько картинок рисовать за одно обновление сайта (бесплатно: Cloudflare Workers AI, ~170 в сутки)
+AI_IMG_PER_RUN = 10       # 15.11: сколько картинок рисовать за одно обновление сайта (бесплатно: Cloudflare Workers AI, ~170 в сутки)
 AI_IMG_MODEL = "@cf/black-forest-labs/flux-1-schnell"   # лицензия Apache 2.0 — картинки можно использовать на сайте
 AI_IMG_SAFE = (", original scene, editorial illustration style, no text, no letters, no words, no logos, no brand names, "
                "no watermark, no famous people, no characters from games, films, comics or cartoons")
@@ -3424,7 +3424,7 @@ def ai_image(store, x, budget):
     dst = f"img/ai-{x['slug']}.jpg"
     if os.path.exists(os.path.join(OUT, dst)):
         return {"file": dst, "ai": True, "credit": "TrendRundown", "license": "", "src": ""}
-    if AI_IMG_BAD.search(prompt):
+    if AI_IMG_BAD.search(re.sub(r"(?i)\b(no|without)\s+[\w-]+(\s+(or|and)\s+[\w-]+)*", " ", prompt)):   # «no logos» — не нарушение
         log(f"картинка '{x['slug']}': в описании чужой персонаж/бренд/человек — не рисую, поправь image_prompt")
         return None
     tok = os.environ.get("CF_AI_TOKEN") or os.environ.get("CLOUDFLARE_API_TOKEN") or ""
