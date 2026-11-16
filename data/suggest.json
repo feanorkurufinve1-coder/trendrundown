@@ -4696,21 +4696,21 @@
   ]
  },
  "cma-awards-2026-date": {
-  "time": "2026-11-15T14:46:51+00:00",
+  "time": "2026-11-16T14:47:11+00:00",
   "query": "when are the cma awards 2026",
   "in_suggest": true,
   "suggest": {
    "cma awards 2026": [
     "cma awards 2026",
     "cma awards 2026 where to watch",
-    "cma awards 2026 nominations",
     "cma awards 2026 nominees",
     "cma awards 2026 tickets",
     "cma awards 2026 host",
     "cma awards 2026 performers",
+    "cma awards 2026 time",
+    "cma awards 2026 taylor swift",
     "cma awards 2026 date",
-    "cma awards 2026 lineup",
-    "cma awards 2026 voting"
+    "cma awards 2026 red carpet"
    ],
    "what is cma awards 2026": [
     "what is cma awards 2026",
@@ -4760,11 +4760,15 @@
    [
     "2026-11-15",
     true
+   ],
+   [
+    "2026-11-16",
+    true
    ]
   ]
  },
  "has-a-defense-secretary-been-impeached": {
-  "time": "2026-11-15T14:46:53+00:00",
+  "time": "2026-11-16T14:47:13+00:00",
   "query": "has a defense secretary ever been impeached",
   "in_suggest": true,
   "suggest": {
@@ -4810,6 +4814,10 @@
    ],
    [
     "2026-11-15",
+    true
+   ],
+   [
+    "2026-11-16",
     true
    ]
   ]
