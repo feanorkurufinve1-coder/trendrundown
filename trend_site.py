@@ -2642,6 +2642,13 @@ def sitemap_submit(store):
 HEALTH_URLS = ["/x/telerally", "/x/mutual-option", "/x/dane-cook-brother", "/x/cyber-monday", "/w/the-body-cast", "/"]
 
 
+# 16.11: правило владельца «никакой религии» — и в фото тоже (храмы, иконы, кресты и т.п. в имени файла или статьи)
+RELIG_IMG = re.compile(r"(?i)church|kirche|cathedral|kathedrale|\bdom\b|chapel|kapelle|basilica|mosque|moschee|masjid|synagog|"
+                       r"temple|tempel|abbey|abtei|monaster|kloster|convent|minster|shrine|pagoda|stupa|\beglise|église|iglesia|"
+                       r"chiesa|kosciol|kościół|sobor|tserkov|церк|собор|храм|мечеть|icon_of|\bcross\b|crucifix|altar|"
+                       r"\bpope\b|\bpriest|\bmonk|\bnun\b|\bsaint\b|\bst\._|religio|\bholy\b|madonna_and|\bbible|\bquran|\btorah")
+
+
 def gsc_health(store):
     """Раз в 6 часов: видит ли Google наши страницы. Карта сайта (сколько отправлено/принято, ошибки) и проверка
     отдельных адресов (в индексе ли, когда заходил робот, не мешает ли robots.txt). Пишется в data/health.json."""
@@ -2651,11 +2658,14 @@ def gsc_health(store):
         old = json.load(open(path))
     except Exception:
         old = {}
-    if not raw or (old.get("v") == 2 and hours_since(old.get("checked", "2000-01-01T00:00:00+00:00")) < 6):
+    # 16.11: проверка шла 15 минут за раз (150 адресов) — сборки наползали друг на друга и данные терялись.
+    # Теперь по кругу: за один проход не дольше ~2 минут, сначала адреса, которые давно не проверяли (каждый — раз в 6 часов).
+    if not raw:
         return
-    tok = gsc_token(json.loads(raw))
+    prev = {x["url"]: x for x in (old.get("urls") or []) if old.get("v") in (2, 3) and x.get("url")}
+    tok = None
     site = "sc-domain:trendrundown.com"
-    out = {"v": 2, "checked": now_iso(), "sitemaps": [], "urls": []}
+    out = {"v": 3, "checked": old.get("checked") or now_iso(), "sitemaps": old.get("sitemaps", []), "urls": []}
     # 13.11: проверяем не только 6 главных, а ВСЕ ручные страницы (лимит Google — 2000 проверок в день)
     urls = list(HEALTH_URLS)
     try:
@@ -2668,28 +2678,46 @@ def gsc_health(store):
     except Exception:
         pass
     seen_idx = old.get("first_indexed", {})
-    try:
+    fallback = "2000-01-01T00:00:00+00:00"
+    due = sorted((u for u in urls if hours_since((prev.get(u) or {}).get("at") or fallback) >= 6),
+                 key=lambda u: (prev.get(u) or {}).get("at") or fallback)
+    if not due:
+        return
+    tok = gsc_token(json.loads(raw))
+    t0 = time.time()
+    if hours_since(old.get("sm_at", fallback)) >= 6:
+      out["sm_at"] = now_iso()
+      out["sitemaps"] = []
+      try:
         req = urllib.request.Request("https://www.googleapis.com/webmasters/v3/sites/" + urllib.parse.quote(site, safe="")
                                      + "/sitemaps", headers={"Authorization": "Bearer " + tok})
         with urllib.request.urlopen(req, timeout=30, context=CTX) as r:
             for sm in json.loads(r.read().decode()).get("sitemap", []):
                 out["sitemaps"].append({k: sm.get(k) for k in ("path", "lastSubmitted", "lastDownloaded", "isPending",
                                                                   "warnings", "errors", "contents")})
-    except Exception as e:
+      except Exception as e:
         out["sitemaps_error"] = str(e)[:200]
-    for u in urls:
+    else:
+      out["sm_at"] = old.get("sm_at")
+    fresh = {}
+    for u in due:
+        if time.time() - t0 > 110:
+            break
         body = json.dumps({"inspectionUrl": SITE_URL + u, "siteUrl": site, "languageCode": "en-US"}).encode()
         req = urllib.request.Request("https://searchconsole.googleapis.com/v1/urlInspection/index:inspect", data=body,
                                      method="POST", headers={"Authorization": "Bearer " + tok, "Content-Type": "application/json"})
         try:
             with urllib.request.urlopen(req, timeout=30, context=CTX) as r:
                 ir = (json.loads(r.read().decode()).get("inspectionResult") or {}).get("indexStatusResult") or {}
-            out["urls"].append({"url": u, **{k: ir.get(k) for k in ("verdict", "coverageState", "robotsTxtState",
-                                "indexingState", "pageFetchState", "lastCrawlTime", "googleCanonical", "userCanonical")}})
+            fresh[u] = {"url": u, "at": now_iso(), **{k: ir.get(k) for k in ("verdict", "coverageState", "robotsTxtState",
+                                "indexingState", "pageFetchState", "lastCrawlTime", "googleCanonical", "userCanonical")}}
         except urllib.error.HTTPError as e:
-            out["urls"].append({"url": u, "error": f"HTTP {e.code} {e.read().decode(errors='replace')[:150]}"})
+            fresh[u] = {"url": u, "at": now_iso(), "error": f"HTTP {e.code} {e.read().decode(errors='replace')[:150]}"}
         except Exception as e:
-            out["urls"].append({"url": u, "error": str(e)[:150]})
+            fresh[u] = {"url": u, "at": now_iso(), "error": str(e)[:150]}
+    out["urls"] = [fresh.get(u) or prev[u] for u in urls if u in fresh or u in prev]
+    if not any(hours_since((prev.get(u) or {}).get("at") or fallback) >= 6 for u in urls if u not in fresh):
+        out["checked"] = now_iso()        # полный круг закончен
     for x in out["urls"]:
         if (x.get("coverageState") or "").startswith("Submitted and indexed") or x.get("verdict") == "PASS":
             seen_idx.setdefault(x["url"], now_iso())
@@ -2700,7 +2728,7 @@ def gsc_health(store):
         cnt[k] = cnt.get(k, 0) + 1
     out["summary"] = cnt
     json.dump(out, open(path, "w"), ensure_ascii=False, indent=1)
-    log("Проверка индекса Google: " + "; ".join(f"{k}: {v}" for k, v in sorted(cnt.items(), key=lambda z: -z[1])))
+    log(f"Проверка индекса Google (проверено сейчас {len(fresh)}, осталось {max(0, len(due) - len(fresh))}): " + "; ".join(f"{k}: {v}" for k, v in sorted(cnt.items(), key=lambda z: -z[1])))
 
 
 def gsc_fetch(store):
@@ -3355,6 +3383,9 @@ def wiki_image(t, name=None):
         if fname and re.search(r"(?i)logo|seal|crest|emblem|wordmark|coat.of.arms|\.svg$|flag.of", fname):
             log(f"фото '{term}': «{fname}» — это логотип/герб, не фото — не берём")
             fname = None
+        if fname and RELIG_IMG.search(fname + " " + title):
+            log(f"фото '{term}': «{fname}» — религиозное (правило владельца) — не берём")
+            fname = None
         if not fname:                      # например, страница-неоднозначность «Ann Li» — смотрим следующую («Ann Li (tennis)»)
             log(f"фото '{term}': у статьи «{title}» нет главной картинки — смотрю следующую")
             continue
@@ -3635,7 +3666,7 @@ def manual_image(store, x):
                                         "piprop": "name", "format": "json", "formatversion": 2})
             pg = (json.loads(get("https://en.wikipedia.org/w/api.php?" + q)).get("query", {}).get("pages") or [{}])[0]
             fname = pg.get("pageimage")
-        if not fname or (not direct and re.search(r"(?i)logo|seal|crest|emblem|wordmark|coat.of.arms|\.svg$|flag.of", fname)):
+        if not fname or RELIG_IMG.search(fname) or (not direct and re.search(r"(?i)logo|seal|crest|emblem|wordmark|coat.of.arms|\.svg$|flag.of", fname)):
             log(f"фото для '{x['slug']}': у статьи «{title}» нет подходящего фото")
             return None
         q = urllib.parse.urlencode({"action": "query", "prop": "imageinfo", "iiprop": "extmetadata|url", "iiurlwidth": 1280,
