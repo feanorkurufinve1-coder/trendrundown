@@ -4271,7 +4271,7 @@ def _page(title, desc, body, path, depth, extra_head="", og_img=""):
 <link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <title>{E(title)}</title><meta name="description" content="{E(desc)}">{f'<meta name="p:domain_verify" content="{E(PINTEREST_VERIFY)}">' if PINTEREST_VERIFY else ''}
 <link rel="canonical" href="{E(canon)}"><link rel="alternate" type="application/rss+xml" title="{SITE_NAME}" href="{up}feed.xml">
-{f'<meta property="og:image" content="{E(SITE_URL + "/" + og_img)}"><meta name="twitter:card" content="summary_large_image">' if og_img else ''}<meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:type" content="website">
+{f'<meta property="og:image" content="{E(SITE_URL + "/" + og_img)}"><meta name="twitter:card" content="summary_large_image">' if og_img else ''}<meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:type" content="{"article" if path.startswith("x/") else "website"}"><meta property="og:url" content="{E(canon)}"><meta property="og:site_name" content="{SITE_NAME}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 {FONT_LINKS}
 <style>{CSS}</style>{ga_snippet()}{"" if path in NO_ADS else ads_head()}{extra_head}{'<meta name="robots" content="noindex,follow">' if path.replace(".html", "") in NOINDEX and "noindex" not in extra_head else ""}</head><body><div class="wrap">
@@ -5015,7 +5015,7 @@ def build_explainer(x, topics):
 </article>"""
     gt = x.get("gtitle") or x["title"]          # для Google — фраза из поиска, на странице — свой заголовок
     return page(gt + (f" | {SITE_NAME}" if len(gt) < 50 else ""), short_desc(x["answer"]), body,
-                f"x/{x['slug']}.html", 1, head)
+                f"x/{x['slug']}.html", 1, head, og_img=im.get("file") or "")   # 16.11: картинка для превью в соцсетях и мессенджерах
 
 
 def build_explained_index(ex):
