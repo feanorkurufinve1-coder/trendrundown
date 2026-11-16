@@ -8153,7 +8153,7 @@
   ]
  },
  "first-black-senator-from-mississippi": {
-  "time": "2026-11-15T16:17:05+00:00",
+  "time": "2026-11-16T16:31:50+00:00",
   "query": "who was the first black senator from mississippi",
   "in_suggest": false,
   "suggest": {
@@ -8169,7 +8169,6 @@
    ],
    "who was the first black senator from mississippi": [],
    "first black senator from mississippi": [
-    "first black politician in mississippi",
     "first black representative in mississippi",
     "who was the first black senator from massachusetts"
    ]
@@ -8186,11 +8185,15 @@
    [
     "2026-11-15",
     false
+   ],
+   [
+    "2026-11-16",
+    false
    ]
   ]
  },
  "how-much-tax-refund-per-child-2026": {
-  "time": "2026-11-15T16:17:06+00:00",
+  "time": "2026-11-16T16:31:52+00:00",
   "query": "how much tax refund per child 2026",
   "in_suggest": true,
   "suggest": {
@@ -8255,17 +8258,21 @@
    [
     "2026-11-15",
     true
+   ],
+   [
+    "2026-11-16",
+    true
    ]
   ]
  },
  "is-the-law-of-beasts-a-true-story": {
-  "time": "2026-11-15T16:17:08+00:00",
+  "time": "2026-11-16T16:31:53+00:00",
   "query": "is the law of beasts a true story",
   "in_suggest": false,
   "suggest": {
    "the law of beasts": [
-    "the law of beasts",
     "the law of beasts netflix",
+    "the law of beasts",
     "the law of animals",
     "my bloodline is the law of beasts",
     "what are the beasts in the bible",
@@ -8297,11 +8304,15 @@
    [
     "2026-11-15",
     false
+   ],
+   [
+    "2026-11-16",
+    false
    ]
   ]
  },
  "ligue-1": {
-  "time": "2026-11-15T16:17:09+00:00",
+  "time": "2026-11-16T16:31:54+00:00",
   "query": "what is ligue 1",
   "in_suggest": true,
   "suggest": {
@@ -8342,11 +8353,15 @@
    [
     "2026-11-15",
     true
+   ],
+   [
+    "2026-11-16",
+    true
    ]
   ]
  },
  "phishing-test": {
-  "time": "2026-11-15T16:17:10+00:00",
+  "time": "2026-11-16T16:31:55+00:00",
   "query": "what is a phishing test",
   "in_suggest": true,
   "suggest": {
@@ -8399,16 +8414,21 @@
    [
     "2026-11-15",
     true
+   ],
+   [
+    "2026-11-16",
+    true
    ]
   ]
  },
  "rock-hall-of-fame-2026-ceremony-air-date": {
-  "time": "2026-11-15T16:17:11+00:00",
+  "time": "2026-11-16T16:31:57+00:00",
   "query": "when will the rock and roll hall of fame 2026 ceremony air",
   "in_suggest": false,
   "suggest": {
    "2026 rock and roll hall of fame induction ceremony": [
     "2026 rock and roll hall of fame induction ceremony",
+    "2026 rock and roll hall of fame induction ceremony streaming",
     "2026 rock and roll hall of fame induction ceremony tickets",
     "2026 rock and roll hall of fame induction ceremony performers",
     "2026 rock and roll hall of fame induction ceremony location",
@@ -8416,8 +8436,7 @@
     "rock and roll hall of fame induction ceremony 2026 tickets price",
     "rock and roll hall of fame inductees 2026 ceremony",
     "summarize the 2026 rock and roll hall of fame inductees and ceremony details",
-    "how to get tickets to rock and roll hall of fame induction ceremony 2026",
-    "where is rock and roll hall of fame induction ceremony"
+    "how to get tickets to rock and roll hall of fame induction ceremony 2026"
    ],
    "what is 2026 rock and roll hall of fame induction ceremony": [],
    "when will the rock and roll hall of fame 2026 ceremony air": [],
@@ -8435,11 +8454,15 @@
    [
     "2026-11-15",
     false
+   ],
+   [
+    "2026-11-16",
+    false
    ]
   ]
  },
  "what-does-refrigerator-coolant-smell-like": {
-  "time": "2026-11-15T16:17:13+00:00",
+  "time": "2026-11-16T16:31:59+00:00",
   "query": "what does refrigerator coolant smell like",
   "in_suggest": true,
   "suggest": {
@@ -8499,11 +8522,15 @@
    [
     "2026-11-15",
     true
+   ],
+   [
+    "2026-11-16",
+    true
    ]
   ]
  },
  "what-is-a-safety-in-football": {
-  "time": "2026-11-15T16:17:14+00:00",
+  "time": "2026-11-16T16:32:00+00:00",
   "query": "what is a safety in football",
   "in_suggest": true,
   "suggest": {
@@ -8514,10 +8541,10 @@
     "safety glasses",
     "safety razor",
     "safety insurance",
-    "safety in football",
     "safety movie",
     "safety first car seat",
-    "safety vest"
+    "safety vest",
+    "safety in football"
    ],
    "what is safety": [
     "what is safety in football",
@@ -8568,11 +8595,15 @@
    [
     "2026-11-15",
     true
+   ],
+   [
+    "2026-11-16",
+    true
    ]
   ]
  },
  "what-is-broad-based-categorical-eligibility": {
-  "time": "2026-11-15T16:17:15+00:00",
+  "time": "2026-11-16T16:32:01+00:00",
   "query": "what is broad-based categorical eligibility",
   "in_suggest": true,
   "suggest": {
@@ -8613,11 +8644,15 @@
    [
     "2026-11-15",
     true
+   ],
+   [
+    "2026-11-16",
+    true
    ]
   ]
  },
  "why-is-wifi-not-working-on-my-phone": {
-  "time": "2026-11-15T16:17:16+00:00",
+  "time": "2026-11-16T16:32:03+00:00",
   "query": "why is wifi not working on my phone",
   "in_suggest": true,
   "suggest": {
@@ -8659,6 +8694,10 @@
    ],
    [
     "2026-11-15",
+    true
+   ],
+   [
+    "2026-11-16",
     true
    ]
   ]
