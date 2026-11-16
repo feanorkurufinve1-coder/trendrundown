@@ -1,5 +1,5 @@
 {
- "v": 2,
+ "v": 3,
  "checked": "2026-11-16T11:31:50+00:00",
  "sitemaps": [
   {
@@ -30,6 +30,7 @@
  "urls": [
   {
    "url": "/x/telerally",
+   "at": "2026-11-16T12:16:58+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -41,6 +42,7 @@
   },
   {
    "url": "/x/mutual-option",
+   "at": "2026-11-16T12:17:05+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -52,6 +54,7 @@
   },
   {
    "url": "/x/dane-cook-brother",
+   "at": "2026-11-16T12:17:11+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -63,6 +66,7 @@
   },
   {
    "url": "/x/cyber-monday",
+   "at": "2026-11-16T12:17:18+00:00",
    "verdict": "PASS",
    "coverageState": "Submitted and indexed",
    "robotsTxtState": "ALLOWED",
@@ -74,6 +78,7 @@
   },
   {
    "url": "/w/the-body-cast",
+   "at": "2026-11-16T12:17:24+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -85,6 +90,7 @@
   },
   {
    "url": "/",
+   "at": "2026-11-16T12:17:31+00:00",
    "verdict": "PASS",
    "coverageState": "Submitted and indexed",
    "robotsTxtState": "ALLOWED",
@@ -96,6 +102,7 @@
   },
   {
    "url": "/x/40-man-roster",
+   "at": "2026-11-16T12:17:37+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -107,6 +114,7 @@
   },
   {
    "url": "/x/alaska-ranked-choice-voting",
+   "at": "2026-11-16T12:17:43+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -118,6 +126,7 @@
   },
   {
    "url": "/x/alicias-law-the-good-wife",
+   "at": "2026-11-16T12:17:50+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -129,6 +138,7 @@
   },
   {
    "url": "/x/all-mlb-team",
+   "at": "2026-11-16T12:17:56+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -140,6 +150,7 @@
   },
   {
    "url": "/x/anthony-clark-death",
+   "at": "2026-11-16T12:18:02+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -151,6 +162,7 @@
   },
   {
    "url": "/x/bright-star-eastern-sky-morning",
+   "at": "2026-11-16T12:18:09+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -162,8 +174,9 @@
   },
   {
    "url": "/x/camp-flog-gnaw-livestream",
+   "at": "2026-11-16T12:18:15+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -173,6 +186,7 @@
   },
   {
    "url": "/x/carter-faith",
+   "at": "2026-11-16T12:18:22+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -184,6 +198,7 @@
   },
   {
    "url": "/x/cliff-booth-release-date",
+   "at": "2026-11-16T12:18:28+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -195,6 +210,7 @@
   },
   {
    "url": "/x/cma-awards-2026-date",
+   "at": "2026-11-16T12:18:35+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -206,6 +222,7 @@
   },
   {
    "url": "/x/coachella-2027-tickets-on-sale",
+   "at": "2026-11-16T12:18:41+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -217,6 +234,7 @@
   },
   {
    "url": "/x/dan-hicks-death",
+   "at": "2026-11-16T12:18:47+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1635,6 +1653,7 @@
    "userCanonical": "https://trendrundown.com/x/wta-tennis"
   }
  ],
+ "sm_at": "2026-11-16T12:16:52+00:00",
  "first_indexed": {
   "/x/cyber-monday": "2026-11-13T16:25:58+00:00",
   "/": "2026-11-13T16:25:58+00:00",
@@ -1643,7 +1662,7 @@
  "summary": {
   "Crawled - currently not indexed": 63,
   "Submitted and indexed": 3,
-  "URL is unknown to Google": 65,
-  "Discovered - currently not indexed": 15
+  "URL is unknown to Google": 66,
+  "Discovered - currently not indexed": 14
  }
 }
