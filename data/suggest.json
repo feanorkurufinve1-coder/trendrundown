@@ -7421,7 +7421,7 @@
   ]
  },
  "exhibition-game": {
-  "time": "2026-11-15T16:47:05+00:00",
+  "time": "2026-11-16T16:47:12+00:00",
   "query": "what is an exhibition game in basketball",
   "in_suggest": true,
   "suggest": {
@@ -7487,11 +7487,15 @@
    [
     "2026-11-15",
     true
+   ],
+   [
+    "2026-11-16",
+    true
    ]
   ]
  },
  "game-time-decision": {
-  "time": "2026-11-15T16:47:07+00:00",
+  "time": "2026-11-16T16:47:13+00:00",
   "query": "game time decision meaning",
   "in_suggest": true,
   "suggest": {
@@ -7560,11 +7564,15 @@
    [
     "2026-11-15",
     true
+   ],
+   [
+    "2026-11-16",
+    true
    ]
   ]
  },
  "mutual-option": {
-  "time": "2026-11-15T16:47:08+00:00",
+  "time": "2026-11-16T16:47:14+00:00",
   "query": "what is a mutual option in baseball",
   "in_suggest": true,
   "suggest": {
@@ -7628,11 +7636,15 @@
    [
     "2026-11-15",
     true
+   ],
+   [
+    "2026-11-16",
+    true
    ]
   ]
  },
  "nba-draft": {
-  "time": "2026-11-15T16:47:09+00:00",
+  "time": "2026-11-16T16:47:16+00:00",
   "query": "what is the nba draft",
   "in_suggest": true,
   "suggest": {
@@ -7640,13 +7652,13 @@
     "nba draft 2026",
     "nba draft",
     "nba draft 2027",
+    "nba draft lottery",
     "nba draft 2025",
-    "nba draft 2027 mock",
+    "nba draft 2015",
     "nba draft 2024",
+    "nba draft 2014",
     "nba draft results",
-    "nba draft order",
-    "nba draft 2023",
-    "nba draft order 2026"
+    "nba draft order"
    ],
    "what is nba draft": [
     "what is nba draft",
@@ -7689,11 +7701,15 @@
    [
     "2026-11-15",
     true
+   ],
+   [
+    "2026-11-16",
+    true
    ]
   ]
  },
  "tri-series-cricket": {
-  "time": "2026-11-15T16:47:11+00:00",
+  "time": "2026-11-16T16:47:17+00:00",
   "query": "what is a tri series in cricket",
   "in_suggest": true,
   "suggest": {
@@ -7760,6 +7776,10 @@
    ],
    [
     "2026-11-15",
+    true
+   ],
+   [
+    "2026-11-16",
     true
    ]
   ]
