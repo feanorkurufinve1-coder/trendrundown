@@ -50,6 +50,15 @@ jobs:
             git push || true
           fi
 
+      # 16.11: страховка. Если сборка упала и страниц нет, пустой сайт НЕ выкладываем (иначе все страницы
+      # отдавали бы «404 не найдено», пока не пройдёт следующая сборка) — на сайте остаётся прошлая версия.
+      - name: Check the built site
+        run: |
+          test -s site/index.html || { echo "index.html is missing: not deploying"; exit 1; }
+          n=$(ls site/x/*.html 2>/dev/null | wc -l)
+          if [ "$n" -lt 50 ]; then echo "only $n pages were built: not deploying"; exit 1; fi
+          echo "pages built: $n"
+
       - uses: actions/setup-node@v5
         with:
           node-version: "22"
