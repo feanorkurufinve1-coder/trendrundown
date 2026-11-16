@@ -3466,6 +3466,8 @@ def ai_image(store, x, budget):
     if not tok or not acct or budget[0] <= 0:
         return None
     fails = store.setdefault("ai_img_fail", {})
+    if store.get("ai_quota_day") == datetime.now(timezone.utc).strftime("%Y-%m-%d"):
+        return None            # 16.11: суточная бесплатная квота уже кончилась — ждём 00:00 UTC (05:00 Караганда)
     f = fails.get(x["slug"])
     which = "cf_ai" if os.environ.get("CF_AI_TOKEN") else "deploy"
     if f and f.get("tok") == which and hours_since(f["at"]) < 12:   # с новым ключом пробуем сразу
@@ -3498,6 +3500,12 @@ def ai_image(store, x, budget):
             body = e.read().decode()[:200]
         except Exception:
             pass
+        if e.code == 429 and "daily free allocation" in body:
+            store["ai_quota_day"] = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+            budget[0] = 0
+            fails.pop(x["slug"], None)    # страница не виновата — нарисуем первой после обнуления квоты
+            log("картинки: суточная бесплатная квота Cloudflare кончилась — продолжу после 00:00 UTC")
+            return None
         fails[x["slug"]] = {"at": now_iso(), "err": f"{e.code} {body}", "tok": which}
         log(f"картинка '{x['slug']}' не нарисована: {e.code} {body}")
         if e.code in (401, 403):
@@ -5150,7 +5158,8 @@ def build_site(store):
         pass
     ex.update(manual_pages(orig))         # ручные страницы важнее автоматических с тем же адресом
     ai_budget = [AI_IMG_PER_RUN]
-    for x in ex.values():
+    # 16.11: сначала новости и самые свежие страницы — их картинки нужнее всего (квота в сутки ограничена)
+    for x in sorted(ex.values(), key=lambda x: (bool(x.get("news")), str(x.get("made") or x.get("first") or "")), reverse=True):
         if x.get("manual") and x.get("image_prompt") and not (x.get("image_wiki") or x.get("image_file") or x.get("image_local")):
             x["img"] = ai_image(orig, x, ai_budget)
             continue
