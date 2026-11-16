@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-16T14:17:44+00:00",
+ "checked": "2026-11-16T15:47:18+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -28,6 +28,54 @@
   }
  ],
  "urls": [
+  {
+   "url": "/",
+   "at": "2026-11-16T12:17:31+00:00",
+   "verdict": "PASS",
+   "coverageState": "Submitted and indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "pageFetchState": "SUCCESSFUL",
+   "lastCrawlTime": "2026-11-15T19:19:19Z",
+   "googleCanonical": "https://trendrundown.com/",
+   "userCanonical": "https://trendrundown.com/"
+  },
+  {
+   "url": "/news",
+   "at": "2026-11-16T15:47:06+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
+   "url": "/trends",
+   "at": "2026-11-16T15:47:12+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
+   "url": "/explained",
+   "at": "2026-11-16T15:47:18+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "pageFetchState": "SUCCESSFUL",
+   "lastCrawlTime": "2026-11-10T17:40:42Z",
+   "googleCanonical": "https://trendrundown.com/explained",
+   "userCanonical": "https://trendrundown.com/explained"
+  },
   {
    "url": "/x/telerally",
    "at": "2026-11-16T12:16:58+00:00",
@@ -75,30 +123,6 @@
    "lastCrawlTime": "2026-11-05T13:54:59Z",
    "googleCanonical": "https://trendrundown.com/x/cyber-monday",
    "userCanonical": "https://trendrundown.com/x/cyber-monday"
-  },
-  {
-   "url": "/w/the-body-cast",
-   "at": "2026-11-16T12:17:24+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "Crawled - currently not indexed",
-   "robotsTxtState": "ALLOWED",
-   "indexingState": "INDEXING_ALLOWED",
-   "pageFetchState": "SUCCESSFUL",
-   "lastCrawlTime": "2026-11-02T15:01:19Z",
-   "googleCanonical": "https://trendrundown.com/w/the-body-cast",
-   "userCanonical": "https://trendrundown.com/w/the-body-cast"
-  },
-  {
-   "url": "/",
-   "at": "2026-11-16T12:17:31+00:00",
-   "verdict": "PASS",
-   "coverageState": "Submitted and indexed",
-   "robotsTxtState": "ALLOWED",
-   "indexingState": "INDEXING_ALLOWED",
-   "pageFetchState": "SUCCESSFUL",
-   "lastCrawlTime": "2026-11-15T19:19:19Z",
-   "googleCanonical": "https://trendrundown.com/",
-   "userCanonical": "https://trendrundown.com/"
   },
   {
    "url": "/x/40-man-roster",
@@ -1841,9 +1865,9 @@
   "/x/ligue-1": "2026-11-13T16:25:58+00:00"
  },
  "summary": {
-  "Crawled - currently not indexed": 63,
   "Submitted and indexed": 3,
-  "URL is unknown to Google": 72,
+  "URL is unknown to Google": 74,
+  "Crawled - currently not indexed": 63,
   "Discovered - currently not indexed": 12,
   "error": 1
  }

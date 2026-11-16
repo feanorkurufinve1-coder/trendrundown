@@ -1,25 +1,25 @@
 {
- "made": "2026-11-16T15:31:55+00:00",
- "pages": 386,
+ "made": "2026-11-16T15:47:18+00:00",
+ "pages": 396,
  "summary": {
   "kind": {
    "event": {
-    "pages": 53,
-    "with_impr_%": 23,
+    "pages": 55,
+    "with_impr_%": 22,
     "top3_%": 0,
     "clicks": 5,
     "clicks_per_page": 0.09
    },
    "law": {
-    "pages": 13,
-    "with_impr_%": 8,
+    "pages": 15,
+    "with_impr_%": 7,
     "top3_%": 0,
     "clicks": 0,
     "clicks_per_page": 0.0
    },
    "organization": {
-    "pages": 14,
-    "with_impr_%": 21,
+    "pages": 15,
+    "with_impr_%": 27,
     "top3_%": 0,
     "clicks": 1,
     "clicks_per_page": 0.07
@@ -32,11 +32,11 @@
     "clicks_per_page": 0.06
    },
    "person": {
-    "pages": 61,
-    "with_impr_%": 28,
+    "pages": 62,
+    "with_impr_%": 27,
     "top3_%": 0,
     "clicks": 15,
-    "clicks_per_page": 0.25
+    "clicks_per_page": 0.24
    },
    "place": {
     "pages": 16,
@@ -53,11 +53,11 @@
     "clicks_per_page": 0.0
    },
    "term": {
-    "pages": 155,
+    "pages": 159,
     "with_impr_%": 15,
-    "top3_%": 2,
+    "top3_%": 3,
     "clicks": 35,
-    "clicks_per_page": 0.23
+    "clicks_per_page": 0.22
    },
    "tool": {
     "pages": 1,
@@ -83,11 +83,11 @@
     "clicks_per_page": 0.0
    },
    "manual": {
-    "pages": 111,
-    "with_impr_%": 14,
+    "pages": 121,
+    "with_impr_%": 15,
     "top3_%": 4,
     "clicks": 52,
-    "clicks_per_page": 0.47
+    "clicks_per_page": 0.43
    }
   },
   "q_word": {
@@ -120,14 +120,14 @@
     "clicks_per_page": 0.0
    },
    "how": {
-    "pages": 11,
-    "with_impr_%": 18,
+    "pages": 12,
+    "with_impr_%": 17,
     "top3_%": 0,
     "clicks": 0,
     "clicks_per_page": 0.0
    },
    "is": {
-    "pages": 20,
+    "pages": 21,
     "with_impr_%": 10,
     "top3_%": 5,
     "clicks": 2,
@@ -141,18 +141,18 @@
     "clicks_per_page": 0.17
    },
    "what": {
-    "pages": 223,
+    "pages": 228,
     "with_impr_%": 18,
-    "top3_%": 1,
+    "top3_%": 2,
     "clicks": 40,
     "clicks_per_page": 0.18
    },
    "when": {
-    "pages": 12,
+    "pages": 13,
     "with_impr_%": 8,
     "top3_%": 0,
     "clicks": 5,
-    "clicks_per_page": 0.42
+    "clicks_per_page": 0.38
    },
    "where": {
     "pages": 10,
@@ -162,14 +162,14 @@
     "clicks_per_page": 0.0
    },
    "who": {
-    "pages": 66,
+    "pages": 67,
     "with_impr_%": 27,
     "top3_%": 0,
     "clicks": 6,
     "clicks_per_page": 0.09
    },
    "why": {
-    "pages": 9,
+    "pages": 10,
     "with_impr_%": 0,
     "top3_%": 0,
     "clicks": 0,
@@ -185,18 +185,18 @@
   },
   "title_matches_top_query": {
    "False": {
-    "pages": 350,
+    "pages": 358,
     "with_impr_%": 9,
     "top3_%": 1,
     "clicks": 31,
     "clicks_per_page": 0.09
    },
    "True": {
-    "pages": 36,
+    "pages": 38,
     "with_impr_%": 100,
-    "top3_%": 6,
+    "top3_%": 8,
     "clicks": 27,
-    "clicks_per_page": 0.75
+    "clicks_per_page": 0.71
    }
   }
  },
@@ -373,6 +373,25 @@
    ]
   },
   {
+   "slug": "ligue-1",
+   "title": "What is Ligue 1? France's top soccer league, explained",
+   "kind": "organization",
+   "source": "manual",
+   "q_word": "what",
+   "title_len": 54,
+   "age_days": 3.0,
+   "rival_exact": null,
+   "impr": 2151,
+   "clicks": 0,
+   "best_pos": 5.7,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "ligue 1",
+    "what is ligue 1",
+    "ligue"
+   ]
+  },
+  {
    "slug": "japan-open-tennis",
    "title": "What is the Japan Open tennis tournament? Tokyo event guide",
    "kind": "event",
@@ -468,6 +487,25 @@
    ]
   },
   {
+   "slug": "phishing-test",
+   "title": "What is a phishing test? Why your employer sends fake scam emails",
+   "kind": "term",
+   "source": "manual",
+   "q_word": "what",
+   "title_len": 65,
+   "age_days": 3.0,
+   "rival_exact": null,
+   "impr": 64,
+   "clicks": 0,
+   "best_pos": 2.5,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "phishing test",
+    "phishing test in dc",
+    "phishing test for employees"
+   ]
+  },
+  {
    "slug": "ali-g",
    "title": "Who is the Ali G character?",
    "kind": "other",
@@ -493,7 +531,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 27,
-   "age_days": 20.1,
+   "age_days": 20.2,
    "rival_exact": null,
    "impr": 41,
    "clicks": 0,
@@ -789,7 +827,7 @@
    "source": "manual",
    "q_word": "how",
    "title_len": 64,
-   "age_days": 10.0,
+   "age_days": 10.1,
    "rival_exact": null,
    "impr": 15,
    "clicks": 0,
@@ -1238,7 +1276,7 @@
    "source": "manual",
    "q_word": "what",
    "title_len": 69,
-   "age_days": 10.0,
+   "age_days": 10.1,
    "rival_exact": null,
    "impr": 3,
    "clicks": 0,
@@ -1340,7 +1378,7 @@
    "source": "auto",
    "q_word": "where",
    "title_len": 26,
-   "age_days": 20.8,
+   "age_days": 20.9,
    "rival_exact": null,
    "impr": 2,
    "clicks": 0,
@@ -1517,7 +1555,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 41,
-   "age_days": 23.6,
+   "age_days": 23.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -1907,7 +1945,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 48,
-   "age_days": 19.0,
+   "age_days": 19.1,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -1967,7 +2005,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 30,
-   "age_days": 18.4,
+   "age_days": 18.5,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2372,7 +2410,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 69,
-   "age_days": 14.7,
+   "age_days": 14.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2447,7 +2485,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 63,
-   "age_days": 13.9,
+   "age_days": 14.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2477,7 +2515,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 74,
-   "age_days": 13.6,
+   "age_days": 13.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2492,7 +2530,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 71,
-   "age_days": 13.6,
+   "age_days": 13.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2717,7 +2755,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 66,
-   "age_days": 12.5,
+   "age_days": 12.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3002,7 +3040,7 @@
    "source": "auto",
    "q_word": "none",
    "title_len": 76,
-   "age_days": 11.6,
+   "age_days": 11.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3302,7 +3340,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 78,
-   "age_days": 11.1,
+   "age_days": 11.2,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3482,7 +3520,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 76,
-   "age_days": 10.3,
+   "age_days": 10.4,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3902,7 +3940,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 76,
-   "age_days": 9.1,
+   "age_days": 9.2,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3917,7 +3955,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 68,
-   "age_days": 9.1,
+   "age_days": 9.2,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4037,7 +4075,7 @@
    "source": "auto",
    "q_word": "none",
    "title_len": 78,
-   "age_days": 8.7,
+   "age_days": 8.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4052,7 +4090,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 61,
-   "age_days": 8.7,
+   "age_days": 8.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4322,7 +4360,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 73,
-   "age_days": 7.4,
+   "age_days": 7.5,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4412,7 +4450,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 63,
-   "age_days": 6.6,
+   "age_days": 6.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4457,7 +4495,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 65,
-   "age_days": 6.5,
+   "age_days": 6.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4727,7 +4765,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 66,
-   "age_days": 5.7,
+   "age_days": 5.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5021,6 +5059,21 @@
    "top_queries": []
   },
   {
+   "slug": "first-black-senator-from-mississippi",
+   "title": "Who was the first Black senator from Mississippi? Hiram Revels, 1870",
+   "kind": "person",
+   "source": "manual",
+   "q_word": "who",
+   "title_len": 68,
+   "age_days": 3.0,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
    "slug": "guarding-stars-book",
    "title": "Is Guarding Stars based on a book? Yes, Katherine Center's The Bodyguard",
    "kind": "product",
@@ -5042,7 +5095,7 @@
    "source": "manual",
    "q_word": "what",
    "title_len": 74,
-   "age_days": 10.0,
+   "age_days": 10.1,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5057,7 +5110,7 @@
    "source": "manual",
    "q_word": "where",
    "title_len": 65,
-   "age_days": 8.0,
+   "age_days": 8.1,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5132,7 +5185,7 @@
    "source": "manual",
    "q_word": "how",
    "title_len": 61,
-   "age_days": 8.0,
+   "age_days": 8.1,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5147,7 +5200,7 @@
    "source": "manual",
    "q_word": "how",
    "title_len": 70,
-   "age_days": 10.0,
+   "age_days": 10.1,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5201,6 +5254,21 @@
    "top_queries": []
   },
   {
+   "slug": "how-much-tax-refund-per-child-2026",
+   "title": "How much is the tax refund per child in 2026? Up to $2,200 credit",
+   "kind": "law",
+   "source": "manual",
+   "q_word": "how",
+   "title_len": 65,
+   "age_days": 3.0,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
    "slug": "how-to-rob-a-bank-true-story",
    "title": "Is How to Rob a Bank a true story? The 2026 Nicholas Hoult movie",
    "kind": "product",
@@ -5222,7 +5290,7 @@
    "source": "manual",
    "q_word": "is",
    "title_len": 57,
-   "age_days": 8.0,
+   "age_days": 8.1,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5282,7 +5350,7 @@
    "source": "manual",
    "q_word": "is",
    "title_len": 61,
-   "age_days": 8.0,
+   "age_days": 8.1,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5298,6 +5366,21 @@
    "q_word": "is",
    "title_len": 64,
    "age_days": 7.1,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
+   "slug": "is-the-law-of-beasts-a-true-story",
+   "title": "Is The Law of Beasts a true story? Yes, Poland's real 'Beast Act' case",
+   "kind": "event",
+   "source": "manual",
+   "q_word": "is",
+   "title_len": 70,
+   "age_days": 3.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5417,7 +5500,7 @@
    "source": "manual",
    "q_word": "why",
    "title_len": 69,
-   "age_days": 10.0,
+   "age_days": 10.1,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5606,6 +5689,21 @@
    "top_queries": []
   },
   {
+   "slug": "rock-hall-of-fame-2026-ceremony-air-date",
+   "title": "When will the Rock and Roll Hall of Fame 2026 ceremony air? Dec. 8 on ABC",
+   "kind": "event",
+   "source": "manual",
+   "q_word": "when",
+   "title_len": 73,
+   "age_days": 3.0,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
    "slug": "rookie-cy-young-winner",
    "title": "Has a rookie ever won the Cy Young? Yes, Fernando Valenzuela in 1981",
    "kind": "term",
@@ -5717,7 +5815,7 @@
    "source": "manual",
    "q_word": "is",
    "title_len": 62,
-   "age_days": 8.0,
+   "age_days": 8.1,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5846,6 +5944,21 @@
    "top_queries": []
   },
   {
+   "slug": "what-does-refrigerator-coolant-smell-like",
+   "title": "What does refrigerator coolant smell like? Signs of a leak and what to do",
+   "kind": "term",
+   "source": "manual",
+   "q_word": "what",
+   "title_len": 73,
+   "age_days": 3.0,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
    "slug": "what-does-unc-mean",
    "title": "What does unc mean? Gen Z slang for an out-of-touch older person",
    "kind": "term",
@@ -5951,6 +6064,21 @@
    "top_queries": []
   },
   {
+   "slug": "what-is-a-safety-in-football",
+   "title": "What is a safety in football? 2 points, and the scoring team gets the ball",
+   "kind": "term",
+   "source": "manual",
+   "q_word": "what",
+   "title_len": 74,
+   "age_days": 3.0,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
    "slug": "what-is-a-sudden-stratospheric-warming",
    "title": "What is a sudden stratospheric warming? The polar vortex, explained",
    "kind": "term",
@@ -5988,6 +6116,21 @@
    "q_word": "what",
    "title_len": 61,
    "age_days": 7.1,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
+   "slug": "what-is-broad-based-categorical-eligibility",
+   "title": "What is broad-based categorical eligibility? The SNAP rule USDA wants to cut",
+   "kind": "law",
+   "source": "manual",
+   "q_word": "what",
+   "title_len": 76,
+   "age_days": 3.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6198,6 +6341,21 @@
    "q_word": "why",
    "title_len": 68,
    "age_days": 5.1,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
+   "slug": "why-is-wifi-not-working-on-my-phone",
+   "title": "Why is Wi-Fi not working on my phone? Fixes for iPhone and Android",
+   "kind": "term",
+   "source": "manual",
+   "q_word": "why",
+   "title_len": 66,
+   "age_days": 3.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
