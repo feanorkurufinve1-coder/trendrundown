@@ -1,5 +1,5 @@
 {
- "made": "2026-11-16T05:33:28+00:00",
+ "made": "2026-11-16T17:47:42+00:00",
  "about": "Премьеры сериалов и новых сезонов в США на 14 дней вперёд (TVmaze). new_series = совсем новый сериал. Сырьё для прогнозов «is X a true story», «X cast», «X season N release time».",
  "premieres": [
   {
@@ -161,6 +161,23 @@
    "summary": "Next Level Baker will test the skills of bakers as they are challenged to create eye-popping, festive holiday delights across the franchise's three iconic levels. During the series' four special hours, only one baker will rise to the top and claim the holiday baking crown.",
    "url": "https://www.tvmaze.com/shows/82897/next-level-baker",
    "official": "https://www.fox.com/detail/series/SER262498WXNC/next-level-baker"
+  },
+  {
+   "date": "2026-11-19",
+   "show": "Lost Treasures of Egypt",
+   "season": 7,
+   "new_series": false,
+   "type": "Documentary",
+   "genres": [
+    "Mystery",
+    "Nature",
+    "History"
+   ],
+   "network": "National Geographic",
+   "premiered": "2019-03-05",
+   "summary": "An immersive, action-packed series follows international teams of Egyptologists as they unearth the world's richest seam of ancient archaeology — Lost Treasures of Egypt. Through excavations and unprecedented access to the teams on the front line of archaeology, we follow these modern-day explorers as they battle searing heat and inhospitable terrain to make the discoveries of a lifetime.",
+   "url": "https://www.tvmaze.com/shows/41251/lost-treasures-of-egypt",
+   "official": "https://www.nationalgeographic.com/tv/shows/lost-treasures-of-egypt"
   },
   {
    "date": "2026-11-19",
