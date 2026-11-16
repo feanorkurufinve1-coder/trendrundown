@@ -1523,6 +1523,7 @@
   },
   {
    "url": "/x/what-is-dandori-academy",
+   "at": "2026-11-16T14:10:34+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1534,6 +1535,7 @@
   },
   {
    "url": "/x/what-is-pico-park",
+   "at": "2026-11-16T14:10:40+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1545,6 +1547,19 @@
   },
   {
    "url": "/x/what-is-the-bearista-cup",
+   "at": "2026-11-16T14:10:47+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
+   "url": "/x/what-is-the-ram-altman-meme",
+   "at": "2026-11-16T14:10:53+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1556,6 +1571,7 @@
   },
   {
    "url": "/x/what-is-tsa-confirmid",
+   "at": "2026-11-16T14:11:00+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1567,6 +1583,7 @@
   },
   {
    "url": "/x/what-is-win-the-mall",
+   "at": "2026-11-16T14:11:06+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1578,6 +1595,7 @@
   },
   {
    "url": "/x/what-time-does-gta-6-unlock",
+   "at": "2026-11-16T14:11:12+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1589,6 +1607,7 @@
   },
   {
    "url": "/x/when-does-new-congress-start",
+   "at": "2026-11-16T14:11:19+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1600,6 +1619,7 @@
   },
   {
    "url": "/x/when-will-social-security-run-out",
+   "at": "2026-11-16T14:11:25+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1610,7 +1630,20 @@
    "userCanonical": "https://trendrundown.com/x/when-will-social-security-run-out"
   },
   {
+   "url": "/x/who-is-oobah-butler",
+   "at": "2026-11-16T14:11:32+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/who-won-mvp-2026",
+   "at": "2026-11-16T14:11:38+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1621,7 +1654,20 @@
    "userCanonical": "https://trendrundown.com/x/who-won-mvp-2026"
   },
   {
+   "url": "/x/why-are-people-saying-ao3-is-back",
+   "at": "2026-11-16T14:11:44+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/why-are-people-saying-dinosaurs-in-mexico",
+   "at": "2026-11-16T14:11:50+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1633,8 +1679,9 @@
   },
   {
    "url": "/x/why-does-my-phone-battery-go-down-while-charging",
+   "at": "2026-11-16T14:11:57+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1644,6 +1691,7 @@
   },
   {
    "url": "/x/why-does-my-phone-screen-go-black-during-calls",
+   "at": "2026-11-16T14:12:03+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1655,8 +1703,9 @@
   },
   {
    "url": "/x/why-does-my-phone-screen-keep-going-black",
+   "at": "2026-11-16T14:12:10+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1666,6 +1715,7 @@
   },
   {
    "url": "/x/why-does-my-washing-machine-smell-like-rotten-eggs",
+   "at": "2026-11-16T14:12:16+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1677,8 +1727,9 @@
   },
   {
    "url": "/x/why-does-social-security-come-out-of-my-paycheck",
+   "at": "2026-11-16T14:12:23+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1773,8 +1824,8 @@
  "summary": {
   "Crawled - currently not indexed": 63,
   "Submitted and indexed": 3,
-  "URL is unknown to Google": 68,
-  "Discovered - currently not indexed": 12,
+  "URL is unknown to Google": 72,
+  "Discovered - currently not indexed": 11,
   "error": 1
  }
 }

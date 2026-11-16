@@ -1,5 +1,5 @@
 {
- "made": "2026-11-16T14:03:50+00:00",
+ "made": "2026-11-16T14:12:23+00:00",
  "days": [
   "2026-11-13",
   "2026-11-14",
@@ -9,7 +9,7 @@
   {
    "page": "/x/rot-weiss-essen",
    "clicks_3d": 1,
-   "impr_3d": 4,
+   "impr_3d": 5,
    "pos": 3.3,
    "by_day": {
     "2026-11-13": 0,
@@ -21,7 +21,7 @@
   {
    "page": "/t/alexandra-eala",
    "clicks_3d": 0,
-   "impr_3d": 4,
+   "impr_3d": 5,
    "pos": 4.2,
    "by_day": {
     "2026-11-13": 0,
@@ -33,7 +33,7 @@
   {
    "page": "/x/collin-sexton",
    "clicks_3d": 0,
-   "impr_3d": 4,
+   "impr_3d": 5,
    "pos": 4.5,
    "by_day": {
     "2026-11-13": 0,
@@ -45,7 +45,7 @@
   {
    "page": "/x/jasveen-sangha",
    "clicks_3d": 0,
-   "impr_3d": 4,
+   "impr_3d": 5,
    "pos": 3.7,
    "by_day": {
     "2026-11-13": 0,
