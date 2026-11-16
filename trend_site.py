@@ -3329,7 +3329,10 @@ def same_subject(t, pg):
     """ИИ сверяет: статья Википедии «Hannibal» — про древнего полководца или про то, о чём новость (город, школа)?"""
     key = api_key()
     if not key:
-        return True
+        # 16.11: без ИИ-проверки берём фото только при точном совпадении названия из 2+ слов («Peter Safran»);
+        # одно слово («Brawl», «Stock», «As») — почти всегда чужая картинка. Правило владельца: лучше без фото, чем не то.
+        a = words(t["term"]); b = words(re.sub(r"\(.*?\)", "", pg.get("title", "")))
+        return len(set(a)) >= 2 and set(a) == set(b)
     heads = "; ".join(a["title"] for a in t["articles"][-6:])
     prompt = (f"People searched for \"{t['term']}\". News headlines about it: {heads}\n"
               f"Wikipedia article: {pg.get('title', '')} — {pg.get('description', '') or '(no description)'}\n"
