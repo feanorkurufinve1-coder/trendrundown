@@ -1,87 +1,66 @@
 {
- "made": "2026-11-16T02:01:46+00:00",
+ "made": "2026-11-16T02:07:46+00:00",
  "days": [
-  "2026-11-12",
   "2026-11-13",
-  "2026-11-14"
+  "2026-11-14",
+  "2026-11-15"
  ],
  "pages": [
   {
    "page": "/x/rot-weiss-essen",
    "clicks_3d": 1,
-   "impr_3d": 5,
-   "pos": 3.4,
+   "impr_3d": 4,
+   "pos": 3.3,
    "by_day": {
-    "2026-11-12": 0,
     "2026-11-13": 0,
-    "2026-11-14": 1
+    "2026-11-14": 1,
+    "2026-11-15": 0
    },
    "manual": false
   },
   {
    "page": "/t/alexandra-eala",
    "clicks_3d": 0,
-   "impr_3d": 5,
-   "pos": 4.4,
+   "impr_3d": 4,
+   "pos": 4.2,
    "by_day": {
-    "2026-11-12": 0,
     "2026-11-13": 0,
-    "2026-11-14": 0
+    "2026-11-14": 0,
+    "2026-11-15": 0
    },
    "manual": false
   },
   {
    "page": "/x/collin-sexton",
    "clicks_3d": 0,
-   "impr_3d": 5,
-   "pos": 4.3,
+   "impr_3d": 4,
+   "pos": 4.5,
    "by_day": {
-    "2026-11-12": 0,
     "2026-11-13": 0,
-    "2026-11-14": 0
+    "2026-11-14": 0,
+    "2026-11-15": 0
    },
    "manual": false
   },
   {
    "page": "/x/jasveen-sangha",
    "clicks_3d": 0,
-   "impr_3d": 5,
-   "pos": 3.3,
+   "impr_3d": 4,
+   "pos": 3.7,
    "by_day": {
-    "2026-11-12": 0,
     "2026-11-13": 0,
-    "2026-11-14": 0
+    "2026-11-14": 0,
+    "2026-11-15": 0
    },
    "manual": false
-  },
-  {
-   "page": "/x/relief-pitcher-of-the-year",
-   "clicks_3d": 0,
-   "impr_3d": 3,
-   "pos": 3.3,
-   "by_day": {
-    "2026-11-12": 0
-   },
-   "manual": true
   },
   {
    "page": "/x/consent-decree",
    "clicks_3d": 0,
-   "impr_3d": 2,
-   "pos": 48.5,
-   "by_day": {
-    "2026-11-12": 0,
-    "2026-11-14": 0
-   },
-   "manual": false
-  },
-  {
-   "page": "/w/the-chosen-season-6-cast",
-   "clicks_3d": 0,
    "impr_3d": 1,
-   "pos": 11.0,
+   "pos": 87.0,
    "by_day": {
-    "2026-11-12": 0
+    "2026-11-14": 0
    },
    "manual": false
   }
