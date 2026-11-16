@@ -2639,7 +2639,7 @@ def sitemap_submit(store):
     log(f"Карта сайта отправлена в Google: {ok}")
 
 
-HEALTH_URLS = ["/x/telerally", "/x/mutual-option", "/x/dane-cook-brother", "/x/cyber-monday", "/w/the-body-cast", "/"]
+HEALTH_URLS = ["/", "/news", "/trends", "/explained", "/x/telerally", "/x/mutual-option", "/x/dane-cook-brother", "/x/cyber-monday"]
 
 
 # 16.11: правило владельца «никакой религии» — и в фото тоже (храмы, иконы, кресты и т.п. в имени файла или статьи)
@@ -4205,6 +4205,20 @@ NAV_CATS = []    # разделы, в которых есть темы (запо
 HAS_EXPLAINED = False
 PINTEREST_VERIFY = "38df48ae41e2b1c243e78e09cf03accd"                  # 15.11: код подтверждения сайта в Pinterest (p:domain_verify) — вставить, когда владелец пришлёт
 HAS_TRENDS = False                     # 14.11: раздел «Internet trends» — объяснения мемов, сленга, челленджей (ручные, поле trend)
+HAS_NEWS = False                       # 16.11: страница «News» — все наши новости (на главной только 9 последних)
+# 16.11: на сайте остаются ТОЛЬКО страницы, написанные вручную (новости, тренды, пояснения). Автоматические остатки —
+# страницы тем t/, разделы c/, архив, гиды по актёрам w/ и переадресации на них — больше не публикуются:
+# они устарели (тексты октября), пустели и тянули вниз оценку сайта у Google. Данные о трендах по-прежнему собираются
+# (по ним выбираются темы новостей), но страниц из них сайт не делает.
+AUTO_PAGES_OFF = True
+
+
+FOOT_NOTE = (f"{SITE_NAME} explains what America is searching for: the news, internet trends and everyday questions, in plain English, "
+             "with the sources linked on every page. Release dates for movies and TV come from TMDB: this product uses the TMDB API "
+             "but is not endorsed or certified by TMDB.") if AUTO_PAGES_OFF else (
+             f"{SITE_NAME} tracks what Americans are searching for and links to the outlets covering it. Headlines belong to their "
+             "publishers; every link goes to the original source. Movie and TV data from TMDB: this product uses the TMDB API but is "
+             "not endorsed or certified by TMDB.")
 
 
 def today_line():
@@ -4265,10 +4279,10 @@ def _page(title, desc, body, path, depth, extra_head="", og_img=""):
 <div><a class="brand" href="{up}index.html">The Trend Rundown</a><div class="motto">“{E(TAGLINE)}”</div></div>
 <div class="ear">Price<b>Free</b>All the news America searches</div></div>
 <div class="dateline"><span>Vol. I · No. {issue_no()}</span><span>{E(today_line())}</span><span>United States Edition · Price: Free</span></div>
-<nav><a href="{up}index.html">Trending now</a>{f'<a href="{up}cast.html">Cast guides</a>' if HAS_CAST else ''}{f'<a href="{up}trends.html">Internet trends</a>' if HAS_TRENDS else ''}{f'<a href="{up}explained.html">Explained</a>' if HAS_EXPLAINED else ''}{"".join(f'<a href="{up}c/{c}.html">{E(CATS[c])}</a>' for c in NAV_CATS)}<a href="{up}archive.html">Archive</a></nav></header>
+<nav><a href="{up}index.html">{"Front page" if AUTO_PAGES_OFF else "Trending now"}</a>{f'<a href="{up}news.html">News</a>' if HAS_NEWS else ''}{f'<a href="{up}cast.html">Cast guides</a>' if HAS_CAST else ''}{f'<a href="{up}trends.html">Internet trends</a>' if HAS_TRENDS else ''}{f'<a href="{up}explained.html">Explained</a>' if HAS_EXPLAINED else ''}{"".join(f'<a href="{up}c/{c}.html">{E(CATS[c])}</a>' for c in NAV_CATS)}{"" if AUTO_PAGES_OFF else f'<a href="{up}archive.html">Archive</a>'}</nav></header>
 {body}
 <footer><a href="{up}about.html">About</a><a href="{up}privacy.html">Privacy</a><a href="{up}contact.html">Contact</a>
-<p>{SITE_NAME} tracks what Americans are searching for and links to the outlets covering it. Headlines belong to their publishers; every link goes to the original source. Movie and TV data from TMDB: this product uses the TMDB API but is not endorsed or certified by TMDB.</p></footer>
+<p>{FOOT_NOTE}</p></footer>
 </div></body></html>"""
 
 
@@ -4856,6 +4870,7 @@ def build_index(store):
     # 14.11 (владелец): пояснения и советы — НЕ на главной, только ссылка на их отдельный раздел
     if xs_all:
         parts.append('<div class="xlinks">'
+                     + ('<a href="news.html">All news: every story we have covered →</a>' if HAS_NEWS else '')
                      + ('<a href="trends.html">Internet trends explained: slang, memes and challenges →</a>' if HAS_TRENDS else '')
                      + '<a href="explained.html">Guides and explainers: how things work, terms from the news →</a></div>')
     if week:
@@ -4884,7 +4899,7 @@ def build_index(store):
         li = next((i for i, x in enumerate(fresh[:4]) if (x.get("img") or {}).get("file")), 0)   # главной — свежую страницу с фото
         fresh = [fresh[li]] + fresh[:li] + fresh[li + 1:]
         lead_html = (xcard(fresh[0], True) + '<div class="grid">' + "".join(xcard(x) for x in fresh[1:]) + "</div>"
-                     + '<h2 class="sec">Trending in the US</h2>')
+                     + ('<h2 class="sec">Trending in the US</h2>' if top else ''))
     body = (f'<p class="tag">{E(TAGLINE)} · Updated {E(fmt_et(store.get("updated", now_iso())))}</p>'
             f'<h1 class="front">{"Latest from TrendRundown" if fresh else "Trending in the US right now"}</h1>{lead_html}{"".join(parts)}'
             if (top or fresh) else "<p>No trends yet — check back in a few minutes.</p>")
@@ -4955,17 +4970,21 @@ def build_explainer(x, topics):
         if s_ and s_ not in [a for a, _ in seen_s]:
             seen_s.append((s_, u))
     src = " · ".join(f'<a href="{E(u)}" target="_blank" rel="noopener nofollow">{E(s_)}</a>' for s_, u in seen_s[:8])
-    ld = [{"@context": "https://schema.org", "@type": "Article", "headline": x["title"],
+    sec_name, sec_file = (("News", "news") if x.get("news") and x.get("manual") and HAS_NEWS else
+                          ("Internet trends", "trends") if x.get("trend") else ("Explained", "explained"))
+    ld = [{"@context": "https://schema.org", "@type": "NewsArticle" if x.get("news") else "Article", "headline": x["title"],
            "datePublished": x["first"], "dateModified": x["made"],
            "author": {"@type": "Organization", "name": SITE_NAME, "url": SITE_URL},
            "publisher": PUBLISHER_LD,
            "mainEntityOfPage": f"{SITE_URL}/x/{x['slug']}"},
-          crumbs_ld((SITE_NAME, SITE_URL + "/"), (("Internet trends", SITE_URL + "/trends") if x.get("trend") else ("Explained", SITE_URL + "/explained")), (x["title"][:110], f"{SITE_URL}/x/{x['slug']}"))]
+          crumbs_ld((SITE_NAME, SITE_URL + "/"), (sec_name, f"{SITE_URL}/{sec_file}"), (x["title"][:110], f"{SITE_URL}/x/{x['slug']}"))]
     if faq:
         ld.append({"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
             {"@type": "Question", "name": f["q"], "acceptedAnswer": {"@type": "Answer", "text": f["a"]}} for f in faq]})
     head = f'<script type="application/ld+json">{json.dumps(ld)}</script>'
     rel = related_explainers(x)
+    more = more_pages(x, [y["slug"] for y in rel]) if x.get("manual") else []
+    more_title = {"news": "More news", "trend": "More internet trends"}.get(page_kind(x), "More explainers")
     im = x.get("img") or {}
     hero_x = (f'<figure class="hero">{pic(im["file"], "../", x["subject"], lazy=False, sizes="(max-width: 700px) 100vw, 680px")}'
               + ('<figcaption>Illustration: TrendRundown (original artwork)</figcaption></figure>' if im.get("own") else
@@ -4976,18 +4995,19 @@ def build_explainer(x, topics):
         ld[0]["image"] = SITE_URL + "/" + im["file"]
         head = f'<script type="application/ld+json">{json.dumps(ld)}</script>'
     body = f"""<article>
-<p class="meta"><a href="../index.html">{SITE_NAME}</a> › <a class="cat" href="../{"trends" if x.get("trend") else "explained"}.html">{"Internet trends" if x.get("trend") else "Explained"}</a> · updated {E(fmt_et(x["made"]))}</p>
+<p class="meta"><a href="../index.html">{SITE_NAME}</a> › <a class="cat" href="../{sec_file}.html">{sec_name}</a> · updated {E(fmt_et(x["made"]))}</p>
 <h1>{E(x["title"])}</h1>
 {hero_x}
 {audio_player("x/" + x["slug"], ". ".join([x["title"], x["answer"], x.get("in_the_news", ""), x["body"]]))}
 <div class="box answer"><p style="margin:0">{E(x["answer"])}</p></div>
-<h2>Why it's in the news</h2><p>{E(x["in_the_news"])}</p>
-{('<ul class="list">' + newslist + '</ul>') if newslist else ''}
+{("<h2>" + ("Why people are talking about it" if x.get("trend") else "Why it's in the news") + "</h2><p>" + E(x["in_the_news"]) + "</p>") if x["in_the_news"].strip() else ""}
+{('<ul class="list">' + newslist + '</ul>') if newslist and not AUTO_PAGES_OFF else ''}
 {ad("in_article")}
 <h2>Background</h2>{paras}
 {('<h2>What people are asking</h2>' + faq_html) if faq_html else ''}
 {('<h2 class="sec">Also explained</h2><div class="xlinks">' + "".join(f'<a href="{E(y["slug"])}.html">{E(y["title"])} →</a>' for y in rel) + '</div>') if rel else ''}
 {reactions_html("x/" + x["slug"])}
+{('<h2 class="sec">' + more_title + '</h2><div class="xlinks">' + "".join(f'<a href="{E(y["slug"])}.html">{E(y["title"])} →</a>' for y in more) + '</div>') if more else ''}
 {ad("middle")}
 {('<p class="meta" style="margin-top:26px">Sources: ' + src + '</p>') if src else ''}
 <p class="meta">Updated {E(fmt_et(x["made"]))}.</p>
@@ -5008,6 +5028,47 @@ def build_explained_index(ex):
     return page(f"Explained: the words and names in today's news | {SITE_NAME}",
                 "Plain-English explainers for the terms, laws, places and people that show up in trending US news.",
                 body, "explained.html", 0)
+
+
+def build_news_index(ex):
+    """16.11: все наши новости, свежие сверху. На главной только 9 последних — без этой страницы на старые новости
+    не вела ни одна ссылка (для Google такие страницы — «сироты»)."""
+    items = sorted([x for x in ex.values() if x.get("manual") and x.get("news")],
+                   key=lambda x: x.get("first") or x.get("made") or "", reverse=True)
+    rows = "".join(f'<li><a class="t" href="x/{E(x["slug"])}.html">{E(x["title"])}</a>'
+                   f'<span class="meta">{E(fmt_et(x.get("first") or x["made"]).split(",")[0])} — {E(short_desc(x["answer"], 170))}</span></li>'
+                   for x in items[:500])
+    body = (f'<p class="tag">The stories America is searching for, explained</p>'
+            f'<h1 class="front">News</h1>'
+            f'<p class="snip">What happened, why it matters and what comes next. Every story is checked against several sources, '
+            f'which are linked at the bottom of the page; newest first.</p><ul class="list">{rows}</ul>')
+    return page(f"News: the stories America is searching for, explained | {SITE_NAME}",
+                "The news stories Americans are searching for, explained in plain English: what happened, why it matters and what comes next, with sources.",
+                body, "news.html", 0)
+
+
+def page_kind(x):
+    return "news" if x.get("news") else "trend" if x.get("trend") else "expl"
+
+
+def more_pages(x, skip=(), k=6):
+    """16.11: «More news / More internet trends / More explainers» внизу каждой ручной страницы.
+    Новости и тренды — соседние по времени (ближайшие более свежие и предыдущие), вечные пояснения — по кругу,
+    чтобы на каждую страницу сайта вело поровну ссылок и читателю было куда пойти дальше."""
+    kind = page_kind(x)
+    same = sorted([y for y in EXPLAINERS.values() if y.get("manual") and page_kind(y) == kind],
+                  key=lambda y: (y.get("first") or y.get("made") or "", y["slug"]))
+    i = next((n for n, y in enumerate(same) if y["slug"] == x["slug"]), None)
+    if i is None or len(same) < 2:
+        return []
+    if kind == "expl":
+        cand = [same[(i + d) % len(same)] for d in range(1, len(same))]
+    else:
+        newer, older = same[i + 1:], same[:i][::-1]          # ближайшие — первыми
+        cand = newer[:k // 2] + older + newer[k // 2:]
+    skip = set(skip) | {x["slug"]}
+    out = [y for y in cand if y["slug"] not in skip][:k]
+    return sorted(out, key=lambda y: y.get("first") or y.get("made") or "", reverse=True) if kind != "expl" else out
 
 
 def build_trends_index(ex):
@@ -5038,10 +5099,11 @@ def build_archive(store):
 
 STATIC = {
     "about.html": ("About", f"<h1>About {SITE_NAME}</h1>"
-        f"<p>{SITE_NAME} is a small independent website that answers the questions Americans are searching for right now: what a term in the news means, who a person in the headlines is, when a show or game comes out, and how everyday things work, from a check engine light to a tax refund.</p>"
+        f"<p>{SITE_NAME} is a small independent website that answers the questions Americans are searching for right now: what a new slang word or meme means, what a term in the news means, who a person in the headlines is, and how everyday things work, from a check engine light to a tax refund.</p>"
         "<h2>How we work</h2>"
         "<p><b>Choosing topics.</b> We look at what people in the United States are searching for and pick questions where a clear, accurate answer is hard to find. We publish a few pages a day, not hundreds.</p>"
-        "<p><b>Writing.</b> Every page is researched from several independent sources, such as wire services, major newspapers, official websites (for example ssa.gov or irs.gov) and reference works. Pages are drafted with the help of AI and edited by the site. Every fact, date and number is checked against at least two sources before publication, and the sources are linked at the bottom of each page so you can check them yourself.</p>"
+        "<p><b>Our trend radar.</b> To catch new slang, memes and viral rumors early, we run our own monitoring program. Several times a day it compares what people start typing into search engines with new discussions on Reddit and entries in meme and slang databases, and flags phrases that were not there a few days earlier. We write about a trend only after its meaning and origin are confirmed by at least two independent sources. If they are not, we wait.</p>"
+        "<p><b>Writing.</b> Every page is researched from several independent sources, such as wire services, major newspapers, official websites (for example ssa.gov or irs.gov) and reference works. Pages are researched and drafted with AI tools. Every fact, date and number is checked against at least two sources before publication, and the sources are linked at the bottom of each page so you can check them yourself.</p>"
         "<p><b>What we will not do.</b> We do not copy other publishers' articles, report rumors as fact, call anyone guilty before a court does, or publish private people's personal details. We do not use news agency or manufacturer photos.</p>"
         "<p><b>Images.</b> Photos come from Wikimedia Commons under free licenses, with the author and license shown under each photo. Some pages use illustrations made for this site; they are labeled as illustrations and do not show real events or real people.</p>"
         "<p><b>Updates.</b> When an event happens or new facts come out, we update the page. The \"updated\" date changes only when the content does.</p>"
@@ -5180,11 +5242,14 @@ def build_site(store):
                 im = manual_image(orig, {"slug": x["slug"], "image_local": x["image_local"]})
             x["img"] = im
     EXPLAINERS.clear(); EXPLAINERS.update(ex)
-    global HAS_EXPLAINED, HAS_CAST, HAS_TRENDS
+    global HAS_EXPLAINED, HAS_CAST, HAS_TRENDS, HAS_NEWS
     HAS_EXPLAINED = bool(ex)
     HAS_TRENDS = any(x.get("trend") for x in ex.values())
+    HAS_NEWS = any(x.get("news") and x.get("manual") for x in ex.values())
     pv = {k: x for k, x in store.get("previews", {}).items() if x.get("slug") and not bad_text(json.dumps(x, ensure_ascii=False), ub)}
-    HAS_CAST = bool(pv)
+    HAS_CAST = bool(pv) and not AUTO_PAGES_OFF
+    if AUTO_PAGES_OFF:
+        NAV_CATS[:] = []
     # чистка выдачи: пояснения и страницы актёров без показов в Google за 28 дней и старше 14 дней — noindex
     # (страница остаётся на сайте для читателей, но Google её не оценивает). Ручные прогнозы не трогаем.
     NOINDEX.clear()
@@ -5223,6 +5288,11 @@ def build_site(store):
                 old = True
             if old:
                 DELETED.add(pth)
+    if AUTO_PAGES_OFF:                   # 16.11: все автоматические страницы — темы и гиды по актёрам — с сайта убраны
+        for s_ in allt:
+            NOINDEX.add("t/" + s_); DELETED.add("t/" + s_)
+        for x_ in pv.values():
+            NOINDEX.add("w/" + x_["slug"]); DELETED.add("w/" + x_["slug"])
     log(f"Слабые страницы удалены с сайта совсем: {len(DELETED)}")
     by_cat = {}
     for t in sorted(topics.values(), key=lambda x: x.get("last_seen", x["first_seen"]), reverse=True):
@@ -5237,17 +5307,17 @@ def build_site(store):
             return
         with open(p, "w", encoding="utf-8") as f:
             f.write(text)
-    for t in topics.values():
+    for t in ([] if AUTO_PAGES_OFF else topics.values()):
         same = [x for x in by_cat.get(t.get("cat"), []) if x["slug"] != t["slug"]][:6] if t.get("cat") in CATS else []
         others = [x for x in related_for(t, lists) if x not in same and x.get("cat") != t.get("cat")]
         w(f"t/{t['slug']}.html", build_topic(t, others, same))
-    for s, target in store.get("alias", {}).items():
-        if target in topics and s not in topics:
+    for s, target in ([] if AUTO_PAGES_OFF else store.get("alias", {}).items()):
+        if target in topics and s not in topics and ("t/" + target) not in DELETED:   # переадресация на удалённую страницу не нужна
             url = f"{SITE_URL}/t/{target}"
             w(f"t/{s}.html", f'<!doctype html><html><head><meta charset="utf-8"><link rel="canonical" href="{E(url)}">'
                              f'<meta http-equiv="refresh" content="0; url={E(target)}.html"><title>Moved</title></head>'
                              f'<body><a href="{E(target)}.html">Continue</a></body></html>')
-    for c in counts:
+    for c in ([] if AUTO_PAGES_OFF else counts):
         w(f"c/{c}.html", build_category(c, topics))
     for x in ex.values():
         w(f"x/{x['slug']}.html", build_explainer(x, topics))
@@ -5261,32 +5331,48 @@ def build_site(store):
         w("explained.html", build_explained_index(ex))
         if HAS_TRENDS:
             w("trends.html", build_trends_index(ex))
-    for x in pv.values():
+        if HAS_NEWS:
+            w("news.html", build_news_index(ex))
+    for x in ([] if AUTO_PAGES_OFF else pv.values()):
         w(f"w/{x['slug']}.html", build_cast(x))
-    if pv:
+    if pv and not AUTO_PAGES_OFF:
         w("cast.html", build_cast_index(pv))
     w("index.html", build_index(store))
-    w("archive.html", build_archive(store))
+    if not AUTO_PAGES_OFF:
+        w("archive.html", build_archive(store))
     for fn, (title, body) in STATIC.items():
         w(fn, page(f"{title} | {SITE_NAME}", f"{title} — {SITE_NAME}", body, fn, 0))
     w("404.html", page(f"Not found | {SITE_NAME}", "Page not found", "<h1>Page not found</h1><p><a href='index.html'>See what's trending now</a></p>", "404.html", 0))
-    urls_all = ([f"{SITE_URL}/", f"{SITE_URL}/archive"] + ([f"{SITE_URL}/explained"] if ex else []) + ([f"{SITE_URL}/trends"] if HAS_TRENDS else [])
-            + [f"{SITE_URL}/c/{c}" for c in counts]
+    urls_all = ([f"{SITE_URL}/"] + ([] if AUTO_PAGES_OFF else [f"{SITE_URL}/archive"]) + ([f"{SITE_URL}/news"] if HAS_NEWS else [])
+            + ([f"{SITE_URL}/explained"] if ex else []) + ([f"{SITE_URL}/trends"] if HAS_TRENDS else [])
+            + ([] if AUTO_PAGES_OFF else [f"{SITE_URL}/c/{c}" for c in counts])
             + [f"{SITE_URL}/x/{x['slug']}" for x in ex.values()]
-            + ([f"{SITE_URL}/cast"] if pv else []) + [f"{SITE_URL}/w/{x['slug']}" for x in pv.values()]
-            + [f"{SITE_URL}/t/{t['slug']}" for t in topics.values() if thin_ok(t)])
+            + ([] if AUTO_PAGES_OFF else ([f"{SITE_URL}/cast"] if pv else []) + [f"{SITE_URL}/w/{x['slug']}" for x in pv.values()]
+               + [f"{SITE_URL}/t/{t['slug']}" for t in topics.values() if thin_ok(t)]))
     urls = [u for u in urls_all if u[len(SITE_URL) + 1:] not in NOINDEX]     # в карту сайта — только то, что пускаем в выдачу
     lm = {f"{SITE_URL}/t/{t['slug']}": t.get("last_seen", t["first_seen"]) for t in topics.values()}
     lm.update({f"{SITE_URL}/x/{x['slug']}": x["made"] for x in ex.values()})
     lm.update({f"{SITE_URL}/w/{x['slug']}": x["made"] for x in pv.values()})
     # новостной sitemap для Google News: статьи за последние 48 часов
-    fresh = [t for t in topics.values() if hours_since(t["first_seen"]) <= 48 and t.get("ai") and thin_ok(t)]
+    fresh = [] if AUTO_PAGES_OFF else [t for t in topics.values() if hours_since(t["first_seen"]) <= 48 and t.get("ai") and thin_ok(t)]
+    # 16.11: в новостной карте — наши ручные новости за 48 часов (раньше там были только автоматические темы, то есть пусто)
+    def _iso_ok(v):
+        try:
+            return hours_since(v) <= 48
+        except Exception:
+            return False
+    fresh_news = sorted([x for x in ex.values() if x.get("manual") and x.get("news") and _iso_ok(x.get("first") or x["made"])],
+                        key=lambda x: x.get("first") or x["made"], reverse=True)
     w("sitemap-news.xml", '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
       'xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">'
       + "".join(f"<url><loc>{SITE_URL}/t/{E(t['slug'])}</loc><news:news><news:publication><news:name>{SITE_NAME}</news:name>"
                 f"<news:language>en</news:language></news:publication><news:publication_date>{t['first_seen']}</news:publication_date>"
                 f"<news:title>{E(t['term'] + ': ' + (t.get('ai') or {}).get('headline', ''))}</news:title></news:news></url>"
-                for t in fresh) + "</urlset>")
+                for t in fresh)
+      + "".join(f"<url><loc>{SITE_URL}/x/{E(x['slug'])}</loc><news:news><news:publication><news:name>{SITE_NAME}</news:name>"
+                f"<news:language>en</news:language></news:publication><news:publication_date>{E(x.get('first') or x['made'])}</news:publication_date>"
+                f"<news:title>{E(x['title'])}</news:title></news:news></url>" for x in fresh_news)
+      + "</urlset>")
     # IndexNow: файл-ключ и список новых адресов (отправим в следующий проход, когда страницы уже будут на сайте)
     k = indexnow_key(orig)
     w(f"{k}.txt", k)
@@ -5333,8 +5419,18 @@ def build_site(store):
     except Exception as e:
         log(f"seeds.json: {e}")
     items = [t for t in sorted(topics.values(), key=lambda t: t["first_seen"], reverse=True) if "t/" + t["slug"] not in DELETED][:50]
+    def _rss_date(v):
+        try:
+            return datetime.fromisoformat(v.replace("Z", "+00:00")).strftime("%a, %d %b %Y %H:%M:%S +0000")
+        except Exception:
+            return ""
+    # 16.11: в ленте сайта — свежие ручные страницы (раньше там были автоматические темы, уже удалённые с сайта)
+    feed_x = sorted([x for x in ex.values() if x.get("manual")], key=lambda x: x.get("first") or x.get("made") or "", reverse=True)[:40]
     w("feed.xml", '<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel>'
       f"<title>{SITE_NAME}</title><link>{SITE_URL}</link><description>{E(TAGLINE)}</description>"
+      + "".join(f"<item><title>{E(x['title'])}</title><link>{SITE_URL}/x/{x['slug']}</link><guid>{SITE_URL}/x/{x['slug']}</guid>"
+                f"<description>{E(short_desc(x.get('answer') or '', 300))}</description>"
+                f"<pubDate>{_rss_date(x.get('first') or x['made'])}</pubDate></item>" for x in feed_x)
       + "".join(f"<item><title>Why is {E(t['term'])} trending?</title><link>{SITE_URL}/t/{t['slug']}</link>"
                 f"<guid>{SITE_URL}/t/{t['slug']}</guid><pubDate>{datetime.fromisoformat(t['first_seen']).strftime('%a, %d %b %Y %H:%M:%S +0000')}</pubDate></item>" for t in items)
       + "</channel></rss>")
@@ -6161,7 +6257,7 @@ def run_once():
     n = update(store)
     save_store(store)
     os.makedirs(OUT, exist_ok=True)
-    ni = images(store)
+    ni = 0 if AUTO_PAGES_OFF else images(store)
     if ni:
         log(f"Найдено свободных фото: {ni}")
     if ONLY_WITH_SUMMARY and not api_key():
@@ -6176,7 +6272,7 @@ def run_once():
     if api_key():
         backfill_people(store, api_key())
         backfill_image_queries(store, api_key())
-    gi = generic_images(store)
+    gi = 0 if AUTO_PAGES_OFF else generic_images(store)
     if gi:
         log(f"Найдено иллюстраций: {gi}")
     xn = explain(store)
