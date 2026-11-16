@@ -671,6 +671,7 @@
   },
   {
    "url": "/x/is-thomas-massie-a-republican",
+   "at": "2026-11-16T13:01:53+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -682,6 +683,7 @@
   },
   {
    "url": "/x/is-yellowjackets-season-4-the-last-season",
+   "at": "2026-11-16T13:02:00+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -693,8 +695,9 @@
   },
   {
    "url": "/x/jensen-huang-resigns-nvidia",
+   "at": "2026-11-16T13:02:07+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -704,6 +707,7 @@
   },
   {
    "url": "/x/keepsake-sea-release-date",
+   "at": "2026-11-16T13:02:13+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -715,6 +719,7 @@
   },
   {
    "url": "/x/kids-choice-awards-2026-date",
+   "at": "2026-11-16T13:02:20+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -726,6 +731,7 @@
   },
   {
    "url": "/x/lame-duck-president",
+   "at": "2026-11-16T13:02:26+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -737,6 +743,7 @@
   },
   {
    "url": "/x/lame-duck-session",
+   "at": "2026-11-16T13:02:33+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -748,6 +755,7 @@
   },
   {
    "url": "/x/latin-grammys-vs-grammys",
+   "at": "2026-11-16T13:02:39+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -759,6 +767,7 @@
   },
   {
    "url": "/x/ligue-1",
+   "at": "2026-11-16T13:02:46+00:00",
    "verdict": "PASS",
    "coverageState": "Submitted and indexed",
    "robotsTxtState": "ALLOWED",
@@ -770,6 +779,7 @@
   },
   {
    "url": "/x/madden-movie-true-story",
+   "at": "2026-11-16T13:02:52+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -781,6 +791,7 @@
   },
   {
    "url": "/x/maine-2nd-district-ranked-choice",
+   "at": "2026-11-16T13:02:59+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -792,6 +803,7 @@
   },
   {
    "url": "/x/medicaid-work-requirements-start-date",
+   "at": "2026-11-16T13:03:06+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -803,6 +815,7 @@
   },
   {
    "url": "/x/miami-airport-plane-collision-copa-ups",
+   "at": "2026-11-16T13:03:13+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -814,6 +827,7 @@
   },
   {
    "url": "/x/mlb-manager-of-the-year-voting",
+   "at": "2026-11-16T13:03:19+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -825,6 +839,7 @@
   },
   {
    "url": "/x/mlb-posting-system",
+   "at": "2026-11-16T13:03:25+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -836,6 +851,7 @@
   },
   {
    "url": "/x/mlb-rookie-eligibility",
+   "at": "2026-11-16T13:03:32+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -847,6 +863,7 @@
   },
   {
    "url": "/x/most-mvp-awards-mlb",
+   "at": "2026-11-16T13:03:38+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1691,8 +1708,8 @@
  "summary": {
   "Crawled - currently not indexed": 63,
   "Submitted and indexed": 3,
-  "URL is unknown to Google": 65,
-  "Discovered - currently not indexed": 14,
+  "URL is unknown to Google": 66,
+  "Discovered - currently not indexed": 13,
   "error": 1
  }
 }
