@@ -8720,7 +8720,7 @@
   ]
  },
  "how-to-vote-on-the-circle-hulu": {
-  "time": "2026-11-15T14:02:09+00:00",
+  "time": "2026-11-16T14:03:55+00:00",
   "query": "how to vote on the circle hulu",
   "in_suggest": false,
   "suggest": {
@@ -8737,11 +8737,15 @@
    [
     "2026-11-15",
     false
+   ],
+   [
+    "2026-11-16",
+    false
    ]
   ]
  },
  "what-is-a-ground-stop": {
-  "time": "2026-11-15T14:02:11+00:00",
+  "time": "2026-11-16T14:04:02+00:00",
   "query": "what is a ground stop",
   "in_suggest": true,
   "suggest": {
@@ -8750,11 +8754,11 @@
     "faa ground stop today",
     "faa ground stop cause",
     "faa ground stop updates",
-    "faa ground stop lifted",
-    "faa ground stop ai",
+    "faa ground stop lax sfo delays",
     "faa ground stop reddit",
+    "faa ground stop lifted",
     "faa ground stop status",
-    "faa ground stop today reason",
+    "faa ground stop flights cancelled",
     "faa ground stop still happening"
    ],
    "what is faa ground stop": [
@@ -8770,26 +8774,26 @@
    ],
    "what is a ground stop": [
     "what is a ground stop",
-    "what is a ground stop in aviation",
     "what is a ground stop at an airport",
-    "what is a ground stop faa",
-    "what is a ground stoppage",
-    "what is a ground stop order",
     "what is a ground stop delay",
     "what is a ground stoppage at an airport",
+    "what is a ground stoppage",
     "what is a ground stop when flying",
-    "what is a ground stop at an airport mean"
+    "what is a ground stop at an airport mean",
+    "what is a ground stop at miami airport",
+    "what is a ground stop in aviation",
+    "what is a ground stop faa"
    ],
    "ground stop": [
     "ground stop",
     "ground stop today",
     "ground stop faa",
-    "ground stop lifted",
-    "ground stop updates",
     "ground stop reason",
+    "ground stop lifted",
     "ground stoppage",
+    "ground stop updates",
     "ground stop meaning",
-    "ground stop and college football",
+    "ground stop news",
     "ground stop cause"
    ]
   },
@@ -8801,11 +8805,15 @@
    [
     "2026-11-15",
     true
+   ],
+   [
+    "2026-11-16",
+    true
    ]
   ]
  },
  "why-does-my-phone-screen-go-black-during-calls": {
-  "time": "2026-11-15T14:02:12+00:00",
+  "time": "2026-11-16T14:04:07+00:00",
   "query": "why does my phone screen go black during calls",
   "in_suggest": true,
   "suggest": {
@@ -8864,11 +8872,15 @@
    [
     "2026-11-15",
     true
+   ],
+   [
+    "2026-11-16",
+    true
    ]
   ]
  },
  "why-does-my-washing-machine-smell-like-rotten-eggs": {
-  "time": "2026-11-15T14:02:14+00:00",
+  "time": "2026-11-16T14:04:08+00:00",
   "query": "why does my washing machine smell like rotten eggs",
   "in_suggest": true,
   "suggest": {
@@ -8926,11 +8938,15 @@
    [
     "2026-11-15",
     true
+   ],
+   [
+    "2026-11-16",
+    true
    ]
   ]
  },
  "wta-tennis": {
-  "time": "2026-11-15T14:02:15+00:00",
+  "time": "2026-11-16T14:04:11+00:00",
   "query": "what does wta stand for in tennis",
   "in_suggest": true,
   "suggest": {
@@ -8939,24 +8955,24 @@
     "wta finals 2026",
     "wta live rankings",
     "wta",
-    "wta finals schedule",
     "wta rankings",
-    "wta finals 2026 schedule",
-    "wta trails",
-    "wta finals standings",
-    "wta finals prize money"
+    "wtae",
+    "wta finals prize money",
+    "wta finals schedule",
+    "wta finals doubles",
+    "wta finals 2026 schedule"
    ],
    "what is wta": [
-    "what is wta",
     "what is wta tennis",
-    "what is wtaf",
+    "what is wta",
     "what is wta finals",
+    "what is wtaf",
     "what is wta 1000",
     "what is wta 1000 in tennis",
-    "what is wtac",
     "what is wta 500 and wta 1000",
+    "what is wtac",
     "what is wta in tennis stand for",
-    "what is wtamu"
+    "what is wta 500"
    ],
    "what does wta stand for in tennis": [
     "what does wta stand for in tennis",
@@ -8985,6 +9001,10 @@
    ],
    [
     "2026-11-15",
+    true
+   ],
+   [
+    "2026-11-16",
     true
    ]
   ]
@@ -9144,7 +9164,7 @@
   ]
  },
  "embassy-of-finland-canberra-meme": {
-  "time": "2026-11-15T13:58:23+00:00",
+  "time": "2026-11-16T14:03:53+00:00",
   "query": "what is the embassy of finland in canberra meme",
   "in_suggest": true,
   "suggest": {
@@ -9171,11 +9191,15 @@
    [
     "2026-11-15",
     true
+   ],
+   [
+    "2026-11-16",
+    true
    ]
   ]
  },
  "internet-trends-this-week-2026-11-15": {
-  "time": "2026-11-15T13:58:25+00:00",
+  "time": "2026-11-16T14:03:56+00:00",
   "query": "what's trending on the internet this week",
   "in_suggest": false,
   "suggest": {
@@ -9198,11 +9222,15 @@
    [
     "2026-11-15",
     false
+   ],
+   [
+    "2026-11-16",
+    false
    ]
   ]
  },
  "is-yellowjackets-season-4-the-last-season": {
-  "time": "2026-11-15T13:58:27+00:00",
+  "time": "2026-11-16T14:03:58+00:00",
   "query": "is yellowjackets season 4 the last season",
   "in_suggest": true,
   "suggest": {
@@ -9211,11 +9239,11 @@
     "yellowjackets season 4 release date",
     "yellowjackets season 4 trailer",
     "yellowjackets season 4 where to watch",
+    "yellowjackets season 4 episode 1",
     "yellowjackets season 4 premiere",
-    "yellowjackets season 4 streaming",
-    "yellowjackets season 4 cast",
     "yellowjackets season 4 spoilers",
-    "yellowjackets season 4 theories",
+    "yellowjackets season 4 cast",
+    "yellowjackets season 4 premiere time",
     "yellowjackets season 4 how many episodes"
    ],
    "what is yellowjackets season 4": [
@@ -9253,25 +9281,29 @@
    [
     "2026-11-15",
     true
+   ],
+   [
+    "2026-11-16",
+    true
    ]
   ]
  },
  "what-does-microsoft-364-mean": {
-  "time": "2026-11-15T13:58:28+00:00",
+  "time": "2026-11-16T14:03:59+00:00",
   "query": "what does microsoft 364 mean",
   "in_suggest": false,
   "suggest": {
    "microsoft 364": [
     "microsoft 364",
     "microsoft 364 joke",
-    "microsoft 364 meme",
     "microsoft 364 login",
+    "microsoft 364 memes",
     "microsoft 3645",
-    "microsoft 364 outage",
     "microsoft 364 copilot",
     "microsoft 364 cost",
     "microsoft 364 admin center",
-    "microsoft 364 personal"
+    "microsoft 364 personal",
+    "microsoft 3645 login"
    ],
    "what is microsoft 364": [
     "what is microsoft 364",
@@ -9291,11 +9323,15 @@
    [
     "2026-11-15",
     false
+   ],
+   [
+    "2026-11-16",
+    false
    ]
   ]
  },
  "what-does-my-kid-mean-slang-guide": {
-  "time": "2026-11-15T13:58:29+00:00",
+  "time": "2026-11-16T14:04:00+00:00",
   "query": "teen slang 2026",
   "in_suggest": true,
   "suggest": {
@@ -9317,6 +9353,10 @@
   "history": [
    [
     "2026-11-15",
+    true
+   ],
+   [
+    "2026-11-16",
     true
    ]
   ]
@@ -9494,6 +9534,191 @@
     "was mexico ever safe"
    ],
    "people saying dinosaurs mexico": []
+  },
+  "history": [
+   [
+    "2026-11-16",
+    true
+   ]
+  ]
+ },
+ "does-a-refrigerator-need-its-own-circuit": {
+  "time": "2026-11-16T14:03:52+00:00",
+  "query": "does a refrigerator need its own circuit",
+  "in_suggest": true,
+  "suggest": {
+   "refrigerator circuit": [
+    "refrigerator circuit breaker",
+    "refrigerator circuit",
+    "refrigerator circuit board",
+    "refrigerator circuit size",
+    "refrigerator circuit breaker keeps tripping",
+    "refrigerator circuit breaker size",
+    "refrigerator circuit board repair",
+    "refrigerator circuit breaker location",
+    "refrigerator circuit requirements",
+    "refrigerator circuit diagram"
+   ],
+   "what is refrigerator circuit": [
+    "what is refrigeration circuit",
+    "what is appliance circuit",
+    "what is refrigerator control panel",
+    "what is small appliance circuit",
+    "what is notification appliance circuit",
+    "why does a fridge need its own circuit",
+    "does a refrigerator have to have its own circuit",
+    "does the fridge have to be on its own circuit",
+    "refrigeration circuit explained"
+   ],
+   "does a refrigerator need its own circuit": [
+    "does a refrigerator need its own circuit",
+    "does a refrigerator need its own circuit breaker",
+    "does a freezer need its own circuit",
+    "does a fridge need its own circuit ontario",
+    "does a refrigerator have its own circuit breaker",
+    "does a fridge need its own circuit uk",
+    "does a fridge need its own circuit cec",
+    "does a refrigerator need its own dedicated circuit",
+    "should a refrigerator have its own circuit",
+    "does a mini fridge need its own circuit"
+   ],
+   "refrigerator need own circuit": [
+    "refrigerator need dedicated circuit",
+    "does refrigerator need own circuit",
+    "refrigerator need its own circuit",
+    "does refrigerator need dedicated circuit",
+    "does refrigerator need dedicated circuit nec",
+    "does a refrigerator need its own circuit breaker",
+    "does my refrigerator need its own circuit",
+    "does a refrigerator need its own dedicated circuit",
+    "does a refrigerator have to have its own circuit",
+    "why does a fridge need its own circuit"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-16",
+    true
+   ]
+  ]
+ },
+ "what-is-the-ram-altman-meme": {
+  "time": "2026-11-16T14:04:03+00:00",
+  "query": "what is the ram altman meme",
+  "in_suggest": true,
+  "suggest": {
+   "ram altman meme": [
+    "sam altman ram meme"
+   ],
+   "what is ram altman meme": [],
+   "what is the ram altman meme": []
+  },
+  "history": [
+   [
+    "2026-11-16",
+    true
+   ]
+  ]
+ },
+ "who-is-oobah-butler": {
+  "time": "2026-11-16T14:04:03+00:00",
+  "query": "who is oobah butler",
+  "in_suggest": true,
+  "suggest": {
+   "oobah butler": [
+    "oobah butler",
+    "oobah butler restaurant",
+    "oobah butler wife",
+    "oobah butler amazon",
+    "oobah butler age",
+    "oobah butler partner",
+    "oobah butler the shed",
+    "oobah butler documentary",
+    "oobah butler the shed at dulwich",
+    "oobah butler movies and tv shows"
+   ],
+   "who is oobah butler": [
+    "who is oobah butler",
+    "who is oobah butler dating",
+    "what is oobah butler real name",
+    "what is oobah butler doing now",
+    "what is oobah butler net worth",
+    "is lee butler billy butler's son"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-16",
+    true
+   ]
+  ]
+ },
+ "why-are-people-saying-ao3-is-back": {
+  "time": "2026-11-16T14:04:05+00:00",
+  "query": "why are people saying ao3 is back",
+  "in_suggest": true,
+  "suggest": {
+   "ao3": [
+    "ao3",
+    "ao3 website",
+    "ao3 login",
+    "ao3 link",
+    "ao3 app",
+    "ao3 status",
+    "ao3 fanfic",
+    "ao3 website link",
+    "ao3 back",
+    "ao3 sign up"
+   ],
+   "what is ao3": [
+    "what is ao3",
+    "what is ao3 mean",
+    "what is ao3 fanfiction",
+    "what is ao3 wattpad",
+    "what is ao3 and why is it back",
+    "what is ao3 website",
+    "what is ao3 cmu",
+    "what is ao3 book",
+    "what is ao3 font",
+    "what is ao3 in slang"
+   ],
+   "why are people saying ao3 is back": [
+    "why are people saying ao3 is back",
+    "why is ao3 not working",
+    "is ao3 bad",
+    "is ao3 shutting down",
+    "how long will ao3 be down"
+   ],
+   "people saying ao3 back": []
+  },
+  "history": [
+   [
+    "2026-11-16",
+    true
+   ]
+  ]
+ },
+ "why-is-everyone-freaking-out-about-november-17": {
+  "time": "2026-11-16T14:04:10+00:00",
+  "query": "why is everyone freaking out about november 17",
+  "in_suggest": true,
+  "suggest": {
+   "november 17 blackout rumor": [
+    "november 17 blackout rumor",
+    "november 17 events",
+    "blackout date",
+    "november 4th events near me"
+   ],
+   "what is november 17 blackout rumor": [],
+   "why is everyone freaking out about november 17": [
+    "why is everyone freaking out about november 17",
+    "why is everyone freaking out about november 17th",
+    "what happened on november 17",
+    "what happened november 17th",
+    "november 17 famous birthdays",
+    "what is special about november 17th"
+   ],
+   "everyone freaking out about november 17": []
   },
   "history": [
    [
