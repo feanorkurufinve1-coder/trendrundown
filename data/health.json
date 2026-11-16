@@ -270,7 +270,7 @@
   },
   {
    "url": "/x/designated-for-assignment",
-   "at": "2026-11-16T12:32:07+00:00",
+   "at": "2026-11-16T18:46:57+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -282,7 +282,7 @@
   },
   {
    "url": "/x/did-avril-lavigne-have-a-baby",
-   "at": "2026-11-16T12:32:13+00:00",
+   "at": "2026-11-16T18:47:03+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -294,7 +294,7 @@
   },
   {
    "url": "/x/did-scott-colom-win",
-   "at": "2026-11-16T12:32:19+00:00",
+   "at": "2026-11-16T18:47:09+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -306,7 +306,7 @@
   },
   {
    "url": "/x/did-trump-call-into-c-span",
-   "at": "2026-11-16T12:32:25+00:00",
+   "at": "2026-11-16T18:47:16+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -330,7 +330,7 @@
   },
   {
    "url": "/x/does-mlb-have-a-salary-cap",
-   "at": "2026-11-16T12:32:31+00:00",
+   "at": "2026-11-16T18:47:22+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -342,7 +342,7 @@
   },
   {
    "url": "/x/edgar-martinez-award",
-   "at": "2026-11-16T12:32:38+00:00",
+   "at": "2026-11-16T18:47:32+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -354,7 +354,7 @@
   },
   {
    "url": "/x/el-nino-pacific-northwest",
-   "at": "2026-11-16T12:32:44+00:00",
+   "at": "2026-11-16T18:47:39+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -366,19 +366,12 @@
   },
   {
    "url": "/x/embassy-of-finland-canberra-meme",
-   "at": "2026-11-16T12:32:50+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
-   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-   "indexingState": "INDEXING_STATE_UNSPECIFIED",
-   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
-   "lastCrawlTime": null,
-   "googleCanonical": null,
-   "userCanonical": null
+   "at": "2026-11-16T18:48:09+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/x/exhibition-game",
-   "at": "2026-11-16T12:32:56+00:00",
+   "at": "2026-11-16T18:48:33+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -390,7 +383,7 @@
   },
   {
    "url": "/x/first-black-senator-from-mississippi",
-   "at": "2026-11-16T12:33:03+00:00",
+   "at": "2026-11-16T18:48:39+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -402,7 +395,7 @@
   },
   {
    "url": "/x/game-time-decision",
-   "at": "2026-11-16T12:33:09+00:00",
+   "at": "2026-11-16T18:48:46+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1866,9 +1859,9 @@
  },
  "summary": {
   "Submitted and indexed": 3,
-  "URL is unknown to Google": 72,
+  "URL is unknown to Google": 71,
   "Crawled - currently not indexed": 63,
   "Discovered - currently not indexed": 14,
-  "error": 1
+  "error": 2
  }
 }
