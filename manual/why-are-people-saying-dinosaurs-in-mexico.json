@@ -22,12 +22,42 @@
   }
  ],
  "links": [
-  ["Totally the Bomb", "Mexico Pterodactyl Video: What the Evidence Actually Shows", "https://totallythebomb.com/mexico-pterodactyl-video-fact-check/"],
-  ["What the Fact", "Fact check: Did a video show a living pteranodon flying over Chihuahua, Mexico?", "https://whatthefact.app/fact-checks/2026-11-14-ciudad-juarez-pterodactyl-flying-creature-video-maussan"],
-  ["WION", "Viral video: Pterodactyl, that died with the dinosaurs, seen in Mexico", "https://www.wionews.com/trending/viral-video-pterodactyl-that-died-with-the-dinosaurs-seen-in-mexico-1794803724297"],
-  ["Grupo Marmor", "¿Dinosaurio volador en Chihuahua? La verdad detrás del video viral", "https://grupomarmor.com.mx/2026/11/12/pterodactilo-ciudad-juarez-es-real/"]
+  [
+   "Totally the Bomb",
+   "Mexico Pterodactyl Video: What the Evidence Actually Shows",
+   "https://totallythebomb.com/mexico-pterodactyl-video-fact-check/"
+  ],
+  [
+   "What the Fact",
+   "Fact check: Did a video show a living pteranodon flying over Chihuahua, Mexico?",
+   "https://whatthefact.app/fact-checks/2026-11-14-ciudad-juarez-pterodactyl-flying-creature-video-maussan"
+  ],
+  [
+   "WION",
+   "Viral video: Pterodactyl, that died with the dinosaurs, seen in Mexico",
+   "https://www.wionews.com/trending/viral-video-pterodactyl-that-died-with-the-dinosaurs-seen-in-mexico-1794803724297"
+  ],
+  [
+   "Grupo Marmor",
+   "¿Dinosaurio volador en Chihuahua? La verdad detrás del video viral",
+   "https://grupomarmor.com.mx/2026/11/12/pterodactilo-ciudad-juarez-es-real/"
+  ]
  ],
  "image_prompt": "A blurry dark silhouette of a large bird with wide wings gliding over a desert city skyline at dusk, seen as if through a grainy security camera, realistic photo style",
  "made": "2026-11-16T09:20:00Z",
- "first": "2026-11-16T09:20:00Z"
+ "first": "2026-11-16T09:20:00Z",
+ "radar": {
+  "first": "2026-11-16",
+  "phrases": [
+   "why are people saying dinosaurs in mexico",
+   "why are people talking about dinosaurs in mexico"
+  ],
+  "where": [
+   "google",
+   "reddit"
+  ],
+  "reddit": [
+   "OutOfTheLoop"
+  ]
+ }
 }

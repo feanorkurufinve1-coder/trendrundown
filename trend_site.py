@@ -5004,6 +5004,7 @@ def build_explainer(x, topics):
 {('<ul class="list">' + newslist + '</ul>') if newslist and not AUTO_PAGES_OFF else ''}
 {ad("in_article")}
 <h2>Background</h2>{paras}
+{radar_box(x) if x.get("trend") else ''}
 {('<h2>What people are asking</h2>' + faq_html) if faq_html else ''}
 {('<h2 class="sec">Also explained</h2><div class="xlinks">' + "".join(f'<a href="{E(y["slug"])}.html">{E(y["title"])} →</a>' for y in rel) + '</div>') if rel else ''}
 {reactions_html("x/" + x["slug"])}
@@ -5045,6 +5046,37 @@ def build_news_index(ex):
     return page(f"News: the stories America is searching for, explained | {SITE_NAME}",
                 "The news stories Americans are searching for, explained in plain English: what happened, why it matters and what comes next, with sources.",
                 body, "news.html", 0)
+
+
+RADAR_LAYERS = {"google": "Google search suggestions", "youtube": "YouTube search suggestions", "reddit": "Reddit",
+                "urban": "Urban Dictionary", "kym": "Know Your Meme", "trends": "Google Trends", "bluesky": "Bluesky",
+                "wiki": "Wikipedia"}
+
+
+def radar_box(x):
+    """16.11: «From our trend radar» — наши собственные данные на странице тренда: когда радар впервые заметил фразу,
+    какие новые подсказки появились в поиске, где ещё её обсуждают. Этого нет ни у одного другого сайта.
+    Поле radar ручной страницы: {"first": "2026-11-16", "phrases": [...], "where": ["google", "reddit"], "reddit": ["OutOfTheLoop"]}."""
+    r = x.get("radar")
+    if not isinstance(r, dict):
+        return ""
+    try:
+        d = datetime.strptime(str(r.get("first", ""))[:10], "%Y-%m-%d")
+        first = f"{d.strftime('%b')}. {d.day}, {d.year}".replace("May.", "May")
+    except Exception:
+        return ""
+    phrases = [str(q).strip() for q in (r.get("phrases") or []) if str(q).strip()][:4]
+    where = [RADAR_LAYERS[w_] for w_ in (r.get("where") or []) if w_ in RADAR_LAYERS]
+    subs = [re.sub(r"[^A-Za-z0-9_]", "", str(s_)) for s_ in (r.get("reddit") or [])][:3]
+    parts = [f"<b>From our trend radar.</b> First signal: {E(first)}."]
+    if phrases:
+        parts.append(("A new question" if len(phrases) == 1 else "New questions") + " showed up in search suggestions: "
+                     + ", ".join(f"“{E(q)}”" for q in phrases) + ".")
+    if where:
+        w_txt = ", ".join(where[:-1]) + (" and " if len(where) > 1 else "") + where[-1]
+        parts.append(f"Where we saw it: {E(w_txt)}" + (f" (r/{', r/'.join(E(s_) for s_ in subs if s_)})" if subs and "Reddit" in where else "") + ".")
+    parts.append('<a href="../about.html">How the radar works</a>')
+    return '<div class="box" style="font-size:.92em"><p style="margin:0">' + " ".join(parts) + "</p></div>"
 
 
 def page_kind(x):

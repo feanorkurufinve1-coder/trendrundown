@@ -44,5 +44,14 @@
  ],
  "image_prompt": "An open laptop with a softly glowing blank screen on a cozy desk at night, surrounded by stacks of paperback books and a cup of tea, soft illustrated style",
  "made": "2026-11-16T13:55:00Z",
- "first": "2026-11-16T13:55:00Z"
+ "first": "2026-11-16T13:55:00Z",
+ "radar": {
+  "first": "2026-11-16",
+  "phrases": [
+   "why are people saying ao3 is back"
+  ],
+  "where": [
+   "google"
+  ]
+ }
 }
