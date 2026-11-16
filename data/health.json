@@ -1,6 +1,6 @@
 {
  "v": 2,
- "checked": "2026-11-16T05:17:04+00:00",
+ "checked": "2026-11-16T11:31:50+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -141,7 +141,7 @@
   {
    "url": "/x/anthony-clark-death",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -328,7 +328,7 @@
   {
    "url": "/x/first-black-senator-from-mississippi",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1076,7 +1076,7 @@
   {
    "url": "/x/ss-united-states-sinking",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1384,7 +1384,7 @@
   {
    "url": "/x/what-is-broad-based-categorical-eligibility",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1492,6 +1492,17 @@
    "userCanonical": "https://trendrundown.com/x/who-won-mvp-2026"
   },
   {
+   "url": "/x/why-are-people-saying-dinosaurs-in-mexico",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/why-does-my-phone-battery-go-down-while-charging",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
@@ -1538,7 +1549,7 @@
   {
    "url": "/x/why-does-social-security-come-out-of-my-paycheck",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1632,7 +1643,7 @@
  "summary": {
   "Crawled - currently not indexed": 63,
   "Submitted and indexed": 3,
-  "URL is unknown to Google": 61,
-  "Discovered - currently not indexed": 18
+  "URL is unknown to Google": 65,
+  "Discovered - currently not indexed": 15
  }
 }
