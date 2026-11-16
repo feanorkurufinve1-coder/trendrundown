@@ -4203,6 +4203,11 @@ def page(title, desc, body, path, depth, extra_head="", og_img=""):
 
 def _page(title, desc, body, path, depth, extra_head="", og_img=""):
     up = "../" * depth
+    # 16.11: Bing ругается на короткие описания — дополняем до ~120–160 символов
+    desc = re.sub(r"\s+", " ", desc or "").strip()
+    if len(desc) < 110:
+        tail = "Plain-English explanations with sources, updated daily by TrendRundown."
+        desc = short_desc((desc.rstrip(".") + ". " if desc else "") + tail, 160)
     canon = SITE_URL + "/" + path.replace("index.html", "").replace(".html", "")
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
