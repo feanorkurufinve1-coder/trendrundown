@@ -1,0 +1,44 @@
+{
+ "subject": "RAM Altman meme",
+ "kind": "term",
+ "trend": true,
+ "query": "what is the ram altman meme",
+ "title": "What is the RAM Altman meme? Sam Altman's memory remark, explained",
+ "answer": "\"RAM Altman\" is a joke nickname for OpenAI CEO Sam Altman after he said on a podcast that it was \"quite terrible\" for everyone to keep the world's limited supply of computer memory in their own PCs. Gamers, who are paying record prices for RAM, turned it into memes about Altman coming to take their memory.",
+ "body": "The meme casts Sam Altman as a villain hunting down people's RAM, the memory chips inside every computer and phone. Posts show him as a recruiting-poster figure, as a burglar opening PC cases, or as the reason a new memory kit costs so much. Someone might post a photo of their gaming rig with the caption \"hiding my RAM before RAM Altman finds it,\" or reply to a friend's upgrade with \"enjoy it while it lasts.\"\n\nThe joke comes from Altman's appearance on \"Cheeky Pint,\" a podcast hosted by Stripe co-founder John Collison. Discussing the global chip crunch, Altman argued that memory in personal computers sits idle most of the time and would be put to better use in cloud data centers, saying it was \"quite terrible to have everybody have a bunch of the world's limited supply of DRAM sitting in their own computer.\" The clip spread at the start of November 2026. Elon Musk mocked the comment on X with a movie-scene meme captioned \"The people deserve to have their RAM too!\"\n\nIt landed because RAM is a sore point right now. Memory makers such as Samsung and SK Hynix have shifted production toward high-bandwidth memory for AI servers, and consumer RAM prices have climbed, with analysts warning the shortage could last for years. To PC builders, Altman's remark sounded like the AI industry saying the quiet part out loud.\n\nOn Nov. 4, Altman said his words had been taken out of context, posting that he wants people to have \"tons of memory\" and replying to one user, \"I want you to have so much RAM.\" He played along by briefly changing his display name on X to \"RAM Altman,\" which only spread the nickname further. The meme is harmless, but it is also a quick way to explain to kids why the price of a gaming PC or console upgrade has gone up.",
+ "in_the_news": "The nickname spread in early November 2026 after Sam Altman's comments about consumer RAM and his joking name change on X.",
+ "faq": [
+  {
+   "q": "What did Sam Altman say about RAM?",
+   "a": "On the Cheeky Pint podcast, he said it was \"quite terrible\" for everyone to keep part of the world's limited DRAM supply in their own computers, arguing it is better used in the cloud."
+  },
+  {
+   "q": "Did Sam Altman change his name to RAM Altman?",
+   "a": "Yes, briefly, as a joke on X in early November 2026, after saying his comment was taken out of context. He later switched back."
+  },
+  {
+   "q": "Why is RAM so expensive in 2026?",
+   "a": "Chipmakers are prioritizing memory for AI data centers, which has squeezed supply for regular PCs and pushed consumer prices up."
+  }
+ ],
+ "links": [
+  [
+   "TechRadar",
+   "Sam Altman backpedals and says 'I want you to have so much RAM' after backlash",
+   "https://www.techradar.com/ai-platforms-assistants/sam-altman-backpedals-and-says-i-want-you-to-have-so-much-ram-after-backlash-but-his-ram-crisis-solution-is-unconvincing"
+  ],
+  [
+   "Android Headlines",
+   "Sam Altman rebrands as RAM Altman",
+   "https://www.androidheadlines.com/2026/11/sam-altman-rebrands-ram-altman-ram-quote.html"
+  ],
+  [
+   "Cybernews",
+   "Elon Musk mocks Sam Altman over claim PCs are wasting precious RAM",
+   "https://cybernews.com/tech/altman-musk-dram-data-center-reddit/"
+  ]
+ ],
+ "image_prompt": "Several green computer memory sticks lying on a desk beside an open desktop computer case lit by soft blue light, realistic photo style",
+ "made": "2026-11-16T13:55:00Z",
+ "first": "2026-11-16T13:55:00Z"
+}

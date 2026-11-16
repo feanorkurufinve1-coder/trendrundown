@@ -1,0 +1,55 @@
+{
+ "subject": "Refrigerator circuit",
+ "kind": "term",
+ "query": "does a refrigerator need its own circuit",
+ "title": "Does a refrigerator need its own circuit? What code and makers say",
+ "answer": "Not always by national code, but it is strongly recommended. The National Electrical Code lets a kitchen fridge share one of the kitchen's 20-amp small-appliance circuits or run on its own 15-amp-or-larger circuit, while major manufacturers such as Whirlpool recommend a separate circuit serving only the refrigerator. Local codes can be stricter.",
+ "body": "What the code says: Under NEC 210.52(B), a kitchen must have at least two 20-amp small-appliance circuits for the countertop outlets, and the refrigerator outlet is allowed on one of them. An exception lets the fridge outlet instead be fed by an individual branch circuit rated 15 amps or more. Newer editions also require GFCI and AFCI protection for kitchen outlets, which can include the one behind the fridge. Your city or county decides which edition applies and may add its own rules.\n\nWhat manufacturers say: Whirlpool's installation instructions call for a grounded 115-volt, 15- or 20-amp supply, recommend a separate circuit serving only the refrigerator, and say not to use an extension cord or an outlet controlled by a wall switch. A typical fridge draws only about 3 to 8 amps while running, but the compressor pulls a much larger burst for a moment at startup. Share a circuit with a microwave, toaster oven or air fryer and that burst can be enough to trip the breaker, and a tripped breaker overnight can spoil a full fridge.\n\nMost likely causes if your fridge keeps losing power, in order: another heavy appliance on the same circuit; a GFCI outlet nuisance-tripping, which older fridges with worn defrost heaters or compressors can trigger; a loose or worn outlet; and less often, a fault inside the refrigerator itself.\n\nWhat you can check yourself: note what else goes dead when that breaker trips, avoid running the microwave and other big appliances at the same moment, plug the fridge directly into the wall with no extension cord or power strip, and look at the nameplate inside the door for its amp rating. Call a licensed electrician to add a dedicated circuit, or right away if the outlet feels warm, you smell burning or see scorch marks, lights flicker when the compressor starts, or the breaker trips repeatedly. Adding a circuit means work inside the electrical panel, which is a job for a professional and usually needs a permit.",
+ "faq": [
+  {
+   "q": "Can a refrigerator share an outlet with a microwave?",
+   "a": "Code may allow them on the same kitchen circuit, but running both at once can trip the breaker. Manufacturers recommend a separate circuit for the fridge."
+  },
+  {
+   "q": "What size breaker does a refrigerator need?",
+   "a": "Most household refrigerators call for a 15- or 20-amp circuit at 115 to 120 volts. Check the installation manual for your model."
+  },
+  {
+   "q": "Can I plug a refrigerator into an extension cord?",
+   "a": "Manufacturers say no. Plug it directly into a grounded wall outlet that is not controlled by a switch."
+  },
+  {
+   "q": "Does a refrigerator need a GFCI outlet?",
+   "a": "Recent editions of the National Electrical Code require GFCI protection for kitchen receptacles, which can include the fridge outlet. Local rules vary, so ask your electrician or building department."
+  }
+ ],
+ "links": [
+  [
+   "Whirlpool",
+   "Refrigerator installation instructions (electrical requirements)",
+   "https://www.whirlpool.com/content/dam/global/documents/201206/installation-instructions-W10475403-RevA.pdf"
+  ],
+  [
+   "ExpertCE",
+   "Refrigerator dedicated circuit and the NEC",
+   "https://expertce.com/learn-articles/refrigerator-dedicated-circuit-nec/"
+  ],
+  [
+   "Hunker",
+   "Should a refrigerator be on a separate circuit?",
+   "https://www.hunker.com/13409708/should-a-refrigerator-be-on-a-separate-circuit"
+  ],
+  [
+   "Mike Holt Forums",
+   "Individual branch circuit for fridge",
+   "https://forums.mikeholt.com/threads/individual-branch-circuit-for-fridge.147181/latest"
+  ]
+ ],
+ "image_prompt": "A modern stainless steel refrigerator in a bright clean kitchen with a plain white wall outlet beside it, realistic photo style",
+ "topics": [
+  "home",
+  "appliances"
+ ],
+ "made": "2026-11-16T13:55:00Z",
+ "first": "2026-11-16T13:55:00Z"
+}

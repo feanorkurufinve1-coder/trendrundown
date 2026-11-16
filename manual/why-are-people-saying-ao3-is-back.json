@@ -1,0 +1,48 @@
+{
+ "subject": "AO3 (Archive of Our Own) outage",
+ "kind": "term",
+ "trend": true,
+ "query": "why are people saying ao3 is back",
+ "title": "Why are people saying AO3 is back? The fan fiction site returns",
+ "answer": "AO3, short for Archive of Our Own, the huge nonprofit fan fiction site, came back online on Sunday, Nov. 15, 2026, after a 17-day outage caused by a security incident. It returned with some features switched off, and its operators advise users to change their passwords.",
+ "body": "\"AO3 is back\" is a celebration post. Archive of Our Own is a free, ad-free archive where fans publish their own stories set in the worlds of books, TV shows, games and bands. It is run by the Organization for Transformative Works, a volunteer-driven nonprofit, and has been open since 2009. When it went dark, fans flooded social media; when it returned, the same people posted things like \"AO3 is back, nobody talk to me for a week.\" Wikipedia's article on the site drew more than 800,000 views on Nov. 15 alone.\n\nThe site went offline on Oct. 29, 2026, after what its operators called evidence of a security incident, and visitors saw only an error page. The team first warned the outage could last up to four weeks. It returned on Nov. 15 in what it described as a degraded state: user and collection icons are off, importing works from other sites is disabled, downloads are available only as HTML, and traffic is deliberately limited, so pages may load slowly.\n\nThe organization says stories, bookmarks and kudos are safe and no drafts were deleted. It has not disclosed the cause and has not ruled out that the user database was accessed, though it says it has no reason to believe it was. Users are advised to change their AO3 password and any other account that used the same one. Automatic cleanup of old unfinished drafts is paused until Nov. 29, so anyone with drafts should save them before then.\n\nFor parents: AO3 hosts writing for adults as well as general audiences, with a rating and content warnings on every work. If a teen is a fan fiction reader or writer, the outage is a good moment to talk about which ratings they read and about using a unique password on every site.",
+ "in_the_news": "Archive of Our Own returned on Nov. 15, 2026, after being offline since Oct. 29 because of a security incident.",
+ "faq": [
+  {
+   "q": "Is AO3 back up?",
+   "a": "Yes. It returned on Nov. 15, 2026, but some features remain off and traffic is limited, so it may be slow."
+  },
+  {
+   "q": "Why was AO3 down?",
+   "a": "Its operators found evidence of a security incident and took the site offline on Oct. 29, 2026. They have not disclosed the cause."
+  },
+  {
+   "q": "Should I change my AO3 password?",
+   "a": "Yes. The site recommends changing it, along with any other account where you used the same password."
+  },
+  {
+   "q": "Were AO3 stories lost?",
+   "a": "The organization says works, bookmarks and kudos are safe and no drafts were deleted. Draft cleanup resumes Nov. 29."
+  }
+ ],
+ "links": [
+  [
+   "ABC News",
+   "Fans cheer as popular online platform for spinoff stories nears full return after security incident",
+   "https://abcnews.com/Technology/wireStory/fans-cheer-popular-online-platform-spinoff-stories-nears-138156102"
+  ],
+  [
+   "Digital Trends",
+   "AO3 is back online after a 17-day outage, but the fan fiction site isn't fully healed yet",
+   "https://www.digitaltrends.com/computing/ao3-is-back-online-after-a-17-day-outage-but-the-fan-fiction-site-isnt-fully-healed-yet/"
+  ],
+  [
+   "Wikipedia",
+   "Archive of Our Own",
+   "https://en.wikipedia.org/wiki/Archive_of_Our_Own"
+  ]
+ ],
+ "image_prompt": "An open laptop with a softly glowing blank screen on a cozy desk at night, surrounded by stacks of paperback books and a cup of tea, soft illustrated style",
+ "made": "2026-11-16T13:55:00Z",
+ "first": "2026-11-16T13:55:00Z"
+}
