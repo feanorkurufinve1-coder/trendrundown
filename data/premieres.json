@@ -1,5 +1,5 @@
 {
- "made": "2026-11-15T17:19:11+00:00",
+ "made": "2026-11-16T05:33:28+00:00",
  "about": "Премьеры сериалов и новых сезонов в США на 14 дней вперёд (TVmaze). new_series = совсем новый сериал. Сырьё для прогнозов «is X a true story», «X cast», «X season N release time».",
  "premieres": [
   {
@@ -548,6 +548,19 @@
    "summary": "When Eliza's father dies, he leaves her penniless in a time where marriage is the only option for financial security. But the headstrong Eliza has an ace up her bonnet - her father's business, a detective agency. But it's Victorian London and, to operate in this man's world, she needs a partner.Step forward consummate rogue Detective Inspector William Wellington of Scotland Yard, aka \"The Duke\".El",
    "url": "https://www.tvmaze.com/shows/41532/miss-scarlet",
    "official": "https://www.pbs.org/wgbh/masterpiece/shows/miss-scarlet-and-the-duke/"
+  },
+  {
+   "date": "2026-11-30",
+   "show": "The Boy Who Stole Billions?",
+   "season": 1,
+   "new_series": true,
+   "type": "Documentary",
+   "genres": [],
+   "network": "Prime Video",
+   "premiered": "2026-11-30",
+   "summary": "The series delves into one of the biggest frauds in U.S. history with unprecedented access and exclusive firsthand accounts from Sam Bankman-Fried himself from prison.",
+   "url": "https://www.tvmaze.com/shows/94942/the-boy-who-stole-billions",
+   "official": null
   }
  ]
 }
