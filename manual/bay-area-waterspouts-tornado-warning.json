@@ -1,0 +1,53 @@
+{
+ "news": true,
+ "subject": "San Francisco Bay Area storms, November 2026",
+ "kind": "event",
+ "query": "bay area waterspouts tornado warning",
+ "title": "Bay Area waterspouts, tornado warning: What happened and what's next",
+ "answer": "On Monday, Nov. 16, 2026, two waterspouts spun up over San Francisco Bay just east of SFO shortly before noon, and the National Weather Service issued a rare tornado warning for west-central Santa Cruz County. No tornado was confirmed on the ground. A wetter atmospheric river storm is due Wednesday and Thursday.",
+ "in_the_news": "Tornado warnings are uncommon in Northern California, and the next storm is forecast to bring flooding rain from the Bay Area to San Diego and feet of snow to the Sierra Nevada.",
+ "body": "The tornado warning went out shortly after 12:15 p.m. PST for mostly rural land northwest of Santa Cruz, after radar showed rotation in a thunderstorm about 6 miles west of Boulder Creek moving southeast at about 15 mph. It was extended to 1:30 p.m. and then expired. A Special Marine Warning covered the bay south of the Bay Bridge as the waterspouts formed, and people in Daly City, South San Francisco and Visitacion Valley watched them from shore.\n\nThe storms also slowed air travel. The FAA put SFO under a delay program for rain and low clouds, and about 280 flights, roughly a quarter of the day's schedule, ran late. SFO is unusually sensitive to low clouds because its two main parallel runways sit close together, so side-by-side landings need clear skies. Travelers there were already weary: a nationwide FAA ground stop on Friday, Nov. 13, and a United Airlines computer outage on Monday afternoon added to the disruptions.\n\nWaterspout, tornado, atmospheric river, in plain words: A waterspout is a spinning column of air over water, usually weaker than a land tornado, though a strong one can flip boats and do tornado-like damage if it moves ashore. A tornado warning means rotation has been spotted on radar or by observers and people in the path should take shelter now; a tornado watch only means conditions could produce one. An atmospheric river is a long, narrow plume of moisture from the tropical Pacific that can dump inches of rain in a day or two, and it supplies much of California's yearly rain and snow.\n\nWhat comes next is bigger. Heavy rain is forecast to reach the Bay Area and Central Coast early Wednesday, Nov. 18, with 1 to 2 inches common and 3 to 4 inches possible in the coastal mountains, according to a CNN Weather forecast. The Weather Prediction Center rates the flooding risk Level 2 of 4 there on Wednesday and in Los Angeles and San Diego on Thursday, when Southern California could see 1 to 3 inches. In the Sierra, at least 2 feet of snow is likely above 5,000 feet through Thursday night, making Interstate 80 over Donner Pass dangerous. Areas burned by recent wildfires face the highest risk of mud and debris flows.",
+ "faq": [
+  {
+   "q": "Did a tornado touch down in the Bay Area?",
+   "a": "No tornado was confirmed on the ground. The Santa Cruz County warning was based on radar-detected rotation and expired around 1:30 p.m. PST on Nov. 16."
+  },
+  {
+   "q": "Where were the waterspouts?",
+   "a": "Over San Francisco Bay just east of San Francisco International Airport, near Highway 101, shortly before noon on Nov. 16."
+  },
+  {
+   "q": "When is the next Bay Area storm?",
+   "a": "Rain is forecast to arrive late Tuesday night into Wednesday, Nov. 18, with the heaviest rain Wednesday and Thursday."
+  },
+  {
+   "q": "Should I expect more SFO delays?",
+   "a": "Likely. Rain and low clouds cut SFO's landing capacity, so check your flight status with your airline before heading to the airport."
+  }
+ ],
+ "links": [
+  [
+   "CBS San Francisco",
+   "Bay Area storms bring waterspouts near SFO, hundreds of flight delays",
+   "https://www.cbsnews.com/sanfrancisco/news/santa-cruz-county-tornado-warning-sfo-water-spouts/"
+  ],
+  [
+   "The San Francisco News",
+   "Waterspouts Near SFO As Storms Delay Hundreds of Flights",
+   "https://www.thesfnews.com/waterspouts-near-sfo-as-storms-delay-hundreds-of-flights/104633"
+  ],
+  [
+   "CNN Weather (via Yahoo News)",
+   "California braces for its most widespread atmospheric river of the season",
+   "https://www.yahoo.com/news/weather-news/articles/california-braces-most-widespread-atmospheric-193613044.html"
+  ],
+  [
+   "ABC7 San Francisco",
+   "Live Bay Area storm updates: Waterspouts spotted over San Francisco Bay",
+   "https://abc7news.com/live-updates/live-bay-area-storm-updates-tornado-warning-issued-santa-cruz-county-waterspouts-spotted-san-francisco/20045464/"
+  ]
+ ],
+ "image_file": "Punta Gorda waterspout.jpg",
+ "made": "2026-11-17T16:47:17+00:00",
+ "first": "2026-11-17T16:47:17+00:00"
+}
