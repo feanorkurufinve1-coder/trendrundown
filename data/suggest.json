@@ -10028,7 +10028,7 @@
   ]
  },
  "why-are-people-saying-dinosaurs-in-mexico": {
-  "time": "2026-11-16T09:17:08+00:00",
+  "time": "2026-11-17T09:18:07+00:00",
   "query": "why are people saying dinosaurs in mexico",
   "in_suggest": true,
   "suggest": {
@@ -10037,12 +10037,12 @@
     "dinosaurs in mexico 2026",
     "dinosaurs in mexico news",
     "dinosaurs in mexico right now",
-    "dinosaurs in mexico flying",
+    "dinosaurs in mexico real",
+    "dinosaurs in mexico video",
     "dinosaurs in mexico today",
-    "dinosaurs in mexico pictures",
-    "dinosaurs in mexico now",
-    "dinosaurs in mexico 2026 alive",
-    "dinosaurs in mexico video"
+    "dinosaurs in mexico pterodactyl",
+    "dinosaurs in mexico city",
+    "dinosaurs in mexico meme"
    ],
    "what is dinosaurs in mexico": [
     "what dinosaurs lived in mexico",
@@ -10061,6 +10061,10 @@
   "history": [
    [
     "2026-11-16",
+    true
+   ],
+   [
+    "2026-11-17",
     true
    ]
   ]
