@@ -8603,7 +8603,7 @@
   ]
  },
  "first-black-senator-from-mississippi": {
-  "time": "2026-11-16T16:31:50+00:00",
+  "time": "2026-11-17T16:31:53+00:00",
   "query": "who was the first black senator from mississippi",
   "in_suggest": false,
   "suggest": {
@@ -8619,6 +8619,7 @@
    ],
    "who was the first black senator from mississippi": [],
    "first black senator from mississippi": [
+    "first black politician in mississippi",
     "first black representative in mississippi",
     "who was the first black senator from massachusetts"
    ]
@@ -8639,11 +8640,15 @@
    [
     "2026-11-16",
     false
+   ],
+   [
+    "2026-11-17",
+    false
    ]
   ]
  },
  "how-much-tax-refund-per-child-2026": {
-  "time": "2026-11-16T16:31:52+00:00",
+  "time": "2026-11-17T16:31:54+00:00",
   "query": "how much tax refund per child 2026",
   "in_suggest": true,
   "suggest": {
@@ -8655,9 +8660,9 @@
     "child tax credit 2026 income limit",
     "child tax credit phase out",
     "child tax credit income limit",
+    "child tax credit arizona",
     "child tax credit age limit",
-    "child tax credit 2025 income limit",
-    "child tax credit 2024"
+    "child tax credit 2025 income limit"
    ],
    "what is child tax credit": [
     "what is child tax credit",
@@ -8712,17 +8717,21 @@
    [
     "2026-11-16",
     true
+   ],
+   [
+    "2026-11-17",
+    true
    ]
   ]
  },
  "is-the-law-of-beasts-a-true-story": {
-  "time": "2026-11-16T16:31:53+00:00",
+  "time": "2026-11-17T16:31:56+00:00",
   "query": "is the law of beasts a true story",
   "in_suggest": false,
   "suggest": {
    "the law of beasts": [
-    "the law of beasts netflix",
     "the law of beasts",
+    "the law of beasts netflix",
     "the law of animals",
     "my bloodline is the law of beasts",
     "what are the beasts in the bible",
@@ -8758,11 +8767,15 @@
    [
     "2026-11-16",
     false
+   ],
+   [
+    "2026-11-17",
+    false
    ]
   ]
  },
  "ligue-1": {
-  "time": "2026-11-16T16:31:54+00:00",
+  "time": "2026-11-17T16:31:57+00:00",
   "query": "what is ligue 1",
   "in_suggest": true,
   "suggest": {
@@ -8770,13 +8783,13 @@
     "ligue 1 standings",
     "ligue 1",
     "ligue 1 schedule",
-    "ligue 1 stats",
     "ligue 1 table",
     "ligue 1 players",
     "ligue 1 games",
     "ligue 1 teams",
-    "ligue 1 table 2022 23",
-    "ligue 1 winners"
+    "ligue 1 mcdonald's",
+    "ligue 1 france",
+    "ligue 1 table 2022 23"
    ],
    "what is ligue 1": [
     "what is ligue 1",
@@ -8807,11 +8820,15 @@
    [
     "2026-11-16",
     true
+   ],
+   [
+    "2026-11-17",
+    true
    ]
   ]
  },
  "phishing-test": {
-  "time": "2026-11-16T16:31:55+00:00",
+  "time": "2026-11-17T16:31:58+00:00",
   "query": "what is a phishing test",
   "in_suggest": true,
   "suggest": {
@@ -8823,9 +8840,9 @@
     "phishing test meme",
     "phishing test at work",
     "phishing test google",
-    "phishing test site",
     "phishing test definition",
-    "phishing test email free"
+    "phishing test email free",
+    "phishing test examples"
    ],
    "what is phishing test": [
     "what is phishing test",
@@ -8868,17 +8885,20 @@
    [
     "2026-11-16",
     true
+   ],
+   [
+    "2026-11-17",
+    true
    ]
   ]
  },
  "rock-hall-of-fame-2026-ceremony-air-date": {
-  "time": "2026-11-16T16:31:57+00:00",
+  "time": "2026-11-17T16:31:59+00:00",
   "query": "when will the rock and roll hall of fame 2026 ceremony air",
   "in_suggest": false,
   "suggest": {
    "2026 rock and roll hall of fame induction ceremony": [
     "2026 rock and roll hall of fame induction ceremony",
-    "2026 rock and roll hall of fame induction ceremony streaming",
     "2026 rock and roll hall of fame induction ceremony tickets",
     "2026 rock and roll hall of fame induction ceremony performers",
     "2026 rock and roll hall of fame induction ceremony location",
@@ -8886,7 +8906,8 @@
     "rock and roll hall of fame induction ceremony 2026 tickets price",
     "rock and roll hall of fame inductees 2026 ceremony",
     "summarize the 2026 rock and roll hall of fame inductees and ceremony details",
-    "how to get tickets to rock and roll hall of fame induction ceremony 2026"
+    "how to get tickets to rock and roll hall of fame induction ceremony 2026",
+    "where is rock and roll hall of fame induction ceremony"
    ],
    "what is 2026 rock and roll hall of fame induction ceremony": [],
    "when will the rock and roll hall of fame 2026 ceremony air": [],
@@ -8908,11 +8929,15 @@
    [
     "2026-11-16",
     false
+   ],
+   [
+    "2026-11-17",
+    false
    ]
   ]
  },
  "what-does-refrigerator-coolant-smell-like": {
-  "time": "2026-11-16T16:31:59+00:00",
+  "time": "2026-11-17T16:32:01+00:00",
   "query": "what does refrigerator coolant smell like",
   "in_suggest": true,
   "suggest": {
@@ -8976,37 +9001,41 @@
    [
     "2026-11-16",
     true
+   ],
+   [
+    "2026-11-17",
+    true
    ]
   ]
  },
  "what-is-a-safety-in-football": {
-  "time": "2026-11-16T16:32:00+00:00",
+  "time": "2026-11-17T16:32:02+00:00",
   "query": "what is a safety in football",
   "in_suggest": true,
   "suggest": {
    "safety": [
     "safety pins",
     "safety",
-    "safety not guaranteed",
     "safety glasses",
     "safety razor",
-    "safety insurance",
+    "safety vest",
     "safety movie",
     "safety first car seat",
-    "safety vest",
-    "safety in football"
+    "safety coordinator jobs",
+    "safety culture",
+    "safety glasses prescription"
    ],
    "what is safety": [
     "what is safety in football",
     "what is safety",
-    "what is safety culture",
+    "what is safety corridor",
     "what is safety position in football",
+    "what is safety culture",
     "what is safety data sheet",
     "what is safety stock",
     "what is safety connect toyota",
     "what is safety glass",
-    "what is safety net",
-    "what is safety corridor"
+    "what is safety protocol adherence"
    ],
    "what is a safety in football": [
     "what is a safety in football",
@@ -9024,8 +9053,8 @@
     "safety football",
     "safety football position",
     "safety football movie",
-    "safety football helmet",
     "safety football points",
+    "safety football helmet",
     "safety football score",
     "safety football drip",
     "safety football 2 points",
@@ -9049,11 +9078,15 @@
    [
     "2026-11-16",
     true
+   ],
+   [
+    "2026-11-17",
+    true
    ]
   ]
  },
  "what-is-broad-based-categorical-eligibility": {
-  "time": "2026-11-16T16:32:01+00:00",
+  "time": "2026-11-17T16:32:03+00:00",
   "query": "what is broad-based categorical eligibility",
   "in_suggest": true,
   "suggest": {
@@ -9098,11 +9131,15 @@
    [
     "2026-11-16",
     true
+   ],
+   [
+    "2026-11-17",
+    true
    ]
   ]
  },
  "why-is-wifi-not-working-on-my-phone": {
-  "time": "2026-11-16T16:32:03+00:00",
+  "time": "2026-11-17T16:32:05+00:00",
   "query": "why is wifi not working on my phone",
   "in_suggest": true,
   "suggest": {
@@ -9148,6 +9185,10 @@
    ],
    [
     "2026-11-16",
+    true
+   ],
+   [
+    "2026-11-17",
     true
    ]
   ]
