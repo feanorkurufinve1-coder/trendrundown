@@ -5374,7 +5374,16 @@ def build_site(store):
         w("archive.html", build_archive(store))
     for fn, (title, body) in STATIC.items():
         w(fn, page(f"{title} | {SITE_NAME}", f"{title} — {SITE_NAME}", body, fn, 0))
-    w("404.html", page(f"Not found | {SITE_NAME}", "Page not found", "<h1>Page not found</h1><p><a href='index.html'>See what's trending now</a></p>", "404.html", 0))
+    # 17.11: страница 404 открывается по ЛЮБОМУ неверному адресу (например /x/что-то), поэтому все ссылки в ней
+    # делаем от корня сайта — иначе меню вело на /x/news.html и снова в «не найдено». И показываем свежие страницы.
+    latest = sorted([x for x in ex.values() if x.get("manual")], key=lambda x: x.get("first") or x.get("made") or "", reverse=True)[:8]
+    nf_body = ("<h1>Page not found</h1><p>This page may have moved or been removed. Here is what we published most recently:</p>"
+               + '<div class="xlinks">' + "".join(f'<a href="x/{E(x["slug"])}.html">{E(x["title"])} →</a>' for x in latest) + "</div>"
+               + "<p><a href='index.html'>Go to the front page →</a></p>")
+    nf = page(f"Not found | {SITE_NAME}", "Page not found", nf_body, "404.html", 0)
+    nf = re.sub(r'(href|src)="(?!https?:|/|#|mailto:|data:)([^"]*)"', r'\1="/\2"', nf)
+    nf = re.sub(r"(href|src)='(?!https?:|/|#|mailto:|data:)([^']*)'", r"\1='/\2'", nf)
+    w("404.html", nf)
     urls_all = ([f"{SITE_URL}/"] + ([] if AUTO_PAGES_OFF else [f"{SITE_URL}/archive"]) + ([f"{SITE_URL}/news"] if HAS_NEWS else [])
             + ([f"{SITE_URL}/explained"] if ex else []) + ([f"{SITE_URL}/trends"] if HAS_TRENDS else [])
             + ([] if AUTO_PAGES_OFF else [f"{SITE_URL}/c/{c}" for c in counts])
