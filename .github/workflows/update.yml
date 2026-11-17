@@ -5,6 +5,11 @@ on:
   schedule:
     - cron: "*/15 * * * *"
   workflow_dispatch:
+  # 17.11: новая ручная страница выкладывается сразу после записи, а не через 15 минут
+  # (иначе ссылка из отчёта первые минуты открывала «Page not found»)
+  push:
+    branches: [main]
+    paths: ["manual/**", "site/img/own-*"]
 
 permissions:
   contents: write
