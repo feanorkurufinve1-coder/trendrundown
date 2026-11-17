@@ -10253,5 +10253,179 @@
     true
    ]
   ]
+ },
+ "is-melania-the-series-the-same-as-the-movie": {
+  "time": "2026-11-17T13:57:58+00:00",
+  "query": "is melania the series the same as the movie",
+  "in_suggest": false,
+  "suggest": {
+   "melania, the series": [
+    "melania the series",
+    "melania series amazon",
+    "melania series netflix",
+    "melanio series v",
+    "melania series review",
+    "melania series where to watch",
+    "melania series release date"
+   ],
+   "what is melania, the series": [
+    "what is the melania show about"
+   ],
+   "is melania the series the same as the movie": [],
+   "melania series same as movie": []
+  },
+  "history": [
+   [
+    "2026-11-17",
+    false
+   ]
+  ]
+ },
+ "what-is-the-i-got-so-mad-meme": {
+  "time": "2026-11-17T13:57:59+00:00",
+  "query": "what is the i got so mad meme",
+  "in_suggest": true,
+  "suggest": {
+   "i got so mad meme": [
+    "i got so mad meme",
+    "i was so mad meme",
+    "i just get so mad meme",
+    "i was so mad mercer mayer meme"
+   ],
+   "what is i got so mad meme": [],
+   "what is the i got so mad meme": []
+  },
+  "history": [
+   [
+    "2026-11-17",
+    true
+   ]
+  ]
+ },
+ "why-are-people-saying-julia-stiles-went-to-juilliard": {
+  "time": "2026-11-17T13:58:01+00:00",
+  "query": "why are people saying julia stiles went to juilliard",
+  "in_suggest": true,
+  "suggest": {
+   "julia stiles juilliard joke": [
+    "julia stiles juilliard joke",
+    "julia stiles working a regular job",
+    "julia stiles salary",
+    "julia stiles roles",
+    "julia stiles first role",
+    "julia stiles current job"
+   ],
+   "what is julia stiles juilliard joke": [
+    "what is the julia stiles juilliard joke",
+    "julia stiles salary",
+    "julia stiles roles",
+    "julia stiles working a regular job",
+    "julia stiles current job",
+    "julia stiles first role"
+   ],
+   "why are people saying julia stiles went to juilliard": [
+    "why are people saying julia stiles went to juilliard",
+    "why do people say julia stiles went to juilliard",
+    "julia stiles current job",
+    "julia stiles first role",
+    "julia stiles quotes",
+    "does julia stiles really dance"
+   ],
+   "people saying julia stiles went juilliard": [
+    "why are people saying julia stiles went to juilliard",
+    "why do people say julia stiles went to juilliard",
+    "julia stiles current job",
+    "julia stiles working a regular job",
+    "julia stiles salary",
+    "julia stiles quotes"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-17",
+    true
+   ]
+  ]
+ },
+ "why-are-people-trying-to-move-the-bean": {
+  "time": "2026-11-17T13:58:03+00:00",
+  "query": "why are people trying to move the bean",
+  "in_suggest": true,
+  "suggest": {
+   "bean push trend": [],
+   "what is bean push trend": [],
+   "why are people trying to move the bean": [
+    "why are people trying to move the bean",
+    "why do beans float to the top"
+   ],
+   "people trying move bean": []
+  },
+  "history": [
+   [
+    "2026-11-17",
+    true
+   ]
+  ]
+ },
+ "why-is-my-washing-machine-dripping-water-inside": {
+  "time": "2026-11-17T13:58:04+00:00",
+  "query": "why is my washing machine dripping water inside",
+  "in_suggest": true,
+  "suggest": {
+   "washing machine dripping water inside": [
+    "washing machine dripping water inside",
+    "washing machine dripping water inside when off",
+    "washing machine dripping water inside drum",
+    "washing machine dripping water inside tub",
+    "washing machine dripping water inside top loader",
+    "washing machine dripping water inside after cycle",
+    "washer machine dripping water inside",
+    "washing machine dripping water in drum",
+    "washing machine dripping water in tub",
+    "washer machine leaking water inside"
+   ],
+   "what is washing machine dripping water inside": [
+    "why is washing machine dripping water inside",
+    "washing machine dripping water inside when off",
+    "washing machine dripping water inside drum",
+    "washing machine dripping water inside tub",
+    "washing machine dripping water inside top loader",
+    "washing machine dripping water inside after cycle",
+    "washer machine dripping water inside",
+    "lg washing machine dripping water inside top loader",
+    "ge washing machine dripping water inside",
+    "lg washing machine dripping water inside"
+   ],
+   "why is my washing machine dripping water inside": [
+    "why is my washing machine dripping water inside",
+    "why is my washing machine dripping water inside when not in use",
+    "why is my washing machine dripping water inside the tub",
+    "why is my washing machine leaking water inside",
+    "why is my ge washing machine dripping water inside",
+    "why is my lg washing machine dripping water inside",
+    "why is my top load washing machine dripping water inside",
+    "why is my lg washing machine dripping water inside the tub",
+    "why is my washing machine dripping water when not in use",
+    "why is my washing machine leaking water when not in use"
+   ],
+   "my washing machine dripping water inside": [
+    "my washing machine dripping water inside",
+    "my washing machine leaking water inside",
+    "why is my washing machine dripping water inside the tub",
+    "why does my washing machine drip water inside",
+    "why is my ge washing machine dripping water inside",
+    "why is my lg washing machine dripping water inside",
+    "why is my lg washing machine dripping water inside the tub",
+    "why is my top load washing machine dripping water inside",
+    "why is my washing machine dripping water inside when not in use",
+    "why does my washing machine keep dripping water"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-17",
+    true
+   ]
+  ]
  }
 }
