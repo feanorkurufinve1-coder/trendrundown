@@ -1,0 +1,55 @@
+{
+ "subject": "Washing machine dripping water inside",
+ "kind": "term",
+ "query": "why is my washing machine dripping water inside",
+ "title": "Why is my washing machine dripping water inside? Main causes",
+ "answer": "Water that drips or trickles into the drum while the washer is off almost always comes from one of two places: a worn or clogged water inlet valve that no longer shuts tight, or a drain hose that is siphoning used water back into the machine. Clean water points to the valve; dirty, smelly water points to the drain hose.",
+ "body": "1. A leaking water inlet valve (most likely if the water is clean). The inlet valve opens to fill the machine and should seal completely when the cycle ends. Over time, grit, mineral scale or a worn rubber diaphragm can stop it from closing fully, so supply water seeps in through the detergent drawer or fill area. Very low water pressure can cause the same thing: some valves need around 20 psi to close properly.\n\n2. Drain-hose siphoning (likely if the water is gray or smells). If the drain hose doesn't rise high enough before it enters the drain, or is pushed deep into the standpipe and sealed with tape, waste water can be pulled back into the tub. This is especially common right after a new install or a move.\n\nHow to tell which one you have: look at the water first. Then turn off both supply taps behind the washer and leave it overnight. If the drum stays dry, the inlet valve is letting water through. If water still collects, the drain hose setup is the likely culprit. A few drops left in the door seal of a front-loader after a wash are normal and not a fault.\n\nWhat you can do yourself: unplug the washer and shut off the taps, then unscrew the fill hoses and check the small mesh screens at the valve inlets; rinse off any grit. Make sure the drain hose loops up to the height your manual specifies (a common guideline is at least about 60 centimeters, or two feet) and sits loosely in the standpipe with an air gap rather than being taped in. Until it's fixed, turn the taps off after every wash, because a slow seep can become a flood if the valve fails completely.\n\nWhen to call a technician: if the screens are clean, the drain hose is set up correctly and clean water still trickles in, the inlet valve needs replacing. It is an inexpensive part, but the job means opening the cabinet near electrical connections, so hire an appliance technician if you're not comfortable. If water is pooling under the machine instead of inside the drum, that's a different problem; see our guide to a washer leaking from the bottom.",
+ "faq": [
+  {
+   "q": "Why is water coming into my washer when it's off?",
+   "a": "Usually a faulty water inlet valve that doesn't seal, or a drain hose that siphons water back. Turning the taps off overnight tells you which."
+  },
+  {
+   "q": "Is it normal to have water in the bottom of the washer drum?",
+   "a": "A few drops in the door seal after a cycle are normal. Water that keeps building up while the machine is off is not."
+  },
+  {
+   "q": "Can low water pressure make a washer fill by itself?",
+   "a": "Yes. Some inlet valves need about 20 psi to close fully, so low pressure can let water trickle in."
+  },
+  {
+   "q": "How much does it cost to fix a dripping washing machine?",
+   "a": "Cleaning the inlet screens or repositioning the drain hose costs nothing. A replacement inlet valve is a relatively cheap part; a technician adds labor."
+  }
+ ],
+ "links": [
+  [
+   "Whitegoods Help",
+   "Washing machine fills with water when off",
+   "https://www.whitegoodshelp.co.uk/washing-machine-fills-with-water-when-off/comment-page-1"
+  ],
+  [
+   "Fix It Now",
+   "Water slowly fills washer tub even when it is off",
+   "https://fixitnow.com/wp/2011/06/06/mailbag-water-slowly-fills-washer-tub-even-when-it-is-off/"
+  ],
+  [
+   "iFixit",
+   "Why is water running into my washing machine when it is off?",
+   "https://www.ifixit.com/Answers/View/274524/Why+is+water+running+into+my+washing+machine+when+it+is+off"
+  ],
+  [
+   "iFixit",
+   "Drips water into tub when off",
+   "https://www.ifixit.com/Answers/View/286214/drips+water+into+tub+when+off"
+  ]
+ ],
+ "image_prompt": "Close-up of a few clear water droplets falling inside the empty stainless steel drum of a front-loading washing machine, soft light, realistic photo style",
+ "topics": [
+  "home",
+  "appliances"
+ ],
+ "made": "2026-11-17T14:10:00Z",
+ "first": "2026-11-17T14:10:00Z"
+}
