@@ -294,9 +294,9 @@
   },
   {
    "url": "/x/did-scott-colom-win",
-   "at": "2026-11-17T01:01:50+00:00",
+   "at": "2026-11-17T07:16:50+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -306,7 +306,7 @@
   },
   {
    "url": "/x/did-trump-call-into-c-span",
-   "at": "2026-11-17T01:01:56+00:00",
+   "at": "2026-11-17T07:16:56+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -330,7 +330,7 @@
   },
   {
    "url": "/x/does-mlb-have-a-salary-cap",
-   "at": "2026-11-17T01:02:03+00:00",
+   "at": "2026-11-17T07:17:03+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -342,7 +342,7 @@
   },
   {
    "url": "/x/edgar-martinez-award",
-   "at": "2026-11-17T01:02:09+00:00",
+   "at": "2026-11-17T07:17:09+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -354,9 +354,9 @@
   },
   {
    "url": "/x/el-nino-pacific-northwest",
-   "at": "2026-11-17T01:02:15+00:00",
+   "at": "2026-11-17T07:17:15+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -366,7 +366,7 @@
   },
   {
    "url": "/x/embassy-of-finland-canberra-meme",
-   "at": "2026-11-17T01:02:22+00:00",
+   "at": "2026-11-17T07:17:21+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -378,7 +378,7 @@
   },
   {
    "url": "/x/exhibition-game",
-   "at": "2026-11-17T01:02:28+00:00",
+   "at": "2026-11-17T07:17:27+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -390,9 +390,9 @@
   },
   {
    "url": "/x/first-black-senator-from-mississippi",
-   "at": "2026-11-17T01:02:35+00:00",
+   "at": "2026-11-17T07:17:33+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -402,7 +402,7 @@
   },
   {
    "url": "/x/game-time-decision",
-   "at": "2026-11-17T01:02:41+00:00",
+   "at": "2026-11-17T07:17:39+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1873,8 +1873,8 @@
  },
  "summary": {
   "Submitted and indexed": 3,
-  "URL is unknown to Google": 72,
+  "URL is unknown to Google": 75,
   "Crawled - currently not indexed": 63,
-  "Discovered - currently not indexed": 15
+  "Discovered - currently not indexed": 12
  }
 }
