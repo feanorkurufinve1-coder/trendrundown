@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-17T09:18:06+00:00",
+ "checked": "2026-11-17T10:31:59+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -54,7 +54,7 @@
   },
   {
    "url": "/trends",
-   "at": "2026-11-17T04:17:02+00:00",
+   "at": "2026-11-17T10:31:52+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -66,7 +66,7 @@
   },
   {
    "url": "/explained",
-   "at": "2026-11-17T04:17:08+00:00",
+   "at": "2026-11-17T10:31:59+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
