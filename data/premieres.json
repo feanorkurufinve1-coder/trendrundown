@@ -1,7 +1,22 @@
 {
- "made": "2026-11-17T06:02:23+00:00",
+ "made": "2026-11-17T18:17:32+00:00",
  "about": "Премьеры сериалов и новых сезонов в США на 14 дней вперёд (TVmaze). new_series = совсем новый сериал. Сырьё для прогнозов «is X a true story», «X cast», «X season N release time».",
  "premieres": [
+  {
+   "date": "2026-11-17",
+   "show": "He Said, She Said: Till Death Do Us Part",
+   "season": 1,
+   "new_series": true,
+   "type": "Documentary",
+   "genres": [
+    "Crime"
+   ],
+   "network": "Paramount+",
+   "premiered": "2026-11-17",
+   "summary": "A toxic custody battle spirals into tragedy and a viral war over truth, blame and perception.",
+   "url": "https://www.tvmaze.com/shows/95731/he-said-she-said-till-death-do-us-part",
+   "official": "https://www.paramountplus.com/shows/he-said-she-said-till-death-do-us-part/"
+  },
   {
    "date": "2026-11-17",
    "show": "Beat Bobby Flay: Holiday Throwdown",
@@ -113,9 +128,9 @@
    ],
    "network": "Netflix",
    "premiered": "2026-11-19",
-   "summary": "The Altruists tells the story of Sam Bankman-Fried and Caroline Ellison, two hyper-smart, ambitious young idealists who tried to remake the global financial system in the blink of an eye – and then seduced, coaxed and teased each other into stealing $8 billion.",
+   "summary": "Young, idealistic and suddenly worth billions, they tried to do good—but unleashed the worst in each other. A toxic love story inspired by a real fraud.",
    "url": "https://www.tvmaze.com/shows/85058/the-altruists",
-   "official": null
+   "official": "https://www.netflix.com/title/81681910"
   },
   {
    "date": "2026-11-19",
