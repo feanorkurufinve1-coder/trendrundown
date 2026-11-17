@@ -3455,7 +3455,7 @@
   ]
  },
  "bright-star-eastern-sky-morning": {
-  "time": "2026-11-16T14:31:57+00:00",
+  "time": "2026-11-17T14:32:36+00:00",
   "query": "what is the bright star in the eastern sky this morning",
   "in_suggest": true,
   "suggest": {
@@ -3513,11 +3513,15 @@
    [
     "2026-11-16",
     true
+   ],
+   [
+    "2026-11-17",
+    true
    ]
   ]
  },
  "how-are-cma-awards-voted": {
-  "time": "2026-11-16T14:32:03+00:00",
+  "time": "2026-11-17T14:32:41+00:00",
   "query": "how are cma awards voted",
   "in_suggest": true,
   "suggest": {
@@ -3582,11 +3586,15 @@
    [
     "2026-11-16",
     true
+   ],
+   [
+    "2026-11-17",
+    true
    ]
   ]
  },
  "how-are-game-awards-nominees-chosen": {
-  "time": "2026-11-16T14:32:04+00:00",
+  "time": "2026-11-17T14:32:43+00:00",
   "query": "how are the game awards nominees chosen",
   "in_suggest": true,
   "suggest": {
@@ -3660,25 +3668,29 @@
    [
     "2026-11-16",
     true
+   ],
+   [
+    "2026-11-17",
+    true
    ]
   ]
  },
  "is-philomena-cunk-real": {
-  "time": "2026-11-16T14:32:10+00:00",
+  "time": "2026-11-17T14:32:48+00:00",
   "query": "is philomena cunk a real person",
   "in_suggest": true,
   "suggest": {
    "philomena cunk": [
     "philomena cunk",
+    "philomena cunk actress",
     "philomena cunk netflix",
     "philomena cunk quotes",
-    "philomena cunk actress",
-    "philomena cunk shows",
-    "philomena cunk on cinema",
     "philomena cunk real name",
-    "philomena cunk bloopers",
-    "philomena cunk new show",
-    "philomena cunk vision quest"
+    "philomena cunk on cinema",
+    "philomena cunk benedict cumberbatch",
+    "philomena cunk shows",
+    "philomena cunk on cinema netflix",
+    "philomena cunk pump up the jam"
    ],
    "what is philomena cunk": [
     "what is philomena cunk",
@@ -3736,11 +3748,15 @@
    [
     "2026-11-16",
     true
+   ],
+   [
+    "2026-11-17",
+    true
    ]
   ]
  },
  "lame-duck-president": {
-  "time": "2026-11-16T14:32:12+00:00",
+  "time": "2026-11-17T14:32:51+00:00",
   "query": "what is a lame duck president",
   "in_suggest": true,
   "suggest": {
@@ -3813,11 +3829,15 @@
    [
     "2026-11-16",
     true
+   ],
+   [
+    "2026-11-17",
+    true
    ]
   ]
  },
  "national-parks-free-veterans-day": {
-  "time": "2026-11-16T14:32:13+00:00",
+  "time": "2026-11-17T14:32:52+00:00",
   "query": "are national parks free on veterans day",
   "in_suggest": true,
   "suggest": {
@@ -3871,11 +3891,15 @@
    [
     "2026-11-16",
     true
+   ],
+   [
+    "2026-11-17",
+    true
    ]
   ]
  },
  "new-snap-stocking-rules": {
-  "time": "2026-11-16T14:32:15+00:00",
+  "time": "2026-11-17T14:32:54+00:00",
   "query": "new snap rules for stores",
   "in_suggest": false,
   "suggest": {
@@ -3932,25 +3956,29 @@
    [
     "2026-11-16",
     false
+   ],
+   [
+    "2026-11-17",
+    false
    ]
   ]
  },
  "what-is-a-quarter-quell": {
-  "time": "2026-11-16T14:32:18+00:00",
+  "time": "2026-11-17T14:32:57+00:00",
   "query": "what is a quarter quell",
   "in_suggest": true,
   "suggest": {
    "quarter quell": [
     "quarter quell",
-    "quarter quell meaning",
     "quarter quell hunger games",
-    "quarter quell quest",
     "quarter quell ideas",
     "quarter quell birthday party",
     "quarter quell tributes",
     "quarter quell birthday",
     "quarter quell arena",
-    "quarter quell meaning hunger games"
+    "quarter quell meaning hunger games",
+    "quarter quell hunger games movie",
+    "quarter quell movie"
    ],
    "what is quarter quell": [
     "what is quarter quell",
@@ -4009,11 +4037,15 @@
    [
     "2026-11-16",
     true
+   ],
+   [
+    "2026-11-17",
+    true
    ]
   ]
  },
  "what-is-apple-homeview": {
-  "time": "2026-11-16T14:32:20+00:00",
+  "time": "2026-11-17T14:32:59+00:00",
   "query": "what is apple homeview",
   "in_suggest": true,
   "suggest": {
@@ -4022,12 +4054,12 @@
     "apple homeview review",
     "apple homeview price",
     "apple homeview release date",
-    "apple homeview reddit",
-    "apple homeview what does it do",
     "apple homeview starlight",
+    "apple homeview best buy",
+    "apple homeview reddit",
     "apple homeview wall mount",
     "apple homeview sold out",
-    "apple homeview apps"
+    "apple homeview in stock"
    ],
    "what is apple homeview": [
     "what is apple homeview",
@@ -4074,19 +4106,23 @@
    [
     "2026-11-16",
     true
+   ],
+   [
+    "2026-11-17",
+    true
    ]
   ]
  },
  "what-is-pico-park": {
-  "time": "2026-11-16T14:32:21+00:00",
+  "time": "2026-11-17T14:33:00+00:00",
   "query": "what is pico park",
   "in_suggest": true,
   "suggest": {
    "pico park": [
     "pico park",
     "pico park 2",
-    "pico park sonic",
     "pico park switch",
+    "pico park sonic",
     "pico park 3",
     "pico park game",
     "pico park pico rivera",
@@ -4138,6 +4174,10 @@
    ],
    [
     "2026-11-16",
+    true
+   ],
+   [
+    "2026-11-17",
     true
    ]
   ]
@@ -6319,11 +6359,14 @@
   ]
  },
  "camp-flog-gnaw-livestream": {
-  "time": "2026-11-16T14:31:58+00:00",
+  "time": "2026-11-17T14:32:37+00:00",
   "query": "will camp flog gnaw be streamed",
   "in_suggest": true,
   "suggest": {
-   "camp flog gnaw 2026 livestream": [],
+   "camp flog gnaw 2026 livestream": [
+    "camp flog gnaw 2026 livestream",
+    "camp flog gnaw age"
+   ],
    "what is camp flog gnaw 2026 livestream": [],
    "will camp flog gnaw be streamed": [
     "will camp flog gnaw be streamed",
@@ -6358,11 +6401,15 @@
    [
     "2026-11-16",
     true
+   ],
+   [
+    "2026-11-17",
+    true
    ]
   ]
  },
  "el-nino-pacific-northwest": {
-  "time": "2026-11-16T14:32:01+00:00",
+  "time": "2026-11-17T14:32:40+00:00",
   "query": "what does el nino mean for the pacific northwest",
   "in_suggest": true,
   "suggest": {
@@ -6391,8 +6438,8 @@
     "what does el nino mean for the pacific northwest weather"
    ],
    "what does el nino mean for the pacific northwest": [
-    "what does el nino mean for the pacific northwest winter",
     "what does el nino mean for the pacific northwest",
+    "what does el nino mean for the pacific northwest winter",
     "what does el nino mean for the pacific northwest weather",
     "what does el niño mean for the pacific northwest summer",
     "what does el nino mean for the pacific northwest this year",
@@ -6439,32 +6486,36 @@
    [
     "2026-11-16",
     true
+   ],
+   [
+    "2026-11-17",
+    true
    ]
   ]
  },
  "is-amanda-nunes-retired": {
-  "time": "2026-11-16T14:32:05+00:00",
+  "time": "2026-11-17T14:32:44+00:00",
   "query": "is amanda nunes retired",
   "in_suggest": true,
   "suggest": {
    "amanda nunes": [
     "amanda nunes",
+    "amanda nunes kayla harrison rematch",
+    "amanda nunes record",
     "amanda nunes vs kayla harrison",
     "amanda nunes last fight",
-    "amanda nunes record",
     "amanda nunes wife",
-    "amanda nunes fight",
-    "amanda nunes post fight interview",
-    "amanda nunes age",
     "amanda nunes next fight",
-    "amanda nunes fight last night"
+    "amanda nunes fight",
+    "amanda nunes age",
+    "amanda nunes post fight interview"
    ],
    "who is amanda nunes": [
     "who is amanda nunes fighting next",
     "who is amanda nunes fighting",
+    "who is amanda nunes wife",
     "who is amanda nunes",
     "who is amanda nunes married to",
-    "who is amanda nunes wife",
     "who is amanda nunes going to fight",
     "who is amanda nunes dating",
     "who is amanda nunes fighting tonight",
@@ -6517,11 +6568,15 @@
    [
     "2026-11-16",
     true
+   ],
+   [
+    "2026-11-17",
+    true
    ]
   ]
  },
  "kids-choice-awards-2026-date": {
-  "time": "2026-11-16T14:32:11+00:00",
+  "time": "2026-11-17T14:32:50+00:00",
   "query": "when are the kids choice awards 2026",
   "in_suggest": true,
   "suggest": {
@@ -6564,14 +6619,14 @@
    "kids choice awards 2026": [
     "kids choice awards 2026",
     "kids choice awards 2026 winners",
-    "kids choice awards 2026 vote",
     "kids choice awards 2026 where to watch",
+    "kids choice awards 2026 vote",
     "kids choice awards 2026 winners list",
-    "kids choice awards 2026 all winners",
-    "kids choice awards 2026 red carpet",
+    "kids choice awards 2026 host",
     "kids choice awards 2026 streaming",
+    "kids choice awards 2026 all winners",
     "kids choice awards 2026 full show",
-    "kids choice awards 2026 host"
+    "kids choice awards 2026 date"
    ]
   },
   "history": [
@@ -6598,31 +6653,35 @@
    [
     "2026-11-16",
     true
+   ],
+   [
+    "2026-11-17",
+    true
    ]
   ]
  },
  "what-does-12-12-12-mean": {
-  "time": "2026-11-16T14:32:16+00:00",
+  "time": "2026-11-17T14:32:55+00:00",
   "query": "what does 12 12 12 mean",
   "in_suggest": true,
   "suggest": {
    "12 12 12": [
     "12 12 12",
     "12 12 12 cast",
-    "12 12 12 movie",
-    "12 12 12 reviews",
     "12 12 12 episodes",
-    "12 12 12 rotten tomatoes",
+    "12 12 12 reviews",
+    "12 12 12 movie",
+    "12 12 12 apple tv",
     "12 12 12 show",
+    "12 12 12 rotten tomatoes",
     "12 12 12 trailer",
-    "12 12 12 imdb",
-    "12 12 12 tv show"
+    "12 12 12 imdb"
    ],
    "what is 12 12 12": [
     "what is 12 12 12 about",
+    "what is 12 12 12 show about",
     "what is 12 12 12 fertilizer",
     "what is 12 12 12 fertilizer used for",
-    "what is 12 12 12 show",
     "what is 12 12 12 movie",
     "what is 12 12 12 apple",
     "what is 12 12 12 meaning",
@@ -6667,11 +6726,15 @@
    [
     "2026-11-16",
     true
+   ],
+   [
+    "2026-11-17",
+    true
    ]
   ]
  },
  "what-is-a-motion-to-refer": {
-  "time": "2026-11-16T14:32:17+00:00",
+  "time": "2026-11-17T14:32:56+00:00",
   "query": "what is a motion to refer",
   "in_suggest": true,
   "suggest": {
@@ -6748,11 +6811,15 @@
    [
     "2026-11-16",
     true
+   ],
+   [
+    "2026-11-17",
+    true
    ]
   ]
  },
  "why-does-social-security-get-taxed": {
-  "time": "2026-11-16T14:32:28+00:00",
+  "time": "2026-11-17T14:33:07+00:00",
   "query": "why does social security get taxed",
   "in_suggest": true,
   "suggest": {
@@ -6829,18 +6896,22 @@
    [
     "2026-11-16",
     true
+   ],
+   [
+    "2026-11-17",
+    true
    ]
   ]
  },
  "why-is-my-check-engine-light-on": {
-  "time": "2026-11-16T14:32:29+00:00",
+  "time": "2026-11-17T14:33:09+00:00",
   "query": "why is my check engine light on",
   "in_suggest": true,
   "suggest": {
    "check engine light": [
     "check engine light",
+    "check engine light flashing",
     "check engine light meaning",
-    "check engine light blinking",
     "check engine light reader",
     "check engine light on after oil change",
     "check engine light came on",
@@ -6909,11 +6980,15 @@
    [
     "2026-11-16",
     true
+   ],
+   [
+    "2026-11-17",
+    true
    ]
   ]
  },
  "why-is-my-washing-machine-leaking-from-the-bottom": {
-  "time": "2026-11-16T14:32:30+00:00",
+  "time": "2026-11-17T14:33:10+00:00",
   "query": "why is my washing machine leaking from the bottom",
   "in_suggest": true,
   "suggest": {
@@ -6990,11 +7065,15 @@
    [
     "2026-11-16",
     true
+   ],
+   [
+    "2026-11-17",
+    true
    ]
   ]
  },
  "coachella-2027-tickets-on-sale": {
-  "time": "2026-11-16T14:32:00+00:00",
+  "time": "2026-11-17T14:32:38+00:00",
   "query": "when do coachella 2027 tickets go on sale",
   "in_suggest": true,
   "suggest": {
@@ -7057,25 +7136,29 @@
    [
     "2026-11-16",
     true
+   ],
+   [
+    "2026-11-17",
+    true
    ]
   ]
  },
  "is-being-heumann-a-true-story": {
-  "time": "2026-11-16T14:32:07+00:00",
+  "time": "2026-11-17T14:32:45+00:00",
   "query": "is being heumann a true story",
   "in_suggest": true,
   "suggest": {
    "being heumann": [
     "being heumann",
-    "being heumann movie",
     "being heumann cast",
-    "being heumann reviews",
     "being heumann showtimes",
+    "being heumann reviews",
     "being heumann trailer",
-    "being heumann rotten tomatoes",
     "being heumann where to watch",
+    "being heumann apple tv",
     "being heumann 2026",
-    "being heumann release date"
+    "being heumann release date",
+    "being heumann movie review"
    ],
    "what is being heumann": [
     "what is being heumann about",
@@ -7113,11 +7196,15 @@
    [
     "2026-11-16",
     true
+   ],
+   [
+    "2026-11-17",
+    true
    ]
   ]
  },
  "is-gta-6-coming-to-pc": {
-  "time": "2026-11-16T14:32:08+00:00",
+  "time": "2026-11-17T14:32:47+00:00",
   "query": "is gta 6 coming to pc",
   "in_suggest": true,
   "suggest": {
@@ -7185,11 +7272,15 @@
    [
     "2026-11-16",
     true
+   ],
+   [
+    "2026-11-17",
+    true
    ]
   ]
  },
  "what-is-a-sudden-stratospheric-warming": {
-  "time": "2026-11-16T14:32:19+00:00",
+  "time": "2026-11-17T14:32:58+00:00",
   "query": "what is a sudden stratospheric warming",
   "in_suggest": true,
   "suggest": {
@@ -7240,18 +7331,22 @@
    [
     "2026-11-16",
     true
+   ],
+   [
+    "2026-11-17",
+    true
    ]
   ]
  },
  "when-will-social-security-run-out": {
-  "time": "2026-11-16T14:32:22+00:00",
+  "time": "2026-11-17T14:33:01+00:00",
   "query": "when will social security run out",
   "in_suggest": true,
   "suggest": {
    "social security trust fund depletion": [
-    "social security trust fund depletion 2032",
     "social security trust fund depletion",
     "social security trust fund depletion date",
+    "social security trust fund depletion 2032",
     "social security trust fund depletion today",
     "social security trust fund depletion could trigger major benefit cuts",
     "social security trust fund depletion 2033",
@@ -7273,13 +7368,13 @@
     "social security trust fund depletion date moved to late 2032"
    ],
    "when will social security run out": [
+    "when will social security run out",
+    "when will social security run out of money",
     "when will social security run out completely",
     "when will social security run out of funds",
     "when will social security run out reddit",
-    "when will social security run out",
     "when will social security run out in the us",
     "when will social security run out of numbers",
-    "when will social security run out of money",
     "when will social security run out of money or not be fully funded",
     "when will social security run out what year",
     "when does social security run out"
@@ -7317,11 +7412,15 @@
    [
     "2026-11-16",
     true
+   ],
+   [
+    "2026-11-17",
+    true
    ]
   ]
  },
  "why-does-my-phone-battery-go-down-while-charging": {
-  "time": "2026-11-16T14:32:24+00:00",
+  "time": "2026-11-17T14:33:03+00:00",
   "query": "why does my phone battery go down while charging",
   "in_suggest": true,
   "suggest": {
@@ -7394,11 +7493,15 @@
    [
     "2026-11-16",
     true
+   ],
+   [
+    "2026-11-17",
+    true
    ]
   ]
  },
  "why-does-my-phone-screen-keep-going-black": {
-  "time": "2026-11-16T14:32:25+00:00",
+  "time": "2026-11-17T14:33:04+00:00",
   "query": "why does my phone screen keep going black",
   "in_suggest": true,
   "suggest": {
@@ -7469,11 +7572,15 @@
    [
     "2026-11-16",
     true
+   ],
+   [
+    "2026-11-17",
+    true
    ]
   ]
  },
  "why-does-social-security-come-out-of-my-paycheck": {
-  "time": "2026-11-16T14:32:26+00:00",
+  "time": "2026-11-17T14:33:06+00:00",
   "query": "why does social security come out of my paycheck",
   "in_suggest": true,
   "suggest": {
@@ -7544,6 +7651,10 @@
    ],
    [
     "2026-11-16",
+    true
+   ],
+   [
+    "2026-11-17",
     true
    ]
   ]
