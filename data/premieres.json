@@ -1,37 +1,7 @@
 {
- "made": "2026-11-16T17:47:42+00:00",
+ "made": "2026-11-17T06:02:23+00:00",
  "about": "Премьеры сериалов и новых сезонов в США на 14 дней вперёд (TVmaze). new_series = совсем новый сериал. Сырьё для прогнозов «is X a true story», «X cast», «X season N release time».",
  "premieres": [
-  {
-   "date": "2026-11-16",
-   "show": "America's Funniest People",
-   "season": 1,
-   "new_series": true,
-   "type": "Reality",
-   "genres": [
-    "Comedy"
-   ],
-   "network": "VH1",
-   "premiered": "2026-11-16",
-   "summary": "From savage jokes and wild stunts to outrageous pranks, questionable decisions, and unforgettable viral moments, each episode showcases the kind of social content you can't believe someone actually posted. With her fearless humor and unapologetic perspective, Ms. Pat brings her signature comedic style to the competition as three hilarious content creators go head-to-head for a cash prize.",
-   "url": "https://www.tvmaze.com/shows/95206/americas-funniest-people",
-   "official": null
-  },
-  {
-   "date": "2026-11-16",
-   "show": "Sweet Deceit",
-   "season": 2,
-   "new_series": false,
-   "type": "Reality",
-   "genres": [
-    "Food"
-   ],
-   "network": "Food Network",
-   "premiered": "2026-10-05",
-   "summary": "Sweet Deceit challenges teams of three competitors to search for deceptive, hyper-realistic sweets hiding in plain sight in real-world locations. Actor Josh Peck, who hilariously commands the on-screen hijinks as he leads contestants through four rounds as they try to identify masterfully disguised sweets created by world-class cake artists. Escalating in difficulty round by round, the teams work ",
-   "url": "https://www.tvmaze.com/shows/93951/sweet-deceit",
-   "official": null
-  },
   {
    "date": "2026-11-17",
    "show": "Beat Bobby Flay: Holiday Throwdown",
@@ -578,6 +548,51 @@
    "summary": "The series delves into one of the biggest frauds in U.S. history with unprecedented access and exclusive firsthand accounts from Sam Bankman-Fried himself from prison.",
    "url": "https://www.tvmaze.com/shows/94942/the-boy-who-stole-billions",
    "official": null
+  },
+  {
+   "date": "2026-12-01",
+   "show": "Trinity",
+   "season": 1,
+   "new_series": true,
+   "type": "Scripted",
+   "genres": [
+    "Thriller"
+   ],
+   "network": "Netflix",
+   "premiered": "2026-12-01",
+   "summary": "A heroic female naval officer becomes involved with the outwardly charismatic secretary of defense, only to discover he may be at the heart of a dangerous conspiracy.",
+   "url": "https://www.tvmaze.com/shows/85583/trinity",
+   "official": "https://www.netflix.com/title/81696435"
+  },
+  {
+   "date": "2026-12-01",
+   "show": "Collect & Praise",
+   "season": 1,
+   "new_series": true,
+   "type": "Scripted",
+   "genres": [
+    "Comedy"
+   ],
+   "network": "Netflix",
+   "premiered": "2026-12-01",
+   "summary": "",
+   "url": "https://www.tvmaze.com/shows/95345/collect-praise",
+   "official": null
+  },
+  {
+   "date": "2026-12-01",
+   "show": "CMA Country Christmas",
+   "season": 2026,
+   "new_series": false,
+   "type": "Variety",
+   "genres": [
+    "Music"
+   ],
+   "network": "ABC",
+   "premiered": "2010-11-29",
+   "summary": "Some of the biggest names in music will come together to celebrate the holidays on CMA Country Christmas a two-hour special that airs annually on ABC TV. This special is a celebration of the season featuring some of the top stars in music performing holiday songs and getting into the Christmas spirit.",
+   "url": "https://www.tvmaze.com/shows/6822/cma-country-christmas",
+   "official": "https://cmachristmas.com"
   }
  ]
 }
