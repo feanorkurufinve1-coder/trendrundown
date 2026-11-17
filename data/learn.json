@@ -1,11 +1,11 @@
 {
- "made": "2026-11-17T14:04:03+00:00",
- "pages": 402,
+ "made": "2026-11-17T14:18:37+00:00",
+ "pages": 407,
  "summary": {
   "kind": {
    "event": {
-    "pages": 61,
-    "with_impr_%": 20,
+    "pages": 62,
+    "with_impr_%": 19,
     "top3_%": 0,
     "clicks": 5,
     "clicks_per_page": 0.08
@@ -18,11 +18,11 @@
     "clicks_per_page": 0.0
    },
    "organization": {
-    "pages": 15,
-    "with_impr_%": 27,
+    "pages": 16,
+    "with_impr_%": 31,
     "top3_%": 0,
     "clicks": 1,
-    "clicks_per_page": 0.07
+    "clicks_per_page": 0.06
    },
    "other": {
     "pages": 32,
@@ -53,9 +53,9 @@
     "clicks_per_page": 0.0
    },
    "term": {
-    "pages": 159,
+    "pages": 162,
     "with_impr_%": 15,
-    "top3_%": 3,
+    "top3_%": 2,
     "clicks": 35,
     "clicks_per_page": 0.22
    },
@@ -83,11 +83,11 @@
     "clicks_per_page": 0.0
    },
    "manual": {
-    "pages": 127,
+    "pages": 132,
     "with_impr_%": 14,
     "top3_%": 4,
     "clicks": 52,
-    "clicks_per_page": 0.41
+    "clicks_per_page": 0.39
    }
   },
   "q_word": {
@@ -120,8 +120,8 @@
     "clicks_per_page": 0.0
    },
    "how": {
-    "pages": 12,
-    "with_impr_%": 17,
+    "pages": 13,
+    "with_impr_%": 15,
     "top3_%": 0,
     "clicks": 0,
     "clicks_per_page": 0.0
@@ -141,11 +141,11 @@
     "clicks_per_page": 0.15
    },
    "what": {
-    "pages": 228,
-    "with_impr_%": 18,
+    "pages": 230,
+    "with_impr_%": 19,
     "top3_%": 2,
     "clicks": 40,
-    "clicks_per_page": 0.18
+    "clicks_per_page": 0.17
    },
    "when": {
     "pages": 13,
@@ -169,7 +169,7 @@
     "clicks_per_page": 0.09
    },
    "why": {
-    "pages": 11,
+    "pages": 13,
     "with_impr_%": 0,
     "top3_%": 0,
     "clicks": 0,
@@ -185,18 +185,18 @@
   },
   "title_matches_top_query": {
    "False": {
-    "pages": 364,
+    "pages": 368,
     "with_impr_%": 9,
     "top3_%": 1,
     "clicks": 31,
-    "clicks_per_page": 0.09
+    "clicks_per_page": 0.08
    },
    "True": {
-    "pages": 38,
+    "pages": 39,
     "with_impr_%": 100,
     "top3_%": 8,
     "clicks": 27,
-    "clicks_per_page": 0.71
+    "clicks_per_page": 0.69
    }
   }
  },
@@ -474,7 +474,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 65,
-   "age_days": 14.8,
+   "age_days": 14.9,
    "rival_exact": null,
    "impr": 99,
    "clicks": 0,
@@ -503,6 +503,25 @@
     "phishing test",
     "phishing test in dc",
     "phishing test for employees"
+   ]
+  },
+  {
+   "slug": "wta-tennis",
+   "title": "What does WTA stand for in tennis? The women's tour explained",
+   "kind": "organization",
+   "source": "manual",
+   "q_word": "what",
+   "title_len": 61,
+   "age_days": 3.0,
+   "rival_exact": null,
+   "impr": 62,
+   "clicks": 0,
+   "best_pos": 29.8,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "wta",
+    "wta tennis",
+    "wta tour tennis"
    ]
   },
   {
@@ -791,7 +810,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 40,
-   "age_days": 22.1,
+   "age_days": 22.2,
    "rival_exact": null,
    "impr": 16,
    "clicks": 0,
@@ -976,7 +995,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 35,
-   "age_days": 22.1,
+   "age_days": 22.2,
    "rival_exact": null,
    "impr": 6,
    "clicks": 0,
@@ -1048,7 +1067,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 32,
-   "age_days": 17.8,
+   "age_days": 17.9,
    "rival_exact": null,
    "impr": 6,
    "clicks": 0,
@@ -1067,7 +1086,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 54,
-   "age_days": 11.8,
+   "age_days": 11.9,
    "rival_exact": null,
    "impr": 5,
    "clicks": 0,
@@ -1395,7 +1414,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 47,
-   "age_days": 21.2,
+   "age_days": 21.3,
    "rival_exact": null,
    "impr": 2,
    "clicks": 0,
@@ -1412,7 +1431,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 28,
-   "age_days": 20.8,
+   "age_days": 20.9,
    "rival_exact": null,
    "impr": 2,
    "clicks": 0,
@@ -1600,7 +1619,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 23,
-   "age_days": 23.9,
+   "age_days": 24.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -1630,7 +1649,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 49,
-   "age_days": 23.3,
+   "age_days": 23.4,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -1645,7 +1664,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 35,
-   "age_days": 23.3,
+   "age_days": 23.4,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -1780,7 +1799,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 60,
-   "age_days": 15.8,
+   "age_days": 15.9,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -1825,7 +1844,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 22,
-   "age_days": 21.2,
+   "age_days": 21.3,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2050,7 +2069,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 19,
-   "age_days": 19.0,
+   "age_days": 19.1,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2080,7 +2099,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 27,
-   "age_days": 18.7,
+   "age_days": 18.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2170,7 +2189,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 57,
-   "age_days": 17.5,
+   "age_days": 17.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2185,7 +2204,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 68,
-   "age_days": 17.5,
+   "age_days": 17.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2350,7 +2369,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 57,
-   "age_days": 15.8,
+   "age_days": 15.9,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2815,7 +2834,7 @@
    "source": "auto",
    "q_word": "where",
    "title_len": 66,
-   "age_days": 12.9,
+   "age_days": 13.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2980,7 +2999,7 @@
    "source": "auto",
    "q_word": "none",
    "title_len": 62,
-   "age_days": 12.6,
+   "age_days": 12.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2995,7 +3014,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 61,
-   "age_days": 12.6,
+   "age_days": 12.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3055,7 +3074,7 @@
    "source": "auto",
    "q_word": "none",
    "title_len": 67,
-   "age_days": 12.5,
+   "age_days": 12.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3220,7 +3239,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 69,
-   "age_days": 12.3,
+   "age_days": 12.4,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3580,7 +3599,7 @@
    "source": "auto",
    "q_word": "can",
    "title_len": 69,
-   "age_days": 11.1,
+   "age_days": 11.2,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4180,7 +4199,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 79,
-   "age_days": 9.4,
+   "age_days": 9.5,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4330,7 +4349,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 64,
-   "age_days": 8.5,
+   "age_days": 8.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4435,7 +4454,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 72,
-   "age_days": 7.7,
+   "age_days": 7.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4690,7 +4709,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 59,
-   "age_days": 6.9,
+   "age_days": 7.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4705,7 +4724,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 63,
-   "age_days": 6.9,
+   "age_days": 7.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4750,7 +4769,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 63,
-   "age_days": 6.7,
+   "age_days": 6.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5306,6 +5325,21 @@
    "q_word": "is",
    "title_len": 64,
    "age_days": 7.5,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
+   "slug": "how-to-vote-on-the-circle-hulu",
+   "title": "How do you vote on The Circle on Hulu? Season 8 fan voting explained",
+   "kind": "event",
+   "source": "manual",
+   "q_word": "how",
+   "title_len": 68,
+   "age_days": 3.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6049,6 +6083,21 @@
    "top_queries": []
   },
   {
+   "slug": "what-is-a-ground-stop",
+   "title": "What is a ground stop? How FAA ground stops work and what to do",
+   "kind": "term",
+   "source": "manual",
+   "q_word": "what",
+   "title_len": 63,
+   "age_days": 3.0,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
    "slug": "what-is-a-hip-pointer",
    "title": "What is a hip pointer injury? Football's painful hip bruise",
    "kind": "term",
@@ -6364,6 +6413,21 @@
    "top_queries": []
   },
   {
+   "slug": "why-does-my-phone-screen-go-black-during-calls",
+   "title": "Why does my phone screen go black during calls? Causes and fixes",
+   "kind": "term",
+   "source": "manual",
+   "q_word": "why",
+   "title_len": 64,
+   "age_days": 3.0,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
    "slug": "why-does-my-phone-screen-keep-going-black",
    "title": "Why does my phone screen keep going black? Common causes and fixes",
    "kind": "term",
@@ -6371,6 +6435,21 @@
    "q_word": "why",
    "title_len": 66,
    "age_days": 5.0,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
+   "slug": "why-does-my-washing-machine-smell-like-rotten-eggs",
+   "title": "Why does my washing machine smell like rotten eggs? Causes and fixes",
+   "kind": "term",
+   "source": "manual",
+   "q_word": "why",
+   "title_len": 68,
+   "age_days": 3.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
