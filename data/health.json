@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-17T16:46:57+00:00",
+ "checked": "2026-11-17T16:53:49+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -185,8 +185,32 @@
    "userCanonical": null
   },
   {
+   "url": "/x/bay-area-waterspouts-tornado-warning",
+   "at": "2026-11-17T16:53:36+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/bright-star-eastern-sky-morning",
    "at": "2026-11-17T12:47:59+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
+   "url": "/x/california-sues-openai",
+   "at": "2026-11-17T16:53:42+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1133,6 +1157,18 @@
    "userCanonical": "https://trendrundown.com/x/richard-avedon"
   },
   {
+   "url": "/x/robert-pattinson-james-bond",
+   "at": "2026-11-17T16:53:49+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/rock-hall-of-fame-2026-ceremony-air-date",
    "at": "2026-11-17T14:32:28+00:00",
    "verdict": "NEUTRAL",
@@ -1933,7 +1969,7 @@
  },
  "summary": {
   "Submitted and indexed": 3,
-  "URL is unknown to Google": 92,
+  "URL is unknown to Google": 95,
   "Crawled - currently not indexed": 63
  }
 }

@@ -7824,7 +7824,7 @@
   ]
  },
  "exhibition-game": {
-  "time": "2026-11-16T16:47:12+00:00",
+  "time": "2026-11-17T16:53:52+00:00",
   "query": "what is an exhibition game in basketball",
   "in_suggest": true,
   "suggest": {
@@ -7894,11 +7894,15 @@
    [
     "2026-11-16",
     true
+   ],
+   [
+    "2026-11-17",
+    true
    ]
   ]
  },
  "game-time-decision": {
-  "time": "2026-11-16T16:47:13+00:00",
+  "time": "2026-11-17T16:53:54+00:00",
   "query": "game time decision meaning",
   "in_suggest": true,
   "suggest": {
@@ -7971,11 +7975,15 @@
    [
     "2026-11-16",
     true
+   ],
+   [
+    "2026-11-17",
+    true
    ]
   ]
  },
  "mutual-option": {
-  "time": "2026-11-16T16:47:14+00:00",
+  "time": "2026-11-17T16:53:55+00:00",
   "query": "what is a mutual option in baseball",
   "in_suggest": true,
   "suggest": {
@@ -8043,11 +8051,15 @@
    [
     "2026-11-16",
     true
+   ],
+   [
+    "2026-11-17",
+    true
    ]
   ]
  },
  "nba-draft": {
-  "time": "2026-11-16T16:47:16+00:00",
+  "time": "2026-11-17T16:53:56+00:00",
   "query": "what is the nba draft",
   "in_suggest": true,
   "suggest": {
@@ -8055,13 +8067,13 @@
     "nba draft 2026",
     "nba draft",
     "nba draft 2027",
-    "nba draft lottery",
     "nba draft 2025",
-    "nba draft 2015",
     "nba draft 2024",
-    "nba draft 2014",
+    "nba draft lottery",
     "nba draft results",
-    "nba draft order"
+    "nba draft order",
+    "nba draft 2027 mock",
+    "nba draft 2023"
    ],
    "what is nba draft": [
     "what is nba draft",
@@ -8108,11 +8120,15 @@
    [
     "2026-11-16",
     true
+   ],
+   [
+    "2026-11-17",
+    true
    ]
   ]
  },
  "tri-series-cricket": {
-  "time": "2026-11-16T16:47:17+00:00",
+  "time": "2026-11-17T16:53:59+00:00",
   "query": "what is a tri series in cricket",
   "in_suggest": true,
   "suggest": {
@@ -8183,6 +8199,10 @@
    ],
    [
     "2026-11-16",
+    true
+   ],
+   [
+    "2026-11-17",
     true
    ]
   ]
@@ -10776,6 +10796,83 @@
     "why is my top load washing machine dripping water inside",
     "why is my washing machine dripping water inside when not in use",
     "why does my washing machine keep dripping water"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-17",
+    true
+   ]
+  ]
+ },
+ "bay-area-waterspouts-tornado-warning": {
+  "time": "2026-11-17T16:53:50+00:00",
+  "query": "bay area waterspouts tornado warning",
+  "in_suggest": false,
+  "suggest": {
+   "san francisco bay area storms, november 2026": [],
+   "what is san francisco bay area storms, november 2026": [],
+   "bay area waterspouts tornado warning": []
+  },
+  "history": [
+   [
+    "2026-11-17",
+    false
+   ]
+  ]
+ },
+ "california-sues-openai": {
+  "time": "2026-11-17T16:53:51+00:00",
+  "query": "california sues openai",
+  "in_suggest": true,
+  "suggest": {
+   "california v. openai": [],
+   "what is california v. openai": [],
+   "california sues openai": [
+    "california sues openai",
+    "california sues openai reddit"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-17",
+    true
+   ]
+  ]
+ },
+ "robert-pattinson-james-bond": {
+  "time": "2026-11-17T16:53:57+00:00",
+  "query": "robert pattinson james bond",
+  "in_suggest": true,
+  "suggest": {
+   "robert pattinson as james bond": [
+    "robert pattinson as james bond",
+    "robert pattinson as james bond reddit",
+    "robert pattinson as james bond reactions",
+    "robert pattinson as james bond meme",
+    "robert pattinson as james bond yuck",
+    "robert pattinson as james bond reviews",
+    "robert pattinson as james bond really",
+    "robert pattinson as james bond photos",
+    "robert pattinson as james bond ai",
+    "robert pattinson as james bond bad choice"
+   ],
+   "what is robert pattinson as james bond": [
+    "robert pattinson as james bond",
+    "robert pattinson as james bond reddit",
+    "how to pronounce robert pattinson"
+   ],
+   "robert pattinson james bond": [
+    "robert pattinson james bond",
+    "robert pattinson james bond movie",
+    "robert pattinson james bond casting",
+    "robert pattinson james bond reactions",
+    "robert pattinson james bond is he british",
+    "robert pattinson james bond reddit",
+    "robert pattinson james bond meme",
+    "robert pattinson james bond release date",
+    "robert pattinson james bond site www.reddit.com",
+    "robert pattinson james bond screen test"
    ]
   },
   "history": [
