@@ -30,7 +30,7 @@
  "urls": [
   {
    "url": "/",
-   "at": "2026-11-17T12:47:21+00:00",
+   "at": "2026-11-17T18:49:02+00:00",
    "verdict": "PASS",
    "coverageState": "Submitted and indexed",
    "robotsTxtState": "ALLOWED",
@@ -78,7 +78,7 @@
   },
   {
    "url": "/x/telerally",
-   "at": "2026-11-17T12:46:56+00:00",
+   "at": "2026-11-17T18:48:37+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -90,7 +90,7 @@
   },
   {
    "url": "/x/mutual-option",
-   "at": "2026-11-17T12:47:02+00:00",
+   "at": "2026-11-17T18:48:43+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -102,7 +102,7 @@
   },
   {
    "url": "/x/dane-cook-brother",
-   "at": "2026-11-17T12:47:08+00:00",
+   "at": "2026-11-17T18:48:49+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -114,7 +114,7 @@
   },
   {
    "url": "/x/cyber-monday",
-   "at": "2026-11-17T12:47:15+00:00",
+   "at": "2026-11-17T18:48:55+00:00",
    "verdict": "PASS",
    "coverageState": "Submitted and indexed",
    "robotsTxtState": "ALLOWED",
@@ -126,7 +126,7 @@
   },
   {
    "url": "/x/40-man-roster",
-   "at": "2026-11-17T12:47:28+00:00",
+   "at": "2026-11-17T18:49:08+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -138,7 +138,7 @@
   },
   {
    "url": "/x/alaska-ranked-choice-voting",
-   "at": "2026-11-17T12:47:34+00:00",
+   "at": "2026-11-17T18:49:14+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -150,7 +150,7 @@
   },
   {
    "url": "/x/alicias-law-the-good-wife",
-   "at": "2026-11-17T12:47:40+00:00",
+   "at": "2026-11-17T18:49:21+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -162,7 +162,7 @@
   },
   {
    "url": "/x/all-mlb-team",
-   "at": "2026-11-17T12:47:46+00:00",
+   "at": "2026-11-17T18:49:27+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -174,7 +174,7 @@
   },
   {
    "url": "/x/anthony-clark-death",
-   "at": "2026-11-17T12:47:53+00:00",
+   "at": "2026-11-17T18:49:34+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -198,7 +198,7 @@
   },
   {
    "url": "/x/bright-star-eastern-sky-morning",
-   "at": "2026-11-17T12:47:59+00:00",
+   "at": "2026-11-17T18:49:40+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -222,7 +222,7 @@
   },
   {
    "url": "/x/camp-flog-gnaw-livestream",
-   "at": "2026-11-17T12:48:06+00:00",
+   "at": "2026-11-17T18:49:46+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -234,7 +234,7 @@
   },
   {
    "url": "/x/carter-faith",
-   "at": "2026-11-17T12:48:12+00:00",
+   "at": "2026-11-17T18:49:52+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -246,7 +246,7 @@
   },
   {
    "url": "/x/cliff-booth-release-date",
-   "at": "2026-11-17T12:48:19+00:00",
+   "at": "2026-11-17T18:49:59+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -258,7 +258,7 @@
   },
   {
    "url": "/x/cma-awards-2026-date",
-   "at": "2026-11-17T12:48:25+00:00",
+   "at": "2026-11-17T18:50:05+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1961,7 +1961,7 @@
    "userCanonical": "https://trendrundown.com/x/wta-tennis"
   }
  ],
- "sm_at": "2026-11-17T12:46:49+00:00",
+ "sm_at": "2026-11-17T18:48:30+00:00",
  "first_indexed": {
   "/x/cyber-monday": "2026-11-13T16:25:58+00:00",
   "/": "2026-11-13T16:25:58+00:00",
