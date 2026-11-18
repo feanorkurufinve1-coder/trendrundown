@@ -1,0 +1,58 @@
+{
+ "news": true,
+ "subject": "Florida east coast flooding",
+ "kind": "event",
+ "query": "florida flooding",
+ "title": "Florida flooding: Why the east coast faces up to a foot more rain",
+ "answer": "Flood watches cover Florida's Atlantic coast from Duval County to Miami-Dade through Friday, Nov. 20, 2026, as a slow-moving low drags repeated downpours across ground still soaked from record rain earlier this month. Forecasters expect 4 to 8 inches near the coast, with isolated totals above a foot from Martin County to Jacksonville.",
+ "in_the_news": "The St. Johns River near Cocoa was already in major flood on Tuesday night, and parts of Brevard County are still cleaning up from record flooding on Nov. 1-2. More rain is falling on communities that have had little time to recover, days before Thanksgiving travel.",
+ "body": "The NOAA Weather Prediction Center put parts of the east coast under a Level 3 of 4 risk of flash flooding for Wednesday, Thursday and Friday, with the bull's-eye shifting north each day: from around Stuart to New Smyrna Beach first, then Vero Beach to St. Augustine, then northeast Florida. The National Weather Service in Melbourne expects 4 to 6 inches across much of the area and 8 to 12 inches near the coast, with a small chance of more than a foot in parts of Volusia or Brevard counties. Weather.com said the heaviest totals will likely fall between Jacksonville and Port St. Lucie.\n\nNovember is supposed to be dry here: the peninsula's dry season normally runs from October through May. This time a low-pressure system is crawling from the eastern Gulf across the state, while onshore winds keep pushing new storms back over the same coastal towns. The season may stay unsettled: forecasters expect a strong El Niño this winter, which strengthens the subtropical jet stream over Florida and tends to bring wetter, stormier months.\n\nHow the month has unfolded: Nov. 1-2, a deluge dropped about 24 inches on Malabar and more than 20 inches on Palm Bay, and wildlife officers carried out more than 60 rescues. Nov. 2, Gov. Ron DeSantis declared a state of emergency for Brevard, Indian River, St. Lucie, Martin, Highlands, DeSoto and Hardee counties. Nov. 17, the St. Johns River near Cocoa reached 17.13 feet, above its 17-foot major flood stage and 0.3 feet short of its highest level on the current gauge, set in October 2017. Nov. 18-20, the new round of heavy rain hits the coast.\n\nWhat comes next: a low expected to form near the northern Bahamas should move north offshore on Saturday, Nov. 21, possibly bringing more wind and rain, though its track is uncertain. Drier air is forecast to arrive Sunday. The St. Johns will be slow to fall even after the rain ends, and river flood warnings are also in effect at Geneva and Astor. Atlantic beaches face a high risk of rip currents through the period.",
+ "faq": [
+  {
+   "q": "Which Florida counties are under a flood watch?",
+   "a": "Watches stretch along the Atlantic coast from Duval County south to Miami-Dade, including Duval, St. Johns, Flagler, Clay and Putnam in the Jacksonville area and the Melbourne forecast area, mostly through Friday evening. Southeast Florida's watch runs through Thursday evening."
+  },
+  {
+   "q": "Where can I get sandbags?",
+   "a": "Counties and cities are handing them out; Melbourne listed several free sites in Brevard County, with a limit of 10 bags per vehicle. The city also notes that filling sandbags with beach sand is illegal; bags of dirt, mulch or play sand work instead."
+  },
+  {
+   "q": "Will the rain affect Thanksgiving travel?",
+   "a": "The heaviest rain is forecast to end over the weekend, with drier air arriving Sunday, Nov. 22. Flooded roads and slow-falling rivers could linger into the following week, so check local road closures before driving."
+  },
+  {
+   "q": "What is a Level 3 of 4 flood risk?",
+   "a": "It is the Weather Prediction Center's \"moderate\" risk of excessive rainfall, meaning numerous flash floods are possible. Never drive through water covering a road."
+  }
+ ],
+ "links": [
+  [
+   "The Weather Channel",
+   "Why parts of Florida are flooding during the dry season",
+   "https://weather.com/2026/11/18/news/weather/florida-flood-forecast-dry-season"
+  ],
+  [
+   "WKMG News 6",
+   "Central Florida facing serious flooding threat as several days of heavy rain continue",
+   "https://www.clickorlando.com/weather/2026/11/18/central-florida-facing-a-serious-flooding-threat-as-several-days-of-heavy-rain-continue/"
+  ],
+  [
+   "The Watchers",
+   "Florida's east coast faces a moderate flash flood risk Wednesday through Friday",
+   "https://watchers.news/2026/11/18/florida-east-coast-moderate-flash-flood-risk-st-johns-cocoa-major-flood-november-2026/"
+  ],
+  [
+   "The Watchers",
+   "Florida declares emergency after catastrophic flooding in southern Brevard County",
+   "https://watchers.news/2026/11/03/florida-declares-emergency-after-catastrophic-flooding-in-southern-brevard-county/"
+  ],
+  [
+   "City of Melbourne",
+   "November Flood Event Updates",
+   "https://www.melbourneflorida.org/Services/November-Flood-Event"
+  ]
+ ],
+ "image_wiki": "November 2026 Florida floods",
+ "made": "2026-11-18T16:47:00+00:00",
+ "first": "2026-11-18T16:47:00+00:00"
+}

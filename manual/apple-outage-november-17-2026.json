@@ -1,0 +1,58 @@
+{
+ "news": true,
+ "subject": "Apple services outage",
+ "kind": "event",
+ "query": "apple outage",
+ "title": "Apple outage: What went down Nov. 17 and what Apple says caused it",
+ "answer": "Apple Account sign-in, iCloud, the App Store, Apple Music, Apple Pay and new iPhone activation failed for many users on Tuesday, Nov. 17, 2026, starting around 11:45 a.m. ET. Apple said an internal update caused the disruption and that it was not a cyberattack. Most services recovered within about three hours.",
+ "in_the_news": "It was the latest in a string of major U.S. tech failures in under a week, after outages at Microsoft, the FAA and JPMorgan Chase, which left many people wondering whether the problems were linked. Officials and the companies say they were not.",
+ "body": "Users reported being signed out of iCloud on iPhones and Macs without warning, then getting verification failures or unknown errors when they tried to sign back in, 9to5Mac reported. The App Store would not load or download apps, and developers had trouble reaching App Store Connect. The problems reached Apple's own stores too: employees in New York and Chicago told NBC News that purchases and appointments were disrupted, according to iMore. Apple's System Status page at first showed services as available, then listed problems with iCloud Account and Sign In, iCloud Mail, iCloud web apps, AppleCare on Device, Apple Business, Apple School Manager and Schoolwork.\n\nApple told Bloomberg the outages came from an unspecified \"internal update\" and that it was working to bring remaining systems back \"as soon as possible,\" MacRumors reported. The company has not said which system failed or how one update reached so many services. By 6 p.m. ET, Apple's status page showed no outages, according to NBC News.\n\nA week of outages, in order: On Thursday, Nov. 12, Microsoft Outlook and Teams went down into a second day; Microsoft blamed a problem during a network upgrade. On Friday, Nov. 13, the FAA halted departures nationwide for nearly five hours after aging telecom equipment overloaded, and Workday's HR and payroll tools also had trouble. On Monday, Nov. 16, Chase customers could not log in, move money or use some ATMs; the bank blamed \"a software bug in an on-premise hardware system,\" and United Airlines held departures during its own tech outage. On Tuesday, Nov. 17, the NSA's classified internal network went down and Charles Schwab's website briefly had problems, Yahoo Finance reported, before Apple's services failed that afternoon. Each company has given its own cause, and none has reported evidence of a cyberattack.\n\nWhat it means for you: there is no sign that personal data was exposed, iMore noted, since Apple described a service failure rather than a breach. If your iPhone or Mac is still asking for your Apple Account password, check Apple's System Status page first; if everything there shows green, sign in again in Settings. If an Apple Pay purchase or App Store download failed during the outage, check your card or Apple Account purchase history before retrying so you are not charged twice.",
+ "faq": [
+  {
+   "q": "Was the Apple outage a hack?",
+   "a": "Apple says no. The company said an internal update caused the problems and that it was not a cyberattack."
+  },
+  {
+   "q": "Is Apple still down?",
+   "a": "Apple's status page showed no outages by early evening ET on Nov. 17. Some users reported slow service afterward, so check Apple's System Status page if something still fails."
+  },
+  {
+   "q": "Are the Apple, Microsoft, FAA and Chase outages connected?",
+   "a": "There is no evidence they are. Officials and company leaders have said the Chase outage was unrelated to the Microsoft and air traffic problems, and Apple, Microsoft and Chase each pointed to an internal technical cause."
+  },
+  {
+   "q": "Why couldn't I activate my new iPhone?",
+   "a": "Activation relies on Apple's account servers, which were part of the outage. Once those came back, activation worked again."
+  }
+ ],
+ "links": [
+  [
+   "MacRumors",
+   "Apple Blames Internal Update for Outage, Says It Wasn't a Cyberattack",
+   "https://www.macrumors.com/2026/11/17/apple-outage-internal-update/"
+  ],
+  [
+   "9to5Mac",
+   "iCloud, App Store, and other Apple services hit by ongoing outage",
+   "https://9to5mac.com/2026/11/17/icloud-app-store-and-other-apple-services-hit-by-ongoing-outage/"
+  ],
+  [
+   "iMore",
+   "Apple outage: What caused it and should you be concerned?",
+   "https://www.imore.com/apple/apples-outage-left-users-unable-to-activate-iphones-or-sign-in-heres-what-happened"
+  ],
+  [
+   "Yahoo Finance",
+   "Apple outage today: iCloud and App Store down after a week of big outages",
+   "https://finance.yahoo.com/markets/article/why-apple-is-down-in-a-week-of-outages-from-microsoft-to-chase-193424335.html"
+  ],
+  [
+   "WBTV",
+   "Technical issue triggers online banking delays across major US banks",
+   "https://www.wbtv.com/2026/11/16/chase-wells-fargo-bank-america-us-bank-hit-by-nationwide-outage-users-say/"
+  ]
+ ],
+ "image_prompt": "A smartphone lying face up on a wooden desk beside a laptop, its blank screen showing only a gray cloud symbol with a small warning triangle, soft late-afternoon office light, shallow depth of field, photorealistic",
+ "made": "2026-11-18T16:47:00+00:00",
+ "first": "2026-11-18T16:47:00+00:00"
+}
