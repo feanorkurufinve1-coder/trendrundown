@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-18T23:02:00+00:00",
+ "checked": "2026-11-18T23:31:03+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -42,7 +42,7 @@
   },
   {
    "url": "/news",
-   "at": "2026-11-18T17:16:50+00:00",
+   "at": "2026-11-18T23:31:03+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
