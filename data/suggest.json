@@ -10835,7 +10835,7 @@
   ]
  },
  "is-melania-the-series-the-same-as-the-movie": {
-  "time": "2026-11-17T13:57:58+00:00",
+  "time": "2026-11-18T14:01:57+00:00",
   "query": "is melania the series the same as the movie",
   "in_suggest": false,
   "suggest": {
@@ -10858,11 +10858,15 @@
    [
     "2026-11-17",
     false
+   ],
+   [
+    "2026-11-18",
+    false
    ]
   ]
  },
  "what-is-the-i-got-so-mad-meme": {
-  "time": "2026-11-17T13:57:59+00:00",
+  "time": "2026-11-18T14:01:58+00:00",
   "query": "what is the i got so mad meme",
   "in_suggest": true,
   "suggest": {
@@ -10879,11 +10883,15 @@
    [
     "2026-11-17",
     true
+   ],
+   [
+    "2026-11-18",
+    true
    ]
   ]
  },
  "why-are-people-saying-julia-stiles-went-to-juilliard": {
-  "time": "2026-11-17T13:58:01+00:00",
+  "time": "2026-11-18T14:02:00+00:00",
   "query": "why are people saying julia stiles went to juilliard",
   "in_suggest": true,
   "suggest": {
@@ -10924,31 +10932,36 @@
    [
     "2026-11-17",
     true
+   ],
+   [
+    "2026-11-18",
+    true
    ]
   ]
  },
  "why-are-people-trying-to-move-the-bean": {
-  "time": "2026-11-17T13:58:03+00:00",
+  "time": "2026-11-18T14:02:02+00:00",
   "query": "why are people trying to move the bean",
-  "in_suggest": true,
+  "in_suggest": false,
   "suggest": {
    "bean push trend": [],
    "what is bean push trend": [],
-   "why are people trying to move the bean": [
-    "why are people trying to move the bean",
-    "why do beans float to the top"
-   ],
+   "why are people trying to move the bean": [],
    "people trying move bean": []
   },
   "history": [
    [
     "2026-11-17",
     true
+   ],
+   [
+    "2026-11-18",
+    false
    ]
   ]
  },
  "why-is-my-washing-machine-dripping-water-inside": {
-  "time": "2026-11-17T13:58:04+00:00",
+  "time": "2026-11-18T14:02:03+00:00",
   "query": "why is my washing machine dripping water inside",
   "in_suggest": true,
   "suggest": {
@@ -11004,6 +11017,10 @@
   "history": [
    [
     "2026-11-17",
+    true
+   ],
+   [
+    "2026-11-18",
     true
    ]
   ]
