@@ -5197,21 +5197,21 @@
   ]
  },
  "cma-awards-2026-date": {
-  "time": "2026-11-17T14:48:56+00:00",
+  "time": "2026-11-18T15:03:38+00:00",
   "query": "when are the cma awards 2026",
   "in_suggest": true,
   "suggest": {
    "cma awards 2026": [
     "cma awards 2026",
     "cma awards 2026 where to watch",
-    "cma awards 2026 performances",
     "cma awards 2026 nominees",
     "cma awards 2026 nominations",
-    "cma awards 2026 host",
-    "cma awards 2026 time",
     "cma awards 2026 tickets",
-    "cma awards 2026 date",
-    "cma awards 2026 voting"
+    "cma awards 2026 time",
+    "cma awards 2026 host",
+    "cma awards 2026 taylor swift",
+    "cma awards 2026 winners",
+    "cma awards 2026 winners list"
    ],
    "what is cma awards 2026": [
     "what is cma awards 2026",
@@ -5227,11 +5227,11 @@
    "when are the cma awards 2026": [
     "when are the cma awards 2026",
     "when are the cma awards 2026 on tv",
+    "when are the cma awards 2026 time",
     "when are the cma awards 2026 schedule",
     "when are the cma awards 2026 lineup",
     "when are the cma awards 2026 nominations",
     "when are the cma awards 2026 tickets price",
-    "when are the cma awards 2026 time",
     "when are the cma awards 2026 tickets",
     "when are the country music awards 2026",
     "when are the country music awards 2026 schedule"
@@ -5269,11 +5269,15 @@
    [
     "2026-11-17",
     true
+   ],
+   [
+    "2026-11-18",
+    true
    ]
   ]
  },
  "has-a-defense-secretary-been-impeached": {
-  "time": "2026-11-17T14:48:57+00:00",
+  "time": "2026-11-18T15:03:39+00:00",
   "query": "has a defense secretary ever been impeached",
   "in_suggest": true,
   "suggest": {
@@ -5327,6 +5331,10 @@
    ],
    [
     "2026-11-17",
+    true
+   ],
+   [
+    "2026-11-18",
     true
    ]
   ]
