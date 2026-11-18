@@ -1,67 +1,7 @@
 {
- "made": "2026-11-17T18:17:32+00:00",
+ "made": "2026-11-18T06:32:26+00:00",
  "about": "Премьеры сериалов и новых сезонов в США на 14 дней вперёд (TVmaze). new_series = совсем новый сериал. Сырьё для прогнозов «is X a true story», «X cast», «X season N release time».",
  "premieres": [
-  {
-   "date": "2026-11-17",
-   "show": "He Said, She Said: Till Death Do Us Part",
-   "season": 1,
-   "new_series": true,
-   "type": "Documentary",
-   "genres": [
-    "Crime"
-   ],
-   "network": "Paramount+",
-   "premiered": "2026-11-17",
-   "summary": "A toxic custody battle spirals into tragedy and a viral war over truth, blame and perception.",
-   "url": "https://www.tvmaze.com/shows/95731/he-said-she-said-till-death-do-us-part",
-   "official": "https://www.paramountplus.com/shows/he-said-she-said-till-death-do-us-part/"
-  },
-  {
-   "date": "2026-11-17",
-   "show": "Beat Bobby Flay: Holiday Throwdown",
-   "season": 5,
-   "new_series": false,
-   "type": "Reality",
-   "genres": [
-    "Food"
-   ],
-   "network": "Food Network",
-   "premiered": "2022-11-08",
-   "summary": "The Food Network family is challenging Bobby Flay to face his worst holiday nightmares. In each supersized hour, familiar faces battle it out to choose the final challenge and pick the teams in this epic Beat Bobby Flay Holiday Throwdown!",
-   "url": "https://www.tvmaze.com/shows/73054/beat-bobby-flay-holiday-throwdown",
-   "official": "https://www.foodnetwork.com/shows/beat-bobby-flay-holiday-throwdown"
-  },
-  {
-   "date": "2026-11-17",
-   "show": "The Circle",
-   "season": 8,
-   "new_series": false,
-   "type": "Reality",
-   "genres": [],
-   "network": "Hulu",
-   "premiered": "2020-01-01",
-   "summary": "Status and strategy collide in this social experiment and competition show where online players flirt, befriend and catfish their way toward $100,000.",
-   "url": "https://www.tvmaze.com/shows/45419/the-circle",
-   "official": "https://www.hulu.com/series/the-circle-9b7eb48e-e6a1-429a-a5af-6f7202b540d4"
-  },
-  {
-   "date": "2026-11-17",
-   "show": "7 Little Johnstons",
-   "season": 18,
-   "new_series": false,
-   "type": "Reality",
-   "genres": [
-    "Drama",
-    "Comedy",
-    "Family"
-   ],
-   "network": "TLC",
-   "premiered": "2015-03-31",
-   "summary": "Amber and Trent Johnston are living the American dream. They have been happily married for 14 years and have five children ranging from 6 to 13 years old. On paper, they might seem like your average family...yet in person, they attract a lot of attention.... because all seven members of the Johnston family – Amber, Trent, their two biological children, Jonah and Elizabeth, as well as their three a",
-   "url": "https://www.tvmaze.com/shows/1345/7-little-johnstons",
-   "official": "http://www.tlc.com/tv-shows/7-little-johnstons/"
-  },
   {
    "date": "2026-11-18",
    "show": "Sweet Homes",
@@ -608,6 +548,38 @@
    "summary": "Some of the biggest names in music will come together to celebrate the holidays on CMA Country Christmas a two-hour special that airs annually on ABC TV. This special is a celebration of the season featuring some of the top stars in music performing holiday songs and getting into the Christmas spirit.",
    "url": "https://www.tvmaze.com/shows/6822/cma-country-christmas",
    "official": "https://cmachristmas.com"
+  },
+  {
+   "date": "2026-12-02",
+   "show": "Christmas in Rockefeller Center",
+   "season": 2026,
+   "new_series": false,
+   "type": "Variety",
+   "genres": [
+    "Music"
+   ],
+   "network": "NBC",
+   "premiered": "1997-12-02",
+   "summary": "NBC celebrates the lighting of the world's most famous Christmas tree with Christmas in Rockefeller Center. The arrival of the holidays wouldn't be complete without a dazzling display of musical talent and the lighting of the world's most famous Christmas tree, live from Rockefeller Center in New York City on the Wednesday evening following Thanksgiving..",
+   "url": "https://www.tvmaze.com/shows/9363/christmas-in-rockefeller-center",
+   "official": "http://www.nbc.com/christmas-in-rockefeller-center"
+  },
+  {
+   "date": "2026-12-02",
+   "show": "Bad Monkey",
+   "season": 2,
+   "new_series": false,
+   "type": "Scripted",
+   "genres": [
+    "Drama",
+    "Comedy",
+    "Crime"
+   ],
+   "network": "Apple TV",
+   "premiered": "2024-08-14",
+   "summary": "Bad Monkey tells the story of Andrew Yancy, a one-time detective demoted to restaurant inspector in Southern Florida. A severed arm found by a tourist out fishing pulls Yancy into the world of greed and corruption that decimates the land and environment in both Florida and the Bahamas. And yes, there's a monkey.",
+   "url": "https://www.tvmaze.com/shows/56778/bad-monkey",
+   "official": "https://tv.apple.com/show/bad-monkey/umc.cmc.2qoep59s6qukjonprttysfs8x"
   }
  ]
 }
