@@ -654,7 +654,7 @@
   },
   {
    "url": "/x/iran-bahrain-radar-strike",
-   "at": "2026-11-18T02:17:23+00:00",
+   "at": "2026-11-18T08:32:47+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -666,7 +666,7 @@
   },
   {
    "url": "/x/is-amanda-nunes-retired",
-   "at": "2026-11-18T02:17:29+00:00",
+   "at": "2026-11-18T08:32:54+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -678,7 +678,7 @@
   },
   {
    "url": "/x/is-being-heumann-a-true-story",
-   "at": "2026-11-18T02:17:35+00:00",
+   "at": "2026-11-18T08:33:00+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -690,7 +690,7 @@
   },
   {
    "url": "/x/is-gta-6-coming-to-pc",
-   "at": "2026-11-18T02:17:42+00:00",
+   "at": "2026-11-18T08:33:06+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -702,7 +702,7 @@
   },
   {
    "url": "/x/is-leonida-a-real-place",
-   "at": "2026-11-18T02:17:48+00:00",
+   "at": "2026-11-18T08:33:13+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -714,19 +714,12 @@
   },
   {
    "url": "/x/is-melania-the-series-the-same-as-the-movie",
-   "at": "2026-11-18T02:16:52+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
-   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-   "indexingState": "INDEXING_STATE_UNSPECIFIED",
-   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
-   "lastCrawlTime": null,
-   "googleCanonical": null,
-   "userCanonical": null
+   "at": "2026-11-18T08:32:16+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/x/is-philomena-cunk-real",
-   "at": "2026-11-18T02:17:54+00:00",
+   "at": "2026-11-18T08:33:19+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -738,7 +731,7 @@
   },
   {
    "url": "/x/is-the-law-of-beasts-a-true-story",
-   "at": "2026-11-18T02:18:00+00:00",
+   "at": "2026-11-18T08:33:25+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -750,7 +743,7 @@
   },
   {
    "url": "/x/is-thomas-massie-a-republican",
-   "at": "2026-11-18T02:18:07+00:00",
+   "at": "2026-11-18T08:33:31+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -762,7 +755,7 @@
   },
   {
    "url": "/x/is-yellowjackets-season-4-the-last-season",
-   "at": "2026-11-18T02:18:13+00:00",
+   "at": "2026-11-18T08:33:38+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1638,7 +1631,7 @@
   },
   {
    "url": "/x/what-is-the-i-got-so-mad-meme",
-   "at": "2026-11-18T02:16:58+00:00",
+   "at": "2026-11-18T08:32:23+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1770,7 +1763,7 @@
   },
   {
    "url": "/x/why-are-people-saying-julia-stiles-went-to-juilliard",
-   "at": "2026-11-18T02:17:04+00:00",
+   "at": "2026-11-18T08:32:29+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1782,7 +1775,7 @@
   },
   {
    "url": "/x/why-are-people-trying-to-move-the-bean",
-   "at": "2026-11-18T02:17:11+00:00",
+   "at": "2026-11-18T08:32:35+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1902,7 +1895,7 @@
   },
   {
    "url": "/x/why-is-my-washing-machine-dripping-water-inside",
-   "at": "2026-11-18T02:17:17+00:00",
+   "at": "2026-11-18T08:32:41+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1969,7 +1962,8 @@
  },
  "summary": {
   "Submitted and indexed": 3,
-  "URL is unknown to Google": 95,
-  "Crawled - currently not indexed": 63
+  "URL is unknown to Google": 94,
+  "Crawled - currently not indexed": 63,
+  "error": 1
  }
 }
