@@ -1943,24 +1943,23 @@
   ]
  },
  "alicias-law-the-good-wife": {
-  "time": "2026-11-17T15:03:44+00:00",
+  "time": "2026-11-18T15:18:30+00:00",
   "query": "is alicia's law based on the good wife",
-  "in_suggest": true,
+  "in_suggest": false,
   "suggest": {
    "alicia's law": [
     "alicia's law",
-    "alicia's law netflix cast",
     "alicia's law netflix",
+    "alicia's law netflix cast",
     "alicia's law netflix review",
     "alicia's law cast",
-    "alicia's law tv series",
     "alicia's law reviews",
     "alicia's law netflix episodes",
-    "alicia's law series",
-    "alicia's law show"
+    "alicia's law tv series",
+    "alicia's law tv show",
+    "alicia's law series"
    ],
    "what is alicia's law": [
-    "what is alicia's law",
     "what is alice law",
     "who is alicia andrews lawyer",
     "what ethnicity is alice law in katabasis",
@@ -1970,14 +1969,7 @@
     "what kind of lawyer is alicia florrick",
     "does alicia sleep with finn"
    ],
-   "is alicia's law based on the good wife": [
-    "is alicia's law based on the good wife",
-    "do alicia and will get together in the good wife",
-    "is alicia florrick a good person",
-    "is alicia florrick in the good fight",
-    "is alicia florrick mentioned in the good fight",
-    "does alicia die in the good wife"
-   ],
+   "is alicia's law based on the good wife": [],
    "alicia's law based good wife": []
   },
   "history": [
@@ -2024,11 +2016,15 @@
    [
     "2026-11-17",
     true
+   ],
+   [
+    "2026-11-18",
+    false
    ]
   ]
  },
  "edgar-martinez-award": {
-  "time": "2026-11-17T15:03:46+00:00",
+  "time": "2026-11-18T15:18:31+00:00",
   "query": "what is the edgar martinez award",
   "in_suggest": true,
   "suggest": {
@@ -2110,11 +2106,15 @@
    [
     "2026-11-17",
     true
+   ],
+   [
+    "2026-11-18",
+    true
    ]
   ]
  },
  "how-is-speaker-of-the-house-elected": {
-  "time": "2026-11-17T15:03:47+00:00",
+  "time": "2026-11-18T15:18:33+00:00",
   "query": "how is the speaker of the house elected",
   "in_suggest": true,
   "suggest": {
@@ -2201,11 +2201,15 @@
    [
     "2026-11-17",
     true
+   ],
+   [
+    "2026-11-18",
+    true
    ]
   ]
  },
  "lame-duck-session": {
-  "time": "2026-11-17T15:03:51+00:00",
+  "time": "2026-11-18T15:18:36+00:00",
   "query": "what is a lame duck session",
   "in_suggest": true,
   "suggest": {
@@ -2290,11 +2294,15 @@
    [
     "2026-11-17",
     true
+   ],
+   [
+    "2026-11-18",
+    true
    ]
   ]
  },
  "mlb-posting-system": {
-  "time": "2026-11-17T15:03:56+00:00",
+  "time": "2026-11-18T15:18:41+00:00",
   "query": "what is the posting system in mlb",
   "in_suggest": true,
   "suggest": {
@@ -2374,11 +2382,15 @@
    [
     "2026-11-17",
     true
+   ],
+   [
+    "2026-11-18",
+    true
    ]
   ]
  },
  "record-vs-song-of-the-year": {
-  "time": "2026-11-17T15:04:00+00:00",
+  "time": "2026-11-18T15:18:46+00:00",
   "query": "what is the difference between record of the year and song of the year",
   "in_suggest": true,
   "suggest": {
@@ -2400,7 +2412,7 @@
    ],
    "what is the difference between record of the year and song of the year": [
     "what is the difference between record of the year and song of the year",
-    "what is the difference between record of the year and song of the year grammys",
+    "what is the difference between record of the year and song of the year at the grammys",
     "what is the difference between record of the year and song of the year and album of the year",
     "what is the difference between best record of the year and best song of the year"
    ],
@@ -2455,11 +2467,15 @@
    [
     "2026-11-17",
     true
+   ],
+   [
+    "2026-11-18",
+    true
    ]
   ]
  },
  "richard-avedon": {
-  "time": "2026-11-17T15:04:01+00:00",
+  "time": "2026-11-18T15:18:47+00:00",
   "query": "who was richard avedon",
   "in_suggest": true,
   "suggest": {
@@ -2469,11 +2485,11 @@
     "richard avedon documentary",
     "richard avedon netflix",
     "richard avedon net worth",
-    "richard avedon son",
+    "richard avedon doc",
     "richard avedon sister",
     "richard avedon in the american west",
-    "richard avedon movie",
-    "richard avedon young"
+    "richard avedon documentary netflix",
+    "richard avedon children"
    ],
    "who is richard avedon": [
     "who is richard avedon",
@@ -2543,11 +2559,15 @@
    [
     "2026-11-17",
     true
+   ],
+   [
+    "2026-11-18",
+    true
    ]
   ]
  },
  "silver-slugger-award": {
-  "time": "2026-11-17T15:04:03+00:00",
+  "time": "2026-11-18T15:18:48+00:00",
   "query": "what is the silver slugger award",
   "in_suggest": true,
   "suggest": {
@@ -2555,12 +2575,12 @@
     "silver slugger award",
     "silver slugger award 2026",
     "silver slugger award winners 2026",
+    "silver slugger award winners",
+    "silver slugger award 2026 winners list",
     "silver slugger award 2025",
     "silver slugger award criteria",
     "silver slugger award odds",
-    "silver slugger award 2026 predictions",
     "silver slugger award mlb",
-    "silver slugger award 2026 winners list",
     "silver slugger award trophy"
    ],
    "what is silver slugger award": [
@@ -2632,11 +2652,15 @@
    [
     "2026-11-17",
     true
+   ],
+   [
+    "2026-11-18",
+    true
    ]
   ]
  },
  "teruaki-sato": {
-  "time": "2026-11-17T15:04:04+00:00",
+  "time": "2026-11-18T15:18:49+00:00",
   "query": "who is teruaki sato",
   "in_suggest": true,
   "suggest": {
@@ -2644,13 +2668,13 @@
     "teruaki sato",
     "teruaki sato yankees",
     "teruaki sato stats",
-    "teruaki sato phillies",
-    "teruaki sato dodgers",
     "teruaki sato mlb",
-    "teruaki sato cubs",
-    "teruaki sato mets",
     "teruaki sato news",
-    "teruaki sato mariners"
+    "teruaki sato scouting report",
+    "teruaki sato rumors",
+    "teruaki sato mets",
+    "teruaki sato posting",
+    "teruaki sato padres"
    ],
    "who is teruaki sato": [
     "who is teruaki sato",
@@ -2704,11 +2728,15 @@
    [
     "2026-11-17",
     true
+   ],
+   [
+    "2026-11-18",
+    true
    ]
   ]
  },
  "when-does-new-congress-start": {
-  "time": "2026-11-17T15:04:10+00:00",
+  "time": "2026-11-18T15:18:56+00:00",
   "query": "when does the new congress take office",
   "in_suggest": true,
   "suggest": {
@@ -2783,6 +2811,10 @@
    ],
    [
     "2026-11-17",
+    true
+   ],
+   [
+    "2026-11-18",
     true
    ]
   ]
@@ -5340,7 +5372,7 @@
   ]
  },
  "is-thomas-massie-a-republican": {
-  "time": "2026-11-17T15:03:49+00:00",
+  "time": "2026-11-18T15:18:35+00:00",
   "query": "is thomas massie a republican or democrat",
   "in_suggest": true,
   "suggest": {
@@ -5348,13 +5380,13 @@
     "thomas massie",
     "thomas massie net worth",
     "thomas massie political views",
-    "thomas massie twitter",
     "thomas massie wife",
     "thomas massie trump",
     "thomas massie x",
     "thomas massie election results",
     "thomas massie primary",
-    "thomas massie approval rating"
+    "thomas massie approval rating",
+    "thomas massie election results 2026"
    ],
    "who is thomas massie": [
     "who is thomas massie",
@@ -5417,16 +5449,21 @@
    [
     "2026-11-17",
     true
+   ],
+   [
+    "2026-11-18",
+    true
    ]
   ]
  },
  "latin-grammys-vs-grammys": {
-  "time": "2026-11-17T15:03:52+00:00",
+  "time": "2026-11-18T15:18:38+00:00",
   "query": "what is the difference between the latin grammys and the grammys",
   "in_suggest": false,
   "suggest": {
    "latin grammy awards": [
     "latin grammy awards",
+    "latin grammy awards 2026",
     "latin grammy awards 2026 tickets",
     "latin grammy awards 2025",
     "latin grammy awards 2026 date",
@@ -5434,8 +5471,7 @@
     "latin grammy awards winners",
     "latin grammy awards 2026 performers",
     "latin grammy awards nominees",
-    "latin grammy awards voting",
-    "latin grammy awards nominations"
+    "latin grammy awards voting"
    ],
    "what is latin grammy awards": [
     "what is latin grammy awards",
@@ -5481,22 +5517,26 @@
    [
     "2026-11-17",
     false
+   ],
+   [
+    "2026-11-18",
+    false
    ]
   ]
  },
  "medicaid-work-requirements-start-date": {
-  "time": "2026-11-17T15:03:54+00:00",
+  "time": "2026-11-18T15:18:39+00:00",
   "query": "when do medicaid work requirements start",
   "in_suggest": true,
   "suggest": {
    "medicaid work requirements": [
     "medicaid work requirements",
-    "medicaid work requirements delay",
     "medicaid work requirements 2027",
+    "medicaid work requirements delay",
     "medicaid work requirements 2026",
-    "medicaid work requirements mn",
-    "medicaid work requirements reddit",
+    "medicaid work requirements by state",
     "medicaid work requirements pa",
+    "medicaid work requirements reddit",
     "medicaid work requirements illinois",
     "medicaid work requirements new york",
     "medicaid work requirements ohio"
@@ -5514,9 +5554,9 @@
     "who is exempt from medicaid work requirements for adults"
    ],
    "when do medicaid work requirements start": [
+    "when do medicaid work requirements start",
     "when do medicaid work requirements start in michigan",
     "when do medicaid work requirements start in illinois",
-    "when do medicaid work requirements start",
     "when do medicaid work requirements start in ohio",
     "when do medicaid work requirements start in california",
     "when do medicaid work requirements start in pennsylvania",
@@ -5570,11 +5610,15 @@
    [
     "2026-11-17",
     true
+   ],
+   [
+    "2026-11-18",
+    true
    ]
   ]
  },
  "national-book-awards-2026": {
-  "time": "2026-11-17T15:03:57+00:00",
+  "time": "2026-11-18T15:18:42+00:00",
   "query": "when are the national book awards 2026",
   "in_suggest": true,
   "suggest": {
@@ -5638,11 +5682,15 @@
    [
     "2026-11-17",
     true
+   ],
+   [
+    "2026-11-18",
+    true
    ]
   ]
  },
  "planet-alignment-november-2026": {
-  "time": "2026-11-17T15:03:58+00:00",
+  "time": "2026-11-18T15:18:44+00:00",
   "query": "is there a planet alignment in november 2026",
   "in_suggest": false,
   "suggest": {
@@ -5689,11 +5737,15 @@
    [
     "2026-11-17",
     false
+   ],
+   [
+    "2026-11-18",
+    false
    ]
   ]
  },
  "the-empress-netflix-true-story": {
-  "time": "2026-11-17T15:04:05+00:00",
+  "time": "2026-11-18T15:18:51+00:00",
   "query": "is the empress on netflix a true story",
   "in_suggest": true,
   "suggest": {
@@ -5705,9 +5757,9 @@
     "the empress of austria",
     "the empress season 3 cast",
     "the empress reversed",
-    "the empress season 4",
+    "the empress tarot meaning",
     "the empress season 2",
-    "the empress tarot meaning"
+    "the empress (tv series)"
    ],
    "what is the empress": [
     "what is the empress about",
@@ -5766,16 +5818,21 @@
    [
     "2026-11-17",
     true
+   ],
+   [
+    "2026-11-18",
+    true
    ]
   ]
  },
  "what-is-a-hip-pointer": {
-  "time": "2026-11-17T15:04:07+00:00",
+  "time": "2026-11-18T15:18:52+00:00",
   "query": "what is a hip pointer injury",
   "in_suggest": true,
   "suggest": {
    "hip pointer": [
     "hip pointer",
+    "hip pointer injury",
     "hip pointer pain",
     "hip pointer treatment",
     "hip pointer without impact",
@@ -5783,8 +5840,7 @@
     "hip pointer recovery time",
     "hip pointer stretches",
     "hip pointer exercises",
-    "hip pointer bruise",
-    "hip pointer pain location"
+    "hip pointer bruise"
    ],
    "what is hip pointer": [
     "what is hip pointer",
@@ -5855,25 +5911,29 @@
    [
     "2026-11-17",
     true
+   ],
+   [
+    "2026-11-18",
+    true
    ]
   ]
  },
  "what-is-win-the-mall": {
-  "time": "2026-11-17T15:04:08+00:00",
+  "time": "2026-11-18T15:18:54+00:00",
   "query": "what is win the mall on netflix",
   "in_suggest": true,
   "suggest": {
    "win the mall": [
     "win the mall",
     "win the mall netflix",
+    "win the mall cast",
+    "win the mall contestants",
+    "win the mall netflix winner",
     "win the mall netflix release date",
-    "win the mall release date",
-    "win the mall netflix cast",
     "win the mall show",
     "win the mall netflix trailer",
     "win the mall trailer",
-    "win the mall cast",
-    "win the mall season 1"
+    "win the mall netflix cast"
    ],
    "what is win the mall": [
     "what is win the mall"
@@ -5922,6 +5982,10 @@
    ],
    [
     "2026-11-17",
+    true
+   ],
+   [
+    "2026-11-18",
     true
    ]
   ]
