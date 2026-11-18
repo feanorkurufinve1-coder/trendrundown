@@ -1,462 +1,266 @@
 {
- "made": "2026-11-17T21:20:17+00:00",
- "day": "2026-11-16",
+ "made": "2026-11-18T04:02:51+00:00",
+ "day": "2026-11-17",
  "about": "Всплески просмотров английской Википедии за вчера: views — просмотров вчера, before — максимум за 3 прошлых дня (null = статьи не было в топ-1000). Идеи для страниц «who is / what is»; проверять факты по новостям.",
  "spikes": [
   {
-   "article": "Robert Pattinson",
-   "views": 1363657,
-   "before": 30107,
-   "ratio": 45.3,
-   "url": "https://en.wikipedia.org/wiki/Robert_Pattinson"
-  },
-  {
-   "article": "Suki Waterhouse",
-   "views": 378948,
-   "before": 11025,
-   "ratio": 34.4,
-   "url": "https://en.wikipedia.org/wiki/Suki_Waterhouse"
-  },
-  {
-   "article": "Robert Pattinson filmography",
-   "views": 191139,
+   "article": "Ray Tintori",
+   "views": 98033,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Robert_Pattinson_filmography"
+   "url": "https://en.wikipedia.org/wiki/Ray_Tintori"
   },
   {
-   "article": "Saturn Devouring His Son",
-   "views": 176155,
+   "article": "Jacoby Brissett",
+   "views": 95821,
+   "before": 9322,
+   "ratio": 10.3,
+   "url": "https://en.wikipedia.org/wiki/Jacoby_Brissett"
+  },
+  {
+   "article": "Heidi Gardner",
+   "views": 83061,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Saturn_Devouring_His_Son"
+   "url": "https://en.wikipedia.org/wiki/Heidi_Gardner"
   },
   {
-   "article": "Mordechai Vanunu",
-   "views": 132656,
+   "article": "John Christ",
+   "views": 69141,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Mordechai_Vanunu"
+   "url": "https://en.wikipedia.org/wiki/John_Christ"
   },
   {
-   "article": "Daniel Craig",
-   "views": 107838,
-   "before": 10031,
-   "ratio": 10.8,
-   "url": "https://en.wikipedia.org/wiki/Daniel_Craig"
-  },
-  {
-   "article": "John Malkovich",
-   "views": 93805,
-   "before": 27876,
-   "ratio": 3.4,
-   "url": "https://en.wikipedia.org/wiki/John_Malkovich"
-  },
-  {
-   "article": "69th Annual Grammy Awards",
-   "views": 92752,
+   "article": "Crimean Bridge",
+   "views": 63755,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/69th_Annual_Grammy_Awards"
+   "url": "https://en.wikipedia.org/wiki/Crimean_Bridge"
   },
   {
-   "article": "Palestine national football team",
-   "views": 83074,
+   "article": "Lee Reeves (boxer)",
+   "views": 56310,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Palestine_national_football_team"
+   "url": "https://en.wikipedia.org/wiki/Lee_Reeves_%28boxer%29"
   },
   {
-   "article": "Lizzy Pattinson",
-   "views": 76545,
+   "article": "Sing a Song of Sixpence",
+   "views": 53058,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Lizzy_Pattinson"
+   "url": "https://en.wikipedia.org/wiki/Sing_a_Song_of_Sixpence"
   },
   {
-   "article": "James Bond",
-   "views": 76019,
+   "article": "TamilRockers",
+   "views": 47201,
+   "before": 8807,
+   "ratio": 5.4,
+   "url": "https://en.wikipedia.org/wiki/TamilRockers"
+  },
+  {
+   "article": "Islands: Non-Places",
+   "views": 41701,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/James_Bond"
+   "url": "https://en.wikipedia.org/wiki/Islands%3A_Non-Places"
   },
   {
-   "article": "Joe Burrow",
-   "views": 75566,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Joe_Burrow"
-  },
-  {
-   "article": "Miguel Ángel Félix Gallardo",
-   "views": 70590,
-   "before": 10184,
-   "ratio": 6.9,
-   "url": "https://en.wikipedia.org/wiki/Miguel_%C3%81ngel_F%C3%A9lix_Gallardo"
-  },
-  {
-   "article": "Portrayal of James Bond in film",
-   "views": 69500,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Portrayal_of_James_Bond_in_film"
-  },
-  {
-   "article": "Ricky Wilson (singer)",
-   "views": 68908,
-   "before": 11356,
-   "ratio": 6.1,
-   "url": "https://en.wikipedia.org/wiki/Ricky_Wilson_%28singer%29"
-  },
-  {
-   "article": "Denis Villeneuve",
-   "views": 65188,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Denis_Villeneuve"
-  },
-  {
-   "article": "Aaron Rodgers",
-   "views": 65183,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Aaron_Rodgers"
-  },
-  {
-   "article": "Callum Turner",
-   "views": 60216,
-   "before": 11934,
-   "ratio": 5.0,
-   "url": "https://en.wikipedia.org/wiki/Callum_Turner"
-  },
-  {
-   "article": "Pierce Brosnan",
-   "views": 59946,
-   "before": 14254,
-   "ratio": 4.2,
-   "url": "https://en.wikipedia.org/wiki/Pierce_Brosnan"
-  },
-  {
-   "article": "Riley Green",
-   "views": 57850,
-   "before": 9728,
-   "ratio": 5.9,
-   "url": "https://en.wikipedia.org/wiki/Riley_Green"
-  },
-  {
-   "article": "Kristen Stewart",
-   "views": 53125,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Kristen_Stewart"
-  },
-  {
-   "article": "No Time to Die",
-   "views": 51436,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/No_Time_to_Die"
-  },
-  {
-   "article": "Production of the James Bond films",
-   "views": 50269,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Production_of_the_James_Bond_films"
-  },
-  {
-   "article": "Sean Connery",
-   "views": 50037,
-   "before": 9024,
-   "ratio": 5.5,
-   "url": "https://en.wikipedia.org/wiki/Sean_Connery"
-  },
-  {
-   "article": "The Batman (film)",
-   "views": 48581,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/The_Batman_%28film%29"
-  },
-  {
-   "article": "Jack Lowden",
-   "views": 46723,
-   "before": 10524,
-   "ratio": 4.4,
-   "url": "https://en.wikipedia.org/wiki/Jack_Lowden"
-  },
-  {
-   "article": "Claire Sweeney",
-   "views": 42842,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Claire_Sweeney"
-  },
-  {
-   "article": "Ade Adepitan",
-   "views": 41464,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Ade_Adepitan"
-  },
-  {
-   "article": "The Batman: Part II",
-   "views": 40865,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/The_Batman%3A_Part_II"
-  },
-  {
-   "article": "Cody Fajardo",
-   "views": 40177,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Cody_Fajardo"
-  },
-  {
-   "article": "Strategic Response Group",
-   "views": 39201,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Strategic_Response_Group"
-  },
-  {
-   "article": "Henry Cavill",
-   "views": 38155,
-   "before": 10340,
-   "ratio": 3.7,
-   "url": "https://en.wikipedia.org/wiki/Henry_Cavill"
-  },
-  {
-   "article": "Roger Moore",
-   "views": 37060,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Roger_Moore"
-  },
-  {
-   "article": "Mark Satin",
-   "views": 36880,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Mark_Satin"
-  },
-  {
-   "article": "Timothy Dalton",
-   "views": 36805,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Timothy_Dalton"
-  },
-  {
-   "article": "George Lazenby",
-   "views": 34584,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/George_Lazenby"
-  },
-  {
-   "article": "Imogen Waterhouse",
-   "views": 33263,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Imogen_Waterhouse"
-  },
-  {
-   "article": "Mariella Frostrup",
-   "views": 31135,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Mariella_Frostrup"
-  },
-  {
-   "article": "Raye",
-   "views": 29494,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Raye"
-  },
-  {
-   "article": "Cedric Diggory",
-   "views": 29336,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Cedric_Diggory"
-  },
-  {
-   "article": "Cris Collinsworth",
-   "views": 28579,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Cris_Collinsworth"
-  },
-  {
-   "article": "Edmonton Elks",
-   "views": 27806,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Edmonton_Elks"
-  },
-  {
-   "article": "Hans Isaac",
-   "views": 27692,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Hans_Isaac"
-  },
-  {
-   "article": "Casino Royale (2006 film)",
-   "views": 27454,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Casino_Royale_%282006_film%29"
-  },
-  {
-   "article": "FKA Twigs",
-   "views": 27377,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/FKA_Twigs"
-  },
-  {
-   "article": "Romelu Lukaku",
-   "views": 27260,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Romelu_Lukaku"
-  },
-  {
-   "article": "Murder of Zebb Quinn",
-   "views": 27090,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Murder_of_Zebb_Quinn"
-  },
-  {
-   "article": "Vlad the Impaler",
-   "views": 26784,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Vlad_the_Impaler"
-  },
-  {
-   "article": "Derry Scherhant",
-   "views": 26456,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Derry_Scherhant"
-  },
-  {
-   "article": "Josh O'Connor",
-   "views": 26249,
-   "before": 8055,
+   "article": "Alan Milburn",
+   "views": 40277,
+   "before": 12300,
    "ratio": 3.3,
-   "url": "https://en.wikipedia.org/wiki/Josh_O%27Connor"
+   "url": "https://en.wikipedia.org/wiki/Alan_Milburn"
   },
   {
-   "article": "Tenet",
-   "views": 25153,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Tenet"
+   "article": "Harley Morenstein",
+   "views": 38252,
+   "before": 9907,
+   "ratio": 3.9,
+   "url": "https://en.wikipedia.org/wiki/Harley_Morenstein"
   },
   {
-   "article": "Amarna Miller",
-   "views": 24139,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Amarna_Miller"
+   "article": "Beastie Boys",
+   "views": 36894,
+   "before": 8336,
+   "ratio": 4.4,
+   "url": "https://en.wikipedia.org/wiki/Beastie_Boys"
   },
   {
-   "article": "Joanna Page",
-   "views": 23844,
+   "article": "John F. Kennedy Jr.",
+   "views": 36406,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Joanna_Page"
+   "url": "https://en.wikipedia.org/wiki/John_F._Kennedy_Jr."
   },
   {
-   "article": "Tug McGraw",
-   "views": 23833,
+   "article": "Sin senos sí hay paraíso season 4",
+   "views": 35043,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Tug_McGraw"
+   "url": "https://en.wikipedia.org/wiki/Sin_senos_s%C3%AD_hay_para%C3%ADso_season_4"
   },
   {
-   "article": "Tom Sturridge",
-   "views": 23539,
+   "article": "Glenn Miller",
+   "views": 34734,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Tom_Sturridge"
+   "url": "https://en.wikipedia.org/wiki/Glenn_Miller"
   },
   {
-   "article": "AJ Odudu",
-   "views": 22801,
+   "article": "Tylor Chase",
+   "views": 33981,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/AJ_Odudu"
+   "url": "https://en.wikipedia.org/wiki/Tylor_Chase"
   },
   {
-   "article": "Black Paintings",
-   "views": 22735,
+   "article": "Bob Harris (radio presenter)",
+   "views": 32017,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Black_Paintings"
+   "url": "https://en.wikipedia.org/wiki/Bob_Harris_%28radio_presenter%29"
   },
   {
-   "article": "Ja'Marr Chase",
-   "views": 22107,
+   "article": "Manni L. Perez",
+   "views": 31969,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Ja%27Marr_Chase"
+   "url": "https://en.wikipedia.org/wiki/Manni_L._Perez"
   },
   {
-   "article": "Chase Brown",
-   "views": 22070,
+   "article": "JJ Gabriel",
+   "views": 31261,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Chase_Brown"
+   "url": "https://en.wikipedia.org/wiki/JJ_Gabriel"
   },
   {
-   "article": "I'm a Celebrity...Get Me Out of Here! (British TV series) series 26",
-   "views": 22020,
+   "article": "Zeb Wells",
+   "views": 30962,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/I%27m_a_Celebrity...Get_Me_Out_of_Here%21_%28British_TV_series%29_series_26"
+   "url": "https://en.wikipedia.org/wiki/Zeb_Wells"
   },
   {
-   "article": "Dexter Lawrence",
-   "views": 21722,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Dexter_Lawrence"
+   "article": "Rachel Zegler",
+   "views": 30259,
+   "before": 8272,
+   "ratio": 3.7,
+   "url": "https://en.wikipedia.org/wiki/Rachel_Zegler"
   },
   {
-   "article": "The Take (2027 film)",
-   "views": 21630,
+   "article": "MS Dhoni",
+   "views": 30116,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/The_Take_%282027_film%29"
+   "url": "https://en.wikipedia.org/wiki/MS_Dhoni"
   },
   {
-   "article": "The Twilight Saga (film series)",
-   "views": 20870,
+   "article": "Tom Blyth",
+   "views": 29552,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/The_Twilight_Saga_%28film_series%29"
+   "url": "https://en.wikipedia.org/wiki/Tom_Blyth"
   },
   {
-   "article": "Amy Aquino",
-   "views": 20490,
+   "article": "Dirty bomb",
+   "views": 29194,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Amy_Aquino"
+   "url": "https://en.wikipedia.org/wiki/Dirty_bomb"
   },
   {
-   "article": "Hoxne Hoard",
-   "views": 20085,
+   "article": "Verity (web series)",
+   "views": 27815,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Hoxne_Hoard"
+   "url": "https://en.wikipedia.org/wiki/Verity_%28web_series%29"
+  },
+  {
+   "article": "Justin Herbert",
+   "views": 27787,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Justin_Herbert"
+  },
+  {
+   "article": "Jim Harbaugh",
+   "views": 27063,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Jim_Harbaugh"
+  },
+  {
+   "article": "Carolyn Bessette Kennedy",
+   "views": 26387,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Carolyn_Bessette_Kennedy"
+  },
+  {
+   "article": "Vanessa Williams",
+   "views": 25641,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Vanessa_Williams"
+  },
+  {
+   "article": "Hung Cao",
+   "views": 23374,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Hung_Cao"
+  },
+  {
+   "article": "Fayyadh Al Ruwaili",
+   "views": 22887,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Fayyadh_Al_Ruwaili"
+  },
+  {
+   "article": "November 17",
+   "views": 22393,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/November_17"
+  },
+  {
+   "article": "Daryl Hannah",
+   "views": 22115,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Daryl_Hannah"
+  },
+  {
+   "article": "Peter Storey",
+   "views": 21206,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Peter_Storey"
+  },
+  {
+   "article": "3 Body Problem (TV series)",
+   "views": 20958,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/3_Body_Problem_%28TV_series%29"
+  },
+  {
+   "article": "Jacqueline Kennedy Onassis",
+   "views": 20397,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Jacqueline_Kennedy_Onassis"
+  },
+  {
+   "article": "Adam Yauch",
+   "views": 20065,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Adam_Yauch"
   }
  ]
 }
