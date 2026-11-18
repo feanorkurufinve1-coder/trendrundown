@@ -1,0 +1,51 @@
+{
+ "subject": "Slow phone charging",
+ "kind": "other",
+ "query": "why is my phone charging slow",
+ "title": "Why is my phone charging slow? The 8 most likely causes",
+ "answer": "Most often it's the charger or cable (a weak, old or damaged one), lint in the charging port, or the phone itself slowing down on purpose because it's warm or because a battery-saving feature is holding the charge at 80%. Using the phone heavily while it charges also slows things down.",
+ "body": "Start with the most likely causes, in this order.\n\n1. A weak or worn-out charger or cable. Old 5-watt cubes, laptop USB ports and cheap or frayed cables can't deliver fast charging. Samsung notes that fast charging may not work at all from a computer or a basic USB port. Try the phone's own charger, or another known-good one, plugged into a wall outlet.\n\n2. Lint in the port. Pocket lint packs into USB-C and Lightning ports and stops the plug from seating fully, so the connection is weak or keeps dropping. Look inside with a flashlight. If you see debris, turn the phone off and gently loosen it with a wooden toothpick. Apple and Samsung both say to clear debris, and Samsung warns against metal objects and liquids.\n\n3. Heat. Phones deliberately slow or pause charging when the battery is warm. Apple says charging may pause above 80% if the battery gets too warm; Samsung and Google say the same. Take off a thick case, keep the phone out of the sun and off pillows, and let it cool.\n\n4. It's stuck at 80% on purpose. iPhone's Optimized Battery Charging and Charge Limit, Samsung's Battery protection and Pixel's Adaptive Charging all hold the charge around 80% to reduce battery wear, then finish later. On an iPhone, touch and hold the lock-screen notice and tap Charge Now; on Samsung, check Settings > Battery > Battery protection.\n\n5. Fast charging is switched off. On Samsung phones, go to Settings > Battery > Charging settings and turn on Fast charging.\n\n6. You're using it while it charges. Gaming, video calls, navigation and a bright screen can use nearly as much power as the charger supplies. Google suggests keeping the screen dark while charging, and Airplane Mode helps in weak-signal areas.\n\n7. Wireless charging problems. A phone that's off-center on the pad, or that has a metal ring, magnetic accessory or grip on the back, charges slowly. Center it and remove accessories.\n\n8. A software glitch or an aging battery. Restart the phone and install updates. If charging is still slow with a known-good charger, a clean port and a cool phone, the battery or port may be worn out.\n\nWhat to check yourself, in five minutes: try a different cable and wall charger, inspect the port, remove the case, restart, and check the 80% settings. When to get repair help: if the port is loose or visibly damaged, the phone got wet and shows a moisture warning that won't clear, the battery is swelling (the screen or back is lifting), or the phone gets very hot while charging. Stop charging a swollen or overheating phone and take it to the manufacturer or an authorized repair shop.",
+ "faq": [
+  {
+   "q": "Why does my phone stop charging at 80%?",
+   "a": "Usually a battery-protection feature: Optimized Battery Charging or Charge Limit on iPhone, Battery protection on Samsung, Adaptive Charging on Pixel. Heat can also pause charging around 80%."
+  },
+  {
+   "q": "Does using my phone while charging slow it down?",
+   "a": "Yes. Heavy use such as games, video or navigation uses power and heats the battery, which makes the phone charge more slowly."
+  },
+  {
+   "q": "Can lint in the port cause slow charging?",
+   "a": "Yes. Packed lint keeps the plug from seating fully. Turn the phone off and remove it gently with a wooden toothpick, not metal."
+  },
+  {
+   "q": "Is it bad to use a laptop to charge my phone?",
+   "a": "It's safe, but most laptop USB ports supply much less power than a wall charger, so charging is slower and fast charging may not work."
+  }
+ ],
+ "links": [
+  [
+   "Apple Support",
+   "If your iPhone won't charge",
+   "https://support.apple.com/en-gb/ht202032"
+  ],
+  [
+   "Apple Support",
+   "About Charge Limit and Optimized Battery Charging on iPhone",
+   "https://support.apple.com/108055"
+  ],
+  [
+   "Samsung",
+   "Samsung Galaxy device may appear to be charging slowly or not charging at all",
+   "https://www.samsung.com/us/support/troubleshoot/TSG10013245/"
+  ],
+  [
+   "Google Pixel Help",
+   "Fix slow wireless charging on your Pixel phone",
+   "https://support.google.com/pixelphone/answer/12816122?hl=en"
+  ]
+ ],
+ "image_prompt": "A smartphone lying on a wooden table connected to a coiled white charging cable with a small glowing charging light, realistic photo style",
+ "made": "2026-11-18T14:00:00Z",
+ "first": "2026-11-18T14:00:00Z"
+}

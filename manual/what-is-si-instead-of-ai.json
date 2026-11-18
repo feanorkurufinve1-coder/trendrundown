@@ -1,0 +1,57 @@
+{
+ "subject": "SI (Super Intelligence) instead of AI",
+ "kind": "term",
+ "trend": true,
+ "query": "what is si instead of ai",
+ "title": "What is SI instead of AI? Trump's new name for AI, explained",
+ "answer": "SI stands for \"Super Intelligence.\" Under an executive order President Trump signed on Sept. 29, 2026, federal agencies must say \"Super Intelligence\" or \"SI\" instead of \"artificial intelligence\" or \"AI\" in official documents. The order does not apply to companies or the public.",
+ "body": "If you've seen \"SI\" where you expected \"AI,\" it's the White House's new term for the same technology. The executive order tells federal departments and agencies to use \"Super Intelligence\" and \"SI\" in official correspondence, public communications and policy documents, and to stop using \"artificial intelligence\" and \"AI\" in those settings. Existing laws, regulations and contracts do not have to be rewritten. In practice, you might now read a sentence like \"The agency is expanding its use of SI tools\" in a government press release.\n\nTrump has said he dislikes the word \"artificial\" because it makes the technology sound fake, and at the signing he called \"super\" the best word of all. The White House fact sheet, dated Sept. 29, 2026, says the new name better reflects what today's systems can do. The order also asks the president's science and technology adviser, Michael Kratsios, to propose a federal definition of SI; Forbes reported that he has 60 days to consult agency heads on whether it should replace the legal definition of AI.\n\nThe rename has drawn pushback and jokes. Sen. Mark Warner, a Virginia Democrat, said changing the name does nothing about the technology's risks. Researchers point out that \"superintelligence\" already has a specific meaning in the field: a hypothetical AI that is smarter than humans across the board, which no existing chatbot is. Some tech leaders embraced it: Nvidia's Jensen Huang started calling the company's buildings \"SI factories.\"\n\nNothing changes for ordinary users. ChatGPT, Gemini, Claude and other tools work the same way, and private companies, schools and news outlets are free to keep saying AI. Our trend radar first saw the search \"what is SI instead of AI\" in Google's suggestions on Nov. 18, 2026, a sign that many people are now meeting the term for the first time and wondering whether \"SI\" is a new product.",
+ "in_the_news": "Searches for \"what is SI instead of AI\" appeared on Nov. 18, 2026, as the government's new term spread online ahead of the 60-day review set by the September order.",
+ "faq": [
+  {
+   "q": "What does SI stand for?",
+   "a": "Super Intelligence. It is the federal government's new official name for what is commonly called artificial intelligence (AI)."
+  },
+  {
+   "q": "Is AI being banned?",
+   "a": "No. The order only changes the wording federal agencies use in official documents. Companies and the public can keep saying AI."
+  },
+  {
+   "q": "When did Trump rename AI to Super Intelligence?",
+   "a": "He signed the executive order on Tuesday, Sept. 29, 2026."
+  },
+  {
+   "q": "Is SI the same as superintelligence?",
+   "a": "Not in the scientific sense. Researchers use \"superintelligence\" for a hypothetical AI that outperforms humans at almost everything; the government's SI label covers today's AI tools."
+  }
+ ],
+ "links": [
+  [
+   "The White House",
+   "Fact Sheet: President Donald J. Trump Inaugurates The Era of Super Intelligence",
+   "https://www.whitehouse.gov/fact-sheets/2026/09/fact-sheet-president-donald-j-trump-inaugurates-the-era-of-super-intelligence/"
+  ],
+  [
+   "Forbes",
+   "Trump Signs Executive Order Renaming AI To 'Super Intelligence'—Here's What It Changes",
+   "https://www.forbes.com/sites/siladityaray/2026/09/30/trump-signs-order-renaming-ai-to-super-intelligence--heres-what-it-says/"
+  ],
+  [
+   "South China Morning Post",
+   "What's in a name? Why Trump wants to rebrand AI as 'super intelligence'",
+   "https://www.scmp.com/tech/policy/article/3369617/whats-name-why-trump-wants-rebrand-ai-super-intelligence"
+  ]
+ ],
+ "image_prompt": "A glowing abstract neural network made of blue light points floating above an empty government meeting table, soft illustrated style",
+ "radar": {
+  "first": "2026-11-18",
+  "phrases": [
+   "what is si instead of ai"
+  ],
+  "where": [
+   "google"
+  ]
+ },
+ "made": "2026-11-18T14:00:00Z",
+ "first": "2026-11-18T14:00:00Z"
+}

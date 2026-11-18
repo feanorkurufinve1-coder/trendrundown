@@ -1,0 +1,53 @@
+{
+ "subject": "Black October (cybersecurity)",
+ "kind": "term",
+ "trend": true,
+ "query": "what is black october",
+ "title": "What is Black October? The 2026 wave of cyber flaws, explained",
+ "answer": "\"Black October\" is the nickname security researchers gave to October 2026, when an unusual pile-up of serious software flaws and hacks was disclosed within days, including the \"PHP2Shell\" bugs that put many websites at risk. Many of the flaws were reportedly found with the help of AI tools.",
+ "body": "\"Black October\" is not a single attack. It is a label for a month in which bad news kept arriving at once. In the security world, a \"disclosure\" is when a flaw is made public, ideally along with a fix. In late October 2026 the disclosures came in a flood, and the name stuck after a particularly heavy 48 hours around Oct. 21–22. In conversation it's used like this: \"Patch everything now, we don't want a repeat of Black October.\"\n\nThe biggest item was PHP2Shell, a pair of flaws in PHP, the programming language behind WordPress and a large share of the web. PHP shipped emergency updates on Oct. 21, and the NSA urged prompt patching because attackers could run their own code on unpatched servers. The same week brought a fix for a serious Oracle E-Business Suite flaw, a compromised release of the popular AI developer tool LiteLLM that carried credential-stealing malware, bugs in GitLab and in the Brotli compression library used by Node.js and Firefox, and the discovery that eight certificate keys run by India's eMudhra were too weak to trust, prompting Google and Mozilla to block them.\n\nThe reason for the name, and for the worry, is AI. Researchers credited AI-assisted tools with helping find some of the flaws, including PHP2Shell. That is good news for defenders, who can fix bugs faster, but it also means flaws may now surface in bigger waves than companies can patch, and attackers have the same tools. Headlines such as CNBC's \"AI's 'Black October'\" and reports from security firms framed the month as an early taste of that new pace.\n\nThe term is back in conversation now because a string of unrelated U.S. outages from Nov. 12 to Nov. 17, 2026, affecting Microsoft, air traffic control, Chase and Apple, collided with a viral rumor about a Nov. 17 cyberattack. Officials have said they have seen no evidence of a cyberattack, and Apple and Chase said their outages were not cyber-related. For ordinary users, the practical lesson of Black October is simple: install updates for your phone, browser and apps promptly, and use a password manager and two-factor authentication.",
+ "in_the_news": "\"Black October\" resurfaced in mid-November 2026 as people tried to explain a run of tech outages and a viral Nov. 17 cyberattack rumor.",
+ "faq": [
+  {
+   "q": "Was Black October a cyberattack?",
+   "a": "No single attack. It is a nickname for October 2026, when many serious software flaws and several breaches were disclosed in a short period."
+  },
+  {
+   "q": "What is PHP2Shell?",
+   "a": "A pair of serious flaws in PHP, disclosed with emergency fixes on Oct. 21, 2026, that could let attackers run code on unpatched web servers."
+  },
+  {
+   "q": "Are the November outages part of Black October?",
+   "a": "No evidence links them. Apple and Chase said their outages were not cyber-related, and officials said they had seen no sign of a coordinated attack."
+  },
+  {
+   "q": "What should I do to stay safe?",
+   "a": "Keep your phone, computer, browser and apps updated, turn on two-factor authentication and be wary of calls or texts urging you to move money."
+  }
+ ],
+ "links": [
+  [
+   "Wikipedia",
+   "Black October (information security)",
+   "https://en.wikipedia.org/wiki/Black_October_(information_security)"
+  ],
+  [
+   "CNBC",
+   "AI's 'Black October': Critical PHP flaws set off global security scramble",
+   "https://www.cnbc.com/2026/10/23/php-vulnerabilities-ai-cybersecurity.html"
+  ],
+  [
+   "Halborn",
+   "Black October 2026: Top Cyberattacks and Key Lessons",
+   "https://www.halborn.com/blog/post/black-october-2026-top-cyberattacks-key-lessons"
+  ],
+  [
+   "WMTV",
+   "Apple, banks, FAA and Microsoft outages raise questions: A cybersecurity expert weighs in",
+   "https://www.wmtv15news.com/2026/11/18/apple-banks-faa-microsoft-outages-raise-questions-cybersecurity-expert-weighs/"
+  ]
+ ],
+ "image_prompt": "A dark server room lit by rows of red warning lights with autumn leaves scattered on the floor, realistic photo style",
+ "made": "2026-11-18T14:00:00Z",
+ "first": "2026-11-18T14:00:00Z"
+}

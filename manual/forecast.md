@@ -164,6 +164,10 @@
 Проверка: через 3–7 дней после даты сверить с Trends CSV и Search Console — угадали или нет, записать урок сюда.
 
 ## Уроки
+- 18 нояб, вечер (GSC: последний полный день 17 нояб — 2 клика / 3 показа, всё на главной и старых авто-адресах alexandra-eala, jasveen-sangha; health.json 18 нояб: в индексе 3 URL — /, /x/cyber-monday, /x/ligue-1; 63 Crawled – not indexed, 94 неизвестны Google; sitemap Google последний раз скачивал 13 нояб):
+  - По типам (страницы 15–16 нояб, 2–3 дня): тренды (microsoft-364, finland-embassy, dinosaurs-in-mexico, ao3-is-back, november-17), обзор недели, гид для родителей, прогнозы (how-to-vote-on-the-circle-hulu, is-yellowjackets-season-4-the-last-season), вечные — 0 показов, новых URL в индексе нет.
+  - Слух о 17 нояб «сбылся» наполовину: реальные сбои (Apple 17 нояб, Chase 16, FAA 13, Microsoft 12) породили вторую волну подсказок («what is with all the outages», «keep kids home»). Вывод: страницу-опровержение слуха обновлять в день X фактами, а не писать новую.
+  - Картинки FLUX: надписи-каракули рисуются на любом предмете, где обычно бывает текст (банки, календари, витрины, табло) — в image_prompt избегать таких предметов, а не только писать «no text».
 - 17 нояб, вечер (GSC: последний полный день 15 нояб — 2 клика / 2 показа, всё на старых авто-адресах rot-weiss-essen, collin-sexton, jasveen-sangha; 16 нояб пока 0/0. health.json: в индексе по-прежнему 3 URL — /, /x/cyber-monday, /x/ligue-1; 63 Crawled – not indexed, 87 неизвестны Google):
   - По типам (страницы старше 2 дней): тренды и обзор 15 нояб (microsoft-364, finland-embassy, обзор недели, гид для родителей), прогнозы (how-to-vote-on-the-circle-hulu, is-yellowjackets-season-4-the-last-season), вечные (washing-machine-rotten-eggs, phone-screen-black-during-calls, ground-stop) — 0 показов, ни одна не попала в индекс.
   - Картинки: 16 страниц из ai_img_fail не нарисованы не из-за подсказки, а из-за дневного лимита бесплатной нейросети Cloudflare (10 000 «нейронов» в сутки) — сейчас 25 страниц ждут картинку; правка image_prompt тут не поможет.

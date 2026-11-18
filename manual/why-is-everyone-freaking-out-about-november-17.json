@@ -4,10 +4,14 @@
  "trend": true,
  "query": "why is everyone freaking out about november 17",
  "title": "Why is everyone freaking out about November 17? The blackout rumor",
- "answer": "Viral posts claim that on Tuesday, Nov. 17, 2026, hackers will wipe bank accounts and shut off the internet or power grid for months, and urge people to stock up on food and water. Fact-checkers and officials in several countries say there is no evidence. The only real event that day is a one-minute U.S. emergency alert test on TV and radio.",
- "body": "The \"November 17\" scare is a chain of posts warning that a massive cyberattack will hit on that date, emptying bank accounts and switching off the internet, and in some versions the power grid, for up to three months. Versions on TikTok, X, Facebook and messaging apps tell people to buy bottled water, canned food and cash. That is why searches like \"why is everyone buying water\" and \"why are people saying the world is ending on Tuesday\" jumped this week. A typical reply online is half joke, half worry: \"Do I really need 40 bottles of water by Tuesday?\"\n\nAccording to fact-checkers, the rumor took off around Nov. 1, 2026, with a post on X from an account in Brazil that cited an unnamed \"source on the dark web\" and admitted the claim was unverified. As it was translated and reshared, that caveat disappeared. Other material was then stitched in as supposed proof: a 2023 episode of \"The Simpsons\" in which Springfield loses power for several days and a diary entry mentions Nov. 17; older government advice in several countries about keeping emergency supplies at home; and the Nov. 19 release of the video game GTA 6, which some posts said would \"crash the internet.\"\n\nNone of it holds up. The Simpsons episode never names 2026 and shows a local outage, not a global one. Ukraine's Center for Countering Disinformation said on Nov. 9 that the government stockpiling advice has nothing to do with Nov. 17 and contains no warning about a cyberattack. Brazil's civil defense agency and Kazakhstan's Ministry of Emergency Situations also issued denials. Experts point out that the internet has no single off switch, since it is run by thousands of separate networks, and banks do not keep everyone's money in one database that a single command could erase.\n\nThe kernel of truth: FEMA and the Federal Communications Commission scheduled a nationwide Emergency Alert System test for Nov. 17 at 2:20 p.m. Eastern. It interrupts TV and radio for about a minute, does not go to cellphones, and has nothing to do with the internet or electricity. Fact-checkers also warn that scammers are using the rumor, calling people while posing as bank staff and urging them to \"protect\" their money by moving it. If a child is anxious, the short answer is that nothing special will happen on Tuesday beyond a brief test beep on TV.",
- "in_the_news": "Searches about Nov. 17, stockpiling water and the \"world ending on Tuesday\" spiked the weekend before the date, as posts about a supposed global blackout spread.",
+ "answer": "Viral posts claimed that on Tuesday, Nov. 17, 2026, hackers would wipe bank accounts and shut off the internet or power grid for months. That did not happen. Apple did have a real outage that afternoon, and Chase, Microsoft and air traffic control had glitches the same week, but Apple and Chase said theirs were not cyberattacks and officials found no link.",
+ "body": "The \"November 17\" scare is a chain of posts warning that a massive cyberattack will hit on that date, emptying bank accounts and switching off the internet, and in some versions the power grid, for up to three months. Versions on TikTok, X, Facebook and messaging apps tell people to buy bottled water, canned food and cash. That is why searches like \"why is everyone buying water\" and \"why are people saying the world is ending on Tuesday\" jumped this week. A typical reply online is half joke, half worry: \"Do I really need 40 bottles of water by Tuesday?\"\n\nAccording to fact-checkers, the rumor took off around Nov. 1, 2026, with a post on X from an account in Brazil that cited an unnamed \"source on the dark web\" and admitted the claim was unverified. As it was translated and reshared, that caveat disappeared. Other material was then stitched in as supposed proof: a 2023 episode of \"The Simpsons\" in which Springfield loses power for several days and a diary entry mentions Nov. 17; older government advice in several countries about keeping emergency supplies at home; and the Nov. 19 release of the video game GTA 6, which some posts said would \"crash the internet.\"\n\nNone of it holds up. The Simpsons episode never names 2026 and shows a local outage, not a global one. Ukraine's Center for Countering Disinformation said on Nov. 9 that the government stockpiling advice has nothing to do with Nov. 17 and contains no warning about a cyberattack. Brazil's civil defense agency and Kazakhstan's Ministry of Emergency Situations also issued denials. Experts point out that the internet has no single off switch, since it is run by thousands of separate networks, and banks do not keep everyone's money in one database that a single command could erase.\n\nThe kernel of truth: FEMA and the Federal Communications Commission scheduled a nationwide Emergency Alert System test for Nov. 17 at 2:20 p.m. Eastern. It interrupts TV and radio for about a minute, does not go to cellphones, and has nothing to do with the internet or electricity. Fact-checkers also warn that scammers are using the rumor, calling people while posing as bank staff and urging them to \"protect\" their money by moving it. If a child is anxious, the short answer is that nothing special will happen on Tuesday beyond a brief test beep on TV.\n\nUpdate, Nov. 18: Nov. 17 came and went without a blackout, but a string of real outages kept the rumor alive. On the afternoon of Nov. 17, iCloud sign-in, the App Store and Apple Music went down for several hours, and Downdetector logged thousands of Apple Pay complaints; Apple blamed an internal update and said it was not a cyberattack. Earlier that week, Microsoft's Outlook and Teams went down on Nov. 12, a nationwide air traffic ground stop lasted about four hours on Nov. 13, and Chase customers had trouble on Nov. 16, which the bank blamed on a software bug. The NSA also said a classified internal network was degraded on Nov. 17 by scheduled maintenance. Secretary of State Marco Rubio said there was \"zero evidence\" linking the incidents to malicious actors. That is why searches like \"what is with all the outages\" and \"why are people keeping kids home from school\" jumped on Nov. 17 and 18. The supplies advice is still the ordinary kind: a few days of water and food is sensible for storms, not for a date on a calendar.",
+ "in_the_news": "The feared date passed without a blackout, but real outages at Apple, Chase, Microsoft and air traffic control the same week kept searches climbing on Nov. 17–18.",
  "faq": [
+  {
+   "q": "Did anything happen on November 17?",
+   "a": "No global blackout or cyberattack. Apple had a several-hour outage of iCloud, the App Store and Apple Music that afternoon, which it blamed on an internal update, not hackers."
+  },
   {
    "q": "Is the internet going down on November 17?",
    "a": "No. There is no credible evidence of a planned global shutdown, and officials in Ukraine, Brazil and Kazakhstan have publicly debunked the claim."
@@ -23,6 +27,10 @@
   {
    "q": "Did The Simpsons predict a blackout on November 17?",
    "a": "No. A 2023 episode shows a multi-day outage in Springfield and mentions Nov. 17 in a diary, but it never names 2026 or a worldwide blackout."
+  },
+  {
+   "q": "Why are people keeping kids home from school?",
+   "a": "Some viral posts linked to the blackout rumor told parents to keep children home on Nov. 17. The only official event scheduled that day was the one-minute emergency alert test on TV and radio."
   }
  ],
  "links": [
@@ -45,19 +53,32 @@
    "Wiley",
    "Nationwide EAS Test Coming November 17, 2026",
    "https://www.wiley.law/alert-Nationwide-EAS-Test-Coming-November-17-2026"
+  ],
+  [
+   "WMTV",
+   "Apple, banks, FAA and Microsoft outages raise questions: A cybersecurity expert weighs in",
+   "https://www.wmtv15news.com/2026/11/18/apple-banks-faa-microsoft-outages-raise-questions-cybersecurity-expert-weighs/"
+  ],
+  [
+   "IBTimes UK",
+   "Apple Blames Internal Update After Outage Hits iCloud and Apple Pay, Rules Out Cyberattack",
+   "https://www.ibtimes.co.uk/apple-blames-internal-update-after-outage-hits-icloud-apple-pay-rules-out-cyberattack-1833027"
   ]
  ],
- "image_prompt": "A kitchen counter stacked with plain unlabeled water jugs and canned goods beside a smartphone glowing in a dim room, realistic photo style",
+ "image_prompt": "A dim kitchen counter with plain clear glass jars of rice and beans, a flashlight and a smartphone glowing beside them, realistic photo style",
  "made": "2026-11-16T13:55:00Z",
  "first": "2026-11-16T13:55:00Z",
  "radar": {
   "first": "2026-11-16",
   "phrases": [
    "why is everyone freaking out about november 17th",
-   "what is november 17th"
+   "what is november 17th",
+   "why are people saying keep your kids home",
+   "why is everyone freaking out about the power grid"
   ],
   "where": [
    "google"
   ]
- }
+ },
+ "updated": "2026-11-18T14:00:00Z"
 }
