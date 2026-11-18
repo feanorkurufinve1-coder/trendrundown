@@ -8208,7 +8208,7 @@
   ]
  },
  "exhibition-game": {
-  "time": "2026-11-17T16:53:52+00:00",
+  "time": "2026-11-18T17:01:52+00:00",
   "query": "what is an exhibition game in basketball",
   "in_suggest": true,
   "suggest": {
@@ -8282,11 +8282,15 @@
    [
     "2026-11-17",
     true
+   ],
+   [
+    "2026-11-18",
+    true
    ]
   ]
  },
  "game-time-decision": {
-  "time": "2026-11-17T16:53:54+00:00",
+  "time": "2026-11-18T17:01:53+00:00",
   "query": "game time decision meaning",
   "in_suggest": true,
   "suggest": {
@@ -8363,11 +8367,15 @@
    [
     "2026-11-17",
     true
+   ],
+   [
+    "2026-11-18",
+    true
    ]
   ]
  },
  "mutual-option": {
-  "time": "2026-11-17T16:53:55+00:00",
+  "time": "2026-11-18T17:01:55+00:00",
   "query": "what is a mutual option in baseball",
   "in_suggest": true,
   "suggest": {
@@ -8439,25 +8447,29 @@
    [
     "2026-11-17",
     true
+   ],
+   [
+    "2026-11-18",
+    true
    ]
   ]
  },
  "nba-draft": {
-  "time": "2026-11-17T16:53:56+00:00",
+  "time": "2026-11-18T17:01:56+00:00",
   "query": "what is the nba draft",
   "in_suggest": true,
   "suggest": {
    "nba draft": [
     "nba draft 2026",
-    "nba draft",
     "nba draft 2027",
+    "nba draft",
+    "nba draft 2027 mock",
+    "nba draft projections",
     "nba draft 2025",
     "nba draft 2024",
-    "nba draft lottery",
+    "nba draft mock",
     "nba draft results",
-    "nba draft order",
-    "nba draft 2027 mock",
-    "nba draft 2023"
+    "nba draft net"
    ],
    "what is nba draft": [
     "what is nba draft",
@@ -8508,11 +8520,15 @@
    [
     "2026-11-17",
     true
+   ],
+   [
+    "2026-11-18",
+    true
    ]
   ]
  },
  "tri-series-cricket": {
-  "time": "2026-11-17T16:53:59+00:00",
+  "time": "2026-11-18T17:01:59+00:00",
   "query": "what is a tri series in cricket",
   "in_suggest": true,
   "suggest": {
@@ -8587,6 +8603,10 @@
    ],
    [
     "2026-11-17",
+    true
+   ],
+   [
+    "2026-11-18",
     true
    ]
   ]
@@ -11392,7 +11412,7 @@
   ]
  },
  "bay-area-waterspouts-tornado-warning": {
-  "time": "2026-11-17T16:53:50+00:00",
+  "time": "2026-11-18T17:01:49+00:00",
   "query": "bay area waterspouts tornado warning",
   "in_suggest": false,
   "suggest": {
@@ -11404,30 +11424,37 @@
    [
     "2026-11-17",
     false
+   ],
+   [
+    "2026-11-18",
+    false
    ]
   ]
  },
  "california-sues-openai": {
-  "time": "2026-11-17T16:53:51+00:00",
+  "time": "2026-11-18T17:01:50+00:00",
   "query": "california sues openai",
   "in_suggest": true,
   "suggest": {
    "california v. openai": [],
    "what is california v. openai": [],
    "california sues openai": [
-    "california sues openai",
-    "california sues openai reddit"
+    "california sues openai"
    ]
   },
   "history": [
    [
     "2026-11-17",
     true
+   ],
+   [
+    "2026-11-18",
+    true
    ]
   ]
  },
  "robert-pattinson-james-bond": {
-  "time": "2026-11-17T16:53:57+00:00",
+  "time": "2026-11-18T17:01:57+00:00",
   "query": "robert pattinson james bond",
   "in_suggest": true,
   "suggest": {
@@ -11435,13 +11462,13 @@
     "robert pattinson as james bond",
     "robert pattinson as james bond reddit",
     "robert pattinson as james bond reactions",
-    "robert pattinson as james bond meme",
-    "robert pattinson as james bond yuck",
-    "robert pattinson as james bond reviews",
     "robert pattinson as james bond really",
-    "robert pattinson as james bond photos",
-    "robert pattinson as james bond ai",
-    "robert pattinson as james bond bad choice"
+    "robert pattinson as james bond meme",
+    "robert pattinson james bond odds",
+    "robert pattinson next james bond",
+    "robert pattinson new james bond",
+    "robert pattinson neuer james bond",
+    "how to pronounce robert pattinson"
    ],
    "what is robert pattinson as james bond": [
     "robert pattinson as james bond",
@@ -11451,19 +11478,23 @@
    "robert pattinson james bond": [
     "robert pattinson james bond",
     "robert pattinson james bond movie",
-    "robert pattinson james bond casting",
     "robert pattinson james bond reactions",
-    "robert pattinson james bond is he british",
-    "robert pattinson james bond reddit",
     "robert pattinson james bond meme",
-    "robert pattinson james bond release date",
-    "robert pattinson james bond site www.reddit.com",
-    "robert pattinson james bond screen test"
+    "robert pattinson james bond audition",
+    "robert pattinson james bond contract",
+    "robert pattinson james bond is he british",
+    "robert pattinson james bond casting",
+    "robert pattinson james bond reveal",
+    "robert pattinson james bond announcement"
    ]
   },
   "history": [
    [
     "2026-11-17",
+    true
+   ],
+   [
+    "2026-11-18",
     true
    ]
   ]
