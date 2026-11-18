@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-18T08:16:17+00:00",
+ "checked": "2026-11-18T09:16:58+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -1187,7 +1187,7 @@
   },
   {
    "url": "/x/rule-5-draft",
-   "at": "2026-11-18T03:02:03+00:00",
+   "at": "2026-11-18T09:16:52+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1199,7 +1199,7 @@
   },
   {
    "url": "/x/scott-colom",
-   "at": "2026-11-18T03:02:09+00:00",
+   "at": "2026-11-18T09:16:58+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
