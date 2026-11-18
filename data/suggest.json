@@ -11686,5 +11686,105 @@
     true
    ]
   ]
+ },
+ "apple-outage-november-17-2026": {
+  "time": "2026-11-18T16:49:32+00:00",
+  "query": "apple outage",
+  "in_suggest": true,
+  "suggest": {
+   "apple services outage": [
+    "apple services outage",
+    "apple services outage today",
+    "apple services outage streaming music apps",
+    "apple service outage page",
+    "apple services status",
+    "apple services down",
+    "apple services status page",
+    "apple services down today",
+    "apple services downdetector",
+    "apple services status check"
+   ],
+   "what is apple services outage": [],
+   "apple outage": [
+    "apple outage",
+    "apple outage today",
+    "apple outage status",
+    "apple outage right now",
+    "apple outage cause",
+    "apple outage reddit",
+    "apple outage map",
+    "apple outage news",
+    "apple outage cnn",
+    "apple outage cyber attack"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-18",
+    true
+   ]
+  ]
+ },
+ "florida-flooding-november-18-2026": {
+  "time": "2026-11-18T16:49:33+00:00",
+  "query": "florida flooding",
+  "in_suggest": true,
+  "suggest": {
+   "florida east coast flooding": [
+    "florida east coast flooding",
+    "florida east coast flooding today",
+    "what makes florida's east coast prone to flooding from heavy rain",
+    "why does florida's east coast experience localized flooding",
+    "what parts of florida are flooded",
+    "is all of florida a flood zone",
+    "what part of florida is safe from flooding"
+   ],
+   "what is florida east coast flooding": [
+    "florida east coast flooding",
+    "florida east coast flooding today",
+    "what parts of florida are flooded",
+    "is all of florida a flood zone",
+    "is orlando a flood zone",
+    "is orlando florida a flood zone"
+   ],
+   "florida flooding": [
+    "florida flooding",
+    "florida flooding today",
+    "florida flooding this week",
+    "florida flooding orlando",
+    "florida flooding right now",
+    "florida flooding forecast",
+    "florida flooding brevard county",
+    "florida flooding palm bay",
+    "florida flooding hollywood",
+    "florida flooding 2026"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-18",
+    true
+   ]
+  ]
+ },
+ "hakeem-jeffries-speaker-nomination": {
+  "time": "2026-11-18T16:49:34+00:00",
+  "query": "is hakeem jeffries speaker",
+  "in_suggest": true,
+  "suggest": {
+   "hakeem jeffries speaker nomination": [],
+   "what is hakeem jeffries speaker nomination": [],
+   "is hakeem jeffries speaker": [],
+   "hakeem jeffries speaker": [
+    "hakeem jeffries speaker",
+    "hakeem jeffries speaker prospects 2024"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-18",
+    true
+   ]
+  ]
  }
 }

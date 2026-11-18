@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-18T16:32:42+00:00",
+ "checked": "2026-11-18T16:49:31+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -175,6 +175,18 @@
   {
    "url": "/x/anthony-clark-death",
    "at": "2026-11-18T13:32:51+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
+   "url": "/x/apple-outage-november-17-2026",
+   "at": "2026-11-18T16:49:18+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -425,6 +437,18 @@
    "userCanonical": null
   },
   {
+   "url": "/x/florida-flooding-november-18-2026",
+   "at": "2026-11-18T16:49:24+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/game-time-decision",
    "at": "2026-11-18T14:18:43+00:00",
    "verdict": "NEUTRAL",
@@ -439,6 +463,18 @@
   {
    "url": "/x/guarding-stars-book",
    "at": "2026-11-18T14:18:50+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
+   "url": "/x/hakeem-jeffries-speaker-nomination",
+   "at": "2026-11-18T16:49:31+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2029,7 +2065,7 @@
  },
  "summary": {
   "Submitted and indexed": 3,
-  "URL is unknown to Google": 100,
+  "URL is unknown to Google": 103,
   "Crawled - currently not indexed": 63
  }
 }
