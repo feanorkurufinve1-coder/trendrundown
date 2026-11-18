@@ -9036,9 +9036,9 @@
   ]
  },
  "first-black-senator-from-mississippi": {
-  "time": "2026-11-17T16:31:53+00:00",
+  "time": "2026-11-18T16:32:43+00:00",
   "query": "who was the first black senator from mississippi",
-  "in_suggest": false,
+  "in_suggest": true,
   "suggest": {
    "hiram revels and blanche k. bruce": [
     "hiram revels and blanche k. bruce",
@@ -9050,8 +9050,13 @@
     "who were hiram revels and blanche k bruce",
     "hiram revels and blanche k bruce were the first two blacks to"
    ],
-   "who was the first black senator from mississippi": [],
+   "who was the first black senator from mississippi": [
+    "who was the first black senator from mississippi",
+    "who was the first black senator from massachusetts",
+    "who was the first african american senator"
+   ],
    "first black senator from mississippi": [
+    "first black senator from mississippi",
     "first black politician in mississippi",
     "first black representative in mississippi",
     "who was the first black senator from massachusetts"
@@ -9077,11 +9082,15 @@
    [
     "2026-11-17",
     false
+   ],
+   [
+    "2026-11-18",
+    true
    ]
   ]
  },
  "how-much-tax-refund-per-child-2026": {
-  "time": "2026-11-17T16:31:54+00:00",
+  "time": "2026-11-18T16:32:45+00:00",
   "query": "how much tax refund per child 2026",
   "in_suggest": true,
   "suggest": {
@@ -9091,9 +9100,9 @@
     "child tax credit 2027",
     "child tax credit 2025",
     "child tax credit 2026 income limit",
+    "child tax credit illinois",
     "child tax credit phase out",
     "child tax credit income limit",
-    "child tax credit arizona",
     "child tax credit age limit",
     "child tax credit 2025 income limit"
    ],
@@ -9154,24 +9163,29 @@
    [
     "2026-11-17",
     true
+   ],
+   [
+    "2026-11-18",
+    true
    ]
   ]
  },
  "is-the-law-of-beasts-a-true-story": {
-  "time": "2026-11-17T16:31:56+00:00",
+  "time": "2026-11-18T16:32:46+00:00",
   "query": "is the law of beasts a true story",
   "in_suggest": false,
   "suggest": {
    "the law of beasts": [
     "the law of beasts",
     "the law of beasts netflix",
+    "the law of beasts netflix review",
+    "the law of beasts s01",
+    "the law of beasts review",
+    "the law of beasts tv show",
     "the law of animals",
     "my bloodline is the law of beasts",
     "what are the beasts in the bible",
-    "what are the beasts of the field",
-    "what are the 4 beasts in the bible",
-    "what are beasts powers",
-    "what are the beasts of the field in the bible"
+    "what are the beasts of the field"
    ],
    "what is the law of beasts": [
     "what is the law of animals",
@@ -9204,22 +9218,26 @@
    [
     "2026-11-17",
     false
+   ],
+   [
+    "2026-11-18",
+    false
    ]
   ]
  },
  "ligue-1": {
-  "time": "2026-11-17T16:31:57+00:00",
+  "time": "2026-11-18T16:32:47+00:00",
   "query": "what is ligue 1",
   "in_suggest": true,
   "suggest": {
    "ligue 1": [
     "ligue 1 standings",
     "ligue 1",
-    "ligue 1 schedule",
+    "ligue 1 stats",
     "ligue 1 table",
     "ligue 1 players",
-    "ligue 1 games",
     "ligue 1 teams",
+    "ligue 1 games",
     "ligue 1 mcdonald's",
     "ligue 1 france",
     "ligue 1 table 2022 23"
@@ -9257,11 +9275,15 @@
    [
     "2026-11-17",
     true
+   ],
+   [
+    "2026-11-18",
+    true
    ]
   ]
  },
  "phishing-test": {
-  "time": "2026-11-17T16:31:58+00:00",
+  "time": "2026-11-18T16:32:48+00:00",
   "query": "what is a phishing test",
   "in_suggest": true,
   "suggest": {
@@ -9322,17 +9344,21 @@
    [
     "2026-11-17",
     true
+   ],
+   [
+    "2026-11-18",
+    true
    ]
   ]
  },
  "rock-hall-of-fame-2026-ceremony-air-date": {
-  "time": "2026-11-17T16:31:59+00:00",
+  "time": "2026-11-18T16:32:49+00:00",
   "query": "when will the rock and roll hall of fame 2026 ceremony air",
   "in_suggest": false,
   "suggest": {
    "2026 rock and roll hall of fame induction ceremony": [
-    "2026 rock and roll hall of fame induction ceremony",
     "2026 rock and roll hall of fame induction ceremony tickets",
+    "2026 rock and roll hall of fame induction ceremony",
     "2026 rock and roll hall of fame induction ceremony performers",
     "2026 rock and roll hall of fame induction ceremony location",
     "2026 rock and roll hall of fame induction ceremony date",
@@ -9366,11 +9392,15 @@
    [
     "2026-11-17",
     false
+   ],
+   [
+    "2026-11-18",
+    false
    ]
   ]
  },
  "what-does-refrigerator-coolant-smell-like": {
-  "time": "2026-11-17T16:32:01+00:00",
+  "time": "2026-11-18T16:32:51+00:00",
   "query": "what does refrigerator coolant smell like",
   "in_suggest": true,
   "suggest": {
@@ -9438,11 +9468,15 @@
    [
     "2026-11-17",
     true
+   ],
+   [
+    "2026-11-18",
+    true
    ]
   ]
  },
  "what-is-a-safety-in-football": {
-  "time": "2026-11-17T16:32:02+00:00",
+  "time": "2026-11-18T16:32:52+00:00",
   "query": "what is a safety in football",
   "in_suggest": true,
   "suggest": {
@@ -9451,24 +9485,24 @@
     "safety",
     "safety glasses",
     "safety razor",
-    "safety vest",
+    "safety kleen",
+    "safety town naperville",
     "safety movie",
     "safety first car seat",
-    "safety coordinator jobs",
-    "safety culture",
-    "safety glasses prescription"
+    "safety town",
+    "safety vest"
    ],
    "what is safety": [
     "what is safety in football",
     "what is safety",
-    "what is safety corridor",
+    "what is safety net hospital",
     "what is safety position in football",
     "what is safety culture",
     "what is safety data sheet",
     "what is safety stock",
     "what is safety connect toyota",
-    "what is safety glass",
-    "what is safety protocol adherence"
+    "what is safety town",
+    "what is safety in nfl"
    ],
    "what is a safety in football": [
     "what is a safety in football",
@@ -9515,11 +9549,15 @@
    [
     "2026-11-17",
     true
+   ],
+   [
+    "2026-11-18",
+    true
    ]
   ]
  },
  "what-is-broad-based-categorical-eligibility": {
-  "time": "2026-11-17T16:32:03+00:00",
+  "time": "2026-11-18T16:32:53+00:00",
   "query": "what is broad-based categorical eligibility",
   "in_suggest": true,
   "suggest": {
@@ -9568,11 +9606,15 @@
    [
     "2026-11-17",
     true
+   ],
+   [
+    "2026-11-18",
+    true
    ]
   ]
  },
  "why-is-wifi-not-working-on-my-phone": {
-  "time": "2026-11-17T16:32:05+00:00",
+  "time": "2026-11-18T16:32:54+00:00",
   "query": "why is wifi not working on my phone",
   "in_suggest": true,
   "suggest": {
@@ -9622,6 +9664,10 @@
    ],
    [
     "2026-11-17",
+    true
+   ],
+   [
+    "2026-11-18",
     true
    ]
   ]
