@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-17T23:02:17+00:00",
+ "checked": "2026-11-18T01:16:58+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -270,7 +270,7 @@
   },
   {
    "url": "/x/coachella-2027-tickets-on-sale",
-   "at": "2026-11-17T19:02:01+00:00",
+   "at": "2026-11-18T01:16:52+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -282,7 +282,7 @@
   },
   {
    "url": "/x/dan-hicks-death",
-   "at": "2026-11-17T19:02:08+00:00",
+   "at": "2026-11-18T01:16:58+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
