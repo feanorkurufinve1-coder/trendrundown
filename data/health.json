@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-18T22:47:35+00:00",
+ "checked": "2026-11-18T23:02:00+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -186,7 +186,7 @@
   },
   {
    "url": "/x/apple-outage-november-17-2026",
-   "at": "2026-11-18T16:49:18+00:00",
+   "at": "2026-11-18T23:01:48+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -438,7 +438,7 @@
   },
   {
    "url": "/x/florida-flooding-november-18-2026",
-   "at": "2026-11-18T16:49:24+00:00",
+   "at": "2026-11-18T23:01:54+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -474,7 +474,7 @@
   },
   {
    "url": "/x/hakeem-jeffries-speaker-nomination",
-   "at": "2026-11-18T16:49:31+00:00",
+   "at": "2026-11-18T23:02:00+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
