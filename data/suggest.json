@@ -11432,7 +11432,7 @@
   ]
  },
  "is-melania-the-series-the-same-as-the-movie": {
-  "time": "2026-11-18T14:01:57+00:00",
+  "time": "2026-11-19T14:03:10+00:00",
   "query": "is melania the series the same as the movie",
   "in_suggest": false,
   "suggest": {
@@ -11446,6 +11446,7 @@
     "melania series release date"
    ],
    "what is melania, the series": [
+    "what is melania the series",
     "what is the melania show about"
    ],
    "is melania the series the same as the movie": [],
@@ -11459,11 +11460,15 @@
    [
     "2026-11-18",
     false
+   ],
+   [
+    "2026-11-19",
+    false
    ]
   ]
  },
  "what-is-the-i-got-so-mad-meme": {
-  "time": "2026-11-18T14:01:58+00:00",
+  "time": "2026-11-19T14:03:12+00:00",
   "query": "what is the i got so mad meme",
   "in_suggest": true,
   "suggest": {
@@ -11484,11 +11489,15 @@
    [
     "2026-11-18",
     true
+   ],
+   [
+    "2026-11-19",
+    true
    ]
   ]
  },
  "why-are-people-saying-julia-stiles-went-to-juilliard": {
-  "time": "2026-11-18T14:02:00+00:00",
+  "time": "2026-11-19T14:03:13+00:00",
   "query": "why are people saying julia stiles went to juilliard",
   "in_suggest": true,
   "suggest": {
@@ -11533,11 +11542,15 @@
    [
     "2026-11-18",
     true
+   ],
+   [
+    "2026-11-19",
+    true
    ]
   ]
  },
  "why-are-people-trying-to-move-the-bean": {
-  "time": "2026-11-18T14:02:02+00:00",
+  "time": "2026-11-19T14:03:15+00:00",
   "query": "why are people trying to move the bean",
   "in_suggest": false,
   "suggest": {
@@ -11554,11 +11567,15 @@
    [
     "2026-11-18",
     false
+   ],
+   [
+    "2026-11-19",
+    false
    ]
   ]
  },
  "why-is-my-washing-machine-dripping-water-inside": {
-  "time": "2026-11-18T14:02:03+00:00",
+  "time": "2026-11-19T14:03:16+00:00",
   "query": "why is my washing machine dripping water inside",
   "in_suggest": true,
   "suggest": {
@@ -11618,6 +11635,10 @@
    ],
    [
     "2026-11-18",
+    true
+   ],
+   [
+    "2026-11-19",
     true
    ]
   ]
