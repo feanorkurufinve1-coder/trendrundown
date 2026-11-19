@@ -1,6 +1,6 @@
 {
- "made": "2026-11-19T13:52:47+00:00",
- "pages": 419,
+ "made": "2026-11-19T13:58:35+00:00",
+ "pages": 423,
  "summary": {
   "kind": {
    "event": {
@@ -32,7 +32,7 @@
     "clicks_per_page": 0.06
    },
    "person": {
-    "pages": 62,
+    "pages": 63,
     "with_impr_%": 27,
     "top3_%": 0,
     "clicks": 15,
@@ -53,7 +53,7 @@
     "clicks_per_page": 0.0
    },
    "term": {
-    "pages": 166,
+    "pages": 169,
     "with_impr_%": 14,
     "top3_%": 2,
     "clicks": 35,
@@ -83,11 +83,11 @@
     "clicks_per_page": 0.0
    },
    "manual": {
-    "pages": 144,
+    "pages": 148,
     "with_impr_%": 13,
     "top3_%": 3,
     "clicks": 52,
-    "clicks_per_page": 0.36
+    "clicks_per_page": 0.35
    }
   },
   "q_word": {
@@ -113,7 +113,7 @@
     "clicks_per_page": 0.0
    },
    "does": {
-    "pages": 1,
+    "pages": 2,
     "with_impr_%": 0,
     "top3_%": 0,
     "clicks": 0,
@@ -141,7 +141,7 @@
     "clicks_per_page": 0.14
    },
    "what": {
-    "pages": 233,
+    "pages": 234,
     "with_impr_%": 18,
     "top3_%": 2,
     "clicks": 40,
@@ -162,14 +162,14 @@
     "clicks_per_page": 0.0
    },
    "who": {
-    "pages": 68,
+    "pages": 69,
     "with_impr_%": 26,
     "top3_%": 0,
     "clicks": 6,
     "clicks_per_page": 0.09
    },
    "why": {
-    "pages": 16,
+    "pages": 17,
     "with_impr_%": 0,
     "top3_%": 0,
     "clicks": 0,
@@ -185,7 +185,7 @@
   },
   "title_matches_top_query": {
    "False": {
-    "pages": 380,
+    "pages": 384,
     "with_impr_%": 8,
     "top3_%": 1,
     "clicks": 31,
@@ -1278,7 +1278,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 72,
-   "age_days": 17.3,
+   "age_days": 17.4,
    "rival_exact": null,
    "impr": 3,
    "clicks": 0,
@@ -2459,7 +2459,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 67,
-   "age_days": 17.3,
+   "age_days": 17.4,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2729,7 +2729,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 56,
-   "age_days": 15.6,
+   "age_days": 15.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2909,7 +2909,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 60,
-   "age_days": 14.8,
+   "age_days": 14.9,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3209,7 +3209,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 66,
-   "age_days": 14.3,
+   "age_days": 14.4,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3224,7 +3224,7 @@
    "source": "auto",
    "q_word": "none",
    "title_len": 66,
-   "age_days": 14.3,
+   "age_days": 14.4,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3314,7 +3314,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 68,
-   "age_days": 14.1,
+   "age_days": 14.2,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3329,7 +3329,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 67,
-   "age_days": 14.1,
+   "age_days": 14.2,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3419,7 +3419,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 68,
-   "age_days": 13.9,
+   "age_days": 14.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4124,7 +4124,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 69,
-   "age_days": 11.6,
+   "age_days": 11.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4244,7 +4244,7 @@
    "source": "auto",
    "q_word": "none",
    "title_len": 71,
-   "age_days": 11.3,
+   "age_days": 11.4,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4559,7 +4559,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 68,
-   "age_days": 9.1,
+   "age_days": 9.2,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5055,6 +5055,21 @@
    "q_word": "did",
    "title_len": 62,
    "age_days": 8.5,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
+   "slug": "does-a-refrigerator-need-its-own-circuit",
+   "title": "Does a refrigerator need its own circuit? What code and makers say",
+   "kind": "term",
+   "source": "manual",
+   "q_word": "does",
+   "title_len": 66,
+   "age_days": 3.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6443,6 +6458,21 @@
    "top_queries": []
   },
   {
+   "slug": "what-is-the-ram-altman-meme",
+   "title": "What is the RAM Altman meme? Sam Altman's memory remark, explained",
+   "kind": "term",
+   "source": "manual",
+   "q_word": "what",
+   "title_len": 66,
+   "age_days": 3.0,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
    "slug": "what-is-tsa-confirmid",
    "title": "What is TSA ConfirmID? The $45 fee if you fly without a REAL ID",
    "kind": "law",
@@ -6518,6 +6548,21 @@
    "top_queries": []
   },
   {
+   "slug": "who-is-oobah-butler",
+   "title": "Who is Oobah Butler? The prankster behind HBO's new scam series",
+   "kind": "person",
+   "source": "manual",
+   "q_word": "who",
+   "title_len": 63,
+   "age_days": 3.0,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
    "slug": "who-won-mvp-2026",
    "title": "Who won MVP 2026? Yordan Alvarez and Pete Crow-Armstrong, unanimously",
    "kind": "event",
@@ -6525,6 +6570,21 @@
    "q_word": "who",
    "title_len": 69,
    "age_days": 5.9,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
+   "slug": "why-are-people-saying-ao3-is-back",
+   "title": "Why are people saying AO3 is back? The fan fiction site returns",
+   "kind": "term",
+   "source": "manual",
+   "q_word": "why",
+   "title_len": 63,
+   "age_days": 3.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
