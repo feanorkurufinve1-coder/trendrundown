@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-19T10:38:22+00:00",
+ "checked": "2026-11-19T11:32:17+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -53,9 +53,9 @@
   },
   {
    "url": "/news",
-   "at": "2026-11-19T05:31:47+00:00",
+   "at": "2026-11-19T11:32:17+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -197,7 +197,7 @@
   },
   {
    "url": "/x/apple-outage-november-17-2026",
-   "at": "2026-11-19T05:16:50+00:00",
+   "at": "2026-11-19T11:31:58+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -449,9 +449,9 @@
   },
   {
    "url": "/x/florida-flooding-november-18-2026",
-   "at": "2026-11-19T05:16:56+00:00",
+   "at": "2026-11-19T11:32:04+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -485,9 +485,9 @@
   },
   {
    "url": "/x/hakeem-jeffries-speaker-nomination",
-   "at": "2026-11-19T05:17:03+00:00",
+   "at": "2026-11-19T11:32:11+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2077,8 +2077,8 @@
  },
  "summary": {
   "Submitted and indexed": 2,
-  "Discovered - currently not indexed": 18,
-  "Crawled - currently not indexed": 64,
-  "URL is unknown to Google": 85
+  "URL is unknown to Google": 86,
+  "Discovered - currently not indexed": 17,
+  "Crawled - currently not indexed": 64
  }
 }
