@@ -12345,7 +12345,7 @@
   ]
  },
  "apple-outage-november-17-2026": {
-  "time": "2026-11-18T16:49:32+00:00",
+  "time": "2026-11-19T16:55:03+00:00",
   "query": "apple outage",
   "in_suggest": true,
   "suggest": {
@@ -12366,30 +12366,34 @@
     "apple outage",
     "apple outage today",
     "apple outage status",
-    "apple outage right now",
-    "apple outage cause",
+    "apple outage yesterday",
+    "apple outage reason",
+    "apple outage resolved",
     "apple outage reddit",
-    "apple outage map",
+    "apple outage fixed",
     "apple outage news",
-    "apple outage cnn",
-    "apple outage cyber attack"
+    "apple outage november 2026"
    ]
   },
   "history": [
    [
     "2026-11-18",
     true
+   ],
+   [
+    "2026-11-19",
+    true
    ]
   ]
  },
  "florida-flooding-november-18-2026": {
-  "time": "2026-11-18T16:49:33+00:00",
+  "time": "2026-11-19T16:55:06+00:00",
   "query": "florida flooding",
   "in_suggest": true,
   "suggest": {
    "florida east coast flooding": [
-    "florida east coast flooding",
     "florida east coast flooding today",
+    "florida east coast flooding",
     "what makes florida's east coast prone to flooding from heavy rain",
     "why does florida's east coast experience localized flooding",
     "what parts of florida are flooded",
@@ -12407,39 +12411,52 @@
    "florida flooding": [
     "florida flooding",
     "florida flooding today",
+    "florida flooding map",
     "florida flooding this week",
-    "florida flooding orlando",
     "florida flooding right now",
-    "florida flooding forecast",
+    "florida flooding areas",
     "florida flooding brevard county",
-    "florida flooding palm bay",
-    "florida flooding hollywood",
-    "florida flooding 2026"
+    "florida flooding orlando",
+    "florida flooding news",
+    "florida flooding miami"
    ]
   },
   "history": [
    [
     "2026-11-18",
     true
+   ],
+   [
+    "2026-11-19",
+    true
    ]
   ]
  },
  "hakeem-jeffries-speaker-nomination": {
-  "time": "2026-11-18T16:49:34+00:00",
+  "time": "2026-11-19T16:55:07+00:00",
   "query": "is hakeem jeffries speaker",
   "in_suggest": true,
   "suggest": {
    "hakeem jeffries speaker nomination": [],
    "what is hakeem jeffries speaker nomination": [],
-   "is hakeem jeffries speaker": [],
+   "is hakeem jeffries speaker": [
+    "is hakeem jeffries speaker of the house"
+   ],
    "hakeem jeffries speaker": [
     "hakeem jeffries speaker",
+    "hakeem jeffries speaker vote",
+    "hakeem jeffries speaker of the house",
+    "hakeem jeffries speaker reddit",
     "hakeem jeffries speaker prospects 2024"
    ]
   },
   "history": [
    [
     "2026-11-18",
+    true
+   ],
+   [
+    "2026-11-19",
     true
    ]
   ]
@@ -12685,6 +12702,109 @@
     "my washing machine drain is clogged",
     "my washing machine drain is backing up",
     "my washing machine drain smells like rotten eggs"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-19",
+    true
+   ]
+  ]
+ },
+ "cma-awards-2026-winners": {
+  "time": "2026-11-19T16:55:04+00:00",
+  "query": "cma awards 2026 winners",
+  "in_suggest": true,
+  "suggest": {
+   "2026 cma awards": [
+    "2026 cma awards",
+    "2026 cma awards date",
+    "2026 cma awards winners",
+    "2026 cma awards red carpet",
+    "2026 cma awards results",
+    "2026 cma awards performers",
+    "2026 cma awards nominees",
+    "2026 cma awards location",
+    "2026 cma awards streaming",
+    "2026 cma awards live"
+   ],
+   "what is 2026 cma awards": [
+    "what channel is 2026 cma awards on",
+    "what is the 2026 cma awards",
+    "what day is the 2026 cma awards",
+    "what channel is the 2026 cma awards on tonight",
+    "what date is the 2026 cma awards",
+    "what channel is the 2026 country music awards on"
+   ],
+   "cma awards 2026 winners": [
+    "cma awards 2026 winners",
+    "cma awards 2026 winners list",
+    "cma awards 2026 winners so far",
+    "cma awards 2026 winners live",
+    "cma awards 2026 winners taylor swift",
+    "country music awards 2026 winners",
+    "country music awards 2026 winners list",
+    "cma awards 2026 results",
+    "country music awards 2026 results",
+    "cma touring awards 2026 winners"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-19",
+    true
+   ]
+  ]
+ },
+ "trump-xi-putin-meeting-declaration": {
+  "time": "2026-11-19T16:55:08+00:00",
+  "query": "trump xi putin meeting",
+  "in_suggest": true,
+  "suggest": {
+   "trump-xi-putin trilateral meeting": [],
+   "what is trump-xi-putin trilateral meeting": [],
+   "trump xi putin meeting": [
+    "trump xi putin meeting",
+    "trump xi putin meeting time",
+    "trump xi putin meeting live",
+    "trump putin china meeting",
+    "trump xi jinping putin meeting",
+    "chinese president before xi jinping",
+    "china president before xi jinping",
+    "how long will xi jinping be president",
+    "china president before xi",
+    "chinese president before xi"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-19",
+    true
+   ]
+  ]
+ },
+ "walmart-earnings-q3-2026": {
+  "time": "2026-11-19T16:55:09+00:00",
+  "query": "walmart earnings",
+  "in_suggest": true,
+  "suggest": {
+   "walmart third-quarter earnings": [
+    "walmart third quarter earnings",
+    "walmart third quarter results",
+    "3rd quarter earnings"
+   ],
+   "what is walmart third-quarter earnings": [],
+   "walmart earnings": [
+    "walmart earnings",
+    "walmart earnings date",
+    "walmart earnings call",
+    "walmart earnings report",
+    "walmart earnings release",
+    "walmart earnings expectations",
+    "walmart earnings q3",
+    "walmart earnings report today",
+    "walmart earnings q2 2026",
+    "walmart earnings call transcript"
    ]
   },
   "history": [

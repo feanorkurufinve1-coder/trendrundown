@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-19T16:48:39+00:00",
+ "checked": "2026-11-19T16:55:02+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -282,6 +282,18 @@
   {
    "url": "/x/cma-awards-2026-date",
    "at": "2026-11-19T14:17:39+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
+   "url": "/x/cma-awards-2026-winners",
+   "at": "2026-11-19T16:54:49+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1408,6 +1420,18 @@
    "userCanonical": "https://trendrundown.com/x/tri-series-cricket"
   },
   {
+   "url": "/x/trump-xi-putin-meeting-declaration",
+   "at": "2026-11-19T16:54:56+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/two-dan-sullivans-alaska",
    "at": "2026-11-19T16:33:04+00:00",
    "verdict": "NEUTRAL",
@@ -1434,6 +1458,18 @@
   {
    "url": "/x/vienna-game-true-story",
    "at": "2026-11-19T16:33:17+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
+   "url": "/x/walmart-earnings-q3-2026",
+   "at": "2026-11-19T16:55:02+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2137,7 +2173,7 @@
  },
  "summary": {
   "Submitted and indexed": 2,
-  "URL is unknown to Google": 89,
+  "URL is unknown to Google": 92,
   "Crawled - currently not indexed": 64,
   "Discovered - currently not indexed": 19
  }
