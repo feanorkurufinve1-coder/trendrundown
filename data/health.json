@@ -1416,19 +1416,12 @@
   },
   {
    "url": "/x/what-is-a-hip-pointer",
-   "at": "2026-11-19T16:47:28+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
-   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-   "indexingState": "INDEXING_STATE_UNSPECIFIED",
-   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
-   "lastCrawlTime": null,
-   "googleCanonical": null,
-   "userCanonical": null
+   "at": "2026-11-19T23:47:29+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/x/what-is-a-motion-to-refer",
-   "at": "2026-11-19T16:47:34+00:00",
+   "at": "2026-11-19T23:47:35+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1440,7 +1433,7 @@
   },
   {
    "url": "/x/what-is-a-motion-to-table",
-   "at": "2026-11-19T16:47:41+00:00",
+   "at": "2026-11-19T23:47:41+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1452,7 +1445,7 @@
   },
   {
    "url": "/x/what-is-a-privileged-resolution",
-   "at": "2026-11-19T16:47:47+00:00",
+   "at": "2026-11-19T23:47:48+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1464,19 +1457,12 @@
   },
   {
    "url": "/x/what-is-a-public-benefit-corporation",
-   "at": "2026-11-19T16:47:53+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
-   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-   "indexingState": "INDEXING_STATE_UNSPECIFIED",
-   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
-   "lastCrawlTime": null,
-   "googleCanonical": null,
-   "userCanonical": null
+   "at": "2026-11-19T23:48:18+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/x/what-is-a-quarter-quell",
-   "at": "2026-11-19T16:47:59+00:00",
+   "at": "2026-11-19T23:48:24+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1488,15 +1474,8 @@
   },
   {
    "url": "/x/what-is-a-safety-in-football",
-   "at": "2026-11-19T16:48:06+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "Crawled - currently not indexed",
-   "robotsTxtState": "ALLOWED",
-   "indexingState": "INDEXING_ALLOWED",
-   "pageFetchState": "SUCCESSFUL",
-   "lastCrawlTime": "2026-11-13T16:11:40Z",
-   "googleCanonical": "https://trendrundown.com/x/what-is-a-safety-in-football",
-   "userCanonical": "https://trendrundown.com/x/what-is-a-safety-in-football"
+   "at": "2026-11-19T23:48:54+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/x/what-is-a-sudden-stratospheric-warming",
@@ -2006,8 +1985,8 @@
  "summary": {
   "Submitted and indexed": 2,
   "Discovered - currently not indexed": 24,
-  "Crawled - currently not indexed": 58,
-  "URL is unknown to Google": 69,
-  "error": 24
+  "Crawled - currently not indexed": 57,
+  "URL is unknown to Google": 67,
+  "error": 27
  }
 }
