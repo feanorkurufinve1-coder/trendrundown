@@ -363,7 +363,7 @@
   },
   {
    "url": "/x/does-a-refrigerator-need-its-own-circuit",
-   "at": "2026-11-19T16:33:36+00:00",
+   "at": "2026-11-19T23:34:20+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1243,7 +1243,7 @@
   },
   {
    "url": "/x/the-good-daughter-book",
-   "at": "2026-11-19T16:32:51+00:00",
+   "at": "2026-11-19T23:33:12+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1255,7 +1255,7 @@
   },
   {
    "url": "/x/tri-series-cricket",
-   "at": "2026-11-19T16:32:58+00:00",
+   "at": "2026-11-19T23:33:18+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1279,7 +1279,7 @@
   },
   {
    "url": "/x/two-dan-sullivans-alaska",
-   "at": "2026-11-19T16:33:04+00:00",
+   "at": "2026-11-19T23:33:25+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1291,7 +1291,7 @@
   },
   {
    "url": "/x/under-siege-netflix-true-story",
-   "at": "2026-11-19T16:33:11+00:00",
+   "at": "2026-11-19T23:33:31+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1303,7 +1303,7 @@
   },
   {
    "url": "/x/vienna-game-true-story",
-   "at": "2026-11-19T16:33:17+00:00",
+   "at": "2026-11-19T23:33:37+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1327,19 +1327,12 @@
   },
   {
    "url": "/x/what-does-12-12-12-mean",
-   "at": "2026-11-19T16:33:23+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "Crawled - currently not indexed",
-   "robotsTxtState": "ALLOWED",
-   "indexingState": "INDEXING_ALLOWED",
-   "pageFetchState": "SUCCESSFUL",
-   "lastCrawlTime": "2026-11-12T15:42:22Z",
-   "googleCanonical": "https://trendrundown.com/x/what-does-12-12-12-mean",
-   "userCanonical": "https://trendrundown.com/x/what-does-12-12-12-mean"
+   "at": "2026-11-19T23:34:07+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/x/what-does-habibi-mean",
-   "at": "2026-11-19T16:33:30+00:00",
+   "at": "2026-11-19T23:34:14+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1351,7 +1344,7 @@
   },
   {
    "url": "/x/what-does-maxxing-mean",
-   "at": "2026-11-19T16:46:51+00:00",
+   "at": "2026-11-19T23:34:26+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1363,9 +1356,9 @@
   },
   {
    "url": "/x/what-does-microsoft-364-mean",
-   "at": "2026-11-19T16:46:57+00:00",
+   "at": "2026-11-19T23:34:33+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1375,7 +1368,7 @@
   },
   {
    "url": "/x/what-does-my-kid-mean-slang-guide",
-   "at": "2026-11-19T16:47:03+00:00",
+   "at": "2026-11-19T23:34:39+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1387,7 +1380,7 @@
   },
   {
    "url": "/x/what-does-refrigerator-coolant-smell-like",
-   "at": "2026-11-19T16:47:10+00:00",
+   "at": "2026-11-19T23:34:46+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1399,7 +1392,7 @@
   },
   {
    "url": "/x/what-does-unc-mean",
-   "at": "2026-11-19T16:47:16+00:00",
+   "at": "2026-11-19T23:34:52+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1411,7 +1404,7 @@
   },
   {
    "url": "/x/what-is-a-ground-stop",
-   "at": "2026-11-19T16:47:22+00:00",
+   "at": "2026-11-19T23:34:58+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2012,9 +2005,9 @@
  },
  "summary": {
   "Submitted and indexed": 2,
-  "Discovered - currently not indexed": 23,
-  "Crawled - currently not indexed": 59,
-  "URL is unknown to Google": 70,
-  "error": 23
+  "Discovered - currently not indexed": 24,
+  "Crawled - currently not indexed": 58,
+  "URL is unknown to Google": 69,
+  "error": 24
  }
 }
