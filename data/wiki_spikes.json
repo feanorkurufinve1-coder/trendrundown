@@ -1,266 +1,301 @@
 {
- "made": "2026-11-18T22:18:37+00:00",
- "day": "2026-11-17",
+ "made": "2026-11-19T04:33:49+00:00",
+ "day": "2026-11-18",
  "about": "Всплески просмотров английской Википедии за вчера: views — просмотров вчера, before — максимум за 3 прошлых дня (null = статьи не было в топ-1000). Идеи для страниц «who is / what is»; проверять факты по новостям.",
  "spikes": [
   {
-   "article": "Ray Tintori",
-   "views": 98033,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Ray_Tintori"
+   "article": "Grand Theft Auto VI",
+   "views": 519632,
+   "before": 153037,
+   "ratio": 3.4,
+   "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI"
   },
   {
-   "article": "Jacoby Brissett",
-   "views": 95821,
-   "before": 9322,
-   "ratio": 10.3,
-   "url": "https://en.wikipedia.org/wiki/Jacoby_Brissett"
+   "article": "Dancing with the Stars (American TV series) season 35",
+   "views": 150752,
+   "before": 16338,
+   "ratio": 9.2,
+   "url": "https://en.wikipedia.org/wiki/Dancing_with_the_Stars_%28American_TV_series%29_season_35"
   },
   {
-   "article": "Heidi Gardner",
-   "views": 83061,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Heidi_Gardner"
-  },
-  {
-   "article": "John Christ",
-   "views": 69141,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/John_Christ"
-  },
-  {
-   "article": "Crimean Bridge",
-   "views": 63755,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Crimean_Bridge"
-  },
-  {
-   "article": "Lee Reeves (boxer)",
-   "views": 56310,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Lee_Reeves_%28boxer%29"
-  },
-  {
-   "article": "Sing a Song of Sixpence",
-   "views": 53058,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Sing_a_Song_of_Sixpence"
-  },
-  {
-   "article": "TamilRockers",
-   "views": 47201,
-   "before": 8807,
-   "ratio": 5.4,
-   "url": "https://en.wikipedia.org/wiki/TamilRockers"
-  },
-  {
-   "article": "Islands: Non-Places",
-   "views": 41701,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Islands%3A_Non-Places"
-  },
-  {
-   "article": "Alan Milburn",
-   "views": 40277,
-   "before": 12300,
-   "ratio": 3.3,
-   "url": "https://en.wikipedia.org/wiki/Alan_Milburn"
-  },
-  {
-   "article": "Harley Morenstein",
-   "views": 38252,
-   "before": 9907,
+   "article": "Mary Peltola",
+   "views": 133395,
+   "before": 33825,
    "ratio": 3.9,
-   "url": "https://en.wikipedia.org/wiki/Harley_Morenstein"
+   "url": "https://en.wikipedia.org/wiki/Mary_Peltola"
   },
   {
-   "article": "Beastie Boys",
-   "views": 36894,
-   "before": 8336,
-   "ratio": 4.4,
-   "url": "https://en.wikipedia.org/wiki/Beastie_Boys"
-  },
-  {
-   "article": "John F. Kennedy Jr.",
-   "views": 36406,
+   "article": "Andrej Stojaković",
+   "views": 97435,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/John_F._Kennedy_Jr."
+   "url": "https://en.wikipedia.org/wiki/Andrej_Stojakovi%C4%87"
   },
   {
-   "article": "Sin senos sí hay paraíso season 4",
-   "views": 35043,
+   "article": "Hakeem Jeffries",
+   "views": 92218,
+   "before": 12843,
+   "ratio": 7.2,
+   "url": "https://en.wikipedia.org/wiki/Hakeem_Jeffries"
+  },
+  {
+   "article": "Quentin Grimes",
+   "views": 67780,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Sin_senos_s%C3%AD_hay_para%C3%ADso_season_4"
+   "url": "https://en.wikipedia.org/wiki/Quentin_Grimes"
   },
   {
-   "article": "Glenn Miller",
-   "views": 34734,
+   "article": "Tatyana Ali",
+   "views": 63987,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Glenn_Miller"
+   "url": "https://en.wikipedia.org/wiki/Tatyana_Ali"
   },
   {
-   "article": "Tylor Chase",
-   "views": 33981,
+   "article": "Peja Stojaković",
+   "views": 59924,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Tylor_Chase"
+   "url": "https://en.wikipedia.org/wiki/Peja_Stojakovi%C4%87"
   },
   {
-   "article": "Bob Harris (radio presenter)",
-   "views": 32017,
+   "article": "Juan Mata",
+   "views": 49467,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Bob_Harris_%28radio_presenter%29"
+   "url": "https://en.wikipedia.org/wiki/Juan_Mata"
   },
   {
-   "article": "Manni L. Perez",
-   "views": 31969,
+   "article": "Harry Shum Jr.",
+   "views": 49329,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Manni_L._Perez"
+   "url": "https://en.wikipedia.org/wiki/Harry_Shum_Jr."
   },
   {
-   "article": "JJ Gabriel",
-   "views": 31261,
+   "article": "John Madden",
+   "views": 46817,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/JJ_Gabriel"
+   "url": "https://en.wikipedia.org/wiki/John_Madden"
   },
   {
-   "article": "Zeb Wells",
-   "views": 30962,
+   "article": "Hollywood Freeway chickens",
+   "views": 46803,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Zeb_Wells"
+   "url": "https://en.wikipedia.org/wiki/Hollywood_Freeway_chickens"
   },
   {
-   "article": "Rachel Zegler",
-   "views": 30259,
-   "before": 8272,
-   "ratio": 3.7,
-   "url": "https://en.wikipedia.org/wiki/Rachel_Zegler"
-  },
-  {
-   "article": "MS Dhoni",
-   "views": 30116,
+   "article": "Maura Higgins",
+   "views": 39347,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/MS_Dhoni"
+   "url": "https://en.wikipedia.org/wiki/Maura_Higgins"
   },
   {
-   "article": "Tom Blyth",
-   "views": 29552,
+   "article": "Ezra Frech",
+   "views": 37416,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Tom_Blyth"
+   "url": "https://en.wikipedia.org/wiki/Ezra_Frech"
   },
   {
-   "article": "Dirty bomb",
-   "views": 29194,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Dirty_bomb"
+   "article": "Madden (film)",
+   "views": 34926,
+   "before": 8955,
+   "ratio": 3.9,
+   "url": "https://en.wikipedia.org/wiki/Madden_%28film%29"
   },
   {
-   "article": "Verity (web series)",
-   "views": 27815,
+   "article": "We will bury you",
+   "views": 34688,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Verity_%28web_series%29"
+   "url": "https://en.wikipedia.org/wiki/We_will_bury_you"
   },
   {
-   "article": "Justin Herbert",
-   "views": 27787,
+   "article": "Trev Alberts",
+   "views": 34009,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Justin_Herbert"
+   "url": "https://en.wikipedia.org/wiki/Trev_Alberts"
   },
   {
-   "article": "Jim Harbaugh",
-   "views": 27063,
+   "article": "Dancing with the Stars (American TV series)",
+   "views": 33359,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Jim_Harbaugh"
+   "url": "https://en.wikipedia.org/wiki/Dancing_with_the_Stars_%28American_TV_series%29"
   },
   {
-   "article": "Carolyn Bessette Kennedy",
-   "views": 26387,
+   "article": "Leigh Francis",
+   "views": 32507,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Carolyn_Bessette_Kennedy"
+   "url": "https://en.wikipedia.org/wiki/Leigh_Francis"
   },
   {
-   "article": "Vanessa Williams",
-   "views": 25641,
+   "article": "Connor Wood (comedian)",
+   "views": 32320,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Vanessa_Williams"
+   "url": "https://en.wikipedia.org/wiki/Connor_Wood_%28comedian%29"
   },
   {
-   "article": "Hung Cao",
-   "views": 23374,
+   "article": "Al Sharpton",
+   "views": 31184,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Hung_Cao"
+   "url": "https://en.wikipedia.org/wiki/Al_Sharpton"
   },
   {
-   "article": "Fayyadh Al Ruwaili",
-   "views": 22887,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Fayyadh_Al_Ruwaili"
+   "article": "Ruby Franke",
+   "views": 29272,
+   "before": 8121,
+   "ratio": 3.6,
+   "url": "https://en.wikipedia.org/wiki/Ruby_Franke"
   },
   {
-   "article": "November 17",
-   "views": 22393,
+   "article": "Imelda Marcos",
+   "views": 28434,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/November_17"
+   "url": "https://en.wikipedia.org/wiki/Imelda_Marcos"
   },
   {
-   "article": "Daryl Hannah",
-   "views": 22115,
+   "article": "Cameron Bancroft",
+   "views": 28008,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Daryl_Hannah"
+   "url": "https://en.wikipedia.org/wiki/Cameron_Bancroft"
   },
   {
-   "article": "Peter Storey",
-   "views": 21206,
+   "article": "Buzzy Peltola",
+   "views": 27598,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Peter_Storey"
+   "url": "https://en.wikipedia.org/wiki/Buzzy_Peltola"
   },
   {
-   "article": "3 Body Problem (TV series)",
-   "views": 20958,
+   "article": "Heidi Overton",
+   "views": 26134,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/3_Body_Problem_%28TV_series%29"
+   "url": "https://en.wikipedia.org/wiki/Heidi_Overton"
   },
   {
-   "article": "Jacqueline Kennedy Onassis",
-   "views": 20397,
+   "article": "Guarding Stars",
+   "views": 25777,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Jacqueline_Kennedy_Onassis"
+   "url": "https://en.wikipedia.org/wiki/Guarding_Stars"
   },
   {
-   "article": "Adam Yauch",
-   "views": 20065,
+   "article": "W. S. Gilbert",
+   "views": 25679,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Adam_Yauch"
+   "url": "https://en.wikipedia.org/wiki/W._S._Gilbert"
+  },
+  {
+   "article": "Jeff Stelling",
+   "views": 24832,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Jeff_Stelling"
+  },
+  {
+   "article": "Bill Watts",
+   "views": 24612,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Bill_Watts"
+  },
+  {
+   "article": "Amber Glenn",
+   "views": 24184,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Amber_Glenn"
+  },
+  {
+   "article": "Leighton Meester",
+   "views": 23747,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Leighton_Meester"
+  },
+  {
+   "article": "privacy policy",
+   "views": 23303,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/privacy_policy"
+  },
+  {
+   "article": "Gail Halvorsen",
+   "views": 22371,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Gail_Halvorsen"
+  },
+  {
+   "article": "Nico Paz",
+   "views": 22369,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Nico_Paz"
+  },
+  {
+   "article": "Naya Rivera",
+   "views": 22005,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Naya_Rivera"
+  },
+  {
+   "article": "Robert Stroud",
+   "views": 21578,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Robert_Stroud"
+  },
+  {
+   "article": "Gayniggers from Outer Space",
+   "views": 21509,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Gayniggers_from_Outer_Space"
+  },
+  {
+   "article": "November 18",
+   "views": 21185,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/November_18"
+  },
+  {
+   "article": "Julian Hall (soccer)",
+   "views": 20475,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Julian_Hall_%28soccer%29"
+  },
+  {
+   "article": "Bongbong Marcos",
+   "views": 20353,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Bongbong_Marcos"
+  },
+  {
+   "article": "Jared Padalecki",
+   "views": 20177,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Jared_Padalecki"
   }
  ]
 }
