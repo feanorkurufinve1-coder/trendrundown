@@ -1180,7 +1180,7 @@
   },
   {
    "url": "/x/silver-slugger-award",
-   "at": "2026-11-19T16:32:07+00:00",
+   "at": "2026-11-19T23:26:06+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1192,31 +1192,17 @@
   },
   {
    "url": "/x/spacex-starship-caught-by-tower",
-   "at": "2026-11-19T16:32:13+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
-   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-   "indexingState": "INDEXING_STATE_UNSPECIFIED",
-   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
-   "lastCrawlTime": null,
-   "googleCanonical": null,
-   "userCanonical": null
+   "at": "2026-11-19T23:26:36+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/x/ss-united-states-sinking",
-   "at": "2026-11-19T16:32:20+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
-   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-   "indexingState": "INDEXING_STATE_UNSPECIFIED",
-   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
-   "lastCrawlTime": null,
-   "googleCanonical": null,
-   "userCanonical": null
+   "at": "2026-11-19T23:27:06+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/x/stacy-keach-death",
-   "at": "2026-11-19T16:32:26+00:00",
+   "at": "2026-11-19T23:27:12+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1228,7 +1214,7 @@
   },
   {
    "url": "/x/teruaki-sato",
-   "at": "2026-11-19T16:32:32+00:00",
+   "at": "2026-11-19T23:27:18+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1240,19 +1226,12 @@
   },
   {
    "url": "/x/the-altruists-true-story",
-   "at": "2026-11-19T16:32:39+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
-   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-   "indexingState": "INDEXING_STATE_UNSPECIFIED",
-   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
-   "lastCrawlTime": null,
-   "googleCanonical": null,
-   "userCanonical": null
+   "at": "2026-11-19T23:27:48+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/x/the-empress-netflix-true-story",
-   "at": "2026-11-19T16:32:45+00:00",
+   "at": "2026-11-19T23:27:55+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2033,9 +2012,9 @@
  },
  "summary": {
   "Submitted and indexed": 2,
-  "Discovered - currently not indexed": 24,
+  "Discovered - currently not indexed": 23,
   "Crawled - currently not indexed": 59,
-  "URL is unknown to Google": 72,
-  "error": 20
+  "URL is unknown to Google": 70,
+  "error": 23
  }
 }
