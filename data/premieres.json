@@ -1,61 +1,7 @@
 {
- "made": "2026-11-18T18:47:46+00:00",
+ "made": "2026-11-19T06:59:08+00:00",
  "about": "Премьеры сериалов и новых сезонов в США на 14 дней вперёд (TVmaze). new_series = совсем новый сериал. Сырьё для прогнозов «is X a true story», «X cast», «X season N release time».",
  "premieres": [
-  {
-   "date": "2026-11-18",
-   "show": "Sweet Homes",
-   "season": 1,
-   "new_series": true,
-   "type": "Reality",
-   "genres": [],
-   "network": "Destination America",
-   "premiered": "2026-11-18",
-   "summary": "",
-   "url": "https://www.tvmaze.com/shows/95318/sweet-homes",
-   "official": "https://sweethomes.tv"
-  },
-  {
-   "date": "2026-11-18",
-   "show": "Small Town Trouble: Texas",
-   "season": 1,
-   "new_series": true,
-   "type": "Reality",
-   "genres": [],
-   "network": "Bravo",
-   "premiered": "2026-11-18",
-   "summary": "In the heart of Texas Hill Country is the picture‑perfect town of Boerne where wealth, beauty, faith and family reign supreme. Centered on a tight-knit circle of glamorous women, this series follows their lives as they raise families, run ranches and farms and manage sparkling social calendars in a town rooted in rodeos and tradition. Behind the polished smiles and Sunday sermons, however, there a",
-   "url": "https://www.tvmaze.com/shows/95155/small-town-trouble-texas",
-   "official": null
-  },
-  {
-   "date": "2026-11-18",
-   "show": "Win the Mall",
-   "season": 1,
-   "new_series": true,
-   "type": "Reality",
-   "genres": [],
-   "network": "Netflix",
-   "premiered": "2026-11-18",
-   "summary": "Do you think shopping should be considered an Olympic sport? Bargain hunt like it's a full-time job? Is retail therapy your form of … actual therapy?Then get ready for the shopping spree of a lifetime, because the new series Win the Mall is the ultimate fantasy retail experience. This high-stakes competition transforms a classic American shopping mall into a thrilling game of strategy and unexpect",
-   "url": "https://www.tvmaze.com/shows/90831/win-the-mall",
-   "official": null
-  },
-  {
-   "date": "2026-11-18",
-   "show": "Country Music Association Awards",
-   "season": 2026,
-   "new_series": false,
-   "type": "Award Show",
-   "genres": [
-    "Music"
-   ],
-   "network": "ABC",
-   "premiered": "1967-10-20",
-   "summary": "The Country Music Association Awards are presented to country music artists and broadcasters to recognize outstanding achievement in the county music industry.",
-   "url": "https://www.tvmaze.com/shows/6731/country-music-association-awards",
-   "official": "https://abc.com/shows/cma-awards"
-  },
   {
    "date": "2026-11-19",
    "show": "The Altruists",
@@ -520,6 +466,21 @@
    "official": null
   },
   {
+   "date": "2026-11-30",
+   "show": "The Wonderful World of Disney: Holiday Spectacular",
+   "season": 2026,
+   "new_series": false,
+   "type": "Variety",
+   "genres": [
+    "Music"
+   ],
+   "network": "ABC",
+   "premiered": "2016-11-24",
+   "summary": "This yearly event kicks off the holiday season in a way only Disney can, showcasing extraordinary music performances, special appearances and some unforgettable Disney magic moments.",
+   "url": "https://www.tvmaze.com/shows/33712/the-wonderful-world-of-disney-holiday-spectacular",
+   "official": null
+  },
+  {
    "date": "2026-12-01",
    "show": "Trinity",
    "season": 1,
@@ -547,7 +508,7 @@
    "premiered": "2026-12-01",
    "summary": "",
    "url": "https://www.tvmaze.com/shows/95345/collect-praise",
-   "official": null
+   "official": "https://www.netflix.com/title/83243041"
   },
   {
    "date": "2026-12-01",
@@ -563,6 +524,21 @@
    "summary": "Some of the biggest names in music will come together to celebrate the holidays on CMA Country Christmas a two-hour special that airs annually on ABC TV. This special is a celebration of the season featuring some of the top stars in music performing holiday songs and getting into the Christmas spirit.",
    "url": "https://www.tvmaze.com/shows/6822/cma-country-christmas",
    "official": "https://cmachristmas.com"
+  },
+  {
+   "date": "2026-12-01",
+   "show": "FBI True",
+   "season": 9,
+   "new_series": false,
+   "type": "Documentary",
+   "genres": [
+    "Crime"
+   ],
+   "network": "Paramount+",
+   "premiered": "2023-02-28",
+   "summary": "Each edition of FBI True focuses on dynamic insider conversations between agents when they meet at the FBI's favorite bar, the Arts &amp; Crafts Beer Parlor, just down the block from their New York headquarters. It's a hallowed place where law enforcement colleagues talk frankly about the triumphs, tragedies and real truths of their jobs. In this relaxed setting, they share hair-raising stories of",
+   "url": "https://www.tvmaze.com/shows/67172/fbi-true",
+   "official": "https://www.paramountplus.com/shows/fbi-true/"
   },
   {
    "date": "2026-12-02",
@@ -595,6 +571,53 @@
    "summary": "Bad Monkey tells the story of Andrew Yancy, a one-time detective demoted to restaurant inspector in Southern Florida. A severed arm found by a tourist out fishing pulls Yancy into the world of greed and corruption that decimates the land and environment in both Florida and the Bahamas. And yes, there's a monkey.",
    "url": "https://www.tvmaze.com/shows/56778/bad-monkey",
    "official": "https://tv.apple.com/show/bad-monkey/umc.cmc.2qoep59s6qukjonprttysfs8x"
+  },
+  {
+   "date": "2026-12-03",
+   "show": "Can You Hide... Shaq?",
+   "season": 1,
+   "new_series": true,
+   "type": "Reality",
+   "genres": [],
+   "network": "ABC",
+   "premiered": "2026-12-03",
+   "summary": "Actress and comedian Nicole Byer hosts eight contestants as they take on the ultimate game of hide-and-seek. Their mission is to disguise, distract, deceive, and hide Shaq in plain sight across Dallas, Texas, for a shot at the grand prize.",
+   "url": "https://www.tvmaze.com/shows/95532/can-you-hide-shaq",
+   "official": null
+  },
+  {
+   "date": "2026-12-03",
+   "show": "Pride and Prejudice",
+   "season": 1,
+   "new_series": true,
+   "type": "Scripted",
+   "genres": [
+    "Drama",
+    "Romance",
+    "History"
+   ],
+   "network": "Netflix",
+   "premiered": "2026-12-03",
+   "summary": "The adaptation will hew closely to the original text, reuniting existing fans with the timeless novel, while also introducing a new generation to Austen.",
+   "url": "https://www.tvmaze.com/shows/84008/pride-and-prejudice",
+   "official": "https://www.netflix.com/title/81737965"
+  },
+  {
+   "date": "2026-12-03",
+   "show": "Dance Moms: A New Era",
+   "season": 3,
+   "new_series": false,
+   "type": "Reality",
+   "genres": [
+    "Drama",
+    "Family",
+    "Music"
+   ],
+   "network": "Hulu",
+   "premiered": "2024-08-07",
+   "summary": "Dance Moms: A New Era is a reboot of the ever so popular Dance Moms. This time, with a new coach, new dancers and new mama drama. Introducing beloved dance coach, Glo Hampton, who wants to take her students and prestigious dance school Studio Bleu to the next level - competing nationally every week. But the road to glory won't be an easy one. Coach Glo must juggle her tiny but mighty dancers, thei",
+   "url": "https://www.tvmaze.com/shows/78689/dance-moms-a-new-era",
+   "official": "https://www.hulu.com/series/dance-moms-a-new-era-29afccec-ee2a-4129-841d-428e304e8f44"
   }
  ]
 }
