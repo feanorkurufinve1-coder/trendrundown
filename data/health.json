@@ -857,7 +857,7 @@
   },
   {
    "url": "/x/kids-choice-awards-2026-date",
-   "at": "2026-11-19T03:32:10+00:00",
+   "at": "2026-11-19T09:46:48+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -869,7 +869,7 @@
   },
   {
    "url": "/x/lame-duck-president",
-   "at": "2026-11-19T03:32:16+00:00",
+   "at": "2026-11-19T09:46:55+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -881,7 +881,7 @@
   },
   {
    "url": "/x/lame-duck-session",
-   "at": "2026-11-19T03:32:22+00:00",
+   "at": "2026-11-19T09:47:01+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -893,7 +893,7 @@
   },
   {
    "url": "/x/latin-grammys-vs-grammys",
-   "at": "2026-11-19T03:32:29+00:00",
+   "at": "2026-11-19T09:47:08+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -905,19 +905,19 @@
   },
   {
    "url": "/x/ligue-1",
-   "at": "2026-11-19T03:32:35+00:00",
-   "verdict": "PASS",
-   "coverageState": "Submitted and indexed",
+   "at": "2026-11-19T09:47:14+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
    "indexingState": "INDEXING_ALLOWED",
    "pageFetchState": "SUCCESSFUL",
-   "lastCrawlTime": "2026-10-31T12:53:51Z",
+   "lastCrawlTime": "2026-11-19T02:57:22Z",
    "googleCanonical": "https://trendrundown.com/x/ligue-1",
    "userCanonical": "https://trendrundown.com/x/ligue-1"
   },
   {
    "url": "/x/madden-movie-true-story",
-   "at": "2026-11-19T03:32:42+00:00",
+   "at": "2026-11-19T09:47:20+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -929,7 +929,7 @@
   },
   {
    "url": "/x/maine-2nd-district-ranked-choice",
-   "at": "2026-11-19T03:32:48+00:00",
+   "at": "2026-11-19T09:47:26+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -941,7 +941,7 @@
   },
   {
    "url": "/x/medicaid-work-requirements-start-date",
-   "at": "2026-11-19T03:32:54+00:00",
+   "at": "2026-11-19T09:47:33+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -953,7 +953,7 @@
   },
   {
    "url": "/x/miami-airport-plane-collision-copa-ups",
-   "at": "2026-11-19T03:33:01+00:00",
+   "at": "2026-11-19T09:47:39+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -965,7 +965,7 @@
   },
   {
    "url": "/x/mlb-manager-of-the-year-voting",
-   "at": "2026-11-19T03:33:07+00:00",
+   "at": "2026-11-19T09:47:45+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -977,7 +977,7 @@
   },
   {
    "url": "/x/mlb-posting-system",
-   "at": "2026-11-19T03:33:13+00:00",
+   "at": "2026-11-19T09:47:52+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -989,7 +989,7 @@
   },
   {
    "url": "/x/mlb-rookie-eligibility",
-   "at": "2026-11-19T03:33:20+00:00",
+   "at": "2026-11-19T09:47:58+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1001,7 +1001,7 @@
   },
   {
    "url": "/x/most-mvp-awards-mlb",
-   "at": "2026-11-19T03:33:26+00:00",
+   "at": "2026-11-19T09:48:04+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1013,7 +1013,7 @@
   },
   {
    "url": "/x/murder-in-galicia-true-story",
-   "at": "2026-11-19T03:33:33+00:00",
+   "at": "2026-11-19T09:48:11+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1025,7 +1025,7 @@
   },
   {
    "url": "/x/national-book-awards-2026",
-   "at": "2026-11-19T03:33:39+00:00",
+   "at": "2026-11-19T09:48:17+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1037,7 +1037,7 @@
   },
   {
    "url": "/x/national-parks-free-veterans-day",
-   "at": "2026-11-19T03:33:45+00:00",
+   "at": "2026-11-19T09:48:23+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2076,9 +2076,9 @@
   "/x/hank-aaron-award": "2026-11-18T20:33:39+00:00"
  },
  "summary": {
-  "Submitted and indexed": 3,
+  "Submitted and indexed": 2,
   "Discovered - currently not indexed": 23,
-  "Crawled - currently not indexed": 63,
+  "Crawled - currently not indexed": 64,
   "URL is unknown to Google": 80
  }
 }
