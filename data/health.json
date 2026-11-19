@@ -41,7 +41,7 @@
  "urls": [
   {
    "url": "/",
-   "at": "2026-11-19T14:02:56+00:00",
+   "at": "2026-11-19T20:17:14+00:00",
    "verdict": "PASS",
    "coverageState": "Submitted and indexed",
    "robotsTxtState": "ALLOWED",
@@ -89,7 +89,7 @@
   },
   {
    "url": "/x/telerally",
-   "at": "2026-11-19T14:02:31+00:00",
+   "at": "2026-11-19T20:16:48+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -101,7 +101,7 @@
   },
   {
    "url": "/x/mutual-option",
-   "at": "2026-11-19T14:02:37+00:00",
+   "at": "2026-11-19T20:16:55+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -113,7 +113,7 @@
   },
   {
    "url": "/x/dane-cook-brother",
-   "at": "2026-11-19T14:02:43+00:00",
+   "at": "2026-11-19T20:17:01+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -125,7 +125,7 @@
   },
   {
    "url": "/x/cyber-monday",
-   "at": "2026-11-19T14:02:50+00:00",
+   "at": "2026-11-19T20:17:07+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -137,7 +137,7 @@
   },
   {
    "url": "/x/40-man-roster",
-   "at": "2026-11-19T14:03:03+00:00",
+   "at": "2026-11-19T20:17:20+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -149,7 +149,7 @@
   },
   {
    "url": "/x/alaska-ranked-choice-voting",
-   "at": "2026-11-19T14:03:09+00:00",
+   "at": "2026-11-19T20:17:27+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2164,7 +2164,7 @@
    "userCanonical": "https://trendrundown.com/x/wta-tennis"
   }
  ],
- "sm_at": "2026-11-19T14:02:24+00:00",
+ "sm_at": "2026-11-19T20:16:41+00:00",
  "first_indexed": {
   "/x/cyber-monday": "2026-11-13T16:25:58+00:00",
   "/": "2026-11-13T16:25:58+00:00",
