@@ -27,7 +27,7 @@
 | 13 нояб – | Disney+: Avengers: Endgame Encore (версия с доп. сценами), всплеск Википедии | — заняты гигантами, пропуск | — |
 | ~17–18 нояб | Пик метеорного потока Леониды | when is the leonid meteor shower 2026 — проверить конкурентов 15–16 нояб | — |
 | 18 нояб | Bravo: Small Town Trouble: Texas (Boerne, TX) | where is boerne texas — слабая тема, проверить | — |
-| 25 нояб | Prime Video: Blade Runner 2099 (Michelle Yeoh, Hunter Schafer) | is blade runner 2099 a sequel — писать 21–23 нояб | — |
+| 25 нояб | Prime Video: Blade Runner 2099 (Michelle Yeoh, Hunter Schafer) | is blade runner 2099 a sequel | ✅ is-blade-runner-2099-a-sequel (19 нояб) |
 | 13 нояб | Texas CLEAR Alert (+2750% «what is a clear alert in texas») | — много местных ТВ-ответов; связано с делом о пропаже, пропуск | — |
 | 13 нояб | Круизное судно на Миссисипи у Нового Орлеана («what is a barge») | — пропуск (происшествие, пострадавшие) | — |
 | Дата | Событие | Вероятный запрос (С) | Страница |
@@ -164,6 +164,9 @@
 Проверка: через 3–7 дней после даты сверить с Trends CSV и Search Console — угадали или нет, записать урок сюда.
 
 ## Уроки
+- 19 нояб, вечер (GSC: последний полный день 17 нояб — 2 клика / 3 показа, всё на главной и старых авто-адресах alexandra-eala, jasveen-sangha; 18 нояб пока 0/0. health.json 19 нояб: в индексе 2 URL из проверенных, но first_indexed пополнился: /x/hank-aaron-award попал в индекс 18 нояб — первая за 10 дней ручная страница; sitemap 169 отправлено / 0, /trends Google ещё не знает):
+  - По типам (страницы 16–17 нояб, 2–3 дня): тренды (ram-altman, ao3-is-back, november-17, i-got-so-mad, julia-stiles, move-the-bean) — 0 показов, «Discovered» или «неизвестен Google»; прогнозы (melania-series, oobah-butler) — 0, неизвестны Google; вечные (refrigerator-circuit, washing-machine-dripping) — 0, Discovered. Вернулась в индекс только старая страница-термин MLB (hank-aaron-award, 5 нояб) — Google сначала возвращает страницы с историей показов.
+  - Радар 19 нояб: Reddit отдаёт 404 (посты и комментарии) — у кандидатов в поле reddit случайные посты по словам («keep your kids home» → пост про отопление); сильные свежие мемы (Talk to Me Doja) радар не увидел — Know Your Meme Explainers за неделю по-прежнему нужен как второй источник.
 - 18 нояб, вечер (GSC: последний полный день 17 нояб — 2 клика / 3 показа, всё на главной и старых авто-адресах alexandra-eala, jasveen-sangha; health.json 18 нояб: в индексе 3 URL — /, /x/cyber-monday, /x/ligue-1; 63 Crawled – not indexed, 94 неизвестны Google; sitemap Google последний раз скачивал 13 нояб):
   - По типам (страницы 15–16 нояб, 2–3 дня): тренды (microsoft-364, finland-embassy, dinosaurs-in-mexico, ao3-is-back, november-17), обзор недели, гид для родителей, прогнозы (how-to-vote-on-the-circle-hulu, is-yellowjackets-season-4-the-last-season), вечные — 0 показов, новых URL в индексе нет.
   - Слух о 17 нояб «сбылся» наполовину: реальные сбои (Apple 17 нояб, Chase 16, FAA 13, Microsoft 12) породили вторую волну подсказок («what is with all the outages», «keep kids home»). Вывод: страницу-опровержение слуха обновлять в день X фактами, а не писать новую.

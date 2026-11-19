@@ -1,0 +1,46 @@
+{
+ "subject": "Washing machine not draining",
+ "kind": "other",
+ "query": "why won't my washing machine drain",
+ "title": "Why won't my washing machine drain? 8 causes, most likely first",
+ "answer": "Most often, something is blocking the water's way out: a kinked or clogged drain hose, or a pump filter jammed with lint, socks or coins. Next most likely are an open or faulty lid or door switch, an unbalanced load, a clogged house drain, and finally a failed drain pump or control board.",
+ "body": "Start safe: turn the washer off and unplug it before touching the hose, filter or anything behind the machine, and mop up standing water first. A full load can hold roughly 30 to 35 gallons, so have towels and a bucket or shallow tray ready.\n\nThe likely causes, in rough order:\n1. Kinked or clogged drain hose. Pull the washer out gently and straighten the hose. If water still won't move, disconnect it over a bucket and flush it; a single sock is a common culprit. In freezing weather, a hose in a cold garage can ice up.\n2. Clogged pump filter. Front-loaders usually have a small access door at the bottom front. Lay towels down, open the drain tube or filter slowly over a tray, then clean out lint, coins and hair. Many top-loaders have no user filter.\n3. Lid or door switch. A top-loader won't drain or spin unless it senses the lid is closed, and a front-loader needs the door to lock. Check that nothing is stopping it from latching. Never tape or bypass this safety switch.\n4. Unbalanced load. A heavy bunched item like a blanket can stop the cycle. Redistribute the load and run Drain/Spin again.\n5. House drain or standpipe backup. If a nearby sink or floor drain is slow, or water comes back up the standpipe, the clog is in your plumbing, not the washer.\n6. Wrong hose height. The hose usually needs to sit within a height range set in your manual; too low can siphon water back, too high can strain the pump.\n7. Too many suds or a glitch. Too much detergent can slow draining. A reset often clears error states: unplug for about a minute, then plug in. Check your display for an error code and look it up in the manual.\n8. Failed pump, belt or control board. If the drain path is clear and you hear a hum but no water moves, or the pump is silent, the pump may have failed. Belt-driven older models can also snap a belt.\n\nCall a technician if the washer still won't drain after you've cleared the hose and filter, if you hear humming or grinding from the pump, if water is leaking underneath, or if you see any electrical issue such as a tripped breaker or burning smell. Call a plumber instead if other drains in the house are also slow. Typical repair costs range from about $50 to $450 depending on the part.",
+ "faq": [
+  {
+   "q": "How do I drain a washing machine full of water?",
+   "a": "Unplug it, then lower the drain hose into a bucket or floor drain, or use the small drain tube behind a front-loader's access door. Work slowly with towels down."
+  },
+  {
+   "q": "Why does my washer hum but not drain?",
+   "a": "Humming usually means the pump is trying to run but is blocked by debris or has failed. Clear the filter and hose first; if it still hums, call a technician."
+  },
+  {
+   "q": "Can too much detergent stop a washer from draining?",
+   "a": "It can slow it. Excess suds, especially in high-efficiency machines, can trigger errors or a slow drain. Use the recommended amount of HE detergent."
+  },
+  {
+   "q": "Is it worth fixing a washer that won't drain?",
+   "a": "Usually, if the cause is a clog, switch or pump. Those repairs often cost far less than a new machine. A failed control board on an old washer may not be worth it."
+  }
+ ],
+ "links": [
+  [
+   "Sears PartsDirect",
+   "Why won't my washing machine drain?",
+   "https://www.searspartsdirect.com/diy/symptom/washer-repair/1234598/washing-machine-won-t-drain/wash001"
+  ],
+  [
+   "Bob Vila",
+   "Washer Not Draining? Here's What to Do",
+   "https://www.bobvila.com/articles/washer-not-draining/"
+  ],
+  [
+   "Mr. Appliance",
+   "What to Do When Your Washing Machine Won't Drain",
+   "https://www.mrappliance.com/blog/what-to-do-when-your-washing-machine-won-t-drain/"
+  ]
+ ],
+ "image_prompt": "A white front-loading washing machine in a clean laundry room with a small pool of water on the tile floor and a folded towel beside it, realistic photo style",
+ "made": "2026-11-19T13:50:00Z",
+ "first": "2026-11-19T13:50:00Z"
+}
