@@ -1,5 +1,5 @@
 {
- "made": "2026-11-19T06:59:08+00:00",
+ "made": "2026-11-19T19:03:52+00:00",
  "about": "Премьеры сериалов и новых сезонов в США на 14 дней вперёд (TVmaze). new_series = совсем новый сериал. Сырьё для прогнозов «is X a true story», «X cast», «X season N release time».",
  "premieres": [
   {
@@ -583,6 +583,21 @@
    "premiered": "2026-12-03",
    "summary": "Actress and comedian Nicole Byer hosts eight contestants as they take on the ultimate game of hide-and-seek. Their mission is to disguise, distract, deceive, and hide Shaq in plain sight across Dallas, Texas, for a shot at the grand prize.",
    "url": "https://www.tvmaze.com/shows/95532/can-you-hide-shaq",
+   "official": null
+  },
+  {
+   "date": "2026-12-03",
+   "show": "My Favorite Murder",
+   "season": 1,
+   "new_series": true,
+   "type": "Documentary",
+   "genres": [
+    "Crime"
+   ],
+   "network": "HBO",
+   "premiered": "2026-12-03",
+   "summary": "My Favorite Murder follows hosts Karen Kilgariff and Georgia Hardstark as they take their wildly popular podcast on tour across America, blending true crime, comedy, and deeply personal storytelling while inviting the passionate community of Murderinos that has grown around them to share their stories.",
+   "url": "https://www.tvmaze.com/shows/95765/my-favorite-murder",
    "official": null
   },
   {
