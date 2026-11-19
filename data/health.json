@@ -701,7 +701,7 @@
   },
   {
    "url": "/x/iran-bahrain-radar-strike",
-   "at": "2026-11-19T09:32:05+00:00",
+   "at": "2026-11-19T15:47:02+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -713,7 +713,7 @@
   },
   {
    "url": "/x/is-amanda-nunes-retired",
-   "at": "2026-11-19T09:32:12+00:00",
+   "at": "2026-11-19T15:47:08+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -725,7 +725,7 @@
   },
   {
    "url": "/x/is-being-heumann-a-true-story",
-   "at": "2026-11-19T09:32:18+00:00",
+   "at": "2026-11-19T15:47:14+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -761,7 +761,7 @@
   },
   {
    "url": "/x/is-gta-6-coming-to-pc",
-   "at": "2026-11-19T09:32:24+00:00",
+   "at": "2026-11-19T15:47:21+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -773,7 +773,7 @@
   },
   {
    "url": "/x/is-leonida-a-real-place",
-   "at": "2026-11-19T09:32:30+00:00",
+   "at": "2026-11-19T15:47:27+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -797,7 +797,7 @@
   },
   {
    "url": "/x/is-philomena-cunk-real",
-   "at": "2026-11-19T09:32:36+00:00",
+   "at": "2026-11-19T15:47:33+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -809,7 +809,7 @@
   },
   {
    "url": "/x/is-the-law-of-beasts-a-true-story",
-   "at": "2026-11-19T09:32:42+00:00",
+   "at": "2026-11-19T15:47:40+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -821,7 +821,7 @@
   },
   {
    "url": "/x/is-thomas-massie-a-republican",
-   "at": "2026-11-19T09:32:49+00:00",
+   "at": "2026-11-19T15:47:46+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -833,9 +833,9 @@
   },
   {
    "url": "/x/is-yellowjackets-season-4-the-last-season",
-   "at": "2026-11-19T09:32:55+00:00",
+   "at": "2026-11-19T15:47:53+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -845,7 +845,7 @@
   },
   {
    "url": "/x/jensen-huang-resigns-nvidia",
-   "at": "2026-11-19T09:33:01+00:00",
+   "at": "2026-11-19T15:47:59+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -857,7 +857,7 @@
   },
   {
    "url": "/x/keepsake-sea-release-date",
-   "at": "2026-11-19T09:33:07+00:00",
+   "at": "2026-11-19T15:48:05+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1925,9 +1925,9 @@
   },
   {
    "url": "/x/why-are-people-trying-to-move-the-bean",
-   "at": "2026-11-19T09:31:53+00:00",
+   "at": "2026-11-19T15:46:49+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2057,9 +2057,9 @@
   },
   {
    "url": "/x/why-is-my-washing-machine-dripping-water-inside",
-   "at": "2026-11-19T09:31:59+00:00",
+   "at": "2026-11-19T15:46:55+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2137,8 +2137,8 @@
  },
  "summary": {
   "Submitted and indexed": 2,
-  "URL is unknown to Google": 91,
+  "URL is unknown to Google": 90,
   "Crawled - currently not indexed": 64,
-  "Discovered - currently not indexed": 17
+  "Discovered - currently not indexed": 18
  }
 }
