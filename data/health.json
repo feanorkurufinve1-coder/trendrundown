@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-19T15:51:43+00:00",
+ "checked": "2026-11-19T16:33:36+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -365,7 +365,7 @@
   },
   {
    "url": "/x/does-a-refrigerator-need-its-own-circuit",
-   "at": "2026-11-19T10:18:33+00:00",
+   "at": "2026-11-19T16:33:36+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1289,7 +1289,7 @@
   },
   {
    "url": "/x/sierra-winter-storm-warning",
-   "at": "2026-11-19T10:16:57+00:00",
+   "at": "2026-11-19T16:32:01+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1301,7 +1301,7 @@
   },
   {
    "url": "/x/silver-slugger-award",
-   "at": "2026-11-19T10:17:03+00:00",
+   "at": "2026-11-19T16:32:07+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1313,9 +1313,9 @@
   },
   {
    "url": "/x/spacex-starship-caught-by-tower",
-   "at": "2026-11-19T10:17:10+00:00",
+   "at": "2026-11-19T16:32:13+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1325,7 +1325,7 @@
   },
   {
    "url": "/x/ss-united-states-sinking",
-   "at": "2026-11-19T10:17:16+00:00",
+   "at": "2026-11-19T16:32:20+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1337,7 +1337,7 @@
   },
   {
    "url": "/x/stacy-keach-death",
-   "at": "2026-11-19T10:17:22+00:00",
+   "at": "2026-11-19T16:32:26+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1349,7 +1349,7 @@
   },
   {
    "url": "/x/teruaki-sato",
-   "at": "2026-11-19T10:17:29+00:00",
+   "at": "2026-11-19T16:32:32+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1361,7 +1361,7 @@
   },
   {
    "url": "/x/the-altruists-true-story",
-   "at": "2026-11-19T10:17:35+00:00",
+   "at": "2026-11-19T16:32:39+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1373,7 +1373,7 @@
   },
   {
    "url": "/x/the-empress-netflix-true-story",
-   "at": "2026-11-19T10:17:42+00:00",
+   "at": "2026-11-19T16:32:45+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1385,7 +1385,7 @@
   },
   {
    "url": "/x/the-good-daughter-book",
-   "at": "2026-11-19T10:17:48+00:00",
+   "at": "2026-11-19T16:32:51+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1397,7 +1397,7 @@
   },
   {
    "url": "/x/tri-series-cricket",
-   "at": "2026-11-19T10:17:54+00:00",
+   "at": "2026-11-19T16:32:58+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1409,7 +1409,7 @@
   },
   {
    "url": "/x/two-dan-sullivans-alaska",
-   "at": "2026-11-19T10:18:01+00:00",
+   "at": "2026-11-19T16:33:04+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1421,7 +1421,7 @@
   },
   {
    "url": "/x/under-siege-netflix-true-story",
-   "at": "2026-11-19T10:18:07+00:00",
+   "at": "2026-11-19T16:33:11+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1433,7 +1433,7 @@
   },
   {
    "url": "/x/vienna-game-true-story",
-   "at": "2026-11-19T10:18:14+00:00",
+   "at": "2026-11-19T16:33:17+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1445,7 +1445,7 @@
   },
   {
    "url": "/x/what-does-12-12-12-mean",
-   "at": "2026-11-19T10:18:20+00:00",
+   "at": "2026-11-19T16:33:23+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1457,7 +1457,7 @@
   },
   {
    "url": "/x/what-does-habibi-mean",
-   "at": "2026-11-19T10:18:26+00:00",
+   "at": "2026-11-19T16:33:30+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2137,8 +2137,8 @@
  },
  "summary": {
   "Submitted and indexed": 2,
-  "URL is unknown to Google": 90,
+  "URL is unknown to Google": 89,
   "Crawled - currently not indexed": 64,
-  "Discovered - currently not indexed": 18
+  "Discovered - currently not indexed": 19
  }
 }
