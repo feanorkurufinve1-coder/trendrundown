@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-19T11:32:17+00:00",
+ "checked": "2026-11-19T12:02:13+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -65,9 +65,9 @@
   },
   {
    "url": "/trends",
-   "at": "2026-11-19T05:53:22+00:00",
+   "at": "2026-11-19T12:01:48+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -77,7 +77,7 @@
   },
   {
    "url": "/explained",
-   "at": "2026-11-19T05:53:28+00:00",
+   "at": "2026-11-19T12:01:55+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -209,9 +209,9 @@
   },
   {
    "url": "/x/bay-area-waterspouts-tornado-warning",
-   "at": "2026-11-19T05:53:35+00:00",
+   "at": "2026-11-19T12:02:01+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -233,7 +233,7 @@
   },
   {
    "url": "/x/california-sues-openai",
-   "at": "2026-11-19T05:53:41+00:00",
+   "at": "2026-11-19T12:02:07+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1217,9 +1217,9 @@
   },
   {
    "url": "/x/robert-pattinson-james-bond",
-   "at": "2026-11-19T05:53:47+00:00",
+   "at": "2026-11-19T12:02:13+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2077,8 +2077,8 @@
  },
  "summary": {
   "Submitted and indexed": 2,
-  "URL is unknown to Google": 86,
-  "Discovered - currently not indexed": 17,
-  "Crawled - currently not indexed": 64
+  "URL is unknown to Google": 89,
+  "Crawled - currently not indexed": 64,
+  "Discovered - currently not indexed": 14
  }
 }
