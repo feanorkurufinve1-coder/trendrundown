@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-19T12:02:13+00:00",
+ "checked": "2026-11-19T13:52:47+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -734,6 +734,18 @@
    "lastCrawlTime": "2026-11-12T15:40:22Z",
    "googleCanonical": "https://trendrundown.com/x/is-being-heumann-a-true-story",
    "userCanonical": "https://trendrundown.com/x/is-being-heumann-a-true-story"
+  },
+  {
+   "url": "/x/is-blade-runner-2099-a-sequel",
+   "at": "2026-11-19T13:52:22+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
   },
   {
    "url": "/x/is-dig-based-on-a-book",
@@ -1744,6 +1756,30 @@
    "userCanonical": null
   },
   {
+   "url": "/x/what-is-the-talk-to-me-doja-trend",
+   "at": "2026-11-19T13:52:28+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
+   "url": "/x/what-is-the-word-of-the-year-2026",
+   "at": "2026-11-19T13:52:35+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/what-is-tsa-confirmid",
    "at": "2026-11-19T11:02:05+00:00",
    "verdict": "NEUTRAL",
@@ -1842,6 +1878,18 @@
   {
    "url": "/x/why-are-people-saying-dinosaurs-in-mexico",
    "at": "2026-11-19T11:02:54+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
+   "url": "/x/why-are-people-saying-gta-6-is-bad",
+   "at": "2026-11-19T13:52:41+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2056,6 +2104,18 @@
    "userCanonical": "https://trendrundown.com/x/why-were-all-flights-grounded"
   },
   {
+   "url": "/x/why-wont-my-washing-machine-drain",
+   "at": "2026-11-19T13:52:47+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/wta-tennis",
    "at": "2026-11-19T11:17:30+00:00",
    "verdict": "NEUTRAL",
@@ -2077,7 +2137,7 @@
  },
  "summary": {
   "Submitted and indexed": 2,
-  "URL is unknown to Google": 89,
+  "URL is unknown to Google": 94,
   "Crawled - currently not indexed": 64,
   "Discovered - currently not indexed": 14
  }
