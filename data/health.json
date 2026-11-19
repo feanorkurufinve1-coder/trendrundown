@@ -329,7 +329,7 @@
   },
   {
    "url": "/x/did-avril-lavigne-have-a-baby",
-   "at": "2026-11-19T02:48:15+00:00",
+   "at": "2026-11-19T09:02:26+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -341,7 +341,7 @@
   },
   {
    "url": "/x/did-scott-colom-win",
-   "at": "2026-11-19T02:48:21+00:00",
+   "at": "2026-11-19T09:02:32+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -353,7 +353,7 @@
   },
   {
    "url": "/x/did-trump-call-into-c-span",
-   "at": "2026-11-19T02:48:28+00:00",
+   "at": "2026-11-19T09:02:39+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -377,7 +377,7 @@
   },
   {
    "url": "/x/does-mlb-have-a-salary-cap",
-   "at": "2026-11-19T02:48:34+00:00",
+   "at": "2026-11-19T09:02:45+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -389,7 +389,7 @@
   },
   {
    "url": "/x/edgar-martinez-award",
-   "at": "2026-11-19T02:48:40+00:00",
+   "at": "2026-11-19T09:02:52+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -401,7 +401,7 @@
   },
   {
    "url": "/x/el-nino-pacific-northwest",
-   "at": "2026-11-19T02:48:47+00:00",
+   "at": "2026-11-19T09:02:58+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -413,9 +413,9 @@
   },
   {
    "url": "/x/embassy-of-finland-canberra-meme",
-   "at": "2026-11-19T02:48:53+00:00",
+   "at": "2026-11-19T09:03:04+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -425,7 +425,7 @@
   },
   {
    "url": "/x/exhibition-game",
-   "at": "2026-11-19T02:48:59+00:00",
+   "at": "2026-11-19T09:03:11+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -437,7 +437,7 @@
   },
   {
    "url": "/x/first-black-senator-from-mississippi",
-   "at": "2026-11-19T02:49:05+00:00",
+   "at": "2026-11-19T09:03:17+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -461,7 +461,7 @@
   },
   {
    "url": "/x/game-time-decision",
-   "at": "2026-11-19T02:49:11+00:00",
+   "at": "2026-11-19T09:03:23+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -473,7 +473,7 @@
   },
   {
    "url": "/x/guarding-stars-book",
-   "at": "2026-11-19T02:49:18+00:00",
+   "at": "2026-11-19T09:03:30+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -497,7 +497,7 @@
   },
   {
    "url": "/x/hank-aaron-award",
-   "at": "2026-11-19T02:49:24+00:00",
+   "at": "2026-11-19T09:03:36+00:00",
    "verdict": "PASS",
    "coverageState": "Submitted and indexed",
    "robotsTxtState": "ALLOWED",
@@ -509,7 +509,7 @@
   },
   {
    "url": "/x/harlem-park-three",
-   "at": "2026-11-19T02:49:30+00:00",
+   "at": "2026-11-19T09:03:43+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -737,7 +737,7 @@
   },
   {
    "url": "/x/is-dig-based-on-a-book",
-   "at": "2026-11-19T02:47:44+00:00",
+   "at": "2026-11-19T09:01:54+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1649,9 +1649,9 @@
   },
   {
    "url": "/x/what-is-black-october",
-   "at": "2026-11-19T02:47:50+00:00",
+   "at": "2026-11-19T09:02:00+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1697,7 +1697,7 @@
   },
   {
    "url": "/x/what-is-si-instead-of-ai",
-   "at": "2026-11-19T02:47:56+00:00",
+   "at": "2026-11-19T09:02:07+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1865,7 +1865,7 @@
   },
   {
    "url": "/x/why-are-people-saying-robert-pattinson-is-gen-z",
-   "at": "2026-11-19T02:48:03+00:00",
+   "at": "2026-11-19T09:02:13+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1997,7 +1997,7 @@
   },
   {
    "url": "/x/why-is-my-phone-charging-slow",
-   "at": "2026-11-19T02:48:09+00:00",
+   "at": "2026-11-19T09:02:19+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2077,8 +2077,8 @@
  },
  "summary": {
   "Submitted and indexed": 3,
-  "Discovered - currently not indexed": 23,
+  "Discovered - currently not indexed": 25,
   "Crawled - currently not indexed": 63,
-  "URL is unknown to Google": 80
+  "URL is unknown to Google": 78
  }
 }
