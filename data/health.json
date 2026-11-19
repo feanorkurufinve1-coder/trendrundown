@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-19T17:21:25+00:00",
+ "checked": "2026-11-19T17:47:05+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -53,9 +53,9 @@
   },
   {
    "url": "/news",
-   "at": "2026-11-19T11:32:17+00:00",
+   "at": "2026-11-19T17:47:05+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -197,7 +197,7 @@
   },
   {
    "url": "/x/apple-outage-november-17-2026",
-   "at": "2026-11-19T11:31:58+00:00",
+   "at": "2026-11-19T17:46:46+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -461,7 +461,7 @@
   },
   {
    "url": "/x/florida-flooding-november-18-2026",
-   "at": "2026-11-19T11:32:04+00:00",
+   "at": "2026-11-19T17:46:52+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -497,7 +497,7 @@
   },
   {
    "url": "/x/hakeem-jeffries-speaker-nomination",
-   "at": "2026-11-19T11:32:11+00:00",
+   "at": "2026-11-19T17:46:58+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2173,8 +2173,8 @@
  },
  "summary": {
   "Submitted and indexed": 2,
-  "URL is unknown to Google": 90,
-  "Crawled - currently not indexed": 64,
-  "Discovered - currently not indexed": 21
+  "Discovered - currently not indexed": 22,
+  "URL is unknown to Google": 89,
+  "Crawled - currently not indexed": 64
  }
 }
