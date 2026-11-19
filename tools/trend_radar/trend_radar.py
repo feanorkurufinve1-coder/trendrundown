@@ -28,7 +28,7 @@ import urllib.error, urllib.parse, urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 
-VERSION = "1.4"
+VERSION = "1.5"
 HERE = os.path.dirname(os.path.abspath(__file__))
 STATE = os.path.join(HERE, "radar_state.json")
 LOG = os.path.join(HERE, "radar_log.txt")
@@ -507,23 +507,39 @@ def parse_atom(text, sub=""):
     return out
 
 
+def reddit_json(url, sub=""):
+    """1.5: Reddit закрыл RSS 13.11.2026. Пробуем открытый JSON (может тоже закрыться — тогда этаж просто пропускается)."""
+    d = json.loads(fetch(url, tries=1, accept="application/json"))
+    out = []
+    for ch in ((d.get("data") or {}).get("children") or []):
+        x = ch.get("data") or {}
+        if not x.get("title") or not x.get("permalink"):
+            continue
+        out.append({"t": strip_tags(x["title"]), "sub": x.get("subreddit") or sub,
+                    "url": "https://www.reddit.com" + x["permalink"].split("?")[0],
+                    "at": datetime.fromtimestamp(x.get("created_utc", 0), timezone.utc).isoformat()[:19],
+                    "snip": strip_tags(x.get("selftext") or "")[:420]})
+    return out
+
+
 def collect_reddit(st, health):
     got, new, errs, blocked = 0, 0, [], 0
     feeds = REDDIT_FEEDS[:5] if QUICK else REDDIT_FEEDS
     for kind, name in feeds:
         if kind == "search":
-            url = "https://www.reddit.com/search.rss?q=%s&sort=new&t=week&limit=50" % urllib.parse.quote(name)
+            url = "https://www.reddit.com/search.json?q=%s&sort=new&t=week&limit=50&raw_json=1" % urllib.parse.quote(name)
         else:
-            url = "https://www.reddit.com/r/%s/new/.rss?limit=50" % name
+            url = "https://www.reddit.com/r/%s/new.json?limit=50&raw_json=1" % name
         try:
-            posts = parse_atom(reddit_rss(url), name if kind == "r" else "")
+            posts = reddit_json(url, name if kind == "r" else "")
             blocked = 0
         except Exception as e:
             errs.append("%s: %s" % (name, str(e)[:60]))
             blocked += 1
-            if blocked >= 3:
-                break                        # Reddit сейчас не пускает — в следующий раз
-            time.sleep(random.uniform(40, 70))
+            if blocked >= 2:
+                errs.append("Reddit закрыл открытый доступ (RSS — с 13.11.2026)")
+                break                        # Reddit не пускает — не тратим время, дальше другие этажи
+            time.sleep(random.uniform(5, 9))
             continue
         for p in posts:
             if not p["url"] or not p["t"]:
@@ -543,12 +559,51 @@ def collect_reddit(st, health):
         health.fail("reddit", "; ".join(errs[:5]) or "нет данных")
 
 
+MASTODON_HOSTS = ("mastodon.social", "mas.to", "mstdn.social")
+
+
+def collect_mastodon(st, health):
+    """1.5: замена Reddit — что сейчас в трендах Mastodon (открытое API, без ключей): популярные посты и ссылки.
+    Кладём в ту же копилку постов, что и Reddit, с пометкой net=mastodon."""
+    got, new, errs = 0, 0, []
+    for host in MASTODON_HOSTS[:1] if QUICK else MASTODON_HOSTS:
+        for kind in ("statuses", "links"):
+            for off in (0, 20):
+                try:
+                    items = json.loads(fetch("https://%s/api/v1/trends/%s?limit=20&offset=%d" % (host, kind, off),
+                                             tries=2, accept="application/json"))
+                except Exception as e:
+                    errs.append("%s %s: %s" % (host, kind, str(e)[:50]))
+                    break
+                for x in items or []:
+                    if kind == "statuses":
+                        if (x.get("language") or "en") != "en":
+                            continue
+                        text = strip_tags(x.get("content") or "")
+                        url, at = x.get("url") or x.get("uri") or "", (x.get("created_at") or "")[:19]
+                    else:
+                        text = strip_tags((x.get("title") or "") + (". " + x["description"] if x.get("description") else ""))
+                        url, at = x.get("url") or "", ""
+                    if not url or len(text) < 12:
+                        continue
+                    got += 1
+                    if url not in st["posts"]:
+                        st["posts"][url] = {"t": text[:240], "sub": host, "url": url, "at": at, "snip": text[240:660],
+                                            "got": now_iso(), "src": host, "net": "mastodon"}
+                        new += 1
+                time.sleep(random.uniform(1.5, 3))
+    if got:
+        health.ok("mastodon", got, "новых %d%s" % (new, ("; не открылись: " + "; ".join(errs[:3])) if errs else ""))
+    else:
+        health.fail("mastodon", "; ".join(errs[:4]) or "нет данных")
+
+
 def reddit_comments(post_url):
-    """Верхние ответы в обсуждении — чтобы понять, как люди сами объясняют тренд."""
-    text = reddit_rss(post_url.rstrip("/") + "/.rss?limit=12&sort=top")
+    """Верхние ответы в обсуждении — чтобы понять, как люди сами объясняют тренд (JSON; после закрытия RSS)."""
+    d = json.loads(fetch(post_url.rstrip("/") + ".json?limit=12&sort=top&raw_json=1", tries=1, accept="application/json"))
     out = []
-    for e in parse_atom(text)[1:]:
-        s = e["snip"]
+    for ch in ((d[1].get("data") or {}).get("children") or []) if isinstance(d, list) and len(d) > 1 else []:
+        s = strip_tags((ch.get("data") or {}).get("body") or "")
         if len(s) >= 40 and not s.lower().startswith(("i am a bot", "thank you for your submission", "friendly reminder", "welcome to")):
             out.append(s[:380])
         if len(out) >= 4:
@@ -737,7 +792,7 @@ def build_candidates(st, extra):
             continue
         for term, kind in parse_title(p["t"]):
             c = cand(term, kind)
-            c["layers"].add("reddit")
+            c["layers"].add(p.get("net", "reddit"))
             c["reddit"].append({"t": p["t"][:200], "sub": p.get("sub", ""), "url": p["url"], "at": p.get("at", ""),
                                 "snip": p.get("snip", "")[:300]})
             if BLOCK.search(p["t"]):
@@ -749,7 +804,7 @@ def build_candidates(st, extra):
                    for w in re.findall(r"[a-z0-9]+", t.lower()) if len(w) >= 4 and w not in LINK_STOP)
     posts = [(p, words_of(p["t"])) for p in st["posts"].values() if p.get("got", "") >= week and not BLOCK.search(p["t"])]
     for c in list(C.values()):
-        if "reddit" in c["layers"] or not c["suggest"]:
+        if ("reddit" in c["layers"] or "mastodon" in c["layers"]) or not c["suggest"]:
             continue
         term = max(c["forms"].items(), key=lambda z: z[1])[0]
         tw = words_of(term)
@@ -758,7 +813,7 @@ def build_candidates(st, extra):
         for p, pw in posts:
             common = tw & pw
             if len(common) >= 2 or (len(tw) == 1 and common and len(next(iter(tw))) >= 5 and EXPLAIN_TITLE.search(p["t"])):
-                c["layers"].add("reddit")
+                c["layers"].add(p.get("net", "reddit"))
                 c["reddit"].append({"t": p["t"][:200], "sub": p.get("sub", ""), "url": p["url"], "at": p.get("at", ""),
                                     "snip": p.get("snip", "")[:300], "linked": True})
                 if len(c["reddit"]) >= 4:
@@ -939,15 +994,18 @@ def enrich(cands, st, health):
         health.ok("search", n)
 
     n, err = 0, ""
-    for c in [c for c in top if c["reddit"]][:2 if QUICK else COMMENTS_TOP]:
+    for c in [c for c in top if any("reddit.com" in p["url"] for p in c["reddit"])][:2 if QUICK else COMMENTS_TOP]:
         try:
-            c["comments"] = reddit_comments(c["reddit"][0]["url"])
+            c["comments"] = reddit_comments(next(p["url"] for p in c["reddit"] if "reddit.com" in p["url"]))
             n += 1
         except Exception as e:
             err = str(e)[:80]
             break
         time.sleep(random.uniform(5, 8) if QUICK else random.uniform(20, 32))
-    (health.ok("reddit_comments", n) if n or not err else health.fail("reddit_comments", err))
+    if n or not err:
+        health.ok("reddit_comments", n)
+    else:
+        health.fail("reddit_comments", err)
 
 
 def make_pack(st, health, started):
@@ -1093,8 +1151,9 @@ def cycle(st):
     T0[0] = time.time()
     started = now_iso()
     health = Health()
-    log("Начинаю проход. Смотрю Reddit...")
+    log("Начинаю проход. Смотрю Reddit и Mastodon...")
     collect_reddit(st, health)
+    collect_mastodon(st, health)
     save_state(st)
     need_sweep = QUICK or not st["last_sweep"] or st.get("cursor") or \
         (now_utc() - datetime.fromisoformat(st["last_sweep"])).total_seconds() >= SWEEP_HOURS * 3600

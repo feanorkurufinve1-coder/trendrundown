@@ -5049,7 +5049,7 @@ def build_news_index(ex):
 
 
 RADAR_LAYERS = {"google": "Google search suggestions", "youtube": "YouTube search suggestions", "reddit": "Reddit",
-                "urban": "Urban Dictionary", "kym": "Know Your Meme", "trends": "Google Trends", "bluesky": "Bluesky",
+                "urban": "Urban Dictionary", "kym": "Know Your Meme", "trends": "Google Trends", "bluesky": "Bluesky", "mastodon": "Mastodon",
                 "wiki": "Wikipedia"}
 
 
