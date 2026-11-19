@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-19T17:14:43+00:00",
+ "checked": "2026-11-19T17:21:25+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -2045,9 +2045,9 @@
   },
   {
    "url": "/x/why-is-bitcoin-down-november-2026",
-   "at": "2026-11-19T11:16:52+00:00",
+   "at": "2026-11-19T17:20:46+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2057,7 +2057,7 @@
   },
   {
    "url": "/x/why-is-everyone-freaking-out-about-november-17",
-   "at": "2026-11-19T11:16:59+00:00",
+   "at": "2026-11-19T17:20:52+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2069,7 +2069,7 @@
   },
   {
    "url": "/x/why-is-my-check-engine-light-on",
-   "at": "2026-11-19T11:17:05+00:00",
+   "at": "2026-11-19T17:20:59+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2105,7 +2105,7 @@
   },
   {
    "url": "/x/why-is-my-washing-machine-leaking-from-the-bottom",
-   "at": "2026-11-19T11:17:11+00:00",
+   "at": "2026-11-19T17:21:05+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2117,7 +2117,7 @@
   },
   {
    "url": "/x/why-is-wifi-not-working-on-my-phone",
-   "at": "2026-11-19T11:17:18+00:00",
+   "at": "2026-11-19T17:21:12+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2129,7 +2129,7 @@
   },
   {
    "url": "/x/why-were-all-flights-grounded",
-   "at": "2026-11-19T11:17:24+00:00",
+   "at": "2026-11-19T17:21:18+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2153,7 +2153,7 @@
   },
   {
    "url": "/x/wta-tennis",
-   "at": "2026-11-19T11:17:30+00:00",
+   "at": "2026-11-19T17:21:25+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2173,8 +2173,8 @@
  },
  "summary": {
   "Submitted and indexed": 2,
-  "URL is unknown to Google": 91,
+  "URL is unknown to Google": 90,
   "Crawled - currently not indexed": 64,
-  "Discovered - currently not indexed": 20
+  "Discovered - currently not indexed": 21
  }
 }
