@@ -1,0 +1,53 @@
+{
+ "news": true,
+ "kind": "event",
+ "subject": "Trump-Xi-Putin trilateral meeting",
+ "query": "trump xi putin meeting",
+ "title": "Trump Xi Putin meeting: What did they agree? Oil, UN reform, nuclear talks",
+ "answer": "On Thursday, Nov. 19, 2026, Donald Trump, Xi Jinping and Vladimir Putin held their first-ever three-way meeting, about 90 minutes long, on the sidelines of the APEC summit in Shenzhen, China. They issued a joint declaration pledging more refined fuel supply, UN reform and dialogue on nuclear risks, with no timelines or concrete mechanisms.",
+ "in_the_news": "The three countries hold the world's largest nuclear arsenals, and since New START expired in February no treaty limits U.S. or Russian warheads. The declaration also includes language on the International Criminal Court that matters directly to Putin.",
+ "body": "Before the three-way session, Trump and Putin talked one-on-one for about 40 minutes; Kremlin aide Yuri Ushakov said the war in Ukraine was the main topic. Trump greeted Putin as \"my friend\" and opened the larger meeting by saying, \"We are really making history.\" The leaders posed in front of their national flags without shaking hands.\n\nThe declaration, as reported by Malaysia's Bernama news agency and ABC News Australia, has several parts. The leaders reaffirmed that \"nuclear war cannot be won and must never be fought\" and agreed to hold dialogue on reducing nuclear risks and stopping proliferation. They pledged to raise production and supply of refined petroleum products. They backed reforming the United Nations while keeping its peacekeeping role. And they said the International Criminal Court and similar bodies must not \"abuse their jurisdiction,\" recognizing the immunity of state officials. That last line stands out because the ICC issued an arrest warrant for Putin in March 2023. The official readout carried by Chinese state broadcaster CCTV did not mention Ukraine.\n\nHow the three got to one table: Aug. 15, 2025 — Trump and Putin meet in Anchorage, Alaska, their seventh in-person meeting, according to AP. Oct. 30, 2025 — Trump and Xi meet in Busan, South Korea. Feb. 5, 2026 — New START, the last U.S.-Russia nuclear arms treaty, expires; Trump had rejected a Russian offer to extend it by a year and wants a new deal that includes China. May 13-15, 2026 — Trump makes a state visit to Beijing. September 2026 — Xi makes a state visit to Washington. Nov. 13-14 — the White House and the Kremlin confirm the three-way meeting. Nov. 19 — the leaders meet in Shenzhen.\n\nUkraine was not in the room, and Kyiv was critical. Foreign Minister Andrii Sybiha said a U.S.-Russia-China meeting would only encourage Putin to keep fighting, while President Volodymyr Zelenskyy warned against a \"Yalta 2, 3, 4\" carve-up of spheres of influence, a reference to the 1945 conference where the major powers settled Europe's postwar shape. Polish Prime Minister Donald Tusk wrote on X: \"God, protect us from such friends.\"\n\nWhat comes next is open. Before the meeting a U.S. official called it the \"beginning of hopefully a conversation\" on arms control and said no agreements were expected; the declaration sets no date for the promised nuclear dialogue. China has shown little interest in a nuclear pact so far. Pentagon estimates put its arsenal at more than 600 warheads, against more than 5,000 each for the U.S. and Russia.",
+ "faq": [
+  {
+   "q": "Is this the first time Trump, Xi and Putin met together?",
+   "a": "Yes. All of their earlier meetings were one-on-one. Xi and Putin have met more than 40 times since 2013, and Trump has met each of them separately several times."
+  },
+  {
+   "q": "Did the leaders agree on anything about Ukraine?",
+   "a": "No. Trump said Ukraine came up and that he discussed it with Putin earlier in the day, but the declaration and China's official readout do not mention the war."
+  },
+  {
+   "q": "Why does the ICC language matter?",
+   "a": "The International Criminal Court has an arrest warrant out for Putin. A joint statement saying such courts must not abuse their jurisdiction and that state officials have immunity lends support to his position. The U.S., Russia and China are not ICC members."
+  },
+  {
+   "q": "Will the three countries sign a nuclear arms treaty?",
+   "a": "Nothing like that was agreed. The leaders only promised dialogue on nuclear risks and proliferation, with no schedule. U.S. officials had said in advance that no deal was expected."
+  }
+ ],
+ "links": [
+  [
+   "ABC News (Australia)",
+   "Trump, Xi and Putin release joint statement after historic trilateral talks",
+   "https://www.abc.net.au/news/2026-11-19/albanese-tells-putin-to-end-ukraine-war-now/107406348"
+  ],
+  [
+   "Bernama",
+   "Trump, Putin, Xi issue joint declaration on peace, strategic stability",
+   "https://www.bernama.com/en/world/news.php?id=2636841"
+  ],
+  [
+   "Kyiv Independent",
+   "Trump joins Putin, Xi in signing 'declaration of peace' as summit largely sidesteps Ukraine",
+   "https://kyivindependent.com/trump-sits-down-with-his-friend-putin-chinas-xi-for-unprecedented-trilateral-talks/"
+  ],
+  [
+   "KPTV (AP)",
+   "Trump, Xi and Putin plan an unprecedented joint meeting, White House says",
+   "https://www.kptv.com/2026/11/14/trump-xi-putin-plan-an-unprecedented-joint-meeting-white-house-says/"
+  ]
+ ],
+ "image_prompt": "Three national flags of the United States, China and Russia standing side by side on poles in a formal conference hall, soft lighting, no people",
+ "made": "2026-11-19T16:50:00+00:00",
+ "first": "2026-11-19T16:50:00+00:00"
+}

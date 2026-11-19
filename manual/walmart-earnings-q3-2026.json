@@ -1,0 +1,44 @@
+{
+ "news": true,
+ "kind": "event",
+ "subject": "Walmart third-quarter earnings",
+ "query": "walmart earnings",
+ "title": "Walmart earnings: Did Walmart beat estimates? Yes, and it raised its outlook",
+ "answer": "Yes. On Thursday, Nov. 19, 2026, Walmart reported third-quarter sales of $188.8 billion, up 5.2%, and adjusted earnings of 65 cents a share, both slightly above Wall Street forecasts. It raised its full-year outlook for the third time this year, though the new range came in a bit below what analysts expected.",
+ "in_the_news": "Walmart serves more than 150 million shoppers a week, so its numbers are read as a gauge of U.S. consumers going into Thanksgiving and the holiday season. The report came days after government data showed retail sales grew just 0.2% in October.",
+ "body": "In the quarter that ended Oct. 31, comparable sales at Walmart U.S. rose 2.9%, better than 2.6% in the prior quarter, the weakest in six years, but slower than 4.5% a year earlier, AP reported. Groceries and general merchandise such as furniture and toys led the gain. Online sales grew 17% worldwide and 23% in the U.S., and more than 80% of U.S. online orders were filled from stores. Net income fell to $4.94 billion, or 62 cents a share, from $6.14 billion, or 77 cents, a year before. \"We delivered strong results, growing our core business and gaining market share,\" CEO John Furner said.\n\nWalmart now expects full-year sales growth of 4.9% to 5.2%, up from 4% to 5%, and adjusted earnings of $2.84 to $2.89 a share, up from $2.80 to $2.87. Analysts had expected $2.89 and about $752.7 billion in sales, above Walmart's implied range of roughly $748 billion to $750 billion. Shares rose nearly 1% before the opening bell. The company again said a federal price cap on some high-cost Medicare drugs, which its pharmacies must honor, held back its comparable sales.\n\nThe report in plain words: \"Comparable sales\" compare stores and websites that were open in both periods, so they show whether existing business grew rather than just new store openings. \"Adjusted\" earnings strip out one-time items, which is why Walmart reports 65 cents adjusted but 62 cents on a standard accounting basis; analysts' forecasts are usually for the adjusted figure. \"Guidance\" is the company's own forecast for the full year, and raising it means management now expects a better year than it did three months ago.\n\nFor shoppers, the takeaway is that Walmart is leaning on its low-price pitch and is winning business from households earning over $100,000 a year. It now sells a combined Walmart+ and Sam's Club Plus annual bundle for $120, which it says saves nearly $100 versus buying both memberships separately. The next report will cover the holiday quarter, which ends Jan. 31, 2027, and closes Walmart's fiscal year.",
+ "faq": [
+  {
+   "q": "How much did Walmart earn per share in the third quarter?",
+   "a": "Adjusted earnings were 65 cents a share, against the 64 cents analysts expected. On a standard accounting basis, Walmart earned 62 cents a share."
+  },
+  {
+   "q": "Did Walmart stock go up after earnings?",
+   "a": "Slightly. Shares rose by less than 1% in trading before the market opened on Nov. 19, as the raised outlook was a bit more cautious than analysts had hoped."
+  },
+  {
+   "q": "Why are Walmart's results watched so closely?",
+   "a": "It is the largest U.S. retailer, with more than 150 million weekly customers, so its sales and forecast offer an early read on how Americans are spending ahead of the holidays."
+  }
+ ],
+ "links": [
+  [
+   "KHBS/KHOG (AP)",
+   "Walmart raises full-year outlook again after a solid quarter",
+   "https://www.4029tv.com/article/walmart-raises-full-year-outlook-third-time/74476970"
+  ],
+  [
+   "WRAL (AP)",
+   "Walmart raises outlook for 3rd time this year after a solid quarter",
+   "https://www.wral.com/news/ap/d711a-walmart-raises-outlook-for-3rd-time-this-year-after-a-solid-quarter/"
+  ],
+  [
+   "Investing.com",
+   "Walmart beats third quarter expectations, raises guidance",
+   "https://ca.investing.com/news/earnings/walmart-beats-third-quarter-expectations-raises-guidance-4969436"
+  ]
+ ],
+ "image_prompt": "A shopping cart filled with groceries and household goods in a bright, wide supermarket aisle, no people, no signs or text",
+ "made": "2026-11-19T16:50:00+00:00",
+ "first": "2026-11-19T16:50:00+00:00"
+}
