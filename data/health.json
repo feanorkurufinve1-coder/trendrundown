@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-19T14:17:52+00:00",
+ "checked": "2026-11-19T15:01:53+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -317,7 +317,7 @@
   },
   {
    "url": "/x/designated-for-assignment",
-   "at": "2026-11-19T08:46:50+00:00",
+   "at": "2026-11-19T15:01:53+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
