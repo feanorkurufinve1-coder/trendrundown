@@ -1,301 +1,378 @@
 {
- "made": "2026-11-19T22:48:50+00:00",
- "day": "2026-11-18",
+ "made": "2026-11-20T05:03:23+00:00",
+ "day": "2026-11-19",
  "about": "Всплески просмотров английской Википедии за вчера: views — просмотров вчера, before — максимум за 3 прошлых дня (null = статьи не было в топ-1000). Идеи для страниц «who is / what is»; проверять факты по новостям.",
  "spikes": [
   {
-   "article": "Grand Theft Auto VI",
-   "views": 519632,
-   "before": 153037,
+   "article": "Stephen Wilson Jr.",
+   "views": 327962,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Stephen_Wilson_Jr."
+  },
+  {
+   "article": "Ella Langley",
+   "views": 189264,
+   "before": 18565,
+   "ratio": 10.2,
+   "url": "https://en.wikipedia.org/wiki/Ella_Langley"
+  },
+  {
+   "article": "Ken McElroy",
+   "views": 172820,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Ken_McElroy"
+  },
+  {
+   "article": "Dario Amodei",
+   "views": 167998,
+   "before": 30934,
+   "ratio": 5.4,
+   "url": "https://en.wikipedia.org/wiki/Dario_Amodei"
+  },
+  {
+   "article": "Larry Poindexter",
+   "views": 124373,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Larry_Poindexter"
+  },
+  {
+   "article": "International Men's Day",
+   "views": 118074,
+   "before": 19004,
+   "ratio": 6.2,
+   "url": "https://en.wikipedia.org/wiki/International_Men%27s_Day"
+  },
+  {
+   "article": "Anthropic",
+   "views": 112202,
+   "before": 23680,
+   "ratio": 4.7,
+   "url": "https://en.wikipedia.org/wiki/Anthropic"
+  },
+  {
+   "article": "Leigh Nash",
+   "views": 95384,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Leigh_Nash"
+  },
+  {
+   "article": "Daniela Amodei",
+   "views": 92187,
+   "before": 13483,
+   "ratio": 6.8,
+   "url": "https://en.wikipedia.org/wiki/Daniela_Amodei"
+  },
+  {
+   "article": "Lainey Wilson",
+   "views": 86763,
+   "before": 8489,
+   "ratio": 10.2,
+   "url": "https://en.wikipedia.org/wiki/Lainey_Wilson"
+  },
+  {
+   "article": "Fiona (hippopotamus)",
+   "views": 83965,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Fiona_%28hippopotamus%29"
+  },
+  {
+   "article": "Susan Smith",
+   "views": 81561,
+   "before": 17276,
+   "ratio": 4.7,
+   "url": "https://en.wikipedia.org/wiki/Susan_Smith"
+  },
+  {
+   "article": "Iron Gate (Antioch)",
+   "views": 69354,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Iron_Gate_%28Antioch%29"
+  },
+  {
+   "article": "Lucia Caminos",
+   "views": 65359,
+   "before": 16105,
+   "ratio": 4.1,
+   "url": "https://en.wikipedia.org/wiki/Lucia_Caminos"
+  },
+  {
+   "article": "Brooks & Dunn",
+   "views": 63225,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Brooks_%26_Dunn"
+  },
+  {
+   "article": "Devlin Hodges",
+   "views": 55407,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Devlin_Hodges"
+  },
+  {
+   "article": "Tim McGraw",
+   "views": 51134,
+   "before": 13244,
+   "ratio": 3.9,
+   "url": "https://en.wikipedia.org/wiki/Tim_McGraw"
+  },
+  {
+   "article": "The Red Clay Strays",
+   "views": 50905,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/The_Red_Clay_Strays"
+  },
+  {
+   "article": "The Nightingale (Hannah novel)",
+   "views": 46898,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/The_Nightingale_%28Hannah_novel%29"
+  },
+  {
+   "article": "Miranda Lambert",
+   "views": 46833,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Miranda_Lambert"
+  },
+  {
+   "article": "Ronnie Dunn",
+   "views": 46178,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Ronnie_Dunn"
+  },
+  {
+   "article": "Marlon Humphrey",
+   "views": 43326,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Marlon_Humphrey"
+  },
+  {
+   "article": "V. S. Babu",
+   "views": 41711,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/V._S._Babu"
+  },
+  {
+   "article": "Kix Brooks",
+   "views": 40386,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Kix_Brooks"
+  },
+  {
+   "article": "Galangal",
+   "views": 37091,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Galangal"
+  },
+  {
+   "article": "Sammy Kershaw",
+   "views": 36325,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Sammy_Kershaw"
+  },
+  {
+   "article": "Survivor 51",
+   "views": 35359,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Survivor_51"
+  },
+  {
+   "article": "Tucker Wetmore",
+   "views": 34735,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Tucker_Wetmore"
+  },
+  {
+   "article": "Murder of Sarah Payne",
+   "views": 32210,
+   "before": 9493,
    "ratio": 3.4,
-   "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI"
+   "url": "https://en.wikipedia.org/wiki/Murder_of_Sarah_Payne"
   },
   {
-   "article": "Dancing with the Stars (American TV series) season 35",
-   "views": 150752,
-   "before": 16338,
-   "ratio": 9.2,
-   "url": "https://en.wikipedia.org/wiki/Dancing_with_the_Stars_%28American_TV_series%29_season_35"
-  },
-  {
-   "article": "Mary Peltola",
-   "views": 133395,
-   "before": 33825,
-   "ratio": 3.9,
-   "url": "https://en.wikipedia.org/wiki/Mary_Peltola"
-  },
-  {
-   "article": "Andrej Stojaković",
-   "views": 97435,
+   "article": "John Anderson (singer)",
+   "views": 31447,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Andrej_Stojakovi%C4%87"
+   "url": "https://en.wikipedia.org/wiki/John_Anderson_%28singer%29"
   },
   {
-   "article": "Hakeem Jeffries",
-   "views": 92218,
-   "before": 12843,
-   "ratio": 7.2,
-   "url": "https://en.wikipedia.org/wiki/Hakeem_Jeffries"
-  },
-  {
-   "article": "Quentin Grimes",
-   "views": 67780,
+   "article": "60th Annual Country Music Association Awards",
+   "views": 31389,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Quentin_Grimes"
+   "url": "https://en.wikipedia.org/wiki/60th_Annual_Country_Music_Association_Awards"
   },
   {
-   "article": "Tatyana Ali",
-   "views": 63987,
+   "article": "Kacey Musgraves",
+   "views": 27648,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Tatyana_Ali"
+   "url": "https://en.wikipedia.org/wiki/Kacey_Musgraves"
   },
   {
-   "article": "Peja Stojaković",
-   "views": 59924,
+   "article": "Holden Karnofsky",
+   "views": 25858,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Peja_Stojakovi%C4%87"
+   "url": "https://en.wikipedia.org/wiki/Holden_Karnofsky"
   },
   {
-   "article": "Juan Mata",
-   "views": 49467,
+   "article": "Rohingya people",
+   "views": 25550,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Juan_Mata"
+   "url": "https://en.wikipedia.org/wiki/Rohingya_people"
   },
   {
-   "article": "Harry Shum Jr.",
-   "views": 49329,
+   "article": "Faith Hill",
+   "views": 25499,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Harry_Shum_Jr."
+   "url": "https://en.wikipedia.org/wiki/Faith_Hill"
   },
   {
-   "article": "John Madden",
-   "views": 46817,
+   "article": "Bobby Moynihan",
+   "views": 24879,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/John_Madden"
+   "url": "https://en.wikipedia.org/wiki/Bobby_Moynihan"
   },
   {
-   "article": "Hollywood Freeway chickens",
-   "views": 46803,
+   "article": "Man in the Iron Mask",
+   "views": 24815,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Hollywood_Freeway_chickens"
+   "url": "https://en.wikipedia.org/wiki/Man_in_the_Iron_Mask"
   },
   {
-   "article": "Maura Higgins",
-   "views": 39347,
+   "article": "Impostor syndrome",
+   "views": 24805,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Maura_Higgins"
+   "url": "https://en.wikipedia.org/wiki/Impostor_syndrome"
   },
   {
-   "article": "Ezra Frech",
-   "views": 37416,
+   "article": "Mumford & Sons",
+   "views": 24026,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Ezra_Frech"
+   "url": "https://en.wikipedia.org/wiki/Mumford_%26_Sons"
   },
   {
-   "article": "Madden (film)",
-   "views": 34926,
-   "before": 8955,
-   "ratio": 3.9,
-   "url": "https://en.wikipedia.org/wiki/Madden_%28film%29"
-  },
-  {
-   "article": "We will bury you",
-   "views": 34688,
+   "article": "Brian Behan",
+   "views": 23535,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/We_will_bury_you"
+   "url": "https://en.wikipedia.org/wiki/Brian_Behan"
   },
   {
-   "article": "Trev Alberts",
-   "views": 34009,
+   "article": "Myanmar",
+   "views": 22294,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Trev_Alberts"
+   "url": "https://en.wikipedia.org/wiki/Myanmar"
   },
   {
-   "article": "Dancing with the Stars (American TV series)",
-   "views": 33359,
+   "article": "Vince Gill",
+   "views": 21971,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Dancing_with_the_Stars_%28American_TV_series%29"
+   "url": "https://en.wikipedia.org/wiki/Vince_Gill"
   },
   {
-   "article": "Leigh Francis",
-   "views": 32507,
+   "article": "November 19",
+   "views": 21959,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Leigh_Francis"
+   "url": "https://en.wikipedia.org/wiki/November_19"
   },
   {
-   "article": "Connor Wood (comedian)",
-   "views": 32320,
+   "article": "Harambe",
+   "views": 21696,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Connor_Wood_%28comedian%29"
+   "url": "https://en.wikipedia.org/wiki/Harambe"
   },
   {
-   "article": "Al Sharpton",
-   "views": 31184,
+   "article": "Tongyangxi",
+   "views": 21342,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Al_Sharpton"
+   "url": "https://en.wikipedia.org/wiki/Tongyangxi"
   },
   {
-   "article": "Ruby Franke",
-   "views": 29272,
-   "before": 8121,
-   "ratio": 3.6,
-   "url": "https://en.wikipedia.org/wiki/Ruby_Franke"
-  },
-  {
-   "article": "Imelda Marcos",
-   "views": 28434,
+   "article": "Pete Rose",
+   "views": 21116,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Imelda_Marcos"
+   "url": "https://en.wikipedia.org/wiki/Pete_Rose"
   },
   {
-   "article": "Cameron Bancroft",
-   "views": 28008,
+   "article": "Choosin' Texas",
+   "views": 20820,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Cameron_Bancroft"
+   "url": "https://en.wikipedia.org/wiki/Choosin%27_Texas"
   },
   {
-   "article": "Buzzy Peltola",
-   "views": 27598,
+   "article": "Caroline Ellison",
+   "views": 20735,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Buzzy_Peltola"
+   "url": "https://en.wikipedia.org/wiki/Caroline_Ellison"
   },
   {
-   "article": "Heidi Overton",
-   "views": 26134,
+   "article": "The Nightingale (2027 film)",
+   "views": 20376,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Heidi_Overton"
+   "url": "https://en.wikipedia.org/wiki/The_Nightingale_%282027_film%29"
   },
   {
-   "article": "Guarding Stars",
-   "views": 25777,
+   "article": "Chris Stapleton",
+   "views": 20319,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Guarding_Stars"
+   "url": "https://en.wikipedia.org/wiki/Chris_Stapleton"
   },
   {
-   "article": "W. S. Gilbert",
-   "views": 25679,
+   "article": "RJ Luis Jr.",
+   "views": 20315,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/W._S._Gilbert"
+   "url": "https://en.wikipedia.org/wiki/RJ_Luis_Jr."
   },
   {
-   "article": "Jeff Stelling",
-   "views": 24832,
+   "article": "Lance Broadway",
+   "views": 20186,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Jeff_Stelling"
+   "url": "https://en.wikipedia.org/wiki/Lance_Broadway"
   },
   {
-   "article": "Bill Watts",
-   "views": 24612,
+   "article": "The Altruists",
+   "views": 20140,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Bill_Watts"
-  },
-  {
-   "article": "Amber Glenn",
-   "views": 24184,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Amber_Glenn"
-  },
-  {
-   "article": "Leighton Meester",
-   "views": 23747,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Leighton_Meester"
-  },
-  {
-   "article": "privacy policy",
-   "views": 23303,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/privacy_policy"
-  },
-  {
-   "article": "Gail Halvorsen",
-   "views": 22371,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Gail_Halvorsen"
-  },
-  {
-   "article": "Nico Paz",
-   "views": 22369,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Nico_Paz"
-  },
-  {
-   "article": "Naya Rivera",
-   "views": 22005,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Naya_Rivera"
-  },
-  {
-   "article": "Robert Stroud",
-   "views": 21578,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Robert_Stroud"
-  },
-  {
-   "article": "Gayniggers from Outer Space",
-   "views": 21509,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Gayniggers_from_Outer_Space"
-  },
-  {
-   "article": "November 18",
-   "views": 21185,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/November_18"
-  },
-  {
-   "article": "Julian Hall (soccer)",
-   "views": 20475,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Julian_Hall_%28soccer%29"
-  },
-  {
-   "article": "Bongbong Marcos",
-   "views": 20353,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Bongbong_Marcos"
-  },
-  {
-   "article": "Jared Padalecki",
-   "views": 20177,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Jared_Padalecki"
+   "url": "https://en.wikipedia.org/wiki/The_Altruists"
   }
  ]
 }
