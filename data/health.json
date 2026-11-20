@@ -272,7 +272,7 @@
   },
   {
    "url": "/x/cma-awards-2026-winners",
-   "at": "2026-11-20T00:02:21+00:00",
+   "at": "2026-11-20T06:17:25+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1330,8 +1330,15 @@
   },
   {
    "url": "/x/trump-xi-putin-meeting-declaration",
-   "at": "2026-11-20T00:02:51+00:00",
-   "error": "The read operation timed out"
+   "at": "2026-11-20T06:17:31+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "Discovered - currently not indexed",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
   },
   {
    "url": "/x/two-dan-sullivans-alaska",
@@ -1371,7 +1378,7 @@
   },
   {
    "url": "/x/walmart-earnings-q3-2026",
-   "at": "2026-11-20T00:02:57+00:00",
+   "at": "2026-11-20T06:17:40+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1544,12 +1551,19 @@
   },
   {
    "url": "/x/what-is-a-safety-in-football",
-   "at": "2026-11-19T23:48:54+00:00",
-   "error": "The read operation timed out"
+   "at": "2026-11-20T06:16:46+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "pageFetchState": "SUCCESSFUL",
+   "lastCrawlTime": "2026-11-13T16:11:40Z",
+   "googleCanonical": "https://trendrundown.com/x/what-is-a-safety-in-football",
+   "userCanonical": "https://trendrundown.com/x/what-is-a-safety-in-football"
   },
   {
    "url": "/x/what-is-a-sudden-stratospheric-warming",
-   "at": "2026-11-20T00:01:49+00:00",
+   "at": "2026-11-20T06:16:53+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1561,7 +1575,7 @@
   },
   {
    "url": "/x/what-is-a-super-el-nino",
-   "at": "2026-11-20T00:01:55+00:00",
+   "at": "2026-11-20T06:17:00+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1573,7 +1587,7 @@
   },
   {
    "url": "/x/what-is-apple-homeview",
-   "at": "2026-11-20T00:02:01+00:00",
+   "at": "2026-11-20T06:17:06+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1597,7 +1611,7 @@
   },
   {
    "url": "/x/what-is-broad-based-categorical-eligibility",
-   "at": "2026-11-20T00:02:08+00:00",
+   "at": "2026-11-20T06:17:12+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1609,7 +1623,7 @@
   },
   {
    "url": "/x/what-is-dandori-academy",
-   "at": "2026-11-20T00:02:14+00:00",
+   "at": "2026-11-20T06:17:19+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1621,7 +1635,7 @@
   },
   {
    "url": "/x/what-is-pico-park",
-   "at": "2026-11-20T00:03:03+00:00",
+   "at": "2026-11-20T06:17:46+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1645,7 +1659,7 @@
   },
   {
    "url": "/x/what-is-the-bearista-cup",
-   "at": "2026-11-20T00:03:09+00:00",
+   "at": "2026-11-20T06:17:53+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1669,9 +1683,9 @@
   },
   {
    "url": "/x/what-is-the-ram-altman-meme",
-   "at": "2026-11-20T00:03:16+00:00",
+   "at": "2026-11-20T06:17:59+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1705,7 +1719,7 @@
   },
   {
    "url": "/x/what-is-tsa-confirmid",
-   "at": "2026-11-20T00:03:22+00:00",
+   "at": "2026-11-20T06:18:06+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1717,7 +1731,7 @@
   },
   {
    "url": "/x/what-is-win-the-mall",
-   "at": "2026-11-20T00:03:28+00:00",
+   "at": "2026-11-20T06:18:12+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1729,7 +1743,7 @@
   },
   {
    "url": "/x/what-time-does-gta-6-unlock",
-   "at": "2026-11-20T00:03:34+00:00",
+   "at": "2026-11-20T06:18:18+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1741,7 +1755,7 @@
   },
   {
    "url": "/x/when-does-new-congress-start",
-   "at": "2026-11-20T00:11:03+00:00",
+   "at": "2026-11-20T06:18:25+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1753,7 +1767,7 @@
   },
   {
    "url": "/x/when-will-social-security-run-out",
-   "at": "2026-11-20T00:11:10+00:00",
+   "at": "2026-11-20T06:18:31+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2046,10 +2060,10 @@
   "/x/hank-aaron-award": "2026-11-18T20:33:39+00:00"
  },
  "summary": {
-  "error": 18,
-  "URL is unknown to Google": 81,
-  "Discovered - currently not indexed": 21,
-  "Crawled - currently not indexed": 56,
+  "error": 16,
+  "URL is unknown to Google": 80,
+  "Discovered - currently not indexed": 23,
+  "Crawled - currently not indexed": 57,
   "Submitted and indexed": 1
  }
 }
