@@ -1,71 +1,7 @@
 {
- "made": "2026-11-19T19:03:52+00:00",
+ "made": "2026-11-20T07:17:23+00:00",
  "about": "Премьеры сериалов и новых сезонов в США на 14 дней вперёд (TVmaze). new_series = совсем новый сериал. Сырьё для прогнозов «is X a true story», «X cast», «X season N release time».",
  "premieres": [
-  {
-   "date": "2026-11-19",
-   "show": "The Altruists",
-   "season": 1,
-   "new_series": true,
-   "type": "Scripted",
-   "genres": [
-    "Drama",
-    "Crime"
-   ],
-   "network": "Netflix",
-   "premiered": "2026-11-19",
-   "summary": "Young, idealistic and suddenly worth billions, they tried to do good—but unleashed the worst in each other. A toxic love story inspired by a real fraud.",
-   "url": "https://www.tvmaze.com/shows/85058/the-altruists",
-   "official": "https://www.netflix.com/title/81681910"
-  },
-  {
-   "date": "2026-11-19",
-   "show": "Next Level Baker",
-   "season": 2,
-   "new_series": false,
-   "type": "Reality",
-   "genres": [
-    "Food"
-   ],
-   "network": "FOX",
-   "premiered": "2025-12-04",
-   "summary": "Next Level Baker will test the skills of bakers as they are challenged to create eye-popping, festive holiday delights across the franchise's three iconic levels. During the series' four special hours, only one baker will rise to the top and claim the holiday baking crown.",
-   "url": "https://www.tvmaze.com/shows/82897/next-level-baker",
-   "official": "https://www.fox.com/detail/series/SER262498WXNC/next-level-baker"
-  },
-  {
-   "date": "2026-11-19",
-   "show": "Lost Treasures of Egypt",
-   "season": 7,
-   "new_series": false,
-   "type": "Documentary",
-   "genres": [
-    "Mystery",
-    "Nature",
-    "History"
-   ],
-   "network": "National Geographic",
-   "premiered": "2019-03-05",
-   "summary": "An immersive, action-packed series follows international teams of Egyptologists as they unearth the world's richest seam of ancient archaeology — Lost Treasures of Egypt. Through excavations and unprecedented access to the teams on the front line of archaeology, we follow these modern-day explorers as they battle searing heat and inhospitable terrain to make the discoveries of a lifetime.",
-   "url": "https://www.tvmaze.com/shows/41251/lost-treasures-of-egypt",
-   "official": "https://www.nationalgeographic.com/tv/shows/lost-treasures-of-egypt"
-  },
-  {
-   "date": "2026-11-19",
-   "show": "Nelly & Ashanti: We Belong Together",
-   "season": 2,
-   "new_series": false,
-   "type": "Reality",
-   "genres": [
-    "Drama",
-    "Romance"
-   ],
-   "network": "Peacock",
-   "premiered": "2025-06-26",
-   "summary": "Nelly &amp; Ashanti: We Belong Together follows the electrifying journey of this beloved couple as they reignite their love, navigate the ups and downs of newlywed life and the challenges of parenthood while juggling their thriving careers. Can this unstoppable duo prove that their love truly can conquer all? A fun-filled exploration of love's second chances.  ",
-   "url": "https://www.tvmaze.com/shows/84616/nelly-ashanti-we-belong-together",
-   "official": "https://www.peacocktv.com/watch-online/tv/nelly-and-ashanti-we-belong-together/9103439072416525112"
-  },
   {
    "date": "2026-11-20",
    "show": "Melania, The Series",
@@ -633,6 +569,66 @@
    "summary": "Dance Moms: A New Era is a reboot of the ever so popular Dance Moms. This time, with a new coach, new dancers and new mama drama. Introducing beloved dance coach, Glo Hampton, who wants to take her students and prestigious dance school Studio Bleu to the next level - competing nationally every week. But the road to glory won't be an easy one. Coach Glo must juggle her tiny but mighty dancers, thei",
    "url": "https://www.tvmaze.com/shows/78689/dance-moms-a-new-era",
    "official": "https://www.hulu.com/series/dance-moms-a-new-era-29afccec-ee2a-4129-841d-428e304e8f44"
+  },
+  {
+   "date": "2026-12-04",
+   "show": "It's Florida, Man",
+   "season": 3,
+   "new_series": false,
+   "type": "Scripted",
+   "genres": [
+    "Comedy"
+   ],
+   "network": "HBO",
+   "premiered": "2024-10-18",
+   "summary": "This irreverent late-night comedy series brings to life unbelievable ripped-from-the-headlines tales of the Sunshine State - straight from the people who live there. Featuring interviews from everyday Floridians and playful recreations starring a rotating cast of actors and comedians, including Anna Faris, Jake Johnson, Randall Park, Juliette Lewis, Sam Richardson, Ego Nwodim and more, this hilari",
+   "url": "https://www.tvmaze.com/shows/80035/its-florida-man",
+   "official": "https://www.max.com/shows/its-florida-man/4c174782-6a46-4ee1-ba43-ed853194116b"
+  },
+  {
+   "date": "2026-12-04",
+   "show": "Selling Sunset",
+   "season": 10,
+   "new_series": false,
+   "type": "Reality",
+   "genres": [],
+   "network": "Netflix",
+   "premiered": "2019-03-22",
+   "summary": "The elite real estate brokers at The Oppenheim Group sell the luxe life to affluent buyers in LA. The drama ramps up when a new agent joins the team.",
+   "url": "https://www.tvmaze.com/shows/41476/selling-sunset",
+   "official": "https://www.netflix.com/title/80223108"
+  },
+  {
+   "date": "2026-12-04",
+   "show": "The Devil's Hour",
+   "season": 3,
+   "new_series": false,
+   "type": "Scripted",
+   "genres": [
+    "Thriller"
+   ],
+   "network": "Prime Video",
+   "premiered": "2022-10-28",
+   "summary": "The Devil's Hour tells the story of Lucy who wakes up by terrifying visions every night at exactly 3:33 AM, in the middle of the so-called devil's hour between 3 AM and 4 AM. Her eight-year-old son is withdrawn and emotionless. Her mother speaks to empty chairs. Her house is haunted by the echoes of a life that isn't her own. When Lucy's name is inexplicably connected to a string of brutal murders",
+   "url": "https://www.tvmaze.com/shows/53882/the-devils-hour",
+   "official": "https://www.amazon.com/dp/B0B5LFBYJW"
+  },
+  {
+   "date": "2026-12-04",
+   "show": "Diary of a Wimpy Kid",
+   "season": 2026,
+   "new_series": false,
+   "type": "Animation",
+   "genres": [
+    "Comedy",
+    "Adventure",
+    "Children"
+   ],
+   "network": "Disney+",
+   "premiered": "2021-12-03",
+   "summary": "A series of animations based on the successful children's book series. ",
+   "url": "https://www.tvmaze.com/shows/71089/diary-of-a-wimpy-kid",
+   "official": null
   }
  ]
 }
