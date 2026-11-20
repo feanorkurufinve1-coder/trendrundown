@@ -817,7 +817,7 @@
   },
   {
    "url": "/x/is-thomas-massie-a-republican",
-   "at": "2026-11-20T11:16:58+00:00",
+   "at": "2026-11-20T17:31:46+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -841,7 +841,7 @@
   },
   {
    "url": "/x/is-yellowjackets-season-4-the-last-season",
-   "at": "2026-11-20T11:17:04+00:00",
+   "at": "2026-11-20T17:31:52+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -853,7 +853,7 @@
   },
   {
    "url": "/x/jensen-huang-resigns-nvidia",
-   "at": "2026-11-20T11:17:11+00:00",
+   "at": "2026-11-20T17:31:59+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -865,7 +865,7 @@
   },
   {
    "url": "/x/keepsake-sea-release-date",
-   "at": "2026-11-20T11:17:17+00:00",
+   "at": "2026-11-20T17:32:05+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -877,7 +877,7 @@
   },
   {
    "url": "/x/kids-choice-awards-2026-date",
-   "at": "2026-11-20T11:17:23+00:00",
+   "at": "2026-11-20T17:32:11+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -889,7 +889,7 @@
   },
   {
    "url": "/x/lame-duck-president",
-   "at": "2026-11-20T11:17:29+00:00",
+   "at": "2026-11-20T17:32:18+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -901,7 +901,7 @@
   },
   {
    "url": "/x/lame-duck-session",
-   "at": "2026-11-20T11:17:35+00:00",
+   "at": "2026-11-20T17:32:24+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -913,7 +913,7 @@
   },
   {
    "url": "/x/latin-grammys-vs-grammys",
-   "at": "2026-11-20T11:17:42+00:00",
+   "at": "2026-11-20T17:32:31+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -925,7 +925,7 @@
   },
   {
    "url": "/x/ligue-1",
-   "at": "2026-11-20T11:17:48+00:00",
+   "at": "2026-11-20T17:32:37+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -937,7 +937,7 @@
   },
   {
    "url": "/x/madden-movie-true-story",
-   "at": "2026-11-20T11:17:54+00:00",
+   "at": "2026-11-20T17:32:44+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -949,19 +949,12 @@
   },
   {
    "url": "/x/maine-2nd-district-ranked-choice",
-   "at": "2026-11-20T11:18:00+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "Crawled - currently not indexed",
-   "robotsTxtState": "ALLOWED",
-   "indexingState": "INDEXING_ALLOWED",
-   "pageFetchState": "SUCCESSFUL",
-   "lastCrawlTime": "2026-11-08T16:57:30Z",
-   "googleCanonical": "https://trendrundown.com/x/maine-2nd-district-ranked-choice",
-   "userCanonical": "https://trendrundown.com/x/maine-2nd-district-ranked-choice"
+   "at": "2026-11-20T17:33:14+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/x/medicaid-work-requirements-start-date",
-   "at": "2026-11-20T11:18:06+00:00",
+   "at": "2026-11-20T17:33:20+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -973,7 +966,7 @@
   },
   {
    "url": "/x/miami-airport-plane-collision-copa-ups",
-   "at": "2026-11-20T11:18:13+00:00",
+   "at": "2026-11-20T17:33:27+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2174,8 +2167,8 @@
  "summary": {
   "Submitted and indexed": 1,
   "Discovered - currently not indexed": 28,
-  "Crawled - currently not indexed": 57,
-  "error": 12,
+  "Crawled - currently not indexed": 56,
+  "error": 13,
   "URL is unknown to Google": 86
  }
 }
