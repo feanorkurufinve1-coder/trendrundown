@@ -1197,7 +1197,7 @@
   },
   {
    "url": "/x/rock-hall-of-fame-2026-ceremony-air-date",
-   "at": "2026-11-20T05:46:59+00:00",
+   "at": "2026-11-20T12:01:47+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1209,7 +1209,7 @@
   },
   {
    "url": "/x/rookie-cy-young-winner",
-   "at": "2026-11-20T05:47:06+00:00",
+   "at": "2026-11-20T12:01:54+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1221,7 +1221,7 @@
   },
   {
    "url": "/x/rule-5-draft",
-   "at": "2026-11-20T05:47:12+00:00",
+   "at": "2026-11-20T12:02:06+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1233,7 +1233,7 @@
   },
   {
    "url": "/x/scott-colom",
-   "at": "2026-11-20T05:47:18+00:00",
+   "at": "2026-11-20T12:02:13+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1245,7 +1245,7 @@
   },
   {
    "url": "/x/sierra-winter-storm-warning",
-   "at": "2026-11-20T05:47:25+00:00",
+   "at": "2026-11-20T12:02:19+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1257,7 +1257,7 @@
   },
   {
    "url": "/x/silver-slugger-award",
-   "at": "2026-11-20T05:47:31+00:00",
+   "at": "2026-11-20T12:02:26+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1269,9 +1269,9 @@
   },
   {
    "url": "/x/spacex-starship-caught-by-tower",
-   "at": "2026-11-20T05:47:37+00:00",
+   "at": "2026-11-20T12:02:32+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1281,7 +1281,7 @@
   },
   {
    "url": "/x/ss-united-states-sinking",
-   "at": "2026-11-20T05:47:44+00:00",
+   "at": "2026-11-20T12:02:39+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1293,7 +1293,7 @@
   },
   {
    "url": "/x/stacy-keach-death",
-   "at": "2026-11-20T05:47:50+00:00",
+   "at": "2026-11-20T12:02:45+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1305,24 +1305,24 @@
   },
   {
    "url": "/x/teruaki-sato",
-   "at": "2026-11-20T05:47:56+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "Crawled - currently not indexed",
-   "robotsTxtState": "ALLOWED",
-   "indexingState": "INDEXING_ALLOWED",
-   "pageFetchState": "SUCCESSFUL",
-   "lastCrawlTime": "2026-11-07T15:33:08Z",
-   "googleCanonical": "https://trendrundown.com/x/teruaki-sato",
-   "userCanonical": "https://trendrundown.com/x/teruaki-sato"
-  },
-  {
-   "url": "/x/the-altruists-true-story",
-   "at": "2026-11-20T05:48:26+00:00",
+   "at": "2026-11-20T12:03:15+00:00",
    "error": "The read operation timed out"
   },
   {
+   "url": "/x/the-altruists-true-story",
+   "at": "2026-11-20T12:03:22+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/the-empress-netflix-true-story",
-   "at": "2026-11-20T05:48:34+00:00",
+   "at": "2026-11-20T12:03:31+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2096,9 +2096,9 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "Discovered - currently not indexed": 31,
-  "Crawled - currently not indexed": 61,
-  "URL is unknown to Google": 73,
+  "Discovered - currently not indexed": 30,
+  "Crawled - currently not indexed": 60,
+  "URL is unknown to Google": 75,
   "error": 11
  }
 }
