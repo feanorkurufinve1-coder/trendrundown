@@ -608,7 +608,7 @@
   },
   {
    "url": "/x/how-is-speaker-of-the-house-elected",
-   "at": "2026-11-20T04:25:35+00:00",
+   "at": "2026-11-20T10:46:49+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -620,7 +620,7 @@
   },
   {
    "url": "/x/how-mlb-mvp-is-voted",
-   "at": "2026-11-20T04:25:41+00:00",
+   "at": "2026-11-20T10:46:55+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -632,7 +632,7 @@
   },
   {
    "url": "/x/how-much-tax-refund-per-child-2026",
-   "at": "2026-11-20T04:25:47+00:00",
+   "at": "2026-11-20T10:47:01+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -644,7 +644,7 @@
   },
   {
    "url": "/x/how-to-rob-a-bank-true-story",
-   "at": "2026-11-20T04:25:54+00:00",
+   "at": "2026-11-20T10:47:07+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -656,7 +656,7 @@
   },
   {
    "url": "/x/how-to-vote-on-the-circle-hulu",
-   "at": "2026-11-20T04:26:00+00:00",
+   "at": "2026-11-20T10:47:14+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -668,19 +668,12 @@
   },
   {
    "url": "/x/i-play-rocky-true-story",
-   "at": "2026-11-20T04:26:06+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
-   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-   "indexingState": "INDEXING_STATE_UNSPECIFIED",
-   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
-   "lastCrawlTime": null,
-   "googleCanonical": null,
-   "userCanonical": null
+   "at": "2026-11-20T10:47:44+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/x/internet-trends-this-week-2026-11-15",
-   "at": "2026-11-20T04:26:12+00:00",
+   "at": "2026-11-20T10:47:50+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -692,12 +685,19 @@
   },
   {
    "url": "/x/iran-bahrain-radar-strike",
-   "at": "2026-11-20T04:32:35+00:00",
-   "error": "The read operation timed out"
+   "at": "2026-11-20T10:48:27+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
   },
   {
    "url": "/x/is-amanda-nunes-retired",
-   "at": "2026-11-20T04:32:41+00:00",
+   "at": "2026-11-20T10:48:33+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -769,7 +769,7 @@
   },
   {
    "url": "/x/is-melania-the-series-the-same-as-the-movie",
-   "at": "2026-11-20T04:26:19+00:00",
+   "at": "2026-11-20T10:47:56+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1692,9 +1692,9 @@
   },
   {
    "url": "/x/what-is-the-i-got-so-mad-meme",
-   "at": "2026-11-20T04:26:25+00:00",
+   "at": "2026-11-20T10:48:02+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1853,9 +1853,9 @@
   },
   {
    "url": "/x/why-are-people-saying-julia-stiles-went-to-juilliard",
-   "at": "2026-11-20T04:26:31+00:00",
+   "at": "2026-11-20T10:48:08+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1877,7 +1877,7 @@
   },
   {
    "url": "/x/why-are-people-trying-to-move-the-bean",
-   "at": "2026-11-20T04:31:58+00:00",
+   "at": "2026-11-20T10:48:14+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2009,7 +2009,7 @@
   },
   {
    "url": "/x/why-is-my-washing-machine-dripping-water-inside",
-   "at": "2026-11-20T04:32:05+00:00",
+   "at": "2026-11-20T10:48:21+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
