@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-20T19:17:21+00:00",
+ "checked": "2026-11-20T20:02:32+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -829,7 +829,7 @@
   },
   {
    "url": "/x/is-trinity-netflix-based-on-a-true-story",
-   "at": "2026-11-20T13:52:51+00:00",
+   "at": "2026-11-20T20:02:06+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1498,7 +1498,7 @@
   },
   {
    "url": "/x/what-does-text-message-not-encrypted-mean",
-   "at": "2026-11-20T13:52:58+00:00",
+   "at": "2026-11-20T20:02:13+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1906,8 +1906,15 @@
   },
   {
    "url": "/x/why-are-people-saying-remember-november-2026-is-coming",
-   "at": "2026-11-20T13:53:28+00:00",
-   "error": "The read operation timed out"
+   "at": "2026-11-20T20:02:19+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
   },
   {
    "url": "/x/why-are-people-saying-robert-pattinson-is-gen-z",
@@ -1928,7 +1935,7 @@
   },
   {
    "url": "/x/why-are-people-wearing-pajamas-to-sunrise-on-the-reaping",
-   "at": "2026-11-20T13:53:34+00:00",
+   "at": "2026-11-20T20:02:25+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2120,7 +2127,7 @@
   },
   {
    "url": "/x/why-wont-my-washing-machine-spin",
-   "at": "2026-11-20T13:53:40+00:00",
+   "at": "2026-11-20T20:02:32+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2152,9 +2159,9 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 87,
+  "URL is unknown to Google": 88,
   "Crawled - currently not indexed": 56,
-  "error": 15,
+  "error": 14,
   "Discovered - currently not indexed": 25
  }
 }
