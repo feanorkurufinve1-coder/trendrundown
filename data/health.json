@@ -183,7 +183,7 @@
   },
   {
    "url": "/x/apple-outage-november-17-2026",
-   "at": "2026-11-20T00:17:42+00:00",
+   "at": "2026-11-20T06:33:54+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1779,9 +1779,9 @@
   },
   {
    "url": "/x/who-is-oobah-butler",
-   "at": "2026-11-20T00:11:16+00:00",
+   "at": "2026-11-20T06:32:06+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1791,7 +1791,7 @@
   },
   {
    "url": "/x/who-won-mvp-2026",
-   "at": "2026-11-20T00:11:23+00:00",
+   "at": "2026-11-20T06:32:12+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1803,9 +1803,9 @@
   },
   {
    "url": "/x/why-are-people-saying-ao3-is-back",
-   "at": "2026-11-20T00:11:29+00:00",
+   "at": "2026-11-20T06:32:19+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1815,7 +1815,7 @@
   },
   {
    "url": "/x/why-are-people-saying-dinosaurs-in-mexico",
-   "at": "2026-11-20T00:11:36+00:00",
+   "at": "2026-11-20T06:32:25+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1875,7 +1875,7 @@
   },
   {
    "url": "/x/why-does-my-phone-battery-go-down-while-charging",
-   "at": "2026-11-20T00:11:42+00:00",
+   "at": "2026-11-20T06:32:31+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1887,7 +1887,7 @@
   },
   {
    "url": "/x/why-does-my-phone-screen-go-black-during-calls",
-   "at": "2026-11-20T00:11:48+00:00",
+   "at": "2026-11-20T06:32:38+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1899,12 +1899,19 @@
   },
   {
    "url": "/x/why-does-my-phone-screen-keep-going-black",
-   "at": "2026-11-20T00:12:18+00:00",
-   "error": "The read operation timed out"
+   "at": "2026-11-20T06:32:44+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
   },
   {
    "url": "/x/why-does-my-washing-machine-smell-like-rotten-eggs",
-   "at": "2026-11-20T00:12:25+00:00",
+   "at": "2026-11-20T06:32:50+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1916,7 +1923,7 @@
   },
   {
    "url": "/x/why-does-social-security-come-out-of-my-paycheck",
-   "at": "2026-11-20T00:12:32+00:00",
+   "at": "2026-11-20T06:32:57+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1928,7 +1935,7 @@
   },
   {
    "url": "/x/why-does-social-security-get-taxed",
-   "at": "2026-11-20T00:12:38+00:00",
+   "at": "2026-11-20T06:33:03+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1940,7 +1947,7 @@
   },
   {
    "url": "/x/why-is-bitcoin-down-november-2026",
-   "at": "2026-11-20T00:12:44+00:00",
+   "at": "2026-11-20T06:33:09+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1952,7 +1959,7 @@
   },
   {
    "url": "/x/why-is-everyone-freaking-out-about-november-17",
-   "at": "2026-11-20T00:12:51+00:00",
+   "at": "2026-11-20T06:33:16+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1964,7 +1971,7 @@
   },
   {
    "url": "/x/why-is-my-check-engine-light-on",
-   "at": "2026-11-20T00:16:47+00:00",
+   "at": "2026-11-20T06:33:22+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2000,7 +2007,7 @@
   },
   {
    "url": "/x/why-is-my-washing-machine-leaking-from-the-bottom",
-   "at": "2026-11-20T00:16:53+00:00",
+   "at": "2026-11-20T06:33:28+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2012,7 +2019,7 @@
   },
   {
    "url": "/x/why-is-wifi-not-working-on-my-phone",
-   "at": "2026-11-20T00:16:59+00:00",
+   "at": "2026-11-20T06:33:35+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2024,8 +2031,15 @@
   },
   {
    "url": "/x/why-were-all-flights-grounded",
-   "at": "2026-11-20T00:17:30+00:00",
-   "error": "The read operation timed out"
+   "at": "2026-11-20T06:33:41+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "pageFetchState": "SUCCESSFUL",
+   "lastCrawlTime": "2026-11-14T17:44:35Z",
+   "googleCanonical": "https://trendrundown.com/x/why-were-all-flights-grounded",
+   "userCanonical": "https://trendrundown.com/x/why-were-all-flights-grounded"
   },
   {
    "url": "/x/why-wont-my-washing-machine-drain",
@@ -2041,7 +2055,7 @@
   },
   {
    "url": "/x/wta-tennis",
-   "at": "2026-11-20T00:17:36+00:00",
+   "at": "2026-11-20T06:33:47+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2060,10 +2074,10 @@
   "/x/hank-aaron-award": "2026-11-18T20:33:39+00:00"
  },
  "summary": {
-  "error": 16,
-  "URL is unknown to Google": 80,
-  "Discovered - currently not indexed": 23,
-  "Crawled - currently not indexed": 57,
+  "error": 14,
+  "URL is unknown to Google": 79,
+  "Discovered - currently not indexed": 25,
+  "Crawled - currently not indexed": 58,
   "Submitted and indexed": 1
  }
 }
