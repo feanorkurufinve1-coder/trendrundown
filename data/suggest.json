@@ -9851,9 +9851,9 @@
   ]
  },
  "first-black-senator-from-mississippi": {
-  "time": "2026-11-19T16:33:38+00:00",
+  "time": "2026-11-20T16:48:47+00:00",
   "query": "who was the first black senator from mississippi",
-  "in_suggest": false,
+  "in_suggest": true,
   "suggest": {
    "hiram revels and blanche k. bruce": [
     "hiram revels and blanche k. bruce",
@@ -9865,9 +9865,13 @@
     "who were hiram revels and blanche k bruce",
     "hiram revels and blanche k bruce were the first two blacks to"
    ],
-   "who was the first black senator from mississippi": [],
+   "who was the first black senator from mississippi": [
+    "who was the first black senator from mississippi",
+    "who was the first black senator from massachusetts",
+    "who was the first african american senator"
+   ],
    "first black senator from mississippi": [
-    "first black politician in mississippi",
+    "first black representative in mississippi",
     "who was the first black senator from massachusetts"
    ]
   },
@@ -9899,11 +9903,15 @@
    [
     "2026-11-19",
     false
+   ],
+   [
+    "2026-11-20",
+    true
    ]
   ]
  },
  "how-much-tax-refund-per-child-2026": {
-  "time": "2026-11-19T16:33:39+00:00",
+  "time": "2026-11-20T16:48:49+00:00",
   "query": "how much tax refund per child 2026",
   "in_suggest": true,
   "suggest": {
@@ -9984,25 +9992,29 @@
    [
     "2026-11-19",
     true
+   ],
+   [
+    "2026-11-20",
+    true
    ]
   ]
  },
  "is-the-law-of-beasts-a-true-story": {
-  "time": "2026-11-19T16:33:41+00:00",
+  "time": "2026-11-20T16:48:50+00:00",
   "query": "is the law of beasts a true story",
   "in_suggest": true,
   "suggest": {
    "the law of beasts": [
     "the law of beasts",
     "the law of beasts netflix",
-    "the law of beasts netflix review",
     "the law of beasts true story",
+    "the law of beasts netflix review",
     "the law of beasts review",
-    "the law of beasts cast",
-    "the law of beasts imdb",
     "the law of beasts netflix cast",
-    "the law of beasts s01",
-    "the law of beasts 2026"
+    "the law of beasts cast",
+    "the law of beasts rotten tomatoes",
+    "the law of beasts imdb",
+    "the law of beasts netflix imdb"
    ],
    "what is the law of beasts": [
     "what is the law of beasts about",
@@ -10048,11 +10060,15 @@
    [
     "2026-11-19",
     true
+   ],
+   [
+    "2026-11-20",
+    true
    ]
   ]
  },
  "ligue-1": {
-  "time": "2026-11-19T16:33:41+00:00",
+  "time": "2026-11-20T16:48:51+00:00",
   "query": "what is ligue 1",
   "in_suggest": true,
   "suggest": {
@@ -10109,11 +10125,15 @@
    [
     "2026-11-19",
     true
+   ],
+   [
+    "2026-11-20",
+    true
    ]
   ]
  },
  "phishing-test": {
-  "time": "2026-11-19T16:33:43+00:00",
+  "time": "2026-11-20T16:48:52+00:00",
   "query": "what is a phishing test",
   "in_suggest": true,
   "suggest": {
@@ -10182,17 +10202,21 @@
    [
     "2026-11-19",
     true
+   ],
+   [
+    "2026-11-20",
+    true
    ]
   ]
  },
  "rock-hall-of-fame-2026-ceremony-air-date": {
-  "time": "2026-11-19T16:33:44+00:00",
+  "time": "2026-11-20T16:48:53+00:00",
   "query": "when will the rock and roll hall of fame 2026 ceremony air",
   "in_suggest": false,
   "suggest": {
    "2026 rock and roll hall of fame induction ceremony": [
-    "2026 rock and roll hall of fame induction ceremony tickets",
     "2026 rock and roll hall of fame induction ceremony",
+    "2026 rock and roll hall of fame induction ceremony tickets",
     "2026 rock and roll hall of fame induction ceremony performers",
     "2026 rock and roll hall of fame induction ceremony location",
     "2026 rock and roll hall of fame induction ceremony date",
@@ -10234,11 +10258,15 @@
    [
     "2026-11-19",
     false
+   ],
+   [
+    "2026-11-20",
+    false
    ]
   ]
  },
  "what-does-refrigerator-coolant-smell-like": {
-  "time": "2026-11-19T16:33:45+00:00",
+  "time": "2026-11-20T16:48:55+00:00",
   "query": "what does refrigerator coolant smell like",
   "in_suggest": true,
   "suggest": {
@@ -10314,11 +10342,15 @@
    [
     "2026-11-19",
     true
+   ],
+   [
+    "2026-11-20",
+    true
    ]
   ]
  },
  "what-is-a-safety-in-football": {
-  "time": "2026-11-19T16:33:47+00:00",
+  "time": "2026-11-20T16:48:56+00:00",
   "query": "what is a safety in football",
   "in_suggest": true,
   "suggest": {
@@ -10399,11 +10431,15 @@
    [
     "2026-11-19",
     true
+   ],
+   [
+    "2026-11-20",
+    true
    ]
   ]
  },
  "what-is-broad-based-categorical-eligibility": {
-  "time": "2026-11-19T16:33:48+00:00",
+  "time": "2026-11-20T16:48:57+00:00",
   "query": "what is broad-based categorical eligibility",
   "in_suggest": true,
   "suggest": {
@@ -10460,11 +10496,15 @@
    [
     "2026-11-19",
     true
+   ],
+   [
+    "2026-11-20",
+    true
    ]
   ]
  },
  "why-is-wifi-not-working-on-my-phone": {
-  "time": "2026-11-19T16:33:49+00:00",
+  "time": "2026-11-20T16:48:59+00:00",
   "query": "why is wifi not working on my phone",
   "in_suggest": true,
   "suggest": {
@@ -10522,6 +10562,10 @@
    ],
    [
     "2026-11-19",
+    true
+   ],
+   [
+    "2026-11-20",
     true
    ]
   ]
