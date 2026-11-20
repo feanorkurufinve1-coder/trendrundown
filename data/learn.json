@@ -1,6 +1,6 @@
 {
- "made": "2026-11-20T14:09:29+00:00",
- "pages": 423,
+ "made": "2026-11-20T14:16:54+00:00",
+ "pages": 428,
  "summary": {
   "kind": {
    "event": {
@@ -25,8 +25,8 @@
     "clicks_per_page": 0.06
    },
    "other": {
-    "pages": 34,
-    "with_impr_%": 18,
+    "pages": 35,
+    "with_impr_%": 17,
     "top3_%": 3,
     "clicks": 2,
     "clicks_per_page": 0.06
@@ -53,11 +53,11 @@
     "clicks_per_page": 0.0
    },
    "term": {
-    "pages": 169,
+    "pages": 173,
     "with_impr_%": 14,
     "top3_%": 2,
     "clicks": 35,
-    "clicks_per_page": 0.21
+    "clicks_per_page": 0.2
    },
    "tool": {
     "pages": 1,
@@ -83,11 +83,11 @@
     "clicks_per_page": 0.0
    },
    "manual": {
-    "pages": 148,
-    "with_impr_%": 13,
+    "pages": 153,
+    "with_impr_%": 12,
     "top3_%": 3,
     "clicks": 52,
-    "clicks_per_page": 0.35
+    "clicks_per_page": 0.34
    }
   },
   "q_word": {
@@ -127,9 +127,9 @@
     "clicks_per_page": 0.0
    },
    "is": {
-    "pages": 22,
+    "pages": 23,
     "with_impr_%": 9,
-    "top3_%": 5,
+    "top3_%": 4,
     "clicks": 2,
     "clicks_per_page": 0.09
    },
@@ -141,7 +141,7 @@
     "clicks_per_page": 0.14
    },
    "what": {
-    "pages": 234,
+    "pages": 235,
     "with_impr_%": 18,
     "top3_%": 2,
     "clicks": 40,
@@ -169,7 +169,7 @@
     "clicks_per_page": 0.09
    },
    "why": {
-    "pages": 17,
+    "pages": 20,
     "with_impr_%": 0,
     "top3_%": 0,
     "clicks": 0,
@@ -185,7 +185,7 @@
   },
   "title_matches_top_query": {
    "False": {
-    "pages": 384,
+    "pages": 389,
     "with_impr_%": 8,
     "top3_%": 1,
     "clicks": 31,
@@ -474,7 +474,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 65,
-   "age_days": 17.8,
+   "age_days": 17.9,
    "rival_exact": null,
    "impr": 99,
    "clicks": 0,
@@ -1067,7 +1067,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 32,
-   "age_days": 20.8,
+   "age_days": 20.9,
    "rival_exact": null,
    "impr": 6,
    "clicks": 0,
@@ -1086,7 +1086,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 54,
-   "age_days": 14.8,
+   "age_days": 14.9,
    "rival_exact": null,
    "impr": 5,
    "clicks": 0,
@@ -1414,7 +1414,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 47,
-   "age_days": 24.2,
+   "age_days": 24.3,
    "rival_exact": null,
    "impr": 2,
    "clicks": 0,
@@ -1431,7 +1431,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 28,
-   "age_days": 23.8,
+   "age_days": 23.9,
    "rival_exact": null,
    "impr": 2,
    "clicks": 0,
@@ -1799,7 +1799,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 60,
-   "age_days": 18.8,
+   "age_days": 18.9,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -1844,7 +1844,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 22,
-   "age_days": 24.2,
+   "age_days": 24.3,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2099,7 +2099,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 27,
-   "age_days": 21.7,
+   "age_days": 21.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2369,7 +2369,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 57,
-   "age_days": 18.8,
+   "age_days": 18.9,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3074,7 +3074,7 @@
    "source": "auto",
    "q_word": "none",
    "title_len": 67,
-   "age_days": 15.5,
+   "age_days": 15.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4349,7 +4349,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 64,
-   "age_days": 11.5,
+   "age_days": 11.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5498,6 +5498,21 @@
    "top_queries": []
   },
   {
+   "slug": "is-melania-the-series-the-same-as-the-movie",
+   "title": "Is 'Melania, The Series' the same as the movie? What's different",
+   "kind": "other",
+   "source": "manual",
+   "q_word": "is",
+   "title_len": 64,
+   "age_days": 3.0,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
    "slug": "is-philomena-cunk-real",
    "title": "Is Philomena Cunk a real person? Who plays her in Cunk on Cinema",
    "kind": "term",
@@ -6458,6 +6473,21 @@
    "top_queries": []
   },
   {
+   "slug": "what-is-the-i-got-so-mad-meme",
+   "title": "What is the 'I got so mad' meme? TikTok's fake-rage trend",
+   "kind": "term",
+   "source": "manual",
+   "q_word": "what",
+   "title_len": 57,
+   "age_days": 3.0,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
    "slug": "what-is-the-ram-altman-meme",
    "title": "What is the RAM Altman meme? Sam Altman's memory remark, explained",
    "kind": "term",
@@ -6608,6 +6638,36 @@
    "top_queries": []
   },
   {
+   "slug": "why-are-people-saying-julia-stiles-went-to-juilliard",
+   "title": "Why are people saying Julia Stiles went to Juilliard? The DWTS joke",
+   "kind": "term",
+   "source": "manual",
+   "q_word": "why",
+   "title_len": 67,
+   "age_days": 3.0,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
+   "slug": "why-are-people-trying-to-move-the-bean",
+   "title": "Why are people trying to move the Bean? The 7-inch joke, explained",
+   "kind": "term",
+   "source": "manual",
+   "q_word": "why",
+   "title_len": 66,
+   "age_days": 3.0,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
    "slug": "why-does-my-phone-battery-go-down-while-charging",
    "title": "Why does my phone battery go down while charging? 7 causes and fixes",
    "kind": "term",
@@ -6720,6 +6780,21 @@
    "q_word": "why",
    "title_len": 70,
    "age_days": 9.0,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
+   "slug": "why-is-my-washing-machine-dripping-water-inside",
+   "title": "Why is my washing machine dripping water inside? Main causes",
+   "kind": "term",
+   "source": "manual",
+   "q_word": "why",
+   "title_len": 60,
+   "age_days": 3.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
