@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-20T15:02:43+00:00",
+ "checked": "2026-11-20T17:03:33+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -208,6 +208,18 @@
   {
    "url": "/x/bright-star-eastern-sky-morning",
    "at": "2026-11-20T15:02:05+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
+   "url": "/x/california-earthquake-pinnacles-november-2026",
+   "at": "2026-11-20T17:02:04+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -668,14 +680,21 @@
   },
   {
    "url": "/x/i-play-rocky-true-story",
-   "at": "2026-11-20T10:47:44+00:00",
-   "error": "The read operation timed out"
+   "at": "2026-11-20T17:02:17+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
   },
   {
    "url": "/x/internet-trends-this-week-2026-11-15",
-   "at": "2026-11-20T10:47:50+00:00",
+   "at": "2026-11-20T17:02:23+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -685,7 +704,7 @@
   },
   {
    "url": "/x/iran-bahrain-radar-strike",
-   "at": "2026-11-20T10:48:27+00:00",
+   "at": "2026-11-20T17:03:01+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -697,7 +716,7 @@
   },
   {
    "url": "/x/is-amanda-nunes-retired",
-   "at": "2026-11-20T10:48:33+00:00",
+   "at": "2026-11-20T17:03:07+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -709,7 +728,7 @@
   },
   {
    "url": "/x/is-being-heumann-a-true-story",
-   "at": "2026-11-20T10:52:51+00:00",
+   "at": "2026-11-20T17:03:14+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -738,12 +757,19 @@
   },
   {
    "url": "/x/is-gta-6-coming-to-pc",
-   "at": "2026-11-20T10:53:21+00:00",
-   "error": "The read operation timed out"
+   "at": "2026-11-20T17:03:20+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "pageFetchState": "SUCCESSFUL",
+   "lastCrawlTime": "2026-11-13T16:07:38Z",
+   "googleCanonical": "https://trendrundown.com/x/is-gta-6-coming-to-pc",
+   "userCanonical": "https://trendrundown.com/x/is-gta-6-coming-to-pc"
   },
   {
    "url": "/x/is-leonida-a-real-place",
-   "at": "2026-11-20T10:53:27+00:00",
+   "at": "2026-11-20T17:03:27+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -755,7 +781,7 @@
   },
   {
    "url": "/x/is-melania-the-series-the-same-as-the-movie",
-   "at": "2026-11-20T10:47:56+00:00",
+   "at": "2026-11-20T17:02:29+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -767,7 +793,7 @@
   },
   {
    "url": "/x/is-philomena-cunk-real",
-   "at": "2026-11-20T10:53:34+00:00",
+   "at": "2026-11-20T17:03:33+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1187,6 +1213,18 @@
    "url": "/x/richard-avedon",
    "at": "2026-11-20T11:48:23+00:00",
    "error": "The read operation timed out"
+  },
+  {
+   "url": "/x/rikers-island-closure-plan-2032",
+   "at": "2026-11-20T17:02:10+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
   },
   {
    "url": "/x/robert-pattinson-james-bond",
@@ -1716,9 +1754,9 @@
   },
   {
    "url": "/x/what-is-the-i-got-so-mad-meme",
-   "at": "2026-11-20T10:48:02+00:00",
+   "at": "2026-11-20T17:02:36+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1884,9 +1922,9 @@
   },
   {
    "url": "/x/why-are-people-saying-julia-stiles-went-to-juilliard",
-   "at": "2026-11-20T10:48:08+00:00",
+   "at": "2026-11-20T17:02:42+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1906,7 +1944,7 @@
   },
   {
    "url": "/x/why-are-people-trying-to-move-the-bean",
-   "at": "2026-11-20T10:48:14+00:00",
+   "at": "2026-11-20T17:02:48+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2043,7 +2081,7 @@
   },
   {
    "url": "/x/why-is-my-washing-machine-dripping-water-inside",
-   "at": "2026-11-20T10:48:21+00:00",
+   "at": "2026-11-20T17:02:55+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2135,9 +2173,9 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "Discovered - currently not indexed": 29,
-  "Crawled - currently not indexed": 56,
-  "error": 14,
-  "URL is unknown to Google": 82
+  "Discovered - currently not indexed": 28,
+  "Crawled - currently not indexed": 57,
+  "error": 12,
+  "URL is unknown to Google": 86
  }
 }
