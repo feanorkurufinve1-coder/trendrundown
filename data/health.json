@@ -1664,7 +1664,7 @@
   },
   {
    "url": "/x/when-does-new-congress-start",
-   "at": "2026-11-19T17:13:34+00:00",
+   "at": "2026-11-20T00:11:03+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1676,7 +1676,7 @@
   },
   {
    "url": "/x/when-will-social-security-run-out",
-   "at": "2026-11-19T17:13:40+00:00",
+   "at": "2026-11-20T00:11:10+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1688,7 +1688,7 @@
   },
   {
    "url": "/x/who-is-oobah-butler",
-   "at": "2026-11-19T17:13:46+00:00",
+   "at": "2026-11-20T00:11:16+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1700,7 +1700,7 @@
   },
   {
    "url": "/x/who-won-mvp-2026",
-   "at": "2026-11-19T17:13:53+00:00",
+   "at": "2026-11-20T00:11:23+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1712,9 +1712,9 @@
   },
   {
    "url": "/x/why-are-people-saying-ao3-is-back",
-   "at": "2026-11-19T17:13:59+00:00",
+   "at": "2026-11-20T00:11:29+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1724,7 +1724,7 @@
   },
   {
    "url": "/x/why-are-people-saying-dinosaurs-in-mexico",
-   "at": "2026-11-19T17:14:05+00:00",
+   "at": "2026-11-20T00:11:36+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1777,7 +1777,7 @@
   },
   {
    "url": "/x/why-does-my-phone-battery-go-down-while-charging",
-   "at": "2026-11-19T17:14:11+00:00",
+   "at": "2026-11-20T00:11:42+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1789,9 +1789,9 @@
   },
   {
    "url": "/x/why-does-my-phone-screen-go-black-during-calls",
-   "at": "2026-11-19T17:14:18+00:00",
+   "at": "2026-11-20T00:11:48+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1801,19 +1801,12 @@
   },
   {
    "url": "/x/why-does-my-phone-screen-keep-going-black",
-   "at": "2026-11-19T17:14:24+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
-   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-   "indexingState": "INDEXING_STATE_UNSPECIFIED",
-   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
-   "lastCrawlTime": null,
-   "googleCanonical": null,
-   "userCanonical": null
+   "at": "2026-11-20T00:12:18+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/x/why-does-my-washing-machine-smell-like-rotten-eggs",
-   "at": "2026-11-19T17:14:31+00:00",
+   "at": "2026-11-20T00:12:25+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1825,7 +1818,7 @@
   },
   {
    "url": "/x/why-does-social-security-come-out-of-my-paycheck",
-   "at": "2026-11-19T17:14:37+00:00",
+   "at": "2026-11-20T00:12:32+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1837,7 +1830,7 @@
   },
   {
    "url": "/x/why-does-social-security-get-taxed",
-   "at": "2026-11-19T17:14:43+00:00",
+   "at": "2026-11-20T00:12:38+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1849,7 +1842,7 @@
   },
   {
    "url": "/x/why-is-bitcoin-down-november-2026",
-   "at": "2026-11-19T17:20:46+00:00",
+   "at": "2026-11-20T00:12:44+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1861,7 +1854,7 @@
   },
   {
    "url": "/x/why-is-everyone-freaking-out-about-november-17",
-   "at": "2026-11-19T17:20:52+00:00",
+   "at": "2026-11-20T00:12:51+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1979,7 +1972,7 @@
   "Submitted and indexed": 2,
   "Discovered - currently not indexed": 24,
   "Crawled - currently not indexed": 57,
-  "URL is unknown to Google": 66,
-  "error": 28
+  "URL is unknown to Google": 65,
+  "error": 29
  }
 }
