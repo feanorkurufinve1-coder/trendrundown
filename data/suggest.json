@@ -11990,16 +11990,17 @@
   ]
  },
  "is-melania-the-series-the-same-as-the-movie": {
-  "time": "2026-11-19T14:03:10+00:00",
+  "time": "2026-11-20T14:09:30+00:00",
   "query": "is melania the series the same as the movie",
   "in_suggest": false,
   "suggest": {
    "melania, the series": [
     "melania the series",
+    "melania the series red carpet",
+    "melania the series reviews",
     "melania series amazon",
     "melania series netflix",
     "melanio series v",
-    "melania series review",
     "melania series where to watch",
     "melania series release date"
    ],
@@ -12022,16 +12023,21 @@
    [
     "2026-11-19",
     false
+   ],
+   [
+    "2026-11-20",
+    false
    ]
   ]
  },
  "what-is-the-i-got-so-mad-meme": {
-  "time": "2026-11-19T14:03:12+00:00",
+  "time": "2026-11-20T14:09:32+00:00",
   "query": "what is the i got so mad meme",
   "in_suggest": true,
   "suggest": {
    "i got so mad meme": [
     "i got so mad meme",
+    "i got so mad meme ideas",
     "i was so mad meme",
     "i just get so mad meme",
     "i was so mad mercer mayer meme"
@@ -12051,11 +12057,15 @@
    [
     "2026-11-19",
     true
+   ],
+   [
+    "2026-11-20",
+    true
    ]
   ]
  },
  "why-are-people-saying-julia-stiles-went-to-juilliard": {
-  "time": "2026-11-19T14:03:13+00:00",
+  "time": "2026-11-20T14:09:33+00:00",
   "query": "why are people saying julia stiles went to juilliard",
   "in_suggest": true,
   "suggest": {
@@ -12104,11 +12114,15 @@
    [
     "2026-11-19",
     true
+   ],
+   [
+    "2026-11-20",
+    true
    ]
   ]
  },
  "why-are-people-trying-to-move-the-bean": {
-  "time": "2026-11-19T14:03:15+00:00",
+  "time": "2026-11-20T14:09:34+00:00",
   "query": "why are people trying to move the bean",
   "in_suggest": false,
   "suggest": {
@@ -12129,11 +12143,15 @@
    [
     "2026-11-19",
     false
+   ],
+   [
+    "2026-11-20",
+    false
    ]
   ]
  },
  "why-is-my-washing-machine-dripping-water-inside": {
-  "time": "2026-11-19T14:03:16+00:00",
+  "time": "2026-11-20T14:09:36+00:00",
   "query": "why is my washing machine dripping water inside",
   "in_suggest": true,
   "suggest": {
@@ -12197,6 +12215,10 @@
    ],
    [
     "2026-11-19",
+    true
+   ],
+   [
+    "2026-11-20",
     true
    ]
   ]
