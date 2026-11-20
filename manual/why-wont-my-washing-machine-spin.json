@@ -1,0 +1,46 @@
+{
+ "subject": "Washing machine not spinning",
+ "kind": "other",
+ "query": "why won't my washing machine spin",
+ "title": "Why won't my washing machine spin? 8 causes, most likely first",
+ "answer": "Most often it's the load: too many clothes, or a heavy item like a towel bundle or comforter bunched on one side, so the washer refuses to spin to protect itself. Next come water that can't drain, a lid or door switch that doesn't register as closed, an unlevel machine, and then worn parts like the drive belt, motor or control board.",
+ "body": "Start safe: if the drum is full of water, drain it first, and unplug the washer before you touch the hose, filter or anything behind the machine. First figure out what you're dealing with: does it never spin at all, or does it start and then stop? Starting and stopping usually points to balance or drainage; total silence on the spin cycle points more to the lid switch or a part.\n\nThe likely causes, in rough order:\n1. Overloaded drum. Take some items out and run a drain-and-spin cycle.\n2. Unbalanced load. One heavy item, or a wet clump on one side, makes the washer stop or slow down. Spread the clothes evenly, or add a couple of towels to balance a single bulky item.\n3. Water not draining. A washer won't spin while it's still holding water. Check for a kinked or clogged drain hose, a clogged pump filter on front-loaders, or a slow house drain.\n4. Too many suds. Too much detergent, or a non-HE detergent in an HE washer, can stop the spin. Run an extra rinse and use the recommended amount of HE detergent.\n5. Lid or door switch. If the machine doesn't detect a closed lid or locked door, it won't spin. Close it firmly and try again; on top-loaders this is one of the most common culprits.\n6. Unlevel washer. If it rocks, adjust the front legs until it sits flat, using a level or a phone app.\n7. Drive belt (on belt-driven models). A loose or broken belt means the motor runs but the drum doesn't turn, often with a burning smell.\n8. Motor, clutch, shock absorbers or control board. These are less common and harder to fix.\n\nWhat you can safely check yourself: the load, the drain hose, the pump filter, the detergent, whether the lid closes properly and whether the machine is level. Your manual shows where the filter is and how to run a drain-and-spin cycle.\n\nWhen to call a technician: if the washer hums but the drum won't turn after you've checked the load and drain, if you smell burning, if you see an error code that points to the motor or control board, or if the fix means opening the cabinet. Replacing a motor, clutch or control board is a job for a pro. Never bypass the lid or door switch; it's there to keep the drum from spinning while it's open.",
+ "faq": [
+  {
+   "q": "How do I reset a washing machine that won't spin?",
+   "a": "Unplug it for a minute or two, plug it back in and run a drain-and-spin cycle with a smaller, evenly spread load. Check your manual for a model-specific reset."
+  },
+  {
+   "q": "Why does my washer fill and drain but not spin?",
+   "a": "Most often the load is unbalanced or the lid or door switch isn't registering. If both check out, a worn belt or motor problem is possible."
+  },
+  {
+   "q": "Can too much detergent stop a washer from spinning?",
+   "a": "Yes. Excess suds can stop the spin cycle. Run an extra rinse and use the recommended amount of HE detergent."
+  },
+  {
+   "q": "Is it worth fixing a washer that won't spin?",
+   "a": "Usually, if the cause is the load, a clog or a switch. A failed motor or control board on an old machine may cost close to a new washer, so get a quote first."
+  }
+ ],
+ "links": [
+  [
+   "Sears Home Services",
+   "Why Is My Washing Machine Not Spinning?",
+   "https://www.searshomeservices.com/blog/why-is-my-washing-machine-not-spinning"
+  ],
+  [
+   "Angi",
+   "Why Your Washing Machine Is Not Spinning and Potential Fixes",
+   "https://angi.com/articles/washing-machine-not-spinning.htm"
+  ],
+  [
+   "Asurion",
+   "How to fix a washer that won't spin",
+   "https://asurion.com/connect/tech-tips/fix-washer-wont-spin/"
+  ]
+ ],
+ "image_prompt": "A top-loading washing machine with its lid open in a bright laundry room, wet clothes bunched on one side of the drum, realistic photo style",
+ "made": "2026-11-20T13:49:00Z",
+ "first": "2026-11-20T13:49:00Z"
+}
