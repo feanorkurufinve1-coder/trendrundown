@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-20T08:17:34+00:00",
+ "checked": "2026-11-20T08:55:32+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -245,7 +245,7 @@
   },
   {
    "url": "/x/camp-flog-gnaw-livestream",
-   "at": "2026-11-20T02:46:49+00:00",
+   "at": "2026-11-20T08:54:14+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -257,7 +257,7 @@
   },
   {
    "url": "/x/carter-faith",
-   "at": "2026-11-20T02:46:55+00:00",
+   "at": "2026-11-20T08:54:20+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -269,12 +269,12 @@
   },
   {
    "url": "/x/cliff-booth-release-date",
-   "at": "2026-11-20T02:47:25+00:00",
+   "at": "2026-11-20T08:54:50+00:00",
    "error": "The read operation timed out"
   },
   {
    "url": "/x/cma-awards-2026-date",
-   "at": "2026-11-20T02:47:32+00:00",
+   "at": "2026-11-20T08:54:56+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -298,7 +298,7 @@
   },
   {
    "url": "/x/coachella-2027-tickets-on-sale",
-   "at": "2026-11-20T02:47:38+00:00",
+   "at": "2026-11-20T08:55:02+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -310,15 +310,8 @@
   },
   {
    "url": "/x/dan-hicks-death",
-   "at": "2026-11-20T02:47:45+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
-   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-   "indexingState": "INDEXING_STATE_UNSPECIFIED",
-   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
-   "lastCrawlTime": null,
-   "googleCanonical": null,
-   "userCanonical": null
+   "at": "2026-11-20T08:55:32+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/x/designated-for-assignment",
@@ -2084,7 +2077,7 @@
   "Submitted and indexed": 2,
   "Discovered - currently not indexed": 29,
   "Crawled - currently not indexed": 59,
-  "URL is unknown to Google": 74,
-  "error": 13
+  "URL is unknown to Google": 73,
+  "error": 14
  }
 }
