@@ -1139,31 +1139,17 @@
   },
   {
    "url": "/x/planet-alignment-november-2026",
-   "at": "2026-11-20T11:46:58+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
-   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-   "indexingState": "INDEXING_STATE_UNSPECIFIED",
-   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
-   "lastCrawlTime": null,
-   "googleCanonical": null,
-   "userCanonical": null
+   "at": "2026-11-20T18:02:14+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/x/qualifying-offer",
-   "at": "2026-11-20T11:47:04+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "Crawled - currently not indexed",
-   "robotsTxtState": "ALLOWED",
-   "indexingState": "INDEXING_ALLOWED",
-   "pageFetchState": "SUCCESSFUL",
-   "lastCrawlTime": "2026-11-06T03:58:16Z",
-   "googleCanonical": "https://trendrundown.com/x/qualifying-offer",
-   "userCanonical": "https://trendrundown.com/x/qualifying-offer"
+   "at": "2026-11-20T18:02:44+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/x/record-vs-song-of-the-year",
-   "at": "2026-11-20T11:47:11+00:00",
+   "at": "2026-11-20T18:02:51+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1175,7 +1161,7 @@
   },
   {
    "url": "/x/red-cup-day-2026",
-   "at": "2026-11-20T11:47:17+00:00",
+   "at": "2026-11-20T18:02:57+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1187,7 +1173,7 @@
   },
   {
    "url": "/x/relief-pitcher-of-the-year",
-   "at": "2026-11-20T11:47:23+00:00",
+   "at": "2026-11-20T18:03:03+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1199,13 +1185,27 @@
   },
   {
    "url": "/x/reminders-of-him-book",
-   "at": "2026-11-20T11:47:53+00:00",
-   "error": "The read operation timed out"
+   "at": "2026-11-20T18:03:09+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "pageFetchState": "SUCCESSFUL",
+   "lastCrawlTime": "2026-11-06T18:25:22Z",
+   "googleCanonical": "https://trendrundown.com/x/reminders-of-him-book",
+   "userCanonical": "https://trendrundown.com/x/reminders-of-him-book"
   },
   {
    "url": "/x/richard-avedon",
-   "at": "2026-11-20T11:48:23+00:00",
-   "error": "The read operation timed out"
+   "at": "2026-11-20T18:03:15+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "pageFetchState": "SUCCESSFUL",
+   "lastCrawlTime": "2026-11-08T00:09:08Z",
+   "googleCanonical": "https://trendrundown.com/x/richard-avedon",
+   "userCanonical": "https://trendrundown.com/x/richard-avedon"
   },
   {
    "url": "/x/rikers-island-closure-plan-2032",
@@ -2167,8 +2167,8 @@
  "summary": {
   "Submitted and indexed": 1,
   "Discovered - currently not indexed": 28,
-  "Crawled - currently not indexed": 56,
+  "Crawled - currently not indexed": 57,
   "error": 13,
-  "URL is unknown to Google": 86
+  "URL is unknown to Google": 85
  }
 }
