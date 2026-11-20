@@ -363,9 +363,9 @@
   },
   {
    "url": "/x/does-a-refrigerator-need-its-own-circuit",
-   "at": "2026-11-20T06:02:25+00:00",
+   "at": "2026-11-20T12:18:07+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1334,19 +1334,12 @@
   },
   {
    "url": "/x/the-good-daughter-book",
-   "at": "2026-11-20T05:48:40+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
-   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-   "indexingState": "INDEXING_STATE_UNSPECIFIED",
-   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
-   "lastCrawlTime": null,
-   "googleCanonical": null,
-   "userCanonical": null
+   "at": "2026-11-20T12:17:13+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/x/tri-series-cricket",
-   "at": "2026-11-20T05:48:46+00:00",
+   "at": "2026-11-20T12:17:20+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1370,7 +1363,7 @@
   },
   {
    "url": "/x/two-dan-sullivans-alaska",
-   "at": "2026-11-20T06:01:53+00:00",
+   "at": "2026-11-20T12:17:26+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1382,7 +1375,7 @@
   },
   {
    "url": "/x/under-siege-netflix-true-story",
-   "at": "2026-11-20T06:02:00+00:00",
+   "at": "2026-11-20T12:17:42+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1394,7 +1387,7 @@
   },
   {
    "url": "/x/vienna-game-true-story",
-   "at": "2026-11-20T06:02:06+00:00",
+   "at": "2026-11-20T12:17:48+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1418,7 +1411,7 @@
   },
   {
    "url": "/x/what-does-12-12-12-mean",
-   "at": "2026-11-20T06:02:13+00:00",
+   "at": "2026-11-20T12:17:55+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1430,7 +1423,7 @@
   },
   {
    "url": "/x/what-does-habibi-mean",
-   "at": "2026-11-20T06:02:19+00:00",
+   "at": "2026-11-20T12:18:01+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1442,7 +1435,7 @@
   },
   {
    "url": "/x/what-does-maxxing-mean",
-   "at": "2026-11-20T06:02:32+00:00",
+   "at": "2026-11-20T12:18:32+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1454,9 +1447,9 @@
   },
   {
    "url": "/x/what-does-microsoft-364-mean",
-   "at": "2026-11-20T06:02:38+00:00",
+   "at": "2026-11-20T12:18:38+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2096,9 +2089,9 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "Discovered - currently not indexed": 30,
+  "Discovered - currently not indexed": 32,
   "Crawled - currently not indexed": 60,
-  "URL is unknown to Google": 75,
-  "error": 11
+  "URL is unknown to Google": 72,
+  "error": 12
  }
 }
