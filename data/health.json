@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-20T02:02:18+00:00",
+ "checked": "2026-11-20T02:30:15+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -41,15 +41,8 @@
  "urls": [
   {
    "url": "/",
-   "at": "2026-11-19T20:17:14+00:00",
-   "verdict": "PASS",
-   "coverageState": "Submitted and indexed",
-   "robotsTxtState": "ALLOWED",
-   "indexingState": "INDEXING_ALLOWED",
-   "pageFetchState": "SUCCESSFUL",
-   "lastCrawlTime": "2026-11-15T19:19:19Z",
-   "googleCanonical": "https://trendrundown.com/",
-   "userCanonical": "https://trendrundown.com/"
+   "at": "2026-11-20T02:29:39+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/news",
@@ -89,7 +82,7 @@
   },
   {
    "url": "/x/telerally",
-   "at": "2026-11-19T20:16:48+00:00",
+   "at": "2026-11-20T02:28:35+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -101,7 +94,7 @@
   },
   {
    "url": "/x/mutual-option",
-   "at": "2026-11-19T20:16:55+00:00",
+   "at": "2026-11-20T02:28:56+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -113,7 +106,7 @@
   },
   {
    "url": "/x/dane-cook-brother",
-   "at": "2026-11-19T20:17:01+00:00",
+   "at": "2026-11-20T02:29:03+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -125,7 +118,7 @@
   },
   {
    "url": "/x/cyber-monday",
-   "at": "2026-11-19T20:17:07+00:00",
+   "at": "2026-11-20T02:29:09+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -137,7 +130,7 @@
   },
   {
    "url": "/x/40-man-roster",
-   "at": "2026-11-19T20:17:20+00:00",
+   "at": "2026-11-20T02:29:45+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -149,15 +142,8 @@
   },
   {
    "url": "/x/alaska-ranked-choice-voting",
-   "at": "2026-11-19T20:17:27+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "Crawled - currently not indexed",
-   "robotsTxtState": "ALLOWED",
-   "indexingState": "INDEXING_ALLOWED",
-   "pageFetchState": "SUCCESSFUL",
-   "lastCrawlTime": "2026-11-06T13:02:09Z",
-   "googleCanonical": "https://trendrundown.com/x/alaska-ranked-choice-voting",
-   "userCanonical": "https://trendrundown.com/x/alaska-ranked-choice-voting"
+   "at": "2026-11-20T02:30:15+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/x/alicias-law-the-good-wife",
@@ -1954,7 +1940,7 @@
    "userCanonical": "https://trendrundown.com/x/wta-tennis"
   }
  ],
- "sm_at": "2026-11-19T20:16:41+00:00",
+ "sm_at": "2026-11-20T02:28:28+00:00",
  "first_indexed": {
   "/x/cyber-monday": "2026-11-13T16:25:58+00:00",
   "/": "2026-11-13T16:25:58+00:00",
@@ -1962,10 +1948,10 @@
   "/x/hank-aaron-award": "2026-11-18T20:33:39+00:00"
  },
  "summary": {
-  "Submitted and indexed": 2,
+  "error": 32,
   "URL is unknown to Google": 64,
   "Discovered - currently not indexed": 25,
-  "Crawled - currently not indexed": 56,
-  "error": 30
+  "Crawled - currently not indexed": 55,
+  "Submitted and indexed": 1
  }
 }
