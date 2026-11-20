@@ -940,43 +940,22 @@
   },
   {
    "url": "/x/mlb-manager-of-the-year-voting",
-   "at": "2026-11-19T23:01:59+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "Crawled - currently not indexed",
-   "robotsTxtState": "ALLOWED",
-   "indexingState": "INDEXING_ALLOWED",
-   "pageFetchState": "SUCCESSFUL",
-   "lastCrawlTime": "2026-11-06T18:08:10Z",
-   "googleCanonical": "https://trendrundown.com/x/mlb-manager-of-the-year-voting",
-   "userCanonical": "https://trendrundown.com/x/mlb-manager-of-the-year-voting"
+   "at": "2026-11-20T05:17:15+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/x/mlb-posting-system",
-   "at": "2026-11-19T23:02:05+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "Crawled - currently not indexed",
-   "robotsTxtState": "ALLOWED",
-   "indexingState": "INDEXING_ALLOWED",
-   "pageFetchState": "SUCCESSFUL",
-   "lastCrawlTime": "2026-11-07T18:22:54Z",
-   "googleCanonical": "https://trendrundown.com/x/mlb-posting-system",
-   "userCanonical": "https://trendrundown.com/x/mlb-posting-system"
+   "at": "2026-11-20T05:17:45+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/x/mlb-rookie-eligibility",
-   "at": "2026-11-19T23:02:12+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "Crawled - currently not indexed",
-   "robotsTxtState": "ALLOWED",
-   "indexingState": "INDEXING_ALLOWED",
-   "pageFetchState": "SUCCESSFUL",
-   "lastCrawlTime": "2026-11-06T17:27:52Z",
-   "googleCanonical": "https://trendrundown.com/x/mlb-rookie-eligibility",
-   "userCanonical": "https://trendrundown.com/x/mlb-rookie-eligibility"
+   "at": "2026-11-20T05:18:15+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/x/most-mvp-awards-mlb",
-   "at": "2026-11-19T23:02:18+00:00",
+   "at": "2026-11-20T05:18:22+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -988,7 +967,7 @@
   },
   {
    "url": "/x/murder-in-galicia-true-story",
-   "at": "2026-11-19T23:02:24+00:00",
+   "at": "2026-11-20T05:18:28+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1000,7 +979,7 @@
   },
   {
    "url": "/x/national-book-awards-2026",
-   "at": "2026-11-19T23:02:30+00:00",
+   "at": "2026-11-20T05:18:34+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1012,15 +991,8 @@
   },
   {
    "url": "/x/national-parks-free-veterans-day",
-   "at": "2026-11-19T23:02:36+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
-   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-   "indexingState": "INDEXING_STATE_UNSPECIFIED",
-   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
-   "lastCrawlTime": null,
-   "googleCanonical": null,
-   "userCanonical": null
+   "at": "2026-11-20T05:19:04+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/x/nba-draft",
@@ -2032,10 +2004,10 @@
   "/x/hank-aaron-award": "2026-11-18T20:33:39+00:00"
  },
  "summary": {
-  "error": 20,
-  "URL is unknown to Google": 76,
+  "error": 24,
+  "URL is unknown to Google": 75,
   "Discovered - currently not indexed": 22,
-  "Crawled - currently not indexed": 58,
+  "Crawled - currently not indexed": 55,
   "Submitted and indexed": 1
  }
 }
