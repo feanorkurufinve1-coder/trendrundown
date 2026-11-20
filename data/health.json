@@ -1457,7 +1457,7 @@
   },
   {
    "url": "/x/what-does-maxxing-mean",
-   "at": "2026-11-20T12:18:32+00:00",
+   "at": "2026-11-20T18:46:55+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1469,19 +1469,7 @@
   },
   {
    "url": "/x/what-does-microsoft-364-mean",
-   "at": "2026-11-20T12:18:38+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
-   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-   "indexingState": "INDEXING_STATE_UNSPECIFIED",
-   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
-   "lastCrawlTime": null,
-   "googleCanonical": null,
-   "userCanonical": null
-  },
-  {
-   "url": "/x/what-does-my-kid-mean-slang-guide",
-   "at": "2026-11-20T12:31:48+00:00",
+   "at": "2026-11-20T18:47:01+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1492,16 +1480,21 @@
    "userCanonical": null
   },
   {
-   "url": "/x/what-does-refrigerator-coolant-smell-like",
-   "at": "2026-11-20T12:31:54+00:00",
+   "url": "/x/what-does-my-kid-mean-slang-guide",
+   "at": "2026-11-20T18:47:08+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Crawled - currently not indexed",
-   "robotsTxtState": "ALLOWED",
-   "indexingState": "INDEXING_ALLOWED",
-   "pageFetchState": "SUCCESSFUL",
-   "lastCrawlTime": "2026-11-13T16:11:40Z",
-   "googleCanonical": "https://trendrundown.com/x/what-does-refrigerator-coolant-smell-like",
-   "userCanonical": "https://trendrundown.com/x/what-does-refrigerator-coolant-smell-like"
+   "coverageState": "Discovered - currently not indexed",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
+   "url": "/x/what-does-refrigerator-coolant-smell-like",
+   "at": "2026-11-20T18:47:38+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/x/what-does-text-message-not-encrypted-mean",
@@ -1517,7 +1510,7 @@
   },
   {
    "url": "/x/what-does-unc-mean",
-   "at": "2026-11-20T12:32:01+00:00",
+   "at": "2026-11-20T18:47:44+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1529,7 +1522,7 @@
   },
   {
    "url": "/x/what-is-a-ground-stop",
-   "at": "2026-11-20T12:32:07+00:00",
+   "at": "2026-11-20T18:47:51+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1541,7 +1534,7 @@
   },
   {
    "url": "/x/what-is-a-hip-pointer",
-   "at": "2026-11-20T12:32:13+00:00",
+   "at": "2026-11-20T18:47:57+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1553,7 +1546,7 @@
   },
   {
    "url": "/x/what-is-a-motion-to-refer",
-   "at": "2026-11-20T12:32:19+00:00",
+   "at": "2026-11-20T18:48:04+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1565,7 +1558,7 @@
   },
   {
    "url": "/x/what-is-a-motion-to-table",
-   "at": "2026-11-20T12:32:26+00:00",
+   "at": "2026-11-20T18:48:10+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1577,7 +1570,7 @@
   },
   {
    "url": "/x/what-is-a-privileged-resolution",
-   "at": "2026-11-20T12:32:32+00:00",
+   "at": "2026-11-20T18:48:16+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1589,7 +1582,7 @@
   },
   {
    "url": "/x/what-is-a-public-benefit-corporation",
-   "at": "2026-11-20T12:32:38+00:00",
+   "at": "2026-11-20T18:48:23+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1601,7 +1594,7 @@
   },
   {
    "url": "/x/what-is-a-quarter-quell",
-   "at": "2026-11-20T12:32:45+00:00",
+   "at": "2026-11-20T18:48:29+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1613,7 +1606,7 @@
   },
   {
    "url": "/x/what-is-a-safety-in-football",
-   "at": "2026-11-20T12:32:51+00:00",
+   "at": "2026-11-20T18:48:36+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1625,7 +1618,7 @@
   },
   {
    "url": "/x/what-is-a-sudden-stratospheric-warming",
-   "at": "2026-11-20T12:32:57+00:00",
+   "at": "2026-11-20T18:48:42+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2153,8 +2146,8 @@
  "summary": {
   "Submitted and indexed": 1,
   "Discovered - currently not indexed": 28,
-  "Crawled - currently not indexed": 56,
-  "error": 15,
+  "Crawled - currently not indexed": 55,
+  "error": 16,
   "URL is unknown to Google": 84
  }
 }
