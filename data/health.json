@@ -1169,7 +1169,7 @@
   },
   {
    "url": "/x/rock-hall-of-fame-2026-ceremony-air-date",
-   "at": "2026-11-19T23:18:11+00:00",
+   "at": "2026-11-20T05:46:59+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1181,7 +1181,7 @@
   },
   {
    "url": "/x/rookie-cy-young-winner",
-   "at": "2026-11-19T23:18:18+00:00",
+   "at": "2026-11-20T05:47:06+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1193,7 +1193,7 @@
   },
   {
    "url": "/x/rule-5-draft",
-   "at": "2026-11-19T23:18:24+00:00",
+   "at": "2026-11-20T05:47:12+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1205,7 +1205,7 @@
   },
   {
    "url": "/x/scott-colom",
-   "at": "2026-11-19T23:18:30+00:00",
+   "at": "2026-11-20T05:47:18+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1217,12 +1217,19 @@
   },
   {
    "url": "/x/sierra-winter-storm-warning",
-   "at": "2026-11-19T23:19:00+00:00",
-   "error": "The read operation timed out"
+   "at": "2026-11-20T05:47:25+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
   },
   {
    "url": "/x/silver-slugger-award",
-   "at": "2026-11-19T23:26:06+00:00",
+   "at": "2026-11-20T05:47:31+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1234,17 +1241,31 @@
   },
   {
    "url": "/x/spacex-starship-caught-by-tower",
-   "at": "2026-11-19T23:26:36+00:00",
-   "error": "The read operation timed out"
+   "at": "2026-11-20T05:47:37+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "Discovered - currently not indexed",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
   },
   {
    "url": "/x/ss-united-states-sinking",
-   "at": "2026-11-19T23:27:06+00:00",
-   "error": "The read operation timed out"
+   "at": "2026-11-20T05:47:44+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
   },
   {
    "url": "/x/stacy-keach-death",
-   "at": "2026-11-19T23:27:12+00:00",
+   "at": "2026-11-20T05:47:50+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1256,7 +1277,7 @@
   },
   {
    "url": "/x/teruaki-sato",
-   "at": "2026-11-19T23:27:18+00:00",
+   "at": "2026-11-20T05:47:56+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1268,12 +1289,12 @@
   },
   {
    "url": "/x/the-altruists-true-story",
-   "at": "2026-11-19T23:27:48+00:00",
+   "at": "2026-11-20T05:48:26+00:00",
    "error": "The read operation timed out"
   },
   {
    "url": "/x/the-empress-netflix-true-story",
-   "at": "2026-11-19T23:27:55+00:00",
+   "at": "2026-11-20T05:48:34+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1285,7 +1306,7 @@
   },
   {
    "url": "/x/the-good-daughter-book",
-   "at": "2026-11-19T23:33:12+00:00",
+   "at": "2026-11-20T05:48:40+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1297,7 +1318,7 @@
   },
   {
    "url": "/x/tri-series-cricket",
-   "at": "2026-11-19T23:33:18+00:00",
+   "at": "2026-11-20T05:48:46+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2011,9 +2032,9 @@
   "/x/hank-aaron-award": "2026-11-18T20:33:39+00:00"
  },
  "summary": {
-  "error": 23,
-  "URL is unknown to Google": 76,
-  "Discovered - currently not indexed": 22,
+  "error": 20,
+  "URL is unknown to Google": 78,
+  "Discovered - currently not indexed": 23,
   "Crawled - currently not indexed": 55,
   "Submitted and indexed": 1
  }
