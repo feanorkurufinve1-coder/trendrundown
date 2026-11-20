@@ -315,7 +315,7 @@
   },
   {
    "url": "/x/designated-for-assignment",
-   "at": "2026-11-20T03:31:51+00:00",
+   "at": "2026-11-20T09:47:05+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -719,7 +719,7 @@
   },
   {
    "url": "/x/is-dig-based-on-a-book",
-   "at": "2026-11-20T03:46:44+00:00",
+   "at": "2026-11-20T09:47:18+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1606,9 +1606,9 @@
   },
   {
    "url": "/x/what-is-black-october",
-   "at": "2026-11-20T03:46:50+00:00",
+   "at": "2026-11-20T09:47:24+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1654,9 +1654,9 @@
   },
   {
    "url": "/x/what-is-si-instead-of-ai",
-   "at": "2026-11-20T03:46:57+00:00",
+   "at": "2026-11-20T09:47:30+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2075,9 +2075,9 @@
  },
  "summary": {
   "Submitted and indexed": 2,
-  "Discovered - currently not indexed": 29,
+  "Discovered - currently not indexed": 31,
   "Crawled - currently not indexed": 59,
-  "URL is unknown to Google": 73,
+  "URL is unknown to Google": 71,
   "error": 14
  }
 }
