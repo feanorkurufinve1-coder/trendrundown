@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-20T14:16:54+00:00",
+ "checked": "2026-11-20T15:02:43+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -147,7 +147,7 @@
   },
   {
    "url": "/x/alicias-law-the-good-wife",
-   "at": "2026-11-20T08:46:50+00:00",
+   "at": "2026-11-20T15:01:46+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -159,7 +159,7 @@
   },
   {
    "url": "/x/all-mlb-team",
-   "at": "2026-11-20T08:46:56+00:00",
+   "at": "2026-11-20T15:01:53+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -171,7 +171,7 @@
   },
   {
    "url": "/x/anthony-clark-death",
-   "at": "2026-11-20T08:47:03+00:00",
+   "at": "2026-11-20T15:01:59+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -207,7 +207,7 @@
   },
   {
    "url": "/x/bright-star-eastern-sky-morning",
-   "at": "2026-11-20T08:47:09+00:00",
+   "at": "2026-11-20T15:02:05+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -231,7 +231,7 @@
   },
   {
    "url": "/x/camp-flog-gnaw-livestream",
-   "at": "2026-11-20T08:54:14+00:00",
+   "at": "2026-11-20T15:02:11+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -243,7 +243,7 @@
   },
   {
    "url": "/x/carter-faith",
-   "at": "2026-11-20T08:54:20+00:00",
+   "at": "2026-11-20T15:02:17+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -255,12 +255,19 @@
   },
   {
    "url": "/x/cliff-booth-release-date",
-   "at": "2026-11-20T08:54:50+00:00",
-   "error": "The read operation timed out"
+   "at": "2026-11-20T15:02:24+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
   },
   {
    "url": "/x/cma-awards-2026-date",
-   "at": "2026-11-20T08:54:56+00:00",
+   "at": "2026-11-20T15:02:30+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -284,7 +291,7 @@
   },
   {
    "url": "/x/coachella-2027-tickets-on-sale",
-   "at": "2026-11-20T08:55:02+00:00",
+   "at": "2026-11-20T15:02:36+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -296,8 +303,15 @@
   },
   {
    "url": "/x/dan-hicks-death",
-   "at": "2026-11-20T08:55:32+00:00",
-   "error": "The read operation timed out"
+   "at": "2026-11-20T15:02:43+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
   },
   {
    "url": "/x/designated-for-assignment",
@@ -2137,7 +2151,7 @@
   "Submitted and indexed": 1,
   "Discovered - currently not indexed": 33,
   "Crawled - currently not indexed": 57,
-  "error": 14,
-  "URL is unknown to Google": 77
+  "error": 12,
+  "URL is unknown to Google": 79
  }
 }
