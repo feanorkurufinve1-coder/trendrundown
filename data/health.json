@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-20T06:47:32+00:00",
+ "checked": "2026-11-20T08:17:34+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -700,9 +700,9 @@
   },
   {
    "url": "/x/is-blade-runner-2099-a-sequel",
-   "at": "2026-11-20T02:01:53+00:00",
+   "at": "2026-11-20T08:16:46+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1695,19 +1695,12 @@
   },
   {
    "url": "/x/what-is-the-talk-to-me-doja-trend",
-   "at": "2026-11-20T02:01:59+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
-   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-   "indexingState": "INDEXING_STATE_UNSPECIFIED",
-   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
-   "lastCrawlTime": null,
-   "googleCanonical": null,
-   "userCanonical": null
+   "at": "2026-11-20T08:17:16+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/x/what-is-the-word-of-the-year-2026",
-   "at": "2026-11-20T02:02:05+00:00",
+   "at": "2026-11-20T08:17:22+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1827,9 +1820,9 @@
   },
   {
    "url": "/x/why-are-people-saying-gta-6-is-bad",
-   "at": "2026-11-20T02:02:12+00:00",
+   "at": "2026-11-20T08:17:28+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2043,9 +2036,9 @@
   },
   {
    "url": "/x/why-wont-my-washing-machine-drain",
-   "at": "2026-11-20T02:02:18+00:00",
+   "at": "2026-11-20T08:17:34+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2074,10 +2067,10 @@
   "/x/hank-aaron-award": "2026-11-18T20:33:39+00:00"
  },
  "summary": {
-  "error": 14,
-  "Discovered - currently not indexed": 26,
+  "error": 15,
+  "Discovered - currently not indexed": 29,
   "Crawled - currently not indexed": 58,
-  "URL is unknown to Google": 78,
+  "URL is unknown to Google": 74,
   "Submitted and indexed": 1
  }
 }
