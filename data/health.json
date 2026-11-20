@@ -954,22 +954,43 @@
   },
   {
    "url": "/x/mlb-manager-of-the-year-voting",
-   "at": "2026-11-20T05:17:15+00:00",
-   "error": "The read operation timed out"
+   "at": "2026-11-20T11:31:47+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "pageFetchState": "SUCCESSFUL",
+   "lastCrawlTime": "2026-11-06T18:08:10Z",
+   "googleCanonical": "https://trendrundown.com/x/mlb-manager-of-the-year-voting",
+   "userCanonical": "https://trendrundown.com/x/mlb-manager-of-the-year-voting"
   },
   {
    "url": "/x/mlb-posting-system",
-   "at": "2026-11-20T05:17:45+00:00",
-   "error": "The read operation timed out"
+   "at": "2026-11-20T11:31:53+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "pageFetchState": "SUCCESSFUL",
+   "lastCrawlTime": "2026-11-07T18:22:54Z",
+   "googleCanonical": "https://trendrundown.com/x/mlb-posting-system",
+   "userCanonical": "https://trendrundown.com/x/mlb-posting-system"
   },
   {
    "url": "/x/mlb-rookie-eligibility",
-   "at": "2026-11-20T05:18:15+00:00",
-   "error": "The read operation timed out"
+   "at": "2026-11-20T11:31:59+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "pageFetchState": "SUCCESSFUL",
+   "lastCrawlTime": "2026-11-06T17:27:52Z",
+   "googleCanonical": "https://trendrundown.com/x/mlb-rookie-eligibility",
+   "userCanonical": "https://trendrundown.com/x/mlb-rookie-eligibility"
   },
   {
    "url": "/x/most-mvp-awards-mlb",
-   "at": "2026-11-20T05:18:22+00:00",
+   "at": "2026-11-20T11:32:06+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -981,7 +1002,7 @@
   },
   {
    "url": "/x/murder-in-galicia-true-story",
-   "at": "2026-11-20T05:18:28+00:00",
+   "at": "2026-11-20T11:32:12+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -993,7 +1014,7 @@
   },
   {
    "url": "/x/national-book-awards-2026",
-   "at": "2026-11-20T05:18:34+00:00",
+   "at": "2026-11-20T11:32:18+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1005,12 +1026,19 @@
   },
   {
    "url": "/x/national-parks-free-veterans-day",
-   "at": "2026-11-20T05:19:04+00:00",
-   "error": "The read operation timed out"
+   "at": "2026-11-20T11:32:25+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
   },
   {
    "url": "/x/nba-draft",
-   "at": "2026-11-20T05:30:41+00:00",
+   "at": "2026-11-20T11:32:31+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1022,7 +1050,7 @@
   },
   {
    "url": "/x/new-orleans-cruise-ship-collision",
-   "at": "2026-11-20T05:30:47+00:00",
+   "at": "2026-11-20T11:32:38+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1034,7 +1062,7 @@
   },
   {
    "url": "/x/new-snap-stocking-rules",
-   "at": "2026-11-20T05:30:53+00:00",
+   "at": "2026-11-20T11:32:44+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1046,7 +1074,7 @@
   },
   {
    "url": "/x/non-tender",
-   "at": "2026-11-20T05:31:00+00:00",
+   "at": "2026-11-20T11:32:51+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1058,7 +1086,7 @@
   },
   {
    "url": "/x/noreaster-first-snow-november-2026",
-   "at": "2026-11-20T05:31:06+00:00",
+   "at": "2026-11-20T11:32:57+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1070,7 +1098,7 @@
   },
   {
    "url": "/x/october-2026-cpi-no-annual-rate",
-   "at": "2026-11-20T05:31:13+00:00",
+   "at": "2026-11-20T11:33:04+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1082,15 +1110,8 @@
   },
   {
    "url": "/x/phishing-test",
-   "at": "2026-11-20T05:31:19+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "Crawled - currently not indexed",
-   "robotsTxtState": "ALLOWED",
-   "indexingState": "INDEXING_ALLOWED",
-   "pageFetchState": "SUCCESSFUL",
-   "lastCrawlTime": "2026-11-13T16:13:40Z",
-   "googleCanonical": "https://trendrundown.com/x/phishing-test",
-   "userCanonical": "https://trendrundown.com/x/phishing-test"
+   "at": "2026-11-20T11:33:34+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/x/planet-alignment-november-2026",
@@ -2083,8 +2104,8 @@
  "summary": {
   "Submitted and indexed": 1,
   "Discovered - currently not indexed": 31,
-  "Crawled - currently not indexed": 60,
-  "URL is unknown to Google": 72,
-  "error": 13
+  "Crawled - currently not indexed": 62,
+  "URL is unknown to Google": 73,
+  "error": 10
  }
 }
