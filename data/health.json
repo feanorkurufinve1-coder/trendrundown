@@ -996,7 +996,7 @@
   },
   {
    "url": "/x/nba-draft",
-   "at": "2026-11-19T23:02:43+00:00",
+   "at": "2026-11-20T05:30:41+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1008,7 +1008,7 @@
   },
   {
    "url": "/x/new-orleans-cruise-ship-collision",
-   "at": "2026-11-19T23:02:49+00:00",
+   "at": "2026-11-20T05:30:47+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1020,7 +1020,7 @@
   },
   {
    "url": "/x/new-snap-stocking-rules",
-   "at": "2026-11-19T23:02:55+00:00",
+   "at": "2026-11-20T05:30:53+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1032,12 +1032,19 @@
   },
   {
    "url": "/x/non-tender",
-   "at": "2026-11-19T23:03:25+00:00",
-   "error": "The read operation timed out"
+   "at": "2026-11-20T05:31:00+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "pageFetchState": "SUCCESSFUL",
+   "lastCrawlTime": "2026-11-10T19:48:00Z",
+   "googleCanonical": "https://trendrundown.com/x/non-tender",
+   "userCanonical": "https://trendrundown.com/x/non-tender"
   },
   {
    "url": "/x/noreaster-first-snow-november-2026",
-   "at": "2026-11-19T23:03:32+00:00",
+   "at": "2026-11-20T05:31:06+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1049,7 +1056,7 @@
   },
   {
    "url": "/x/october-2026-cpi-no-annual-rate",
-   "at": "2026-11-19T23:16:49+00:00",
+   "at": "2026-11-20T05:31:13+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1061,7 +1068,7 @@
   },
   {
    "url": "/x/phishing-test",
-   "at": "2026-11-19T23:16:55+00:00",
+   "at": "2026-11-20T05:31:19+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1073,12 +1080,19 @@
   },
   {
    "url": "/x/planet-alignment-november-2026",
-   "at": "2026-11-19T23:17:25+00:00",
-   "error": "The read operation timed out"
+   "at": "2026-11-20T05:31:25+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
   },
   {
    "url": "/x/qualifying-offer",
-   "at": "2026-11-19T23:17:32+00:00",
+   "at": "2026-11-20T05:31:32+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1090,7 +1104,7 @@
   },
   {
    "url": "/x/record-vs-song-of-the-year",
-   "at": "2026-11-19T23:17:38+00:00",
+   "at": "2026-11-20T05:31:39+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1102,7 +1116,7 @@
   },
   {
    "url": "/x/red-cup-day-2026",
-   "at": "2026-11-19T23:17:45+00:00",
+   "at": "2026-11-20T05:31:45+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1114,7 +1128,7 @@
   },
   {
    "url": "/x/relief-pitcher-of-the-year",
-   "at": "2026-11-19T23:17:51+00:00",
+   "at": "2026-11-20T05:31:52+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1126,19 +1140,12 @@
   },
   {
    "url": "/x/reminders-of-him-book",
-   "at": "2026-11-19T23:17:58+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "Crawled - currently not indexed",
-   "robotsTxtState": "ALLOWED",
-   "indexingState": "INDEXING_ALLOWED",
-   "pageFetchState": "SUCCESSFUL",
-   "lastCrawlTime": "2026-11-06T18:25:22Z",
-   "googleCanonical": "https://trendrundown.com/x/reminders-of-him-book",
-   "userCanonical": "https://trendrundown.com/x/reminders-of-him-book"
+   "at": "2026-11-20T05:32:22+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/x/richard-avedon",
-   "at": "2026-11-19T23:18:04+00:00",
+   "at": "2026-11-20T05:32:28+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2004,8 +2011,8 @@
   "/x/hank-aaron-award": "2026-11-18T20:33:39+00:00"
  },
  "summary": {
-  "error": 24,
-  "URL is unknown to Google": 75,
+  "error": 23,
+  "URL is unknown to Google": 76,
   "Discovered - currently not indexed": 22,
   "Crawled - currently not indexed": 55,
   "Submitted and indexed": 1
