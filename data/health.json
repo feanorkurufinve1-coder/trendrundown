@@ -89,8 +89,15 @@
   },
   {
    "url": "/x/telerally",
-   "at": "2026-11-20T14:32:44+00:00",
-   "error": "The read operation timed out"
+   "at": "2026-11-20T20:47:13+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "pageFetchState": "SUCCESSFUL",
+   "lastCrawlTime": "2026-11-11T07:11:00Z",
+   "googleCanonical": "https://trendrundown.com/x/telerally",
+   "userCanonical": "https://trendrundown.com/x/telerally"
   },
   {
    "url": "/x/mutual-option",
@@ -1762,7 +1769,7 @@
   },
   {
    "url": "/x/what-is-the-word-of-the-year-2026",
-   "at": "2026-11-20T14:32:01+00:00",
+   "at": "2026-11-20T20:46:54+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1882,9 +1889,9 @@
   },
   {
    "url": "/x/why-are-people-saying-gta-6-is-bad",
-   "at": "2026-11-20T14:32:08+00:00",
+   "at": "2026-11-20T20:47:00+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2115,7 +2122,7 @@
   },
   {
    "url": "/x/why-wont-my-washing-machine-drain",
-   "at": "2026-11-20T14:32:14+00:00",
+   "at": "2026-11-20T20:47:06+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2159,9 +2166,9 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 88,
-  "Crawled - currently not indexed": 56,
-  "error": 14,
-  "Discovered - currently not indexed": 25
+  "URL is unknown to Google": 89,
+  "Crawled - currently not indexed": 57,
+  "error": 13,
+  "Discovered - currently not indexed": 24
  }
 }
