@@ -10717,7 +10717,7 @@
   ]
  },
  "how-to-vote-on-the-circle-hulu": {
-  "time": "2026-11-19T14:31:44+00:00",
+  "time": "2026-11-20T14:32:49+00:00",
   "query": "how to vote on the circle hulu",
   "in_suggest": true,
   "suggest": {
@@ -10727,7 +10727,9 @@
     "how to vote on the circle hulu",
     "is the circle on hulu"
    ],
-   "vote circle hulu": []
+   "vote circle hulu": [
+    "vote circle hulu"
+   ]
   },
   "history": [
    [
@@ -10753,24 +10755,28 @@
    [
     "2026-11-19",
     true
+   ],
+   [
+    "2026-11-20",
+    true
    ]
   ]
  },
  "what-is-a-ground-stop": {
-  "time": "2026-11-19T14:31:52+00:00",
+  "time": "2026-11-20T14:32:57+00:00",
   "query": "what is a ground stop",
   "in_suggest": true,
   "suggest": {
    "faa ground stop": [
     "faa ground stop",
     "faa ground stop today",
-    "faa ground stop sfo",
     "faa ground stop cause",
+    "faa ground stop flights cancelled",
     "faa ground stop updates",
-    "faa ground stop ai",
     "faa ground stop root cause",
-    "faa ground stop 2023",
     "faa ground stop lifted",
+    "faa ground stop ai",
+    "faa ground stop 2023",
     "faa ground stop status"
    ],
    "what is faa ground stop": [
@@ -10796,16 +10802,16 @@
     "what is a ground stop at miami airport"
    ],
    "ground stop": [
-    "ground stop sfo",
     "ground stop",
     "ground stop today",
-    "ground stop at sfo today",
     "ground stop faa",
-    "ground stop miami",
     "ground stoppage",
     "ground stop meaning",
-    "ground stop lifted",
-    "ground stop reason"
+    "ground stop sfo",
+    "ground stop san diego",
+    "ground stop denver",
+    "ground stop reason",
+    "ground stop flights"
    ]
   },
   "history": [
@@ -10832,11 +10838,15 @@
    [
     "2026-11-19",
     true
+   ],
+   [
+    "2026-11-20",
+    true
    ]
   ]
  },
  "why-does-my-phone-screen-go-black-during-calls": {
-  "time": "2026-11-19T14:32:00+00:00",
+  "time": "2026-11-20T14:33:06+00:00",
   "query": "why does my phone screen go black during calls",
   "in_suggest": true,
   "suggest": {
@@ -10911,11 +10921,15 @@
    [
     "2026-11-19",
     true
+   ],
+   [
+    "2026-11-20",
+    true
    ]
   ]
  },
  "why-does-my-washing-machine-smell-like-rotten-eggs": {
-  "time": "2026-11-19T14:32:02+00:00",
+  "time": "2026-11-20T14:33:07+00:00",
   "query": "why does my washing machine smell like rotten eggs",
   "in_suggest": true,
   "suggest": {
@@ -10989,37 +11003,41 @@
    [
     "2026-11-19",
     true
+   ],
+   [
+    "2026-11-20",
+    true
    ]
   ]
  },
  "wta-tennis": {
-  "time": "2026-11-19T14:32:06+00:00",
+  "time": "2026-11-20T14:33:11+00:00",
   "query": "what does wta stand for in tennis",
   "in_suggest": true,
   "suggest": {
    "wta": [
     "wta finals",
-    "wta rankings",
     "wta",
+    "wta rankings",
+    "wtae",
     "wta finals 2026",
+    "wtap",
+    "wtae news",
     "wta live rankings",
-    "wta toronto",
-    "wta beijing",
-    "wta rankings 2026",
-    "wta tennis",
-    "wta scores"
+    "wtaj",
+    "wtap news"
    ],
    "what is wta": [
     "what is wta tennis",
-    "what is wta finals",
     "what is wta",
-    "what is wta 500 and wta 1000",
+    "what is wta finals",
     "what is wtaf",
-    "what is wta 500",
     "what is wta 1000",
     "what is wta 1000 in tennis",
+    "what is wta 500 and wta 1000",
     "what is wtac",
-    "what is wta in tennis stand for"
+    "what is wta in tennis stand for",
+    "what is wta 500"
    ],
    "what does wta stand for in tennis": [
     "what does wta stand for in tennis",
@@ -11064,6 +11082,10 @@
    ],
    [
     "2026-11-19",
+    true
+   ],
+   [
+    "2026-11-20",
     true
    ]
   ]
@@ -11267,12 +11289,11 @@
   ]
  },
  "embassy-of-finland-canberra-meme": {
-  "time": "2026-11-19T14:31:43+00:00",
+  "time": "2026-11-20T14:32:47+00:00",
   "query": "what is the embassy of finland in canberra meme",
-  "in_suggest": true,
+  "in_suggest": false,
   "suggest": {
    "embassy of finland in canberra": [
-    "embassy of finland in canberra meme",
     "embassy of finland in canberra",
     "embassy of finland canberra photos",
     "embassy of finland canberra reviews",
@@ -11310,11 +11331,15 @@
    [
     "2026-11-19",
     true
+   ],
+   [
+    "2026-11-20",
+    false
    ]
   ]
  },
  "internet-trends-this-week-2026-11-15": {
-  "time": "2026-11-19T14:31:45+00:00",
+  "time": "2026-11-20T14:32:50+00:00",
   "query": "what's trending on the internet this week",
   "in_suggest": false,
   "suggest": {
@@ -11353,11 +11378,15 @@
    [
     "2026-11-19",
     false
+   ],
+   [
+    "2026-11-20",
+    false
    ]
   ]
  },
  "is-yellowjackets-season-4-the-last-season": {
-  "time": "2026-11-19T14:31:48+00:00",
+  "time": "2026-11-20T14:32:53+00:00",
   "query": "is yellowjackets season 4 the last season",
   "in_suggest": true,
   "suggest": {
@@ -11365,17 +11394,17 @@
     "yellowjackets season 4",
     "yellowjackets season 4 release date",
     "yellowjackets season 4 where to watch",
-    "yellowjackets season 4 trailer",
-    "yellowjackets season 4 cast",
     "yellowjackets season 4 episode 1",
-    "yellowjackets season 4 release schedule",
-    "yellowjackets season 4 premiere",
+    "yellowjackets season 4 trailer",
+    "yellowjackets season 4 release time",
     "yellowjackets season 4 review",
-    "yellowjackets season 4 release date time"
+    "yellowjackets season 4 premiere",
+    "yellowjackets season 4 release schedule",
+    "yellowjackets season 4 time"
    ],
    "what is yellowjackets season 4": [
-    "what is yellowjackets season 4 going to be about",
     "what is yellowjackets season 4 on",
+    "what is yellowjackets season 4 going to be about",
     "what does yellowjackets season 4 come out",
     "what happens in yellowjackets season 4",
     "is yellowjackets season 4 out",
@@ -11424,25 +11453,29 @@
    [
     "2026-11-19",
     true
+   ],
+   [
+    "2026-11-20",
+    true
    ]
   ]
  },
  "what-does-microsoft-364-mean": {
-  "time": "2026-11-19T14:31:49+00:00",
+  "time": "2026-11-20T14:32:54+00:00",
   "query": "what does microsoft 364 mean",
   "in_suggest": false,
   "suggest": {
    "microsoft 364": [
     "microsoft 364",
     "microsoft 364 login",
-    "microsoft 364 joke",
-    "microsoft 364 copilot",
-    "microsoft 364 meme",
     "microsoft 3645",
-    "microsoft 364 admin center",
+    "microsoft 364 meme",
+    "microsoft 364 copilot",
     "microsoft 364 cost",
+    "microsoft 364 admin center",
     "microsoft 364 personal",
-    "microsoft 3645 login"
+    "microsoft 3645 login",
+    "microsoft 364 subscription"
    ],
    "what is microsoft 364": [
     "what is microsoft 364",
@@ -11478,11 +11511,15 @@
    [
     "2026-11-19",
     false
+   ],
+   [
+    "2026-11-20",
+    false
    ]
   ]
  },
  "what-does-my-kid-mean-slang-guide": {
-  "time": "2026-11-19T14:31:50+00:00",
+  "time": "2026-11-20T14:32:55+00:00",
   "query": "teen slang 2026",
   "in_suggest": true,
   "suggest": {
@@ -11520,6 +11557,10 @@
    ],
    [
     "2026-11-19",
+    true
+   ],
+   [
+    "2026-11-20",
     true
    ]
   ]
@@ -11763,7 +11804,7 @@
   ]
  },
  "does-a-refrigerator-need-its-own-circuit": {
-  "time": "2026-11-19T14:31:41+00:00",
+  "time": "2026-11-20T14:32:46+00:00",
   "query": "does a refrigerator need its own circuit",
   "in_suggest": true,
   "suggest": {
@@ -11831,11 +11872,15 @@
    [
     "2026-11-19",
     true
+   ],
+   [
+    "2026-11-20",
+    true
    ]
   ]
  },
  "what-is-the-ram-altman-meme": {
-  "time": "2026-11-19T14:31:55+00:00",
+  "time": "2026-11-20T14:33:00+00:00",
   "query": "what is the ram altman meme",
   "in_suggest": true,
   "suggest": {
@@ -11861,11 +11906,15 @@
    [
     "2026-11-19",
     true
+   ],
+   [
+    "2026-11-20",
+    true
    ]
   ]
  },
  "who-is-oobah-butler": {
-  "time": "2026-11-19T14:31:56+00:00",
+  "time": "2026-11-20T14:33:01+00:00",
   "query": "who is oobah butler",
   "in_suggest": true,
   "suggest": {
@@ -11876,18 +11925,17 @@
     "oobah butler amazon",
     "oobah butler age",
     "oobah butler partner",
+    "oobah butler the shed",
     "oobah butler documentary",
     "oobah butler the shed at dulwich",
-    "oobah butler movies and tv shows",
-    "oobah butler show"
+    "oobah butler movies and tv shows"
    ],
    "who is oobah butler": [
     "who is oobah butler",
     "who is oobah butler dating",
     "what is oobah butler real name",
     "what is oobah butler doing now",
-    "what is oobah butler net worth",
-    "is lee butler billy butler's son"
+    "what is oobah butler net worth"
    ]
   },
   "history": [
@@ -11906,23 +11954,27 @@
    [
     "2026-11-19",
     true
+   ],
+   [
+    "2026-11-20",
+    true
    ]
   ]
  },
  "why-are-people-saying-ao3-is-back": {
-  "time": "2026-11-19T14:31:57+00:00",
+  "time": "2026-11-20T14:33:02+00:00",
   "query": "why are people saying ao3 is back",
   "in_suggest": false,
   "suggest": {
    "ao3": [
     "ao3",
+    "ao3 down again",
     "ao3 status",
     "ao3 down",
     "ao3 website",
-    "ao3 down again",
-    "ao3 skins",
     "ao3 reddit",
-    "ao3 purity test",
+    "ao3 skins",
+    "ao3 updates",
     "ao3 fanfiction",
     "ao3 login"
    ],
@@ -11957,11 +12009,15 @@
    [
     "2026-11-19",
     false
+   ],
+   [
+    "2026-11-20",
+    false
    ]
   ]
  },
  "why-is-everyone-freaking-out-about-november-17": {
-  "time": "2026-11-19T14:32:03+00:00",
+  "time": "2026-11-20T14:33:09+00:00",
   "query": "why is everyone freaking out about november 17",
   "in_suggest": false,
   "suggest": {
@@ -11985,6 +12041,10 @@
    ],
    [
     "2026-11-19",
+    false
+   ],
+   [
+    "2026-11-20",
     false
    ]
   ]
@@ -12319,21 +12379,21 @@
   ]
  },
  "is-dig-based-on-a-book": {
-  "time": "2026-11-19T14:31:47+00:00",
+  "time": "2026-11-20T14:32:52+00:00",
   "query": "is dig based on a book",
   "in_suggest": true,
   "suggest": {
    "dig": [
     "digger",
     "digger movie",
-    "digikey",
     "digital camera",
-    "digital ocean",
-    "digger reviews",
-    "digital doctor repairs",
-    "dignity health",
+    "dig",
+    "digikey",
     "digger 2026",
-    "digital foundry"
+    "digger reviews",
+    "digestive enzymes",
+    "digoxin",
+    "digital circus"
    ],
    "what is dig": [
     "what is digger about",
@@ -12342,10 +12402,10 @@
     "what is dignity",
     "what is digoxin",
     "what is digoxin used for",
-    "what is digital twin",
-    "what is digital footprint",
     "what is digital literacy",
-    "what is digital citizenship"
+    "what is digital footprint",
+    "what is digital citizenship",
+    "what is digitalis"
    ],
    "is dig based on a book": [
     "is the dig based on a book",
@@ -12361,11 +12421,15 @@
    [
     "2026-11-19",
     true
+   ],
+   [
+    "2026-11-20",
+    true
    ]
   ]
  },
  "what-is-black-october": {
-  "time": "2026-11-19T14:31:53+00:00",
+  "time": "2026-11-20T14:32:58+00:00",
   "query": "what is black october",
   "in_suggest": true,
   "suggest": {
@@ -12402,11 +12466,15 @@
    [
     "2026-11-19",
     true
+   ],
+   [
+    "2026-11-20",
+    true
    ]
   ]
  },
  "what-is-si-instead-of-ai": {
-  "time": "2026-11-19T14:31:54+00:00",
+  "time": "2026-11-20T14:32:59+00:00",
   "query": "what is si instead of ai",
   "in_suggest": true,
   "suggest": {
@@ -12416,23 +12484,23 @@
     "sixers",
     "sixers standings",
     "silo",
-    "singapore airlines",
-    "six flags",
-    "silicon valley power",
     "sirius xm",
-    "sierra at tahoe"
+    "six flags",
+    "sixers schedule",
+    "sinners",
+    "sienna spiro"
    ],
    "what is si": [
     "what is si",
-    "what is si instead of ai",
     "what is sibo",
-    "what is sisa",
+    "what is si instead of ai",
     "what is sids",
     "what is sickle cell",
     "what is signal app",
-    "what is silicon",
+    "what is singularity",
     "what is sickle cell disease",
-    "what is silicon valley"
+    "what is silicon dioxide",
+    "what is silica"
    ],
    "what is si instead of ai": [
     "what is si instead of ai",
@@ -12461,11 +12529,15 @@
    [
     "2026-11-19",
     true
+   ],
+   [
+    "2026-11-20",
+    true
    ]
   ]
  },
  "why-are-people-saying-robert-pattinson-is-gen-z": {
-  "time": "2026-11-19T14:31:59+00:00",
+  "time": "2026-11-20T14:33:04+00:00",
   "query": "why are people saying robert pattinson is gen z",
   "in_suggest": true,
   "suggest": {
@@ -12491,11 +12563,15 @@
    [
     "2026-11-19",
     true
+   ],
+   [
+    "2026-11-20",
+    true
    ]
   ]
  },
  "why-is-my-phone-charging-slow": {
-  "time": "2026-11-19T14:32:04+00:00",
+  "time": "2026-11-20T14:33:10+00:00",
   "query": "why is my phone charging slow",
   "in_suggest": true,
   "suggest": {
@@ -12523,8 +12599,8 @@
    "why is my phone charging slow": [
     "why is my phone charging slow",
     "why is my phone charging slow all of a sudden",
-    "why is my phone charging slower than usual",
     "why is my phone charging slow with a fast charger",
+    "why is my phone charging slower than usual",
     "why is my phone charging slow iphone",
     "why is my phone charging slow android",
     "why is my phone charging slowly even with the right charger",
@@ -12552,6 +12628,10 @@
    ],
    [
     "2026-11-19",
+    true
+   ],
+   [
+    "2026-11-20",
     true
    ]
   ]
