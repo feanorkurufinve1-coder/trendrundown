@@ -495,9 +495,9 @@
   },
   {
    "url": "/x/hank-aaron-award",
-   "at": "2026-11-20T04:16:50+00:00",
-   "verdict": "PASS",
-   "coverageState": "Submitted and indexed",
+   "at": "2026-11-20T10:31:51+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
    "indexingState": "INDEXING_ALLOWED",
    "pageFetchState": "SUCCESSFUL",
@@ -507,19 +507,12 @@
   },
   {
    "url": "/x/harlem-park-three",
-   "at": "2026-11-20T04:16:56+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
-   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-   "indexingState": "INDEXING_STATE_UNSPECIFIED",
-   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
-   "lastCrawlTime": null,
-   "googleCanonical": null,
-   "userCanonical": null
+   "at": "2026-11-20T10:32:21+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/x/has-a-defense-secretary-been-impeached",
-   "at": "2026-11-20T04:17:03+00:00",
+   "at": "2026-11-20T10:32:27+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -531,7 +524,7 @@
   },
   {
    "url": "/x/heartland-netflix-cast",
-   "at": "2026-11-20T04:17:09+00:00",
+   "at": "2026-11-20T10:32:45+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -543,7 +536,7 @@
   },
   {
    "url": "/x/hegseth-tomb-guard-medal",
-   "at": "2026-11-20T04:17:15+00:00",
+   "at": "2026-11-20T10:32:52+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -555,7 +548,7 @@
   },
   {
    "url": "/x/how-are-cma-awards-voted",
-   "at": "2026-11-20T04:17:22+00:00",
+   "at": "2026-11-20T10:32:58+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -567,7 +560,7 @@
   },
   {
    "url": "/x/how-are-game-awards-nominees-chosen",
-   "at": "2026-11-20T04:17:28+00:00",
+   "at": "2026-11-20T10:33:10+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -579,7 +572,7 @@
   },
   {
    "url": "/x/how-are-grammy-nominations-decided",
-   "at": "2026-11-20T04:25:16+00:00",
+   "at": "2026-11-20T10:33:16+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -591,7 +584,7 @@
   },
   {
    "url": "/x/how-cy-young-is-voted",
-   "at": "2026-11-20T04:25:23+00:00",
+   "at": "2026-11-20T10:33:22+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -603,7 +596,7 @@
   },
   {
    "url": "/x/how-is-senate-majority-leader-chosen",
-   "at": "2026-11-20T04:25:29+00:00",
+   "at": "2026-11-20T10:33:37+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2095,10 +2088,10 @@
   "/x/hank-aaron-award": "2026-11-18T20:33:39+00:00"
  },
  "summary": {
-  "Submitted and indexed": 2,
+  "Submitted and indexed": 1,
   "Discovered - currently not indexed": 31,
-  "Crawled - currently not indexed": 60,
-  "URL is unknown to Google": 73,
-  "error": 11
+  "Crawled - currently not indexed": 61,
+  "URL is unknown to Google": 72,
+  "error": 12
  }
 }
