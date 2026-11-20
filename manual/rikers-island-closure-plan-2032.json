@@ -1,0 +1,48 @@
+{
+ "news": true,
+ "kind": "event",
+ "subject": "Rikers Island closure plan",
+ "query": "rikers island closing",
+ "title": "Rikers Island closing: When will it close? Mamdani's plan says 2032",
+ "answer": "On Friday, Nov. 20, 2026, New York City Mayor Zohran Mamdani released what the city calls its first comprehensive plan to close the Rikers Island jail complex, setting the end of 2032 as the new target. That is more than five years after the Aug. 31, 2027, deadline in the 2019 city law, so the City Council must approve the change.",
+ "in_the_news": "The plan concedes that the city cannot meet its legal 2027 deadline. It lays out when each of four new borough jails should open and how far the jail population must fall for Rikers to close.",
+ "body": "The plan calls for cutting the number of people in city custody, now roughly 6,600 to 6,700, to a little over 4,000, small enough to fit in four smaller jails in Brooklyn, the Bronx, Queens and Manhattan. The city plans to spend $146 million in the next fiscal year on programs inside the jails, community services, victim services and related work. Women would be held at the Queens facility. \"We have a legal and moral obligation to close Rikers,\" Mamdani said, adding: \"It is time to finally close Rikers Island.\"\n\nThe road to closing Rikers, date by date: In 2019, the City Council voted to close the complex and replace it with borough jails, setting a deadline of Aug. 31, 2027. Under the new plan, the Brooklyn jail would open first, in 2029. The Bronx and Queens jails would follow in 2031, and the Manhattan jail in 2032, with Rikers closed by the end of that year. Mamdani blamed the slip on resistance from the previous administration, while the city also pointed to construction delays and the need to reduce the number of people in custody.\n\nWhat \"borough-based jails\" means: Instead of one island complex in the East River, the city would hold people awaiting trial in four jails located near the courthouses in four boroughs. Supporters say that makes court dates, family visits and access to lawyers easier. Each new building is planned with at least 20,000 square feet of space for community use.\n\nWhat happens next: The City Council has to pass legislation to move the legal deadline. Council Speaker Julie Menin said in a statement that delays under previous administrations made it clear that more time is needed. The jails also remain under federal court oversight, after a federal judge appointed an outside manager to restore order and carry out reforms.",
+ "faq": [
+  {
+   "q": "Is Rikers Island closing in 2027?",
+   "a": "No. The 2019 law sets Aug. 31, 2027, as the deadline, but the mayor's plan moves the target to the end of 2032, and that change needs City Council approval."
+  },
+  {
+   "q": "Where will the new jails be?",
+   "a": "There will be one jail each in Brooklyn, the Bronx, Queens and Manhattan. Brooklyn's is scheduled to open first, in 2029, and Manhattan's last, in 2032."
+  },
+  {
+   "q": "How many people are held at Rikers now?",
+   "a": "About 6,600 to 6,700 people, according to the city and news reports. The plan aims to bring that number to a little over 4,000."
+  },
+  {
+   "q": "How much will the plan cost?",
+   "a": "The city says it will put $146 million toward the plan in the next fiscal year. That figure covers programs and services, not the full cost of building the four new jails."
+  }
+ ],
+ "links": [
+  [
+   "NYC Mayor's Office",
+   "Mayor Mamdani Releases City's First Comprehensive Plan to Close Rikers Island",
+   "https://www.nyc.gov/mayors-office/news/2026/11/mayor-mamdani-releases-city-s-first-comprehensive-plan-to-close-"
+  ],
+  [
+   "ABC7 New York",
+   "Mayor Mamdani proposes delaying Rikers Island closure deadline to 2032",
+   "https://abc7ny.com/post/mayor-mamdani-proposes-delaying-rikers-island-closure-deadline-2032/20058752/"
+  ],
+  [
+   "KKTV (AP)",
+   "Mamdani sets plan to close NYC's notorious Rikers Island jail",
+   "https://www.kktv.com/2026/11/20/mamdani-sets-plan-close-nycs-notorious-rikers-island-jail/"
+  ]
+ ],
+ "image_wiki": "Rikers Island",
+ "made": "2026-11-20T17:30:00+00:00",
+ "first": "2026-11-20T17:30:00+00:00"
+}

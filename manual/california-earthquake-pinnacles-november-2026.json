@@ -1,0 +1,53 @@
+{
+ "news": true,
+ "kind": "event",
+ "subject": "Pinnacles earthquake",
+ "query": "earthquake california",
+ "title": "Earthquake California: How strong was the Pinnacles quake? Magnitude 5.0",
+ "answer": "A magnitude 5.0 earthquake struck at 10:49 p.m. PT on Thursday, Nov. 19, 2026, about 6 miles northwest of Pinnacles in central California, near Pinnacles National Park and roughly 13 miles northeast of Soledad. No damage or injuries were reported. Hours later, at 3:25 a.m. Friday, a separate magnitude 4.2 quake shook the Los Angeles area near Commerce.",
+ "in_the_news": "The central California quake was the strongest in a sequence of dozens and set off the ShakeAlert early-warning system. The overnight Los Angeles quake put the city's fire department into earthquake response mode before dawn on Friday.",
+ "body": "The U.S. Geological Survey first estimated the Pinnacles quake at magnitude 5.4, then 5.1, and later lowered it to 5.0, local outlets reported. Its focus was shallow, about 4.2 miles underground, and the USGS estimated that about 10,000 people felt light to moderate shaking. The agency rated the chance of damage as low. The epicenter lies near the San Andreas fault, about 90 miles south of San Francisco, though the USGS had not identified which fault slipped.\n\nHow the night unfolded, in order: At 9:53 p.m. PT Thursday, a magnitude 3.1 foreshock hit the same spot. At 10:49 p.m. came the main shock. Within the hour, aftershocks of magnitude 3.4 and 3.3 followed, and the USGS counted 72 quakes in the sequence by early Friday. At 3:25 a.m. Friday, about 240 miles to the southeast, a magnitude 4.2 quake struck roughly a mile northwest of Commerce and was felt across much of the Los Angeles basin. Reports treated the two as separate events.\n\nWhat it means for you: The USGS put the chance of another magnitude 5 or larger quake near Pinnacles within a week at about 2%, so smaller aftershocks are far more likely than a bigger jolt. In Los Angeles, firefighters from all 106 neighborhood stations surveyed their districts and finished around 5:30 a.m. with no significant damage or injuries found. The National Tsunami Warning Center said there was no tsunami threat from either quake. If you felt shaking, the USGS \"Did You Feel It?\" page lets you report it, which helps map intensity.",
+ "faq": [
+  {
+   "q": "Was there damage from the Pinnacles earthquake?",
+   "a": "No damage or injuries were reported after the Thursday night quake, and the USGS estimated a low likelihood of damage because the area around the epicenter is sparsely populated."
+  },
+  {
+   "q": "Was the Los Angeles earthquake related to the one near Pinnacles?",
+   "a": "They were reported as separate events. The Los Angeles quake hit near Commerce at 3:25 a.m. Friday, about 240 miles from the central California sequence."
+  },
+  {
+   "q": "Why did the magnitude change from 5.4 to 5.0?",
+   "a": "Early magnitudes are automatic estimates. As seismologists review data from more stations, the figure is often revised, which is what happened here."
+  },
+  {
+   "q": "Could a bigger earthquake follow?",
+   "a": "The USGS put the chance of a magnitude 5 or larger quake in the area within the next week at about 2%. Smaller aftershocks are expected."
+  }
+ ],
+ "links": [
+  [
+   "San Francisco Chronicle (via Yahoo News)",
+   "2 earthquakes rattle California overnight, including a magnitude 5.0 tremor",
+   "https://www.yahoo.com/news/weather-news/articles/magnitude-5-1-earthquake-strikes-074916996.html"
+  ],
+  [
+   "ABC7 San Francisco",
+   "Magnitude 5.0 earthquake strikes San Benito County near Pinnacles National Park, USGS says",
+   "https://abc7news.com/post/magnitude-51-earthquake-hits-monterey-county-usgs-says/20058336/"
+  ],
+  [
+   "GV Wire",
+   "Magnitude 5.1 Earthquake Strikes Near Pinnacles in Central California",
+   "https://gvwire.com/2026/11/19/magnitude-5-1-earthquake-strikes-near-pinnacles-in-central-california/"
+  ],
+  [
+   "KSBW",
+   "Pinnacles earthquake downgraded to magnitude 5.0",
+   "https://www.ksbw.com/article/magnitude-51-earthquake-strikes-near-pinnacles/74485485"
+  ]
+ ],
+ "image_wiki": "Pinnacles National Park",
+ "made": "2026-11-20T17:30:00+00:00",
+ "first": "2026-11-20T17:30:00+00:00"
+}
