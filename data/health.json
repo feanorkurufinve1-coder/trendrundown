@@ -905,7 +905,7 @@
   },
   {
    "url": "/x/kids-choice-awards-2026-date",
-   "at": "2026-11-20T17:32:11+00:00",
+   "at": "2026-11-20T23:46:52+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -917,7 +917,7 @@
   },
   {
    "url": "/x/lame-duck-president",
-   "at": "2026-11-20T17:32:18+00:00",
+   "at": "2026-11-20T23:46:58+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -929,7 +929,7 @@
   },
   {
    "url": "/x/lame-duck-session",
-   "at": "2026-11-20T17:32:24+00:00",
+   "at": "2026-11-20T23:47:04+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -941,7 +941,7 @@
   },
   {
    "url": "/x/latin-grammys-vs-grammys",
-   "at": "2026-11-20T17:32:31+00:00",
+   "at": "2026-11-20T23:47:10+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -953,7 +953,7 @@
   },
   {
    "url": "/x/ligue-1",
-   "at": "2026-11-20T17:32:37+00:00",
+   "at": "2026-11-20T23:47:16+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -965,7 +965,7 @@
   },
   {
    "url": "/x/madden-movie-true-story",
-   "at": "2026-11-20T17:32:44+00:00",
+   "at": "2026-11-20T23:47:23+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -977,12 +977,19 @@
   },
   {
    "url": "/x/maine-2nd-district-ranked-choice",
-   "at": "2026-11-20T17:33:14+00:00",
-   "error": "The read operation timed out"
+   "at": "2026-11-20T23:47:29+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "pageFetchState": "SUCCESSFUL",
+   "lastCrawlTime": "2026-11-08T16:57:30Z",
+   "googleCanonical": "https://trendrundown.com/x/maine-2nd-district-ranked-choice",
+   "userCanonical": "https://trendrundown.com/x/maine-2nd-district-ranked-choice"
   },
   {
    "url": "/x/medicaid-work-requirements-start-date",
-   "at": "2026-11-20T17:33:20+00:00",
+   "at": "2026-11-20T23:47:35+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -994,7 +1001,7 @@
   },
   {
    "url": "/x/miami-airport-plane-collision-copa-ups",
-   "at": "2026-11-20T17:33:27+00:00",
+   "at": "2026-11-20T23:47:41+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2195,8 +2202,8 @@
  "summary": {
   "Submitted and indexed": 1,
   "URL is unknown to Google": 85,
-  "Crawled - currently not indexed": 59,
+  "Crawled - currently not indexed": 60,
   "Discovered - currently not indexed": 30,
-  "error": 9
+  "error": 8
  }
 }
