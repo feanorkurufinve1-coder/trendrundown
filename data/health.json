@@ -1115,7 +1115,7 @@
   },
   {
    "url": "/x/planet-alignment-november-2026",
-   "at": "2026-11-20T05:31:25+00:00",
+   "at": "2026-11-20T11:46:58+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1127,7 +1127,7 @@
   },
   {
    "url": "/x/qualifying-offer",
-   "at": "2026-11-20T05:31:32+00:00",
+   "at": "2026-11-20T11:47:04+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1139,7 +1139,7 @@
   },
   {
    "url": "/x/record-vs-song-of-the-year",
-   "at": "2026-11-20T05:31:39+00:00",
+   "at": "2026-11-20T11:47:11+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1151,7 +1151,7 @@
   },
   {
    "url": "/x/red-cup-day-2026",
-   "at": "2026-11-20T05:31:45+00:00",
+   "at": "2026-11-20T11:47:17+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1163,7 +1163,7 @@
   },
   {
    "url": "/x/relief-pitcher-of-the-year",
-   "at": "2026-11-20T05:31:52+00:00",
+   "at": "2026-11-20T11:47:23+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1175,20 +1175,13 @@
   },
   {
    "url": "/x/reminders-of-him-book",
-   "at": "2026-11-20T05:32:22+00:00",
+   "at": "2026-11-20T11:47:53+00:00",
    "error": "The read operation timed out"
   },
   {
    "url": "/x/richard-avedon",
-   "at": "2026-11-20T05:32:28+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "Crawled - currently not indexed",
-   "robotsTxtState": "ALLOWED",
-   "indexingState": "INDEXING_ALLOWED",
-   "pageFetchState": "SUCCESSFUL",
-   "lastCrawlTime": "2026-11-08T00:09:08Z",
-   "googleCanonical": "https://trendrundown.com/x/richard-avedon",
-   "userCanonical": "https://trendrundown.com/x/richard-avedon"
+   "at": "2026-11-20T11:48:23+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/x/robert-pattinson-james-bond",
@@ -2104,8 +2097,8 @@
  "summary": {
   "Submitted and indexed": 1,
   "Discovered - currently not indexed": 31,
-  "Crawled - currently not indexed": 62,
+  "Crawled - currently not indexed": 61,
   "URL is unknown to Google": 73,
-  "error": 10
+  "error": 11
  }
 }
