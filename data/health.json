@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-20T10:53:34+00:00",
+ "checked": "2026-11-20T13:01:54+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -233,7 +233,7 @@
   },
   {
    "url": "/x/california-sues-openai",
-   "at": "2026-11-20T06:47:25+00:00",
+   "at": "2026-11-20T13:01:47+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1185,7 +1185,7 @@
   },
   {
    "url": "/x/robert-pattinson-james-bond",
-   "at": "2026-11-20T06:47:32+00:00",
+   "at": "2026-11-20T13:01:54+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
