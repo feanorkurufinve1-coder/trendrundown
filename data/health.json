@@ -286,7 +286,7 @@
   },
   {
    "url": "/x/cma-awards-2026-winners",
-   "at": "2026-11-20T06:17:25+00:00",
+   "at": "2026-11-20T12:33:28+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1351,7 +1351,7 @@
   },
   {
    "url": "/x/trump-xi-putin-meeting-declaration",
-   "at": "2026-11-20T06:17:31+00:00",
+   "at": "2026-11-20T12:33:34+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1459,9 +1459,9 @@
   },
   {
    "url": "/x/what-does-my-kid-mean-slang-guide",
-   "at": "2026-11-20T06:02:44+00:00",
+   "at": "2026-11-20T12:31:48+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1471,7 +1471,7 @@
   },
   {
    "url": "/x/what-does-refrigerator-coolant-smell-like",
-   "at": "2026-11-20T06:02:51+00:00",
+   "at": "2026-11-20T12:31:54+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1483,7 +1483,7 @@
   },
   {
    "url": "/x/what-does-unc-mean",
-   "at": "2026-11-20T06:02:57+00:00",
+   "at": "2026-11-20T12:32:01+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1495,7 +1495,7 @@
   },
   {
    "url": "/x/what-is-a-ground-stop",
-   "at": "2026-11-20T06:03:03+00:00",
+   "at": "2026-11-20T12:32:07+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1507,7 +1507,7 @@
   },
   {
    "url": "/x/what-is-a-hip-pointer",
-   "at": "2026-11-20T06:03:10+00:00",
+   "at": "2026-11-20T12:32:13+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1519,7 +1519,7 @@
   },
   {
    "url": "/x/what-is-a-motion-to-refer",
-   "at": "2026-11-20T06:03:16+00:00",
+   "at": "2026-11-20T12:32:19+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1531,7 +1531,7 @@
   },
   {
    "url": "/x/what-is-a-motion-to-table",
-   "at": "2026-11-20T06:03:23+00:00",
+   "at": "2026-11-20T12:32:26+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1543,7 +1543,7 @@
   },
   {
    "url": "/x/what-is-a-privileged-resolution",
-   "at": "2026-11-20T06:03:29+00:00",
+   "at": "2026-11-20T12:32:32+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1555,7 +1555,7 @@
   },
   {
    "url": "/x/what-is-a-public-benefit-corporation",
-   "at": "2026-11-20T06:03:35+00:00",
+   "at": "2026-11-20T12:32:38+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1567,12 +1567,19 @@
   },
   {
    "url": "/x/what-is-a-quarter-quell",
-   "at": "2026-11-20T06:04:05+00:00",
-   "error": "The read operation timed out"
+   "at": "2026-11-20T12:32:45+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
   },
   {
    "url": "/x/what-is-a-safety-in-football",
-   "at": "2026-11-20T06:16:46+00:00",
+   "at": "2026-11-20T12:32:51+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1584,7 +1591,7 @@
   },
   {
    "url": "/x/what-is-a-sudden-stratospheric-warming",
-   "at": "2026-11-20T06:16:53+00:00",
+   "at": "2026-11-20T12:32:57+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1596,7 +1603,7 @@
   },
   {
    "url": "/x/what-is-a-super-el-nino",
-   "at": "2026-11-20T06:17:00+00:00",
+   "at": "2026-11-20T12:33:03+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1608,7 +1615,7 @@
   },
   {
    "url": "/x/what-is-apple-homeview",
-   "at": "2026-11-20T06:17:06+00:00",
+   "at": "2026-11-20T12:33:10+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1632,7 +1639,7 @@
   },
   {
    "url": "/x/what-is-broad-based-categorical-eligibility",
-   "at": "2026-11-20T06:17:12+00:00",
+   "at": "2026-11-20T12:33:16+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1644,7 +1651,7 @@
   },
   {
    "url": "/x/what-is-dandori-academy",
-   "at": "2026-11-20T06:17:19+00:00",
+   "at": "2026-11-20T12:33:22+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2089,9 +2096,9 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "Discovered - currently not indexed": 32,
+  "Discovered - currently not indexed": 31,
   "Crawled - currently not indexed": 60,
-  "URL is unknown to Google": 72,
-  "error": 12
+  "URL is unknown to Google": 74,
+  "error": 11
  }
 }
