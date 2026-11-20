@@ -320,17 +320,19 @@
   },
   {
    "url": "/x/did-avril-lavigne-have-a-baby",
-   "at": "2026-11-19T21:32:46+00:00",
-   "error": "The read operation timed out"
+   "at": "2026-11-20T03:47:16+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "pageFetchState": "SUCCESSFUL",
+   "lastCrawlTime": "2026-11-14T17:46:35Z",
+   "googleCanonical": "https://trendrundown.com/x/did-avril-lavigne-have-a-baby",
+   "userCanonical": "https://trendrundown.com/x/did-avril-lavigne-have-a-baby"
   },
   {
    "url": "/x/did-scott-colom-win",
-   "at": "2026-11-19T21:33:16+00:00",
-   "error": "The read operation timed out"
-  },
-  {
-   "url": "/x/did-trump-call-into-c-span",
-   "at": "2026-11-19T21:33:23+00:00",
+   "at": "2026-11-20T03:47:22+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -339,6 +341,11 @@
    "lastCrawlTime": null,
    "googleCanonical": null,
    "userCanonical": null
+  },
+  {
+   "url": "/x/did-trump-call-into-c-span",
+   "at": "2026-11-20T03:47:52+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/x/does-a-refrigerator-need-its-own-circuit",
@@ -354,7 +361,7 @@
   },
   {
    "url": "/x/does-mlb-have-a-salary-cap",
-   "at": "2026-11-19T21:33:53+00:00",
+   "at": "2026-11-20T03:48:22+00:00",
    "error": "The read operation timed out"
   },
   {
@@ -656,7 +663,7 @@
   },
   {
    "url": "/x/is-dig-based-on-a-book",
-   "at": "2026-11-19T21:31:51+00:00",
+   "at": "2026-11-20T03:46:44+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1487,9 +1494,9 @@
   },
   {
    "url": "/x/what-is-black-october",
-   "at": "2026-11-19T21:31:57+00:00",
+   "at": "2026-11-20T03:46:50+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1535,9 +1542,9 @@
   },
   {
    "url": "/x/what-is-si-instead-of-ai",
-   "at": "2026-11-19T21:32:04+00:00",
+   "at": "2026-11-20T03:46:57+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1732,9 +1739,9 @@
   },
   {
    "url": "/x/why-are-people-saying-robert-pattinson-is-gen-z",
-   "at": "2026-11-19T21:32:10+00:00",
+   "at": "2026-11-20T03:47:03+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1857,9 +1864,9 @@
   },
   {
    "url": "/x/why-is-my-phone-charging-slow",
-   "at": "2026-11-19T21:32:16+00:00",
+   "at": "2026-11-20T03:47:09+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1941,10 +1948,10 @@
   "/x/hank-aaron-award": "2026-11-18T20:33:39+00:00"
  },
  "summary": {
-  "error": 33,
-  "URL is unknown to Google": 63,
-  "Discovered - currently not indexed": 25,
-  "Crawled - currently not indexed": 55,
+  "error": 32,
+  "URL is unknown to Google": 65,
+  "Discovered - currently not indexed": 23,
+  "Crawled - currently not indexed": 56,
   "Submitted and indexed": 1
  }
 }
