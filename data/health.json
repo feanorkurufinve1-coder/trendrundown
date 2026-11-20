@@ -366,7 +366,7 @@
   },
   {
    "url": "/x/edgar-martinez-award",
-   "at": "2026-11-19T21:46:59+00:00",
+   "at": "2026-11-20T04:01:51+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -378,12 +378,19 @@
   },
   {
    "url": "/x/el-nino-pacific-northwest",
-   "at": "2026-11-19T21:47:29+00:00",
-   "error": "The read operation timed out"
+   "at": "2026-11-20T04:01:57+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
   },
   {
    "url": "/x/embassy-of-finland-canberra-meme",
-   "at": "2026-11-19T21:47:35+00:00",
+   "at": "2026-11-20T04:02:04+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -395,7 +402,7 @@
   },
   {
    "url": "/x/exhibition-game",
-   "at": "2026-11-19T21:47:42+00:00",
+   "at": "2026-11-20T04:02:10+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -407,8 +414,15 @@
   },
   {
    "url": "/x/first-black-senator-from-mississippi",
-   "at": "2026-11-19T21:48:12+00:00",
-   "error": "The read operation timed out"
+   "at": "2026-11-20T04:02:16+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
   },
   {
    "url": "/x/florida-flooding-november-18-2026",
@@ -424,13 +438,20 @@
   },
   {
    "url": "/x/game-time-decision",
-   "at": "2026-11-19T21:48:42+00:00",
+   "at": "2026-11-20T04:02:46+00:00",
    "error": "The read operation timed out"
   },
   {
    "url": "/x/guarding-stars-book",
-   "at": "2026-11-19T21:49:12+00:00",
-   "error": "The read operation timed out"
+   "at": "2026-11-20T04:02:53+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
   },
   {
    "url": "/x/hakeem-jeffries-speaker-nomination",
@@ -1948,8 +1969,8 @@
   "/x/hank-aaron-award": "2026-11-18T20:33:39+00:00"
  },
  "summary": {
-  "error": 32,
-  "URL is unknown to Google": 65,
+  "error": 29,
+  "URL is unknown to Google": 68,
   "Discovered - currently not indexed": 23,
   "Crawled - currently not indexed": 56,
   "Submitted and indexed": 1
