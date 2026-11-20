@@ -315,7 +315,7 @@
   },
   {
    "url": "/x/designated-for-assignment",
-   "at": "2026-11-20T09:47:05+00:00",
+   "at": "2026-11-20T16:01:48+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -327,15 +327,8 @@
   },
   {
    "url": "/x/did-avril-lavigne-have-a-baby",
-   "at": "2026-11-20T09:51:25+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "Crawled - currently not indexed",
-   "robotsTxtState": "ALLOWED",
-   "indexingState": "INDEXING_ALLOWED",
-   "pageFetchState": "SUCCESSFUL",
-   "lastCrawlTime": "2026-11-14T17:46:35Z",
-   "googleCanonical": "https://trendrundown.com/x/did-avril-lavigne-have-a-baby",
-   "userCanonical": "https://trendrundown.com/x/did-avril-lavigne-have-a-baby"
+   "at": "2026-11-20T16:03:38+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/x/did-scott-colom-win",
@@ -733,15 +726,8 @@
   },
   {
    "url": "/x/is-dig-based-on-a-book",
-   "at": "2026-11-20T09:47:18+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
-   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-   "indexingState": "INDEXING_STATE_UNSPECIFIED",
-   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
-   "lastCrawlTime": null,
-   "googleCanonical": null,
-   "userCanonical": null
+   "at": "2026-11-20T16:02:19+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/x/is-gta-6-coming-to-pc",
@@ -1651,9 +1637,9 @@
   },
   {
    "url": "/x/what-is-black-october",
-   "at": "2026-11-20T09:47:24+00:00",
+   "at": "2026-11-20T16:02:25+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1699,7 +1685,7 @@
   },
   {
    "url": "/x/what-is-si-instead-of-ai",
-   "at": "2026-11-20T09:47:30+00:00",
+   "at": "2026-11-20T16:02:32+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1908,15 +1894,8 @@
   },
   {
    "url": "/x/why-are-people-saying-robert-pattinson-is-gen-z",
-   "at": "2026-11-20T09:51:12+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
-   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-   "indexingState": "INDEXING_STATE_UNSPECIFIED",
-   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
-   "lastCrawlTime": null,
-   "googleCanonical": null,
-   "userCanonical": null
+   "at": "2026-11-20T16:03:02+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/x/why-are-people-trying-to-move-the-bean",
@@ -2045,9 +2024,9 @@
   },
   {
    "url": "/x/why-is-my-phone-charging-slow",
-   "at": "2026-11-20T09:51:18+00:00",
+   "at": "2026-11-20T16:03:08+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2149,9 +2128,9 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "Discovered - currently not indexed": 33,
-  "Crawled - currently not indexed": 57,
-  "error": 12,
-  "URL is unknown to Google": 79
+  "Discovered - currently not indexed": 30,
+  "Crawled - currently not indexed": 56,
+  "error": 15,
+  "URL is unknown to Google": 80
  }
 }
