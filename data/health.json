@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-20T09:51:44+00:00",
+ "checked": "2026-11-20T10:53:34+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -709,7 +709,7 @@
   },
   {
    "url": "/x/is-being-heumann-a-true-story",
-   "at": "2026-11-20T04:32:47+00:00",
+   "at": "2026-11-20T10:52:51+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -745,19 +745,12 @@
   },
   {
    "url": "/x/is-gta-6-coming-to-pc",
-   "at": "2026-11-20T04:46:47+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "Crawled - currently not indexed",
-   "robotsTxtState": "ALLOWED",
-   "indexingState": "INDEXING_ALLOWED",
-   "pageFetchState": "SUCCESSFUL",
-   "lastCrawlTime": "2026-11-13T16:07:38Z",
-   "googleCanonical": "https://trendrundown.com/x/is-gta-6-coming-to-pc",
-   "userCanonical": "https://trendrundown.com/x/is-gta-6-coming-to-pc"
+   "at": "2026-11-20T10:53:21+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/x/is-leonida-a-real-place",
-   "at": "2026-11-20T04:46:54+00:00",
+   "at": "2026-11-20T10:53:27+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -781,7 +774,7 @@
   },
   {
    "url": "/x/is-philomena-cunk-real",
-   "at": "2026-11-20T04:47:00+00:00",
+   "at": "2026-11-20T10:53:34+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2090,8 +2083,8 @@
  "summary": {
   "Submitted and indexed": 1,
   "Discovered - currently not indexed": 31,
-  "Crawled - currently not indexed": 61,
+  "Crawled - currently not indexed": 60,
   "URL is unknown to Google": 72,
-  "error": 12
+  "error": 13
  }
 }
