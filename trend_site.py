@@ -4350,7 +4350,7 @@ def thumb(f, w):
         from PIL import Image
         src = os.path.join(OUT, f)
         name = os.path.splitext(os.path.basename(f))[0] + ".webp"
-        rel = f"img/w{w}/{name}"
+        rel = f"pics/w{w}/{name}" if f.startswith("pics/") else f"img/w{w}/{name}"
         dst = os.path.join(OUT, rel)
         if not os.path.exists(dst) or os.path.getmtime(dst) < os.path.getmtime(src):
             with Image.open(src) as im:
@@ -4365,6 +4365,23 @@ def thumb(f, w):
         pass
     _THUMBS[key] = res
     return res
+
+
+def seo_pic(f, slug):
+    """21.11: копия картинки с понятным именем: pics/what-does-microsoft-364-mean.jpg вместо img/ai-…/own-….
+    Google Картинки учитывают имя файла. Копии делаются при каждой сборке и в репозиторий не попадают."""
+    try:
+        src = os.path.join(OUT, f)
+        rel = f"pics/{slug}.jpg"
+        dst = os.path.join(OUT, rel)
+        if not os.path.exists(dst) or os.path.getmtime(dst) < os.path.getmtime(src):
+            from PIL import Image
+            os.makedirs(os.path.dirname(dst), exist_ok=True)
+            with Image.open(src) as im:
+                im.convert("RGB").save(dst, "JPEG", quality=85, optimize=True)
+        return rel
+    except Exception:
+        return f
 
 
 def pic(f, up="", alt="", lazy=True, w=640, sizes=None):
@@ -4985,9 +5002,13 @@ def build_explainer(x, topics):
     rel = related_explainers(x)
     more = more_pages(x, [y["slug"] for y in rel]) if x.get("manual") else []
     more_title = {"news": "More news", "trend": "More internet trends"}.get(page_kind(x), "More explainers")
-    im = x.get("img") or {}
-    hero_x = (f'<figure class="hero">{pic(im["file"], "../", x["subject"], lazy=False, sizes="(max-width: 700px) 100vw, 680px")}'
-              + ('<figcaption>Illustration: TrendRundown (original artwork)</figcaption></figure>' if im.get("own") else
+    im = dict(x.get("img") or {})
+    if im.get("file") and x.get("manual"):
+        im["file"] = seo_pic(im["file"], x["slug"])       # 21.11: имя файла картинки = тема страницы (для поиска по картинкам)
+    alt = re.split(r"\?", x["title"])[0].strip() or x["subject"]
+    alt += " (illustration)" if (im.get("own") or im.get("ai")) else ""
+    hero_x = (f'<figure class="hero">{pic(im["file"], "../", alt, lazy=False, sizes="(max-width: 700px) 100vw, 680px")}'
+              + ('<figcaption>Illustration: AI-generated for TrendRundown</figcaption></figure>' if im.get("own") else
                  '<figcaption>Illustration: AI-generated for TrendRundown</figcaption></figure>' if im.get("ai") else
                  f'<figcaption>{"Illustration based on a photo by " if im.get("styled") else "Photo: "}{E(im["credit"])} / <a href="{E(im["src"])}" target="_blank" rel="noopener">{E(im["license"])}</a>, via Wikimedia Commons{"; stylized by TrendRundown" if im.get("styled") else ""}</figcaption></figure>')
               if im.get("file") else "")
@@ -5424,8 +5445,15 @@ def build_site(store):
     if new_urls:
         orig["_pending_out"] = new_urls
         sp = orig.setdefault("sitemap_ping", {}); sp["pending"] = sp.get("pending", 0) + len(new_urls)
-    w("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
-      + "".join(f"<url><loc>{E(u)}</loc>" + (f"<lastmod>{lm[u]}</lastmod>" if u in lm else "") + "</url>" for u in urls) + "</urlset>")
+    # 21.11: картинки страниц в карте сайта — так Google быстрее находит их для поиска по картинкам
+    def _sm_img(u):
+        m_ = re.match(re.escape(SITE_URL) + r"/x/([^/?#]+)$", u)
+        if not m_ or not os.path.exists(os.path.join(OUT, "pics", m_.group(1) + ".jpg")):
+            return ""
+        return f"<image:image><image:loc>{SITE_URL}/pics/{E(m_.group(1))}.jpg</image:loc></image:image>"
+    w("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
+      'xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">'
+      + "".join(f"<url><loc>{E(u)}</loc>" + (f"<lastmod>{lm[u]}</lastmod>" if u in lm else "") + _sm_img(u) + "</url>" for u in urls) + "</urlset>")
     if ADSENSE_CLIENT:
         w("ads.txt", f"google.com, {ADSENSE_CLIENT.replace('ca-', '')}, DIRECT, f08c47fec0942fa0\n")
     ai_block = "".join(f"User-agent: {b_}\nDisallow: /\n\n" for b_ in AI_BOTS)
