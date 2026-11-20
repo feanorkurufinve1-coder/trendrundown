@@ -387,7 +387,7 @@
   },
   {
    "url": "/x/edgar-martinez-award",
-   "at": "2026-11-20T04:01:51+00:00",
+   "at": "2026-11-20T10:16:47+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -399,7 +399,7 @@
   },
   {
    "url": "/x/el-nino-pacific-northwest",
-   "at": "2026-11-20T04:01:57+00:00",
+   "at": "2026-11-20T10:16:53+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -411,7 +411,7 @@
   },
   {
    "url": "/x/embassy-of-finland-canberra-meme",
-   "at": "2026-11-20T04:02:04+00:00",
+   "at": "2026-11-20T10:17:00+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -423,7 +423,7 @@
   },
   {
    "url": "/x/exhibition-game",
-   "at": "2026-11-20T04:02:10+00:00",
+   "at": "2026-11-20T10:17:06+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -435,7 +435,7 @@
   },
   {
    "url": "/x/first-black-senator-from-mississippi",
-   "at": "2026-11-20T04:02:16+00:00",
+   "at": "2026-11-20T10:17:12+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -459,12 +459,19 @@
   },
   {
    "url": "/x/game-time-decision",
-   "at": "2026-11-20T04:02:46+00:00",
-   "error": "The read operation timed out"
+   "at": "2026-11-20T10:17:19+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "pageFetchState": "SUCCESSFUL",
+   "lastCrawlTime": "2026-11-10T05:59:15Z",
+   "googleCanonical": "https://trendrundown.com/x/game-time-decision",
+   "userCanonical": "https://trendrundown.com/x/game-time-decision"
   },
   {
    "url": "/x/guarding-stars-book",
-   "at": "2026-11-20T04:02:53+00:00",
+   "at": "2026-11-20T10:17:25+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2090,8 +2097,8 @@
  "summary": {
   "Submitted and indexed": 2,
   "Discovered - currently not indexed": 31,
-  "Crawled - currently not indexed": 59,
+  "Crawled - currently not indexed": 60,
   "URL is unknown to Google": 73,
-  "error": 12
+  "error": 11
  }
 }
