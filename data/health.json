@@ -41,7 +41,7 @@
  "urls": [
   {
    "url": "/",
-   "at": "2026-11-20T08:32:13+00:00",
+   "at": "2026-11-20T14:47:38+00:00",
    "verdict": "PASS",
    "coverageState": "Submitted and indexed",
    "robotsTxtState": "ALLOWED",
@@ -94,7 +94,7 @@
   },
   {
    "url": "/x/mutual-option",
-   "at": "2026-11-20T08:31:54+00:00",
+   "at": "2026-11-20T14:46:55+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -106,19 +106,12 @@
   },
   {
    "url": "/x/dane-cook-brother",
-   "at": "2026-11-20T08:32:01+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "Crawled - currently not indexed",
-   "robotsTxtState": "ALLOWED",
-   "indexingState": "INDEXING_ALLOWED",
-   "pageFetchState": "SUCCESSFUL",
-   "lastCrawlTime": "2026-11-06T06:54:44Z",
-   "googleCanonical": "https://trendrundown.com/x/dane-cook-brother",
-   "userCanonical": "https://trendrundown.com/x/dane-cook-brother"
+   "at": "2026-11-20T14:47:25+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/x/cyber-monday",
-   "at": "2026-11-20T08:32:07+00:00",
+   "at": "2026-11-20T14:47:31+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -130,7 +123,7 @@
   },
   {
    "url": "/x/40-man-roster",
-   "at": "2026-11-20T08:32:20+00:00",
+   "at": "2026-11-20T14:47:44+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -142,7 +135,7 @@
   },
   {
    "url": "/x/alaska-ranked-choice-voting",
-   "at": "2026-11-20T08:32:26+00:00",
+   "at": "2026-11-20T14:47:51+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2143,8 +2136,8 @@
  "summary": {
   "Submitted and indexed": 1,
   "Discovered - currently not indexed": 33,
-  "Crawled - currently not indexed": 58,
-  "error": 13,
+  "Crawled - currently not indexed": 57,
+  "error": 14,
   "URL is unknown to Google": 77
  }
 }
