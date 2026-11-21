@@ -89,7 +89,7 @@
   },
   {
    "url": "/x/telerally",
-   "at": "2026-11-21T03:02:12+00:00",
+   "at": "2026-11-21T09:17:07+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1853,7 +1853,7 @@
   },
   {
    "url": "/x/what-is-the-word-of-the-year-2026",
-   "at": "2026-11-21T03:01:52+00:00",
+   "at": "2026-11-21T09:16:49+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1973,9 +1973,9 @@
   },
   {
    "url": "/x/why-are-people-saying-gta-6-is-bad",
-   "at": "2026-11-21T03:01:59+00:00",
+   "at": "2026-11-21T09:16:55+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2213,9 +2213,9 @@
   },
   {
    "url": "/x/why-wont-my-washing-machine-drain",
-   "at": "2026-11-21T03:02:05+00:00",
+   "at": "2026-11-21T09:17:01+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2257,8 +2257,8 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 88,
-  "Discovered - currently not indexed": 30,
+  "URL is unknown to Google": 86,
+  "Discovered - currently not indexed": 32,
   "Crawled - currently not indexed": 65
  }
 }
