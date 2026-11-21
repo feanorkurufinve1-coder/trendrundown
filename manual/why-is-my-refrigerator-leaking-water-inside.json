@@ -1,0 +1,55 @@
+{
+ "subject": "Refrigerator leaking water inside",
+ "kind": "term",
+ "query": "why is my refrigerator leaking water inside",
+ "title": "Why is my refrigerator leaking water inside? Check the drain first",
+ "answer": "Water pooling under the crisper drawers almost always means a clogged or frozen defrost drain: meltwater can't reach the pan under the fridge, so it backs up inside. Next most likely are a fridge that tilts forward, a leaky door seal, or a faulty water filter or supply line.",
+ "body": "1. Clogged defrost drain (most common). Several times a day the fridge melts frost off its cooling coils, and that water runs through a small hole at the back of the compartment or freezer into a pan underneath, where it evaporates. Crumbs, mold or ice can block the hole. The tell: a puddle under the bottom drawers that comes back a day or two after you wipe it up, or a sheet of ice on the freezer floor. Fix: unplug the fridge, find the drain hole, and use a turkey baster or syringe to push warm (not boiling) water through it several times until it runs freely. Some models keep a small plastic unblocker in the hole. Never poke it with a sharp metal tool; you can puncture the tube or liner.\n\n2. Frozen drain. If the drain clears and then freezes again, the water in the tube is turning to ice. Unplug the fridge, let it thaw for several hours with towels down, then flush it. If it keeps refreezing, a defrost part or temperature control may be failing.\n\n3. The fridge leans forward. Fridges are designed to tilt slightly backward, about a quarter inch, so water flows to the drain and the doors swing shut. Put a level on top and raise the front feet if needed. Clockwise usually raises them.\n\n4. Door seal or door left ajar. A torn or dirty gasket lets in humid air that condenses and drips. Close the door on a dollar bill; if it slides out easily, the seal isn't gripping there. Clean the gasket with warm soapy water and replace it if it's torn.\n\n5. Water filter or supply line (fridges with ice makers or dispensers). An old or badly seated filter can drip inside the compartment. Many need replacing about every six months. Shut off the water valve before checking the line for kinks, cracks or ice.\n\nWhen to call a technician: the leak returns within a week after flushing; warm water won't clear the drain; you see ice building up behind the back panel; the drain tube needs disassembly to reach; or you hear hissing along with the water, which can mean a sealed-system problem.",
+ "faq": [
+  {
+   "q": "Why is there water under the crisper drawers in my fridge?",
+   "a": "Usually a blocked defrost drain. Meltwater that should flow to the pan underneath backs up into the bottom of the compartment."
+  },
+  {
+   "q": "How do I unclog a refrigerator drain?",
+   "a": "Unplug the fridge, then push warm water through the drain hole with a turkey baster or syringe, repeating until it flows freely. Avoid sharp tools."
+  },
+  {
+   "q": "Is it dangerous if my fridge is leaking inside?",
+   "a": "Usually not, but wipe up water near outlets and the floor, and unplug the fridge before you work on it."
+  },
+  {
+   "q": "How often should I clean the defrost drain?",
+   "a": "About every six months helps prevent clogs, along with keeping food from pressing against the back wall."
+  }
+ ],
+ "links": [
+  [
+   "Sears Home Services",
+   "Why Does My Fridge Leak Water Inside? Causes and Fixes",
+   "https://www.searshomeservices.com/blog/why-does-my-fridge-leak-water-inside"
+  ],
+  [
+   "Homes & Gardens",
+   "Why is my refrigerator leaking water inside? The 7 most common causes",
+   "https://www.homesandgardens.com/kitchens/why-is-my-refrigerator-leaking-water-inside"
+  ],
+  [
+   "GE Appliances",
+   "Top Freezer Refrigerator - Drain Tube",
+   "https://products.geappliances.com/appliance/gea-support-search-content?contentId=19363"
+  ],
+  [
+   "Sears PartsDirect",
+   "Water under crisper drawers",
+   "https://www.searspartsdirect.com/diy/symptom/refrigerator-repair/1234589/water-under-crisper-drawers/ref0006"
+  ],
+  [
+   "HomeServe",
+   "Why Is My Fridge Leaking Water Under the Bottom Drawers?",
+   "https://www.homeserve.com/blog/home-improvement/bottom-drawer-of-fridge-freezer-leaking"
+  ]
+ ],
+ "image_prompt": "The inside of a plain white refrigerator with clear crisper drawers and a small puddle of water on the bottom shelf, realistic photo style",
+ "made": "2026-11-21T13:54:28Z"
+}

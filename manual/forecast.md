@@ -156,7 +156,7 @@
 | 12 нояб (прошло) | Streamer Awards 2026 (Twitch/YouTube QTCinderella), трофеи украдены | what is the sapphire award — опоздали, пропуск | — |
 | 12 нояб – 19 нояб | GTA 6: предзагрузка с 12 нояб, 212 ГБ | how big is gta 6 — заняты гигантами, пропуск | — |
 | 13 нояб (прошло) | U2 Carnaval De Luz; Xbox Series X25 ($899.99) | — вышли, пропуск | — |
-| 24 нояб | Полнолуние Beaver Supermoon | is the november full moon a supermoon | — писать ~20–22 нояб |
+| 24 нояб | Полнолуние Beaver Supermoon | is the november full moon a supermoon | ✅ is-the-november-full-moon-a-supermoon |
 | 25 нояб | Кино: Focker-In-Law | focker-in-law cast | — писать ~21–23 нояб |
 | ~19 нояб | AFBF: стоимость ужина на День благодарения | how much does thanksgiving dinner cost 2026 | — после публикации |
 | нояб–дек | Всё про Рождество/Christmas (Ebenezer и т.п.) | — пропуск (религиозный праздник, запрет владельца) | — |
@@ -164,6 +164,10 @@
 Проверка: через 3–7 дней после даты сверить с Trends CSV и Search Console — угадали или нет, записать урок сюда.
 
 ## Уроки
+- 21 нояб, вечер (GSC: последний полный день 20 нояб — 2 клика / 2 показа, всё на главной; health.json 21 нояб: в индексе только / — /x/hank-aaron-award, cyber-monday, ligue-1 выпали снова; 65 Crawled, 33 Discovered, 85 неизвестны Google; /trends и обзор недели 15 нояб — Discovered):
+  - По типам (страницы 17–19 нояб, 2–4 дня): тренды (julia-stiles, move-the-bean, black-october, si-instead-of-ai, gta-6-is-bad, talk-to-me-doja), прогнозы (dig, trinity, blade-runner-2099), вечные (phone-charging-slow, washing-machine-drain/spin) — 0 показов. Ни один тип пока не выигрывает: сайт целиком вне индекса.
+  - Радар 21 нояб: Reddit отдаёт 403, но у кандидатов всё ещё стоит этаж «reddit» — это старые данные, верить ему нельзя. Лучшие темы дня снова нашлись только в new_phrases (RIP Fiona, «gta 6 is woke»), а «huss» (36 млн просмотров на TikTok) радар не увидел вовсе — Know Your Meme Explainers остаётся обязательным вторым источником.
+  - Картинки FLUX: «closed dictionary» всё равно рисуется раскрытой книгой с каракулями; стиральная машина — с выдуманной надписью бренда. Просить «stack of closed books with blank covers», «view from above into the drum».
 - 20 нояб, вечер (GSC: последний полный день 17 нояб — 2 клика / 3 показа; 18–19 нояб 0/0. health.json 20 нояб: в индексе остался только / — /x/cyber-monday, /x/ligue-1 и /x/hank-aaron-award снова «Crawled – currently not indexed» после переобхода 18–19 нояб; 31 Discovered, 59 Crawled, 74 неизвестны Google; sitemap 177 отправлено / 0, Google скачал его 20 нояб):
   - По типам (страницы 16–18 нояб, 2–4 дня): тренды (ram-altman, november-17, ao3, i-got-so-mad, julia-stiles, move-the-bean, black-october, si-instead-of-ai), прогнозы (melania-series, oobah-butler, dig), вечные (refrigerator-circuit, washing-machine-dripping, phone-charging-slow) — 0 показов, «Discovered» или неизвестны Google; /trends тоже «Discovered». Индекс не возвращается, сайт выпал дальше — судить о типах страниц по GSC пока нельзя.
   - Радар 20 нояб: сильнейший свежий сигнал (пижамы на «Sunrise on the Reaping», 5 новых подсказок за 2 дня) был только в new_phrases, а не в candidates; кандидат «sunrise on the reaping» склеил его с общим вопросом о фильме. Связка «новая премьера + странное поведение фанатов» — хороший тип тренда.
