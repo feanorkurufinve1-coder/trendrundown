@@ -389,9 +389,9 @@
   },
   {
    "url": "/x/does-a-refrigerator-need-its-own-circuit",
-   "at": "2026-11-21T07:03:12+00:00",
+   "at": "2026-11-21T13:18:14+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1385,7 +1385,7 @@
   },
   {
    "url": "/x/stacy-keach-death",
-   "at": "2026-11-21T07:02:02+00:00",
+   "at": "2026-11-21T13:17:03+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1397,7 +1397,7 @@
   },
   {
    "url": "/x/teruaki-sato",
-   "at": "2026-11-21T07:02:08+00:00",
+   "at": "2026-11-21T13:17:10+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1409,7 +1409,7 @@
   },
   {
    "url": "/x/the-altruists-true-story",
-   "at": "2026-11-21T07:02:14+00:00",
+   "at": "2026-11-21T13:17:16+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1421,7 +1421,7 @@
   },
   {
    "url": "/x/the-empress-netflix-true-story",
-   "at": "2026-11-21T07:02:21+00:00",
+   "at": "2026-11-21T13:17:22+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1433,7 +1433,7 @@
   },
   {
    "url": "/x/the-good-daughter-book",
-   "at": "2026-11-21T07:02:27+00:00",
+   "at": "2026-11-21T13:17:29+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1445,7 +1445,7 @@
   },
   {
    "url": "/x/tri-series-cricket",
-   "at": "2026-11-21T07:02:34+00:00",
+   "at": "2026-11-21T13:17:35+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1469,7 +1469,7 @@
   },
   {
    "url": "/x/two-dan-sullivans-alaska",
-   "at": "2026-11-21T07:02:40+00:00",
+   "at": "2026-11-21T13:17:42+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1481,7 +1481,7 @@
   },
   {
    "url": "/x/under-siege-netflix-true-story",
-   "at": "2026-11-21T07:02:46+00:00",
+   "at": "2026-11-21T13:17:48+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1493,7 +1493,7 @@
   },
   {
    "url": "/x/vienna-game-true-story",
-   "at": "2026-11-21T07:02:53+00:00",
+   "at": "2026-11-21T13:17:54+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1517,7 +1517,7 @@
   },
   {
    "url": "/x/what-does-12-12-12-mean",
-   "at": "2026-11-21T07:02:59+00:00",
+   "at": "2026-11-21T13:18:01+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1529,7 +1529,7 @@
   },
   {
    "url": "/x/what-does-habibi-mean",
-   "at": "2026-11-21T07:03:05+00:00",
+   "at": "2026-11-21T13:18:07+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1541,7 +1541,7 @@
   },
   {
    "url": "/x/what-does-maxxing-mean",
-   "at": "2026-11-21T07:03:18+00:00",
+   "at": "2026-11-21T13:18:20+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1553,7 +1553,7 @@
   },
   {
    "url": "/x/what-does-microsoft-364-mean",
-   "at": "2026-11-21T07:03:25+00:00",
+   "at": "2026-11-21T13:18:26+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1565,7 +1565,7 @@
   },
   {
    "url": "/x/what-does-my-kid-mean-slang-guide",
-   "at": "2026-11-21T07:16:53+00:00",
+   "at": "2026-11-21T13:18:33+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2257,8 +2257,8 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 84,
-  "Discovered - currently not indexed": 34,
+  "URL is unknown to Google": 85,
+  "Discovered - currently not indexed": 33,
   "Crawled - currently not indexed": 65
  }
 }
