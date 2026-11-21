@@ -9647,7 +9647,7 @@
   ]
  },
  "dan-hicks-death": {
-  "time": "2026-11-20T17:48:34+00:00",
+  "time": "2026-11-21T18:03:51+00:00",
   "query": "dan hicks death",
   "in_suggest": true,
   "suggest": {
@@ -9657,11 +9657,11 @@
     "dan hicks death",
     "dan hicks (sportscaster)",
     "dan hicks funeral",
-    "dan hicks nbc",
     "dan hicks nbc cause of death",
-    "dan hicks wife",
+    "dan hicks nbc",
     "dan hicks death cause",
-    "dan hicks illness"
+    "dan hicks wife",
+    "dan hicks net worth"
    ],
    "what is dan hicks": [
     "what is dan hicks net worth",
@@ -9678,6 +9678,7 @@
    "dan hicks death": [
     "dan hicks death",
     "dan hicks death cause",
+    "dan hicks death certificate",
     "dan hicks actor cause of death",
     "dan hicks salary",
     "dan hicks net worth",
@@ -9720,11 +9721,15 @@
    [
     "2026-11-20",
     true
+   ],
+   [
+    "2026-11-21",
+    true
    ]
   ]
  },
  "did-scott-colom-win": {
-  "time": "2026-11-20T17:48:37+00:00",
+  "time": "2026-11-21T18:03:54+00:00",
   "query": "did scott colom win",
   "in_suggest": false,
   "suggest": {
@@ -9779,11 +9784,15 @@
    [
     "2026-11-20",
     false
+   ],
+   [
+    "2026-11-21",
+    false
    ]
   ]
  },
  "october-2026-cpi-no-annual-rate": {
-  "time": "2026-11-20T17:48:45+00:00",
+  "time": "2026-11-21T18:04:03+00:00",
   "query": "why no annual inflation rate for october cpi",
   "in_suggest": false,
   "suggest": {
@@ -9850,11 +9859,15 @@
    [
     "2026-11-20",
     false
+   ],
+   [
+    "2026-11-21",
+    false
    ]
   ]
  },
  "sierra-winter-storm-warning": {
-  "time": "2026-11-20T17:48:46+00:00",
+  "time": "2026-11-21T18:04:04+00:00",
   "query": "sierra winter storm warning",
   "in_suggest": true,
   "suggest": {
@@ -9924,25 +9937,29 @@
    [
     "2026-11-20",
     true
+   ],
+   [
+    "2026-11-21",
+    true
    ]
   ]
  },
  "ss-united-states-sinking": {
-  "time": "2026-11-20T17:48:48+00:00",
+  "time": "2026-11-21T18:04:06+00:00",
   "query": "ss united states sinking",
   "in_suggest": true,
   "suggest": {
    "ss united states": [
     "ss united states",
     "ss united states sinking",
-    "ss united states sinking date",
     "ss united states wreck",
-    "ss united states underwater pictures",
-    "ss united states under water",
-    "ss united states stern damage",
+    "ss united states sinking date",
+    "ss united states live stream",
+    "ss united states ship",
     "ss united states interior",
     "ss united states artificial reef",
-    "ss united states top speed"
+    "ss united states top speed",
+    "ss united states sinking livestream"
    ],
    "what is ss united states": [
     "what is ss united states",
@@ -9959,14 +9976,14 @@
    "ss united states sinking": [
     "ss united states sinking",
     "ss united states sinking date",
+    "ss united states sinking livestream",
+    "ss united states sinking update",
     "ss united states sinking location",
     "ss united states sinking today",
     "ss united states sinking depth",
     "ss united states sinking date and location",
     "ss united states sinking date reddit",
-    "ss united states sinking update",
-    "ss united states sinking date today",
-    "ss united states sinking livestream"
+    "ss united states sinking date today"
    ]
   },
   "history": [
@@ -10005,25 +10022,29 @@
    [
     "2026-11-20",
     true
+   ],
+   [
+    "2026-11-21",
+    true
    ]
   ]
  },
  "stacy-keach-death": {
-  "time": "2026-11-20T17:48:49+00:00",
+  "time": "2026-11-21T18:04:07+00:00",
   "query": "stacy keach death",
   "in_suggest": true,
   "suggest": {
    "stacy keach": [
     "stacy keach",
+    "stacy keach movies and tv shows",
     "stacy keach sr",
     "stacy keach cause of death",
     "stacy keach net worth",
+    "stacy keach wife",
+    "stacy keach american history x",
     "stacy keach movies and shows",
     "stacy keach movies",
-    "stacy keach tv shows",
-    "stacy keach jr",
-    "stacy keach senior",
-    "stacy keach brother"
+    "stacy keach tv shows"
    ],
    "what is stacy keach": [
     "what is stacy keach doing now",
@@ -10039,7 +10060,6 @@
    ],
    "stacy keach death": [
     "stacy keach death of a salesman",
-    "stacy keach died",
     "stacy keach cause of death",
     "stacy keach bored to death",
     "stacy keach sr age at death",
@@ -10084,37 +10104,41 @@
    [
     "2026-11-20",
     true
+   ],
+   [
+    "2026-11-21",
+    true
    ]
   ]
  },
  "what-time-does-gta-6-unlock": {
-  "time": "2026-11-20T17:48:50+00:00",
+  "time": "2026-11-21T18:04:09+00:00",
   "query": "what time does gta 6 unlock",
   "in_suggest": true,
   "suggest": {
    "grand theft auto vi": [
     "grand theft auto vi",
-    "grand theft auto vice city",
     "grand theft auto vi playstation 5 store",
+    "grand theft auto vice city",
     "grand theft auto vi reviews",
+    "grand theft auto vi xbox glitch",
     "grand theft auto vi pc",
+    "grand theft auto vice city stories",
     "grand theft auto vi ultimate edition",
-    "grand theft auto vi xbox",
-    "grand theft auto vi price",
-    "grand theft auto vi player statistics",
-    "grand theft auto vi broadway cast"
+    "grand theft auto vi metacritic",
+    "grand theft auto vi price"
    ],
    "what is grand theft auto vi": [
     "what is grand theft auto vi",
-    "what is grand theft auto video game",
+    "what is grand theft auto vi vintage vice city pack",
     "what is grand theft auto vi rated",
+    "what is grand theft auto video game",
     "what is grand theft auto vi ultimate edition upgrade",
     "what is grand theft auto vi an extended look",
     "what is grand theft auto vice city stories",
     "what is grand theft auto vice city",
-    "what is grand theft auto vi ultimate edition",
     "what is grand theft auto vi on netflix",
-    "grand theft auto explained"
+    "what is grand theft auto vi ultimate edition"
    ],
    "what time does gta 6 unlock": [
     "what time does gta 6 unlock",
@@ -10165,6 +10189,10 @@
    ],
    [
     "2026-11-20",
+    true
+   ],
+   [
+    "2026-11-21",
     true
    ]
   ]
@@ -10932,21 +10960,21 @@
   ]
  },
  "anthony-clark-death": {
-  "time": "2026-11-20T17:48:33+00:00",
+  "time": "2026-11-21T18:03:50+00:00",
   "query": "anthony clark death",
   "in_suggest": true,
   "suggest": {
    "anthony clark": [
     "anthony clark",
     "anthony clark cause of death",
-    "anthony clark partner",
-    "anthony clark barbershop",
     "anthony clark death",
-    "anthony clark actor",
+    "anthony clark comedian",
+    "anthony clark last photo",
+    "anthony clark net worth",
+    "anthony clark children",
     "anthony clark wife",
-    "anthony clark powerlifter",
-    "anthony clark obituary",
-    "anthony clark net worth"
+    "anthony clark 2026",
+    "anthony clark actor cause of death"
    ],
    "what is anthony clark": [
     "what is anthony clark doing now",
@@ -10962,6 +10990,8 @@
    ],
    "anthony clark death": [
     "anthony clark death",
+    "anthony clark death certificate",
+    "anthony clark died",
     "anthony clark powerlifter death",
     "anthony clark cause of death",
     "anthony clark powerlifter cause of death",
@@ -11001,25 +11031,29 @@
    [
     "2026-11-20",
     true
+   ],
+   [
+    "2026-11-21",
+    true
    ]
   ]
  },
  "hegseth-tomb-guard-medal": {
-  "time": "2026-11-20T17:48:38+00:00",
+  "time": "2026-11-21T18:03:55+00:00",
   "query": "hegseth tomb guard medal",
   "in_suggest": false,
   "suggest": {
    "tomb of the unknown soldier": [
     "tomb of the unknown soldier",
     "tomb of the unknown soldier guards",
+    "tomb of the unknown soldier hegseth",
+    "tomb of the unknown soldier changing of the guard",
     "tomb of the unknown soldier arlington",
     "tomb of the unknown soldier guard requirements",
     "tomb of the unknown soldier philadelphia",
     "tomb of the unknown soldier washington dc",
     "tomb of the unknown soldier guards salary",
-    "tomb of the unknown soldier athens",
-    "tomb of the unknown soldier badge",
-    "tomb of the unknown soldier arlington reviews"
+    "tomb of the unknown soldier athens"
    ],
    "what is tomb of the unknown soldier": [
     "what is tomb of the unknown soldier",
@@ -11067,11 +11101,15 @@
    [
     "2026-11-20",
     false
+   ],
+   [
+    "2026-11-21",
+    false
    ]
   ]
  },
  "iran-bahrain-radar-strike": {
-  "time": "2026-11-20T17:48:39+00:00",
+  "time": "2026-11-21T18:03:57+00:00",
   "query": "iran bahrain radar",
   "in_suggest": true,
   "suggest": {
@@ -11081,11 +11119,11 @@
     "iran war",
     "iran war news",
     "iran war update",
+    "iranian currency",
     "iran news today",
     "iran us",
     "iran us news",
-    "iran economy",
-    "iran flag"
+    "iran economy"
    ],
    "what is iran": [
     "what is iran's currency",
@@ -11139,30 +11177,34 @@
    [
     "2026-11-20",
     true
+   ],
+   [
+    "2026-11-21",
+    true
    ]
   ]
  },
  "jensen-huang-resigns-nvidia": {
-  "time": "2026-11-20T17:48:40+00:00",
+  "time": "2026-11-21T18:03:58+00:00",
   "query": "why did jensen huang resign",
   "in_suggest": true,
   "suggest": {
    "jensen huang": [
     "jensen huang",
     "jensen huang wife",
-    "jensen huang leaves nvidia",
     "jensen huang net worth",
     "jensen huang news",
     "jensen huang new company",
+    "jensen huang net worth drop",
     "jensen huang kids",
-    "jensen huang third affair",
-    "jensen huang fourth affair",
-    "jensen huang age"
+    "jensen huang age",
+    "jensen huang daughter",
+    "jensen huang third affair"
    ],
    "what is jensen huang": [
     "what is jensen huang doing now",
+    "what is jensen huang doing today",
     "what is jensen huang net worth",
-    "what is jensen huang accused of",
     "what is jensen huang's ethnicity",
     "what is jensen huang nationality",
     "what is jensen huang's background",
@@ -11180,7 +11222,7 @@
    ],
    "jensen huang resign": [
     "jensen huang resigns",
-    "jensen huang resignation letter",
+    "jensen huang resigns as ceo",
     "jensen huang retire",
     "jensen huang quit devops now",
     "jensen huang salary",
@@ -11221,11 +11263,15 @@
    [
     "2026-11-20",
     true
+   ],
+   [
+    "2026-11-21",
+    true
    ]
   ]
  },
  "noreaster-first-snow-november-2026": {
-  "time": "2026-11-20T17:48:43+00:00",
+  "time": "2026-11-21T18:04:01+00:00",
   "query": "nor'easter first snow",
   "in_suggest": false,
   "suggest": {
@@ -11287,11 +11333,15 @@
    [
     "2026-11-20",
     false
+   ],
+   [
+    "2026-11-21",
+    false
    ]
   ]
  },
  "who-won-mvp-2026": {
-  "time": "2026-11-20T17:48:52+00:00",
+  "time": "2026-11-21T18:04:10+00:00",
   "query": "who won mvp 2026",
   "in_suggest": true,
   "suggest": {
@@ -11364,6 +11414,10 @@
    ],
    [
     "2026-11-20",
+    true
+   ],
+   [
+    "2026-11-21",
     true
    ]
   ]
@@ -11758,7 +11812,7 @@
   ]
  },
  "did-avril-lavigne-have-a-baby": {
-  "time": "2026-11-20T17:48:35+00:00",
+  "time": "2026-11-21T18:03:53+00:00",
   "query": "did avril lavigne have a baby",
   "in_suggest": true,
   "suggest": {
@@ -11770,9 +11824,9 @@
     "avril lavigne now",
     "avril lavigne complicated",
     "avril lavigne age",
+    "avril lavigne kids",
     "avril lavigne 2026",
-    "avril lavigne baby daddy",
-    "avril lavigne sk8er boi"
+    "avril lavigne baby daddy"
    ],
    "what is avril lavigne": [
     "what is avril lavigne doing now",
@@ -11788,6 +11842,7 @@
    ],
    "did avril lavigne have a baby": [
     "did avril lavigne have a baby",
+    "did avril lavigne have a baby naturally",
     "did avril lavigne have a child",
     "did avril lavigne just have a baby",
     "did avril lavigne have kids",
@@ -11795,8 +11850,7 @@
     "avril lavigne have a baby",
     "does avril lavigne have kids",
     "does avril lavigne have kids 2025",
-    "does avril lavigne have kids reddit",
-    "what disease does avril lavigne have"
+    "does avril lavigne have kids reddit"
    ],
    "avril lavigne have baby": [
     "avril lavigne have baby",
@@ -11839,11 +11893,15 @@
    [
     "2026-11-20",
     true
+   ],
+   [
+    "2026-11-21",
+    true
    ]
   ]
  },
  "new-orleans-cruise-ship-collision": {
-  "time": "2026-11-20T17:48:42+00:00",
+  "time": "2026-11-21T18:04:00+00:00",
   "query": "new orleans cruise ship collision",
   "in_suggest": true,
   "suggest": {
@@ -11883,11 +11941,15 @@
    [
     "2026-11-20",
     true
+   ],
+   [
+    "2026-11-21",
+    true
    ]
   ]
  },
  "why-were-all-flights-grounded": {
-  "time": "2026-11-20T17:48:54+00:00",
+  "time": "2026-11-21T18:04:13+00:00",
   "query": "why were all flights grounded",
   "in_suggest": true,
   "suggest": {
@@ -11962,6 +12024,10 @@
    ],
    [
     "2026-11-20",
+    true
+   ],
+   [
+    "2026-11-21",
     true
    ]
   ]
@@ -12264,7 +12330,7 @@
   ]
  },
  "miami-airport-plane-collision-copa-ups": {
-  "time": "2026-11-20T17:48:41+00:00",
+  "time": "2026-11-21T18:03:59+00:00",
   "query": "miami airport plane collision",
   "in_suggest": false,
   "suggest": {
@@ -12318,11 +12384,15 @@
    [
     "2026-11-20",
     false
+   ],
+   [
+    "2026-11-21",
+    false
    ]
   ]
  },
  "spacex-starship-caught-by-tower": {
-  "time": "2026-11-20T17:48:47+00:00",
+  "time": "2026-11-21T18:04:05+00:00",
   "query": "spacex starship catch",
   "in_suggest": true,
   "suggest": {
@@ -12384,16 +12454,20 @@
    [
     "2026-11-20",
     true
+   ],
+   [
+    "2026-11-21",
+    true
    ]
   ]
  },
  "why-is-bitcoin-down-november-2026": {
-  "time": "2026-11-20T17:48:53+00:00",
+  "time": "2026-11-21T18:04:12+00:00",
   "query": "why is bitcoin down",
   "in_suggest": true,
   "suggest": {
    "bitcoin price drop": [
-    "bitcoin price drop anthropic ipo",
+    "bitcoin price drops below 57000",
     "bitcoin price drop",
     "bitcoin price drop today",
     "bitcoin price drops after jobs report",
@@ -12416,14 +12490,14 @@
    "why is bitcoin down": [
     "why is bitcoin down",
     "why is bitcoin down so much",
+    "why is bitcoin down today",
     "why is bitcoin down right now",
     "why is bitcoin down this morning",
     "why is bitcoin down so much today",
     "why is bitcoin down this year",
     "why is bitcoin down now",
     "why is bitcoin down so much right now",
-    "why is bitcoin down today reddit",
-    "why is bitcoin down again today"
+    "why is bitcoin down today reddit"
    ],
    "bitcoin down": [
     "bitcoin down",
@@ -12431,11 +12505,11 @@
     "bitcoin download",
     "bitcoin down why",
     "bitcoin down today why",
+    "bitcoin downfall",
     "bitcoin down reddit",
     "bitcoin download app",
     "bitcoin download apk",
-    "bitcoin down again",
-    "bitcoin down or up"
+    "bitcoin down again"
    ]
   },
   "history": [
@@ -12461,6 +12535,10 @@
    ],
    [
     "2026-11-20",
+    true
+   ],
+   [
+    "2026-11-21",
     true
    ]
   ]
