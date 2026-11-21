@@ -1013,7 +1013,7 @@
   },
   {
    "url": "/x/mlb-manager-of-the-year-voting",
-   "at": "2026-11-20T17:46:48+00:00",
+   "at": "2026-11-21T00:01:49+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1025,7 +1025,7 @@
   },
   {
    "url": "/x/mlb-posting-system",
-   "at": "2026-11-20T17:46:54+00:00",
+   "at": "2026-11-21T00:01:56+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1037,7 +1037,7 @@
   },
   {
    "url": "/x/mlb-rookie-eligibility",
-   "at": "2026-11-20T17:47:00+00:00",
+   "at": "2026-11-21T00:02:02+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1049,7 +1049,7 @@
   },
   {
    "url": "/x/most-mvp-awards-mlb",
-   "at": "2026-11-20T17:47:06+00:00",
+   "at": "2026-11-21T00:02:08+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1061,7 +1061,7 @@
   },
   {
    "url": "/x/murder-in-galicia-true-story",
-   "at": "2026-11-20T17:47:12+00:00",
+   "at": "2026-11-21T00:02:15+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1073,7 +1073,7 @@
   },
   {
    "url": "/x/national-book-awards-2026",
-   "at": "2026-11-20T17:47:18+00:00",
+   "at": "2026-11-21T00:02:21+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1085,7 +1085,7 @@
   },
   {
    "url": "/x/national-parks-free-veterans-day",
-   "at": "2026-11-20T17:47:25+00:00",
+   "at": "2026-11-21T00:02:28+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1097,7 +1097,7 @@
   },
   {
    "url": "/x/nba-draft",
-   "at": "2026-11-20T17:47:31+00:00",
+   "at": "2026-11-21T00:02:34+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1109,12 +1109,19 @@
   },
   {
    "url": "/x/new-orleans-cruise-ship-collision",
-   "at": "2026-11-20T17:48:01+00:00",
-   "error": "The read operation timed out"
+   "at": "2026-11-21T00:02:40+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "pageFetchState": "SUCCESSFUL",
+   "lastCrawlTime": "2026-11-14T17:46:37Z",
+   "googleCanonical": "https://trendrundown.com/x/new-orleans-cruise-ship-collision",
+   "userCanonical": "https://trendrundown.com/x/new-orleans-cruise-ship-collision"
   },
   {
    "url": "/x/new-snap-stocking-rules",
-   "at": "2026-11-20T17:48:07+00:00",
+   "at": "2026-11-21T00:02:47+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1126,7 +1133,7 @@
   },
   {
    "url": "/x/non-tender",
-   "at": "2026-11-20T17:48:13+00:00",
+   "at": "2026-11-21T00:02:53+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1138,7 +1145,7 @@
   },
   {
    "url": "/x/noreaster-first-snow-november-2026",
-   "at": "2026-11-20T17:48:19+00:00",
+   "at": "2026-11-21T00:02:59+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1150,7 +1157,7 @@
   },
   {
    "url": "/x/october-2026-cpi-no-annual-rate",
-   "at": "2026-11-20T17:48:26+00:00",
+   "at": "2026-11-21T00:03:06+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1162,7 +1169,7 @@
   },
   {
    "url": "/x/phishing-test",
-   "at": "2026-11-20T17:48:32+00:00",
+   "at": "2026-11-21T00:03:12+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2202,8 +2209,8 @@
  "summary": {
   "Submitted and indexed": 1,
   "URL is unknown to Google": 85,
-  "Crawled - currently not indexed": 60,
+  "Crawled - currently not indexed": 61,
   "Discovered - currently not indexed": 30,
-  "error": 8
+  "error": 7
  }
 }
