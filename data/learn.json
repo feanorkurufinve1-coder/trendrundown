@@ -1,6 +1,6 @@
 {
- "made": "2026-11-21T13:58:05+00:00",
- "pages": 431,
+ "made": "2026-11-21T14:02:45+00:00",
+ "pages": 437,
  "summary": {
   "kind": {
    "event": {
@@ -25,7 +25,7 @@
     "clicks_per_page": 0.06
    },
    "other": {
-    "pages": 35,
+    "pages": 36,
     "with_impr_%": 17,
     "top3_%": 3,
     "clicks": 2,
@@ -46,14 +46,14 @@
     "clicks_per_page": 0.0
    },
    "product": {
-    "pages": 41,
+    "pages": 42,
     "with_impr_%": 10,
     "top3_%": 0,
     "clicks": 0,
     "clicks_per_page": 0.0
    },
    "term": {
-    "pages": 173,
+    "pages": 177,
     "with_impr_%": 14,
     "top3_%": 2,
     "clicks": 35,
@@ -83,11 +83,11 @@
     "clicks_per_page": 0.0
    },
    "manual": {
-    "pages": 156,
+    "pages": 162,
     "with_impr_%": 12,
     "top3_%": 3,
     "clicks": 52,
-    "clicks_per_page": 0.33
+    "clicks_per_page": 0.32
    }
   },
   "q_word": {
@@ -127,11 +127,11 @@
     "clicks_per_page": 0.0
    },
    "is": {
-    "pages": 23,
-    "with_impr_%": 9,
+    "pages": 24,
+    "with_impr_%": 8,
     "top3_%": 4,
     "clicks": 2,
-    "clicks_per_page": 0.09
+    "clicks_per_page": 0.08
    },
    "none": {
     "pages": 40,
@@ -141,7 +141,7 @@
     "clicks_per_page": 0.12
    },
    "what": {
-    "pages": 235,
+    "pages": 237,
     "with_impr_%": 18,
     "top3_%": 2,
     "clicks": 40,
@@ -169,7 +169,7 @@
     "clicks_per_page": 0.09
    },
    "why": {
-    "pages": 20,
+    "pages": 23,
     "with_impr_%": 0,
     "top3_%": 0,
     "clicks": 0,
@@ -185,7 +185,7 @@
   },
   "title_matches_top_query": {
    "False": {
-    "pages": 392,
+    "pages": 398,
     "with_impr_%": 8,
     "top3_%": 1,
     "clicks": 31,
@@ -717,7 +717,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 19,
-   "age_days": 25.6,
+   "age_days": 25.7,
    "rival_exact": null,
    "impr": 19,
    "clicks": 0,
@@ -884,7 +884,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 40,
-   "age_days": 27.9,
+   "age_days": 28.0,
    "rival_exact": null,
    "impr": 10,
    "clicks": 0,
@@ -1920,7 +1920,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 25,
-   "age_days": 24.3,
+   "age_days": 24.4,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2955,7 +2955,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 52,
-   "age_days": 16.7,
+   "age_days": 16.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4500,7 +4500,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 76,
-   "age_days": 11.5,
+   "age_days": 11.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5499,6 +5499,21 @@
    "top_queries": []
   },
   {
+   "slug": "is-dig-based-on-a-book",
+   "title": "Is Dig based on a book? Yes, Kate Myers' novel 'Excavations'",
+   "kind": "product",
+   "source": "manual",
+   "q_word": "is",
+   "title_len": 60,
+   "age_days": 3.0,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
    "slug": "is-gta-6-coming-to-pc",
    "title": "Is GTA 6 coming to PC? Not at launch, and there is no date yet",
    "kind": "product",
@@ -6459,6 +6474,21 @@
    "top_queries": []
   },
   {
+   "slug": "what-is-black-october",
+   "title": "What is Black October? The 2026 wave of cyber flaws, explained",
+   "kind": "term",
+   "source": "manual",
+   "q_word": "what",
+   "title_len": 62,
+   "age_days": 3.0,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
    "slug": "what-is-broad-based-categorical-eligibility",
    "title": "What is broad-based categorical eligibility? The SNAP rule USDA wants to cut",
    "kind": "law",
@@ -6496,6 +6526,21 @@
    "q_word": "what",
    "title_len": 56,
    "age_days": 12.0,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
+   "slug": "what-is-si-instead-of-ai",
+   "title": "What is SI instead of AI? Trump's new name for AI, explained",
+   "kind": "term",
+   "source": "manual",
+   "q_word": "what",
+   "title_len": 60,
+   "age_days": 3.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6699,6 +6744,21 @@
    "top_queries": []
   },
   {
+   "slug": "why-are-people-saying-robert-pattinson-is-gen-z",
+   "title": "Why are people saying Robert Pattinson is Gen Z? The 007 joke",
+   "kind": "term",
+   "source": "manual",
+   "q_word": "why",
+   "title_len": 61,
+   "age_days": 3.0,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
    "slug": "why-are-people-trying-to-move-the-bean",
    "title": "Why are people trying to move the Bean? The 7-inch joke, explained",
    "kind": "term",
@@ -6819,6 +6879,21 @@
    "top_queries": []
   },
   {
+   "slug": "why-is-everyone-freaking-out-about-november-17",
+   "title": "Why is everyone freaking out about November 17? The blackout rumor",
+   "kind": "term",
+   "source": "manual",
+   "q_word": "why",
+   "title_len": 66,
+   "age_days": 3.0,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
    "slug": "why-is-my-check-engine-light-on",
    "title": "Why is my check engine light on? The most common causes and what to do",
    "kind": "term",
@@ -6826,6 +6901,21 @@
    "q_word": "why",
    "title_len": 70,
    "age_days": 10.0,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
+   "slug": "why-is-my-phone-charging-slow",
+   "title": "Why is my phone charging slow? The 8 most likely causes",
+   "kind": "other",
+   "source": "manual",
+   "q_word": "why",
+   "title_len": 55,
+   "age_days": 3.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
