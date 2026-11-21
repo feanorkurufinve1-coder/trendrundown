@@ -1,0 +1,53 @@
+{
+ "news": true,
+ "kind": "event",
+ "subject": "Riemann hypothesis proof claim",
+ "query": "riemann hypothesis proof",
+ "title": "Riemann hypothesis proof: Has it been solved? A big claim, not yet verified",
+ "answer": "On Friday, Nov. 20, 2026, Levent Alpöge, a mathematician at the AI company Anthropic, said he and the company's Claude model found a proof of the Riemann hypothesis, the 167-year-old problem about prime numbers. He released the proof as machine-checkable Lean code. Independent experts have not yet confirmed it.",
+ "in_the_news": "The Riemann hypothesis is the most famous open problem in mathematics and one of seven Clay Millennium Prize Problems worth $1 million each. If the claim holds, it would be the first time AI played a central role in solving a problem of that rank.",
+ "body": "Alpöge posted a short personal statement and a preprint titled \"A Claimed Proof of the Riemann Hypothesis.\" He says the argument also covers the Generalized Riemann Hypothesis, a broader version that applies to a whole family of similar functions. Unusually, he did not publish a conventional paper. Instead he released the proof as code for Lean, a formal proof system, split into 14 compressed archive parts, and wrote that he decided \"to only present Lean.\" He described his own role as steering the main idea, while Claude supplied expertise in areas he knew less well, including automorphic forms. He also cautioned that the code may contain \"possibly strange or suboptimal choices.\"\n\nThe key terms, in plain words: Prime numbers (2, 3, 5, 7, 11 and so on) look scattered at random, but Bernhard Riemann showed in 1859 that their pattern is tied to a single function, the zeta function. His hypothesis says that all of its important zeros, the so-called nontrivial zeros, sit on one straight line in the complex plane, where the real part equals 1/2. Thousands of published results start with \"assume the Riemann hypothesis,\" so a proof would turn them into settled facts. Lean is software that checks every logical step of a proof mechanically, the way a compiler checks code. A Lean proof that compiles is very strong evidence, but experts still have to confirm two things: that the statement Lean proved is exactly the Riemann hypothesis, and that no unproven assumptions slipped in.\n\nEarly reactions are cautiously excited. Oxford's James Maynard, a 2022 Fields Medal winner, told IBM's Think news site that if the work \"fully checks out, it is clearly a historic milestone in mathematics,\" and said he suspects it will turn out to be correct, though checking the Lean verification \"will take some time.\" Youness Lamzouri of the University of Lorraine said he was \"in awe\" but that fully understanding the argument could take months or even years. This summer, Anthropic reported a smaller result on the same problem: that more than 67% of the zeta function's zeros lie on the critical line, which the company stressed was not a proof.\n\nWhat comes next is verification and explanation. Alpöge has said he plans to understand and simplify the argument and write it up properly. For the $1 million Clay prize, a solution must be published in a qualifying outlet and win general acceptance among mathematicians, with a waiting period of at least two years after publication.",
+ "faq": [
+  {
+   "q": "Has the Riemann hypothesis been proven?",
+   "a": "Not officially. A proof has been claimed and released as Lean code, but as of Nov. 21, 2026, independent mathematicians had not finished checking it."
+  },
+  {
+   "q": "Who is Levent Alpöge?",
+   "a": "He is a number theorist who works at Anthropic as a mathematician. He announced the claimed proof on Nov. 20, 2026, crediting the company's Claude AI model as a collaborator."
+  },
+  {
+   "q": "Will Alpöge win the $1 million Millennium Prize?",
+   "a": "Not soon. The Clay Mathematics Institute requires publication and broad acceptance by the math community, with at least two years passing after publication before a prize can be considered."
+  },
+  {
+   "q": "Why does the Riemann hypothesis matter?",
+   "a": "It describes how evenly prime numbers are spread out. Many results in number theory, and some estimates used in computer science and cryptography research, depend on it being true."
+  }
+ ],
+ "links": [
+  [
+   "IBM Think",
+   "Anthropic mathematician claims AI helped solve a 167-year-old math mystery",
+   "https://www.ibm.com/think/news/anthropic-claude-riemann-hypothesis-math-proof"
+  ],
+  [
+   "alphaXiv",
+   "A Claimed Proof of the Riemann Hypothesis",
+   "https://www.alphaxiv.org/abs/2611.claimed-riemann-hypothesis-proof"
+  ],
+  [
+   "Scientific American",
+   "Anthropic mathematician claims to prove Riemann hypothesis, most famous problem in all of math",
+   "https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/"
+  ],
+  [
+   "Clay Mathematics Institute",
+   "The Riemann Hypothesis",
+   "https://www.claymath.org/millennium/riemann-hypothesis/"
+  ]
+ ],
+ "image_wiki": "Riemann hypothesis",
+ "made": "2026-11-21T16:45:00+00:00",
+ "first": "2026-11-21T16:45:00+00:00"
+}

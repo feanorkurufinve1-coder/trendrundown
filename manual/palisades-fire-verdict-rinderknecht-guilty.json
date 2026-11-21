@@ -1,0 +1,48 @@
+{
+ "news": true,
+ "kind": "event",
+ "subject": "Palisades Fire arson verdict",
+ "query": "palisades fire verdict",
+ "title": "Palisades Fire verdict: Jonathan Rinderknecht found guilty at retrial",
+ "answer": "On Friday, Nov. 20, 2026, a federal jury in Los Angeles convicted Jonathan Rinderknecht on both counts in the retrial over the January 2025 Palisades Fire, which killed 12 people. Prosecutors argued he set a small New Year's fire that later rekindled into the blaze. Sentencing is set for March 17, 2027.",
+ "in_the_news": "The verdict came five months after the first trial ended in a hung jury that leaned 10-2 toward acquittal. It is the first criminal conviction tied to one of the most destructive wildfires in California history.",
+ "body": "Rinderknecht was convicted of destruction of property by means of fire and of arson affecting property used in interstate commerce. The first count was narrowed to the Lachman Fire, a small fire near a Pacific Palisades trail in the first minutes of Jan. 1, 2025; the second covers the Palisades Fire itself. According to the AP, each count carries a mandatory minimum of five years and a maximum of 20 years in federal prison. The jury reached its verdict on the third day of deliberations.\n\nProsecutors said the Lachman Fire was put out but kept smoldering underground, then flared up on Jan. 7, 2025, when strong Santa Ana winds hit. They pointed to phone location data, fire-detection camera images, his presence near the flames and statements he made to investigators. The defense argued the case was circumstantial: no one saw the fire start, lighter tests did not reproduce it, and New Year's Eve fireworks were an alternative cause. Defense attorney Steve Haney said the team was disappointed but respected the jury and would \"review all the options at the right time.\" Bill Essayli, the top federal prosecutor in Los Angeles, praised his team's work.\n\nThe case, date by date: Jan. 1, 2025 — the Lachman Fire starts near a hiking trail and is reported contained. Jan. 7, 2025 — the Palisades Fire erupts in the same area during a Santa Ana windstorm. Jan. 31, 2025 — the fire is fully contained after burning more than 23,000 acres and destroying more than 6,800 structures, according to Cal Fire figures cited by CBS Los Angeles. October 2025 — federal authorities arrest Rinderknecht. June 2026 — the first trial ends in a mistrial after jurors deadlock 10-2 for acquittal. Nov. 4, 2026 — the retrial begins. Nov. 20, 2026 — the jury returns guilty verdicts on both counts.\n\nWhat happens next: the judge will set the sentence at the March 17, 2027, hearing, and the defense can appeal after that. The conviction does not settle separate questions about the official response to the fire, including water supply and the handling of the earlier Lachman Fire, which have been examined in official reviews.",
+ "faq": [
+  {
+   "q": "What was Jonathan Rinderknecht convicted of?",
+   "a": "Two federal counts: destruction of property by means of fire, tied to the Jan. 1, 2025, Lachman Fire, and arson covering the Palisades Fire."
+  },
+  {
+   "q": "How much prison time does he face?",
+   "a": "According to the AP, each count carries at least five and up to 20 years in federal prison. The judge will decide at sentencing on March 17, 2027."
+  },
+  {
+   "q": "Why was there a second trial?",
+   "a": "The first trial ended in June 2026 with a mistrial after the jury deadlocked, with 10 jurors favoring acquittal and two favoring conviction. Prosecutors retried the case, and the retrial began Nov. 4, 2026."
+  },
+  {
+   "q": "How many people died in the Palisades Fire?",
+   "a": "Twelve people were killed, and more than 6,800 structures were destroyed."
+  }
+ ],
+ "links": [
+  [
+   "AP via KPBS",
+   "Federal jury convicts man of starting the deadly 2025 Palisades Fire in Los Angeles",
+   "https://www.kpbs.org/news/national/2026/11/21/federal-jury-convicts-man-of-starting-the-deadly-2025-palisades-fire-in-los-angeles"
+  ],
+  [
+   "NBC Los Angeles",
+   "Man found guilty of starting Palisades Fire in federal prosecutors' second attempt",
+   "https://www.nbclosangeles.com/news/local/palisades-arson-trial-jonathan-rinderknecht/3972494/"
+  ],
+  [
+   "CBS Los Angeles",
+   "Jonathan Rinderknecht found guilty in Palisades Fire case",
+   "https://www.cbsnews.com/losangeles/news/jonathan-rinderknecht-found-guilty-in-palisades-fire-case/"
+  ]
+ ],
+ "image_wiki": "Palisades Fire",
+ "made": "2026-11-21T16:45:00+00:00",
+ "first": "2026-11-21T16:45:00+00:00"
+}
