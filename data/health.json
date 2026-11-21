@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-21T22:47:20+00:00",
+ "checked": "2026-11-21T23:17:16+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -365,7 +365,7 @@
   },
   {
    "url": "/x/did-avril-lavigne-have-a-baby",
-   "at": "2026-11-21T17:02:11+00:00",
+   "at": "2026-11-21T23:17:10+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -377,9 +377,9 @@
   },
   {
    "url": "/x/did-scott-colom-win",
-   "at": "2026-11-21T17:02:17+00:00",
+   "at": "2026-11-21T23:17:16+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1853,7 +1853,7 @@
   },
   {
    "url": "/x/what-is-si-instead-of-ai",
-   "at": "2026-11-21T17:01:52+00:00",
+   "at": "2026-11-21T23:16:51+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2093,9 +2093,9 @@
   },
   {
    "url": "/x/why-are-people-saying-robert-pattinson-is-gen-z",
-   "at": "2026-11-21T17:01:58+00:00",
+   "at": "2026-11-21T23:16:58+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2237,9 +2237,9 @@
   },
   {
    "url": "/x/why-is-my-phone-charging-slow",
-   "at": "2026-11-21T17:02:05+00:00",
+   "at": "2026-11-21T23:17:04+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2353,8 +2353,8 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "Discovered - currently not indexed": 27,
-  "URL is unknown to Google": 99,
+  "Discovered - currently not indexed": 30,
+  "URL is unknown to Google": 96,
   "Crawled - currently not indexed": 65
  }
 }
