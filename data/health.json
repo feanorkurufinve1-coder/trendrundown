@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-21T14:02:45+00:00",
+ "checked": "2026-11-21T14:47:27+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -761,9 +761,9 @@
   },
   {
    "url": "/x/is-blade-runner-2099-a-sequel",
-   "at": "2026-11-21T08:46:47+00:00",
+   "at": "2026-11-21T14:47:27+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -869,7 +869,7 @@
   },
   {
    "url": "/x/is-trinity-netflix-based-on-a-true-story",
-   "at": "2026-11-21T08:31:43+00:00",
+   "at": "2026-11-21T14:46:55+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1613,7 +1613,7 @@
   },
   {
    "url": "/x/what-does-text-message-not-encrypted-mean",
-   "at": "2026-11-21T08:31:49+00:00",
+   "at": "2026-11-21T14:47:02+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2033,7 +2033,7 @@
   },
   {
    "url": "/x/why-are-people-saying-remember-november-2026-is-coming",
-   "at": "2026-11-21T08:31:56+00:00",
+   "at": "2026-11-21T14:47:08+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2081,7 +2081,7 @@
   },
   {
    "url": "/x/why-are-people-wearing-pajamas-to-sunrise-on-the-reaping",
-   "at": "2026-11-21T08:32:02+00:00",
+   "at": "2026-11-21T14:47:15+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2285,7 +2285,7 @@
   },
   {
    "url": "/x/why-wont-my-washing-machine-spin",
-   "at": "2026-11-21T08:32:08+00:00",
+   "at": "2026-11-21T14:47:21+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2317,8 +2317,8 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 99,
+  "URL is unknown to Google": 98,
   "Crawled - currently not indexed": 65,
-  "Discovered - currently not indexed": 24
+  "Discovered - currently not indexed": 25
  }
 }
