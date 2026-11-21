@@ -353,7 +353,7 @@
   },
   {
    "url": "/x/did-avril-lavigne-have-a-baby",
-   "at": "2026-11-21T04:32:24+00:00",
+   "at": "2026-11-21T10:47:05+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -365,7 +365,7 @@
   },
   {
    "url": "/x/did-scott-colom-win",
-   "at": "2026-11-21T04:32:30+00:00",
+   "at": "2026-11-21T10:47:11+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1793,7 +1793,7 @@
   },
   {
    "url": "/x/what-is-si-instead-of-ai",
-   "at": "2026-11-21T04:32:05+00:00",
+   "at": "2026-11-21T10:46:46+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2009,9 +2009,9 @@
   },
   {
    "url": "/x/why-are-people-saying-robert-pattinson-is-gen-z",
-   "at": "2026-11-21T04:32:11+00:00",
+   "at": "2026-11-21T10:46:52+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2153,9 +2153,9 @@
   },
   {
    "url": "/x/why-is-my-phone-charging-slow",
-   "at": "2026-11-21T04:32:18+00:00",
+   "at": "2026-11-21T10:46:59+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2257,8 +2257,8 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 87,
-  "Discovered - currently not indexed": 31,
+  "URL is unknown to Google": 85,
+  "Discovered - currently not indexed": 33,
   "Crawled - currently not indexed": 65
  }
 }
