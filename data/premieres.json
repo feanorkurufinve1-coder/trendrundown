@@ -1,37 +1,7 @@
 {
- "made": "2026-11-20T19:32:18+00:00",
+ "made": "2026-11-21T07:34:15+00:00",
  "about": "Премьеры сериалов и новых сезонов в США на 14 дней вперёд (TVmaze). new_series = совсем новый сериал. Сырьё для прогнозов «is X a true story», «X cast», «X season N release time».",
  "premieres": [
-  {
-   "date": "2026-11-20",
-   "show": "Melania, The Series",
-   "season": 1,
-   "new_series": true,
-   "type": "Documentary",
-   "genres": [],
-   "network": "Prime Video",
-   "premiered": "2026-11-20",
-   "summary": "The series, titled Melania, The Series, offers new insight into the behind-the-scenes life of the first lady.The Series reveals never-before-told stories, offering unprecedented insight into Melania Trump's life, including the extraordinary days immediately following the 47th Presidential Inauguration,",
-   "url": "https://www.tvmaze.com/shows/95452/melania-the-series",
-   "official": null
-  },
-  {
-   "date": "2026-11-20",
-   "show": "Yellowjackets",
-   "season": 4,
-   "new_series": false,
-   "type": "Scripted",
-   "genres": [
-    "Drama",
-    "Horror",
-    "Supernatural"
-   ],
-   "network": "Paramount+",
-   "premiered": "2021-11-14",
-   "summary": "Yellowjackets follows a girls' high school soccer team. In 1975, the Dearborn High Yellowjackets became the first team in state history to qualify for the Girls' U.S. Soccer Championship Series in Manchester, NH. They never got the chance to compete. Equal parts survival epic, horror story and pitch black coming of age, Yellowjackets tells the story of the (un)lucky survivors of a plane crash deep",
-   "url": "https://www.tvmaze.com/shows/36672/yellowjackets",
-   "official": "https://sho.com/yellowjackets"
-  },
   {
    "date": "2026-11-21",
    "show": "Editorially Speaking",
@@ -629,6 +599,19 @@
    "summary": "A series of animations based on the successful children's book series. ",
    "url": "https://www.tvmaze.com/shows/71089/diary-of-a-wimpy-kid",
    "official": null
+  },
+  {
+   "date": "2026-12-05",
+   "show": "Oceanfront Property Hunt",
+   "season": 3,
+   "new_series": false,
+   "type": "Reality",
+   "genres": [],
+   "network": "A&E",
+   "premiered": "2025-01-18",
+   "summary": "Prospective buyers look to make their dream of living by the ocean a reality as they hunt for oceanfront properties along the Atlantic coastline.Who doesn't dream of living by the ocean? Oceanfront Property Hunt follows prospective buyers looking to purchase their first oceanfront home. Our buyers are families from all walks of life. In some episodes, we'll meet people looking for a unique fixer-u",
+   "url": "https://www.tvmaze.com/shows/81679/oceanfront-property-hunt",
+   "official": "https://www.aetv.com/shows/oceanfront-property-hunt"
   }
  ]
 }
