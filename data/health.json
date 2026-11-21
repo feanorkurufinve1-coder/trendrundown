@@ -341,7 +341,7 @@
   },
   {
    "url": "/x/designated-for-assignment",
-   "at": "2026-11-20T22:02:16+00:00",
+   "at": "2026-11-21T04:17:04+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -773,9 +773,9 @@
   },
   {
    "url": "/x/is-dig-based-on-a-book",
-   "at": "2026-11-20T22:16:51+00:00",
+   "at": "2026-11-21T04:17:10+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1745,7 +1745,7 @@
   },
   {
    "url": "/x/what-is-black-october",
-   "at": "2026-11-20T22:16:58+00:00",
+   "at": "2026-11-21T04:17:17+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2257,8 +2257,8 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "Discovered - currently not indexed": 31,
+  "Discovered - currently not indexed": 32,
   "Crawled - currently not indexed": 65,
-  "URL is unknown to Google": 87
+  "URL is unknown to Google": 86
  }
 }
