@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-21T02:17:21+00:00",
+ "checked": "2026-11-21T02:31:48+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -761,7 +761,7 @@
   },
   {
    "url": "/x/is-blade-runner-2099-a-sequel",
-   "at": "2026-11-20T20:21:45+00:00",
+   "at": "2026-11-21T02:31:48+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
