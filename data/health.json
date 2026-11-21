@@ -41,7 +41,7 @@
  "urls": [
   {
    "url": "/",
-   "at": "2026-11-20T21:02:10+00:00",
+   "at": "2026-11-21T03:17:26+00:00",
    "verdict": "PASS",
    "coverageState": "Submitted and indexed",
    "robotsTxtState": "ALLOWED",
@@ -101,7 +101,7 @@
   },
   {
    "url": "/x/mutual-option",
-   "at": "2026-11-20T21:01:50+00:00",
+   "at": "2026-11-21T03:17:07+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -113,7 +113,7 @@
   },
   {
    "url": "/x/dane-cook-brother",
-   "at": "2026-11-20T21:01:57+00:00",
+   "at": "2026-11-21T03:17:13+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -125,7 +125,7 @@
   },
   {
    "url": "/x/cyber-monday",
-   "at": "2026-11-20T21:02:03+00:00",
+   "at": "2026-11-21T03:17:19+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -137,7 +137,7 @@
   },
   {
    "url": "/x/40-man-roster",
-   "at": "2026-11-20T21:02:16+00:00",
+   "at": "2026-11-21T03:17:32+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -149,7 +149,7 @@
   },
   {
    "url": "/x/alaska-ranked-choice-voting",
-   "at": "2026-11-20T21:02:22+00:00",
+   "at": "2026-11-21T03:17:38+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -161,7 +161,7 @@
   },
   {
    "url": "/x/alicias-law-the-good-wife",
-   "at": "2026-11-20T21:16:59+00:00",
+   "at": "2026-11-21T03:17:45+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
