@@ -9183,7 +9183,7 @@
   ]
  },
  "exhibition-game": {
-  "time": "2026-11-20T17:03:40+00:00",
+  "time": "2026-11-21T17:18:25+00:00",
   "query": "what is an exhibition game in basketball",
   "in_suggest": true,
   "suggest": {
@@ -9269,11 +9269,15 @@
    [
     "2026-11-20",
     true
+   ],
+   [
+    "2026-11-21",
+    true
    ]
   ]
  },
  "game-time-decision": {
-  "time": "2026-11-20T17:03:43+00:00",
+  "time": "2026-11-21T17:18:28+00:00",
   "query": "game time decision meaning",
   "in_suggest": true,
   "suggest": {
@@ -9362,11 +9366,15 @@
    [
     "2026-11-20",
     true
+   ],
+   [
+    "2026-11-21",
+    true
    ]
   ]
  },
  "mutual-option": {
-  "time": "2026-11-20T17:03:45+00:00",
+  "time": "2026-11-21T17:18:31+00:00",
   "query": "what is a mutual option in baseball",
   "in_suggest": true,
   "suggest": {
@@ -9450,11 +9458,15 @@
    [
     "2026-11-20",
     true
+   ],
+   [
+    "2026-11-21",
+    true
    ]
   ]
  },
  "nba-draft": {
-  "time": "2026-11-20T17:03:47+00:00",
+  "time": "2026-11-21T17:18:32+00:00",
   "query": "what is the nba draft",
   "in_suggest": true,
   "suggest": {
@@ -9463,12 +9475,12 @@
     "nba draft",
     "nba draft 2027",
     "nba draft 2027 mock",
-    "nba draft lottery",
     "nba draft 2025",
-    "nba draft 2015",
-    "nba draft 2014",
     "nba draft results",
-    "nba draft 2024"
+    "nba draft projections",
+    "nba draft 2024",
+    "nba draft order",
+    "nba draft mock"
    ],
    "what is nba draft": [
     "what is nba draft",
@@ -9531,11 +9543,15 @@
    [
     "2026-11-20",
     true
+   ],
+   [
+    "2026-11-21",
+    true
    ]
   ]
  },
  "tri-series-cricket": {
-  "time": "2026-11-20T17:03:50+00:00",
+  "time": "2026-11-21T17:18:35+00:00",
   "query": "what is a tri series in cricket",
   "in_suggest": true,
   "suggest": {
@@ -9622,6 +9638,10 @@
    ],
    [
     "2026-11-20",
+    true
+   ],
+   [
+    "2026-11-21",
     true
    ]
   ]
@@ -13020,7 +13040,7 @@
   ]
  },
  "bay-area-waterspouts-tornado-warning": {
-  "time": "2026-11-20T17:03:35+00:00",
+  "time": "2026-11-21T17:18:20+00:00",
   "query": "bay area waterspouts tornado warning",
   "in_suggest": false,
   "suggest": {
@@ -13044,11 +13064,15 @@
    [
     "2026-11-20",
     false
+   ],
+   [
+    "2026-11-21",
+    false
    ]
   ]
  },
  "california-sues-openai": {
-  "time": "2026-11-20T17:03:37+00:00",
+  "time": "2026-11-21T17:18:22+00:00",
   "query": "california sues openai",
   "in_suggest": false,
   "suggest": {
@@ -13072,11 +13096,15 @@
    [
     "2026-11-20",
     false
+   ],
+   [
+    "2026-11-21",
+    false
    ]
   ]
  },
  "robert-pattinson-james-bond": {
-  "time": "2026-11-20T17:03:49+00:00",
+  "time": "2026-11-21T17:18:34+00:00",
   "query": "robert pattinson james bond",
   "in_suggest": true,
   "suggest": {
@@ -13096,15 +13124,15 @@
    ],
    "robert pattinson james bond": [
     "robert pattinson james bond",
-    "robert pattinson james bond casting",
-    "robert pattinson james bond reactions",
     "robert pattinson james bond meme",
+    "robert pattinson james bond casting",
     "robert pattinson james bond contract",
     "robert pattinson james bond audition",
     "robert pattinson james bond movie",
-    "robert pattinson james bond gun",
+    "robert pattinson james bond trailer",
     "robert pattinson james bond girl",
-    "robert pattinson james bond trailer"
+    "robert pattinson james bond body",
+    "robert pattinson james bond announcement"
    ]
   },
   "history": [
@@ -13122,6 +13150,10 @@
    ],
    [
     "2026-11-20",
+    true
+   ],
+   [
+    "2026-11-21",
     true
    ]
   ]
@@ -13405,7 +13437,7 @@
   ]
  },
  "apple-outage-november-17-2026": {
-  "time": "2026-11-20T17:03:34+00:00",
+  "time": "2026-11-21T17:18:19+00:00",
   "query": "apple outage",
   "in_suggest": true,
   "suggest": {
@@ -13425,14 +13457,14 @@
    "apple outage": [
     "apple outage",
     "apple outage today",
-    "apple outage cause",
-    "apple outage this week",
-    "apple outage news",
-    "apple outage reddit",
-    "apple outage status",
+    "apple outage yesterday",
     "apple outage map",
     "apple outage page",
-    "apple outage right now"
+    "apple outage right now",
+    "apple outage report",
+    "apple outage tracker",
+    "apple outage news",
+    "apple outage tv"
    ]
   },
   "history": [
@@ -13447,11 +13479,15 @@
    [
     "2026-11-20",
     true
+   ],
+   [
+    "2026-11-21",
+    true
    ]
   ]
  },
  "florida-flooding-november-18-2026": {
-  "time": "2026-11-20T17:03:41+00:00",
+  "time": "2026-11-21T17:18:26+00:00",
   "query": "florida flooding",
   "in_suggest": true,
   "suggest": {
@@ -13476,12 +13512,12 @@
     "florida flooding",
     "florida flooding today",
     "florida flooding map",
+    "florida flooding right now",
     "florida flooding orlando",
-    "florida flooding this week",
-    "florida flooding areas",
-    "florida flooding jacksonville",
-    "florida flooding today map",
     "florida flooding news",
+    "florida flooding areas",
+    "florida flooding fort lauderdale",
+    "florida flooding jacksonville",
     "florida flooding miami"
    ]
   },
@@ -13497,11 +13533,15 @@
    [
     "2026-11-20",
     true
+   ],
+   [
+    "2026-11-21",
+    true
    ]
   ]
  },
  "hakeem-jeffries-speaker-nomination": {
-  "time": "2026-11-20T17:03:44+00:00",
+  "time": "2026-11-21T17:18:29+00:00",
   "query": "is hakeem jeffries speaker",
   "in_suggest": true,
   "suggest": {
@@ -13527,6 +13567,10 @@
    ],
    [
     "2026-11-20",
+    true
+   ],
+   [
+    "2026-11-21",
     true
    ]
   ]
@@ -13824,21 +13868,21 @@
   ]
  },
  "cma-awards-2026-winners": {
-  "time": "2026-11-20T17:03:39+00:00",
+  "time": "2026-11-21T17:18:24+00:00",
   "query": "cma awards 2026 winners",
   "in_suggest": true,
   "suggest": {
    "2026 cma awards": [
     "2026 cma awards",
-    "2026 cma awards winners",
-    "2026 cma awards red carpet",
     "2026 cma awards full show",
+    "2026 cma awards winners",
     "2026 cma awards date",
-    "2026 cma awards performers",
-    "2026 cma awards streaming",
     "2026 cma awards results",
-    "2026 cma awards winners list",
-    "2026 cma awards taylor swift"
+    "2026 cma awards best dressed",
+    "2026 cma awards tickets",
+    "2026 cma awards nominees",
+    "2026 cma awards show",
+    "2026 cma awards host"
    ],
    "what is 2026 cma awards": [
     "what channel is 2026 cma awards on",
@@ -13869,11 +13913,15 @@
    [
     "2026-11-20",
     true
+   ],
+   [
+    "2026-11-21",
+    true
    ]
   ]
  },
  "trump-xi-putin-meeting-declaration": {
-  "time": "2026-11-20T17:03:51+00:00",
+  "time": "2026-11-21T17:18:36+00:00",
   "query": "trump xi putin meeting",
   "in_suggest": true,
   "suggest": {
@@ -13881,15 +13929,14 @@
    "what is trump-xi-putin trilateral meeting": [],
    "trump xi putin meeting": [
     "trump xi putin meeting",
-    "trump xi putin meeting news",
-    "trump xi putin meeting time",
-    "trump xi putin meeting statement",
-    "trump xi putin meeting summary",
-    "trump xi putin meeting video",
+    "trump xi putin meeting table",
     "trump putin china meeting",
     "trump xi jinping putin meeting",
     "chinese president before xi jinping",
-    "china president before xi jinping"
+    "china president before xi jinping",
+    "how long will xi jinping be president",
+    "china president before xi",
+    "chinese president before xi"
    ]
   },
   "history": [
@@ -13900,11 +13947,15 @@
    [
     "2026-11-20",
     true
+   ],
+   [
+    "2026-11-21",
+    true
    ]
   ]
  },
  "walmart-earnings-q3-2026": {
-  "time": "2026-11-20T17:03:52+00:00",
+  "time": "2026-11-21T17:18:37+00:00",
   "query": "walmart earnings",
   "in_suggest": true,
   "suggest": {
@@ -13915,16 +13966,16 @@
    ],
    "what is walmart third-quarter earnings": [],
    "walmart earnings": [
-    "walmart earnings",
     "walmart earnings report",
+    "walmart earnings",
+    "walmart earnings date",
     "walmart earnings call",
     "walmart earnings release",
-    "walmart earnings date",
-    "walmart earnings call transcript",
-    "walmart earnings summary",
-    "walmart earnings transcript",
     "walmart earnings prediction",
-    "walmart earnings 2025"
+    "walmart earnings 2025",
+    "walmart earnings q2",
+    "walmart earnings q2 2026",
+    "walmart earnings release date"
    ]
   },
   "history": [
@@ -13934,6 +13985,10 @@
    ],
    [
     "2026-11-20",
+    true
+   ],
+   [
+    "2026-11-21",
     true
    ]
   ]
@@ -14187,7 +14242,7 @@
   ]
  },
  "california-earthquake-pinnacles-november-2026": {
-  "time": "2026-11-20T17:03:36+00:00",
+  "time": "2026-11-21T17:18:21+00:00",
   "query": "earthquake california",
   "in_suggest": true,
   "suggest": {
@@ -14203,25 +14258,29 @@
    "earthquake california": [
     "earthquake california",
     "earthquake california today",
+    "earthquake california yesterday",
     "earthquake california just now",
-    "earthquake california today just now",
+    "earthquake california last night",
+    "earthquake california nov 20",
+    "earthquake california 11 20 26",
     "earthquake california now",
-    "earthquake california november 19 2026",
-    "earthquake california soledad",
-    "earthquake california nov 19",
-    "earthquake california 11 20",
-    "earthquake california reddit"
+    "earthquake california november 20 2026",
+    "earthquake california news"
    ]
   },
   "history": [
    [
     "2026-11-20",
     true
+   ],
+   [
+    "2026-11-21",
+    true
    ]
   ]
  },
  "rikers-island-closure-plan-2032": {
-  "time": "2026-11-20T17:03:48+00:00",
+  "time": "2026-11-21T17:18:33+00:00",
   "query": "rikers island closing",
   "in_suggest": true,
   "suggest": {
@@ -14238,20 +14297,24 @@
    ],
    "rikers island closing": [
     "rikers island closing",
-    "rikers island closing date",
-    "rikers island closing why",
-    "rikers island closing in 2026",
-    "rikers island closing down",
     "rikers island closing reddit",
-    "rikers island closing mamdani",
+    "rikers island closing why",
     "rikers island closing plan",
+    "rikers island closing down",
+    "rikers island closing date",
     "rikers island closing 2027",
-    "rikers island shut down"
+    "rikers island closing in 2026",
+    "rikers island closing mamdani",
+    "rikers island closure plan"
    ]
   },
   "history": [
    [
     "2026-11-20",
+    true
+   ],
+   [
+    "2026-11-21",
     true
    ]
   ]
