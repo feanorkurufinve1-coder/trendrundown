@@ -13213,7 +13213,7 @@
   ]
  },
  "is-blade-runner-2099-a-sequel": {
-  "time": "2026-11-20T13:53:42+00:00",
+  "time": "2026-11-21T13:58:06+00:00",
   "query": "is blade runner 2099 a sequel",
   "in_suggest": true,
   "suggest": {
@@ -13223,23 +13223,23 @@
     "blade runner 2099 cast",
     "blade runner 2099 review",
     "blade runner 2099 trailer",
-    "blade runner 2099 discord quest",
     "blade runner 2099 director",
-    "blade runner 2099 r=h www.reddit.com",
-    "blade runner 2099 premiere",
-    "blade runner 2099 reddit"
+    "blade runner 2099 discord quest",
+    "blade runner 2099 review embargo",
+    "blade runner 2099 hunter schafer",
+    "blade runner 2099 cora"
    ],
    "what is blade runner 2099": [
-    "what is blade runner 2099 about",
+    "what is blade runner 2099",
     "what is blade runner 2099 going to be about",
     "what is blade runner 2099 streaming on",
     "what is blade runner 2099 based on",
     "what genre is blade runner 2099",
     "what is the plot of blade runner 2099",
+    "what is the premise of blade runner 2099",
     "what happened to blade runner 2099",
     "is blade runner 2099 a sequel",
-    "is blade runner 2099 out",
-    "is blade runner 2099 a movie"
+    "is blade runner 2099 out"
    ],
    "is blade runner 2099 a sequel": [
     "is blade runner 2099 a sequel",
@@ -13273,21 +13273,25 @@
    [
     "2026-11-20",
     true
+   ],
+   [
+    "2026-11-21",
+    true
    ]
   ]
  },
  "what-is-the-talk-to-me-doja-trend": {
-  "time": "2026-11-20T13:53:46+00:00",
+  "time": "2026-11-21T13:58:13+00:00",
   "query": "what is the talk to me doja trend",
   "in_suggest": false,
   "suggest": {
    "talk to me doja": [
     "talk to me doja",
     "talk to me doja gif",
-    "talk to me doja meme",
+    "talk to me doja song",
     "talk to me doja anime",
+    "talk to me doja meaning",
     "talk to me doja cat",
-    "talk to me soja meme gif",
     "talk dirty to me lyrics doja cat"
    ],
    "what is talk to me doja": [],
@@ -13302,11 +13306,15 @@
    [
     "2026-11-20",
     false
+   ],
+   [
+    "2026-11-21",
+    false
    ]
   ]
  },
  "what-is-the-word-of-the-year-2026": {
-  "time": "2026-11-20T13:53:48+00:00",
+  "time": "2026-11-21T13:58:14+00:00",
   "query": "what is the word of the year 2026",
   "in_suggest": true,
   "suggest": {
@@ -13367,11 +13375,15 @@
    [
     "2026-11-20",
     true
+   ],
+   [
+    "2026-11-21",
+    true
    ]
   ]
  },
  "why-are-people-saying-gta-6-is-bad": {
-  "time": "2026-11-20T13:53:49+00:00",
+  "time": "2026-11-21T13:58:16+00:00",
   "query": "why are people saying gta 6 is bad",
   "in_suggest": true,
   "suggest": {
@@ -13416,11 +13428,15 @@
    [
     "2026-11-20",
     true
+   ],
+   [
+    "2026-11-21",
+    true
    ]
   ]
  },
  "why-wont-my-washing-machine-drain": {
-  "time": "2026-11-20T13:53:54+00:00",
+  "time": "2026-11-21T13:58:25+00:00",
   "query": "why won't my washing machine drain",
   "in_suggest": true,
   "suggest": {
@@ -13480,6 +13496,10 @@
    ],
    [
     "2026-11-20",
+    true
+   ],
+   [
+    "2026-11-21",
     true
    ]
   ]
@@ -13600,33 +13620,33 @@
   ]
  },
  "is-trinity-netflix-based-on-a-true-story": {
-  "time": "2026-11-20T13:53:43+00:00",
+  "time": "2026-11-21T13:58:09+00:00",
   "query": "is trinity on netflix based on a true story",
   "in_suggest": false,
   "suggest": {
    "trinity": [
     "trinity rodman",
-    "trinity meds",
+    "trinity health",
     "trinity",
-    "trinity health bonners ferry",
-    "trinity catholic school",
-    "trinity catholic school spokane",
-    "trinity reformed church",
-    "trinity church spokane valley",
+    "trinity health mychart",
     "trinity college",
+    "trinity meds",
+    "trinity university",
+    "trinity high school football",
+    "trinity high school",
     "trinity love island"
    ],
    "what is trinity": [
-    "what is trinity health",
     "what is trinity",
-    "what is trinity rodman's net worth",
+    "what is trinity health",
     "what is trinity in cooking",
+    "what is trinity rodman's net worth",
     "what is trinity in the bible",
+    "what is trinity college known for",
     "what is trinity in food",
     "what is trinity sunday",
     "what is trinity rodman salary",
-    "what is trinity college dublin known for",
-    "what is trinity college"
+    "what is trinity university known for"
    ],
    "is trinity on netflix based on a true story": [],
    "trinity netflix based true story": []
@@ -13635,11 +13655,15 @@
    [
     "2026-11-20",
     false
+   ],
+   [
+    "2026-11-21",
+    false
    ]
   ]
  },
  "what-does-text-message-not-encrypted-mean": {
-  "time": "2026-11-20T13:53:45+00:00",
+  "time": "2026-11-21T13:58:11+00:00",
   "query": "what does text message not encrypted mean",
   "in_suggest": true,
   "suggest": {
@@ -13696,16 +13720,19 @@
    [
     "2026-11-20",
     true
+   ],
+   [
+    "2026-11-21",
+    true
    ]
   ]
  },
  "why-are-people-saying-remember-november-2026-is-coming": {
-  "time": "2026-11-20T13:53:51+00:00",
+  "time": "2026-11-21T13:58:19+00:00",
   "query": "why are people saying remember november 2026 is coming",
   "in_suggest": true,
   "suggest": {
    "remember november 2026 is coming": [
-    "remember november 2026 is coming meaning",
     "remember november 2026 is coming meme",
     "remember november 2026 is coming polar bear",
     "remember november 2026 is coming origin",
@@ -13714,7 +13741,8 @@
     "remember november 2026 is coming song",
     "remember november 2026 is coming meme explained",
     "remember november 2026 is coming bear",
-    "remember november 2026 is coming tiktok"
+    "remember november 2026 is coming tiktok",
+    "remember november 2026 is coming explained"
    ],
    "what is remember november 2026 is coming": [
     "what is remember november 2026 is coming",
@@ -13743,11 +13771,15 @@
    [
     "2026-11-20",
     true
+   ],
+   [
+    "2026-11-21",
+    true
    ]
   ]
  },
  "why-are-people-wearing-pajamas-to-sunrise-on-the-reaping": {
-  "time": "2026-11-20T13:53:52+00:00",
+  "time": "2026-11-21T13:58:22+00:00",
   "query": "why are people wearing pajamas to sunrise on the reaping",
   "in_suggest": true,
   "suggest": {
@@ -13763,11 +13795,15 @@
    [
     "2026-11-20",
     true
+   ],
+   [
+    "2026-11-21",
+    true
    ]
   ]
  },
  "why-wont-my-washing-machine-spin": {
-  "time": "2026-11-20T13:53:55+00:00",
+  "time": "2026-11-21T13:58:26+00:00",
   "query": "why won't my washing machine spin",
   "in_suggest": true,
   "suggest": {
@@ -13823,6 +13859,10 @@
   "history": [
    [
     "2026-11-20",
+    true
+   ],
+   [
+    "2026-11-21",
     true
    ]
   ]
@@ -13893,6 +13933,210 @@
   "history": [
    [
     "2026-11-20",
+    true
+   ]
+  ]
+ },
+ "is-the-november-full-moon-a-supermoon": {
+  "time": "2026-11-21T13:58:07+00:00",
+  "query": "is the november full moon a supermoon",
+  "in_suggest": true,
+  "suggest": {
+   "beaver moon supermoon 2026": [],
+   "what is beaver moon supermoon 2026": [],
+   "is the november full moon a supermoon": [
+    "is the november full moon a supermoon"
+   ],
+   "november full moon supermoon": [
+    "november full moon supermoon",
+    "november full moon supermoon spiritual meaning",
+    "november full moon supermoon meaning",
+    "november full moon supermoon astrology",
+    "november full moon 2025 supermoon",
+    "november's full moon will be the largest supermoon of 2025",
+    "november brings a full moon and a supermoon in taurus"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-21",
+    true
+   ]
+  ]
+ },
+ "what-does-huss-mean": {
+  "time": "2026-11-21T13:58:10+00:00",
+  "query": "what does huss mean",
+  "in_suggest": true,
+  "suggest": {
+   "huss": [
+    "huss huss huss",
+    "huss huss huss meme",
+    "huss huss huss meaning",
+    "huss valley",
+    "huss valley codes",
+    "husson university",
+    "huss",
+    "hussain sajwani",
+    "hussar",
+    "husserl"
+   ],
+   "what is huss": [
+    "what is huss huss huss",
+    "what is huss valley",
+    "what is huss in slang",
+    "what is huss huss huss mean",
+    "what is huss valley meme",
+    "what is huss valley roblox",
+    "what is hussar",
+    "what is huss rooms",
+    "what is huss valley and folk valley",
+    "what is husser"
+   ],
+   "what does huss mean": [
+    "what does huzz mean in slang",
+    "what does huzz mean urban dictionary",
+    "what does huzz mean tiktok",
+    "what does huzz mean in text",
+    "what does huzz mean in spanish",
+    "what does huzz mean in slang for boys",
+    "what does huzz mean in english",
+    "what does huzz mean in gen z slang",
+    "what does huzz mean when a girl says it",
+    "what does huzz mean in gen alpha"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-21",
+    true
+   ]
+  ]
+ },
+ "why-are-people-saying-gta-6-is-woke": {
+  "time": "2026-11-21T13:58:17+00:00",
+  "query": "why are people saying gta 6 is woke",
+  "in_suggest": false,
+  "suggest": {
+   "gta 6 review bombing": [
+    "gta 6 review bombing",
+    "gta 6 review bombing reddit",
+    "gta 6 review bombing metacritic",
+    "gta 6 review",
+    "gta 6 rating",
+    "is gta 6 worth it"
+   ],
+   "what is gta 6 review bombing": [
+    "gta 6 review bombing",
+    "is gta 6 worth it",
+    "why is gta 6 rated m"
+   ],
+   "why are people saying gta 6 is woke": [],
+   "people saying gta 6 woke": []
+  },
+  "history": [
+   [
+    "2026-11-21",
+    false
+   ]
+  ]
+ },
+ "why-are-people-saying-rip-fiona": {
+  "time": "2026-11-21T13:58:20+00:00",
+  "query": "why are people saying rip fiona",
+  "in_suggest": false,
+  "suggest": {
+   "fiona the hippo": [
+    "fiona the hippo",
+    "fiona the hippo baby",
+    "fiona the hippo who threw the hat",
+    "fiona the hippo died",
+    "fiona the hippo hat",
+    "fiona the hippo reddit",
+    "fiona the hippo book",
+    "fiona the hippo hat video",
+    "fiona the hippo death",
+    "fiona the hippo plush"
+   ],
+   "what is fiona the hippo": [
+    "what is fiona the hippos story",
+    "what is fiona the hippo famous for",
+    "what is fiona the hippo brother name",
+    "what is fiona the hippos mom's name",
+    "what is fiona the hippos dad's name",
+    "what is fiona the hippos baby's name",
+    "what zoo is fiona the hippo at",
+    "what zoo is fiona the hippo now",
+    "what is so special about fiona the hippo",
+    "what year was fiona the hippo born"
+   ],
+   "why are people saying rip fiona": [],
+   "people saying rip fiona": []
+  },
+  "history": [
+   [
+    "2026-11-21",
+    false
+   ]
+  ]
+ },
+ "why-is-my-refrigerator-leaking-water-inside": {
+  "time": "2026-11-21T13:58:23+00:00",
+  "query": "why is my refrigerator leaking water inside",
+  "in_suggest": true,
+  "suggest": {
+   "refrigerator leaking water inside": [
+    "refrigerator leaking water inside",
+    "refrigerator leaking water inside from top",
+    "refrigerator leaking water inside fridge",
+    "refrigerator leaking water inside from freezer",
+    "refrigerator leaking water inside bottom",
+    "refrigerator leaking water inside frigidaire",
+    "refrigerator leaking water inside samsung",
+    "refrigerator leaking water inside kenmore",
+    "refrigerator leaks water inside the unit",
+    "fridge leaking water inside bottom drawer"
+   ],
+   "what is refrigerator leaking water inside": [
+    "what makes a refrigerator leak water inside",
+    "refrigerator is leaking water inside",
+    "what causes refrigerator to leak water inside",
+    "refrigerator leaking water inside from top",
+    "refrigerator leaking water inside frigidaire",
+    "refrigerator leaking water inside samsung",
+    "refrigerator leaking water inside bottom",
+    "refrigerator leaking water inside kenmore",
+    "why is my fridge leaking water inside",
+    "why is fridge dripping water inside"
+   ],
+   "why is my refrigerator leaking water inside": [
+    "why is my refrigerator leaking water inside",
+    "why is my refrigerator leaking water inside the fridge",
+    "why is my fridge leaking water inside top shelf",
+    "why is my refrigerator dripping water inside",
+    "why is my freezer leaking water inside",
+    "why is my fridge leaking water inside and freezing",
+    "why is my fridge leaking water inside top shelf samsung",
+    "why is my fridge leaking water inside fisher and paykel",
+    "why is my frigidaire refrigerator leaking water inside",
+    "why is my whirlpool refrigerator leaking water inside"
+   ],
+   "my refrigerator leaking water inside": [
+    "my refrigerator leaking water inside",
+    "my samsung refrigerator leaks water inside",
+    "my fridge keeps leaking water inside",
+    "my refrigerator is dripping water inside",
+    "my freezer is leaking water inside",
+    "my fridge is leaking water inside and not cooling",
+    "why does my refrigerator leak water inside",
+    "why is my fridge leaking water inside top shelf",
+    "why is my fridge leaking water inside from the top",
+    "why is my fridge leaking water inside the bottom shelf"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-21",
     true
    ]
   ]

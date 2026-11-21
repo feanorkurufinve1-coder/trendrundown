@@ -844,6 +844,18 @@
    "userCanonical": "https://trendrundown.com/x/is-the-law-of-beasts-a-true-story"
   },
   {
+   "url": "/x/is-the-november-full-moon-a-supermoon",
+   "at": "2026-11-21T13:56:16+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/is-thomas-massie-a-republican",
    "at": "2026-11-21T11:48:41+00:00",
    "verdict": "NEUTRAL",
@@ -1540,6 +1552,18 @@
    "userCanonical": "https://trendrundown.com/x/what-does-habibi-mean"
   },
   {
+   "url": "/x/what-does-huss-mean",
+   "at": "2026-11-21T13:56:22+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/what-does-maxxing-mean",
    "at": "2026-11-21T13:18:20+00:00",
    "verdict": "NEUTRAL",
@@ -1984,6 +2008,18 @@
    "userCanonical": null
   },
   {
+   "url": "/x/why-are-people-saying-gta-6-is-woke",
+   "at": "2026-11-21T13:56:29+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/why-are-people-saying-julia-stiles-went-to-juilliard",
    "at": "2026-11-21T11:47:37+00:00",
    "verdict": "NEUTRAL",
@@ -1998,6 +2034,18 @@
   {
    "url": "/x/why-are-people-saying-remember-november-2026-is-coming",
    "at": "2026-11-21T08:31:56+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
+   "url": "/x/why-are-people-saying-rip-fiona",
+   "at": "2026-11-21T13:56:35+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2045,7 +2093,7 @@
   },
   {
    "url": "/x/why-does-my-phone-battery-go-down-while-charging",
-   "at": "2026-11-21T07:47:03+00:00",
+   "at": "2026-11-21T13:56:48+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2057,7 +2105,7 @@
   },
   {
    "url": "/x/why-does-my-phone-screen-go-black-during-calls",
-   "at": "2026-11-21T07:47:09+00:00",
+   "at": "2026-11-21T13:56:54+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2069,7 +2117,7 @@
   },
   {
    "url": "/x/why-does-my-phone-screen-keep-going-black",
-   "at": "2026-11-21T07:47:15+00:00",
+   "at": "2026-11-21T13:57:01+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2081,7 +2129,7 @@
   },
   {
    "url": "/x/why-does-my-washing-machine-smell-like-rotten-eggs",
-   "at": "2026-11-21T07:47:22+00:00",
+   "at": "2026-11-21T13:57:07+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2093,7 +2141,7 @@
   },
   {
    "url": "/x/why-does-social-security-come-out-of-my-paycheck",
-   "at": "2026-11-21T07:47:28+00:00",
+   "at": "2026-11-21T13:57:13+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2105,7 +2153,7 @@
   },
   {
    "url": "/x/why-does-social-security-get-taxed",
-   "at": "2026-11-21T07:47:34+00:00",
+   "at": "2026-11-21T13:57:20+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2117,7 +2165,7 @@
   },
   {
    "url": "/x/why-is-bitcoin-down-november-2026",
-   "at": "2026-11-21T07:47:41+00:00",
+   "at": "2026-11-21T13:57:26+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2129,7 +2177,7 @@
   },
   {
    "url": "/x/why-is-everyone-freaking-out-about-november-17",
-   "at": "2026-11-21T07:47:47+00:00",
+   "at": "2026-11-21T13:57:33+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2141,7 +2189,7 @@
   },
   {
    "url": "/x/why-is-my-check-engine-light-on",
-   "at": "2026-11-21T07:47:53+00:00",
+   "at": "2026-11-21T13:57:39+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2164,6 +2212,18 @@
    "userCanonical": null
   },
   {
+   "url": "/x/why-is-my-refrigerator-leaking-water-inside",
+   "at": "2026-11-21T13:56:42+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/why-is-my-washing-machine-dripping-water-inside",
    "at": "2026-11-21T11:47:50+00:00",
    "verdict": "NEUTRAL",
@@ -2177,7 +2237,7 @@
   },
   {
    "url": "/x/why-is-my-washing-machine-leaking-from-the-bottom",
-   "at": "2026-11-21T07:48:00+00:00",
+   "at": "2026-11-21T13:57:45+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2189,7 +2249,7 @@
   },
   {
    "url": "/x/why-is-wifi-not-working-on-my-phone",
-   "at": "2026-11-21T07:48:06+00:00",
+   "at": "2026-11-21T13:57:52+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2201,7 +2261,7 @@
   },
   {
    "url": "/x/why-were-all-flights-grounded",
-   "at": "2026-11-21T07:48:12+00:00",
+   "at": "2026-11-21T13:57:58+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2237,7 +2297,7 @@
   },
   {
    "url": "/x/wta-tennis",
-   "at": "2026-11-21T07:48:19+00:00",
+   "at": "2026-11-21T13:58:04+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2257,7 +2317,7 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 90,
+  "URL is unknown to Google": 95,
   "Discovered - currently not indexed": 28,
   "Crawled - currently not indexed": 65
  }
