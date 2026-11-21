@@ -53,9 +53,9 @@
   },
   {
    "url": "/news",
-   "at": "2026-11-20T19:10:47+00:00",
+   "at": "2026-11-21T01:33:30+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -65,9 +65,9 @@
   },
   {
    "url": "/trends",
-   "at": "2026-11-20T19:16:57+00:00",
+   "at": "2026-11-21T01:33:36+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -197,7 +197,7 @@
   },
   {
    "url": "/x/apple-outage-november-17-2026",
-   "at": "2026-11-20T19:10:28+00:00",
+   "at": "2026-11-21T01:33:11+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -473,9 +473,9 @@
   },
   {
    "url": "/x/florida-flooding-november-18-2026",
-   "at": "2026-11-20T19:10:35+00:00",
+   "at": "2026-11-21T01:33:18+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -509,9 +509,9 @@
   },
   {
    "url": "/x/hakeem-jeffries-speaker-nomination",
-   "at": "2026-11-20T19:10:41+00:00",
+   "at": "2026-11-21T01:33:24+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2045,7 +2045,7 @@
   },
   {
    "url": "/x/why-does-my-phone-battery-go-down-while-charging",
-   "at": "2026-11-20T19:09:05+00:00",
+   "at": "2026-11-21T01:31:50+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2057,7 +2057,7 @@
   },
   {
    "url": "/x/why-does-my-phone-screen-go-black-during-calls",
-   "at": "2026-11-20T19:09:12+00:00",
+   "at": "2026-11-21T01:31:56+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2069,7 +2069,7 @@
   },
   {
    "url": "/x/why-does-my-phone-screen-keep-going-black",
-   "at": "2026-11-20T19:09:18+00:00",
+   "at": "2026-11-21T01:32:02+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2081,7 +2081,7 @@
   },
   {
    "url": "/x/why-does-my-washing-machine-smell-like-rotten-eggs",
-   "at": "2026-11-20T19:09:25+00:00",
+   "at": "2026-11-21T01:32:09+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2093,7 +2093,7 @@
   },
   {
    "url": "/x/why-does-social-security-come-out-of-my-paycheck",
-   "at": "2026-11-20T19:09:31+00:00",
+   "at": "2026-11-21T01:32:15+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2105,7 +2105,7 @@
   },
   {
    "url": "/x/why-does-social-security-get-taxed",
-   "at": "2026-11-20T19:09:37+00:00",
+   "at": "2026-11-21T01:32:21+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2117,7 +2117,7 @@
   },
   {
    "url": "/x/why-is-bitcoin-down-november-2026",
-   "at": "2026-11-20T19:09:44+00:00",
+   "at": "2026-11-21T01:32:27+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2129,7 +2129,7 @@
   },
   {
    "url": "/x/why-is-everyone-freaking-out-about-november-17",
-   "at": "2026-11-20T19:09:50+00:00",
+   "at": "2026-11-21T01:32:33+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2141,7 +2141,7 @@
   },
   {
    "url": "/x/why-is-my-check-engine-light-on",
-   "at": "2026-11-20T19:09:56+00:00",
+   "at": "2026-11-21T01:32:40+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2177,7 +2177,7 @@
   },
   {
    "url": "/x/why-is-my-washing-machine-leaking-from-the-bottom",
-   "at": "2026-11-20T19:10:03+00:00",
+   "at": "2026-11-21T01:32:46+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2189,7 +2189,7 @@
   },
   {
    "url": "/x/why-is-wifi-not-working-on-my-phone",
-   "at": "2026-11-20T19:10:09+00:00",
+   "at": "2026-11-21T01:32:52+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2201,7 +2201,7 @@
   },
   {
    "url": "/x/why-were-all-flights-grounded",
-   "at": "2026-11-20T19:10:16+00:00",
+   "at": "2026-11-21T01:32:59+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2237,7 +2237,7 @@
   },
   {
    "url": "/x/wta-tennis",
-   "at": "2026-11-20T19:10:22+00:00",
+   "at": "2026-11-21T01:33:05+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2257,8 +2257,8 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 88,
+  "Discovered - currently not indexed": 32,
   "Crawled - currently not indexed": 65,
-  "Discovered - currently not indexed": 30
+  "URL is unknown to Google": 86
  }
 }
