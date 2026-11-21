@@ -3,14 +3,18 @@
  "subject": "Bitcoin price drop",
  "kind": "event",
  "query": "why is bitcoin down",
- "title": "Why is bitcoin down? ETF outflows and $2 billion in forced selling",
- "answer": "Bitcoin fell to about $62,000 on Sunday, Nov. 15, 2026, its lowest level in about three months, before recovering to roughly $64,500. It is down about 15% in a week. Steady withdrawals from U.S. bitcoin ETFs, nearly $2 billion in forced liquidations of leveraged bets and hotter-than-expected inflation drove the slide.",
- "in_the_news": "The weekend drop hit while stock markets were closed, wiped out more than 300,000 leveraged traders and left bitcoin roughly half its record high of about $126,000, set in October 2025.",
- "body": "The selling built through the week. Bitcoin slipped below $70,000 on Friday, Nov. 13, when more than $1 billion in leveraged positions were closed, then dropped again over the weekend. CoinGlass data showed about $1.96 billion in crypto liquidations over 24 hours, most of them traders betting on higher prices. When those bets lose enough, exchanges automatically sell, which pushes the price down further and can set off the next round.\n\nBig investors have also been pulling money out. U.S. spot bitcoin ETFs saw about $1.91 billion in net withdrawals over seven straight trading days from Nov. 5 to Nov. 13, according to Farside Investors, with BlackRock's IBIT accounting for the largest share on Friday. October consumer prices rose 0.4%, a hotter reading that has traders weighing the chance of another Federal Reserve rate increase, which tends to hurt riskier assets. CoinDesk reported that analysts also pointed to money moving toward the heavily oversubscribed Anthropic IPO and to the turmoil around Nvidia's leadership change, while noting that the selloff was broad, with metals falling too.\n\nSome traders on social media claimed the weekend plunge was manipulated, but no public evidence supports that, and many analysts blame excessive leverage instead. Analysts are watching whether bitcoin holds the $60,000 area; ETF flow data for the new week arrives after Monday's trading session.",
+ "title": "Why is bitcoin down? It hit about $55,800 on Nov. 21, then bounced",
+ "answer": "Bitcoin slid below $60,000 on Friday, Nov. 20, 2026, for the first time since July, and fell to about $55,800 early Saturday, Nov. 21, a drop of nearly 10% in 24 hours. It climbed back to around $60,000 later on Saturday. Analysts tied the slide to a wider retreat from risky assets amid worries that AI-related stocks are overvalued, and to more than $2 billion in forced liquidations of leveraged bets. A week earlier, on Nov. 15, it had dropped to about $62,000.",
+ "in_the_news": "The new low came less than a week after the Nov. 15 slide and left bitcoin at less than half its record of about $126,000, set in October 2025.",
+ "body": "Update, Nov. 21: The selling resumed at the end of the week. Bitcoin traded around $63,000 on Nov. 18, fell below $60,000 on Friday, Nov. 20, and dropped to about $55,800 by early Saturday, according to Reuters, down nearly 10% in 24 hours. Reuters linked the move to a broader pullback in risky assets as concerns about lofty valuations weighed on the AI trade. Exchanges recorded about $2.4 billion in crypto futures liquidations in 24 hours, more than $1 billion of it in bitcoin futures. By Saturday afternoon bitcoin had rebounded to about $60,000. Prices move around the clock, so check a live chart for the current level.\n\nHow the first leg of the drop unfolded, the week of Nov. 9:\n\nThe selling built through the week. Bitcoin slipped below $70,000 on Friday, Nov. 13, when more than $1 billion in leveraged positions were closed, then dropped again over the weekend. CoinGlass data showed about $1.96 billion in crypto liquidations over 24 hours, most of them traders betting on higher prices. When those bets lose enough, exchanges automatically sell, which pushes the price down further and can set off the next round.\n\nBig investors have also been pulling money out. U.S. spot bitcoin ETFs saw about $1.91 billion in net withdrawals over seven straight trading days from Nov. 5 to Nov. 13, according to Farside Investors, with BlackRock's IBIT accounting for the largest share on Friday. October consumer prices rose 0.4%, a hotter reading that has traders weighing the chance of another Federal Reserve rate increase, which tends to hurt riskier assets. CoinDesk reported that analysts also pointed to money moving toward the heavily oversubscribed Anthropic IPO and to the turmoil around Nvidia's leadership change, while noting that the selloff was broad, with metals falling too.\n\nSome traders on social media claimed the weekend plunge was manipulated, but no public evidence supports that, and many analysts blame excessive leverage instead. At the time, analysts were watching whether bitcoin would hold the $60,000 area; it broke below that level on Nov. 20.",
  "faq": [
   {
    "q": "How low did bitcoin go?",
-   "a": "About $62,000 on Nov. 15, 2026, the lowest in roughly three months. It traded near $64,500 later that morning."
+   "a": "About $55,800 early on Saturday, Nov. 21, 2026, according to Reuters. A week earlier, on Nov. 15, it had bottomed near $62,000."
+  },
+  {
+   "q": "Why did bitcoin drop below $60,000?",
+   "a": "Reuters tied it to a broader retreat from risky assets over AI valuation worries; about $2.4 billion in forced liquidations of leveraged crypto bets deepened the fall."
   },
   {
    "q": "What is a crypto liquidation?",
@@ -18,11 +22,11 @@
   },
   {
    "q": "How far is bitcoin from its record?",
-   "a": "Around 49% below its all-time high of about $126,000, reached in October 2025."
+   "a": "Less than half of its all-time high of about $126,000, reached in October 2025."
   },
   {
    "q": "Is the drop over?",
-   "a": "No one knows. Analysts are watching support near $60,000, and ETF flows, which resume reporting after Monday's session, are a key signal. This is not financial advice."
+   "a": "No one knows. Bitcoin bounced back to about $60,000 on Nov. 21, but prices can swing sharply either way. This is not financial advice."
   }
  ],
  "links": [
@@ -40,10 +44,21 @@
    "crypto.news",
    "Bitcoin price falls to three-month low: Is $60K the next stop?",
    "https://crypto.news/bitcoin-price-falls-62000-etf-outflows-liquidations/"
+  ],
+  [
+   "Business Recorder (Reuters)",
+   "Bitcoin falls 5.10% to $55,830",
+   "https://www.brecorder.com/news/40450104/bitcoin-falls-510-to-55830"
+  ],
+  [
+   "Brave New Coin",
+   "Bitcoin price nears $55K as Ethereum plunges 10%",
+   "https://bravenewcoin.com/insights/crypto-news-today-bitcoin-price-nears-55k-as-ethereum-plunges-10-and-xrp-tests-0-87-support"
   ]
  ],
  "image_prompt": "a sharply falling red line chart glowing on a dark trading screen, with a few scattered gold coins on a desk in the foreground, moody blue light, no text, no numbers",
  "made": "2026-11-15T16:50:00+00:00",
  "first": "2026-11-15T16:50:00+00:00",
- "image_local": "own-bitcoin-down.jpg"
+ "image_local": "own-bitcoin-down.jpg",
+ "updated": "2026-11-21T20:49:48+00:00"
 }
