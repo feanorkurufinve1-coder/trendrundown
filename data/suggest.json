@@ -14417,5 +14417,97 @@
     true
    ]
   ]
+ },
+ "colts-release-daniel-jones": {
+  "time": "2026-11-21T16:43:29+00:00",
+  "query": "colts release daniel jones",
+  "in_suggest": true,
+  "suggest": {
+   "colts release daniel jones": [
+    "colts release daniel jones",
+    "colts release daniel jones reddit",
+    "did colts release daniel jones",
+    "daniel jones pff grade"
+   ],
+   "what is colts release daniel jones": [
+    "colts release daniel jones",
+    "daniel jones pff grade",
+    "is daniel jones injury",
+    "is daniel jones hurt",
+    "is daniel jones fast"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-21",
+    true
+   ]
+  ]
+ },
+ "palisades-fire-verdict-rinderknecht-guilty": {
+  "time": "2026-11-21T16:43:30+00:00",
+  "query": "palisades fire verdict",
+  "in_suggest": true,
+  "suggest": {
+   "palisades fire arson verdict": [
+    "palisades fire arson verdict",
+    "palisades fire arson trial",
+    "difference between fire and arson",
+    "does insurance cover arson fires"
+   ],
+   "what is palisades fire arson verdict": [
+    "palisades fire arson verdict",
+    "difference between fire and arson"
+   ],
+   "palisades fire verdict": [
+    "palisades fire verdict",
+    "palisades fire verdict today",
+    "palisades fire trial",
+    "palisades fire trial update",
+    "palisades fire trial reddit",
+    "palisades fire sentence",
+    "palisades fire trial evidence",
+    "mistrial in palisades fire trial",
+    "palisades fire ruling",
+    "palisades fire trial live"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-21",
+    true
+   ]
+  ]
+ },
+ "riemann-hypothesis-proof-claim-alpoge": {
+  "time": "2026-11-21T16:43:31+00:00",
+  "query": "riemann hypothesis proof",
+  "in_suggest": true,
+  "suggest": {
+   "riemann hypothesis proof claim": [
+    "riemann hypothesis proof claim",
+    "how to prove riemann hypothesis",
+    "has riemann hypothesis been proven"
+   ],
+   "what is riemann hypothesis proof claim": [],
+   "riemann hypothesis proof": [
+    "riemann hypothesis proof",
+    "riemann hypothesis proof pdf",
+    "riemann hypothesis proof length",
+    "riemann hypothesis proof lean",
+    "riemann hypothesis proof site www.reddit.com",
+    "riemann hypothesis proof claude",
+    "riemann hypothesis proof implications",
+    "riemann hypothesis proof paper",
+    "riemann hypothesis proof explained",
+    "riemann hypothesis proof alpoge"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-21",
+    true
+   ]
+  ]
  }
 }

@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-21T15:56:47+00:00",
+ "checked": "2026-11-21T16:43:28+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -328,6 +328,18 @@
    "userCanonical": "https://trendrundown.com/x/coachella-2027-tickets-on-sale"
   },
   {
+   "url": "/x/colts-release-daniel-jones",
+   "at": "2026-11-21T16:42:56+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/dan-hicks-death",
    "at": "2026-11-21T15:56:47+00:00",
    "verdict": "NEUTRAL",
@@ -341,7 +353,7 @@
   },
   {
    "url": "/x/designated-for-assignment",
-   "at": "2026-11-21T10:31:56+00:00",
+   "at": "2026-11-21T16:43:15+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -773,9 +785,9 @@
   },
   {
    "url": "/x/is-dig-based-on-a-book",
-   "at": "2026-11-21T10:32:02+00:00",
+   "at": "2026-11-21T16:43:22+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1180,6 +1192,18 @@
    "userCanonical": null
   },
   {
+   "url": "/x/palisades-fire-verdict-rinderknecht-guilty",
+   "at": "2026-11-21T16:43:03+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/phishing-test",
    "at": "2026-11-21T12:33:07+00:00",
    "verdict": "NEUTRAL",
@@ -1274,6 +1298,18 @@
    "lastCrawlTime": "2026-11-08T00:09:08Z",
    "googleCanonical": "https://trendrundown.com/x/richard-avedon",
    "userCanonical": "https://trendrundown.com/x/richard-avedon"
+  },
+  {
+   "url": "/x/riemann-hypothesis-proof-claim-alpoge",
+   "at": "2026-11-21T16:43:09+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
   },
   {
    "url": "/x/rikers-island-closure-plan-2032",
@@ -1769,9 +1805,9 @@
   },
   {
    "url": "/x/what-is-black-october",
-   "at": "2026-11-21T10:32:09+00:00",
+   "at": "2026-11-21T16:43:28+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2317,7 +2353,7 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 100,
+  "URL is unknown to Google": 103,
   "Crawled - currently not indexed": 65,
   "Discovered - currently not indexed": 23
  }
