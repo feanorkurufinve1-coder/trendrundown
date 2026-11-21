@@ -1,5 +1,5 @@
 {
- "made": "2026-11-21T15:16:56+00:00",
+ "made": "2026-11-21T15:32:01+00:00",
  "days": [
   "2026-11-16",
   "2026-11-17",
@@ -9,8 +9,8 @@
   {
    "page": "/t/alexandra-eala",
    "clicks_3d": 1,
-   "impr_3d": 5,
-   "pos": 4.0,
+   "impr_3d": 6,
+   "pos": 4.3,
    "by_day": {
     "2026-11-16": 0,
     "2026-11-17": 1,
@@ -21,8 +21,8 @@
   {
    "page": "/x/jasveen-sangha",
    "clicks_3d": 1,
-   "impr_3d": 5,
-   "pos": 5.3,
+   "impr_3d": 6,
+   "pos": 5.0,
    "by_day": {
     "2026-11-16": 0,
     "2026-11-17": 1,
@@ -33,7 +33,7 @@
   {
    "page": "/x/collin-sexton",
    "clicks_3d": 0,
-   "impr_3d": 5,
+   "impr_3d": 6,
    "pos": 5.7,
    "by_day": {
     "2026-11-16": 0,
@@ -45,7 +45,7 @@
   {
    "page": "/x/rot-weiss-essen",
    "clicks_3d": 0,
-   "impr_3d": 5,
+   "impr_3d": 6,
    "pos": 3.0,
    "by_day": {
     "2026-11-16": 0,
@@ -68,8 +68,8 @@
   {
    "page": "/x/hank-aaron-award",
    "clicks_3d": 0,
-   "impr_3d": 1,
-   "pos": 8.0,
+   "impr_3d": 2,
+   "pos": 7.5,
    "by_day": {
     "2026-11-20": 0
    },
