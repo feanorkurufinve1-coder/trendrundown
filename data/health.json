@@ -1126,7 +1126,7 @@
   },
   {
    "url": "/x/mlb-rookie-eligibility",
-   "at": "2026-11-22T13:31:48+00:00",
+   "at": "2026-11-22T19:47:00+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1138,9 +1138,9 @@
   },
   {
    "url": "/x/most-mvp-awards-mlb",
-   "at": "2026-11-22T13:31:54+00:00",
+   "at": "2026-11-22T19:47:07+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1150,7 +1150,7 @@
   },
   {
    "url": "/x/murder-in-galicia-true-story",
-   "at": "2026-11-22T13:32:01+00:00",
+   "at": "2026-11-22T19:47:13+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1162,9 +1162,9 @@
   },
   {
    "url": "/x/national-book-awards-2026",
-   "at": "2026-11-22T13:32:07+00:00",
+   "at": "2026-11-22T19:47:19+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1174,9 +1174,9 @@
   },
   {
    "url": "/x/national-parks-free-veterans-day",
-   "at": "2026-11-22T13:32:14+00:00",
+   "at": "2026-11-22T19:47:26+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1186,7 +1186,7 @@
   },
   {
    "url": "/x/nba-draft",
-   "at": "2026-11-22T13:32:20+00:00",
+   "at": "2026-11-22T19:47:32+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1198,7 +1198,7 @@
   },
   {
    "url": "/x/new-orleans-cruise-ship-collision",
-   "at": "2026-11-22T13:32:26+00:00",
+   "at": "2026-11-22T19:47:38+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1210,9 +1210,9 @@
   },
   {
    "url": "/x/new-snap-stocking-rules",
-   "at": "2026-11-22T13:32:32+00:00",
+   "at": "2026-11-22T19:47:45+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1222,7 +1222,7 @@
   },
   {
    "url": "/x/non-tender",
-   "at": "2026-11-22T13:32:39+00:00",
+   "at": "2026-11-22T19:47:51+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1234,7 +1234,7 @@
   },
   {
    "url": "/x/noreaster-first-snow-november-2026",
-   "at": "2026-11-22T13:32:45+00:00",
+   "at": "2026-11-22T19:47:57+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1246,9 +1246,9 @@
   },
   {
    "url": "/x/october-2026-cpi-no-annual-rate",
-   "at": "2026-11-22T13:32:51+00:00",
+   "at": "2026-11-22T19:48:04+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1270,7 +1270,7 @@
   },
   {
    "url": "/x/phishing-test",
-   "at": "2026-11-22T13:32:57+00:00",
+   "at": "2026-11-22T19:48:10+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1282,9 +1282,9 @@
   },
   {
    "url": "/x/planet-alignment-november-2026",
-   "at": "2026-11-22T13:46:50+00:00",
+   "at": "2026-11-22T19:48:17+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2447,9 +2447,9 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 90,
+  "URL is unknown to Google": 96,
   "Crawled - currently not indexed": 65,
-  "Discovered - currently not indexed": 43,
+  "Discovered - currently not indexed": 37,
   "error": 1
  }
 }
