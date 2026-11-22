@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-22T17:32:13+00:00",
+ "checked": "2026-11-22T18:17:49+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -406,9 +406,9 @@
   },
   {
    "url": "/x/did-trump-call-into-c-span",
-   "at": "2026-11-22T12:01:46+00:00",
+   "at": "2026-11-22T18:16:51+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -430,7 +430,7 @@
   },
   {
    "url": "/x/does-mlb-have-a-salary-cap",
-   "at": "2026-11-22T12:01:52+00:00",
+   "at": "2026-11-22T18:16:58+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -442,7 +442,7 @@
   },
   {
    "url": "/x/edgar-martinez-award",
-   "at": "2026-11-22T12:01:59+00:00",
+   "at": "2026-11-22T18:17:04+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -454,9 +454,9 @@
   },
   {
    "url": "/x/el-nino-pacific-northwest",
-   "at": "2026-11-22T12:02:05+00:00",
+   "at": "2026-11-22T18:17:10+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -466,9 +466,9 @@
   },
   {
    "url": "/x/embassy-of-finland-canberra-meme",
-   "at": "2026-11-22T12:02:11+00:00",
+   "at": "2026-11-22T18:17:17+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -478,7 +478,7 @@
   },
   {
    "url": "/x/exhibition-game",
-   "at": "2026-11-22T12:02:17+00:00",
+   "at": "2026-11-22T18:17:23+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -490,9 +490,9 @@
   },
   {
    "url": "/x/first-black-senator-from-mississippi",
-   "at": "2026-11-22T12:02:24+00:00",
+   "at": "2026-11-22T18:17:30+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -526,7 +526,7 @@
   },
   {
    "url": "/x/game-time-decision",
-   "at": "2026-11-22T12:02:30+00:00",
+   "at": "2026-11-22T18:17:36+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -538,9 +538,9 @@
   },
   {
    "url": "/x/guarding-stars-book",
-   "at": "2026-11-22T12:02:37+00:00",
+   "at": "2026-11-22T18:17:42+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -562,7 +562,7 @@
   },
   {
    "url": "/x/hank-aaron-award",
-   "at": "2026-11-22T12:02:43+00:00",
+   "at": "2026-11-22T18:17:49+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2447,9 +2447,9 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 64,
+  "URL is unknown to Google": 69,
   "Crawled - currently not indexed": 65,
-  "Discovered - currently not indexed": 69,
+  "Discovered - currently not indexed": 64,
   "error": 1
  }
 }
