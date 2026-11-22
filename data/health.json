@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-21T23:32:50+00:00",
+ "checked": "2026-11-22T01:30:28+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -1337,7 +1337,7 @@
   },
   {
    "url": "/x/rock-hall-of-fame-2026-ceremony-air-date",
-   "at": "2026-11-21T19:16:49+00:00",
+   "at": "2026-11-22T01:29:44+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1349,9 +1349,9 @@
   },
   {
    "url": "/x/rookie-cy-young-winner",
-   "at": "2026-11-21T19:16:56+00:00",
+   "at": "2026-11-22T01:29:50+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1361,7 +1361,7 @@
   },
   {
    "url": "/x/rule-5-draft",
-   "at": "2026-11-21T19:17:02+00:00",
+   "at": "2026-11-22T01:29:57+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1373,7 +1373,7 @@
   },
   {
    "url": "/x/scott-colom",
-   "at": "2026-11-21T19:17:08+00:00",
+   "at": "2026-11-22T01:30:03+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1385,9 +1385,9 @@
   },
   {
    "url": "/x/sierra-winter-storm-warning",
-   "at": "2026-11-21T19:17:14+00:00",
+   "at": "2026-11-22T01:30:09+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1397,7 +1397,7 @@
   },
   {
    "url": "/x/silver-slugger-award",
-   "at": "2026-11-21T19:17:21+00:00",
+   "at": "2026-11-22T01:30:15+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1409,7 +1409,7 @@
   },
   {
    "url": "/x/spacex-starship-caught-by-tower",
-   "at": "2026-11-21T19:17:27+00:00",
+   "at": "2026-11-22T01:30:22+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1421,9 +1421,9 @@
   },
   {
    "url": "/x/ss-united-states-sinking",
-   "at": "2026-11-21T19:17:33+00:00",
+   "at": "2026-11-22T01:30:28+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2353,8 +2353,8 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "Discovered - currently not indexed": 56,
-  "URL is unknown to Google": 70,
+  "Discovered - currently not indexed": 59,
+  "URL is unknown to Google": 67,
   "Crawled - currently not indexed": 65
  }
 }
