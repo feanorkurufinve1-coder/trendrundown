@@ -5293,6 +5293,8 @@ def build_site(store):
                         log(f"стилизация фото '{x['slug']}' не удалась: {e}")
             if not im and x.get("image_local"):
                 im = manual_image(orig, {"slug": x["slug"], "image_local": x["image_local"]})
+            if not im and x.get("image_prompt"):     # 22.11: свободного фото нет — рисуем по описанию
+                im = ai_image(orig, x, ai_budget)
             x["img"] = im
     EXPLAINERS.clear(); EXPLAINERS.update(ex)
     global HAS_EXPLAINED, HAS_CAST, HAS_TRENDS, HAS_NEWS
