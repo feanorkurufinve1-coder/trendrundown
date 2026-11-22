@@ -238,7 +238,7 @@
   },
   {
    "url": "/x/california-earthquake-pinnacles-november-2026",
-   "at": "2026-11-22T06:30:17+00:00",
+   "at": "2026-11-22T12:33:16+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -550,7 +550,7 @@
   },
   {
    "url": "/x/harlem-park-three",
-   "at": "2026-11-22T06:16:52+00:00",
+   "at": "2026-11-22T12:31:46+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -562,7 +562,7 @@
   },
   {
    "url": "/x/has-a-defense-secretary-been-impeached",
-   "at": "2026-11-22T06:16:58+00:00",
+   "at": "2026-11-22T12:31:52+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -574,7 +574,7 @@
   },
   {
    "url": "/x/heartland-netflix-cast",
-   "at": "2026-11-22T06:17:04+00:00",
+   "at": "2026-11-22T12:31:58+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -586,7 +586,7 @@
   },
   {
    "url": "/x/hegseth-tomb-guard-medal",
-   "at": "2026-11-22T06:17:11+00:00",
+   "at": "2026-11-22T12:32:05+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -598,31 +598,7 @@
   },
   {
    "url": "/x/how-are-cma-awards-voted",
-   "at": "2026-11-22T06:17:17+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
-   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-   "indexingState": "INDEXING_STATE_UNSPECIFIED",
-   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
-   "lastCrawlTime": null,
-   "googleCanonical": null,
-   "userCanonical": null
-  },
-  {
-   "url": "/x/how-are-game-awards-nominees-chosen",
-   "at": "2026-11-22T06:17:23+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
-   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-   "indexingState": "INDEXING_STATE_UNSPECIFIED",
-   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
-   "lastCrawlTime": null,
-   "googleCanonical": null,
-   "userCanonical": null
-  },
-  {
-   "url": "/x/how-are-grammy-nominations-decided",
-   "at": "2026-11-22T06:17:29+00:00",
+   "at": "2026-11-22T12:32:11+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -633,8 +609,32 @@
    "userCanonical": null
   },
   {
+   "url": "/x/how-are-game-awards-nominees-chosen",
+   "at": "2026-11-22T12:32:18+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "Discovered - currently not indexed",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
+   "url": "/x/how-are-grammy-nominations-decided",
+   "at": "2026-11-22T12:32:24+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/how-cy-young-is-voted",
-   "at": "2026-11-22T06:17:36+00:00",
+   "at": "2026-11-22T12:32:31+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -646,9 +646,9 @@
   },
   {
    "url": "/x/how-is-senate-majority-leader-chosen",
-   "at": "2026-11-22T06:17:42+00:00",
+   "at": "2026-11-22T12:32:37+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -658,7 +658,7 @@
   },
   {
    "url": "/x/how-is-speaker-of-the-house-elected",
-   "at": "2026-11-22T06:17:48+00:00",
+   "at": "2026-11-22T12:32:44+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -670,7 +670,7 @@
   },
   {
    "url": "/x/how-mlb-mvp-is-voted",
-   "at": "2026-11-22T06:17:55+00:00",
+   "at": "2026-11-22T12:32:50+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -682,7 +682,7 @@
   },
   {
    "url": "/x/how-much-tax-refund-per-child-2026",
-   "at": "2026-11-22T06:18:01+00:00",
+   "at": "2026-11-22T12:32:57+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -694,9 +694,9 @@
   },
   {
    "url": "/x/how-to-rob-a-bank-true-story",
-   "at": "2026-11-22T06:18:07+00:00",
+   "at": "2026-11-22T12:33:03+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -706,7 +706,7 @@
   },
   {
    "url": "/x/how-to-vote-on-the-circle-hulu",
-   "at": "2026-11-22T06:18:14+00:00",
+   "at": "2026-11-22T12:33:09+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -718,7 +718,7 @@
   },
   {
    "url": "/x/i-play-rocky-true-story",
-   "at": "2026-11-22T06:30:29+00:00",
+   "at": "2026-11-22T12:33:29+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -730,7 +730,7 @@
   },
   {
    "url": "/x/internet-trends-this-week-2026-11-15",
-   "at": "2026-11-22T06:30:36+00:00",
+   "at": "2026-11-22T12:33:35+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1318,7 +1318,7 @@
   },
   {
    "url": "/x/rikers-island-closure-plan-2032",
-   "at": "2026-11-22T06:30:23+00:00",
+   "at": "2026-11-22T12:33:22+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2358,8 +2358,8 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "Discovered - currently not indexed": 98,
+  "Discovered - currently not indexed": 99,
   "Crawled - currently not indexed": 65,
-  "URL is unknown to Google": 28
+  "URL is unknown to Google": 27
  }
 }
