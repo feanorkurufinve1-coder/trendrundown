@@ -1166,7 +1166,7 @@
   ]
  },
  "all-mlb-team": {
-  "time": "2026-11-21T15:47:41+00:00",
+  "time": "2026-11-22T16:01:49+00:00",
   "query": "what is the all-mlb team",
   "in_suggest": true,
   "suggest": {
@@ -1209,10 +1209,6 @@
   },
   "history": [
    [
-    "2026-11-08",
-    true
-   ],
-   [
     "2026-11-09",
     true
    ],
@@ -1263,11 +1259,15 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "hank-aaron-award": {
-  "time": "2026-11-21T15:47:42+00:00",
+  "time": "2026-11-22T16:01:51+00:00",
   "query": "what is the hank aaron award",
   "in_suggest": true,
   "suggest": {
@@ -1275,12 +1275,12 @@
     "hank aaron award",
     "hank aaron award winners",
     "hank aaron award meaning",
-    "hank aaron award voting",
     "hank aaron award 2026",
     "hank aaron award odds",
+    "hank aaron award voting",
     "hank aaron award vs mvp",
-    "hank aaron award finalists",
     "hank aaron award mlb",
+    "hank aaron award finalists",
     "hank aaron award finalists 2026"
    ],
    "what is hank aaron award": [
@@ -1308,10 +1308,6 @@
   },
   "history": [
    [
-    "2026-11-08",
-    true
-   ],
-   [
     "2026-11-09",
     true
    ],
@@ -1362,11 +1358,15 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "how-cy-young-is-voted": {
-  "time": "2026-11-21T15:47:48+00:00",
+  "time": "2026-11-22T16:01:57+00:00",
   "query": "how is the cy young award voted",
   "in_suggest": true,
   "suggest": {
@@ -1409,10 +1409,6 @@
   },
   "history": [
    [
-    "2026-11-08",
-    true
-   ],
-   [
     "2026-11-09",
     true
    ],
@@ -1463,11 +1459,15 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "maine-2nd-district-ranked-choice": {
-  "time": "2026-11-21T15:47:54+00:00",
+  "time": "2026-11-22T16:02:03+00:00",
   "query": "why is maine 2nd district going to ranked choice",
   "in_suggest": false,
   "suggest": {
@@ -1478,10 +1478,6 @@
   },
   "history": [
    [
-    "2026-11-08",
-    false
-   ],
-   [
     "2026-11-09",
     false
    ],
@@ -1532,11 +1528,15 @@
    [
     "2026-11-21",
     false
+   ],
+   [
+    "2026-11-22",
+    false
    ]
   ]
  },
  "mlb-manager-of-the-year-voting": {
-  "time": "2026-11-21T15:47:56+00:00",
+  "time": "2026-11-22T16:02:04+00:00",
   "query": "how is mlb manager of the year voted",
   "in_suggest": false,
   "suggest": {
@@ -1562,10 +1562,6 @@
   },
   "history": [
    [
-    "2026-11-08",
-    false
-   ],
-   [
     "2026-11-09",
     false
    ],
@@ -1616,19 +1612,23 @@
    [
     "2026-11-21",
     false
+   ],
+   [
+    "2026-11-22",
+    false
    ]
   ]
  },
  "mlb-rookie-eligibility": {
-  "time": "2026-11-21T15:47:57+00:00",
+  "time": "2026-11-22T16:02:06+00:00",
   "query": "what makes a player a rookie in mlb",
   "in_suggest": true,
   "suggest": {
    "mlb rookie eligibility": [
     "mlb rookie eligibility",
     "mlb rookie eligibility rules",
-    "mlb rookie eligibility date",
     "mlb rookie eligibility 2026",
+    "mlb rookie eligibility date",
     "mlb rookie eligibility date 2026",
     "mlb rookie eligibility requirements",
     "mlb rookie eligibility deadline",
@@ -1653,10 +1653,6 @@
   },
   "history": [
    [
-    "2026-11-08",
-    true
-   ],
-   [
     "2026-11-09",
     true
    ],
@@ -1707,25 +1703,29 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "murder-in-galicia-true-story": {
-  "time": "2026-11-21T15:48:00+00:00",
+  "time": "2026-11-22T16:02:08+00:00",
   "query": "is murder in galicia a true story",
   "in_suggest": true,
   "suggest": {
    "murder in galicia": [
     "murder in galicia",
     "murder in galicia true story",
-    "murder in galicia 2026",
     "murder in galicia 2026 review",
-    "murder in galicia netflix",
     "murder in galicia review",
+    "murder in galicia 2026",
+    "murder in galicia 2026 cast",
+    "murder in galicia netflix",
     "murder in galicia rotten tomatoes",
-    "murder in galicia netflix review",
-    "murder in galicia 2026 true story",
-    "murder in galicia 2026 worth watching"
+    "murder in galicia 2026 rotten tomatoes",
+    "murder in galicia 2026 true story"
    ],
    "what is murder in galicia": [],
    "is murder in galicia a true story": [],
@@ -1733,10 +1733,6 @@
   },
   "history": [
    [
-    "2026-11-08",
-    true
-   ],
-   [
     "2026-11-09",
     true
    ],
@@ -1787,11 +1783,15 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "relief-pitcher-of-the-year": {
-  "time": "2026-11-21T15:48:02+00:00",
+  "time": "2026-11-22T16:02:10+00:00",
   "query": "what is the relief pitcher of the year award",
   "in_suggest": true,
   "suggest": {
@@ -1810,10 +1810,6 @@
   },
   "history": [
    [
-    "2026-11-08",
-    true
-   ],
-   [
     "2026-11-09",
     true
    ],
@@ -1864,11 +1860,15 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "reminders-of-him-book": {
-  "time": "2026-11-21T15:48:03+00:00",
+  "time": "2026-11-22T16:02:11+00:00",
   "query": "is reminders of him based on a book",
   "in_suggest": true,
   "suggest": {
@@ -1879,9 +1879,9 @@
     "reminders of him book",
     "reminders of him streaming",
     "reminders of him where to watch",
-    "reminders of him netflix",
-    "reminders of him reviews",
     "reminders of him trailer",
+    "reminders of him reviews",
+    "reminders of him netflix",
     "reminders of him soundtrack"
    ],
    "what is reminders of him": [
@@ -1914,10 +1914,6 @@
   },
   "history": [
    [
-    "2026-11-08",
-    true
-   ],
-   [
     "2026-11-09",
     true
    ],
@@ -1968,37 +1964,41 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "what-does-habibi-mean": {
-  "time": "2026-11-21T15:48:07+00:00",
+  "time": "2026-11-22T16:02:15+00:00",
   "query": "what does habibi mean",
   "in_suggest": true,
   "suggest": {
    "habibi": [
     "habibi meaning",
     "habibi",
-    "habibi grill",
-    "habibi miami",
-    "habibi cafe",
-    "habibi deli",
-    "habibi vs habibti",
-    "habibi deli columbus ga",
+    "habibi bear dog",
     "habibi in arabic",
-    "habibi motor cafe"
+    "habibi vs habibti",
+    "habibi miami",
+    "habibi song",
+    "habibi meaning in arabic",
+    "habibi puppies",
+    "habibti"
    ],
    "what is habibi": [
     "what is habibi",
     "what is habibi mean",
     "what is habibi in arabic",
     "what is habibi in english",
-    "what is habibi sauce",
-    "what is habibi flavor",
     "what is habibi for a girl",
+    "what is habibi flavor",
     "what is habibi mean in arabic",
+    "what is habibi funk",
     "what is habibi food",
-    "what is habibi funk"
+    "what is habibti"
    ],
    "what does habibi mean": [
     "what does habibi mean",
@@ -2015,10 +2015,6 @@
   },
   "history": [
    [
-    "2026-11-08",
-    true
-   ],
-   [
     "2026-11-09",
     true
    ],
@@ -2068,6 +2064,10 @@
    ],
    [
     "2026-11-21",
+    true
+   ],
+   [
+    "2026-11-22",
     true
    ]
   ]
@@ -3032,28 +3032,28 @@
   ]
  },
  "carter-faith": {
-  "time": "2026-11-21T15:47:41+00:00",
+  "time": "2026-11-22T16:01:50+00:00",
   "query": "who is carter faith",
   "in_suggest": true,
   "suggest": {
    "carter faith": [
     "carter faith",
     "carter faith music",
-    "carter faith husband",
+    "carter faith honeycomb",
     "carter faith still the sparrow sings",
-    "carter faith age",
-    "carter faith parents",
+    "carter faith songs",
     "carter faith tour",
     "carter faith nothin’ better to do",
-    "carter faith songs",
-    "carter faith cmas"
+    "carter faith age",
+    "carter faith nothin’ better to do lyrics",
+    "carter faith cma"
    ],
    "who is carter faith": [
     "who is carter faith",
     "who is carter faith dating",
     "who is carter faith related to",
-    "who is carter faith country singer",
     "who is carter faith parents",
+    "who is carter faith country singer",
     "who is carter faith opening for",
     "who is carter faith to jelly roll",
     "who is carter faith signed to",
@@ -3062,10 +3062,6 @@
    ]
   },
   "history": [
-   [
-    "2026-11-08",
-    true
-   ],
    [
     "2026-11-09",
     true
@@ -3117,11 +3113,15 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "harlem-park-three": {
-  "time": "2026-11-21T15:47:44+00:00",
+  "time": "2026-11-22T16:01:52+00:00",
   "query": "where are the harlem park three now",
   "in_suggest": false,
   "suggest": {
@@ -3142,10 +3142,6 @@
   },
   "history": [
    [
-    "2026-11-08",
-    false
-   ],
-   [
     "2026-11-09",
     false
    ],
@@ -3196,32 +3192,36 @@
    [
     "2026-11-21",
     false
+   ],
+   [
+    "2026-11-22",
+    false
    ]
   ]
  },
  "heartland-netflix-cast": {
-  "time": "2026-11-21T15:47:45+00:00",
+  "time": "2026-11-22T16:01:54+00:00",
   "query": "who is in the cast of heartland",
   "in_suggest": true,
   "suggest": {
    "heartland": [
     "heartland",
-    "heartland 2026",
     "heartland cast",
+    "heartland 2026",
     "heartland movie",
+    "heartland season 20",
     "heartland netflix",
     "heartland cast 2026",
-    "heartland season 20",
     "heartland movie cast",
-    "heartland netflix cast",
-    "heartland movie 2026 cast"
+    "heartland medical",
+    "heartland season 19"
    ],
    "what is heartland": [
     "what is heartland about",
     "what is heartland streaming on",
     "what is heartland about on netflix",
-    "what is heartland dental",
     "what is heartland rock",
+    "what is heartland dental",
     "what is heartland rated",
     "what is heartland finances",
     "what is heartland state of decay 2",
@@ -3239,23 +3239,19 @@
     "are any of the actors on heartland related"
    ],
    "cast heartland": [
-    "cast heartland movie",
     "cast heartland",
-    "cast heartland netflix",
     "cast heartland season 19",
     "cast heartland season 1",
     "cast heartland season 18",
     "cast heartland season 2",
     "cast heartland season 16",
     "cast heartland season 5",
-    "cast heartland 2026"
+    "cast heartland 2026",
+    "cast heartland season 15",
+    "cast heartland season 10"
    ]
   },
   "history": [
-   [
-    "2026-11-08",
-    true
-   ],
    [
     "2026-11-09",
     true
@@ -3307,11 +3303,15 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "how-are-grammy-nominations-decided": {
-  "time": "2026-11-21T15:47:47+00:00",
+  "time": "2026-11-22T16:01:55+00:00",
   "query": "how are grammy nominations decided",
   "in_suggest": true,
   "suggest": {
@@ -3320,12 +3320,12 @@
     "grammy nominations",
     "grammy nominations 2026",
     "grammy nominations 2027 album of the year",
-    "grammy nominations 2027 list",
     "grammy nominations album of the year",
+    "grammy nominations 2027 list",
     "grammy nominations 2027 rap",
-    "grammy nominations edm",
+    "grammy nominations 2027 predictions",
     "grammy nominations 2027 song of the year",
-    "grammy nominations 2027 noah kahan"
+    "grammy nominations list"
    ],
    "what is grammy nominations": [
     "what is grammy nominations",
@@ -3348,10 +3348,6 @@
   },
   "history": [
    [
-    "2026-11-08",
-    true
-   ],
-   [
     "2026-11-09",
     true
    ],
@@ -3402,24 +3398,28 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "how-is-senate-majority-leader-chosen": {
-  "time": "2026-11-21T15:47:50+00:00",
+  "time": "2026-11-22T16:01:58+00:00",
   "query": "how is the senate majority leader chosen",
   "in_suggest": true,
   "suggest": {
    "senate majority leader": [
     "senate majority leader",
     "senate majority leader vote",
-    "senate majority leader kalshi",
-    "senate majority leader schumer",
     "senate majority leader john thune",
     "senate majority leader count",
+    "senate majority leader democrat",
     "senate majority leader 2026",
     "senate majority leaders list",
     "senate majority leader since 2025",
+    "senate majority leader 2001",
     "senate majority leader definition"
    ],
    "what is senate majority leader": [
@@ -3454,10 +3454,6 @@
   },
   "history": [
    [
-    "2026-11-08",
-    true
-   ],
-   [
     "2026-11-09",
     true
    ],
@@ -3508,11 +3504,15 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "i-play-rocky-true-story": {
-  "time": "2026-11-21T15:47:51+00:00",
+  "time": "2026-11-22T16:02:00+00:00",
   "query": "is i play rocky a true story",
   "in_suggest": true,
   "suggest": {
@@ -3521,12 +3521,12 @@
     "i play rocky cast",
     "i play rocky showtimes",
     "i play rocky reviews",
-    "i play rocky release date",
     "i play rocky trailer",
     "i play rocky rotten tomatoes",
     "i play rocky where to watch",
+    "i play rocky release date",
     "i play rocky box office",
-    "i play rocky near me"
+    "i play rocky actor"
    ],
    "what is i play rocky": [
     "what is i play rocky about",
@@ -3563,10 +3563,6 @@
   },
   "history": [
    [
-    "2026-11-08",
-    true
-   ],
-   [
     "2026-11-09",
     true
    ],
@@ -3617,33 +3613,37 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "is-leonida-a-real-place": {
-  "time": "2026-11-21T15:47:53+00:00",
+  "time": "2026-11-22T16:02:01+00:00",
   "query": "is leonida a real place",
   "in_suggest": true,
   "suggest": {
    "leonida": [
     "leonida",
-    "leonida map",
     "leonida gta 6",
-    "leonida keys",
-    "leonida florida",
+    "leonida map",
     "leonida wild white tom",
+    "leonida keys",
     "leonida map gta 6",
+    "leonida florida",
     "leonida pronunciation",
-    "leonidas chocolate",
-    "leonida meaning"
+    "leonida gta",
+    "leonida pc"
    ],
    "what is leonida": [
     "what is leonida in gta 6",
     "what is leonida",
     "what is leonida based on",
-    "what is leonida in gta",
     "what is leonidas known for",
     "what is leonidas canon attribute",
+    "what is leonida in gta",
     "what is leonidas last name",
     "what is leonida based on gta 6",
     "what is leonidas chocolate",
@@ -3654,15 +3654,9 @@
     "is pottiswood a real place",
     "is husavik a real place"
    ],
-   "leonida real place": [
-    "leonida real place"
-   ]
+   "leonida real place": []
   },
   "history": [
-   [
-    "2026-11-08",
-    true
-   ],
    [
     "2026-11-09",
     true
@@ -3714,20 +3708,24 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "most-mvp-awards-mlb": {
-  "time": "2026-11-21T15:47:59+00:00",
+  "time": "2026-11-22T16:02:07+00:00",
   "query": "who has the most mvp awards in mlb history",
   "in_suggest": true,
   "suggest": {
    "mlb mvp award": [
     "mlb mvp award",
     "mlb mvp award winners",
+    "mlb mvp awards by year",
     "mlb mvp award date",
     "mlb mvp award 2026",
-    "mlb mvp awards by year",
     "mlb mvp award odds",
     "mlb mvp award name",
     "mlb mvp award history",
@@ -3766,10 +3764,6 @@
   },
   "history": [
    [
-    "2026-11-08",
-    true
-   ],
-   [
     "2026-11-09",
     true
    ],
@@ -3820,11 +3814,15 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "rookie-cy-young-winner": {
-  "time": "2026-11-21T15:48:05+00:00",
+  "time": "2026-11-22T16:02:13+00:00",
   "query": "has a rookie ever won the cy young",
   "in_suggest": true,
   "suggest": {
@@ -3837,8 +3835,8 @@
     "cy young award winners by year",
     "cy young award race",
     "cy young award 2025",
-    "cy young award date",
-    "cy young award winners 2026"
+    "cy young award winners 2026",
+    "cy young award this year"
    ],
    "what is cy young award": [
     "what is cy young award",
@@ -3877,10 +3875,6 @@
   },
   "history": [
    [
-    "2026-11-08",
-    true
-   ],
-   [
     "2026-11-09",
     true
    ],
@@ -3931,11 +3925,15 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "the-altruists-true-story": {
-  "time": "2026-11-21T15:48:06+00:00",
+  "time": "2026-11-22T16:02:14+00:00",
   "query": "is the altruists a true story",
   "in_suggest": true,
   "suggest": {
@@ -3943,25 +3941,25 @@
     "the altruists",
     "the altruists cast",
     "the altruists netflix",
-    "the altruists reviews",
-    "the altruists rotten tomatoes",
     "the altruists true story",
+    "the altruists rotten tomatoes",
+    "the altruists reviews",
     "the altruists real people",
+    "the altruists netflix reviews",
     "the altruists imdb",
-    "the altruists trailer",
-    "the altruists netflix reviews"
+    "the altruists reddit"
    ],
    "what is the altruists": [
     "what is the altruists about",
     "what is the altruists based on",
+    "what is the altruists on netflix about",
     "what does the altruists website say",
     "what are the altruists in gta 5",
     "what is the altruist cult gta 5",
     "what is the altruist camp in gta v",
     "what is the altruist cult",
     "what is the altruist cult based on",
-    "what is the altruist role in among us",
-    "what is the altruist cult gta"
+    "what is the altruist role in among us"
    ],
    "is the altruists a true story": [
     "is the altruists a true story",
@@ -3976,10 +3974,6 @@
   },
   "history": [
    [
-    "2026-11-08",
-    true
-   ],
-   [
     "2026-11-09",
     true
    ],
@@ -4029,6 +4023,10 @@
    ],
    [
     "2026-11-21",
+    true
+   ],
+   [
+    "2026-11-22",
     true
    ]
   ]
