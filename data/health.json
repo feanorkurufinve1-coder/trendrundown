@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-22T23:18:35+00:00",
+ "checked": "2026-11-22T23:47:10+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -370,7 +370,7 @@
   },
   {
    "url": "/x/designated-for-assignment",
-   "at": "2026-11-22T17:32:00+00:00",
+   "at": "2026-11-22T23:46:57+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -838,7 +838,7 @@
   },
   {
    "url": "/x/is-dig-based-on-a-book",
-   "at": "2026-11-22T17:32:06+00:00",
+   "at": "2026-11-22T23:47:04+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1366,7 +1366,7 @@
   },
   {
    "url": "/x/riemann-hypothesis-proof-claim-alpoge",
-   "at": "2026-11-22T17:31:53+00:00",
+   "at": "2026-11-22T23:46:51+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1882,7 +1882,7 @@
   },
   {
    "url": "/x/what-is-black-october",
-   "at": "2026-11-22T17:32:13+00:00",
+   "at": "2026-11-22T23:47:10+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
