@@ -2187,7 +2187,7 @@
   },
   {
    "url": "/x/why-does-my-phone-battery-go-down-while-charging",
-   "at": "2026-11-22T08:42:34+00:00",
+   "at": "2026-11-22T15:01:55+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2199,7 +2199,7 @@
   },
   {
    "url": "/x/why-does-my-phone-screen-go-black-during-calls",
-   "at": "2026-11-22T08:42:40+00:00",
+   "at": "2026-11-22T15:02:01+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2211,9 +2211,9 @@
   },
   {
    "url": "/x/why-does-my-phone-screen-keep-going-black",
-   "at": "2026-11-22T08:42:46+00:00",
+   "at": "2026-11-22T15:02:08+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2223,7 +2223,7 @@
   },
   {
    "url": "/x/why-does-my-washing-machine-smell-like-rotten-eggs",
-   "at": "2026-11-22T08:42:53+00:00",
+   "at": "2026-11-22T15:02:14+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2235,9 +2235,9 @@
   },
   {
    "url": "/x/why-does-social-security-come-out-of-my-paycheck",
-   "at": "2026-11-22T08:42:59+00:00",
+   "at": "2026-11-22T15:02:20+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2247,7 +2247,7 @@
   },
   {
    "url": "/x/why-does-social-security-get-taxed",
-   "at": "2026-11-22T08:43:05+00:00",
+   "at": "2026-11-22T15:02:27+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2259,7 +2259,7 @@
   },
   {
    "url": "/x/why-is-bitcoin-down-november-2026",
-   "at": "2026-11-22T08:43:12+00:00",
+   "at": "2026-11-22T15:02:33+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2271,9 +2271,9 @@
   },
   {
    "url": "/x/why-is-everyone-freaking-out-about-november-17",
-   "at": "2026-11-22T08:43:18+00:00",
+   "at": "2026-11-22T15:02:40+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2283,7 +2283,7 @@
   },
   {
    "url": "/x/why-is-my-check-engine-light-on",
-   "at": "2026-11-22T08:43:24+00:00",
+   "at": "2026-11-22T15:02:46+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2307,7 +2307,7 @@
   },
   {
    "url": "/x/why-is-my-refrigerator-leaking-water-inside",
-   "at": "2026-11-22T08:42:28+00:00",
+   "at": "2026-11-22T15:01:49+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2331,7 +2331,7 @@
   },
   {
    "url": "/x/why-is-my-washing-machine-leaking-from-the-bottom",
-   "at": "2026-11-22T08:43:31+00:00",
+   "at": "2026-11-22T15:02:52+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2343,7 +2343,7 @@
   },
   {
    "url": "/x/why-is-wifi-not-working-on-my-phone",
-   "at": "2026-11-22T08:43:37+00:00",
+   "at": "2026-11-22T15:02:59+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2355,7 +2355,7 @@
   },
   {
    "url": "/x/why-were-all-flights-grounded",
-   "at": "2026-11-22T08:43:43+00:00",
+   "at": "2026-11-22T15:03:05+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2411,9 +2411,9 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "Discovered - currently not indexed": 95,
+  "Discovered - currently not indexed": 92,
   "Crawled - currently not indexed": 65,
-  "URL is unknown to Google": 35,
+  "URL is unknown to Google": 38,
   "error": 1
  }
 }
