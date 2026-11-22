@@ -1,203 +1,231 @@
 {
- "made": "2026-11-21T21:47:05+00:00",
- "day": "2026-11-20",
+ "made": "2026-11-22T04:02:27+00:00",
+ "day": "2026-11-21",
  "about": "Всплески просмотров английской Википедии за вчера: views — просмотров вчера, before — максимум за 3 прошлых дня (null = статьи не было в топ-1000). Идеи для страниц «who is / what is»; проверять факты по новостям.",
  "spikes": [
   {
-   "article": "Riemann hypothesis",
-   "views": 295157,
+   "article": "UFC Fight Night: Procházka vs. Stirling",
+   "views": 102387,
+   "before": 9743,
+   "ratio": 10.5,
+   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night%3A_Proch%C3%A1zka_vs._Stirling"
+  },
+  {
+   "article": "Nikhil Chaudhary (cricketer)",
+   "views": 100364,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Riemann_hypothesis"
+   "url": "https://en.wikipedia.org/wiki/Nikhil_Chaudhary_%28cricketer%29"
   },
   {
-   "article": "Levent Alpöge",
-   "views": 124632,
+   "article": "Survivor Series: WarGames (2026)",
+   "views": 82093,
+   "before": 21885,
+   "ratio": 3.8,
+   "url": "https://en.wikipedia.org/wiki/Survivor_Series%3A_WarGames_%282026%29"
+  },
+  {
+   "article": "Lewis Moody",
+   "views": 69243,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Levent_Alp%C3%B6ge"
+   "url": "https://en.wikipedia.org/wiki/Lewis_Moody"
   },
   {
-   "article": "O.M: Operation Mole",
-   "views": 119692,
-   "before": 22628,
-   "ratio": 5.3,
-   "url": "https://en.wikipedia.org/wiki/O.M%3A_Operation_Mole"
+   "article": "Navajo Stirling",
+   "views": 52558,
+   "before": 8182,
+   "ratio": 6.4,
+   "url": "https://en.wikipedia.org/wiki/Navajo_Stirling"
   },
   {
-   "article": "Lance Broadway",
-   "views": 79751,
-   "before": 20186,
-   "ratio": 4.0,
-   "url": "https://en.wikipedia.org/wiki/Lance_Broadway"
+   "article": "Dwayne Johnson",
+   "views": 50388,
+   "before": 10521,
+   "ratio": 4.8,
+   "url": "https://en.wikipedia.org/wiki/Dwayne_Johnson"
   },
   {
-   "article": "privacy policy",
-   "views": 78955,
-   "before": 23303,
-   "ratio": 3.4,
-   "url": "https://en.wikipedia.org/wiki/privacy_policy"
+   "article": "Murder of Steven Cozzi",
+   "views": 48734,
+   "before": 7139,
+   "ratio": 6.8,
+   "url": "https://en.wikipedia.org/wiki/Murder_of_Steven_Cozzi"
   },
   {
-   "article": "Harambe",
-   "views": 67020,
-   "before": 21696,
-   "ratio": 3.1,
-   "url": "https://en.wikipedia.org/wiki/Harambe"
+   "article": "Bigg Boss (Tamil TV series) season 10",
+   "views": 45640,
+   "before": 10674,
+   "ratio": 4.3,
+   "url": "https://en.wikipedia.org/wiki/Bigg_Boss_%28Tamil_TV_series%29_season_10"
   },
   {
-   "article": "The Traitors: New Blood",
-   "views": 63853,
-   "before": 10438,
-   "ratio": 6.1,
-   "url": "https://en.wikipedia.org/wiki/The_Traitors%3A_New_Blood"
-  },
-  {
-   "article": "Bruno Mars",
-   "views": 60612,
-   "before": 14756,
-   "ratio": 4.1,
-   "url": "https://en.wikipedia.org/wiki/Bruno_Mars"
-  },
-  {
-   "article": "2026 MAMA Awards",
-   "views": 52630,
+   "article": "Luca Williams-Barnett",
+   "views": 37296,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/2026_MAMA_Awards"
+   "url": "https://en.wikipedia.org/wiki/Luca_Williams-Barnett"
   },
   {
-   "article": "Daniel Jones (American football)",
-   "views": 49628,
+   "article": "Robert Baloucoune",
+   "views": 36163,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Daniel_Jones_%28American_football%29"
+   "url": "https://en.wikipedia.org/wiki/Robert_Baloucoune"
   },
   {
-   "article": "Tôn Thất Đính",
-   "views": 46591,
+   "article": "Greg Wise",
+   "views": 35588,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/T%C3%B4n_Th%E1%BA%A5t_%C4%90%C3%ADnh"
+   "url": "https://en.wikipedia.org/wiki/Greg_Wise"
   },
   {
-   "article": "Peter June Simon",
-   "views": 45237,
+   "article": "Carly Rae Jepsen",
+   "views": 34804,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Peter_June_Simon"
+   "url": "https://en.wikipedia.org/wiki/Carly_Rae_Jepsen"
   },
   {
-   "article": "Dylan Rourke",
-   "views": 45205,
-   "before": 12374,
-   "ratio": 3.7,
-   "url": "https://en.wikipedia.org/wiki/Dylan_Rourke"
+   "article": "Jiří Procházka",
+   "views": 33397,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Ji%C5%99%C3%AD_Proch%C3%A1zka"
   },
   {
-   "article": "Aakasamlo Oka Tara",
-   "views": 41157,
-   "before": 12500,
+   "article": "Brian Ortega",
+   "views": 33314,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Brian_Ortega"
+  },
+  {
+   "article": "Anthony Bourdain",
+   "views": 33071,
+   "before": 10124,
    "ratio": 3.3,
-   "url": "https://en.wikipedia.org/wiki/Aakasamlo_Oka_Tara"
+   "url": "https://en.wikipedia.org/wiki/Anthony_Bourdain"
   },
   {
-   "article": "Steps (film)",
-   "views": 40742,
+   "article": "2026 Nations Championship",
+   "views": 32287,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Steps_%28film%29"
+   "url": "https://en.wikipedia.org/wiki/2026_Nations_Championship"
   },
   {
-   "article": "Sean Cairncross",
-   "views": 38297,
+   "article": "Dani Dyer",
+   "views": 32242,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Sean_Cairncross"
+   "url": "https://en.wikipedia.org/wiki/Dani_Dyer"
   },
   {
-   "article": "Rikers Island",
-   "views": 37142,
+   "article": "Fausto Isidro Meza Flores",
+   "views": 31417,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Rikers_Island"
+   "url": "https://en.wikipedia.org/wiki/Fausto_Isidro_Meza_Flores"
   },
   {
-   "article": "Jodie Foster",
-   "views": 32819,
-   "before": 8808,
-   "ratio": 3.7,
-   "url": "https://en.wikipedia.org/wiki/Jodie_Foster"
-  },
-  {
-   "article": "Generalized Riemann hypothesis",
-   "views": 31294,
+   "article": "Danny Dyer",
+   "views": 29064,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Generalized_Riemann_hypothesis"
+   "url": "https://en.wikipedia.org/wiki/Danny_Dyer"
   },
   {
-   "article": "Samantha Ruth Prabhu",
-   "views": 30671,
+   "article": "Jesús de Miguel",
+   "views": 27649,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Samantha_Ruth_Prabhu"
+   "url": "https://en.wikipedia.org/wiki/Jes%C3%BAs_de_Miguel"
   },
   {
-   "article": "Niko Bellic",
-   "views": 29110,
+   "article": "Phumzile Mlambo-Ngcuka",
+   "views": 27232,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Niko_Bellic"
+   "url": "https://en.wikipedia.org/wiki/Phumzile_Mlambo-Ngcuka"
   },
   {
-   "article": "Carlie Irsay-Gordon",
-   "views": 27734,
+   "article": "Emmanuel Emegha",
+   "views": 26546,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Carlie_Irsay-Gordon"
+   "url": "https://en.wikipedia.org/wiki/Emmanuel_Emegha"
   },
   {
-   "article": "Michelle Yeoh",
-   "views": 25787,
-   "before": 7691,
-   "ratio": 3.4,
-   "url": "https://en.wikipedia.org/wiki/Michelle_Yeoh"
-  },
-  {
-   "article": "Percy Jackson and the Olympians (TV series)",
-   "views": 25211,
+   "article": "Nereids",
+   "views": 26192,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Percy_Jackson_and_the_Olympians_%28TV_series%29"
+   "url": "https://en.wikipedia.org/wiki/Nereids"
   },
   {
-   "article": "Bo Derek",
-   "views": 25045,
+   "article": "Strictly Come Dancing series 24",
+   "views": 25724,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Bo_Derek"
+   "url": "https://en.wikipedia.org/wiki/Strictly_Come_Dancing_series_24"
   },
   {
-   "article": "Kelly Cates",
-   "views": 22990,
+   "article": "Nations Championship",
+   "views": 25396,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Kelly_Cates"
+   "url": "https://en.wikipedia.org/wiki/Nations_Championship"
   },
   {
-   "article": "Riemann zeta function",
-   "views": 22712,
+   "article": "The Eagle Has Landed (film)",
+   "views": 24491,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Riemann_zeta_function"
+   "url": "https://en.wikipedia.org/wiki/The_Eagle_Has_Landed_%28film%29"
   },
   {
-   "article": "Jon Hamm",
-   "views": 22646,
+   "article": "Jim Duggan",
+   "views": 24474,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Jon_Hamm"
+   "url": "https://en.wikipedia.org/wiki/Jim_Duggan"
+  },
+  {
+   "article": "Bob Chesney",
+   "views": 23465,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Bob_Chesney"
+  },
+  {
+   "article": "Aleksandre Topuria",
+   "views": 22423,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Aleksandre_Topuria"
+  },
+  {
+   "article": "Hierophant",
+   "views": 22135,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Hierophant"
+  },
+  {
+   "article": "Jaime Winstone",
+   "views": 21194,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Jaime_Winstone"
+  },
+  {
+   "article": "Pepita Not",
+   "views": 20926,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Pepita_Not"
   }
  ]
 }

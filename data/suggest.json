@@ -4921,21 +4921,21 @@
   ]
  },
  "cliff-booth-release-date": {
-  "time": "2026-11-21T04:01:40+00:00",
+  "time": "2026-11-22T04:02:04+00:00",
   "query": "the misadventures of cliff booth release date",
   "in_suggest": true,
   "suggest": {
    "the further mis-adventures of cliff booth": [
     "the further mis-adventures of cliff booth",
-    "the further mis-adventures of cliff booth cast",
     "the further mis-adventures of cliff booth showtimes",
+    "the further mis-adventures of cliff booth cast",
     "the further mis-adventures of cliff booth ai",
     "the further mis-adventures of cliff booth release date",
     "the further mis-adventures of cliff booth reviews",
-    "the further mis-adventures of cliff booth rotten tomatoes",
     "the further mis-adventures of cliff booth trailer",
-    "the further mis-adventures of cliff booth netflix release date",
-    "the further mis-adventures of cliff booth runtime"
+    "the further mis-adventures of cliff booth tickets",
+    "the further mis-adventures of cliff booth runtime",
+    "the further mis-adventures of cliff booth book"
    ],
    "what is the further mis-adventures of cliff booth": [
     "what is the further mis-adventures of cliff booth about",
@@ -5020,11 +5020,15 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "does-mlb-have-a-salary-cap": {
-  "time": "2026-11-21T04:01:44+00:00",
+  "time": "2026-11-22T04:02:07+00:00",
   "query": "does mlb have a salary cap",
   "in_suggest": true,
   "suggest": {
@@ -5033,12 +5037,12 @@
     "mlb salary cap proposal",
     "mlb salary cap by team",
     "mlb salary cap 2026",
-    "mlb salary cap reddit",
     "mlb salary cap explained",
-    "mlb salary cap and floor",
     "mlb salary cap commercial",
+    "mlb salary cap and floor",
     "mlb salary cap and floor proposal",
-    "mlb salary cap rankings"
+    "mlb salary cap rankings",
+    "mlb salary cap by team 2026"
    ],
    "what is mlb salary cap": [
     "what is mlb salary cap",
@@ -5125,37 +5129,41 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "guarding-stars-book": {
-  "time": "2026-11-21T04:01:45+00:00",
+  "time": "2026-11-22T04:02:09+00:00",
   "query": "is guarding stars based on a book",
   "in_suggest": true,
   "suggest": {
    "guarding stars": [
     "guarding stars",
     "guarding stars cast",
-    "guarding stars netflix",
     "guarding stars movie",
+    "guarding stars netflix",
     "guarding stars book",
     "guarding stars review",
+    "guarding stars rotten tomatoes",
     "guarding stars rating",
-    "guarding stars cast little girl",
     "guarding stars trailer",
-    "guarding stars rotten tomatoes"
+    "guarding stars cast little girl"
    ],
    "what is guarding stars": [
     "what is guarding stars about",
     "what is guarding stars rated",
-    "what is guarding stars about on netflix",
     "what book is guarding stars based on",
     "what is star guard on a car",
     "what is star guard eye disease",
     "starguard elite",
     "what is star guard disease",
     "what is star guard gps",
-    "what is star guard protection"
+    "what is star guard protection",
+    "what is star guard vpn"
    ],
    "is guarding stars based on a book": [
     "is guarding stars based on a book",
@@ -5217,11 +5225,15 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "how-to-rob-a-bank-true-story": {
-  "time": "2026-11-21T04:01:47+00:00",
+  "time": "2026-11-22T04:02:10+00:00",
   "query": "is how to rob a bank a true story",
   "in_suggest": true,
   "suggest": {
@@ -5289,31 +5301,35 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "what-does-maxxing-mean": {
-  "time": "2026-11-21T04:01:57+00:00",
+  "time": "2026-11-22T04:02:18+00:00",
   "query": "what does maxxing mean",
   "in_suggest": true,
   "suggest": {
    "maxxing": [
     "maxxing",
     "maxxing meaning",
-    "maxxing meme",
     "maxxing peptides",
     "maxxing trend",
     "maxxing slang meaning",
+    "maxxing meme",
     "maxxing or maxing",
     "maxxing definition",
     "maxxing urban dictionary",
-    "maxxing peptide company"
+    "maxxing slang"
    ],
    "what is maxxing": [
     "what is maxxing",
     "what is maxxing mean",
-    "what is maxxing slang",
     "what is maxxing trend",
+    "what is maxxing slang",
     "what is maxxing and mogging",
     "what is maxxing.me",
     "what is maxing out 401k",
@@ -5382,25 +5398,29 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "what-does-unc-mean": {
-  "time": "2026-11-21T04:01:58+00:00",
+  "time": "2026-11-22T04:02:19+00:00",
   "query": "what does unc mean",
   "in_suggest": true,
   "suggest": {
    "unc": [
-    "uncommon goods",
     "unc football",
     "unc basketball",
-    "uncle buck",
-    "uncrustables",
-    "uncanny valley",
+    "uncommon goods",
+    "unc football schedule",
     "unc",
-    "uncharted movie",
-    "uncharted",
-    "uncle sam"
+    "unc vs virginia",
+    "uncle buck",
+    "unc basketball schedule",
+    "uncrustables",
+    "uncanny valley"
    ],
    "what is unc": [
     "what is uncured ham",
@@ -5409,9 +5429,9 @@
     "what is uncanny valley",
     "what is unconditional love",
     "what is uncured pepperoni",
-    "what is uncle grandpa on",
     "what is unconscious bias",
     "what is uncured meat",
+    "what is unclaimed property",
     "what is unc status"
    ],
    "what does unc mean": [
@@ -5475,11 +5495,15 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "what-is-a-motion-to-table": {
-  "time": "2026-11-21T04:01:59+00:00",
+  "time": "2026-11-22T04:02:21+00:00",
   "query": "what is a motion to table",
   "in_suggest": true,
   "suggest": {
@@ -5580,11 +5604,15 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "what-is-a-privileged-resolution": {
-  "time": "2026-11-21T04:02:01+00:00",
+  "time": "2026-11-22T04:02:22+00:00",
   "query": "what is a privileged resolution",
   "in_suggest": true,
   "suggest": {
@@ -5661,23 +5689,27 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "what-is-dandori-academy": {
-  "time": "2026-11-21T04:02:04+00:00",
+  "time": "2026-11-22T04:02:25+00:00",
   "query": "what is dandori academy",
   "in_suggest": true,
   "suggest": {
    "dandori academy": [
     "dandori academy",
     "dandori academy exam 2",
+    "dandori academy pikmin",
     "dandori academy release date",
     "dandori academy switch 1",
     "dandori academy pikmin 4",
     "dandori academy price",
     "dandori academy reddit",
-    "dandori academy pikmin",
     "dandori academy dlc",
     "dandori academy nintendo"
    ],
@@ -5734,11 +5766,15 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "what-is-the-bearista-cup": {
-  "time": "2026-11-21T04:02:06+00:00",
+  "time": "2026-11-22T04:02:26+00:00",
   "query": "what is the bearista cup",
   "in_suggest": true,
   "suggest": {
@@ -5751,8 +5787,8 @@
     "starbucks bearista cup for sale",
     "starbucks bearista cup strawberry",
     "starbucks bearista cup snoopy",
-    "starbucks bearista cup ebay",
-    "starbucks bearista cup price"
+    "starbucks bearista cup 2025",
+    "starbucks bearista cup ebay"
    ],
    "what is starbucks bearista cup": [
     "what is starbucks bearista cup",
@@ -5780,9 +5816,9 @@
    ],
    "bearista cup": [
     "bearista cup",
+    "bearista cup starbucks",
     "bearista cup holder",
     "bearista cup pink",
-    "bearista cups starbucks",
     "bearista cup strawberry",
     "bearista cup holder stl",
     "bearista cup price",
@@ -5838,6 +5874,10 @@
    ],
    [
     "2026-11-21",
+    true
+   ],
+   [
+    "2026-11-22",
     true
    ]
   ]
@@ -6724,7 +6764,7 @@
   ]
  },
  "40-man-roster": {
-  "time": "2026-11-21T04:01:39+00:00",
+  "time": "2026-11-22T04:02:03+00:00",
   "query": "what is the 40-man roster in baseball",
   "in_suggest": true,
   "suggest": {
@@ -6816,11 +6856,15 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "did-trump-call-into-c-span": {
-  "time": "2026-11-21T04:01:42+00:00",
+  "time": "2026-11-22T04:02:06+00:00",
   "query": "did trump call into c-span",
   "in_suggest": true,
   "suggest": {
@@ -6910,11 +6954,15 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "keepsake-sea-release-date": {
-  "time": "2026-11-21T04:01:49+00:00",
+  "time": "2026-11-22T04:02:11+00:00",
   "query": "when does the keepsake sea come out",
   "in_suggest": true,
   "suggest": {
@@ -7006,24 +7054,28 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "madden-movie-true-story": {
-  "time": "2026-11-21T04:01:50+00:00",
+  "time": "2026-11-22T04:02:13+00:00",
   "query": "is madden a true story",
   "in_suggest": true,
   "suggest": {
    "madden": [
     "madden movie",
     "madden cast",
-    "madden 27",
+    "madden iamaleava",
     "madden",
+    "madden 27",
     "madden movie cast",
     "madden movie review",
-    "madden 27 ratings",
     "madden 27 release date",
-    "madden movie release date",
+    "madden 27 ratings",
     "madden rotten tomatoes"
    ],
    "what is madden": [
@@ -7032,8 +7084,8 @@
     "what is madden movie rated",
     "what is madden game",
     "what is madden girl",
-    "what is madden 27",
     "what is madden ultimate team",
+    "what is madden 27",
     "what is madden nyc",
     "what is madden 99 club",
     "what is madden 27 release date"
@@ -7088,11 +7140,15 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "red-cup-day-2026": {
-  "time": "2026-11-21T04:01:52+00:00",
+  "time": "2026-11-22T04:02:14+00:00",
   "query": "when is red cup day 2026",
   "in_suggest": true,
   "suggest": {
@@ -7181,11 +7237,15 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "the-good-daughter-book": {
-  "time": "2026-11-21T04:01:54+00:00",
+  "time": "2026-11-22T04:02:16+00:00",
   "query": "is the good daughter based on a book",
   "in_suggest": true,
   "suggest": {
@@ -7196,13 +7256,14 @@
     "the good daughter episodes",
     "the good daughter on peacock",
     "the good daughter tv series",
-    "the good daughter netflix",
     "the good daughter reviews",
     "the good daughter season 2",
-    "the good daughter trailer"
+    "the good daughter trailer",
+    "the good daughter series"
    ],
    "what is the good daughter": [
     "what is the good daughter about",
+    "what is the good daughter rated",
     "what is the good daughter by karin slaughter about",
     "what is the good daughter book about",
     "what is the good daughter on peacock about",
@@ -7210,8 +7271,7 @@
     "what is the good daughter syndrome",
     "what is the good daughter movie about",
     "what is a good daughter in law",
-    "what is the best daughter",
-    "what is the best daughter song"
+    "what is the best daughter"
    ],
    "is the good daughter based on a book": [
     "is the good daughter based on a book",
@@ -7273,25 +7333,29 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "vienna-game-true-story": {
-  "time": "2026-11-21T04:01:55+00:00",
+  "time": "2026-11-22T04:02:17+00:00",
   "query": "is vienna game a true story",
   "in_suggest": false,
   "suggest": {
    "vienna game": [
     "vienna game",
-    "vienna game show",
-    "vienna game chess",
     "vienna game tv series",
-    "vienna game hulu",
+    "vienna game chess",
     "vienna game opening",
     "vienna game max lange defense",
     "vienna game main line",
     "vienna game anderssen defense",
-    "vienna game lines"
+    "vienna game lines",
+    "vienna game chess opening",
+    "vienna gamersupps"
    ],
    "what is vienna game": [
     "what is vienna game in chess",
@@ -7348,25 +7412,29 @@
    [
     "2026-11-21",
     false
+   ],
+   [
+    "2026-11-22",
+    false
    ]
   ]
  },
  "what-is-a-public-benefit-corporation": {
-  "time": "2026-11-21T04:02:02+00:00",
+  "time": "2026-11-22T04:02:23+00:00",
   "query": "what is a public benefit corporation",
   "in_suggest": true,
   "suggest": {
    "public benefit corporation": [
     "public benefit corporation",
     "public benefit corporation examples",
-    "public benefit corporation definition",
+    "public benefit corporation meaning",
     "public benefit corporation vs b corp",
-    "public benefit corporation vs mutual benefit corporation",
     "public benefit corporation vs nonprofit",
     "public benefit corporation anthropic",
+    "public benefit corporation vs mutual benefit corporation",
     "public benefit corporation (pbc)",
-    "public benefit corporations list",
-    "public benefit corporation delaware"
+    "public benefit corporation delaware",
+    "public benefit corporation vs c corp"
    ],
    "what is public benefit corporation": [
     "what is public benefit corporation",
@@ -7437,25 +7505,29 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "what-is-a-super-el-nino": {
-  "time": "2026-11-21T04:02:04+00:00",
+  "time": "2026-11-22T04:02:24+00:00",
   "query": "what is a super el nino",
   "in_suggest": true,
   "suggest": {
    "super el niño": [
-    "super el niño 2026 predictions",
     "super el niño",
     "super el niño 2026 forecast map",
     "super el niño 2026",
-    "super el niño 2026 winter forecast map",
     "super el niño winter",
-    "super el niño meaning",
+    "super el niño 2026 pacific northwest",
     "super el niño 2026 winter",
+    "super el niño meaning",
     "super el niño meaning for winter",
-    "super el niño 1877"
+    "super el niño 1877",
+    "super el niño map"
    ],
    "what is super el niño": [
     "what is super el niño",
@@ -7476,22 +7548,22 @@
     "what is a super el nino weather",
     "what is a super el nino mean",
     "what is a super el nino winter mean",
+    "what is a super el nino mean for california",
     "what is a super el nino event",
     "what is a super el nino year",
-    "what is a super el nino weather pattern",
-    "what is a super el nino in california"
+    "what is a super el nino weather pattern"
    ],
    "super el nino": [
     "super el nino",
-    "super el nino weather transition",
     "super el nino 2026",
+    "super el nino california",
     "super el nino winter weather",
-    "super el nino 2026 iowa",
     "super el nino meaning",
     "super el nino winter",
-    "super el nino iowa",
     "super el nino map",
-    "super el nino years"
+    "super el nino colorado",
+    "super el nino 2026 san diego",
+    "super el nino 2026 southern california"
    ]
   },
   "history": [
@@ -7538,11 +7610,15 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "what-is-tsa-confirmid": {
-  "time": "2026-11-21T04:02:07+00:00",
+  "time": "2026-11-22T04:02:27+00:00",
   "query": "what is tsa confirmid",
   "in_suggest": true,
   "suggest": {
@@ -7556,7 +7632,7 @@
     "tsa confirmid portal",
     "tsa confirmed id process",
     "tsa confirmid system",
-    "tsa confirmid form"
+    "tsa confirmed fee"
    ],
    "what is tsa confirmid": [
     "what is tsa confirmid",
@@ -7614,6 +7690,10 @@
    ],
    [
     "2026-11-21",
+    true
+   ],
+   [
+    "2026-11-22",
     true
    ]
   ]

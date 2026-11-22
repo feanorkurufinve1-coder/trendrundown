@@ -94,7 +94,7 @@
   },
   {
    "url": "/x/telerally",
-   "at": "2026-11-21T21:47:04+00:00",
+   "at": "2026-11-22T04:02:01+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2038,7 +2038,7 @@
   },
   {
    "url": "/x/why-are-people-saying-gta-6-is-bad",
-   "at": "2026-11-21T21:46:51+00:00",
+   "at": "2026-11-22T04:01:48+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2314,9 +2314,9 @@
   },
   {
    "url": "/x/why-wont-my-washing-machine-drain",
-   "at": "2026-11-21T21:46:58+00:00",
+   "at": "2026-11-22T04:01:55+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2358,8 +2358,8 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "Discovered - currently not indexed": 100,
+  "Discovered - currently not indexed": 101,
   "Crawled - currently not indexed": 65,
-  "URL is unknown to Google": 26
+  "URL is unknown to Google": 25
  }
 }
