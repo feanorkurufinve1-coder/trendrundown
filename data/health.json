@@ -94,7 +94,7 @@
   },
   {
    "url": "/x/telerally",
-   "at": "2026-11-22T10:16:58+00:00",
+   "at": "2026-11-22T16:31:55+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2367,9 +2367,9 @@
   },
   {
    "url": "/x/why-wont-my-washing-machine-drain",
-   "at": "2026-11-22T10:16:52+00:00",
+   "at": "2026-11-22T16:31:49+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2411,9 +2411,9 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 46,
+  "URL is unknown to Google": 47,
   "Crawled - currently not indexed": 65,
-  "Discovered - currently not indexed": 84,
+  "Discovered - currently not indexed": 83,
   "error": 1
  }
 }
