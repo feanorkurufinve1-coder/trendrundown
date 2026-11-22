@@ -10431,7 +10431,7 @@
   ]
  },
  "first-black-senator-from-mississippi": {
-  "time": "2026-11-21T17:02:19+00:00",
+  "time": "2026-11-22T17:17:11+00:00",
   "query": "who was the first black senator from mississippi",
   "in_suggest": true,
   "suggest": {
@@ -10493,11 +10493,15 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "how-much-tax-refund-per-child-2026": {
-  "time": "2026-11-21T17:02:21+00:00",
+  "time": "2026-11-22T17:17:12+00:00",
   "query": "how much tax refund per child 2026",
   "in_suggest": true,
   "suggest": {
@@ -10506,16 +10510,16 @@
     "child tax credit",
     "child tax credit 2027",
     "child tax credit 2025",
-    "child tax credit 2026 income limit",
     "child tax credit phase out",
     "child tax credit income limit",
     "child tax credit age limit",
     "child tax credit 2025 income limit",
-    "child tax credit 2024"
+    "child tax credit 2024",
+    "child tax credit phase out 2026"
    ],
    "what is child tax credit": [
-    "what is child tax credit for 2026",
     "what is child tax credit",
+    "what is child tax credit for 2026",
     "what is child tax credit for 2025",
     "what is child tax credit for 2027",
     "what is child tax credit amount",
@@ -10586,25 +10590,29 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "is-the-law-of-beasts-a-true-story": {
-  "time": "2026-11-21T17:02:22+00:00",
+  "time": "2026-11-22T17:17:14+00:00",
   "query": "is the law of beasts a true story",
   "in_suggest": true,
   "suggest": {
    "the law of beasts": [
-    "the law of beasts",
     "the law of beasts true story",
-    "the law of beasts netflix",
-    "the law of beasts netflix review",
+    "the law of beasts",
+    "the law of beasts netflix series",
     "the law of beasts review",
+    "the law of beasts netflix",
     "the law of beasts rotten tomatoes",
     "the law of beasts cast",
-    "the law of beasts netflix cast",
+    "the law of beasts netflix review",
     "the law of beasts imdb",
-    "the law of beasts netflix true story"
+    "the law of beasts netflix cast"
    ],
    "what is the law of beasts": [
     "what is the law of beasts about",
@@ -10658,11 +10666,15 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "ligue-1": {
-  "time": "2026-11-21T17:02:23+00:00",
+  "time": "2026-11-22T17:17:14+00:00",
   "query": "what is ligue 1",
   "in_suggest": true,
   "suggest": {
@@ -10673,10 +10685,10 @@
     "ligue 1 stats",
     "ligue 1 table",
     "ligue 1 players",
-    "ligue 1 games",
+    "ligue 1 scores",
     "ligue 1 teams",
-    "ligue 1 mcdonald's",
-    "ligue 1 predictions"
+    "ligue 1 results",
+    "ligue 1 table 2022 23"
    ],
    "what is ligue 1": [
     "what is ligue 1",
@@ -10727,11 +10739,15 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "phishing-test": {
-  "time": "2026-11-21T17:02:24+00:00",
+  "time": "2026-11-22T17:17:16+00:00",
   "query": "what is a phishing test",
   "in_suggest": true,
   "suggest": {
@@ -10743,9 +10759,9 @@
     "phishing test meme",
     "phishing test at work",
     "phishing test google",
+    "phishing test site",
     "phishing test definition",
-    "phishing test email free",
-    "phishing test examples"
+    "phishing test email free"
    ],
    "what is phishing test": [
     "what is phishing test",
@@ -10808,11 +10824,15 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "rock-hall-of-fame-2026-ceremony-air-date": {
-  "time": "2026-11-21T17:02:25+00:00",
+  "time": "2026-11-22T17:17:17+00:00",
   "query": "when will the rock and roll hall of fame 2026 ceremony air",
   "in_suggest": false,
   "suggest": {
@@ -10868,11 +10888,15 @@
    [
     "2026-11-21",
     false
+   ],
+   [
+    "2026-11-22",
+    false
    ]
   ]
  },
  "what-does-refrigerator-coolant-smell-like": {
-  "time": "2026-11-21T17:02:27+00:00",
+  "time": "2026-11-22T17:17:18+00:00",
   "query": "what does refrigerator coolant smell like",
   "in_suggest": true,
   "suggest": {
@@ -10956,11 +10980,15 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "what-is-a-safety-in-football": {
-  "time": "2026-11-21T17:02:28+00:00",
+  "time": "2026-11-22T17:17:20+00:00",
   "query": "what is a safety in football",
   "in_suggest": true,
   "suggest": {
@@ -10970,23 +10998,23 @@
     "safety glasses",
     "safety razor",
     "safety movie",
+    "safety insurance",
     "safety first car seat",
     "safety vest",
     "safety dance",
-    "safety in football",
     "safety kleen"
    ],
    "what is safety": [
     "what is safety in football",
     "what is safety",
-    "what is safety position in football",
     "what is safety culture",
+    "what is safety position in football",
     "what is safety data sheet",
     "what is safety stock",
     "what is safety connect toyota",
     "what is safety glass",
-    "what is safety protocol adherence",
-    "what is safety net"
+    "what is safety net",
+    "what is safety corridor"
    ],
    "what is a safety in football": [
     "what is a safety in football",
@@ -11004,8 +11032,8 @@
     "safety football",
     "safety football position",
     "safety football movie",
-    "safety football points",
     "safety football helmet",
+    "safety football points",
     "safety football score",
     "safety football drip",
     "safety football 2 points",
@@ -11049,11 +11077,15 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "what-is-broad-based-categorical-eligibility": {
-  "time": "2026-11-21T17:02:29+00:00",
+  "time": "2026-11-22T17:17:21+00:00",
   "query": "what is broad-based categorical eligibility",
   "in_suggest": true,
   "suggest": {
@@ -11118,11 +11150,15 @@
    [
     "2026-11-21",
     true
+   ],
+   [
+    "2026-11-22",
+    true
    ]
   ]
  },
  "why-is-wifi-not-working-on-my-phone": {
-  "time": "2026-11-21T17:02:31+00:00",
+  "time": "2026-11-22T17:17:22+00:00",
   "query": "why is wifi not working on my phone",
   "in_suggest": true,
   "suggest": {
@@ -11188,6 +11224,10 @@
    ],
    [
     "2026-11-21",
+    true
+   ],
+   [
+    "2026-11-22",
     true
    ]
   ]
