@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-22T02:47:46+00:00",
+ "checked": "2026-11-22T03:02:16+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -773,7 +773,7 @@
   },
   {
    "url": "/x/is-blade-runner-2099-a-sequel",
-   "at": "2026-11-21T20:51:12+00:00",
+   "at": "2026-11-22T03:02:16+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -881,9 +881,9 @@
   },
   {
    "url": "/x/is-trinity-netflix-based-on-a-true-story",
-   "at": "2026-11-21T20:50:40+00:00",
+   "at": "2026-11-22T03:01:45+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1649,9 +1649,9 @@
   },
   {
    "url": "/x/what-does-text-message-not-encrypted-mean",
-   "at": "2026-11-21T20:50:47+00:00",
+   "at": "2026-11-22T03:01:51+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2069,7 +2069,7 @@
   },
   {
    "url": "/x/why-are-people-saying-remember-november-2026-is-coming",
-   "at": "2026-11-21T20:50:53+00:00",
+   "at": "2026-11-22T03:01:58+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2117,9 +2117,9 @@
   },
   {
    "url": "/x/why-are-people-wearing-pajamas-to-sunrise-on-the-reaping",
-   "at": "2026-11-21T20:50:59+00:00",
+   "at": "2026-11-22T03:02:04+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2321,9 +2321,9 @@
   },
   {
    "url": "/x/why-wont-my-washing-machine-spin",
-   "at": "2026-11-21T20:51:05+00:00",
+   "at": "2026-11-22T03:02:10+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2353,8 +2353,8 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "Discovered - currently not indexed": 97,
+  "Discovered - currently not indexed": 101,
   "Crawled - currently not indexed": 65,
-  "URL is unknown to Google": 29
+  "URL is unknown to Google": 25
  }
 }
