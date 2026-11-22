@@ -1,5 +1,5 @@
 {
- "made": "2026-11-22T08:04:07+00:00",
+ "made": "2026-11-22T20:05:27+00:00",
  "about": "Премьеры сериалов и новых сезонов в США на 14 дней вперёд (TVmaze). new_series = совсем новый сериал. Сырьё для прогнозов «is X a true story», «X cast», «X season N release time».",
  "premieres": [
   {
@@ -311,6 +311,19 @@
    "summary": "In this epic competition, Salish Matter and her friends compete for a mountain of presents while trying to keep an imposter from stealing all the gifts.",
    "url": "https://www.tvmaze.com/shows/95533/salishs-12-games-of-christmas",
    "official": "https://www.netflix.com/title/82723082 "
+  },
+  {
+   "date": "2026-11-28",
+   "show": "Storage Wars: Back to the Locker",
+   "season": 4,
+   "new_series": false,
+   "type": "Reality",
+   "genres": [],
+   "network": "A&E",
+   "premiered": "2025-06-07",
+   "summary": "Storage Wars: Back to the Locker refers to a series of episodes within the larger \"Storage Wars\" series, where the focus is on the competitive bidding and treasure hunting within abandoned storage units. These episodes continue the main show's premise of professional buyers vying to acquire the contents of storage lockers, often with the hope of finding valuable items among the discarded belonging",
+   "url": "https://www.tvmaze.com/shows/85784/storage-wars-back-to-the-locker",
+   "official": null
   },
   {
    "date": "2026-11-28",
