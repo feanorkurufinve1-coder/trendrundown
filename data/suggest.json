@@ -15291,5 +15291,123 @@
     true
    ]
   ]
+ },
+ "delta-flights-delays-atlanta-november-22-2026": {
+  "time": "2026-11-22T17:02:13+00:00",
+  "query": "delta flights delays",
+  "in_suggest": true,
+  "suggest": {
+   "delta air lines outage": [
+    "delta air lines outage",
+    "delta air lines down",
+    "delta air lines problems",
+    "delta air lines website down",
+    "delta air lines shut down",
+    "delta air lines is experiencing a network outage at dtw",
+    "delta air lines locations",
+    "delta air lines destinations",
+    "delta air line address"
+   ],
+   "what is delta air lines outage": [
+    "delta air lines outage",
+    "delta air lines near me",
+    "delta air lines locations",
+    "delta air line address"
+   ],
+   "delta flights delays": [
+    "delta flights delays",
+    "delta flights delays today",
+    "delta flight delays boston logan",
+    "delta flights delays atlanta",
+    "delta flight delays and cancellations today",
+    "delta flight delays compensation",
+    "delta flight delays atlanta today",
+    "delta flight delays and cancellations",
+    "delta flight delays jfk",
+    "delta flight delays boston"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-22",
+    true
+   ]
+  ]
+ },
+ "florida-tornado-warnings-kings-point-delray-beach": {
+  "time": "2026-11-22T17:02:14+00:00",
+  "query": "florida tornado warnings",
+  "in_suggest": true,
+  "suggest": {
+   "kings point tornado, palm beach county": [],
+   "what is kings point tornado, palm beach county": [],
+   "florida tornado warnings": [
+    "florida tornado warnings",
+    "florida tornado warnings live",
+    "florida tornado warnings today map",
+    "florida tornado warnings today",
+    "florida weather warnings",
+    "florida weather warnings today",
+    "florida storm warnings",
+    "florida storm warnings today",
+    "florida tornado warning map",
+    "florida tornado warning now"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-22",
+    true
+   ]
+  ]
+ },
+ "tom-jackson-espn-dies": {
+  "time": "2026-11-22T17:02:15+00:00",
+  "query": "tom jackson espn",
+  "in_suggest": true,
+  "suggest": {
+   "tom jackson": [
+    "tom jackson espn",
+    "tom jackson",
+    "tom jackson nfl",
+    "tom jackson broncos",
+    "tom jackson football",
+    "tom jackson espn died",
+    "tom jackson passed away",
+    "tom jackson nfl death",
+    "tom jackson denver broncos",
+    "tom jackson actor"
+   ],
+   "what is tom jackson": [
+    "what is tom jackson doing now",
+    "what is tom jackson from espn doing now",
+    "what is tom jackson's wife's name",
+    "what is tom jackson's net worth",
+    "what is tom jackson's ethnicity",
+    "what is thomas jackson's nickname",
+    "who is tom jackson",
+    "who is tom jackson married to",
+    "who is tom jackson's wife",
+    "who is tom jackson on sullivan's crossing"
+   ],
+   "tom jackson espn": [
+    "tom jackson espn",
+    "tom jackson espn died",
+    "tom jackson espn passed away",
+    "tom jackson espn passing",
+    "tom jackson espn now",
+    "tom jackson espn wife",
+    "tom jackson espn net worth",
+    "tom jackson espn today",
+    "tom jackson espn analyst",
+    "tom jackson espn height"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-22",
+    true
+   ]
+  ]
  }
 }

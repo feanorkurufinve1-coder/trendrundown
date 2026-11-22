@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-22T16:41:28+00:00",
+ "checked": "2026-11-22T17:02:12+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -357,6 +357,18 @@
    "userCanonical": null
   },
   {
+   "url": "/x/delta-flights-delays-atlanta-november-22-2026",
+   "at": "2026-11-22T17:01:59+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/designated-for-assignment",
    "at": "2026-11-22T11:17:04+00:00",
    "verdict": "NEUTRAL",
@@ -493,6 +505,18 @@
    "at": "2026-11-22T15:17:04+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
+   "url": "/x/florida-tornado-warnings-kings-point-delray-beach",
+   "at": "2026-11-22T17:02:06+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1533,6 +1557,18 @@
    "userCanonical": null
   },
   {
+   "url": "/x/tom-jackson-espn-dies",
+   "at": "2026-11-22T17:02:12+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/tri-series-cricket",
    "at": "2026-11-22T14:17:22+00:00",
    "verdict": "NEUTRAL",
@@ -2411,7 +2447,7 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 53,
+  "URL is unknown to Google": 56,
   "Crawled - currently not indexed": 65,
   "Discovered - currently not indexed": 77,
   "error": 1
