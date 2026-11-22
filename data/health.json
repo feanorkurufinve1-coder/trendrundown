@@ -1061,7 +1061,7 @@
   },
   {
    "url": "/x/mlb-rookie-eligibility",
-   "at": "2026-11-21T18:46:54+00:00",
+   "at": "2026-11-22T01:01:50+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1073,7 +1073,7 @@
   },
   {
    "url": "/x/most-mvp-awards-mlb",
-   "at": "2026-11-21T18:47:00+00:00",
+   "at": "2026-11-22T01:01:56+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1085,7 +1085,7 @@
   },
   {
    "url": "/x/murder-in-galicia-true-story",
-   "at": "2026-11-21T18:47:06+00:00",
+   "at": "2026-11-22T01:02:02+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1097,9 +1097,9 @@
   },
   {
    "url": "/x/national-book-awards-2026",
-   "at": "2026-11-21T18:47:12+00:00",
+   "at": "2026-11-22T01:02:09+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1109,7 +1109,7 @@
   },
   {
    "url": "/x/national-parks-free-veterans-day",
-   "at": "2026-11-21T18:47:19+00:00",
+   "at": "2026-11-22T01:02:15+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1121,7 +1121,7 @@
   },
   {
    "url": "/x/nba-draft",
-   "at": "2026-11-21T18:47:25+00:00",
+   "at": "2026-11-22T01:02:21+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1133,7 +1133,7 @@
   },
   {
    "url": "/x/new-orleans-cruise-ship-collision",
-   "at": "2026-11-21T18:47:31+00:00",
+   "at": "2026-11-22T01:02:28+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1145,9 +1145,9 @@
   },
   {
    "url": "/x/new-snap-stocking-rules",
-   "at": "2026-11-21T18:47:37+00:00",
+   "at": "2026-11-22T01:02:34+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1157,7 +1157,7 @@
   },
   {
    "url": "/x/non-tender",
-   "at": "2026-11-21T18:47:44+00:00",
+   "at": "2026-11-22T01:02:40+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1169,9 +1169,9 @@
   },
   {
    "url": "/x/noreaster-first-snow-november-2026",
-   "at": "2026-11-21T18:47:50+00:00",
+   "at": "2026-11-22T01:02:46+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1181,9 +1181,9 @@
   },
   {
    "url": "/x/october-2026-cpi-no-annual-rate",
-   "at": "2026-11-21T18:47:56+00:00",
+   "at": "2026-11-22T01:02:53+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1205,7 +1205,7 @@
   },
   {
    "url": "/x/phishing-test",
-   "at": "2026-11-21T18:48:02+00:00",
+   "at": "2026-11-22T01:02:59+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2353,8 +2353,8 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "Discovered - currently not indexed": 50,
-  "URL is unknown to Google": 76,
+  "Discovered - currently not indexed": 54,
+  "URL is unknown to Google": 72,
   "Crawled - currently not indexed": 65
  }
 }
