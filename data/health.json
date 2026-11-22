@@ -310,7 +310,7 @@
   },
   {
    "url": "/x/cma-awards-2026-winners",
-   "at": "2026-11-22T02:03:37+00:00",
+   "at": "2026-11-22T08:18:14+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1678,7 +1678,7 @@
   },
   {
    "url": "/x/what-is-a-ground-stop",
-   "at": "2026-11-22T02:02:13+00:00",
+   "at": "2026-11-22T08:16:51+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1690,7 +1690,7 @@
   },
   {
    "url": "/x/what-is-a-hip-pointer",
-   "at": "2026-11-22T02:02:19+00:00",
+   "at": "2026-11-22T08:16:57+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1702,19 +1702,7 @@
   },
   {
    "url": "/x/what-is-a-motion-to-refer",
-   "at": "2026-11-22T02:02:26+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
-   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-   "indexingState": "INDEXING_STATE_UNSPECIFIED",
-   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
-   "lastCrawlTime": null,
-   "googleCanonical": null,
-   "userCanonical": null
-  },
-  {
-   "url": "/x/what-is-a-motion-to-table",
-   "at": "2026-11-22T02:02:32+00:00",
+   "at": "2026-11-22T08:17:04+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1725,8 +1713,20 @@
    "userCanonical": null
   },
   {
+   "url": "/x/what-is-a-motion-to-table",
+   "at": "2026-11-22T08:17:10+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "Discovered - currently not indexed",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/what-is-a-privileged-resolution",
-   "at": "2026-11-22T02:02:39+00:00",
+   "at": "2026-11-22T08:17:16+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1738,7 +1738,7 @@
   },
   {
    "url": "/x/what-is-a-public-benefit-corporation",
-   "at": "2026-11-22T02:02:45+00:00",
+   "at": "2026-11-22T08:17:23+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1750,9 +1750,9 @@
   },
   {
    "url": "/x/what-is-a-quarter-quell",
-   "at": "2026-11-22T02:02:52+00:00",
+   "at": "2026-11-22T08:17:29+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1762,7 +1762,7 @@
   },
   {
    "url": "/x/what-is-a-safety-in-football",
-   "at": "2026-11-22T02:02:58+00:00",
+   "at": "2026-11-22T08:17:36+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1774,9 +1774,9 @@
   },
   {
    "url": "/x/what-is-a-sudden-stratospheric-warming",
-   "at": "2026-11-22T02:03:04+00:00",
+   "at": "2026-11-22T08:17:42+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1786,7 +1786,7 @@
   },
   {
    "url": "/x/what-is-a-super-el-nino",
-   "at": "2026-11-22T02:03:11+00:00",
+   "at": "2026-11-22T08:17:49+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1798,7 +1798,7 @@
   },
   {
    "url": "/x/what-is-apple-homeview",
-   "at": "2026-11-22T02:03:17+00:00",
+   "at": "2026-11-22T08:17:55+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1822,7 +1822,7 @@
   },
   {
    "url": "/x/what-is-broad-based-categorical-eligibility",
-   "at": "2026-11-22T02:03:24+00:00",
+   "at": "2026-11-22T08:18:01+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1834,7 +1834,7 @@
   },
   {
    "url": "/x/what-is-dandori-academy",
-   "at": "2026-11-22T02:03:30+00:00",
+   "at": "2026-11-22T08:18:08+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2358,8 +2358,8 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "Discovered - currently not indexed": 104,
+  "Discovered - currently not indexed": 102,
   "Crawled - currently not indexed": 65,
-  "URL is unknown to Google": 22
+  "URL is unknown to Google": 24
  }
 }
