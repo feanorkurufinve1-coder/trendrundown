@@ -58,7 +58,7 @@
   },
   {
    "url": "/news",
-   "at": "2026-11-22T15:17:17+00:00",
+   "at": "2026-11-22T21:32:13+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -70,7 +70,7 @@
   },
   {
    "url": "/trends",
-   "at": "2026-11-22T15:17:23+00:00",
+   "at": "2026-11-22T21:32:20+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -82,7 +82,7 @@
   },
   {
    "url": "/explained",
-   "at": "2026-11-22T15:17:29+00:00",
+   "at": "2026-11-22T21:32:26+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -202,7 +202,7 @@
   },
   {
    "url": "/x/apple-outage-november-17-2026",
-   "at": "2026-11-22T15:16:58+00:00",
+   "at": "2026-11-22T21:31:55+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -214,9 +214,9 @@
   },
   {
    "url": "/x/bay-area-waterspouts-tornado-warning",
-   "at": "2026-11-22T15:17:35+00:00",
+   "at": "2026-11-22T21:32:32+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -250,9 +250,9 @@
   },
   {
    "url": "/x/california-sues-openai",
-   "at": "2026-11-22T15:17:42+00:00",
+   "at": "2026-11-22T21:32:38+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -502,9 +502,9 @@
   },
   {
    "url": "/x/florida-flooding-november-18-2026",
-   "at": "2026-11-22T15:17:04+00:00",
+   "at": "2026-11-22T21:32:01+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -550,9 +550,9 @@
   },
   {
    "url": "/x/hakeem-jeffries-speaker-nomination",
-   "at": "2026-11-22T15:17:11+00:00",
+   "at": "2026-11-22T21:32:07+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1390,7 +1390,7 @@
   },
   {
    "url": "/x/robert-pattinson-james-bond",
-   "at": "2026-11-22T15:17:48+00:00",
+   "at": "2026-11-22T21:32:45+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2434,7 +2434,7 @@
   },
   {
    "url": "/x/wta-tennis",
-   "at": "2026-11-22T15:16:52+00:00",
+   "at": "2026-11-22T21:31:48+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2454,8 +2454,7 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 130,
-  "Crawled - currently not indexed": 65,
-  "Discovered - currently not indexed": 4
+  "URL is unknown to Google": 134,
+  "Crawled - currently not indexed": 65
  }
 }
