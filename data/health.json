@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-22T17:02:12+00:00",
+ "checked": "2026-11-22T17:32:13+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -370,7 +370,7 @@
   },
   {
    "url": "/x/designated-for-assignment",
-   "at": "2026-11-22T11:17:04+00:00",
+   "at": "2026-11-22T17:32:00+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -838,9 +838,9 @@
   },
   {
    "url": "/x/is-dig-based-on-a-book",
-   "at": "2026-11-22T11:17:10+00:00",
+   "at": "2026-11-22T17:32:06+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1366,9 +1366,9 @@
   },
   {
    "url": "/x/riemann-hypothesis-proof-claim-alpoge",
-   "at": "2026-11-22T11:16:57+00:00",
+   "at": "2026-11-22T17:31:53+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1875,9 +1875,9 @@
   },
   {
    "url": "/x/what-is-black-october",
-   "at": "2026-11-22T11:17:16+00:00",
+   "at": "2026-11-22T17:32:13+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2447,9 +2447,9 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 57,
+  "URL is unknown to Google": 60,
   "Crawled - currently not indexed": 65,
-  "Discovered - currently not indexed": 76,
+  "Discovered - currently not indexed": 73,
   "error": 1
  }
 }
