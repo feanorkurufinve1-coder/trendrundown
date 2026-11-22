@@ -1,0 +1,49 @@
+{
+ "news": true,
+ "kind": "event",
+ "subject": "Kings Point tornado, Palm Beach County",
+ "query": "florida tornado warnings",
+ "title": "Florida tornado warnings: Tornado confirmed near Delray Beach",
+ "answer": "The National Weather Service in Miami confirmed a tornado over Kings Point, west of Delray Beach in southern Palm Beach County, at 6:19 p.m. on Saturday, Nov. 21, 2026. It knocked down trees and damaged homes; no injuries were reported.",
+ "in_the_news": "South Florida saw five tornado warnings in one day, and a tornado watch covered Palm Beach and four Treasure Coast counties until 10 p.m. Tornadoes this late in the year are uncommon there, and Kings Point was hit by an EF-2 just four years ago.",
+ "body": "The warning for southeastern Palm Beach County went out just before 6 p.m., when radar showed a rotating storm near Whisper Walk, about 7 miles west of Boca Raton. At 6:19 p.m. the weather service updated it to a confirmed tornado over Kings Point, moving northeast at about 15 mph, with Boca Raton, Delray Beach and Boynton Beach in its path. Earlier, at 11:57 a.m., a separate warning had briefly covered northern Miami-Dade and south-central Broward counties.\n\nCBS12 reported uprooted trees and pool debris in the Boca Gardens community, tossed shutters and benches in Saddlebrook, and power outages in nearby neighborhoods. Palm Beach County Fire Rescue believed a touchdown happened near Hagen Ranch Road, according to BocaNewsNow. As of Sunday morning, the weather service had not released a rating, wind estimate or path length; those come from an on-the-ground damage survey.\n\nWatch vs. warning, simply put: a tornado watch, issued by the Storm Prediction Center for a broad area, means conditions could produce tornadoes. A tornado warning, issued by the local weather service office for a much smaller area, means a tornado has been seen or detected on radar, and people in its path should take shelter right away.\n\nKings Point has been here before. Sept. 27, 2022: an EF-2 tornado with 125 mph winds from Hurricane Ian's rain bands tore roofs at the Kings Point community, injuring two people. April 29, 2023: an EF-2 with 130 mph winds struck Palm Beach Gardens. Oct. 9, 2024: during Hurricane Milton, an EF-3 with 140 mph winds cut a path of more than 20 miles from southwest of Wellington through The Acreage. Saturday's storms came from a nearly stationary front, deep moisture and an upper-level disturbance, not a hurricane.\n\nWhat's next: the National Weather Service in Miami says 90% of South Florida tornadoes are EF-0 or EF-1, and the survey will show where Saturday's falls. Forecasts point to calmer, slightly cooler weather for Thanksgiving week, with highs in the upper 70s.",
+ "faq": [
+  {
+   "q": "Was anyone hurt in the Delray Beach tornado?",
+   "a": "No injuries had been reported as of Sunday morning."
+  },
+  {
+   "q": "How strong was the Kings Point tornado?",
+   "a": "The National Weather Service had not yet rated it. The rating comes after a damage survey; most South Florida tornadoes are EF-0 or EF-1."
+  },
+  {
+   "q": "Do tornadoes happen in Florida in November?",
+   "a": "They are uncommon but possible. NWS Miami says tornadoes have occurred in South Florida in every month, though most come between May and August."
+  }
+ ],
+ "links": [
+  [
+   "CBS12",
+   "NWS confirms tornado at Kings Point as Boca Raton neighborhoods survey damage",
+   "https://cbs12.com/news/local/nws-confirms-tornado-at-kings-point-as-boca-raton-neighborhoods-survey-damage"
+  ],
+  [
+   "WPTV",
+   "NWS Confirms Saturday Evening Tornado in Palm Beach County",
+   "https://www.wptv.com/weather/nws-confirms-saturday-evening-tornado-in-palm-beach-county"
+  ],
+  [
+   "NBC6",
+   "Possible tornado causes damage in Delray Beach after severe storms in South Florida",
+   "https://www.nbcmiami.com/news/local/possible-tornado-causes-damage-in-delray-beach-after-severe-storms-in-south-florida/3891427/"
+  ],
+  [
+   "National Weather Service",
+   "Tornado Watch vs. Warning",
+   "https://www.weather.gov/safety/tornado-ww"
+  ]
+ ],
+ "image_wiki": "Tornado",
+ "made": "2026-11-22T16:50:00Z",
+ "first": "2026-11-22T16:50:00Z"
+}

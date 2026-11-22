@@ -1,0 +1,49 @@
+{
+ "news": true,
+ "kind": "event",
+ "subject": "Delta Air Lines outage",
+ "query": "delta flights delays",
+ "title": "Delta flights delays: What caused Sunday's Atlanta ground stop?",
+ "answer": "On Sunday morning, Nov. 22, 2026, a failure in Delta Air Lines' system for calculating aircraft weight and balance led the FAA to halt Delta flights bound for Atlanta at the airline's request. The ground stop began at 7:46 a.m. ET and was eased to a ground delay program within an hour, but hundreds of flights ran late.",
+ "in_the_news": "The outage hit Delta's biggest hub at the start of Thanksgiving week, when airlines expect around 29 million passengers between Nov. 20 and 30. It is the third major flight disruption in the U.S. in ten days.",
+ "body": "Delta said its teams were using manual workarounds to get flights out safely while they worked to restore the automation that produces weight-and-balance figures for departing flights. Those numbers, which tell pilots how passengers, bags, cargo and fuel are distributed on the plane, are required before takeoff; doing them by hand is slower. The FAA said the delays were not related to any of its air traffic systems. Delta did not give a root cause or a time for a full fix.\n\nBy just before 10 a.m., nearly 500 flights at Atlanta's Hartsfield-Jackson were delayed, according to FlightAware data cited by Atlanta News First, and ABC7 New York put Delta's systemwide delays at about 700, roughly 20% of its schedule. No cancellations were reported as of midmorning. The FAA's ground delay program assigned Atlanta-bound Delta flights an average hold of 57 minutes and was scheduled to run until about 1 p.m.\n\nGround stop vs. ground delay, in plain terms: a ground stop is a full hold, meaning affected planes may not take off for the destination until it is lifted. A ground delay program is softer; flights still go, but each gets an assigned departure time so arrivals are spread out. Sunday's downgrade from one to the other is why flights resumed but still left late.\n\nA rough stretch for U.S. air travel: Nov. 13, an FAA telecommunications failure grounded flights nationwide for nearly five hours and led to thousands of cancellations over the weekend. Nov. 16, United Airlines held departures for more than 90 minutes after a weight-system outage. Nov. 22, Delta's weight-and-balance failure in Atlanta. Delta's worst technology meltdown came in July 2024, when the CrowdStrike software failure led it to cancel more than 7,000 flights over five days.\n\nWhat travelers can do: check the Delta app before heading to the airport. Under the airline commitments listed on the Transportation Department's customer service dashboard, Delta rebooks passengers at no extra cost and provides a meal voucher for waits of three hours or more when a delay is within its control. Federal rules also entitle passengers to a refund if a domestic flight is delayed three hours or more and they choose not to fly. As of Sunday midday, no special travel waiver had been posted for this outage.",
+ "faq": [
+  {
+   "q": "Is Delta still delayed in Atlanta?",
+   "a": "The ground stop was lifted around 8:30-8:40 a.m. ET and replaced with a ground delay program scheduled through about 1 p.m. Knock-on delays can last into the evening, so check your flight status."
+  },
+  {
+   "q": "Was the Delta outage a cyberattack?",
+   "a": "Delta has not said what caused the failure. Neither Delta nor the FAA has indicated a cyberattack; the FAA said its own systems were not involved."
+  },
+  {
+   "q": "Can I get a refund for a delayed Delta flight?",
+   "a": "Yes, if a domestic flight is delayed three hours or more and you decide not to travel, federal rules entitle you to a refund of the ticket."
+  }
+ ],
+ "links": [
+  [
+   "Atlanta News First",
+   "Delta says 'automation' issues causing delays in Atlanta, nationwide",
+   "https://www.atlantanewsfirst.com/2026/11/22/ground-stop-issued-delta-flights-en-route-atlanta/"
+  ],
+  [
+   "WSB-TV",
+   "Delta Air Lines delays at Hartsfield-Jackson ongoing as teams work to 'restore automation'",
+   "https://www.wsbtv.com/news/local/clayton-county/ground-stop-effect-hartsfield-jackson-all-delta-air-lines-flights-faa-reports/C2ANPK2EE5E7LDRMQYMDEMOACY/"
+  ],
+  [
+   "ABC7 New York",
+   "Delta system outage causes widespread flight delays",
+   "https://abc7ny.com/post/delta-flight-delays-caused-weight-balance-system-outage/20066834/"
+  ],
+  [
+   "FAA",
+   "Aeronautical Information Publication, ENR 1.9: Air Traffic Flow Management",
+   "https://www.faa.gov/AIR_TRAFFIC/PUBLICATIONS/atpubs/aip_html/part2_enr_section_1.9.html"
+  ]
+ ],
+ "image_wiki": "Hartsfield–Jackson Atlanta International Airport",
+ "made": "2026-11-22T16:50:00Z",
+ "first": "2026-11-22T16:50:00Z"
+}
