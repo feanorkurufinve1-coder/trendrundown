@@ -869,9 +869,9 @@
   },
   {
    "url": "/x/is-thomas-massie-a-republican",
-   "at": "2026-11-21T18:03:43+00:00",
+   "at": "2026-11-22T00:31:58+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -893,7 +893,7 @@
   },
   {
    "url": "/x/is-yellowjackets-season-4-the-last-season",
-   "at": "2026-11-21T18:03:49+00:00",
+   "at": "2026-11-22T00:32:04+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -905,9 +905,9 @@
   },
   {
    "url": "/x/jensen-huang-resigns-nvidia",
-   "at": "2026-11-21T18:17:24+00:00",
+   "at": "2026-11-22T00:32:11+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -917,9 +917,9 @@
   },
   {
    "url": "/x/keepsake-sea-release-date",
-   "at": "2026-11-21T18:17:30+00:00",
+   "at": "2026-11-22T00:32:17+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -929,7 +929,7 @@
   },
   {
    "url": "/x/kids-choice-awards-2026-date",
-   "at": "2026-11-21T18:17:37+00:00",
+   "at": "2026-11-22T00:32:24+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -941,9 +941,9 @@
   },
   {
    "url": "/x/lame-duck-president",
-   "at": "2026-11-21T18:17:44+00:00",
+   "at": "2026-11-22T00:32:30+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -953,7 +953,7 @@
   },
   {
    "url": "/x/lame-duck-session",
-   "at": "2026-11-21T18:17:50+00:00",
+   "at": "2026-11-22T00:32:36+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -965,7 +965,7 @@
   },
   {
    "url": "/x/latin-grammys-vs-grammys",
-   "at": "2026-11-21T18:17:56+00:00",
+   "at": "2026-11-22T00:32:43+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -977,21 +977,21 @@
   },
   {
    "url": "/x/ligue-1",
-   "at": "2026-11-21T18:18:03+00:00",
+   "at": "2026-11-22T00:32:49+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
    "indexingState": "INDEXING_ALLOWED",
    "pageFetchState": "SUCCESSFUL",
-   "lastCrawlTime": "2026-11-19T02:57:22Z",
+   "lastCrawlTime": "2026-11-21T22:30:12Z",
    "googleCanonical": "https://trendrundown.com/x/ligue-1",
    "userCanonical": "https://trendrundown.com/x/ligue-1"
   },
   {
    "url": "/x/madden-movie-true-story",
-   "at": "2026-11-21T18:31:51+00:00",
+   "at": "2026-11-22T00:32:56+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2353,8 +2353,8 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "Discovered - currently not indexed": 44,
-  "URL is unknown to Google": 82,
+  "Discovered - currently not indexed": 49,
+  "URL is unknown to Google": 77,
   "Crawled - currently not indexed": 65
  }
 }
