@@ -2,14 +2,14 @@
  "subject": "MLB awards voting (BBWAA)",
  "kind": "term",
  "query": "how is the mlb mvp voted",
- "title": "How is the MLB MVP voted? 30 writers, results Nov. 12",
- "answer": "The MLB MVP is chosen by 30 members of the Baseball Writers' Association of America, two from each big league city, voting separately for the American and National League. Each lists 10 players; first place earns 14 points, then 9 down to 1. The 2026 MVPs will be announced Nov. 12.",
- "body": "The same writers' group picks the other main awards, with 30 voters each. The Cy Young ballot has five places worth 7, 4, 3, 2 and 1 points. Rookie of the Year and Manager of the Year ballots have three places worth 5, 3 and 1. Writers cannot split a place between two players, and AL cities vote only on AL awards, NL cities only on NL awards. Ballots are turned in before the postseason begins, so October heroics do not count.\n\nThe 2026 schedule runs across one week on MLB Network: Rookie of the Year on Monday, Nov. 9, Manager of the Year on Nov. 10, Cy Young on Nov. 11 and MVP on Thursday, Nov. 12. Three finalists are named in advance for each award, and full vote totals are published after each announcement.",
- "in_the_news": "MLB's 2026 award winners are announced Nov. 9-12, ending with the American and National League MVPs on Nov. 12.",
+ "title": "How is the MLB MVP voted? 30 writers; 2026 winners were unanimous",
+ "answer": "The MLB MVP is chosen by 30 members of the Baseball Writers' Association of America, two from each big league city, voting separately for the American and National League. Each lists 10 players; first place earns 14 points, then 9 down to 1. The 2026 MVPs, Yordan Alvarez and Pete Crow-Armstrong, were both unanimous picks.",
+ "body": "The same writers' group picks the other main awards, with 30 voters each. The Cy Young ballot has five places worth 7, 4, 3, 2 and 1 points. Rookie of the Year and Manager of the Year ballots have three places worth 5, 3 and 1. Writers cannot split a place between two players, and AL cities vote only on AL awards, NL cities only on NL awards. Ballots are turned in before the postseason begins, so October heroics do not count.\n\nThe 2026 awards were announced across one week on MLB Network: Rookie of the Year on Monday, Nov. 9, Manager of the Year on Nov. 10, Cy Young on Nov. 11 and MVP on Thursday, Nov. 12. Houston's Yordan Alvarez won in the AL, with Tampa Bay's Junior Caminero second (267 points) and Kansas City's Bobby Witt Jr. third. The Cubs' Pete Crow-Armstrong won in the NL, ahead of the Dodgers' Shohei Ohtani (264 points) and Milwaukee's Brice Turang. Both winners were first-time MVPs. Full story: https://trendrundown.com/x/who-won-mvp-2026",
+ "in_the_news": "Yordan Alvarez and Pete Crow-Armstrong were named the 2026 AL and NL MVPs on Nov. 12, 2026, each with every first-place vote.",
  "faq": [
   {
-   "q": "When is the 2026 MLB MVP announced?",
-   "a": "Thursday, Nov. 12, 2026, on MLB Network. Cy Young is Nov. 11, Manager of the Year Nov. 10 and Rookie of the Year Nov. 9."
+   "q": "Who won the 2026 MLB MVP?",
+   "a": "Yordan Alvarez of the Houston Astros in the AL and Pete Crow-Armstrong of the Chicago Cubs in the NL, both unanimously. The awards were announced Thursday, Nov. 12, 2026."
   },
   {
    "q": "Who votes for the MLB MVP?",
@@ -25,6 +25,16 @@
   }
  ],
  "links": [
+  [
+   "MLB.com",
+   "First-time MVP winners (both unanimous!) usher in new era of superstars",
+   "https://www.mlb.com/news/2026-mlb-mvp-award-winners"
+  ],
+  [
+   "News Tribune",
+   "Alvarez, Crow-Armstrong named MVPs by unanimous vote",
+   "https://www.newstribune.com/news/2026/nov/13/alvarez-crow-armstrong-named-mvps-by-unanimous-vote/"
+  ],
   [
    "BBWAA",
    "Voting FAQ",
@@ -46,6 +56,6 @@
  ],
  "made": "2026-11-05T18:14:58+00:00",
  "first": "2026-11-05T18:14:58+00:00",
- "updated": "2026-11-05T18:14:58+00:00",
+ "updated": "2026-11-22T06:27:43+00:00",
  "image_prompt": "A golden trophy shaped like a simple cup on a table next to a baseball, dark background, realistic photo style"
 }

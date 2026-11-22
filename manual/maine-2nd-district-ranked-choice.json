@@ -2,29 +2,39 @@
  "subject": "Maine's 2nd Congressional District ranked-choice tabulation",
  "kind": "event",
  "query": "why is maine 2nd district going to ranked choice",
- "title": "Why is Maine's 2nd District going to ranked choice? No one passed 50%",
- "answer": "Because neither Republican Paul LePage nor Democrat Matt Dunlap won more than 50% of the votes, and Maine law then requires a ranked-choice tabulation. More than 6,000 ballots were blank in the race and 123 votes went to write-ins. The count starts Monday, Nov. 9, 2026, at 10 a.m. in Augusta and usually takes about a week.",
- "body": "Initial results reported to the Secretary of State showed LePage with 170,263 votes (49.9%) and Dunlap with 164,845 (48.3%), a gap of 5,418 votes out of just over 341,000 ballots. LePage, a former Republican governor of Maine, declared victory on Wednesday, Nov. 4. Dunlap conceded on Thursday, Nov. 5, saying, \"This isn't the result we were hoping for.\" The tabulation still goes ahead, because it is a required step in certifying the result.\n\nThe count is held at the Maine Department of Public Safety headquarters in Augusta, is open to the public and is streamed on the Secretary of State's YouTube channel. Secretary of State Shenna Bellows said it usually takes about a week. In past runoffs most blank ballots dropped out after the first round, which Maine Public says would give LePage a majority of the remaining ballots.\n\nMaine has used ranked-choice voting since 2018 for state and federal primaries and for federal general elections. This is the fourth time in nine years the 2nd District has needed a ranked-choice runoff; retiring Democratic Rep. Jared Golden won the three earlier ones. In the U.S. Senate race, Democrat Troy Jackson won a majority of first choices over Susan Collins, so no ranked-choice count was needed there.",
- "in_the_news": "Maine's Secretary of State will run a ranked-choice tabulation in the 2nd Congressional District starting Nov. 9, 2026, after no candidate topped 50%.",
+ "title": "Why did Maine's 2nd District go to ranked choice? LePage won",
+ "answer": "Because neither Republican Paul LePage nor Democrat Matt Dunlap won more than 50% of the votes, and Maine law then requires a ranked-choice tabulation. The count ran Nov. 9-12, 2026, in Augusta. After blank ballots and write-ins were removed, LePage finished with 50.8% to Dunlap's 49.2%, and The Associated Press called the race for him.",
+ "body": "Initial results reported to the Secretary of State showed LePage with 170,263 votes (49.9%) and Dunlap with 164,845 (48.3%), a gap of 5,418 votes out of just over 341,000 ballots. More than 6,000 ballots were blank in the race, and 123 votes went to write-in candidate Gregory Ward. LePage, a former Republican governor of Maine, declared victory on Wednesday, Nov. 4. Dunlap conceded on Thursday, Nov. 5, saying, \"This isn't the result we were hoping for.\" The tabulation still went ahead, because state law requires it once no candidate has a majority.\n\nThe count began Monday, Nov. 9, at the Maine Department of Public Safety headquarters in Augusta, open to the public and streamed online, and was completed on Thursday, Nov. 12. With the blank ballots and Ward's votes set aside, LePage had 50.81% and Dunlap 49.18%, a margin of just over 5,000 votes. The AP declared LePage the winner that day.\n\nMaine has used ranked-choice voting since 2018 for state and federal primaries and for federal general elections. This was the fourth time in nine years the 2nd District needed a ranked-choice runoff; retiring Democratic Rep. Jared Golden won the three earlier ones. In the U.S. Senate race, Democrat Troy Jackson won a majority of first choices over Susan Collins, so no ranked-choice count was needed there.",
+ "in_the_news": "Republican Paul LePage won Maine's 2nd Congressional District after a ranked-choice tabulation finished on Nov. 12, 2026, taking the seat held by retiring Democrat Jared Golden.",
  "faq": [
   {
+   "q": "Who won Maine's 2nd District?",
+   "a": "Republican Paul LePage. After the ranked-choice tabulation ended on Nov. 12, 2026, he had 50.8% to Democrat Matt Dunlap's 49.2%, and the AP called the race."
+  },
+  {
    "q": "Did Matt Dunlap concede?",
-   "a": "Yes, on Thursday, Nov. 5, 2026. The ranked-choice tabulation still takes place as part of certification."
+   "a": "Yes, on Thursday, Nov. 5, 2026. The ranked-choice tabulation still took place because state law requires it."
   },
   {
-   "q": "When does the Maine ranked-choice count start?",
-   "a": "Monday, Nov. 9, 2026, at 10 a.m. in Augusta. It usually takes about a week."
-  },
-  {
-   "q": "Can I watch the tabulation?",
-   "a": "Yes. It is open to the public and streamed on the Maine Secretary of State's YouTube channel."
+   "q": "When was the Maine ranked-choice count?",
+   "a": "It ran from Monday, Nov. 9, to Thursday, Nov. 12, 2026, in Augusta."
   },
   {
    "q": "Who is replacing Jared Golden?",
-   "a": "Golden did not seek another term. Paul LePage leads and declared victory; the race is decided after the ranked-choice tabulation."
+   "a": "Paul LePage, a former Republican governor of Maine. Golden did not seek another term."
   }
  ],
  "links": [
+  [
+   "Roll Call",
+   "Former Maine Gov. Paul LePage declared winner of open House seat",
+   "https://www.rollcall.com/2026/11/12/former-maine-gov-paul-lepage-declared-winner-of-open-house-seat"
+  ],
+  [
+   "Maine Morning Star",
+   "LePage prevails in 2nd District ranked choice runoff",
+   "https://www.newsfromthestates.com/node/438110"
+  ],
   [
    "WGME",
    "Second Congressional District race to be decided by ranked-choice voting tabulation",
@@ -51,6 +61,6 @@
  ],
  "made": "2026-11-06T14:20:00+00:00",
  "first": "2026-11-06T14:20:00+00:00",
- "updated": "2026-11-06T14:20:00+00:00",
+ "updated": "2026-11-22T06:27:02+00:00",
  "image_prompt": "A wooden ballot box on a table in a small town hall in Maine, autumn trees outside the window, realistic photo style"
 }

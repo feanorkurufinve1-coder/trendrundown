@@ -2,29 +2,43 @@
  "subject": "Alaska ranked-choice voting",
  "kind": "law",
  "query": "how does alaska ranked choice voting work",
- "title": "How does Alaska ranked choice voting work? Senate count on Nov. 18",
- "answer": "In Alaska, voters rank candidates in order of preference. If no one wins more than 50% of first choices, the last-place candidate is dropped and those ballots move to each voter's next pick, round after round, until someone passes 50%. For the 2026 Senate race, that ranked-choice count is scheduled for Nov. 18.",
- "body": "Alaska adopted the system by ballot measure in 2020 and kept it when voters narrowly rejected a repeal in 2024. It is used for the general election for governor, the state legislature, the U.S. House and the U.S. Senate. Before that, a single top-four primary sends the four leading candidates, of any party, to the November ballot. Voters may rank just one candidate or all four.\n\nThe 2026 Senate ballot lists Democrat Mary Peltola, Republican Senator Dan S. Sullivan, Daniel J. Sullivan Jr., a retired Petersburg teacher listed with no party, and Republican Gerald L. Heikes. After election night neither leader had a majority: Peltola stood near 48% and led by roughly 600 votes. Mailed ballots postmarked by Election Day are accepted for 10 days, and ballots from overseas for 15, so the count keeps moving.\n\nIf no one passes 50% once all ballots are in, the state runs the ranked rounds on Nov. 18. Heikes and Daniel J. Sullivan Jr. would be eliminated first, and their few percent of the vote would flow to whichever candidate their voters ranked next. Ballots that ranked no one else simply drop out. With a margin this small, those transferred votes could decide the seat.",
- "in_the_news": "Alaska's U.S. Senate race between Mary Peltola and Dan Sullivan was too close to call after the Nov. 3, 2026 vote, and is expected to be settled by the ranked-choice count on Nov. 18.",
+ "title": "How does Alaska ranked choice voting work? Peltola won outright",
+ "answer": "In Alaska, voters rank candidates in order of preference. If no one wins more than 50% of first choices, the last-place candidate is dropped and those ballots move to each voter's next pick until someone passes 50%. In the 2026 Senate race, Mary Peltola cleared 50% of first choices, so no ranked rounds were needed.",
+ "body": "Alaska adopted the system by ballot measure in 2020 and kept it when voters narrowly rejected a repeal in 2024. It is used for the general election for governor, the state legislature, the U.S. House and the U.S. Senate. Before that, a single top-four primary sends the four leading candidates, of any party, to the November ballot. Voters may rank just one candidate or all four.\n\nThe 2026 Senate ballot listed Democrat Mary Peltola, Republican Senator Dan S. Sullivan, Daniel J. Sullivan Jr., a retired Petersburg teacher listed with no party, and Republican Gerald L. Heikes. On election night Peltola led by only about 600 votes and was short of a majority. Mailed ballots postmarked by Election Day are accepted for 10 days, and ballots from overseas for 15, and as they were counted her lead grew.\n\nBy Nov. 17, with about 290,000 ballots counted, Peltola had 144,302 first-choice votes, or 50.1%, to Sullivan's 131,844, or 45.8%. Heikes had 2.1% and Daniel J. Sullivan Jr. 1.7%. Because she passed 50%, the ranked-choice count planned for Nov. 18 was not needed, and The Associated Press declared her the winner on the evening of Nov. 17. The Division of Elections plans to certify the result on Nov. 25.",
+ "in_the_news": "Democrat Mary Peltola won Alaska's 2026 U.S. Senate race over Republican Senator Dan Sullivan, with The Associated Press calling it on Nov. 17 after she topped 50% of first-choice votes, so no ranked-choice runoff was needed.",
  "faq": [
   {
-   "q": "When will the Alaska Senate race be decided?",
-   "a": "The ranked-choice count is scheduled for Nov. 18, 2026, if no candidate has more than 50% of first choices by then. Before that, the state posts updated first-choice counts as late mail and overseas ballots arrive."
+   "q": "Who won the Alaska Senate race?",
+   "a": "Democrat Mary Peltola. The Associated Press called the race for her on Nov. 17, 2026, when she had about 50.1% of first-choice votes to Republican Dan Sullivan's 45.8%."
   },
   {
-   "q": "Who is leading the Alaska Senate race?",
-   "a": "After election night, Democrat Mary Peltola led Republican Dan Sullivan by roughly 600 votes, with about 48% each side short of a majority. The lead could change as more ballots are counted."
+   "q": "Did the Alaska Senate race go to ranked choice?",
+   "a": "No. Peltola won more than 50% of first choices, so the ranked-choice count planned for Nov. 18 was not needed."
+  },
+  {
+   "q": "When is the Alaska election certified?",
+   "a": "The Division of Elections plans to certify the results on Nov. 25, 2026."
   },
   {
    "q": "Do I have to rank every candidate in Alaska?",
    "a": "No. A voter can rank only one candidate. That ballot counts for its first choice as long as that candidate is still in the race."
   },
   {
-   "q": "Why are there two Dan Sullivans on the Alaska ballot?",
-   "a": "Daniel J. Sullivan Jr., a retired teacher from Petersburg with no relation to the senator, filed to run. The state tried to remove him, but Alaska courts ordered his name kept on the ballot."
+   "q": "Why were there two Dan Sullivans on the Alaska ballot?",
+   "a": "Daniel J. Sullivan Jr., a retired teacher from Petersburg with no relation to the senator, filed to run. The state tried to remove him, but Alaska courts ordered his name kept on the ballot. He finished with about 1.7%."
   }
  ],
  "links": [
+  [
+   "Alaska's News Source",
+   "AP calls it: Peltola wins Alaska's US Senate seat over GOP incumbent Sullivan",
+   "https://alaskasnewssource.com/2026/11/18/peltola-is-going-back-dc-after-ap-calls-last-senate-race-democratic-challenger/"
+  ],
+  [
+   "Anchorage Daily News",
+   "Democrat Mary Peltola wins U.S. Senate race in Alaska, beating incumbent Republican Dan Sullivan",
+   "https://www.adn.com/politics/2026/11/17/democrat-mary-peltola-wins-us-senate-race-in-alaska-beating-incumbent-republican-dan-sullivan/"
+  ],
   [
    "Alaska Public Media",
    "What to know about Alaska's general election",
@@ -51,6 +65,6 @@
  ],
  "made": "2026-11-05T07:47:25+00:00",
  "first": "2026-11-05T07:47:25+00:00",
- "updated": "2026-11-05T18:30:00+00:00",
+ "updated": "2026-11-22T06:27:02+00:00",
  "image_prompt": "An empty voting booth with a pen on a small shelf, Alaska mountains seen through a window, realistic photo style"
 }

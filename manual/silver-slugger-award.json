@@ -2,18 +2,22 @@
  "subject": "Silver Slugger Award",
  "kind": "term",
  "query": "what is the silver slugger award",
- "title": "What is the Silver Slugger Award? 2026 winners announced Nov. 17",
- "answer": "The Silver Slugger Award goes to the best offensive player at each position in the American and National leagues. It has been presented since 1980 by Louisville Slugger maker Hillerich & Bradsby, and MLB managers and coaches vote. The 2026 winners will be announced on Tuesday, Nov. 17, 2026.",
- "body": "Each team gets four votes, cast by its manager and three coaches, and voters cannot pick players from their own team. They weigh statistics such as OPS, OPS+, home runs, RBIs and batting average, along with \"general impressions of a player's overall offensive value.\" Each league names 10 winners: catcher, first base, second base, third base, shortstop, three outfielders, designated hitter and a utility player, which was added in 2022. A team award for the best offensive club in each league began in 2023. The trophy is a three-foot bat plated with sterling silver.\n\nBarry Bonds holds the record with 12 Silver Sluggers; Mike Piazza and Alex Rodriguez have 10 each. The Silver Slugger is the hitting counterpart of the Gold Glove, which honors defense and was announced on Nov. 1, 2026. The 2026 Silver Slugger finalists were announced on Nov. 2.",
- "in_the_news": "Louisville Slugger will announce the 2026 Silver Slugger winners on Nov. 17, 2026, after the finalists were revealed on Nov. 2.",
+ "title": "What is the Silver Slugger Award? 2026 winners named Nov. 17",
+ "answer": "The Silver Slugger Award goes to the best offensive player at each position in the American and National leagues. It has been presented since 1980 by Louisville Slugger maker Hillerich & Bradsby, and MLB managers and coaches vote. The 2026 winners were announced on Tuesday, Nov. 17, 2026, and 13 of them won for the first time.",
+ "body": "Each team gets four votes, cast by its manager and three coaches, and voters cannot pick players from their own team. They weigh statistics such as OPS, OPS+, home runs, RBIs and batting average, along with \"general impressions of a player's overall offensive value.\" Each league names 10 winners: catcher, first base, second base, third base, shortstop, three outfielders, designated hitter and a utility player, which was added in 2022. A team award for the best offensive club in each league began in 2023. The trophy is a three-foot bat plated with sterling silver.\n\nBarry Bonds holds the record with 12 Silver Sluggers; Mike Piazza and Alex Rodriguez have 10 each. The Silver Slugger is the hitting counterpart of the Gold Glove, which honors defense and was announced on Nov. 1, 2026.\n\nThe 2026 American League winners were Dillon Dingler (C, Tigers), Pete Alonso (1B, Orioles), Chase Meidroth (2B, White Sox), Junior Caminero (3B, Rays), Bobby Witt Jr. (SS, Royals), outfielders Randy Arozarena (Mariners), Riley Greene (Tigers) and Chase DeLauter (Guardians), Yordan Alvarez (DH, Astros) and Kevin McGonigle (utility, Tigers). The National League winners were Gabriel Moreno (C, Diamondbacks), Matt Olson (1B, Braves), Brandon Lowe (2B, Pirates), Alex Bregman (3B, Cubs), Elly De La Cruz (SS, Reds), outfielders Pete Crow-Armstrong (Cubs), Jackson Chourio (Brewers) and James Wood (Nationals), Kyle Schwarber (DH, Phillies) and Jake Bauers (utility, Brewers). The Astros and Cubs won the team awards. MLB.com said 13 first-time winners was the most in 20 years, and the Dodgers, including Shohei Ohtani, were shut out for the first time since 2021.",
+ "in_the_news": "Louisville Slugger announced the 2026 Silver Slugger winners on Nov. 17, 2026, a group led by 13 first-time winners, including MVPs Yordan Alvarez and Pete Crow-Armstrong.",
  "faq": [
+  {
+   "q": "Who won the 2026 Silver Slugger Awards?",
+   "a": "Among them: Yordan Alvarez, Bobby Witt Jr., Pete Alonso, Pete Crow-Armstrong, Kyle Schwarber and Elly De La Cruz. The Astros and Cubs won the team awards."
+  },
+  {
+   "q": "When were the 2026 Silver Slugger Awards announced?",
+   "a": "Tuesday, Nov. 17, 2026."
+  },
   {
    "q": "Who votes for the Silver Slugger?",
    "a": "MLB managers and coaches: four votes per team, and they cannot vote for their own players."
-  },
-  {
-   "q": "When are the 2026 Silver Slugger Awards announced?",
-   "a": "Tuesday, Nov. 17, 2026."
   },
   {
    "q": "What is the difference between a Gold Glove and a Silver Slugger?",
@@ -25,6 +29,16 @@
   }
  ],
  "links": [
+  [
+   "MLB.com",
+   "Silver Slugger Awards feature 13 first-time winners",
+   "https://www.mlb.com/news/2026-silver-slugger-award-winners"
+  ],
+  [
+   "Dodger Blue",
+   "Shohei Ohtani, Max Muncy & Dodgers come up short for Silver Slugger Awards",
+   "https://dodgerblue.com/shohei-ohtani-max-muncy-lose-out-on-2026-silver-slugger-awards/2026/11/18/"
+  ],
   [
    "MLB.com",
    "Important Nats dates for offseason awards, Hot Stove and more",
@@ -46,6 +60,6 @@
  ],
  "made": "2026-11-07T14:00:00+00:00",
  "first": "2026-11-07T14:00:00+00:00",
- "updated": "2026-11-07T14:00:00+00:00",
+ "updated": "2026-11-22T06:28:16+00:00",
  "image_prompt": "A shining silver baseball bat displayed on a dark stand with a spotlight, realistic photo style"
 }

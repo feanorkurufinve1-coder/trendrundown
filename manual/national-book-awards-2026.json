@@ -2,30 +2,26 @@
  "subject": "National Book Awards 2026",
  "kind": "event",
  "query": "when are the national book awards 2026",
- "title": "When are the National Book Awards 2026? Date, host and finalists",
- "answer": "The winners of the 77th National Book Awards will be announced on Wednesday, Nov. 18, 2026, at 8 p.m. Eastern, at a ceremony at Cipriani Wall Street in New York. Actor Kyle MacLachlan hosts, and the event is livestreamed free at nationalbook.org and on the National Book Foundation's YouTube channel.",
- "body": "Awards are given in five categories: Fiction, Nonfiction, Poetry, Translated Literature and Young People's Literature. Each winner receives $10,000, a bronze medal and a statue, and each finalist receives $1,000 and a bronze medal. Michelle Zauner is the musical guest.\n\nThe fiction finalists are Hannah Lillith Assadi's \"Paradiso 17,\" Edwidge Danticat's \"Dèy,\" Julián Delgado Lopera's \"Pretend You're Dead and I Carry You,\" Valeria Luiselli's \"Beginning Middle End\" and Morgan Thomas's \"Mad Eden.\" The translated literature finalists include Karl Ove Knausgaard's \"The School of Night,\" translated by Martin Aitken.\n\nThe Young People's Literature finalists are Elana K. Arnold's \"Holloway,\" Tae Keller's \"When Tomorrow Burns,\" Keala Kendall's \"That Which Feeds Us: A Hawaiian Gothic,\" David Levithan and Gabriel Duckels's \"The Fight of Our Lives: AIDS in America\" and Julian Randall's \"Shook.\" The poetry finalists include Victoria Chang's \"Tree of Knowledge\" and Brenda Hillman's \"Still House in the Desert.\"",
- "in_the_news": "The National Book Foundation names the 2026 National Book Award winners at a ceremony in New York on Nov. 18, 2026.",
+ "title": "When were the National Book Awards 2026? Nov. 18: the winners",
+ "answer": "The 77th National Book Awards were presented on Wednesday, Nov. 18, 2026, at Cipriani Wall Street in New York. The winners were Hannah Lillith Assadi's \"Paradiso 17\" for fiction, Abdelrahman ElGendy's \"Huna\" for nonfiction, Brenda Hillman for poetry, \"Centroeuropa\" for translated literature and \"The Fight of Our Lives\" for young people's literature.",
+ "body": "Awards are given in five categories: Fiction, Nonfiction, Poetry, Translated Literature and Young People's Literature. Each winner receives $10,000 and a bronze sculpture, and each finalist receives $1,000. Actor Kyle MacLachlan was announced as host and Michelle Zauner as musical guest.\n\nThe full list of winners: Fiction, \"Paradiso 17\" by Hannah Lillith Assadi. Nonfiction, \"Huna: A Memoir of Revolution, Prison, and Becoming\" by Abdelrahman ElGendy. Poetry, \"Still House in the Desert\" by Brenda Hillman. Translated Literature, \"Centroeuropa\" by Vicente Luis Mora, translated from the Spanish by Rahul Bery. Young People's Literature, \"The Fight of Our Lives: AIDS in America\" by David Levithan and Gabriel Duckels.\n\nAssadi's novel beat fiction finalists Edwidge Danticat's \"Dèy,\" Julián Delgado Lopera's \"Pretend You're Dead and I Carry You,\" Valeria Luiselli's \"Beginning Middle End\" and Morgan Thomas's \"Mad Eden.\" Salman Rushdie received the foundation's Medal for Distinguished Contribution to American Letters, and pediatrician Perri Klass, a co-founder of the literacy nonprofit Reach Out and Read, received the Literarian Award.",
+ "in_the_news": "The National Book Foundation named the 2026 National Book Award winners in New York on Nov. 18, 2026, with Hannah Lillith Assadi's \"Paradiso 17\" winning for fiction.",
  "faq": [
   {
-   "q": "What time are the National Book Awards announced?",
-   "a": "The ceremony starts at 8 p.m. Eastern on Wednesday, Nov. 18, 2026."
+   "q": "Who won the 2026 National Book Award for fiction?",
+   "a": "Hannah Lillith Assadi, for her novel \"Paradiso 17.\""
   },
   {
-   "q": "Can I watch the National Book Awards online?",
-   "a": "Yes. The ceremony is livestreamed free at nationalbook.org and on the National Book Foundation's YouTube channel."
+   "q": "When were the 2026 National Book Awards?",
+   "a": "Wednesday, Nov. 18, 2026, at Cipriani Wall Street in New York."
   },
   {
-   "q": "Who is hosting the 2026 National Book Awards?",
-   "a": "Kyle MacLachlan."
+   "q": "Who won the other 2026 National Book Awards?",
+   "a": "Abdelrahman ElGendy for nonfiction, Brenda Hillman for poetry, Vicente Luis Mora and translator Rahul Bery for translated literature, and David Levithan and Gabriel Duckels for young people's literature."
   },
   {
    "q": "How much money do National Book Award winners get?",
-   "a": "$10,000, plus a bronze medal and a statue. Finalists get $1,000 and a bronze medal."
-  },
-  {
-   "q": "Who are the 2026 National Book Award finalists for fiction?",
-   "a": "Hannah Lillith Assadi, Edwidge Danticat, Julián Delgado Lopera, Valeria Luiselli and Morgan Thomas."
+   "a": "$10,000 and a bronze sculpture. Finalists get $1,000."
   },
   {
    "q": "What are the National Book Award categories?",
@@ -33,6 +29,16 @@
   }
  ],
  "links": [
+  [
+   "Literary Hub",
+   "Here are the winners of the 2026 National Book Awards",
+   "https://lithub.com/here-are-the-winners-of-the-2026-national-book-awards/"
+  ],
+  [
+   "Book Riot",
+   "Here Are the 2026 National Book Awards Winners",
+   "https://bookriot.com/2026-national-book-awards-winners/"
+  ],
   [
    "National Book Foundation",
    "77th National Book Awards",
@@ -50,6 +56,6 @@
  ],
  "made": "2026-11-10T14:40:00+00:00",
  "first": "2026-11-10T14:40:00+00:00",
- "updated": "2026-11-10T14:40:00+00:00",
+ "updated": "2026-11-22T06:27:43+00:00",
  "image_prompt": "A stack of hardcover books with a gold medal ribbon on a wooden library table, realistic photo style"
 }

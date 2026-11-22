@@ -2,18 +2,22 @@
  "subject": "MLB Manager of the Year voting",
  "kind": "term",
  "query": "how is mlb manager of the year voted",
- "title": "How is MLB Manager of the Year voted? 30 writers, 3 spots, 5-3-1",
- "answer": "MLB's Manager of the Year is voted on by 30 members of the Baseball Writers' Association of America in each league, two from each city. Each ranks three managers, worth 5, 3 and 1 points, before the postseason begins. The BBWAA created the award in 1983. The 2026 winners are announced Tuesday, Nov. 10.",
- "body": "Because ballots are due before the playoffs, a manager's postseason run does not count. Writers in American League cities vote on the AL award and writers in National League cities on the NL award. A voter may not split a spot between two managers, and full ballots have been published online since 2012.\n\nThe 2026 finalists are Kevin Cash (Rays), Chad Tracy (Red Sox) and Will Venable (White Sox) in the American League, and Don Mattingly (Phillies), Pat Murphy (Brewers) and Walt Weiss (Braves) in the National League. Manager of the Year was the BBWAA's newest award until 2026, when the writers added Relief Pitcher of the Year.",
- "in_the_news": "The BBWAA announces the 2026 Manager of the Year winners on Nov. 10, 2026.",
+ "title": "How is MLB Manager of the Year voted? 2026: Venable and Murphy",
+ "answer": "MLB's Manager of the Year is voted on by 30 members of the Baseball Writers' Association of America in each league, two from each city. Each ranks three managers, worth 5, 3 and 1 points, before the postseason begins. The 2026 winners, announced Nov. 10, were Will Venable of the White Sox and Pat Murphy of the Brewers.",
+ "body": "Because ballots are due before the playoffs, a manager's postseason run does not count. Writers in American League cities vote on the AL award and writers in National League cities on the NL award. A voter may not split a spot between two managers, and full ballots have been published online since 2012.\n\nIn the American League, Venable won with 15 first-place votes and 111 points, ahead of Kevin Cash of the Rays (98 points) and Chad Tracy of the Red Sox (47). His White Sox went 84-78 and reached the playoffs a year after a 60-102 season. In the National League, Murphy took 20 first-place votes and 124 points, ahead of Walt Weiss of the Braves (86) and Don Mattingly of the Phillies (25). It was Murphy's third straight award, the first time a manager has won three years in a row, after the Brewers won a franchise-record 103 games.\n\nManager of the Year was the BBWAA's newest award until 2026, when the writers added Relief Pitcher of the Year.",
+ "in_the_news": "Will Venable of the White Sox and Pat Murphy of the Brewers won the 2026 Manager of the Year awards on Nov. 10, 2026; Murphy became the first manager to win three straight.",
  "faq": [
   {
-   "q": "When is the 2026 Manager of the Year announced?",
-   "a": "Tuesday, Nov. 10, 2026."
+   "q": "Who won 2026 Manager of the Year?",
+   "a": "Will Venable of the Chicago White Sox in the AL and Pat Murphy of the Milwaukee Brewers in the NL, announced Tuesday, Nov. 10, 2026."
   },
   {
-   "q": "Who are the 2026 Manager of the Year finalists?",
+   "q": "Who were the 2026 Manager of the Year finalists?",
    "a": "AL: Kevin Cash, Chad Tracy, Will Venable. NL: Don Mattingly, Pat Murphy, Walt Weiss."
+  },
+  {
+   "q": "Has anyone won Manager of the Year three years in a row?",
+   "a": "Pat Murphy is the first, winning the NL award in 2024, 2025 and 2026."
   },
   {
    "q": "Does the postseason count for Manager of the Year?",
@@ -25,6 +29,16 @@
   }
  ],
  "links": [
+  [
+   "CBS Sports",
+   "2026 MLB Manager of the Year: White Sox's Will Venable, Brewers' Pat Murphy win BBWAA awards",
+   "https://www.cbssports.com/mlb/news/mlb-manager-of-the-year-2026-bbwaa-awards/"
+  ],
+  [
+   "News Tribune",
+   "Brewers' Murphy, White Sox's Venable win Manager of Year awards",
+   "https://www.newstribune.com/news/2026/nov/11/brewers-murphy-white-soxs-venable-win-manager-of-year-awards/"
+  ],
   [
    "BBWAA",
    "Voting FAQ",
@@ -46,6 +60,6 @@
  ],
  "made": "2026-11-06T14:20:00+00:00",
  "first": "2026-11-06T14:20:00+00:00",
- "updated": "2026-11-06T14:20:00+00:00",
+ "updated": "2026-11-22T06:27:43+00:00",
  "image_prompt": "A clipboard and a baseball cap on an empty dugout bench, stadium at golden hour, realistic photo style"
 }

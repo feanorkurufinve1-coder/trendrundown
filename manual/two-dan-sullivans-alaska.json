@@ -2,25 +2,39 @@
  "subject": "Daniel J. Sullivan Jr.",
  "kind": "person",
  "query": "why are there two dan sullivans on the alaska ballot",
- "title": "Why are there two Dan Sullivans on the Alaska ballot?",
- "answer": "Two Dan Sullivans are on Alaska's 2026 Senate ballot because a second man with the same name, Daniel J. Sullivan Jr., a retired teacher from Petersburg, filed to run against Republican Senator Dan S. Sullivan. The state tried to disqualify him, but Alaska's courts ordered his name kept on the ballot.",
- "body": "Daniel J. Sullivan Jr. is a retired teacher and former U.S. Forest Service employee. He filed as a Republican three days before the deadline, called himself a pragmatic centrist, and says he is no relation to the senator. Senator Sullivan called the bid a sham and dirty politics by Democrats. Democrat Mary Peltola's campaign and the state and national Democratic parties denied any link, though Alaska station KTUU found he had given small donations to Peltola's past campaigns, $100 in 2022 and $30 in 2024.\n\nThe Division of Elections ruled on June 16, 2026 that his filing was not made in good faith and removed him. An Anchorage Superior Court judge reversed that on June 26, and the Alaska Supreme Court agreed on July 2. In the August top-four primary he won about 2.5%, enough to reach the November ballot. To limit confusion, the ballot lists him as \"Sullivan, Daniel J. Jr.\" with no party, and marks Dan S. Sullivan as the incumbent.\n\nHe drew roughly 3,600 votes, about 1.7%, in the first count of the Nov. 3 general election, a race in which Peltola led the senator by only about 600 votes. Under ranked-choice rules he will be eliminated early, and his ballots will move to his voters' second choices in the count scheduled for Nov. 18.",
- "in_the_news": "The Alaska Senate race between Mary Peltola and Senator Dan Sullivan is separated by a few hundred votes, and the second Sullivan's ballots could matter when ranked choices are counted on Nov. 18, 2026.",
+ "title": "Why were there two Dan Sullivans on the Alaska ballot?",
+ "answer": "Two Dan Sullivans were on Alaska's 2026 Senate ballot because a second man with the same name, Daniel J. Sullivan Jr., a retired teacher from Petersburg, filed to run against Republican Senator Dan S. Sullivan. The state tried to disqualify him, but Alaska's courts ordered his name kept on the ballot. He finished with about 1.7%.",
+ "body": "Daniel J. Sullivan Jr. is a retired teacher and former U.S. Forest Service employee. He filed as a Republican three days before the deadline, called himself a pragmatic centrist, and has said he is no relation to the senator. Senator Sullivan called the bid a sham and dirty politics by Democrats. Democrat Mary Peltola's campaign and the state and national Democratic parties denied any link, though Alaska station KTUU found he had given small donations to Peltola's past campaigns, $100 in 2022 and $30 in 2024.\n\nThe Division of Elections ruled on June 16, 2026 that his filing was not made in good faith and removed him. An Anchorage Superior Court judge reversed that on June 26, and the Alaska Supreme Court agreed on July 2. In the August top-four primary he won about 2.5%, enough to reach the November ballot. To limit confusion, the ballot listed him as \"Sullivan, Daniel J. Jr.\" with no party, and marked Dan S. Sullivan as the incumbent.\n\nHe drew about 4,760 votes, or 1.7%, in the general election. Democrat Mary Peltola won the race outright with about 50.1% of first-choice votes to Senator Sullivan's 45.8%, so no ranked-choice count was held and his ballots were never transferred. The Associated Press called the race for Peltola on Nov. 17, 2026. More on how the count worked: https://trendrundown.com/x/alaska-ranked-choice-voting",
+ "in_the_news": "Mary Peltola beat Senator Dan Sullivan in Alaska's 2026 Senate race, which The Associated Press called on Nov. 17; the second Dan Sullivan finished with about 1.7%.",
  "faq": [
   {
    "q": "Is Daniel J. Sullivan related to Senator Dan Sullivan?",
-   "a": "No. He says he has no relation to the senator; they simply share a name."
+   "a": "No. He has said he has no relation to the senator; they simply share a name."
   },
   {
    "q": "How many votes did the other Dan Sullivan get?",
-   "a": "About 3,600 votes, roughly 1.7%, in early general election results, and about 2.5% in the August primary."
+   "a": "About 4,760 votes, roughly 1.7%, in the November general election, and about 2.5% in the August primary."
   },
   {
-   "q": "What happens to votes for Daniel J. Sullivan?",
-   "a": "In the ranked-choice count, he is likely to be eliminated early, and each of his ballots moves to that voter's next-ranked candidate, if they ranked one."
+   "q": "Did the votes for Daniel J. Sullivan matter?",
+   "a": "No. Mary Peltola won more than 50% of first choices, so there was no ranked-choice count and his voters' second choices were never used."
+  },
+  {
+   "q": "Who won the Alaska Senate race?",
+   "a": "Democrat Mary Peltola, who unseated Republican Senator Dan S. Sullivan. The AP called the race on Nov. 17, 2026."
   }
  ],
  "links": [
+  [
+   "Alaska's News Source",
+   "AP calls it: Peltola wins Alaska's US Senate seat over GOP incumbent Sullivan",
+   "https://alaskasnewssource.com/2026/11/18/peltola-is-going-back-dc-after-ap-calls-last-senate-race-democratic-challenger/"
+  ],
+  [
+   "Alaska Beacon",
+   "Peltola elected to fill Alaska US Senate seat, becomes Senate's 56th Democrat nationally",
+   "https://alaskabeacon.com/?p=30829"
+  ],
   [
    "Wikipedia",
    "2026 United States Senate election in Alaska",
@@ -42,6 +56,6 @@
  ],
  "made": "2026-11-05T18:30:00+00:00",
  "first": "2026-11-05T18:30:00+00:00",
- "updated": "2026-11-05T18:30:00+00:00",
+ "updated": "2026-11-22T06:27:02+00:00",
  "image_prompt": "Two identical empty chairs side by side in front of snowy Alaska mountains, symbolic, realistic photo style"
 }

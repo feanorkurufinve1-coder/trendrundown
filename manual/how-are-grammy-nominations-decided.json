@@ -2,18 +2,22 @@
  "subject": "Grammy nominations",
  "kind": "event",
  "query": "how are grammy nominations decided",
- "title": "How are Grammy nominations decided? 2027 nominees out Nov. 16",
- "answer": "Grammy nominations are decided by a vote of the Recording Academy's voting members. After experts screen entries for eligibility, members vote in a first round, and the top vote-getters become nominees; accounting firm Deloitte counts the ballots. For the 2027 Grammys, nominations will be announced on Monday, Nov. 16, 2026.",
- "body": "Each voting member may vote in up to 10 categories across up to three genre fields, plus all six General Field categories, such as Album, Record and Song of the Year. Members are told to vote only in fields where they are peers of the nominees. A \"Ballot Plus\" option lets some members vote in extra categories where they actively work. In craft categories, such as engineering and packaging, final nominations are chosen by special committees of members who work in that craft.\n\nScreening sessions with more than 350 experts check only that entries are eligible and in the right category; the Academy says they do not judge artistic quality. For the 2027 awards, the eligibility period ran from Aug. 31, 2025, to Aug. 28, 2026, and first-round voting took place Oct. 12-22, 2026.\n\nFinal-round voting runs from Dec. 10, 2026, to Jan. 7, 2027. The 69th Grammy Awards will be held on Sunday, Feb. 7, 2027, at Crypto.com Arena in Los Angeles and will air on ABC, Disney+ and Hulu.",
- "in_the_news": "The Recording Academy announces nominations for the 2027 Grammy Awards on Monday, Nov. 16, 2026.",
+ "title": "How are Grammy nominations decided? 2027 list out; Raye leads",
+ "answer": "Grammy nominations are decided by a vote of the Recording Academy's voting members. After experts screen entries for eligibility, members vote in a first round, and the top vote-getters become nominees; accounting firm Deloitte counts the ballots. The 2027 nominations were announced on Monday, Nov. 16, 2026, with Raye leading at 11.",
+ "body": "Each voting member may vote in up to 10 categories across up to three genre fields, plus all six General Field categories, such as Album, Record and Song of the Year. Members are told to vote only in fields where they are peers of the nominees. A \"Ballot Plus\" option lets some members vote in extra categories where they actively work. In craft categories, such as engineering and packaging, final nominations are chosen by special committees of members who work in that craft.\n\nScreening sessions with more than 350 experts check only that entries are eligible and in the right category; the Academy says they do not judge artistic quality. For the 2027 awards, the eligibility period ran from Aug. 31, 2025, to Aug. 28, 2026, and first-round voting took place Oct. 12-22, 2026.\n\nThe 2027 nominations came out on Nov. 16, 2026. Raye led with 11, followed by Rosalía with nine, and Phoebe Bridgers, Miranda Lambert, Ella Langley and Olivia Rodrigo with seven each. Album of the Year nominees include Raye, Rosalía, Bridgers, Langley, Rodrigo, Olivia Dean, Bruno Mars and Taylor Swift.\n\nFinal-round voting runs from Dec. 10, 2026, to Jan. 7, 2027. The 69th Grammy Awards will be held on Sunday, Feb. 7, 2027, at Crypto.com Arena in Los Angeles and will air on ABC, Disney+ and Hulu.",
+ "in_the_news": "The Recording Academy announced nominations for the 2027 Grammy Awards on Monday, Nov. 16, 2026; final-round voting begins Dec. 10.",
  "faq": [
   {
    "q": "Who votes for the Grammys?",
    "a": "Voting members of the Recording Academy, who are music creators and professionals."
   },
   {
-   "q": "When are the 2027 Grammy nominations announced?",
+   "q": "When were the 2027 Grammy nominations announced?",
    "a": "Monday, Nov. 16, 2026."
+  },
+  {
+   "q": "Who has the most 2027 Grammy nominations?",
+   "a": "Raye, with 11. Rosalía has nine, and Phoebe Bridgers, Miranda Lambert, Ella Langley and Olivia Rodrigo have seven each."
   },
   {
    "q": "When are the 2027 Grammys?",
@@ -25,6 +29,16 @@
   }
  ],
  "links": [
+  [
+   "ABC7",
+   "2027 Grammy nominations list: Raye, Rosalía, Ella Langley, Olivia Rodrigo lead nominees",
+   "https://abc7.com/story/2027-grammy-nominations-announced-live-updates/20038587/"
+  ],
+  [
+   "The FADER",
+   "Here are all the 2027 Grammy nominees",
+   "https://www.thefader.com/2026/11/16/2027-grammy-nominations-raye-underscores"
+  ],
   [
    "Grammy.com",
    "The Grammy Awards voting process",
@@ -41,6 +55,6 @@
  ],
  "made": "2026-11-08T14:25:00+00:00",
  "first": "2026-11-08T14:25:00+00:00",
- "updated": "2026-11-08T14:25:00+00:00",
+ "updated": "2026-11-22T06:28:16+00:00",
  "image_prompt": "A vintage record player with a spinning vinyl record on a stage, golden light, realistic photo style"
 }
