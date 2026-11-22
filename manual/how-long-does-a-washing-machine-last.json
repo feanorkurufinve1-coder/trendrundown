@@ -1,0 +1,55 @@
+{
+ "subject": "Washing machine lifespan",
+ "kind": "other",
+ "query": "how long does a washing machine last",
+ "title": "How long does a washing machine last? About 10 years, often more",
+ "answer": "Most washing machines last about 10 to 13 years with normal use, so plan on roughly a decade. Top-loaders tend to last a little longer than front-loaders, while heavy use, overloading and too much detergent shorten a washer's life.",
+ "body": "Estimates cluster around 10 years. Angi puts the typical range at 10 to 14 years, with top-loaders lasting up to 14 and front-loaders closer to 10 to 12. An appliance expert quoted by Homes & Gardens says 10 to 13 years, and Sears Home Services gives 8 to 12 in its FAQ. Owner surveys run lower because they count the first serious breakdown, not the end of the machine: in a 2023 survey of about 3,500 owners by the Australian consumer group Choice, the average time to the first major fault was 7.7 years.\n\nWhat wears a washer out, roughly in order of how often it matters: overloading, which strains the bearings, suspension and motor; too much detergent or softener, which leaves residue and odors; a machine that isn't level and shakes itself apart; heavy use, since a large family's washer runs far more cycles a year; and a cold or damp spot such as an unheated garage. Rubber parts like the door seal and fill hoses usually go first.\n\nSigns it may be time to replace it: it is more than 8 years old and needs a major repair, it leaks from the tub, it keeps shaking or banging even when level and balanced, it no longer spins or drains despite clearing the filter, or clothes come out dirty or smelly after a cleaning cycle. A common rule of thumb from Angi: if a repair would cost more than half the value of a new machine, replace it. Typical repairs run about $50 to $450, while a new washer usually costs $500 to $2,000.\n\nWhat you can do yourself: fill the drum only about three-quarters full, use the detergent amount on the label (less for high-efficiency machines), run an empty hot cleaning cycle every month or two, wipe the door seal and leave the door open to dry, clean the drain filter if your model has one, check the fill hoses once a year, and keep the machine level. Call a technician for anything inside the cabinet, such as the motor, pump, bearings or control board, and stop using the washer if you see water near the outlet or smell burning.",
+ "faq": [
+  {
+   "q": "Do front-load or top-load washers last longer?",
+   "a": "Top-loaders usually last a bit longer, up to about 14 years by Angi's estimate, compared with about 10 to 12 years for front-loaders."
+  },
+  {
+   "q": "Is it worth repairing a 10-year-old washer?",
+   "a": "Usually only for a cheap fix such as a hose, belt or door latch. For a major repair on a machine that old, replacing it is often the better deal."
+  },
+  {
+   "q": "Which part of a washing machine fails first?",
+   "a": "Rubber parts such as the door seal and fill hoses, followed by pumps, belts and the lid or door switch."
+  },
+  {
+   "q": "How often should I clean my washing machine?",
+   "a": "Run an empty hot cleaning cycle every one to three months and wipe the door seal after use, especially on front-loaders."
+  }
+ ],
+ "links": [
+  [
+   "Angi",
+   "How Long Does a Washing Machine Last?",
+   "https://www.angi.com/articles/how-long-washing-machine-last.htm"
+  ],
+  [
+   "Homes & Gardens",
+   "How long does a washing machine last? And how to make it live longer",
+   "https://homesandgardens.com/solved/how-long-does-a-washing-machine-last"
+  ],
+  [
+   "SlashGear",
+   "What's The Average Lifespan Of A Washing Machine? Here's What The Data Says",
+   "https://www.slashgear.com/2121764/average-lifespan-of-washing-machine-what-data-says"
+  ],
+  [
+   "Sears Home Services",
+   "How Long Do Washing Machines Last?",
+   "https://www.searshomeservices.com/blog/how-long-do-washing-machines-last-lifespan"
+  ]
+ ],
+ "image_prompt": "A wicker basket of neatly folded white towels on a wooden bench beside the round glass door of a white washing machine, close-up, realistic photo style",
+ "topics": [
+  "home",
+  "appliances"
+ ],
+ "made": "2026-11-22T13:58:00Z",
+ "first": "2026-11-22T13:58:00Z"
+}
