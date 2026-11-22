@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-22T04:18:24+00:00",
+ "checked": "2026-11-22T05:02:20+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -334,9 +334,9 @@
   },
   {
    "url": "/x/colts-release-daniel-jones",
-   "at": "2026-11-21T22:46:49+00:00",
+   "at": "2026-11-22T05:01:49+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -358,7 +358,7 @@
   },
   {
    "url": "/x/designated-for-assignment",
-   "at": "2026-11-21T22:47:08+00:00",
+   "at": "2026-11-22T05:02:07+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -790,7 +790,7 @@
   },
   {
    "url": "/x/is-dig-based-on-a-book",
-   "at": "2026-11-21T22:47:14+00:00",
+   "at": "2026-11-22T05:02:14+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1198,7 +1198,7 @@
   },
   {
    "url": "/x/palisades-fire-verdict-rinderknecht-guilty",
-   "at": "2026-11-21T22:46:55+00:00",
+   "at": "2026-11-22T05:01:55+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1306,9 +1306,9 @@
   },
   {
    "url": "/x/riemann-hypothesis-proof-claim-alpoge",
-   "at": "2026-11-21T22:47:02+00:00",
+   "at": "2026-11-22T05:02:01+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1810,7 +1810,7 @@
   },
   {
    "url": "/x/what-is-black-october",
-   "at": "2026-11-21T22:47:20+00:00",
+   "at": "2026-11-22T05:02:20+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2358,8 +2358,8 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "Discovered - currently not indexed": 107,
+  "Discovered - currently not indexed": 109,
   "Crawled - currently not indexed": 65,
-  "URL is unknown to Google": 19
+  "URL is unknown to Google": 17
  }
 }
