@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-22T11:17:16+00:00",
+ "checked": "2026-11-22T11:47:19+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -370,7 +370,7 @@
   },
   {
    "url": "/x/did-avril-lavigne-have-a-baby",
-   "at": "2026-11-22T05:32:08+00:00",
+   "at": "2026-11-22T11:47:12+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -382,7 +382,7 @@
   },
   {
    "url": "/x/did-scott-colom-win",
-   "at": "2026-11-22T05:32:14+00:00",
+   "at": "2026-11-22T11:47:19+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1858,7 +1858,7 @@
   },
   {
    "url": "/x/what-is-si-instead-of-ai",
-   "at": "2026-11-22T05:31:49+00:00",
+   "at": "2026-11-22T11:46:53+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2098,7 +2098,7 @@
   },
   {
    "url": "/x/why-are-people-saying-robert-pattinson-is-gen-z",
-   "at": "2026-11-22T05:31:55+00:00",
+   "at": "2026-11-22T11:46:59+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2242,7 +2242,7 @@
   },
   {
    "url": "/x/why-is-my-phone-charging-slow",
-   "at": "2026-11-22T05:32:02+00:00",
+   "at": "2026-11-22T11:47:06+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
