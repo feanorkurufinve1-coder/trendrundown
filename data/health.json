@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-22T05:48:53+00:00",
+ "checked": "2026-11-22T06:31:53+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -238,7 +238,7 @@
   },
   {
    "url": "/x/california-earthquake-pinnacles-november-2026",
-   "at": "2026-11-22T00:16:51+00:00",
+   "at": "2026-11-22T06:30:17+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -718,9 +718,9 @@
   },
   {
    "url": "/x/i-play-rocky-true-story",
-   "at": "2026-11-22T00:17:04+00:00",
+   "at": "2026-11-22T06:30:29+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -730,7 +730,7 @@
   },
   {
    "url": "/x/internet-trends-this-week-2026-11-15",
-   "at": "2026-11-22T00:17:10+00:00",
+   "at": "2026-11-22T06:30:36+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -742,9 +742,9 @@
   },
   {
    "url": "/x/iran-bahrain-radar-strike",
-   "at": "2026-11-22T00:17:49+00:00",
+   "at": "2026-11-22T06:31:15+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -754,7 +754,7 @@
   },
   {
    "url": "/x/is-amanda-nunes-retired",
-   "at": "2026-11-22T00:18:05+00:00",
+   "at": "2026-11-22T06:31:21+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -766,7 +766,7 @@
   },
   {
    "url": "/x/is-being-heumann-a-true-story",
-   "at": "2026-11-22T00:18:11+00:00",
+   "at": "2026-11-22T06:31:27+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -802,7 +802,7 @@
   },
   {
    "url": "/x/is-gta-6-coming-to-pc",
-   "at": "2026-11-22T00:18:18+00:00",
+   "at": "2026-11-22T06:31:34+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -814,7 +814,7 @@
   },
   {
    "url": "/x/is-leonida-a-real-place",
-   "at": "2026-11-22T00:18:24+00:00",
+   "at": "2026-11-22T06:31:40+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -826,9 +826,9 @@
   },
   {
    "url": "/x/is-melania-the-series-the-same-as-the-movie",
-   "at": "2026-11-22T00:17:16+00:00",
+   "at": "2026-11-22T06:30:42+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -838,7 +838,7 @@
   },
   {
    "url": "/x/is-philomena-cunk-real",
-   "at": "2026-11-22T00:18:30+00:00",
+   "at": "2026-11-22T06:31:47+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -850,7 +850,7 @@
   },
   {
    "url": "/x/is-the-law-of-beasts-a-true-story",
-   "at": "2026-11-22T00:18:37+00:00",
+   "at": "2026-11-22T06:31:53+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1318,9 +1318,9 @@
   },
   {
    "url": "/x/rikers-island-closure-plan-2032",
-   "at": "2026-11-22T00:16:57+00:00",
+   "at": "2026-11-22T06:30:23+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1882,9 +1882,9 @@
   },
   {
    "url": "/x/what-is-the-i-got-so-mad-meme",
-   "at": "2026-11-22T00:17:23+00:00",
+   "at": "2026-11-22T06:30:49+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2062,9 +2062,9 @@
   },
   {
    "url": "/x/why-are-people-saying-julia-stiles-went-to-juilliard",
-   "at": "2026-11-22T00:17:30+00:00",
+   "at": "2026-11-22T06:30:55+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2110,9 +2110,9 @@
   },
   {
    "url": "/x/why-are-people-trying-to-move-the-bean",
-   "at": "2026-11-22T00:17:36+00:00",
+   "at": "2026-11-22T06:31:01+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2266,9 +2266,9 @@
   },
   {
    "url": "/x/why-is-my-washing-machine-dripping-water-inside",
-   "at": "2026-11-22T00:17:43+00:00",
+   "at": "2026-11-22T06:31:08+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2358,8 +2358,8 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "Discovered - currently not indexed": 108,
+  "Discovered - currently not indexed": 106,
   "Crawled - currently not indexed": 65,
-  "URL is unknown to Google": 18
+  "URL is unknown to Google": 20
  }
 }
