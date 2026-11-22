@@ -1,11 +1,11 @@
 {
  "v": 3,
- "checked": "2026-11-22T09:17:40+00:00",
+ "checked": "2026-11-22T09:46:52+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
-   "lastSubmitted": "2026-11-20T05:46:53.228Z",
-   "lastDownloaded": "2026-11-21T22:57:48.241Z",
+   "lastSubmitted": "2026-11-22T04:01:42.284Z",
+   "lastDownloaded": "2026-11-22T04:01:43.666Z",
    "isPending": false,
    "warnings": "0",
    "errors": "0",
@@ -24,20 +24,20 @@
   },
   {
    "path": "https://trendrundown.com/sitemap-news.xml",
-   "lastSubmitted": "2026-11-20T05:46:53.075Z",
-   "lastDownloaded": "2026-11-20T05:46:53.808Z",
+   "lastSubmitted": "2026-11-22T04:01:42.064Z",
+   "lastDownloaded": "2026-11-22T04:01:42.749Z",
    "isPending": false,
    "warnings": "0",
    "errors": "0",
    "contents": [
     {
      "type": "web",
-     "submitted": "6",
+     "submitted": "5",
      "indexed": "0"
     },
     {
      "type": "news",
-     "submitted": "6",
+     "submitted": "5",
      "indexed": "0"
     }
    ]
@@ -1906,7 +1906,7 @@
   },
   {
    "url": "/x/what-is-the-talk-to-me-doja-trend",
-   "at": "2026-11-22T03:31:56+00:00",
+   "at": "2026-11-22T09:46:46+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1918,7 +1918,7 @@
   },
   {
    "url": "/x/what-is-the-word-of-the-year-2026",
-   "at": "2026-11-22T03:32:02+00:00",
+   "at": "2026-11-22T09:46:52+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2349,7 +2349,7 @@
    "userCanonical": "https://trendrundown.com/x/wta-tennis"
   }
  ],
- "sm_at": "2026-11-22T03:31:49+00:00",
+ "sm_at": "2026-11-22T09:46:38+00:00",
  "first_indexed": {
   "/x/cyber-monday": "2026-11-13T16:25:58+00:00",
   "/": "2026-11-13T16:25:58+00:00",
