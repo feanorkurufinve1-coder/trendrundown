@@ -1,23 +1,7 @@
 {
- "made": "2026-11-21T19:48:22+00:00",
+ "made": "2026-11-22T08:04:07+00:00",
  "about": "Премьеры сериалов и новых сезонов в США на 14 дней вперёд (TVmaze). new_series = совсем новый сериал. Сырьё для прогнозов «is X a true story», «X cast», «X season N release time».",
  "premieres": [
-  {
-   "date": "2026-11-21",
-   "show": "Editorially Speaking",
-   "season": 1,
-   "new_series": true,
-   "type": "Scripted",
-   "genres": [
-    "Drama",
-    "Comedy"
-   ],
-   "network": "Tubi",
-   "premiered": "2026-11-21",
-   "summary": "Editorially Speaking follows journalists at a fictional publication called \"Editorial Magazine\" as they navigate careers, relationships, and the fashion media industry.",
-   "url": "https://www.tvmaze.com/shows/95157/editorially-speaking",
-   "official": "https://editoriallyspeakingseries.com"
-  },
   {
    "date": "2026-11-22",
    "show": "Oobah: Scams for a Better Tomorrow",
@@ -480,19 +464,6 @@
   },
   {
    "date": "2026-12-03",
-   "show": "Can You Hide... Shaq?",
-   "season": 1,
-   "new_series": true,
-   "type": "Reality",
-   "genres": [],
-   "network": "ABC",
-   "premiered": "2026-12-03",
-   "summary": "Actress and comedian Nicole Byer hosts eight contestants as they take on the ultimate game of hide-and-seek. Their mission is to disguise, distract, deceive, and hide Shaq in plain sight across Dallas, Texas, for a shot at the grand prize.",
-   "url": "https://www.tvmaze.com/shows/95532/can-you-hide-shaq",
-   "official": null
-  },
-  {
-   "date": "2026-12-03",
    "show": "My Favorite Murder",
    "season": 1,
    "new_series": true,
@@ -612,6 +583,19 @@
    "summary": "Prospective buyers look to make their dream of living by the ocean a reality as they hunt for oceanfront properties along the Atlantic coastline.Who doesn't dream of living by the ocean? Oceanfront Property Hunt follows prospective buyers looking to purchase their first oceanfront home. Our buyers are families from all walks of life. In some episodes, we'll meet people looking for a unique fixer-u",
    "url": "https://www.tvmaze.com/shows/81679/oceanfront-property-hunt",
    "official": "https://www.aetv.com/shows/oceanfront-property-hunt"
+  },
+  {
+   "date": "2026-12-06",
+   "show": "Celebrity Scares",
+   "season": 1,
+   "new_series": true,
+   "type": "Reality",
+   "genres": [],
+   "network": "YouTube",
+   "premiered": "2026-12-06",
+   "summary": "An unscripted, immersive horror-interview series that pairs genre legends and celebrities with premier haunted attractions for terrifying, raw conversations while navigating jump scares.",
+   "url": "https://www.tvmaze.com/shows/94966/celebrity-scares",
+   "official": "https://celebrityscares.com/"
   }
  ]
 }
