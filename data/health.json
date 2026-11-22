@@ -1217,9 +1217,9 @@
   },
   {
    "url": "/x/planet-alignment-november-2026",
-   "at": "2026-11-21T19:01:49+00:00",
+   "at": "2026-11-22T01:16:51+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1229,7 +1229,7 @@
   },
   {
    "url": "/x/qualifying-offer",
-   "at": "2026-11-21T19:01:56+00:00",
+   "at": "2026-11-22T01:16:57+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1241,7 +1241,7 @@
   },
   {
    "url": "/x/record-vs-song-of-the-year",
-   "at": "2026-11-21T19:02:02+00:00",
+   "at": "2026-11-22T01:17:04+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1253,9 +1253,9 @@
   },
   {
    "url": "/x/red-cup-day-2026",
-   "at": "2026-11-21T19:02:08+00:00",
+   "at": "2026-11-22T01:17:10+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1265,7 +1265,7 @@
   },
   {
    "url": "/x/relief-pitcher-of-the-year",
-   "at": "2026-11-21T19:02:15+00:00",
+   "at": "2026-11-22T01:17:16+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1277,7 +1277,7 @@
   },
   {
    "url": "/x/reminders-of-him-book",
-   "at": "2026-11-21T19:02:21+00:00",
+   "at": "2026-11-22T01:17:23+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1289,7 +1289,7 @@
   },
   {
    "url": "/x/richard-avedon",
-   "at": "2026-11-21T19:02:28+00:00",
+   "at": "2026-11-22T01:17:29+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2353,8 +2353,8 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "Discovered - currently not indexed": 54,
-  "URL is unknown to Google": 72,
+  "Discovered - currently not indexed": 56,
+  "URL is unknown to Google": 70,
   "Crawled - currently not indexed": 65
  }
 }
