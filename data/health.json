@@ -1001,7 +1001,7 @@
   },
   {
    "url": "/x/maine-2nd-district-ranked-choice",
-   "at": "2026-11-21T18:31:58+00:00",
+   "at": "2026-11-22T00:46:54+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1013,9 +1013,9 @@
   },
   {
    "url": "/x/medicaid-work-requirements-start-date",
-   "at": "2026-11-21T18:32:04+00:00",
+   "at": "2026-11-22T00:47:01+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1025,7 +1025,7 @@
   },
   {
    "url": "/x/miami-airport-plane-collision-copa-ups",
-   "at": "2026-11-21T18:32:10+00:00",
+   "at": "2026-11-22T00:47:07+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1037,7 +1037,7 @@
   },
   {
    "url": "/x/mlb-manager-of-the-year-voting",
-   "at": "2026-11-21T18:32:17+00:00",
+   "at": "2026-11-22T00:47:13+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1049,7 +1049,7 @@
   },
   {
    "url": "/x/mlb-posting-system",
-   "at": "2026-11-21T18:46:48+00:00",
+   "at": "2026-11-22T00:47:19+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2353,8 +2353,8 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "Discovered - currently not indexed": 49,
-  "URL is unknown to Google": 77,
+  "Discovered - currently not indexed": 50,
+  "URL is unknown to Google": 76,
   "Crawled - currently not indexed": 65
  }
 }
