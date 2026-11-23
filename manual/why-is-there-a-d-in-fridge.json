@@ -1,0 +1,46 @@
+{
+ "subject": "Fridge spelling",
+ "kind": "other",
+ "query": "why does refrigerator not have a d",
+ "title": "Why does refrigerator not have a d, but fridge does?",
+ "answer": "Because \"fridge\" is a newer clipped word that follows a different spelling rule. \"Refrigerator\" comes from Latin \"refrigerare,\" with no d. When people shortened it to \"frij\" in the early 1900s, writers added a d so it would be spelled like bridge and lodge, which is how English normally writes a \"j\" sound after a short vowel.",
+ "body": "\"Refrigerator\" has been in English since the early 1600s. It comes from \"refrigerate,\" from the Latin verb \"refrigerare,\" built on \"frigus,\" meaning cold, the same root behind \"frigid.\" In Latin the g was hard; English later softened it, but the spelling never needed a d.\n\nThe short form arrived much later, after home refrigerators spread. Merriam-Webster dates the clipped word to the 1920s, and it first appeared in print as \"frig.\" That spelling had a problem: by ordinary rules \"frig\" should rhyme with \"rig.\" Writing \"frige\" would not work either, since a silent e makes the vowel long, so it would look like it rhymes with \"oblige.\"\n\nEnglish has a standard fix for this. After a short vowel, the \"j\" sound is usually spelled \"dge\": badge, edge, bridge, lodge, fudge. After a long vowel or a consonant it is just \"ge\": age, huge, change. \"Fridge\" simply follows that pattern. For a while British writers used \"'fridge,\" with an apostrophe marking the missing letters, and dictionaries once labeled the word chiefly British before it became standard everywhere.\n\nSo the d is not a mistake or a leftover from \"refrigerator.\" It is a pronunciation guide, added so the short word would be read correctly. A popular theory credits the Frigidaire brand with shaping the word; dictionaries do not confirm that, and the -dge spelling rule fully explains the d on its own.",
+ "faq": [
+  {
+   "q": "Is it spelled fridge or frig?",
+   "a": "\"Fridge\" is the standard spelling today. \"Frig\" was an early variant and is now rare."
+  },
+  {
+   "q": "Is it refridgerator or refrigerator?",
+   "a": "Refrigerator. \"Refridgerator\" is a common misspelling influenced by \"fridge.\""
+  },
+  {
+   "q": "When did people start saying fridge?",
+   "a": "The short form appeared in print in the early 20th century; Merriam-Webster dates it to the 1920s."
+  },
+  {
+   "q": "Does Frigidaire have anything to do with the word fridge?",
+   "a": "It is a popular theory, but major dictionaries trace \"fridge\" to \"refrigerator\" and explain the d with the -dge spelling rule."
+  }
+ ],
+ "links": [
+  [
+   "Merriam-Webster",
+   "What's this in the fridge? Fridge vs. frig",
+   "https://merriam-webster.com/grammar/fridge-vs-frig-spelling-short-for-refrigerator"
+  ],
+  [
+   "The Big Apple (Barry Popik)",
+   "Why is there a \"D\" in fridge, but not refrigerator?",
+   "https://barrypopik.com/blog/why_is_there_a_d_in_fridge"
+  ],
+  [
+   "Mr. Appliance",
+   "Why is there a D in fridge but not in refrigerator?",
+   "https://www.mrappliance.com/blog/why-is-there-a-d-in-fridge-but-not-in-refrigerat/"
+  ]
+ ],
+ "image_prompt": "A white kitchen refrigerator with its door slightly open and a soft glow inside, in a bright minimalist kitchen, realistic photo style",
+ "made": "2026-11-23T13:55:02Z",
+ "first": "2026-11-23T13:55:02Z"
+}
