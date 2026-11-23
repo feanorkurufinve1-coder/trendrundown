@@ -1,5 +1,5 @@
 {
- "made": "2026-11-23T08:18:43+00:00",
+ "made": "2026-11-23T20:32:24+00:00",
  "about": "Премьеры сериалов и новых сезонов в США на 14 дней вперёд (TVmaze). new_series = совсем новый сериал. Сырьё для прогнозов «is X a true story», «X cast», «X season N release time».",
  "premieres": [
   {
@@ -118,6 +118,19 @@
    "summary": "On the eve of the iconic Thanksgiving Day parade, viewers get a behind-the-scenes peek at the incredible stories behind the floats, balloons and bands on their journey to the streets of New York.",
    "url": "https://www.tvmaze.com/shows/72509/countdown-to-macys-thanksgiving-day-parade",
    "official": "https://www.nbc.com/countdown-to-macys-thanksgiving-parade"
+  },
+  {
+   "date": "2026-11-25",
+   "show": "The Challenge: Home Turf",
+   "season": 2,
+   "new_series": false,
+   "type": "Documentary",
+   "genres": [],
+   "network": "YouTube",
+   "premiered": "2024-01-29",
+   "summary": "Memorable competitors from MTV's The Challenge invite viewers to their hometowns for in-depth interviews that shed new light on their personal lives, interests and more.",
+   "url": "https://www.tvmaze.com/shows/74426/the-challenge-home-turf",
+   "official": "https://www.youtube.com/playlist?list=PL9zeMXsafMarg2XcyDxgM5gd-lyq9fX3X"
   },
   {
    "date": "2026-11-26",
