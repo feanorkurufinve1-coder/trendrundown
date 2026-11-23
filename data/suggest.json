@@ -13385,7 +13385,7 @@
   ]
  },
  "is-melania-the-series-the-same-as-the-movie": {
-  "time": "2026-11-22T14:18:31+00:00",
+  "time": "2026-11-23T14:34:26+00:00",
   "query": "is melania the series the same as the movie",
   "in_suggest": false,
   "suggest": {
@@ -13393,13 +13393,13 @@
     "melania the series",
     "melania the series reviews",
     "melania the series rotten tomatoes",
+    "melania the series episodes",
+    "melania the series ratings",
+    "melania the series where to watch",
     "melania the series how many episodes",
     "melania the series premiere",
-    "melania the series episodes",
-    "melania the series rating",
-    "melania the series 2026",
-    "melania the series reddit",
-    "melania series amazon"
+    "melania series amazon",
+    "melania series netflix"
    ],
    "what is melania, the series": [
     "what is melania the series",
@@ -13432,11 +13432,15 @@
    [
     "2026-11-22",
     false
+   ],
+   [
+    "2026-11-23",
+    false
    ]
   ]
  },
  "what-is-the-i-got-so-mad-meme": {
-  "time": "2026-11-22T14:18:33+00:00",
+  "time": "2026-11-23T14:34:28+00:00",
   "query": "what is the i got so mad meme",
   "in_suggest": true,
   "suggest": {
@@ -13474,11 +13478,15 @@
    [
     "2026-11-22",
     true
+   ],
+   [
+    "2026-11-23",
+    true
    ]
   ]
  },
  "why-are-people-saying-julia-stiles-went-to-juilliard": {
-  "time": "2026-11-22T14:18:34+00:00",
+  "time": "2026-11-23T14:34:29+00:00",
   "query": "why are people saying julia stiles went to juilliard",
   "in_suggest": true,
   "suggest": {
@@ -13539,11 +13547,15 @@
    [
     "2026-11-22",
     true
+   ],
+   [
+    "2026-11-23",
+    true
    ]
   ]
  },
  "why-are-people-trying-to-move-the-bean": {
-  "time": "2026-11-22T14:18:35+00:00",
+  "time": "2026-11-23T14:34:30+00:00",
   "query": "why are people trying to move the bean",
   "in_suggest": false,
   "suggest": {
@@ -13576,11 +13588,15 @@
    [
     "2026-11-22",
     false
+   ],
+   [
+    "2026-11-23",
+    false
    ]
   ]
  },
  "why-is-my-washing-machine-dripping-water-inside": {
-  "time": "2026-11-22T14:18:37+00:00",
+  "time": "2026-11-23T14:34:32+00:00",
   "query": "why is my washing machine dripping water inside",
   "in_suggest": true,
   "suggest": {
@@ -13656,6 +13672,10 @@
    ],
    [
     "2026-11-22",
+    true
+   ],
+   [
+    "2026-11-23",
     true
    ]
   ]
