@@ -10673,7 +10673,7 @@
   ]
  },
  "first-black-senator-from-mississippi": {
-  "time": "2026-11-22T17:17:11+00:00",
+  "time": "2026-11-23T17:25:33+00:00",
   "query": "who was the first black senator from mississippi",
   "in_suggest": true,
   "suggest": {
@@ -10694,8 +10694,10 @@
    ],
    "first black senator from mississippi": [
     "first black senator from mississippi",
+    "first black senator in mississippi history",
     "first black politician in mississippi",
     "first black representative in mississippi",
+    "1st black senator in mississippi",
     "who was the first black senator from massachusetts"
    ]
   },
@@ -10739,11 +10741,15 @@
    [
     "2026-11-22",
     true
+   ],
+   [
+    "2026-11-23",
+    true
    ]
   ]
  },
  "how-much-tax-refund-per-child-2026": {
-  "time": "2026-11-22T17:17:12+00:00",
+  "time": "2026-11-23T17:25:35+00:00",
   "query": "how much tax refund per child 2026",
   "in_suggest": true,
   "suggest": {
@@ -10752,12 +10758,12 @@
     "child tax credit",
     "child tax credit 2027",
     "child tax credit 2025",
+    "child tax credit 2026 income limit",
     "child tax credit phase out",
     "child tax credit income limit",
+    "child tax credit arizona",
     "child tax credit age limit",
-    "child tax credit 2025 income limit",
-    "child tax credit 2024",
-    "child tax credit phase out 2026"
+    "child tax credit 2024"
    ],
    "what is child tax credit": [
     "what is child tax credit",
@@ -10836,25 +10842,29 @@
    [
     "2026-11-22",
     true
+   ],
+   [
+    "2026-11-23",
+    true
    ]
   ]
  },
  "is-the-law-of-beasts-a-true-story": {
-  "time": "2026-11-22T17:17:14+00:00",
+  "time": "2026-11-23T17:25:36+00:00",
   "query": "is the law of beasts a true story",
   "in_suggest": true,
   "suggest": {
    "the law of beasts": [
-    "the law of beasts true story",
     "the law of beasts",
-    "the law of beasts netflix series",
-    "the law of beasts review",
+    "the law of beasts true story",
     "the law of beasts netflix",
-    "the law of beasts rotten tomatoes",
+    "the law of beasts review",
     "the law of beasts cast",
+    "the law of beasts rotten tomatoes",
     "the law of beasts netflix review",
     "the law of beasts imdb",
-    "the law of beasts netflix cast"
+    "the law of beasts netflix cast",
+    "the law of beasts real story"
    ],
    "what is the law of beasts": [
     "what is the law of beasts about",
@@ -10912,25 +10922,29 @@
    [
     "2026-11-22",
     true
+   ],
+   [
+    "2026-11-23",
+    true
    ]
   ]
  },
  "ligue-1": {
-  "time": "2026-11-22T17:17:14+00:00",
+  "time": "2026-11-23T17:25:37+00:00",
   "query": "what is ligue 1",
   "in_suggest": true,
   "suggest": {
    "ligue 1": [
     "ligue 1",
     "ligue 1 standings",
-    "ligue 1 schedule",
     "ligue 1 stats",
     "ligue 1 table",
-    "ligue 1 players",
-    "ligue 1 scores",
+    "ligue 1 games",
     "ligue 1 teams",
+    "ligue 1 mcdonald's",
+    "ligue 1 table 2022 23",
     "ligue 1 results",
-    "ligue 1 table 2022 23"
+    "ligue 1 winners"
    ],
    "what is ligue 1": [
     "what is ligue 1",
@@ -10985,11 +10999,15 @@
    [
     "2026-11-22",
     true
+   ],
+   [
+    "2026-11-23",
+    true
    ]
   ]
  },
  "phishing-test": {
-  "time": "2026-11-22T17:17:16+00:00",
+  "time": "2026-11-23T17:25:38+00:00",
   "query": "what is a phishing test",
   "in_suggest": true,
   "suggest": {
@@ -11001,9 +11019,9 @@
     "phishing test meme",
     "phishing test at work",
     "phishing test google",
-    "phishing test site",
     "phishing test definition",
-    "phishing test email free"
+    "phishing test email free",
+    "phishing test examples"
    ],
    "what is phishing test": [
     "what is phishing test",
@@ -11027,7 +11045,7 @@
     "what is a company phishing test",
     "what is a failed phishing test",
     "what is a company email phishing test",
-    "what is a company wide phishing test"
+    "what does phishing test mean"
    ]
   },
   "history": [
@@ -11070,11 +11088,15 @@
    [
     "2026-11-22",
     true
+   ],
+   [
+    "2026-11-23",
+    true
    ]
   ]
  },
  "rock-hall-of-fame-2026-ceremony-air-date": {
-  "time": "2026-11-22T17:17:17+00:00",
+  "time": "2026-11-23T17:25:40+00:00",
   "query": "when will the rock and roll hall of fame 2026 ceremony air",
   "in_suggest": false,
   "suggest": {
@@ -11084,8 +11106,8 @@
     "2026 rock and roll hall of fame induction ceremony performers",
     "2026 rock and roll hall of fame induction ceremony location",
     "2026 rock and roll hall of fame induction ceremony date",
+    "2026 rock and roll hall of fame inductees ceremony",
     "rock and roll hall of fame induction ceremony 2026 tickets price",
-    "rock and roll hall of fame inductees 2026 ceremony",
     "summarize the 2026 rock and roll hall of fame inductees and ceremony details",
     "how to get tickets to rock and roll hall of fame induction ceremony 2026",
     "where is rock and roll hall of fame induction ceremony"
@@ -11134,11 +11156,15 @@
    [
     "2026-11-22",
     false
+   ],
+   [
+    "2026-11-23",
+    false
    ]
   ]
  },
  "what-does-refrigerator-coolant-smell-like": {
-  "time": "2026-11-22T17:17:18+00:00",
+  "time": "2026-11-23T17:25:41+00:00",
   "query": "what does refrigerator coolant smell like",
   "in_suggest": true,
   "suggest": {
@@ -11226,11 +11252,15 @@
    [
     "2026-11-22",
     true
+   ],
+   [
+    "2026-11-23",
+    true
    ]
   ]
  },
  "what-is-a-safety-in-football": {
-  "time": "2026-11-22T17:17:20+00:00",
+  "time": "2026-11-23T17:25:43+00:00",
   "query": "what is a safety in football",
   "in_suggest": true,
   "suggest": {
@@ -11239,24 +11269,24 @@
     "safety",
     "safety glasses",
     "safety razor",
-    "safety movie",
-    "safety insurance",
-    "safety first car seat",
+    "safety in football",
     "safety vest",
-    "safety dance",
-    "safety kleen"
+    "safety movie",
+    "safety first car seat",
+    "safety pin necklace",
+    "safety culture"
    ],
    "what is safety": [
     "what is safety in football",
     "what is safety",
-    "what is safety culture",
+    "what is safety corridor",
     "what is safety position in football",
+    "what is safety culture",
     "what is safety data sheet",
     "what is safety stock",
     "what is safety connect toyota",
     "what is safety glass",
-    "what is safety net",
-    "what is safety corridor"
+    "what is safety protocol adherence"
    ],
    "what is a safety in football": [
     "what is a safety in football",
@@ -11274,8 +11304,8 @@
     "safety football",
     "safety football position",
     "safety football movie",
-    "safety football helmet",
     "safety football points",
+    "safety football helmet",
     "safety football score",
     "safety football drip",
     "safety football 2 points",
@@ -11323,11 +11353,15 @@
    [
     "2026-11-22",
     true
+   ],
+   [
+    "2026-11-23",
+    true
    ]
   ]
  },
  "what-is-broad-based-categorical-eligibility": {
-  "time": "2026-11-22T17:17:21+00:00",
+  "time": "2026-11-23T17:25:43+00:00",
   "query": "what is broad-based categorical eligibility",
   "in_suggest": true,
   "suggest": {
@@ -11396,11 +11430,15 @@
    [
     "2026-11-22",
     true
+   ],
+   [
+    "2026-11-23",
+    true
    ]
   ]
  },
  "why-is-wifi-not-working-on-my-phone": {
-  "time": "2026-11-22T17:17:22+00:00",
+  "time": "2026-11-23T17:25:45+00:00",
   "query": "why is wifi not working on my phone",
   "in_suggest": true,
   "suggest": {
@@ -11427,8 +11465,8 @@
     "wifi not showing on my phone",
     "wifi not working on the phone",
     "internet not working on my phone iphone",
-    "wifi calling not working on my phone",
-    "internet isnt working on my phone"
+    "wifi not working in my mobile",
+    "wifi calling not working on my phone"
    ]
   },
   "history": [
@@ -11470,6 +11508,10 @@
    ],
    [
     "2026-11-22",
+    true
+   ],
+   [
+    "2026-11-23",
     true
    ]
   ]
