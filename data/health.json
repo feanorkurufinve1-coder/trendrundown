@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-23T12:18:27+00:00",
+ "checked": "2026-11-23T13:58:13+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -871,6 +871,18 @@
    "userCanonical": null
   },
   {
+   "url": "/x/is-mr-irrelevant-a-true-story",
+   "at": "2026-11-23T13:56:36+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/is-philomena-cunk-real",
    "at": "2026-11-23T13:48:21+00:00",
    "verdict": "NEUTRAL",
@@ -968,7 +980,7 @@
   },
   {
    "url": "/x/keepsake-sea-release-date",
-   "at": "2026-11-23T07:47:18+00:00",
+   "at": "2026-11-23T13:57:09+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -980,7 +992,7 @@
   },
   {
    "url": "/x/kids-choice-awards-2026-date",
-   "at": "2026-11-23T07:47:24+00:00",
+   "at": "2026-11-23T13:57:15+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -992,7 +1004,7 @@
   },
   {
    "url": "/x/lame-duck-president",
-   "at": "2026-11-23T07:47:30+00:00",
+   "at": "2026-11-23T13:57:21+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1004,7 +1016,7 @@
   },
   {
    "url": "/x/lame-duck-session",
-   "at": "2026-11-23T07:47:37+00:00",
+   "at": "2026-11-23T13:57:28+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1016,7 +1028,7 @@
   },
   {
    "url": "/x/latin-grammys-vs-grammys",
-   "at": "2026-11-23T07:47:43+00:00",
+   "at": "2026-11-23T13:57:34+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1028,7 +1040,7 @@
   },
   {
    "url": "/x/ligue-1",
-   "at": "2026-11-23T07:47:50+00:00",
+   "at": "2026-11-23T13:57:41+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1040,7 +1052,7 @@
   },
   {
    "url": "/x/madden-movie-true-story",
-   "at": "2026-11-23T07:47:56+00:00",
+   "at": "2026-11-23T13:57:47+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1052,7 +1064,7 @@
   },
   {
    "url": "/x/maine-2nd-district-ranked-choice",
-   "at": "2026-11-23T07:48:03+00:00",
+   "at": "2026-11-23T13:57:54+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1064,7 +1076,7 @@
   },
   {
    "url": "/x/medicaid-work-requirements-start-date",
-   "at": "2026-11-23T07:48:09+00:00",
+   "at": "2026-11-23T13:58:00+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1076,7 +1088,7 @@
   },
   {
    "url": "/x/miami-airport-plane-collision-copa-ups",
-   "at": "2026-11-23T07:48:16+00:00",
+   "at": "2026-11-23T13:58:07+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1088,7 +1100,7 @@
   },
   {
    "url": "/x/mlb-manager-of-the-year-voting",
-   "at": "2026-11-23T07:48:22+00:00",
+   "at": "2026-11-23T13:58:13+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1927,6 +1939,18 @@
    "userCanonical": null
   },
   {
+   "url": "/x/what-is-the-2011-jupiter-incident",
+   "at": "2026-11-23T13:56:43+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/what-is-the-bearista-cup",
    "at": "2026-11-23T09:32:08+00:00",
    "verdict": "NEUTRAL",
@@ -2069,6 +2093,18 @@
    "lastCrawlTime": "2026-11-14T17:48:37Z",
    "googleCanonical": "https://trendrundown.com/x/who-won-mvp-2026",
    "userCanonical": "https://trendrundown.com/x/who-won-mvp-2026"
+  },
+  {
+   "url": "/x/why-are-people-heading-to-cinemas-in-cat-ears",
+   "at": "2026-11-23T13:56:49+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
   },
   {
    "url": "/x/why-are-people-saying-ao3-is-back",
@@ -2311,6 +2347,18 @@
    "userCanonical": null
   },
   {
+   "url": "/x/why-is-everyone-mad-at-kroger",
+   "at": "2026-11-23T13:56:56+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/why-is-my-check-engine-light-on",
    "at": "2026-11-23T09:48:02+00:00",
    "verdict": "NEUTRAL",
@@ -2369,6 +2417,18 @@
    "lastCrawlTime": "2026-11-12T15:44:23Z",
    "googleCanonical": "https://trendrundown.com/x/why-is-my-washing-machine-leaking-from-the-bottom",
    "userCanonical": "https://trendrundown.com/x/why-is-my-washing-machine-leaking-from-the-bottom"
+  },
+  {
+   "url": "/x/why-is-there-a-d-in-fridge",
+   "at": "2026-11-23T13:57:02+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
   },
   {
    "url": "/x/why-is-wifi-not-working-on-my-phone",
@@ -2440,7 +2500,7 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 126,
+  "URL is unknown to Google": 131,
   "Crawled - currently not indexed": 65,
   "error": 2,
   "Discovered - currently not indexed": 6

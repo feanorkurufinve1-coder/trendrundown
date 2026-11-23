@@ -15372,7 +15372,7 @@
   ]
  },
  "how-long-does-a-washing-machine-last": {
-  "time": "2026-11-22T13:57:47+00:00",
+  "time": "2026-11-23T13:58:15+00:00",
   "query": "how long does a washing machine last",
   "in_suggest": true,
   "suggest": {
@@ -15423,11 +15423,15 @@
    [
     "2026-11-22",
     true
+   ],
+   [
+    "2026-11-23",
+    true
    ]
   ]
  },
  "internet-trends-this-week-2026-11-22": {
-  "time": "2026-11-22T13:57:48+00:00",
+  "time": "2026-11-23T13:58:17+00:00",
   "query": "what's trending on the internet this week",
   "in_suggest": false,
   "suggest": {
@@ -15450,11 +15454,15 @@
    [
     "2026-11-22",
     false
+   ],
+   [
+    "2026-11-23",
+    false
    ]
   ]
  },
  "is-sam-bankman-fried-still-in-prison": {
-  "time": "2026-11-22T13:57:50+00:00",
+  "time": "2026-11-23T13:58:20+00:00",
   "query": "is sam bankman-fried still in prison",
   "in_suggest": true,
   "suggest": {
@@ -15462,13 +15470,13 @@
     "sam bankman-fried",
     "sam bankman-fried girlfriend",
     "sam bankman-fried and caroline ellison",
-    "sam bankman-fried wife",
     "sam bankman-fried net worth",
+    "sam bankman-fried wife",
     "sam bankman-fried parents",
     "sam bankman-fried sentence",
-    "sam bankman-fried movie",
     "sam bankman-fried interview",
-    "sam bankman-fried netflix"
+    "sam bankman-fried in jail",
+    "sam bankman-fried now"
    ],
    "who is sam bankman-fried": [
     "who is sam bankman-fried",
@@ -15494,6 +15502,7 @@
     "why did sam go to jail in icarly"
    ],
    "sam bankman-fried still prison": [
+    "sam bankman fried still in prison",
     "sam bankman fried prison",
     "sam bankman fried prison location",
     "sam bankman fried prison experiment",
@@ -15502,19 +15511,22 @@
     "sam bankman fried prison interview",
     "sam bankman fried prison cell",
     "sam bankman fried prison reddit",
-    "sam bankman fried prison picture",
-    "sam bankman fried prison release date"
+    "sam bankman fried prison picture"
    ]
   },
   "history": [
    [
     "2026-11-22",
     true
+   ],
+   [
+    "2026-11-23",
+    true
    ]
   ]
  },
  "why-are-people-saying-lucia-cheats-on-jason": {
-  "time": "2026-11-22T13:57:51+00:00",
+  "time": "2026-11-23T13:58:25+00:00",
   "query": "why are people saying lucia cheats on jason",
   "in_suggest": true,
   "suggest": {
@@ -15533,29 +15545,31 @@
    [
     "2026-11-22",
     true
+   ],
+   [
+    "2026-11-23",
+    true
    ]
   ]
  },
  "why-are-people-throwing-mustard-at-lsu": {
-  "time": "2026-11-22T13:57:53+00:00",
+  "time": "2026-11-23T13:58:26+00:00",
   "query": "why are people throwing mustard at lsu",
-  "in_suggest": true,
+  "in_suggest": false,
   "suggest": {
    "mustard thrown at lsu and lane kiffin in knoxville": [],
    "what is mustard thrown at lsu and lane kiffin in knoxville": [],
-   "why are people throwing mustard at lsu": [
-    "why are people throwing mustard at lsu",
-    "why is mustard so nasty",
-    "why are mustard packets so hard to open",
-    "why do athletes eat mustard",
-    "why does mustard mean good"
-   ],
+   "why are people throwing mustard at lsu": [],
    "people throwing mustard at lsu": []
   },
   "history": [
    [
     "2026-11-22",
     true
+   ],
+   [
+    "2026-11-23",
+    false
    ]
   ]
  },
@@ -15673,6 +15687,209 @@
   "history": [
    [
     "2026-11-22",
+    true
+   ]
+  ]
+ },
+ "is-mr-irrelevant-a-true-story": {
+  "time": "2026-11-23T13:58:18+00:00",
+  "query": "is mr irrelevant a true story",
+  "in_suggest": true,
+  "suggest": {
+   "mr. irrelevant: the john tuggle story": [
+    "mr. irrelevant the john tuggle story",
+    "mr. irrelevant the john tuggle story trailer",
+    "mr. irrelevant the john tuggle story 2026",
+    "mr. irrelevant the john tuggle story cast",
+    "mr. irrelevant the john tuggle story streaming",
+    "mr. irrelevant the john tuggle story where to watch",
+    "mr. irrelevant the john tuggle story rating",
+    "mr. irrelevant the john tuggle story rating age",
+    "mr. irrelevant the john tuggle story wiki",
+    "mr. irrelevant the john tuggle story matt damon"
+   ],
+   "what is mr. irrelevant: the john tuggle story": [
+    "mr irrelevant the john tuggle story",
+    "mr irrelevant the john tuggle story 2026",
+    "mr irrelevant the john tuggle story videos",
+    "mr irrelevant the john tuggle story trailer",
+    "mr irrelevant the john tuggle story cast",
+    "mr irrelevant the john tuggle story 2026 videos",
+    "mr irrelevant the john tuggle story release date",
+    "mr irrelevant the john tuggle story 2026 trailer",
+    "mr irrelevant the john tuggle story where to watch",
+    "mr irrelevant the john tuggle story rating"
+   ],
+   "is mr irrelevant a true story": [
+    "is mr irrelevant a true story",
+    "is the new movie mr irrelevant a true story"
+   ],
+   "mr irrelevant true story": [
+    "mr irrelevant true story",
+    "mr irrelevant movie true story",
+    "mr irrelevant 2026 true story",
+    "mr irrelevant movie based on true story",
+    "why is mr collins so weird"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-23",
+    true
+   ]
+  ]
+ },
+ "what-is-the-2011-jupiter-incident": {
+  "time": "2026-11-23T13:58:21+00:00",
+  "query": "what is the 2011 jupiter incident",
+  "in_suggest": true,
+  "suggest": {
+   "2011 jupiter incident": [
+    "2011 jupiter incident",
+    "2011 jupiter incident meme",
+    "2011 jupiter incident explained",
+    "2011 jupiter incident kies",
+    "2011 jupiter incident tiktok",
+    "jupiter medical center events",
+    "what happened in the 2011",
+    "what happened on april 11 2011"
+   ],
+   "what is 2011 jupiter incident": [],
+   "what is the 2011 jupiter incident": [
+    "what is the 2011 jupiter incident",
+    "what is the 2011 jupiter incident meme",
+    "what happened on may 3 2011",
+    "what happened may 11 2011",
+    "what happened on april 11 2011"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-23",
+    true
+   ]
+  ]
+ },
+ "why-are-people-heading-to-cinemas-in-cat-ears": {
+  "time": "2026-11-23T13:58:23+00:00",
+  "query": "why are people heading to cinemas in cat ears",
+  "in_suggest": true,
+  "suggest": {
+   "catvideofest": [
+    "catvideofest 2026",
+    "catvideofest",
+    "catvideofest 2026 schedule",
+    "catvideofest 2025",
+    "catvideofest 2026 trailer",
+    "catvideofest 2026 schedule near me",
+    "catvideofest 2026 near me",
+    "catvideofest 2026 reviews",
+    "catvideofest 2026 videos",
+    "catvideofest website"
+   ],
+   "what is catvideofest": [
+    "what is catvideofest",
+    "what is catvideofest 2026",
+    "what is fsdp",
+    "what is 36psi"
+   ],
+   "why are people heading to cinemas in cat ears": [
+    "why are people heading to cinemas in cat ears",
+    "what does cold ears on a cat mean",
+    "why are cats ears on top of their head",
+    "why does my cat flick his ears"
+   ],
+   "people heading cinemas cat ears": []
+  },
+  "history": [
+   [
+    "2026-11-23",
+    true
+   ]
+  ]
+ },
+ "why-is-everyone-mad-at-kroger": {
+  "time": "2026-11-23T13:58:28+00:00",
+  "query": "why is everyone mad at kroger",
+  "in_suggest": true,
+  "suggest": {
+   "kroger hurts families campaign": [
+    "kroger hurts families campaign",
+    "who is behind the kroger hurts families campaign",
+    "how much does kroger pay in kentucky",
+    "change kroger employee password",
+    "how to change kroger password",
+    "is kroger safe"
+   ],
+   "what is kroger hurts families campaign": [
+    "what is the kroger hurts families campaign about",
+    "is kroger safe",
+    "is kroger family owned",
+    "what is the difference between kroger and kroger marketplace",
+    "does kroger have security"
+   ],
+   "why is everyone mad at kroger": [
+    "why is everyone mad at kroger",
+    "why are people mad at kroger",
+    "why is kroger produce so bad",
+    "is kroger evil",
+    "why is kroger bad",
+    "is kroger in trouble"
+   ],
+   "everyone mad at kroger": [
+    "why is everyone mad at kroger",
+    "is kroger all over the us",
+    "is kroger an ethical company"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-23",
+    true
+   ]
+  ]
+ },
+ "why-is-there-a-d-in-fridge": {
+  "time": "2026-11-23T13:58:29+00:00",
+  "query": "why does refrigerator not have a d",
+  "in_suggest": true,
+  "suggest": {
+   "fridge spelling": [
+    "fridge spelling",
+    "fridge spelling english",
+    "fridge spelling in telugu",
+    "fridge spelling kya hai",
+    "fridge spelling please",
+    "fridge spelling in punjabi",
+    "fridge spelling ki",
+    "fridge spelling in bengali",
+    "fridge spelling in tamil",
+    "fridge kannada spelling"
+   ],
+   "what is fridge spelling": [
+    "what is fridge spelling",
+    "what is refrigerator spelling",
+    "google what is fridge spelling",
+    "what is the spelling of fridge in english",
+    "what is the spelling of fridge in hindi",
+    "what is the spelling of fridge magnet",
+    "why are fridge and refrigerator spelled differently",
+    "how to spell refrigerator in english"
+   ],
+   "why does refrigerator not have a d": [
+    "why does refrigerator not have a d",
+    "why does refrigerator not have a d but fridge does",
+    "why is there a d in fridge but not refrigerator"
+   ],
+   "refrigerator not have d": [
+    "why does refrigerator not have ad",
+    "refrigerator why no d",
+    "why is there a d in fridge but not refrigerator"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-23",
     true
    ]
   ]
