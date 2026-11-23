@@ -9608,7 +9608,7 @@
   ]
  },
  "exhibition-game": {
-  "time": "2026-11-22T17:32:20+00:00",
+  "time": "2026-11-23T17:47:01+00:00",
   "query": "what is an exhibition game in basketball",
   "in_suggest": true,
   "suggest": {
@@ -9649,8 +9649,8 @@
     "exhibition game basketball",
     "exhibition game basketball meaning",
     "exhibition game basketball schedule",
+    "exhibition game basketball today",
     "exhibition game basketball poster",
-    "exhibition games basketball today",
     "preseason game basketball",
     "basketball exhibition match",
     "men's basketball exhibition",
@@ -9702,11 +9702,15 @@
    [
     "2026-11-22",
     true
+   ],
+   [
+    "2026-11-23",
+    true
    ]
   ]
  },
  "game-time-decision": {
-  "time": "2026-11-22T17:32:22+00:00",
+  "time": "2026-11-23T17:47:04+00:00",
   "query": "game time decision meaning",
   "in_suggest": true,
   "suggest": {
@@ -9803,11 +9807,15 @@
    [
     "2026-11-22",
     true
+   ],
+   [
+    "2026-11-23",
+    true
    ]
   ]
  },
  "mutual-option": {
-  "time": "2026-11-22T17:32:25+00:00",
+  "time": "2026-11-23T17:47:06+00:00",
   "query": "what is a mutual option in baseball",
   "in_suggest": true,
   "suggest": {
@@ -9899,11 +9907,15 @@
    [
     "2026-11-22",
     true
+   ],
+   [
+    "2026-11-23",
+    true
    ]
   ]
  },
  "nba-draft": {
-  "time": "2026-11-22T17:32:26+00:00",
+  "time": "2026-11-23T17:47:08+00:00",
   "query": "what is the nba draft",
   "in_suggest": true,
   "suggest": {
@@ -9911,13 +9923,13 @@
     "nba draft 2026",
     "nba draft",
     "nba draft 2027",
-    "nba draft 2027 mock",
     "nba draft 2025",
+    "nba draft 2027 mock",
     "nba draft results",
     "nba draft 2024",
     "nba draft order",
-    "nba draft 2023",
-    "nba draft order 2026"
+    "nba draft order 2026",
+    "nba draft mock"
    ],
    "what is nba draft": [
     "what is nba draft",
@@ -9988,11 +10000,15 @@
    [
     "2026-11-22",
     true
+   ],
+   [
+    "2026-11-23",
+    true
    ]
   ]
  },
  "tri-series-cricket": {
-  "time": "2026-11-22T17:32:30+00:00",
+  "time": "2026-11-23T17:47:11+00:00",
   "query": "what is a tri series in cricket",
   "in_suggest": true,
   "suggest": {
@@ -10006,7 +10022,7 @@
     "tri-series in pakistan 2026",
     "tri series in sri lanka 2026",
     "tri series pakistan 2025",
-    "tri series pakistan 2026"
+    "tri series pakistan 2026 schedule"
    ],
    "what is tri-series": [
     "what is tri series in cricket",
@@ -10087,6 +10103,10 @@
    ],
    [
     "2026-11-22",
+    true
+   ],
+   [
+    "2026-11-23",
     true
    ]
   ]
@@ -13891,7 +13911,7 @@
   ]
  },
  "bay-area-waterspouts-tornado-warning": {
-  "time": "2026-11-22T17:32:15+00:00",
+  "time": "2026-11-23T17:46:56+00:00",
   "query": "bay area waterspouts tornado warning",
   "in_suggest": false,
   "suggest": {
@@ -13923,11 +13943,15 @@
    [
     "2026-11-22",
     false
+   ],
+   [
+    "2026-11-23",
+    false
    ]
   ]
  },
  "california-sues-openai": {
-  "time": "2026-11-22T17:32:17+00:00",
+  "time": "2026-11-23T17:46:58+00:00",
   "query": "california sues openai",
   "in_suggest": false,
   "suggest": {
@@ -13959,11 +13983,15 @@
    [
     "2026-11-22",
     false
+   ],
+   [
+    "2026-11-23",
+    false
    ]
   ]
  },
  "robert-pattinson-james-bond": {
-  "time": "2026-11-22T17:32:28+00:00",
+  "time": "2026-11-23T17:47:10+00:00",
   "query": "robert pattinson james bond",
   "in_suggest": true,
   "suggest": {
@@ -13983,15 +14011,15 @@
    ],
    "robert pattinson james bond": [
     "robert pattinson james bond",
+    "robert pattinson james bond audition",
+    "robert pattinson james bond movie",
     "robert pattinson james bond meme",
     "robert pattinson james bond contract",
-    "robert pattinson james bond movie",
-    "robert pattinson james bond audition",
-    "robert pattinson james bond girl",
     "robert pattinson james bond announcement",
-    "robert pattinson james bond trailer",
-    "robert pattinson james bond release date",
-    "robert pattinson james bond teaser"
+    "robert pattinson james bond gun",
+    "robert pattinson james bond screen test",
+    "robert pattinson james bond girl",
+    "robert pattinson james bond body"
    ]
   },
   "history": [
@@ -14017,6 +14045,10 @@
    ],
    [
     "2026-11-22",
+    true
+   ],
+   [
+    "2026-11-23",
     true
    ]
   ]
@@ -14340,7 +14372,7 @@
   ]
  },
  "apple-outage-november-17-2026": {
-  "time": "2026-11-22T17:32:14+00:00",
+  "time": "2026-11-23T17:46:55+00:00",
   "query": "apple outage",
   "in_suggest": true,
   "suggest": {
@@ -14360,14 +14392,14 @@
    "apple outage": [
     "apple outage",
     "apple outage today",
-    "apple outage this week",
     "apple outage status",
     "apple outage map",
     "apple outage page",
     "apple outage right now",
     "apple outage yesterday",
     "apple outage report",
-    "apple outage tracker"
+    "apple outage tracker",
+    "apple outage news"
    ]
   },
   "history": [
@@ -14390,11 +14422,15 @@
    [
     "2026-11-22",
     true
+   ],
+   [
+    "2026-11-23",
+    true
    ]
   ]
  },
  "florida-flooding-november-18-2026": {
-  "time": "2026-11-22T17:32:21+00:00",
+  "time": "2026-11-23T17:47:02+00:00",
   "query": "florida flooding",
   "in_suggest": true,
   "suggest": {
@@ -14408,8 +14444,8 @@
     "what part of florida is safe from flooding"
    ],
    "what is florida east coast flooding": [
-    "florida east coast flooding",
     "florida east coast flooding today",
+    "florida east coast flooding",
     "what parts of florida are flooded",
     "is all of florida a flood zone",
     "is orlando a flood zone",
@@ -14420,12 +14456,12 @@
     "florida flooding map",
     "florida flooding today",
     "florida flooding videos",
-    "florida flooding right now",
-    "florida flooding weather",
-    "florida flooding forecast",
     "florida flooding orlando",
+    "florida flooding news",
+    "florida flooding miami",
     "florida flooding areas",
-    "florida flooding cause"
+    "florida flooding update",
+    "florida flooding reddit"
    ]
   },
   "history": [
@@ -14448,11 +14484,15 @@
    [
     "2026-11-22",
     true
+   ],
+   [
+    "2026-11-23",
+    true
    ]
   ]
  },
  "hakeem-jeffries-speaker-nomination": {
-  "time": "2026-11-22T17:32:24+00:00",
+  "time": "2026-11-23T17:47:05+00:00",
   "query": "is hakeem jeffries speaker",
   "in_suggest": true,
   "suggest": {
@@ -14484,6 +14524,10 @@
    ],
    [
     "2026-11-22",
+    true
+   ],
+   [
+    "2026-11-23",
     true
    ]
   ]
@@ -14820,7 +14864,7 @@
   ]
  },
  "cma-awards-2026-winners": {
-  "time": "2026-11-22T17:32:18+00:00",
+  "time": "2026-11-23T17:46:59+00:00",
   "query": "cma awards 2026 winners",
   "in_suggest": true,
   "suggest": {
@@ -14828,17 +14872,17 @@
     "2026 cma awards",
     "2026 cma awards full show",
     "2026 cma awards date",
-    "2026 cma awards full show youtube",
-    "2026 cma awards winners",
-    "2026 cma awards streaming",
-    "2026 cma awards best dressed",
     "2026 cma awards red carpet",
+    "2026 cma awards winners",
+    "2026 cma awards nominees",
+    "2026 cma awards tickets",
+    "2026 cma awards performers",
     "2026 cma awards show",
-    "2026 cma awards tickets"
+    "2026 cma awards host"
    ],
    "what is 2026 cma awards": [
-    "what channel is 2026 cma awards on",
     "what is the 2026 cma awards",
+    "what channel is 2026 cma awards on",
     "what day is the 2026 cma awards",
     "what channel is the 2026 cma awards on tonight",
     "what date is the 2026 cma awards",
@@ -14873,11 +14917,15 @@
    [
     "2026-11-22",
     true
+   ],
+   [
+    "2026-11-23",
+    true
    ]
   ]
  },
  "trump-xi-putin-meeting-declaration": {
-  "time": "2026-11-22T17:32:31+00:00",
+  "time": "2026-11-23T17:47:12+00:00",
   "query": "trump xi putin meeting",
   "in_suggest": true,
   "suggest": {
@@ -14885,7 +14933,7 @@
    "what is trump-xi-putin trilateral meeting": [],
    "trump xi putin meeting": [
     "trump xi putin meeting",
-    "trump xi putin meeting summary",
+    "trump putin xi meeting date",
     "trump putin china meeting",
     "trump xi jinping putin meeting",
     "chinese president before xi jinping",
@@ -14911,17 +14959,22 @@
    [
     "2026-11-22",
     true
+   ],
+   [
+    "2026-11-23",
+    true
    ]
   ]
  },
  "walmart-earnings-q3-2026": {
-  "time": "2026-11-22T17:32:32+00:00",
+  "time": "2026-11-23T17:47:14+00:00",
   "query": "walmart earnings",
   "in_suggest": true,
   "suggest": {
    "walmart third-quarter earnings": [
     "walmart third quarter earnings",
     "walmart third quarter results",
+    "walmart reports third quarter results",
     "3rd quarter earnings"
    ],
    "what is walmart third-quarter earnings": [],
@@ -14953,6 +15006,10 @@
    ],
    [
     "2026-11-22",
+    true
+   ],
+   [
+    "2026-11-23",
     true
    ]
   ]
@@ -15246,7 +15303,7 @@
   ]
  },
  "california-earthquake-pinnacles-november-2026": {
-  "time": "2026-11-22T17:32:16+00:00",
+  "time": "2026-11-23T17:46:57+00:00",
   "query": "earthquake california",
   "in_suggest": true,
   "suggest": {
@@ -15254,7 +15311,7 @@
     "pinnacles earthquake",
     "pinnacles earthquake today",
     "earthquake pinnacles ca",
-    "earthquake pinnacles national park",
+    "pinnacles national park earthquake",
     "what animals live in the pinnacles",
     "what is pinnacles national park"
    ],
@@ -15262,14 +15319,14 @@
    "earthquake california": [
     "earthquake california",
     "earthquake california today",
-    "earthquake california yesterday",
-    "earthquake california just now",
     "earthquake california today just now",
-    "earthquake california now",
+    "earthquake california today san francisco",
+    "earthquake california today 2024",
+    "earthquake california yesterday",
     "earthquake california today just now live",
-    "earthquake california just now live",
-    "earthquake california prediction",
-    "earthquake california 1989"
+    "earthquake california just now",
+    "earthquake california nov 22",
+    "earthquake california now"
    ]
   },
   "history": [
@@ -15284,11 +15341,15 @@
    [
     "2026-11-22",
     true
+   ],
+   [
+    "2026-11-23",
+    true
    ]
   ]
  },
  "rikers-island-closure-plan-2032": {
-  "time": "2026-11-22T17:32:27+00:00",
+  "time": "2026-11-23T17:47:09+00:00",
   "query": "rikers island closing",
   "in_suggest": true,
   "suggest": {
@@ -15306,13 +15367,13 @@
    "rikers island closing": [
     "rikers island closing",
     "rikers island closing reddit",
-    "rikers island closing plan",
     "rikers island closing why",
-    "rikers island closing speech",
-    "rikers island closing date",
-    "rikers island closing in 2026",
-    "rikers island closing down",
+    "rikers island closing plan",
     "rikers island closing mamdani",
+    "rikers island closing down",
+    "rikers island closing date",
+    "rikers island closing speech",
+    "rikers island closing in 2026",
     "rikers island closing 2027"
    ]
   },
@@ -15327,6 +15388,10 @@
    ],
    [
     "2026-11-22",
+    true
+   ],
+   [
+    "2026-11-23",
     true
    ]
   ]
