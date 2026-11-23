@@ -1,231 +1,294 @@
 {
- "made": "2026-11-22T22:32:07+00:00",
- "day": "2026-11-21",
+ "made": "2026-11-23T04:46:51+00:00",
+ "day": "2026-11-22",
  "about": "Всплески просмотров английской Википедии за вчера: views — просмотров вчера, before — максимум за 3 прошлых дня (null = статьи не было в топ-1000). Идеи для страниц «who is / what is»; проверять факты по новостям.",
  "spikes": [
   {
-   "article": "UFC Fight Night: Procházka vs. Stirling",
-   "views": 102387,
-   "before": 9743,
-   "ratio": 10.5,
-   "url": "https://en.wikipedia.org/wiki/UFC_Fight_Night%3A_Proch%C3%A1zka_vs._Stirling"
-  },
-  {
-   "article": "Nikhil Chaudhary (cricketer)",
-   "views": 100364,
+   "article": "Tom Jackson (American football, born 1951)",
+   "views": 263973,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Nikhil_Chaudhary_%28cricketer%29"
+   "url": "https://en.wikipedia.org/wiki/Tom_Jackson_%28American_football%2C_born_1951%29"
   },
   {
-   "article": "Survivor Series: WarGames (2026)",
-   "views": 82093,
-   "before": 21885,
+   "article": "Miley Cyrus",
+   "views": 170642,
+   "before": 15018,
+   "ratio": 11.4,
+   "url": "https://en.wikipedia.org/wiki/Miley_Cyrus"
+  },
+  {
+   "article": "S Club",
+   "views": 104957,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/S_Club"
+  },
+  {
+   "article": "John Tuggle",
+   "views": 71317,
+   "before": 8869,
+   "ratio": 8.0,
+   "url": "https://en.wikipedia.org/wiki/John_Tuggle"
+  },
+  {
+   "article": "Maxx Morando",
+   "views": 70652,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Maxx_Morando"
+  },
+  {
+   "article": "2026 Formula One World Championship",
+   "views": 67399,
+   "before": 14848,
+   "ratio": 4.5,
+   "url": "https://en.wikipedia.org/wiki/2026_Formula_One_World_Championship"
+  },
+  {
+   "article": "Russian corvette Merkury",
+   "views": 61753,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Russian_corvette_Merkury"
+  },
+  {
+   "article": "Liam Hemsworth",
+   "views": 58115,
+   "before": 11311,
+   "ratio": 5.1,
+   "url": "https://en.wikipedia.org/wiki/Liam_Hemsworth"
+  },
+  {
+   "article": "Rio Ngumoha",
+   "views": 56993,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Rio_Ngumoha"
+  },
+  {
+   "article": "Josh Johnson (quarterback)",
+   "views": 53745,
+   "before": 14808,
+   "ratio": 3.6,
+   "url": "https://en.wikipedia.org/wiki/Josh_Johnson_%28quarterback%29"
+  },
+  {
+   "article": "Mr. Irrelevant (film)",
+   "views": 50830,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Mr._Irrelevant_%28film%29"
+  },
+  {
+   "article": "The Witch Farm",
+   "views": 50583,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/The_Witch_Farm"
+  },
+  {
+   "article": "Hannah Spearritt",
+   "views": 49641,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Hannah_Spearritt"
+  },
+  {
+   "article": "Paul Cattermole",
+   "views": 48372,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Paul_Cattermole"
+  },
+  {
+   "article": "Max Verstappen",
+   "views": 45921,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Max_Verstappen"
+  },
+  {
+   "article": "Marc Márquez",
+   "views": 42384,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Marc_M%C3%A1rquez"
+  },
+  {
+   "article": "James Talarico",
+   "views": 42006,
+   "before": 11201,
    "ratio": 3.8,
-   "url": "https://en.wikipedia.org/wiki/Survivor_Series%3A_WarGames_%282026%29"
+   "url": "https://en.wikipedia.org/wiki/James_Talarico"
   },
   {
-   "article": "Lewis Moody",
-   "views": 69243,
+   "article": "Virginia Foxx",
+   "views": 37506,
+   "before": 11594,
+   "ratio": 3.2,
+   "url": "https://en.wikipedia.org/wiki/Virginia_Foxx"
+  },
+  {
+   "article": "Molly Meldrum",
+   "views": 37182,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Lewis_Moody"
+   "url": "https://en.wikipedia.org/wiki/Molly_Meldrum"
   },
   {
-   "article": "Navajo Stirling",
-   "views": 52558,
-   "before": 8182,
-   "ratio": 6.4,
-   "url": "https://en.wikipedia.org/wiki/Navajo_Stirling"
-  },
-  {
-   "article": "Dwayne Johnson",
-   "views": 50388,
-   "before": 10521,
-   "ratio": 4.8,
-   "url": "https://en.wikipedia.org/wiki/Dwayne_Johnson"
-  },
-  {
-   "article": "Murder of Steven Cozzi",
-   "views": 48734,
-   "before": 7139,
-   "ratio": 6.8,
-   "url": "https://en.wikipedia.org/wiki/Murder_of_Steven_Cozzi"
-  },
-  {
-   "article": "Bigg Boss (Tamil TV series) season 10",
-   "views": 45640,
-   "before": 10674,
-   "ratio": 4.3,
-   "url": "https://en.wikipedia.org/wiki/Bigg_Boss_%28Tamil_TV_series%29_season_10"
-  },
-  {
-   "article": "Luca Williams-Barnett",
-   "views": 37296,
+   "article": "Rachel Stevens",
+   "views": 33745,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Luca_Williams-Barnett"
+   "url": "https://en.wikipedia.org/wiki/Rachel_Stevens"
   },
   {
-   "article": "Robert Baloucoune",
-   "views": 36163,
+   "article": "Carlos Alcaraz",
+   "views": 32063,
+   "before": 9547,
+   "ratio": 3.4,
+   "url": "https://en.wikipedia.org/wiki/Carlos_Alcaraz"
+  },
+  {
+   "article": "Chris Berman",
+   "views": 31651,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Robert_Baloucoune"
+   "url": "https://en.wikipedia.org/wiki/Chris_Berman"
   },
   {
-   "article": "Greg Wise",
-   "views": 35588,
+   "article": "Jo O'Meara",
+   "views": 31601,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Greg_Wise"
+   "url": "https://en.wikipedia.org/wiki/Jo_O%27Meara"
   },
   {
-   "article": "Carly Rae Jepsen",
-   "views": 34804,
+   "article": "Tina Barrett",
+   "views": 30720,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Carly_Rae_Jepsen"
+   "url": "https://en.wikipedia.org/wiki/Tina_Barrett"
   },
   {
-   "article": "Jiří Procházka",
-   "views": 33397,
+   "article": "Steregushchiy-class corvette",
+   "views": 30283,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Ji%C5%99%C3%AD_Proch%C3%A1zka"
+   "url": "https://en.wikipedia.org/wiki/Steregushchiy-class_corvette"
   },
   {
-   "article": "Brian Ortega",
-   "views": 33314,
+   "article": "Max Hurleman",
+   "views": 29012,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Brian_Ortega"
+   "url": "https://en.wikipedia.org/wiki/Max_Hurleman"
   },
   {
-   "article": "Anthony Bourdain",
-   "views": 33071,
-   "before": 10124,
-   "ratio": 3.3,
-   "url": "https://en.wikipedia.org/wiki/Anthony_Bourdain"
-  },
-  {
-   "article": "2026 Nations Championship",
-   "views": 32287,
+   "article": "Billy Ray Cyrus",
+   "views": 28082,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/2026_Nations_Championship"
+   "url": "https://en.wikipedia.org/wiki/Billy_Ray_Cyrus"
   },
   {
-   "article": "Dani Dyer",
-   "views": 32242,
+   "article": "Kelly Piquet",
+   "views": 26948,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Dani_Dyer"
+   "url": "https://en.wikipedia.org/wiki/Kelly_Piquet"
   },
   {
-   "article": "Fausto Isidro Meza Flores",
-   "views": 31417,
+   "article": "Fernando Mendoza",
+   "views": 26374,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Fausto_Isidro_Meza_Flores"
+   "url": "https://en.wikipedia.org/wiki/Fernando_Mendoza"
   },
   {
-   "article": "Danny Dyer",
-   "views": 29064,
+   "article": "Mairzy Doates",
+   "views": 26235,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Danny_Dyer"
+   "url": "https://en.wikipedia.org/wiki/Mairzy_Doates"
   },
   {
-   "article": "Jesús de Miguel",
-   "views": 27649,
+   "article": "Rei Ami",
+   "views": 26235,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Jes%C3%BAs_de_Miguel"
+   "url": "https://en.wikipedia.org/wiki/Rei_Ami"
   },
   {
-   "article": "Phumzile Mlambo-Ngcuka",
-   "views": 27232,
+   "article": "Tarik Skubal",
+   "views": 24939,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Phumzile_Mlambo-Ngcuka"
+   "url": "https://en.wikipedia.org/wiki/Tarik_Skubal"
   },
   {
-   "article": "Emmanuel Emegha",
-   "views": 26546,
+   "article": "Joe Milton",
+   "views": 24014,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Emmanuel_Emegha"
+   "url": "https://en.wikipedia.org/wiki/Joe_Milton"
   },
   {
-   "article": "Nereids",
-   "views": 26192,
+   "article": "Wicked (2024 film)",
+   "views": 23682,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Nereids"
+   "url": "https://en.wikipedia.org/wiki/Wicked_%282024_film%29"
   },
   {
-   "article": "Strictly Come Dancing series 24",
-   "views": 25724,
+   "article": "J. J. McCarthy",
+   "views": 22424,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Strictly_Come_Dancing_series_24"
+   "url": "https://en.wikipedia.org/wiki/J._J._McCarthy"
   },
   {
-   "article": "Nations Championship",
-   "views": 25396,
+   "article": "Elizabeth Hurley",
+   "views": 22167,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Nations_Championship"
+   "url": "https://en.wikipedia.org/wiki/Elizabeth_Hurley"
   },
   {
-   "article": "The Eagle Has Landed (film)",
-   "views": 24491,
+   "article": "Tish Cyrus",
+   "views": 22102,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/The_Eagle_Has_Landed_%28film%29"
+   "url": "https://en.wikipedia.org/wiki/Tish_Cyrus"
   },
   {
-   "article": "Jim Duggan",
-   "views": 24474,
+   "article": "Hermann Göring Collection",
+   "views": 21274,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Jim_Duggan"
+   "url": "https://en.wikipedia.org/wiki/Hermann_G%C3%B6ring_Collection"
   },
   {
-   "article": "Bob Chesney",
-   "views": 23465,
+   "article": "Lavrentiy Beria",
+   "views": 21247,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Bob_Chesney"
+   "url": "https://en.wikipedia.org/wiki/Lavrentiy_Beria"
   },
   {
-   "article": "Aleksandre Topuria",
-   "views": 22423,
+   "article": "Gabrielle Creevy",
+   "views": 20339,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Aleksandre_Topuria"
+   "url": "https://en.wikipedia.org/wiki/Gabrielle_Creevy"
   },
   {
-   "article": "Hierophant",
-   "views": 22135,
+   "article": "Michael Socha",
+   "views": 20207,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Hierophant"
-  },
-  {
-   "article": "Jaime Winstone",
-   "views": 21194,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Jaime_Winstone"
-  },
-  {
-   "article": "Pepita Not",
-   "views": 20926,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Pepita_Not"
+   "url": "https://en.wikipedia.org/wiki/Michael_Socha"
   }
  ]
 }
