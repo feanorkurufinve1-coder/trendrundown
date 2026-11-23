@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-23T00:32:52+00:00",
+ "checked": "2026-11-23T01:46:54+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -1114,7 +1114,7 @@
   },
   {
    "url": "/x/mlb-posting-system",
-   "at": "2026-11-22T19:31:49+00:00",
+   "at": "2026-11-23T01:46:54+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
