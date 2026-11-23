@@ -238,15 +238,8 @@
   },
   {
    "url": "/x/california-earthquake-pinnacles-november-2026",
-   "at": "2026-11-23T07:16:59+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
-   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-   "indexingState": "INDEXING_STATE_UNSPECIFIED",
-   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
-   "lastCrawlTime": null,
-   "googleCanonical": null,
-   "userCanonical": null
+   "at": "2026-11-23T13:32:46+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/x/california-sues-openai",
@@ -730,19 +723,12 @@
   },
   {
    "url": "/x/how-to-rob-a-bank-true-story",
-   "at": "2026-11-23T07:16:47+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
-   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-   "indexingState": "INDEXING_STATE_UNSPECIFIED",
-   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
-   "lastCrawlTime": null,
-   "googleCanonical": null,
-   "userCanonical": null
+   "at": "2026-11-23T13:32:09+00:00",
+   "error": "The read operation timed out"
   },
   {
    "url": "/x/how-to-vote-on-the-circle-hulu",
-   "at": "2026-11-23T07:16:53+00:00",
+   "at": "2026-11-23T13:32:16+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -754,7 +740,7 @@
   },
   {
    "url": "/x/i-play-rocky-true-story",
-   "at": "2026-11-23T07:17:12+00:00",
+   "at": "2026-11-23T13:32:58+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -766,7 +752,7 @@
   },
   {
    "url": "/x/internet-trends-this-week-2026-11-15",
-   "at": "2026-11-23T07:17:18+00:00",
+   "at": "2026-11-23T13:33:05+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1378,7 +1364,7 @@
   },
   {
    "url": "/x/rikers-island-closure-plan-2032",
-   "at": "2026-11-23T07:17:06+00:00",
+   "at": "2026-11-23T13:32:52+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2454,8 +2440,9 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 128,
+  "URL is unknown to Google": 126,
   "Crawled - currently not indexed": 65,
+  "error": 2,
   "Discovered - currently not indexed": 6
  }
 }
