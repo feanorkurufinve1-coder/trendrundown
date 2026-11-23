@@ -10112,21 +10112,21 @@
   ]
  },
  "dan-hicks-death": {
-  "time": "2026-11-22T18:17:51+00:00",
+  "time": "2026-11-23T18:32:12+00:00",
   "query": "dan hicks death",
   "in_suggest": true,
   "suggest": {
    "dan hicks": [
     "dan hicks",
-    "dan hicks (sportscaster)",
-    "dan hicks funeral",
     "dan hicks death",
-    "dan hicks death cause",
+    "dan hicks funeral",
     "dan hicks wife",
+    "dan hicks (sportscaster)",
     "dan hicks cause of death update",
-    "dan hicks illness",
+    "dan hicks cause of death reddit",
+    "dan hicks obituary",
     "dan hicks nbc",
-    "dan hicks obituary"
+    "dan hicks daughter tribute"
    ],
    "what is dan hicks": [
     "what is dan hicks net worth",
@@ -10193,28 +10193,40 @@
    [
     "2026-11-22",
     true
+   ],
+   [
+    "2026-11-23",
+    true
    ]
   ]
  },
  "did-scott-colom-win": {
-  "time": "2026-11-22T18:17:55+00:00",
+  "time": "2026-11-23T18:32:15+00:00",
   "query": "did scott colom win",
-  "in_suggest": false,
+  "in_suggest": true,
   "suggest": {
    "2026 mississippi senate election": [
     "2026 mississippi senate election",
+    "2026 mississippi senate election results",
     "2026 mississippi senate race",
+    "2026 mississippi senate race results",
     "2026 mississippi senate race polls",
-    "2026 us senate mississippi general election",
-    "mississippi senate primary election 2026",
-    "who is running for the senate in mississippi"
+    "2026 mississippi senate race reddit",
+    "2026 mississippi senate race kalshi",
+    "2026 mississippi senate race polymarket",
+    "2026 united states mississippi senate elections",
+    "2026 mississippi us senate race"
    ],
    "what is 2026 mississippi senate election": [
     "2026 mississippi senate election",
+    "2026 mississippi senate election results",
     "who is running for the senate in mississippi"
    ],
    "did scott colom win": [],
-   "scott colom win": []
+   "scott colom win": [
+    "will scott colom win",
+    "will scott colom win mississippi"
+   ]
   },
   "history": [
    [
@@ -10260,11 +10272,15 @@
    [
     "2026-11-22",
     false
+   ],
+   [
+    "2026-11-23",
+    true
    ]
   ]
  },
  "october-2026-cpi-no-annual-rate": {
-  "time": "2026-11-22T18:18:04+00:00",
+  "time": "2026-11-23T18:32:24+00:00",
   "query": "why no annual inflation rate for october cpi",
   "in_suggest": false,
   "suggest": {
@@ -10339,11 +10355,15 @@
    [
     "2026-11-22",
     false
+   ],
+   [
+    "2026-11-23",
+    false
    ]
   ]
  },
  "sierra-winter-storm-warning": {
-  "time": "2026-11-22T18:18:05+00:00",
+  "time": "2026-11-23T18:32:26+00:00",
   "query": "sierra winter storm warning",
   "in_suggest": true,
   "suggest": {
@@ -10421,11 +10441,15 @@
    [
     "2026-11-22",
     true
+   ],
+   [
+    "2026-11-23",
+    true
    ]
   ]
  },
  "ss-united-states-sinking": {
-  "time": "2026-11-22T18:18:08+00:00",
+  "time": "2026-11-23T18:32:28+00:00",
   "query": "ss united states sinking",
   "in_suggest": true,
   "suggest": {
@@ -10434,18 +10458,18 @@
     "ss united states sinking",
     "ss united states sinking date",
     "ss united states wreck",
-    "ss united states underwater pictures",
+    "ss united states location",
     "ss united states ship",
-    "ss united states underwater",
+    "ss united states under water",
     "ss united states interior",
     "ss united states artificial reef",
-    "ss united states diving"
+    "ss united states top speed"
    ],
    "what is ss united states": [
     "what is ss united states",
     "what is ss united states ship",
     "what is the ss united states made of",
-    "what is happening with ss united states",
+    "what is happening to ss united states",
     "what was ss united states top speed",
     "what was ss united states used for",
     "what is the status of the ss united states",
@@ -10461,9 +10485,9 @@
     "ss united states sinking depth",
     "ss united states sinking date and location",
     "ss united states sinking date reddit",
-    "ss united states sinking update",
     "ss united states sinking livestream",
-    "ss united states sinking date today"
+    "ss united states sinking date today",
+    "ss united states sinking update"
    ]
   },
   "history": [
@@ -10510,25 +10534,29 @@
    [
     "2026-11-22",
     true
+   ],
+   [
+    "2026-11-23",
+    true
    ]
   ]
  },
  "stacy-keach-death": {
-  "time": "2026-11-22T18:18:09+00:00",
+  "time": "2026-11-23T18:32:29+00:00",
   "query": "stacy keach death",
   "in_suggest": true,
   "suggest": {
    "stacy keach": [
     "stacy keach",
     "stacy keach sr",
+    "stacy keach simpsons",
     "stacy keach net worth",
     "stacy keach movies and shows",
     "stacy keach movies",
     "stacy keach tv shows",
     "stacy keach jr",
     "stacy keach brother",
-    "stacy keach senior",
-    "stacy keach wife"
+    "stacy keach senior"
    ],
    "what is stacy keach": [
     "what is stacy keach doing now",
@@ -10599,35 +10627,39 @@
    [
     "2026-11-22",
     true
+   ],
+   [
+    "2026-11-23",
+    true
    ]
   ]
  },
  "what-time-does-gta-6-unlock": {
-  "time": "2026-11-22T18:18:11+00:00",
+  "time": "2026-11-23T18:32:31+00:00",
   "query": "what time does gta 6 unlock",
   "in_suggest": true,
   "suggest": {
    "grand theft auto vi": [
     "grand theft auto vi",
-    "grand theft auto vi playstation 5 store",
     "grand theft auto vice city",
+    "grand theft auto vi playstation 5 store",
     "grand theft auto vi lucia memes",
-    "grand theft auto vi reviews",
     "grand theft auto vice city stories",
-    "grand theft auto vi pc",
-    "grand theft auto vi ultimate edition",
+    "grand theft auto vi reviews",
     "grand theft auto vi release date",
+    "grand theft auto vi ultimate edition",
+    "grand theft auto vi pc",
     "grand theft auto vi the album"
    ],
    "what is grand theft auto vi": [
     "what is grand theft auto vi",
+    "what is grand theft auto video game",
     "what is grand theft auto vi an extended look",
     "what is grand theft auto vi ultimate edition upgrade",
     "what is grand theft auto vice city stories",
     "what is grand theft auto vice city",
     "what is grand theft auto vi rated",
     "what is grand theft auto vi ultimate edition",
-    "what is grand theft auto video game about",
     "what is grand theft auto vi on netflix",
     "grand theft auto explained"
    ],
@@ -10640,6 +10672,7 @@
    ],
    "time gta 6 unlock": [
     "gta 6 unlock time",
+    "gta 6 unlock time uk",
     "how long will gta 6 take to make",
     "are they working on gta 6",
     "how long until gta 6 is released"
@@ -10688,6 +10721,10 @@
    ],
    [
     "2026-11-22",
+    true
+   ],
+   [
+    "2026-11-23",
     true
    ]
   ]
@@ -11537,21 +11574,21 @@
   ]
  },
  "anthony-clark-death": {
-  "time": "2026-11-22T18:17:50+00:00",
+  "time": "2026-11-23T18:32:11+00:00",
   "query": "anthony clark death",
   "in_suggest": true,
   "suggest": {
    "anthony clark": [
     "anthony clark",
     "anthony clark cause of death",
-    "anthony clark comedian",
     "anthony clark last photo",
+    "anthony clark comedian",
     "anthony clark net worth",
-    "anthony clark death",
     "anthony clark partner",
+    "anthony clark death",
     "anthony clark wife",
-    "anthony clark 2026",
-    "anthony clark children"
+    "anthony clark children",
+    "anthony clark actor cause of death"
    ],
    "what is anthony clark": [
     "what is anthony clark doing now",
@@ -11562,15 +11599,15 @@
     "who is anthony clark pierce",
     "what is tony clark's sister in law's name",
     "who is anthony clarkson",
-    "what is tony clark's net worth",
-    "who is anthony clark in barbershop the next cut"
+    "who is anthony clark in barbershop the next cut",
+    "what is tony clark's net worth"
    ],
    "anthony clark death": [
     "anthony clark death",
     "anthony clark death cause",
-    "anthony clarke death galway",
     "anthony clark died",
     "anthony clark hacker death",
+    "anthony clark fifa death",
     "anthony clark net worth",
     "william clark death cause"
    ]
@@ -11615,25 +11652,29 @@
    [
     "2026-11-22",
     true
+   ],
+   [
+    "2026-11-23",
+    true
    ]
   ]
  },
  "hegseth-tomb-guard-medal": {
-  "time": "2026-11-22T18:17:56+00:00",
+  "time": "2026-11-23T18:32:16+00:00",
   "query": "hegseth tomb guard medal",
   "in_suggest": false,
   "suggest": {
    "tomb of the unknown soldier": [
     "tomb of the unknown soldier",
     "tomb of the unknown soldier guards",
-    "tomb of the unknown soldier hegseth",
     "tomb of the unknown soldier arlington",
     "tomb of the unknown soldier changing of the guard",
     "tomb of the unknown soldier guard requirements",
     "tomb of the unknown soldier guards salary",
     "tomb of the unknown soldier badge",
     "tomb of the unknown soldier washington dc",
-    "tomb of the unknown soldier athens"
+    "tomb of the unknown soldier athens",
+    "tomb of the unknown soldier live cam"
    ],
    "what is tomb of the unknown soldier": [
     "what is tomb of the unknown soldier",
@@ -11689,11 +11730,15 @@
    [
     "2026-11-22",
     false
+   ],
+   [
+    "2026-11-23",
+    false
    ]
   ]
  },
  "iran-bahrain-radar-strike": {
-  "time": "2026-11-22T18:17:57+00:00",
+  "time": "2026-11-23T18:32:17+00:00",
   "query": "iran bahrain radar",
   "in_suggest": true,
   "suggest": {
@@ -11702,12 +11747,12 @@
     "iran news",
     "iran war",
     "iran war news",
-    "iranian currency",
     "iran war update",
-    "iran us",
     "iran news today",
+    "iran us",
+    "iran us news",
     "iran economy",
-    "iran us news"
+    "iran currency"
    ],
    "what is iran": [
     "what is iran's currency",
@@ -11769,37 +11814,41 @@
    [
     "2026-11-22",
     true
+   ],
+   [
+    "2026-11-23",
+    true
    ]
   ]
  },
  "jensen-huang-resigns-nvidia": {
-  "time": "2026-11-22T18:17:59+00:00",
+  "time": "2026-11-23T18:32:19+00:00",
   "query": "why did jensen huang resign",
   "in_suggest": true,
   "suggest": {
    "jensen huang": [
     "jensen huang",
-    "jensen huang wife",
-    "jensen huang gpu cpu relationship",
-    "jensen huang net worth",
+    "jensen huang reinstated as ceo",
     "jensen huang news",
-    "jensen huang new company",
-    "jensen huang affair partners",
-    "jensen huang kids",
-    "jensen huang third affair",
-    "jensen huang age"
+    "jensen huang wife",
+    "jensen huang back",
+    "jensen huang return to nvidia",
+    "jensen huang ceo",
+    "jensen huang net worth",
+    "jensen huang back to nvidia",
+    "jensen huang return"
    ],
    "what is jensen huang": [
     "what is jensen huang doing now",
+    "what is jensen huang accused of",
+    "what is jensen huang",
+    "what is jensen huang up to",
     "what is jensen huang net worth",
     "what is jensen huang's ethnicity",
     "what is jensen huang nationality",
     "what is jensen huang's background",
     "what is jensen huang salary",
-    "what is jensen huang's iq",
-    "what is jensen huang known for",
-    "what is jensen huang like",
-    "what is jensen huang's educational background"
+    "what is jensen huang's iq"
    ],
    "why did jensen huang resign": [
     "why did jensen huang resign",
@@ -11858,11 +11907,15 @@
    [
     "2026-11-22",
     true
+   ],
+   [
+    "2026-11-23",
+    true
    ]
   ]
  },
  "noreaster-first-snow-november-2026": {
-  "time": "2026-11-22T18:18:03+00:00",
+  "time": "2026-11-23T18:32:23+00:00",
   "query": "nor'easter first snow",
   "in_suggest": false,
   "suggest": {
@@ -11932,11 +11985,15 @@
    [
     "2026-11-22",
     false
+   ],
+   [
+    "2026-11-23",
+    false
    ]
   ]
  },
  "who-won-mvp-2026": {
-  "time": "2026-11-22T18:18:12+00:00",
+  "time": "2026-11-23T18:32:32+00:00",
   "query": "who won mvp 2026",
   "in_suggest": true,
   "suggest": {
@@ -11970,11 +12027,11 @@
     "who won mvp 2026 nba",
     "who won mvp 2026 nfl",
     "who won mvp 2026 super bowl",
+    "who won mvp 2026 wnba",
+    "who won mvp 2026 mlb",
     "who won mvp 2026 all star game",
     "who won mvp 2026 basketball",
-    "who won mvp 2026 wnba",
     "who won mvp 2026 world cup",
-    "who won mvp 2026 mlb",
     "who won mvp 2026 football"
    ]
   },
@@ -12017,6 +12074,10 @@
    ],
    [
     "2026-11-22",
+    true
+   ],
+   [
+    "2026-11-23",
     true
    ]
   ]
@@ -12451,21 +12512,21 @@
   ]
  },
  "did-avril-lavigne-have-a-baby": {
-  "time": "2026-11-22T18:17:53+00:00",
+  "time": "2026-11-23T18:32:13+00:00",
   "query": "did avril lavigne have a baby",
   "in_suggest": true,
   "suggest": {
    "avril lavigne": [
     "avril lavigne",
-    "avril lavigne husband",
     "avril lavigne songs",
-    "avril lavigne baby",
+    "avril lavigne husband",
     "avril lavigne now",
     "avril lavigne complicated",
+    "avril lavigne baby",
     "avril lavigne age",
     "avril lavigne 2026",
-    "avril lavigne baby daddy",
-    "avril lavigne sk8er boi"
+    "avril lavigne sk8er boi",
+    "avril lavigne baby daddy"
    ],
    "what is avril lavigne": [
     "what is avril lavigne doing now",
@@ -12485,14 +12546,14 @@
     "did avril lavigne just have a baby",
     "did avril lavigne have kids",
     "did chad kroeger and avril lavigne have a baby",
-    "avril lavigne have a baby",
+    "avril.lavigne have a baby",
     "does avril lavigne have kids",
     "does avril lavigne have kids 2025",
     "does avril lavigne have kids reddit",
     "what disease does avril lavigne have"
    ],
    "avril lavigne have baby": [
-    "avril lavigne have baby",
+    "avril.lavigne have a baby",
     "avril lavigne have children",
     "avril lavigne have child",
     "avril lavigne as a baby",
@@ -12540,11 +12601,15 @@
    [
     "2026-11-22",
     true
+   ],
+   [
+    "2026-11-23",
+    true
    ]
   ]
  },
  "new-orleans-cruise-ship-collision": {
-  "time": "2026-11-22T18:18:01+00:00",
+  "time": "2026-11-23T18:32:21+00:00",
   "query": "new orleans cruise ship collision",
   "in_suggest": true,
   "suggest": {
@@ -12592,11 +12657,15 @@
    [
     "2026-11-22",
     true
+   ],
+   [
+    "2026-11-23",
+    true
    ]
   ]
  },
  "why-were-all-flights-grounded": {
-  "time": "2026-11-22T18:18:16+00:00",
+  "time": "2026-11-23T18:32:36+00:00",
   "query": "why were all flights grounded",
   "in_suggest": true,
   "suggest": {
@@ -12621,8 +12690,8 @@
     "what causes a ground stop at an airport"
    ],
    "why were all flights grounded": [
-    "why were all flights grounded today",
     "why were all flights grounded",
+    "why were all flights grounded today",
     "why were all flights grounded yesterday",
     "why were all flights grounded at heathrow airport",
     "why were all flights cancelled today",
@@ -12680,6 +12749,10 @@
    ],
    [
     "2026-11-22",
+    true
+   ],
+   [
+    "2026-11-23",
     true
    ]
   ]
@@ -13022,7 +13095,7 @@
   ]
  },
  "miami-airport-plane-collision-copa-ups": {
-  "time": "2026-11-22T18:18:00+00:00",
+  "time": "2026-11-23T18:32:20+00:00",
   "query": "miami airport plane collision",
   "in_suggest": false,
   "suggest": {
@@ -13046,8 +13119,8 @@
     "miami airport plane crash video",
     "miami airport plane crash update",
     "miami airport plane crash deaths",
-    "miami airport plane accident today",
     "miami airport plane crash amazon",
+    "miami airport plane accident today",
     "miami airport plane crash location",
     "miami airport plane crash yesterday"
    ]
@@ -13084,11 +13157,15 @@
    [
     "2026-11-22",
     false
+   ],
+   [
+    "2026-11-23",
+    false
    ]
   ]
  },
  "spacex-starship-caught-by-tower": {
-  "time": "2026-11-22T18:18:07+00:00",
+  "time": "2026-11-23T18:32:27+00:00",
   "query": "spacex starship catch",
   "in_suggest": true,
   "suggest": {
@@ -13098,16 +13175,19 @@
     "spacex starship flight 15 date",
     "spacex starship flight 15 news",
     "spacex starship flight 15 reddit",
+    "spacex starship flight 15 test",
+    "spacex starship flight 15 objectives",
+    "will spacex catch starship on flight 15",
     "spacex starship flight schedule",
-    "spacex starship explained",
-    "how fast is spacex starship",
-    "spacex starship top speed"
+    "spacex starship explained"
    ],
    "what is spacex starship flight 15": [
     "when is spacex starship flight 15",
+    "spacex starship flight 15 test",
     "spacex starship flight 15 launch date",
     "spacex starship flight 15 reddit",
     "spacex starship flight 15 news",
+    "spacex starship flight 15 objectives",
     "what is spacex starship used for",
     "spacex starship flight schedule",
     "what is spacex starship",
@@ -13120,10 +13200,10 @@
     "spacex starship catch tower arms",
     "spacex starship catching arms",
     "spacex starship catches booster",
+    "spacex starship catch animation",
     "spacex starship catcher",
     "spacex starship catch attempt",
-    "spacex catches starship rocket booster",
-    "spacex catch starship booster with chopsticks"
+    "spacex starship catch date"
    ]
   },
   "history": [
@@ -13158,11 +13238,15 @@
    [
     "2026-11-22",
     true
+   ],
+   [
+    "2026-11-23",
+    true
    ]
   ]
  },
  "why-is-bitcoin-down-november-2026": {
-  "time": "2026-11-22T18:18:14+00:00",
+  "time": "2026-11-23T18:32:34+00:00",
   "query": "why is bitcoin down",
   "in_suggest": true,
   "suggest": {
@@ -13190,14 +13274,14 @@
    "why is bitcoin down": [
     "why is bitcoin down",
     "why is bitcoin down today",
+    "why is bitcoin down so much",
     "why is bitcoin down right now",
     "why is bitcoin down this morning",
     "why is bitcoin down this year",
     "why is bitcoin down so much today",
     "why is bitcoin down now",
     "why is bitcoin down so much right now",
-    "why is bitcoin down today reddit",
-    "why is bitcoin down again today"
+    "why is bitcoin down today reddit"
    ],
    "bitcoin down": [
     "bitcoin down",
@@ -13243,6 +13327,10 @@
    ],
    [
     "2026-11-22",
+    true
+   ],
+   [
+    "2026-11-23",
     true
    ]
   ]
