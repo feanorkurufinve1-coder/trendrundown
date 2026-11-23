@@ -1,35 +1,7 @@
 {
- "made": "2026-11-22T20:05:27+00:00",
+ "made": "2026-11-23T08:18:43+00:00",
  "about": "Премьеры сериалов и новых сезонов в США на 14 дней вперёд (TVmaze). new_series = совсем новый сериал. Сырьё для прогнозов «is X a true story», «X cast», «X season N release time».",
  "premieres": [
-  {
-   "date": "2026-11-22",
-   "show": "Oobah: Scams for a Better Tomorrow",
-   "season": 1,
-   "new_series": true,
-   "type": "Documentary",
-   "genres": [],
-   "network": "HBO",
-   "premiered": "2026-11-22",
-   "summary": "Known for his viral stunts, including creating London's #1-rated fake restaurant, Oobah Butler sets his sights on the world's biggest industries and most powerful institutions. To infiltrate the worlds of wine, wellness, royalty, and more, Oobah hatches elaborate and increasingly audacious schemes by gaming online reviews, assuming made-up personas, and launching fake companies with entirely bogus",
-   "url": "https://www.tvmaze.com/shows/95410/oobah-scams-for-a-better-tomorrow",
-   "official": null
-  },
-  {
-   "date": "2026-11-22",
-   "show": "30 for 30",
-   "season": 5,
-   "new_series": false,
-   "type": "Documentary",
-   "genres": [
-    "Sports"
-   ],
-   "network": "ESPN",
-   "premiered": "2009-10-06",
-   "summary": "Inspired by ESPN's anniversary, ESPN Films is launching 30 for 30, an unprecedented documentary series featuring 30 of today's finest storytellers telling thirty remarkable stories from the ESPN era. On their own, each of the films will be an intimate look at a specific story, relevant to larger themes from the modern era. Collectively, these films will be a diverse mosaic of what sports has meant",
-   "url": "https://www.tvmaze.com/shows/6099/30-for-30",
-   "official": "http://espn.go.com/30for30/"
-  },
   {
    "date": "2026-11-23",
    "show": "New Wave",
@@ -583,6 +555,19 @@
    "summary": "A series of animations based on the successful children's book series. ",
    "url": "https://www.tvmaze.com/shows/71089/diary-of-a-wimpy-kid",
    "official": null
+  },
+  {
+   "date": "2026-12-05",
+   "show": "Lakefront Luxury",
+   "season": 6,
+   "new_series": false,
+   "type": "Reality",
+   "genres": [],
+   "network": "A&E",
+   "premiered": "2018-03-10",
+   "summary": "Lakefront Luxury is the ultimate escape from the hustle and bustle of the daily grind with stunning views, gorgeous waterfronts, and serene sunsets. With unlimited budgets and endless wish-lists, each episode takes you on a tour of three opulent properties, along with potential buyers, as they weigh their options and ultimately decide which home is the one for them.",
+   "url": "https://www.tvmaze.com/shows/37340/lakefront-luxury",
+   "official": "https://www.aetv.com/shows/lakefront-luxury"
   },
   {
    "date": "2026-12-05",
