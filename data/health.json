@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-23T16:32:32+00:00",
+ "checked": "2026-11-23T16:43:17+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -328,6 +328,18 @@
   {
    "url": "/x/colts-release-daniel-jones",
    "at": "2026-11-23T11:47:14+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
+   "url": "/x/crowdstrike-zscaler-acquisition",
+   "at": "2026-11-23T16:43:04+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1507,6 +1519,30 @@
    "userCanonical": null
   },
   {
+   "url": "/x/takata-airbag-recall-honda-toyota-november-2026",
+   "at": "2026-11-23T16:43:10+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
+   "url": "/x/tarik-skubal-mets-contract",
+   "at": "2026-11-23T16:43:17+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/teruaki-sato",
    "at": "2026-11-23T15:02:00+00:00",
    "verdict": "NEUTRAL",
@@ -2500,7 +2536,7 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 127,
+  "URL is unknown to Google": 130,
   "Crawled - currently not indexed": 65,
   "error": 2,
   "Discovered - currently not indexed": 10
