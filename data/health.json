@@ -694,9 +694,9 @@
   },
   {
    "url": "/x/how-long-does-a-washing-machine-last",
-   "at": "2026-11-22T20:04:12+00:00",
+   "at": "2026-11-23T02:18:20+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -778,9 +778,9 @@
   },
   {
    "url": "/x/internet-trends-this-week-2026-11-22",
-   "at": "2026-11-22T20:04:18+00:00",
+   "at": "2026-11-23T02:18:26+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -898,9 +898,9 @@
   },
   {
    "url": "/x/is-sam-bankman-fried-still-in-prison",
-   "at": "2026-11-22T20:04:24+00:00",
+   "at": "2026-11-23T02:18:33+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1294,7 +1294,7 @@
   },
   {
    "url": "/x/qualifying-offer",
-   "at": "2026-11-22T20:02:43+00:00",
+   "at": "2026-11-23T02:16:53+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1306,7 +1306,7 @@
   },
   {
    "url": "/x/record-vs-song-of-the-year",
-   "at": "2026-11-22T20:02:50+00:00",
+   "at": "2026-11-23T02:16:59+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1318,7 +1318,7 @@
   },
   {
    "url": "/x/red-cup-day-2026",
-   "at": "2026-11-22T20:02:56+00:00",
+   "at": "2026-11-23T02:17:05+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1330,7 +1330,7 @@
   },
   {
    "url": "/x/relief-pitcher-of-the-year",
-   "at": "2026-11-22T20:03:02+00:00",
+   "at": "2026-11-23T02:17:12+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1342,7 +1342,7 @@
   },
   {
    "url": "/x/reminders-of-him-book",
-   "at": "2026-11-22T20:03:09+00:00",
+   "at": "2026-11-23T02:17:18+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1354,7 +1354,7 @@
   },
   {
    "url": "/x/richard-avedon",
-   "at": "2026-11-22T20:03:15+00:00",
+   "at": "2026-11-23T02:17:24+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1402,7 +1402,7 @@
   },
   {
    "url": "/x/rock-hall-of-fame-2026-ceremony-air-date",
-   "at": "2026-11-22T20:03:21+00:00",
+   "at": "2026-11-23T02:17:30+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1414,7 +1414,7 @@
   },
   {
    "url": "/x/rookie-cy-young-winner",
-   "at": "2026-11-22T20:03:28+00:00",
+   "at": "2026-11-23T02:17:36+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1426,7 +1426,7 @@
   },
   {
    "url": "/x/rule-5-draft",
-   "at": "2026-11-22T20:03:34+00:00",
+   "at": "2026-11-23T02:17:43+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1438,7 +1438,7 @@
   },
   {
    "url": "/x/scott-colom",
-   "at": "2026-11-22T20:03:40+00:00",
+   "at": "2026-11-23T02:17:49+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1450,7 +1450,7 @@
   },
   {
    "url": "/x/sierra-winter-storm-warning",
-   "at": "2026-11-22T20:03:46+00:00",
+   "at": "2026-11-23T02:17:55+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1462,7 +1462,7 @@
   },
   {
    "url": "/x/silver-slugger-award",
-   "at": "2026-11-22T20:03:53+00:00",
+   "at": "2026-11-23T02:18:01+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1474,7 +1474,7 @@
   },
   {
    "url": "/x/spacex-starship-caught-by-tower",
-   "at": "2026-11-22T20:03:59+00:00",
+   "at": "2026-11-23T02:18:08+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1486,7 +1486,7 @@
   },
   {
    "url": "/x/ss-united-states-sinking",
-   "at": "2026-11-22T20:04:05+00:00",
+   "at": "2026-11-23T02:18:14+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2146,9 +2146,9 @@
   },
   {
    "url": "/x/why-are-people-saying-lucia-cheats-on-jason",
-   "at": "2026-11-22T20:04:31+00:00",
+   "at": "2026-11-23T02:18:39+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2454,8 +2454,8 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 129,
+  "URL is unknown to Google": 125,
   "Crawled - currently not indexed": 65,
-  "Discovered - currently not indexed": 5
+  "Discovered - currently not indexed": 9
  }
 }
