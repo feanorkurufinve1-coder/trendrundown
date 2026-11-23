@@ -706,9 +706,9 @@
   },
   {
    "url": "/x/how-long-does-a-washing-machine-last",
-   "at": "2026-11-23T14:47:49+00:00",
+   "at": "2026-11-23T21:03:24+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -790,7 +790,7 @@
   },
   {
    "url": "/x/internet-trends-this-week-2026-11-22",
-   "at": "2026-11-23T14:47:55+00:00",
+   "at": "2026-11-23T21:03:31+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -922,9 +922,9 @@
   },
   {
    "url": "/x/is-sam-bankman-fried-still-in-prison",
-   "at": "2026-11-23T14:48:02+00:00",
+   "at": "2026-11-23T21:03:37+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1378,7 +1378,7 @@
   },
   {
    "url": "/x/richard-avedon",
-   "at": "2026-11-23T14:46:51+00:00",
+   "at": "2026-11-23T21:02:26+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1426,7 +1426,7 @@
   },
   {
    "url": "/x/rock-hall-of-fame-2026-ceremony-air-date",
-   "at": "2026-11-23T14:46:58+00:00",
+   "at": "2026-11-23T21:02:32+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1438,7 +1438,7 @@
   },
   {
    "url": "/x/rookie-cy-young-winner",
-   "at": "2026-11-23T14:47:04+00:00",
+   "at": "2026-11-23T21:02:39+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1450,7 +1450,7 @@
   },
   {
    "url": "/x/rule-5-draft",
-   "at": "2026-11-23T14:47:10+00:00",
+   "at": "2026-11-23T21:02:45+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1462,7 +1462,7 @@
   },
   {
    "url": "/x/scott-colom",
-   "at": "2026-11-23T14:47:17+00:00",
+   "at": "2026-11-23T21:02:52+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1474,7 +1474,7 @@
   },
   {
    "url": "/x/sierra-winter-storm-warning",
-   "at": "2026-11-23T14:47:23+00:00",
+   "at": "2026-11-23T21:02:59+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1486,7 +1486,7 @@
   },
   {
    "url": "/x/silver-slugger-award",
-   "at": "2026-11-23T14:47:30+00:00",
+   "at": "2026-11-23T21:03:05+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1498,7 +1498,7 @@
   },
   {
    "url": "/x/spacex-starship-caught-by-tower",
-   "at": "2026-11-23T14:47:36+00:00",
+   "at": "2026-11-23T21:03:12+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1510,7 +1510,7 @@
   },
   {
    "url": "/x/ss-united-states-sinking",
-   "at": "2026-11-23T14:47:43+00:00",
+   "at": "2026-11-23T21:03:18+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1522,7 +1522,7 @@
   },
   {
    "url": "/x/stacy-keach-death",
-   "at": "2026-11-23T15:01:53+00:00",
+   "at": "2026-11-23T21:03:57+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1558,7 +1558,7 @@
   },
   {
    "url": "/x/teruaki-sato",
-   "at": "2026-11-23T15:02:00+00:00",
+   "at": "2026-11-23T21:04:03+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1570,7 +1570,7 @@
   },
   {
    "url": "/x/the-altruists-true-story",
-   "at": "2026-11-23T15:02:06+00:00",
+   "at": "2026-11-23T21:04:09+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1582,7 +1582,7 @@
   },
   {
    "url": "/x/the-empress-netflix-true-story",
-   "at": "2026-11-23T15:02:13+00:00",
+   "at": "2026-11-23T21:04:16+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2218,7 +2218,7 @@
   },
   {
    "url": "/x/why-are-people-saying-lucia-cheats-on-jason",
-   "at": "2026-11-23T14:48:08+00:00",
+   "at": "2026-11-23T21:03:44+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2266,7 +2266,7 @@
   },
   {
    "url": "/x/why-are-people-throwing-mustard-at-lsu",
-   "at": "2026-11-23T15:01:47+00:00",
+   "at": "2026-11-23T21:03:50+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
