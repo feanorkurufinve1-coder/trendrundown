@@ -1,0 +1,48 @@
+{
+ "news": true,
+ "kind": "event",
+ "subject": "CrowdStrike acquisition of Zscaler",
+ "query": "crowdstrike zscaler",
+ "title": "CrowdStrike Zscaler deal: What is it worth? About $44 billion in stock",
+ "answer": "CrowdStrike announced on Monday, Nov. 23, 2026, that it will buy fellow cybersecurity company Zscaler in an all-stock deal valuing Zscaler at about $43.9 billion. Zscaler shareholders will get 1.135 CrowdStrike shares per share, worth about $260.41 based on Friday's close, a premium of roughly 34%.",
+ "in_the_news": "It would be the largest cybersecurity acquisition on record, combining the best-known name in endpoint protection with the leader in so-called zero trust network security, as companies spend heavily to defend against AI-driven attacks.",
+ "body": "Both boards approved the deal unanimously, according to the companies' joint statement filed with the SEC. Zscaler founder and CEO Jay Chaudhry, who with his affiliates holds about 34% of Zscaler's shares, has agreed to vote in favor. After closing, he will keep running the Zscaler business and join CrowdStrike's board; CrowdStrike shareholders would own about 84.1% of the combined company and Zscaler shareholders about 15.9%.\n\nThe companies say the combined business would start with more than $10 billion in annual recurring revenue and could sell to roughly 8,000 Zscaler customers who do not yet use CrowdStrike. They project about $1 billion a year in extra revenue within 30 months of closing and $500 million in annual cost savings within 18 to 24 months. CrowdStrike CEO George Kurtz framed the deal around AI, saying in the statement that safety is now \"required to let AI in.\"\n\nZero trust in plain terms: older corporate networks worked like a castle with a moat; once you were inside, you were trusted. Zero trust assumes nobody is trusted by default, so every user, device and app has to prove who it is each time it reaches for data. Zscaler runs that check in the cloud, sitting between employees and the apps they use. CrowdStrike's Falcon software lives on the devices themselves, watching laptops and servers for signs of attack. Put together, one vendor would see both the device and the traffic leaving it.\n\nThe biggest cybersecurity deals so far: Cisco agreed to buy Splunk for $28 billion in September 2023. Google agreed to buy Wiz for $32 billion in March 2025. Palo Alto Networks agreed to buy CyberArk for about $25 billion in July 2025. At $43.9 billion, CrowdStrike-Zscaler would top them all. CrowdStrike itself became a household name for the wrong reason in July 2024, when a faulty software update crashed about 8.5 million Windows computers and grounded flights worldwide.\n\nWhat happens next: the deal needs approval from Zscaler shareholders and regulators. The companies expect it to close in the second half of CrowdStrike's fiscal 2028, which runs roughly from August 2027 to January 2028; TechCrunch summarized that as around a year from now. Until then, the two companies will keep operating independently.",
+ "faq": [
+  {
+   "q": "What do Zscaler shareholders get?",
+   "a": "1.135 shares of CrowdStrike for each Zscaler share. No cash is involved, so the final value depends on CrowdStrike's stock price when the deal closes."
+  },
+  {
+   "q": "When will the CrowdStrike-Zscaler deal close?",
+   "a": "The companies expect closing in the second half of CrowdStrike's fiscal 2028, roughly August 2027 to January 2028, subject to regulatory and shareholder approval."
+  },
+  {
+   "q": "Will Jay Chaudhry stay at Zscaler?",
+   "a": "Yes. According to the companies, he will continue to lead the Zscaler business and join CrowdStrike's board after the deal closes."
+  },
+  {
+   "q": "Is this the biggest cybersecurity acquisition ever?",
+   "a": "At about $43.9 billion it would be larger than Google's $32 billion Wiz deal and Cisco's $28 billion Splunk deal."
+  }
+ ],
+ "links": [
+  [
+   "TechCrunch",
+   "CrowdStrike to acquire Zscaler for $44 billion",
+   "https://techcrunch.com/2026/11/23/crowdstrike-to-acquire-zscaler-for-44-billion/"
+  ],
+  [
+   "SEC (CrowdStrike Form 8-K)",
+   "CrowdStrike to Acquire Zscaler, Bringing Network Security and Zero Trust to the Falcon Platform",
+   "https://www.sec.gov/Archives/edgar/data/0001535527/000110465926130785/tm2630454d1_ex99-1.htm"
+  ],
+  [
+   "Bloomberg",
+   "CrowdStrike Reaches $44 Billion Cyber Deal for Zscaler",
+   "https://www.bloomberg.com/news/articles/2026-11-23/crowdstrike-reaches-44-billion-cybersecurity-deal-for-zscaler"
+  ]
+ ],
+ "image_prompt": "Two large metal puzzle pieces shaped like halves of a shield clicking together in front of rows of glowing server racks in a dark data center, blue and orange light, photorealistic, no text",
+ "made": "2026-11-23T16:50:00Z",
+ "first": "2026-11-23T16:50:00Z"
+}

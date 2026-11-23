@@ -1,0 +1,53 @@
+{
+ "news": true,
+ "kind": "event",
+ "subject": "Takata airbag recall (Honda and Toyota, 2026)",
+ "query": "takata airbag recall",
+ "title": "Takata airbag recall: Which Honda and Toyota models are affected?",
+ "answer": "On Nov. 20, 2026, Honda recalled 810,592 older U.S. vehicles and Toyota recalled about 790,000 vehicles worldwide, including 314,000 in the U.S., to replace Takata airbag inflators whose propellant may degrade over time. Both automakers said no ruptures, crashes or injuries have been linked to these vehicles.",
+ "in_the_news": "This is the first time automakers are recalling Takata inflators that contain a drying agent, a design that had been considered safer than the ones behind the original recall. Owners are now searching to see whether their car is on the list.",
+ "body": "Honda's recall covers the 2013 Accord, 2012-2013 Civic, 2012-2013 CR-V, 2013 Acura ILX and 2013 Acura RDX, but only vehicles originally sold or registered in 14 hot, humid states and territories: Alabama, California, Florida, Georgia, Hawaii, Louisiana, Mississippi, South Carolina, Texas, Puerto Rico, the U.S. Virgin Islands, the Northern Mariana Islands, Guam and American Samoa. Toyota's covers the 2003-2008 Corolla, 2005-2006 Tundra, 2005-2007 Sequoia, 2016-2017 4Runner, 2002-2010 Lexus SC430, 2011 Lexus IS250 and 2017 Lexus GX460; Toyota did not say which states are included.\n\nHonda said long-term monitoring found possible propellant degradation in some inflators in certain regions. Toyota warned that degraded propellant could cause an inflator to rupture when the airbag deploys, which can cause serious injury. The National Highway Traffic Safety Administration said the two companies acted early based on testing and computer models from independent groups, and that other automakers are still testing their own inflators. Both automakers call the repair precautionary.\n\nWhat the drying agent is, and why it matters: Takata's inflators use ammonium nitrate, a chemical that can break down after years of heat and moisture and then burn too fast, blowing the metal housing apart and spraying fragments into the cabin. The inflators in the original recall had no desiccant, a moisture-absorbing material like the packets found in new shoes. At least 28 U.S. deaths and more than 400 injuries since 2009 have been tied to ruptures, all involving inflators without a desiccant, and at least 20 of those deaths occurred in Honda vehicles. That earlier crisis became the largest auto recall in U.S. history, covering more than 100 million vehicles worldwide, including about 67 million in the U.S., and pushed Takata into bankruptcy in 2017.\n\nWhat this means for you: if you own one of the listed models, enter your 17-character vehicle identification number at nhtsa.gov/recalls or on Honda's or Toyota's owner site to see whether your car is included. The repair is free at a dealer. Toyota said replacement parts should be ready by early 2027, so some Toyota and Lexus owners may have to wait until then for the fix. Neither automaker has told owners to stop driving these vehicles. If you bought a used car from a Gulf Coast or Southern state, check even if you now live elsewhere, since Honda's recall is based on where the car was first sold or registered.",
+ "faq": [
+  {
+   "q": "Should I stop driving my recalled Honda or Toyota?",
+   "a": "Neither company has issued a do-not-drive warning for this recall, and both say no ruptures have been reported. Check your VIN and book the free repair when your dealer has parts."
+  },
+  {
+   "q": "How do I check if my car has a Takata airbag recall?",
+   "a": "Enter your 17-character VIN at nhtsa.gov/recalls or on the automaker's recall page. The VIN is on your registration, insurance card and the lower corner of the windshield on the driver's side."
+  },
+  {
+   "q": "How much does the Takata airbag repair cost?",
+   "a": "Nothing. Recall repairs are done free of charge at authorized dealers."
+  },
+  {
+   "q": "Why are only some states included in Honda's recall?",
+   "a": "Takata propellant breaks down faster with long exposure to heat, humidity and temperature swings, so Honda limited the recall to 14 hot, humid states and territories where cars were first sold or registered."
+  }
+ ],
+ "links": [
+  [
+   "Reuters via SRN News",
+   "Honda, Toyota recall 1.6 million vehicles over Takata airbag rupture risk",
+   "https://srnnews.com/honda-to-recall-810000-us-vehicles-over-takata-air-bag-rupture-risk/"
+  ],
+  [
+   "ABC News (Australia)",
+   "Honda and Toyota recall vehicles over Takata airbag rupture risk",
+   "https://www.abc.net.au/news/2026-11-21/honda-toyota-recall-vehicles-over-takata-airbag-rupture-risk/107412768"
+  ],
+  [
+   "Paul Tan's Automotive News",
+   "Honda, Toyota recall 1.6 million vehicles over potentially faulty Takata airbags",
+   "https://paultan.org/2026/11/23/honda-toyota-recall-1-6-million-vehicles-over-potentially-faulty-takata-airbags-honda-810-5k-units-toyota-790k/"
+  ],
+  [
+   "NHTSA",
+   "Check for recalls by VIN",
+   "https://www.nhtsa.gov/recalls"
+  ]
+ ],
+ "image_prompt": "Close-up of an empty car interior steering wheel with its airbag cover, inside a clean dealership service bay with mechanic tools on a cart, soft daylight, photorealistic, no text",
+ "made": "2026-11-23T16:50:00Z",
+ "first": "2026-11-23T16:50:00Z"
+}
