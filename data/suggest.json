@@ -15539,7 +15539,7 @@
   ]
  },
  "colts-release-daniel-jones": {
-  "time": "2026-11-22T16:47:42+00:00",
+  "time": "2026-11-23T17:02:06+00:00",
   "query": "colts release daniel jones",
   "in_suggest": true,
   "suggest": {
@@ -15564,11 +15564,15 @@
    [
     "2026-11-22",
     true
+   ],
+   [
+    "2026-11-23",
+    true
    ]
   ]
  },
  "palisades-fire-verdict-rinderknecht-guilty": {
-  "time": "2026-11-22T16:47:44+00:00",
+  "time": "2026-11-23T17:02:07+00:00",
   "query": "palisades fire verdict",
   "in_suggest": true,
   "suggest": {
@@ -15603,11 +15607,15 @@
    [
     "2026-11-22",
     true
+   ],
+   [
+    "2026-11-23",
+    true
    ]
   ]
  },
  "riemann-hypothesis-proof-claim-alpoge": {
-  "time": "2026-11-22T16:47:45+00:00",
+  "time": "2026-11-23T17:02:09+00:00",
   "query": "riemann hypothesis proof",
   "in_suggest": true,
   "suggest": {
@@ -15618,12 +15626,12 @@
     "riemann hypothesis proof pdf",
     "riemann hypothesis proof length",
     "riemann hypothesis proof explained",
-    "riemann hypothesis proof lean",
-    "riemann hypothesis proof explanation",
     "riemann hypothesis proof verified",
-    "riemann hypothesis proof human",
-    "riemann hypothesis proof verification",
-    "riemann hypothesis proof reddit"
+    "riemann hypothesis proof lean",
+    "riemann hypothesis proof invalid",
+    "riemann hypothesis proof outline",
+    "riemann hypothesis proof exposition",
+    "riemann hypothesis proof compression"
    ]
   },
   "history": [
@@ -15633,6 +15641,10 @@
    ],
    [
     "2026-11-22",
+    true
+   ],
+   [
+    "2026-11-23",
     true
    ]
   ]
