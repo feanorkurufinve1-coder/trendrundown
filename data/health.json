@@ -1748,7 +1748,7 @@
   },
   {
    "url": "/x/what-is-a-ground-stop",
-   "at": "2026-11-23T09:01:51+00:00",
+   "at": "2026-11-23T15:16:57+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1760,7 +1760,7 @@
   },
   {
    "url": "/x/what-is-a-hip-pointer",
-   "at": "2026-11-23T09:16:51+00:00",
+   "at": "2026-11-23T15:17:04+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
