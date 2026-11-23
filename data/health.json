@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-23T01:46:54+00:00",
+ "checked": "2026-11-23T02:31:53+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -2194,9 +2194,9 @@
   },
   {
    "url": "/x/why-are-people-throwing-mustard-at-lsu",
-   "at": "2026-11-22T20:16:47+00:00",
+   "at": "2026-11-23T02:31:53+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2454,8 +2454,8 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 125,
+  "URL is unknown to Google": 124,
   "Crawled - currently not indexed": 65,
-  "Discovered - currently not indexed": 9
+  "Discovered - currently not indexed": 10
  }
 }
