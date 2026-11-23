@@ -58,7 +58,7 @@
   },
   {
    "url": "/news",
-   "at": "2026-11-23T16:17:12+00:00",
+   "at": "2026-11-23T22:32:09+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -70,7 +70,7 @@
   },
   {
    "url": "/trends",
-   "at": "2026-11-23T16:17:18+00:00",
+   "at": "2026-11-23T22:32:15+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -82,7 +82,7 @@
   },
   {
    "url": "/explained",
-   "at": "2026-11-23T16:17:25+00:00",
+   "at": "2026-11-23T22:32:21+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -202,7 +202,7 @@
   },
   {
    "url": "/x/apple-outage-november-17-2026",
-   "at": "2026-11-23T16:16:53+00:00",
+   "at": "2026-11-23T22:31:50+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -214,7 +214,7 @@
   },
   {
    "url": "/x/bay-area-waterspouts-tornado-warning",
-   "at": "2026-11-23T16:17:31+00:00",
+   "at": "2026-11-23T22:32:27+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -250,7 +250,7 @@
   },
   {
    "url": "/x/california-sues-openai",
-   "at": "2026-11-23T16:17:37+00:00",
+   "at": "2026-11-23T22:32:33+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -514,7 +514,7 @@
   },
   {
    "url": "/x/florida-flooding-november-18-2026",
-   "at": "2026-11-23T16:16:59+00:00",
+   "at": "2026-11-23T22:31:56+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -562,7 +562,7 @@
   },
   {
    "url": "/x/hakeem-jeffries-speaker-nomination",
-   "at": "2026-11-23T16:17:06+00:00",
+   "at": "2026-11-23T22:32:03+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1414,7 +1414,7 @@
   },
   {
    "url": "/x/robert-pattinson-james-bond",
-   "at": "2026-11-23T16:17:44+00:00",
+   "at": "2026-11-23T22:32:40+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2541,7 +2541,7 @@
    "userCanonical": "https://trendrundown.com/x/wta-tennis"
   }
  ],
- "sm_at": "2026-11-23T16:31:42+00:00",
+ "sm_at": "2026-11-23T22:31:44+00:00",
  "first_indexed": {
   "/x/cyber-monday": "2026-11-13T16:25:58+00:00",
   "/": "2026-11-13T16:25:58+00:00",
