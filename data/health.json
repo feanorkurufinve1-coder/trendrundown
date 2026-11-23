@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-23T05:03:28+00:00",
+ "checked": "2026-11-23T05:32:12+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -334,7 +334,7 @@
   },
   {
    "url": "/x/colts-release-daniel-jones",
-   "at": "2026-11-22T23:18:28+00:00",
+   "at": "2026-11-23T05:32:05+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -358,7 +358,7 @@
   },
   {
    "url": "/x/delta-flights-delays-atlanta-november-22-2026",
-   "at": "2026-11-22T23:18:09+00:00",
+   "at": "2026-11-23T05:31:46+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -514,9 +514,9 @@
   },
   {
    "url": "/x/florida-tornado-warnings-kings-point-delray-beach",
-   "at": "2026-11-22T23:18:16+00:00",
+   "at": "2026-11-23T05:31:53+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1258,7 +1258,7 @@
   },
   {
    "url": "/x/palisades-fire-verdict-rinderknecht-guilty",
-   "at": "2026-11-22T23:18:35+00:00",
+   "at": "2026-11-23T05:32:12+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1558,9 +1558,9 @@
   },
   {
    "url": "/x/tom-jackson-espn-dies",
-   "at": "2026-11-22T23:18:22+00:00",
+   "at": "2026-11-23T05:31:59+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2454,8 +2454,8 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 122,
+  "URL is unknown to Google": 124,
   "Crawled - currently not indexed": 65,
-  "Discovered - currently not indexed": 12
+  "Discovered - currently not indexed": 10
  }
 }
