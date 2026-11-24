@@ -1,52 +1,7 @@
 {
- "made": "2026-11-23T20:32:24+00:00",
+ "made": "2026-11-24T08:34:17+00:00",
  "about": "Премьеры сериалов и новых сезонов в США на 14 дней вперёд (TVmaze). new_series = совсем новый сериал. Сырьё для прогнозов «is X a true story», «X cast», «X season N release time».",
  "premieres": [
-  {
-   "date": "2026-11-23",
-   "show": "New Wave",
-   "season": 1,
-   "new_series": true,
-   "type": "Documentary",
-   "genres": [
-    "Music"
-   ],
-   "network": "MGM+",
-   "premiered": "2026-11-23",
-   "summary": "This series tells the fascinating story of New Wave music and the decade from 1977 to 1987 that brought alternative culture into the mainstream. The four-part series will take us on a journey through the rise of New Wave from its rebellious origins to its influential impact on music, fashion, and pop culture. New Wave defined a generation and reshaped the musical landscape in part by embracing wom",
-   "url": "https://www.tvmaze.com/shows/95135/new-wave",
-   "official": null
-  },
-  {
-   "date": "2026-11-23",
-   "show": "Dig",
-   "season": 1,
-   "new_series": true,
-   "type": "Scripted",
-   "genres": [
-    "Comedy"
-   ],
-   "network": "Peacock",
-   "premiered": "2026-11-23",
-   "summary": "Dig follows a team of dedicated archaeologists (and less-dedicated college students) who spend their summer working on a dig site in Greece. Their discovery of a rare artifact sends them on the adventure of a lifetime.",
-   "url": "https://www.tvmaze.com/shows/84536/dig",
-   "official": null
-  },
-  {
-   "date": "2026-11-23",
-   "show": "Sesame Street",
-   "season": 57,
-   "new_series": false,
-   "type": "Scripted",
-   "genres": [
-    "Children"
-   ],
-   "network": "Netflix",
-   "premiered": "1970-02-06",
-   "summary": "Sunny days are here! This freshly reimagined \"Sesame Street\" series features characters you love, fan-favorite segments — and new ways to play.",
-   "url": "https://www.tvmaze.com/shows/6544/sesame-street",
-   "official": "https://www.netflix.com/title/83075543"
-  },
   {
    "date": "2026-11-24",
    "show": "I Want to Kill My Boss",
@@ -607,6 +562,53 @@
    "summary": "An unscripted, immersive horror-interview series that pairs genre legends and celebrities with premier haunted attractions for terrifying, raw conversations while navigating jump scares.",
    "url": "https://www.tvmaze.com/shows/94966/celebrity-scares",
    "official": "https://celebrityscares.com/"
+  },
+  {
+   "date": "2026-12-08",
+   "show": "Men v. Food",
+   "season": 1,
+   "new_series": true,
+   "type": "Reality",
+   "genres": [
+    "Food"
+   ],
+   "network": "Discovery",
+   "premiered": "2026-12-08",
+   "summary": "Each week, former NFL pros and friends Ryan Fitzpatrick and Vince Wilfork will touch down in a new NFL city in search of unforgettable flavors, hidden gems and larger-than-life food challenges. After 17 seasons, nine teams and a career built on fierce competition, longtime NFL quarterback and football analyst Ryan Fitzpatrick is taking his competitive streak to a new arena. For two-time Super Bowl",
+   "url": "https://www.tvmaze.com/shows/94915/men-v-food",
+   "official": null
+  },
+  {
+   "date": "2026-12-08",
+   "show": "The Elite: Army Rangers",
+   "season": 1,
+   "new_series": true,
+   "type": "Documentary",
+   "genres": [
+    "Action"
+   ],
+   "network": "Paramount+",
+   "premiered": "2026-12-08",
+   "summary": "The Elite: Army Rangers follows a class from Day 1 at Fort Benning to the moment each candidate earns the Tab or goes home. Embedded with instructors and students in the field, the series captures the physical demands, mental fatigue and moral clarity forged under extreme conditions. For the first time ever, viewers will witness the intense deliberations that decide each candidate's fate. For many",
+   "url": "https://www.tvmaze.com/shows/95544/the-elite-army-rangers",
+   "official": null
+  },
+  {
+   "date": "2026-12-08",
+   "show": "Only Murders in the Building",
+   "season": 6,
+   "new_series": false,
+   "type": "Scripted",
+   "genres": [
+    "Comedy",
+    "Crime",
+    "Mystery"
+   ],
+   "network": "Hulu",
+   "premiered": "2021-08-31",
+   "summary": "Only Murders in the Building follows three New Yorkers who find they have a mutual interest in solving true crime – but limit their amateur sleuthing to only murders in their building.",
+   "url": "https://www.tvmaze.com/shows/48830/only-murders-in-the-building",
+   "official": "https://www.hulu.com/series/only-murders-in-the-building"
   }
  ]
 }
