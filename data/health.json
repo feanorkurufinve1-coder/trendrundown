@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-24T11:31:58+00:00",
+ "checked": "2026-11-24T12:03:34+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -46,7 +46,7 @@
  "urls": [
   {
    "url": "/",
-   "at": "2026-11-24T05:47:51+00:00",
+   "at": "2026-11-24T12:02:15+00:00",
    "verdict": "PASS",
    "coverageState": "Submitted and indexed",
    "robotsTxtState": "ALLOWED",
@@ -94,7 +94,7 @@
   },
   {
    "url": "/x/telerally",
-   "at": "2026-11-24T05:47:25+00:00",
+   "at": "2026-11-24T12:01:49+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -106,7 +106,7 @@
   },
   {
    "url": "/x/mutual-option",
-   "at": "2026-11-24T05:47:32+00:00",
+   "at": "2026-11-24T12:01:56+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -118,7 +118,7 @@
   },
   {
    "url": "/x/dane-cook-brother",
-   "at": "2026-11-24T05:47:38+00:00",
+   "at": "2026-11-24T12:02:02+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -130,7 +130,7 @@
   },
   {
    "url": "/x/cyber-monday",
-   "at": "2026-11-24T05:47:44+00:00",
+   "at": "2026-11-24T12:02:08+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -142,7 +142,7 @@
   },
   {
    "url": "/x/40-man-roster",
-   "at": "2026-11-24T05:47:57+00:00",
+   "at": "2026-11-24T12:02:21+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -154,7 +154,7 @@
   },
   {
    "url": "/x/alaska-ranked-choice-voting",
-   "at": "2026-11-24T05:48:04+00:00",
+   "at": "2026-11-24T12:02:28+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -166,7 +166,7 @@
   },
   {
    "url": "/x/alicias-law-the-good-wife",
-   "at": "2026-11-24T05:48:10+00:00",
+   "at": "2026-11-24T12:02:34+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -178,7 +178,7 @@
   },
   {
    "url": "/x/all-mlb-team",
-   "at": "2026-11-24T05:48:16+00:00",
+   "at": "2026-11-24T12:02:40+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -190,7 +190,7 @@
   },
   {
    "url": "/x/anthony-clark-death",
-   "at": "2026-11-24T05:48:24+00:00",
+   "at": "2026-11-24T12:02:48+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -226,7 +226,7 @@
   },
   {
    "url": "/x/bright-star-eastern-sky-morning",
-   "at": "2026-11-24T05:48:30+00:00",
+   "at": "2026-11-24T12:02:55+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -262,7 +262,7 @@
   },
   {
    "url": "/x/camp-flog-gnaw-livestream",
-   "at": "2026-11-24T05:48:36+00:00",
+   "at": "2026-11-24T12:03:02+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -274,7 +274,7 @@
   },
   {
    "url": "/x/carter-faith",
-   "at": "2026-11-24T05:48:43+00:00",
+   "at": "2026-11-24T12:03:09+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -286,12 +286,19 @@
   },
   {
    "url": "/x/cliff-booth-release-date",
-   "at": "2026-11-24T05:48:49+00:00",
-   "error": "HTTP 500 {\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"status\": \"INTERNAL\"\n  }\n}\n"
+   "at": "2026-11-24T12:03:15+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
   },
   {
    "url": "/x/cma-awards-2026-date",
-   "at": "2026-11-24T05:48:55+00:00",
+   "at": "2026-11-24T12:03:21+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -315,8 +322,15 @@
   },
   {
    "url": "/x/coachella-2027-tickets-on-sale",
-   "at": "2026-11-24T05:49:01+00:00",
-   "error": "HTTP 500 {\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"status\": \"INTERNAL\"\n  }\n}\n"
+   "at": "2026-11-24T12:03:28+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "Crawled - currently not indexed",
+   "robotsTxtState": "ALLOWED",
+   "indexingState": "INDEXING_ALLOWED",
+   "pageFetchState": "SUCCESSFUL",
+   "lastCrawlTime": "2026-11-12T15:38:20Z",
+   "googleCanonical": "https://trendrundown.com/x/coachella-2027-tickets-on-sale",
+   "userCanonical": "https://trendrundown.com/x/coachella-2027-tickets-on-sale"
   },
   {
    "url": "/x/colts-release-daniel-jones",
@@ -344,7 +358,7 @@
   },
   {
    "url": "/x/dan-hicks-death",
-   "at": "2026-11-24T05:49:08+00:00",
+   "at": "2026-11-24T12:03:34+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2529,9 +2543,9 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 131,
-  "Crawled - currently not indexed": 64,
-  "error": 3,
-  "Discovered - currently not indexed": 9
+  "URL is unknown to Google": 132,
+  "Crawled - currently not indexed": 65,
+  "Discovered - currently not indexed": 9,
+  "error": 1
  }
 }
