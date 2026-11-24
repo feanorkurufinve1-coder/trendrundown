@@ -202,7 +202,7 @@
   },
   {
    "url": "/x/apple-outage-november-17-2026",
-   "at": "2026-11-24T10:49:58+00:00",
+   "at": "2026-11-24T17:04:59+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1005,6 +1005,18 @@
    "userCanonical": null
   },
   {
+   "url": "/x/jimmy-gomez-resigns-ethics-report",
+   "at": "2026-11-24T17:03:10+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/keepsake-sea-release-date",
    "at": "2026-11-24T15:02:03+00:00",
    "verdict": "NEUTRAL",
@@ -1557,6 +1569,18 @@
    "userCanonical": null
   },
   {
+   "url": "/x/teruaki-sato-cubs-contract",
+   "at": "2026-11-24T17:03:17+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/teruaki-sato",
    "at": "2026-11-24T15:48:40+00:00",
    "verdict": "NEUTRAL",
@@ -1567,6 +1591,18 @@
    "lastCrawlTime": "2026-11-07T15:33:08Z",
    "googleCanonical": "https://trendrundown.com/x/teruaki-sato",
    "userCanonical": "https://trendrundown.com/x/teruaki-sato"
+  },
+  {
+   "url": "/x/thanksgiving-storm-travel-forecast-2026",
+   "at": "2026-11-24T17:03:23+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
   },
   {
    "url": "/x/the-altruists-true-story",
@@ -2350,7 +2386,7 @@
   },
   {
    "url": "/x/why-does-my-phone-battery-go-down-while-charging",
-   "at": "2026-11-24T10:48:35+00:00",
+   "at": "2026-11-24T17:03:36+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2362,7 +2398,7 @@
   },
   {
    "url": "/x/why-does-my-phone-screen-go-black-during-calls",
-   "at": "2026-11-24T10:48:42+00:00",
+   "at": "2026-11-24T17:03:42+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2374,7 +2410,7 @@
   },
   {
    "url": "/x/why-does-my-phone-screen-keep-going-black",
-   "at": "2026-11-24T10:48:48+00:00",
+   "at": "2026-11-24T17:03:49+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2398,7 +2434,7 @@
   },
   {
    "url": "/x/why-does-my-washing-machine-smell-like-rotten-eggs",
-   "at": "2026-11-24T10:48:54+00:00",
+   "at": "2026-11-24T17:03:55+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2410,7 +2446,7 @@
   },
   {
    "url": "/x/why-does-social-security-come-out-of-my-paycheck",
-   "at": "2026-11-24T10:49:01+00:00",
+   "at": "2026-11-24T17:04:01+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2422,7 +2458,7 @@
   },
   {
    "url": "/x/why-does-social-security-get-taxed",
-   "at": "2026-11-24T10:49:07+00:00",
+   "at": "2026-11-24T17:04:08+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2434,7 +2470,7 @@
   },
   {
    "url": "/x/why-is-bitcoin-down-november-2026",
-   "at": "2026-11-24T10:49:13+00:00",
+   "at": "2026-11-24T17:04:14+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2446,7 +2482,7 @@
   },
   {
    "url": "/x/why-is-everyone-freaking-out-about-november-17",
-   "at": "2026-11-24T10:49:20+00:00",
+   "at": "2026-11-24T17:04:20+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2470,7 +2506,7 @@
   },
   {
    "url": "/x/why-is-my-check-engine-light-on",
-   "at": "2026-11-24T10:49:26+00:00",
+   "at": "2026-11-24T17:04:27+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2494,7 +2530,7 @@
   },
   {
    "url": "/x/why-is-my-refrigerator-leaking-water-inside",
-   "at": "2026-11-24T10:48:29+00:00",
+   "at": "2026-11-24T17:03:30+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2518,7 +2554,7 @@
   },
   {
    "url": "/x/why-is-my-washing-machine-leaking-from-the-bottom",
-   "at": "2026-11-24T10:49:32+00:00",
+   "at": "2026-11-24T17:04:33+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2542,7 +2578,7 @@
   },
   {
    "url": "/x/why-is-wifi-not-working-on-my-phone",
-   "at": "2026-11-24T10:49:39+00:00",
+   "at": "2026-11-24T17:04:40+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2554,7 +2590,7 @@
   },
   {
    "url": "/x/why-were-all-flights-grounded",
-   "at": "2026-11-24T10:49:45+00:00",
+   "at": "2026-11-24T17:04:46+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2590,7 +2626,7 @@
   },
   {
    "url": "/x/wta-tennis",
-   "at": "2026-11-24T10:49:51+00:00",
+   "at": "2026-11-24T17:04:52+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2610,7 +2646,7 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 137,
+  "URL is unknown to Google": 140,
   "Crawled - currently not indexed": 65,
   "Discovered - currently not indexed": 10
  }

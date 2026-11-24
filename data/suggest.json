@@ -16052,13 +16052,14 @@
   ]
  },
  "colts-release-daniel-jones": {
-  "time": "2026-11-23T17:02:06+00:00",
+  "time": "2026-11-24T17:04:59+00:00",
   "query": "colts release daniel jones",
   "in_suggest": true,
   "suggest": {
    "colts release daniel jones": [
     "colts release daniel jones",
     "did colts release daniel jones",
+    "can colts cut daniel jones",
     "daniel jones pff grade"
    ],
    "what is colts release daniel jones": [
@@ -16081,11 +16082,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "palisades-fire-verdict-rinderknecht-guilty": {
-  "time": "2026-11-23T17:02:07+00:00",
+  "time": "2026-11-24T17:05:02+00:00",
   "query": "palisades fire verdict",
   "in_suggest": true,
   "suggest": {
@@ -16124,11 +16129,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "riemann-hypothesis-proof-claim-alpoge": {
-  "time": "2026-11-23T17:02:09+00:00",
+  "time": "2026-11-24T17:05:03+00:00",
   "query": "riemann hypothesis proof",
   "in_suggest": true,
   "suggest": {
@@ -16137,13 +16146,13 @@
    "riemann hypothesis proof": [
     "riemann hypothesis proof",
     "riemann hypothesis proof pdf",
-    "riemann hypothesis proof length",
     "riemann hypothesis proof explained",
-    "riemann hypothesis proof verified",
+    "riemann hypothesis proof length",
     "riemann hypothesis proof lean",
+    "riemann hypothesis proof verified",
     "riemann hypothesis proof invalid",
-    "riemann hypothesis proof outline",
-    "riemann hypothesis proof exposition",
+    "riemann hypothesis proof confirmed",
+    "riemann hypothesis proof explanation",
     "riemann hypothesis proof compression"
    ]
   },
@@ -16158,6 +16167,10 @@
    ],
    [
     "2026-11-23",
+    true
+   ],
+   [
+    "2026-11-24",
     true
    ]
   ]
@@ -17108,6 +17121,99 @@
     "hmrc tax refund taking so long",
     "pa tax refund taking so long",
     "nys tax refund taking so long"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-24",
+    true
+   ]
+  ]
+ },
+ "jimmy-gomez-resigns-ethics-report": {
+  "time": "2026-11-24T17:05:00+00:00",
+  "query": "jimmy gomez resigns",
+  "in_suggest": true,
+  "suggest": {
+   "jimmy gomez": [
+    "jimmy gomez",
+    "jimmy gomez california",
+    "jimmy gomez district",
+    "jimmy gomez election",
+    "jimmy gomez wiki",
+    "jimmy gomez aipac",
+    "jimmy gomez primary",
+    "jimmy gomez net worth",
+    "jimmy gomez investigation",
+    "jimmy gomez allegations"
+   ],
+   "what is jimmy gomez": [
+    "who is jimmy gomez"
+   ],
+   "jimmy gomez resigns": [
+    "jimmy gomez resigns",
+    "jimmy gomez net worth"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-24",
+    true
+   ]
+  ]
+ },
+ "teruaki-sato-cubs-contract": {
+  "time": "2026-11-24T17:05:04+00:00",
+  "query": "teruaki sato cubs",
+  "in_suggest": true,
+  "suggest": {
+   "teruaki sato": [
+    "teruaki sato",
+    "teruaki sato stats",
+    "teruaki sato cubs",
+    "teruaki sato age",
+    "teruaki sato yankees",
+    "teruaki sato mets",
+    "teruaki sato highlights",
+    "teruaki sato phillies",
+    "teruaki sato news",
+    "teruaki sato scouting report"
+   ],
+   "what is teruaki sato": [
+    "what position is teruaki sato",
+    "what is sato number",
+    "what does s.a.t.o. stand for",
+    "what does sato mean"
+   ],
+   "teruaki sato cubs": [
+    "teruaki sato cubs"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-24",
+    true
+   ]
+  ]
+ },
+ "thanksgiving-storm-travel-forecast-2026": {
+  "time": "2026-11-24T17:05:05+00:00",
+  "query": "thanksgiving storm forecast",
+  "in_suggest": true,
+  "suggest": {
+   "thanksgiving 2026 storms": [],
+   "what is thanksgiving 2026 storms": [],
+   "thanksgiving storm forecast": [
+    "thanksgiving storm forecast",
+    "thanksgiving weather forecast snow",
+    "thanksgiving weather forecast 2025",
+    "thanksgiving weather forecast",
+    "thanksgiving weather forecast old farmer's almanac",
+    "thanksgiving weather forecast snow map",
+    "thanksgiving weather forecast 2025 near me",
+    "thanksgiving weather forecast 2026",
+    "thanksgiving weather forecast snow near me",
+    "thanksgiving weather forecast near me"
    ]
   },
   "history": [
