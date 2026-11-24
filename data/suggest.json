@@ -2096,21 +2096,21 @@
   ]
  },
  "alicias-law-the-good-wife": {
-  "time": "2026-11-23T15:33:06+00:00",
+  "time": "2026-11-24T15:34:03+00:00",
   "query": "is alicia's law based on the good wife",
   "in_suggest": false,
   "suggest": {
    "alicia's law": [
     "alicia's law",
-    "alicia's law netflix cast",
-    "alicia's law cast",
     "alicia's law netflix",
+    "alicia's law netflix cast",
     "alicia's law netflix review",
-    "alicia's law reviews",
     "alicia lawrence",
     "alicia lawson",
     "alicia lawyer",
-    "alicia lawyer show"
+    "alicia lawyer show",
+    "alicia lawson barrister",
+    "alicia lawler"
    ],
    "what is alicia's law": [
     "what is alicia's law",
@@ -2127,10 +2127,6 @@
    "alicia's law based good wife": []
   },
   "history": [
-   [
-    "2026-11-10",
-    false
-   ],
    [
     "2026-11-11",
     false
@@ -2182,11 +2178,15 @@
    [
     "2026-11-23",
     false
+   ],
+   [
+    "2026-11-24",
+    false
    ]
   ]
  },
  "edgar-martinez-award": {
-  "time": "2026-11-23T15:33:08+00:00",
+  "time": "2026-11-24T15:34:05+00:00",
   "query": "what is the edgar martinez award",
   "in_suggest": true,
   "suggest": {
@@ -2215,20 +2215,16 @@
     "edgar martinez award",
     "edgar martinez award winners",
     "edgar martinez award 2025",
-    "edgar martinez award 2024",
     "edgar martinez award odds",
     "edgar martinez award trophy",
-    "ohtani edgar martinez award",
     "edgar martinez dh award",
+    "ohtani edgar martinez award",
     "mlb edgar martinez award",
+    "2024 edgar martinez award",
     "edgar martinez outstanding dh award"
    ]
   },
   "history": [
-   [
-    "2026-11-10",
-    true
-   ],
    [
     "2026-11-11",
     true
@@ -2280,20 +2276,24 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "how-is-speaker-of-the-house-elected": {
-  "time": "2026-11-23T15:33:11+00:00",
+  "time": "2026-11-24T15:34:08+00:00",
   "query": "how is the speaker of the house elected",
   "in_suggest": true,
   "suggest": {
    "election of the speaker of the house": [
     "election of the speaker of the house",
     "election of the speaker of the house of commons",
-    "election of new speaker of the house",
-    "election of speaker of the house of representatives",
-    "selection of speaker of the house"
+    "election results speaker of the house",
+    "selection of speaker of the house",
+    "voting speaker of the house"
    ],
    "what is election of the speaker of the house": [
     "when is election for speaker of the house",
@@ -2309,9 +2309,9 @@
     "how is the speaker of the house elected us",
     "how often is the speaker of the house elected",
     "how long is the speaker of the house elected for",
+    "how is the new speaker of the house elected",
     "how is the speaker of the house chosen",
     "how is the speaker of the house chosen canada",
-    "how is the speaker of the house chosen quizlet",
     "how is the speaker of the house chosen in jamaica"
    ],
    "speaker house elected": [
@@ -2319,19 +2319,15 @@
     "house speaker election 2026",
     "house speaker election 2025",
     "house speaker election 2023",
-    "house speaker election 2025 live",
     "house speaker election 2024",
-    "house speaker election results",
-    "house speaker election 2025 philippines",
+    "house speaker election 2025 live",
     "speaker election house of commons",
-    "house speaker election process"
+    "house speaker election process",
+    "house speaker election results",
+    "speaker of the house elected president"
    ]
   },
   "history": [
-   [
-    "2026-11-10",
-    true
-   ],
    [
     "2026-11-11",
     true
@@ -2383,11 +2379,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "lame-duck-session": {
-  "time": "2026-11-23T15:33:14+00:00",
+  "time": "2026-11-24T15:34:11+00:00",
   "query": "what is a lame duck session",
   "in_suggest": true,
   "suggest": {
@@ -2430,10 +2430,6 @@
   },
   "history": [
    [
-    "2026-11-10",
-    true
-   ],
-   [
     "2026-11-11",
     true
    ],
@@ -2484,11 +2480,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "mlb-posting-system": {
-  "time": "2026-11-23T15:33:18+00:00",
+  "time": "2026-11-24T15:34:16+00:00",
   "query": "what is the posting system in mlb",
   "in_suggest": true,
   "suggest": {
@@ -2526,10 +2526,6 @@
   },
   "history": [
    [
-    "2026-11-10",
-    true
-   ],
-   [
     "2026-11-11",
     true
    ],
@@ -2580,11 +2576,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "record-vs-song-of-the-year": {
-  "time": "2026-11-23T15:33:22+00:00",
+  "time": "2026-11-24T15:34:20+00:00",
   "query": "what is the difference between record of the year and song of the year",
   "in_suggest": true,
   "suggest": {
@@ -2619,10 +2619,6 @@
   },
   "history": [
    [
-    "2026-11-10",
-    true
-   ],
-   [
     "2026-11-11",
     true
    ],
@@ -2673,25 +2669,29 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "richard-avedon": {
-  "time": "2026-11-23T15:33:23+00:00",
+  "time": "2026-11-24T15:34:21+00:00",
   "query": "who was richard avedon",
   "in_suggest": true,
   "suggest": {
    "richard avedon": [
     "richard avedon",
-    "richard avedon netflix",
-    "richard avedon photos",
     "richard avedon documentary",
+    "richard avedon photos",
     "richard avedon in the american west",
     "richard avedon books",
     "richard avedon famous photos",
     "richard avedon marilyn monroe",
     "richard avedon beatles",
-    "richard avedon portraits"
+    "richard avedon portraits",
+    "richard avedon the harper's bazaar years"
    ],
    "who is richard avedon": [
     "who is richard avedon",
@@ -2719,10 +2719,6 @@
   },
   "history": [
    [
-    "2026-11-10",
-    true
-   ],
-   [
     "2026-11-11",
     true
    ],
@@ -2773,11 +2769,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "silver-slugger-award": {
-  "time": "2026-11-23T15:33:24+00:00",
+  "time": "2026-11-24T15:34:22+00:00",
   "query": "what is the silver slugger award",
   "in_suggest": true,
   "suggest": {
@@ -2789,9 +2789,9 @@
     "silver slugger award odds",
     "silver slugger award 2026 predictions",
     "silver slugger award mlb",
-    "silver slugger awards 2026",
     "silver slugger award 2026 winners list",
-    "silver slugger award trophy"
+    "silver slugger award trophy",
+    "silver slugger award 2026 odds"
    ],
    "what is silver slugger award": [
     "what is silver slugger award",
@@ -2820,10 +2820,6 @@
   },
   "history": [
    [
-    "2026-11-10",
-    true
-   ],
-   [
     "2026-11-11",
     true
    ],
@@ -2874,25 +2870,29 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "teruaki-sato": {
-  "time": "2026-11-23T15:33:25+00:00",
+  "time": "2026-11-24T15:34:23+00:00",
   "query": "who is teruaki sato",
   "in_suggest": true,
   "suggest": {
    "teruaki sato": [
     "teruaki sato",
     "teruaki sato stats",
-    "teruaki sato mets",
     "teruaki sato yankees",
-    "teruaki sato phillies",
-    "teruaki sato news",
-    "teruaki sato mlb",
-    "teruaki sato rumors",
+    "teruaki sato mets",
+    "teruaki sato phillies pursuit",
     "teruaki sato scouting report",
-    "teruaki sato projected contract"
+    "teruaki sato news",
+    "teruaki sato phillies",
+    "teruaki sato rumors",
+    "teruaki sato kalshi"
    ],
    "who is teruaki sato": [
     "who is teruaki sato",
@@ -2904,10 +2904,6 @@
   },
   "history": [
    [
-    "2026-11-10",
-    true
-   ],
-   [
     "2026-11-11",
     true
    ],
@@ -2958,11 +2954,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "when-does-new-congress-start": {
-  "time": "2026-11-23T15:33:30+00:00",
+  "time": "2026-11-24T15:34:31+00:00",
   "query": "when does the new congress take office",
   "in_suggest": true,
   "suggest": {
@@ -2975,28 +2975,21 @@
     "what is the 120th congress",
     "when the new congress start"
    ],
-   "when does the new congress take office": [
-    "when do the new congress take office",
-    "when does the next congress take office",
-    "when will the new congress take office",
-    "when do the new congress members take office",
-    "when does congress take office",
-    "when does congress take office after election",
-    "what day does the new congress start"
-   ],
+   "when does the new congress take office": [],
    "new congress take office": [
-    "new congress takes office",
+    "new congress take office",
+    "when does new congress take office",
     "when do new congress take office",
-    "when do new congress members take office",
+    "when will new congress take office",
+    "when does the new congress take office in 2027",
+    "what date does new congress take office",
     "when do new congress people take office",
-    "what day does the new congress start"
+    "what day does the new congress take office",
+    "when does new us congress take office",
+    "when do new elected congress take office"
    ]
   },
   "history": [
-   [
-    "2026-11-10",
-    false
-   ],
    [
     "2026-11-11",
     false
@@ -3047,6 +3040,10 @@
    ],
    [
     "2026-11-23",
+    true
+   ],
+   [
+    "2026-11-24",
     true
    ]
   ]
@@ -5986,21 +5983,21 @@
   ]
  },
  "cma-awards-2026-date": {
-  "time": "2026-11-23T15:33:07+00:00",
+  "time": "2026-11-24T15:34:04+00:00",
   "query": "when are the cma awards 2026",
   "in_suggest": true,
   "suggest": {
    "cma awards 2026": [
     "cma awards 2026",
-    "cma awards 2026 winners",
     "cma awards 2026 where to watch",
+    "cma awards 2026 winners",
     "cma awards 2026 performances",
     "cma awards 2026 taylor swift",
-    "cma awards 2026 nominees",
     "cma awards 2026 tickets",
+    "cma awards 2026 streaming",
     "cma awards 2026 red carpet",
-    "cma awards 2026 winners list",
-    "cma awards 2026 date"
+    "cma awards 2026 date",
+    "cma awards 2026 nominations"
    ],
    "what is cma awards 2026": [
     "what is cma awards 2026",
@@ -6028,10 +6025,6 @@
   },
   "history": [
    [
-    "2026-11-10",
-    true
-   ],
-   [
     "2026-11-11",
     true
    ],
@@ -6082,11 +6075,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "has-a-defense-secretary-been-impeached": {
-  "time": "2026-11-23T15:33:10+00:00",
+  "time": "2026-11-24T15:34:07+00:00",
   "query": "has a defense secretary ever been impeached",
   "in_suggest": true,
   "suggest": {
@@ -6101,19 +6098,17 @@
    "what is impeachment of cabinet secretaries": [],
    "has a defense secretary ever been impeached": [
     "has a defense secretary ever been impeached",
+    "has a secretary of defense ever been impeached before",
     "has a justice ever been impeached",
     "has a federal judge ever been impeached"
    ],
    "has defense secretary ever been impeached": [
     "has a defense secretary ever been impeached",
+    "has a secretary of defense ever been impeached before",
     "how many cabinet members have been impeached"
    ]
   },
   "history": [
-   [
-    "2026-11-10",
-    false
-   ],
    [
     "2026-11-11",
     true
@@ -6165,25 +6160,29 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "is-thomas-massie-a-republican": {
-  "time": "2026-11-23T15:33:12+00:00",
+  "time": "2026-11-24T15:34:10+00:00",
   "query": "is thomas massie a republican or democrat",
   "in_suggest": true,
   "suggest": {
    "thomas massie": [
     "thomas massie",
-    "thomas massie twitter",
     "thomas massie net worth",
-    "thomas massie wife",
-    "thomas massie primary",
-    "thomas massie x",
     "thomas massie political views",
     "thomas massie trump",
+    "thomas massie wife",
+    "thomas massie x",
     "thomas massie election results",
-    "thomas massie age"
+    "thomas massie primary",
+    "thomas massie approval rating",
+    "thomas massie election results 2026"
    ],
    "who is thomas massie": [
     "who is thomas massie",
@@ -6200,6 +6199,7 @@
    "is thomas massie a republican or democrat": [
     "is thomas massie a republican or democrat",
     "is tom massie a republican or democrat",
+    "is congressman thomas massie a republican or democrat",
     "is representative thomas massie a democrat or republican",
     "is thomas massie a republican",
     "is thomas massie a libertarian",
@@ -6215,10 +6215,6 @@
    ]
   },
   "history": [
-   [
-    "2026-11-10",
-    true
-   ],
    [
     "2026-11-11",
     true
@@ -6270,11 +6266,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "latin-grammys-vs-grammys": {
-  "time": "2026-11-23T15:33:15+00:00",
+  "time": "2026-11-24T15:34:13+00:00",
   "query": "what is the difference between the latin grammys and the grammys",
   "in_suggest": false,
   "suggest": {
@@ -6304,10 +6304,6 @@
   },
   "history": [
    [
-    "2026-11-10",
-    false
-   ],
-   [
     "2026-11-11",
     false
    ],
@@ -6358,24 +6354,28 @@
    [
     "2026-11-23",
     false
+   ],
+   [
+    "2026-11-24",
+    false
    ]
   ]
  },
  "medicaid-work-requirements-start-date": {
-  "time": "2026-11-23T15:33:17+00:00",
+  "time": "2026-11-24T15:34:14+00:00",
   "query": "when do medicaid work requirements start",
   "in_suggest": true,
   "suggest": {
    "medicaid work requirements": [
+    "medicaid work requirements washington state",
     "medicaid work requirements",
     "medicaid work requirements 2027",
-    "medicaid work requirements 2026",
-    "medicaid work requirements interim final rule",
-    "medicaid work requirements lawsuit",
-    "medicaid work requirements maryland",
     "medicaid work requirements by state",
-    "medicaid work requirements virginia",
-    "medicaid work requirements dc",
+    "medicaid work requirements 2026",
+    "medicaid work requirements reddit",
+    "medicaid work requirements exemptions",
+    "medicaid work requirements lawsuit",
+    "medicaid work requirements self employed",
     "medicaid work requirements final rule"
    ],
    "what is medicaid work requirements": [
@@ -6417,10 +6417,6 @@
   },
   "history": [
    [
-    "2026-11-10",
-    true
-   ],
-   [
     "2026-11-11",
     true
    ],
@@ -6471,11 +6467,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "national-book-awards-2026": {
-  "time": "2026-11-23T15:33:19+00:00",
+  "time": "2026-11-24T15:34:17+00:00",
   "query": "when are the national book awards 2026",
   "in_suggest": true,
   "suggest": {
@@ -6495,23 +6495,19 @@
     "national book awards 2026",
     "national book awards 2026 longlist",
     "national book awards 2026 winners list",
-    "national book awards 2026 dates",
     "national book awards 2026 finalists",
+    "national book awards 2026 dates",
     "national book awards 2026 shortlist",
-    "national book awards 2026 judges",
     "national book awards 2026 winners",
+    "national book awards 2026 judges",
     "national book awards 2026 philippines",
-    "national book awards 2026 list"
+    "national book awards 2026 nominees"
    ],
    "when are the national book awards 2026": [
     "when are the national book awards 2026"
    ]
   },
   "history": [
-   [
-    "2026-11-10",
-    true
-   ],
    [
     "2026-11-11",
     true
@@ -6563,11 +6559,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "planet-alignment-november-2026": {
-  "time": "2026-11-23T15:33:21+00:00",
+  "time": "2026-11-24T15:34:18+00:00",
   "query": "is there a planet alignment in november 2026",
   "in_suggest": false,
   "suggest": {
@@ -6575,7 +6575,7 @@
    "what is planets in the morning sky, november 2026": [],
    "is there a planet alignment in november 2026": [],
    "there planet alignment november 2026": [
-    "planetary alignment november 2026",
+    "planet alignment november 2026",
     "planet alignment today",
     "does planet alignment affect earth",
     "planetary alignment this weekend",
@@ -6584,10 +6584,6 @@
   },
   "history": [
    [
-    "2026-11-10",
-    false
-   ],
-   [
     "2026-11-11",
     false
    ],
@@ -6638,29 +6634,33 @@
    [
     "2026-11-23",
     false
+   ],
+   [
+    "2026-11-24",
+    false
    ]
   ]
  },
  "the-empress-netflix-true-story": {
-  "time": "2026-11-23T15:33:26+00:00",
+  "time": "2026-11-24T15:34:24+00:00",
   "query": "is the empress on netflix a true story",
   "in_suggest": true,
   "suggest": {
    "the empress": [
     "the empress",
     "the empress cast",
-    "the empress season 3",
     "the empress tarot",
+    "the empress season 3",
     "the empress of austria",
-    "the empress season 4",
     "the empress reversed",
-    "the empress season 3 cast",
     "the empress tarot meaning",
+    "the empress estate",
+    "the empress season 4",
     "the empress season 2"
    ],
    "what is the empress": [
     "what is the empress about",
-    "what is the empress about on netflix",
+    "what is the empress on netflix about",
     "what is the empress card in tarot",
     "what is the empress dowager",
     "what is the empress tarot card mean",
@@ -6685,10 +6685,6 @@
   },
   "history": [
    [
-    "2026-11-10",
-    true
-   ],
-   [
     "2026-11-11",
     true
    ],
@@ -6739,11 +6735,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "what-is-a-hip-pointer": {
-  "time": "2026-11-23T15:33:27+00:00",
+  "time": "2026-11-24T15:34:26+00:00",
   "query": "what is a hip pointer injury",
   "in_suggest": true,
   "suggest": {
@@ -6769,7 +6769,7 @@
     "what is a hip pointer and how do you treat it",
     "what is a hip pointer in sports",
     "what is your hip pointer",
-    "what is a right hip pointer"
+    "what is a hip pointer bruise"
    ],
    "what is a hip pointer injury": [
     "what is a hip pointer injury",
@@ -6798,10 +6798,6 @@
   },
   "history": [
    [
-    "2026-11-10",
-    true
-   ],
-   [
     "2026-11-11",
     true
    ],
@@ -6852,11 +6848,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "what-is-win-the-mall": {
-  "time": "2026-11-23T15:33:29+00:00",
+  "time": "2026-11-24T15:34:30+00:00",
   "query": "what is win the mall on netflix",
   "in_suggest": true,
   "suggest": {
@@ -6866,33 +6866,32 @@
     "win the mall location",
     "win the mall winner",
     "win the mall host",
+    "win the mall reddit",
     "win the mall netflix",
     "win the mall elimination order",
-    "win the mall netflix contestants",
-    "win the mall reddit",
-    "win the mall contestants"
+    "win the mall contestants",
+    "win the mall season 2"
    ],
    "what is win the mall": [
-    "what is win the mall"
+    "what is win the mall",
+    "what is win the mall on netflix"
    ],
-   "what is win the mall on netflix": [],
+   "what is win the mall on netflix": [
+    "what is win the mall on netflix",
+    "is wonderland on netflix"
+   ],
    "win mall netflix": [
     "win the mall netflix",
+    "win the mall netflix cast",
     "win the mall netflix release date",
-    "win the mall netflix casting",
     "win the mall netflix show",
-    "win the mall netflix sherway gardens",
     "win the mall netflix trailer",
+    "win the mall netflix sherway gardens",
     "win the mall netflix winner",
-    "win the mall netflix host",
     "win the mall netflix contestants"
    ]
   },
   "history": [
-   [
-    "2026-11-10",
-    true
-   ],
    [
     "2026-11-11",
     true
@@ -6943,6 +6942,10 @@
    ],
    [
     "2026-11-23",
+    true
+   ],
+   [
+    "2026-11-24",
     true
    ]
   ]
@@ -9293,7 +9296,7 @@
   ]
  },
  "when-will-social-security-run-out": {
-  "time": "2026-11-23T15:17:08+00:00",
+  "time": "2026-11-24T15:34:33+00:00",
   "query": "when will social security run out",
   "in_suggest": true,
   "suggest": {
@@ -9340,10 +9343,10 @@
     "will social security run out by 2050",
     "will social security run out in 2030",
     "will social security run out in 10 years",
-    "will social security run out by 2034",
     "will social security run out by 2060",
     "will social security run out of money in 2032",
-    "will social security run out in 20 years"
+    "will social security run out in 20 years",
+    "will social security run out in 2035"
    ]
   },
   "history": [
@@ -9394,11 +9397,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "why-does-my-phone-battery-go-down-while-charging": {
-  "time": "2026-11-23T15:17:13+00:00",
+  "time": "2026-11-24T15:34:38+00:00",
   "query": "why does my phone battery go down while charging",
   "in_suggest": true,
   "suggest": {
@@ -9499,11 +9506,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "why-does-my-phone-screen-keep-going-black": {
-  "time": "2026-11-23T15:17:16+00:00",
+  "time": "2026-11-24T15:34:41+00:00",
   "query": "why does my phone screen keep going black",
   "in_suggest": true,
   "suggest": {
@@ -9547,11 +9558,11 @@
     "my phone screen keeps going black iphone",
     "my phone screen keeps going black for a second",
     "my phone screen keeps going black and white",
+    "my phone screen keeps going black android",
     "my phone screen keeps going dark",
     "my samsung phone screen keeps going black",
     "my cell phone screen keeps going black",
-    "why does my phone screen keep going black",
-    "why does my phone screen keep going black when watching videos"
+    "why does my phone screen keep going black"
    ]
   },
   "history": [
@@ -9601,6 +9612,10 @@
    ],
    [
     "2026-11-23",
+    true
+   ],
+   [
+    "2026-11-24",
     true
    ]
   ]
@@ -12341,7 +12356,7 @@
   ]
  },
  "why-does-my-phone-screen-go-black-during-calls": {
-  "time": "2026-11-23T15:17:15+00:00",
+  "time": "2026-11-24T15:34:40+00:00",
   "query": "why does my phone screen go black during calls",
   "in_suggest": true,
   "suggest": {
@@ -12369,8 +12384,8 @@
    ],
    "why does my phone screen go black during calls": [
     "why does my phone screen go black during calls",
-    "why does my phone screen goes black on calls",
     "why does my phone screen go dark during calls",
+    "why does my phone screen goes black on calls",
     "why does my samsung phone screen go black during calls",
     "why does my android phone screen go black during calls",
     "why does my phone screen keep going black during calls",
@@ -12383,8 +12398,8 @@
     "my phone screen goes black during call",
     "why does my phone screen go black during calls",
     "my android phone screen goes black during call",
-    "why does my phone screen goes black on calls",
     "why does my phone screen go dark during calls",
+    "why does my phone screen goes black on calls",
     "my phone screen goes black on incoming call",
     "why does my samsung phone screen go black during calls",
     "why does my android phone screen go black during calls",
@@ -12432,11 +12447,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "why-does-my-washing-machine-smell-like-rotten-eggs": {
-  "time": "2026-11-23T15:17:18+00:00",
+  "time": "2026-11-24T15:34:43+00:00",
   "query": "why does my washing machine smell like rotten eggs",
   "in_suggest": true,
   "suggest": {
@@ -12525,6 +12544,10 @@
    ],
    [
     "2026-11-23",
+    true
+   ],
+   [
+    "2026-11-24",
     true
    ]
   ]
@@ -13622,12 +13645,14 @@
   ]
  },
  "what-is-the-ram-altman-meme": {
-  "time": "2026-11-23T15:17:07+00:00",
+  "time": "2026-11-24T15:34:28+00:00",
   "query": "what is the ram altman meme",
   "in_suggest": true,
   "suggest": {
    "ram altman meme": [
-    "sam altman ram meme"
+    "ram altman meme",
+    "ram sam altman meme",
+    "sam altman ram meme reddit"
    ],
    "what is ram altman meme": [],
    "what is the ram altman meme": []
@@ -13664,25 +13689,29 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "who-is-oobah-butler": {
-  "time": "2026-11-23T15:17:09+00:00",
+  "time": "2026-11-24T15:34:34+00:00",
   "query": "who is oobah butler",
   "in_suggest": true,
   "suggest": {
    "oobah butler": [
     "oobah butler",
-    "oobah butler scams for a better tomorrow",
-    "oobah butler wife",
-    "oobah butler hbo show",
     "oobah butler show",
     "oobah butler restaurant",
+    "oobah butler wife",
     "oobah butler amazon",
     "oobah butler age",
     "oobah butler partner",
-    "oobah butler the shed"
+    "oobah butler documentary",
+    "oobah butler the shed at dulwich",
+    "oobah butler movies and tv shows"
    ],
    "who is oobah butler": [
     "who is oobah butler",
@@ -13725,25 +13754,29 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "why-are-people-saying-ao3-is-back": {
-  "time": "2026-11-23T15:17:10+00:00",
+  "time": "2026-11-24T15:34:35+00:00",
   "query": "why are people saying ao3 is back",
   "in_suggest": false,
   "suggest": {
    "ao3": [
     "ao3",
-    "ao3 website",
     "ao3 skins",
+    "ao3 app",
     "ao3 status",
-    "ao3 login",
     "ao3 purity test",
+    "ao3 website",
+    "ao3 login",
+    "ao3 meaning",
     "ao3 down",
-    "ao3 fanfiction",
-    "ao3 hunger games",
-    "ao3 heated rivalry"
+    "ao3 hunger games"
    ],
    "what is ao3": [
     "what is ao3",
@@ -13791,6 +13824,10 @@
    ],
    [
     "2026-11-23",
+    false
+   ],
+   [
+    "2026-11-24",
     false
    ]
   ]
@@ -14432,43 +14469,45 @@
   ]
  },
  "what-is-si-instead-of-ai": {
-  "time": "2026-11-23T15:17:05+00:00",
+  "time": "2026-11-24T15:34:27+00:00",
   "query": "what is si instead of ai",
   "in_suggest": true,
   "suggest": {
    "si": [
+    "silverwood",
     "silver price today",
-    "sixers",
     "silver price",
+    "silverwood theme park",
+    "sixers",
+    "silver",
     "silo",
     "sixers standings",
     "sirius xm",
-    "six flags",
-    "sixers schedule",
-    "sinners",
-    "sierra trading post"
+    "silver falls state park"
    ],
    "what is si": [
-    "what is si",
     "what is sibo",
     "what is sids",
-    "what is singularity",
     "what is sickle cell",
     "what is signal app",
+    "what is si",
     "what is sickle cell disease",
+    "what is situational irony",
     "what is silicon dioxide",
     "what is silica",
-    "what is sin"
+    "what is size 38 in women's shoes"
    ],
    "what is si instead of ai": [
     "what is si instead of ai",
     "what is si in place of ai",
     "what is si mean instead of ai",
+    "what is si stand for instead of ai",
     "what does si instead of ai stand for",
+    "si instead of ai",
+    "who is using si instead of ai",
     "what is si rather than ai",
     "difference between si and asi",
-    "what is si systems",
-    "what does si o si mean"
+    "what is si systems"
    ],
    "si instead ai": [
     "si rather than ai",
@@ -14503,11 +14542,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "why-are-people-saying-robert-pattinson-is-gen-z": {
-  "time": "2026-11-23T15:17:12+00:00",
+  "time": "2026-11-24T15:34:37+00:00",
   "query": "why are people saying robert pattinson is gen z",
   "in_suggest": true,
   "suggest": {
@@ -14548,6 +14591,10 @@
    ],
    [
     "2026-11-23",
+    true
+   ],
+   [
+    "2026-11-24",
     true
    ]
   ]
