@@ -8596,7 +8596,7 @@
   ]
  },
  "why-does-social-security-get-taxed": {
-  "time": "2026-11-23T15:17:21+00:00",
+  "time": "2026-11-24T15:48:56+00:00",
   "query": "why does social security get taxed",
   "in_suggest": true,
   "suggest": {
@@ -8701,25 +8701,29 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "why-is-my-check-engine-light-on": {
-  "time": "2026-11-23T15:17:24+00:00",
+  "time": "2026-11-24T15:48:59+00:00",
   "query": "why is my check engine light on",
   "in_suggest": true,
   "suggest": {
    "check engine light": [
     "check engine light",
+    "check engine light mean",
     "check engine light flashing",
-    "check engine light meaning",
     "check engine light reader",
-    "check engine light on after oil change",
-    "check engine light came on",
-    "check engine light symbol",
-    "check engine light comes on and off",
-    "check engine light flashing and car shaking",
-    "check engine light reasons"
+    "check engine light after oil change",
+    "check engine light on after changing battery",
+    "check engine light turning on and off",
+    "check engine light diagnostic",
+    "check engine light on but no codes",
+    "check engine light in spanish"
    ],
    "what is check engine light": [
     "what is check engine light",
@@ -8740,21 +8744,21 @@
     "why is my check engine light on after changing battery",
     "why is my check engine light on in accessory mode",
     "why is my check engine light on and cruise control flashing",
-    "why is my check engine light on after fixing the problem",
     "why is my check engine light on after my battery died",
+    "why is my check engine light on after fixing the problem",
     "why is my check engine light on in my car"
    ],
    "my check engine light": [
     "my check engine light is on",
+    "my check engine light turns on and off",
     "my check engine light is blinking",
     "my check engine light is flashing",
-    "my check engine light keeps coming on and off",
-    "my check engine light comes on and off",
     "my check engine light turned off on its own",
     "my check engine light just came on",
+    "my check engine light comes on and off",
     "my check engine light came on and went off",
     "my check engine light was on now its off",
-    "my check engine light is flashing and my car is shaking"
+    "my check engine light is on what do i do"
    ]
   },
   "history": [
@@ -8809,11 +8813,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "why-is-my-washing-machine-leaking-from-the-bottom": {
-  "time": "2026-11-23T15:17:27+00:00",
+  "time": "2026-11-24T15:49:02+00:00",
   "query": "why is my washing machine leaking from the bottom",
   "in_suggest": true,
   "suggest": {
@@ -8826,8 +8834,8 @@
     "kenmore washing machine leaking from the bottom",
     "lg washing machine leaking from the bottom",
     "samsung washing machine leaking from the bottom",
-    "whirlpool washing machine leaking from the bottom",
-    "lg washing machine leaking from the bottom front"
+    "lg washing machine leaking from the bottom front",
+    "hotpoint washing machine leaking from the bottom"
    ],
    "what is washing machine leaking from the bottom": [
     "what makes a washing machine leak from the bottom",
@@ -8839,7 +8847,7 @@
     "kenmore washing machine leaking from the bottom",
     "lg washing machine leaking from the bottom",
     "samsung washing machine leaking from the bottom",
-    "whirlpool washing machine leaking from the bottom"
+    "lg washing machine leaking from the bottom front"
    ],
    "why is my washing machine leaking from the bottom": [
     "why is my washing machine leaking from the bottom",
@@ -8851,7 +8859,7 @@
     "why is my washing machine leaking from the bottom front",
     "why is my washing machine leaking from the bottom when not in use",
     "why is my washing machine leaking from the bottom left corner",
-    "why is my washing machine leaking from the bottom right corner"
+    "why is my washing machine leaking from the bottom left front"
    ],
    "my washing machine leaking from bottom": [
     "my washing machine leaking from the bottom",
@@ -8917,6 +8925,10 @@
    ],
    [
     "2026-11-23",
+    true
+   ],
+   [
+    "2026-11-24",
     true
    ]
   ]
@@ -9621,7 +9633,7 @@
   ]
  },
  "why-does-social-security-come-out-of-my-paycheck": {
-  "time": "2026-11-23T15:17:19+00:00",
+  "time": "2026-11-24T15:48:55+00:00",
   "query": "why does social security come out of my paycheck",
   "in_suggest": true,
   "suggest": {
@@ -9646,8 +9658,8 @@
     "what is social security income tax rate",
     "what is social security income tax cap",
     "what is social security income tax limit",
-    "what is social security income tax percentage",
-    "what is social security income tax withheld"
+    "what is social security income tax withheld",
+    "what is social security income tax percentage"
    ],
    "why does social security come out of my paycheck": [
     "why does social security come out of my paycheck",
@@ -9720,6 +9732,10 @@
    ],
    [
     "2026-11-23",
+    true
+   ],
+   [
+    "2026-11-24",
     true
    ]
   ]
@@ -12553,33 +12569,33 @@
   ]
  },
  "wta-tennis": {
-  "time": "2026-11-23T15:17:28+00:00",
+  "time": "2026-11-24T15:49:04+00:00",
   "query": "what does wta stand for in tennis",
   "in_suggest": true,
   "suggest": {
    "wta": [
-    "wta live rankings",
-    "wta finals",
     "wta",
+    "wta live rankings",
     "wta rankings",
-    "wtae",
+    "wta finals",
     "wta finals 2026",
-    "wtap",
-    "wtae weather",
-    "wtam 1100",
-    "wtap news"
+    "wta toronto",
+    "wta tennis",
+    "wta beijing",
+    "wta finals indian wells",
+    "wta tour"
    ],
    "what is wta": [
-    "what is wta tennis",
     "what is wta",
-    "what is wta finals",
+    "what is wta tennis",
     "what is wtaf",
+    "what is wta finals",
     "what is wta 1000",
     "what is wta 1000 in tennis",
-    "what is wta 500 and wta 1000",
     "what is wtac",
+    "what is wta 500 and wta 1000",
     "what is wta in tennis stand for",
-    "what is wta 500"
+    "what is wtamu"
    ],
    "what does wta stand for in tennis": [
     "what does wta stand for in tennis",
@@ -12640,6 +12656,10 @@
    ],
    [
     "2026-11-23",
+    true
+   ],
+   [
+    "2026-11-24",
     true
    ]
   ]
@@ -13833,13 +13853,19 @@
   ]
  },
  "why-is-everyone-freaking-out-about-november-17": {
-  "time": "2026-11-23T15:17:22+00:00",
+  "time": "2026-11-24T15:48:58+00:00",
   "query": "why is everyone freaking out about november 17",
   "in_suggest": false,
   "suggest": {
    "november 17 blackout rumor": [],
    "what is november 17 blackout rumor": [],
-   "why is everyone freaking out about november 17": [],
+   "why is everyone freaking out about november 17": [
+    "why are people freaking out about november 17th",
+    "what happened on november 17",
+    "what happened november 17th",
+    "november 17 famous birthdays",
+    "what is special about november 17th"
+   ],
    "everyone freaking out about november 17": []
   },
   "history": [
@@ -13873,6 +13899,10 @@
    ],
    [
     "2026-11-23",
+    false
+   ],
+   [
+    "2026-11-24",
     false
    ]
   ]
@@ -14600,7 +14630,7 @@
   ]
  },
  "why-is-my-phone-charging-slow": {
-  "time": "2026-11-23T15:17:25+00:00",
+  "time": "2026-11-24T15:49:01+00:00",
   "query": "why is my phone charging slow",
   "in_suggest": true,
   "suggest": {
@@ -14628,8 +14658,8 @@
    "why is my phone charging slow": [
     "why is my phone charging slow",
     "why is my phone charging slow all of a sudden",
-    "why is my phone charging slow with a fast charger",
     "why is my phone charging slower than usual",
+    "why is my phone charging slow with a fast charger",
     "why is my phone charging slow iphone",
     "why is my phone charging slow android",
     "why is my phone charging slowly even with the right charger",
@@ -14673,6 +14703,10 @@
    ],
    [
     "2026-11-23",
+    true
+   ],
+   [
+    "2026-11-24",
     true
    ]
   ]
