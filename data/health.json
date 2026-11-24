@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-24T00:47:12+00:00",
+ "checked": "2026-11-24T01:46:57+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -730,7 +730,7 @@
   },
   {
    "url": "/x/how-much-tax-refund-per-child-2026",
-   "at": "2026-11-23T19:33:01+00:00",
+   "at": "2026-11-24T01:46:57+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
