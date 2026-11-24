@@ -10870,7 +10870,7 @@
   ]
  },
  "first-black-senator-from-mississippi": {
-  "time": "2026-11-23T17:25:33+00:00",
+  "time": "2026-11-24T17:33:09+00:00",
   "query": "who was the first black senator from mississippi",
   "in_suggest": true,
   "suggest": {
@@ -10892,9 +10892,11 @@
    "first black senator from mississippi": [
     "first black senator from mississippi",
     "first black senator in mississippi history",
+    "first black senator ms",
     "first black politician in mississippi",
     "first black representative in mississippi",
     "1st black senator in mississippi",
+    "would colom be the first black senator from mississippi",
     "who was the first black senator from massachusetts"
    ]
   },
@@ -10942,11 +10944,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "how-much-tax-refund-per-child-2026": {
-  "time": "2026-11-23T17:25:35+00:00",
+  "time": "2026-11-24T17:33:11+00:00",
   "query": "how much tax refund per child 2026",
   "in_suggest": true,
   "suggest": {
@@ -10958,8 +10964,8 @@
     "child tax credit 2026 income limit",
     "child tax credit phase out",
     "child tax credit income limit",
-    "child tax credit arizona",
     "child tax credit age limit",
+    "child tax credit 2025 income limit",
     "child tax credit 2024"
    ],
    "what is child tax credit": [
@@ -11043,11 +11049,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "is-the-law-of-beasts-a-true-story": {
-  "time": "2026-11-23T17:25:36+00:00",
+  "time": "2026-11-24T17:33:12+00:00",
   "query": "is the law of beasts a true story",
   "in_suggest": true,
   "suggest": {
@@ -11056,12 +11066,12 @@
     "the law of beasts true story",
     "the law of beasts netflix",
     "the law of beasts review",
+    "the law of beasts netflix review",
     "the law of beasts cast",
     "the law of beasts rotten tomatoes",
-    "the law of beasts netflix review",
+    "the law of beasts real story",
     "the law of beasts imdb",
-    "the law of beasts netflix cast",
-    "the law of beasts real story"
+    "the law of beasts rating"
    ],
    "what is the law of beasts": [
     "what is the law of beasts about",
@@ -11123,25 +11133,29 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "ligue-1": {
-  "time": "2026-11-23T17:25:37+00:00",
+  "time": "2026-11-24T17:33:13+00:00",
   "query": "what is ligue 1",
   "in_suggest": true,
   "suggest": {
    "ligue 1": [
-    "ligue 1",
     "ligue 1 standings",
+    "ligue 1",
+    "ligue 1 schedule",
     "ligue 1 stats",
     "ligue 1 table",
+    "ligue 1 players",
     "ligue 1 games",
     "ligue 1 teams",
-    "ligue 1 mcdonald's",
-    "ligue 1 table 2022 23",
-    "ligue 1 results",
-    "ligue 1 winners"
+    "ligue 1 mobilis",
+    "ligue 1 france"
    ],
    "what is ligue 1": [
     "what is ligue 1",
@@ -11153,7 +11167,7 @@
     "what is ligue 1 plus",
     "what is ligue 1 player in fc mobile",
     "what is ligue 1 in france",
-    "what is ligue 1 teams"
+    "what is ligue 1 table"
    ]
   },
   "history": [
@@ -11200,11 +11214,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "phishing-test": {
-  "time": "2026-11-23T17:25:38+00:00",
+  "time": "2026-11-24T17:33:14+00:00",
   "query": "what is a phishing test",
   "in_suggest": true,
   "suggest": {
@@ -11216,9 +11234,9 @@
     "phishing test meme",
     "phishing test at work",
     "phishing test google",
+    "phishing test site",
     "phishing test definition",
-    "phishing test email free",
-    "phishing test examples"
+    "phishing test email free"
    ],
    "what is phishing test": [
     "what is phishing test",
@@ -11289,11 +11307,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "rock-hall-of-fame-2026-ceremony-air-date": {
-  "time": "2026-11-23T17:25:40+00:00",
+  "time": "2026-11-24T17:33:15+00:00",
   "query": "when will the rock and roll hall of fame 2026 ceremony air",
   "in_suggest": false,
   "suggest": {
@@ -11357,11 +11379,15 @@
    [
     "2026-11-23",
     false
+   ],
+   [
+    "2026-11-24",
+    false
    ]
   ]
  },
  "what-does-refrigerator-coolant-smell-like": {
-  "time": "2026-11-23T17:25:41+00:00",
+  "time": "2026-11-24T17:33:16+00:00",
   "query": "what does refrigerator coolant smell like",
   "in_suggest": true,
   "suggest": {
@@ -11453,11 +11479,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "what-is-a-safety-in-football": {
-  "time": "2026-11-23T17:25:43+00:00",
+  "time": "2026-11-24T17:33:18+00:00",
   "query": "what is a safety in football",
   "in_suggest": true,
   "suggest": {
@@ -11466,24 +11496,24 @@
     "safety",
     "safety glasses",
     "safety razor",
-    "safety in football",
-    "safety vest",
+    "safety insurance",
     "safety movie",
     "safety first car seat",
-    "safety pin necklace",
-    "safety culture"
+    "safety vest",
+    "safety dance",
+    "safety kleen"
    ],
    "what is safety": [
     "what is safety in football",
     "what is safety",
-    "what is safety corridor",
-    "what is safety position in football",
     "what is safety culture",
+    "what is safety position in football",
     "what is safety data sheet",
     "what is safety stock",
     "what is safety connect toyota",
     "what is safety glass",
-    "what is safety protocol adherence"
+    "what is safety net",
+    "what is safety corridor"
    ],
    "what is a safety in football": [
     "what is a safety in football",
@@ -11501,8 +11531,8 @@
     "safety football",
     "safety football position",
     "safety football movie",
-    "safety football points",
     "safety football helmet",
+    "safety football points",
     "safety football score",
     "safety football drip",
     "safety football 2 points",
@@ -11554,11 +11584,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "what-is-broad-based-categorical-eligibility": {
-  "time": "2026-11-23T17:25:43+00:00",
+  "time": "2026-11-24T17:33:18+00:00",
   "query": "what is broad-based categorical eligibility",
   "in_suggest": true,
   "suggest": {
@@ -11569,9 +11603,9 @@
     "broad based categorical eligibility bbce",
     "broad based categorical eligibility louisiana",
     "broad based categorical eligibility tennessee",
+    "broad based categorical eligibility ohio",
     "broad based categorical eligibility california",
     "broad based categorical eligibility policy",
-    "broad based categorical eligibility ohio",
     "broad based categorical eligibility states"
    ],
    "what is broad-based categorical eligibility": [
@@ -11580,11 +11614,11 @@
     "what is broad based categorical eligibility bbce",
     "broad based categorical eligibility louisiana",
     "broad based categorical eligibility tennessee",
+    "broad based categorical eligibility ohio",
     "broad based categorical eligibility california",
     "broad based categorical eligibility policy",
-    "broad based categorical eligibility ohio",
     "broad based categorical eligibility states",
-    "broad based categorical eligibility bbce for snap"
+    "broad based categorical eligibility policy and snap participation"
    ]
   },
   "history": [
@@ -11631,11 +11665,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "why-is-wifi-not-working-on-my-phone": {
-  "time": "2026-11-23T17:25:45+00:00",
+  "time": "2026-11-24T17:33:20+00:00",
   "query": "why is wifi not working on my phone",
   "in_suggest": true,
   "suggest": {
@@ -11649,9 +11687,9 @@
     "why is wifi not showing on my phone",
     "why is wifi not turning on on my phone",
     "why is internet not working on my phone iphone",
-    "why is internet not working on my phone android",
     "why is wifi not working on my mobile",
-    "why is wifi calling not working on my phone"
+    "why is wifi calling not working on my phone",
+    "why is internet not connecting on my phone"
    ],
    "wifi not working my phone": [
     "wifi not working my phone",
@@ -11661,9 +11699,9 @@
     "wifi isn t working on my phone",
     "wifi not showing on my phone",
     "wifi not working on the phone",
-    "internet not working on my phone iphone",
     "wifi not working in my mobile",
-    "wifi calling not working on my phone"
+    "wifi calling not working on my phone",
+    "internet isnt working on my phone"
    ]
   },
   "history": [
@@ -11709,6 +11747,10 @@
    ],
    [
     "2026-11-23",
+    true
+   ],
+   [
+    "2026-11-24",
     true
    ]
   ]
