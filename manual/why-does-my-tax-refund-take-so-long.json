@@ -1,0 +1,52 @@
+{
+ "subject": "IRS tax refund delays",
+ "kind": "other",
+ "query": "why does tax refund take so long",
+ "title": "Why does my tax refund take so long? 7 common reasons",
+ "answer": "Most refunds for e-filed returns with direct deposit arrive within 21 days. If yours is slower, the usual reasons are a paper return, an error or mismatch the IRS must fix, the legal mid-February hold on refunds that claim the Earned Income or Additional Child Tax Credit, an identity check, or an amended return, which can take up to 16 weeks.",
+ "body": "Here are the common causes, roughly from most to least likely.\n\n1. You filed on paper. Paper returns are keyed in by hand and usually take six weeks or more, longer in peak season. Where's My Refund will not even show a status until about four weeks after you mail it.\n\n2. The return has an error or mismatch. A wrong Social Security number, a math mistake, a missing form or signature, a name that does not match Social Security records, or income that does not match the W-2s and 1099s the IRS already has can send the return to manual review. If the IRS corrects your math, it mails a notice explaining the change.\n\n3. You claimed the EITC or Additional Child Tax Credit. Under the PATH Act, the IRS cannot release these refunds, including the rest of the refund on the same return, before mid-February, even if you filed in January. Most arrive in late February or early March.\n\n4. The IRS needs to confirm your identity. To stop fraud, some returns are held until you verify who you are. You will get a letter, such as 5071C or 4883C; nothing moves until you respond, and the refund can take up to about nine weeks after you do.\n\n5. You filed an amended return (Form 1040-X). These typically take 8 to 12 weeks and can run to 16 weeks or more. An injured spouse claim (Form 8379) also adds roughly 11 to 14 weeks.\n\n6. Part of the refund went to a debt. Through the Treasury Offset Program, a refund can be reduced or taken to cover back taxes, past-due child support, defaulted federal student loans or certain state debts. You get a separate notice saying where the money went.\n\n7. Bank details were wrong. Since Sept. 30, 2025, the IRS has been phasing out paper refund checks under Executive Order 14247, so direct deposit is the default. A rejected deposit or missing account information usually means a notice asking for bank details or a paper check weeks later.\n\nWhat to check yourself: use Where's My Refund on IRS.gov or the IRS2Go app, which updates once a day, usually overnight, so checking more often will not show anything new. Status appears about 24 hours after e-filing. Compare the Social Security numbers, bank routing and account numbers on your copy of the return with your records, and open any IRS letter right away, since many holds wait on your reply.\n\nWhen to call: the IRS says phone agents cannot research a refund until 21 days after e-filing or six weeks after mailing a paper return, or 16 weeks for an amended return. Before that, a call will not speed things up. If the delay is causing real financial hardship, the Taxpayer Advocate Service, an independent office inside the IRS, can help at 877-777-4778.",
+ "in_the_news": "With the 2027 filing season about two months away, the IRS is relying on direct deposit for refunds after phasing out most paper refund checks.",
+ "faq": [
+  {
+   "q": "How long does a tax refund take in 2026?",
+   "a": "Usually up to 21 days for e-filed returns with direct deposit, six weeks or more for paper returns, and 8 to 16 weeks for amended returns."
+  },
+  {
+   "q": "Why does Where's My Refund say still processing?",
+   "a": "The return is in the system but not finished, often because of a review, an error check, an identity check or the PATH Act hold. Watch your mail for an IRS letter."
+  },
+  {
+   "q": "Why is my refund less than expected?",
+   "a": "The IRS may have corrected an error or applied the refund to a past-due debt through the Treasury Offset Program. Either way, you should receive a notice explaining the difference."
+  },
+  {
+   "q": "Will calling the IRS speed up my refund?",
+   "a": "No. Agents can only research it after 21 days for e-filed returns, six weeks for paper returns or 16 weeks for amended returns."
+  }
+ ],
+ "links": [
+  [
+   "BestMoney",
+   "How Long Does It Take to Get a Tax Refund?",
+   "https://www.bestmoney.com/tax-relief/learn-more/how-long-does-it-take-to-get-a-tax-refund"
+  ],
+  [
+   "Saving to Invest",
+   "Why Is It Taking So Long to Get My Tax Refund?",
+   "https://savingtoinvest.com/why-is-it-taking-so-long-to-get-my-tax-refund/"
+  ],
+  [
+   "National Tax Tools",
+   "IRS Tax Refund Timeline 2026",
+   "https://nationaltaxtools.com/guides/irs-refund-timeline/"
+  ],
+  [
+   "IRS",
+   "Where's My Refund?",
+   "https://www.irs.gov/refunds"
+  ]
+ ],
+ "image_prompt": "A single plain white envelope resting on a wooden kitchen table beside a cup of coffee and a small potted plant, soft morning light, realistic photo style",
+ "made": "2026-11-24T13:55:15Z",
+ "first": "2026-11-24T13:55:15Z"
+}

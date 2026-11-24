@@ -164,6 +164,10 @@
 Проверка: через 3–7 дней после даты сверить с Trends CSV и Search Console — угадали или нет, записать урок сюда.
 
 ## Уроки
+- 24 нояб, вечер (GSC: последний полный день 23 нояб — 2 клика / 3 показа, клики на главной; health.json 24 нояб: в индексе 1 URL (/), 65 Crawled – not indexed, 9 Discovered, 132 неизвестны Google):
+  - По типам (страницы 20–22 нояб, 2–4 дня): тренды (remember-november, pajamas-sunrise, huss, gta-6-is-woke, rip-fiona, lucia-cheats, mustard-at-lsu), обзор недели 22 нояб, прогнозы (trinity, sam-bankman-fried), вечные (refrigerator-leaking, washing-machine-last) — 0 показов. Ни один тип не выигрывает, пока сайт вне индекса.
+  - Радар 24 нояб: верх candidates снова мусор («claude is better than chatgpt», «http status 400 bad request», «message blocking is active»); все 3 тренда дня взяты из new_phrases (odinforce, «to me my xmen», needoh lava lamp). Крупный трейлер (Avengers: Doomsday, 23 нояб) дал сразу 2 новые подсказки на следующий день — трейлеры блокбастеров стоит проверять в день выхода.
+  - Картинки FLUX: на 4 из 10 снова надписи — подпись-«автограф» в углу иллюстрации, текст на чеке и вывеске, бренд на холодильнике, каракули на мяче. Избегать чеков, мячей с маркировкой и бытовой техники «в лоб».
 - 23 нояб, вечер (GSC: последний полный день 22 нояб — 0 кликов / 0 показов, 21 нояб — 0/1; health.json 23 нояб: в индексе 1 URL, 65 Crawled – not indexed, 6 Discovered, 126 неизвестны Google; sitemap 200 отправлено / 0):
   - По типам (страницы 19–21 нояб, 2–4 дня): тренды (huss, gta-6-is-woke, rip-fiona, remember-november), прогнозы (trinity, blade-runner-2099), вечные (refrigerator-leaking, phone-charging-slow) — 0 показов. Индекс по-прежнему только главная; сравнивать типы пока не по чему.
   - Радар 23 нояб: верх candidates снова мусор («claude is better than chatgpt», «happy belated birthday», «data centers use water», «http status 400»); все 3 тренда дня взяты из new_phrases (jupiter incident, kroger, cat ears) — у них нет карточки кандидата, поэтому where = только google. «Pokemon Champions forfeiting» пропущен — нашлись только июньские статьи, причину сейчас не подтвердить.
