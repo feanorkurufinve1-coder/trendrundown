@@ -430,7 +430,7 @@
   },
   {
    "url": "/x/does-a-refrigerator-need-its-own-circuit",
-   "at": "2026-11-24T09:47:40+00:00",
+   "at": "2026-11-24T16:02:53+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1594,7 +1594,7 @@
   },
   {
    "url": "/x/the-good-daughter-book",
-   "at": "2026-11-24T09:46:56+00:00",
+   "at": "2026-11-24T16:02:08+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1618,7 +1618,7 @@
   },
   {
    "url": "/x/tri-series-cricket",
-   "at": "2026-11-24T09:47:02+00:00",
+   "at": "2026-11-24T16:02:14+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1642,7 +1642,7 @@
   },
   {
    "url": "/x/two-dan-sullivans-alaska",
-   "at": "2026-11-24T09:47:08+00:00",
+   "at": "2026-11-24T16:02:21+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1654,7 +1654,7 @@
   },
   {
    "url": "/x/under-siege-netflix-true-story",
-   "at": "2026-11-24T09:47:15+00:00",
+   "at": "2026-11-24T16:02:27+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1666,7 +1666,7 @@
   },
   {
    "url": "/x/vienna-game-true-story",
-   "at": "2026-11-24T09:47:21+00:00",
+   "at": "2026-11-24T16:02:33+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1690,7 +1690,7 @@
   },
   {
    "url": "/x/what-does-12-12-12-mean",
-   "at": "2026-11-24T09:47:27+00:00",
+   "at": "2026-11-24T16:02:40+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1702,7 +1702,7 @@
   },
   {
    "url": "/x/what-does-habibi-mean",
-   "at": "2026-11-24T09:47:33+00:00",
+   "at": "2026-11-24T16:02:46+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1726,7 +1726,7 @@
   },
   {
    "url": "/x/what-does-maxxing-mean",
-   "at": "2026-11-24T09:47:46+00:00",
+   "at": "2026-11-24T16:02:59+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1738,7 +1738,7 @@
   },
   {
    "url": "/x/what-does-microsoft-364-mean",
-   "at": "2026-11-24T09:47:52+00:00",
+   "at": "2026-11-24T16:03:05+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1750,9 +1750,9 @@
   },
   {
    "url": "/x/what-does-my-kid-mean-slang-guide",
-   "at": "2026-11-24T09:47:59+00:00",
+   "at": "2026-11-24T16:03:12+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1762,7 +1762,7 @@
   },
   {
    "url": "/x/what-does-refrigerator-coolant-smell-like",
-   "at": "2026-11-24T09:48:05+00:00",
+   "at": "2026-11-24T16:03:18+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1798,7 +1798,7 @@
   },
   {
    "url": "/x/what-does-unc-mean",
-   "at": "2026-11-24T09:48:11+00:00",
+   "at": "2026-11-24T16:03:24+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2603,9 +2603,9 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 137,
+  "URL is unknown to Google": 136,
   "Crawled - currently not indexed": 65,
-  "Discovered - currently not indexed": 9,
+  "Discovered - currently not indexed": 10,
   "error": 1
  }
 }
