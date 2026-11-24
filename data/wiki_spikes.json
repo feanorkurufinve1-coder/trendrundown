@@ -1,294 +1,252 @@
 {
- "made": "2026-11-23T23:16:59+00:00",
- "day": "2026-11-22",
+ "made": "2026-11-24T05:17:18+00:00",
+ "day": "2026-11-23",
  "about": "Всплески просмотров английской Википедии за вчера: views — просмотров вчера, before — максимум за 3 прошлых дня (null = статьи не было в топ-1000). Идеи для страниц «who is / what is»; проверять факты по новостям.",
  "spikes": [
   {
-   "article": "Tom Jackson (American football, born 1951)",
-   "views": 263973,
+   "article": "Jensen Huang",
+   "views": 234343,
+   "before": 44726,
+   "ratio": 5.2,
+   "url": "https://en.wikipedia.org/wiki/Jensen_Huang"
+  },
+  {
+   "article": "Moon",
+   "views": 180275,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Tom_Jackson_%28American_football%2C_born_1951%29"
+   "url": "https://en.wikipedia.org/wiki/Moon"
   },
   {
-   "article": "Miley Cyrus",
-   "views": 170642,
-   "before": 15018,
-   "ratio": 11.4,
-   "url": "https://en.wikipedia.org/wiki/Miley_Cyrus"
-  },
-  {
-   "article": "S Club",
-   "views": 104957,
+   "article": "Linux",
+   "views": 177023,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/S_Club"
+   "url": "https://en.wikipedia.org/wiki/Linux"
   },
   {
-   "article": "John Tuggle",
-   "views": 71317,
-   "before": 8869,
-   "ratio": 8.0,
-   "url": "https://en.wikipedia.org/wiki/John_Tuggle"
-  },
-  {
-   "article": "Maxx Morando",
-   "views": 70652,
+   "article": "Blood",
+   "views": 174912,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Maxx_Morando"
+   "url": "https://en.wikipedia.org/wiki/Blood"
   },
   {
-   "article": "2026 Formula One World Championship",
-   "views": 67399,
-   "before": 14848,
-   "ratio": 4.5,
-   "url": "https://en.wikipedia.org/wiki/2026_Formula_One_World_Championship"
-  },
-  {
-   "article": "Russian corvette Merkury",
-   "views": 61753,
+   "article": "Experience machine",
+   "views": 135474,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Russian_corvette_Merkury"
-  },
-  {
-   "article": "Liam Hemsworth",
-   "views": 58115,
-   "before": 11311,
-   "ratio": 5.1,
-   "url": "https://en.wikipedia.org/wiki/Liam_Hemsworth"
-  },
-  {
-   "article": "Rio Ngumoha",
-   "views": 56993,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Rio_Ngumoha"
-  },
-  {
-   "article": "Josh Johnson (quarterback)",
-   "views": 53745,
-   "before": 14808,
-   "ratio": 3.6,
-   "url": "https://en.wikipedia.org/wiki/Josh_Johnson_%28quarterback%29"
-  },
-  {
-   "article": "Mr. Irrelevant (film)",
-   "views": 50830,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Mr._Irrelevant_%28film%29"
-  },
-  {
-   "article": "The Witch Farm",
-   "views": 50583,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/The_Witch_Farm"
-  },
-  {
-   "article": "Hannah Spearritt",
-   "views": 49641,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Hannah_Spearritt"
-  },
-  {
-   "article": "Paul Cattermole",
-   "views": 48372,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Paul_Cattermole"
-  },
-  {
-   "article": "Max Verstappen",
-   "views": 45921,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Max_Verstappen"
-  },
-  {
-   "article": "Marc Márquez",
-   "views": 42384,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Marc_M%C3%A1rquez"
-  },
-  {
-   "article": "James Talarico",
-   "views": 42006,
-   "before": 11201,
-   "ratio": 3.8,
-   "url": "https://en.wikipedia.org/wiki/James_Talarico"
-  },
-  {
-   "article": "Virginia Foxx",
-   "views": 37506,
-   "before": 11594,
-   "ratio": 3.2,
-   "url": "https://en.wikipedia.org/wiki/Virginia_Foxx"
+   "url": "https://en.wikipedia.org/wiki/Experience_machine"
   },
   {
    "article": "Molly Meldrum",
-   "views": 37182,
-   "before": null,
-   "ratio": null,
+   "views": 112186,
+   "before": 37182,
+   "ratio": 3.0,
    "url": "https://en.wikipedia.org/wiki/Molly_Meldrum"
   },
   {
-   "article": "Rachel Stevens",
-   "views": 33745,
+   "article": "Fred Warner (American football)",
+   "views": 107625,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Rachel_Stevens"
+   "url": "https://en.wikipedia.org/wiki/Fred_Warner_%28American_football%29"
   },
   {
-   "article": "Carlos Alcaraz",
-   "views": 32063,
-   "before": 9547,
+   "article": "Nvidia",
+   "views": 84245,
+   "before": 18469,
+   "ratio": 4.6,
+   "url": "https://en.wikipedia.org/wiki/Nvidia"
+  },
+  {
+   "article": "Kirk Cousins",
+   "views": 67977,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Kirk_Cousins"
+  },
+  {
+   "article": "Brock Purdy",
+   "views": 65887,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Brock_Purdy"
+  },
+  {
+   "article": "D.C. sniper attacks",
+   "views": 64143,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/D.C._sniper_attacks"
+  },
+  {
+   "article": "The Warning (band)",
+   "views": 59452,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/The_Warning_%28band%29"
+  },
+  {
+   "article": "Dylan Larkin",
+   "views": 58786,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Dylan_Larkin"
+  },
+  {
+   "article": "Didy",
+   "views": 57894,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Didy"
+  },
+  {
+   "article": "Michael Hage",
+   "views": 57636,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Michael_Hage"
+  },
+  {
+   "article": "George Kittle",
+   "views": 48576,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/George_Kittle"
+  },
+  {
+   "article": "Creutzfeldt–Jakob disease",
+   "views": 48058,
+   "before": 11732,
+   "ratio": 4.1,
+   "url": "https://en.wikipedia.org/wiki/Creutzfeldt%E2%80%93Jakob_disease"
+  },
+  {
+   "article": "Alice Huang (executive)",
+   "views": 40816,
+   "before": 12047,
    "ratio": 3.4,
-   "url": "https://en.wikipedia.org/wiki/Carlos_Alcaraz"
+   "url": "https://en.wikipedia.org/wiki/Alice_Huang_%28executive%29"
   },
   {
-   "article": "Chris Berman",
-   "views": 31651,
+   "article": "Ice Warrior",
+   "views": 40485,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Chris_Berman"
+   "url": "https://en.wikipedia.org/wiki/Ice_Warrior"
   },
   {
-   "article": "Jo O'Meara",
-   "views": 31601,
+   "article": "Richard Cabell",
+   "views": 37549,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Jo_O%27Meara"
+   "url": "https://en.wikipedia.org/wiki/Richard_Cabell"
   },
   {
-   "article": "Tina Barrett",
-   "views": 30720,
+   "article": "Colton McKivitz",
+   "views": 32675,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Tina_Barrett"
+   "url": "https://en.wikipedia.org/wiki/Colton_McKivitz"
   },
   {
-   "article": "Steregushchiy-class corvette",
-   "views": 30283,
+   "article": "Jimmy Gomez",
+   "views": 30816,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Steregushchiy-class_corvette"
+   "url": "https://en.wikipedia.org/wiki/Jimmy_Gomez"
   },
   {
-   "article": "Max Hurleman",
-   "views": 29012,
+   "article": "Josh Holloway",
+   "views": 30008,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Max_Hurleman"
+   "url": "https://en.wikipedia.org/wiki/Josh_Holloway"
   },
   {
-   "article": "Billy Ray Cyrus",
-   "views": 28082,
+   "article": "Mexico City",
+   "views": 28926,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Billy_Ray_Cyrus"
+   "url": "https://en.wikipedia.org/wiki/Mexico_City"
   },
   {
-   "article": "Kelly Piquet",
-   "views": 26948,
+   "article": "Don Toliver",
+   "views": 26100,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Kelly_Piquet"
+   "url": "https://en.wikipedia.org/wiki/Don_Toliver"
   },
   {
-   "article": "Fernando Mendoza",
-   "views": 26374,
+   "article": "Dig (2026 TV series)",
+   "views": 26068,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Fernando_Mendoza"
+   "url": "https://en.wikipedia.org/wiki/Dig_%282026_TV_series%29"
   },
   {
-   "article": "Mairzy Doates",
-   "views": 26235,
+   "article": "William M. Tweed",
+   "views": 25656,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Mairzy_Doates"
+   "url": "https://en.wikipedia.org/wiki/William_M._Tweed"
   },
   {
-   "article": "Rei Ami",
-   "views": 26235,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Rei_Ami"
+   "article": "Jensen Huang scandal",
+   "views": 25074,
+   "before": 8301,
+   "ratio": 3.0,
+   "url": "https://en.wikipedia.org/wiki/Jensen_Huang_scandal"
   },
   {
-   "article": "Tarik Skubal",
-   "views": 24939,
+   "article": "Mike Evans (wide receiver)",
+   "views": 24040,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Tarik_Skubal"
+   "url": "https://en.wikipedia.org/wiki/Mike_Evans_%28wide_receiver%29"
   },
   {
-   "article": "Joe Milton",
-   "views": 24014,
+   "article": "Death of John O'Keefe",
+   "views": 22295,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Joe_Milton"
+   "url": "https://en.wikipedia.org/wiki/Death_of_John_O%27Keefe"
   },
   {
-   "article": "Wicked (2024 film)",
-   "views": 23682,
+   "article": "Estadio Azteca",
+   "views": 21962,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Wicked_%282024_film%29"
+   "url": "https://en.wikipedia.org/wiki/Estadio_Azteca"
   },
   {
-   "article": "J. J. McCarthy",
-   "views": 22424,
+   "article": "Ethiopian Airlines Flight 961",
+   "views": 20814,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/J._J._McCarthy"
+   "url": "https://en.wikipedia.org/wiki/Ethiopian_Airlines_Flight_961"
   },
   {
-   "article": "Elizabeth Hurley",
-   "views": 22167,
+   "article": "Christian McCaffrey",
+   "views": 20711,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Elizabeth_Hurley"
+   "url": "https://en.wikipedia.org/wiki/Christian_McCaffrey"
   },
   {
-   "article": "Tish Cyrus",
-   "views": 22102,
+   "article": "Kirby Dach",
+   "views": 20660,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Tish_Cyrus"
+   "url": "https://en.wikipedia.org/wiki/Kirby_Dach"
   },
   {
-   "article": "Hermann Göring Collection",
-   "views": 21274,
+   "article": "November 23",
+   "views": 20172,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Hermann_G%C3%B6ring_Collection"
-  },
-  {
-   "article": "Lavrentiy Beria",
-   "views": 21247,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Lavrentiy_Beria"
-  },
-  {
-   "article": "Gabrielle Creevy",
-   "views": 20339,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Gabrielle_Creevy"
-  },
-  {
-   "article": "Michael Socha",
-   "views": 20207,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Michael_Socha"
+   "url": "https://en.wikipedia.org/wiki/November_23"
   }
  ]
 }
