@@ -15915,7 +15915,7 @@
   ]
  },
  "how-long-does-a-washing-machine-last": {
-  "time": "2026-11-23T13:58:15+00:00",
+  "time": "2026-11-24T14:01:00+00:00",
   "query": "how long does a washing machine last",
   "in_suggest": true,
   "suggest": {
@@ -15928,8 +15928,8 @@
     "washing machine lifespan bosch",
     "washing machine lifespan in india",
     "washing machine lifespan cycles",
-    "washing machine lifespan whirlpool",
-    "washing machine lifespan lg"
+    "washing machine lifespan lg",
+    "washing machine lifespan whirlpool"
    ],
    "what is washing machine lifespan": [
     "what is a washing machine lifespan",
@@ -15958,8 +15958,8 @@
     "how long should washing machine last",
     "how long can washing machine last",
     "long lasting washing machine brand",
-    "how long lg washing machine last",
-    "how long bosch washing machine last"
+    "how long bosch washing machine last",
+    "how long lg washing machine last"
    ]
   },
   "history": [
@@ -15970,11 +15970,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "internet-trends-this-week-2026-11-22": {
-  "time": "2026-11-23T13:58:17+00:00",
+  "time": "2026-11-24T14:01:02+00:00",
   "query": "what's trending on the internet this week",
   "in_suggest": false,
   "suggest": {
@@ -16001,11 +16005,15 @@
    [
     "2026-11-23",
     false
+   ],
+   [
+    "2026-11-24",
+    false
    ]
   ]
  },
  "is-sam-bankman-fried-still-in-prison": {
-  "time": "2026-11-23T13:58:20+00:00",
+  "time": "2026-11-24T14:01:05+00:00",
   "query": "is sam bankman-fried still in prison",
   "in_suggest": true,
   "suggest": {
@@ -16018,8 +16026,8 @@
     "sam bankman-fried parents",
     "sam bankman-fried sentence",
     "sam bankman-fried interview",
-    "sam bankman-fried in jail",
-    "sam bankman-fried now"
+    "sam bankman-fried now",
+    "sam bankman-fried age"
    ],
    "who is sam bankman-fried": [
     "who is sam bankman-fried",
@@ -16065,18 +16073,30 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "why-are-people-saying-lucia-cheats-on-jason": {
-  "time": "2026-11-23T13:58:25+00:00",
+  "time": "2026-11-24T14:01:14+00:00",
   "query": "why are people saying lucia cheats on jason",
   "in_suggest": true,
   "suggest": {
    "lucia and jason in grand theft auto vi": [
-    "jason and lucia from grand theft auto vi"
+    "jason and lucia from grand theft auto vi",
+    "what role do jason and lucia play in grand theft auto vi"
    ],
-   "what is lucia and jason in grand theft auto vi": [],
+   "what is lucia and jason in grand theft auto vi": [
+    "what role do jason and lucia play in grand theft auto vi",
+    "grand theft auto review",
+    "who is gta series videos",
+    "grand theft auto vi rating",
+    "grand theft auto 3 reviews",
+    "grand theft auto highest grossing"
+   ],
    "why are people saying lucia cheats on jason": [
     "why are people saying lucia cheats on jason",
     "what's wrong with jason voorhees",
@@ -16092,11 +16112,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "why-are-people-throwing-mustard-at-lsu": {
-  "time": "2026-11-23T13:58:26+00:00",
+  "time": "2026-11-24T14:01:16+00:00",
   "query": "why are people throwing mustard at lsu",
   "in_suggest": false,
   "suggest": {
@@ -16112,6 +16136,10 @@
    ],
    [
     "2026-11-23",
+    false
+   ],
+   [
+    "2026-11-24",
     false
    ]
   ]
@@ -16247,16 +16275,16 @@
   ]
  },
  "is-mr-irrelevant-a-true-story": {
-  "time": "2026-11-23T13:58:18+00:00",
+  "time": "2026-11-24T14:01:03+00:00",
   "query": "is mr irrelevant a true story",
   "in_suggest": true,
   "suggest": {
    "mr. irrelevant: the john tuggle story": [
-    "mr. irrelevant the john tuggle story",
     "mr. irrelevant the john tuggle story trailer",
     "mr. irrelevant the john tuggle story 2026",
     "mr. irrelevant the john tuggle story cast",
     "mr. irrelevant the john tuggle story streaming",
+    "mr. irrelevant the john tuggle story",
     "mr. irrelevant the john tuggle story where to watch",
     "mr. irrelevant the john tuggle story rating",
     "mr. irrelevant the john tuggle story rating age",
@@ -16266,13 +16294,13 @@
    "what is mr. irrelevant: the john tuggle story": [
     "mr irrelevant the john tuggle story",
     "mr irrelevant the john tuggle story 2026",
-    "mr irrelevant the john tuggle story videos",
     "mr irrelevant the john tuggle story trailer",
+    "mr irrelevant the john tuggle story videos",
     "mr irrelevant the john tuggle story cast",
     "mr irrelevant the john tuggle story 2026 videos",
     "mr irrelevant the john tuggle story release date",
-    "mr irrelevant the john tuggle story 2026 trailer",
     "mr irrelevant the john tuggle story where to watch",
+    "mr irrelevant the john tuggle story 2026 trailer",
     "mr irrelevant the john tuggle story rating"
    ],
    "is mr irrelevant a true story": [
@@ -16283,7 +16311,7 @@
     "mr irrelevant true story",
     "mr irrelevant movie true story",
     "mr irrelevant 2026 true story",
-    "mr irrelevant movie based on true story",
+    "is mr irrelevant a real story",
     "why is mr collins so weird"
    ]
   },
@@ -16291,25 +16319,36 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "what-is-the-2011-jupiter-incident": {
-  "time": "2026-11-23T13:58:21+00:00",
+  "time": "2026-11-24T14:01:09+00:00",
   "query": "what is the 2011 jupiter incident",
   "in_suggest": true,
   "suggest": {
    "2011 jupiter incident": [
     "2011 jupiter incident",
     "2011 jupiter incident meme",
+    "2011 jupiter incident video",
     "2011 jupiter incident explained",
-    "2011 jupiter incident kies",
-    "2011 jupiter incident tiktok",
-    "jupiter medical center events",
-    "what happened in the 2011",
-    "what happened on april 11 2011"
+    "2011 jupiter incident real",
+    "2011 jupiter incident caseoh",
+    "2011 jupiter incident lore",
+    "2011 jupiter incident files",
+    "2011 jupiter incident crew",
+    "2011 jupiter incident keis"
    ],
-   "what is 2011 jupiter incident": [],
+   "what is 2011 jupiter incident": [
+    "what is 2011 jupiter incident",
+    "what happened in the 2011",
+    "what happened on april 11 2011",
+    "what happened may 11 2011"
+   ],
    "what is the 2011 jupiter incident": [
     "what is the 2011 jupiter incident",
     "what is the 2011 jupiter incident meme",
@@ -16322,13 +16361,17 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "why-are-people-heading-to-cinemas-in-cat-ears": {
-  "time": "2026-11-23T13:58:23+00:00",
+  "time": "2026-11-24T14:01:13+00:00",
   "query": "why are people heading to cinemas in cat ears",
-  "in_suggest": true,
+  "in_suggest": false,
   "suggest": {
    "catvideofest": [
     "catvideofest 2026",
@@ -16348,23 +16391,22 @@
     "what is fsdp",
     "what is 36psi"
    ],
-   "why are people heading to cinemas in cat ears": [
-    "why are people heading to cinemas in cat ears",
-    "what does cold ears on a cat mean",
-    "why are cats ears on top of their head",
-    "why does my cat flick his ears"
-   ],
+   "why are people heading to cinemas in cat ears": [],
    "people heading cinemas cat ears": []
   },
   "history": [
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    false
    ]
   ]
  },
  "why-is-everyone-mad-at-kroger": {
-  "time": "2026-11-23T13:58:28+00:00",
+  "time": "2026-11-24T14:01:19+00:00",
   "query": "why is everyone mad at kroger",
   "in_suggest": true,
   "suggest": {
@@ -16385,7 +16427,6 @@
    ],
    "why is everyone mad at kroger": [
     "why is everyone mad at kroger",
-    "why are people mad at kroger",
     "why is kroger produce so bad",
     "is kroger evil",
     "why is kroger bad",
@@ -16401,11 +16442,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "why-is-there-a-d-in-fridge": {
-  "time": "2026-11-23T13:58:29+00:00",
+  "time": "2026-11-24T14:01:20+00:00",
   "query": "why does refrigerator not have a d",
   "in_suggest": true,
   "suggest": {
@@ -16445,6 +16490,10 @@
   "history": [
    [
     "2026-11-23",
+    true
+   ],
+   [
+    "2026-11-24",
     true
    ]
   ]
@@ -16545,6 +16594,261 @@
   "history": [
    [
     "2026-11-23",
+    true
+   ]
+  ]
+ },
+ "what-does-to-me-my-x-men-mean": {
+  "time": "2026-11-24T14:01:06+00:00",
+  "query": "what does to me my x-men mean",
+  "in_suggest": true,
+  "suggest": {
+   "\"to me, my x-men\"": [
+    "to me my x-men meaning",
+    "to me my x-men gif",
+    "to me my x-men origin",
+    "to me my x-men cyclops",
+    "to me my x-men meme",
+    "to me my x-men quote",
+    "to me my x-men who says it",
+    "to me my x-men sound",
+    "to me my x-men krakoa",
+    "to me my x-men phrase"
+   ],
+   "what is \"to me, my x-men\"": [
+    "what is to me my x men",
+    "what does to me my x men mean",
+    "who says to me my x men",
+    "who said to me my x men first",
+    "who originally said to me my x men",
+    "to me my x men cyclops",
+    "to me my x men gif",
+    "to me my x men meme",
+    "to me my x men marvel rivals",
+    "to me my x men vs avengers assemble"
+   ],
+   "what does to me my x-men mean": [
+    "what does to me my x-men mean",
+    "my x meaning",
+    "what does x mean from a guy"
+   ],
+   "me my x-men": [
+    "me my x men",
+    "to me my x men meaning",
+    "to me my x men cyclops",
+    "to me my x men gif",
+    "to me my x men meme",
+    "to me my x men marvel rivals",
+    "to me my x men vs avengers assemble",
+    "to me my x men quote",
+    "to me my x men emma frost",
+    "to me my x men comic panel"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-24",
+    true
+   ]
+  ]
+ },
+ "what-is-focker-in-law-about": {
+  "time": "2026-11-24T14:01:08+00:00",
+  "query": "what is focker in law about",
+  "in_suggest": true,
+  "suggest": {
+   "focker-in-law": [
+    "focker-in-law where to watch",
+    "focker-in-law cast where to watch",
+    "focker-in-law cast",
+    "focker-in-law release date",
+    "focker-in-law trailer",
+    "focker-in-law cast release date",
+    "focker-in-law rating",
+    "focker-in-law trailer cast",
+    "focker-in-law first movie",
+    "focker-in-law plot"
+   ],
+   "what is focker-in-law": [
+    "what is focker-in-law about",
+    "what is focker in law rated",
+    "what is focker in law going to be about",
+    "what is focker in law a sequel to",
+    "what is focker in law streaming on",
+    "what is focker in law cast",
+    "what is focker in law movie about",
+    "what age is focker in law",
+    "what studio is focker in law",
+    "what age rating is focker in law"
+   ],
+   "what is focker in law about": [
+    "what is focker in law about",
+    "what is the film focker in law about",
+    "what is focker in law going to be about",
+    "what is the new movie focker in law about",
+    "what is focker in law streaming on",
+    "what age is focker in law for",
+    "what is the coogan law",
+    "what is davis's law",
+    "what is foah family law"
+   ],
+   "focker law about": [
+    "focker in law about",
+    "focker in law movie about",
+    "focker in law cast about",
+    "what was the law of suspects"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-24",
+    true
+   ]
+  ]
+ },
+ "what-is-the-needoh-lava-lamp": {
+  "time": "2026-11-24T14:01:10+00:00",
+  "query": "what is the needoh lava lamp",
+  "in_suggest": true,
+  "suggest": {
+   "needoh lava lamp": [
+    "needoh lava lamp",
+    "needoh lava lamp target",
+    "needoh lava lamp target link",
+    "needoh lava lamp near me",
+    "needoh lava lamp pink",
+    "needoh lava lamp squishy",
+    "needoh lava lamp walmart",
+    "needoh lava lamp nearby",
+    "needoh lava lamp blue",
+    "needoh lava lamp spencers"
+   ],
+   "what is needoh lava lamp": [
+    "what is needoh lava lamp",
+    "what is a lava lamp good for",
+    "how does a homemade lava lamp work",
+    "lava lamp not doing anything"
+   ],
+   "what is the needoh lava lamp": [
+    "is the needoh lava lamp rare",
+    "is the needoh lava lamp real",
+    "lava lamp not doing anything",
+    "why is my new lava lamp not working",
+    "how long do lava lamps last",
+    "can you touch a lava lamp",
+    "how does a homemade lava lamp work"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-24",
+    true
+   ]
+  ]
+ },
+ "what-is-the-odinforce": {
+  "time": "2026-11-24T14:01:11+00:00",
+  "query": "what is the odinforce",
+  "in_suggest": true,
+  "suggest": {
+   "odinforce": [
+    "odinforce",
+    "odinforce thor",
+    "odinforce thor vs rune king thor",
+    "odinforce thor vs doom",
+    "odinforce marvel",
+    "odinforce ultron",
+    "odinforce comics",
+    "odinforce thor doomsday",
+    "odinforce mcu",
+    "odinforce thor vs dr doom"
+   ],
+   "what is odinforce": [
+    "what is odinforce",
+    "what is odinforce thor",
+    "what is odinforce in marvel",
+    "what is odinforce ultron",
+    "what is odinforce mcu",
+    "what does odinforce do",
+    "what is the odinforce ability",
+    "what color is odinforce",
+    "what exactly is the odinforce",
+    "what is odinsleep"
+   ],
+   "what is the odinforce": [
+    "what is the odinforce",
+    "what is the odinforce marvel",
+    "what is the odinforce ability",
+    "what does the odinforce do",
+    "what exactly is the odinforce",
+    "what color is the odinforce",
+    "what is the odin force mcu",
+    "what is the odin force thor",
+    "what is the odin force in marvel comics",
+    "what is odinsleep"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-24",
+    true
+   ]
+  ]
+ },
+ "why-does-my-tax-refund-take-so-long": {
+  "time": "2026-11-24T14:01:17+00:00",
+  "query": "why does tax refund take so long",
+  "in_suggest": true,
+  "suggest": {
+   "irs tax refund delays": [
+    "irs tax refund delays",
+    "irs tax refund delays 2026",
+    "irs tax refund delays 2025",
+    "irs tax refund delays reddit",
+    "irs tax refund delays today",
+    "irs tax refund delays 2024",
+    "income tax refund delays",
+    "federal tax refund delays",
+    "federal tax refund delays 2025",
+    "income tax refund delay news"
+   ],
+   "what is irs tax refund delays": [
+    "irs tax refund delays",
+    "irs tax refund delays 2026",
+    "irs tax refund delays 2025",
+    "irs tax refund delays reddit",
+    "irs tax refund delays today",
+    "irs tax refund delays 2024",
+    "why are irs refunds delayed"
+   ],
+   "why does tax refund take so long": [
+    "why does tax refund take so long",
+    "why does state refund take so long",
+    "why is tax refund taking so long",
+    "why is tax refund taking so long this year",
+    "why is tax refund taking so long 2025",
+    "why is tax refund taking so long 2026",
+    "why does my tax refund take so long",
+    "why does nys tax refund take so long",
+    "why does illinois tax refund take so long",
+    "why does nj tax refund take so long"
+   ],
+   "tax refund take so long": [
+    "tax refund taking so long",
+    "tax refund taking too long",
+    "state refund taking so long",
+    "tax refund taking too long reddit",
+    "mn tax refund taking so long",
+    "ca tax refund taking so long",
+    "indiana tax refund taking so long",
+    "hmrc tax refund taking so long",
+    "pa tax refund taking so long",
+    "nys tax refund taking so long"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-24",
     true
    ]
   ]

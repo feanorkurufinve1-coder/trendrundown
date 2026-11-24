@@ -550,7 +550,7 @@
   },
   {
    "url": "/x/guarding-stars-book",
-   "at": "2026-11-24T07:48:19+00:00",
+   "at": "2026-11-24T13:59:43+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -574,7 +574,7 @@
   },
   {
    "url": "/x/hank-aaron-award",
-   "at": "2026-11-24T07:48:25+00:00",
+   "at": "2026-11-24T13:59:49+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -586,7 +586,7 @@
   },
   {
    "url": "/x/harlem-park-three",
-   "at": "2026-11-24T07:48:32+00:00",
+   "at": "2026-11-24T13:59:55+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -598,7 +598,7 @@
   },
   {
    "url": "/x/has-a-defense-secretary-been-impeached",
-   "at": "2026-11-24T07:48:38+00:00",
+   "at": "2026-11-24T14:00:02+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -610,7 +610,7 @@
   },
   {
    "url": "/x/heartland-netflix-cast",
-   "at": "2026-11-24T07:48:44+00:00",
+   "at": "2026-11-24T14:00:08+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -622,7 +622,7 @@
   },
   {
    "url": "/x/hegseth-tomb-guard-medal",
-   "at": "2026-11-24T07:48:51+00:00",
+   "at": "2026-11-24T14:00:14+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -634,7 +634,7 @@
   },
   {
    "url": "/x/how-are-cma-awards-voted",
-   "at": "2026-11-24T07:48:57+00:00",
+   "at": "2026-11-24T14:00:21+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -646,7 +646,7 @@
   },
   {
    "url": "/x/how-are-game-awards-nominees-chosen",
-   "at": "2026-11-24T07:49:03+00:00",
+   "at": "2026-11-24T14:00:27+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -658,9 +658,9 @@
   },
   {
    "url": "/x/how-are-grammy-nominations-decided",
-   "at": "2026-11-24T07:49:10+00:00",
+   "at": "2026-11-24T14:00:34+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -670,7 +670,7 @@
   },
   {
    "url": "/x/how-cy-young-is-voted",
-   "at": "2026-11-24T07:49:16+00:00",
+   "at": "2026-11-24T14:00:40+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -682,7 +682,7 @@
   },
   {
    "url": "/x/how-is-senate-majority-leader-chosen",
-   "at": "2026-11-24T07:49:23+00:00",
+   "at": "2026-11-24T14:00:46+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -694,7 +694,7 @@
   },
   {
    "url": "/x/how-is-speaker-of-the-house-elected",
-   "at": "2026-11-24T07:49:29+00:00",
+   "at": "2026-11-24T14:00:53+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -718,7 +718,7 @@
   },
   {
    "url": "/x/how-mlb-mvp-is-voted",
-   "at": "2026-11-24T07:49:35+00:00",
+   "at": "2026-11-24T14:00:59+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1785,6 +1785,18 @@
    "userCanonical": null
   },
   {
+   "url": "/x/what-does-to-me-my-x-men-mean",
+   "at": "2026-11-24T13:59:11+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/what-does-unc-mean",
    "at": "2026-11-24T09:48:11+00:00",
    "verdict": "NEUTRAL",
@@ -1965,6 +1977,18 @@
    "userCanonical": null
   },
   {
+   "url": "/x/what-is-focker-in-law-about",
+   "at": "2026-11-24T13:59:17+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/what-is-pico-park",
    "at": "2026-11-24T10:32:07+00:00",
    "verdict": "NEUTRAL",
@@ -2015,6 +2039,30 @@
   {
    "url": "/x/what-is-the-i-got-so-mad-meme",
    "at": "2026-11-24T08:31:59+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
+   "url": "/x/what-is-the-needoh-lava-lamp",
+   "at": "2026-11-24T13:59:24+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
+   "url": "/x/what-is-the-odinforce",
+   "at": "2026-11-24T13:59:30+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2330,6 +2378,18 @@
    "userCanonical": null
   },
   {
+   "url": "/x/why-does-my-tax-refund-take-so-long",
+   "at": "2026-11-24T13:59:36+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/why-does-my-washing-machine-smell-like-rotten-eggs",
    "at": "2026-11-24T10:48:54+00:00",
    "verdict": "NEUTRAL",
@@ -2543,9 +2603,9 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 132,
+  "URL is unknown to Google": 138,
   "Crawled - currently not indexed": 65,
-  "Discovered - currently not indexed": 9,
+  "Discovered - currently not indexed": 8,
   "error": 1
  }
 }
