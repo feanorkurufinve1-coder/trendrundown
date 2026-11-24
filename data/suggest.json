@@ -16747,48 +16747,56 @@
   ]
  },
  "crowdstrike-zscaler-acquisition": {
-  "time": "2026-11-23T16:43:18+00:00",
+  "time": "2026-11-24T16:48:38+00:00",
   "query": "crowdstrike zscaler",
   "in_suggest": true,
   "suggest": {
-   "crowdstrike acquisition of zscaler": [],
+   "crowdstrike acquisition of zscaler": [
+    "crowdstrike acquisition of zscaler",
+    "difference between zscaler and crowdstrike",
+    "install crowdstrike"
+   ],
    "what is crowdstrike acquisition of zscaler": [],
    "crowdstrike zscaler": [
     "crowdstrike zscaler",
-    "crowdstrike zscaler merger",
-    "crowdstrike zscaler press release",
     "crowdstrike zscaler acquisition",
-    "crowdstrike zscaler stock acquisition",
+    "crowdstrike zscaler merger",
+    "crowdstrike zscaler acquisition deal",
     "crowdstrike zscaler deal",
+    "crowdstrike zscaler press release",
+    "crowdstrike zscaler advisors",
+    "crowdstrike zscaler law firms",
     "crowdstrike zscaler news",
-    "crowdstrike zscaler 43.9 billion deal",
-    "crowdstrike zscaler advisor",
-    "crowdstrike zscaler reddit"
+    "crowdstrike zscaler announcement"
    ]
   },
   "history": [
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "takata-airbag-recall-honda-toyota-november-2026": {
-  "time": "2026-11-23T16:43:19+00:00",
+  "time": "2026-11-24T16:48:38+00:00",
   "query": "takata airbag recall",
   "in_suggest": true,
   "suggest": {
    "takata airbag recall": [
     "takata airbag recall",
-    "takata airbag recall toyota",
     "takata airbag recall vehicle list",
-    "takata airbag recall honda",
     "takata airbag recall list",
     "takata airbag recall check",
+    "takata airbag recall honda",
     "takata airbag recall subaru",
     "takata airbag recall cars",
     "takata airbag recall vehicle list toyota",
-    "takata airbag recall vin check"
+    "takata airbag recall vin check",
+    "takata airbag recall mazda"
    ],
    "what is takata airbag recall": [
     "what is takata airbag recall",
@@ -16802,25 +16810,29 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "tarik-skubal-mets-contract": {
-  "time": "2026-11-23T16:43:20+00:00",
+  "time": "2026-11-24T16:48:39+00:00",
   "query": "tarik skubal mets contract",
   "in_suggest": true,
   "suggest": {
    "tarik skubal": [
     "tarik skubal",
-    "tarik skubal mets",
     "tarik skubal contract",
-    "tarik skubal age",
     "tarik skubal stats",
+    "tarik skubal age",
+    "tarik skubal mets",
     "tarik skubal wife",
     "tarik skubal ethnicity",
-    "tarik skubal news",
-    "tarik skubal wiki",
-    "tarik skubal nationality"
+    "tarik skubal trade",
+    "tarik skubal 450 million deal",
+    "tarik skubal wiki"
    ],
    "what is tarik skubal": [
     "what is tarik skubal ethnicity",
@@ -16828,20 +16840,24 @@
     "what is tarik skubal record with the dodgers",
     "what is tarik skubal nationality",
     "what is tarik skubal era",
+    "what is tarik skubal contract",
     "what is tarik skubal's ethnic background",
     "what is tarik skubal's walk up song",
     "what is tarik skubal's heritage",
-    "what is tarik skubal salary",
-    "what is tarik skubal projected contract"
+    "what is tarik skubal salary"
    ],
    "tarik skubal mets contract": [
     "tarik skubal mets contract",
-    "tarik skubal mets contract details"
+    "tarik skubal ny mets contract"
    ]
   },
   "history": [
    [
     "2026-11-23",
+    true
+   ],
+   [
+    "2026-11-24",
     true
    ]
   ]
