@@ -1,6 +1,6 @@
 {
  "alaska-ranked-choice-voting": {
-  "time": "2026-11-23T20:18:12+00:00",
+  "time": "2026-11-24T20:31:46+00:00",
   "query": "how does alaska ranked choice voting work",
   "in_suggest": true,
   "suggest": {
@@ -55,10 +55,6 @@
   },
   "history": [
    [
-    "2026-11-10",
-    true
-   ],
-   [
     "2026-11-11",
     true
    ],
@@ -109,11 +105,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "cyber-monday": {
-  "time": "2026-11-23T20:18:13+00:00",
+  "time": "2026-11-24T20:31:47+00:00",
   "query": "what is cyber monday",
   "in_suggest": true,
   "suggest": {
@@ -122,12 +122,12 @@
     "cyber monday 2026",
     "cyber monday deals",
     "cyber monday deals 2026",
-    "cyber monday sales",
-    "cyber monday date",
     "cyber monday vs black friday",
-    "cyber monday ps5 deals",
-    "cyber monday amazon",
-    "cyber monday tv deals"
+    "cyber monday date",
+    "cyber monday sales",
+    "cyber monday tv deals",
+    "cyber monday amazon 2026",
+    "cyber monday amazon"
    ],
    "what is cyber monday": [
     "what is cyber monday",
@@ -144,10 +144,6 @@
   },
   "history": [
    [
-    "2026-11-10",
-    true
-   ],
-   [
     "2026-11-11",
     true
    ],
@@ -198,16 +194,21 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "dane-cook-brother": {
-  "time": "2026-11-23T20:18:14+00:00",
+  "time": "2026-11-24T20:31:48+00:00",
   "query": "what happened to dane cook brother",
   "in_suggest": true,
   "suggest": {
    "darryl mccauley": [
     "darryl mccauley",
+    "darryl mccauley where is he now",
     "darryl mccauley wife",
     "darryl mccauley now",
     "darryl mccauley dane cook",
@@ -215,8 +216,7 @@
     "darryl mccauley social media",
     "darryl mccauley release date",
     "darryl mccauley facebook",
-    "darryl mccauley wiki",
-    "darryl mccauley prison sentence"
+    "darryl mccauley wiki"
    ],
    "who is darryl mccauley": [
     "what is darryl mccauley doing now",
@@ -238,22 +238,18 @@
    ],
    "dane cook brother": [
     "dane cook brother",
-    "dane cook brother wife",
     "dane cook brother documentary",
     "dane cook brother now",
     "dane cook brother theft",
     "dane cook brother money",
+    "dane cook brother and wife",
     "dane cook brother where is he now",
     "dane cook brother story",
     "dane cook brother missing",
-    "dane cook brother stole"
+    "dane cook brother darryl"
    ]
   },
   "history": [
-   [
-    "2026-11-10",
-    true
-   ],
    [
     "2026-11-11",
     true
@@ -305,11 +301,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "designated-for-assignment": {
-  "time": "2026-11-23T20:18:15+00:00",
+  "time": "2026-11-24T20:31:50+00:00",
   "query": "what does designated for assignment mean",
   "in_suggest": true,
   "suggest": {
@@ -317,8 +317,8 @@
     "designated for assignment",
     "designated for assignment mlb",
     "designated for assignment baseball meaning",
-    "designated for assignment meaning",
     "designated for assignment baseball",
+    "designated for assignment meaning",
     "designated for assignment mlb meaning",
     "designated for assignment vs optioned",
     "designated for assignment rules",
@@ -327,8 +327,8 @@
    ],
    "what is designated for assignment": [
     "what is designated for assignment",
-    "what is designated for assignment in mlb",
     "what is designated for assignment in baseball",
+    "what is designated for assignment in mlb",
     "what is designated for assignment mean in baseball",
     "what is designated for assignment mean",
     "what is designated for assignment mean in major league baseball",
@@ -363,10 +363,6 @@
   },
   "history": [
    [
-    "2026-11-10",
-    true
-   ],
-   [
     "2026-11-11",
     true
    ],
@@ -417,11 +413,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "how-mlb-mvp-is-voted": {
-  "time": "2026-11-23T20:18:17+00:00",
+  "time": "2026-11-24T20:31:51+00:00",
   "query": "how is the mlb mvp voted",
   "in_suggest": true,
   "suggest": {
@@ -458,10 +458,6 @@
   },
   "history": [
    [
-    "2026-11-10",
-    true
-   ],
-   [
     "2026-11-11",
     true
    ],
@@ -512,11 +508,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "non-tender": {
-  "time": "2026-11-23T20:18:18+00:00",
+  "time": "2026-11-24T20:31:53+00:00",
   "query": "what does non-tender mean in baseball",
   "in_suggest": true,
   "suggest": {
@@ -567,10 +567,6 @@
   },
   "history": [
    [
-    "2026-11-10",
-    true
-   ],
-   [
     "2026-11-11",
     true
    ],
@@ -621,11 +617,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "qualifying-offer": {
-  "time": "2026-11-23T20:18:20+00:00",
+  "time": "2026-11-24T20:31:54+00:00",
   "query": "what is a qualifying offer in mlb",
   "in_suggest": true,
   "suggest": {
@@ -635,11 +635,11 @@
     "qualifying offer",
     "qualifying offer deadline nba",
     "qualifying offer nba meaning",
-    "qualifying offer baseball",
     "qualifying offer mlb 2027",
-    "qualifying offer deadline mlb",
-    "qualifying offer nhl",
-    "qualifying offer method"
+    "qualifying offer baseball",
+    "qualifying offer jalen duren",
+    "qualifying offer deadline",
+    "qualifying offer deadline mlb"
    ],
    "what is qualifying offer": [
     "what is qualifying offer nba",
@@ -675,10 +675,6 @@
   },
   "history": [
    [
-    "2026-11-10",
-    true
-   ],
-   [
     "2026-11-11",
     true
    ],
@@ -729,11 +725,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "rule-5-draft": {
-  "time": "2026-11-23T20:18:21+00:00",
+  "time": "2026-11-24T20:31:55+00:00",
   "query": "what is the rule 5 draft",
   "in_suggest": true,
   "suggest": {
@@ -776,10 +776,6 @@
   },
   "history": [
    [
-    "2026-11-10",
-    true
-   ],
-   [
     "2026-11-11",
     true
    ],
@@ -830,23 +826,29 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "scott-colom": {
-  "time": "2026-11-23T20:18:21+00:00",
+  "time": "2026-11-24T20:31:56+00:00",
   "query": "who is scott colom",
   "in_suggest": true,
   "suggest": {
    "scott colom": [
     "scott colom",
-    "scott colom protein ad",
     "scott colom ad",
-    "scott colom commercial",
+    "scott colom protein ad",
+    "scott colom polls",
     "scott colomby",
-    "scott colom polling",
+    "scott colom commercial",
     "scott colom wife",
-    "scott colomby movies"
+    "scott colom senate",
+    "scott colomby movies",
+    "scott colomby wife"
    ],
    "who is scott colom": [
     "who is scott colom",
@@ -857,10 +859,6 @@
   },
   "history": [
    [
-    "2026-11-10",
-    true
-   ],
-   [
     "2026-11-11",
     true
    ],
@@ -911,11 +909,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "telerally": {
-  "time": "2026-11-23T20:18:22+00:00",
+  "time": "2026-11-24T20:31:57+00:00",
   "query": "what is a telerally",
   "in_suggest": true,
   "suggest": {
@@ -926,8 +928,8 @@
     "tele rally meaning",
     "tele rally trump today",
     "tele rally trump live",
-    "literally meaning",
     "trump tele rally",
+    "literally definition",
     "tele rally live",
     "virginia telerally"
    ],
@@ -944,10 +946,6 @@
   },
   "history": [
    [
-    "2026-11-10",
-    true
-   ],
-   [
     "2026-11-11",
     true
    ],
@@ -998,11 +996,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "two-dan-sullivans-alaska": {
-  "time": "2026-11-23T20:18:24+00:00",
+  "time": "2026-11-24T20:31:59+00:00",
   "query": "why are there two dan sullivans on the alaska ballot",
   "in_suggest": true,
   "suggest": {
@@ -1038,10 +1040,6 @@
   },
   "history": [
    [
-    "2026-11-10",
-    false
-   ],
-   [
     "2026-11-11",
     false
    ],
@@ -1092,11 +1090,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "under-siege-netflix-true-story": {
-  "time": "2026-11-23T20:18:25+00:00",
+  "time": "2026-11-24T20:32:00+00:00",
   "query": "is under siege on netflix a true story",
   "in_suggest": true,
   "suggest": {
@@ -1105,9 +1107,9 @@
     "under siege cast",
     "under siege 2",
     "under siege 2 cast",
-    "under siege netflix",
     "under siege meaning",
     "under siege movie",
+    "under siege netflix",
     "under siege cake scene",
     "under siege streaming",
     "under siege 3"
@@ -1131,10 +1133,6 @@
   },
   "history": [
    [
-    "2026-11-10",
-    true
-   ],
-   [
     "2026-11-11",
     true
    ],
@@ -1184,6 +1182,10 @@
    ],
    [
     "2026-11-23",
+    true
+   ],
+   [
+    "2026-11-24",
     true
    ]
   ]
