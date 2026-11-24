@@ -202,7 +202,7 @@
   },
   {
    "url": "/x/apple-outage-november-17-2026",
-   "at": "2026-11-24T17:04:59+00:00",
+   "at": "2026-11-24T23:18:43+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1006,7 +1006,7 @@
   },
   {
    "url": "/x/jimmy-gomez-resigns-ethics-report",
-   "at": "2026-11-24T17:03:10+00:00",
+   "at": "2026-11-24T23:16:54+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1570,15 +1570,8 @@
   },
   {
    "url": "/x/teruaki-sato-cubs-contract",
-   "at": "2026-11-24T17:03:17+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
-   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-   "indexingState": "INDEXING_STATE_UNSPECIFIED",
-   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
-   "lastCrawlTime": null,
-   "googleCanonical": null,
-   "userCanonical": null
+   "at": "2026-11-24T23:17:00+00:00",
+   "error": "HTTP 500 {\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"status\": \"INTERNAL\"\n  }\n}\n"
   },
   {
    "url": "/x/teruaki-sato",
@@ -1594,15 +1587,8 @@
   },
   {
    "url": "/x/thanksgiving-storm-travel-forecast-2026",
-   "at": "2026-11-24T17:03:23+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
-   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-   "indexingState": "INDEXING_STATE_UNSPECIFIED",
-   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
-   "lastCrawlTime": null,
-   "googleCanonical": null,
-   "userCanonical": null
+   "at": "2026-11-24T23:17:06+00:00",
+   "error": "HTTP 500 {\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"status\": \"INTERNAL\"\n  }\n}\n"
   },
   {
    "url": "/x/the-altruists-true-story",
@@ -2386,7 +2372,7 @@
   },
   {
    "url": "/x/why-does-my-phone-battery-go-down-while-charging",
-   "at": "2026-11-24T17:03:36+00:00",
+   "at": "2026-11-24T23:17:19+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2398,7 +2384,7 @@
   },
   {
    "url": "/x/why-does-my-phone-screen-go-black-during-calls",
-   "at": "2026-11-24T17:03:42+00:00",
+   "at": "2026-11-24T23:17:26+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2410,7 +2396,7 @@
   },
   {
    "url": "/x/why-does-my-phone-screen-keep-going-black",
-   "at": "2026-11-24T17:03:49+00:00",
+   "at": "2026-11-24T23:17:32+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2434,19 +2420,12 @@
   },
   {
    "url": "/x/why-does-my-washing-machine-smell-like-rotten-eggs",
-   "at": "2026-11-24T17:03:55+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "Crawled - currently not indexed",
-   "robotsTxtState": "ALLOWED",
-   "indexingState": "INDEXING_ALLOWED",
-   "pageFetchState": "SUCCESSFUL",
-   "lastCrawlTime": "2026-11-14T17:46:36Z",
-   "googleCanonical": "https://trendrundown.com/x/why-does-my-washing-machine-smell-like-rotten-eggs",
-   "userCanonical": "https://trendrundown.com/x/why-does-my-washing-machine-smell-like-rotten-eggs"
+   "at": "2026-11-24T23:17:39+00:00",
+   "error": "HTTP 500 {\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"status\": \"INTERNAL\"\n  }\n}\n"
   },
   {
    "url": "/x/why-does-social-security-come-out-of-my-paycheck",
-   "at": "2026-11-24T17:04:01+00:00",
+   "at": "2026-11-24T23:17:45+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2458,19 +2437,12 @@
   },
   {
    "url": "/x/why-does-social-security-get-taxed",
-   "at": "2026-11-24T17:04:08+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
-   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
-   "indexingState": "INDEXING_STATE_UNSPECIFIED",
-   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
-   "lastCrawlTime": null,
-   "googleCanonical": null,
-   "userCanonical": null
+   "at": "2026-11-24T23:17:51+00:00",
+   "error": "HTTP 500 {\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"status\": \"INTERNAL\"\n  }\n}\n"
   },
   {
    "url": "/x/why-is-bitcoin-down-november-2026",
-   "at": "2026-11-24T17:04:14+00:00",
+   "at": "2026-11-24T23:17:58+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2482,7 +2454,7 @@
   },
   {
    "url": "/x/why-is-everyone-freaking-out-about-november-17",
-   "at": "2026-11-24T17:04:20+00:00",
+   "at": "2026-11-24T23:18:04+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2506,15 +2478,15 @@
   },
   {
    "url": "/x/why-is-my-check-engine-light-on",
-   "at": "2026-11-24T17:04:27+00:00",
+   "at": "2026-11-24T23:18:11+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
-   "indexingState": "INDEXING_ALLOWED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "SUCCESSFUL",
    "lastCrawlTime": "2026-11-12T15:44:23Z",
-   "googleCanonical": "https://trendrundown.com/x/why-is-my-check-engine-light-on",
-   "userCanonical": "https://trendrundown.com/x/why-is-my-check-engine-light-on"
+   "googleCanonical": null,
+   "userCanonical": null
   },
   {
    "url": "/x/why-is-my-phone-charging-slow",
@@ -2530,7 +2502,7 @@
   },
   {
    "url": "/x/why-is-my-refrigerator-leaking-water-inside",
-   "at": "2026-11-24T17:03:30+00:00",
+   "at": "2026-11-24T23:17:13+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2554,15 +2526,8 @@
   },
   {
    "url": "/x/why-is-my-washing-machine-leaking-from-the-bottom",
-   "at": "2026-11-24T17:04:33+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "Crawled - currently not indexed",
-   "robotsTxtState": "ALLOWED",
-   "indexingState": "INDEXING_ALLOWED",
-   "pageFetchState": "SUCCESSFUL",
-   "lastCrawlTime": "2026-11-12T15:44:23Z",
-   "googleCanonical": "https://trendrundown.com/x/why-is-my-washing-machine-leaking-from-the-bottom",
-   "userCanonical": "https://trendrundown.com/x/why-is-my-washing-machine-leaking-from-the-bottom"
+   "at": "2026-11-24T23:18:17+00:00",
+   "error": "HTTP 500 {\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"status\": \"INTERNAL\"\n  }\n}\n"
   },
   {
    "url": "/x/why-is-there-a-d-in-fridge",
@@ -2578,7 +2543,7 @@
   },
   {
    "url": "/x/why-is-wifi-not-working-on-my-phone",
-   "at": "2026-11-24T17:04:40+00:00",
+   "at": "2026-11-24T23:18:24+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2590,15 +2555,15 @@
   },
   {
    "url": "/x/why-were-all-flights-grounded",
-   "at": "2026-11-24T17:04:46+00:00",
+   "at": "2026-11-24T23:18:30+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
-   "indexingState": "INDEXING_ALLOWED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "SUCCESSFUL",
    "lastCrawlTime": "2026-11-14T17:44:35Z",
-   "googleCanonical": "https://trendrundown.com/x/why-were-all-flights-grounded",
-   "userCanonical": "https://trendrundown.com/x/why-were-all-flights-grounded"
+   "googleCanonical": null,
+   "userCanonical": null
   },
   {
    "url": "/x/why-wont-my-washing-machine-drain",
@@ -2626,15 +2591,8 @@
   },
   {
    "url": "/x/wta-tennis",
-   "at": "2026-11-24T17:04:52+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "Crawled - currently not indexed",
-   "robotsTxtState": "ALLOWED",
-   "indexingState": "INDEXING_ALLOWED",
-   "pageFetchState": "SUCCESSFUL",
-   "lastCrawlTime": "2026-11-14T17:48:35Z",
-   "googleCanonical": "https://trendrundown.com/x/wta-tennis",
-   "userCanonical": "https://trendrundown.com/x/wta-tennis"
+   "at": "2026-11-24T23:18:36+00:00",
+   "error": "HTTP 500 {\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"status\": \"INTERNAL\"\n  }\n}\n"
   }
  ],
  "sm_at": "2026-11-24T22:46:49+00:00",
@@ -2646,8 +2604,9 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 141,
-  "Crawled - currently not indexed": 65,
-  "Discovered - currently not indexed": 9
+  "URL is unknown to Google": 138,
+  "Crawled - currently not indexed": 62,
+  "Discovered - currently not indexed": 9,
+  "error": 6
  }
 }
