@@ -10272,21 +10272,21 @@
   ]
  },
  "dan-hicks-death": {
-  "time": "2026-11-23T18:32:12+00:00",
+  "time": "2026-11-24T18:32:13+00:00",
   "query": "dan hicks death",
   "in_suggest": true,
   "suggest": {
    "dan hicks": [
     "dan hicks",
     "dan hicks death",
+    "dan hicks (sportscaster)",
+    "dan hicks golf",
     "dan hicks funeral",
     "dan hicks wife",
-    "dan hicks (sportscaster)",
-    "dan hicks cause of death update",
-    "dan hicks cause of death reddit",
-    "dan hicks obituary",
-    "dan hicks nbc",
-    "dan hicks daughter tribute"
+    "dan hicks death cause",
+    "dan hicks salary",
+    "dan hicks net worth",
+    "dan hicks songs"
    ],
    "what is dan hicks": [
     "what is dan hicks net worth",
@@ -10357,25 +10357,29 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "did-scott-colom-win": {
-  "time": "2026-11-23T18:32:15+00:00",
+  "time": "2026-11-24T18:32:16+00:00",
   "query": "did scott colom win",
   "in_suggest": true,
   "suggest": {
    "2026 mississippi senate election": [
     "2026 mississippi senate election",
     "2026 mississippi senate election results",
+    "2026 ms senate election results",
     "2026 mississippi senate race",
     "2026 mississippi senate race results",
     "2026 mississippi senate race polls",
     "2026 mississippi senate race reddit",
     "2026 mississippi senate race kalshi",
-    "2026 mississippi senate race polymarket",
-    "2026 united states mississippi senate elections",
-    "2026 mississippi us senate race"
+    "2026 mississippi senate race wiki",
+    "2026 mississippi senate race polymarket"
    ],
    "what is 2026 mississippi senate election": [
     "2026 mississippi senate election",
@@ -10384,8 +10388,7 @@
    ],
    "did scott colom win": [],
    "scott colom win": [
-    "will scott colom win",
-    "will scott colom win mississippi"
+    "will scott colom win"
    ]
   },
   "history": [
@@ -10435,6 +10438,10 @@
    ],
    [
     "2026-11-23",
+    true
+   ],
+   [
+    "2026-11-24",
     true
    ]
   ]
@@ -11776,7 +11783,7 @@
   ]
  },
  "anthony-clark-death": {
-  "time": "2026-11-23T18:32:11+00:00",
+  "time": "2026-11-24T18:32:12+00:00",
   "query": "anthony clark death",
   "in_suggest": true,
   "suggest": {
@@ -11784,13 +11791,13 @@
     "anthony clark",
     "anthony clark cause of death",
     "anthony clark last photo",
-    "anthony clark comedian",
-    "anthony clark net worth",
-    "anthony clark partner",
-    "anthony clark death",
+    "anthony clark yes dear",
+    "anthony clark barbershop",
     "anthony clark wife",
-    "anthony clark children",
-    "anthony clark actor cause of death"
+    "anthony clark age",
+    "anthony clark death",
+    "anthony clark powerlifter",
+    "anthony clark what happened"
    ],
    "what is anthony clark": [
     "what is anthony clark doing now",
@@ -11806,10 +11813,10 @@
    ],
    "anthony clark death": [
     "anthony clark death",
-    "anthony clark death cause",
     "anthony clark died",
     "anthony clark hacker death",
     "anthony clark fifa death",
+    "anthony clark cause of death",
     "anthony clark net worth",
     "william clark death cause"
    ]
@@ -11858,11 +11865,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "hegseth-tomb-guard-medal": {
-  "time": "2026-11-23T18:32:16+00:00",
+  "time": "2026-11-24T18:32:18+00:00",
   "query": "hegseth tomb guard medal",
   "in_suggest": false,
   "suggest": {
@@ -11888,7 +11899,7 @@
     "what is the tomb of the unknown soldier canada",
     "what branch is tomb of the unknown soldier",
     "what is the tomb of the unknown soldier athens",
-    "what is the tomb of the unknown soldier westminster abbey"
+    "what is the tomb of the unknown soldier guarded"
    ],
    "hegseth tomb guard medal": []
   },
@@ -11936,11 +11947,15 @@
    [
     "2026-11-23",
     false
+   ],
+   [
+    "2026-11-24",
+    false
    ]
   ]
  },
  "iran-bahrain-radar-strike": {
-  "time": "2026-11-23T18:32:17+00:00",
+  "time": "2026-11-24T18:32:19+00:00",
   "query": "iran bahrain radar",
   "in_suggest": true,
   "suggest": {
@@ -12020,37 +12035,41 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "jensen-huang-resigns-nvidia": {
-  "time": "2026-11-23T18:32:19+00:00",
+  "time": "2026-11-24T18:32:20+00:00",
   "query": "why did jensen huang resign",
   "in_suggest": true,
   "suggest": {
    "jensen huang": [
     "jensen huang",
     "jensen huang reinstated as ceo",
-    "jensen huang news",
     "jensen huang wife",
-    "jensen huang back",
-    "jensen huang return to nvidia",
-    "jensen huang ceo",
     "jensen huang net worth",
-    "jensen huang back to nvidia",
-    "jensen huang return"
+    "jensen huang news",
+    "jensen huang reinstated",
+    "jensen huang meme",
+    "jensen huang linkedin",
+    "jensen huang back",
+    "jensen huang age"
    ],
    "what is jensen huang": [
-    "what is jensen huang doing now",
-    "what is jensen huang accused of",
-    "what is jensen huang",
-    "what is jensen huang up to",
     "what is jensen huang net worth",
+    "what is jensen huang doing now",
+    "what is jensen huang's wife doing",
+    "what is jensen huang accused of",
     "what is jensen huang's ethnicity",
-    "what is jensen huang nationality",
-    "what is jensen huang's background",
-    "what is jensen huang salary",
-    "what is jensen huang's iq"
+    "what is jensen huang",
+    "what is jensen huang's wife doing now",
+    "what is jensen huang's wife saying",
+    "what is jensen huang known for",
+    "what is jensen huang nationality"
    ],
    "why did jensen huang resign": [
     "why did jensen huang resign",
@@ -12061,6 +12080,8 @@
    ],
    "jensen huang resign": [
     "jensen huang resignation",
+    "jensen huang resignation date",
+    "jensen huang resignation and comeback",
     "jensen huang retire",
     "jensen huang quit devops now",
     "jensen huang salary",
@@ -12112,6 +12133,10 @@
    ],
    [
     "2026-11-23",
+    true
+   ],
+   [
+    "2026-11-24",
     true
    ]
   ]
@@ -12734,21 +12759,21 @@
   ]
  },
  "did-avril-lavigne-have-a-baby": {
-  "time": "2026-11-23T18:32:13+00:00",
+  "time": "2026-11-24T18:32:15+00:00",
   "query": "did avril lavigne have a baby",
   "in_suggest": true,
   "suggest": {
    "avril lavigne": [
     "avril lavigne",
     "avril lavigne songs",
-    "avril lavigne husband",
     "avril lavigne now",
     "avril lavigne complicated",
-    "avril lavigne baby",
-    "avril lavigne age",
     "avril lavigne 2026",
+    "avril lavigne husband",
+    "avril lavigne age",
     "avril lavigne sk8er boi",
-    "avril lavigne baby daddy"
+    "avril lavigne 2000",
+    "avril lavigne baby"
    ],
    "what is avril lavigne": [
     "what is avril lavigne doing now",
@@ -12827,18 +12852,21 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "new-orleans-cruise-ship-collision": {
-  "time": "2026-11-23T18:32:21+00:00",
+  "time": "2026-11-24T18:32:22+00:00",
   "query": "new orleans cruise ship collision",
-  "in_suggest": true,
+  "in_suggest": false,
   "suggest": {
    "american heritage riverboat collision": [],
    "what is american heritage riverboat collision": [],
    "new orleans cruise ship collision": [
-    "new orleans cruise ship collision",
     "new orleans cruise ship crash",
     "cruise ships that leave from new orleans"
    ]
@@ -12883,6 +12911,10 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    false
    ]
   ]
  },
@@ -13337,7 +13369,7 @@
   ]
  },
  "miami-airport-plane-collision-copa-ups": {
-  "time": "2026-11-23T18:32:20+00:00",
+  "time": "2026-11-24T18:32:21+00:00",
   "query": "miami airport plane collision",
   "in_suggest": false,
   "suggest": {
@@ -13345,13 +13377,13 @@
     "miami international airport plane crash",
     "miami international airport plane crash today",
     "miami international airport plane crash emergency resources",
-    "miami international airport plane accident",
     "miami international airport amazon plane crash",
     "miami international airport cargo plane crash",
     "what airlines fly to miami international airport",
     "how many flights per day in miami international airport",
     "who flys to miami international airport",
-    "how many runways does miami international airport have"
+    "how many runways does miami international airport have",
+    "does jetblue fly to miami international airport"
    ],
    "what is miami international airport plane collision": [],
    "miami airport plane collision": [
@@ -13402,6 +13434,10 @@
    ],
    [
     "2026-11-23",
+    false
+   ],
+   [
+    "2026-11-24",
     false
    ]
   ]
