@@ -9748,7 +9748,7 @@
   ]
  },
  "exhibition-game": {
-  "time": "2026-11-23T17:47:01+00:00",
+  "time": "2026-11-24T17:47:02+00:00",
   "query": "what is an exhibition game in basketball",
   "in_suggest": true,
   "suggest": {
@@ -9772,8 +9772,8 @@
     "what is exhibition game in retro bowl",
     "what is exhibition game baseball",
     "what is preseason game",
-    "what is preseason game in nfl",
     "what is preseason game in nba",
+    "what is preseason game in nfl",
     "what is exhibition match"
    ],
    "what is an exhibition game in basketball": [
@@ -9781,8 +9781,8 @@
     "what is an exhibition game in college basketball",
     "what is an exhibition game in ncaa basketball",
     "what is a preseason game in basketball",
+    "what does an exhibition game mean in basketball",
     "what is preseason game in nba",
-    "what does exhibition game mean in basketball",
     "what is an exhibition game in baseball"
    ],
    "exhibition game basketball": [
@@ -9795,7 +9795,7 @@
     "basketball exhibition match",
     "men's basketball exhibition",
     "exhibition basketball games tonight",
-    "exhibition game college basketball"
+    "exhibition basketball games college"
    ]
   },
   "history": [
@@ -9845,6 +9845,10 @@
    ],
    [
     "2026-11-23",
+    true
+   ],
+   [
+    "2026-11-24",
     true
    ]
   ]
@@ -14277,7 +14281,7 @@
   ]
  },
  "bay-area-waterspouts-tornado-warning": {
-  "time": "2026-11-23T17:46:56+00:00",
+  "time": "2026-11-24T17:46:58+00:00",
   "query": "bay area waterspouts tornado warning",
   "in_suggest": false,
   "suggest": {
@@ -14313,11 +14317,15 @@
    [
     "2026-11-23",
     false
+   ],
+   [
+    "2026-11-24",
+    false
    ]
   ]
  },
  "california-sues-openai": {
-  "time": "2026-11-23T17:46:58+00:00",
+  "time": "2026-11-24T17:47:00+00:00",
   "query": "california sues openai",
   "in_suggest": false,
   "suggest": {
@@ -14352,6 +14360,10 @@
    ],
    [
     "2026-11-23",
+    false
+   ],
+   [
+    "2026-11-24",
     false
    ]
   ]
@@ -14761,7 +14773,7 @@
   ]
  },
  "apple-outage-november-17-2026": {
-  "time": "2026-11-23T17:46:55+00:00",
+  "time": "2026-11-24T17:46:57+00:00",
   "query": "apple outage",
   "in_suggest": true,
   "suggest": {
@@ -14780,9 +14792,9 @@
    "what is apple services outage": [],
    "apple outage": [
     "apple outage",
-    "apple outage today",
     "apple outage status",
     "apple outage map",
+    "apple outages today",
     "apple outage page",
     "apple outage right now",
     "apple outage yesterday",
@@ -14815,11 +14827,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "florida-flooding-november-18-2026": {
-  "time": "2026-11-23T17:47:02+00:00",
+  "time": "2026-11-24T17:47:03+00:00",
   "query": "florida flooding",
   "in_suggest": true,
   "suggest": {
@@ -14833,8 +14849,8 @@
     "what part of florida is safe from flooding"
    ],
    "what is florida east coast flooding": [
-    "florida east coast flooding today",
     "florida east coast flooding",
+    "florida east coast flooding today",
     "what parts of florida are flooded",
     "is all of florida a flood zone",
     "is orlando a flood zone",
@@ -14844,13 +14860,13 @@
     "florida flooding",
     "florida flooding map",
     "florida flooding today",
+    "florida flooding weather",
     "florida flooding videos",
     "florida flooding orlando",
+    "florida flooding 2026",
+    "florida flooding this week",
     "florida flooding news",
-    "florida flooding miami",
-    "florida flooding areas",
-    "florida flooding update",
-    "florida flooding reddit"
+    "florida flooding last week"
    ]
   },
   "history": [
@@ -14876,6 +14892,10 @@
    ],
    [
     "2026-11-23",
+    true
+   ],
+   [
+    "2026-11-24",
     true
    ]
   ]
@@ -15273,25 +15293,25 @@
   ]
  },
  "cma-awards-2026-winners": {
-  "time": "2026-11-23T17:46:59+00:00",
+  "time": "2026-11-24T17:47:01+00:00",
   "query": "cma awards 2026 winners",
   "in_suggest": true,
   "suggest": {
    "2026 cma awards": [
     "2026 cma awards",
-    "2026 cma awards full show",
     "2026 cma awards date",
-    "2026 cma awards red carpet",
-    "2026 cma awards winners",
-    "2026 cma awards nominees",
     "2026 cma awards tickets",
+    "2026 cma awards nominees",
     "2026 cma awards performers",
     "2026 cma awards show",
-    "2026 cma awards host"
+    "2026 cma awards host",
+    "2026 cma awards winners",
+    "2026 cma awards lineup",
+    "2026 cma awards wiki"
    ],
    "what is 2026 cma awards": [
-    "what is the 2026 cma awards",
     "what channel is 2026 cma awards on",
+    "what is the 2026 cma awards",
     "what day is the 2026 cma awards",
     "what channel is the 2026 cma awards on tonight",
     "what date is the 2026 cma awards",
@@ -15306,8 +15326,8 @@
     "country music awards 2026 results",
     "cma touring awards 2026 winners",
     "cma ontario awards 2026 winners",
-    "cma touring awards 2026 winners list",
-    "cma awards 2026 nominees winners"
+    "cma awards 2026 nominees winners",
+    "cma touring awards 2026 winners list"
    ]
   },
   "history": [
@@ -15329,6 +15349,10 @@
    ],
    [
     "2026-11-23",
+    true
+   ],
+   [
+    "2026-11-24",
     true
    ]
   ]
@@ -15733,7 +15757,7 @@
   ]
  },
  "california-earthquake-pinnacles-november-2026": {
-  "time": "2026-11-23T17:46:57+00:00",
+  "time": "2026-11-24T17:46:59+00:00",
   "query": "earthquake california",
   "in_suggest": true,
   "suggest": {
@@ -15750,13 +15774,13 @@
     "earthquake california",
     "earthquake california today",
     "earthquake california today just now",
-    "earthquake california today san francisco",
-    "earthquake california today 2024",
+    "earthquake california now",
+    "earthquake california just now live",
+    "earthquake california bay area",
     "earthquake california yesterday",
-    "earthquake california today just now live",
-    "earthquake california just now",
-    "earthquake california nov 22",
-    "earthquake california now"
+    "earthquake california prediction",
+    "earthquake california map",
+    "earthquake california this morning"
    ]
   },
   "history": [
@@ -15774,6 +15798,10 @@
    ],
    [
     "2026-11-23",
+    true
+   ],
+   [
+    "2026-11-24",
     true
    ]
   ]
