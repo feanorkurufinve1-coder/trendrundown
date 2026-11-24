@@ -16406,7 +16406,7 @@
   ]
  },
  "delta-flights-delays-atlanta-november-22-2026": {
-  "time": "2026-11-23T17:16:44+00:00",
+  "time": "2026-11-24T17:17:42+00:00",
   "query": "delta flights delays",
   "in_suggest": true,
   "suggest": {
@@ -16430,14 +16430,14 @@
    "delta flights delays": [
     "delta flights delays",
     "delta flights delays today",
-    "delta flight delays boston logan",
     "delta flights delays atlanta",
     "delta flight delays and cancellations today",
     "delta flight delays compensation",
     "delta flight delays atlanta today",
     "delta flight delays and cancellations",
     "delta flight delays jfk",
-    "delta flight delays boston"
+    "delta flight delays boston",
+    "delta flight delays detroit"
    ]
   },
   "history": [
@@ -16448,11 +16448,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "florida-tornado-warnings-kings-point-delray-beach": {
-  "time": "2026-11-23T17:16:45+00:00",
+  "time": "2026-11-24T17:17:43+00:00",
   "query": "florida tornado warnings",
   "in_suggest": true,
   "suggest": {
@@ -16460,8 +16464,8 @@
    "what is kings point tornado, palm beach county": [],
    "florida tornado warnings": [
     "florida tornado warnings",
-    "florida tornado warnings today map",
     "florida tornado warnings today",
+    "florida tornado warnings today map",
     "florida weather warnings",
     "florida weather warnings today",
     "florida storm warnings",
@@ -16479,11 +16483,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "tom-jackson-espn-dies": {
-  "time": "2026-11-23T17:16:47+00:00",
+  "time": "2026-11-24T17:17:44+00:00",
   "query": "tom jackson espn",
   "in_suggest": true,
   "suggest": {
@@ -16491,17 +16499,17 @@
     "tom jackson",
     "tom jackson cause of death",
     "tom jackson nfl",
-    "tom jackson espn cause of death",
     "tom jackson wife",
     "tom jackson espn",
-    "tom jackson broncos",
+    "tom jackson espn cause of death",
     "tom jackson nfl cause of death",
-    "tom jackson espn died",
-    "tom jackson espn wife"
+    "tom jackson daughters",
+    "tom jackson broncos",
+    "tom jackson wife jennifer picture"
    ],
    "what is tom jackson": [
-    "what is tom jackson doing now",
     "what is tom jackson's net worth",
+    "what is tom jackson doing now",
     "what is tom jackson from espn doing now",
     "what is tom jackson's wife's name",
     "what is tom jackson's ethnicity",
@@ -16513,15 +16521,15 @@
    ],
    "tom jackson espn": [
     "tom jackson espn",
-    "tom jackson espn died",
     "tom jackson espn wife",
     "tom jackson espn death",
     "tom jackson espn net worth",
-    "tom jackson espn wikipedia",
-    "tom jackson espn dead",
-    "tom jackson espn passed away",
-    "tom jackson espn tribute",
-    "tom jackson espn family"
+    "tom jackson espn highlights",
+    "tom jackson espn family",
+    "tom jackson espn instagram",
+    "tom jackson espn analyst",
+    "tom jackson espn now",
+    "tom jackson espn today"
    ]
   },
   "history": [
@@ -16531,6 +16539,10 @@
    ],
    [
     "2026-11-23",
+    true
+   ],
+   [
+    "2026-11-24",
     true
    ]
   ]
