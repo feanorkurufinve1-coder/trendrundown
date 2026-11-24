@@ -14691,33 +14691,33 @@
   ]
  },
  "is-blade-runner-2099-a-sequel": {
-  "time": "2026-11-23T14:03:15+00:00",
+  "time": "2026-11-24T14:16:56+00:00",
   "query": "is blade runner 2099 a sequel",
   "in_suggest": true,
   "suggest": {
    "blade runner 2099": [
     "blade runner 2099",
     "blade runner 2099 review",
+    "blade runner 2099 rotten tomatoes",
     "blade runner 2099 release date",
     "blade runner 2099 cast",
     "blade runner 2099 trailer",
-    "blade runner 2099 director",
-    "blade runner 2099 rotten tomatoes",
-    "blade runner 2099 review embargo",
-    "blade runner 2099 r=h www.reddit.com",
-    "blade runner 2099 imdb"
+    "blade runner 2099 metacritic",
+    "blade runner 2099 imdb",
+    "blade runner 2099 streaming",
+    "blade runner 2099 reddit"
    ],
    "what is blade runner 2099": [
     "what is blade runner 2099 about",
     "what is blade runner 2099 going to be about",
+    "what is blade runner 2099 streaming on",
     "what is blade runner 2099 based on",
     "what genre is blade runner 2099",
+    "what channel is blade runner 2099 on",
+    "what streaming service is blade runner 2099 on",
     "what is the plot of blade runner 2099",
     "what happened to blade runner 2099",
-    "is blade runner 2099 a sequel",
-    "is blade runner 2099 out",
-    "is blade runner 2099 a movie",
-    "is blade runner 2099 real"
+    "is blade runner 2099 a sequel"
    ],
    "is blade runner 2099 a sequel": [
     "is blade runner 2099 a sequel",
@@ -14725,6 +14725,7 @@
     "is blade runner 2099 a series",
     "is blade runner 2099 a series or movie",
     "is blade runner 2099 a limited series",
+    "is blade runner 2099 a tv series",
     "is blade runner 2049 a sequel or remake",
     "is blade runner 2049 a sequel",
     "blade runner 2049 is a sequel to which version",
@@ -14735,11 +14736,11 @@
     "blade runner 2099 series",
     "blade runner 2099 series release date",
     "blade runner 2099 series cast",
-    "blade runner 2099 series trailer",
     "2 blade runner 2099",
+    "blade runner 2099 series trailer",
     "blade runner 2099 series release",
     "blade runner 2099 series or movie",
-    "blade runner 2099 limited series",
+    "blade runner 2099 amazon series",
     "blade runner 2099 tv series"
    ]
   },
@@ -14763,21 +14764,24 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "what-is-the-talk-to-me-doja-trend": {
-  "time": "2026-11-23T14:03:21+00:00",
+  "time": "2026-11-24T14:17:03+00:00",
   "query": "what is the talk to me doja trend",
   "in_suggest": false,
   "suggest": {
    "talk to me doja": [
     "talk to me doja",
     "talk to me doja gif",
-    "talk to me doja meme",
     "talk to me doja song",
     "talk to me doja cat",
-    "talk dirty to me lyrics doja cat"
+    "talk dirty to me lyrics doja"
    ],
    "what is talk to me doja": [],
    "what is the talk to me doja trend": [],
@@ -14803,11 +14807,15 @@
    [
     "2026-11-23",
     false
+   ],
+   [
+    "2026-11-24",
+    false
    ]
   ]
  },
  "what-is-the-word-of-the-year-2026": {
-  "time": "2026-11-23T14:03:23+00:00",
+  "time": "2026-11-24T14:17:04+00:00",
   "query": "what is the word of the year 2026",
   "in_suggest": true,
   "suggest": {
@@ -14828,7 +14836,7 @@
     "what is the word of the year 2026 oxford dictionary",
     "what is my word of the year 2026",
     "what is your word of the year 2026",
-    "what is the word of the year 2026 oxford",
+    "what is oxford word of the year 2026",
     "what is my word of the year 2026 quiz",
     "what is the new word of the year 2026",
     "what is the dictionary word of the year 2026",
@@ -14880,25 +14888,29 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "why-are-people-saying-gta-6-is-bad": {
-  "time": "2026-11-23T14:03:24+00:00",
+  "time": "2026-11-24T14:17:06+00:00",
   "query": "why are people saying gta 6 is bad",
   "in_suggest": true,
   "suggest": {
    "gta 6 backlash": [
     "gta 6 backlash",
-    "gta 6 backlash r=h www.reddit.com",
     "gta 6 backlash reddit",
-    "gta 6 backlash response",
     "gta 6 backlash disc",
+    "gta 6 backlash response",
     "gta 6 delay backlash",
     "gta 6 price backlash",
     "gta 6 physical backlash",
     "rockstar gta 6 backlash",
-    "gta 6 netflix backlash"
+    "gta 6 netflix backlash",
+    "gta 6 paywall backlash"
    ],
    "what is gta 6 backlash": [
     "what is the gta 6 backlash",
@@ -14941,11 +14953,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "why-wont-my-washing-machine-drain": {
-  "time": "2026-11-23T14:03:33+00:00",
+  "time": "2026-11-24T14:17:15+00:00",
   "query": "why won't my washing machine drain",
   "in_suggest": true,
   "suggest": {
@@ -15017,6 +15033,10 @@
    ],
    [
     "2026-11-23",
+    true
+   ],
+   [
+    "2026-11-24",
     true
    ]
   ]
@@ -15173,7 +15193,7 @@
   ]
  },
  "is-trinity-netflix-based-on-a-true-story": {
-  "time": "2026-11-23T14:03:18+00:00",
+  "time": "2026-11-24T14:16:59+00:00",
   "query": "is trinity on netflix based on a true story",
   "in_suggest": false,
   "suggest": {
@@ -15181,9 +15201,9 @@
     "trinity rodman",
     "trinity health",
     "trinity",
+    "trinity health mychart",
     "trinity college",
     "trinity meds",
-    "trinity rodman injury",
     "trinity university",
     "trinity high school",
     "trinity love island",
@@ -15220,11 +15240,15 @@
    [
     "2026-11-23",
     false
+   ],
+   [
+    "2026-11-24",
+    false
    ]
   ]
  },
  "what-does-text-message-not-encrypted-mean": {
-  "time": "2026-11-23T14:03:20+00:00",
+  "time": "2026-11-24T14:17:01+00:00",
   "query": "what does text message not encrypted mean",
   "in_suggest": true,
   "suggest": {
@@ -15232,7 +15256,7 @@
     "not encrypted text messages",
     "not encrypted text messages iphone",
     "not encrypted text messages meaning",
-    "non encrypted text messages",
+    "encrypted and unencrypted text messages",
     "not receiving encrypted text messages",
     "non encrypted text message iphone",
     "not encrypted sms text",
@@ -15242,7 +15266,6 @@
    ],
    "what is \"not encrypted\" text messages": [
     "what is not encrypted text message",
-    "text message not encrypted mean",
     "what is non encrypted text message",
     "what is encrypted vs not encrypted text message",
     "what does unencrypted mean on text messages",
@@ -15250,19 +15273,20 @@
     "what does not encrypted text message",
     "what does encrypted vs not encrypted mean on text messages",
     "what does rcs not encrypted text message mean",
-    "what does sms not encrypted text message mean"
+    "what does sms not encrypted text message mean",
+    "not encrypted text messages iphone"
    ],
    "what does text message not encrypted mean": [
     "what does text message not encrypted mean",
     "what does text message not encrypted mean on iphone",
     "what does text message not encrypted mean on imessage",
     "what does text message not encrypted mean on iphone ios",
-    "text message not encrypted mean",
+    "what do text message not encrypted mean",
+    "what is text message not encrypted mean",
     "what does sms message not encrypted mean",
     "what does text message sms not encrypted mean",
     "what does text message rcs not encrypted mean",
-    "what does text message rcs not encrypted mean on iphone",
-    "what does text message sms not encrypted mean on imessage"
+    "what does text message rcs not encrypted mean on iphone"
    ],
    "text message not encrypted": [
     "text message not encrypted meaning",
@@ -15293,11 +15317,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "why-are-people-saying-remember-november-2026-is-coming": {
-  "time": "2026-11-23T14:03:27+00:00",
+  "time": "2026-11-24T14:17:09+00:00",
   "query": "why are people saying remember november 2026 is coming",
   "in_suggest": true,
   "suggest": {
@@ -15316,22 +15344,23 @@
    "what is remember november 2026 is coming": [
     "what is remember november 2026 is coming",
     "what is remember november 2026 is coming meme",
+    "what is the remember november 2026 is coming mean",
     "what does remember november 2026 is coming mean",
-    "what is the meaning of remember november 2026 is coming",
+    "what is the meaning behind remember november 2026 is coming",
     "what does the remember november 2026 is coming meme mean",
-    "remember november 2026 is coming polar bear",
     "remember november 2026 is coming lyrics",
+    "remember november 2026 is coming polar bear",
     "remember november 2026 is coming gif",
-    "remember november 2026 is coming song",
-    "remember november 2026 is coming original"
+    "remember november 2026 is coming song"
    ],
    "why are people saying remember november 2026 is coming": [
     "why are people saying remember november 2026 is coming",
+    "why is everyone saying remember november 2026 is coming",
     "what is gonna happen in november",
     "what's going to happen in november"
    ],
    "people saying remember november 2026 coming": [
-    "why are people saying 'remember november 2026 is coming'",
+    "why are people saying remember november 2026 is coming",
     "what's going to happen in november",
     "what is gonna happen in november"
    ]
@@ -15352,11 +15381,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "why-are-people-wearing-pajamas-to-sunrise-on-the-reaping": {
-  "time": "2026-11-23T14:03:30+00:00",
+  "time": "2026-11-24T14:17:12+00:00",
   "query": "why are people wearing pajamas to sunrise on the reaping",
   "in_suggest": true,
   "suggest": {
@@ -15384,11 +15417,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "why-wont-my-washing-machine-spin": {
-  "time": "2026-11-23T14:03:34+00:00",
+  "time": "2026-11-24T14:17:17+00:00",
   "query": "why won't my washing machine spin",
   "in_suggest": true,
   "suggest": {
@@ -15456,6 +15493,10 @@
    ],
    [
     "2026-11-23",
+    true
+   ],
+   [
+    "2026-11-24",
     true
    ]
   ]
@@ -15555,7 +15596,7 @@
   ]
  },
  "is-the-november-full-moon-a-supermoon": {
-  "time": "2026-11-23T14:03:16+00:00",
+  "time": "2026-11-24T14:16:57+00:00",
   "query": "is the november full moon a supermoon",
   "in_suggest": true,
   "suggest": {
@@ -15586,21 +15627,25 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "what-does-huss-mean": {
-  "time": "2026-11-23T14:03:19+00:00",
+  "time": "2026-11-24T14:17:00+00:00",
   "query": "what does huss mean",
-  "in_suggest": true,
+  "in_suggest": false,
   "suggest": {
    "huss": [
     "huss huss huss",
     "huss huss huss meaning",
     "huss huss huss meme",
     "huss valley",
-    "huss",
     "huss valley codes",
+    "huss",
     "husson university",
     "hussar",
     "husserl",
@@ -15610,13 +15655,13 @@
     "what is huss huss huss",
     "what is huss valley",
     "what is huss huss huss meme",
-    "what is huss huss huss mean",
     "what is huss in slang",
     "what is huss valley meme",
     "what is huss valley roblox",
     "what is hussar",
     "what is huss rooms",
-    "what is huss valley and folk valley"
+    "what is huss valley and folk valley",
+    "what is husser"
    ],
    "what does huss mean": [
     "what does huzz mean in slang",
@@ -15643,11 +15688,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    false
    ]
   ]
  },
  "why-are-people-saying-gta-6-is-woke": {
-  "time": "2026-11-23T14:03:26+00:00",
+  "time": "2026-11-24T14:17:07+00:00",
   "query": "why are people saying gta 6 is woke",
   "in_suggest": false,
   "suggest": {
@@ -15655,8 +15704,6 @@
     "gta 6 review bombing",
     "gta 6 review bombing reddit",
     "gta 6 review bombing r=h www.reddit.com",
-    "gta 6 review bombing why",
-    "gta 6 review bombing metacritic",
     "gta 6 review",
     "gta 6 rating",
     "is gta 6 worth it"
@@ -15684,25 +15731,29 @@
    [
     "2026-11-23",
     false
+   ],
+   [
+    "2026-11-24",
+    false
    ]
   ]
  },
  "why-are-people-saying-rip-fiona": {
-  "time": "2026-11-23T14:03:29+00:00",
+  "time": "2026-11-24T14:17:10+00:00",
   "query": "why are people saying rip fiona",
   "in_suggest": false,
   "suggest": {
    "fiona the hippo": [
     "fiona the hippo",
-    "fiona the hippo who threw the hat",
+    "fiona the hippo sweatshirt",
     "fiona the hippo baby",
     "fiona the hippo died",
-    "fiona the hippo death",
+    "fiona the hippo shirt",
+    "fiona the hippo update",
+    "fiona the hippo merch",
     "fiona the hippo hat video",
-    "fiona the hippo plush",
-    "fiona the hippo book",
-    "fiona the hippo hat",
-    "fiona the hippo reddit"
+    "fiona the hippo death",
+    "fiona the hippo plush"
    ],
    "what is fiona the hippo": [
     "what is fiona the hippo",
@@ -15731,11 +15782,15 @@
    [
     "2026-11-23",
     false
+   ],
+   [
+    "2026-11-24",
+    false
    ]
   ]
  },
  "why-is-my-refrigerator-leaking-water-inside": {
-  "time": "2026-11-23T14:03:31+00:00",
+  "time": "2026-11-24T14:17:14+00:00",
   "query": "why is my refrigerator leaking water inside",
   "in_suggest": true,
   "suggest": {
@@ -15747,9 +15802,9 @@
     "refrigerator leaking water inside bottom",
     "refrigerator leaking water inside frigidaire",
     "refrigerator leaking water inside samsung",
-    "refrigerator leaking water inside kenmore",
     "refrigerator leaks water inside the unit",
-    "fridge leaking water inside bottom drawer"
+    "fridge leaking water inside bottom drawer",
+    "freezer leaking water inside"
    ],
    "what is refrigerator leaking water inside": [
     "what makes a refrigerator leak water inside",
@@ -15759,9 +15814,9 @@
     "refrigerator leaking water inside frigidaire",
     "refrigerator leaking water inside samsung",
     "refrigerator leaking water inside bottom",
-    "refrigerator leaking water inside kenmore",
     "why is my fridge leaking water inside",
-    "why is fridge dripping water inside"
+    "why is fridge dripping water inside",
+    "how do i stop my fridge from leaking water inside"
    ],
    "why is my refrigerator leaking water inside": [
     "why is my refrigerator leaking water inside",
@@ -15799,6 +15854,10 @@
    ],
    [
     "2026-11-23",
+    true
+   ],
+   [
+    "2026-11-24",
     true
    ]
   ]
