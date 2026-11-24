@@ -10447,17 +10447,17 @@
   ]
  },
  "october-2026-cpi-no-annual-rate": {
-  "time": "2026-11-23T18:32:24+00:00",
+  "time": "2026-11-24T18:47:07+00:00",
   "query": "why no annual inflation rate for october cpi",
   "in_suggest": false,
   "suggest": {
    "consumer price index": [
     "consumer price index",
     "consumer price index 2026",
-    "consumer price index calculator",
     "consumer price index last 10 years",
     "consumer price index for all urban consumers",
     "consumer price index definition",
+    "consumer price index calculator",
     "consumer price index july 2026",
     "consumer price index formula",
     "consumer price index today",
@@ -10526,11 +10526,15 @@
    [
     "2026-11-23",
     false
+   ],
+   [
+    "2026-11-24",
+    false
    ]
   ]
  },
  "sierra-winter-storm-warning": {
-  "time": "2026-11-23T18:32:26+00:00",
+  "time": "2026-11-24T18:47:09+00:00",
   "query": "sierra winter storm warning",
   "in_suggest": true,
   "suggest": {
@@ -10612,11 +10616,15 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "ss-united-states-sinking": {
-  "time": "2026-11-23T18:32:28+00:00",
+  "time": "2026-11-24T18:47:11+00:00",
   "query": "ss united states sinking",
   "in_suggest": true,
   "suggest": {
@@ -10625,9 +10633,9 @@
     "ss united states sinking",
     "ss united states sinking date",
     "ss united states wreck",
-    "ss united states location",
     "ss united states ship",
-    "ss united states under water",
+    "ss united states leaking oil",
+    "ss united states underwater",
     "ss united states interior",
     "ss united states artificial reef",
     "ss united states top speed"
@@ -10652,9 +10660,9 @@
     "ss united states sinking depth",
     "ss united states sinking date and location",
     "ss united states sinking date reddit",
+    "ss united states sinking update",
     "ss united states sinking livestream",
-    "ss united states sinking date today",
-    "ss united states sinking update"
+    "ss united states sinking date today"
    ]
   },
   "history": [
@@ -10705,25 +10713,29 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "stacy-keach-death": {
-  "time": "2026-11-23T18:32:29+00:00",
+  "time": "2026-11-24T18:47:12+00:00",
   "query": "stacy keach death",
   "in_suggest": true,
   "suggest": {
    "stacy keach": [
     "stacy keach",
     "stacy keach sr",
-    "stacy keach simpsons",
     "stacy keach net worth",
     "stacy keach movies and shows",
     "stacy keach movies",
     "stacy keach tv shows",
     "stacy keach jr",
+    "stacy keach senior",
     "stacy keach brother",
-    "stacy keach senior"
+    "stacy keach wife"
    ],
    "what is stacy keach": [
     "what is stacy keach doing now",
@@ -10746,8 +10758,7 @@
     "stacy keach bored to death",
     "stacy keach sr age at death",
     "stacy keach sr cause of death",
-    "stacy keach is he still alive",
-    "is stacy keach dead"
+    "stacy keach is he still alive"
    ]
   },
   "history": [
@@ -10798,31 +10809,35 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "what-time-does-gta-6-unlock": {
-  "time": "2026-11-23T18:32:31+00:00",
+  "time": "2026-11-24T18:47:13+00:00",
   "query": "what time does gta 6 unlock",
   "in_suggest": true,
   "suggest": {
    "grand theft auto vi": [
     "grand theft auto vi",
     "grand theft auto vice city",
-    "grand theft auto vi playstation 5 store",
-    "grand theft auto vi lucia memes",
-    "grand theft auto vice city stories",
-    "grand theft auto vi reviews",
-    "grand theft auto vi release date",
-    "grand theft auto vi ultimate edition",
     "grand theft auto vi pc",
-    "grand theft auto vi the album"
+    "grand theft auto vi release date",
+    "grand theft auto vi reviews",
+    "grand theft auto vi the album",
+    "grand theft auto vi ultimate edition",
+    "grand theft auto vice city stories",
+    "grand theft auto vi ps5",
+    "grand theft auto vi cast"
    ],
    "what is grand theft auto vi": [
     "what is grand theft auto vi",
     "what is grand theft auto video game",
-    "what is grand theft auto vi an extended look",
     "what is grand theft auto vi ultimate edition upgrade",
+    "what is grand theft auto vi an extended look",
     "what is grand theft auto vice city stories",
     "what is grand theft auto vice city",
     "what is grand theft auto vi rated",
@@ -10892,6 +10907,10 @@
    ],
    [
     "2026-11-23",
+    true
+   ],
+   [
+    "2026-11-24",
     true
    ]
   ]
@@ -12142,21 +12161,21 @@
   ]
  },
  "noreaster-first-snow-november-2026": {
-  "time": "2026-11-23T18:32:23+00:00",
+  "time": "2026-11-24T18:47:06+00:00",
   "query": "nor'easter first snow",
   "in_suggest": false,
   "suggest": {
    "nor'easter": [
     "nor'easter",
+    "nor'easter nyc",
     "nor'easter meaning",
-    "nor'easters acapella",
     "nor'easter storm",
     "nor'easter vs hurricane",
-    "nor'easter 2026",
     "nor'easter hockey",
+    "nor'easter nj",
+    "nor'easter nick",
     "nor'easter this weekend",
-    "nor'easter cocktail",
-    "nor'easter boston"
+    "nor'easter mountain coaster"
    ],
    "what is nor'easter": [
     "what is nor'easter",
@@ -12165,8 +12184,8 @@
     "what is nor'easter short for",
     "what is nor'easter weather",
     "what is nor'easter season",
-    "what is nor'easter and why is it called that",
     "what is nor'easter nyc",
+    "what is nor'easter and why is it called that",
     "nor'easter",
     "nor'easter storm"
    ],
@@ -12216,11 +12235,15 @@
    [
     "2026-11-23",
     false
+   ],
+   [
+    "2026-11-24",
+    false
    ]
   ]
  },
  "who-won-mvp-2026": {
-  "time": "2026-11-23T18:32:32+00:00",
+  "time": "2026-11-24T18:47:15+00:00",
   "query": "who won mvp 2026",
   "in_suggest": true,
   "suggest": {
@@ -12239,8 +12262,8 @@
    "what is 2026 mlb mvp": [],
    "who won mvp 2026": [
     "who won mvp 2026",
-    "who won mvp 2026 nfl",
     "who won mvp 2026 nba",
+    "who won mvp 2026 nfl",
     "who won mvp 2026 wnba",
     "who won mvp 2026 mlb",
     "who won mvp 2026 baseball",
@@ -12305,6 +12328,10 @@
    ],
    [
     "2026-11-23",
+    true
+   ],
+   [
+    "2026-11-24",
     true
    ]
   ]
@@ -12919,13 +12946,12 @@
   ]
  },
  "why-were-all-flights-grounded": {
-  "time": "2026-11-23T18:32:36+00:00",
+  "time": "2026-11-24T18:47:18+00:00",
   "query": "why were all flights grounded",
   "in_suggest": true,
   "suggest": {
    "faa nationwide ground stop": [
     "faa nationwide ground stop",
-    "faa nationwide ground stop causes",
     "faa national ground stop",
     "faa issues nationwide ground stop",
     "faa reagan national ground stop",
@@ -13007,6 +13033,10 @@
    ],
    [
     "2026-11-23",
+    true
+   ],
+   [
+    "2026-11-24",
     true
    ]
   ]
@@ -13443,7 +13473,7 @@
   ]
  },
  "spacex-starship-caught-by-tower": {
-  "time": "2026-11-23T18:32:27+00:00",
+  "time": "2026-11-24T18:47:10+00:00",
   "query": "spacex starship catch",
   "in_suggest": true,
   "suggest": {
@@ -13455,9 +13485,9 @@
     "spacex starship flight 15 reddit",
     "spacex starship flight 15 test",
     "spacex starship flight 15 objectives",
+    "spacex starship flight 15 launch",
     "will spacex catch starship on flight 15",
-    "spacex starship flight schedule",
-    "spacex starship explained"
+    "spacex starship flight schedule"
    ],
    "what is spacex starship flight 15": [
     "when is spacex starship flight 15",
@@ -13466,10 +13496,10 @@
     "spacex starship flight 15 reddit",
     "spacex starship flight 15 news",
     "spacex starship flight 15 objectives",
+    "spacex starship flight 15 launch",
     "what is spacex starship used for",
     "spacex starship flight schedule",
-    "what is spacex starship",
-    "how fast is spacex starship"
+    "what is spacex starship"
    ],
    "spacex starship catch": [
     "spacex starship catch",
@@ -13520,18 +13550,22 @@
    [
     "2026-11-23",
     true
+   ],
+   [
+    "2026-11-24",
+    true
    ]
   ]
  },
  "why-is-bitcoin-down-november-2026": {
-  "time": "2026-11-23T18:32:34+00:00",
+  "time": "2026-11-24T18:47:16+00:00",
   "query": "why is bitcoin down",
   "in_suggest": true,
   "suggest": {
    "bitcoin price drop": [
     "bitcoin price drop",
-    "bitcoin price drops after jobs report",
     "bitcoin price drop today",
+    "bitcoin price drops after jobs report",
     "bitcoin price drops below 80000",
     "bitcoin price drop market selloff",
     "bitcoin price drops below 87000",
@@ -13555,8 +13589,8 @@
     "why is bitcoin down so much",
     "why is bitcoin down right now",
     "why is bitcoin down this morning",
-    "why is bitcoin down this year",
     "why is bitcoin down so much today",
+    "why is bitcoin down this year",
     "why is bitcoin down now",
     "why is bitcoin down so much right now",
     "why is bitcoin down today reddit"
@@ -13609,6 +13643,10 @@
    ],
    [
     "2026-11-23",
+    true
+   ],
+   [
+    "2026-11-24",
     true
    ]
   ]
