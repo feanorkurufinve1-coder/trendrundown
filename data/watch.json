@@ -1,62 +1,52 @@
 {
- "made": "2026-11-24T04:01:45+00:00",
+ "made": "2026-11-24T04:18:56+00:00",
  "days": [
-  "2026-11-17",
   "2026-11-20",
-  "2026-11-21"
+  "2026-11-21",
+  "2026-11-23"
  ],
  "pages": [
   {
    "page": "/t/alexandra-eala",
-   "clicks_3d": 1,
-   "impr_3d": 5,
-   "pos": 4.5,
+   "clicks_3d": 0,
+   "impr_3d": 4,
+   "pos": 4.2,
    "by_day": {
-    "2026-11-17": 1,
-    "2026-11-20": 0
-   },
-   "manual": false
-  },
-  {
-   "page": "/x/jasveen-sangha",
-   "clicks_3d": 1,
-   "impr_3d": 5,
-   "pos": 5.0,
-   "by_day": {
-    "2026-11-17": 1,
-    "2026-11-20": 0
+    "2026-11-20": 0,
+    "2026-11-23": 0
    },
    "manual": false
   },
   {
    "page": "/x/collin-sexton",
    "clicks_3d": 0,
-   "impr_3d": 5,
-   "pos": 5.5,
+   "impr_3d": 4,
+   "pos": 3.8,
    "by_day": {
-    "2026-11-17": 0,
-    "2026-11-20": 0
+    "2026-11-20": 0,
+    "2026-11-23": 0
+   },
+   "manual": false
+  },
+  {
+   "page": "/x/jasveen-sangha",
+   "clicks_3d": 0,
+   "impr_3d": 4,
+   "pos": 5.0,
+   "by_day": {
+    "2026-11-20": 0,
+    "2026-11-23": 0
    },
    "manual": false
   },
   {
    "page": "/x/rot-weiss-essen",
    "clicks_3d": 0,
-   "impr_3d": 5,
+   "impr_3d": 4,
    "pos": 3.0,
    "by_day": {
-    "2026-11-17": 0,
-    "2026-11-20": 0
-   },
-   "manual": false
-  },
-  {
-   "page": "/x/consent-decree",
-   "clicks_3d": 0,
-   "impr_3d": 3,
-   "pos": 7.0,
-   "by_day": {
-    "2026-11-17": 0
+    "2026-11-20": 0,
+    "2026-11-23": 0
    },
    "manual": false
   },
@@ -69,6 +59,16 @@
     "2026-11-20": 0
    },
    "manual": true
+  },
+  {
+   "page": "/w/bass-x-machina-cast",
+   "clicks_3d": 0,
+   "impr_3d": 1,
+   "pos": 10.0,
+   "by_day": {
+    "2026-11-23": 0
+   },
+   "manual": false
   }
  ]
 }
