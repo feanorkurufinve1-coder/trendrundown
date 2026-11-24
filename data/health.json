@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-24T12:03:34+00:00",
+ "checked": "2026-11-24T12:47:23+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -334,7 +334,7 @@
   },
   {
    "url": "/x/colts-release-daniel-jones",
-   "at": "2026-11-24T06:32:11+00:00",
+   "at": "2026-11-24T12:47:17+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -370,9 +370,9 @@
   },
   {
    "url": "/x/delta-flights-delays-atlanta-november-22-2026",
-   "at": "2026-11-24T06:31:52+00:00",
+   "at": "2026-11-24T12:46:58+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -526,9 +526,9 @@
   },
   {
    "url": "/x/florida-tornado-warnings-kings-point-delray-beach",
-   "at": "2026-11-24T06:31:58+00:00",
+   "at": "2026-11-24T12:47:04+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1282,7 +1282,7 @@
   },
   {
    "url": "/x/palisades-fire-verdict-rinderknecht-guilty",
-   "at": "2026-11-24T06:32:17+00:00",
+   "at": "2026-11-24T12:47:23+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1606,7 +1606,7 @@
   },
   {
    "url": "/x/tom-jackson-espn-dies",
-   "at": "2026-11-24T06:32:05+00:00",
+   "at": "2026-11-24T12:47:10+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
