@@ -70,7 +70,7 @@
   },
   {
    "url": "/trends",
-   "at": "2026-11-24T04:47:15+00:00",
+   "at": "2026-11-24T11:01:48+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -82,7 +82,7 @@
   },
   {
    "url": "/explained",
-   "at": "2026-11-24T04:47:21+00:00",
+   "at": "2026-11-24T11:01:54+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -214,7 +214,7 @@
   },
   {
    "url": "/x/bay-area-waterspouts-tornado-warning",
-   "at": "2026-11-24T04:47:27+00:00",
+   "at": "2026-11-24T11:02:00+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -250,7 +250,7 @@
   },
   {
    "url": "/x/california-sues-openai",
-   "at": "2026-11-24T04:47:33+00:00",
+   "at": "2026-11-24T11:02:06+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1400,7 +1400,7 @@
   },
   {
    "url": "/x/robert-pattinson-james-bond",
-   "at": "2026-11-24T04:47:39+00:00",
+   "at": "2026-11-24T11:02:12+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
