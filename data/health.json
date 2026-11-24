@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-24T05:49:08+00:00",
+ "checked": "2026-11-24T06:32:17+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -320,7 +320,7 @@
   },
   {
    "url": "/x/colts-release-daniel-jones",
-   "at": "2026-11-24T00:17:26+00:00",
+   "at": "2026-11-24T06:32:11+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -356,7 +356,7 @@
   },
   {
    "url": "/x/delta-flights-delays-atlanta-november-22-2026",
-   "at": "2026-11-24T00:17:01+00:00",
+   "at": "2026-11-24T06:31:52+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -512,9 +512,9 @@
   },
   {
    "url": "/x/florida-tornado-warnings-kings-point-delray-beach",
-   "at": "2026-11-24T00:17:07+00:00",
+   "at": "2026-11-24T06:31:58+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1268,7 +1268,7 @@
   },
   {
    "url": "/x/palisades-fire-verdict-rinderknecht-guilty",
-   "at": "2026-11-24T00:17:32+00:00",
+   "at": "2026-11-24T06:32:17+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1592,7 +1592,7 @@
   },
   {
    "url": "/x/tom-jackson-espn-dies",
-   "at": "2026-11-24T00:17:13+00:00",
+   "at": "2026-11-24T06:32:05+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2536,9 +2536,9 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 133,
+  "URL is unknown to Google": 134,
   "Crawled - currently not indexed": 64,
   "error": 2,
-  "Discovered - currently not indexed": 8
+  "Discovered - currently not indexed": 7
  }
 }
