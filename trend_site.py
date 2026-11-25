@@ -5148,11 +5148,25 @@ def build_trends_index(ex):
     # 26.11: целое первое предложение ответа (а не обрезок «…») и месяц — ИИ-поиск и люди видят готовый ответ прямо в списке
     rows = "".join(f'<li><a class="t" href="x/{E(x["slug"])}.html">{E(x["title"])}</a>'
                    f'<span class="meta">{E(_month(x))} — {E(_first_sentence(x["answer"]))}</span></li>' for x in items[:500])
+    # 26.11: сразу под заголовком — дата и самые свежие тренды списком: на вопрос «what's trending right now»
+    # ИИ-поиск (ChatGPT) берёт текст рядом с H1, и здесь он сразу получает готовый ответ. Дата — настоящая: день последней страницы.
+    fresh = [x for x in items if not x["slug"].startswith(("internet-trends-this-week", "new-slang-"))][:6]
+    def _subj(x):
+        return re.sub(r"\s*\([^)]*\)\s*$", "", x.get("subject") or x["title"]).strip()
+    upd = ""
+    if items:
+        try:
+            d_ = datetime.fromisoformat(str(items[0].get("first") or items[0].get("made")).replace("Z", "+00:00"))
+            upd = f'{d_.strftime("%b")}{"" if d_.month == 5 else "."} {d_.day}, {d_.year}'
+        except Exception:
+            upd = ""
+    now_line = " · ".join(f'<a href="x/{E(x["slug"])}.html">{E(_subj(x))}</a>' for x in fresh)
     body = (f'<p class="tag">Slang, memes and viral challenges, explained in plain words</p>'
-            f'<h1 class="front">Internet trends explained</h1>'
-            f'<p class="snip">What a new word means, where a meme came from, what a viral challenge is about. '
+            f'<h1 class="front">What\'s trending on the internet right now</h1>'
+            f'<p class="snip">{"Updated " + E(upd) + ". " if upd else ""}Newest: {now_line}.</p>'
+            f'<p class="snip">What a new word means, where a meme came from, what a viral story is about. '
             f'Each page is checked against several sources; newest first.</p><ul class="list">{rows}</ul>')
-    return page(f"Internet trends explained: slang, memes and challenges | {SITE_NAME}",
+    return page(f"What's trending on the internet right now: slang and memes explained | {SITE_NAME}",
                 "What new slang means, where memes come from and what viral challenges are about, explained in plain English.",
                 body, "trends.html", 0)
 
