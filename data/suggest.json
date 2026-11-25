@@ -4060,7 +4060,7 @@
   ]
  },
  "bright-star-eastern-sky-morning": {
-  "time": "2026-11-24T15:16:50+00:00",
+  "time": "2026-11-25T15:17:10+00:00",
   "query": "what is the bright star in the eastern sky this morning",
   "in_suggest": true,
   "suggest": {
@@ -4087,10 +4087,6 @@
    ]
   },
   "history": [
-   [
-    "2026-11-11",
-    true
-   ],
    [
     "2026-11-12",
     true
@@ -4142,11 +4138,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "how-are-cma-awards-voted": {
-  "time": "2026-11-24T15:16:59+00:00",
+  "time": "2026-11-25T15:17:18+00:00",
   "query": "how are cma awards voted",
   "in_suggest": true,
   "suggest": {
@@ -4181,10 +4181,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    true
-   ],
-   [
     "2026-11-12",
     true
    ],
@@ -4235,11 +4231,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "how-are-game-awards-nominees-chosen": {
-  "time": "2026-11-24T15:17:01+00:00",
+  "time": "2026-11-25T15:17:20+00:00",
   "query": "how are the game awards nominees chosen",
   "in_suggest": true,
   "suggest": {
@@ -4283,10 +4283,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    true
-   ],
-   [
     "2026-11-12",
     true
    ],
@@ -4337,11 +4333,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "is-philomena-cunk-real": {
-  "time": "2026-11-24T15:17:12+00:00",
+  "time": "2026-11-25T15:17:30+00:00",
   "query": "is philomena cunk a real person",
   "in_suggest": true,
   "suggest": {
@@ -4351,11 +4351,11 @@
     "philomena cunk real name",
     "philomena cunk shows",
     "philomena cunk actress",
+    "philomena cunk interviews",
     "philomena cunk pump up the jam",
-    "philomena cunk where to watch",
+    "philomena cunk netflix",
     "philomena cunk meme",
-    "philomena cunk accent",
-    "philomena cunk breaking character"
+    "philomena cunk where to watch"
    ],
    "what is philomena cunk": [
     "what is philomena cunk",
@@ -4383,10 +4383,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    true
-   ],
-   [
     "2026-11-12",
     true
    ],
@@ -4437,11 +4433,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "lame-duck-president": {
-  "time": "2026-11-24T15:17:16+00:00",
+  "time": "2026-11-25T15:17:34+00:00",
   "query": "what is a lame duck president",
   "in_suggest": true,
   "suggest": {
@@ -4484,10 +4484,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    true
-   ],
-   [
     "2026-11-12",
     true
    ],
@@ -4538,11 +4534,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "national-parks-free-veterans-day": {
-  "time": "2026-11-24T15:17:18+00:00",
+  "time": "2026-11-25T15:17:35+00:00",
   "query": "are national parks free on veterans day",
   "in_suggest": true,
   "suggest": {
@@ -4566,10 +4566,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    true
-   ],
-   [
     "2026-11-12",
     true
    ],
@@ -4620,11 +4616,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "new-snap-stocking-rules": {
-  "time": "2026-11-24T15:17:20+00:00",
+  "time": "2026-11-25T15:17:37+00:00",
   "query": "new snap rules for stores",
   "in_suggest": false,
   "suggest": {
@@ -4651,10 +4651,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    false
-   ],
-   [
     "2026-11-12",
     false
    ],
@@ -4705,11 +4701,15 @@
    [
     "2026-11-24",
     false
+   ],
+   [
+    "2026-11-25",
+    false
    ]
   ]
  },
  "what-is-a-quarter-quell": {
-  "time": "2026-11-24T15:17:28+00:00",
+  "time": "2026-11-25T15:17:44+00:00",
   "query": "what is a quarter quell",
   "in_suggest": true,
   "suggest": {
@@ -4722,8 +4722,8 @@
     "quarter quell tributes",
     "quarter quell birthday",
     "quarter quell arena",
-    "quarter quell hunger games movie",
-    "quarter quell meaning hunger games"
+    "quarter quell meaning hunger games",
+    "quarter quell hunger games movie"
    ],
    "what is quarter quell": [
     "what is quarter quell",
@@ -4752,10 +4752,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    true
-   ],
-   [
     "2026-11-12",
     true
    ],
@@ -4806,11 +4802,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "what-is-apple-homeview": {
-  "time": "2026-11-24T15:17:30+00:00",
+  "time": "2026-11-25T15:17:46+00:00",
   "query": "what is apple homeview",
   "in_suggest": true,
   "suggest": {
@@ -4818,13 +4818,13 @@
     "apple homeview review",
     "apple homeview",
     "apple homeview black friday",
-    "apple homeview youtube",
+    "apple homeview in stock",
+    "apple homeview features",
     "apple homeview price",
     "apple homeview ad",
     "apple homeview release date",
     "apple homeview wall mount",
-    "apple homeview reddit",
-    "apple homeview add"
+    "apple homeview reddit"
    ],
    "what is apple homeview": [
     "what is apple homeview",
@@ -4841,10 +4841,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    true
-   ],
-   [
     "2026-11-12",
     true
    ],
@@ -4895,25 +4891,29 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "what-is-pico-park": {
-  "time": "2026-11-24T15:17:31+00:00",
+  "time": "2026-11-25T15:17:47+00:00",
   "query": "what is pico park",
   "in_suggest": true,
   "suggest": {
    "pico park": [
     "pico park",
     "pico park 2",
-    "pico park 3",
-    "pico park sonic",
     "pico park switch",
+    "pico park sonic",
+    "pico park 3",
     "pico park game",
+    "pico park pico rivera",
     "pico park classic edition",
-    "pico park free",
-    "pico park ps5",
-    "pico park 2 switch"
+    "pico park steam",
+    "pico park free"
    ],
    "what is pico park": [
     "what is pico park",
@@ -4930,10 +4930,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    true
-   ],
-   [
     "2026-11-12",
     true
    ],
@@ -4983,6 +4979,10 @@
    ],
    [
     "2026-11-24",
+    true
+   ],
+   [
+    "2026-11-25",
     true
    ]
   ]
@@ -7983,7 +7983,7 @@
   ]
  },
  "camp-flog-gnaw-livestream": {
-  "time": "2026-11-24T15:16:51+00:00",
+  "time": "2026-11-25T15:17:11+00:00",
   "query": "will camp flog gnaw be streamed",
   "in_suggest": true,
   "suggest": {
@@ -7999,10 +7999,6 @@
    ]
   },
   "history": [
-   [
-    "2026-11-11",
-    true
-   ],
    [
     "2026-11-12",
     true
@@ -8054,11 +8050,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "el-nino-pacific-northwest": {
-  "time": "2026-11-24T15:16:56+00:00",
+  "time": "2026-11-25T15:17:15+00:00",
   "query": "what does el nino mean for the pacific northwest",
   "in_suggest": true,
   "suggest": {
@@ -8099,23 +8099,19 @@
     "what does el nino 2026 mean for the pacific northwest"
    ],
    "el nino pacific northwest": [
-    "el nino pacific northwest",
     "el nino pacific northwest 2026",
     "el nino pacific northwest winter",
-    "el nino pacific northwest map",
-    "el nino pacific northwest effects",
     "el nino pacific northwest weather",
-    "el nino pacific northwest 2027",
+    "el nino pacific northwest map",
     "el nino pacific northwest winter forecast",
+    "el nino pacific northwest",
+    "el nino pacific northwest 2027",
+    "el nino pacific northwest effects",
     "el nino pacific northwest forecast",
     "el niño pacific northwest winter weather"
    ]
   },
   "history": [
-   [
-    "2026-11-11",
-    true
-   ],
    [
     "2026-11-12",
     true
@@ -8167,11 +8163,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "is-amanda-nunes-retired": {
-  "time": "2026-11-24T15:17:06+00:00",
+  "time": "2026-11-25T15:17:24+00:00",
   "query": "is amanda nunes retired",
   "in_suggest": true,
   "suggest": {
@@ -8179,13 +8179,13 @@
     "amanda nunes",
     "amanda nunes next fight",
     "amanda nunes record",
+    "amanda nunes last fight",
     "amanda nunes vs kayla harrison",
     "amanda nunes age",
     "amanda nunes fights",
     "amanda nunes net worth",
     "amanda nunes wife",
-    "amanda nunes losses",
-    "amanda nunes vs ronda rousey"
+    "amanda nunes losses"
    ],
    "who is amanda nunes": [
     "who is amanda nunes fighting next",
@@ -8223,10 +8223,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    true
-   ],
-   [
     "2026-11-12",
     true
    ],
@@ -8277,11 +8273,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "kids-choice-awards-2026-date": {
-  "time": "2026-11-24T15:17:15+00:00",
+  "time": "2026-11-25T15:17:33+00:00",
   "query": "when are the kids choice awards 2026",
   "in_suggest": true,
   "suggest": {
@@ -8330,15 +8330,11 @@
     "kids choice awards 2026 tickets",
     "kids choice awards 2026 vote time",
     "kids choice awards 2026 performers",
-    "kids choice awards 2026 vote results",
-    "kids choice awards 2026 date"
+    "kids choice awards 2026 date",
+    "kids choice awards 2026 vote results"
    ]
   },
   "history": [
-   [
-    "2026-11-11",
-    true
-   ],
    [
     "2026-11-12",
     true
@@ -8390,25 +8386,29 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "what-does-12-12-12-mean": {
-  "time": "2026-11-24T15:17:21+00:00",
+  "time": "2026-11-25T15:17:38+00:00",
   "query": "what does 12 12 12 mean",
   "in_suggest": true,
   "suggest": {
    "12 12 12": [
     "12 12 12",
-    "12 12 12 cast",
     "12 12 12 episodes",
+    "12 12 12 cast",
     "12 12 12 reviews",
     "12 12 12 show",
     "12 12 12 movie",
     "12 12 12 apple tv",
     "12 12 12 series",
-    "12 12 12 episode 3",
-    "12 12 12 imdb"
+    "12 12 12 imdb",
+    "12 12 12 episode 4"
    ],
    "what is 12 12 12": [
     "what is 12 12 12 about",
@@ -8437,10 +8437,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    true
-   ],
-   [
     "2026-11-12",
     true
    ],
@@ -8491,11 +8487,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "what-is-a-motion-to-refer": {
-  "time": "2026-11-24T15:17:27+00:00",
+  "time": "2026-11-25T15:17:43+00:00",
   "query": "what is a motion to refer",
   "in_suggest": true,
   "suggest": {
@@ -8550,10 +8550,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    true
-   ],
-   [
     "2026-11-12",
     true
    ],
@@ -8603,6 +8599,10 @@
    ],
    [
     "2026-11-24",
+    true
+   ],
+   [
+    "2026-11-25",
     true
    ]
   ]
@@ -8946,16 +8946,16 @@
   ]
  },
  "coachella-2027-tickets-on-sale": {
-  "time": "2026-11-24T15:16:53+00:00",
+  "time": "2026-11-25T15:17:13+00:00",
   "query": "when do coachella 2027 tickets go on sale",
   "in_suggest": true,
   "suggest": {
    "coachella 2027 tickets": [
     "coachella 2027 tickets",
     "coachella 2027 tickets price",
+    "coachella 2027 tickets release date",
     "coachella 2027 tickets sale",
     "coachella 2027 tickets go on sale",
-    "coachella 2027 tickets release date",
     "coachella 2027 tickets weekend 2",
     "coachella 2027 tickets reddit",
     "coachella 2027 tickets sold out",
@@ -9041,11 +9041,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "is-being-heumann-a-true-story": {
-  "time": "2026-11-24T15:17:07+00:00",
+  "time": "2026-11-25T15:17:26+00:00",
   "query": "is being heumann a true story",
   "in_suggest": true,
   "suggest": {
@@ -9055,11 +9059,11 @@
     "being heumann movie",
     "being heumann release date",
     "being heumann trailer",
+    "being heumann apple tv",
+    "being heumann review",
     "being heumann book",
-    "being heumann accuracy",
-    "being heumann movie 2026",
-    "being heumann theaters",
-    "being heumann apple tv"
+    "being heumann movie review",
+    "being heumann movie 2026"
    ],
    "what is being heumann": [
     "what is being heumann about",
@@ -9125,11 +9129,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "is-gta-6-coming-to-pc": {
-  "time": "2026-11-24T15:17:10+00:00",
+  "time": "2026-11-25T15:17:28+00:00",
   "query": "is gta 6 coming to pc",
   "in_suggest": true,
   "suggest": {
@@ -9154,7 +9162,6 @@
    ],
    "is gta 6 coming to pc": [
     "is gta 6 coming to pc",
-    "is gta 6 coming to pc r=h www.reddit.com",
     "is gta 6 coming to pc soon",
     "is gta 6 coming to pc on launch",
     "is gta 6 coming to pc on release",
@@ -9162,7 +9169,8 @@
     "is gta 6 coming to pc day one",
     "is gta 6 coming to pc in november",
     "is gta 6 coming to pc in 2027",
-    "is gta 6 coming to pc day 1"
+    "is gta 6 coming to pc day 1",
+    "is gta 6 coming to pc sooner"
    ],
    "gta 6 coming pc": [
     "gta 6 coming pc",
@@ -9229,11 +9237,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "what-is-a-sudden-stratospheric-warming": {
-  "time": "2026-11-24T15:17:29+00:00",
+  "time": "2026-11-25T15:17:45+00:00",
   "query": "what is a sudden stratospheric warming",
   "in_suggest": true,
   "suggest": {
@@ -9315,6 +9327,10 @@
    ],
    [
     "2026-11-24",
+    true
+   ],
+   [
+    "2026-11-25",
     true
    ]
   ]
@@ -12342,7 +12358,7 @@
   ]
  },
  "how-to-vote-on-the-circle-hulu": {
-  "time": "2026-11-24T15:17:02+00:00",
+  "time": "2026-11-25T15:17:21+00:00",
   "query": "how to vote on the circle hulu",
   "in_suggest": false,
   "suggest": {
@@ -12395,11 +12411,15 @@
    [
     "2026-11-24",
     false
+   ],
+   [
+    "2026-11-25",
+    false
    ]
   ]
  },
  "what-is-a-ground-stop": {
-  "time": "2026-11-24T15:17:25+00:00",
+  "time": "2026-11-25T15:17:42+00:00",
   "query": "what is a ground stop",
   "in_suggest": true,
   "suggest": {
@@ -12408,12 +12428,12 @@
     "faa ground stop today",
     "faa ground stop chicago",
     "faa ground stop ohare",
+    "faa ground stop cause",
     "faa ground stop ord",
-    "faa ground stop reddit",
-    "faa ground stop reason",
-    "faa ground stop map",
-    "faa ground stop status",
-    "faa ground stop atlanta"
+    "faa ground stop why did it happen",
+    "faa ground stop today chicago",
+    "faa ground stop root cause",
+    "faa ground stop nov 13"
    ],
    "what is faa ground stop": [
     "what is faa ground stop",
@@ -12427,7 +12447,7 @@
    ],
    "what is a ground stop": [
     "what is a ground stop",
-    "what is a ground stop at the airport",
+    "what is a ground stop at an airport",
     "what is a ground stop in aviation",
     "what is a ground stop delay",
     "what is a ground stoppage at an airport",
@@ -12438,16 +12458,16 @@
     "what is a ground stop at miami airport"
    ],
    "ground stop": [
-    "ground stop chicago",
+    "ground stop ohare",
     "ground stop",
     "ground stop today",
-    "ground stop ohare",
-    "ground stop ohare today",
+    "ground stop chicago",
+    "ground stop at ohare today",
     "ground stop ord",
     "ground stop chicago ohare",
-    "ground stop at chicago o hare",
-    "ground stop meaning",
-    "ground stoppage"
+    "ground stop chicago airport",
+    "ground stoppage",
+    "ground stoppage ohare"
    ]
   },
   "history": [
@@ -12493,6 +12513,10 @@
    ],
    [
     "2026-11-24",
+    true
+   ],
+   [
+    "2026-11-25",
     true
    ]
   ]
@@ -13047,7 +13071,7 @@
   ]
  },
  "embassy-of-finland-canberra-meme": {
-  "time": "2026-11-24T15:16:57+00:00",
+  "time": "2026-11-25T15:17:17+00:00",
   "query": "what is the embassy of finland in canberra meme",
   "in_suggest": false,
   "suggest": {
@@ -13109,11 +13133,15 @@
    [
     "2026-11-24",
     false
+   ],
+   [
+    "2026-11-25",
+    false
    ]
   ]
  },
  "internet-trends-this-week-2026-11-15": {
-  "time": "2026-11-24T15:17:04+00:00",
+  "time": "2026-11-25T15:17:23+00:00",
   "query": "what's trending on the internet this week",
   "in_suggest": false,
   "suggest": {
@@ -13172,25 +13200,29 @@
    [
     "2026-11-24",
     false
+   ],
+   [
+    "2026-11-25",
+    false
    ]
   ]
  },
  "is-yellowjackets-season-4-the-last-season": {
-  "time": "2026-11-24T15:17:14+00:00",
+  "time": "2026-11-25T15:17:31+00:00",
   "query": "is yellowjackets season 4 the last season",
   "in_suggest": true,
   "suggest": {
    "yellowjackets season 4": [
     "yellowjackets season 4",
-    "yellowjackets season 4 episode 1",
     "yellowjackets season 4 cast",
+    "yellowjackets season 4 episode 1",
     "yellowjackets season 4 where to watch",
-    "yellowjackets season 4 release date",
     "yellowjackets season 4 release schedule",
-    "yellowjackets season 4 episode 1 recap",
     "yellowjackets season 4 episode 2",
-    "yellowjackets season 4 episode release dates",
-    "yellowjackets season 4 episodes"
+    "yellowjackets season 4 episodes",
+    "yellowjackets season 4 episode 1 recap",
+    "yellowjackets season 4 trailer",
+    "yellowjackets season 4 streaming"
    ],
    "what is yellowjackets season 4": [
     "what is yellowjackets season 4 going to be about",
@@ -13263,11 +13295,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "what-does-microsoft-364-mean": {
-  "time": "2026-11-24T15:17:22+00:00",
+  "time": "2026-11-25T15:17:39+00:00",
   "query": "what does microsoft 364 mean",
   "in_suggest": false,
   "suggest": {
@@ -13275,8 +13311,8 @@
     "microsoft 364",
     "microsoft 364 login",
     "microsoft 3645",
-    "microsoft 364 cost",
     "microsoft 364 copilot",
+    "microsoft 364 cost",
     "microsoft 364 admin center",
     "microsoft 364 personal",
     "microsoft 3645 login",
@@ -13337,11 +13373,15 @@
    [
     "2026-11-24",
     false
+   ],
+   [
+    "2026-11-25",
+    false
    ]
   ]
  },
  "what-does-my-kid-mean-slang-guide": {
-  "time": "2026-11-24T15:17:23+00:00",
+  "time": "2026-11-25T15:17:40+00:00",
   "query": "teen slang 2026",
   "in_suggest": true,
   "suggest": {
@@ -13399,6 +13439,10 @@
    ],
    [
     "2026-11-24",
+    true
+   ],
+   [
+    "2026-11-25",
     true
    ]
   ]
@@ -13725,7 +13769,7 @@
   ]
  },
  "does-a-refrigerator-need-its-own-circuit": {
-  "time": "2026-11-24T15:16:54+00:00",
+  "time": "2026-11-25T15:17:14+00:00",
   "query": "does a refrigerator need its own circuit",
   "in_suggest": true,
   "suggest": {
@@ -13812,6 +13856,10 @@
    ],
    [
     "2026-11-24",
+    true
+   ],
+   [
+    "2026-11-25",
     true
    ]
   ]
@@ -14555,20 +14603,20 @@
   ]
  },
  "is-dig-based-on-a-book": {
-  "time": "2026-11-24T15:17:09+00:00",
+  "time": "2026-11-25T15:17:27+00:00",
   "query": "is dig based on a book",
   "in_suggest": true,
   "suggest": {
    "dig": [
     "digger",
     "dig peacock",
-    "digger movie",
-    "dig tv show",
-    "dig cast",
     "dig",
+    "digger movie",
+    "dig cast",
     "digital camera",
-    "diggs",
-    "digestive enzymes",
+    "dig tv show",
+    "digikey",
+    "digimon alysion",
     "digger 2026"
    ],
    "what is dig": [
@@ -14578,14 +14626,13 @@
     "what is dignity",
     "what is digoxin",
     "what is digoxin used for",
-    "what is digeorge syndrome",
-    "what is dig about",
+    "what is digital literacy",
     "what is digital footprint",
-    "what is digital literacy"
+    "what is digital citizenship",
+    "what is digitalis"
    ],
    "is dig based on a book": [
     "is dig based on a book",
-    "is the movie the dig based on a book",
     "is dig based on a true story"
    ],
    "dig based book": []
@@ -14618,11 +14665,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "what-is-black-october": {
-  "time": "2026-11-24T15:17:31+00:00",
+  "time": "2026-11-25T15:17:47+00:00",
   "query": "what is black october",
   "in_suggest": true,
   "suggest": {
@@ -14678,6 +14729,10 @@
    ],
    [
     "2026-11-24",
+    true
+   ],
+   [
+    "2026-11-25",
     true
    ]
   ]
