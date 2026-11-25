@@ -1,0 +1,51 @@
+{
+ "subject": "Phone battery draining fast",
+ "kind": "other",
+ "query": "why does my phone battery drain so fast",
+ "title": "Why does my phone battery drain so fast? Causes and fixes",
+ "answer": "The most common causes are a bright screen, a weak cell signal, one app running in the background, and an aging battery. Check your phone's battery screen to see which app uses the most power, and check battery health: below about 80% of original capacity, a replacement is the real fix.",
+ "body": "Start with the likeliest causes, in order:\n\n1. The screen. It is usually the single biggest power user. High brightness, a long screen timeout, an always-on display and animated wallpapers all add up. Turn on auto-brightness and set the screen to lock after 30 seconds to 1 minute.\n\n2. A weak signal. In basements, rural areas or buildings with poor reception, the phone boosts its radio to stay connected and keeps searching for towers. If you see one bar all day, the drain is the network, not the phone. Use Wi-Fi when you can, or Airplane mode where there is no service.\n\n3. One misbehaving app. A social, video, navigation or game app that keeps running, using location or refreshing in the background can eat a large share of the battery, especially right after an app update. On iPhone, go to Settings > Battery; on Android, Settings > Battery > Battery usage. If one app stands out, update it, restrict its background activity and location access, or delete and reinstall it.\n\n4. A recent software update. For a day or two after a major update, phones re-index photos and files, so heavier drain is normal. Apple notes this; it should settle on its own. If it does not after a few days, restart the phone and install any follow-up update.\n\n5. Battery age. Lithium-ion batteries lose capacity with every charge cycle. Apple rates batteries in iPhone 14 and earlier to keep up to 80% of their original capacity after 500 full cycles, and iPhone 15 and later after 1,000. On iPhone, see Settings > Battery > Battery Health; on many Android phones, look under Battery or the phone maker's device care app. Roughly two to three years of daily use is when most people notice it.\n\n6. Heat and cold. Phones drain faster and age faster when hot, such as in a car or while gaming and charging at once. In freezing weather a battery can drop sharply and recover when it warms up.\n\nWhat to check yourself: the battery usage list (which app is on top, and whether it was used in the background), signal strength where you spend most of the day, location settings (set apps to \"While using\"), and battery health. A full restart clears many stuck processes.\n\nWhen to get it serviced: battery health under about 80%, the phone shutting off at 20–30%, the battery draining while the phone is idle and cool, or any swelling — a screen lifting from the frame or a back that bulges. A swollen battery should not be charged or used; take the phone to the manufacturer or an authorized repair shop rather than opening it yourself.",
+ "faq": [
+  {
+   "q": "Why is my phone battery draining so fast all of a sudden?",
+   "a": "A sudden change usually means a new app update or system update, a weak signal where you are, or an app stuck running in the background. Check the battery usage list first and restart the phone."
+  },
+  {
+   "q": "Does closing apps save battery?",
+   "a": "Not much. Both iPhone and Android pause most apps in the background, and reopening a closed app can use more power. Restrict background activity for the one app that drains the most instead."
+  },
+  {
+   "q": "Does 5G drain the battery faster?",
+   "a": "It can, especially where 5G coverage is weak and the phone switches between networks. Most phones have an automatic or battery-saving 5G setting."
+  },
+  {
+   "q": "When should I replace my phone battery?",
+   "a": "When battery health drops below about 80% of original capacity, the phone shuts down unexpectedly, or the battery swells."
+  }
+ ],
+ "links": [
+  [
+   "Apple",
+   "Batteries — Maximizing performance",
+   "https://www.apple.com/batteries/maximizing-performance/"
+  ],
+  [
+   "Google Pixel Help",
+   "Fix battery drain problems",
+   "https://support.google.com/pixelphone/answer/6090599?hl=en"
+  ],
+  [
+   "Android",
+   "How to save battery on Android",
+   "https://www.android.com/articles/how-to-save-battery-android/"
+  ],
+  [
+   "Bitdefender",
+   "Why is my battery draining so fast? 13 causes and quick fixes",
+   "https://bitdefender.com/en-us/blog/hotforsecurity/why-is-my-battery-draining-so-fast-13-causes-and-quick-fixes"
+  ]
+ ],
+ "image_prompt": "A glass jar shaped like a battery with glowing green liquid slowly draining out of a small crack, on a plain desk, soft illustrated style",
+ "made": "2026-11-25T13:52:19Z",
+ "first": "2026-11-25T13:52:19Z"
+}

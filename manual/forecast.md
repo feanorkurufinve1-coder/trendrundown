@@ -70,7 +70,7 @@
 | 23 нояб | Netflix: The Trials of Karen Read | (занято гигантами) | — |
 | 24 нояб | Netflix: Rob Lowe: The Outsider | rob lowe documentary | — |
 | 25 нояб | HBO Max: The Slightest Touch (Colin Farrell, Dublin Marathon) | who is emma fogarty | — |
-| 26 нояб | Netflix: Toos: The Van der Valk Kidnapping (реальное похищение, Нидерланды) | is toos a true story | — |
+| 26 нояб | Netflix: Toos: The Van der Valk Kidnapping (реальное похищение, Нидерланды) | is toos a true story | ✅ is-toos-a-true-story (25 нояб) |
 | 30 нояб | Prime: The Boy Who Stole Billions? | — | — |
 | 4 нояб | Collins: слово года «mogging» | what does mogging mean | — |
 | 11 нояб | Нацпарки: бесплатный вход в День ветеранов (только граждане/резиденты США; $100 для иностранцев) | are national parks free on veterans day | ✅ national-parks-free-veterans-day |
@@ -164,6 +164,10 @@
 Проверка: через 3–7 дней после даты сверить с Trends CSV и Search Console — угадали или нет, записать урок сюда.
 
 ## Уроки
+- 25 нояб, вечер (GSC: последний полный день 24 нояб — 0 кликов / 0 показов; 23 нояб — 2 / 3, всё на главной; health.json: в индексе 1 URL (/), 65 Crawled – not indexed, 18 Discovered, 132 неизвестны Google):
+  - По типам (страницы 21–23 нояб, 2–4 дня): тренды (huss, gta-6-is-woke, rip-fiona, lucia-cheats, mustard-at-lsu, jupiter-incident, cat-ears, kroger), обзор недели 22 нояб, прогнозы (supermoon, sam-bankman-fried, mr-irrelevant), вечные (refrigerator-leaking, washing-machine-last, d-in-fridge) — 0 показов; ни один тип не выигрывает, сайт вне индекса.
+  - Радар 25 нояб: верх candidates снова мусор («speed up housebuilding», «chan after your name», «message blocking is active», «http status 400»); кластер «prepare / stockpile / prepare for 90 days» — хвост слуха о 90-дневном блэкауте (уже есть страница). Живые темы снова только в new_phrases: сбой TikTok 24 нояб (≈30 подсказок), «viral georgia tech couple» (8 подсказок за 3 дня). Мем «General Grant on the thermostat» радар не увидел — нашёлся только через Know Your Meme.
+  - Картинки FLUX: снова подпись-«автограф» в углу (odinforce), каракули на номере машины и в раскрытой тетради, странные лица детей за столом — для сцен просить «no people», «no cars», без бумаг и тетрадей.
 - 24 нояб, вечер (GSC: последний полный день 23 нояб — 2 клика / 3 показа, клики на главной; health.json 24 нояб: в индексе 1 URL (/), 65 Crawled – not indexed, 9 Discovered, 132 неизвестны Google):
   - По типам (страницы 20–22 нояб, 2–4 дня): тренды (remember-november, pajamas-sunrise, huss, gta-6-is-woke, rip-fiona, lucia-cheats, mustard-at-lsu), обзор недели 22 нояб, прогнозы (trinity, sam-bankman-fried), вечные (refrigerator-leaking, washing-machine-last) — 0 показов. Ни один тип не выигрывает, пока сайт вне индекса.
   - Радар 24 нояб: верх candidates снова мусор («claude is better than chatgpt», «http status 400 bad request», «message blocking is active»); все 3 тренда дня взяты из new_phrases (odinforce, «to me my xmen», needoh lava lamp). Крупный трейлер (Avengers: Doomsday, 23 нояб) дал сразу 2 новые подсказки на следующий день — трейлеры блокбастеров стоит проверять в день выхода.

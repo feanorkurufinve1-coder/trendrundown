@@ -1,0 +1,60 @@
+{
+ "subject": "TikTok outage, Nov. 24, 2026",
+ "kind": "term",
+ "trend": true,
+ "query": "why is tiktok not working",
+ "title": "Why is TikTok not working? The Nov. 24 outage, explained",
+ "answer": "TikTok went down for tens of thousands of users on Tuesday, Nov. 24, 2026, starting just after 2 p.m. ET. Videos would not load or showed a \"something went wrong\" error. TikTok said it was a brief technical issue and that it had been resolved; it has not given a cause.",
+ "body": "Problems began shortly after 2 p.m. Eastern on Tuesday, Nov. 24, 2026. Outage tracker Downdetector peaked at about 26,000 user reports, according to Newsweek. Users described videos that would not load or loaded very slowly, often with a \"something went wrong\" error. By about 3:30 p.m. ET, reports had dropped to roughly 2,000.\n\nA TikTok spokesperson said the company had \"experienced a brief technical issue that impacted access to TikTok\" and that the issue was resolved. TikTok did not say what caused it, and there is no evidence it was a cyberattack or linked to other recent outages.\n\nWhy everyone was searching: the outage hit in the middle of the U.S. afternoon, and many users first assumed their own phone or Wi-Fi was the problem. It also came after a run of big service failures this month — Microsoft 365 (Nov. 12), a nationwide FAA ground stop (Nov. 13) and Apple services (Nov. 17) — which fed rumors online that something larger was going on. There is no sign the incidents are connected.\n\nIf TikTok stops working again: check a status site such as Downdetector or search \"tiktok down\" on another app before changing settings. If many people report the same problem, it is on TikTok's side and you can only wait. If reports are low, try closing and reopening the app, switching between Wi-Fi and mobile data, updating the app, and restarting your phone. You do not need to delete the app or log out — your videos and drafts are stored on TikTok's servers.",
+ "in_the_news": "TikTok suffered a brief outage on the afternoon of Nov. 24, 2026, with about 26,000 reports on Downdetector at its peak.",
+ "faq": [
+  {
+   "q": "Is TikTok down right now?",
+   "a": "The Nov. 24, 2026 outage was resolved the same afternoon. If the app fails again, check Downdetector or search \"tiktok down\" on another platform to see whether others have the same problem."
+  },
+  {
+   "q": "What does \"something went wrong, try again later\" mean on TikTok?",
+   "a": "It is TikTok's general error when the app cannot load content from its servers. During an outage it is not your phone; otherwise, try switching networks, updating the app or restarting."
+  },
+  {
+   "q": "Why did TikTok go down?",
+   "a": "TikTok called it a brief technical issue and did not give a cause. There is no evidence of a hack."
+  },
+  {
+   "q": "Will I lose my drafts or videos?",
+   "a": "No. Outages affect access, not your account. Drafts saved on your phone and posted videos are not deleted."
+  }
+ ],
+ "links": [
+  [
+   "Newsweek via Yahoo News",
+   "Is TikTok down? Tens of thousands of users report problems accessing app",
+   "https://www.yahoo.com/news/us/articles/tik-tok-down-tens-thousands-201043001.html"
+  ],
+  [
+   "9to5Mac",
+   "TikTok is currently down for some users",
+   "https://9to5mac.com/2026/11/24/tiktok-is-currently-down-for-some-users/"
+  ],
+  [
+   "Stateline",
+   "National outages, emergency alerts become fodder for doomsday conspiracy theories",
+   "https://stateline.org/2026/11/20/national-outages-emergency-alerts-become-fodder-for-doomsday-conspiracy-theories/"
+  ]
+ ],
+ "radar": {
+  "first": "2026-11-24",
+  "phrases": [
+   "tiktok is down",
+   "tiktok having issues",
+   "tiktok outage november 24 2026",
+   "what is wrong with tiktok right now"
+  ],
+  "where": [
+   "google"
+  ]
+ },
+ "image_prompt": "A glowing circle of loading dots floating above an empty sofa in a dark living room at night, soft illustrated style",
+ "made": "2026-11-25T13:52:19Z",
+ "first": "2026-11-25T13:52:19Z"
+}
