@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-25T01:01:49+00:00",
+ "checked": "2026-11-25T01:17:09+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -313,7 +313,7 @@
   },
   {
    "url": "/x/colts-release-daniel-jones",
-   "at": "2026-11-24T19:02:09+00:00",
+   "at": "2026-11-25T01:17:03+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -505,7 +505,7 @@
   },
   {
    "url": "/x/florida-tornado-warnings-kings-point-delray-beach",
-   "at": "2026-11-24T19:01:56+00:00",
+   "at": "2026-11-25T01:16:51+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1273,7 +1273,7 @@
   },
   {
    "url": "/x/palisades-fire-verdict-rinderknecht-guilty",
-   "at": "2026-11-24T19:02:15+00:00",
+   "at": "2026-11-25T01:17:09+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1607,9 +1607,9 @@
   },
   {
    "url": "/x/tom-jackson-espn-dies",
-   "at": "2026-11-24T19:02:02+00:00",
+   "at": "2026-11-25T01:16:57+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2583,9 +2583,9 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 137,
+  "URL is unknown to Google": 138,
   "Crawled - currently not indexed": 59,
   "error": 9,
-  "Discovered - currently not indexed": 10
+  "Discovered - currently not indexed": 9
  }
 }
