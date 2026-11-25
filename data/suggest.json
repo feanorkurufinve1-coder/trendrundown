@@ -9782,7 +9782,7 @@
   ]
  },
  "exhibition-game": {
-  "time": "2026-11-24T17:47:02+00:00",
+  "time": "2026-11-25T17:48:46+00:00",
   "query": "what is an exhibition game in basketball",
   "in_suggest": true,
   "suggest": {
@@ -9883,6 +9883,10 @@
    ],
    [
     "2026-11-24",
+    true
+   ],
+   [
+    "2026-11-25",
     true
    ]
   ]
@@ -10950,7 +10954,7 @@
   ]
  },
  "first-black-senator-from-mississippi": {
-  "time": "2026-11-24T17:33:09+00:00",
+  "time": "2026-11-25T17:48:47+00:00",
   "query": "who was the first black senator from mississippi",
   "in_suggest": true,
   "suggest": {
@@ -11028,11 +11032,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "how-much-tax-refund-per-child-2026": {
-  "time": "2026-11-24T17:33:11+00:00",
+  "time": "2026-11-25T17:48:50+00:00",
   "query": "how much tax refund per child 2026",
   "in_suggest": true,
   "suggest": {
@@ -11045,8 +11053,8 @@
     "child tax credit phase out",
     "child tax credit income limit",
     "child tax credit age limit",
-    "child tax credit 2025 income limit",
-    "child tax credit 2024"
+    "child tax credit for 2026 tax year",
+    "child tax credit 2025 income limit"
    ],
    "what is child tax credit": [
     "what is child tax credit",
@@ -11133,11 +11141,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "is-the-law-of-beasts-a-true-story": {
-  "time": "2026-11-24T17:33:12+00:00",
+  "time": "2026-11-25T17:48:51+00:00",
   "query": "is the law of beasts a true story",
   "in_suggest": true,
   "suggest": {
@@ -11146,12 +11158,12 @@
     "the law of beasts true story",
     "the law of beasts netflix",
     "the law of beasts review",
-    "the law of beasts netflix review",
     "the law of beasts cast",
+    "the law of beasts netflix review",
+    "the law of beasts netflix true story",
     "the law of beasts rotten tomatoes",
     "the law of beasts real story",
-    "the law of beasts imdb",
-    "the law of beasts rating"
+    "the law of beasts netflix cast"
    ],
    "what is the law of beasts": [
     "what is the law of beasts about",
@@ -11217,11 +11229,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "ligue-1": {
-  "time": "2026-11-24T17:33:13+00:00",
+  "time": "2026-11-25T17:48:52+00:00",
   "query": "what is ligue 1",
   "in_suggest": true,
   "suggest": {
@@ -11235,7 +11251,7 @@
     "ligue 1 games",
     "ligue 1 teams",
     "ligue 1 mobilis",
-    "ligue 1 france"
+    "ligue 1 mcdonald's"
    ],
    "what is ligue 1": [
     "what is ligue 1",
@@ -11298,11 +11314,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "phishing-test": {
-  "time": "2026-11-24T17:33:14+00:00",
+  "time": "2026-11-25T17:48:53+00:00",
   "query": "what is a phishing test",
   "in_suggest": true,
   "suggest": {
@@ -11314,9 +11334,9 @@
     "phishing test meme",
     "phishing test at work",
     "phishing test google",
-    "phishing test site",
     "phishing test definition",
-    "phishing test email free"
+    "phishing test email free",
+    "phishing test examples"
    ],
    "what is phishing test": [
     "what is phishing test",
@@ -11391,11 +11411,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "rock-hall-of-fame-2026-ceremony-air-date": {
-  "time": "2026-11-24T17:33:15+00:00",
+  "time": "2026-11-25T17:48:55+00:00",
   "query": "when will the rock and roll hall of fame 2026 ceremony air",
   "in_suggest": false,
   "suggest": {
@@ -11463,11 +11487,15 @@
    [
     "2026-11-24",
     false
+   ],
+   [
+    "2026-11-25",
+    false
    ]
   ]
  },
  "what-does-refrigerator-coolant-smell-like": {
-  "time": "2026-11-24T17:33:16+00:00",
+  "time": "2026-11-25T17:48:56+00:00",
   "query": "what does refrigerator coolant smell like",
   "in_suggest": true,
   "suggest": {
@@ -11563,11 +11591,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "what-is-a-safety-in-football": {
-  "time": "2026-11-24T17:33:18+00:00",
+  "time": "2026-11-25T17:48:58+00:00",
   "query": "what is a safety in football",
   "in_suggest": true,
   "suggest": {
@@ -11576,24 +11608,24 @@
     "safety",
     "safety glasses",
     "safety razor",
-    "safety insurance",
     "safety movie",
-    "safety first car seat",
     "safety vest",
-    "safety dance",
-    "safety kleen"
+    "safety first car seat",
+    "safety 1st car seat",
+    "safety not guaranteed",
+    "safety shoe distributors"
    ],
    "what is safety": [
     "what is safety in football",
     "what is safety",
-    "what is safety culture",
     "what is safety position in football",
+    "what is safety culture",
     "what is safety data sheet",
     "what is safety stock",
     "what is safety connect toyota",
     "what is safety glass",
-    "what is safety net",
-    "what is safety corridor"
+    "what is safety protocol adherence",
+    "what is safety net"
    ],
    "what is a safety in football": [
     "what is a safety in football",
@@ -11611,8 +11643,8 @@
     "safety football",
     "safety football position",
     "safety football movie",
-    "safety football helmet",
     "safety football points",
+    "safety football helmet",
     "safety football score",
     "safety football drip",
     "safety football 2 points",
@@ -11668,11 +11700,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "what-is-broad-based-categorical-eligibility": {
-  "time": "2026-11-24T17:33:18+00:00",
+  "time": "2026-11-25T17:48:58+00:00",
   "query": "what is broad-based categorical eligibility",
   "in_suggest": true,
   "suggest": {
@@ -11749,11 +11785,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "why-is-wifi-not-working-on-my-phone": {
-  "time": "2026-11-24T17:33:20+00:00",
+  "time": "2026-11-25T17:49:00+00:00",
   "query": "why is wifi not working on my phone",
   "in_suggest": true,
   "suggest": {
@@ -11831,6 +11871,10 @@
    ],
    [
     "2026-11-24",
+    true
+   ],
+   [
+    "2026-11-25",
     true
    ]
   ]
@@ -14489,7 +14533,7 @@
   ]
  },
  "bay-area-waterspouts-tornado-warning": {
-  "time": "2026-11-24T17:46:58+00:00",
+  "time": "2026-11-25T17:48:41+00:00",
   "query": "bay area waterspouts tornado warning",
   "in_suggest": false,
   "suggest": {
@@ -14529,11 +14573,15 @@
    [
     "2026-11-24",
     false
+   ],
+   [
+    "2026-11-25",
+    false
    ]
   ]
  },
  "california-sues-openai": {
-  "time": "2026-11-24T17:47:00+00:00",
+  "time": "2026-11-25T17:48:43+00:00",
   "query": "california sues openai",
   "in_suggest": false,
   "suggest": {
@@ -14572,6 +14620,10 @@
    ],
    [
     "2026-11-24",
+    false
+   ],
+   [
+    "2026-11-25",
     false
    ]
   ]
@@ -15004,7 +15056,7 @@
   ]
  },
  "apple-outage-november-17-2026": {
-  "time": "2026-11-24T17:46:57+00:00",
+  "time": "2026-11-25T17:48:40+00:00",
   "query": "apple outage",
   "in_suggest": true,
   "suggest": {
@@ -15023,9 +15075,9 @@
    "what is apple services outage": [],
    "apple outage": [
     "apple outage",
+    "apple outage today",
     "apple outage status",
     "apple outage map",
-    "apple outages today",
     "apple outage page",
     "apple outage right now",
     "apple outage yesterday",
@@ -15062,11 +15114,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "florida-flooding-november-18-2026": {
-  "time": "2026-11-24T17:47:03+00:00",
+  "time": "2026-11-25T17:48:48+00:00",
   "query": "florida flooding",
   "in_suggest": true,
   "suggest": {
@@ -15089,15 +15145,15 @@
    ],
    "florida flooding": [
     "florida flooding",
-    "florida flooding map",
     "florida flooding today",
-    "florida flooding weather",
-    "florida flooding videos",
-    "florida flooding orlando",
+    "florida flooding map",
     "florida flooding 2026",
-    "florida flooding this week",
-    "florida flooding news",
-    "florida flooding last week"
+    "florida flooding orlando",
+    "florida flooding alligators",
+    "florida flooding november 2026",
+    "florida flooding areas",
+    "florida flooding reddit",
+    "florida flooding st johns river"
    ]
   },
   "history": [
@@ -15127,6 +15183,10 @@
    ],
    [
     "2026-11-24",
+    true
+   ],
+   [
+    "2026-11-25",
     true
    ]
   ]
@@ -15548,7 +15608,7 @@
   ]
  },
  "cma-awards-2026-winners": {
-  "time": "2026-11-24T17:47:01+00:00",
+  "time": "2026-11-25T17:48:44+00:00",
   "query": "cma awards 2026 winners",
   "in_suggest": true,
   "suggest": {
@@ -15608,6 +15668,10 @@
    ],
    [
     "2026-11-24",
+    true
+   ],
+   [
+    "2026-11-25",
     true
    ]
   ]
@@ -16040,7 +16104,7 @@
   ]
  },
  "california-earthquake-pinnacles-november-2026": {
-  "time": "2026-11-24T17:46:59+00:00",
+  "time": "2026-11-25T17:48:42+00:00",
   "query": "earthquake california",
   "in_suggest": true,
   "suggest": {
@@ -16057,13 +16121,13 @@
     "earthquake california",
     "earthquake california today",
     "earthquake california today just now",
-    "earthquake california now",
-    "earthquake california just now live",
-    "earthquake california bay area",
+    "earthquake california just now",
+    "earthquake california today just now live",
+    "earthquake california 1989",
     "earthquake california yesterday",
-    "earthquake california prediction",
-    "earthquake california map",
-    "earthquake california this morning"
+    "earthquake california now",
+    "earthquake california 1994",
+    "earthquake california just now live"
    ]
   },
   "history": [
@@ -16085,6 +16149,10 @@
    ],
    [
     "2026-11-24",
+    true
+   ],
+   [
+    "2026-11-25",
     true
    ]
   ]
