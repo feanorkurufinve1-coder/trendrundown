@@ -1,14 +1,14 @@
 {
- "made": "2026-11-25T04:18:35+00:00",
+ "made": "2026-11-25T04:33:49+00:00",
  "pages": 453,
  "summary": {
   "kind": {
    "event": {
     "pages": 80,
-    "with_impr_%": 15,
+    "with_impr_%": 14,
     "top3_%": 0,
-    "clicks": 4,
-    "clicks_per_page": 0.05
+    "clicks": 1,
+    "clicks_per_page": 0.01
    },
    "law": {
     "pages": 14,
@@ -33,7 +33,7 @@
    },
    "person": {
     "pages": 61,
-    "with_impr_%": 28,
+    "with_impr_%": 26,
     "top3_%": 0,
     "clicks": 15,
     "clicks_per_page": 0.25
@@ -49,15 +49,15 @@
     "pages": 44,
     "with_impr_%": 9,
     "top3_%": 0,
-    "clicks": 0,
-    "clicks_per_page": 0.0
+    "clicks": 1,
+    "clicks_per_page": 0.02
    },
    "term": {
     "pages": 182,
     "with_impr_%": 13,
     "top3_%": 2,
-    "clicks": 34,
-    "clicks_per_page": 0.19
+    "clicks": 36,
+    "clicks_per_page": 0.2
    },
    "tool": {
     "pages": 1,
@@ -70,10 +70,10 @@
   "source": {
    "auto": {
     "pages": 272,
-    "with_impr_%": 19,
+    "with_impr_%": 18,
     "top3_%": 0,
-    "clicks": 5,
-    "clicks_per_page": 0.02
+    "clicks": 3,
+    "clicks_per_page": 0.01
    },
    "longtail": {
     "pages": 3,
@@ -84,10 +84,10 @@
    },
    "manual": {
     "pages": 178,
-    "with_impr_%": 10,
+    "with_impr_%": 11,
     "top3_%": 3,
-    "clicks": 51,
-    "clicks_per_page": 0.29
+    "clicks": 53,
+    "clicks_per_page": 0.3
    }
   },
   "q_word": {
@@ -121,7 +121,7 @@
    },
    "how": {
     "pages": 9,
-    "with_impr_%": 11,
+    "with_impr_%": 0,
     "top3_%": 0,
     "clicks": 0,
     "clicks_per_page": 0.0
@@ -137,22 +137,22 @@
     "pages": 49,
     "with_impr_%": 6,
     "top3_%": 0,
-    "clicks": 4,
-    "clicks_per_page": 0.08
+    "clicks": 1,
+    "clicks_per_page": 0.02
    },
    "what": {
     "pages": 240,
     "with_impr_%": 18,
     "top3_%": 2,
-    "clicks": 39,
-    "clicks_per_page": 0.16
+    "clicks": 41,
+    "clicks_per_page": 0.17
    },
    "when": {
     "pages": 12,
     "with_impr_%": 8,
     "top3_%": 0,
-    "clicks": 5,
-    "clicks_per_page": 0.42
+    "clicks": 6,
+    "clicks_per_page": 0.5
    },
    "where": {
     "pages": 10,
@@ -163,7 +163,7 @@
    },
    "who": {
     "pages": 69,
-    "with_impr_%": 26,
+    "with_impr_%": 25,
     "top3_%": 0,
     "clicks": 6,
     "clicks_per_page": 0.09
@@ -188,15 +188,15 @@
     "pages": 414,
     "with_impr_%": 7,
     "top3_%": 0,
-    "clicks": 31,
-    "clicks_per_page": 0.07
+    "clicks": 32,
+    "clicks_per_page": 0.08
    },
    "True": {
     "pages": 39,
     "with_impr_%": 100,
     "top3_%": 8,
-    "clicks": 25,
-    "clicks_per_page": 0.64
+    "clicks": 24,
+    "clicks_per_page": 0.62
    }
   }
  },
@@ -210,9 +210,9 @@
    "title_len": 61,
    "age_days": 20.5,
    "rival_exact": null,
-   "impr": 547,
-   "clicks": 28,
-   "best_pos": 1.8,
+   "impr": 548,
+   "clicks": 29,
+   "best_pos": 1,
    "title_matches_top_query": false,
    "top_queries": [
     "what is a tele rally",
@@ -240,25 +240,6 @@
    ]
   },
   {
-   "slug": "scott-colom",
-   "title": "Who is Scott Colom? Mississippi's Democratic senator-elect",
-   "kind": "person",
-   "source": "manual",
-   "q_word": "who",
-   "title_len": 58,
-   "age_days": 3.3,
-   "rival_exact": null,
-   "impr": 542,
-   "clicks": 6,
-   "best_pos": 8,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "scott colom",
-    "colom",
-    "scott colom positions"
-   ]
-  },
-  {
    "slug": "cyber-monday",
    "title": "When is Cyber Monday 2026? Nov. 30, the Monday after Thanksgiving",
    "kind": "term",
@@ -267,8 +248,8 @@
    "title_len": 65,
    "age_days": 18.3,
    "rival_exact": null,
-   "impr": 1715,
-   "clicks": 5,
+   "impr": 1716,
+   "clicks": 6,
    "best_pos": 10.5,
    "title_matches_top_query": true,
    "top_queries": [
@@ -278,22 +259,22 @@
    ]
   },
   {
-   "slug": "pro-and-tell-apple-event",
-   "title": "Pro and tell Apple event: Oct. 28, 2026 in Los Angeles, touchscreen MacBook Pro",
-   "kind": "event",
-   "source": "auto",
-   "q_word": "none",
-   "title_len": 79,
-   "age_days": 21.0,
+   "slug": "scott-colom",
+   "title": "Who is Scott Colom? Mississippi's Democratic senator-elect",
+   "kind": "person",
+   "source": "manual",
+   "q_word": "who",
+   "title_len": 58,
+   "age_days": 3.4,
    "rival_exact": null,
-   "impr": 629,
-   "clicks": 4,
+   "impr": 543,
+   "clicks": 6,
    "best_pos": 8,
    "title_matches_top_query": true,
    "top_queries": [
-    "pro and tell",
-    "pro and tell",
-    "pro and tell event"
+    "scott colom",
+    "colom",
+    "scott colom positions"
    ]
   },
   {
@@ -313,6 +294,25 @@
     "isabel fuentes pazos",
     "unprotected murder in galicia true story",
     "murder in galicia true story"
+   ]
+  },
+  {
+   "slug": "pro-and-tell-apple-event",
+   "title": "Pro and tell Apple event: Oct. 28, 2026 in Los Angeles, touchscreen MacBook Pro",
+   "kind": "event",
+   "source": "auto",
+   "q_word": "none",
+   "title_len": 79,
+   "age_days": 21.0,
+   "rival_exact": null,
+   "impr": 339,
+   "clicks": 1,
+   "best_pos": 9,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "pro and tell",
+    "apple pro and tell event",
+    "pro and tell event"
    ]
   },
   {
@@ -343,7 +343,7 @@
    "title_len": 59,
    "age_days": 23.6,
    "rival_exact": null,
-   "impr": 156,
+   "impr": 157,
    "clicks": 1,
    "best_pos": 5,
    "title_matches_top_query": true,
@@ -351,6 +351,24 @@
     "gen z regelt",
     "regelt",
     "genz regelt"
+   ]
+  },
+  {
+   "slug": "the-one-about-matthew-perry",
+   "title": "What is The One About Matthew Perry on Netflix?",
+   "kind": "product",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 47,
+   "age_days": 28.8,
+   "rival_exact": null,
+   "impr": 3,
+   "clicks": 1,
+   "best_pos": 11,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "the one about matthew perry",
+    "does the one about matthew perry focus on how matthew perry died?"
    ]
   },
   {
@@ -381,13 +399,13 @@
    "title_len": 70,
    "age_days": 12.5,
    "rival_exact": null,
-   "impr": 344,
+   "impr": 275,
    "clicks": 0,
    "best_pos": 2,
    "title_matches_top_query": true,
    "top_queries": [
     "what is an exhibition game in basketball",
-    "do exhibition games count college basketball",
+    "exhibition game",
     "exhibition game basketball meaning"
    ]
   },
@@ -506,25 +524,6 @@
    ]
   },
   {
-   "slug": "phishing-test",
-   "title": "What is a phishing test? Why your employer sends fake scam emails",
-   "kind": "term",
-   "source": "manual",
-   "q_word": "what",
-   "title_len": 65,
-   "age_days": 11.5,
-   "rival_exact": null,
-   "impr": 50,
-   "clicks": 0,
-   "best_pos": 2.5,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "phishing test",
-    "phishing test in dc",
-    "phishing test site"
-   ]
-  },
-  {
    "slug": "optical-networking",
    "title": "What is optical networking?",
    "kind": "term",
@@ -544,25 +543,6 @@
    ]
   },
   {
-   "slug": "wta-tennis",
-   "title": "What does WTA stand for in tennis? The women's tour explained",
-   "kind": "organization",
-   "source": "manual",
-   "q_word": "what",
-   "title_len": 61,
-   "age_days": 10.6,
-   "rival_exact": null,
-   "impr": 40,
-   "clicks": 0,
-   "best_pos": 33,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "wta",
-    "wta tennis",
-    "wta tour"
-   ]
-  },
-  {
    "slug": "mississippi-senate-election",
    "title": "Mississippi Senate election 2026 results: Hyde-Smith vs. Colom, Nov. 3",
    "kind": "event",
@@ -571,7 +551,7 @@
    "title_len": 70,
    "age_days": 21.6,
    "rival_exact": null,
-   "impr": 37,
+   "impr": 38,
    "clicks": 0,
    "best_pos": 8.5,
    "title_matches_top_query": false,
@@ -617,6 +597,44 @@
     "game time decision",
     "game day decision meaning",
     "game time decision meaning"
+   ]
+  },
+  {
+   "slug": "wta-tennis",
+   "title": "What does WTA stand for in tennis? The women's tour explained",
+   "kind": "organization",
+   "source": "manual",
+   "q_word": "what",
+   "title_len": 61,
+   "age_days": 10.6,
+   "rival_exact": null,
+   "impr": 33,
+   "clicks": 0,
+   "best_pos": 33,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "wta",
+    "wta tennis",
+    "wta tour"
+   ]
+  },
+  {
+   "slug": "phishing-test",
+   "title": "What is a phishing test? Why your employer sends fake scam emails",
+   "kind": "term",
+   "source": "manual",
+   "q_word": "what",
+   "title_len": 65,
+   "age_days": 11.5,
+   "rival_exact": null,
+   "impr": 30,
+   "clicks": 0,
+   "best_pos": 2.5,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "phishing test",
+    "phishing test in dc",
+    "phishing test site"
    ]
   },
   {
@@ -711,23 +729,6 @@
    ]
   },
   {
-   "slug": "aj-dybantsa",
-   "title": "Who is AJ Dybantsa?",
-   "kind": "person",
-   "source": "auto",
-   "q_word": "who",
-   "title_len": 19,
-   "age_days": 29.2,
-   "rival_exact": null,
-   "impr": 19,
-   "clicks": 0,
-   "best_pos": 24.6,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "aj dybantsa"
-   ]
-  },
-  {
    "slug": "wwe-crown-jewel-2026",
    "title": "What is WWE Crown Jewel? Date, place and card for 2026",
    "kind": "event",
@@ -736,7 +737,7 @@
    "title_len": 54,
    "age_days": 18.7,
    "rival_exact": null,
-   "impr": 18,
+   "impr": 20,
    "clicks": 0,
    "best_pos": 7.5,
    "title_matches_top_query": false,
@@ -744,6 +745,23 @@
     "wwe crown jewel 2026 wikipedia",
     "wwe crown jewel 2026",
     "crown jewel 2026 wikipedia"
+   ]
+  },
+  {
+   "slug": "aj-dybantsa",
+   "title": "Who is AJ Dybantsa?",
+   "kind": "person",
+   "source": "auto",
+   "q_word": "who",
+   "title_len": 19,
+   "age_days": 29.3,
+   "rival_exact": null,
+   "impr": 19,
+   "clicks": 0,
+   "best_pos": 24.6,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "aj dybantsa"
    ]
   },
   {
@@ -810,7 +828,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 40,
-   "age_days": 29.7,
+   "age_days": 29.8,
    "rival_exact": null,
    "impr": 16,
    "clicks": 0,
@@ -846,7 +864,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 40,
-   "age_days": 31.5,
+   "age_days": 31.6,
    "rival_exact": null,
    "impr": 12,
    "clicks": 0,
@@ -856,25 +874,6 @@
     "terminal list reece",
     "who is james reece in terminal list",
     "reece terminal list"
-   ]
-  },
-  {
-   "slug": "lask",
-   "title": "What is LASK football club?",
-   "kind": "organization",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 27,
-   "age_days": 30.7,
-   "rival_exact": null,
-   "impr": 12,
-   "clicks": 0,
-   "best_pos": 8,
-   "title_matches_top_query": false,
-   "top_queries": [
-    "lask country",
-    "what is lask",
-    "lask what country"
    ]
   },
   {
@@ -894,6 +893,25 @@
     "hnry stadium wellington cricket",
     "hnry stadium, wellington",
     "wellington regional stadium"
+   ]
+  },
+  {
+   "slug": "lask",
+   "title": "What is LASK football club?",
+   "kind": "organization",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 27,
+   "age_days": 30.7,
+   "rival_exact": null,
+   "impr": 9,
+   "clicks": 0,
+   "best_pos": 8.7,
+   "title_matches_top_query": false,
+   "top_queries": [
+    "lask country",
+    "lask what country",
+    "lask is from which country"
    ]
   },
   {
@@ -976,7 +994,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 35,
-   "age_days": 29.7,
+   "age_days": 29.8,
    "rival_exact": null,
    "impr": 6,
    "clicks": 0,
@@ -1061,13 +1079,32 @@
    ]
   },
   {
+   "slug": "last-man-standing-match",
+   "title": "What is a Last Man Standing match in WWE? Rules and Crown Jewel 2026 bout",
+   "kind": "term",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 73,
+   "age_days": 18.7,
+   "rival_exact": null,
+   "impr": 6,
+   "clicks": 0,
+   "best_pos": 5.5,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "wwe last man standing match rules",
+    "last man standing rules wwe",
+    "last man standing match rules wwe"
+   ]
+  },
+  {
    "slug": "generic-congressional-ballot",
    "title": "What is the generic congressional ballot: party preference poll for 2026",
    "kind": "term",
    "source": "auto",
    "q_word": "what",
    "title_len": 72,
-   "age_days": 22.9,
+   "age_days": 23.0,
    "rival_exact": null,
    "impr": 5,
    "clicks": 0,
@@ -1094,24 +1131,6 @@
    "top_queries": [
     "what does consent decree mean",
     "consent decree definition"
-   ]
-  },
-  {
-   "slug": "alexander-volkanovski",
-   "title": "Who is Alexander Volkanovski?",
-   "kind": "person",
-   "source": "auto",
-   "q_word": "who",
-   "title_len": 29,
-   "age_days": 31.9,
-   "rival_exact": null,
-   "impr": 4,
-   "clicks": 0,
-   "best_pos": 53,
-   "title_matches_top_query": false,
-   "top_queries": [
-    "volkanovski age",
-    "volkanovski"
    ]
   },
   {
@@ -1185,24 +1204,6 @@
    ]
   },
   {
-   "slug": "last-man-standing-match",
-   "title": "What is a Last Man Standing match in WWE? Rules and Crown Jewel 2026 bout",
-   "kind": "term",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 73,
-   "age_days": 18.7,
-   "rival_exact": null,
-   "impr": 4,
-   "clicks": 0,
-   "best_pos": 5.5,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "last man standing rules wwe",
-    "last man standing match rules wwe"
-   ]
-  },
-  {
    "slug": "cybercab",
    "title": "What is a Cybercab? Tesla's two-seat robotaxi, built in Austin, Texas",
    "kind": "product",
@@ -1226,7 +1227,7 @@
    "source": "manual",
    "q_word": "what",
    "title_len": 65,
-   "age_days": 3.3,
+   "age_days": 3.4,
    "rival_exact": null,
    "impr": 4,
    "clicks": 0,
@@ -1306,37 +1307,21 @@
    ]
   },
   {
-   "slug": "marine-corps-marathon",
-   "title": "What is the Marine Corps Marathon?",
-   "kind": "event",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 34,
-   "age_days": 32.7,
+   "slug": "reminders-of-him-book",
+   "title": "Is Reminders of Him based on a book? Yes, Colleen Hoover's 2022 novel",
+   "kind": "other",
+   "source": "manual",
+   "q_word": "is",
+   "title_len": 69,
+   "age_days": 18.6,
    "rival_exact": null,
-   "impr": 2,
+   "impr": 3,
    "clicks": 0,
-   "best_pos": 35,
+   "best_pos": 9.5,
    "title_matches_top_query": false,
    "top_queries": [
-    "marine corps marathon 2026 course map"
-   ]
-  },
-  {
-   "slug": "premier-league",
-   "title": "How does the Premier League schedule work?",
-   "kind": "term",
-   "source": "auto",
-   "q_word": "how",
-   "title_len": 42,
-   "age_days": 30.7,
-   "rival_exact": null,
-   "impr": 2,
-   "clicks": 0,
-   "best_pos": 8.5,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "how does the premier league schedule work"
+    "is reminders of him based on a true story",
+    "\"colleen hoover adaptation ‘reminders of you’ sets vanessa caswill as director\""
    ]
   },
   {
@@ -1391,23 +1376,6 @@
    ]
   },
   {
-   "slug": "the-one-about-matthew-perry",
-   "title": "What is The One About Matthew Perry on Netflix?",
-   "kind": "product",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 47,
-   "age_days": 28.8,
-   "rival_exact": null,
-   "impr": 2,
-   "clicks": 0,
-   "best_pos": 26.5,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "the one about matthew perry"
-   ]
-  },
-  {
    "slug": "genie-4",
    "title": "What is Genie 4 from Google?",
    "kind": "product",
@@ -1459,21 +1427,36 @@
    ]
   },
   {
-   "slug": "reminders-of-him-book",
-   "title": "Is Reminders of Him based on a book? Yes, Colleen Hoover's 2022 novel",
-   "kind": "other",
+   "slug": "hank-aaron-award",
+   "title": "What is the Hank Aaron Award? MLB's top hitter honor, 2026 winners Nov. 11",
+   "kind": "term",
    "source": "manual",
-   "q_word": "is",
-   "title_len": 69,
+   "q_word": "what",
+   "title_len": 74,
    "age_days": 18.6,
    "rival_exact": null,
-   "impr": 2,
+   "impr": 1,
    "clicks": 0,
-   "best_pos": 9.5,
-   "title_matches_top_query": false,
+   "best_pos": 9,
+   "title_matches_top_query": true,
    "top_queries": [
-    "is reminders of him based on a true story"
+    "2026 hank aaron award"
    ]
+  },
+  {
+   "slug": "marine-corps-marathon",
+   "title": "What is the Marine Corps Marathon?",
+   "kind": "event",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 34,
+   "age_days": 32.7,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
   },
   {
    "slug": "interstate-395-bridge",
@@ -1581,6 +1564,21 @@
    "top_queries": []
   },
   {
+   "slug": "alexander-volkanovski",
+   "title": "Who is Alexander Volkanovski?",
+   "kind": "person",
+   "source": "auto",
+   "q_word": "who",
+   "title_len": 29,
+   "age_days": 31.9,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
    "slug": "movsar-evloev",
    "title": "Who is Movsar Evloev?",
    "kind": "person",
@@ -1602,7 +1600,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 23,
-   "age_days": 31.5,
+   "age_days": 31.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -1632,7 +1630,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 49,
-   "age_days": 30.9,
+   "age_days": 31.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -1647,7 +1645,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 35,
-   "age_days": 30.9,
+   "age_days": 31.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -1662,6 +1660,21 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 45,
+   "age_days": 30.7,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
+   "slug": "premier-league",
+   "title": "How does the Premier League schedule work?",
+   "kind": "term",
+   "source": "auto",
+   "q_word": "how",
+   "title_len": 42,
    "age_days": 30.7,
    "rival_exact": null,
    "impr": 0,
@@ -1767,7 +1780,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 21,
-   "age_days": 29.3,
+   "age_days": 29.4,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -1797,7 +1810,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 34,
-   "age_days": 29.3,
+   "age_days": 29.4,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -1902,7 +1915,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 25,
-   "age_days": 27.9,
+   "age_days": 28.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2172,7 +2185,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 57,
-   "age_days": 25.1,
+   "age_days": 25.2,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2187,7 +2200,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 68,
-   "age_days": 25.1,
+   "age_days": 25.2,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2712,7 +2725,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 56,
-   "age_days": 21.2,
+   "age_days": 21.3,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2817,7 +2830,7 @@
    "source": "auto",
    "q_word": "where",
    "title_len": 66,
-   "age_days": 20.5,
+   "age_days": 20.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2892,7 +2905,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 60,
-   "age_days": 20.4,
+   "age_days": 20.5,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2937,7 +2950,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 52,
-   "age_days": 20.3,
+   "age_days": 20.4,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2982,7 +2995,7 @@
    "source": "auto",
    "q_word": "none",
    "title_len": 62,
-   "age_days": 20.2,
+   "age_days": 20.3,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2997,7 +3010,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 61,
-   "age_days": 20.2,
+   "age_days": 20.3,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3192,7 +3205,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 66,
-   "age_days": 19.9,
+   "age_days": 20.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3207,7 +3220,7 @@
    "source": "auto",
    "q_word": "none",
    "title_len": 66,
-   "age_days": 19.9,
+   "age_days": 20.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3222,7 +3235,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 69,
-   "age_days": 19.9,
+   "age_days": 20.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3387,7 +3400,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 68,
-   "age_days": 19.5,
+   "age_days": 19.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3567,7 +3580,7 @@
    "source": "auto",
    "q_word": "can",
    "title_len": 69,
-   "age_days": 18.7,
+   "age_days": 18.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4167,7 +4180,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 79,
-   "age_days": 17.0,
+   "age_days": 17.1,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4212,7 +4225,7 @@
    "source": "auto",
    "q_word": "none",
    "title_len": 71,
-   "age_days": 16.9,
+   "age_days": 17.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4467,7 +4480,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 76,
-   "age_days": 15.1,
+   "age_days": 15.2,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4827,7 +4840,7 @@
    "source": "manual",
    "q_word": "what",
    "title_len": 68,
-   "age_days": 3.3,
+   "age_days": 3.4,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5248,21 +5261,6 @@
    "q_word": "is",
    "title_len": 70,
    "age_days": 6.5,
-   "rival_exact": null,
-   "impr": 0,
-   "clicks": 0,
-   "best_pos": null,
-   "title_matches_top_query": false,
-   "top_queries": []
-  },
-  {
-   "slug": "hank-aaron-award",
-   "title": "What is the Hank Aaron Award? MLB's top hitter honor, 2026 winners Nov. 11",
-   "kind": "term",
-   "source": "manual",
-   "q_word": "what",
-   "title_len": 74,
-   "age_days": 18.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5697,7 +5695,7 @@
    "source": "manual",
    "q_word": "when",
    "title_len": 61,
-   "age_days": 3.3,
+   "age_days": 3.4,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5982,7 +5980,7 @@
    "source": "manual",
    "q_word": "when",
    "title_len": 57,
-   "age_days": 3.3,
+   "age_days": 3.4,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6087,7 +6085,7 @@
    "source": "manual",
    "q_word": "what",
    "title_len": 57,
-   "age_days": 3.3,
+   "age_days": 3.4,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6747,7 +6745,7 @@
    "source": "manual",
    "q_word": "what",
    "title_len": 65,
-   "age_days": 3.3,
+   "age_days": 3.4,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
