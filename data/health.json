@@ -46,7 +46,7 @@
  "urls": [
   {
    "url": "/",
-   "at": "2026-11-24T18:17:15+00:00",
+   "at": "2026-11-25T00:18:15+00:00",
    "verdict": "PASS",
    "coverageState": "Submitted and indexed",
    "robotsTxtState": "ALLOWED",
@@ -94,31 +94,17 @@
   },
   {
    "url": "/x/telerally",
-   "at": "2026-11-24T18:16:50+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "Crawled - currently not indexed",
-   "robotsTxtState": "ALLOWED",
-   "indexingState": "INDEXING_ALLOWED",
-   "pageFetchState": "SUCCESSFUL",
-   "lastCrawlTime": "2026-11-11T07:11:00Z",
-   "googleCanonical": "https://trendrundown.com/x/telerally",
-   "userCanonical": "https://trendrundown.com/x/telerally"
+   "at": "2026-11-25T00:17:50+00:00",
+   "error": "HTTP 500 {\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"status\": \"INTERNAL\"\n  }\n}\n"
   },
   {
    "url": "/x/mutual-option",
-   "at": "2026-11-24T18:16:56+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "Crawled - currently not indexed",
-   "robotsTxtState": "ALLOWED",
-   "indexingState": "INDEXING_ALLOWED",
-   "pageFetchState": "SUCCESSFUL",
-   "lastCrawlTime": "2026-11-03T09:16:57Z",
-   "googleCanonical": "https://trendrundown.com/x/mutual-option",
-   "userCanonical": "https://trendrundown.com/x/mutual-option"
+   "at": "2026-11-25T00:17:56+00:00",
+   "error": "HTTP 500 {\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"status\": \"INTERNAL\"\n  }\n}\n"
   },
   {
    "url": "/x/dane-cook-brother",
-   "at": "2026-11-24T18:17:03+00:00",
+   "at": "2026-11-25T00:18:03+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -130,7 +116,7 @@
   },
   {
    "url": "/x/cyber-monday",
-   "at": "2026-11-24T18:17:09+00:00",
+   "at": "2026-11-25T00:18:09+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -142,7 +128,7 @@
   },
   {
    "url": "/x/40-man-roster",
-   "at": "2026-11-24T18:17:21+00:00",
+   "at": "2026-11-25T00:18:22+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -154,7 +140,7 @@
   },
   {
    "url": "/x/alaska-ranked-choice-voting",
-   "at": "2026-11-24T18:17:27+00:00",
+   "at": "2026-11-25T00:18:28+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -166,19 +152,12 @@
   },
   {
    "url": "/x/alicias-law-the-good-wife",
-   "at": "2026-11-24T18:17:33+00:00",
-   "verdict": "NEUTRAL",
-   "coverageState": "Crawled - currently not indexed",
-   "robotsTxtState": "ALLOWED",
-   "indexingState": "INDEXING_ALLOWED",
-   "pageFetchState": "SUCCESSFUL",
-   "lastCrawlTime": "2026-11-07T18:08:17Z",
-   "googleCanonical": "https://trendrundown.com/x/alicias-law-the-good-wife",
-   "userCanonical": "https://trendrundown.com/x/alicias-law-the-good-wife"
+   "at": "2026-11-25T00:18:34+00:00",
+   "error": "HTTP 500 {\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"status\": \"INTERNAL\"\n  }\n}\n"
   },
   {
    "url": "/x/all-mlb-team",
-   "at": "2026-11-24T18:17:40+00:00",
+   "at": "2026-11-25T00:18:41+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2605,8 +2584,8 @@
  "summary": {
   "Submitted and indexed": 1,
   "URL is unknown to Google": 138,
-  "Crawled - currently not indexed": 62,
-  "Discovered - currently not indexed": 9,
-  "error": 6
+  "Crawled - currently not indexed": 59,
+  "error": 9,
+  "Discovered - currently not indexed": 9
  }
 }
