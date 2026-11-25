@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-25T07:32:11+00:00",
+ "checked": "2026-11-25T08:48:08+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -610,7 +610,7 @@
   },
   {
    "url": "/x/heartland-netflix-cast",
-   "at": "2026-11-25T02:31:50+00:00",
+   "at": "2026-11-25T08:47:11+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -622,7 +622,7 @@
   },
   {
    "url": "/x/hegseth-tomb-guard-medal",
-   "at": "2026-11-25T02:31:56+00:00",
+   "at": "2026-11-25T08:47:17+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -634,7 +634,7 @@
   },
   {
    "url": "/x/how-are-cma-awards-voted",
-   "at": "2026-11-25T02:32:02+00:00",
+   "at": "2026-11-25T08:47:23+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -646,7 +646,7 @@
   },
   {
    "url": "/x/how-are-game-awards-nominees-chosen",
-   "at": "2026-11-25T02:32:09+00:00",
+   "at": "2026-11-25T08:47:30+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -658,7 +658,7 @@
   },
   {
    "url": "/x/how-are-grammy-nominations-decided",
-   "at": "2026-11-25T02:32:15+00:00",
+   "at": "2026-11-25T08:47:36+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -670,7 +670,7 @@
   },
   {
    "url": "/x/how-cy-young-is-voted",
-   "at": "2026-11-25T02:32:21+00:00",
+   "at": "2026-11-25T08:47:43+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -682,7 +682,7 @@
   },
   {
    "url": "/x/how-is-senate-majority-leader-chosen",
-   "at": "2026-11-25T02:32:28+00:00",
+   "at": "2026-11-25T08:47:49+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -694,7 +694,7 @@
   },
   {
    "url": "/x/how-is-speaker-of-the-house-elected",
-   "at": "2026-11-25T02:32:34+00:00",
+   "at": "2026-11-25T08:47:55+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -718,7 +718,7 @@
   },
   {
    "url": "/x/how-mlb-mvp-is-voted",
-   "at": "2026-11-25T02:32:40+00:00",
+   "at": "2026-11-25T08:48:02+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -730,7 +730,7 @@
   },
   {
    "url": "/x/how-much-tax-refund-per-child-2026",
-   "at": "2026-11-25T02:42:08+00:00",
+   "at": "2026-11-25T08:48:08+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
