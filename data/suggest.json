@@ -13657,7 +13657,7 @@
   ]
  },
  "why-are-people-saying-dinosaurs-in-mexico": {
-  "time": "2026-11-24T10:33:42+00:00",
+  "time": "2026-11-25T10:33:44+00:00",
   "query": "why are people saying dinosaurs in mexico",
   "in_suggest": false,
   "suggest": {
@@ -13716,6 +13716,10 @@
    ],
    [
     "2026-11-24",
+    false
+   ],
+   [
+    "2026-11-25",
     false
    ]
   ]
