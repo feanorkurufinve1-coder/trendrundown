@@ -5018,9 +5018,9 @@ def build_explainer(x, topics):
     body = f"""<article>
 <p class="meta"><a href="../index.html">{SITE_NAME}</a> › <a class="cat" href="../{sec_file}.html">{sec_name}</a> · updated {E(fmt_et(x["made"]))}</p>
 <h1>{E(x["title"])}</h1>
+<div class="box answer"><p style="margin:0">{E(x["answer"])}</p></div>
 {hero_x}
 {audio_player("x/" + x["slug"], ". ".join([x["title"], x["answer"], x.get("in_the_news", ""), x["body"]]))}
-<div class="box answer"><p style="margin:0">{E(x["answer"])}</p></div>
 {("<h2>" + ("Why people are talking about it" if x.get("trend") else "Why it's in the news") + "</h2><p>" + E(x["in_the_news"]) + "</p>") if x["in_the_news"].strip() else ""}
 {('<ul class="list">' + newslist + '</ul>') if newslist and not AUTO_PAGES_OFF else ''}
 {ad("in_article")}
