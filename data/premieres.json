@@ -1,35 +1,7 @@
 {
- "made": "2026-11-24T20:48:23+00:00",
+ "made": "2026-11-25T09:02:41+00:00",
  "about": "Премьеры сериалов и новых сезонов в США на 14 дней вперёд (TVmaze). new_series = совсем новый сериал. Сырьё для прогнозов «is X a true story», «X cast», «X season N release time».",
  "premieres": [
-  {
-   "date": "2026-11-24",
-   "show": "I Want to Kill My Boss",
-   "season": 1,
-   "new_series": true,
-   "type": "Documentary",
-   "genres": [
-    "Crime"
-   ],
-   "network": "Investigation Discovery",
-   "premiered": "2026-11-24",
-   "summary": "I Want to Kill My Boss explores murder cases from across the country where simmering resentments and personal vendettas in the workplace escalate to a lethal place Through first-hand accounts from those closest to the cases and insight into the investigations as they unfolded, I Want to Kill My Bossexposes how everyday professional conflicts in business of all kinds can take a devastating turn. ",
-   "url": "https://www.tvmaze.com/shows/95754/i-want-to-kill-my-boss",
-   "official": null
-  },
-  {
-   "date": "2026-11-24",
-   "show": "Miss Universe Pageant",
-   "season": 2026,
-   "new_series": false,
-   "type": "Variety",
-   "genres": [],
-   "network": "REELZ",
-   "premiered": "1955-07-22",
-   "summary": "Since it's inception in 1952, the Miss Universe Pageant has given the world's most beautiful women from more than 80 countries something to vie for. Usually held in a different city each year, the live event spotlights contestants' performances in three categories: swimsuit, evening gown, and interview. Along with the coveted title, one lucky winner wins a contract with the Miss Universe Organizat",
-   "url": "https://www.tvmaze.com/shows/7117/miss-universe-pageant",
-   "official": "http://www.missuniverse.com/"
-  },
   {
    "date": "2026-11-25",
    "show": "Andrew Tate: Toxic Empire",
@@ -44,22 +16,6 @@
    "summary": "Andrew Tate: Toxic Empire investigates how brothers Andrew and Tristan Tate used social media, the promise of wealth, and controversial messaging to build a worldwide following at the center of what's become known as the \"manosphere.\" Through exclusive interviews, former followers and associates pull back the curtain on the inner workings behind the Tate brand, describing what some characterize as",
    "url": "https://www.tvmaze.com/shows/95224/andrew-tate-toxic-empire",
    "official": null
-  },
-  {
-   "date": "2026-11-25",
-   "show": "Blade Runner 2099",
-   "season": 1,
-   "new_series": true,
-   "type": "Scripted",
-   "genres": [
-    "Science-Fiction",
-    "Thriller"
-   ],
-   "network": "Prime Video",
-   "premiered": "2026-11-25",
-   "summary": "Fifty years after the events of Blade Runner 2049, Los Angeles has been reborn, just not by humanity. Cora, a fugitive in a final bid to stop running, takes on one last identity: a Blade Runner. Forced to partner with Olwen, a Replicant days from dying, she hunts down a runaway hiding a truth that could collapse their fragile city.",
-   "url": "https://www.tvmaze.com/shows/60458/blade-runner-2099",
-   "official": "https://www.amazon.com/gp/video/detail/B0H8MH1JP1"
   },
   {
    "date": "2026-11-25",
@@ -564,6 +520,19 @@
    "official": "https://celebrityscares.com/"
   },
   {
+   "date": "2026-12-06",
+   "show": "Artful",
+   "season": 7,
+   "new_series": false,
+   "type": "Reality",
+   "genres": [],
+   "network": "BYUtv",
+   "premiered": "2020-04-05",
+   "summary": "Where does art come from? What motivates artists to create? What is the connection between creation and Creator? In this documentary series, painters, sculptors, photographers, illustrators, and other artists from different disciplines share how their personal faith sparks their creative spirit.",
+   "url": "https://www.tvmaze.com/shows/57921/artful",
+   "official": "https://www.byutv.org/artful"
+  },
+  {
    "date": "2026-12-08",
    "show": "Men v. Food",
    "season": 1,
@@ -609,6 +578,22 @@
    "summary": "Only Murders in the Building follows three New Yorkers who find they have a mutual interest in solving true crime – but limit their amateur sleuthing to only murders in their building.",
    "url": "https://www.tvmaze.com/shows/48830/only-murders-in-the-building",
    "official": "https://www.hulu.com/series/only-murders-in-the-building"
+  },
+  {
+   "date": "2026-12-09",
+   "show": "Lil Kev",
+   "season": 2,
+   "new_series": false,
+   "type": "Animation",
+   "genres": [
+    "Comedy",
+    "Adult"
+   ],
+   "network": "Paramount+",
+   "premiered": "2025-03-06",
+   "summary": "Set in 1993 North Philadelphia, the adult animated series Lil Kev follows 12-year-old Kevin Hart, whose wild imagination and unshakable optimism constantly collide with his neighborhood's harsh realities. At the same time, his no-nonsense mother Nancy juggles night shifts as an E.R. nurse while waging a one-woman war to keep Kev on track – no easy feat with his mischievous older brother Robert bla",
+   "url": "https://www.tvmaze.com/shows/82295/lil-kev",
+   "official": "https://www.bet.plus/shows/lil-kev"
   }
  ]
 }
