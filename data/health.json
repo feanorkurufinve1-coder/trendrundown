@@ -4,8 +4,8 @@
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
-   "lastSubmitted": "2026-11-22T22:16:49.168Z",
-   "lastDownloaded": "2026-11-25T05:14:26.855Z",
+   "lastSubmitted": "2026-11-25T12:31:54.485Z",
+   "lastDownloaded": "2026-11-25T12:31:54.990Z",
    "isPending": false,
    "warnings": "0",
    "errors": "0",
@@ -24,8 +24,8 @@
   },
   {
    "path": "https://trendrundown.com/sitemap-news.xml",
-   "lastSubmitted": "2026-11-22T22:16:49.012Z",
-   "lastDownloaded": "2026-11-25T02:25:49.519Z",
+   "lastSubmitted": "2026-11-25T12:31:54.363Z",
+   "lastDownloaded": "2026-11-25T12:31:56.149Z",
    "isPending": false,
    "warnings": "0",
    "errors": "0",
@@ -263,6 +263,18 @@
   {
    "url": "/x/camp-flog-gnaw-livestream",
    "at": "2026-11-25T13:02:01+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
+   "url": "/x/caribbean-princess-outbreak-november-2026",
+   "at": "2026-11-25T17:02:49+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -706,7 +718,7 @@
   },
   {
    "url": "/x/how-long-does-a-washing-machine-last",
-   "at": "2026-11-25T10:32:52+00:00",
+   "at": "2026-11-25T17:03:21+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -765,6 +777,18 @@
    "userCanonical": "https://trendrundown.com/x/how-to-vote-on-the-circle-hulu"
   },
   {
+   "url": "/x/huawei-verdict-trade-secrets-bank-fraud",
+   "at": "2026-11-25T17:02:55+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/i-play-rocky-true-story",
    "at": "2026-11-25T15:32:09+00:00",
    "verdict": "NEUTRAL",
@@ -790,9 +814,9 @@
   },
   {
    "url": "/x/internet-trends-this-week-2026-11-22",
-   "at": "2026-11-25T10:32:58+00:00",
+   "at": "2026-11-25T17:03:28+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -922,7 +946,7 @@
   },
   {
    "url": "/x/is-sam-bankman-fried-still-in-prison",
-   "at": "2026-11-25T10:33:05+00:00",
+   "at": "2026-11-25T17:03:34+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1317,6 +1341,18 @@
    "userCanonical": null
   },
   {
+   "url": "/x/pce-inflation-report-october-2026",
+   "at": "2026-11-25T17:03:02+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/phishing-test",
    "at": "2026-11-25T16:47:22+00:00",
    "verdict": "NEUTRAL",
@@ -1522,7 +1558,7 @@
   },
   {
    "url": "/x/spacex-starship-caught-by-tower",
-   "at": "2026-11-25T10:32:39+00:00",
+   "at": "2026-11-25T17:03:08+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1534,7 +1570,7 @@
   },
   {
    "url": "/x/ss-united-states-sinking",
-   "at": "2026-11-25T10:32:46+00:00",
+   "at": "2026-11-25T17:03:15+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1546,7 +1582,7 @@
   },
   {
    "url": "/x/stacy-keach-death",
-   "at": "2026-11-25T10:33:24+00:00",
+   "at": "2026-11-25T17:03:53+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1594,7 +1630,7 @@
   },
   {
    "url": "/x/teruaki-sato",
-   "at": "2026-11-25T10:33:30+00:00",
+   "at": "2026-11-25T17:03:59+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1618,7 +1654,7 @@
   },
   {
    "url": "/x/the-altruists-true-story",
-   "at": "2026-11-25T10:33:36+00:00",
+   "at": "2026-11-25T17:04:06+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1630,7 +1666,7 @@
   },
   {
    "url": "/x/the-empress-netflix-true-story",
-   "at": "2026-11-25T10:33:43+00:00",
+   "at": "2026-11-25T17:04:12+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1642,7 +1678,7 @@
   },
   {
    "url": "/x/the-good-daughter-book",
-   "at": "2026-11-25T10:47:04+00:00",
+   "at": "2026-11-25T17:04:19+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1666,7 +1702,7 @@
   },
   {
    "url": "/x/tri-series-cricket",
-   "at": "2026-11-25T10:47:11+00:00",
+   "at": "2026-11-25T17:04:25+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1690,7 +1726,7 @@
   },
   {
    "url": "/x/two-dan-sullivans-alaska",
-   "at": "2026-11-25T10:47:17+00:00",
+   "at": "2026-11-25T17:04:31+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1702,7 +1738,7 @@
   },
   {
    "url": "/x/under-siege-netflix-true-story",
-   "at": "2026-11-25T10:47:23+00:00",
+   "at": "2026-11-25T17:04:38+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2338,7 +2374,7 @@
   },
   {
    "url": "/x/why-are-people-saying-lucia-cheats-on-jason",
-   "at": "2026-11-25T10:33:11+00:00",
+   "at": "2026-11-25T17:03:40+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2386,7 +2422,7 @@
   },
   {
    "url": "/x/why-are-people-throwing-mustard-at-lsu",
-   "at": "2026-11-25T10:33:17+00:00",
+   "at": "2026-11-25T17:03:47+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2697,7 +2733,7 @@
    "userCanonical": "https://trendrundown.com/x/wta-tennis"
   }
  ],
- "sm_at": "2026-11-25T10:46:58+00:00",
+ "sm_at": "2026-11-25T17:02:43+00:00",
  "first_indexed": {
   "/x/cyber-monday": "2026-11-13T16:25:58+00:00",
   "/": "2026-11-13T16:25:58+00:00",
@@ -2706,8 +2742,8 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 135,
+  "URL is unknown to Google": 139,
   "Crawled - currently not indexed": 65,
-  "Discovered - currently not indexed": 20
+  "Discovered - currently not indexed": 19
  }
 }
