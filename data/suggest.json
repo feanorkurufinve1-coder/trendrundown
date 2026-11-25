@@ -9892,7 +9892,7 @@
   ]
  },
  "game-time-decision": {
-  "time": "2026-11-24T18:01:43+00:00",
+  "time": "2026-11-25T18:03:29+00:00",
   "query": "game time decision meaning",
   "in_suggest": true,
   "suggest": {
@@ -9997,11 +9997,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "mutual-option": {
-  "time": "2026-11-24T18:01:47+00:00",
+  "time": "2026-11-25T18:03:32+00:00",
   "query": "what is a mutual option in baseball",
   "in_suggest": true,
   "suggest": {
@@ -10101,11 +10105,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "nba-draft": {
-  "time": "2026-11-24T18:01:48+00:00",
+  "time": "2026-11-25T18:03:33+00:00",
   "query": "what is the nba draft",
   "in_suggest": true,
   "suggest": {
@@ -10113,13 +10121,13 @@
     "nba draft 2026",
     "nba draft",
     "nba draft 2027",
-    "nba draft 2025",
     "nba draft 2027 mock",
-    "nba draft results",
+    "nba draft 2025",
     "nba draft 2024",
-    "nba draft order",
+    "nba draft results",
     "nba draft projections",
-    "nba draft order 2026"
+    "nba draft mock",
+    "nba draft order"
    ],
    "what is nba draft": [
     "what is nba draft",
@@ -10198,11 +10206,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "tri-series-cricket": {
-  "time": "2026-11-24T18:01:52+00:00",
+  "time": "2026-11-25T18:03:37+00:00",
   "query": "what is a tri series in cricket",
   "in_suggest": true,
   "suggest": {
@@ -10305,6 +10317,10 @@
    ],
    [
     "2026-11-24",
+    true
+   ],
+   [
+    "2026-11-25",
     true
    ]
   ]
@@ -14629,7 +14645,7 @@
   ]
  },
  "robert-pattinson-james-bond": {
-  "time": "2026-11-24T18:01:50+00:00",
+  "time": "2026-11-25T18:03:35+00:00",
   "query": "robert pattinson james bond",
   "in_suggest": true,
   "suggest": {
@@ -14649,15 +14665,15 @@
    ],
    "robert pattinson james bond": [
     "robert pattinson james bond",
+    "robert pattinson james bond casting",
     "robert pattinson james bond audition",
-    "robert pattinson james bond contract",
-    "robert pattinson james bond meme",
-    "robert pattinson james bond trailer",
-    "robert pattinson james bond reveal",
     "robert pattinson james bond girl",
-    "robert pattinson james bond announcement",
-    "robert pattinson james bond audition netflix",
-    "robert pattinson james bond ai"
+    "robert pattinson james bond movie",
+    "robert pattinson james bond meme",
+    "robert pattinson james bond contract",
+    "robert pattinson james bond trailer",
+    "robert pattinson james bond gun",
+    "robert pattinson james bond watch"
    ]
   },
   "history": [
@@ -14691,6 +14707,10 @@
    ],
    [
     "2026-11-24",
+    true
+   ],
+   [
+    "2026-11-25",
     true
    ]
   ]
@@ -15192,7 +15212,7 @@
   ]
  },
  "hakeem-jeffries-speaker-nomination": {
-  "time": "2026-11-24T18:01:45+00:00",
+  "time": "2026-11-25T18:03:31+00:00",
   "query": "is hakeem jeffries speaker",
   "in_suggest": true,
   "suggest": {
@@ -15232,6 +15252,10 @@
    ],
    [
     "2026-11-24",
+    true
+   ],
+   [
+    "2026-11-25",
     true
    ]
   ]
@@ -15677,7 +15701,7 @@
   ]
  },
  "trump-xi-putin-meeting-declaration": {
-  "time": "2026-11-24T18:01:53+00:00",
+  "time": "2026-11-25T18:03:38+00:00",
   "query": "trump xi putin meeting",
   "in_suggest": true,
   "suggest": {
@@ -15719,11 +15743,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "walmart-earnings-q3-2026": {
-  "time": "2026-11-24T18:01:54+00:00",
+  "time": "2026-11-25T18:03:39+00:00",
   "query": "walmart earnings",
   "in_suggest": true,
   "suggest": {
@@ -15770,6 +15798,10 @@
    ],
    [
     "2026-11-24",
+    true
+   ],
+   [
+    "2026-11-25",
     true
    ]
   ]
@@ -16158,7 +16190,7 @@
   ]
  },
  "rikers-island-closure-plan-2032": {
-  "time": "2026-11-24T18:01:49+00:00",
+  "time": "2026-11-25T18:03:34+00:00",
   "query": "rikers island closing",
   "in_suggest": true,
   "suggest": {
@@ -16176,14 +16208,14 @@
    "rikers island closing": [
     "rikers island closing",
     "rikers island closing plan",
-    "rikers island closing date",
     "rikers island closing why",
-    "rikers island closing speech",
+    "rikers island closing date",
     "rikers island closing in 2026",
     "rikers island closing down",
     "rikers island closing reddit",
     "rikers island closing mamdani",
-    "rikers island closing 2027"
+    "rikers island closing 2027",
+    "rikers island closure plan"
    ]
   },
   "history": [
@@ -16205,6 +16237,10 @@
    ],
    [
     "2026-11-24",
+    true
+   ],
+   [
+    "2026-11-25",
     true
    ]
   ]
