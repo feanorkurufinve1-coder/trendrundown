@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-25T13:17:14+00:00",
+ "checked": "2026-11-25T13:47:09+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -334,7 +334,7 @@
   },
   {
    "url": "/x/colts-release-daniel-jones",
-   "at": "2026-11-25T07:32:05+00:00",
+   "at": "2026-11-25T13:47:03+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1294,7 +1294,7 @@
   },
   {
    "url": "/x/palisades-fire-verdict-rinderknecht-guilty",
-   "at": "2026-11-25T07:32:11+00:00",
+   "at": "2026-11-25T13:47:09+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1642,9 +1642,9 @@
   },
   {
    "url": "/x/tom-jackson-espn-dies",
-   "at": "2026-11-25T07:31:59+00:00",
+   "at": "2026-11-25T13:46:57+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2646,8 +2646,8 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 132,
+  "URL is unknown to Google": 131,
   "Crawled - currently not indexed": 65,
-  "Discovered - currently not indexed": 18
+  "Discovered - currently not indexed": 19
  }
 }
