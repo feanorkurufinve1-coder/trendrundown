@@ -58,7 +58,7 @@
   },
   {
    "url": "/news",
-   "at": "2026-11-25T12:02:01+00:00",
+   "at": "2026-11-25T18:17:00+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -70,7 +70,7 @@
   },
   {
    "url": "/trends",
-   "at": "2026-11-25T12:02:07+00:00",
+   "at": "2026-11-25T18:17:06+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -82,7 +82,7 @@
   },
   {
    "url": "/explained",
-   "at": "2026-11-25T12:02:13+00:00",
+   "at": "2026-11-25T18:17:13+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -214,7 +214,7 @@
   },
   {
    "url": "/x/bay-area-waterspouts-tornado-warning",
-   "at": "2026-11-25T12:02:20+00:00",
+   "at": "2026-11-25T18:17:19+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -250,7 +250,7 @@
   },
   {
    "url": "/x/california-sues-openai",
-   "at": "2026-11-25T12:02:26+00:00",
+   "at": "2026-11-25T18:17:25+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -574,7 +574,7 @@
   },
   {
    "url": "/x/hakeem-jeffries-speaker-nomination",
-   "at": "2026-11-25T12:01:54+00:00",
+   "at": "2026-11-25T18:16:54+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1006,7 +1006,7 @@
   },
   {
    "url": "/x/is-trinity-netflix-based-on-a-true-story",
-   "at": "2026-11-25T12:02:39+00:00",
+   "at": "2026-11-25T18:17:38+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1474,7 +1474,7 @@
   },
   {
    "url": "/x/robert-pattinson-james-bond",
-   "at": "2026-11-25T12:02:33+00:00",
+   "at": "2026-11-25T18:17:31+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
