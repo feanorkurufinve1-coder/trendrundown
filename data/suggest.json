@@ -17195,27 +17195,23 @@
   ]
  },
  "crowdstrike-zscaler-acquisition": {
-  "time": "2026-11-24T16:48:38+00:00",
+  "time": "2026-11-25T16:48:46+00:00",
   "query": "crowdstrike zscaler",
   "in_suggest": true,
   "suggest": {
-   "crowdstrike acquisition of zscaler": [
-    "crowdstrike acquisition of zscaler",
-    "difference between zscaler and crowdstrike",
-    "install crowdstrike"
-   ],
+   "crowdstrike acquisition of zscaler": [],
    "what is crowdstrike acquisition of zscaler": [],
    "crowdstrike zscaler": [
     "crowdstrike zscaler",
-    "crowdstrike zscaler acquisition",
     "crowdstrike zscaler merger",
-    "crowdstrike zscaler acquisition deal",
     "crowdstrike zscaler deal",
+    "crowdstrike zscaler acquisition",
+    "crowdstrike zscaler integration",
     "crowdstrike zscaler press release",
-    "crowdstrike zscaler advisors",
-    "crowdstrike zscaler law firms",
-    "crowdstrike zscaler news",
-    "crowdstrike zscaler announcement"
+    "crowdstrike zscaler partnership",
+    "crowdstrike zscaler okta",
+    "zscaler crowdstrike integration guide",
+    "zscaler crowdstrike exclusions"
    ]
   },
   "history": [
@@ -17226,11 +17222,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "takata-airbag-recall-honda-toyota-november-2026": {
-  "time": "2026-11-24T16:48:38+00:00",
+  "time": "2026-11-25T16:48:46+00:00",
   "query": "takata airbag recall",
   "in_suggest": true,
   "suggest": {
@@ -17262,11 +17262,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "tarik-skubal-mets-contract": {
-  "time": "2026-11-24T16:48:39+00:00",
+  "time": "2026-11-25T16:48:48+00:00",
   "query": "tarik skubal mets contract",
   "in_suggest": true,
   "suggest": {
@@ -17276,23 +17280,23 @@
     "tarik skubal stats",
     "tarik skubal age",
     "tarik skubal mets",
-    "tarik skubal wife",
-    "tarik skubal ethnicity",
     "tarik skubal trade",
-    "tarik skubal 450 million deal",
-    "tarik skubal wiki"
+    "tarik skubal wife",
+    "tarik skubal cubs",
+    "tarik skubal ethnicity",
+    "tarik skubal mets signing analysis"
    ],
    "what is tarik skubal": [
-    "what is tarik skubal ethnicity",
+    "what is tarik skubal era",
     "what is tarik skubal contract with the dodgers",
+    "what is tarik skubal ethnicity",
     "what is tarik skubal record with the dodgers",
     "what is tarik skubal nationality",
-    "what is tarik skubal era",
     "what is tarik skubal contract",
-    "what is tarik skubal's ethnic background",
-    "what is tarik skubal's walk up song",
     "what is tarik skubal's heritage",
-    "what is tarik skubal salary"
+    "what is tarik skubal projected contract",
+    "what is tarik skubal nickname",
+    "what is tarik skubal's ethnic background"
    ],
    "tarik skubal mets contract": [
     "tarik skubal mets contract",
@@ -17306,6 +17310,10 @@
    ],
    [
     "2026-11-24",
+    true
+   ],
+   [
+    "2026-11-25",
     true
    ]
   ]
