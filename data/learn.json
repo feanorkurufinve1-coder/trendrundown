@@ -1,6 +1,6 @@
 {
- "made": "2026-11-25T13:56:12+00:00",
- "pages": 462,
+ "made": "2026-11-25T14:01:41+00:00",
+ "pages": 468,
  "summary": {
   "kind": {
    "event": {
@@ -25,18 +25,18 @@
     "clicks_per_page": 0.06
    },
    "other": {
-    "pages": 39,
-    "with_impr_%": 15,
-    "top3_%": 3,
+    "pages": 43,
+    "with_impr_%": 14,
+    "top3_%": 2,
     "clicks": 2,
     "clicks_per_page": 0.05
    },
    "person": {
-    "pages": 63,
+    "pages": 64,
     "with_impr_%": 25,
     "top3_%": 0,
     "clicks": 15,
-    "clicks_per_page": 0.24
+    "clicks_per_page": 0.23
    },
    "place": {
     "pages": 16,
@@ -53,7 +53,7 @@
     "clicks_per_page": 0.02
    },
    "term": {
-    "pages": 185,
+    "pages": 186,
     "with_impr_%": 13,
     "top3_%": 2,
     "clicks": 36,
@@ -83,11 +83,11 @@
     "clicks_per_page": 0.0
    },
    "manual": {
-    "pages": 187,
-    "with_impr_%": 11,
+    "pages": 193,
+    "with_impr_%": 10,
     "top3_%": 3,
     "clicks": 53,
-    "clicks_per_page": 0.28
+    "clicks_per_page": 0.27
    }
   },
   "q_word": {
@@ -120,28 +120,28 @@
     "clicks_per_page": 0.0
    },
    "how": {
-    "pages": 13,
-    "with_impr_%": 8,
+    "pages": 14,
+    "with_impr_%": 7,
     "top3_%": 0,
     "clicks": 0,
     "clicks_per_page": 0.0
    },
    "is": {
-    "pages": 28,
+    "pages": 29,
     "with_impr_%": 7,
-    "top3_%": 4,
+    "top3_%": 3,
     "clicks": 2,
     "clicks_per_page": 0.07
    },
    "none": {
-    "pages": 49,
+    "pages": 50,
     "with_impr_%": 6,
     "top3_%": 0,
     "clicks": 1,
     "clicks_per_page": 0.02
    },
    "what": {
-    "pages": 241,
+    "pages": 242,
     "with_impr_%": 18,
     "top3_%": 2,
     "clicks": 41,
@@ -169,7 +169,7 @@
     "clicks_per_page": 0.09
    },
    "why": {
-    "pages": 31,
+    "pages": 33,
     "with_impr_%": 0,
     "top3_%": 0,
     "clicks": 0,
@@ -185,11 +185,11 @@
   },
   "title_matches_top_query": {
    "False": {
-    "pages": 423,
+    "pages": 429,
     "with_impr_%": 7,
     "top3_%": 0,
     "clicks": 32,
-    "clicks_per_page": 0.08
+    "clicks_per_page": 0.07
    },
    "True": {
     "pages": 39,
@@ -265,7 +265,7 @@
    "source": "manual",
    "q_word": "who",
    "title_len": 58,
-   "age_days": 3.7,
+   "age_days": 3.8,
    "rival_exact": null,
    "impr": 543,
    "clicks": 6,
@@ -773,7 +773,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 19,
-   "age_days": 29.6,
+   "age_days": 29.7,
    "rival_exact": null,
    "impr": 19,
    "clicks": 0,
@@ -883,7 +883,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 40,
-   "age_days": 31.9,
+   "age_days": 32.0,
    "rival_exact": null,
    "impr": 12,
    "clicks": 0,
@@ -1246,7 +1246,7 @@
    "source": "manual",
    "q_word": "what",
    "title_len": 65,
-   "age_days": 3.7,
+   "age_days": 3.8,
    "rival_exact": null,
    "impr": 4,
    "clicks": 0,
@@ -1934,7 +1934,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 25,
-   "age_days": 28.3,
+   "age_days": 28.4,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2924,7 +2924,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 60,
-   "age_days": 20.8,
+   "age_days": 20.9,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3224,7 +3224,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 66,
-   "age_days": 20.3,
+   "age_days": 20.4,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3239,7 +3239,7 @@
    "source": "auto",
    "q_word": "none",
    "title_len": 66,
-   "age_days": 20.3,
+   "age_days": 20.4,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4514,7 +4514,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 76,
-   "age_days": 15.5,
+   "age_days": 15.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4874,7 +4874,7 @@
    "source": "manual",
    "q_word": "what",
    "title_len": 68,
-   "age_days": 3.7,
+   "age_days": 3.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5453,6 +5453,21 @@
    "top_queries": []
   },
   {
+   "slug": "how-long-does-a-washing-machine-last",
+   "title": "How long does a washing machine last? About 10 years, often more",
+   "kind": "other",
+   "source": "manual",
+   "q_word": "how",
+   "title_len": 64,
+   "age_days": 3.0,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
    "slug": "how-mlb-mvp-is-voted",
    "title": "How is the MLB MVP voted? 30 writers; 2026 winners were unanimous",
    "kind": "term",
@@ -5535,6 +5550,21 @@
    "q_word": "what",
    "title_len": 88,
    "age_days": 10.0,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
+   "slug": "internet-trends-this-week-2026-11-22",
+   "title": "What's trending on the internet this week? 8 trends (Nov 16–22, 2026)",
+   "kind": "other",
+   "source": "manual",
+   "q_word": "what",
+   "title_len": 69,
+   "age_days": 3.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5678,6 +5708,21 @@
    "top_queries": []
   },
   {
+   "slug": "is-sam-bankman-fried-still-in-prison",
+   "title": "Is Sam Bankman-Fried still in prison? Yes, and his appeal failed",
+   "kind": "person",
+   "source": "manual",
+   "q_word": "is",
+   "title_len": 64,
+   "age_days": 3.0,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
    "slug": "is-the-law-of-beasts-a-true-story",
    "title": "Is The Law of Beasts a true story? Yes, Poland's real 'Beast Act' case",
    "kind": "event",
@@ -5774,7 +5819,7 @@
    "source": "manual",
    "q_word": "when",
    "title_len": 61,
-   "age_days": 3.7,
+   "age_days": 3.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6089,7 +6134,7 @@
    "source": "manual",
    "q_word": "when",
    "title_len": 57,
-   "age_days": 3.7,
+   "age_days": 3.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6194,7 +6239,7 @@
    "source": "manual",
    "q_word": "what",
    "title_len": 57,
-   "age_days": 3.7,
+   "age_days": 3.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6480,6 +6525,21 @@
    "q_word": "what",
    "title_len": 62,
    "age_days": 10.0,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
+   "slug": "what-does-my-kid-mean-slang-guide",
+   "title": "Teen slang 2026: what does my kid mean? A parent's guide in plain English",
+   "kind": "term",
+   "source": "manual",
+   "q_word": "none",
+   "title_len": 73,
+   "age_days": 3.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6884,7 +6944,7 @@
    "source": "manual",
    "q_word": "what",
    "title_len": 65,
-   "age_days": 3.7,
+   "age_days": 3.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -7028,6 +7088,21 @@
    "top_queries": []
   },
   {
+   "slug": "why-are-people-saying-lucia-cheats-on-jason",
+   "title": "Why are people saying Lucia cheats on Jason? The GTA 6 rumor",
+   "kind": "other",
+   "source": "manual",
+   "q_word": "why",
+   "title_len": 60,
+   "age_days": 3.0,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
    "slug": "why-are-people-saying-remember-november-2026-is-coming",
    "title": "Why are people saying remember November 2026 is coming? A bear meme",
    "kind": "term",
@@ -7065,6 +7140,21 @@
    "q_word": "why",
    "title_len": 61,
    "age_days": 7.0,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
+   "slug": "why-are-people-throwing-mustard-at-lsu",
+   "title": "Why are people throwing mustard at LSU? A Lane Kiffin grudge",
+   "kind": "other",
+   "source": "manual",
+   "q_word": "why",
+   "title_len": 60,
+   "age_days": 3.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,

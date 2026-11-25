@@ -16365,7 +16365,7 @@
   ]
  },
  "how-long-does-a-washing-machine-last": {
-  "time": "2026-11-24T14:01:00+00:00",
+  "time": "2026-11-25T14:01:43+00:00",
   "query": "how long does a washing machine last",
   "in_suggest": true,
   "suggest": {
@@ -16424,11 +16424,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "internet-trends-this-week-2026-11-22": {
-  "time": "2026-11-24T14:01:02+00:00",
+  "time": "2026-11-25T14:01:44+00:00",
   "query": "what's trending on the internet this week",
   "in_suggest": false,
   "suggest": {
@@ -16459,11 +16463,15 @@
    [
     "2026-11-24",
     false
+   ],
+   [
+    "2026-11-25",
+    false
    ]
   ]
  },
  "is-sam-bankman-fried-still-in-prison": {
-  "time": "2026-11-24T14:01:05+00:00",
+  "time": "2026-11-25T14:01:47+00:00",
   "query": "is sam bankman-fried still in prison",
   "in_suggest": true,
   "suggest": {
@@ -16477,7 +16485,7 @@
     "sam bankman-fried sentence",
     "sam bankman-fried interview",
     "sam bankman-fried now",
-    "sam bankman-fried age"
+    "sam bankman-fried prison sentence"
    ],
    "who is sam bankman-fried": [
     "who is sam bankman-fried",
@@ -16527,11 +16535,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "why-are-people-saying-lucia-cheats-on-jason": {
-  "time": "2026-11-24T14:01:14+00:00",
+  "time": "2026-11-25T14:01:57+00:00",
   "query": "why are people saying lucia cheats on jason",
   "in_suggest": true,
   "suggest": {
@@ -16566,11 +16578,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "why-are-people-throwing-mustard-at-lsu": {
-  "time": "2026-11-24T14:01:16+00:00",
+  "time": "2026-11-25T14:01:58+00:00",
   "query": "why are people throwing mustard at lsu",
   "in_suggest": false,
   "suggest": {
@@ -16590,6 +16606,10 @@
    ],
    [
     "2026-11-24",
+    false
+   ],
+   [
+    "2026-11-25",
     false
    ]
   ]
@@ -16737,16 +16757,16 @@
   ]
  },
  "is-mr-irrelevant-a-true-story": {
-  "time": "2026-11-24T14:01:03+00:00",
+  "time": "2026-11-25T14:01:46+00:00",
   "query": "is mr irrelevant a true story",
   "in_suggest": true,
   "suggest": {
    "mr. irrelevant: the john tuggle story": [
+    "mr. irrelevant the john tuggle story",
     "mr. irrelevant the john tuggle story trailer",
     "mr. irrelevant the john tuggle story 2026",
     "mr. irrelevant the john tuggle story cast",
     "mr. irrelevant the john tuggle story streaming",
-    "mr. irrelevant the john tuggle story",
     "mr. irrelevant the john tuggle story where to watch",
     "mr. irrelevant the john tuggle story rating",
     "mr. irrelevant the john tuggle story rating age",
@@ -16785,25 +16805,29 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "what-is-the-2011-jupiter-incident": {
-  "time": "2026-11-24T14:01:09+00:00",
+  "time": "2026-11-25T14:01:51+00:00",
   "query": "what is the 2011 jupiter incident",
   "in_suggest": true,
   "suggest": {
    "2011 jupiter incident": [
     "2011 jupiter incident",
-    "2011 jupiter incident meme",
     "2011 jupiter incident video",
-    "2011 jupiter incident explained",
-    "2011 jupiter incident real",
+    "2011 jupiter incident meme",
+    "2011 jupiter incident files",
     "2011 jupiter incident caseoh",
     "2011 jupiter incident lore",
-    "2011 jupiter incident files",
-    "2011 jupiter incident crew",
-    "2011 jupiter incident keis"
+    "2011 jupiter incident tiktok",
+    "2011 jupiter incident audio",
+    "2011 jupiter incident original video",
+    "2011 jupiter incident original"
    ],
    "what is 2011 jupiter incident": [
     "what is 2011 jupiter incident",
@@ -16812,8 +16836,8 @@
     "what happened may 11 2011"
    ],
    "what is the 2011 jupiter incident": [
-    "what is the 2011 jupiter incident",
     "what is the 2011 jupiter incident meme",
+    "what is the 2011 jupiter incident based on",
     "what happened on may 3 2011",
     "what happened may 11 2011",
     "what happened on april 11 2011"
@@ -16827,11 +16851,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "why-are-people-heading-to-cinemas-in-cat-ears": {
-  "time": "2026-11-24T14:01:13+00:00",
+  "time": "2026-11-25T14:01:55+00:00",
   "query": "why are people heading to cinemas in cat ears",
   "in_suggest": false,
   "suggest": {
@@ -16844,8 +16872,8 @@
     "catvideofest 2026 schedule near me",
     "catvideofest 2026 near me",
     "catvideofest 2026 reviews",
-    "catvideofest 2026 videos",
-    "catvideofest website"
+    "catvideofest 2026 chicago",
+    "catvideofest 2026 videos"
    ],
    "what is catvideofest": [
     "what is catvideofest",
@@ -16864,11 +16892,15 @@
    [
     "2026-11-24",
     false
+   ],
+   [
+    "2026-11-25",
+    false
    ]
   ]
  },
  "why-is-everyone-mad-at-kroger": {
-  "time": "2026-11-24T14:01:19+00:00",
+  "time": "2026-11-25T14:02:01+00:00",
   "query": "why is everyone mad at kroger",
   "in_suggest": true,
   "suggest": {
@@ -16908,11 +16940,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "why-is-there-a-d-in-fridge": {
-  "time": "2026-11-24T14:01:20+00:00",
+  "time": "2026-11-25T14:02:03+00:00",
   "query": "why does refrigerator not have a d",
   "in_suggest": true,
   "suggest": {
@@ -16956,6 +16992,10 @@
    ],
    [
     "2026-11-24",
+    true
+   ],
+   [
+    "2026-11-25",
     true
    ]
   ]
@@ -17077,7 +17117,7 @@
   ]
  },
  "what-does-to-me-my-x-men-mean": {
-  "time": "2026-11-24T14:01:06+00:00",
+  "time": "2026-11-25T14:01:49+00:00",
   "query": "what does to me my x-men mean",
   "in_suggest": true,
   "suggest": {
@@ -17127,11 +17167,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "what-is-focker-in-law-about": {
-  "time": "2026-11-24T14:01:08+00:00",
+  "time": "2026-11-25T14:01:50+00:00",
   "query": "what is focker in law about",
   "in_suggest": true,
   "suggest": {
@@ -17142,10 +17186,10 @@
     "focker-in-law release date",
     "focker-in-law trailer",
     "focker-in-law cast release date",
+    "focker-in-law 2026 release date",
     "focker-in-law rating",
     "focker-in-law trailer cast",
-    "focker-in-law first movie",
-    "focker-in-law plot"
+    "focker-in-law first movie"
    ],
    "what is focker-in-law": [
     "what is focker-in-law about",
@@ -17181,33 +17225,33 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "what-is-the-needoh-lava-lamp": {
-  "time": "2026-11-24T14:01:10+00:00",
+  "time": "2026-11-25T14:01:53+00:00",
   "query": "what is the needoh lava lamp",
   "in_suggest": true,
   "suggest": {
    "needoh lava lamp": [
     "needoh lava lamp",
     "needoh lava lamp target",
-    "needoh lava lamp target link",
+    "needoh lava lamp spencers",
+    "needoh lava lamp squishy",
     "needoh lava lamp near me",
     "needoh lava lamp pink",
-    "needoh lava lamp squishy",
     "needoh lava lamp walmart",
-    "needoh lava lamp nearby",
-    "needoh lava lamp blue",
-    "needoh lava lamp spencers"
+    "needoh lava lamp in stock",
+    "needoh lava lamp for sale",
+    "needoh lava lamp ebay"
    ],
-   "what is needoh lava lamp": [
-    "what is needoh lava lamp",
-    "what is a lava lamp good for",
-    "how does a homemade lava lamp work",
-    "lava lamp not doing anything"
-   ],
+   "what is needoh lava lamp": [],
    "what is the needoh lava lamp": [
+    "what is the needoh lava lamp",
     "is the needoh lava lamp rare",
     "is the needoh lava lamp real",
     "lava lamp not doing anything",
@@ -17221,11 +17265,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "what-is-the-odinforce": {
-  "time": "2026-11-24T14:01:11+00:00",
+  "time": "2026-11-25T14:01:54+00:00",
   "query": "what is the odinforce",
   "in_suggest": true,
   "suggest": {
@@ -17234,12 +17282,12 @@
     "odinforce thor",
     "odinforce thor vs rune king thor",
     "odinforce thor vs doom",
-    "odinforce marvel",
     "odinforce ultron",
-    "odinforce comics",
     "odinforce thor doomsday",
-    "odinforce mcu",
-    "odinforce thor vs dr doom"
+    "odinforce thor vs dr doom",
+    "odinforce thor vs god emperor doom",
+    "odinforce marvel",
+    "odinforce ultron comics"
    ],
    "what is odinforce": [
     "what is odinforce",
@@ -17270,11 +17318,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "why-does-my-tax-refund-take-so-long": {
-  "time": "2026-11-24T14:01:17+00:00",
+  "time": "2026-11-25T14:02:00+00:00",
   "query": "why does tax refund take so long",
   "in_suggest": true,
   "suggest": {
@@ -17327,6 +17379,10 @@
   "history": [
    [
     "2026-11-24",
+    true
+   ],
+   [
+    "2026-11-25",
     true
    ]
   ]
