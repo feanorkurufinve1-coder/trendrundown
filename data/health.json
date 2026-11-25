@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-25T02:42:08+00:00",
+ "checked": "2026-11-25T03:32:58+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -1009,7 +1009,7 @@
   },
   {
    "url": "/x/kids-choice-awards-2026-date",
-   "at": "2026-11-24T21:17:17+00:00",
+   "at": "2026-11-25T03:31:54+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1021,7 +1021,7 @@
   },
   {
    "url": "/x/lame-duck-president",
-   "at": "2026-11-24T21:17:24+00:00",
+   "at": "2026-11-25T03:32:01+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1033,7 +1033,7 @@
   },
   {
    "url": "/x/lame-duck-session",
-   "at": "2026-11-24T21:17:30+00:00",
+   "at": "2026-11-25T03:32:07+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1045,7 +1045,7 @@
   },
   {
    "url": "/x/latin-grammys-vs-grammys",
-   "at": "2026-11-24T21:17:37+00:00",
+   "at": "2026-11-25T03:32:14+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1057,7 +1057,7 @@
   },
   {
    "url": "/x/ligue-1",
-   "at": "2026-11-24T21:17:43+00:00",
+   "at": "2026-11-25T03:32:20+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1069,7 +1069,7 @@
   },
   {
    "url": "/x/madden-movie-true-story",
-   "at": "2026-11-24T21:17:49+00:00",
+   "at": "2026-11-25T03:32:26+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1081,7 +1081,7 @@
   },
   {
    "url": "/x/maine-2nd-district-ranked-choice",
-   "at": "2026-11-24T21:17:56+00:00",
+   "at": "2026-11-25T03:32:33+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1093,7 +1093,7 @@
   },
   {
    "url": "/x/medicaid-work-requirements-start-date",
-   "at": "2026-11-24T21:18:03+00:00",
+   "at": "2026-11-25T03:32:39+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1105,7 +1105,7 @@
   },
   {
    "url": "/x/miami-airport-plane-collision-copa-ups",
-   "at": "2026-11-24T21:18:09+00:00",
+   "at": "2026-11-25T03:32:46+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1117,7 +1117,7 @@
   },
   {
    "url": "/x/mlb-manager-of-the-year-voting",
-   "at": "2026-11-24T21:18:15+00:00",
+   "at": "2026-11-25T03:32:52+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1129,7 +1129,7 @@
   },
   {
    "url": "/x/mlb-posting-system",
-   "at": "2026-11-24T21:18:22+00:00",
+   "at": "2026-11-25T03:32:58+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
