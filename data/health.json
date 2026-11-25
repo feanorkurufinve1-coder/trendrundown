@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-25T20:42:27+00:00",
+ "checked": "2026-11-25T21:08:46+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -634,7 +634,7 @@
   },
   {
    "url": "/x/hegseth-tomb-guard-medal",
-   "at": "2026-11-25T15:01:55+00:00",
+   "at": "2026-11-25T21:07:54+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -646,7 +646,7 @@
   },
   {
    "url": "/x/how-are-cma-awards-voted",
-   "at": "2026-11-25T15:02:02+00:00",
+   "at": "2026-11-25T21:08:01+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -658,7 +658,7 @@
   },
   {
    "url": "/x/how-are-game-awards-nominees-chosen",
-   "at": "2026-11-25T15:02:08+00:00",
+   "at": "2026-11-25T21:08:07+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -670,7 +670,7 @@
   },
   {
    "url": "/x/how-are-grammy-nominations-decided",
-   "at": "2026-11-25T15:02:15+00:00",
+   "at": "2026-11-25T21:08:13+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -682,7 +682,7 @@
   },
   {
    "url": "/x/how-cy-young-is-voted",
-   "at": "2026-11-25T15:02:21+00:00",
+   "at": "2026-11-25T21:08:20+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -694,7 +694,7 @@
   },
   {
    "url": "/x/how-is-senate-majority-leader-chosen",
-   "at": "2026-11-25T15:02:27+00:00",
+   "at": "2026-11-25T21:08:26+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -706,7 +706,7 @@
   },
   {
    "url": "/x/how-is-speaker-of-the-house-elected",
-   "at": "2026-11-25T15:02:34+00:00",
+   "at": "2026-11-25T21:08:33+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -730,7 +730,7 @@
   },
   {
    "url": "/x/how-mlb-mvp-is-voted",
-   "at": "2026-11-25T15:02:40+00:00",
+   "at": "2026-11-25T21:08:39+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -742,7 +742,7 @@
   },
   {
    "url": "/x/how-much-tax-refund-per-child-2026",
-   "at": "2026-11-25T15:02:46+00:00",
+   "at": "2026-11-25T21:08:46+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
