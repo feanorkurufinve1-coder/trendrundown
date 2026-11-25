@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-25T11:16:52+00:00",
+ "checked": "2026-11-25T12:32:01+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -2602,7 +2602,7 @@
   },
   {
    "url": "/x/why-wont-my-washing-machine-drain",
-   "at": "2026-11-25T06:16:49+00:00",
+   "at": "2026-11-25T12:32:01+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
