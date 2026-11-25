@@ -5127,8 +5127,27 @@ def more_pages(x, skip=(), k=6):
 def build_trends_index(ex):
     """14.11: раздел интернет-трендов — что значит слово, откуда мем, в чём суть челленджа. Свежие сверху."""
     items = sorted([x for x in ex.values() if x.get("trend")], key=lambda x: x.get("first") or x.get("made") or "", reverse=True)
+    def _first_sentence(t):
+        t = t or ""
+        abbr = {"jan", "feb", "mar", "apr", "aug", "sep", "sept", "oct", "nov", "dec", "u.s", "mr", "mrs", "ms", "dr", "st",
+                "jr", "sr", "no", "vs", "gen", "lt", "sen", "rep", "gov", "inc", "co", "a.m", "p.m", "d.c"}
+        for m_ in re.finditer(r"[.!?][\"”]?(?=\s+[\"“A-Z0-9]|$)", t):
+            if m_.end() < 70:              # слишком короткое первое предложение («It's a joke.») — берём и следующее
+                continue
+            prev = re.findall(r"([A-Za-z.]+)$", t[:m_.start()])
+            if prev and prev[0].lower().rstrip(".") in abbr:
+                continue
+            return t[:m_.end()] if m_.end() <= 300 else short_desc(t, 220)
+        return short_desc(t, 220)
+    def _month(x):
+        try:
+            d_ = datetime.fromisoformat(str(x.get("first") or x.get("made")).replace("Z", "+00:00"))
+            return d_.strftime("%b. %Y").replace("May.", "May")
+        except Exception:
+            return ""
+    # 26.11: целое первое предложение ответа (а не обрезок «…») и месяц — ИИ-поиск и люди видят готовый ответ прямо в списке
     rows = "".join(f'<li><a class="t" href="x/{E(x["slug"])}.html">{E(x["title"])}</a>'
-                   f'<span class="meta">{E(x["answer"][:150])}…</span></li>' for x in items[:500])
+                   f'<span class="meta">{E(_month(x))} — {E(_first_sentence(x["answer"]))}</span></li>' for x in items[:500])
     body = (f'<p class="tag">Slang, memes and viral challenges, explained in plain words</p>'
             f'<h1 class="front">Internet trends explained</h1>'
             f'<p class="snip">What a new word means, where a meme came from, what a viral challenge is about. '
@@ -5480,6 +5499,21 @@ def build_site(store):
         json.dump(q[:60] if AUDIO_ON else [], open(NARRATE_QUEUE, "w"), ensure_ascii=False)
     except Exception as e:
         log(f"очередь озвучки: {e}")
+    # 26.11: llms.txt — краткая карта сайта для ИИ-помощников (предложенный стандарт; вреда нет, польза не доказана)
+    try:
+        _man = sorted([x for x in EXPLAINERS.values() if x.get("manual")], key=lambda x: x.get("first") or x.get("made") or "", reverse=True)
+        def _ll(xs):
+            return "".join(f"- [{x['title']}]({SITE_URL}/x/{x['slug']}): {short_desc(x.get('answer') or '', 160)}\n" for xs_ in [xs] for x in xs_)
+        w("llms.txt", f"# {SITE_NAME}\n\n> {SITE_NAME} explains what America is searching for: new internet slang, memes and viral "
+                      "trends (often within days of their first appearance, found by our own trend radar), the news behind trending "
+                      "searches, and everyday how-to questions. Every page gives a direct answer first and links its sources.\n\n"
+                      f"- About and methods: {SITE_URL}/about\n- Internet trends: {SITE_URL}/trends\n- News: {SITE_URL}/news\n"
+                      f"- Explainers: {SITE_URL}/explained\n\n"
+                      "## Internet trends\n\n" + _ll([x for x in _man if x.get("trend")][:120]) +
+                      "\n## News\n\n" + _ll([x for x in _man if x.get("news")][:60]) +
+                      "\n## Explainers\n\n" + _ll([x for x in _man if not x.get("news") and not x.get("trend")][:120]))
+    except Exception as e:
+        log(f"llms.txt: {e}")
     w("robots.txt", ai_block + f"User-agent: *\nAllow: /\nDisallow: /api/\nSitemap: {SITE_URL}/sitemap.xml\nSitemap: {SITE_URL}/sitemap-news.xml\n")
     # темы для сборщика на ноутбуке владельца: свежие тренды за сутки (он раскапывает их «растущие запросы» в Google Trends)
     try:
