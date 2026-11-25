@@ -358,9 +358,9 @@
   },
   {
    "url": "/x/crowdstrike-zscaler-acquisition",
-   "at": "2026-11-25T12:17:37+00:00",
+   "at": "2026-11-25T18:32:51+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -862,7 +862,7 @@
   },
   {
    "url": "/x/is-blade-runner-2099-a-sequel",
-   "at": "2026-11-25T12:17:18+00:00",
+   "at": "2026-11-25T18:32:31+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1594,7 +1594,7 @@
   },
   {
    "url": "/x/takata-airbag-recall-honda-toyota-november-2026",
-   "at": "2026-11-25T12:17:44+00:00",
+   "at": "2026-11-25T18:32:57+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1606,9 +1606,9 @@
   },
   {
    "url": "/x/tarik-skubal-mets-contract",
-   "at": "2026-11-25T12:17:50+00:00",
+   "at": "2026-11-25T18:33:03+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1870,7 +1870,7 @@
   },
   {
    "url": "/x/what-does-text-message-not-encrypted-mean",
-   "at": "2026-11-25T12:16:53+00:00",
+   "at": "2026-11-25T18:32:06+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2182,7 +2182,7 @@
   },
   {
    "url": "/x/what-is-the-talk-to-me-doja-trend",
-   "at": "2026-11-25T12:17:25+00:00",
+   "at": "2026-11-25T18:32:38+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2194,7 +2194,7 @@
   },
   {
    "url": "/x/what-is-the-word-of-the-year-2026",
-   "at": "2026-11-25T12:17:31+00:00",
+   "at": "2026-11-25T18:32:44+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2338,7 +2338,7 @@
   },
   {
    "url": "/x/why-are-people-saying-gta-6-is-bad",
-   "at": "2026-11-25T12:17:57+00:00",
+   "at": "2026-11-25T18:33:10+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2386,7 +2386,7 @@
   },
   {
    "url": "/x/why-are-people-saying-remember-november-2026-is-coming",
-   "at": "2026-11-25T12:16:59+00:00",
+   "at": "2026-11-25T18:32:12+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2446,7 +2446,7 @@
   },
   {
    "url": "/x/why-are-people-wearing-pajamas-to-sunrise-on-the-reaping",
-   "at": "2026-11-25T12:17:05+00:00",
+   "at": "2026-11-25T18:32:18+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2710,7 +2710,7 @@
   },
   {
    "url": "/x/why-wont-my-washing-machine-spin",
-   "at": "2026-11-25T12:17:12+00:00",
+   "at": "2026-11-25T18:32:25+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2742,8 +2742,8 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 137,
+  "URL is unknown to Google": 135,
   "Crawled - currently not indexed": 65,
-  "Discovered - currently not indexed": 21
+  "Discovered - currently not indexed": 23
  }
 }

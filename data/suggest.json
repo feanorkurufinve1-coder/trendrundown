@@ -10326,23 +10326,24 @@
   ]
  },
  "dan-hicks-death": {
-  "time": "2026-11-24T18:32:13+00:00",
+  "time": "2026-11-25T18:33:12+00:00",
   "query": "dan hicks death",
   "in_suggest": true,
   "suggest": {
    "dan hicks": [
     "dan hicks",
     "dan hicks death",
-    "dan hicks (sportscaster)",
-    "dan hicks golf",
-    "dan hicks funeral",
-    "dan hicks wife",
     "dan hicks death cause",
-    "dan hicks salary",
-    "dan hicks net worth",
-    "dan hicks songs"
+    "dan hicks funeral",
+    "dan hicks cause of death update",
+    "dan hicks obituary",
+    "dan hicks nbc",
+    "dan hicks funeral mass",
+    "dan hicks and the hot licks wiki",
+    "dan hicks sportscaster"
    ],
    "what is dan hicks": [
+    "what is dan hicks die of",
     "what is dan hicks net worth",
     "what is dan hicks salary",
     "what is dan hicks handicap",
@@ -10351,8 +10352,7 @@
     "who is dan hicks wife",
     "what genre is dan hicks",
     "what does dan hicks announcer",
-    "what does dan hicks do",
-    "where's the money dan hicks"
+    "what does dan hicks do"
    ],
    "dan hicks death": [
     "dan hicks death",
@@ -10415,11 +10415,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "did-scott-colom-win": {
-  "time": "2026-11-24T18:32:16+00:00",
+  "time": "2026-11-25T18:33:15+00:00",
   "query": "did scott colom win",
   "in_suggest": true,
   "suggest": {
@@ -10440,9 +10444,14 @@
     "2026 mississippi senate election results",
     "who is running for the senate in mississippi"
    ],
-   "did scott colom win": [],
+   "did scott colom win": [
+    "did scott colom win the mississippi senate",
+    "did scott colom win his seat in mississippi",
+    "did scott colom win reddit",
+    "did scott colom win in mississippi today"
+   ],
    "scott colom win": [
-    "will scott colom win"
+    "scott colom win senate race"
    ]
   },
   "history": [
@@ -10496,6 +10505,10 @@
    ],
    [
     "2026-11-24",
+    true
+   ],
+   [
+    "2026-11-25",
     true
    ]
   ]
@@ -11896,21 +11909,21 @@
   ]
  },
  "anthony-clark-death": {
-  "time": "2026-11-24T18:32:12+00:00",
+  "time": "2026-11-25T18:33:11+00:00",
   "query": "anthony clark death",
   "in_suggest": true,
   "suggest": {
    "anthony clark": [
     "anthony clark",
     "anthony clark cause of death",
-    "anthony clark last photo",
-    "anthony clark yes dear",
     "anthony clark barbershop",
+    "anthony clark partner",
     "anthony clark wife",
     "anthony clark age",
-    "anthony clark death",
     "anthony clark powerlifter",
-    "anthony clark what happened"
+    "anthony clark net worth",
+    "anthony clark barbershop 3",
+    "anthony clark yes dear"
    ],
    "what is anthony clark": [
     "what is anthony clark doing now",
@@ -11982,11 +11995,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "hegseth-tomb-guard-medal": {
-  "time": "2026-11-24T18:32:18+00:00",
+  "time": "2026-11-25T18:33:16+00:00",
   "query": "hegseth tomb guard medal",
   "in_suggest": false,
   "suggest": {
@@ -11995,12 +12012,12 @@
     "tomb of the unknown soldier guards",
     "tomb of the unknown soldier arlington",
     "tomb of the unknown soldier changing of the guard",
+    "tomb of the unknown soldier arlington photos",
     "tomb of the unknown soldier guard requirements",
     "tomb of the unknown soldier guards salary",
     "tomb of the unknown soldier badge",
     "tomb of the unknown soldier washington dc",
-    "tomb of the unknown soldier athens",
-    "tomb of the unknown soldier live cam"
+    "tomb of the unknown soldier athens"
    ],
    "what is tomb of the unknown soldier": [
     "what is tomb of the unknown soldier",
@@ -12064,11 +12081,15 @@
    [
     "2026-11-24",
     false
+   ],
+   [
+    "2026-11-25",
+    false
    ]
   ]
  },
  "iran-bahrain-radar-strike": {
-  "time": "2026-11-24T18:32:19+00:00",
+  "time": "2026-11-25T18:33:17+00:00",
   "query": "iran bahrain radar",
   "in_suggest": true,
   "suggest": {
@@ -12077,15 +12098,16 @@
     "iran news",
     "iran war",
     "iran war news",
-    "iran war update",
     "iran news today",
+    "iran flag",
+    "iran war update",
+    "iran international",
     "iran us",
-    "iran us news",
-    "iran economy",
-    "iran currency"
+    "iranproud"
    ],
    "what is iran": [
     "what is iran's currency",
+    "what is irani chai",
     "what is iranian money called",
     "what is iran",
     "what is iran saying about the war",
@@ -12093,8 +12115,7 @@
     "what is iran's inflation rate",
     "what is iran money called",
     "what is iran's inflation rate today",
-    "what is iran's religion",
-    "what is iranian currency"
+    "what is iran's religion"
    ],
    "iran bahrain radar": [
     "iran bahrain radar",
@@ -12152,40 +12173,45 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "jensen-huang-resigns-nvidia": {
-  "time": "2026-11-24T18:32:20+00:00",
+  "time": "2026-11-25T18:33:19+00:00",
   "query": "why did jensen huang resign",
   "in_suggest": true,
   "suggest": {
    "jensen huang": [
     "jensen huang",
-    "jensen huang reinstated as ceo",
     "jensen huang wife",
     "jensen huang net worth",
+    "jensen huang kids",
+    "jensen huang age",
+    "jensen huang birthday",
+    "jensen huang height",
     "jensen huang news",
-    "jensen huang reinstated",
-    "jensen huang meme",
     "jensen huang linkedin",
-    "jensen huang back",
-    "jensen huang age"
+    "jensen huang meme"
    ],
    "what is jensen huang": [
     "what is jensen huang net worth",
-    "what is jensen huang doing now",
-    "what is jensen huang's wife doing",
     "what is jensen huang accused of",
-    "what is jensen huang's ethnicity",
-    "what is jensen huang",
-    "what is jensen huang's wife doing now",
     "what is jensen huang's wife saying",
-    "what is jensen huang known for",
-    "what is jensen huang nationality"
+    "what is jensen huang",
+    "what is jensen huang doing now",
+    "what is jensen huang's wife doing now",
+    "what is jensen huang's ethnicity",
+    "what is jensen huang nationality",
+    "what is jensen huang's background",
+    "what is jensen huang's real name"
    ],
    "why did jensen huang resign": [
     "why did jensen huang resign",
+    "why did jensen huang resign as the ceo of nvidia",
     "jensen huang worth",
     "jensen huang salary",
     "jensen huang ceo of nvidia",
@@ -12194,13 +12220,14 @@
    "jensen huang resign": [
     "jensen huang resignation",
     "jensen huang resignation date",
-    "jensen huang resignation and comeback",
+    "jensen huang resignation impact on stock market",
+    "jensen huang resigns from nvidia",
+    "jensen huang resignation reddit",
+    "jensen huang resigned or removed",
+    "jensen huang resign or not",
+    "jensen huang resignation reaction",
     "jensen huang retire",
-    "jensen huang quit devops now",
-    "jensen huang salary",
-    "jensen huang worth",
-    "jensen huang ceo of nvidia",
-    "jensen huang nvidia shares"
+    "jensen huang quit devops now"
    ]
   },
   "history": [
@@ -12250,6 +12277,10 @@
    ],
    [
     "2026-11-24",
+    true
+   ],
+   [
+    "2026-11-25",
     true
    ]
   ]
@@ -12900,7 +12931,7 @@
   ]
  },
  "did-avril-lavigne-have-a-baby": {
-  "time": "2026-11-24T18:32:15+00:00",
+  "time": "2026-11-25T18:33:13+00:00",
   "query": "did avril lavigne have a baby",
   "in_suggest": true,
   "suggest": {
@@ -12911,10 +12942,10 @@
     "avril lavigne complicated",
     "avril lavigne 2026",
     "avril lavigne husband",
+    "avril lavigne baby",
     "avril lavigne age",
     "avril lavigne sk8er boi",
-    "avril lavigne 2000",
-    "avril lavigne baby"
+    "avril lavigne girlfriend"
    ],
    "what is avril lavigne": [
     "what is avril lavigne doing now",
@@ -12926,10 +12957,11 @@
     "what is avril lavigne up to now",
     "what is avril lavigne up to these days",
     "what is avril lavigne's natural hair color",
-    "what is avril lavigne's new song"
+    "what is avril lavigne's birthday"
    ],
    "did avril lavigne have a baby": [
     "did avril lavigne have a baby",
+    "did avril lavigne have a baby 2026",
     "did avril lavigne have a child",
     "did avril lavigne just have a baby",
     "did avril lavigne have kids",
@@ -12937,8 +12969,7 @@
     "avril.lavigne have a baby",
     "does avril lavigne have kids",
     "does avril lavigne have kids 2025",
-    "does avril lavigne have kids reddit",
-    "what disease does avril lavigne have"
+    "does avril lavigne have kids reddit"
    ],
    "avril lavigne have baby": [
     "avril.lavigne have a baby",
@@ -12997,11 +13028,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "new-orleans-cruise-ship-collision": {
-  "time": "2026-11-24T18:32:22+00:00",
+  "time": "2026-11-25T18:33:21+00:00",
   "query": "new orleans cruise ship collision",
   "in_suggest": false,
   "suggest": {
@@ -13055,6 +13090,10 @@
    ],
    [
     "2026-11-24",
+    false
+   ],
+   [
+    "2026-11-25",
     false
    ]
   ]
@@ -13533,7 +13572,7 @@
   ]
  },
  "miami-airport-plane-collision-copa-ups": {
-  "time": "2026-11-24T18:32:21+00:00",
+  "time": "2026-11-25T18:33:20+00:00",
   "query": "miami airport plane collision",
   "in_suggest": false,
   "suggest": {
@@ -13602,6 +13641,10 @@
    ],
    [
     "2026-11-24",
+    false
+   ],
+   [
+    "2026-11-25",
     false
    ]
   ]
