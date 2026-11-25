@@ -1191,7 +1191,7 @@
   ]
  },
  "all-mlb-team": {
-  "time": "2026-11-24T16:03:25+00:00",
+  "time": "2026-11-25T16:03:57+00:00",
   "query": "what is the all-mlb team",
   "in_suggest": true,
   "suggest": {
@@ -1234,10 +1234,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    true
-   ],
-   [
     "2026-11-12",
     true
    ],
@@ -1288,11 +1284,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "hank-aaron-award": {
-  "time": "2026-11-24T16:03:27+00:00",
+  "time": "2026-11-25T16:04:02+00:00",
   "query": "what is the hank aaron award",
   "in_suggest": true,
   "suggest": {
@@ -1333,10 +1333,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    true
-   ],
-   [
     "2026-11-12",
     true
    ],
@@ -1387,11 +1383,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "how-cy-young-is-voted": {
-  "time": "2026-11-24T16:03:33+00:00",
+  "time": "2026-11-25T16:04:09+00:00",
   "query": "how is the cy young award voted",
   "in_suggest": true,
   "suggest": {
@@ -1435,10 +1435,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    true
-   ],
-   [
     "2026-11-12",
     true
    ],
@@ -1489,11 +1485,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "maine-2nd-district-ranked-choice": {
-  "time": "2026-11-24T16:03:39+00:00",
+  "time": "2026-11-25T16:04:21+00:00",
   "query": "why is maine 2nd district going to ranked choice",
   "in_suggest": false,
   "suggest": {
@@ -1504,10 +1504,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    false
-   ],
-   [
     "2026-11-12",
     false
    ],
@@ -1558,11 +1554,15 @@
    [
     "2026-11-24",
     false
+   ],
+   [
+    "2026-11-25",
+    false
    ]
   ]
  },
  "mlb-manager-of-the-year-voting": {
-  "time": "2026-11-24T16:03:40+00:00",
+  "time": "2026-11-25T16:04:24+00:00",
   "query": "how is mlb manager of the year voted",
   "in_suggest": false,
   "suggest": {
@@ -1588,10 +1588,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    false
-   ],
-   [
     "2026-11-12",
     false
    ],
@@ -1642,11 +1638,15 @@
    [
     "2026-11-24",
     false
+   ],
+   [
+    "2026-11-25",
+    false
    ]
   ]
  },
  "mlb-rookie-eligibility": {
-  "time": "2026-11-24T16:03:42+00:00",
+  "time": "2026-11-25T16:04:26+00:00",
   "query": "what makes a player a rookie in mlb",
   "in_suggest": true,
   "suggest": {
@@ -1679,10 +1679,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    true
-   ],
-   [
     "2026-11-12",
     true
    ],
@@ -1733,25 +1729,29 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "murder-in-galicia-true-story": {
-  "time": "2026-11-24T16:03:45+00:00",
+  "time": "2026-11-25T16:04:29+00:00",
   "query": "is murder in galicia a true story",
   "in_suggest": true,
   "suggest": {
    "murder in galicia": [
     "murder in galicia",
-    "murder in galicia 2026",
-    "murder in galicia reviews",
-    "murder in galicia netflix",
     "murder in galicia true story",
+    "murder in galicia 2026",
+    "murder in galicia netflix",
+    "murder in galicia 2026 episode",
+    "murder in galicia real story",
     "murder in galicia imdb",
     "murder in galicia series",
     "murder in galicia netflix review",
-    "murder in galicia cast",
-    "murder in galicia netflix cast"
+    "murder in galicia cast"
    ],
    "what is murder in galicia": [],
    "is murder in galicia a true story": [],
@@ -1762,10 +1762,6 @@
    ]
   },
   "history": [
-   [
-    "2026-11-11",
-    true
-   ],
    [
     "2026-11-12",
     false
@@ -1817,11 +1813,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "relief-pitcher-of-the-year": {
-  "time": "2026-11-24T16:03:46+00:00",
+  "time": "2026-11-25T16:04:35+00:00",
   "query": "what is the relief pitcher of the year award",
   "in_suggest": true,
   "suggest": {
@@ -1839,10 +1839,6 @@
    ]
   },
   "history": [
-   [
-    "2026-11-11",
-    true
-   ],
    [
     "2026-11-12",
     true
@@ -1894,11 +1890,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "reminders-of-him-book": {
-  "time": "2026-11-24T16:03:48+00:00",
+  "time": "2026-11-25T16:04:36+00:00",
   "query": "is reminders of him based on a book",
   "in_suggest": true,
   "suggest": {
@@ -1944,10 +1944,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    true
-   ],
-   [
     "2026-11-12",
     true
    ],
@@ -1997,6 +1993,10 @@
    ],
    [
     "2026-11-24",
+    true
+   ],
+   [
+    "2026-11-25",
     true
    ]
   ]
@@ -2103,7 +2103,7 @@
   ]
  },
  "alicias-law-the-good-wife": {
-  "time": "2026-11-24T15:34:03+00:00",
+  "time": "2026-11-25T16:03:56+00:00",
   "query": "is alicia's law based on the good wife",
   "in_suggest": false,
   "suggest": {
@@ -2111,13 +2111,13 @@
     "alicia's law",
     "alicia's law netflix",
     "alicia's law netflix cast",
+    "alicia's law cast",
     "alicia's law netflix review",
+    "alicia's law reviews",
     "alicia lawrence",
     "alicia lawson",
     "alicia lawyer",
-    "alicia lawyer show",
-    "alicia lawson barrister",
-    "alicia lawler"
+    "alicia lawyer show"
    ],
    "what is alicia's law": [
     "what is alicia's law",
@@ -2134,10 +2134,6 @@
    "alicia's law based good wife": []
   },
   "history": [
-   [
-    "2026-11-11",
-    false
-   ],
    [
     "2026-11-12",
     false
@@ -2189,11 +2185,15 @@
    [
     "2026-11-24",
     false
+   ],
+   [
+    "2026-11-25",
+    false
    ]
   ]
  },
  "edgar-martinez-award": {
-  "time": "2026-11-24T15:34:05+00:00",
+  "time": "2026-11-25T16:04:00+00:00",
   "query": "what is the edgar martinez award",
   "in_suggest": true,
   "suggest": {
@@ -2233,10 +2233,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    true
-   ],
-   [
     "2026-11-12",
     true
    ],
@@ -2287,11 +2283,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "how-is-speaker-of-the-house-elected": {
-  "time": "2026-11-24T15:34:08+00:00",
+  "time": "2026-11-25T16:04:12+00:00",
   "query": "how is the speaker of the house elected",
   "in_suggest": true,
   "suggest": {
@@ -2336,10 +2336,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    true
-   ],
-   [
     "2026-11-12",
     true
    ],
@@ -2390,11 +2386,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "lame-duck-session": {
-  "time": "2026-11-24T15:34:11+00:00",
+  "time": "2026-11-25T16:04:18+00:00",
   "query": "what is a lame duck session",
   "in_suggest": true,
   "suggest": {
@@ -2437,10 +2437,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    true
-   ],
-   [
     "2026-11-12",
     true
    ],
@@ -2491,11 +2487,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "mlb-posting-system": {
-  "time": "2026-11-24T15:34:16+00:00",
+  "time": "2026-11-25T16:04:25+00:00",
   "query": "what is the posting system in mlb",
   "in_suggest": true,
   "suggest": {
@@ -2533,10 +2533,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    true
-   ],
-   [
     "2026-11-12",
     true
    ],
@@ -2587,11 +2583,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "record-vs-song-of-the-year": {
-  "time": "2026-11-24T15:34:20+00:00",
+  "time": "2026-11-25T16:04:33+00:00",
   "query": "what is the difference between record of the year and song of the year",
   "in_suggest": true,
   "suggest": {
@@ -2626,10 +2626,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    true
-   ],
-   [
     "2026-11-12",
     true
    ],
@@ -2679,6 +2675,10 @@
    ],
    [
     "2026-11-24",
+    true
+   ],
+   [
+    "2026-11-25",
     true
    ]
   ]
@@ -3056,20 +3056,20 @@
   ]
  },
  "carter-faith": {
-  "time": "2026-11-24T16:03:26+00:00",
+  "time": "2026-11-25T16:03:58+00:00",
   "query": "who is carter faith",
   "in_suggest": true,
   "suggest": {
    "carter faith": [
     "carter faith",
     "carter faith sails",
-    "carter faith husband",
     "carter faith music",
-    "carter faith tour",
     "carter faith honeycomb",
-    "carter faith on marshals",
+    "carter faith tour",
+    "carter faith marshals",
     "carter faith nothin’ better to do",
     "carter faith songs",
+    "carter faith husband",
     "carter faith age"
    ],
    "who is carter faith": [
@@ -3086,10 +3086,6 @@
    ]
   },
   "history": [
-   [
-    "2026-11-11",
-    true
-   ],
    [
     "2026-11-12",
     true
@@ -3141,11 +3137,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "harlem-park-three": {
-  "time": "2026-11-24T16:03:29+00:00",
+  "time": "2026-11-25T16:04:03+00:00",
   "query": "where are the harlem park three now",
   "in_suggest": false,
   "suggest": {
@@ -3165,10 +3165,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    false
-   ],
-   [
     "2026-11-12",
     false
    ],
@@ -3219,11 +3215,15 @@
    [
     "2026-11-24",
     false
+   ],
+   [
+    "2026-11-25",
+    false
    ]
   ]
  },
  "heartland-netflix-cast": {
-  "time": "2026-11-24T16:03:30+00:00",
+  "time": "2026-11-25T16:04:06+00:00",
   "query": "who is in the cast of heartland",
   "in_suggest": true,
   "suggest": {
@@ -3231,12 +3231,12 @@
     "heartland",
     "heartland 2026",
     "heartland cast",
-    "heartland season 20",
     "heartland movie",
+    "heartland season 20",
     "heartland netflix",
-    "heartland season 19",
-    "heartland cast 2026",
     "heartland movie cast",
+    "heartland season 19",
+    "heartland movie 2026",
     "heartland credit union"
    ],
    "what is heartland": [
@@ -3277,10 +3277,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    true
-   ],
-   [
     "2026-11-12",
     true
    ],
@@ -3331,11 +3327,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "how-are-grammy-nominations-decided": {
-  "time": "2026-11-24T16:03:32+00:00",
+  "time": "2026-11-25T16:04:07+00:00",
   "query": "how are grammy nominations decided",
   "in_suggest": true,
   "suggest": {
@@ -3344,11 +3344,11 @@
     "grammy nominations",
     "grammy nominations 2026",
     "grammy nominations 2027 album of the year",
-    "grammy nominations 2027 voting",
-    "grammy nominations 2027 predictions",
-    "grammy nominations 2027 rap",
     "grammy nominations 2027 list",
+    "grammy nominations 2027 predictions",
     "grammy nominations voting",
+    "grammy nominations 2027 rap album of the year",
+    "grammy nominations 2027 rock",
     "grammy nominations announcement"
    ],
    "what is grammy nominations": [
@@ -3372,10 +3372,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    true
-   ],
-   [
     "2026-11-12",
     true
    ],
@@ -3426,11 +3422,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "how-is-senate-majority-leader-chosen": {
-  "time": "2026-11-24T16:03:35+00:00",
+  "time": "2026-11-25T16:04:10+00:00",
   "query": "how is the senate majority leader chosen",
   "in_suggest": true,
   "suggest": {
@@ -3439,12 +3439,12 @@
     "senate majority leader vote",
     "senate majority leader kalshi",
     "senate majority leader john thune",
-    "senate majority leader 2026",
     "senate majority leader democrat",
     "senate majority leaders list",
     "senate majority leader since 2025",
     "senate majority leader definition",
-    "senate majority leader 2001"
+    "senate majority leader 2001",
+    "senate majority leader role"
    ],
    "what is senate majority leader": [
     "what is senate majority leader",
@@ -3478,10 +3478,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    true
-   ],
-   [
     "2026-11-12",
     true
    ],
@@ -3532,25 +3528,29 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "i-play-rocky-true-story": {
-  "time": "2026-11-24T16:03:36+00:00",
+  "time": "2026-11-25T16:04:13+00:00",
   "query": "is i play rocky a true story",
   "in_suggest": true,
   "suggest": {
    "i play rocky": [
     "i play rocky",
-    "i play rocky showtimes",
     "i play rocky cast",
+    "i play rocky showtimes",
     "i play rocky reviews",
     "i play rocky trailer",
     "i play rocky rotten tomatoes",
     "i play rocky release date",
     "i play rocky box office",
     "i play rocky where to watch",
-    "i play rocky budget"
+    "i play rocky rating"
    ],
    "what is i play rocky": [
     "what is i play rocky about",
@@ -3587,10 +3587,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    true
-   ],
-   [
     "2026-11-12",
     true
    ],
@@ -3641,37 +3637,41 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "is-leonida-a-real-place": {
-  "time": "2026-11-24T16:03:37+00:00",
+  "time": "2026-11-25T16:04:15+00:00",
   "query": "is leonida a real place",
   "in_suggest": true,
   "suggest": {
    "leonida": [
     "leonida",
     "leonida github",
-    "leonida discord",
-    "leonida map",
     "leonida wild white tom",
+    "leonida map",
     "leonida gta",
-    "leonida gta 6 github",
+    "leonida carrier warehouse",
     "leonida project",
-    "leonida recomp",
-    "leonida carrier warehouse"
+    "leonida white tom",
+    "leonida keys",
+    "leonida map gta 6"
    ],
    "what is leonida": [
     "what is leonida",
-    "what is leonida based on",
     "what is leonida in gta 6",
+    "what is leonida based on",
+    "what is leonida github",
     "what is leonidas known for",
     "what is leonidas canon attribute",
     "what is leonida in gta",
     "what is leonidas last name",
     "what is leonida based on gta 6",
-    "what is leonidas chocolate",
-    "what is leonidas full name"
+    "what is leonidas chocolate"
    ],
    "is leonida a real place": [
     "is leonida a real place",
@@ -3684,10 +3684,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    true
-   ],
-   [
     "2026-11-12",
     true
    ],
@@ -3738,11 +3734,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "most-mvp-awards-mlb": {
-  "time": "2026-11-24T16:03:43+00:00",
+  "time": "2026-11-25T16:04:28+00:00",
   "query": "who has the most mvp awards in mlb history",
   "in_suggest": true,
   "suggest": {
@@ -3791,10 +3791,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    true
-   ],
-   [
     "2026-11-12",
     true
    ],
@@ -3844,6 +3840,10 @@
    ],
    [
     "2026-11-24",
+    true
+   ],
+   [
+    "2026-11-25",
     true
    ]
   ]
@@ -5992,21 +5992,21 @@
   ]
  },
  "cma-awards-2026-date": {
-  "time": "2026-11-24T15:34:04+00:00",
+  "time": "2026-11-25T16:03:59+00:00",
   "query": "when are the cma awards 2026",
   "in_suggest": true,
   "suggest": {
    "cma awards 2026": [
     "cma awards 2026",
-    "cma awards 2026 where to watch",
     "cma awards 2026 winners",
-    "cma awards 2026 performances",
-    "cma awards 2026 taylor swift",
     "cma awards 2026 tickets",
-    "cma awards 2026 streaming",
-    "cma awards 2026 red carpet",
+    "cma awards 2026 where to watch",
+    "cma awards 2026 nominees",
     "cma awards 2026 date",
-    "cma awards 2026 nominations"
+    "cma awards 2026 controversy",
+    "cma awards 2026 host",
+    "cma awards 2026 nominees winners",
+    "cma awards 2026 voting"
    ],
    "what is cma awards 2026": [
     "what is cma awards 2026",
@@ -6020,9 +6020,9 @@
     "what channel is cma awards on tonight 2026"
    ],
    "when are the cma awards 2026": [
-    "when are the cma awards 2026",
     "when are the cma awards 2026 on tv",
     "when are the cma awards 2026 schedule",
+    "when are the cma awards 2026",
     "when are the cma awards 2026 lineup",
     "when are the cma awards 2026 nominations",
     "when are the cma awards 2026 tickets price",
@@ -6033,10 +6033,6 @@
    ]
   },
   "history": [
-   [
-    "2026-11-11",
-    true
-   ],
    [
     "2026-11-12",
     true
@@ -6088,11 +6084,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "has-a-defense-secretary-been-impeached": {
-  "time": "2026-11-24T15:34:07+00:00",
+  "time": "2026-11-25T16:04:04+00:00",
   "query": "has a defense secretary ever been impeached",
   "in_suggest": true,
   "suggest": {
@@ -6119,10 +6119,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    true
-   ],
-   [
     "2026-11-12",
     true
    ],
@@ -6173,11 +6169,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "is-thomas-massie-a-republican": {
-  "time": "2026-11-24T15:34:10+00:00",
+  "time": "2026-11-25T16:04:16+00:00",
   "query": "is thomas massie a republican or democrat",
   "in_suggest": true,
   "suggest": {
@@ -6185,8 +6185,8 @@
     "thomas massie",
     "thomas massie net worth",
     "thomas massie political views",
-    "thomas massie trump",
     "thomas massie wife",
+    "thomas massie trump",
     "thomas massie x",
     "thomas massie election results",
     "thomas massie primary",
@@ -6225,10 +6225,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    true
-   ],
-   [
     "2026-11-12",
     true
    ],
@@ -6279,11 +6275,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "latin-grammys-vs-grammys": {
-  "time": "2026-11-24T15:34:13+00:00",
+  "time": "2026-11-25T16:04:19+00:00",
   "query": "what is the difference between the latin grammys and the grammys",
   "in_suggest": false,
   "suggest": {
@@ -6313,10 +6313,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    false
-   ],
-   [
     "2026-11-12",
     false
    ],
@@ -6367,25 +6363,29 @@
    [
     "2026-11-24",
     false
+   ],
+   [
+    "2026-11-25",
+    false
    ]
   ]
  },
  "medicaid-work-requirements-start-date": {
-  "time": "2026-11-24T15:34:14+00:00",
+  "time": "2026-11-25T16:04:22+00:00",
   "query": "when do medicaid work requirements start",
   "in_suggest": true,
   "suggest": {
    "medicaid work requirements": [
-    "medicaid work requirements washington state",
     "medicaid work requirements",
     "medicaid work requirements 2027",
-    "medicaid work requirements by state",
     "medicaid work requirements 2026",
+    "medicaid work requirements by state",
+    "medicaid work requirements pa",
     "medicaid work requirements reddit",
-    "medicaid work requirements exemptions",
-    "medicaid work requirements lawsuit",
-    "medicaid work requirements self employed",
-    "medicaid work requirements final rule"
+    "medicaid work requirements illinois",
+    "medicaid work requirements new york",
+    "medicaid work requirements ohio",
+    "medicaid work requirements exemptions"
    ],
    "what is medicaid work requirements": [
     "what is medicaid work requirements",
@@ -6426,10 +6426,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    true
-   ],
-   [
     "2026-11-12",
     true
    ],
@@ -6480,11 +6476,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "national-book-awards-2026": {
-  "time": "2026-11-24T15:34:17+00:00",
+  "time": "2026-11-25T16:04:31+00:00",
   "query": "when are the national book awards 2026",
   "in_suggest": true,
   "suggest": {
@@ -6493,12 +6493,12 @@
     "national book awards 2026 longlist",
     "national book awards 2026 dates",
     "national book awards 2026 fiction longlist",
+    "national book awards 2026 nonfiction",
     "national book awards 2026 fiction",
     "national book awards 2026 poetry",
+    "national book awards 2026 host",
     "national book awards 2026 finalists",
-    "national book awards 2026 translation",
-    "national book awards 2026 nominees",
-    "national book awards 2026 shortlist"
+    "national book awards 2026 translation"
    ],
    "what is national book awards 2026": [
     "national book awards 2026",
@@ -6518,10 +6518,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    true
-   ],
-   [
     "2026-11-12",
     true
    ],
@@ -6572,11 +6568,15 @@
    [
     "2026-11-24",
     true
+   ],
+   [
+    "2026-11-25",
+    true
    ]
   ]
  },
  "planet-alignment-november-2026": {
-  "time": "2026-11-24T15:34:18+00:00",
+  "time": "2026-11-25T16:04:32+00:00",
   "query": "is there a planet alignment in november 2026",
   "in_suggest": false,
   "suggest": {
@@ -6593,10 +6593,6 @@
   },
   "history": [
    [
-    "2026-11-11",
-    false
-   ],
-   [
     "2026-11-12",
     false
    ],
@@ -6646,6 +6642,10 @@
    ],
    [
     "2026-11-24",
+    false
+   ],
+   [
+    "2026-11-25",
     false
    ]
   ]
