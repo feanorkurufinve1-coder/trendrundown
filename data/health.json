@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-25T13:47:09+00:00",
+ "checked": "2026-11-25T13:56:12+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -969,6 +969,18 @@
    "userCanonical": null
   },
   {
+   "url": "/x/is-toos-a-true-story",
+   "at": "2026-11-25T13:55:46+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/is-trinity-netflix-based-on-a-true-story",
    "at": "2026-11-25T12:02:39+00:00",
    "verdict": "NEUTRAL",
@@ -1713,6 +1725,18 @@
    "userCanonical": null
   },
   {
+   "url": "/x/viral-couple-arguing-at-football-game",
+   "at": "2026-11-25T13:55:52+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/walmart-earnings-q3-2026",
    "at": "2026-11-25T11:31:51+00:00",
    "verdict": "NEUTRAL",
@@ -2181,6 +2205,18 @@
    "userCanonical": "https://trendrundown.com/x/what-time-does-gta-6-unlock"
   },
   {
+   "url": "/x/what-was-general-grant-doing-on-the-thermostat",
+   "at": "2026-11-25T13:55:59+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/when-does-new-congress-start",
    "at": "2026-11-25T11:32:34+00:00",
    "verdict": "NEUTRAL",
@@ -2385,6 +2421,18 @@
    "userCanonical": null
   },
   {
+   "url": "/x/why-does-my-phone-battery-drain-so-fast",
+   "at": "2026-11-25T13:56:05+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/why-does-my-phone-battery-go-down-while-charging",
    "at": "2026-11-25T11:45:54+00:00",
    "verdict": "NEUTRAL",
@@ -2577,6 +2625,18 @@
    "userCanonical": null
   },
   {
+   "url": "/x/why-is-tiktok-not-working-outage-november-24-2026",
+   "at": "2026-11-25T13:56:12+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/why-is-wifi-not-working-on-my-phone",
    "at": "2026-11-25T11:46:58+00:00",
    "verdict": "NEUTRAL",
@@ -2646,7 +2706,7 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 131,
+  "URL is unknown to Google": 136,
   "Crawled - currently not indexed": 65,
   "Discovered - currently not indexed": 19
  }
