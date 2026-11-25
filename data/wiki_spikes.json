@@ -1,252 +1,175 @@
 {
- "made": "2026-11-24T23:48:09+00:00",
- "day": "2026-11-23",
+ "made": "2026-11-25T07:01:44+00:00",
+ "day": "2026-11-24",
  "about": "Всплески просмотров английской Википедии за вчера: views — просмотров вчера, before — максимум за 3 прошлых дня (null = статьи не было в топ-1000). Идеи для страниц «who is / what is»; проверять факты по новостям.",
  "spikes": [
   {
-   "article": "Jensen Huang",
-   "views": 234343,
-   "before": 44726,
-   "ratio": 5.2,
-   "url": "https://en.wikipedia.org/wiki/Jensen_Huang"
+   "article": "Soham murders",
+   "views": 87021,
+   "before": 15399,
+   "ratio": 5.7,
+   "url": "https://en.wikipedia.org/wiki/Soham_murders"
   },
   {
-   "article": "Moon",
-   "views": 180275,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Moon"
-  },
-  {
-   "article": "Linux",
-   "views": 177023,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Linux"
-  },
-  {
-   "article": "Blood",
-   "views": 174912,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Blood"
-  },
-  {
-   "article": "Experience machine",
-   "views": 135474,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Experience_machine"
-  },
-  {
-   "article": "Molly Meldrum",
-   "views": 112186,
-   "before": 37182,
-   "ratio": 3.0,
-   "url": "https://en.wikipedia.org/wiki/Molly_Meldrum"
-  },
-  {
-   "article": "Fred Warner (American football)",
-   "views": 107625,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Fred_Warner_%28American_football%29"
-  },
-  {
-   "article": "Nvidia",
-   "views": 84245,
-   "before": 18469,
+   "article": "Anthony Russell (murderer)",
+   "views": 79697,
+   "before": 17463,
    "ratio": 4.6,
-   "url": "https://en.wikipedia.org/wiki/Nvidia"
+   "url": "https://en.wikipedia.org/wiki/Anthony_Russell_%28murderer%29"
   },
   {
-   "article": "Kirk Cousins",
-   "views": 67977,
+   "article": "Killing of JonBenét Ramsey",
+   "views": 64731,
+   "before": 9468,
+   "ratio": 6.8,
+   "url": "https://en.wikipedia.org/wiki/Killing_of_JonBen%C3%A9t_Ramsey"
+  },
+  {
+   "article": "Eternal September",
+   "views": 61273,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Kirk_Cousins"
+   "url": "https://en.wikipedia.org/wiki/Eternal_September"
   },
   {
-   "article": "Brock Purdy",
-   "views": 65887,
+   "article": "Jayden Daniels",
+   "views": 50821,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Brock_Purdy"
+   "url": "https://en.wikipedia.org/wiki/Jayden_Daniels"
   },
   {
-   "article": "D.C. sniper attacks",
-   "views": 64143,
+   "article": "Great white shark",
+   "views": 50665,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/D.C._sniper_attacks"
+   "url": "https://en.wikipedia.org/wiki/Great_white_shark"
   },
   {
-   "article": "The Warning (band)",
-   "views": 59452,
+   "article": "Vaibhav Sooryavanshi",
+   "views": 48785,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/The_Warning_%28band%29"
+   "url": "https://en.wikipedia.org/wiki/Vaibhav_Sooryavanshi"
   },
   {
-   "article": "Dylan Larkin",
-   "views": 58786,
+   "article": "David Mamet",
+   "views": 46506,
+   "before": 8525,
+   "ratio": 5.5,
+   "url": "https://en.wikipedia.org/wiki/David_Mamet"
+  },
+  {
+   "article": "Glenn Schumann",
+   "views": 43795,
+   "before": 12119,
+   "ratio": 3.6,
+   "url": "https://en.wikipedia.org/wiki/Glenn_Schumann"
+  },
+  {
+   "article": "Parastoo Ahmadi",
+   "views": 43407,
+   "before": 10778,
+   "ratio": 4.0,
+   "url": "https://en.wikipedia.org/wiki/Parastoo_Ahmadi"
+  },
+  {
+   "article": "Zosia Mamet",
+   "views": 40635,
+   "before": 12545,
+   "ratio": 3.2,
+   "url": "https://en.wikipedia.org/wiki/Zosia_Mamet"
+  },
+  {
+   "article": "Aneurin Donald",
+   "views": 38561,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Dylan_Larkin"
+   "url": "https://en.wikipedia.org/wiki/Aneurin_Donald"
   },
   {
-   "article": "Didy",
-   "views": 57894,
+   "article": "Joe Burrow",
+   "views": 38527,
+   "before": 7610,
+   "ratio": 5.1,
+   "url": "https://en.wikipedia.org/wiki/Joe_Burrow"
+  },
+  {
+   "article": "For sale: baby shoes, never worn",
+   "views": 36250,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Didy"
+   "url": "https://en.wikipedia.org/wiki/For_sale%3A_baby_shoes%2C_never_worn"
   },
   {
-   "article": "Michael Hage",
-   "views": 57636,
+   "article": "2025 Africa Cup of Nations",
+   "views": 35953,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Michael_Hage"
+   "url": "https://en.wikipedia.org/wiki/2025_Africa_Cup_of_Nations"
   },
   {
-   "article": "George Kittle",
-   "views": 48576,
+   "article": "Rob Lowe",
+   "views": 32671,
+   "before": 10059,
+   "ratio": 3.2,
+   "url": "https://en.wikipedia.org/wiki/Rob_Lowe"
+  },
+  {
+   "article": "Alpöge's proof of the Riemann hypothesis",
+   "views": 25560,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/George_Kittle"
+   "url": "https://en.wikipedia.org/wiki/Alp%C3%B6ge%27s_proof_of_the_Riemann_hypothesis"
   },
   {
-   "article": "Creutzfeldt–Jakob disease",
-   "views": 48058,
-   "before": 11732,
-   "ratio": 4.1,
-   "url": "https://en.wikipedia.org/wiki/Creutzfeldt%E2%80%93Jakob_disease"
-  },
-  {
-   "article": "Alice Huang (executive)",
-   "views": 40816,
-   "before": 12047,
-   "ratio": 3.4,
-   "url": "https://en.wikipedia.org/wiki/Alice_Huang_%28executive%29"
-  },
-  {
-   "article": "Ice Warrior",
-   "views": 40485,
+   "article": "Trev Alberts",
+   "views": 25501,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Ice_Warrior"
+   "url": "https://en.wikipedia.org/wiki/Trev_Alberts"
   },
   {
-   "article": "Richard Cabell",
-   "views": 37549,
+   "article": "Duke lacrosse rape hoax",
+   "views": 23619,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Richard_Cabell"
+   "url": "https://en.wikipedia.org/wiki/Duke_lacrosse_rape_hoax"
   },
   {
-   "article": "Colton McKivitz",
-   "views": 32675,
+   "article": "Victoria Broderick",
+   "views": 23387,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Colton_McKivitz"
+   "url": "https://en.wikipedia.org/wiki/Victoria_Broderick"
   },
   {
-   "article": "Jimmy Gomez",
-   "views": 30816,
+   "article": "Africa Cup of Nations",
+   "views": 22784,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Jimmy_Gomez"
+   "url": "https://en.wikipedia.org/wiki/Africa_Cup_of_Nations"
   },
   {
-   "article": "Josh Holloway",
-   "views": 30008,
+   "article": "MF Doom",
+   "views": 21853,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Josh_Holloway"
+   "url": "https://en.wikipedia.org/wiki/MF_Doom"
   },
   {
-   "article": "Mexico City",
-   "views": 28926,
+   "article": "Public holidays in Japan",
+   "views": 20813,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Mexico_City"
+   "url": "https://en.wikipedia.org/wiki/Public_holidays_in_Japan"
   },
   {
-   "article": "Don Toliver",
-   "views": 26100,
+   "article": "Pitcairn Islands",
+   "views": 20271,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Don_Toliver"
-  },
-  {
-   "article": "Dig (2026 TV series)",
-   "views": 26068,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Dig_%282026_TV_series%29"
-  },
-  {
-   "article": "William M. Tweed",
-   "views": 25656,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/William_M._Tweed"
-  },
-  {
-   "article": "Jensen Huang scandal",
-   "views": 25074,
-   "before": 8301,
-   "ratio": 3.0,
-   "url": "https://en.wikipedia.org/wiki/Jensen_Huang_scandal"
-  },
-  {
-   "article": "Mike Evans (wide receiver)",
-   "views": 24040,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Mike_Evans_%28wide_receiver%29"
-  },
-  {
-   "article": "Death of John O'Keefe",
-   "views": 22295,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Death_of_John_O%27Keefe"
-  },
-  {
-   "article": "Estadio Azteca",
-   "views": 21962,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Estadio_Azteca"
-  },
-  {
-   "article": "Ethiopian Airlines Flight 961",
-   "views": 20814,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Ethiopian_Airlines_Flight_961"
-  },
-  {
-   "article": "Christian McCaffrey",
-   "views": 20711,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Christian_McCaffrey"
-  },
-  {
-   "article": "Kirby Dach",
-   "views": 20660,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Kirby_Dach"
-  },
-  {
-   "article": "November 23",
-   "views": 20172,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/November_23"
+   "url": "https://en.wikipedia.org/wiki/Pitcairn_Islands"
   }
  ]
 }
