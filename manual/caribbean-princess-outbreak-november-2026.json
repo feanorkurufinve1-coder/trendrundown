@@ -1,0 +1,54 @@
+{
+ "news": true,
+ "kind": "event",
+ "subject": "Caribbean Princess stomach illness outbreak (November 2026)",
+ "query": "caribbean princess outbreak",
+ "title": "Caribbean Princess outbreak: What sickened 148 people? Still unknown",
+ "answer": "During a 12-night Panama Canal cruise that left Fort Lauderdale on Nov. 11, 2026, 134 of 2,936 passengers and 14 of 1,132 crew members aboard Princess Cruises' Caribbean Princess reported vomiting and diarrhea, according to the CDC. The ship returned to Port Everglades on Nov. 23, and the cause has not been identified.",
+ "in_the_news": "The ship came back to Port Everglades on Nov. 23 with the cause still unexplained, just as Thanksgiving travel peaks. People booked on upcoming cruises want to know what happened and how to avoid getting sick.",
+ "body": "The outbreak was reported to the Centers for Disease Control and Prevention on Nov. 15, four days into the round-trip voyage. The CDC's count covers the whole cruise, so not everyone was sick at the same time. Samples were collected for lab testing and ill passengers and crew were asked to isolate. The CDC noted that norovirus is often behind cruise ship outbreaks but said identifying the cause can take time. Dr. Aileen Marty, an infectious disease expert at Florida International University, told CBS Miami that several viruses or bacteria remain possible.\n\nPrincess Cruises said a limited number of guests had reported mild gastrointestinal illness and that the crew stepped up cleaning and disinfection under its outbreak plan. Passengers described crews wiping down the casino, pool areas and tables, and the self-service buffet being replaced by staff-served food. The line has not said publicly whether the outbreak affected the ship's next sailing.\n\nWhat this means for you if you are cruising soon: the CDC publicly posts an outbreak when at least 3% of passengers or crew report stomach illness; on this ship the passenger rate was about 4.6%. Norovirus spreads through contaminated hands, food and surfaces and is not killed reliably by alcohol hand sanitizer, so washing with soap and water for at least 20 seconds, especially before eating and after using the bathroom, is the best protection. If you get sick on board, report it to the ship's medical center; crews typically ask ill guests to stay in their cabins until symptoms pass. Drink plenty of fluids, because dehydration is the main risk for young children and older adults. Most people recover within one to three days.\n\nThe CDC has not said when lab results will be released. If a cause is confirmed, the agency will update its outbreak page for the voyage.",
+ "faq": [
+  {
+   "q": "Was it norovirus on the Caribbean Princess?",
+   "a": "Not confirmed. As of Nov. 25, 2026, the CDC listed the cause as unknown. Norovirus is the most common cause of cruise outbreaks, but lab testing had not identified it here."
+  },
+  {
+   "q": "How many people got sick on the Caribbean Princess?",
+   "a": "148 in total: 134 of 2,936 passengers and 14 of 1,132 crew members, according to the CDC count for the Nov. 11-23 voyage."
+  },
+  {
+   "q": "Is it safe to take a cruise after an outbreak?",
+   "a": "Ships go through deep cleaning between sailings after an outbreak, and the CDC's Vessel Sanitation Program monitors ships that call at U.S. ports. Careful handwashing and staying away from sick people remain the most effective personal steps."
+  }
+ ],
+ "links": [
+  [
+   "CBS Miami",
+   "Cruise ship returns to Fort Lauderdale with nearly 150 sick passengers, crew members after 12-day journey",
+   "https://www.cbsnews.com/miami/news/princess-cruises-caribbean-princess-sick-passengers-fort-lauderdale-november-2026/"
+  ],
+  [
+   "CBS Miami",
+   "Nearly 150 on board cruise ship that departed Fort Lauderdale sickened by unknown stomach illness",
+   "https://www.cbsnews.com/miami/news/princess-cruises-caribbean-princess-mystery-illness-cdc-november-2026/"
+  ],
+  [
+   "WPLG Local 10",
+   "140+ report stomach illness aboard Caribbean Princess cruise on round-trip from Fort Lauderdale",
+   "https://www.local10.com/health/2026/11/20/140-report-stomach-illness-aboard-caribbean-princess-cruise-on-round-trip-from-fort-lauderdale/"
+  ],
+  [
+   "CP24",
+   "Cruise ship returns to Florida with nearly 150 sick passengers, crew members after 12-day journey",
+   "https://www.cp24.com/news/world/2026/11/25/cruise-ship-returns-to-florida-with-nearly-150-sick-passengers-crew-members-after-12-day-journey/"
+  ],
+  [
+   "CDC",
+   "Caribbean Princess outbreak, November 2026",
+   "https://www.cdc.gov/vessel-sanitation/cruise-ship-outbreaks/caribbean-princess-november-2026.html"
+  ]
+ ],
+ "image_wiki": "Caribbean Princess",
+ "made": "2026-11-25T16:50:00Z",
+ "first": "2026-11-25T16:50:00Z"
+}

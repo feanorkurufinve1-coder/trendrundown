@@ -1,0 +1,54 @@
+{
+ "news": true,
+ "kind": "event",
+ "subject": "PCE inflation report for October 2026",
+ "query": "pce inflation report",
+ "title": "PCE inflation report: How high was October inflation? 3.8% a year",
+ "answer": "The Commerce Department's report on Wednesday, Nov. 25, 2026, showed the PCE price index, the Federal Reserve's preferred inflation gauge, rose 3.8% in October from a year earlier, up from 3.6% in September. Core PCE, which leaves out food and energy, rose 3.3%, above the 3.2% economists expected.",
+ "in_the_news": "It is the last major inflation reading before the Fed meets Dec. 8-9, and markets were already betting on an interest rate increase rather than a cut. The hotter-than-expected core number makes that hike look even more likely.",
+ "body": "Prices rose 0.3% from September to October, slower than September's 0.5% jump, mainly because gasoline got cheaper. Core prices rose 0.3% for the third month in a row, and the annual core rate climbed from 3.1% to 3.3%. Personal income jumped 0.7%, well above the 0.4% forecast, but part of that came from one-time Medicare premium rebate payments. Consumer spending rose 0.3% in dollar terms, which means that after inflation Americans bought about the same amount of goods and services as in September. The saving rate was 4.1% of disposable income.\n\nThe report came after a run of strong economic data: October consumer prices rose faster than forecast, and the third-quarter growth estimate was revised up. The Fed left its benchmark rate at 3.75% to 4% at its meeting just before the midterm elections. Futures and prediction markets now treat a quarter-point increase on Dec. 9 as close to certain. ABC News noted that it would be the Fed's second hike in four months, after three years without raising rates.\n\nPCE vs. CPI, in plain words: both measure how fast prices are rising, but they are built differently. The consumer price index from the Labor Department tracks what households pay out of pocket. The PCE index from the Bureau of Economic Analysis is broader: it also counts spending made on people's behalf, such as the part of health care paid by employers and Medicare, and it adjusts quickly when shoppers switch to cheaper items. That is why the Fed has defined its 2% inflation target in PCE terms since 2012. \"Core\" strips out food and energy, whose prices swing with weather and oil markets, to show the underlying trend. At 3.8%, headline PCE is nearly double the Fed's goal.\n\nWhat this means for you: a Fed rate hike usually feeds into credit card rates within one or two billing cycles and lifts rates on new car loans and home equity lines. Savers tend to see slightly better yields on high-yield savings accounts and CDs. Mortgage rates follow longer-term bond yields rather than the Fed directly, and two-year Treasury yields actually dipped after the report. The next PCE report, covering November, is due Dec. 23.",
+ "faq": [
+  {
+   "q": "When is the next Fed meeting?",
+   "a": "The Federal Open Market Committee meets Dec. 8-9, 2026, with the rate decision announced on the afternoon of Dec. 9."
+  },
+  {
+   "q": "Why are prices still rising if gas got cheaper?",
+   "a": "Cheaper gasoline slowed the monthly increase, but core prices for things like services kept rising 0.3% a month, and the annual rate compares today's prices with October 2025, so earlier increases are still counted."
+  },
+  {
+   "q": "What was the forecast for October PCE?",
+   "a": "Economists polled by Dow Jones expected 3.8% for headline PCE, which matched, and 3.2% for core PCE, which came in a tenth of a point higher at 3.3%."
+  }
+ ],
+ "links": [
+  [
+   "ABC News",
+   "Fed's preferred gauge of inflation climbs ahead of possible rate hike",
+   "https://abcnews.com/Business/inflation-report-provide-feds-preferred-gauge-prices-ahead/story?id=138410424"
+  ],
+  [
+   "Stock Analysis",
+   "US PCE inflation rises from 3.6% to 3.8% in October as core prices beat forecasts",
+   "https://stockanalysis.com/news/us-pce-inflation-october-2026/"
+  ],
+  [
+   "Unusual Whales",
+   "October PCE: 3.8% vs 3.8% forecast; core 3.3%",
+   "https://unusualwhales.com/news/october-pce-prices-match-forecast-core-tops-2026-11-25"
+  ],
+  [
+   "CoinDesk",
+   "Fed's preferred inflation gauge lands with a December rate increase already priced in",
+   "https://www.coindesk.com/daybook-us/2026/11/25/fed-s-preferred-inflation-gauge-lands-with-a-december-rate-increase-already-priced-in"
+  ],
+  [
+   "Bureau of Economic Analysis",
+   "Personal Consumption Expenditures Price Index",
+   "https://www.bea.gov/personal-consumption-expenditures-price-index"
+  ]
+ ],
+ "image_wiki": "Marriner S. Eccles Federal Reserve Board Building",
+ "made": "2026-11-25T16:50:00Z",
+ "first": "2026-11-25T16:50:00Z"
+}
