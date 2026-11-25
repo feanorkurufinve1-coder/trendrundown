@@ -274,7 +274,7 @@
   },
   {
    "url": "/x/caribbean-princess-outbreak-november-2026",
-   "at": "2026-11-25T17:02:49+00:00",
+   "at": "2026-11-25T23:16:45+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -718,7 +718,7 @@
   },
   {
    "url": "/x/how-long-does-a-washing-machine-last",
-   "at": "2026-11-25T17:03:21+00:00",
+   "at": "2026-11-25T23:17:16+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -778,7 +778,7 @@
   },
   {
    "url": "/x/huawei-verdict-trade-secrets-bank-fraud",
-   "at": "2026-11-25T17:02:55+00:00",
+   "at": "2026-11-25T23:16:51+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -814,9 +814,9 @@
   },
   {
    "url": "/x/internet-trends-this-week-2026-11-22",
-   "at": "2026-11-25T17:03:28+00:00",
+   "at": "2026-11-25T23:17:23+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -946,7 +946,7 @@
   },
   {
    "url": "/x/is-sam-bankman-fried-still-in-prison",
-   "at": "2026-11-25T17:03:34+00:00",
+   "at": "2026-11-25T23:17:29+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1342,7 +1342,7 @@
   },
   {
    "url": "/x/pce-inflation-report-october-2026",
-   "at": "2026-11-25T17:03:02+00:00",
+   "at": "2026-11-25T23:16:57+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1558,7 +1558,7 @@
   },
   {
    "url": "/x/spacex-starship-caught-by-tower",
-   "at": "2026-11-25T17:03:08+00:00",
+   "at": "2026-11-25T23:17:04+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1570,7 +1570,7 @@
   },
   {
    "url": "/x/ss-united-states-sinking",
-   "at": "2026-11-25T17:03:15+00:00",
+   "at": "2026-11-25T23:17:10+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1582,7 +1582,7 @@
   },
   {
    "url": "/x/stacy-keach-death",
-   "at": "2026-11-25T17:03:53+00:00",
+   "at": "2026-11-25T23:17:48+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1630,7 +1630,7 @@
   },
   {
    "url": "/x/teruaki-sato",
-   "at": "2026-11-25T17:03:59+00:00",
+   "at": "2026-11-25T23:17:55+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1654,7 +1654,7 @@
   },
   {
    "url": "/x/the-altruists-true-story",
-   "at": "2026-11-25T17:04:06+00:00",
+   "at": "2026-11-25T23:18:01+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1666,7 +1666,7 @@
   },
   {
    "url": "/x/the-empress-netflix-true-story",
-   "at": "2026-11-25T17:04:12+00:00",
+   "at": "2026-11-25T23:18:07+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1678,7 +1678,7 @@
   },
   {
    "url": "/x/the-good-daughter-book",
-   "at": "2026-11-25T17:04:19+00:00",
+   "at": "2026-11-25T23:18:14+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1702,7 +1702,7 @@
   },
   {
    "url": "/x/tri-series-cricket",
-   "at": "2026-11-25T17:04:25+00:00",
+   "at": "2026-11-25T23:18:20+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1726,7 +1726,7 @@
   },
   {
    "url": "/x/two-dan-sullivans-alaska",
-   "at": "2026-11-25T17:04:31+00:00",
+   "at": "2026-11-25T23:18:26+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1738,7 +1738,7 @@
   },
   {
    "url": "/x/under-siege-netflix-true-story",
-   "at": "2026-11-25T17:04:38+00:00",
+   "at": "2026-11-25T23:18:33+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2374,9 +2374,9 @@
   },
   {
    "url": "/x/why-are-people-saying-lucia-cheats-on-jason",
-   "at": "2026-11-25T17:03:40+00:00",
+   "at": "2026-11-25T23:17:36+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2422,9 +2422,9 @@
   },
   {
    "url": "/x/why-are-people-throwing-mustard-at-lsu",
-   "at": "2026-11-25T17:03:47+00:00",
+   "at": "2026-11-25T23:17:42+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2733,7 +2733,7 @@
    "userCanonical": "https://trendrundown.com/x/wta-tennis"
   }
  ],
- "sm_at": "2026-11-25T17:02:43+00:00",
+ "sm_at": "2026-11-25T23:16:38+00:00",
  "first_indexed": {
   "/x/cyber-monday": "2026-11-13T16:25:58+00:00",
   "/": "2026-11-13T16:25:58+00:00",
@@ -2742,8 +2742,8 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 135,
+  "URL is unknown to Google": 134,
   "Crawled - currently not indexed": 65,
-  "Discovered - currently not indexed": 23
+  "Discovered - currently not indexed": 24
  }
 }
