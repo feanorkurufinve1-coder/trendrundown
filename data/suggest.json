@@ -9841,7 +9841,7 @@
   ]
  },
  "exhibition-game": {
-  "time": "2026-11-25T17:48:46+00:00",
+  "time": "2026-11-26T18:03:36+00:00",
   "query": "what is an exhibition game in basketball",
   "in_suggest": true,
   "suggest": {
@@ -9849,21 +9849,21 @@
     "exhibition game",
     "exhibition game meaning",
     "exhibition game basketball",
+    "exhibition games today",
     "exhibition games college basketball",
     "exhibition game basketball meaning",
-    "exhibition games today",
-    "exhibition game football",
     "exhibition games tonight",
+    "exhibition games today basketball",
     "exhibition games ncaa basketball",
-    "exhibition games cbb"
+    "exhibition game football"
    ],
    "what is exhibition game": [
     "what is exhibition game",
     "what is exhibition game in basketball",
     "what is exhibition game in hockey",
-    "what is exhibition game on jeopardy",
-    "what is exhibition game in retro bowl",
     "what is exhibition game baseball",
+    "what is exhibition game in retro bowl",
+    "what is exhibition game on jeopardy",
     "what is preseason game",
     "what is preseason game in nba",
     "what is preseason game in nfl",
@@ -9881,8 +9881,8 @@
    "exhibition game basketball": [
     "exhibition game basketball",
     "exhibition game basketball meaning",
-    "exhibition game basketball schedule",
     "exhibition game basketball today",
+    "exhibition game basketball schedule",
     "exhibition game basketball poster",
     "preseason game basketball",
     "basketball exhibition match",
@@ -9892,10 +9892,6 @@
    ]
   },
   "history": [
-   [
-    "2026-11-12",
-    true
-   ],
    [
     "2026-11-13",
     true
@@ -9947,11 +9943,15 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "game-time-decision": {
-  "time": "2026-11-25T18:03:29+00:00",
+  "time": "2026-11-26T18:03:40+00:00",
   "query": "game time decision meaning",
   "in_suggest": true,
   "suggest": {
@@ -9997,18 +9997,14 @@
     "game time decision meme",
     "game time decision meaning slang",
     "game time decision urban dictionary",
-    "game time decision synonym",
     "game time decision nfl",
+    "game time decision synonym",
     "game time decision gif",
-    "game time decision fantasy",
-    "game time decision abbreviation"
+    "game time decision nba",
+    "game time decision fantasy"
    ]
   },
   "history": [
-   [
-    "2026-11-12",
-    true
-   ],
    [
     "2026-11-13",
     true
@@ -10060,11 +10056,15 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "mutual-option": {
-  "time": "2026-11-25T18:03:32+00:00",
+  "time": "2026-11-26T18:03:47+00:00",
   "query": "what is a mutual option in baseball",
   "in_suggest": true,
   "suggest": {
@@ -10073,16 +10073,16 @@
     "mutual option nba",
     "mutual option",
     "mutual option baseball",
+    "mutual option mlb meaning",
     "mutual option meaning",
     "mutual option nba contract",
+    "mutual option declined by player meaning",
     "mutual option nba meaning",
-    "mutual option declined by player",
-    "mutual option declined by club",
-    "mutual option baseball contract"
+    "mutual option declined"
    ],
    "what is mutual option": [
-    "what is mutual option in nba",
     "what is mutual option in mlb",
+    "what is mutual option in nba",
     "what is mutual option in baseball",
     "what is mutual option",
     "what is a mutual option in basketball",
@@ -10097,7 +10097,6 @@
     "what is a mutual option in mlb",
     "what does option mean in mlb",
     "what does option mean in baseball",
-    "what does it mean when a baseball player is out of options",
     "what are options in baseball"
    ],
    "mutual option baseball": [
@@ -10106,17 +10105,12 @@
     "mutual option mlb",
     "mutual option mlb meaning",
     "mutual option mlb contract",
-    "how do mlb player options work",
     "what are options in mlb",
     "mlb options rules",
     "mlb contract options"
    ]
   },
   "history": [
-   [
-    "2026-11-12",
-    true
-   ],
    [
     "2026-11-13",
     true
@@ -10168,11 +10162,15 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "nba-draft": {
-  "time": "2026-11-25T18:03:33+00:00",
+  "time": "2026-11-26T18:03:48+00:00",
   "query": "what is the nba draft",
   "in_suggest": true,
   "suggest": {
@@ -10182,11 +10180,11 @@
     "nba draft 2027",
     "nba draft 2027 mock",
     "nba draft 2025",
-    "nba draft 2024",
     "nba draft results",
-    "nba draft projections",
+    "nba draft 2024",
     "nba draft mock",
-    "nba draft order"
+    "nba draft projections",
+    "nba draft lottery"
    ],
    "what is nba draft": [
     "what is nba draft",
@@ -10202,9 +10200,9 @@
    ],
    "what is the nba draft": [
     "what is the nba draft",
-    "what is the nba draft lottery",
     "what is the nba draft combine",
     "what is the nba draft age limit",
+    "what is the nba draft lottery",
     "what is the nba draft order",
     "what is the nba draft order for 2026",
     "what is the nba draft streaming on",
@@ -10214,10 +10212,6 @@
    ]
   },
   "history": [
-   [
-    "2026-11-12",
-    true
-   ],
    [
     "2026-11-13",
     true
@@ -10269,25 +10263,29 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "tri-series-cricket": {
-  "time": "2026-11-25T18:03:37+00:00",
+  "time": "2026-11-26T18:03:55+00:00",
   "query": "what is a tri series in cricket",
   "in_suggest": true,
   "suggest": {
    "tri-series": [
+    "tri-series cricket",
     "tri-series",
     "tri-series 2026",
     "tri-series match",
-    "tri-series cricket",
+    "tri-series final",
+    "tri-series pakistan",
     "tri-series schedule",
-    "tri-series in pakistan",
-    "tri-series in pakistan 2026",
-    "tri series in sri lanka 2026",
-    "tri series pakistan 2025",
-    "tri series pakistan 2026 schedule"
+    "tri-series final match",
+    "tri-series odi",
+    "tri-series next match"
    ],
    "what is tri-series": [
     "what is tri series in cricket",
@@ -10315,21 +10313,17 @@
    "tri series cricket": [
     "tri series cricket",
     "tri series cricket schedule",
-    "tri series cricket 2026",
     "tri series cricket pakistan",
+    "tri series cricket 2026",
+    "tri series cricket schedule today",
     "tri series cricket schedule india",
     "tri series cricket south africa",
-    "tri series cricket sa vs zimbabwe",
-    "tri series cricket schedule today",
-    "tri series cricket india",
-    "tri series cricket pakistan schedule"
+    "tri series cricket schedule pakistan",
+    "tri series cricket points table",
+    "tri series cricket matches"
    ]
   },
   "history": [
-   [
-    "2026-11-12",
-    true
-   ],
    [
     "2026-11-13",
     true
@@ -10380,6 +10374,10 @@
    ],
    [
     "2026-11-25",
+    true
+   ],
+   [
+    "2026-11-26",
     true
    ]
   ]
@@ -11064,7 +11062,7 @@
   ]
  },
  "first-black-senator-from-mississippi": {
-  "time": "2026-11-25T17:48:47+00:00",
+  "time": "2026-11-26T18:03:38+00:00",
   "query": "who was the first black senator from mississippi",
   "in_suggest": true,
   "suggest": {
@@ -11081,17 +11079,20 @@
    "who was the first black senator from mississippi": [
     "who was the first black senator from mississippi",
     "who was the first black senator from massachusetts",
-    "who was the first african american senator"
+    "who was the first african american senator",
+    "who's the first black senator"
    ],
    "first black senator from mississippi": [
     "first black senator from mississippi",
+    "first black senator from mississippi since reconstruction",
+    "first black senator from mississippi since",
+    "first black senator from mississippi state",
     "first black senator in mississippi history",
     "first black senator ms",
     "first black politician in mississippi",
     "first black representative in mississippi",
     "1st black senator in mississippi",
-    "would colom be the first black senator from mississippi",
-    "who was the first black senator from massachusetts"
+    "would colom be the first black senator from mississippi"
    ]
   },
   "history": [
@@ -11146,11 +11147,15 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "how-much-tax-refund-per-child-2026": {
-  "time": "2026-11-25T17:48:50+00:00",
+  "time": "2026-11-26T18:03:43+00:00",
   "query": "how much tax refund per child 2026",
   "in_suggest": true,
   "suggest": {
@@ -11159,22 +11164,22 @@
     "child tax credit",
     "child tax credit 2027",
     "child tax credit 2025",
-    "child tax credit 2026 income limit",
+    "child tax credit illinois",
     "child tax credit phase out",
-    "child tax credit income limit",
     "child tax credit age limit",
-    "child tax credit for 2026 tax year",
-    "child tax credit 2025 income limit"
+    "child tax credit 2025 income limit",
+    "child tax credit 2024",
+    "child tax credit phase out 2026"
    ],
    "what is child tax credit": [
     "what is child tax credit",
     "what is child tax credit for 2026",
-    "what is child tax credit for 2025",
     "what is child tax credit for 2027",
-    "what is child tax credit amount",
+    "what is child tax credit for 2025",
     "what is child tax credit this year",
     "what is child tax credit and how does it work",
-    "what is child tax credit based on",
+    "what is child tax credit amount",
+    "what is child tax credit program",
     "what is child tax credit uk",
     "what is child tax credit in canada"
    ],
@@ -11255,11 +11260,15 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "is-the-law-of-beasts-a-true-story": {
-  "time": "2026-11-25T17:48:51+00:00",
+  "time": "2026-11-26T18:03:45+00:00",
   "query": "is the law of beasts a true story",
   "in_suggest": true,
   "suggest": {
@@ -11267,13 +11276,13 @@
     "the law of beasts",
     "the law of beasts true story",
     "the law of beasts netflix",
-    "the law of beasts review",
     "the law of beasts cast",
-    "the law of beasts netflix review",
-    "the law of beasts netflix true story",
-    "the law of beasts rotten tomatoes",
     "the law of beasts real story",
-    "the law of beasts netflix cast"
+    "the law of beasts review",
+    "the law of beasts netflix review",
+    "the law of beasts netflix cast",
+    "the law of beasts rotten tomatoes",
+    "the law of beasts netflix true story"
    ],
    "what is the law of beasts": [
     "what is the law of beasts about",
@@ -11284,11 +11293,7 @@
     "what is beasts",
     "what are the 4 beasts in the bible"
    ],
-   "is the law of beasts a true story": [
-    "is the law of beasts a true story",
-    "does the beast stay a beast",
-    "is alone the beast fake"
-   ],
+   "is the law of beasts a true story": [],
    "law beasts true story": []
   },
   "history": [
@@ -11343,11 +11348,15 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "ligue-1": {
-  "time": "2026-11-25T17:48:52+00:00",
+  "time": "2026-11-26T18:03:46+00:00",
   "query": "what is ligue 1",
   "in_suggest": true,
   "suggest": {
@@ -11360,20 +11369,20 @@
     "ligue 1 players",
     "ligue 1 games",
     "ligue 1 teams",
-    "ligue 1 mobilis",
-    "ligue 1 mcdonald's"
+    "ligue 1 scores",
+    "ligue 1 winners"
    ],
    "what is ligue 1": [
     "what is ligue 1",
-    "what is ligue 1 soccer",
-    "what is ligue 1 streaming on",
     "what is ligue 1 mcdonald's",
+    "what is ligue 1 streaming on",
+    "what is ligue 1 soccer",
     "what is ligue 1 in football",
+    "what is ligue 1 player",
+    "what is ligue 1 player in fc mobile",
     "what is ligue 1 known for",
     "what is ligue 1 plus",
-    "what is ligue 1 player in fc mobile",
-    "what is ligue 1 in france",
-    "what is ligue 1 table"
+    "how does ligue 1 work"
    ]
   },
   "history": [
@@ -11428,25 +11437,29 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "phishing-test": {
-  "time": "2026-11-25T17:48:53+00:00",
+  "time": "2026-11-26T18:03:50+00:00",
   "query": "what is a phishing test",
   "in_suggest": true,
   "suggest": {
    "phishing test": [
     "phishing test",
+    "phishing test meaning",
     "phishing testing for employees",
     "phishing test email",
-    "phishing test free",
-    "phishing test meme",
     "phishing test at work",
-    "phishing test google",
+    "phishing test free",
+    "phishing test link",
     "phishing test definition",
-    "phishing test email free",
-    "phishing test examples"
+    "phishing test meme",
+    "phishing test google"
    ],
    "what is phishing test": [
     "what is phishing test",
@@ -11525,25 +11538,29 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "rock-hall-of-fame-2026-ceremony-air-date": {
-  "time": "2026-11-25T17:48:55+00:00",
+  "time": "2026-11-26T18:03:54+00:00",
   "query": "when will the rock and roll hall of fame 2026 ceremony air",
   "in_suggest": false,
   "suggest": {
    "2026 rock and roll hall of fame induction ceremony": [
     "2026 rock and roll hall of fame induction ceremony",
-    "2026 rock and roll hall of fame induction ceremony tickets",
     "2026 rock and roll hall of fame induction ceremony performers",
+    "2026 rock and roll hall of fame induction ceremony tickets",
+    "2026 rock and roll hall of fame induction ceremony streaming",
+    "2026 rock and roll hall of fame induction ceremony where to watch",
     "2026 rock and roll hall of fame induction ceremony location",
     "2026 rock and roll hall of fame induction ceremony date",
     "2026 rock and roll hall of fame inductees ceremony",
     "rock and roll hall of fame induction ceremony 2026 tickets price",
-    "summarize the 2026 rock and roll hall of fame inductees and ceremony details",
-    "how to get tickets to rock and roll hall of fame induction ceremony 2026",
-    "where is rock and roll hall of fame induction ceremony"
+    "summarize the 2026 rock and roll hall of fame inductees and ceremony details"
    ],
    "what is 2026 rock and roll hall of fame induction ceremony": [],
    "when will the rock and roll hall of fame 2026 ceremony air": [],
@@ -11601,11 +11618,15 @@
    [
     "2026-11-25",
     false
+   ],
+   [
+    "2026-11-26",
+    false
    ]
   ]
  },
  "what-does-refrigerator-coolant-smell-like": {
-  "time": "2026-11-25T17:48:56+00:00",
+  "time": "2026-11-26T18:03:59+00:00",
   "query": "what does refrigerator coolant smell like",
   "in_suggest": true,
   "suggest": {
@@ -11613,18 +11634,18 @@
     "refrigerator coolant",
     "refrigerator coolant leak",
     "refrigerator coolant leak smell",
-    "refrigerator coolant smell",
     "refrigerator coolant refill",
-    "refrigerator coolant replacement",
-    "refrigerator coolant leak repair cost",
+    "refrigerator coolant smell",
     "refrigerator coolant color",
+    "refrigerator coolant leak repair cost",
     "refrigerator coolant toxic",
+    "refrigerator coolant replacement",
     "refrigerator coolant price"
    ],
    "what is refrigerator coolant": [
     "what is refrigerator coolant",
-    "what is refrigerator coolant made of",
     "what is refrigerator coolant called",
+    "what is refrigerator coolant made of",
     "what is freezer coolant",
     "what color is refrigerator coolant",
     "what is the refrigerant coolant liquid",
@@ -11705,11 +11726,15 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "what-is-a-safety-in-football": {
-  "time": "2026-11-25T17:48:58+00:00",
+  "time": "2026-11-26T18:04:00+00:00",
   "query": "what is a safety in football",
   "in_suggest": true,
   "suggest": {
@@ -11717,30 +11742,30 @@
     "safety pins",
     "safety",
     "safety glasses",
-    "safety razor",
-    "safety movie",
-    "safety vest",
-    "safety first car seat",
-    "safety 1st car seat",
     "safety not guaranteed",
-    "safety shoe distributors"
+    "safety razor",
+    "safety kleen",
+    "safety in football",
+    "safety movie",
+    "safety town naperville",
+    "safety first car seat"
    ],
    "what is safety": [
     "what is safety in football",
     "what is safety",
+    "what is safety net hospital",
+    "what is safety stock",
     "what is safety position in football",
     "what is safety culture",
     "what is safety data sheet",
-    "what is safety stock",
-    "what is safety connect toyota",
-    "what is safety glass",
-    "what is safety protocol adherence",
-    "what is safety net"
+    "what is safety town",
+    "what is safety in nfl",
+    "what is safety glass"
    ],
    "what is a safety in football": [
     "what is a safety in football",
-    "what is a safety in football position",
     "what is a safety in football scoring",
+    "what is a safety in football position",
     "what is a safety in football rules",
     "what is a safety in football defense",
     "what is a safety in football and how many points",
@@ -11754,11 +11779,11 @@
     "safety football position",
     "safety football movie",
     "safety football points",
+    "safety football meaning",
     "safety football helmet",
     "safety football score",
-    "safety football drip",
     "safety football 2 points",
-    "safety football meaning",
+    "safety football drip",
     "safety football players"
    ]
   },
@@ -11814,11 +11839,15 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "what-is-broad-based-categorical-eligibility": {
-  "time": "2026-11-25T17:48:58+00:00",
+  "time": "2026-11-26T18:04:01+00:00",
   "query": "what is broad-based categorical eligibility",
   "in_suggest": true,
   "suggest": {
@@ -11899,11 +11928,15 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "why-is-wifi-not-working-on-my-phone": {
-  "time": "2026-11-25T17:49:00+00:00",
+  "time": "2026-11-26T18:04:03+00:00",
   "query": "why is wifi not working on my phone",
   "in_suggest": true,
   "suggest": {
@@ -11985,6 +12018,10 @@
    ],
    [
     "2026-11-25",
+    true
+   ],
+   [
+    "2026-11-26",
     true
    ]
   ]
@@ -14823,7 +14860,7 @@
   ]
  },
  "bay-area-waterspouts-tornado-warning": {
-  "time": "2026-11-25T17:48:41+00:00",
+  "time": "2026-11-26T18:03:31+00:00",
   "query": "bay area waterspouts tornado warning",
   "in_suggest": false,
   "suggest": {
@@ -14867,11 +14904,15 @@
    [
     "2026-11-25",
     false
+   ],
+   [
+    "2026-11-26",
+    false
    ]
   ]
  },
  "california-sues-openai": {
-  "time": "2026-11-25T17:48:43+00:00",
+  "time": "2026-11-26T18:03:33+00:00",
   "query": "california sues openai",
   "in_suggest": false,
   "suggest": {
@@ -14915,38 +14956,46 @@
    [
     "2026-11-25",
     false
+   ],
+   [
+    "2026-11-26",
+    false
    ]
   ]
  },
  "robert-pattinson-james-bond": {
-  "time": "2026-11-25T18:03:35+00:00",
+  "time": "2026-11-26T18:03:52+00:00",
   "query": "robert pattinson james bond",
   "in_suggest": true,
   "suggest": {
    "robert pattinson as james bond": [
     "robert pattinson as james bond",
+    "robert pattinson as james bond and batman",
+    "robert pattinson as james bond yuck",
+    "robert pattinson as james bond comments",
+    "robert pattinson as james bond reviews",
+    "robert pattinson as james bond image",
+    "robert pattinson as james bond meme",
+    "robert pattinson as james bond ai",
     "robert pattinson as james bond reddit",
-    "robert pattinson james bond odds",
-    "robert pattinson next james bond",
-    "robert pattinson new james bond",
-    "robert pattinson neuer james bond",
-    "how to pronounce robert pattinson"
+    "robert pattinson as james bond reaction"
    ],
    "what is robert pattinson as james bond": [
     "robert pattinson as james bond",
     "robert pattinson as james bond reddit",
+    "is robert pattinson the new james bond",
     "how to pronounce robert pattinson"
    ],
    "robert pattinson james bond": [
     "robert pattinson james bond",
     "robert pattinson james bond casting",
-    "robert pattinson james bond audition",
-    "robert pattinson james bond girl",
-    "robert pattinson james bond movie",
-    "robert pattinson james bond meme",
     "robert pattinson james bond contract",
+    "robert pattinson james bond audition",
+    "robert pattinson james bond body",
+    "robert pattinson james bond meme",
     "robert pattinson james bond trailer",
-    "robert pattinson james bond gun",
+    "robert pattinson james bond girl",
+    "robert pattinson james bond poster",
     "robert pattinson james bond watch"
    ]
   },
@@ -14985,6 +15034,10 @@
    ],
    [
     "2026-11-25",
+    true
+   ],
+   [
+    "2026-11-26",
     true
    ]
   ]
@@ -15370,7 +15423,7 @@
   ]
  },
  "apple-outage-november-17-2026": {
-  "time": "2026-11-25T17:48:40+00:00",
+  "time": "2026-11-26T18:03:30+00:00",
   "query": "apple outage",
   "in_suggest": true,
   "suggest": {
@@ -15390,14 +15443,14 @@
    "apple outage": [
     "apple outage",
     "apple outage today",
-    "apple outage status",
     "apple outage map",
+    "apple outage status",
     "apple outage page",
     "apple outage right now",
+    "apple outage news",
     "apple outage yesterday",
-    "apple outage report",
-    "apple outage tracker",
-    "apple outage news"
+    "apple outage reddit",
+    "apple outage this week"
    ]
   },
   "history": [
@@ -15432,11 +15485,15 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "florida-flooding-november-18-2026": {
-  "time": "2026-11-25T17:48:48+00:00",
+  "time": "2026-11-26T18:03:39+00:00",
   "query": "florida flooding",
   "in_suggest": true,
   "suggest": {
@@ -15446,12 +15503,14 @@
     "what makes florida's east coast prone to flooding from heavy rain",
     "why does florida's east coast experience localized flooding",
     "what parts of florida are flooded",
+    "is florida prone to flooding",
     "is all of florida a flood zone",
     "what part of florida is safe from flooding"
    ],
    "what is florida east coast flooding": [
     "florida east coast flooding",
     "florida east coast flooding today",
+    "is florida prone to flooding",
     "what parts of florida are flooded",
     "is all of florida a flood zone",
     "is orlando a flood zone",
@@ -15462,12 +15521,12 @@
     "florida flooding today",
     "florida flooding map",
     "florida flooding 2026",
-    "florida flooding orlando",
-    "florida flooding alligators",
+    "florida flooding news",
     "florida flooding november 2026",
-    "florida flooding areas",
-    "florida flooding reddit",
-    "florida flooding st johns river"
+    "florida flooding orlando",
+    "florida flooding cause",
+    "florida flooding miami",
+    "florida flooding map today"
    ]
   },
   "history": [
@@ -15502,11 +15561,15 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "hakeem-jeffries-speaker-nomination": {
-  "time": "2026-11-25T18:03:31+00:00",
+  "time": "2026-11-26T18:03:42+00:00",
   "query": "is hakeem jeffries speaker",
   "in_suggest": true,
   "suggest": {
@@ -15514,9 +15577,16 @@
    "what is hakeem jeffries speaker nomination": [],
    "is hakeem jeffries speaker": [],
    "hakeem jeffries speaker": [
-    "hakeem jeffries speaker of the house",
     "hakeem jeffries speaker",
-    "hakeem jeffries speaker prospects 2024"
+    "hakeem jeffries speaker of the house",
+    "hakeem jeffries speaker kalshi",
+    "hakeem jeffries speaker race",
+    "hakeem jeffries speaker opposition",
+    "hakeem jeffries speaker change",
+    "hakeem jeffries speaker alternative",
+    "hakeem jeffries speaker of the house controversy",
+    "hakeem jeffries speaker opponent",
+    "hakeem jeffries speaker agenda"
    ]
   },
   "history": [
@@ -15550,6 +15620,10 @@
    ],
    [
     "2026-11-25",
+    true
+   ],
+   [
+    "2026-11-26",
     true
    ]
   ]
@@ -15956,7 +16030,7 @@
   ]
  },
  "cma-awards-2026-winners": {
-  "time": "2026-11-25T17:48:44+00:00",
+  "time": "2026-11-26T18:03:34+00:00",
   "query": "cma awards 2026 winners",
   "in_suggest": true,
   "suggest": {
@@ -15966,11 +16040,11 @@
     "2026 cma awards tickets",
     "2026 cma awards nominees",
     "2026 cma awards performers",
-    "2026 cma awards show",
     "2026 cma awards host",
     "2026 cma awards winners",
+    "2026 cma awards schedule",
     "2026 cma awards lineup",
-    "2026 cma awards wiki"
+    "2026 cma awards location"
    ],
    "what is 2026 cma awards": [
     "what channel is 2026 cma awards on",
@@ -15983,14 +16057,14 @@
    "cma awards 2026 winners": [
     "cma awards 2026 winners",
     "cma awards 2026 winners list",
+    "cma awards 2026 winners list by year",
     "country music awards 2026 winners",
     "country music awards 2026 winners list",
     "cma awards 2026 results",
     "country music awards 2026 results",
     "cma touring awards 2026 winners",
     "cma ontario awards 2026 winners",
-    "cma awards 2026 nominees winners",
-    "cma touring awards 2026 winners list"
+    "cma awards 2026 nominees winners"
    ]
   },
   "history": [
@@ -16021,19 +16095,29 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "trump-xi-putin-meeting-declaration": {
-  "time": "2026-11-25T18:03:38+00:00",
+  "time": "2026-11-26T18:03:56+00:00",
   "query": "trump xi putin meeting",
   "in_suggest": true,
   "suggest": {
-   "trump-xi-putin trilateral meeting": [],
+   "trump-xi-putin trilateral meeting": [
+    "trump-xi-putin trilateral meeting at apec what to expect",
+    "chinese president before xi jinping",
+    "china president before xi jinping",
+    "president before xi jinping"
+   ],
    "what is trump-xi-putin trilateral meeting": [],
    "trump xi putin meeting": [
     "trump xi putin meeting",
-    "trump putin xi meeting date",
+    "trump xi putin meeting date",
+    "trump xi putin meeting reddit",
     "trump putin china meeting",
     "trump xi jinping putin meeting",
     "chinese president before xi jinping",
@@ -16071,11 +16155,15 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "walmart-earnings-q3-2026": {
-  "time": "2026-11-25T18:03:39+00:00",
+  "time": "2026-11-26T18:03:57+00:00",
   "query": "walmart earnings",
   "in_suggest": true,
   "suggest": {
@@ -16091,12 +16179,12 @@
     "walmart earnings date",
     "walmart earnings report",
     "walmart earnings call",
-    "walmart earnings release",
+    "walmart earnings transcript",
     "walmart earnings 2026",
-    "walmart earnings prediction",
     "walmart earnings 2025",
-    "walmart earnings q2",
-    "walmart earnings q2 2026"
+    "walmart earnings q3",
+    "walmart earnings release",
+    "walmart earnings and consumer spending"
    ]
   },
   "history": [
@@ -16126,6 +16214,10 @@
    ],
    [
     "2026-11-25",
+    true
+   ],
+   [
+    "2026-11-26",
     true
    ]
   ]
@@ -16478,7 +16570,7 @@
   ]
  },
  "california-earthquake-pinnacles-november-2026": {
-  "time": "2026-11-25T17:48:42+00:00",
+  "time": "2026-11-26T18:03:32+00:00",
   "query": "earthquake california",
   "in_suggest": true,
   "suggest": {
@@ -16487,7 +16579,6 @@
     "pinnacles earthquake today",
     "earthquake pinnacles ca",
     "pinnacles national park earthquake",
-    "what animals live in the pinnacles",
     "what is pinnacles national park"
    ],
    "what is pinnacles earthquake": [],
@@ -16528,11 +16619,15 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "rikers-island-closure-plan-2032": {
-  "time": "2026-11-25T18:03:34+00:00",
+  "time": "2026-11-26T18:03:51+00:00",
   "query": "rikers island closing",
   "in_suggest": true,
   "suggest": {
@@ -16543,15 +16638,14 @@
    ],
    "what is rikers island closure plan": [
     "rikers island closure plan",
-    "why did rikers island close",
     "is rikers island open today",
     "is rikers island closed"
    ],
    "rikers island closing": [
     "rikers island closing",
     "rikers island closing plan",
-    "rikers island closing why",
     "rikers island closing date",
+    "rikers island closing why",
     "rikers island closing in 2026",
     "rikers island closing down",
     "rikers island closing reddit",
@@ -16583,6 +16677,10 @@
    ],
    [
     "2026-11-25",
+    true
+   ],
+   [
+    "2026-11-26",
     true
    ]
   ]
