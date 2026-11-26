@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-26T22:17:04+00:00",
+ "checked": "2026-11-26T23:02:01+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -850,7 +850,7 @@
   },
   {
    "url": "/x/iran-bahrain-radar-strike",
-   "at": "2026-11-26T16:47:25+00:00",
+   "at": "2026-11-26T23:02:01+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2530,7 +2530,7 @@
   },
   {
    "url": "/x/why-are-people-trying-to-move-the-bean",
-   "at": "2026-11-26T16:47:12+00:00",
+   "at": "2026-11-26T23:01:49+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2722,7 +2722,7 @@
   },
   {
    "url": "/x/why-is-my-washing-machine-dripping-water-inside",
-   "at": "2026-11-26T16:47:19+00:00",
+   "at": "2026-11-26T23:01:55+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
