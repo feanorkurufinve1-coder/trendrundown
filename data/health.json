@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-26T12:30:21+00:00",
+ "checked": "2026-11-26T13:18:04+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -94,7 +94,7 @@
   },
   {
    "url": "/x/telerally",
-   "at": "2026-11-26T07:03:13+00:00",
+   "at": "2026-11-26T13:18:04+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -358,9 +358,9 @@
   },
   {
    "url": "/x/crowdstrike-zscaler-acquisition",
-   "at": "2026-11-26T07:02:41+00:00",
+   "at": "2026-11-26T13:17:33+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -862,7 +862,7 @@
   },
   {
    "url": "/x/is-blade-runner-2099-a-sequel",
-   "at": "2026-11-26T07:02:22+00:00",
+   "at": "2026-11-26T13:17:14+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1587,7 +1587,7 @@
   },
   {
    "url": "/x/takata-airbag-recall-honda-toyota-november-2026",
-   "at": "2026-11-26T07:02:47+00:00",
+   "at": "2026-11-26T13:17:39+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1599,7 +1599,7 @@
   },
   {
    "url": "/x/tarik-skubal-mets-contract",
-   "at": "2026-11-26T07:02:54+00:00",
+   "at": "2026-11-26T13:17:45+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1863,7 +1863,7 @@
   },
   {
    "url": "/x/what-does-text-message-not-encrypted-mean",
-   "at": "2026-11-26T07:01:56+00:00",
+   "at": "2026-11-26T13:16:49+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2175,7 +2175,7 @@
   },
   {
    "url": "/x/what-is-the-talk-to-me-doja-trend",
-   "at": "2026-11-26T07:02:28+00:00",
+   "at": "2026-11-26T13:17:20+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2187,7 +2187,7 @@
   },
   {
    "url": "/x/what-is-the-word-of-the-year-2026",
-   "at": "2026-11-26T07:02:35+00:00",
+   "at": "2026-11-26T13:17:27+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2331,7 +2331,7 @@
   },
   {
    "url": "/x/why-are-people-saying-gta-6-is-bad",
-   "at": "2026-11-26T07:03:00+00:00",
+   "at": "2026-11-26T13:17:51+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2379,7 +2379,7 @@
   },
   {
    "url": "/x/why-are-people-saying-remember-november-2026-is-coming",
-   "at": "2026-11-26T07:02:03+00:00",
+   "at": "2026-11-26T13:16:55+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2439,7 +2439,7 @@
   },
   {
    "url": "/x/why-are-people-wearing-pajamas-to-sunrise-on-the-reaping",
-   "at": "2026-11-26T07:02:09+00:00",
+   "at": "2026-11-26T13:17:02+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2691,7 +2691,7 @@
   },
   {
    "url": "/x/why-wont-my-washing-machine-drain",
-   "at": "2026-11-26T07:03:07+00:00",
+   "at": "2026-11-26T13:17:58+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2703,7 +2703,7 @@
   },
   {
    "url": "/x/why-wont-my-washing-machine-spin",
-   "at": "2026-11-26T07:02:16+00:00",
+   "at": "2026-11-26T13:17:08+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2735,9 +2735,9 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 128,
+  "URL is unknown to Google": 129,
   "Crawled - currently not indexed": 65,
-  "Discovered - currently not indexed": 29,
+  "Discovered - currently not indexed": 28,
   "error": 1
  }
 }
