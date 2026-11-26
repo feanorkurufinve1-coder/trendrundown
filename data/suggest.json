@@ -4902,27 +4902,27 @@
   ]
  },
  "what-is-pico-park": {
-  "time": "2026-11-25T15:17:47+00:00",
+  "time": "2026-11-26T15:33:41+00:00",
   "query": "what is pico park",
   "in_suggest": true,
   "suggest": {
    "pico park": [
     "pico park",
     "pico park 2",
-    "pico park switch",
-    "pico park sonic",
     "pico park 3",
-    "pico park game",
+    "pico park sonic",
+    "pico park switch",
     "pico park pico rivera",
-    "pico park classic edition",
-    "pico park steam",
+    "pico park game",
+    "pico park 2 switch",
+    "pico park ps5",
     "pico park free"
    ],
    "what is pico park": [
     "what is pico park",
-    "what is pico park classic edition",
-    "what is pico park 2",
     "what is pico park game",
+    "what is pico park 2",
+    "what is pico park classic edition",
     "what is pico park dark mode",
     "what is pico park 2 dark mode",
     "what is pico park made in",
@@ -4932,10 +4932,6 @@
    ]
   },
   "history": [
-   [
-    "2026-11-12",
-    true
-   ],
    [
     "2026-11-13",
     true
@@ -4986,6 +4982,10 @@
    ],
    [
     "2026-11-25",
+    true
+   ],
+   [
+    "2026-11-26",
     true
    ]
   ]
@@ -14444,22 +14444,28 @@
   ]
  },
  "what-is-the-i-got-so-mad-meme": {
-  "time": "2026-11-25T15:02:49+00:00",
+  "time": "2026-11-26T15:33:42+00:00",
   "query": "what is the i got so mad meme",
   "in_suggest": true,
   "suggest": {
    "i got so mad meme": [
     "i got so mad meme",
-    "i was so mad meme",
-    "i just get so mad meme",
-    "i was so mad mercer mayer meme"
+    "i got so mad meme ideas",
+    "i got so mad meme picture",
+    "i got so mad meme image",
+    "i got so mad meme original",
+    "i got so mad meme tiktok",
+    "i got so mad meme skeleton",
+    "i got so mad meme photo",
+    "i got so mad meme gif",
+    "i got so mad meme youtube"
    ],
    "what is i got so mad meme": [
     "i got so mad meme",
     "why is mad max mad"
    ],
    "what is the i got so mad meme": [
-    "i got so mad meme",
+    "what is the i got so mad meme",
     "why is mad max mad"
    ]
   },
@@ -14499,11 +14505,15 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "why-are-people-saying-julia-stiles-went-to-juilliard": {
-  "time": "2026-11-25T15:02:51+00:00",
+  "time": "2026-11-26T15:33:43+00:00",
   "query": "why are people saying julia stiles went to juilliard",
   "in_suggest": true,
   "suggest": {
@@ -14576,17 +14586,26 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "why-are-people-trying-to-move-the-bean": {
-  "time": "2026-11-25T15:02:52+00:00",
+  "time": "2026-11-26T15:33:45+00:00",
   "query": "why are people trying to move the bean",
-  "in_suggest": false,
+  "in_suggest": true,
   "suggest": {
    "bean push trend": [],
    "what is bean push trend": [],
-   "why are people trying to move the bean": [],
+   "why are people trying to move the bean": [
+    "why are people trying to move the bean",
+    "why are people trying to move the bean in chicago",
+    "why are people trying to move the bean 7 inches",
+    "why do beans float to the top"
+   ],
    "people trying move bean": []
   },
   "history": [
@@ -14625,11 +14644,15 @@
    [
     "2026-11-25",
     false
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "why-is-my-washing-machine-dripping-water-inside": {
-  "time": "2026-11-25T15:02:54+00:00",
+  "time": "2026-11-26T15:33:47+00:00",
   "query": "why is my washing machine dripping water inside",
   "in_suggest": true,
   "suggest": {
@@ -14659,8 +14682,8 @@
    ],
    "why is my washing machine dripping water inside": [
     "why is my washing machine dripping water inside",
-    "why is my washing machine dripping water inside when not in use",
     "why is my washing machine dripping water inside the tub",
+    "why is my washing machine dripping water inside when not in use",
     "why is my washing machine leaking water inside",
     "why is my ge washing machine dripping water inside",
     "why is my lg washing machine dripping water inside",
@@ -14717,6 +14740,10 @@
    ],
    [
     "2026-11-25",
+    true
+   ],
+   [
+    "2026-11-26",
     true
    ]
   ]
