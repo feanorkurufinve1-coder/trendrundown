@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-26T08:01:58+00:00",
+ "checked": "2026-11-26T08:32:38+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -346,7 +346,7 @@
   },
   {
    "url": "/x/colts-release-daniel-jones",
-   "at": "2026-11-26T02:16:57+00:00",
+   "at": "2026-11-26T08:32:01+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -994,9 +994,9 @@
   },
   {
    "url": "/x/is-toos-a-true-story",
-   "at": "2026-11-26T02:17:10+00:00",
+   "at": "2026-11-26T08:32:13+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1330,7 +1330,7 @@
   },
   {
    "url": "/x/palisades-fire-verdict-rinderknecht-guilty",
-   "at": "2026-11-26T02:17:03+00:00",
+   "at": "2026-11-26T08:32:07+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1690,9 +1690,9 @@
   },
   {
    "url": "/x/tom-jackson-espn-dies",
-   "at": "2026-11-26T02:16:51+00:00",
+   "at": "2026-11-26T08:31:55+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1762,9 +1762,9 @@
   },
   {
    "url": "/x/viral-couple-arguing-at-football-game",
-   "at": "2026-11-26T02:17:16+00:00",
+   "at": "2026-11-26T08:32:19+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2242,9 +2242,9 @@
   },
   {
    "url": "/x/what-was-general-grant-doing-on-the-thermostat",
-   "at": "2026-11-26T02:17:22+00:00",
+   "at": "2026-11-26T08:32:26+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2458,9 +2458,9 @@
   },
   {
    "url": "/x/why-does-my-phone-battery-drain-so-fast",
-   "at": "2026-11-26T02:17:28+00:00",
+   "at": "2026-11-26T08:32:32+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2662,9 +2662,9 @@
   },
   {
    "url": "/x/why-is-tiktok-not-working-outage-november-24-2026",
-   "at": "2026-11-26T02:17:35+00:00",
+   "at": "2026-11-26T08:32:38+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2742,8 +2742,8 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 134,
+  "URL is unknown to Google": 128,
   "Crawled - currently not indexed": 65,
-  "Discovered - currently not indexed": 24
+  "Discovered - currently not indexed": 30
  }
 }
