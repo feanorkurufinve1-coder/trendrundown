@@ -1,18 +1,18 @@
 {
- "made": "2026-11-26T04:47:02+00:00",
+ "made": "2026-11-26T05:04:19+00:00",
  "pages": 471,
  "summary": {
   "kind": {
    "event": {
     "pages": 86,
-    "with_impr_%": 13,
+    "with_impr_%": 12,
     "top3_%": 0,
     "clicks": 1,
     "clicks_per_page": 0.01
    },
    "law": {
     "pages": 15,
-    "with_impr_%": 7,
+    "with_impr_%": 13,
     "top3_%": 0,
     "clicks": 0,
     "clicks_per_page": 0.0
@@ -33,7 +33,7 @@
    },
    "person": {
     "pages": 64,
-    "with_impr_%": 25,
+    "with_impr_%": 27,
     "top3_%": 0,
     "clicks": 15,
     "clicks_per_page": 0.23
@@ -84,8 +84,8 @@
    },
    "manual": {
     "pages": 196,
-    "with_impr_%": 10,
-    "top3_%": 3,
+    "with_impr_%": 11,
+    "top3_%": 2,
     "clicks": 53,
     "clicks_per_page": 0.27
    }
@@ -121,7 +121,7 @@
    },
    "how": {
     "pages": 14,
-    "with_impr_%": 7,
+    "with_impr_%": 14,
     "top3_%": 0,
     "clicks": 0,
     "clicks_per_page": 0.0
@@ -142,8 +142,8 @@
    },
    "what": {
     "pages": 242,
-    "with_impr_%": 18,
-    "top3_%": 2,
+    "with_impr_%": 17,
+    "top3_%": 1,
     "clicks": 41,
     "clicks_per_page": 0.17
    },
@@ -163,7 +163,7 @@
    },
    "who": {
     "pages": 69,
-    "with_impr_%": 25,
+    "with_impr_%": 26,
     "top3_%": 0,
     "clicks": 6,
     "clicks_per_page": 0.09
@@ -185,18 +185,18 @@
   },
   "title_matches_top_query": {
    "False": {
-    "pages": 432,
+    "pages": 430,
     "with_impr_%": 7,
     "top3_%": 0,
     "clicks": 32,
     "clicks_per_page": 0.07
    },
    "True": {
-    "pages": 39,
+    "pages": 41,
     "with_impr_%": 100,
-    "top3_%": 8,
+    "top3_%": 5,
     "clicks": 24,
-    "clicks_per_page": 0.62
+    "clicks_per_page": 0.59
    }
   }
  },
@@ -208,7 +208,7 @@
    "source": "manual",
    "q_word": "what",
    "title_len": 61,
-   "age_days": 21.5,
+   "age_days": 21.6,
    "rival_exact": null,
    "impr": 548,
    "clicks": 29,
@@ -248,7 +248,7 @@
    "title_len": 65,
    "age_days": 19.3,
    "rival_exact": null,
-   "impr": 1716,
+   "impr": 1712,
    "clicks": 6,
    "best_pos": 10.5,
    "title_matches_top_query": true,
@@ -286,7 +286,7 @@
    "title_len": 68,
    "age_days": 19.6,
    "rival_exact": null,
-   "impr": 21,
+   "impr": 25,
    "clicks": 2,
    "best_pos": 3.5,
    "title_matches_top_query": false,
@@ -294,25 +294,6 @@
     "isabel fuentes pazos",
     "unprotected murder in galicia true story",
     "murder in galicia true story"
-   ]
-  },
-  {
-   "slug": "pro-and-tell-apple-event",
-   "title": "Pro and tell Apple event: Oct. 28, 2026 in Los Angeles, touchscreen MacBook Pro",
-   "kind": "event",
-   "source": "auto",
-   "q_word": "none",
-   "title_len": 79,
-   "age_days": 22.0,
-   "rival_exact": null,
-   "impr": 339,
-   "clicks": 1,
-   "best_pos": 9,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "pro and tell",
-    "apple pro and tell event",
-    "pro and tell event"
    ]
   },
   {
@@ -332,6 +313,25 @@
     "what does mutual option declined by player mean",
     "what is a mutual option in baseball",
     "mutual option baseball"
+   ]
+  },
+  {
+   "slug": "pro-and-tell-apple-event",
+   "title": "Pro and tell Apple event: Oct. 28, 2026 in Los Angeles, touchscreen MacBook Pro",
+   "kind": "event",
+   "source": "auto",
+   "q_word": "none",
+   "title_len": 79,
+   "age_days": 22.0,
+   "rival_exact": null,
+   "impr": 172,
+   "clicks": 1,
+   "best_pos": 9,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "pro and tell",
+    "pro and tell apple event",
+    "pro and tell event"
    ]
   },
   {
@@ -378,9 +378,9 @@
    "source": "manual",
    "q_word": "what",
    "title_len": 54,
-   "age_days": 12.5,
+   "age_days": 12.6,
    "rival_exact": null,
-   "impr": 2153,
+   "impr": 2119,
    "clicks": 0,
    "best_pos": 5,
    "title_matches_top_query": true,
@@ -399,7 +399,7 @@
    "title_len": 70,
    "age_days": 13.5,
    "rival_exact": null,
-   "impr": 275,
+   "impr": 197,
    "clicks": 0,
    "best_pos": 2,
    "title_matches_top_query": true,
@@ -494,9 +494,9 @@
    "title_len": 65,
    "age_days": 23.5,
    "rival_exact": null,
-   "impr": 99,
+   "impr": 102,
    "clicks": 0,
-   "best_pos": 8.3,
+   "best_pos": 8,
    "title_matches_top_query": true,
    "top_queries": [
     "alberto aquilani",
@@ -511,11 +511,11 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 27,
-   "age_days": 28.8,
+   "age_days": 28.9,
    "rival_exact": null,
-   "impr": 64,
+   "impr": 66,
    "clicks": 0,
-   "best_pos": 9,
+   "best_pos": 5,
    "title_matches_top_query": false,
    "top_queries": [
     "is ali g british",
@@ -551,7 +551,7 @@
    "title_len": 70,
    "age_days": 22.6,
    "rival_exact": null,
-   "impr": 38,
+   "impr": 39,
    "clicks": 0,
    "best_pos": 8.5,
    "title_matches_top_query": false,
@@ -570,7 +570,7 @@
    "title_len": 65,
    "age_days": 19.8,
    "rival_exact": 2,
-   "impr": 36,
+   "impr": 37,
    "clicks": 0,
    "best_pos": 7,
    "title_matches_top_query": true,
@@ -597,44 +597,6 @@
     "game time decision",
     "game day decision meaning",
     "game time decision meaning"
-   ]
-  },
-  {
-   "slug": "wta-tennis",
-   "title": "What does WTA stand for in tennis? The women's tour explained",
-   "kind": "organization",
-   "source": "manual",
-   "q_word": "what",
-   "title_len": 61,
-   "age_days": 11.6,
-   "rival_exact": null,
-   "impr": 33,
-   "clicks": 0,
-   "best_pos": 33,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "wta",
-    "wta tennis",
-    "wta tour"
-   ]
-  },
-  {
-   "slug": "phishing-test",
-   "title": "What is a phishing test? Why your employer sends fake scam emails",
-   "kind": "term",
-   "source": "manual",
-   "q_word": "what",
-   "title_len": 65,
-   "age_days": 12.5,
-   "rival_exact": null,
-   "impr": 30,
-   "clicks": 0,
-   "best_pos": 2.5,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "phishing test",
-    "phishing test in dc",
-    "phishing test site"
    ]
   },
   {
@@ -691,6 +653,25 @@
    ]
   },
   {
+   "slug": "mlb-manager-of-the-year-voting",
+   "title": "How is MLB Manager of the Year voted? 2026: Venable and Murphy",
+   "kind": "term",
+   "source": "manual",
+   "q_word": "how",
+   "title_len": 62,
+   "age_days": 3.9,
+   "rival_exact": null,
+   "impr": 23,
+   "clicks": 0,
+   "best_pos": 5,
+   "title_matches_top_query": false,
+   "top_queries": [
+    "mlb manager of the year odds",
+    "when is manager of the year announced mlb",
+    "when do they announce manager of the year"
+   ]
+  },
+  {
    "slug": "senior-secured-debt",
    "title": "What is senior secured debt?",
    "kind": "term",
@@ -729,22 +710,22 @@
    ]
   },
   {
-   "slug": "mlb-manager-of-the-year-voting",
-   "title": "How is MLB Manager of the Year voted? 2026: Venable and Murphy",
-   "kind": "term",
-   "source": "manual",
-   "q_word": "how",
-   "title_len": 62,
-   "age_days": 3.9,
+   "slug": "aj-dybantsa",
+   "title": "Who is AJ Dybantsa?",
+   "kind": "person",
+   "source": "auto",
+   "q_word": "who",
+   "title_len": 19,
+   "age_days": 30.3,
    "rival_exact": null,
-   "impr": 22,
+   "impr": 21,
    "clicks": 0,
-   "best_pos": 5,
-   "title_matches_top_query": false,
+   "best_pos": 24.6,
+   "title_matches_top_query": true,
    "top_queries": [
-    "mlb manager of the year odds",
-    "when is manager of the year announced mlb",
-    "when do they announce manager of the year"
+    "aj dybantsa",
+    "aj dybantsa age",
+    "aj dybansta"
    ]
   },
   {
@@ -767,20 +748,22 @@
    ]
   },
   {
-   "slug": "aj-dybantsa",
-   "title": "Who is AJ Dybantsa?",
-   "kind": "person",
-   "source": "auto",
-   "q_word": "who",
-   "title_len": 19,
-   "age_days": 30.3,
+   "slug": "wta-tennis",
+   "title": "What does WTA stand for in tennis? The women's tour explained",
+   "kind": "organization",
+   "source": "manual",
+   "q_word": "what",
+   "title_len": 61,
+   "age_days": 11.6,
    "rival_exact": null,
-   "impr": 19,
+   "impr": 18,
    "clicks": 0,
-   "best_pos": 24.6,
+   "best_pos": 46.5,
    "title_matches_top_query": true,
    "top_queries": [
-    "aj dybantsa"
+    "wta",
+    "wta tennis",
+    "what is wta in tennis"
    ]
   },
   {
@@ -849,31 +832,30 @@
    "title_len": 40,
    "age_days": 30.8,
    "rival_exact": null,
-   "impr": 16,
+   "impr": 15,
    "clicks": 0,
-   "best_pos": 26.9,
+   "best_pos": 27.9,
    "title_matches_top_query": true,
    "top_queries": [
     "tommy carr"
    ]
   },
   {
-   "slug": "cesc-fabregas",
-   "title": "Who is Cesc Fabregas's coach? Como's manager",
-   "kind": "person",
-   "source": "auto",
-   "q_word": "who",
-   "title_len": 44,
-   "age_days": 31.7,
+   "slug": "phishing-test",
+   "title": "What is a phishing test? Why your employer sends fake scam emails",
+   "kind": "term",
+   "source": "manual",
+   "q_word": "what",
+   "title_len": 65,
+   "age_days": 12.6,
    "rival_exact": null,
-   "impr": 15,
+   "impr": 13,
    "clicks": 0,
-   "best_pos": 9.5,
-   "title_matches_top_query": false,
+   "best_pos": 49.6,
+   "title_matches_top_query": true,
    "top_queries": [
-    "como manager",
-    "manager of como",
-    "lake como manager"
+    "phishing test",
+    "phishing test site"
    ]
   },
   {
@@ -915,25 +897,6 @@
    ]
   },
   {
-   "slug": "lask",
-   "title": "What is LASK football club?",
-   "kind": "organization",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 27,
-   "age_days": 31.7,
-   "rival_exact": null,
-   "impr": 9,
-   "clicks": 0,
-   "best_pos": 8.7,
-   "title_matches_top_query": false,
-   "top_queries": [
-    "lask country",
-    "lask what country",
-    "lask is from which country"
-   ]
-  },
-  {
    "slug": "manuel-pellegrini",
    "title": "Who is Manuel Pellegrini?",
    "kind": "person",
@@ -971,6 +934,42 @@
    ]
   },
   {
+   "slug": "cesc-fabregas",
+   "title": "Who is Cesc Fabregas's coach? Como's manager",
+   "kind": "person",
+   "source": "auto",
+   "q_word": "who",
+   "title_len": 44,
+   "age_days": 31.7,
+   "rival_exact": null,
+   "impr": 7,
+   "clicks": 0,
+   "best_pos": 10.6,
+   "title_matches_top_query": false,
+   "top_queries": [
+    "como manager"
+   ]
+  },
+  {
+   "slug": "lask",
+   "title": "What is LASK football club?",
+   "kind": "organization",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 27,
+   "age_days": 31.7,
+   "rival_exact": null,
+   "impr": 7,
+   "clicks": 0,
+   "best_pos": 8.7,
+   "title_matches_top_query": false,
+   "top_queries": [
+    "lask country",
+    "lask what country",
+    "lask fc"
+   ]
+  },
+  {
    "slug": "wbc-super-middleweight-title",
    "title": "What is the WBC super middleweight title?",
    "kind": "term",
@@ -995,7 +994,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 22,
-   "age_days": 33.6,
+   "age_days": 33.7,
    "rival_exact": null,
    "impr": 6,
    "clicks": 0,
@@ -1021,24 +1020,6 @@
    "title_matches_top_query": true,
    "top_queries": [
     "bryce underwood"
-   ]
-  },
-  {
-   "slug": "fedex-cup",
-   "title": "What are the FedEx Cup standings?",
-   "kind": "other",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 33,
-   "age_days": 30.6,
-   "rival_exact": null,
-   "impr": 6,
-   "clicks": 0,
-   "best_pos": 37.5,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "fedex cup standings",
-    "fedex cup projected standings"
    ]
   },
   {
@@ -1117,6 +1098,43 @@
    ]
   },
   {
+   "slug": "fedex-cup",
+   "title": "What are the FedEx Cup standings?",
+   "kind": "other",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 33,
+   "age_days": 30.6,
+   "rival_exact": null,
+   "impr": 5,
+   "clicks": 0,
+   "best_pos": 37.5,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "fedex cup standings",
+    "fedex cup projected standings"
+   ]
+  },
+  {
+   "slug": "ali-g-in-da-house",
+   "title": "What is Ali G in Da House?",
+   "kind": "product",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 26,
+   "age_days": 28.9,
+   "rival_exact": null,
+   "impr": 5,
+   "clicks": 0,
+   "best_pos": 4,
+   "title_matches_top_query": false,
+   "top_queries": [
+    "ali g in da usa",
+    "ali g in da house",
+    "ali g in da hood"
+   ]
+  },
+  {
    "slug": "generic-congressional-ballot",
    "title": "What is the generic congressional ballot: party preference poll for 2026",
    "kind": "term",
@@ -1150,24 +1168,6 @@
    "top_queries": [
     "what does consent decree mean",
     "consent decree definition"
-   ]
-  },
-  {
-   "slug": "nfl-celebration-fines",
-   "title": "What are the NFL celebration fines in 2026?",
-   "kind": "law",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 43,
-   "age_days": 31.6,
-   "rival_exact": null,
-   "impr": 4,
-   "clicks": 0,
-   "best_pos": 9.5,
-   "title_matches_top_query": false,
-   "top_queries": [
-    "do you get fined for celebrating in the nfl",
-    "chase young christen miller fines"
    ]
   },
   {
@@ -1229,7 +1229,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 69,
-   "age_days": 19.6,
+   "age_days": 19.7,
    "rival_exact": null,
    "impr": 4,
    "clicks": 0,
@@ -1344,30 +1344,13 @@
    ]
   },
   {
-   "slug": "champions-league",
-   "title": "What is the Champions League format?",
-   "kind": "event",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 36,
-   "age_days": 31.7,
-   "rival_exact": null,
-   "impr": 2,
-   "clicks": 0,
-   "best_pos": 38.5,
-   "title_matches_top_query": false,
-   "top_queries": [
-    "uefa format"
-   ]
-  },
-  {
    "slug": "injured-reserve",
    "title": "What is injured reserve in the NFL?",
    "kind": "term",
    "source": "auto",
    "q_word": "what",
    "title_len": 35,
-   "age_days": 31.6,
+   "age_days": 31.7,
    "rival_exact": null,
    "impr": 2,
    "clicks": 0,
@@ -1375,6 +1358,23 @@
    "title_matches_top_query": false,
    "top_queries": [
     "what does nir rest mean in football"
+   ]
+  },
+  {
+   "slug": "nfl-celebration-fines",
+   "title": "What are the NFL celebration fines in 2026?",
+   "kind": "law",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 43,
+   "age_days": 31.6,
+   "rival_exact": null,
+   "impr": 2,
+   "clicks": 0,
+   "best_pos": 9.5,
+   "title_matches_top_query": false,
+   "top_queries": [
+    "do you get fined for celebrating in the nfl"
    ]
   },
   {
@@ -1412,30 +1412,13 @@
    ]
   },
   {
-   "slug": "ali-g-in-da-house",
-   "title": "What is Ali G in Da House?",
-   "kind": "product",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 26,
-   "age_days": 28.8,
-   "rival_exact": null,
-   "impr": 2,
-   "clicks": 0,
-   "best_pos": 23,
-   "title_matches_top_query": false,
-   "top_queries": [
-    "ali g in da usa"
-   ]
-  },
-  {
    "slug": "designated-for-assignment",
    "title": "What does designated for assignment mean? DFA in baseball",
    "kind": "term",
    "source": "manual",
    "q_word": "what",
    "title_len": 57,
-   "age_days": 20.4,
+   "age_days": 20.5,
    "rival_exact": null,
    "impr": 2,
    "clicks": 0,
@@ -1443,6 +1426,40 @@
    "title_matches_top_query": true,
    "top_queries": [
     "what does designated for assignment in baseball mean"
+   ]
+  },
+  {
+   "slug": "darius-acuff-jr",
+   "title": "Who is Darius Acuff Jr.? Sacramento Kings rookie guard, 2026 draft",
+   "kind": "person",
+   "source": "auto",
+   "q_word": "who",
+   "title_len": 66,
+   "age_days": 25.1,
+   "rival_exact": null,
+   "impr": 1,
+   "clicks": 0,
+   "best_pos": 47,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "acuff"
+   ]
+  },
+  {
+   "slug": "alaska-ranked-choice-voting",
+   "title": "How does Alaska ranked choice voting work? Peltola won outright",
+   "kind": "law",
+   "source": "manual",
+   "q_word": "how",
+   "title_len": 63,
+   "age_days": 3.9,
+   "rival_exact": null,
+   "impr": 1,
+   "clicks": 0,
+   "best_pos": 10,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "alaska ranked choice"
    ]
   },
   {
@@ -1718,6 +1735,21 @@
    "top_queries": []
   },
   {
+   "slug": "champions-league",
+   "title": "What is the Champions League format?",
+   "kind": "event",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 36,
+   "age_days": 31.7,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
    "slug": "real-betis",
    "title": "What is Real Betis?",
    "kind": "organization",
@@ -1844,7 +1876,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 26,
-   "age_days": 30.2,
+   "age_days": 30.3,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -1889,7 +1921,7 @@
    "source": "auto",
    "q_word": "where",
    "title_len": 37,
-   "age_days": 29.3,
+   "age_days": 29.4,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2009,7 +2041,7 @@
    "source": "auto",
    "q_word": "where",
    "title_len": 26,
-   "age_days": 28.4,
+   "age_days": 28.5,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2129,7 +2161,7 @@
    "source": "auto",
    "q_word": "where",
    "title_len": 23,
-   "age_days": 27.2,
+   "age_days": 27.3,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2144,7 +2176,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 23,
-   "age_days": 27.2,
+   "age_days": 27.3,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2189,7 +2221,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 70,
-   "age_days": 26.2,
+   "age_days": 26.3,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2333,21 +2365,6 @@
    "top_queries": []
   },
   {
-   "slug": "darius-acuff-jr",
-   "title": "Who is Darius Acuff Jr.? Sacramento Kings rookie guard, 2026 draft",
-   "kind": "person",
-   "source": "auto",
-   "q_word": "who",
-   "title_len": 66,
-   "age_days": 25.1,
-   "rival_exact": null,
-   "impr": 0,
-   "clicks": 0,
-   "best_pos": null,
-   "title_matches_top_query": false,
-   "top_queries": []
-  },
-  {
    "slug": "premier-sports",
    "title": "What is Premier Sports Cup: Rangers reach the final",
    "kind": "other",
@@ -2429,7 +2446,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 65,
-   "age_days": 24.3,
+   "age_days": 24.4,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2669,7 +2686,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 62,
-   "age_days": 22.4,
+   "age_days": 22.5,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2684,7 +2701,7 @@
    "source": "auto",
    "q_word": "none",
    "title_len": 74,
-   "age_days": 22.4,
+   "age_days": 22.5,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2864,7 +2881,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 64,
-   "age_days": 21.5,
+   "age_days": 21.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2879,7 +2896,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 64,
-   "age_days": 21.5,
+   "age_days": 21.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2894,7 +2911,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 71,
-   "age_days": 21.5,
+   "age_days": 21.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3104,7 +3121,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 61,
-   "age_days": 21.1,
+   "age_days": 21.2,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3179,7 +3196,7 @@
    "source": "auto",
    "q_word": "none",
    "title_len": 67,
-   "age_days": 21.0,
+   "age_days": 21.1,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3194,7 +3211,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 69,
-   "age_days": 21.0,
+   "age_days": 21.1,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3255,21 +3272,6 @@
    "q_word": "who",
    "title_len": 69,
    "age_days": 21.0,
-   "rival_exact": null,
-   "impr": 0,
-   "clicks": 0,
-   "best_pos": null,
-   "title_matches_top_query": false,
-   "top_queries": []
-  },
-  {
-   "slug": "alaska-ranked-choice-voting",
-   "title": "How does Alaska ranked choice voting work? Peltola won outright",
-   "kind": "law",
-   "source": "manual",
-   "q_word": "how",
-   "title_len": 63,
-   "age_days": 3.9,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3359,7 +3361,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 76,
-   "age_days": 20.7,
+   "age_days": 20.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3389,7 +3391,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 59,
-   "age_days": 20.6,
+   "age_days": 20.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3509,7 +3511,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 72,
-   "age_days": 20.4,
+   "age_days": 20.5,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3629,7 +3631,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 57,
-   "age_days": 19.7,
+   "age_days": 19.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3644,7 +3646,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 56,
-   "age_days": 19.7,
+   "age_days": 19.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3659,7 +3661,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 62,
-   "age_days": 19.7,
+   "age_days": 19.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3719,7 +3721,7 @@
    "source": "auto",
    "q_word": "none",
    "title_len": 64,
-   "age_days": 19.6,
+   "age_days": 19.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4004,7 +4006,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 65,
-   "age_days": 18.5,
+   "age_days": 18.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4019,7 +4021,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 80,
-   "age_days": 18.5,
+   "age_days": 18.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4034,7 +4036,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 79,
-   "age_days": 18.5,
+   "age_days": 18.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4184,7 +4186,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 78,
-   "age_days": 18.1,
+   "age_days": 18.2,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4274,7 +4276,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 80,
-   "age_days": 17.9,
+   "age_days": 18.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4679,7 +4681,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 64,
-   "age_days": 15.6,
+   "age_days": 15.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5264,7 +5266,7 @@
    "source": "manual",
    "q_word": "who",
    "title_len": 68,
-   "age_days": 12.5,
+   "age_days": 12.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5519,7 +5521,7 @@
    "source": "manual",
    "q_word": "how",
    "title_len": 65,
-   "age_days": 12.5,
+   "age_days": 12.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5759,7 +5761,7 @@
    "source": "manual",
    "q_word": "is",
    "title_len": 70,
-   "age_days": 12.5,
+   "age_days": 12.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6134,7 +6136,7 @@
    "source": "manual",
    "q_word": "what",
    "title_len": 68,
-   "age_days": 20.4,
+   "age_days": 20.5,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6239,7 +6241,7 @@
    "source": "manual",
    "q_word": "when",
    "title_len": 73,
-   "age_days": 12.5,
+   "age_days": 12.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6599,7 +6601,7 @@
    "source": "manual",
    "q_word": "what",
    "title_len": 73,
-   "age_days": 12.5,
+   "age_days": 12.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6749,7 +6751,7 @@
    "source": "manual",
    "q_word": "what",
    "title_len": 74,
-   "age_days": 12.5,
+   "age_days": 12.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6824,7 +6826,7 @@
    "source": "manual",
    "q_word": "what",
    "title_len": 76,
-   "age_days": 12.5,
+   "age_days": 12.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -7439,7 +7441,7 @@
    "source": "manual",
    "q_word": "why",
    "title_len": 66,
-   "age_days": 12.5,
+   "age_days": 12.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,

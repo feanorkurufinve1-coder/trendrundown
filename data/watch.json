@@ -1,64 +1,54 @@
 {
- "made": "2026-11-26T04:47:02+00:00",
+ "made": "2026-11-26T05:04:19+00:00",
  "days": [
-  "2026-11-20",
   "2026-11-21",
-  "2026-11-23"
+  "2026-11-23",
+  "2026-11-25"
  ],
  "pages": [
   {
    "page": "/t/alexandra-eala",
    "clicks_3d": 0,
-   "impr_3d": 4,
-   "pos": 4.2,
+   "impr_3d": 3,
+   "pos": 2.8,
    "by_day": {
-    "2026-11-20": 0,
-    "2026-11-23": 0
+    "2026-11-23": 0,
+    "2026-11-25": 0
    },
    "manual": false
   },
   {
    "page": "/x/collin-sexton",
    "clicks_3d": 0,
-   "impr_3d": 4,
-   "pos": 3.8,
+   "impr_3d": 3,
+   "pos": 4.2,
    "by_day": {
-    "2026-11-20": 0,
-    "2026-11-23": 0
+    "2026-11-23": 0,
+    "2026-11-25": 0
    },
    "manual": false
   },
   {
    "page": "/x/jasveen-sangha",
    "clicks_3d": 0,
-   "impr_3d": 4,
-   "pos": 5.0,
+   "impr_3d": 3,
+   "pos": 4.5,
    "by_day": {
-    "2026-11-20": 0,
-    "2026-11-23": 0
+    "2026-11-23": 0,
+    "2026-11-25": 0
    },
    "manual": false
   },
   {
    "page": "/x/rot-weiss-essen",
    "clicks_3d": 0,
-   "impr_3d": 4,
+   "impr_3d": 3,
    "pos": 3.0,
    "by_day": {
-    "2026-11-20": 0,
-    "2026-11-23": 0
+    "2026-11-23": 0,
+    "2026-11-25": 0
    },
    "manual": false
-  },
-  {
-   "page": "/x/hank-aaron-award",
-   "clicks_3d": 0,
-   "impr_3d": 2,
-   "pos": 7.5,
-   "by_day": {
-    "2026-11-20": 0
-   },
-   "manual": true
   },
   {
    "page": "/w/bass-x-machina-cast",
