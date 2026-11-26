@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-26T09:02:50+00:00",
+ "checked": "2026-11-26T09:33:38+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -658,7 +658,7 @@
   },
   {
    "url": "/x/how-are-game-awards-nominees-chosen",
-   "at": "2026-11-26T03:16:41+00:00",
+   "at": "2026-11-26T09:33:01+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -670,9 +670,9 @@
   },
   {
    "url": "/x/how-are-grammy-nominations-decided",
-   "at": "2026-11-26T03:16:48+00:00",
+   "at": "2026-11-26T09:33:07+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -682,7 +682,7 @@
   },
   {
    "url": "/x/how-cy-young-is-voted",
-   "at": "2026-11-26T03:16:54+00:00",
+   "at": "2026-11-26T09:33:13+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -694,7 +694,7 @@
   },
   {
    "url": "/x/how-is-senate-majority-leader-chosen",
-   "at": "2026-11-26T03:17:01+00:00",
+   "at": "2026-11-26T09:33:19+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -706,7 +706,7 @@
   },
   {
    "url": "/x/how-is-speaker-of-the-house-elected",
-   "at": "2026-11-26T03:17:07+00:00",
+   "at": "2026-11-26T09:33:25+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -730,7 +730,7 @@
   },
   {
    "url": "/x/how-mlb-mvp-is-voted",
-   "at": "2026-11-26T03:17:14+00:00",
+   "at": "2026-11-26T09:33:32+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -742,7 +742,7 @@
   },
   {
    "url": "/x/how-much-tax-refund-per-child-2026",
-   "at": "2026-11-26T03:17:20+00:00",
+   "at": "2026-11-26T09:33:38+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2742,8 +2742,8 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 128,
+  "URL is unknown to Google": 129,
   "Crawled - currently not indexed": 65,
-  "Discovered - currently not indexed": 30
+  "Discovered - currently not indexed": 29
  }
 }
