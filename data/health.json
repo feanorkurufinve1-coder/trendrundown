@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-26T13:52:48+00:00",
+ "checked": "2026-11-26T14:17:07+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -538,9 +538,9 @@
   },
   {
    "url": "/x/florida-tornado-warnings-kings-point-delray-beach",
-   "at": "2026-11-26T08:01:58+00:00",
+   "at": "2026-11-26T14:17:07+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2795,9 +2795,9 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 134,
+  "URL is unknown to Google": 133,
   "Crawled - currently not indexed": 65,
-  "Discovered - currently not indexed": 28,
+  "Discovered - currently not indexed": 29,
   "error": 1
  }
 }
