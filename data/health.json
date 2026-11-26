@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-25T21:47:25+00:00",
+ "checked": "2026-11-26T01:46:53+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -382,7 +382,7 @@
   },
   {
    "url": "/x/delta-flights-delays-atlanta-november-22-2026",
-   "at": "2026-11-25T19:31:52+00:00",
+   "at": "2026-11-26T01:46:53+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
