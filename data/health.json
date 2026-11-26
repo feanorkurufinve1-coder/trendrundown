@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-26T02:17:35+00:00",
+ "checked": "2026-11-26T02:48:08+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -394,7 +394,7 @@
   },
   {
    "url": "/x/designated-for-assignment",
-   "at": "2026-11-25T20:31:54+00:00",
+   "at": "2026-11-26T02:47:10+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -406,7 +406,7 @@
   },
   {
    "url": "/x/did-avril-lavigne-have-a-baby",
-   "at": "2026-11-25T20:42:08+00:00",
+   "at": "2026-11-26T02:47:49+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -418,7 +418,7 @@
   },
   {
    "url": "/x/did-scott-colom-win",
-   "at": "2026-11-25T20:42:14+00:00",
+   "at": "2026-11-26T02:47:55+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -430,7 +430,7 @@
   },
   {
    "url": "/x/did-trump-call-into-c-span",
-   "at": "2026-11-25T20:42:20+00:00",
+   "at": "2026-11-26T02:48:01+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -454,7 +454,7 @@
   },
   {
    "url": "/x/does-mlb-have-a-salary-cap",
-   "at": "2026-11-25T20:42:27+00:00",
+   "at": "2026-11-26T02:48:08+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -874,7 +874,7 @@
   },
   {
    "url": "/x/is-dig-based-on-a-book",
-   "at": "2026-11-25T20:32:01+00:00",
+   "at": "2026-11-26T02:47:17+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1450,7 +1450,7 @@
   },
   {
    "url": "/x/riemann-hypothesis-proof-claim-alpoge",
-   "at": "2026-11-25T20:31:48+00:00",
+   "at": "2026-11-26T02:47:04+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2038,7 +2038,7 @@
   },
   {
    "url": "/x/what-is-black-october",
-   "at": "2026-11-25T20:32:07+00:00",
+   "at": "2026-11-26T02:47:23+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2098,7 +2098,7 @@
   },
   {
    "url": "/x/what-is-si-instead-of-ai",
-   "at": "2026-11-25T20:41:49+00:00",
+   "at": "2026-11-26T02:47:29+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2410,7 +2410,7 @@
   },
   {
    "url": "/x/why-are-people-saying-robert-pattinson-is-gen-z",
-   "at": "2026-11-25T20:41:55+00:00",
+   "at": "2026-11-26T02:47:36+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2602,7 +2602,7 @@
   },
   {
    "url": "/x/why-is-my-phone-charging-slow",
-   "at": "2026-11-25T20:42:01+00:00",
+   "at": "2026-11-26T02:47:42+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
