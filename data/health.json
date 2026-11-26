@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-26T19:33:04+00:00",
+ "checked": "2026-11-26T20:17:05+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -406,9 +406,9 @@
   },
   {
    "url": "/x/delta-flights-delays-atlanta-november-22-2026",
-   "at": "2026-11-26T14:02:00+00:00",
+   "at": "2026-11-26T20:17:05+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2362,7 +2362,7 @@
   },
   {
    "url": "/x/why-are-people-climbing-out-of-manholes",
-   "at": "2026-11-26T13:52:35+00:00",
+   "at": "2026-11-26T20:16:46+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2458,7 +2458,7 @@
   },
   {
    "url": "/x/why-are-people-saying-ohio-isnt-a-state",
-   "at": "2026-11-26T13:52:42+00:00",
+   "at": "2026-11-26T20:16:52+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2470,7 +2470,7 @@
   },
   {
    "url": "/x/why-are-people-saying-prepare-for-90-days",
-   "at": "2026-11-26T13:52:48+00:00",
+   "at": "2026-11-26T20:16:59+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2838,8 +2838,8 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 146,
+  "URL is unknown to Google": 147,
   "Crawled - currently not indexed": 65,
-  "Discovered - currently not indexed": 20
+  "Discovered - currently not indexed": 19
  }
 }
