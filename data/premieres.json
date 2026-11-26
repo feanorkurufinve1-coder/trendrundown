@@ -1,61 +1,7 @@
 {
- "made": "2026-11-25T21:04:19+00:00",
+ "made": "2026-11-26T09:19:21+00:00",
  "about": "Премьеры сериалов и новых сезонов в США на 14 дней вперёд (TVmaze). new_series = совсем новый сериал. Сырьё для прогнозов «is X a true story», «X cast», «X season N release time».",
  "premieres": [
-  {
-   "date": "2026-11-25",
-   "show": "Andrew Tate: Toxic Empire",
-   "season": 1,
-   "new_series": true,
-   "type": "Documentary",
-   "genres": [
-    "Crime"
-   ],
-   "network": "Investigation Discovery",
-   "premiered": "2026-11-25",
-   "summary": "Andrew Tate: Toxic Empire investigates how brothers Andrew and Tristan Tate used social media, the promise of wealth, and controversial messaging to build a worldwide following at the center of what's become known as the \"manosphere.\" Through exclusive interviews, former followers and associates pull back the curtain on the inner workings behind the Tate brand, describing what some characterize as",
-   "url": "https://www.tvmaze.com/shows/95224/andrew-tate-toxic-empire",
-   "official": null
-  },
-  {
-   "date": "2026-11-25",
-   "show": "Countdown to Macy's Thanksgiving Day Parade",
-   "season": 2026,
-   "new_series": false,
-   "type": "Variety",
-   "genres": [],
-   "network": "NBC",
-   "premiered": "2022-11-23",
-   "summary": "On the eve of the iconic Thanksgiving Day parade, viewers get a behind-the-scenes peek at the incredible stories behind the floats, balloons and bands on their journey to the streets of New York.",
-   "url": "https://www.tvmaze.com/shows/72509/countdown-to-macys-thanksgiving-day-parade",
-   "official": "https://www.nbc.com/countdown-to-macys-thanksgiving-parade"
-  },
-  {
-   "date": "2026-11-25",
-   "show": "The Challenge: Home Turf",
-   "season": 2,
-   "new_series": false,
-   "type": "Documentary",
-   "genres": [],
-   "network": "YouTube",
-   "premiered": "2024-01-29",
-   "summary": "Memorable competitors from MTV's The Challenge invite viewers to their hometowns for in-depth interviews that shed new light on their personal lives, interests and more.",
-   "url": "https://www.tvmaze.com/shows/74426/the-challenge-home-turf",
-   "official": "https://www.youtube.com/playlist?list=PL9zeMXsafMarg2XcyDxgM5gd-lyq9fX3X"
-  },
-  {
-   "date": "2026-11-26",
-   "show": "Macy's Thanksgiving Day Parade",
-   "season": 2026,
-   "new_series": false,
-   "type": "Variety",
-   "genres": [],
-   "network": "NBC",
-   "premiered": "1948-11-25",
-   "summary": "Macy's Thanksgiving Day Parade is an annual parade presented by the U.S.-based department store chain Macy's. Locations: Central Park to Macy's Herald Square, New York City, New York, USA.",
-   "url": "https://www.tvmaze.com/shows/22447/macys-thanksgiving-day-parade",
-   "official": "https://www.nbc.com/macys-thanksgiving-day-parade"
-  },
   {
    "date": "2026-11-26",
    "show": "The National Dog Show",
@@ -207,6 +153,19 @@
    "summary": "In this epic competition, Salish Matter and her friends compete for a mountain of presents while trying to keep an imposter from stealing all the gifts.",
    "url": "https://www.tvmaze.com/shows/95533/salishs-12-games-of-christmas",
    "official": "https://www.netflix.com/title/82723082 "
+  },
+  {
+   "date": "2026-11-28",
+   "show": "Macy's Thanksgiving Day Parade",
+   "season": 2026,
+   "new_series": false,
+   "type": "Variety",
+   "genres": [],
+   "network": "NBC",
+   "premiered": "1948-11-25",
+   "summary": "Macy's Thanksgiving Day Parade is an annual parade presented by the U.S.-based department store chain Macy's. Locations: Central Park to Macy's Herald Square, New York City, New York, USA.",
+   "url": "https://www.tvmaze.com/shows/22447/macys-thanksgiving-day-parade",
+   "official": "https://www.nbc.com/macys-thanksgiving-day-parade"
   },
   {
    "date": "2026-11-28",
@@ -507,6 +466,19 @@
    "official": "https://www.aetv.com/shows/oceanfront-property-hunt"
   },
   {
+   "date": "2026-12-05",
+   "show": "CNN Heroes",
+   "season": 2026,
+   "new_series": false,
+   "type": "Reality",
+   "genres": [],
+   "network": "CNN",
+   "premiered": "2007-12-06",
+   "summary": "CNN Heroes is an annual special where CNN salutes people in our world who have made an enormous positive impact in the past year.",
+   "url": "https://www.tvmaze.com/shows/9473/cnn-heroes",
+   "official": "http://www.cnn.com/specials/cnn-heroes"
+  },
+  {
    "date": "2026-12-06",
    "show": "Celebrity Scares",
    "season": 1,
@@ -594,6 +566,52 @@
    "summary": "Set in 1993 North Philadelphia, the adult animated series Lil Kev follows 12-year-old Kevin Hart, whose wild imagination and unshakable optimism constantly collide with his neighborhood's harsh realities. At the same time, his no-nonsense mother Nancy juggles night shifts as an E.R. nurse while waging a one-woman war to keep Kev on track – no easy feat with his mischievous older brother Robert bla",
    "url": "https://www.tvmaze.com/shows/82295/lil-kev",
    "official": "https://www.bet.plus/shows/lil-kev"
+  },
+  {
+   "date": "2026-12-10",
+   "show": "The Murder of JonBenét Ramsey",
+   "season": 1,
+   "new_series": true,
+   "type": "Scripted",
+   "genres": [
+    "Drama",
+    "Crime"
+   ],
+   "network": "Netflix",
+   "premiered": "2026-12-10",
+   "summary": "The Murder of JonBenét Ramsey explores the tragic unsolved murder of six-year-old beauty queen JonBenét Ramsey. It follows the Ramsey family, before and after the tragedy as they go through the painful loss of a child while facing intense public scrutiny caused by a media frenzy that caused this case to captivate an entire nation. At the heart of the series, it is the story of Patsy and John Ramse",
+   "url": "https://www.tvmaze.com/shows/79407/the-murder-of-jonbenet-ramsey",
+   "official": null
+  },
+  {
+   "date": "2026-12-10",
+   "show": "The Trip",
+   "season": 5,
+   "new_series": false,
+   "type": "Scripted",
+   "genres": [
+    "Comedy",
+    "Food",
+    "Travel"
+   ],
+   "network": "Now",
+   "premiered": "2010-11-01",
+   "summary": "Michael Winterbottom's acclaimed gastronomic sitcom starring Steve Coogan and Rob Brydon.",
+   "url": "https://www.tvmaze.com/shows/5033/the-trip",
+   "official": "https://www.sky.com/watch/the-trip"
+  },
+  {
+   "date": "2026-12-10",
+   "show": "The Game Awards",
+   "season": 2026,
+   "new_series": false,
+   "type": "Award Show",
+   "genres": [],
+   "network": "YouTube",
+   "premiered": "2014-12-05",
+   "summary": "The Game Awards is an annual awards ceremony honoring achievements in the video game industry. Established in 2014, the shows are produced and hosted by game journalist Geoff Keighley, who worked on its predecessor, the Spike Video Game Awards, for over ten years. With the permission of Spike, he worked with several video game companies to create the show. In addition to the awards, the Game Award",
+   "url": "https://www.tvmaze.com/shows/33928/the-game-awards",
+   "official": "https://thegameawards.com/"
   }
  ]
 }
