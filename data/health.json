@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-26T13:49:29+00:00",
+ "checked": "2026-11-26T13:52:48+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -2222,6 +2222,18 @@
    "userCanonical": null
   },
   {
+   "url": "/x/what-temperature-should-a-refrigerator-be",
+   "at": "2026-11-26T13:52:22+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/what-time-does-gta-6-unlock",
    "at": "2026-11-26T12:29:05+00:00",
    "verdict": "NEUTRAL",
@@ -2258,6 +2270,18 @@
    "userCanonical": "https://trendrundown.com/x/when-does-new-congress-start"
   },
   {
+   "url": "/x/when-does-the-boy-who-stole-billions-come-out",
+   "at": "2026-11-26T13:52:29+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/when-will-social-security-run-out",
    "at": "2026-11-26T12:29:17+00:00",
    "verdict": "NEUTRAL",
@@ -2292,6 +2316,18 @@
    "lastCrawlTime": "2026-11-14T17:48:37Z",
    "googleCanonical": "https://trendrundown.com/x/who-won-mvp-2026",
    "userCanonical": "https://trendrundown.com/x/who-won-mvp-2026"
+  },
+  {
+   "url": "/x/why-are-people-climbing-out-of-manholes",
+   "at": "2026-11-26T13:52:35+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
   },
   {
    "url": "/x/why-are-people-heading-to-cinemas-in-cat-ears",
@@ -2370,6 +2406,30 @@
    "at": "2026-11-26T11:47:40+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
+   "url": "/x/why-are-people-saying-ohio-isnt-a-state",
+   "at": "2026-11-26T13:52:42+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
+   "url": "/x/why-are-people-saying-prepare-for-90-days",
+   "at": "2026-11-26T13:52:48+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2735,7 +2795,7 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 129,
+  "URL is unknown to Google": 134,
   "Crawled - currently not indexed": 65,
   "Discovered - currently not indexed": 28,
   "error": 1

@@ -18187,5 +18187,181 @@
     true
    ]
   ]
+ },
+ "what-temperature-should-a-refrigerator-be": {
+  "time": "2026-11-26T13:52:49+00:00",
+  "query": "what temperature should a refrigerator be",
+  "in_suggest": true,
+  "suggest": {
+   "refrigerator temperature": [
+    "refrigerator temperature",
+    "refrigerator temperature range",
+    "refrigerator temperature setting",
+    "refrigerator temperature should be",
+    "refrigerator temperature gauge",
+    "refrigerator temperature log",
+    "refrigerator temperature celsius",
+    "refrigerator temperature sensor",
+    "refrigerator temperature monitor",
+    "refrigerator temperature in fahrenheit"
+   ],
+   "what is refrigerator temperature": [
+    "what is refrigerator temperature",
+    "what is refrigerator temperature supposed to be",
+    "what is refrigerator temperature range",
+    "what is refrigerator temperature in celsius",
+    "what is refrigerator temperature in fahrenheit",
+    "what is refrigerator temperature in pharmacy",
+    "what is refrigerator temperature supposed to be set at",
+    "what is refrigerator temperature should be",
+    "what is refrigerator temperature set at",
+    "what is refrigerator temperature in c"
+   ],
+   "what temperature should a refrigerator be": [
+    "what temperature should a refrigerator be",
+    "what temperature should a refrigerator be set at",
+    "what temperature should a refrigerator be kept at",
+    "what temperature should a refrigerator be set at in fahrenheit",
+    "what temperature should a refrigerator be inside",
+    "what temperature should a refrigerator be in celsius",
+    "what temperature should a refrigerator be set up",
+    "what temperature should a refrigerator be maintained at",
+    "what temperature should a refrigerator be for milk",
+    "what temperature should a refrigerator be at to keep food safe"
+   ],
+   "temperature should refrigerator be": [
+    "temperature should refrigerator be",
+    "temp should refrigerator be",
+    "temperature refrigerator should be set at",
+    "temperature should fridge be",
+    "temp refrigerator should be set at",
+    "what temperature should refrigerator be kept at",
+    "temperature should your refrigerator be",
+    "temperature should your refrigerator be set at",
+    "what temperature should refrigerator be in celsius",
+    "what temperature should refrigerator be maintained at"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-26",
+    true
+   ]
+  ]
+ },
+ "when-does-the-boy-who-stole-billions-come-out": {
+  "time": "2026-11-26T13:52:51+00:00",
+  "query": "when does the boy who stole billions come out",
+  "in_suggest": false,
+  "suggest": {
+   "the boy who stole billions?": [
+    "the boy who stole billions trailer",
+    "the boy who stole billions movie",
+    "the boy who stole billions (2026)",
+    "the boy who stole billions where to watch",
+    "the boy who stole billions imdb"
+   ],
+   "what is the boy who stole billions?": [
+    "the boy who stole billions",
+    "the boy who stole billions trailer",
+    "the boy who stole billions 2026",
+    "the boy who stole billions imdb",
+    "how much money did billy the kid steal"
+   ],
+   "when does the boy who stole billions come out": [],
+   "boy stole billions come out": []
+  },
+  "history": [
+   [
+    "2026-11-26",
+    false
+   ]
+  ]
+ },
+ "why-are-people-climbing-out-of-manholes": {
+  "time": "2026-11-26T13:52:53+00:00",
+  "query": "why are people climbing out of manholes",
+  "in_suggest": true,
+  "suggest": {
+   "people climbing out of new york city manholes": [
+    "people climbing out of manholes in new york city",
+    "three people spotted climbing out of new york city manhole",
+    "people climbing out of manholes in new york",
+    "how many miles of tunnels under new york city",
+    "how big are nyc sewers",
+    "how many tunnels in manhattan"
+   ],
+   "what is people climbing out of new york city manholes": [],
+   "why are people climbing out of manholes": [
+    "why are people climbing out of manholes",
+    "why are people climbing out of manholes in new york city",
+    "people climbing out of manholes in ny",
+    "people climbing out of manholes in brooklyn",
+    "what are the pipes sticking out of the ground",
+    "what causes a sewer pipe to collapse",
+    "why do road tunnels have fans",
+    "why do tunnels need ventilation"
+   ],
+   "people climbing out manholes": [
+    "people climbing out manhole nyc",
+    "people climbing out of manholes",
+    "people climbing out of manholes in new york",
+    "people climbing out of manholes in brooklyn"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-26",
+    true
+   ]
+  ]
+ },
+ "why-are-people-saying-ohio-isnt-a-state": {
+  "time": "2026-11-26T13:52:54+00:00",
+  "query": "why are people saying ohio isn't a state",
+  "in_suggest": true,
+  "suggest": {
+   "\"ohio isn't a state\" joke": [],
+   "what is \"ohio isn't a state\" joke": [],
+   "why are people saying ohio isn't a state": [
+    "why are people saying ohio isn't a state",
+    "why is ohio technically not a state",
+    "why is ohio not a state",
+    "was ohio always a red state",
+    "why is ohio such an important state"
+   ],
+   "people saying ohio isn't state": []
+  },
+  "history": [
+   [
+    "2026-11-26",
+    true
+   ]
+  ]
+ },
+ "why-are-people-saying-prepare-for-90-days": {
+  "time": "2026-11-26T13:52:56+00:00",
+  "query": "why are people saying prepare for 90 days",
+  "in_suggest": true,
+  "suggest": {
+   "\"prepare for 90 days\" blackout rumor": [],
+   "what is \"prepare for 90 days\" blackout rumor": [],
+   "why are people saying prepare for 90 days": [
+    "why are people saying prepare for 90 days",
+    "why are people saying prep for 90 days"
+   ],
+   "people saying prepare 90 days": [
+    "why are people saying prepare for 90 days",
+    "is 90 day fiance before the 90 days real",
+    "what is 90 day fiance before the 90 days",
+    "what is 90 days before today"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-26",
+    true
+   ]
+  ]
  }
 }
