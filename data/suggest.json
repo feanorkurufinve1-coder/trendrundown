@@ -16777,7 +16777,7 @@
   ]
  },
  "how-long-does-a-washing-machine-last": {
-  "time": "2026-11-25T14:01:43+00:00",
+  "time": "2026-11-26T14:02:01+00:00",
   "query": "how long does a washing machine last",
   "in_suggest": true,
   "suggest": {
@@ -16801,9 +16801,9 @@
    ],
    "how long does a washing machine last": [
     "how long does a washing machine last",
-    "how long does a washing machine last per cycle",
-    "how long does a washing machine last on average",
     "how long does a washing machine last cycle",
+    "how long does a washing machine last on average",
+    "how long does a washing machine last per cycle",
     "how long does a washing machine last uk",
     "how long does a washing machine last with bad bearings",
     "how long does a washing machine last these days",
@@ -16840,11 +16840,15 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "internet-trends-this-week-2026-11-22": {
-  "time": "2026-11-25T14:01:44+00:00",
+  "time": "2026-11-26T14:02:03+00:00",
   "query": "what's trending on the internet this week",
   "in_suggest": false,
   "suggest": {
@@ -16879,11 +16883,15 @@
    [
     "2026-11-25",
     false
+   ],
+   [
+    "2026-11-26",
+    false
    ]
   ]
  },
  "is-sam-bankman-fried-still-in-prison": {
-  "time": "2026-11-25T14:01:47+00:00",
+  "time": "2026-11-26T14:02:06+00:00",
   "query": "is sam bankman-fried still in prison",
   "in_suggest": true,
   "suggest": {
@@ -16897,7 +16905,7 @@
     "sam bankman-fried sentence",
     "sam bankman-fried interview",
     "sam bankman-fried now",
-    "sam bankman-fried prison sentence"
+    "sam bankman-fried documentary"
    ],
    "who is sam bankman-fried": [
     "who is sam bankman-fried",
@@ -16951,13 +16959,17 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "why-are-people-saying-lucia-cheats-on-jason": {
-  "time": "2026-11-25T14:01:57+00:00",
+  "time": "2026-11-26T14:02:19+00:00",
   "query": "why are people saying lucia cheats on jason",
-  "in_suggest": true,
+  "in_suggest": false,
   "suggest": {
    "lucia and jason in grand theft auto vi": [
     "jason and lucia from grand theft auto vi",
@@ -16971,11 +16983,7 @@
     "grand theft auto 3 reviews",
     "grand theft auto highest grossing"
    ],
-   "why are people saying lucia cheats on jason": [
-    "why are people saying lucia cheats on jason",
-    "what's wrong with jason voorhees",
-    "how to unlock all jasons in friday the 13th"
-   ],
+   "why are people saying lucia cheats on jason": [],
    "people saying lucia cheats jason": []
   },
   "history": [
@@ -16994,11 +17002,15 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    false
    ]
   ]
  },
  "why-are-people-throwing-mustard-at-lsu": {
-  "time": "2026-11-25T14:01:58+00:00",
+  "time": "2026-11-26T14:02:21+00:00",
   "query": "why are people throwing mustard at lsu",
   "in_suggest": false,
   "suggest": {
@@ -17022,6 +17034,10 @@
    ],
    [
     "2026-11-25",
+    false
+   ],
+   [
+    "2026-11-26",
     false
    ]
   ]
@@ -17181,21 +17197,21 @@
   ]
  },
  "is-mr-irrelevant-a-true-story": {
-  "time": "2026-11-25T14:01:46+00:00",
+  "time": "2026-11-26T14:02:04+00:00",
   "query": "is mr irrelevant a true story",
   "in_suggest": true,
   "suggest": {
    "mr. irrelevant: the john tuggle story": [
-    "mr. irrelevant the john tuggle story",
     "mr. irrelevant the john tuggle story trailer",
     "mr. irrelevant the john tuggle story 2026",
     "mr. irrelevant the john tuggle story cast",
+    "mr. irrelevant the john tuggle story videos",
     "mr. irrelevant the john tuggle story streaming",
+    "mr. irrelevant the john tuggle story",
     "mr. irrelevant the john tuggle story where to watch",
     "mr. irrelevant the john tuggle story rating",
     "mr. irrelevant the john tuggle story rating age",
-    "mr. irrelevant the john tuggle story wiki",
-    "mr. irrelevant the john tuggle story matt damon"
+    "mr. irrelevant the john tuggle story wiki"
    ],
    "what is mr. irrelevant: the john tuggle story": [
     "mr irrelevant the john tuggle story",
@@ -17233,25 +17249,29 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "what-is-the-2011-jupiter-incident": {
-  "time": "2026-11-25T14:01:51+00:00",
+  "time": "2026-11-26T14:02:13+00:00",
   "query": "what is the 2011 jupiter incident",
   "in_suggest": true,
   "suggest": {
    "2011 jupiter incident": [
     "2011 jupiter incident",
-    "2011 jupiter incident video",
     "2011 jupiter incident meme",
-    "2011 jupiter incident files",
-    "2011 jupiter incident caseoh",
+    "2011 jupiter incident keys",
     "2011 jupiter incident lore",
+    "2011 jupiter incident wiki",
+    "2011 jupiter incident keis",
+    "2011 jupiter incident caseoh",
+    "2011 jupiter incident wikipedia",
     "2011 jupiter incident tiktok",
-    "2011 jupiter incident audio",
-    "2011 jupiter incident original video",
-    "2011 jupiter incident original"
+    "2011 jupiter incident original video"
    ],
    "what is 2011 jupiter incident": [
     "what is 2011 jupiter incident",
@@ -17260,9 +17280,10 @@
     "what happened may 11 2011"
    ],
    "what is the 2011 jupiter incident": [
+    "what is the 2011 jupiter incident",
     "what is the 2011 jupiter incident meme",
     "what is the 2011 jupiter incident based on",
-    "what happened on may 3 2011",
+    "what happened on april 29 2011",
     "what happened may 11 2011",
     "what happened on april 11 2011"
    ]
@@ -17279,11 +17300,15 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "why-are-people-heading-to-cinemas-in-cat-ears": {
-  "time": "2026-11-25T14:01:55+00:00",
+  "time": "2026-11-26T14:02:18+00:00",
   "query": "why are people heading to cinemas in cat ears",
   "in_suggest": false,
   "suggest": {
@@ -17292,12 +17317,12 @@
     "catvideofest",
     "catvideofest 2026 schedule",
     "catvideofest 2025",
-    "catvideofest 2026 trailer",
     "catvideofest 2026 schedule near me",
+    "catvideofest 2026 trailer",
+    "catvideofest 2026 nyc",
     "catvideofest 2026 near me",
-    "catvideofest 2026 reviews",
-    "catvideofest 2026 chicago",
-    "catvideofest 2026 videos"
+    "catvideofest 2026 review",
+    "catvideofest 2026 san diego"
    ],
    "what is catvideofest": [
     "what is catvideofest",
@@ -17320,11 +17345,15 @@
    [
     "2026-11-25",
     false
+   ],
+   [
+    "2026-11-26",
+    false
    ]
   ]
  },
  "why-is-everyone-mad-at-kroger": {
-  "time": "2026-11-25T14:02:01+00:00",
+  "time": "2026-11-26T14:02:25+00:00",
   "query": "why is everyone mad at kroger",
   "in_suggest": true,
   "suggest": {
@@ -17368,25 +17397,29 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "why-is-there-a-d-in-fridge": {
-  "time": "2026-11-25T14:02:03+00:00",
+  "time": "2026-11-26T14:02:27+00:00",
   "query": "why does refrigerator not have a d",
   "in_suggest": true,
   "suggest": {
    "fridge spelling": [
     "fridge spelling",
-    "fridge spelling english",
+    "fridge spelling in english",
+    "fridge spelling in hindi",
     "fridge spelling in telugu",
     "fridge spelling kya hai",
     "fridge spelling please",
     "fridge spelling in punjabi",
     "fridge spelling ki",
     "fridge spelling in bengali",
-    "fridge spelling in tamil",
-    "fridge kannada spelling"
+    "fridge spelling in tamil"
    ],
    "what is fridge spelling": [
     "what is fridge spelling",
@@ -17399,8 +17432,8 @@
     "how to spell refrigerator in english"
    ],
    "why does refrigerator not have a d": [
-    "why does refrigerator not have a d",
     "why does refrigerator not have a d but fridge does",
+    "why does refrigerator not have a d",
     "why is there a d in fridge but not refrigerator"
    ],
    "refrigerator not have d": [
@@ -17420,6 +17453,10 @@
    ],
    [
     "2026-11-25",
+    true
+   ],
+   [
+    "2026-11-26",
     true
    ]
   ]
@@ -17549,21 +17586,21 @@
   ]
  },
  "what-does-to-me-my-x-men-mean": {
-  "time": "2026-11-25T14:01:49+00:00",
+  "time": "2026-11-26T14:02:10+00:00",
   "query": "what does to me my x-men mean",
   "in_suggest": true,
   "suggest": {
    "\"to me, my x-men\"": [
     "to me my x-men meaning",
     "to me my x-men gif",
-    "to me my x-men origin",
     "to me my x-men cyclops",
-    "to me my x-men meme",
     "to me my x-men quote",
+    "to me my x-men meme",
     "to me my x-men who says it",
-    "to me my x-men sound",
-    "to me my x-men krakoa",
-    "to me my x-men phrase"
+    "to me my x-men origin",
+    "to me my x-men patrick stewart",
+    "to me my x-men movie",
+    "to me my x-men comic"
    ],
    "what is \"to me, my x-men\"": [
     "what is to me my x men",
@@ -17578,9 +17615,9 @@
     "to me my x men vs avengers assemble"
    ],
    "what does to me my x-men mean": [
-    "what does to me my x-men mean",
-    "my x meaning",
-    "what does x mean from a guy"
+    "what does to me my x men mean",
+    "what does mr x mean",
+    "my x meaning"
    ],
    "me my x-men": [
     "me my x men",
@@ -17603,29 +17640,33 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "what-is-focker-in-law-about": {
-  "time": "2026-11-25T14:01:50+00:00",
+  "time": "2026-11-26T14:02:12+00:00",
   "query": "what is focker in law about",
   "in_suggest": true,
   "suggest": {
    "focker-in-law": [
     "focker-in-law where to watch",
-    "focker-in-law cast where to watch",
     "focker-in-law cast",
+    "focker-in-law showtimes",
     "focker-in-law release date",
+    "focker-in-law cast 2026",
     "focker-in-law trailer",
     "focker-in-law cast release date",
-    "focker-in-law 2026 release date",
     "focker-in-law rating",
-    "focker-in-law trailer cast",
-    "focker-in-law first movie"
+    "focker-in-law in theaters",
+    "focker-in-law reviews"
    ],
    "what is focker-in-law": [
     "what is focker-in-law about",
-    "what is focker in law rated",
+    "what is focker-in-law rated",
     "what is focker in law going to be about",
     "what is focker in law a sequel to",
     "what is focker in law streaming on",
@@ -17637,6 +17678,7 @@
    ],
    "what is focker in law about": [
     "what is focker in law about",
+    "what is focker in law about summary",
     "what is the film focker in law about",
     "what is focker in law going to be about",
     "what is the new movie focker in law about",
@@ -17644,7 +17686,7 @@
     "what age is focker in law for",
     "what is the coogan law",
     "what is davis's law",
-    "what is foah family law"
+    "what is a 1051a in family court"
    ],
    "focker law about": [
     "focker in law about",
@@ -17661,11 +17703,15 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "what-is-the-needoh-lava-lamp": {
-  "time": "2026-11-25T14:01:53+00:00",
+  "time": "2026-11-26T14:02:14+00:00",
   "query": "what is the needoh lava lamp",
   "in_suggest": true,
   "suggest": {
@@ -17673,15 +17719,20 @@
     "needoh lava lamp",
     "needoh lava lamp target",
     "needoh lava lamp spencers",
-    "needoh lava lamp squishy",
-    "needoh lava lamp near me",
-    "needoh lava lamp pink",
     "needoh lava lamp walmart",
-    "needoh lava lamp in stock",
-    "needoh lava lamp for sale",
-    "needoh lava lamp ebay"
+    "needoh lava lamp near me",
+    "needoh lava lamp nearby",
+    "needoh lava lamp retail price",
+    "needoh lava lamp squishy",
+    "needoh lava lamp target pink",
+    "needoh lava lamp for sale"
    ],
-   "what is needoh lava lamp": [],
+   "what is needoh lava lamp": [
+    "what is needoh lava lamp",
+    "what is a lava lamp good for",
+    "how does a homemade lava lamp work",
+    "lava lamp not doing anything"
+   ],
    "what is the needoh lava lamp": [
     "what is the needoh lava lamp",
     "is the needoh lava lamp rare",
@@ -17701,32 +17752,36 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "what-is-the-odinforce": {
-  "time": "2026-11-25T14:01:54+00:00",
+  "time": "2026-11-26T14:02:15+00:00",
   "query": "what is the odinforce",
   "in_suggest": true,
   "suggest": {
    "odinforce": [
     "odinforce",
     "odinforce thor",
-    "odinforce thor vs rune king thor",
-    "odinforce thor vs doom",
     "odinforce ultron",
-    "odinforce thor doomsday",
+    "odinforce thor vs doom",
+    "odinforce powers",
     "odinforce thor vs dr doom",
+    "odinforce doomsday",
+    "odinforce thor vs rune king thor",
     "odinforce thor vs god emperor doom",
-    "odinforce marvel",
-    "odinforce ultron comics"
+    "odinforce marvel"
    ],
    "what is odinforce": [
     "what is odinforce",
     "what is odinforce thor",
-    "what is odinforce in marvel",
-    "what is odinforce ultron",
+    "what is odinforce marvel",
     "what is odinforce mcu",
+    "what is odinforce ultron",
     "what does odinforce do",
     "what is the odinforce ability",
     "what color is odinforce",
@@ -17754,11 +17809,15 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "why-does-my-tax-refund-take-so-long": {
-  "time": "2026-11-25T14:02:00+00:00",
+  "time": "2026-11-26T14:02:24+00:00",
   "query": "why does tax refund take so long",
   "in_suggest": true,
   "suggest": {
@@ -17815,6 +17874,10 @@
    ],
    [
     "2026-11-25",
+    true
+   ],
+   [
+    "2026-11-26",
     true
    ]
   ]
@@ -17925,11 +17988,14 @@
   ]
  },
  "is-toos-a-true-story": {
-  "time": "2026-11-25T13:56:13+00:00",
+  "time": "2026-11-26T14:02:07+00:00",
   "query": "is toos a true story",
   "in_suggest": false,
   "suggest": {
-   "toos: the van der valk kidnapping": [],
+   "toos: the van der valk kidnapping": [
+    "toos the van der valk kidnapping",
+    "toss the van der valk kidnapping netflix"
+   ],
    "what is toos: the van der valk kidnapping": [
     "toss the van der valk kidnapping netflix"
    ],
@@ -17948,11 +18014,15 @@
    [
     "2026-11-25",
     false
+   ],
+   [
+    "2026-11-26",
+    false
    ]
   ]
  },
  "viral-couple-arguing-at-football-game": {
-  "time": "2026-11-25T13:56:14+00:00",
+  "time": "2026-11-26T14:02:08+00:00",
   "query": "viral couple arguing at football game",
   "in_suggest": false,
   "suggest": {
@@ -17964,17 +18034,21 @@
    [
     "2026-11-25",
     false
+   ],
+   [
+    "2026-11-26",
+    false
    ]
   ]
  },
  "what-was-general-grant-doing-on-the-thermostat": {
-  "time": "2026-11-25T13:56:16+00:00",
+  "time": "2026-11-26T14:02:16+00:00",
   "query": "what was general grant doing on the thermostat",
   "in_suggest": true,
   "suggest": {
    "what was general grant doing on the thermostat?": [
-    "what was general grant doing on the thermostat gif",
     "what was general grant doing on the thermostat meme",
+    "what was general grant doing on the thermostat gif",
     "what was general grant doing on the thermostat",
     "what was general grant doing on the thermostat reddit",
     "what was general grant doing on the thermostat movie",
@@ -17990,8 +18064,8 @@
    ],
    "what was general grant doing on the thermostat": [
     "what was general grant doing on the thermostat",
-    "what was general grant doing on the thermostat gif",
     "what was general grant doing on the thermostat meme",
+    "what was general grant doing on the thermostat gif",
     "what was general grant doing on the thermostat reddit",
     "what was general grant doing on the thermostat movie",
     "what was general grant on the thermostat"
@@ -18010,11 +18084,15 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "why-does-my-phone-battery-drain-so-fast": {
-  "time": "2026-11-25T13:56:17+00:00",
+  "time": "2026-11-26T14:02:22+00:00",
   "query": "why does my phone battery drain so fast",
   "in_suggest": true,
   "suggest": {
@@ -18023,12 +18101,12 @@
     "phone battery draining fast after update",
     "phone battery draining fast all of a sudden",
     "phone battery draining fast iphone",
-    "phone battery draining faster than usual",
-    "phone battery draining fast and hot",
-    "phone battery draining fast android",
-    "phone battery draining fast and charging slow",
+    "phone battery draining faster",
+    "phone battery draining faster after update",
     "phone battery draining fast samsung",
-    "phone battery draining fast when not in use"
+    "phone battery draining fast when not in use",
+    "phone battery draining fast while charging",
+    "phone battery draining fast and charging slow"
    ],
    "what is phone battery draining fast": [
     "what makes phone battery drain fast",
@@ -18046,13 +18124,13 @@
     "why does my phone battery drain so fast",
     "why does my phone battery drain so fast overnight",
     "why does my phone battery drain so fast iphone",
+    "why does my phone battery drain so fast all of a sudden",
     "why does my phone battery drain so fast at night",
-    "why does my phone battery drain so fast android",
     "why does my phone battery drain so fast when not in use",
     "why does my phone battery drain so fast when i travel",
-    "why does my phone battery drain so fast all of a sudden",
+    "why does my phone battery drain so fast samsung",
     "why does my phone battery drain so fast when playing games",
-    "why does my phone battery drain so fast samsung"
+    "why does my phone battery drain so fast android"
    ],
    "my phone battery drain so fast": [
     "my phone battery drain so fast even when it's not in use",
@@ -18071,11 +18149,15 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "why-is-tiktok-not-working-outage-november-24-2026": {
-  "time": "2026-11-25T13:56:19+00:00",
+  "time": "2026-11-26T14:02:28+00:00",
   "query": "why is tiktok not working",
   "in_suggest": true,
   "suggest": {
@@ -18084,31 +18166,35 @@
    "why is tiktok not working": [
     "why is tiktok not working",
     "why is tiktok not working today",
-    "why is tiktok not working right now",
-    "why is tiktok not working on my phone",
     "why is tiktok not working on airplay",
-    "why is tiktok not working when i have internet",
-    "why is tiktok not working on my laptop",
+    "why is tiktok not working right now",
     "why is tiktok not working on pc",
+    "why is tiktok not working on my phone",
+    "why is tiktok not working on my laptop",
     "why is tiktok not working on my ipad",
-    "why is tiktok not working on screen mirroring"
+    "why is tiktok not working on screen mirroring",
+    "why is tiktok not working for me"
    ],
    "tiktok not working": [
     "tiktok not working",
-    "tiktok not working today",
-    "tiktok not working reddit",
     "tiktok not working on airplay",
+    "tiktok not working today",
     "tiktok not working in usa",
-    "tiktok not working on wifi",
     "tiktok not working on screen mirroring",
+    "tiktok not working on wifi",
+    "tiktok not working no internet connection",
+    "tiktok not working after ios update",
     "tiktok not working on iphone",
-    "tiktok not working after update",
-    "tiktok not working on chrome"
+    "tiktok not working after update"
    ]
   },
   "history": [
    [
     "2026-11-25",
+    true
+   ],
+   [
+    "2026-11-26",
     true
    ]
   ]
