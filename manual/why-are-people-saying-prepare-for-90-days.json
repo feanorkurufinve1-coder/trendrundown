@@ -1,0 +1,66 @@
+{
+ "subject": "\"Prepare for 90 days\" blackout rumor",
+ "kind": "term",
+ "trend": true,
+ "query": "why are people saying prepare for 90 days",
+ "title": "Why are people saying prepare for 90 days? The blackout rumor",
+ "answer": "\"Prepare for 90 days\" comes from viral posts in November 2026 claiming a nationwide U.S. blackout would last three months, so people should stock up on food, water and medicine. Fact-checkers rated the claim false, Homeland Security said there is no need to stockpile, and no 90-day blackout has happened.",
+ "body": "The phrase shows up in TikTok videos, Facebook posts and group chats in a few versions: \"prepare for 90 days,\" \"stock up for 90 days,\" \"no power for 90 days.\" The message is always the same: the power grid is about to go down for three months, so buy canned food, fill water jugs and pull out cash. Many people repeat it as a joke (\"my 90-day supply is two bags of chips\"), but plenty of others are asking in earnest whether they missed an official warning. They didn't.\n\nThe scare started in early November 2026 and first centered on Nov. 17. One widely shared TikTok used a manipulated clip of President Trump from a Nov. 9 press briefing to make it look as if he had announced a 90-day blackout; PolitiFact found that he said no such thing and rated the claim false. The number 90 most likely came from real but unrelated news: on Sept. 30, Defense Secretary Pete Hegseth announced a program to keep military bases running on their own power for at least 90 days in an emergency, which Fox News reported on Oct. 25. An analyst at RBC Capital Markets has said a Pentagon readiness directive was misread online as a blackout warning. Routine advice from other governments to keep a few days of supplies at home was folded in too.\n\nReal glitches kept the rumor alive. Microsoft had a multi-day outage from Nov. 12 to 14, the FAA briefly grounded flights nationwide on Nov. 13, and Apple services and several banks also had glitches that month. Officials said these were separate technical failures, not attacks. A scheduled nationwide Emergency Alert System test on Nov. 17, announced by FEMA in September, interrupted TV and radio and added to the confusion. FEMA's response on Facebook: there is no secret emergency. Homeland Security Secretary Markwayne Mullin said on Nov. 15 that Americans do not need to stockpile. Nov. 17 came and went without a blackout, yet our radar saw new searches like \"why is everyone saying prepare for 90 days\" from Nov. 23 onward as the posts resurfaced around Thanksgiving.\n\nFor parents: related posts telling people to \"keep your kids home tomorrow\" cite no official source; if schools close, your district will say so directly. If the rumor makes you want to prepare, the federal Ready.gov guidance is far more modest than 90 days: keep water, nonperishable food, medicines, a flashlight and batteries to get through several days of any emergency, from a winter storm to an ordinary outage.",
+ "in_the_news": "Searches for \"prepare for 90 days\" and \"stock up for 90 days\" rose again during Thanksgiving week 2026, even though the Nov. 17 blackout claim proved false.",
+ "faq": [
+  {
+   "q": "Is there going to be a 90-day blackout?",
+   "a": "There is no evidence of one. Fact-checkers rated the claim false, and federal officials, including the Homeland Security secretary, said there is no planned or expected nationwide outage."
+  },
+  {
+   "q": "Did Trump warn about a 90-day blackout?",
+   "a": "No. The viral clip was edited from a Nov. 9 press briefing in which he did not mention a blackout, according to PolitiFact."
+  },
+  {
+   "q": "Where did the 90 days come from?",
+   "a": "Most likely from a Pentagon program, announced Sept. 30, 2026, to keep military bases running on independent power for at least 90 days. It is emergency planning, not a forecast of a blackout."
+  },
+  {
+   "q": "Should I stock up anyway?",
+   "a": "Basic preparedness is sensible: Ready.gov suggests water, food, medicine, a flashlight and batteries for several days. There is no reason to buy three months of supplies because of this rumor."
+  }
+ ],
+ "links": [
+  [
+   "PolitiFact via WRAL",
+   "Fact-check: Did Trump warn of '90-day' nationwide blackout? Social media videos manipulated",
+   "https://www.wral.com/news/state/fact-check-trump-90-day-blackout-nation-november-17/"
+  ],
+  [
+   "PBS NewsHour",
+   "Debunking social media posts that claim a 90-day blackout will start Nov. 17",
+   "https://www.pbs.org/newshour/nation/debunking-social-media-posts-that-claim-a-90-day-blackout-will-start-nov-17"
+  ],
+  [
+   "Stateline via The Nugget",
+   "Outages, alerts have stoked blackout fears",
+   "https://www.nuggetnews.com/story/2026/11/25/news/outages-alerts-have-stoked-blackout-fears/39835.html"
+  ],
+  [
+   "Ready.gov",
+   "Build a Kit",
+   "https://www.ready.gov/kit"
+  ]
+ ],
+ "radar": {
+  "first": "2026-11-23",
+  "phrases": [
+   "why is everyone saying prepare for 90 days",
+   "why are people saying prepare for 90 days",
+   "why are people saying be prepared for 90 days",
+   "why is everyone saying prep for 90 days"
+  ],
+  "where": [
+   "google",
+   "mastodon"
+  ]
+ },
+ "image_prompt": "A single lit candle and a flashlight on a wooden kitchen table in a dark room, with a few plain unlabeled jars of water nearby, soft illustrated style",
+ "made": "2026-11-26T13:50:57Z",
+ "first": "2026-11-26T13:50:57Z"
+}

@@ -164,6 +164,10 @@
 Проверка: через 3–7 дней после даты сверить с Trends CSV и Search Console — угадали или нет, записать урок сюда.
 
 ## Уроки
+- 26 нояб, вечер (GSC: последний полный день 25 нояб — 1 клик / 1 показ, на главной; health.json 26 нояб: в индексе 1 URL (/), 65 Crawled – not indexed, 28 Discovered, 129 неизвестны Google; sitemap 224 отправлено / 0):
+  - По типам (страницы 22–24 нояб, 2–4 дня): тренды (jupiter-incident, general-grant-thermostat, to-me-my-x-men, needoh, odinforce), обзор недели 22 нояб, прогнозы (toos, focker-in-law), вечные (phone-battery) — 0 показов; судить о типах по-прежнему нельзя.
+  - Кластер «prepare / stock up / no power for 90 days» за 23–26 нояб вырос до ~40 новых подсказок; страница про 17 нояб их не ловит (другая формулировка) — сделана отдельная «prepare for 90 days». Новое: вирусные видео «люди вылезают из люков в Нью-Йорке» — свежие фото NYPD 26 нояб.
+  - Картинки FLUX: вывески с каракулями на здании (toos), эмблема и номер на машине (x-men), водяной знак сайта в углу (thermostat), «батарейка» нарисована банкой со слизью — 4 на перерисовку.
 - 25 нояб, вечер (GSC: последний полный день 24 нояб — 0 кликов / 0 показов; 23 нояб — 2 / 3, всё на главной; health.json: в индексе 1 URL (/), 65 Crawled – not indexed, 18 Discovered, 132 неизвестны Google):
   - По типам (страницы 21–23 нояб, 2–4 дня): тренды (huss, gta-6-is-woke, rip-fiona, lucia-cheats, mustard-at-lsu, jupiter-incident, cat-ears, kroger), обзор недели 22 нояб, прогнозы (supermoon, sam-bankman-fried, mr-irrelevant), вечные (refrigerator-leaking, washing-machine-last, d-in-fridge) — 0 показов; ни один тип не выигрывает, сайт вне индекса.
   - Радар 25 нояб: верх candidates снова мусор («speed up housebuilding», «chan after your name», «message blocking is active», «http status 400»); кластер «prepare / stockpile / prepare for 90 days» — хвост слуха о 90-дневном блэкауте (уже есть страница). Живые темы снова только в new_phrases: сбой TikTok 24 нояб (≈30 подсказок), «viral georgia tech couple» (8 подсказок за 3 дня). Мем «General Grant on the thermostat» радар не увидел — нашёлся только через Know Your Meme.

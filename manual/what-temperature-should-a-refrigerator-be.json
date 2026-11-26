@@ -1,0 +1,51 @@
+{
+ "subject": "Refrigerator temperature",
+ "kind": "term",
+ "query": "what temperature should a refrigerator be",
+ "title": "What temperature should a refrigerator be? 37°F is the sweet spot",
+ "answer": "A refrigerator should be at 40°F (4°C) or colder, and most experts aim for 35 to 38°F, with 37°F (about 3°C) as a good target. The freezer should be at 0°F (-18°C). Check with an inexpensive appliance thermometer, because the numbers on the dial are settings, not degrees.",
+ "body": "Why 40°F matters. The FDA's line for safe cold storage is 40°F. Above it, bacteria that cause food poisoning multiply quickly; at room temperature some can double in about 20 minutes. Going much below 35°F has its own cost: lettuce and other produce start to freeze, and the compressor works harder than it needs to. The Department of Energy recommends 35 to 38°F for the fresh-food section, which keeps you safely under 40°F everywhere, including the warmer door shelves.\n\nHow to check it yourself. Built-in displays and dials aren't always accurate, and a dial marked 1 to 5 or \"cold\" to \"coldest\" doesn't tell you degrees at all. Put an appliance thermometer in a glass of water on a middle shelf, leave the door closed for 5 to 8 hours (overnight is easiest), then read it. In an older fridge, check both the top shelf near the back and the bottom shelf near the front, since temperatures vary. Adjust the control one step at a time and recheck after about 12 hours. Do the same in the freezer, aiming for 0°F.\n\nIf it won't hold the right temperature, the usual causes, roughly in order: food blocking the air vents inside; a door gasket that's dirty, torn or loose (close the door on a dollar bill; if it slides out with no resistance, the seal isn't gripping); dust-caked condenser coils on the back or bottom; too little space around the fridge for air to move; a fridge that isn't level; and frequent door opening or putting hot leftovers straight in. A nearly empty fridge also cycles less evenly, so a few pitchers of water help. A fridge that runs too cold usually just needs the setting turned one step warmer, or food moved away from the vents where cold air enters.\n\nWhen to call a technician: if you've cleared the vents, cleaned the coils and gasket, waited 12 hours after adjusting, and it's still above 40°F, or if the compressor clicks on and off constantly, runs nonstop, or the fan isn't spinning. Those point to a failing fan, compressor or control board. Until it's fixed, keep perishables in a cooler with ice, and throw out perishable food that sat above 40°F for more than two hours.",
+ "faq": [
+  {
+   "q": "Is 40 degrees too warm for a refrigerator?",
+   "a": "It's the upper limit, not the goal. Setting the fridge to 37°F gives you a cushion so that no shelf drifts above 40°F."
+  },
+  {
+   "q": "What number should my fridge dial be on?",
+   "a": "There's no universal answer, because dial numbers vary by model. Start in the middle setting, measure with a thermometer, and adjust one step at a time."
+  },
+  {
+   "q": "What temperature should a freezer be?",
+   "a": "0°F (-18°C) or colder, according to the FDA and Department of Energy."
+  },
+  {
+   "q": "How long does food stay safe in a fridge without power?",
+   "a": "About four hours if you keep the door closed, according to USDA guidance. A full freezer holds its temperature for about 48 hours, a half-full one for about 24."
+  }
+ ],
+ "links": [
+  [
+   "FDA",
+   "Refrigerator Thermometers: Cold Facts about Food Safety",
+   "https://www.fda.gov/food/buy-store-serve-safe-food/refrigerator-thermometers-cold-facts-about-food-safety"
+  ],
+  [
+   "U.S. Department of Energy",
+   "Refrigerator Freezer Use and Temperature Tips",
+   "https://www.energy.gov/node/4821127"
+  ],
+  [
+   "Building America Solution Center (PNNL)",
+   "Check Refrigerator Temperature",
+   "https://basc.pnnl.gov/diy-guides/check-refrigerator-temperature"
+  ],
+  [
+   "Bob Vila",
+   "What Temperature Should a Refrigerator Be?",
+   "https://www.bobvila.com/articles/what-temperature-should-a-refrigerator-be/"
+  ]
+ ],
+ "image_prompt": "A single glass of water on a clean white refrigerator shelf next to fresh green vegetables, cool blue light inside the fridge, realistic photo style",
+ "made": "2026-11-26T13:50:57Z",
+ "first": "2026-11-26T13:50:57Z"
+}
