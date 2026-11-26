@@ -2020,52 +2020,48 @@
   ]
  },
  "what-does-habibi-mean": {
-  "time": "2026-11-25T16:33:47+00:00",
+  "time": "2026-11-26T16:44:18+00:00",
   "query": "what does habibi mean",
   "in_suggest": true,
   "suggest": {
    "habibi": [
-    "habibi meaning",
     "habibi",
-    "habibi in arabic",
-    "habibi vs habibti",
+    "habibi meaning",
+    "habibi grill",
     "habibi miami",
-    "habibi song",
-    "habibi meaning in arabic",
-    "habibti",
-    "habibi jacksparrow real name",
-    "habibi restaurant"
+    "habibi in arabic",
+    "habibi deli",
+    "habibi vs habibti",
+    "habibi costume",
+    "habibi cafe",
+    "habibi meaning in arabic"
    ],
    "what is habibi": [
     "what is habibi",
     "what is habibi mean",
     "what is habibi in arabic",
     "what is habibi in english",
-    "what is habibi for a girl",
-    "what is habibi flavor",
     "what is habibi mean in arabic",
-    "what is habibi funk",
-    "what is habibi food",
-    "what is habibti"
+    "what is habibi sauce",
+    "what is habibi mean in english",
+    "what is habibi flavor",
+    "what is habibi pac",
+    "what is habibi for a girl"
    ],
    "what does habibi mean": [
     "what does habibi mean",
-    "what does habibi mean in english",
     "what does habibi mean in arabic",
+    "what does habibi mean in english",
+    "what does habibi mean in muslim",
     "what does habibi mean in indian",
     "what does habibi mean in spanish",
-    "what does habibi mean in arabic and english",
-    "what does habibi mean in hebrew",
     "what does habibi mean in egypt",
-    "what does habibi mean in lebanese",
-    "what does habibi mean in islam"
+    "what does habibi mean in islam",
+    "what does habibi mean in hebrew",
+    "what does habibi mean slang"
    ]
   },
   "history": [
-   [
-    "2026-11-12",
-    true
-   ],
    [
     "2026-11-13",
     true
@@ -2116,6 +2112,10 @@
    ],
    [
     "2026-11-25",
+    true
+   ],
+   [
+    "2026-11-26",
     true
    ]
   ]
@@ -2707,24 +2707,25 @@
   ]
  },
  "richard-avedon": {
-  "time": "2026-11-25T16:33:38+00:00",
+  "time": "2026-11-26T16:44:11+00:00",
   "query": "who was richard avedon",
   "in_suggest": true,
   "suggest": {
    "richard avedon": [
     "richard avedon",
-    "richard avedon photos",
     "richard avedon documentary",
-    "richard avedon netflix",
+    "richard avedon photos",
     "richard avedon in the american west",
-    "richard avedon books",
-    "richard avedon famous photos",
     "richard avedon marilyn monroe",
-    "richard avedon beatles",
-    "richard avedon portraits"
+    "richard avedon veruschka",
+    "richard avedon famous photos",
+    "richard avedon portraits",
+    "richard avedon books",
+    "richard avedon beatles"
    ],
    "who is richard avedon": [
     "who is richard avedon",
+    "who is richard avedon's son",
     "who is richard avedon photographer",
     "what is richard avedon known for",
     "what is richard avedon most famous photo",
@@ -2732,11 +2733,11 @@
     "what is richard avedon's style",
     "who did richard avedon work for",
     "who influenced richard avedon",
-    "who inspired richard avedon",
-    "what style is richard avedon associated with"
+    "who inspired richard avedon"
    ],
    "who was richard avedon": [
     "who was richard avedon",
+    "who was richard avedon married to",
     "who was richard avedon influenced by",
     "what was richard avedon known for",
     "what was richard avedon style of photography",
@@ -2748,10 +2749,6 @@
    ]
   },
   "history": [
-   [
-    "2026-11-12",
-    true
-   ],
    [
     "2026-11-13",
     true
@@ -2803,25 +2800,29 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "silver-slugger-award": {
-  "time": "2026-11-25T16:33:41+00:00",
+  "time": "2026-11-26T16:44:13+00:00",
   "query": "what is the silver slugger award",
   "in_suggest": true,
   "suggest": {
    "silver slugger award": [
     "silver slugger award",
-    "silver slugger award 2026",
     "silver slugger award winners",
-    "silver slugger award 2025",
-    "silver slugger award criteria",
-    "silver slugger award odds",
+    "silver slugger award winners 2026",
+    "silver slugger awards 2026",
     "silver slugger award 2026 predictions",
-    "silver slugger award mlb",
-    "silver slugger award 2026 winners list",
-    "silver slugger award trophy"
+    "silver slugger award meaning",
+    "silver slugger award finalists 2026",
+    "silver slugger award finalists",
+    "silver slugger award criteria",
+    "silver slugger award announcement"
    ],
    "what is silver slugger award": [
     "what is silver slugger award",
@@ -2838,8 +2839,8 @@
    "what is the silver slugger award": [
     "what is the silver slugger award",
     "what is the silver slugger award in baseball",
-    "what is the silver slugger award in major league baseball",
     "what is the silver slugger award in mlb",
+    "what is the silver slugger award in major league baseball",
     "what is the silver slugger award based on",
     "what is the silver slugger award given for",
     "what is the silver slugger award 2025",
@@ -2850,10 +2851,6 @@
   },
   "history": [
    [
-    "2026-11-12",
-    true
-   ],
-   [
     "2026-11-13",
     true
    ],
@@ -2904,28 +2901,33 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "teruaki-sato": {
-  "time": "2026-11-25T16:33:42+00:00",
+  "time": "2026-11-26T16:44:14+00:00",
   "query": "who is teruaki sato",
   "in_suggest": true,
   "suggest": {
    "teruaki sato": [
     "teruaki sato",
     "teruaki sato stats",
-    "teruaki sato age",
     "teruaki sato cubs",
     "teruaki sato highlights",
     "teruaki sato contract",
-    "teruaki sato scouting report",
+    "teruaki sato phillies",
     "teruaki sato yankees",
-    "teruaki sato mlb",
-    "teruaki sato baseball"
+    "teruaki sato scouting report",
+    "teruaki sato jersey",
+    "teruaki sato mlb"
    ],
    "who is teruaki sato": [
     "who is teruaki sato",
+    "who is teruaki sato agent",
     "who does teruaki sato play for",
     "what position is teruaki sato",
     "who does asami sato end up with",
@@ -2934,10 +2936,6 @@
   },
   "history": [
    [
-    "2026-11-12",
-    true
-   ],
-   [
     "2026-11-13",
     true
    ],
@@ -2988,21 +2986,41 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "when-does-new-congress-start": {
-  "time": "2026-11-25T16:33:54+00:00",
+  "time": "2026-11-26T16:44:25+00:00",
   "query": "when does the new congress take office",
   "in_suggest": true,
   "suggest": {
    "start of the 120th congress": [
-    "start of 120th congress",
+    "start of the 120th congress",
     "start of new congress",
-    "first day of new congress"
+    "what is the first day of the new congress"
    ],
-   "what is start of the 120th congress": [],
-   "when does the new congress take office": [],
+   "what is start of the 120th congress": [
+    "what is the 120th congress",
+    "when did new congress start",
+    "what is the first day of the new congress",
+    "when the new congress start"
+   ],
+   "when does the new congress take office": [
+    "when does the new congress take office",
+    "when does the new congress take office in 2027",
+    "when do the new congress take office",
+    "when will the new congress take office",
+    "when does the next congress take office",
+    "when does the new elected congress take office",
+    "when does the new congress members take office",
+    "when do the new congress members take office",
+    "when do the new congress people take office",
+    "when do new elected congress take office"
+   ],
    "new congress take office": [
     "new congress take office",
     "when does new congress take office",
@@ -3018,10 +3036,6 @@
   },
   "history": [
    [
-    "2026-11-12",
-    true
-   ],
-   [
     "2026-11-13",
     true
    ],
@@ -3071,6 +3085,10 @@
    ],
    [
     "2026-11-25",
+    true
+   ],
+   [
+    "2026-11-26",
     true
    ]
   ]
@@ -3872,21 +3890,21 @@
   ]
  },
  "rookie-cy-young-winner": {
-  "time": "2026-11-25T16:33:40+00:00",
+  "time": "2026-11-26T16:44:12+00:00",
   "query": "has a rookie ever won the cy young",
   "in_suggest": true,
   "suggest": {
    "cy young award": [
     "cy young award",
-    "cy young award winners",
     "cy young award 2026",
-    "cy young award odds",
-    "cy young award leaders",
-    "cy young award winners by year",
-    "cy young award race",
-    "cy young award 2025",
+    "cy young award winners",
     "cy young award winners 2026",
-    "cy young award this year"
+    "cy young award odds",
+    "cy young award winners by year",
+    "cy young award leaders",
+    "cy young award date",
+    "cy young award 2025",
+    "cy young awards by year"
    ],
    "what is cy young award": [
     "what is cy young award",
@@ -3901,8 +3919,8 @@
     "what is the cy young award in japan"
    ],
    "has a rookie ever won the cy young": [
-    "has a rookie ever won the cy young award",
     "has a rookie ever won the cy young",
+    "has a rookie ever won the cy young award",
     "has a rookie pitcher ever won the cy young",
     "has a rookie ever won cy young mlb",
     "has any rookie ever won cy young",
@@ -3925,10 +3943,6 @@
   },
   "history": [
    [
-    "2026-11-12",
-    true
-   ],
-   [
     "2026-11-13",
     true
    ],
@@ -3979,41 +3993,44 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "the-altruists-true-story": {
-  "time": "2026-11-25T16:33:44+00:00",
+  "time": "2026-11-26T16:44:16+00:00",
   "query": "is the altruists a true story",
   "in_suggest": true,
   "suggest": {
    "the altruists": [
     "the altruists",
     "the altruists cast",
-    "the altruists netflix",
-    "the altruists true story",
     "the altruists real people",
     "the altruists reviews",
+    "the altruists netflix",
     "the altruists rotten tomatoes",
+    "the altruists netflix reviews",
     "the altruists episodes",
-    "the altruists reddit",
-    "the altruists imdb"
+    "the altruists true story",
+    "the altruists reddit"
    ],
    "what is the altruists": [
     "what is the altruists about",
     "what is the altruists based on",
+    "what is the altruists about on netflix",
     "what does the altruists website say",
     "what are the altruists in gta 5",
     "what is the altruist cult gta 5",
     "what is the altruist camp in gta v",
     "what is the altruist cult",
     "what is the altruist cult based on",
-    "what is the altruist role in among us",
-    "what is the altruist cult gta"
+    "what is the altruist role in among us"
    ],
    "is the altruists a true story": [
     "is the altruists a true story",
-    "is the altruists based on a true story",
     "is henry from the invisible life of addie larue gay"
    ],
    "altruists true story": [
@@ -4025,10 +4042,6 @@
   },
   "history": [
    [
-    "2026-11-12",
-    true
-   ],
-   [
     "2026-11-13",
     true
    ],
@@ -4078,6 +4091,10 @@
    ],
    [
     "2026-11-25",
+    true
+   ],
+   [
+    "2026-11-26",
     true
    ]
   ]
@@ -6676,7 +6693,7 @@
   ]
  },
  "the-empress-netflix-true-story": {
-  "time": "2026-11-25T16:33:45+00:00",
+  "time": "2026-11-26T16:44:17+00:00",
   "query": "is the empress on netflix a true story",
   "in_suggest": true,
   "suggest": {
@@ -6685,24 +6702,24 @@
     "the empress cast",
     "the empress tarot",
     "the empress season 3",
-    "the empress of austria",
+    "the empress remarried",
     "the empress reversed",
+    "the empress of austria",
     "the empress tarot meaning",
-    "the empress season 4",
     "the empress season 3 cast",
-    "the empress season 2"
+    "the empress season 4"
    ],
    "what is the empress": [
-    "what is the empress about on netflix",
     "what is the empress about",
+    "what is the empress on netflix about",
     "what is the empress card in tarot",
     "what is the empress dowager",
-    "what is the empress tarot card mean",
-    "what is the empress in tarot",
     "what is the empress based on",
-    "what is the empress deck on a cruise ship",
-    "what is the empress deck on a carnival cruise ship",
-    "what is the empress card"
+    "what is the empress in tarot",
+    "what is the empress series about",
+    "what is the empress on netflix based off of",
+    "what is the empress based on netflix",
+    "what is the empress deck on a cruise ship"
    ],
    "is the empress on netflix a true story": [
     "is the empress on netflix a true story",
@@ -6718,10 +6735,6 @@
    ]
   },
   "history": [
-   [
-    "2026-11-12",
-    true
-   ],
    [
     "2026-11-13",
     true
@@ -6773,11 +6786,15 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "what-is-a-hip-pointer": {
-  "time": "2026-11-25T16:33:48+00:00",
+  "time": "2026-11-26T16:44:19+00:00",
   "query": "what is a hip pointer injury",
   "in_suggest": true,
   "suggest": {
@@ -6786,24 +6803,24 @@
     "hip pointer injury",
     "hip pointer pain",
     "hip pointer treatment",
-    "hip pointer without impact",
     "hip pointer symptoms",
     "hip pointer recovery time",
+    "hip pointer without impact",
     "hip pointer stretches",
-    "hip pointer exercises",
-    "hip pointer pain location"
+    "hip pointer bruise",
+    "hip pointer exercises"
    ],
    "what is hip pointer": [
     "what is hip pointer",
     "what is hip pointer injury",
-    "what is hip pointer pain",
     "what is a hip pointer feel like",
     "what is a hip pointer injury in football",
     "what is a hip pointer in football",
     "what is a hip pointer and how do you treat it",
     "what is a hip pointer in sports",
     "what is your hip pointer",
-    "what is a hip pointer bruise"
+    "what is a hip pointer bruise",
+    "what is a right hip pointer"
    ],
    "what is a hip pointer injury": [
     "what is a hip pointer injury",
@@ -6821,20 +6838,16 @@
     "hip pointer injury",
     "hip pointer injury from running",
     "hip pointer injury football",
+    "hip pointer injury recovery time nfl",
     "hip pointer injury treatment",
     "hip pointer injury nfl",
     "hip pointer injury recovery time",
     "hip pointer injury pictures",
-    "hip pointer injury nfl recovery time",
-    "hip pointer injury symptoms",
-    "hip pointer injury no bruise"
+    "hip pointer injury jj mccarthy",
+    "hip pointer injury hockey"
    ]
   },
   "history": [
-   [
-    "2026-11-12",
-    true
-   ],
    [
     "2026-11-13",
     true
@@ -6886,25 +6899,29 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "what-is-win-the-mall": {
-  "time": "2026-11-25T16:33:53+00:00",
+  "time": "2026-11-26T16:44:23+00:00",
   "query": "what is win the mall on netflix",
   "in_suggest": true,
   "suggest": {
    "win the mall": [
     "win the mall",
     "win the mall cast",
-    "win the mall location",
     "win the mall winner",
+    "win the mall location",
     "win the mall host",
-    "win the mall contestants",
     "win the mall netflix",
+    "win the mall elimination order",
+    "win the mall filming location",
     "win the mall reddit",
-    "win the mall season 2",
-    "win the mall netflix cast"
+    "win the mole season 2"
    ],
    "what is win the mall": [
     "what is win the mall",
@@ -6922,14 +6939,11 @@
     "win the mall netflix trailer",
     "win the mall netflix sherway gardens",
     "win the mall netflix winner",
+    "win the mall netflix host",
     "win the mall netflix contestants"
    ]
   },
   "history": [
-   [
-    "2026-11-12",
-    true
-   ],
    [
     "2026-11-13",
     true
@@ -6980,6 +6994,10 @@
    ],
    [
     "2026-11-25",
+    true
+   ],
+   [
+    "2026-11-26",
     true
    ]
   ]
@@ -8640,17 +8658,17 @@
   ]
  },
  "why-does-social-security-get-taxed": {
-  "time": "2026-11-25T16:34:10+00:00",
+  "time": "2026-11-26T16:44:38+00:00",
   "query": "why does social security get taxed",
   "in_suggest": true,
   "suggest": {
    "taxes on social security benefits": [
     "taxes on social security benefits",
     "taxes on social security benefits 2026",
-    "taxes on social security benefits calculator",
     "taxes on social security benefits 2026 for seniors",
-    "taxes on social security benefits 2026 over 65",
+    "taxes on social security benefits calculator",
     "taxes on social security benefits 2027",
+    "taxes on social security benefits 2026 over 65",
     "taxes on social security benefits for seniors",
     "taxes on social security benefits 2025",
     "taxation on social security benefits 2026",
@@ -8670,7 +8688,6 @@
    ],
    "why does social security get taxed": [
     "why does social security get taxed",
-    "why does social security get taxed so much",
     "why does my social security get taxed",
     "why do social security benefits get taxed",
     "why do social security checks get taxed",
@@ -8678,7 +8695,8 @@
     "do social security get taxed",
     "why is social security taxed twice",
     "why is social security taxed",
-    "why is social security taxed as income"
+    "why is social security taxed as income",
+    "why is social security taxed federally"
    ],
    "social security get taxed": [
     "social security get taxed",
@@ -8695,10 +8713,6 @@
   },
   "history": [
    [
-    "2026-11-12",
-    true
-   ],
-   [
     "2026-11-13",
     true
    ],
@@ -8749,11 +8763,15 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "why-is-my-check-engine-light-on": {
-  "time": "2026-11-25T16:34:13+00:00",
+  "time": "2026-11-26T16:44:41+00:00",
   "query": "why is my check engine light on",
   "in_suggest": true,
   "suggest": {
@@ -8761,35 +8779,36 @@
     "check engine light",
     "check engine light flashing",
     "check engine light meaning",
+    "check engine light on after oil change",
+    "check engine light came on",
     "check engine light reader",
-    "check engine light after oil change",
     "check engine light flashing and car shaking",
     "check engine light symbol",
-    "check engine light came on",
     "check engine light comes on and off",
-    "check engine light on and car shaking"
+    "check engine light pumpkin"
    ],
    "what is check engine light": [
     "what is check engine light",
-    "what is check engine light look like",
     "what is check engine light mean",
+    "what is check engine light look like",
     "what is check engine light code p0420",
-    "what is check engine light in car",
     "what is check engine light symbol",
-    "what is check engine light sign",
+    "what is check engine light in car",
+    "what is check engine light flashing",
     "what is check engine light in bike",
+    "what would the check engine light indicate",
     "what happens if you drive with the check engine light on"
    ],
    "why is my check engine light on": [
     "why is my check engine light on",
     "why is my check engine light on after an oil change",
     "why is my check engine light on but no codes",
-    "why is my check engine light on and my car is shaking",
+    "why is my check engine light on and car shaking",
     "why is my check engine light on after changing battery",
-    "why is my check engine light on in accessory mode",
-    "why is my check engine light on and cruise control flashing",
     "why is my check engine light on after my battery died",
+    "why is my check engine light on in accessory mode",
     "why is my check engine light on after fixing the problem",
+    "why is my check engine light on flashing",
     "why is my check engine light on in my car"
    ],
    "my check engine light": [
@@ -8800,16 +8819,12 @@
     "my check engine light turned off on its own",
     "my check engine light just came on",
     "my check engine light comes on and off",
+    "my check engine light came on then went off",
     "my check engine light came on and went off",
-    "my check engine light was on now its off",
     "my check engine light is on what do i do"
    ]
   },
   "history": [
-   [
-    "2026-11-12",
-    true
-   ],
    [
     "2026-11-13",
     true
@@ -8861,11 +8876,15 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "why-is-my-washing-machine-leaking-from-the-bottom": {
-  "time": "2026-11-25T16:34:17+00:00",
+  "time": "2026-11-26T16:44:44+00:00",
   "query": "why is my washing machine leaking from the bottom",
   "in_suggest": true,
   "suggest": {
@@ -8896,12 +8915,12 @@
    "why is my washing machine leaking from the bottom": [
     "why is my washing machine leaking from the bottom",
     "why is my washing machine leaking from the bottom when draining",
+    "why is my washing machine leaking from the bottom when not in use",
     "why is my washing machine leaking from the bottom when filling",
     "why is my washing machine leaking from the bottom right side",
     "why is my washing machine leaking from the bottom of the door",
     "why is my washing machine leaking from the bottom left side",
     "why is my washing machine leaking from the bottom front",
-    "why is my washing machine leaking from the bottom when not in use",
     "why is my washing machine leaking from the bottom left corner",
     "why is my washing machine leaking from the bottom left front"
    ],
@@ -8919,10 +8938,6 @@
    ]
   },
   "history": [
-   [
-    "2026-11-12",
-    true
-   ],
    [
     "2026-11-13",
     true
@@ -8973,6 +8988,10 @@
    ],
    [
     "2026-11-25",
+    true
+   ],
+   [
+    "2026-11-26",
     true
    ]
   ]
@@ -9375,21 +9394,20 @@
   ]
  },
  "when-will-social-security-run-out": {
-  "time": "2026-11-25T16:33:56+00:00",
+  "time": "2026-11-26T16:44:26+00:00",
   "query": "when will social security run out",
   "in_suggest": true,
   "suggest": {
    "social security trust fund depletion": [
     "social security trust fund depletion",
     "social security trust fund depletion date",
-    "social security trust fund depletion today",
-    "social security trust fund depletion could trigger major benefit cuts",
     "social security trust fund depletion 2032",
+    "social security trust fund depletion 2032 update",
+    "social security trust fund depletion 2032 what to do",
     "social security trust fund depletion 2033",
     "social security trust fund depletion update",
-    "social security trust fund depletion 2034",
-    "social security trust fund depletion by 2034 may lead to benefit cuts",
-    "social security trust fund depletion 2021"
+    "social security trust fund depletion today",
+    "is the social security trust fund invested"
    ],
    "what is social security trust fund depletion": [
     "what is the latest news on social security trust fund depletion and potential benefit cuts",
@@ -9408,10 +9426,10 @@
     "when will social security run out of money",
     "when will social security run out completely",
     "when will social security run out of funds",
-    "when will social security run out reddit",
-    "when will social security run out in the us",
-    "when will social security run out of numbers",
     "when will social security run out of money or not be fully funded",
+    "when will social security run out reddit",
+    "when will social security run out of numbers",
+    "when will social security run out in the united states",
     "when will social security run out what year",
     "when does social security run out"
    ],
@@ -9421,18 +9439,14 @@
     "will social security run out in 2032",
     "will social security run out by 2050",
     "will social security run out in 2030",
+    "will social security run out of money in 2032",
     "will social security run out in 10 years",
     "will social security run out by 2060",
-    "will social security run out of money in 2032",
-    "will social security run out in 20 years",
-    "will social security run out in 2035"
+    "will social security run out soon",
+    "will social security run out in 20 years"
    ]
   },
   "history": [
-   [
-    "2026-11-12",
-    true
-   ],
    [
     "2026-11-13",
     true
@@ -9484,11 +9498,15 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "why-does-my-phone-battery-go-down-while-charging": {
-  "time": "2026-11-25T16:34:02+00:00",
+  "time": "2026-11-26T16:44:31+00:00",
   "query": "why does my phone battery go down while charging",
   "in_suggest": true,
   "suggest": {
@@ -9513,8 +9531,8 @@
     "android phone battery draining while charging",
     "mobile battery draining while charging",
     "why is my battery draining while charging",
-    "why is my phone losing battery while charging",
-    "why is my phone battery draining instead of charging"
+    "why does phone battery drain when charging",
+    "why is my phone losing battery while charging"
    ],
    "why does my phone battery go down while charging": [
     "why does my phone battery go down while charging",
@@ -9543,10 +9561,6 @@
   },
   "history": [
    [
-    "2026-11-12",
-    true
-   ],
-   [
     "2026-11-13",
     true
    ],
@@ -9597,25 +9611,29 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "why-does-my-phone-screen-keep-going-black": {
-  "time": "2026-11-25T16:34:05+00:00",
+  "time": "2026-11-26T16:44:34+00:00",
   "query": "why does my phone screen keep going black",
   "in_suggest": true,
   "suggest": {
    "phone screen going black": [
     "phone screen going black randomly",
-    "phone screen going black",
     "phone screen going black during calls",
+    "phone screen going black",
+    "phone screen going black randomly samsung",
     "phone screen going black randomly iphone",
     "phone screen goes black",
     "phone screen goes black when calling",
     "phone screen went black but still running",
     "phone screen went black",
-    "phone screen gone black",
-    "phone screen turning black"
+    "phone screen gone black"
    ],
    "what is phone screen going black": [
     "why is phone screen going black",
@@ -9624,20 +9642,19 @@
     "phone screen going black randomly",
     "what happens when a phone screen goes black",
     "what does it mean when your phone screen goes black",
-    "why does a phone screen go black",
-    "why does my phone screen stay black"
+    "why does a phone screen go black"
    ],
    "why does my phone screen keep going black": [
     "why does my phone screen keep going black",
     "why does my phone screen keep going black on call",
     "why does my phone screen keep going black when watching videos",
-    "why does my phone screen keep going black while on call",
     "why does my phone screen keep going black when i cover the camera",
     "why does my phone screen keep going black randomly",
     "why does my phone screen keep going black iphone",
     "why does my phone screen keep going black when i touch it",
+    "why does my phone screen keep going black while on call",
     "why does my phone screen keep going black for a few seconds",
-    "why does my phone screen keep going black and green"
+    "why does my phone screen keep going black when i make a call"
    ],
    "my phone screen keep going black": [
     "my phone screen keep going black",
@@ -9654,10 +9671,6 @@
   },
   "history": [
    [
-    "2026-11-12",
-    true
-   ],
-   [
     "2026-11-13",
     true
    ],
@@ -9708,11 +9721,15 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "why-does-social-security-come-out-of-my-paycheck": {
-  "time": "2026-11-25T16:34:08+00:00",
+  "time": "2026-11-26T16:44:37+00:00",
   "query": "why does social security come out of my paycheck",
   "in_suggest": true,
   "suggest": {
@@ -9722,15 +9739,15 @@
     "social security payroll tax cap",
     "social security payroll tax rate",
     "social security payroll tax limit 2027",
-    "social security payroll tax 2026",
+    "social security payroll tax rate 2026",
     "social security payroll tax cap 2026",
-    "social security payroll tax limit 2025",
-    "social security payroll tax percentage",
-    "social security payroll tax limit"
+    "social security payroll tax 2026",
+    "social security payroll tax cap 2027",
+    "social security payroll tax limit 2025"
    ],
    "what is social security payroll tax": [
-    "what is social security payroll tax",
     "what is social security payroll tax cap",
+    "what is social security payroll tax",
     "what is social security payroll tax rate",
     "what is social security income tax",
     "what is social security employer tax",
@@ -9766,10 +9783,6 @@
   },
   "history": [
    [
-    "2026-11-12",
-    true
-   ],
-   [
     "2026-11-13",
     true
    ],
@@ -9819,6 +9832,10 @@
    ],
    [
     "2026-11-25",
+    true
+   ],
+   [
+    "2026-11-26",
     true
    ]
   ]
@@ -12708,7 +12725,7 @@
   ]
  },
  "why-does-my-phone-screen-go-black-during-calls": {
-  "time": "2026-11-25T16:34:03+00:00",
+  "time": "2026-11-26T16:44:32+00:00",
   "query": "why does my phone screen go black during calls",
   "in_suggest": true,
   "suggest": {
@@ -12807,11 +12824,15 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "why-does-my-washing-machine-smell-like-rotten-eggs": {
-  "time": "2026-11-25T16:34:07+00:00",
+  "time": "2026-11-26T16:44:35+00:00",
   "query": "why does my washing machine smell like rotten eggs",
   "in_suggest": true,
   "suggest": {
@@ -12840,8 +12861,8 @@
     "why does my washing machine smell like rotten eggs",
     "why does my washing machine smell like rotten eggs when it drains",
     "why does my washing machine smell like rotten eggs when it runs",
-    "why does my washing machine smell like rotten eggs after cleaning",
     "why does my washing machine smell like rotten eggs when i turn it on",
+    "why does my washing machine smell like rotten eggs after cleaning",
     "why does my washing machine smell like rotten eggs uk",
     "why does my washer machine smell like rotten eggs",
     "why does the washing machine smell like rotten eggs",
@@ -12909,35 +12930,39 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "wta-tennis": {
-  "time": "2026-11-25T16:34:18+00:00",
+  "time": "2026-11-26T16:44:45+00:00",
   "query": "what does wta stand for in tennis",
   "in_suggest": true,
   "suggest": {
    "wta": [
-    "wtao",
-    "wta",
+    "wtae",
     "wta live rankings",
+    "wta",
     "wta rankings",
     "wta finals",
-    "wta toronto",
-    "wta finals 2026",
-    "wta tennis",
-    "wta beijing",
-    "wtae"
+    "wtap",
+    "wtae weather",
+    "wtae news",
+    "wtam 1100",
+    "wtap news"
    ],
    "what is wta": [
     "what is wta",
     "what is wta tennis",
-    "what is wtaf",
     "what is wta finals",
+    "what is wtaf",
     "what is wta 1000",
+    "what is wta finals indian wells",
     "what is wta 1000 in tennis",
-    "what is wtac",
-    "what is wta 500 and wta 1000",
+    "what is wtaf in text",
     "what is wta in tennis stand for",
     "what is wtamu"
    ],
@@ -13008,6 +13033,10 @@
    ],
    [
     "2026-11-25",
+    true
+   ],
+   [
+    "2026-11-26",
     true
    ]
   ]
@@ -14139,7 +14168,7 @@
   ]
  },
  "what-is-the-ram-altman-meme": {
-  "time": "2026-11-25T16:33:51+00:00",
+  "time": "2026-11-26T16:44:22+00:00",
   "query": "what is the ram altman meme",
   "in_suggest": true,
   "suggest": {
@@ -14191,32 +14220,36 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "who-is-oobah-butler": {
-  "time": "2026-11-25T16:33:57+00:00",
+  "time": "2026-11-26T16:44:27+00:00",
   "query": "who is oobah butler",
   "in_suggest": true,
   "suggest": {
    "oobah butler": [
     "oobah butler",
-    "oobah butler tv show",
     "oobah butler show",
+    "oobah butler hbo",
     "oobah butler restaurant",
     "oobah butler wife",
-    "oobah butler amazon",
     "oobah butler age",
-    "oobah butler partner",
-    "oobah butler the shed at dulwich",
-    "oobah butler movies and tv shows"
+    "oobah butler amazon",
+    "oobah butler the shed",
+    "oobah butler documentary",
+    "oobah butler hbo show"
    ],
    "who is oobah butler": [
-    "who is oobah butler",
     "who is oobah butler dating",
     "what is oobah butler real name",
     "what is oobah butler doing now",
     "what is oobah butler net worth",
+    "oobah butler who is he",
     "is lee butler billy butler's son"
    ]
   },
@@ -14260,37 +14293,41 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "why-are-people-saying-ao3-is-back": {
-  "time": "2026-11-25T16:33:58+00:00",
+  "time": "2026-11-26T16:44:28+00:00",
   "query": "why are people saying ao3 is back",
   "in_suggest": false,
   "suggest": {
    "ao3": [
     "ao3",
-    "ao3 fanfic",
-    "ao3 skins",
-    "ao3 website",
     "ao3 status",
-    "ao3 purity test",
-    "ao3 login",
     "ao3 down",
+    "ao3 skins",
+    "ao3 updates",
+    "ao3 alternatives",
+    "ao3 login",
+    "ao3 app",
     "ao3 meaning",
-    "ao3 hunger games"
+    "ao3 fanfic"
    ],
    "what is ao3": [
     "what is ao3",
     "what is ao3 wattpad",
     "what is ao3 mean",
+    "what is ao3 and why is it down",
     "what is ao3 fanfiction",
-    "what is ao3 book",
-    "what is ao3 font",
     "what is ao3 in slang",
-    "what is ao3 anime",
-    "what is ao3 known for",
-    "what is ao3 app"
+    "what is ao3 font",
+    "what is ao3 in anime",
+    "what is ao3 book",
+    "what is ao3 known for"
    ],
    "why are people saying ao3 is back": [],
    "people saying ao3 back": []
@@ -14335,19 +14372,31 @@
    [
     "2026-11-25",
     false
+   ],
+   [
+    "2026-11-26",
+    false
    ]
   ]
  },
  "why-is-everyone-freaking-out-about-november-17": {
-  "time": "2026-11-25T16:34:12+00:00",
+  "time": "2026-11-26T16:44:39+00:00",
   "query": "why is everyone freaking out about november 17",
   "in_suggest": false,
   "suggest": {
-   "november 17 blackout rumor": [],
+   "november 17 blackout rumor": [
+    "november 17 blackout rumor",
+    "november 17 events",
+    "blackout date",
+    "november 4th events near me"
+   ],
    "what is november 17 blackout rumor": [],
    "why is everyone freaking out about november 17": [
+    "why is everyone freaking out about november 17th",
+    "why is everyone freaking out about november 17th 2026",
     "why are people freaking out about november 17th",
     "what happened on november 17",
+    "whats so special about november 13",
     "what happened november 17th",
     "november 17 famous birthdays",
     "what is special about november 17th"
@@ -14393,6 +14442,10 @@
    ],
    [
     "2026-11-25",
+    false
+   ],
+   [
+    "2026-11-26",
     false
    ]
   ]
@@ -15079,33 +15132,33 @@
   ]
  },
  "what-is-si-instead-of-ai": {
-  "time": "2026-11-25T16:33:50+00:00",
+  "time": "2026-11-26T16:44:21+00:00",
   "query": "what is si instead of ai",
   "in_suggest": true,
   "suggest": {
    "si": [
-    "silver prices today",
+    "sixers",
+    "silver price today",
     "silver price",
-    "simpson college",
+    "sixers schedule",
+    "sixers standings",
     "sirius xm",
-    "simons",
-    "sioux city",
+    "sinners",
+    "six flags",
     "silo",
-    "sierra",
-    "sierra trading post",
-    "sirius"
+    "sidelined 3"
    ],
    "what is si": [
-    "what is sids",
     "what is sibo",
-    "what is silage",
+    "what is sids",
     "what is sickle cell",
     "what is signal app",
     "what is si",
     "what is sickle cell disease",
-    "what is simulated public intoxication",
-    "what is silver worth today",
-    "what is silicon dioxide"
+    "what is silicon dioxide",
+    "what is sin",
+    "what is silent hill about",
+    "what is sinusitis"
    ],
    "what is si instead of ai": [
     "what is si instead of ai",
@@ -15116,8 +15169,8 @@
     "si instead of ai",
     "who is using si instead of ai",
     "what is si rather than ai",
-    "difference between si and asi",
-    "what is si systems"
+    "difference between ai and ais",
+    "difference between si and asi"
    ],
    "si instead ai": [
     "si rather than ai",
@@ -15125,6 +15178,7 @@
     "si instead of ai",
     "using si instead of ai",
     "ai sound alternatives",
+    "difference between ai and ais",
     "difference between si and asi"
    ]
   },
@@ -15160,11 +15214,15 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "why-are-people-saying-robert-pattinson-is-gen-z": {
-  "time": "2026-11-25T16:34:00+00:00",
+  "time": "2026-11-26T16:44:29+00:00",
   "query": "why are people saying robert pattinson is gen z",
   "in_suggest": true,
   "suggest": {
@@ -15214,18 +15272,22 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "why-is-my-phone-charging-slow": {
-  "time": "2026-11-25T16:34:15+00:00",
+  "time": "2026-11-26T16:44:42+00:00",
   "query": "why is my phone charging slow",
   "in_suggest": true,
   "suggest": {
    "slow phone charging": [
     "slow phone charging",
-    "slow phone charging problem",
     "slow phone charging in car",
+    "slow phone charging problem",
     "slow phone charging from laptop",
     "phone slow charging problem in hindi",
     "phone slow charging fix",
@@ -15245,14 +15307,14 @@
    ],
    "why is my phone charging slow": [
     "why is my phone charging slow",
-    "why is my phone charging slow all of a sudden",
-    "why is my phone charging slower than usual",
+    "why is my phone charging slowly all of a sudden",
     "why is my phone charging slow with a fast charger",
-    "why is my phone charging slow iphone",
+    "why is my phone charging slower than usual",
     "why is my phone charging slow android",
     "why is my phone charging slowly even with the right charger",
+    "why is my phone charging slow iphone",
     "why is my phone charging slow and dying fast",
-    "why is my phone charging slow in my car",
+    "why is my phone charging slow in the car",
     "why is my phone charging slow after update"
    ],
    "my phone charging slow": [
@@ -15299,6 +15361,10 @@
    ],
    [
     "2026-11-25",
+    true
+   ],
+   [
+    "2026-11-26",
     true
    ]
   ]
@@ -18633,6 +18699,115 @@
     "is 90 day fiance before the 90 days real",
     "what is 90 day fiance before the 90 days",
     "what is 90 days before today"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-26",
+    true
+   ]
+  ]
+ },
+ "aaron-rodgers-released-steelers": {
+  "time": "2026-11-26T16:44:08+00:00",
+  "query": "aaron rodgers released",
+  "in_suggest": true,
+  "suggest": {
+   "aaron rodgers released by the pittsburgh steelers": [
+    "was aaron rodgers released by the pittsburgh steelers",
+    "was aaron rodgers released by the pittsburgh steelers today"
+   ],
+   "what is aaron rodgers released by the pittsburgh steelers": [
+    "was aaron rodgers released by the pittsburgh steelers",
+    "was aaron rodgers released by the pittsburgh steelers today"
+   ],
+   "aaron rodgers released": [
+    "aaron rodgers released",
+    "aaron rodgers released from pittsburgh",
+    "aaron rodgers released why",
+    "aaron rodgers released reddit",
+    "aaron rodgers released from the pittsburgh steelers",
+    "aaron rodgers released or benched",
+    "aaron rodgers released meaning",
+    "aaron rodgers released interview",
+    "aaron rodgers released today",
+    "aaron rodgers released pat mcafee show"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-26",
+    true
+   ]
+  ]
+ },
+ "andy-taylor-duran-duran-dies": {
+  "time": "2026-11-26T16:44:09+00:00",
+  "query": "andy taylor duran duran",
+  "in_suggest": true,
+  "suggest": {
+   "andy taylor": [
+    "andy taylor",
+    "andy taylor duran duran",
+    "andy taylor cause of death",
+    "andy taylor death",
+    "andy taylor net worth",
+    "andy taylor wife",
+    "andy taylor died",
+    "andy taylor songs",
+    "andy taylor news",
+    "andy taylor duran duran cause of death"
+   ],
+   "who is andy taylor": [
+    "who is andy taylor",
+    "who is andy taylor that died",
+    "who is andy taylor from duran duran",
+    "who is andy taylor married to",
+    "who is andy taylor that passed away",
+    "who is andy taylor from duran duran married to",
+    "who is andy taylor poker player",
+    "andy taylor's girlfriend",
+    "who is andy taylor's wife",
+    "who is andy taylor and barney fife"
+   ],
+   "andy taylor duran duran": [
+    "andy taylor duran duran",
+    "andy taylor duran duran guitarist",
+    "andy taylor duran duran cause of death",
+    "andy taylor duran duran death",
+    "andy taylor duran duran net worth",
+    "andy taylor duran duran wife",
+    "andy taylor duran duran height",
+    "andy taylor duran duran family",
+    "andy taylor duran duran songs",
+    "andy taylor duran duran dead"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-26",
+    true
+   ]
+  ]
+ },
+ "macys-thanksgiving-parade-postponed-2026": {
+  "time": "2026-11-26T16:44:10+00:00",
+  "query": "macy's thanksgiving day parade postponed",
+  "in_suggest": true,
+  "suggest": {
+   "2026 macy's thanksgiving day parade postponement": [],
+   "what is 2026 macy's thanksgiving day parade postponement": [],
+   "macy's thanksgiving day parade postponed": [
+    "macy's thanksgiving day parade postponed",
+    "macy's thanksgiving day parade postponed 2026",
+    "macy's thanksgiving day parade postponed before",
+    "macy's thanksgiving day parade postponed to saturday due to storm",
+    "macy's thanksgiving day parade postponed until saturday",
+    "macy's thanksgiving day parade postponed till saturday",
+    "macy's thanksgiving day parade postponed due to weather",
+    "macy's thanksgiving day parade postponed to saturday due to weather",
+    "macy's thanksgiving day parade postponed to saturday",
+    "macy's thanksgiving day parade postponed why"
    ]
   },
   "history": [

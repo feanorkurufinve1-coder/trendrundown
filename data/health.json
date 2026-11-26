@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-26T16:32:28+00:00",
+ "checked": "2026-11-26T16:44:07+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -153,6 +153,18 @@
    "userCanonical": null
   },
   {
+   "url": "/x/aaron-rodgers-released-steelers",
+   "at": "2026-11-26T16:43:55+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/alaska-ranked-choice-voting",
    "at": "2026-11-26T13:48:24+00:00",
    "verdict": "NEUTRAL",
@@ -187,6 +199,18 @@
    "lastCrawlTime": "2026-11-06T17:25:50Z",
    "googleCanonical": "https://trendrundown.com/x/all-mlb-team",
    "userCanonical": "https://trendrundown.com/x/all-mlb-team"
+  },
+  {
+   "url": "/x/andy-taylor-duran-duran-dies",
+   "at": "2026-11-26T16:44:01+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
   },
   {
    "url": "/x/anthony-clark-death",
@@ -1116,6 +1140,18 @@
    "lastCrawlTime": "2026-11-21T22:30:12Z",
    "googleCanonical": "https://trendrundown.com/x/ligue-1",
    "userCanonical": "https://trendrundown.com/x/ligue-1"
+  },
+  {
+   "url": "/x/macys-thanksgiving-parade-postponed-2026",
+   "at": "2026-11-26T16:44:07+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
   },
   {
    "url": "/x/madden-movie-true-story",
@@ -2795,7 +2831,7 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 136,
+  "URL is unknown to Google": 139,
   "Crawled - currently not indexed": 65,
   "Discovered - currently not indexed": 26,
   "error": 1
