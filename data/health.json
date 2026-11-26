@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-26T11:02:10+00:00",
+ "checked": "2026-11-26T12:30:21+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -963,7 +963,7 @@
   },
   {
    "url": "/x/is-the-november-full-moon-a-supermoon",
-   "at": "2026-11-26T06:17:47+00:00",
+   "at": "2026-11-26T12:29:49+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1035,7 +1035,7 @@
   },
   {
    "url": "/x/jimmy-gomez-resigns-ethics-report",
-   "at": "2026-11-26T06:18:12+00:00",
+   "at": "2026-11-26T12:30:15+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1611,9 +1611,9 @@
   },
   {
    "url": "/x/teruaki-sato-cubs-contract",
-   "at": "2026-11-26T06:18:18+00:00",
+   "at": "2026-11-26T12:30:21+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -1803,7 +1803,7 @@
   },
   {
    "url": "/x/what-does-huss-mean",
-   "at": "2026-11-26T06:17:53+00:00",
+   "at": "2026-11-26T12:29:56+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2199,7 +2199,7 @@
   },
   {
    "url": "/x/what-is-tsa-confirmid",
-   "at": "2026-11-26T06:16:51+00:00",
+   "at": "2026-11-26T12:28:52+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2211,7 +2211,7 @@
   },
   {
    "url": "/x/what-is-win-the-mall",
-   "at": "2026-11-26T06:16:57+00:00",
+   "at": "2026-11-26T12:28:58+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2223,7 +2223,7 @@
   },
   {
    "url": "/x/what-time-does-gta-6-unlock",
-   "at": "2026-11-26T06:17:03+00:00",
+   "at": "2026-11-26T12:29:05+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2247,7 +2247,7 @@
   },
   {
    "url": "/x/when-does-new-congress-start",
-   "at": "2026-11-26T06:17:09+00:00",
+   "at": "2026-11-26T12:29:11+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2259,7 +2259,7 @@
   },
   {
    "url": "/x/when-will-social-security-run-out",
-   "at": "2026-11-26T06:17:15+00:00",
+   "at": "2026-11-26T12:29:17+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2271,7 +2271,7 @@
   },
   {
    "url": "/x/who-is-oobah-butler",
-   "at": "2026-11-26T06:17:22+00:00",
+   "at": "2026-11-26T12:29:24+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2283,7 +2283,7 @@
   },
   {
    "url": "/x/who-won-mvp-2026",
-   "at": "2026-11-26T06:17:28+00:00",
+   "at": "2026-11-26T12:29:30+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2307,7 +2307,7 @@
   },
   {
    "url": "/x/why-are-people-saying-ao3-is-back",
-   "at": "2026-11-26T06:17:35+00:00",
+   "at": "2026-11-26T12:29:37+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2319,7 +2319,7 @@
   },
   {
    "url": "/x/why-are-people-saying-dinosaurs-in-mexico",
-   "at": "2026-11-26T06:17:41+00:00",
+   "at": "2026-11-26T12:29:43+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2343,7 +2343,7 @@
   },
   {
    "url": "/x/why-are-people-saying-gta-6-is-woke",
-   "at": "2026-11-26T06:17:59+00:00",
+   "at": "2026-11-26T12:30:02+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2391,7 +2391,7 @@
   },
   {
    "url": "/x/why-are-people-saying-rip-fiona",
-   "at": "2026-11-26T06:18:06+00:00",
+   "at": "2026-11-26T12:30:09+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2735,9 +2735,9 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 127,
+  "URL is unknown to Google": 128,
   "Crawled - currently not indexed": 65,
-  "Discovered - currently not indexed": 30,
+  "Discovered - currently not indexed": 29,
   "error": 1
  }
 }
