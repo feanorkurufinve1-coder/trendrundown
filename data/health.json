@@ -1318,7 +1318,7 @@
   },
   {
    "url": "/x/new-snap-stocking-rules",
-   "at": "2026-11-26T17:26:48+00:00",
+   "at": "2026-11-26T23:46:53+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1330,7 +1330,7 @@
   },
   {
    "url": "/x/non-tender",
-   "at": "2026-11-26T17:26:54+00:00",
+   "at": "2026-11-26T23:46:59+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
