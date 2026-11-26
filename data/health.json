@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-26T10:17:53+00:00",
+ "checked": "2026-11-26T11:02:10+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -1047,7 +1047,7 @@
   },
   {
    "url": "/x/keepsake-sea-release-date",
-   "at": "2026-11-26T04:46:50+00:00",
+   "at": "2026-11-26T11:01:58+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1059,7 +1059,7 @@
   },
   {
    "url": "/x/kids-choice-awards-2026-date",
-   "at": "2026-11-26T04:46:56+00:00",
+   "at": "2026-11-26T11:02:04+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1071,7 +1071,7 @@
   },
   {
    "url": "/x/lame-duck-president",
-   "at": "2026-11-26T04:47:02+00:00",
+   "at": "2026-11-26T11:02:10+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
