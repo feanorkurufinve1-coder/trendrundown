@@ -862,7 +862,7 @@
   },
   {
    "url": "/x/is-amanda-nunes-retired",
-   "at": "2026-11-26T17:02:05+00:00",
+   "at": "2026-11-26T23:16:52+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -874,7 +874,7 @@
   },
   {
    "url": "/x/is-being-heumann-a-true-story",
-   "at": "2026-11-26T17:02:12+00:00",
+   "at": "2026-11-26T23:16:58+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -910,7 +910,7 @@
   },
   {
    "url": "/x/is-gta-6-coming-to-pc",
-   "at": "2026-11-26T17:02:18+00:00",
+   "at": "2026-11-26T23:17:04+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -922,7 +922,7 @@
   },
   {
    "url": "/x/is-leonida-a-real-place",
-   "at": "2026-11-26T17:02:25+00:00",
+   "at": "2026-11-26T23:17:11+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -946,9 +946,9 @@
   },
   {
    "url": "/x/is-mr-irrelevant-a-true-story",
-   "at": "2026-11-26T17:03:03+00:00",
+   "at": "2026-11-26T23:17:48+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -958,7 +958,7 @@
   },
   {
    "url": "/x/is-philomena-cunk-real",
-   "at": "2026-11-26T17:02:31+00:00",
+   "at": "2026-11-26T23:17:17+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -982,7 +982,7 @@
   },
   {
    "url": "/x/is-the-law-of-beasts-a-true-story",
-   "at": "2026-11-26T17:02:38+00:00",
+   "at": "2026-11-26T23:17:23+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1006,7 +1006,7 @@
   },
   {
    "url": "/x/is-thomas-massie-a-republican",
-   "at": "2026-11-26T17:02:44+00:00",
+   "at": "2026-11-26T23:17:29+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1042,7 +1042,7 @@
   },
   {
    "url": "/x/is-yellowjackets-season-4-the-last-season",
-   "at": "2026-11-26T17:02:50+00:00",
+   "at": "2026-11-26T23:17:35+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1054,7 +1054,7 @@
   },
   {
    "url": "/x/jensen-huang-resigns-nvidia",
-   "at": "2026-11-26T17:02:57+00:00",
+   "at": "2026-11-26T23:17:42+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1078,7 +1078,7 @@
   },
   {
    "url": "/x/keepsake-sea-release-date",
-   "at": "2026-11-26T17:03:35+00:00",
+   "at": "2026-11-26T23:18:19+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2146,9 +2146,9 @@
   },
   {
    "url": "/x/what-is-the-2011-jupiter-incident",
-   "at": "2026-11-26T17:03:09+00:00",
+   "at": "2026-11-26T23:17:54+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2374,7 +2374,7 @@
   },
   {
    "url": "/x/why-are-people-heading-to-cinemas-in-cat-ears",
-   "at": "2026-11-26T17:03:16+00:00",
+   "at": "2026-11-26T23:18:00+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2674,9 +2674,9 @@
   },
   {
    "url": "/x/why-is-everyone-mad-at-kroger",
-   "at": "2026-11-26T17:03:22+00:00",
+   "at": "2026-11-26T23:18:06+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2746,7 +2746,7 @@
   },
   {
    "url": "/x/why-is-there-a-d-in-fridge",
-   "at": "2026-11-26T17:03:29+00:00",
+   "at": "2026-11-26T23:18:12+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2838,8 +2838,8 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 156,
+  "URL is unknown to Google": 159,
   "Crawled - currently not indexed": 65,
-  "Discovered - currently not indexed": 10
+  "Discovered - currently not indexed": 7
  }
 }
