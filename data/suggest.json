@@ -17720,7 +17720,7 @@
   ]
  },
  "crowdstrike-zscaler-acquisition": {
-  "time": "2026-11-25T16:48:46+00:00",
+  "time": "2026-11-26T17:03:36+00:00",
   "query": "crowdstrike zscaler",
   "in_suggest": true,
   "suggest": {
@@ -17729,14 +17729,14 @@
    "crowdstrike zscaler": [
     "crowdstrike zscaler",
     "crowdstrike zscaler merger",
-    "crowdstrike zscaler deal",
     "crowdstrike zscaler acquisition",
+    "crowdstrike zscaler deal",
     "crowdstrike zscaler integration",
-    "crowdstrike zscaler press release",
     "crowdstrike zscaler partnership",
     "crowdstrike zscaler okta",
     "zscaler crowdstrike integration guide",
-    "zscaler crowdstrike exclusions"
+    "zscaler crowdstrike exclusions",
+    "zscaler crowdstrike posture check"
    ]
   },
   "history": [
@@ -17751,11 +17751,15 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "takata-airbag-recall-honda-toyota-november-2026": {
-  "time": "2026-11-25T16:48:46+00:00",
+  "time": "2026-11-26T17:03:37+00:00",
   "query": "takata airbag recall",
   "in_suggest": true,
   "suggest": {
@@ -17763,20 +17767,21 @@
     "takata airbag recall",
     "takata airbag recall vehicle list",
     "takata airbag recall list",
+    "takata airbag recall 2026",
+    "takata airbag recall toyota",
     "takata airbag recall check",
     "takata airbag recall honda",
     "takata airbag recall subaru",
     "takata airbag recall cars",
-    "takata airbag recall vehicle list toyota",
-    "takata airbag recall vin check",
-    "takata airbag recall mazda"
+    "takata airbag recall vehicle list toyota"
    ],
    "what is takata airbag recall": [
     "what is takata airbag recall",
     "what cars have takata airbag recalls",
     "what caused the takata airbag recall",
     "is takata airbag recall free",
-    "what years were takata airbags recalled"
+    "what years were takata airbags recalled",
+    "what cars are included in the takata airbag recall"
    ]
   },
   "history": [
@@ -17791,11 +17796,15 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "tarik-skubal-mets-contract": {
-  "time": "2026-11-25T16:48:48+00:00",
+  "time": "2026-11-26T17:03:38+00:00",
   "query": "tarik skubal mets contract",
   "in_suggest": true,
   "suggest": {
@@ -17804,24 +17813,24 @@
     "tarik skubal contract",
     "tarik skubal stats",
     "tarik skubal age",
+    "tarik skubal sued",
+    "tarik skubal jersey",
     "tarik skubal mets",
+    "tarik skubal lawsuit",
     "tarik skubal trade",
-    "tarik skubal wife",
-    "tarik skubal cubs",
-    "tarik skubal ethnicity",
-    "tarik skubal mets signing analysis"
+    "tarik skubal dodgers jersey"
    ],
    "what is tarik skubal": [
-    "what is tarik skubal era",
     "what is tarik skubal contract with the dodgers",
+    "what is tarik skubal's record with the dodgers",
     "what is tarik skubal ethnicity",
-    "what is tarik skubal record with the dodgers",
-    "what is tarik skubal nationality",
     "what is tarik skubal contract",
-    "what is tarik skubal's heritage",
-    "what is tarik skubal projected contract",
+    "what is tarik skubal's nationality",
+    "what is tarik skubal era",
     "what is tarik skubal nickname",
-    "what is tarik skubal's ethnic background"
+    "what is tarik skubal salary",
+    "what is tarik skubal's background",
+    "what is tarik skubal asking for in his contract"
    ],
    "tarik skubal mets contract": [
     "tarik skubal mets contract",
@@ -17839,6 +17848,10 @@
    ],
    [
     "2026-11-25",
+    true
+   ],
+   [
+    "2026-11-26",
     true
    ]
   ]
