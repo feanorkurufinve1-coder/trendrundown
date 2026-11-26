@@ -18471,7 +18471,7 @@
   ]
  },
  "caribbean-princess-outbreak-november-2026": {
-  "time": "2026-11-25T17:04:39+00:00",
+  "time": "2026-11-26T17:17:07+00:00",
   "query": "caribbean princess outbreak",
   "in_suggest": true,
   "suggest": {
@@ -18494,11 +18494,15 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "huawei-verdict-trade-secrets-bank-fraud": {
-  "time": "2026-11-25T17:04:40+00:00",
+  "time": "2026-11-26T17:17:08+00:00",
   "query": "huawei verdict",
   "in_suggest": true,
   "suggest": {
@@ -18515,11 +18519,15 @@
    [
     "2026-11-25",
     true
+   ],
+   [
+    "2026-11-26",
+    true
    ]
   ]
  },
  "pce-inflation-report-october-2026": {
-  "time": "2026-11-25T17:04:41+00:00",
+  "time": "2026-11-26T17:17:09+00:00",
   "query": "pce inflation report",
   "in_suggest": true,
   "suggest": {
@@ -18529,18 +18537,22 @@
     "pce inflation report",
     "pce inflation report today",
     "pce inflation report date",
-    "pce inflation report release date",
     "pce inflation report this week",
+    "pce inflation report release date",
     "pce inflation report expectations",
-    "pce inflation report release time",
     "pce inflation report today time",
     "pce inflation report gold reaction",
-    "pce inflation report time"
+    "pce inflation report time",
+    "pce inflation report release time"
    ]
   },
   "history": [
    [
     "2026-11-25",
+    true
+   ],
+   [
+    "2026-11-26",
     true
    ]
   ]
