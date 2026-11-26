@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-26T07:03:13+00:00",
+ "checked": "2026-11-26T08:01:58+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -382,7 +382,7 @@
   },
   {
    "url": "/x/delta-flights-delays-atlanta-november-22-2026",
-   "at": "2026-11-26T01:46:53+00:00",
+   "at": "2026-11-26T08:01:52+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -538,9 +538,9 @@
   },
   {
    "url": "/x/florida-tornado-warnings-kings-point-delray-beach",
-   "at": "2026-11-26T02:01:45+00:00",
+   "at": "2026-11-26T08:01:58+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2742,8 +2742,8 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 133,
+  "URL is unknown to Google": 134,
   "Crawled - currently not indexed": 65,
-  "Discovered - currently not indexed": 25
+  "Discovered - currently not indexed": 24
  }
 }
