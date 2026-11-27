@@ -17247,7 +17247,7 @@
   ]
  },
  "colts-release-daniel-jones": {
-  "time": "2026-11-26T17:26:55+00:00",
+  "time": "2026-11-27T17:32:02+00:00",
   "query": "colts release daniel jones",
   "in_suggest": true,
   "suggest": {
@@ -17289,11 +17289,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "palisades-fire-verdict-rinderknecht-guilty": {
-  "time": "2026-11-26T17:26:59+00:00",
+  "time": "2026-11-27T17:32:06+00:00",
   "query": "palisades fire verdict",
   "in_suggest": true,
   "suggest": {
@@ -17344,11 +17348,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "riemann-hypothesis-proof-claim-alpoge": {
-  "time": "2026-11-26T17:27:00+00:00",
+  "time": "2026-11-27T17:32:07+00:00",
   "query": "riemann hypothesis proof",
   "in_suggest": true,
   "suggest": {
@@ -17357,14 +17365,14 @@
    "riemann hypothesis proof": [
     "riemann hypothesis proof",
     "riemann hypothesis proof pdf",
-    "riemann hypothesis proof length",
     "riemann hypothesis proof explained",
+    "riemann hypothesis proof length",
+    "riemann hypothesis proof shortened",
     "riemann hypothesis proof simplified",
-    "riemann hypothesis proof lean",
-    "riemann hypothesis proof human",
-    "riemann hypothesis proof compression",
-    "riemann hypothesis proof claude",
-    "riemann hypothesis proof error"
+    "riemann hypothesis proof news",
+    "riemann hypothesis proof reduced",
+    "riemann hypothesis proof reddit",
+    "riemann hypothesis proof github"
    ]
   },
   "history": [
@@ -17390,6 +17398,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
@@ -17681,7 +17693,7 @@
   ]
  },
  "delta-flights-delays-atlanta-november-22-2026": {
-  "time": "2026-11-26T17:26:56+00:00",
+  "time": "2026-11-27T17:32:03+00:00",
   "query": "delta flights delays",
   "in_suggest": true,
   "suggest": {
@@ -17735,11 +17747,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "florida-tornado-warnings-kings-point-delray-beach": {
-  "time": "2026-11-26T17:26:57+00:00",
+  "time": "2026-11-27T17:32:04+00:00",
   "query": "florida tornado warnings",
   "in_suggest": true,
   "suggest": {
@@ -17778,25 +17794,29 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "tom-jackson-espn-dies": {
-  "time": "2026-11-26T17:27:03+00:00",
+  "time": "2026-11-27T17:32:11+00:00",
   "query": "tom jackson espn",
   "in_suggest": true,
   "suggest": {
    "tom jackson": [
     "tom jackson",
     "tom jackson cause of death",
-    "tom jackson nfl",
     "tom jackson espn cause of death",
-    "tom jackson wife",
+    "tom jackson nfl cause of death",
     "tom jackson broncos",
-    "tom jackson espn",
-    "tom jackson cause of death reddit",
+    "tom jackson nfl",
     "tom jackson cause of death broncos",
-    "tom jackson nfl cause of death"
+    "tom jackson wife",
+    "tom jackson how did he die",
+    "tom jackson espn"
    ],
    "what is tom jackson": [
     "what is tom jackson doing now",
@@ -17812,15 +17832,15 @@
    ],
    "tom jackson espn": [
     "tom jackson espn",
+    "tom jackson espn wife",
     "tom jackson espn now",
+    "tom jackson espn net worth",
     "tom jackson espn today",
     "tom jackson espn age",
     "tom jackson espn height",
     "tom jackson espn 2026",
     "tom jackson espn retired",
-    "tom jackson espn wife",
-    "tom jackson espn died",
-    "tom jackson espn net worth"
+    "tom jackson espn analyst"
    ]
   },
   "history": [
@@ -17842,6 +17862,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
@@ -18599,7 +18623,7 @@
   ]
  },
  "jimmy-gomez-resigns-ethics-report": {
-  "time": "2026-11-26T17:26:58+00:00",
+  "time": "2026-11-27T17:32:05+00:00",
   "query": "jimmy gomez resigns",
   "in_suggest": false,
   "suggest": {
@@ -18608,12 +18632,12 @@
     "jimmy gomez california",
     "jimmy gomez district",
     "jimmy gomez aipac",
+    "jimmy gomez congress",
     "jimmy gomez polls",
     "jimmy gomez investigation",
     "jimmy gomez wife",
     "jimmy gomez office",
-    "jimmy gomez primary",
-    "jimmy gomez allegations"
+    "jimmy gomez primary"
    ],
    "what is jimmy gomez": [],
    "jimmy gomez resigns": []
@@ -18630,11 +18654,15 @@
    [
     "2026-11-26",
     false
+   ],
+   [
+    "2026-11-27",
+    false
    ]
   ]
  },
  "teruaki-sato-cubs-contract": {
-  "time": "2026-11-26T17:27:01+00:00",
+  "time": "2026-11-27T17:32:08+00:00",
   "query": "teruaki sato cubs",
   "in_suggest": true,
   "suggest": {
@@ -18643,12 +18671,12 @@
     "teruaki sato stats",
     "teruaki sato cubs",
     "teruaki sato highlights",
-    "teruaki sato contract",
-    "teruaki sato phillies",
     "teruaki sato yankees",
-    "teruaki sato jersey",
+    "teruaki sato contract",
+    "teruaki sato cubs jersey",
     "teruaki sato mlb",
-    "teruaki sato defense"
+    "teruaki sato scouting report",
+    "teruaki sato phillies"
    ],
    "what is teruaki sato": [
     "what position is teruaki sato",
@@ -18657,7 +18685,8 @@
     "what does sato mean"
    ],
    "teruaki sato cubs": [
-    "teruaki sato cubs"
+    "teruaki sato cubs",
+    "teruaki sato cubs jersey"
    ]
   },
   "history": [
@@ -18672,11 +18701,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "thanksgiving-storm-travel-forecast-2026": {
-  "time": "2026-11-26T17:27:02+00:00",
+  "time": "2026-11-27T17:32:10+00:00",
   "query": "thanksgiving storm forecast",
   "in_suggest": true,
   "suggest": {
@@ -18687,7 +18720,7 @@
    "what is thanksgiving 2026 storms": [],
    "thanksgiving storm forecast": [
     "thanksgiving storm forecast",
-    "thanksgiving weather forecast texas",
+    "thanksgiving weather forecast los angeles",
     "thanksgiving weather forecast california",
     "thanksgiving weather forecast snow",
     "thanksgiving weather forecast 2025",
@@ -18709,6 +18742,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
