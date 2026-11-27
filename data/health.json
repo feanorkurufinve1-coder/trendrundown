@@ -46,7 +46,7 @@
  "urls": [
   {
    "url": "/",
-   "at": "2026-11-27T02:17:08+00:00",
+   "at": "2026-11-27T08:32:12+00:00",
    "verdict": "PASS",
    "coverageState": "Submitted and indexed",
    "robotsTxtState": "ALLOWED",
@@ -118,7 +118,7 @@
   },
   {
    "url": "/x/dane-cook-brother",
-   "at": "2026-11-27T02:16:56+00:00",
+   "at": "2026-11-27T08:31:59+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -130,7 +130,7 @@
   },
   {
    "url": "/x/cyber-monday",
-   "at": "2026-11-27T02:17:02+00:00",
+   "at": "2026-11-27T08:32:06+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -142,7 +142,7 @@
   },
   {
    "url": "/x/40-man-roster",
-   "at": "2026-11-27T02:17:15+00:00",
+   "at": "2026-11-27T08:32:19+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -166,7 +166,7 @@
   },
   {
    "url": "/x/alaska-ranked-choice-voting",
-   "at": "2026-11-27T02:17:21+00:00",
+   "at": "2026-11-27T08:32:25+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -178,7 +178,7 @@
   },
   {
    "url": "/x/alicias-law-the-good-wife",
-   "at": "2026-11-27T02:17:27+00:00",
+   "at": "2026-11-27T08:32:32+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -190,7 +190,7 @@
   },
   {
    "url": "/x/all-mlb-team",
-   "at": "2026-11-27T02:17:33+00:00",
+   "at": "2026-11-27T08:32:38+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -214,7 +214,7 @@
   },
   {
    "url": "/x/anthony-clark-death",
-   "at": "2026-11-27T02:17:39+00:00",
+   "at": "2026-11-27T08:32:44+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -250,7 +250,7 @@
   },
   {
    "url": "/x/bright-star-eastern-sky-morning",
-   "at": "2026-11-27T02:17:45+00:00",
+   "at": "2026-11-27T08:32:51+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -286,7 +286,7 @@
   },
   {
    "url": "/x/camp-flog-gnaw-livestream",
-   "at": "2026-11-27T02:17:52+00:00",
+   "at": "2026-11-27T08:32:57+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -310,7 +310,7 @@
   },
   {
    "url": "/x/carter-faith",
-   "at": "2026-11-27T02:17:58+00:00",
+   "at": "2026-11-27T08:33:04+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -322,7 +322,7 @@
   },
   {
    "url": "/x/cliff-booth-release-date",
-   "at": "2026-11-27T02:18:04+00:00",
+   "at": "2026-11-27T08:33:10+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -334,7 +334,7 @@
   },
   {
    "url": "/x/cma-awards-2026-date",
-   "at": "2026-11-27T02:18:10+00:00",
+   "at": "2026-11-27T08:33:17+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -358,7 +358,7 @@
   },
   {
    "url": "/x/coachella-2027-tickets-on-sale",
-   "at": "2026-11-27T02:18:17+00:00",
+   "at": "2026-11-27T08:33:23+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -394,7 +394,7 @@
   },
   {
    "url": "/x/dan-hicks-death",
-   "at": "2026-11-27T02:18:23+00:00",
+   "at": "2026-11-27T08:33:30+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2266,7 +2266,7 @@
   },
   {
    "url": "/x/what-temperature-should-a-refrigerator-be",
-   "at": "2026-11-27T02:18:29+00:00",
+   "at": "2026-11-27T08:33:36+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2314,7 +2314,7 @@
   },
   {
    "url": "/x/when-does-the-boy-who-stole-billions-come-out",
-   "at": "2026-11-27T02:18:35+00:00",
+   "at": "2026-11-27T08:33:42+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
