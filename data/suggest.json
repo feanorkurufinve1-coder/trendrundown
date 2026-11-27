@@ -19544,5 +19544,74 @@
     true
    ]
   ]
+ },
+ "air-force-cloud-one-hack": {
+  "time": "2026-11-27T16:50:49+00:00",
+  "query": "air force cloud one hack",
+  "in_suggest": false,
+  "suggest": {
+   "hack of the u.s. air force cloud one computing platform": [],
+   "what is hack of the u.s. air force cloud one computing platform": [],
+   "air force cloud one hack": [
+    "air force cloud one hacked"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-27",
+    false
+   ]
+  ]
+ },
+ "issaquah-tornado-warning-thanksgiving-2026": {
+  "time": "2026-11-27T16:50:50+00:00",
+  "query": "tornado warning issaquah",
+  "in_suggest": true,
+  "suggest": {
+   "thanksgiving tornado warning for issaquah, snoqualmie and north bend, washington": [],
+   "what is thanksgiving tornado warning for issaquah, snoqualmie and north bend, washington": [],
+   "tornado warning issaquah": [
+    "tornado warning issaquah",
+    "tornado warning issaquah wa",
+    "is there a tornado warning in washington",
+    "is there a tornado warning in effect right now",
+    "is there a tornado watch right now",
+    "is there a tornado warning in missouri today",
+    "is we under a tornado watch"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-27",
+    true
+   ]
+  ]
+ },
+ "kuwait-drone-attack-two-italians-killed": {
+  "time": "2026-11-27T16:50:51+00:00",
+  "query": "kuwait drone attack",
+  "in_suggest": true,
+  "suggest": {
+   "drone attack in kuwait that killed two italian technicians": [],
+   "what is drone attack in kuwait that killed two italian technicians": [],
+   "kuwait drone attack": [
+    "kuwait drone attack",
+    "kuwait drone attack today",
+    "kuwait drone attack yesterday",
+    "kuwait drone attack now",
+    "kuwait drone attack airport",
+    "kuwait drone attack video",
+    "kuwait drone attack news",
+    "kuwait drone attack by iran",
+    "kuwait drone attack deaths",
+    "kuwait drone attack location"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-27",
+    true
+   ]
+  ]
  }
 }
