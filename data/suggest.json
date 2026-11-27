@@ -4948,15 +4948,15 @@
   ]
  },
  "what-is-pico-park": {
-  "time": "2026-11-26T15:33:41+00:00",
+  "time": "2026-11-27T15:48:51+00:00",
   "query": "what is pico park",
   "in_suggest": true,
   "suggest": {
    "pico park": [
     "pico park",
     "pico park 2",
-    "pico park 3",
     "pico park sonic",
+    "pico park 3",
     "pico park switch",
     "pico park pico rivera",
     "pico park game",
@@ -4978,10 +4978,6 @@
    ]
   },
   "history": [
-   [
-    "2026-11-13",
-    true
-   ],
    [
     "2026-11-14",
     true
@@ -5032,6 +5028,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
@@ -14686,7 +14686,7 @@
   ]
  },
  "what-is-the-i-got-so-mad-meme": {
-  "time": "2026-11-26T15:33:42+00:00",
+  "time": "2026-11-27T15:48:52+00:00",
   "query": "what is the i got so mad meme",
   "in_suggest": true,
   "suggest": {
@@ -14751,11 +14751,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "why-are-people-saying-julia-stiles-went-to-juilliard": {
-  "time": "2026-11-26T15:33:43+00:00",
+  "time": "2026-11-27T15:48:54+00:00",
   "query": "why are people saying julia stiles went to juilliard",
   "in_suggest": true,
   "suggest": {
@@ -14832,11 +14836,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "why-are-people-trying-to-move-the-bean": {
-  "time": "2026-11-26T15:33:45+00:00",
+  "time": "2026-11-27T15:48:55+00:00",
   "query": "why are people trying to move the bean",
   "in_suggest": true,
   "suggest": {
@@ -14890,11 +14898,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "why-is-my-washing-machine-dripping-water-inside": {
-  "time": "2026-11-26T15:33:47+00:00",
+  "time": "2026-11-27T15:48:57+00:00",
   "query": "why is my washing machine dripping water inside",
   "in_suggest": true,
   "suggest": {
@@ -14986,6 +14998,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
