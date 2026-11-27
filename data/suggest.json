@@ -10388,21 +10388,21 @@
   ]
  },
  "dan-hicks-death": {
-  "time": "2026-11-26T18:33:41+00:00",
+  "time": "2026-11-27T18:48:43+00:00",
   "query": "dan hicks death",
   "in_suggest": true,
   "suggest": {
    "dan hicks": [
-    "dan hicks funeral",
     "dan hicks",
+    "dan hicks funeral",
     "dan hicks sportscaster",
+    "dan hicks nbc",
     "dan hicks death cause",
     "dan hicks and the hot licks albums",
     "dan hicks and the hot licks songs",
     "dan hicks songs",
     "dan hicks musician",
-    "dan hicks actor",
-    "dan hicks wife"
+    "dan hicks actor"
    ],
    "what is dan hicks": [
     "what is dan hicks acute illness",
@@ -10430,10 +10430,6 @@
    ]
   },
   "history": [
-   [
-    "2026-11-13",
-    true
-   ],
    [
     "2026-11-14",
     true
@@ -10485,11 +10481,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "did-scott-colom-win": {
-  "time": "2026-11-26T18:33:44+00:00",
+  "time": "2026-11-27T18:48:46+00:00",
   "query": "did scott colom win",
   "in_suggest": true,
   "suggest": {
@@ -10519,6 +10519,7 @@
    ],
    "scott colom win": [
     "scott colom win yet",
+    "scott colom wins reddit",
     "scott colom win or not",
     "scott colom wins by how many votes",
     "scott colom win margin",
@@ -10526,10 +10527,6 @@
    ]
   },
   "history": [
-   [
-    "2026-11-13",
-    true
-   ],
    [
     "2026-11-14",
     true
@@ -10580,6 +10577,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
@@ -12047,7 +12048,7 @@
   ]
  },
  "anthony-clark-death": {
-  "time": "2026-11-26T18:33:40+00:00",
+  "time": "2026-11-27T18:48:42+00:00",
   "query": "anthony clark death",
   "in_suggest": true,
   "suggest": {
@@ -12055,13 +12056,13 @@
     "anthony clark cause of death",
     "anthony clark",
     "anthony clark barbershop",
+    "anthony clark comedian",
     "anthony clark net worth",
     "anthony clark barbershop 3",
     "anthony clark fifa",
-    "anthony clark actor today",
     "anthony clark movies and tv shows",
     "anthony clark akron ohio",
-    "anthony clark hacker"
+    "anthony clark what happened"
    ],
    "what is anthony clark": [
     "what is anthony clark doing now",
@@ -12081,15 +12082,10 @@
     "anthony clark death reaction",
     "anthony clark death cause",
     "anthony clark died",
-    "anthony clark hacker death",
-    "anthony clark fifa death"
+    "anthony clark hacker death"
    ]
   },
   "history": [
-   [
-    "2026-11-13",
-    true
-   ],
    [
     "2026-11-14",
     true
@@ -12141,11 +12137,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "hegseth-tomb-guard-medal": {
-  "time": "2026-11-26T18:33:45+00:00",
+  "time": "2026-11-27T18:48:47+00:00",
   "query": "hegseth tomb guard medal",
   "in_suggest": true,
   "suggest": {
@@ -12182,10 +12182,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     false
    ],
@@ -12236,11 +12232,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "iran-bahrain-radar-strike": {
-  "time": "2026-11-26T18:33:46+00:00",
+  "time": "2026-11-27T18:48:48+00:00",
   "query": "iran bahrain radar",
   "in_suggest": true,
   "suggest": {
@@ -12254,7 +12254,7 @@
     "iran news today",
     "iran economy",
     "iran flag",
-    "iran currency"
+    "iran attacks"
    ],
    "what is iran": [
     "what is iran's currency",
@@ -12278,10 +12278,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -12332,11 +12328,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "jensen-huang-resigns-nvidia": {
-  "time": "2026-11-26T18:33:47+00:00",
+  "time": "2026-11-27T18:48:50+00:00",
   "query": "why did jensen huang resign",
   "in_suggest": true,
   "suggest": {
@@ -12344,22 +12344,22 @@
     "jensen huang",
     "jensen huang wife",
     "jensen huang affairs",
-    "jensen huang memes",
     "jensen huang net worth",
-    "jensen huang dennys",
-    "jensen huang linkedin",
-    "jensen huang news",
+    "jensen huang memes",
+    "jensen huang height",
     "jensen huang affairs women",
-    "jensen huang height"
+    "jensen huang linkedin",
+    "jensen huang dennys",
+    "jensen huang leather jacket"
    ],
    "what is jensen huang": [
-    "what is jensen huang's net worth",
-    "what is jensen huang accused of doing",
+    "what is jensen huang net worth",
+    "what is jensen huang",
     "what is jensen huang's ethnicity",
     "what is jensen huang nationality",
     "what is jensen huang's wife's name",
     "what is jensen huang's religion",
-    "what is jensen huang",
+    "what is jensen huang wife saying",
     "what is jensen huang accused of",
     "what is jensen huang educational background",
     "what is jensen huang's background"
@@ -12377,6 +12377,7 @@
     "why did jensen huang resign over an affair"
    ],
    "jensen huang resign": [
+    "jensen huang resign",
     "jensen huang resign polymarket",
     "jensen huang resign or fired",
     "jensen huang resignation kalshi",
@@ -12385,15 +12386,10 @@
     "jensen huang resignation letter to board",
     "jensen huang resigns why",
     "jensen huang resigning from nvidia",
-    "jensen huang resignation letter",
-    "jensen huang resigns nyt"
+    "jensen huang resignation letter"
    ]
   },
   "history": [
-   [
-    "2026-11-13",
-    true
-   ],
    [
     "2026-11-14",
     true
@@ -12444,6 +12440,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
@@ -13152,7 +13152,7 @@
   ]
  },
  "did-avril-lavigne-have-a-baby": {
-  "time": "2026-11-26T18:33:43+00:00",
+  "time": "2026-11-27T18:48:44+00:00",
   "query": "did avril lavigne have a baby",
   "in_suggest": true,
   "suggest": {
@@ -13164,8 +13164,8 @@
     "avril lavigne 2026",
     "avril lavigne sk8er boi",
     "avril lavigne age",
-    "avril lavigne net worth",
     "avril lavigne i'm with you",
+    "avril lavigne net worth",
     "avril lavigne costume"
    ],
    "what is avril lavigne": [
@@ -13257,11 +13257,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "new-orleans-cruise-ship-collision": {
-  "time": "2026-11-26T18:33:49+00:00",
+  "time": "2026-11-27T18:48:52+00:00",
   "query": "new orleans cruise ship collision",
   "in_suggest": true,
   "suggest": {
@@ -13333,6 +13337,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
@@ -13881,7 +13889,7 @@
   ]
  },
  "miami-airport-plane-collision-copa-ups": {
-  "time": "2026-11-26T18:33:48+00:00",
+  "time": "2026-11-27T18:48:51+00:00",
   "query": "miami airport plane collision",
   "in_suggest": true,
   "suggest": {
@@ -13958,6 +13966,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
