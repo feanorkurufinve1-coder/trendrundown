@@ -1,0 +1,48 @@
+{
+ "news": true,
+ "kind": "event",
+ "subject": "Drone attack in Kuwait that killed two Italian technicians (Nov. 26, 2026)",
+ "query": "kuwait drone attack",
+ "title": "Kuwait drone attack: Two Italian technicians killed; Iran denies role",
+ "answer": "A drone attack on a Kuwaiti military air defense site killed two Italian technicians working for defense contractor Rheinmetall Italia around 2 p.m. local time on Nov. 26, 2026, Italian and Kuwaiti officials said. Kuwait and Italy blamed Iran, which denied any involvement. A Kuwaiti and a Pakistani worker were also wounded.",
+ "in_the_news": "The deaths pulled a European country directly into the fallout of the U.S.-Iran war, and European Commission President Ursula von der Leyen responded by calling for more pressure on Tehran. Kuwait, which hosts U.S. forces, has been one of the Gulf states most often targeted.",
+ "body": "Italian Foreign Minister Antonio Tajani told the Senate that several Iranian drones struck Kuwaiti military installations, including the facility where the two men worked, and that there was a powerful explosion. Kuwait's armed forces said several Iranian drones were intercepted over the country and that falling fragments injured four people; the two Italians later died of their injuries. Reports describe the target as an air defense radar or surveillance site, which Kuwait's Defense Ministry called a \"vital site.\" According to Al Jazeera, Kuwaiti officials were meeting an Italian delegation that included the Italian ambassador when the drones arrived.\n\nIran rejected the accusation. Its embassy in Rome \"categorically\" denied that Iran was behind the attack while offering condolences, and armed forces spokesman Abolfazl Shekarchi said Iran had carried out no military operation in the region, blaming a false-flag attack by the United States and Israel. Foreign Minister Abbas Araghchi called the incident suspicious and offered a joint investigation with Italy and Kuwait. Kuwait's foreign minister called the strike a \"heinous Iranian aggression.\" Italian Prime Minister Giorgia Meloni expressed her deepest sorrow to the families. Saudi Arabia said it held Tehran responsible, Bahrain asked the U.N. Security Council to hold Iran accountable, and Qatar warned that repeated strikes on Kuwait undermine diplomacy.\n\nHow the Gulf front got here, in dates: the war began in late February 2026 with U.S. and Israeli strikes on Iran. On Oct. 8, Italy told its parliament it would move most of its troops out of Kuwait, leaving about 10 personnel there. Earlier in November, Iran's army confirmed a drone attack on Kuwait's Ali Al Salem air base. Around Nov. 18, as attacks on Gulf states picked up after U.S. strikes on an Iranian missile launch site, Kuwait activated its air defenses against Iranian drones, which Al Jazeera described as the first such activation since early September. On Nov. 26, the attack that killed the two Italians followed.\n\nThe attack comes as shipping through the Strait of Hormuz remains under pressure. The International Maritime Organization has recorded 141 attacks on commercial ships since February, including at least 15 in November, and the U.S. expanded its blockade of Iranian ports this month. Qatar has been trying to revive U.S.-Iran talks.\n\nWhat happens next depends on the investigation. Iran has proposed a joint probe, Bahrain has taken the matter to the Security Council, and von der Leyen said Europe must \"step up pressure on Iran.\"",
+ "faq": [
+  {
+   "q": "Who was killed in the Kuwait drone attack?",
+   "a": "Two Italian technicians employed by Rheinmetall Italia, a defense company, according to Italy's Foreign Ministry. A Kuwaiti national and a Pakistani national were wounded."
+  },
+  {
+   "q": "Did Iran admit to the Kuwait attack?",
+   "a": "No. Iran's embassy in Rome, its armed forces spokesman and its foreign minister all denied involvement, and Iran suggested a joint investigation with Italy and Kuwait."
+  },
+  {
+   "q": "Were American troops affected?",
+   "a": "No U.S. casualties were reported in this attack. Kuwait hosts U.S. forces, and Iran has targeted the country several times during the war."
+  },
+  {
+   "q": "Why were Italians in Kuwait?",
+   "a": "The two victims were civilian technicians working for Rheinmetall Italia at a Kuwaiti military facility. Italy also kept a small military contingent of about 10 personnel in Kuwait after announcing in October that it would move most of its troops out."
+  }
+ ],
+ "links": [
+  [
+   "Euronews",
+   "Iran denies responsibility for Kuwait drone strike that killed two Italians",
+   "https://www.euronews.com/2026/11/27/iran-denies-responsibility-for-kuwait-drone-strike-that-killed-two-italians"
+  ],
+  [
+   "Al Jazeera",
+   "Two Italians killed by 'drone strike debris' in Kuwait",
+   "https://www.aljazeera.com/news/2026/11/26/two-italians-killed-after-iranian-drones-strike-facility-says-kuwait"
+  ],
+  [
+   "CBS News",
+   "Iran accused of deadly drone attack in Kuwait that sparks EU call to step up pressure on Tehran",
+   "https://www.cbsnews.com/live-updates/iran-war-us-military-ai-weapons-oil/"
+  ]
+ ],
+ "image_prompt": "A single small military drone silhouette flying high in a hazy pale desert sky at dusk, wide empty sky, minimalist, no text",
+ "made": "2026-11-27T17:00:00Z",
+ "first": "2026-11-27T17:00:00Z"
+}

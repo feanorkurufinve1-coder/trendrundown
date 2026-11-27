@@ -1,0 +1,58 @@
+{
+ "news": true,
+ "kind": "event",
+ "subject": "Hack of the U.S. Air Force Cloud One computing platform (November 2026)",
+ "query": "air force cloud one hack",
+ "title": "Air Force Cloud One hack: What did the hackers reach? Still unknown",
+ "answer": "Hackers broke into Cloud One, the U.S. Air Force's flagship cloud computing platform, Reuters reported on Nov. 27, 2026, citing three people familiar with the matter. The intrusion was discovered within roughly the past month during upgrade work. Who the hackers are, and whether any data was stolen, has not been established.",
+ "in_the_news": "Cloud One runs scores of Air Force applications, from pay and personnel records to logistics and munitions tracking, so a break-in raises immediate questions about military readiness. The report also lands while the federal government is dealing with a string of other recently disclosed cyber incidents.",
+ "body": "According to the Reuters report, carried by Defense News and other outlets, the breach came to light while the system was being upgraded. One source said the intruders used a software flaw to reach the platform's control plane, which the person compared to a universal remote. In theory, that level of access could let someone look up the operational status of aircraft or the movement of spare parts, but it is not known whether the hackers did anything of the kind. Reuters could not identify the vulnerability, the attackers or the full scope of the intrusion.\n\nThe fallout is already visible inside the Air Force. Sources told Reuters that work to move back-office applications onto Cloud One has been paused, that updates to applications already on the platform were blocked for a time, and that some users lost their administrator rights. One person said U.S. Cyber Command was brought in to help investigate; Cyber Command did not respond to a request for comment. The Air Force said it does not comment on the security posture or status of specific networks and systems and that it continuously takes steps to protect its information and mission capabilities.\n\nWhat Cloud One is, in plain terms: instead of every Air Force office running its own servers, Cloud One is a shared platform, started in 2017, where military applications run on commercial clouds from Microsoft, Amazon, Oracle and Google, with the Air Force managing security on top. Programs hosted there include personnel, pay, logistics and maintenance systems, a command-and-control tool that pulls together air defense radar feeds from across North America, and a system that tracks bombs and missiles at more than 200 Air Force locations. The \"control plane\" mentioned in the report is the management layer of a cloud: the switches that create, change and shut down everything running on it. Reaching it is more serious than breaking into a single application, because it can give a view across many of them at once. SAIC was the platform's prime contractor until 2025, when Leidos took over. In a 2023 commentary, Cloud One's leadership described a \"100% success rate\" against penetration attempts.\n\nThe incident adds to a busy year for federal cybersecurity. In July 2026, the Department of Homeland Security confirmed that hackers had reached its Homeland Security Information Network, an intelligence-sharing system, during late May and early June. Reuters also counted at least six other recently disclosed incidents, including two at the FBI, one at the Treasury and one affecting at least two intelligence agencies. Investigators have not publicly linked any of them to the Cloud One intrusion.\n\nThe Air Force has not confirmed the breach on the record or said when paused migrations will resume.",
+ "faq": [
+  {
+   "q": "Who hacked the Air Force Cloud One platform?",
+   "a": "That has not been established. Reuters said it could not determine the identity of the hackers, and no government agency has publicly attributed the intrusion to any country or group."
+  },
+  {
+   "q": "Was personal data of airmen stolen?",
+   "a": "It is not known. Cloud One hosts personnel and pay applications, but Reuters said it could not establish whether any data was taken. The Air Force has not issued a notice to service members."
+  },
+  {
+   "q": "Which companies run Cloud One?",
+   "a": "The Air Force manages it, and the computing power comes from Microsoft, Amazon, Oracle and Google. Leidos has been the prime contractor since 2025, after SAIC; Leidos referred questions to the Air Force."
+  },
+  {
+   "q": "Is this the same as the 2025 Air Force SharePoint incident?",
+   "a": "No. On Oct. 1, 2025, the Air Force acknowledged a separate privacy-related issue tied to SharePoint permissions. Nothing reported so far connects that episode to the Cloud One intrusion."
+  }
+ ],
+ "links": [
+  [
+   "Defense News (Reuters)",
+   "Hackers breach US Air Force flagship Cloud One computing platform",
+   "https://www.defensenews.com/pentagon/2026/11/27/hackers-breach-us-air-force-flagship-cloud-one-computing-platform/"
+  ],
+  [
+   "Silicon Republic",
+   "Reuters: Hackers breach US Air Force's cloud computing platform",
+   "https://www.siliconrepublic.com/enterprise/hackers-breach-us-air-force-flagship-cloud-computing-platform"
+  ],
+  [
+   "Air Force Life Cycle Management Center",
+   "Cloud One expands in midst of Great Power Competition",
+   "https://www.aflcmc.af.mil/NEWS/Article/3903974/cloud-one-expands-in-midst-of-great-power-competition/"
+  ],
+  [
+   "TechCrunch",
+   "US government says it got hacked again",
+   "https://techcrunch.com/2026/07/02/us-government-says-it-got-hacked-again/"
+  ],
+  [
+   "The Register",
+   "Air Force admits SharePoint privacy issue as reports trickle out of possible breach",
+   "https://www.theregister.com/2025/10/01/us_air_force_investigates_breach/"
+  ]
+ ],
+ "image_prompt": "A single open steel padlock resting on a dark green circuit board, cool blue light, shallow depth of field, close-up, no text",
+ "made": "2026-11-27T16:50:00Z",
+ "first": "2026-11-27T16:50:00Z"
+}

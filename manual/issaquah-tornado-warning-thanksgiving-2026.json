@@ -1,0 +1,58 @@
+{
+ "news": true,
+ "kind": "event",
+ "subject": "Thanksgiving tornado warning for Issaquah, Snoqualmie and North Bend, Washington (Nov. 26, 2026)",
+ "query": "tornado warning issaquah",
+ "title": "Tornado warning Issaquah: Was there a tornado? A brief landspout, no damage",
+ "answer": "The National Weather Service in Seattle issued a rare tornado warning for Issaquah, Snoqualmie and North Bend, Washington, at 11:58 a.m. on Thanksgiving Day, Nov. 26, 2026, after a landspout was spotted near Renton. The spinning column faded near Snoqualmie around 12:08 p.m., the warning expired at 12:15 p.m., and no damage or injuries were reported.",
+ "in_the_news": "Tornado warnings almost never sound in the Seattle area; the last one from NWS Seattle came in November 2024. Phones buzzed with a \"take cover now\" alert in the middle of Thanksgiving preparations, and many residents went looking for what had actually happened.",
+ "body": "The landspout was reported near Renton at 11:40 a.m., moving east at about 25 mph, according to the Weather Service alert quoted by MyNorthwest. The warning covered central King County, including Issaquah, Snoqualmie and North Bend, with Fall City, Mirrormont, Tanner, Hobart and Preston also listed as possibly affected. Local stations reported that the warned area held up to 83,103 people, 20 schools and one hospital. The alert told people to shelter in a basement or an interior room and warned of possible damage to roofs, mobile homes and vehicles, along with pea-sized hail. KOMO reported that a resident had seen a funnel cloud. The circulation weakened and dissipated near Snoqualmie before reaching the larger towns farther east.\n\nThe storm did not end there. At 12:44 p.m., forecasters put out a special weather statement for another strong thunderstorm over Covington, moving east at 35 mph and capable of producing a landspout, winds above 40 mph and penny-sized hail. That statement ran until 1:45 p.m. for parts of central King and northwest Pierce counties, from Puyallup and Auburn east toward Snoqualmie Pass.\n\nWhat a landspout is: a landspout is a small, usually weak tornado that grows from the ground up. Winds colliding near the surface start a shallow spin, and when a developing shower or thunderstorm passes overhead, its updraft stretches that spin upward into a thin, rope-like funnel. A classic tornado works the other way, coming down from a big rotating storm cloud called a supercell. Landspouts typically last less than 15 minutes and travel short distances, and they often slip under the radar beam, so a spotter report is frequently the first sign of one. The National Weather Service still treats them as tornadoes, because the strongest can do real damage.\n\nWestern Washington's tornado record shows why the alert caught people off guard. KIRO 7 chief meteorologist Morgan Palmer said Washington averages only two to three tornadoes a year. The last NWS Seattle tornado warning before Thanksgiving was issued on Nov. 20, 2024, for Grays Harbor County, and NWS Portland warned Pacific County on Nov. 5, 2025. The region's last damaging tornado struck Port Orchard on Dec. 18, 2018: an EF-2 with estimated winds of 120 to 130 mph that damaged about 400 homes and businesses.\n\nForecasters expected the thunderstorm threat to fade by early evening on Thanksgiving.",
+ "faq": [
+  {
+   "q": "Did a tornado touch down in Issaquah?",
+   "a": "The Weather Service said a landspout, a weak type of tornado, was on the ground near Renton before 12 p.m. It dissipated near Snoqualmie around 12:08 p.m. No damage was reported in Issaquah or anywhere else along its path."
+  },
+  {
+   "q": "How long did the Issaquah tornado warning last?",
+   "a": "About 17 minutes. It was issued at 11:58 a.m. on Nov. 26, 2026, and expired at 12:15 p.m. Pacific time."
+  },
+  {
+   "q": "Is a tornado warning the same as a tornado watch?",
+   "a": "No. A watch means conditions could produce tornadoes in the coming hours. A warning means a tornado has been seen or indicated by radar, and people in the path should take shelter immediately."
+  },
+  {
+   "q": "When was the last damaging tornado in western Washington?",
+   "a": "On Dec. 18, 2018, an EF-2 tornado hit Port Orchard in Kitsap County, damaging about 400 homes and businesses, according to KIRO 7."
+  }
+ ],
+ "links": [
+  [
+   "MyNorthwest",
+   "Thanksgiving tornado warning expires after landspout near Renton; no damage reported",
+   "https://mynorthwest.com/pacific-northwest-weather/tornado-warning/4305005"
+  ],
+  [
+   "KIRO 7",
+   "Tornado warning in Issaquah, North Bend",
+   "https://www.kiro7.com/news/local/tornado-warning-issaquah-north-bend/5YVGHXMELFHTHFL6IQPJPBW5TY/"
+  ],
+  [
+   "KOMO News",
+   "NWS Seattle issues rare tornado warning for King County on Thanksgiving Day",
+   "https://komonews.com/news/local/nws-seattle-issues-tornado-warning-for-issaquah-snoqualmie-north-bend-weather-storm-emergency-school-hospital-thanskgiving"
+  ],
+  [
+   "NonStop Local",
+   "Tornado observed near Issaquah, National Weather Service says",
+   "https://www.nbcrightnow.com/news/tornado-observed-near-issaquah-national-weather-service-says/article_69223ad4-7b3f-5595-a1eb-aa834fbed039.html"
+  ],
+  [
+   "National Weather Service",
+   "Spotter guide: Non-supercell tornadoes",
+   "https://www.weather.gov/spotterguide/non_supercell"
+  ]
+ ],
+ "image_wiki": "Landspout",
+ "made": "2026-11-27T16:55:00Z",
+ "first": "2026-11-27T16:55:00Z"
+}
