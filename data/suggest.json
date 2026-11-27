@@ -9846,14 +9846,14 @@
   ]
  },
  "exhibition-game": {
-  "time": "2026-11-26T18:03:36+00:00",
+  "time": "2026-11-27T18:18:44+00:00",
   "query": "what is an exhibition game in basketball",
   "in_suggest": true,
   "suggest": {
    "exhibition game": [
     "exhibition game",
-    "exhibition game meaning",
     "exhibition game basketball",
+    "exhibition game meaning",
     "exhibition games today",
     "exhibition games college basketball",
     "exhibition game basketball meaning",
@@ -9897,10 +9897,6 @@
    ]
   },
   "history": [
-   [
-    "2026-11-13",
-    true
-   ],
    [
     "2026-11-14",
     true
@@ -9952,11 +9948,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "game-time-decision": {
-  "time": "2026-11-26T18:03:40+00:00",
+  "time": "2026-11-27T18:18:48+00:00",
   "query": "game time decision meaning",
   "in_suggest": true,
   "suggest": {
@@ -10011,10 +10011,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -10065,11 +10061,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "mutual-option": {
-  "time": "2026-11-26T18:03:47+00:00",
+  "time": "2026-11-27T18:18:54+00:00",
   "query": "what is a mutual option in baseball",
   "in_suggest": true,
   "suggest": {
@@ -10117,10 +10117,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -10171,11 +10167,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "nba-draft": {
-  "time": "2026-11-26T18:03:48+00:00",
+  "time": "2026-11-27T18:18:55+00:00",
   "query": "what is the nba draft",
   "in_suggest": true,
   "suggest": {
@@ -10185,11 +10185,11 @@
     "nba draft 2027",
     "nba draft 2027 mock",
     "nba draft 2025",
+    "nba draft projections",
     "nba draft results",
     "nba draft 2024",
-    "nba draft mock",
-    "nba draft projections",
-    "nba draft lottery"
+    "nba draft order 2026",
+    "nba draft order"
    ],
    "what is nba draft": [
     "what is nba draft",
@@ -10218,10 +10218,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -10272,11 +10268,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "tri-series-cricket": {
-  "time": "2026-11-26T18:03:55+00:00",
+  "time": "2026-11-27T18:19:02+00:00",
   "query": "what is a tri series in cricket",
   "in_suggest": true,
   "suggest": {
@@ -10330,10 +10330,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -10383,6 +10379,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
@@ -11083,7 +11083,7 @@
   ]
  },
  "first-black-senator-from-mississippi": {
-  "time": "2026-11-26T18:03:38+00:00",
+  "time": "2026-11-27T18:18:45+00:00",
   "query": "who was the first black senator from mississippi",
   "in_suggest": true,
   "suggest": {
@@ -11112,15 +11112,10 @@
     "first black senator ms",
     "first black politician in mississippi",
     "first black representative in mississippi",
-    "1st black senator in mississippi",
-    "would colom be the first black senator from mississippi"
+    "1st black senator in mississippi"
    ]
   },
   "history": [
-   [
-    "2026-11-13",
-    false
-   ],
    [
     "2026-11-14",
     false
@@ -11172,11 +11167,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "how-much-tax-refund-per-child-2026": {
-  "time": "2026-11-26T18:03:43+00:00",
+  "time": "2026-11-27T18:18:51+00:00",
   "query": "how much tax refund per child 2026",
   "in_suggest": true,
   "suggest": {
@@ -11185,16 +11184,16 @@
     "child tax credit",
     "child tax credit 2027",
     "child tax credit 2025",
-    "child tax credit illinois",
+    "child tax credit 2026 income limit",
+    "child tax credit washington state",
+    "child tax credit requirements",
+    "child tax credit 2026 washington state",
     "child tax credit phase out",
-    "child tax credit age limit",
-    "child tax credit 2025 income limit",
-    "child tax credit 2024",
-    "child tax credit phase out 2026"
+    "child tax credit age limit"
    ],
    "what is child tax credit": [
-    "what is child tax credit",
     "what is child tax credit for 2026",
+    "what is child tax credit",
     "what is child tax credit for 2027",
     "what is child tax credit for 2025",
     "what is child tax credit this year",
@@ -11231,10 +11230,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -11285,25 +11280,29 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "is-the-law-of-beasts-a-true-story": {
-  "time": "2026-11-26T18:03:45+00:00",
+  "time": "2026-11-27T18:18:52+00:00",
   "query": "is the law of beasts a true story",
   "in_suggest": true,
   "suggest": {
    "the law of beasts": [
     "the law of beasts",
     "the law of beasts true story",
-    "the law of beasts netflix",
     "the law of beasts cast",
-    "the law of beasts real story",
-    "the law of beasts review",
-    "the law of beasts netflix review",
-    "the law of beasts netflix cast",
     "the law of beasts rotten tomatoes",
-    "the law of beasts netflix true story"
+    "the law of beasts real story",
+    "the law of beasts netflix",
+    "the law of beasts netflix review",
+    "the law of beasts review",
+    "the law of beasts netflix is it good",
+    "the law of beasts netflix cast"
    ],
    "what is the law of beasts": [
     "what is the law of beasts about",
@@ -11319,10 +11318,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    false
-   ],
-   [
     "2026-11-14",
     false
    ],
@@ -11373,11 +11368,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "ligue-1": {
-  "time": "2026-11-26T18:03:46+00:00",
+  "time": "2026-11-27T18:18:53+00:00",
   "query": "what is ligue 1",
   "in_suggest": true,
   "suggest": {
@@ -11390,8 +11389,8 @@
     "ligue 1 players",
     "ligue 1 games",
     "ligue 1 teams",
-    "ligue 1 scores",
-    "ligue 1 winners"
+    "ligue 1 france",
+    "ligue 1 table 2022 23"
    ],
    "what is ligue 1": [
     "what is ligue 1",
@@ -11408,10 +11407,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -11462,11 +11457,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "phishing-test": {
-  "time": "2026-11-26T18:03:50+00:00",
+  "time": "2026-11-27T18:18:57+00:00",
   "query": "what is a phishing test",
   "in_suggest": true,
   "suggest": {
@@ -11509,10 +11508,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -11563,11 +11558,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "rock-hall-of-fame-2026-ceremony-air-date": {
-  "time": "2026-11-26T18:03:54+00:00",
+  "time": "2026-11-27T18:19:00+00:00",
   "query": "when will the rock and roll hall of fame 2026 ceremony air",
   "in_suggest": false,
   "suggest": {
@@ -11589,10 +11588,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    false
-   ],
-   [
     "2026-11-14",
     false
    ],
@@ -11643,11 +11638,15 @@
    [
     "2026-11-26",
     false
+   ],
+   [
+    "2026-11-27",
+    false
    ]
   ]
  },
  "what-does-refrigerator-coolant-smell-like": {
-  "time": "2026-11-26T18:03:59+00:00",
+  "time": "2026-11-27T18:19:05+00:00",
   "query": "what does refrigerator coolant smell like",
   "in_suggest": true,
   "suggest": {
@@ -11697,10 +11696,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -11751,37 +11746,41 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "what-is-a-safety-in-football": {
-  "time": "2026-11-26T18:04:00+00:00",
+  "time": "2026-11-27T18:19:07+00:00",
   "query": "what is a safety in football",
   "in_suggest": true,
   "suggest": {
    "safety": [
+    "safety in football",
     "safety pins",
     "safety",
     "safety glasses",
-    "safety not guaranteed",
     "safety razor",
+    "safety net",
     "safety kleen",
-    "safety in football",
-    "safety movie",
-    "safety town naperville",
-    "safety first car seat"
+    "safety not guaranteed",
+    "safety net spokane",
+    "safety movie"
    ],
    "what is safety": [
     "what is safety in football",
     "what is safety",
-    "what is safety net hospital",
     "what is safety stock",
     "what is safety position in football",
     "what is safety culture",
     "what is safety data sheet",
-    "what is safety town",
-    "what is safety in nfl",
-    "what is safety glass"
+    "what is safety glass",
+    "what is safety net",
+    "what is safety by j cole about",
+    "what is safety net by ariana grande about"
    ],
    "what is a safety in football": [
     "what is a safety in football",
@@ -11800,19 +11799,15 @@
     "safety football position",
     "safety football movie",
     "safety football points",
-    "safety football meaning",
     "safety football helmet",
     "safety football score",
     "safety football 2 points",
+    "safety football meaning",
     "safety football drip",
     "safety football players"
    ]
   },
   "history": [
-   [
-    "2026-11-13",
-    true
-   ],
    [
     "2026-11-14",
     true
@@ -11864,11 +11859,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "what-is-broad-based-categorical-eligibility": {
-  "time": "2026-11-26T18:04:01+00:00",
+  "time": "2026-11-27T18:19:07+00:00",
   "query": "what is broad-based categorical eligibility",
   "in_suggest": true,
   "suggest": {
@@ -11899,10 +11898,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -11953,11 +11948,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "why-is-wifi-not-working-on-my-phone": {
-  "time": "2026-11-26T18:04:03+00:00",
+  "time": "2026-11-27T18:19:09+00:00",
   "query": "why is wifi not working on my phone",
   "in_suggest": true,
   "suggest": {
@@ -11990,10 +11989,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -12043,6 +12038,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
@@ -15147,7 +15146,7 @@
   ]
  },
  "robert-pattinson-james-bond": {
-  "time": "2026-11-26T18:03:52+00:00",
+  "time": "2026-11-27T18:18:59+00:00",
   "query": "robert pattinson james bond",
   "in_suggest": true,
   "suggest": {
@@ -15171,15 +15170,15 @@
    ],
    "robert pattinson james bond": [
     "robert pattinson james bond",
+    "robert pattinson james bond memes",
     "robert pattinson james bond casting",
-    "robert pattinson james bond contract",
     "robert pattinson james bond audition",
     "robert pattinson james bond body",
-    "robert pattinson james bond meme",
-    "robert pattinson james bond trailer",
-    "robert pattinson james bond girl",
-    "robert pattinson james bond poster",
-    "robert pattinson james bond watch"
+    "robert pattinson james bond reactions",
+    "robert pattinson james bond screen test",
+    "robert pattinson james bond car",
+    "robert pattinson james bond r=h www.reddit.com",
+    "robert pattinson james bond girl"
    ]
   },
   "history": [
@@ -15221,6 +15220,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
@@ -15700,7 +15703,7 @@
   ]
  },
  "florida-flooding-november-18-2026": {
-  "time": "2026-11-26T18:03:39+00:00",
+  "time": "2026-11-27T18:18:46+00:00",
   "query": "florida flooding",
   "in_suggest": true,
   "suggest": {
@@ -15729,11 +15732,11 @@
     "florida flooding map",
     "florida flooding 2026",
     "florida flooding news",
-    "florida flooding november 2026",
-    "florida flooding orlando",
-    "florida flooding cause",
-    "florida flooding miami",
-    "florida flooding map today"
+    "florida flooding now",
+    "florida flooding fort myers",
+    "florida flooding fort lauderdale",
+    "florida flooding this week",
+    "florida flooding today map"
    ]
   },
   "history": [
@@ -15772,11 +15775,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "hakeem-jeffries-speaker-nomination": {
-  "time": "2026-11-26T18:03:42+00:00",
+  "time": "2026-11-27T18:18:49+00:00",
   "query": "is hakeem jeffries speaker",
   "in_suggest": true,
   "suggest": {
@@ -15831,6 +15838,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
@@ -16334,7 +16345,7 @@
   ]
  },
  "trump-xi-putin-meeting-declaration": {
-  "time": "2026-11-26T18:03:56+00:00",
+  "time": "2026-11-27T18:19:03+00:00",
   "query": "trump xi putin meeting",
   "in_suggest": true,
   "suggest": {
@@ -16390,11 +16401,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "walmart-earnings-q3-2026": {
-  "time": "2026-11-26T18:03:57+00:00",
+  "time": "2026-11-27T18:19:04+00:00",
   "query": "walmart earnings",
   "in_suggest": true,
   "suggest": {
@@ -16410,12 +16425,12 @@
     "walmart earnings date",
     "walmart earnings report",
     "walmart earnings call",
-    "walmart earnings transcript",
     "walmart earnings 2026",
     "walmart earnings 2025",
     "walmart earnings q3",
     "walmart earnings release",
-    "walmart earnings and consumer spending"
+    "walmart earnings and consumer spending",
+    "walmart earnings release date"
    ]
   },
   "history": [
@@ -16449,6 +16464,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
@@ -16885,7 +16904,7 @@
   ]
  },
  "rikers-island-closure-plan-2032": {
-  "time": "2026-11-26T18:03:51+00:00",
+  "time": "2026-11-27T18:18:58+00:00",
   "query": "rikers island closing",
   "in_suggest": true,
   "suggest": {
@@ -16901,15 +16920,15 @@
    ],
    "rikers island closing": [
     "rikers island closing",
-    "rikers island closing plan",
-    "rikers island closing date",
+    "rikers island closing reddit",
     "rikers island closing why",
+    "rikers island closing date",
     "rikers island closing in 2026",
     "rikers island closing down",
-    "rikers island closing reddit",
     "rikers island closing mamdani",
+    "rikers island closing plan",
     "rikers island closing 2027",
-    "rikers island closure plan"
+    "rikers island shut down"
    ]
   },
   "history": [
@@ -16939,6 +16958,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
