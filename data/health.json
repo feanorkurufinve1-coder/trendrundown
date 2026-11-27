@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-27T13:59:18+00:00",
+ "checked": "2026-11-27T14:31:48+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -106,7 +106,7 @@
   },
   {
    "url": "/x/mutual-option",
-   "at": "2026-11-27T08:16:57+00:00",
+   "at": "2026-11-27T14:31:48+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
