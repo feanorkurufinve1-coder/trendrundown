@@ -10586,7 +10586,7 @@
   ]
  },
  "october-2026-cpi-no-annual-rate": {
-  "time": "2026-11-26T19:03:38+00:00",
+  "time": "2026-11-27T19:03:40+00:00",
   "query": "why no annual inflation rate for october cpi",
   "in_suggest": false,
   "suggest": {
@@ -10596,11 +10596,11 @@
     "consumer price index last 10 years",
     "consumer price index definition",
     "consumer price index for all urban consumers",
-    "consumer price index formula",
     "consumer price index calculator",
+    "consumer price index formula",
     "consumer price index today",
-    "consumer price index (cpi)",
-    "consumer price index september 2026"
+    "consumer price index september 2026",
+    "consumer price index (cpi)"
    ],
    "what is consumer price index": [
     "what is consumer price index",
@@ -10618,10 +10618,6 @@
    "no annual inflation rate october cpi": []
   },
   "history": [
-   [
-    "2026-11-13",
-    false
-   ],
    [
     "2026-11-14",
     false
@@ -10673,11 +10669,15 @@
    [
     "2026-11-26",
     false
+   ],
+   [
+    "2026-11-27",
+    false
    ]
   ]
  },
  "sierra-winter-storm-warning": {
-  "time": "2026-11-26T19:03:39+00:00",
+  "time": "2026-11-27T19:03:41+00:00",
   "query": "sierra winter storm warning",
   "in_suggest": true,
   "suggest": {
@@ -10715,10 +10715,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -10769,11 +10765,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "ss-united-states-sinking": {
-  "time": "2026-11-26T19:03:41+00:00",
+  "time": "2026-11-27T19:03:43+00:00",
   "query": "ss united states sinking",
   "in_suggest": true,
   "suggest": {
@@ -10786,8 +10786,8 @@
     "ss united states interior",
     "ss united states top speed",
     "ss united states will be scrapped",
-    "ss united states sinking location",
-    "ss united states vs titanic"
+    "ss united states conservancy",
+    "ss united states ocean liner"
    ],
    "what is ss united states": [
     "what is ss united states",
@@ -10810,15 +10810,11 @@
     "ss united states sinking video",
     "ss united states sinking location map",
     "ss united states sinking date and location",
-    "ss united states sinking coordinates",
-    "ss united states sinking time"
+    "ss united states sinking time",
+    "ss united states sinking why"
    ]
   },
   "history": [
-   [
-    "2026-11-13",
-    true
-   ],
    [
     "2026-11-14",
     true
@@ -10870,11 +10866,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "stacy-keach-death": {
-  "time": "2026-11-26T19:03:42+00:00",
+  "time": "2026-11-27T19:03:44+00:00",
   "query": "stacy keach death",
   "in_suggest": true,
   "suggest": {
@@ -10883,12 +10883,12 @@
     "stacy keach movies and tv shows",
     "stacy keach sr",
     "stacy keach net worth",
-    "stacy keach movies",
     "stacy keach movies and shows",
+    "stacy keach movies",
     "stacy keach tv shows",
     "stacy keach funeral",
     "stacy keach cleft lip",
-    "stacy keach jr"
+    "stacy keach mike hammer"
    ],
    "what is stacy keach": [
     "what is stacy keach doing now",
@@ -10910,16 +10910,12 @@
     "stacy keach death reason",
     "stacy keach death cause",
     "stacy keach death tributes",
-    "stacy keach died",
     "stacy keach dead or alive",
-    "stacy keach bored to death"
+    "stacy keach bored to death",
+    "stacy keach sr age at death"
    ]
   },
   "history": [
-   [
-    "2026-11-13",
-    true
-   ],
    [
     "2026-11-14",
     true
@@ -10971,25 +10967,29 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "what-time-does-gta-6-unlock": {
-  "time": "2026-11-26T19:03:43+00:00",
+  "time": "2026-11-27T19:03:45+00:00",
   "query": "what time does gta 6 unlock",
   "in_suggest": true,
   "suggest": {
    "grand theft auto vi": [
     "grand theft auto vi",
     "grand theft auto vice city",
-    "grand theft auto vi playstation 5 store",
     "grand theft auto vi release date",
     "grand theft auto vi pc",
-    "grand theft auto vi reviews",
-    "grand theft auto vi the album",
     "grand theft auto vi ultimate edition",
+    "grand theft auto vi ps5",
+    "grand theft auto vi reviews",
     "grand theft auto vice city stories",
-    "grand theft auto vi ps5"
+    "grand theft auto vi xbox",
+    "grand theft auto vi video game release news"
    ],
    "what is grand theft auto vi": [
     "what is grand theft auto vi",
@@ -11026,10 +11026,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -11079,6 +11075,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
@@ -12449,30 +12449,30 @@
   ]
  },
  "noreaster-first-snow-november-2026": {
-  "time": "2026-11-26T19:03:36+00:00",
+  "time": "2026-11-27T19:03:38+00:00",
   "query": "nor'easter first snow",
   "in_suggest": false,
   "suggest": {
    "nor'easter": [
     "nor'easter",
-    "nor'easter meaning",
     "nor'easter nyc",
-    "nor'easter storm",
+    "nor'easter meaning",
     "nor'easter nj",
-    "nor'easter tomorrow",
+    "nor'easter today",
+    "nor'easter new york",
     "nor'easter vs hurricane",
-    "nor'easter boston",
-    "nor'easter forecast",
-    "nor'easter new york"
+    "nor'easter storm",
+    "nor'easter this weekend",
+    "nor'easter long island"
    ],
    "what is nor'easter": [
     "what is nor'easter",
     "what is nor'easter storm",
     "what is nor'easter mean",
+    "what is nor'easter nyc",
     "what is nor'easter short for",
     "what is nor'easter weather",
     "what is nor'easter season",
-    "what is nor'easter nyc",
     "what is nor'easter and why is it called that",
     "what is nor'easter 2026",
     "what is a nor’easter"
@@ -12480,10 +12480,6 @@
    "nor'easter first snow": []
   },
   "history": [
-   [
-    "2026-11-13",
-    false
-   ],
    [
     "2026-11-14",
     false
@@ -12535,11 +12531,15 @@
    [
     "2026-11-26",
     false
+   ],
+   [
+    "2026-11-27",
+    false
    ]
   ]
  },
  "who-won-mvp-2026": {
-  "time": "2026-11-26T19:03:45+00:00",
+  "time": "2026-11-27T19:03:47+00:00",
   "query": "who won mvp 2026",
   "in_suggest": true,
   "suggest": {
@@ -12553,13 +12553,13 @@
     "2026 mlb mvp announcement",
     "2026 mlb mvp finalists",
     "2026 mlb mvp predictions",
-    "2026 mlb mvp voting"
+    "2026 mlb mvp awards"
    ],
    "what is 2026 mlb mvp": [],
    "who won mvp 2026": [
+    "who won mvp 2026 nba",
     "who won mvp 2026",
     "who won mvp 2026 mlb",
-    "who won mvp 2026 nba",
     "who won mvp 2026 nfl",
     "who won mvp 2026 wnba",
     "who won mvp 2026 baseball",
@@ -12583,10 +12583,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -12636,6 +12632,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
@@ -13346,21 +13346,21 @@
   ]
  },
  "why-were-all-flights-grounded": {
-  "time": "2026-11-26T19:03:47+00:00",
+  "time": "2026-11-27T19:03:49+00:00",
   "query": "why were all flights grounded",
   "in_suggest": true,
   "suggest": {
    "faa nationwide ground stop": [
     "faa nationwide ground stop",
     "faa nationwide ground stops history",
-    "faa nationwide ground stop hawaii flights",
-    "faa nationwide ground stop november 13",
     "faa nationwide ground stop what does that mean",
     "faa nationwide ground stop for flights",
-    "faa nationwide ground stop phoenix",
     "faa nationwide ground stop notam",
     "faa nationwide ground stop time",
-    "faa nationwide ground stop duration"
+    "faa nationwide ground stop duration",
+    "faa nationwide ground stop related to microsoft outage",
+    "faa nationwide ground stop why did it happen",
+    "faa nationwide ground stop november 13 2026 lifted"
    ],
    "what is faa nationwide ground stop": [
     "what is faa nationwide ground stop today",
@@ -13386,15 +13386,15 @@
    ],
    "all flights grounded": [
     "all flights grounded",
+    "all flights grounded nyc",
     "all flights grounded today",
+    "all flights grounded ny",
     "all flights grounded today usa",
     "all flights grounded what is going on",
     "all flights grounded today time",
     "all flights grounded when did it start",
     "all flights grounded today when did it start",
-    "all flights grounded at what time",
-    "all flights grounded in spanish",
-    "all flights grounded in the united states today"
+    "all flights grounded at what time"
    ]
   },
   "history": [
@@ -13448,6 +13448,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
@@ -13975,7 +13979,7 @@
   ]
  },
  "spacex-starship-caught-by-tower": {
-  "time": "2026-11-26T19:03:40+00:00",
+  "time": "2026-11-27T19:03:42+00:00",
   "query": "spacex starship catch",
   "in_suggest": true,
   "suggest": {
@@ -14004,7 +14008,6 @@
     "spacex starship flight schedule"
    ],
    "spacex starship catch": [
-    "spacex starship catch video",
     "spacex starship catch",
     "spacex starship catch animation",
     "spacex starship catch date",
@@ -14013,7 +14016,8 @@
     "spacex starship catch attempt",
     "spacex starship catches booster",
     "spacex starship catch pins",
-    "spacex starship catch wallpaper"
+    "spacex starship catch wallpaper",
+    "spacex starship catch replay"
    ]
   },
   "history": [
@@ -14064,11 +14068,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "why-is-bitcoin-down-november-2026": {
-  "time": "2026-11-26T19:03:46+00:00",
+  "time": "2026-11-27T19:03:48+00:00",
   "query": "why is bitcoin down",
   "in_suggest": true,
   "suggest": {
@@ -14095,8 +14103,8 @@
     "why did bitcoin prices drop"
    ],
    "why is bitcoin down": [
-    "why is bitcoin down today",
     "why is bitcoin down",
+    "why is bitcoin down today",
     "why is bitcoin down so much",
     "why is bitcoin down right now",
     "why is bitcoin down so much today",
@@ -14166,6 +14174,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
