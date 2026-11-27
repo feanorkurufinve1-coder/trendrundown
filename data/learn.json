@@ -1,25 +1,25 @@
 {
- "made": "2026-11-27T05:16:52+00:00",
+ "made": "2026-11-27T05:33:53+00:00",
  "pages": 479,
  "summary": {
   "kind": {
    "event": {
     "pages": 89,
-    "with_impr_%": 11,
+    "with_impr_%": 12,
     "top3_%": 0,
-    "clicks": 1,
-    "clicks_per_page": 0.01
+    "clicks": 0,
+    "clicks_per_page": 0.0
    },
    "law": {
     "pages": 15,
-    "with_impr_%": 13,
+    "with_impr_%": 7,
     "top3_%": 0,
     "clicks": 0,
     "clicks_per_page": 0.0
    },
    "organization": {
     "pages": 16,
-    "with_impr_%": 31,
+    "with_impr_%": 44,
     "top3_%": 0,
     "clicks": 1,
     "clicks_per_page": 0.06
@@ -47,14 +47,14 @@
    },
    "product": {
     "pages": 45,
-    "with_impr_%": 9,
+    "with_impr_%": 7,
     "top3_%": 0,
     "clicks": 1,
     "clicks_per_page": 0.02
    },
    "term": {
     "pages": 189,
-    "with_impr_%": 13,
+    "with_impr_%": 12,
     "top3_%": 2,
     "clicks": 36,
     "clicks_per_page": 0.19
@@ -72,7 +72,7 @@
     "pages": 272,
     "with_impr_%": 18,
     "top3_%": 0,
-    "clicks": 3,
+    "clicks": 2,
     "clicks_per_page": 0.01
    },
    "longtail": {
@@ -137,8 +137,8 @@
     "pages": 56,
     "with_impr_%": 5,
     "top3_%": 0,
-    "clicks": 1,
-    "clicks_per_page": 0.02
+    "clicks": 0,
+    "clicks_per_page": 0.0
    },
    "what": {
     "pages": 243,
@@ -185,18 +185,18 @@
   },
   "title_matches_top_query": {
    "False": {
-    "pages": 438,
+    "pages": 439,
     "with_impr_%": 7,
     "top3_%": 0,
-    "clicks": 32,
-    "clicks_per_page": 0.07
+    "clicks": 33,
+    "clicks_per_page": 0.08
    },
    "True": {
-    "pages": 41,
+    "pages": 40,
     "with_impr_%": 100,
     "top3_%": 5,
-    "clicks": 24,
-    "clicks_per_page": 0.59
+    "clicks": 22,
+    "clicks_per_page": 0.55
    }
   }
  },
@@ -227,7 +227,7 @@
    "source": "manual",
    "q_word": "what",
    "title_len": 59,
-   "age_days": 21.4,
+   "age_days": 21.5,
    "rival_exact": null,
    "impr": 1559,
    "clicks": 9,
@@ -248,7 +248,7 @@
    "title_len": 65,
    "age_days": 20.4,
    "rival_exact": null,
-   "impr": 1712,
+   "impr": 1469,
    "clicks": 6,
    "best_pos": 10.5,
    "title_matches_top_query": true,
@@ -267,7 +267,7 @@
    "title_len": 58,
    "age_days": 5.4,
    "rival_exact": null,
-   "impr": 543,
+   "impr": 548,
    "clicks": 6,
    "best_pos": 8,
    "title_matches_top_query": true,
@@ -316,25 +316,6 @@
    ]
   },
   {
-   "slug": "pro-and-tell-apple-event",
-   "title": "Pro and tell Apple event: Oct. 28, 2026 in Los Angeles, touchscreen MacBook Pro",
-   "kind": "event",
-   "source": "auto",
-   "q_word": "none",
-   "title_len": 79,
-   "age_days": 23.0,
-   "rival_exact": null,
-   "impr": 172,
-   "clicks": 1,
-   "best_pos": 9,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "pro and tell",
-    "pro and tell apple event",
-    "pro and tell event"
-   ]
-  },
-  {
    "slug": "gen-z-regelt",
    "title": "What is Gen Z regelt Germany? Youth protest group explained",
    "kind": "organization",
@@ -362,12 +343,11 @@
    "title_len": 47,
    "age_days": 30.9,
    "rival_exact": null,
-   "impr": 3,
+   "impr": 1,
    "clicks": 1,
    "best_pos": 11,
-   "title_matches_top_query": true,
+   "title_matches_top_query": false,
    "top_queries": [
-    "the one about matthew perry",
     "does the one about matthew perry focus on how matthew perry died?"
    ]
   },
@@ -380,33 +360,14 @@
    "title_len": 54,
    "age_days": 13.6,
    "rival_exact": null,
-   "impr": 2119,
+   "impr": 715,
    "clicks": 0,
    "best_pos": 5,
    "title_matches_top_query": true,
    "top_queries": [
     "ligue 1",
     "what is ligue 1",
-    "ligue"
-   ]
-  },
-  {
-   "slug": "exhibition-game",
-   "title": "What is an exhibition game in basketball? A tune-up that doesn't count",
-   "kind": "term",
-   "source": "manual",
-   "q_word": "what",
-   "title_len": 70,
-   "age_days": 14.5,
-   "rival_exact": null,
-   "impr": 197,
-   "clicks": 0,
-   "best_pos": 2,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "what is an exhibition game in basketball",
-    "exhibition game",
-    "exhibition game basketball meaning"
+    "ligue un"
    ]
   },
   {
@@ -437,7 +398,7 @@
    "title_len": 24,
    "age_days": 32.0,
    "rival_exact": null,
-   "impr": 182,
+   "impr": 188,
    "clicks": 0,
    "best_pos": 3.7,
    "title_matches_top_query": false,
@@ -464,6 +425,25 @@
     "what is tri series in cricket",
     "what is a tri series in cricket",
     "tri series means"
+   ]
+  },
+  {
+   "slug": "exhibition-game",
+   "title": "What is an exhibition game in basketball? A tune-up that doesn't count",
+   "kind": "term",
+   "source": "manual",
+   "q_word": "what",
+   "title_len": 70,
+   "age_days": 14.5,
+   "rival_exact": null,
+   "impr": 129,
+   "clicks": 0,
+   "best_pos": 2,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "what is an exhibition game in basketball",
+    "exhibition game basketball",
+    "exhibition game basketball meaning"
    ]
   },
   {
@@ -524,22 +504,22 @@
    ]
   },
   {
-   "slug": "optical-networking",
-   "title": "What is optical networking?",
-   "kind": "term",
+   "slug": "pro-and-tell-apple-event",
+   "title": "Pro and tell Apple event: Oct. 28, 2026 in Los Angeles, touchscreen MacBook Pro",
+   "kind": "event",
    "source": "auto",
-   "q_word": "what",
-   "title_len": 27,
-   "age_days": 30.7,
+   "q_word": "none",
+   "title_len": 79,
+   "age_days": 23.0,
    "rival_exact": null,
-   "impr": 41,
+   "impr": 39,
    "clicks": 0,
-   "best_pos": 56.7,
-   "title_matches_top_query": false,
+   "best_pos": 7.9,
+   "title_matches_top_query": true,
    "top_queries": [
-    "optical network",
-    "what is optical networking technology",
-    "what is an optical network"
+    "pro and tell",
+    "pro and tell apple event",
+    "apple pro and tell"
    ]
   },
   {
@@ -570,7 +550,7 @@
    "title_len": 65,
    "age_days": 20.8,
    "rival_exact": 2,
-   "impr": 37,
+   "impr": 39,
    "clicks": 0,
    "best_pos": 7,
    "title_matches_top_query": true,
@@ -606,7 +586,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 17,
-   "age_days": 27.9,
+   "age_days": 28.0,
    "rival_exact": null,
    "impr": 30,
    "clicks": 0,
@@ -615,6 +595,25 @@
    "top_queries": [
     "alex eala wta",
     "alex eala"
+   ]
+  },
+  {
+   "slug": "optical-networking",
+   "title": "What is optical networking?",
+   "kind": "term",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 27,
+   "age_days": 30.7,
+   "rival_exact": null,
+   "impr": 29,
+   "clicks": 0,
+   "best_pos": 56.7,
+   "title_matches_top_query": false,
+   "top_queries": [
+    "what is optical networking technology",
+    "optical network",
+    "what is an optical network"
    ]
   },
   {
@@ -710,25 +709,6 @@
    ]
   },
   {
-   "slug": "aj-dybantsa",
-   "title": "Who is AJ Dybantsa?",
-   "kind": "person",
-   "source": "auto",
-   "q_word": "who",
-   "title_len": 19,
-   "age_days": 31.3,
-   "rival_exact": null,
-   "impr": 21,
-   "clicks": 0,
-   "best_pos": 24.6,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "aj dybantsa",
-    "aj dybantsa age",
-    "aj dybansta"
-   ]
-  },
-  {
    "slug": "wwe-crown-jewel-2026",
    "title": "What is WWE Crown Jewel? Date, place and card for 2026",
    "kind": "event",
@@ -748,60 +728,22 @@
    ]
   },
   {
-   "slug": "wta-tennis",
-   "title": "What does WTA stand for in tennis? The women's tour explained",
-   "kind": "organization",
-   "source": "manual",
-   "q_word": "what",
-   "title_len": 61,
-   "age_days": 12.6,
-   "rival_exact": null,
-   "impr": 18,
-   "clicks": 0,
-   "best_pos": 46.5,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "wta",
-    "wta tennis",
-    "what is wta in tennis"
-   ]
-  },
-  {
-   "slug": "dfb-pokal",
-   "title": "What is the DFB-Pokal?",
-   "kind": "event",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 22,
-   "age_days": 30.5,
-   "rival_exact": null,
-   "impr": 17,
-   "clicks": 0,
-   "best_pos": 8.5,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "dfb-pokal",
-    "dfb-pokal meaning",
-    "dfb pokal explained"
-   ]
-  },
-  {
-   "slug": "philip-rivers",
-   "title": "Who is Philip Rivers?",
+   "slug": "aj-dybantsa",
+   "title": "Who is AJ Dybantsa?",
    "kind": "person",
    "source": "auto",
    "q_word": "who",
-   "title_len": 21,
-   "age_days": 29.9,
+   "title_len": 19,
+   "age_days": 31.3,
    "rival_exact": null,
-   "impr": 17,
+   "impr": 19,
    "clicks": 0,
-   "best_pos": 7.3,
-   "title_matches_top_query": false,
+   "best_pos": 25.1,
+   "title_matches_top_query": true,
    "top_queries": [
-    "philip rivers nc state",
-    "philip rivers nc state coach",
-    "philip rivers"
+    "aj dybantsa",
+    "aj dybantsa age",
+    "aj dybansta"
    ]
   },
   {
@@ -811,7 +753,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 62,
-   "age_days": 20.8,
+   "age_days": 20.9,
    "rival_exact": null,
    "impr": 17,
    "clicks": 0,
@@ -824,38 +766,21 @@
    ]
   },
   {
-   "slug": "tommy-carr",
-   "title": "Who is Tommy Carr, Michigan quarterback?",
+   "slug": "philip-rivers",
+   "title": "Who is Philip Rivers?",
    "kind": "person",
    "source": "auto",
    "q_word": "who",
-   "title_len": 40,
-   "age_days": 31.8,
+   "title_len": 21,
+   "age_days": 29.9,
    "rival_exact": null,
-   "impr": 15,
+   "impr": 14,
    "clicks": 0,
-   "best_pos": 27.9,
-   "title_matches_top_query": true,
+   "best_pos": 10.6,
+   "title_matches_top_query": false,
    "top_queries": [
-    "tommy carr"
-   ]
-  },
-  {
-   "slug": "phishing-test",
-   "title": "What is a phishing test? Why your employer sends fake scam emails",
-   "kind": "term",
-   "source": "manual",
-   "q_word": "what",
-   "title_len": 65,
-   "age_days": 13.6,
-   "rival_exact": null,
-   "impr": 13,
-   "clicks": 0,
-   "best_pos": 49.6,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "phishing test",
-    "phishing test site"
+    "philip rivers nc state",
+    "philip rivers nc state coach"
    ]
   },
   {
@@ -867,7 +792,7 @@
    "title_len": 40,
    "age_days": 33.6,
    "rival_exact": null,
-   "impr": 12,
+   "impr": 11,
    "clicks": 0,
    "best_pos": 9.5,
    "title_matches_top_query": true,
@@ -878,22 +803,41 @@
    ]
   },
   {
-   "slug": "hnry-stadium",
-   "title": "Where is Hnry Stadium in Wellington?",
-   "kind": "place",
-   "source": "auto",
-   "q_word": "where",
-   "title_len": 36,
-   "age_days": 30.8,
+   "slug": "wta-tennis",
+   "title": "What does WTA stand for in tennis? The women's tour explained",
+   "kind": "organization",
+   "source": "manual",
+   "q_word": "what",
+   "title_len": 61,
+   "age_days": 12.6,
    "rival_exact": null,
-   "impr": 11,
+   "impr": 10,
    "clicks": 0,
-   "best_pos": 11,
+   "best_pos": 60,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "wta tennis",
+    "wta",
+    "what is wta in tennis"
+   ]
+  },
+  {
+   "slug": "cesc-fabregas",
+   "title": "Who is Cesc Fabregas's coach? Como's manager",
+   "kind": "person",
+   "source": "auto",
+   "q_word": "who",
+   "title_len": 44,
+   "age_days": 32.7,
+   "rival_exact": null,
+   "impr": 10,
+   "clicks": 0,
+   "best_pos": 7,
    "title_matches_top_query": false,
    "top_queries": [
-    "hnry stadium wellington cricket",
-    "hnry stadium, wellington",
-    "wellington regional stadium"
+    "como manager",
+    "como.manager",
+    "como's manager"
    ]
   },
   {
@@ -912,6 +856,25 @@
    "top_queries": [
     "manuel pellegrini",
     "pelegrini"
+   ]
+  },
+  {
+   "slug": "dfb-pokal",
+   "title": "What is the DFB-Pokal?",
+   "kind": "event",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 22,
+   "age_days": 30.5,
+   "rival_exact": null,
+   "impr": 8,
+   "clicks": 0,
+   "best_pos": 8.5,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "dfb-pokal",
+    "dfb pokal explained",
+    "dfb pokal"
    ]
   },
   {
@@ -934,42 +897,6 @@
    ]
   },
   {
-   "slug": "cesc-fabregas",
-   "title": "Who is Cesc Fabregas's coach? Como's manager",
-   "kind": "person",
-   "source": "auto",
-   "q_word": "who",
-   "title_len": 44,
-   "age_days": 32.7,
-   "rival_exact": null,
-   "impr": 7,
-   "clicks": 0,
-   "best_pos": 10.6,
-   "title_matches_top_query": false,
-   "top_queries": [
-    "como manager"
-   ]
-  },
-  {
-   "slug": "lask",
-   "title": "What is LASK football club?",
-   "kind": "organization",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 27,
-   "age_days": 32.7,
-   "rival_exact": null,
-   "impr": 7,
-   "clicks": 0,
-   "best_pos": 8.7,
-   "title_matches_top_query": false,
-   "top_queries": [
-    "lask country",
-    "lask what country",
-    "lask fc"
-   ]
-  },
-  {
    "slug": "wbc-super-middleweight-title",
    "title": "What is the WBC super middleweight title?",
    "kind": "term",
@@ -988,6 +915,25 @@
    ]
   },
   {
+   "slug": "riverchase-galleria",
+   "title": "What is the Riverchase Galleria?",
+   "kind": "other",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 32,
+   "age_days": 27.5,
+   "rival_exact": null,
+   "impr": 7,
+   "clicks": 0,
+   "best_pos": 10,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "riverchase galleria",
+    "riverchase galleria",
+    "riverchase"
+   ]
+  },
+  {
    "slug": "katarzyna-kawa",
    "title": "Who is Katarzyna Kawa?",
    "kind": "person",
@@ -1003,23 +949,6 @@
    "top_queries": [
     "katarzyna kawa",
     "kawa tennis"
-   ]
-  },
-  {
-   "slug": "bryce-underwood",
-   "title": "Who is Bryce Underwood of Michigan?",
-   "kind": "person",
-   "source": "auto",
-   "q_word": "who",
-   "title_len": 35,
-   "age_days": 31.8,
-   "rival_exact": null,
-   "impr": 6,
-   "clicks": 0,
-   "best_pos": 15.2,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "bryce underwood"
    ]
   },
   {
@@ -1047,7 +976,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 35,
-   "age_days": 27.9,
+   "age_days": 28.0,
    "rival_exact": null,
    "impr": 6,
    "clicks": 0,
@@ -1057,25 +986,6 @@
     "toray pan pacific open schedule",
     "toray pan",
     "pan pacific open"
-   ]
-  },
-  {
-   "slug": "riverchase-galleria",
-   "title": "What is the Riverchase Galleria?",
-   "kind": "other",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 32,
-   "age_days": 27.5,
-   "rival_exact": null,
-   "impr": 6,
-   "clicks": 0,
-   "best_pos": 10,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "riverchase galleria",
-    "riverchase galleria",
-    "riverchase"
    ]
   },
   {
@@ -1098,21 +1008,56 @@
    ]
   },
   {
-   "slug": "fedex-cup",
-   "title": "What are the FedEx Cup standings?",
-   "kind": "other",
+   "slug": "lask",
+   "title": "What is LASK football club?",
+   "kind": "organization",
    "source": "auto",
    "q_word": "what",
-   "title_len": 33,
-   "age_days": 31.6,
+   "title_len": 27,
+   "age_days": 32.7,
    "rival_exact": null,
    "impr": 5,
    "clicks": 0,
-   "best_pos": 37.5,
+   "best_pos": 8.7,
+   "title_matches_top_query": false,
+   "top_queries": [
+    "lask country",
+    "lask what country"
+   ]
+  },
+  {
+   "slug": "tommy-carr",
+   "title": "Who is Tommy Carr, Michigan quarterback?",
+   "kind": "person",
+   "source": "auto",
+   "q_word": "who",
+   "title_len": 40,
+   "age_days": 31.8,
+   "rival_exact": null,
+   "impr": 5,
+   "clicks": 0,
+   "best_pos": 27.4,
    "title_matches_top_query": true,
    "top_queries": [
-    "fedex cup standings",
-    "fedex cup projected standings"
+    "tommy carr"
+   ]
+  },
+  {
+   "slug": "hnry-stadium",
+   "title": "Where is Hnry Stadium in Wellington?",
+   "kind": "place",
+   "source": "auto",
+   "q_word": "where",
+   "title_len": 36,
+   "age_days": 30.8,
+   "rival_exact": null,
+   "impr": 5,
+   "clicks": 0,
+   "best_pos": 18.7,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "hnry stadium, wellington",
+    "hnry stadium wellington"
    ]
   },
   {
@@ -1168,6 +1113,43 @@
    "top_queries": [
     "what does consent decree mean",
     "consent decree definition"
+   ]
+  },
+  {
+   "slug": "non-tender",
+   "title": "What does non-tender mean in baseball? MLB free agency, explained",
+   "kind": "term",
+   "source": "manual",
+   "q_word": "what",
+   "title_len": 65,
+   "age_days": 5.4,
+   "rival_exact": null,
+   "impr": 5,
+   "clicks": 0,
+   "best_pos": 1,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "what does non tender mean in baseball",
+    "non-tender",
+    "baseball non tender meaning"
+   ]
+  },
+  {
+   "slug": "champions-league-league-phase",
+   "title": "What is the Champions League league phase: Matchday 4 is Nov. 3, 2026",
+   "kind": "event",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 69,
+   "age_days": 22.4,
+   "rival_exact": null,
+   "impr": 4,
+   "clicks": 0,
+   "best_pos": 41.3,
+   "title_matches_top_query": false,
+   "top_queries": [
+    "league phase meaning",
+    "champions league phase"
    ]
   },
   {
@@ -1240,24 +1222,6 @@
    ]
   },
   {
-   "slug": "non-tender",
-   "title": "What does non-tender mean in baseball? MLB free agency, explained",
-   "kind": "term",
-   "source": "manual",
-   "q_word": "what",
-   "title_len": 65,
-   "age_days": 5.4,
-   "rival_exact": null,
-   "impr": 4,
-   "clicks": 0,
-   "best_pos": 3.5,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "what does non tender mean in baseball",
-    "non-tender"
-   ]
-  },
-  {
    "slug": "relief-pitcher-of-the-year",
    "title": "What is the Relief Pitcher of the Year award? New MLB honor, first winners Nov. 11",
    "kind": "term",
@@ -1275,20 +1239,20 @@
    ]
   },
   {
-   "slug": "champions-league-league-phase",
-   "title": "What is the Champions League league phase: Matchday 4 is Nov. 3, 2026",
-   "kind": "event",
+   "slug": "bryce-underwood",
+   "title": "Who is Bryce Underwood of Michigan?",
+   "kind": "person",
    "source": "auto",
-   "q_word": "what",
-   "title_len": 69,
-   "age_days": 22.4,
+   "q_word": "who",
+   "title_len": 35,
+   "age_days": 31.8,
    "rival_exact": null,
    "impr": 3,
    "clicks": 0,
-   "best_pos": 41.3,
-   "title_matches_top_query": false,
+   "best_pos": 13.3,
+   "title_matches_top_query": true,
    "top_queries": [
-    "league phase meaning"
+    "bryce underwood"
    ]
   },
   {
@@ -1344,37 +1308,20 @@
    ]
   },
   {
-   "slug": "injured-reserve",
-   "title": "What is injured reserve in the NFL?",
-   "kind": "term",
+   "slug": "fedex-cup",
+   "title": "What are the FedEx Cup standings?",
+   "kind": "other",
    "source": "auto",
    "q_word": "what",
-   "title_len": 35,
-   "age_days": 32.7,
+   "title_len": 33,
+   "age_days": 31.7,
    "rival_exact": null,
    "impr": 2,
    "clicks": 0,
-   "best_pos": 10.5,
-   "title_matches_top_query": false,
+   "best_pos": 67.5,
+   "title_matches_top_query": true,
    "top_queries": [
-    "what does nir rest mean in football"
-   ]
-  },
-  {
-   "slug": "nfl-celebration-fines",
-   "title": "What are the NFL celebration fines in 2026?",
-   "kind": "law",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 43,
-   "age_days": 32.6,
-   "rival_exact": null,
-   "impr": 2,
-   "clicks": 0,
-   "best_pos": 9.5,
-   "title_matches_top_query": false,
-   "top_queries": [
-    "do you get fined for celebrating in the nfl"
+    "fedex cup standings"
    ]
   },
   {
@@ -1395,23 +1342,6 @@
    ]
   },
   {
-   "slug": "genie-4",
-   "title": "What is Genie 4 from Google?",
-   "kind": "product",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 28,
-   "age_days": 30.5,
-   "rival_exact": null,
-   "impr": 2,
-   "clicks": 0,
-   "best_pos": 8,
-   "title_matches_top_query": false,
-   "top_queries": [
-    "google genie 4 announcement"
-   ]
-  },
-  {
    "slug": "designated-for-assignment",
    "title": "What does designated for assignment mean? DFA in baseball",
    "kind": "term",
@@ -1426,6 +1356,75 @@
    "title_matches_top_query": true,
    "top_queries": [
     "what does designated for assignment in baseball mean"
+   ]
+  },
+  {
+   "slug": "hank-aaron-award",
+   "title": "What is the Hank Aaron Award? MLB's top hitter honor, 2026 winners Nov. 11",
+   "kind": "term",
+   "source": "manual",
+   "q_word": "what",
+   "title_len": 74,
+   "age_days": 20.6,
+   "rival_exact": null,
+   "impr": 2,
+   "clicks": 0,
+   "best_pos": 9,
+   "title_matches_top_query": false,
+   "top_queries": [
+    "bobby witt",
+    "2026 hank aaron award"
+   ]
+  },
+  {
+   "slug": "champions-league",
+   "title": "What is the Champions League format?",
+   "kind": "event",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 36,
+   "age_days": 32.7,
+   "rival_exact": null,
+   "impr": 1,
+   "clicks": 0,
+   "best_pos": 23,
+   "title_matches_top_query": false,
+   "top_queries": [
+    "champions league format explained"
+   ]
+  },
+  {
+   "slug": "chicago-bulls",
+   "title": "What is the Chicago Bulls schedule?",
+   "kind": "organization",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 35,
+   "age_days": 30.1,
+   "rival_exact": null,
+   "impr": 1,
+   "clicks": 0,
+   "best_pos": 94,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "chicago bulls schedule"
+   ]
+  },
+  {
+   "slug": "atlanta-dream",
+   "title": "What is the Atlanta Dream WNBA team?",
+   "kind": "organization",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 36,
+   "age_days": 29.9,
+   "rival_exact": null,
+   "impr": 1,
+   "clicks": 0,
+   "best_pos": 73,
+   "title_matches_top_query": false,
+   "top_queries": [
+    "atlanta dream wiki"
    ]
   },
   {
@@ -1460,23 +1459,6 @@
    "title_matches_top_query": true,
    "top_queries": [
     "alaska ranked choice"
-   ]
-  },
-  {
-   "slug": "hank-aaron-award",
-   "title": "What is the Hank Aaron Award? MLB's top hitter honor, 2026 winners Nov. 11",
-   "kind": "term",
-   "source": "manual",
-   "q_word": "what",
-   "title_len": 74,
-   "age_days": 20.6,
-   "rival_exact": null,
-   "impr": 1,
-   "clicks": 0,
-   "best_pos": 9,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "2026 hank aaron award"
    ]
   },
   {
@@ -1562,6 +1544,21 @@
    "q_word": "where",
    "title_len": 38,
    "age_days": 34.4,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
+   "slug": "phishing-test",
+   "title": "What is a phishing test? Why your employer sends fake scam emails",
+   "kind": "term",
+   "source": "manual",
+   "q_word": "what",
+   "title_len": 65,
+   "age_days": 13.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -1735,12 +1732,12 @@
    "top_queries": []
   },
   {
-   "slug": "champions-league",
-   "title": "What is the Champions League format?",
-   "kind": "event",
+   "slug": "real-betis",
+   "title": "What is Real Betis?",
+   "kind": "organization",
    "source": "auto",
    "q_word": "what",
-   "title_len": 36,
+   "title_len": 19,
    "age_days": 32.7,
    "rival_exact": null,
    "impr": 0,
@@ -1750,12 +1747,27 @@
    "top_queries": []
   },
   {
-   "slug": "real-betis",
-   "title": "What is Real Betis?",
-   "kind": "organization",
+   "slug": "injured-reserve",
+   "title": "What is injured reserve in the NFL?",
+   "kind": "term",
    "source": "auto",
    "q_word": "what",
-   "title_len": 19,
+   "title_len": 35,
+   "age_days": 32.7,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
+   "slug": "nfl-celebration-fines",
+   "title": "What are the NFL celebration fines in 2026?",
+   "kind": "law",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 43,
    "age_days": 32.7,
    "rival_exact": null,
    "impr": 0,
@@ -1900,6 +1912,21 @@
    "top_queries": []
   },
   {
+   "slug": "genie-4",
+   "title": "What is Genie 4 from Google?",
+   "kind": "product",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 28,
+   "age_days": 30.5,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
    "slug": "rot-weiss-essen",
    "title": "Who are Rot-Weiss Essen and their RB Leipzig tie?",
    "kind": "organization",
@@ -1945,21 +1972,6 @@
    "top_queries": []
   },
   {
-   "slug": "chicago-bulls",
-   "title": "What is the Chicago Bulls schedule?",
-   "kind": "organization",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 35,
-   "age_days": 30.0,
-   "rival_exact": null,
-   "impr": 0,
-   "clicks": 0,
-   "best_pos": null,
-   "title_matches_top_query": false,
-   "top_queries": []
-  },
-  {
    "slug": "world-series",
    "title": "What is the World Series?",
    "kind": "event",
@@ -1990,21 +2002,6 @@
    "top_queries": []
   },
   {
-   "slug": "atlanta-dream",
-   "title": "What is the Atlanta Dream WNBA team?",
-   "kind": "organization",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 36,
-   "age_days": 29.9,
-   "rival_exact": null,
-   "impr": 0,
-   "clicks": 0,
-   "best_pos": null,
-   "title_matches_top_query": false,
-   "top_queries": []
-  },
-  {
    "slug": "nyu-langone-health",
    "title": "What is NYU Langone Health's Kips Bay expansion?",
    "kind": "organization",
@@ -2026,7 +2023,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 36,
-   "age_days": 29.5,
+   "age_days": 29.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2101,7 +2098,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 19,
-   "age_days": 28.8,
+   "age_days": 28.9,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2266,7 +2263,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 62,
-   "age_days": 22.2,
+   "age_days": 22.3,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2281,7 +2278,7 @@
    "source": "auto",
    "q_word": "none",
    "title_len": 61,
-   "age_days": 26.7,
+   "age_days": 26.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2416,7 +2413,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 56,
-   "age_days": 25.4,
+   "age_days": 25.5,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2506,7 +2503,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 70,
-   "age_days": 24.6,
+   "age_days": 24.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2521,7 +2518,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 60,
-   "age_days": 24.6,
+   "age_days": 24.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2596,7 +2593,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 61,
-   "age_days": 24.1,
+   "age_days": 24.2,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2626,7 +2623,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 64,
-   "age_days": 23.7,
+   "age_days": 23.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2656,7 +2653,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 64,
-   "age_days": 23.6,
+   "age_days": 23.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2836,7 +2833,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 67,
-   "age_days": 22.6,
+   "age_days": 22.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2926,7 +2923,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 71,
-   "age_days": 22.5,
+   "age_days": 22.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3061,7 +3058,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 59,
-   "age_days": 22.2,
+   "age_days": 22.3,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3571,7 +3568,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 63,
-   "age_days": 20.8,
+   "age_days": 20.9,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3586,7 +3583,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 63,
-   "age_days": 20.8,
+   "age_days": 20.9,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3601,7 +3598,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 65,
-   "age_days": 20.8,
+   "age_days": 20.9,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3676,7 +3673,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 67,
-   "age_days": 20.7,
+   "age_days": 20.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3796,7 +3793,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 63,
-   "age_days": 20.6,
+   "age_days": 20.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3931,7 +3928,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 76,
-   "age_days": 19.7,
+   "age_days": 19.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3946,7 +3943,7 @@
    "source": "auto",
    "q_word": "who",
    "title_len": 66,
-   "age_days": 19.7,
+   "age_days": 19.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4051,7 +4048,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 72,
-   "age_days": 19.5,
+   "age_days": 19.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4081,7 +4078,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 80,
-   "age_days": 19.3,
+   "age_days": 19.4,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4096,7 +4093,7 @@
    "source": "auto",
    "q_word": "how",
    "title_len": 70,
-   "age_days": 19.3,
+   "age_days": 19.4,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4291,7 +4288,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 27,
-   "age_days": 18.7,
+   "age_days": 18.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4321,7 +4318,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 70,
-   "age_days": 18.3,
+   "age_days": 18.4,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4336,7 +4333,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 71,
-   "age_days": 18.2,
+   "age_days": 18.3,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4411,7 +4408,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 62,
-   "age_days": 17.8,
+   "age_days": 17.9,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4591,7 +4588,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 63,
-   "age_days": 16.7,
+   "age_days": 16.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4606,7 +4603,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 65,
-   "age_days": 16.7,
+   "age_days": 16.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4696,7 +4693,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 58,
-   "age_days": 16.6,
+   "age_days": 16.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4771,7 +4768,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 76,
-   "age_days": 16.4,
+   "age_days": 16.5,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5041,7 +5038,7 @@
    "source": "manual",
    "q_word": "when",
    "title_len": 61,
-   "age_days": 17.1,
+   "age_days": 17.2,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5206,7 +5203,7 @@
    "source": "manual",
    "q_word": "does",
    "title_len": 66,
-   "age_days": 10.6,
+   "age_days": 10.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5221,7 +5218,7 @@
    "source": "manual",
    "q_word": "does",
    "title_len": 59,
-   "age_days": 17.1,
+   "age_days": 17.2,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5326,7 +5323,7 @@
    "source": "manual",
    "q_word": "is",
    "title_len": 72,
-   "age_days": 17.1,
+   "age_days": 17.2,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5551,7 +5548,7 @@
    "source": "manual",
    "q_word": "is",
    "title_len": 64,
-   "age_days": 17.1,
+   "age_days": 17.2,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5671,7 +5668,7 @@
    "source": "manual",
    "q_word": "is",
    "title_len": 59,
-   "age_days": 7.6,
+   "age_days": 7.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5746,7 +5743,7 @@
    "source": "manual",
    "q_word": "is",
    "title_len": 60,
-   "age_days": 3.6,
+   "age_days": 3.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5806,7 +5803,7 @@
    "source": "manual",
    "q_word": "is",
    "title_len": 54,
-   "age_days": 5.6,
+   "age_days": 5.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5836,7 +5833,7 @@
    "source": "manual",
    "q_word": "is",
    "title_len": 62,
-   "age_days": 6.6,
+   "age_days": 6.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6526,7 +6523,7 @@
    "source": "manual",
    "q_word": "is",
    "title_len": 61,
-   "age_days": 21.4,
+   "age_days": 21.5,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6601,7 +6598,7 @@
    "source": "manual",
    "q_word": "what",
    "title_len": 59,
-   "age_days": 5.6,
+   "age_days": 5.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6616,7 +6613,7 @@
    "source": "manual",
    "q_word": "what",
    "title_len": 62,
-   "age_days": 17.1,
+   "age_days": 17.2,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6676,7 +6673,7 @@
    "source": "manual",
    "q_word": "what",
    "title_len": 65,
-   "age_days": 6.6,
+   "age_days": 6.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6691,7 +6688,7 @@
    "source": "manual",
    "q_word": "what",
    "title_len": 64,
-   "age_days": 17.1,
+   "age_days": 17.2,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6751,7 +6748,7 @@
    "source": "manual",
    "q_word": "what",
    "title_len": 61,
-   "age_days": 17.1,
+   "age_days": 17.2,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6766,7 +6763,7 @@
    "source": "manual",
    "q_word": "what",
    "title_len": 68,
-   "age_days": 17.1,
+   "age_days": 17.2,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6901,7 +6898,7 @@
    "source": "manual",
    "q_word": "what",
    "title_len": 53,
-   "age_days": 17.1,
+   "age_days": 17.2,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6946,7 +6943,7 @@
    "source": "manual",
    "q_word": "what",
    "title_len": 63,
-   "age_days": 3.6,
+   "age_days": 3.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6961,7 +6958,7 @@
    "source": "manual",
    "q_word": "what",
    "title_len": 65,
-   "age_days": 17.1,
+   "age_days": 17.2,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6991,7 +6988,7 @@
    "source": "manual",
    "q_word": "what",
    "title_len": 66,
-   "age_days": 10.6,
+   "age_days": 10.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -7006,7 +7003,7 @@
    "source": "manual",
    "q_word": "what",
    "title_len": 59,
-   "age_days": 7.6,
+   "age_days": 7.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -7021,7 +7018,7 @@
    "source": "manual",
    "q_word": "what",
    "title_len": 61,
-   "age_days": 7.6,
+   "age_days": 7.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -7111,7 +7108,7 @@
    "source": "manual",
    "q_word": "who",
    "title_len": 63,
-   "age_days": 10.6,
+   "age_days": 10.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -7141,7 +7138,7 @@
    "source": "manual",
    "q_word": "why",
    "title_len": 64,
-   "age_days": 3.6,
+   "age_days": 3.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -7156,7 +7153,7 @@
    "source": "manual",
    "q_word": "why",
    "title_len": 63,
-   "age_days": 10.6,
+   "age_days": 10.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -7186,7 +7183,7 @@
    "source": "manual",
    "q_word": "why",
    "title_len": 59,
-   "age_days": 7.6,
+   "age_days": 7.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -7201,7 +7198,7 @@
    "source": "manual",
    "q_word": "why",
    "title_len": 61,
-   "age_days": 5.6,
+   "age_days": 5.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -7246,7 +7243,7 @@
    "source": "manual",
    "q_word": "why",
    "title_len": 67,
-   "age_days": 6.6,
+   "age_days": 6.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -7261,7 +7258,7 @@
    "source": "manual",
    "q_word": "why",
    "title_len": 62,
-   "age_days": 5.6,
+   "age_days": 5.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -7321,7 +7318,7 @@
    "source": "manual",
    "q_word": "why",
    "title_len": 68,
-   "age_days": 6.6,
+   "age_days": 6.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -7456,7 +7453,7 @@
    "source": "manual",
    "q_word": "why",
    "title_len": 59,
-   "age_days": 3.6,
+   "age_days": 3.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -7501,7 +7498,7 @@
    "source": "manual",
    "q_word": "why",
    "title_len": 66,
-   "age_days": 5.6,
+   "age_days": 5.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -7546,7 +7543,7 @@
    "source": "manual",
    "q_word": "why",
    "title_len": 52,
-   "age_days": 3.6,
+   "age_days": 3.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -7591,7 +7588,7 @@
    "source": "manual",
    "q_word": "why",
    "title_len": 63,
-   "age_days": 7.6,
+   "age_days": 7.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -7606,7 +7603,7 @@
    "source": "manual",
    "q_word": "why",
    "title_len": 62,
-   "age_days": 6.6,
+   "age_days": 6.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
