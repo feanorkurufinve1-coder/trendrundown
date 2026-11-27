@@ -17240,7 +17240,7 @@
   ]
  },
  "how-long-does-a-washing-machine-last": {
-  "time": "2026-11-26T14:02:01+00:00",
+  "time": "2026-11-27T14:18:15+00:00",
   "query": "how long does a washing machine last",
   "in_suggest": true,
   "suggest": {
@@ -17307,11 +17307,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "internet-trends-this-week-2026-11-22": {
-  "time": "2026-11-26T14:02:03+00:00",
+  "time": "2026-11-27T14:18:16+00:00",
   "query": "what's trending on the internet this week",
   "in_suggest": false,
   "suggest": {
@@ -17350,11 +17354,15 @@
    [
     "2026-11-26",
     false
+   ],
+   [
+    "2026-11-27",
+    false
    ]
   ]
  },
  "is-sam-bankman-fried-still-in-prison": {
-  "time": "2026-11-26T14:02:06+00:00",
+  "time": "2026-11-27T14:18:19+00:00",
   "query": "is sam bankman-fried still in prison",
   "in_suggest": true,
   "suggest": {
@@ -17362,12 +17370,12 @@
     "sam bankman-fried",
     "sam bankman-fried girlfriend",
     "sam bankman-fried and caroline ellison",
-    "sam bankman-fried net worth",
     "sam bankman-fried wife",
+    "sam bankman-fried net worth",
     "sam bankman-fried parents",
     "sam bankman-fried sentence",
     "sam bankman-fried interview",
-    "sam bankman-fried now",
+    "sam bankman-fried prison sentence",
     "sam bankman-fried documentary"
    ],
    "who is sam bankman-fried": [
@@ -17426,11 +17434,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "why-are-people-saying-lucia-cheats-on-jason": {
-  "time": "2026-11-26T14:02:19+00:00",
+  "time": "2026-11-27T14:18:32+00:00",
   "query": "why are people saying lucia cheats on jason",
   "in_suggest": false,
   "suggest": {
@@ -17469,11 +17481,15 @@
    [
     "2026-11-26",
     false
+   ],
+   [
+    "2026-11-27",
+    false
    ]
   ]
  },
  "why-are-people-throwing-mustard-at-lsu": {
-  "time": "2026-11-26T14:02:21+00:00",
+  "time": "2026-11-27T14:18:34+00:00",
   "query": "why are people throwing mustard at lsu",
   "in_suggest": false,
   "suggest": {
@@ -17501,6 +17517,10 @@
    ],
    [
     "2026-11-26",
+    false
+   ],
+   [
+    "2026-11-27",
     false
    ]
   ]
@@ -17672,17 +17692,17 @@
   ]
  },
  "is-mr-irrelevant-a-true-story": {
-  "time": "2026-11-26T14:02:04+00:00",
+  "time": "2026-11-27T14:18:18+00:00",
   "query": "is mr irrelevant a true story",
   "in_suggest": true,
   "suggest": {
    "mr. irrelevant: the john tuggle story": [
+    "mr. irrelevant the john tuggle story",
     "mr. irrelevant the john tuggle story trailer",
     "mr. irrelevant the john tuggle story 2026",
     "mr. irrelevant the john tuggle story cast",
     "mr. irrelevant the john tuggle story videos",
     "mr. irrelevant the john tuggle story streaming",
-    "mr. irrelevant the john tuggle story",
     "mr. irrelevant the john tuggle story where to watch",
     "mr. irrelevant the john tuggle story rating",
     "mr. irrelevant the john tuggle story rating age",
@@ -17728,25 +17748,29 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "what-is-the-2011-jupiter-incident": {
-  "time": "2026-11-26T14:02:13+00:00",
+  "time": "2026-11-27T14:18:26+00:00",
   "query": "what is the 2011 jupiter incident",
   "in_suggest": true,
   "suggest": {
    "2011 jupiter incident": [
-    "2011 jupiter incident",
     "2011 jupiter incident meme",
+    "2011 jupiter incident",
+    "2011 jupiter incident wikipedia",
+    "2011 jupiter incident kies",
+    "2011 jupiter incident wiki",
     "2011 jupiter incident keys",
     "2011 jupiter incident lore",
-    "2011 jupiter incident wiki",
-    "2011 jupiter incident keis",
     "2011 jupiter incident caseoh",
-    "2011 jupiter incident wikipedia",
-    "2011 jupiter incident tiktok",
-    "2011 jupiter incident original video"
+    "2011 jupiter incident keis",
+    "2011 jupiter incident meme keys"
    ],
    "what is 2011 jupiter incident": [
     "what is 2011 jupiter incident",
@@ -17758,6 +17782,7 @@
     "what is the 2011 jupiter incident",
     "what is the 2011 jupiter incident meme",
     "what is the 2011 jupiter incident based on",
+    "what is the 2011 jupiter incident lore",
     "what happened on april 29 2011",
     "what happened may 11 2011",
     "what happened on april 11 2011"
@@ -17779,11 +17804,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "why-are-people-heading-to-cinemas-in-cat-ears": {
-  "time": "2026-11-26T14:02:18+00:00",
+  "time": "2026-11-27T14:18:31+00:00",
   "query": "why are people heading to cinemas in cat ears",
   "in_suggest": false,
   "suggest": {
@@ -17824,11 +17853,15 @@
    [
     "2026-11-26",
     false
+   ],
+   [
+    "2026-11-27",
+    false
    ]
   ]
  },
  "why-is-everyone-mad-at-kroger": {
-  "time": "2026-11-26T14:02:25+00:00",
+  "time": "2026-11-27T14:18:38+00:00",
   "query": "why is everyone mad at kroger",
   "in_suggest": true,
   "suggest": {
@@ -17876,11 +17909,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "why-is-there-a-d-in-fridge": {
-  "time": "2026-11-26T14:02:27+00:00",
+  "time": "2026-11-27T14:18:40+00:00",
   "query": "why does refrigerator not have a d",
   "in_suggest": true,
   "suggest": {
@@ -17932,6 +17969,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
@@ -18074,7 +18115,7 @@
   ]
  },
  "what-does-to-me-my-x-men-mean": {
-  "time": "2026-11-26T14:02:10+00:00",
+  "time": "2026-11-27T14:18:23+00:00",
   "query": "what does to me my x-men mean",
   "in_suggest": true,
   "suggest": {
@@ -18132,11 +18173,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "what-is-focker-in-law-about": {
-  "time": "2026-11-26T14:02:12+00:00",
+  "time": "2026-11-27T14:18:25+00:00",
   "query": "what is focker in law about",
   "in_suggest": true,
   "suggest": {
@@ -18195,11 +18240,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "what-is-the-needoh-lava-lamp": {
-  "time": "2026-11-26T14:02:14+00:00",
+  "time": "2026-11-27T14:18:27+00:00",
   "query": "what is the needoh lava lamp",
   "in_suggest": true,
   "suggest": {
@@ -18208,12 +18257,12 @@
     "needoh lava lamp target",
     "needoh lava lamp spencers",
     "needoh lava lamp walmart",
+    "needoh lava lamp squishy",
     "needoh lava lamp near me",
     "needoh lava lamp nearby",
-    "needoh lava lamp retail price",
-    "needoh lava lamp squishy",
-    "needoh lava lamp target pink",
-    "needoh lava lamp for sale"
+    "needoh lava lamp black friday",
+    "needoh lava lamp msrp",
+    "needoh lava lamp target pink"
    ],
    "what is needoh lava lamp": [
     "what is needoh lava lamp",
@@ -18244,25 +18293,29 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "what-is-the-odinforce": {
-  "time": "2026-11-26T14:02:15+00:00",
+  "time": "2026-11-27T14:18:28+00:00",
   "query": "what is the odinforce",
   "in_suggest": true,
   "suggest": {
    "odinforce": [
     "odinforce",
     "odinforce thor",
-    "odinforce ultron",
-    "odinforce thor vs doom",
-    "odinforce powers",
-    "odinforce thor vs dr doom",
-    "odinforce doomsday",
     "odinforce thor vs rune king thor",
-    "odinforce thor vs god emperor doom",
-    "odinforce marvel"
+    "odinforce thor vs doom",
+    "odinforce ultron",
+    "odinforce thor vs dr doom",
+    "odinforce marvel",
+    "odinforce ultron vs infinity ultron",
+    "odinforce ultron comics",
+    "odinforce vs phoenix force"
    ],
    "what is odinforce": [
     "what is odinforce",
@@ -18301,11 +18354,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "why-does-my-tax-refund-take-so-long": {
-  "time": "2026-11-26T14:02:24+00:00",
+  "time": "2026-11-27T14:18:37+00:00",
   "query": "why does tax refund take so long",
   "in_suggest": true,
   "suggest": {
@@ -18366,6 +18423,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
@@ -18486,13 +18547,13 @@
   ]
  },
  "is-toos-a-true-story": {
-  "time": "2026-11-26T14:02:07+00:00",
+  "time": "2026-11-27T14:18:20+00:00",
   "query": "is toos a true story",
   "in_suggest": false,
   "suggest": {
    "toos: the van der valk kidnapping": [
-    "toos the van der valk kidnapping",
-    "toss the van der valk kidnapping netflix"
+    "toss the van der valk kidnapping netflix",
+    "toos the van der valk kidnapping"
    ],
    "what is toos: the van der valk kidnapping": [
     "toss the van der valk kidnapping netflix"
@@ -18516,11 +18577,15 @@
    [
     "2026-11-26",
     false
+   ],
+   [
+    "2026-11-27",
+    false
    ]
   ]
  },
  "viral-couple-arguing-at-football-game": {
-  "time": "2026-11-26T14:02:08+00:00",
+  "time": "2026-11-27T14:18:22+00:00",
   "query": "viral couple arguing at football game",
   "in_suggest": false,
   "suggest": {
@@ -18536,11 +18601,15 @@
    [
     "2026-11-26",
     false
+   ],
+   [
+    "2026-11-27",
+    false
    ]
   ]
  },
  "what-was-general-grant-doing-on-the-thermostat": {
-  "time": "2026-11-26T14:02:16+00:00",
+  "time": "2026-11-27T14:18:29+00:00",
   "query": "what was general grant doing on the thermostat",
   "in_suggest": true,
   "suggest": {
@@ -18586,11 +18655,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "why-does-my-phone-battery-drain-so-fast": {
-  "time": "2026-11-26T14:02:22+00:00",
+  "time": "2026-11-27T14:18:35+00:00",
   "query": "why does my phone battery drain so fast",
   "in_suggest": true,
   "suggest": {
@@ -18651,11 +18724,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "why-is-tiktok-not-working-outage-november-24-2026": {
-  "time": "2026-11-26T14:02:28+00:00",
+  "time": "2026-11-27T14:18:41+00:00",
   "query": "why is tiktok not working",
   "in_suggest": true,
   "suggest": {
@@ -18693,6 +18770,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
