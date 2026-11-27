@@ -1,67 +1,7 @@
 {
- "made": "2026-11-26T21:33:34+00:00",
+ "made": "2026-11-27T09:47:34+00:00",
  "about": "Премьеры сериалов и новых сезонов в США на 14 дней вперёд (TVmaze). new_series = совсем новый сериал. Сырьё для прогнозов «is X a true story», «X cast», «X season N release time».",
  "premieres": [
-  {
-   "date": "2026-11-26",
-   "show": "The National Dog Show",
-   "season": 2026,
-   "new_series": false,
-   "type": "Reality",
-   "genres": [],
-   "network": "NBC",
-   "premiered": "2016-11-24",
-   "summary": "The National Dog Show is a conformation show sanctioned by the American Kennel Club. The National Dog Show has been ongoing since 1879 with its only interruption being the Great Depression from 1928 through 1932. The show is held by The Kennel Club of Philadelphia, a founding club of AKC. It traditionally takes place on the third from last weekend in November over two days. The National Dog show i",
-   "url": "https://www.tvmaze.com/shows/22921/the-national-dog-show",
-   "official": "http://www.nbc.com/the-national-dog-show?nbc=1"
-  },
-  {
-   "date": "2026-11-26",
-   "show": "Sweetpea",
-   "season": 2,
-   "new_series": false,
-   "type": "Scripted",
-   "genres": [
-    "Drama",
-    "Comedy",
-    "Thriller"
-   ],
-   "network": "Now",
-   "premiered": "2024-10-10",
-   "summary": "Rhiannon Lewis doesn't make much of an impression - people walk past her in the street without a second glance. That is until she is pushed over the edge and loses control. Rhiannon's life transforms, but can she keep her killer secret?",
-   "url": "https://www.tvmaze.com/shows/46251/sweetpea",
-   "official": "https://www.sky.com/watch/sweetpea"
-  },
-  {
-   "date": "2026-11-26",
-   "show": "Mickey Mouse Specials",
-   "season": 2026,
-   "new_series": false,
-   "type": "Animation",
-   "genres": [],
-   "network": "Disney+",
-   "premiered": "2021-10-07",
-   "summary": "A series of special animations featuring Mickey Mouse and his friends. ",
-   "url": "https://www.tvmaze.com/shows/70700/mickey-mouse-specials",
-   "official": null
-  },
-  {
-   "date": "2026-11-26",
-   "show": "The Hunting Wives",
-   "season": 2,
-   "new_series": false,
-   "type": "Scripted",
-   "genres": [
-    "Drama",
-    "Thriller",
-    "Mystery"
-   ],
-   "network": "Netflix",
-   "premiered": "2025-07-21",
-   "summary": "The Hunting Wives tells the story of Sophie O'Neil and her family's move from the East Coast to deep-red East Texas, where she succumbs to socialite Margo Banks‘ irresistible charms – and finds her life consumed by obsession, seduction, and murder.",
-   "url": "https://www.tvmaze.com/shows/72427/the-hunting-wives",
-   "official": "https://www.netflix.com/title/82013700"
-  },
   {
    "date": "2026-11-27",
    "show": "The Team: Michigan Football",
@@ -480,19 +420,6 @@
   },
   {
    "date": "2026-12-06",
-   "show": "Celebrity Scares",
-   "season": 1,
-   "new_series": true,
-   "type": "Reality",
-   "genres": [],
-   "network": "YouTube",
-   "premiered": "2026-12-06",
-   "summary": "An unscripted, immersive horror-interview series that pairs genre legends and celebrities with premier haunted attractions for terrifying, raw conversations while navigating jump scares.",
-   "url": "https://www.tvmaze.com/shows/94966/celebrity-scares",
-   "official": "https://celebrityscares.com/"
-  },
-  {
-   "date": "2026-12-06",
    "show": "Artful",
    "season": 7,
    "new_series": false,
@@ -612,6 +539,50 @@
    "summary": "The Game Awards is an annual awards ceremony honoring achievements in the video game industry. Established in 2014, the shows are produced and hosted by game journalist Geoff Keighley, who worked on its predecessor, the Spike Video Game Awards, for over ten years. With the permission of Spike, he worked with several video game companies to create the show. In addition to the awards, the Game Award",
    "url": "https://www.tvmaze.com/shows/33928/the-game-awards",
    "official": "https://thegameawards.com/"
+  },
+  {
+   "date": "2026-12-11",
+   "show": "Garfield",
+   "season": 1,
+   "new_series": true,
+   "type": "Animation",
+   "genres": [
+    "Comedy",
+    "Children"
+   ],
+   "network": "Paramount+",
+   "premiered": "2026-12-11",
+   "summary": "Garfield, the series, is inspired by Jim Davis' original comic strip and features the chonky feline at his finest, most sarcastic and lackadaisical.",
+   "url": "https://www.tvmaze.com/shows/90747/garfield",
+   "official": null
+  },
+  {
+   "date": "2026-12-11",
+   "show": "Timberlake",
+   "season": 1,
+   "new_series": true,
+   "type": "Documentary",
+   "genres": [],
+   "network": "Apple TV",
+   "premiered": "2026-12-11",
+   "summary": "An expansive portrait of the life and career of multi-hyphenate artist and icon Justin Timberlake. Raw, reflective and revealing, Timberlake sits down to discuss the triumphs that made him a global success, his personal perspective beyond the headlines and the challenges he's faced behind the scenes.",
+   "url": "https://www.tvmaze.com/shows/95928/timberlake",
+   "official": "https://tv.apple.com/us/show/timberlake/umc.cmc.4v3f5oodan8l5jvjcj6lo8j34"
+  },
+  {
+   "date": "2026-12-11",
+   "show": "College Football Awards",
+   "season": 2026,
+   "new_series": false,
+   "type": "Award Show",
+   "genres": [
+    "Sports"
+   ],
+   "network": "ESPN",
+   "premiered": "1991-12-07",
+   "summary": "The College Football Awards began with the inaugural presentation on 7 December 1991. In this annual event winners of several major NCAA college football awards are announced. There is a total of 11 awards that are present each year during this live telecast: Maxwell Award (most outstanding player), Chuck Bednarik Award (defensive player of the year), Biletnikoff Award (most outstanding wide recei",
+   "url": "https://www.tvmaze.com/shows/9883/college-football-awards",
+   "official": "http://espn.go.com/college-football/awards"
   }
  ]
 }
