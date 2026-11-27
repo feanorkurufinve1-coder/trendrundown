@@ -15035,7 +15035,7 @@
   ]
  },
  "bay-area-waterspouts-tornado-warning": {
-  "time": "2026-11-26T18:03:31+00:00",
+  "time": "2026-11-27T18:03:32+00:00",
   "query": "bay area waterspouts tornado warning",
   "in_suggest": false,
   "suggest": {
@@ -15083,11 +15083,15 @@
    [
     "2026-11-26",
     false
+   ],
+   [
+    "2026-11-27",
+    false
    ]
   ]
  },
  "california-sues-openai": {
-  "time": "2026-11-26T18:03:33+00:00",
+  "time": "2026-11-27T18:03:34+00:00",
   "query": "california sues openai",
   "in_suggest": false,
   "suggest": {
@@ -15134,6 +15138,10 @@
    ],
    [
     "2026-11-26",
+    false
+   ],
+   [
+    "2026-11-27",
     false
    ]
   ]
@@ -15618,7 +15626,7 @@
   ]
  },
  "apple-outage-november-17-2026": {
-  "time": "2026-11-26T18:03:30+00:00",
+  "time": "2026-11-27T18:03:31+00:00",
   "query": "apple outage",
   "in_suggest": true,
   "suggest": {
@@ -15683,6 +15691,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
@@ -16245,21 +16257,21 @@
   ]
  },
  "cma-awards-2026-winners": {
-  "time": "2026-11-26T18:03:34+00:00",
+  "time": "2026-11-27T18:03:35+00:00",
   "query": "cma awards 2026 winners",
   "in_suggest": true,
   "suggest": {
    "2026 cma awards": [
     "2026 cma awards",
     "2026 cma awards date",
+    "2026 cma awards show",
     "2026 cma awards tickets",
     "2026 cma awards nominees",
     "2026 cma awards performers",
     "2026 cma awards host",
     "2026 cma awards winners",
     "2026 cma awards schedule",
-    "2026 cma awards lineup",
-    "2026 cma awards location"
+    "2026 cma awards lineup"
    ],
    "what is 2026 cma awards": [
     "what channel is 2026 cma awards on",
@@ -16313,6 +16325,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
@@ -16808,7 +16824,7 @@
   ]
  },
  "california-earthquake-pinnacles-november-2026": {
-  "time": "2026-11-26T18:03:32+00:00",
+  "time": "2026-11-27T18:03:33+00:00",
   "query": "earthquake california",
   "in_suggest": true,
   "suggest": {
@@ -16825,12 +16841,12 @@
     "earthquake california today",
     "earthquake california today just now",
     "earthquake california just now",
-    "earthquake california today just now live",
-    "earthquake california 1989",
-    "earthquake california yesterday",
     "earthquake california now",
-    "earthquake california 1994",
-    "earthquake california just now live"
+    "earthquake california today just now live",
+    "earthquake california just now live",
+    "earthquake california yesterday",
+    "earthquake california 1989",
+    "earthquake california prediction"
    ]
   },
   "history": [
@@ -16860,6 +16876,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
