@@ -2028,7 +2028,7 @@
   ]
  },
  "what-does-habibi-mean": {
-  "time": "2026-11-26T16:44:18+00:00",
+  "time": "2026-11-27T16:46:52+00:00",
   "query": "what does habibi mean",
   "in_suggest": true,
   "suggest": {
@@ -2039,10 +2039,10 @@
     "habibi miami",
     "habibi in arabic",
     "habibi deli",
-    "habibi vs habibti",
     "habibi costume",
     "habibi cafe",
-    "habibi meaning in arabic"
+    "habibi meaning in arabic",
+    "habibi meaning in english"
    ],
    "what is habibi": [
     "what is habibi",
@@ -2070,10 +2070,6 @@
    ]
   },
   "history": [
-   [
-    "2026-11-13",
-    true
-   ],
    [
     "2026-11-14",
     true
@@ -2124,6 +2120,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
@@ -2715,7 +2715,7 @@
   ]
  },
  "richard-avedon": {
-  "time": "2026-11-26T16:44:11+00:00",
+  "time": "2026-11-27T16:46:45+00:00",
   "query": "who was richard avedon",
   "in_suggest": true,
   "suggest": {
@@ -2724,12 +2724,12 @@
     "richard avedon documentary",
     "richard avedon photos",
     "richard avedon in the american west",
-    "richard avedon marilyn monroe",
     "richard avedon veruschka",
+    "richard avedon ode to veruschka",
+    "richard avedon marilyn monroe",
     "richard avedon famous photos",
     "richard avedon portraits",
-    "richard avedon books",
-    "richard avedon beatles"
+    "richard avedon books"
    ],
    "who is richard avedon": [
     "who is richard avedon",
@@ -2757,10 +2757,6 @@
    ]
   },
   "history": [
-   [
-    "2026-11-13",
-    true
-   ],
    [
     "2026-11-14",
     true
@@ -2812,19 +2808,23 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "silver-slugger-award": {
-  "time": "2026-11-26T16:44:13+00:00",
+  "time": "2026-11-27T16:46:47+00:00",
   "query": "what is the silver slugger award",
   "in_suggest": true,
   "suggest": {
    "silver slugger award": [
     "silver slugger award",
+    "silver slugger award 2026",
     "silver slugger award winners",
     "silver slugger award winners 2026",
-    "silver slugger awards 2026",
     "silver slugger award 2026 predictions",
     "silver slugger award meaning",
     "silver slugger award finalists 2026",
@@ -2859,10 +2859,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -2913,11 +2909,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "teruaki-sato": {
-  "time": "2026-11-26T16:44:14+00:00",
+  "time": "2026-11-27T16:46:48+00:00",
   "query": "who is teruaki sato",
   "in_suggest": true,
   "suggest": {
@@ -2927,11 +2927,11 @@
     "teruaki sato cubs",
     "teruaki sato highlights",
     "teruaki sato contract",
-    "teruaki sato phillies",
     "teruaki sato yankees",
+    "teruaki sato cubs jersey",
+    "teruaki sato mlb",
     "teruaki sato scouting report",
-    "teruaki sato jersey",
-    "teruaki sato mlb"
+    "teruaki sato phillies"
    ],
    "who is teruaki sato": [
     "who is teruaki sato",
@@ -2944,10 +2944,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -2998,11 +2994,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "when-does-new-congress-start": {
-  "time": "2026-11-26T16:44:25+00:00",
+  "time": "2026-11-27T16:46:58+00:00",
   "query": "when does the new congress take office",
   "in_suggest": true,
   "suggest": {
@@ -3044,10 +3044,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -3097,6 +3093,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
@@ -3898,7 +3898,7 @@
   ]
  },
  "rookie-cy-young-winner": {
-  "time": "2026-11-26T16:44:12+00:00",
+  "time": "2026-11-27T16:46:46+00:00",
   "query": "has a rookie ever won the cy young",
   "in_suggest": true,
   "suggest": {
@@ -3951,10 +3951,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -4005,25 +4001,29 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "the-altruists-true-story": {
-  "time": "2026-11-26T16:44:16+00:00",
+  "time": "2026-11-27T16:46:49+00:00",
   "query": "is the altruists a true story",
   "in_suggest": true,
   "suggest": {
    "the altruists": [
     "the altruists",
     "the altruists cast",
-    "the altruists real people",
-    "the altruists reviews",
     "the altruists netflix",
-    "the altruists rotten tomatoes",
-    "the altruists netflix reviews",
-    "the altruists episodes",
+    "the altruists real people",
     "the altruists true story",
-    "the altruists reddit"
+    "the altruists reviews",
+    "the altruists rotten tomatoes",
+    "the altruists episodes",
+    "the altruists reddit",
+    "the altruists netflix reviews"
    ],
    "what is the altruists": [
     "what is the altruists about",
@@ -4050,10 +4050,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -4103,6 +4099,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
@@ -6701,7 +6701,7 @@
   ]
  },
  "the-empress-netflix-true-story": {
-  "time": "2026-11-26T16:44:17+00:00",
+  "time": "2026-11-27T16:46:51+00:00",
   "query": "is the empress on netflix a true story",
   "in_suggest": true,
   "suggest": {
@@ -6712,10 +6712,10 @@
     "the empress season 3",
     "the empress remarried",
     "the empress reversed",
-    "the empress of austria",
     "the empress tarot meaning",
-    "the empress season 3 cast",
-    "the empress season 4"
+    "the empress cast season 3",
+    "the empress season 4",
+    "the empress of austria"
    ],
    "what is the empress": [
     "what is the empress about",
@@ -6743,10 +6743,6 @@
    ]
   },
   "history": [
-   [
-    "2026-11-13",
-    true
-   ],
    [
     "2026-11-14",
     true
@@ -6798,11 +6794,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "what-is-a-hip-pointer": {
-  "time": "2026-11-26T16:44:19+00:00",
+  "time": "2026-11-27T16:46:53+00:00",
   "query": "what is a hip pointer injury",
   "in_suggest": true,
   "suggest": {
@@ -6857,10 +6857,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -6911,11 +6907,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "what-is-win-the-mall": {
-  "time": "2026-11-26T16:44:23+00:00",
+  "time": "2026-11-27T16:46:57+00:00",
   "query": "what is win the mall on netflix",
   "in_suggest": true,
   "suggest": {
@@ -6923,13 +6923,13 @@
     "win the mall",
     "win the mall cast",
     "win the mall winner",
-    "win the mall location",
     "win the mall host",
     "win the mall netflix",
+    "win the mall location",
     "win the mall elimination order",
-    "win the mall filming location",
-    "win the mall reddit",
-    "win the mole season 2"
+    "win the mall netflix cast",
+    "win the mall season 2",
+    "win the mall reddit"
    ],
    "what is win the mall": [
     "what is win the mall",
@@ -6953,10 +6953,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -7006,6 +7002,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
@@ -8663,7 +8663,7 @@
   ]
  },
  "why-does-social-security-get-taxed": {
-  "time": "2026-11-26T16:44:38+00:00",
+  "time": "2026-11-27T16:47:12+00:00",
   "query": "why does social security get taxed",
   "in_suggest": true,
   "suggest": {
@@ -8718,10 +8718,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -8772,11 +8768,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "why-is-my-check-engine-light-on": {
-  "time": "2026-11-26T16:44:41+00:00",
+  "time": "2026-11-27T16:47:14+00:00",
   "query": "why is my check engine light on",
   "in_suggest": true,
   "suggest": {
@@ -8831,10 +8831,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -8885,11 +8881,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "why-is-my-washing-machine-leaking-from-the-bottom": {
-  "time": "2026-11-26T16:44:44+00:00",
+  "time": "2026-11-27T16:47:17+00:00",
   "query": "why is my washing machine leaking from the bottom",
   "in_suggest": true,
   "suggest": {
@@ -8944,10 +8944,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -8997,6 +8993,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
@@ -9399,7 +9399,7 @@
   ]
  },
  "when-will-social-security-run-out": {
-  "time": "2026-11-26T16:44:26+00:00",
+  "time": "2026-11-27T16:47:00+00:00",
   "query": "when will social security run out",
   "in_suggest": true,
   "suggest": {
@@ -9453,10 +9453,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -9507,11 +9503,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "why-does-my-phone-battery-go-down-while-charging": {
-  "time": "2026-11-26T16:44:31+00:00",
+  "time": "2026-11-27T16:47:05+00:00",
   "query": "why does my phone battery go down while charging",
   "in_suggest": true,
   "suggest": {
@@ -9566,10 +9566,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -9620,11 +9616,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "why-does-my-phone-screen-keep-going-black": {
-  "time": "2026-11-26T16:44:34+00:00",
+  "time": "2026-11-27T16:47:07+00:00",
   "query": "why does my phone screen keep going black",
   "in_suggest": true,
   "suggest": {
@@ -9676,10 +9676,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -9730,11 +9726,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "why-does-social-security-come-out-of-my-paycheck": {
-  "time": "2026-11-26T16:44:37+00:00",
+  "time": "2026-11-27T16:47:10+00:00",
   "query": "why does social security come out of my paycheck",
   "in_suggest": true,
   "suggest": {
@@ -9788,10 +9788,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -9841,6 +9837,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
@@ -12824,7 +12824,7 @@
   ]
  },
  "why-does-my-phone-screen-go-black-during-calls": {
-  "time": "2026-11-26T16:44:32+00:00",
+  "time": "2026-11-27T16:47:06+00:00",
   "query": "why does my phone screen go black during calls",
   "in_suggest": true,
   "suggest": {
@@ -12927,11 +12927,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "why-does-my-washing-machine-smell-like-rotten-eggs": {
-  "time": "2026-11-26T16:44:35+00:00",
+  "time": "2026-11-27T16:47:09+00:00",
   "query": "why does my washing machine smell like rotten eggs",
   "in_suggest": true,
   "suggest": {
@@ -13033,25 +13037,29 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "wta-tennis": {
-  "time": "2026-11-26T16:44:45+00:00",
+  "time": "2026-11-27T16:47:18+00:00",
   "query": "what does wta stand for in tennis",
   "in_suggest": true,
   "suggest": {
    "wta": [
-    "wtae",
     "wta live rankings",
+    "wtae",
     "wta",
     "wta rankings",
     "wta finals",
+    "wtae news",
     "wtap",
     "wtae weather",
-    "wtae news",
-    "wtam 1100",
-    "wtap news"
+    "wta finals 2026",
+    "wtam 1100"
    ],
    "what is wta": [
     "what is wta",
@@ -13136,6 +13144,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
@@ -14332,7 +14344,7 @@
   ]
  },
  "what-is-the-ram-altman-meme": {
-  "time": "2026-11-26T16:44:22+00:00",
+  "time": "2026-11-27T16:46:55+00:00",
   "query": "what is the ram altman meme",
   "in_suggest": true,
   "suggest": {
@@ -14388,18 +14400,22 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "who-is-oobah-butler": {
-  "time": "2026-11-26T16:44:27+00:00",
+  "time": "2026-11-27T16:47:00+00:00",
   "query": "who is oobah butler",
   "in_suggest": true,
   "suggest": {
    "oobah butler": [
     "oobah butler",
-    "oobah butler show",
     "oobah butler hbo",
+    "oobah butler show",
     "oobah butler restaurant",
     "oobah butler wife",
     "oobah butler age",
@@ -14461,11 +14477,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "why-are-people-saying-ao3-is-back": {
-  "time": "2026-11-26T16:44:28+00:00",
+  "time": "2026-11-27T16:47:02+00:00",
   "query": "why are people saying ao3 is back",
   "in_suggest": false,
   "suggest": {
@@ -14478,8 +14498,8 @@
     "ao3 alternatives",
     "ao3 login",
     "ao3 app",
-    "ao3 meaning",
-    "ao3 fanfic"
+    "ao3 website",
+    "ao3 meaning"
    ],
    "what is ao3": [
     "what is ao3",
@@ -14540,11 +14560,15 @@
    [
     "2026-11-26",
     false
+   ],
+   [
+    "2026-11-27",
+    false
    ]
   ]
  },
  "why-is-everyone-freaking-out-about-november-17": {
-  "time": "2026-11-26T16:44:39+00:00",
+  "time": "2026-11-27T16:47:13+00:00",
   "query": "why is everyone freaking out about november 17",
   "in_suggest": false,
   "suggest": {
@@ -14610,6 +14634,10 @@
    ],
    [
     "2026-11-26",
+    false
+   ],
+   [
+    "2026-11-27",
     false
    ]
   ]
@@ -15340,21 +15368,21 @@
   ]
  },
  "what-is-si-instead-of-ai": {
-  "time": "2026-11-26T16:44:21+00:00",
+  "time": "2026-11-27T16:46:54+00:00",
   "query": "what is si instead of ai",
   "in_suggest": true,
   "suggest": {
    "si": [
-    "sixers",
     "silver price today",
+    "sidelined 3",
     "silver price",
-    "sixers schedule",
-    "sixers standings",
+    "sixers",
+    "sitka",
     "sirius xm",
     "sinners",
     "six flags",
-    "silo",
-    "sidelined 3"
+    "sierra trading post",
+    "sidelined"
    ],
    "what is si": [
     "what is sibo",
@@ -15363,10 +15391,10 @@
     "what is signal app",
     "what is si",
     "what is sickle cell disease",
+    "what is simmering",
     "what is silicon dioxide",
     "what is sin",
-    "what is silent hill about",
-    "what is sinusitis"
+    "what is silent hill about"
    ],
    "what is si instead of ai": [
     "what is si instead of ai",
@@ -15426,11 +15454,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "why-are-people-saying-robert-pattinson-is-gen-z": {
-  "time": "2026-11-26T16:44:29+00:00",
+  "time": "2026-11-27T16:47:03+00:00",
   "query": "why are people saying robert pattinson is gen z",
   "in_suggest": true,
   "suggest": {
@@ -15484,11 +15516,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "why-is-my-phone-charging-slow": {
-  "time": "2026-11-26T16:44:42+00:00",
+  "time": "2026-11-27T16:47:16+00:00",
   "query": "why is my phone charging slow",
   "in_suggest": true,
   "suggest": {
@@ -15573,6 +15609,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
@@ -19177,7 +19217,7 @@
   ]
  },
  "aaron-rodgers-released-steelers": {
-  "time": "2026-11-26T16:44:08+00:00",
+  "time": "2026-11-27T16:46:42+00:00",
   "query": "aaron rodgers released",
   "in_suggest": true,
   "suggest": {
@@ -19193,24 +19233,28 @@
     "aaron rodgers released",
     "aaron rodgers released from pittsburgh",
     "aaron rodgers released why",
-    "aaron rodgers released reddit",
-    "aaron rodgers released from the pittsburgh steelers",
-    "aaron rodgers released or benched",
-    "aaron rodgers released meaning",
+    "aaron rodgers released what did he say",
     "aaron rodgers released interview",
-    "aaron rodgers released today",
-    "aaron rodgers released pat mcafee show"
+    "aaron rodgers released reddit",
+    "aaron rodgers released from steelers",
+    "aaron rodgers released reason",
+    "aaron rodgers released meaning",
+    "aaron rodgers released video"
    ]
   },
   "history": [
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "andy-taylor-duran-duran-dies": {
-  "time": "2026-11-26T16:44:09+00:00",
+  "time": "2026-11-27T16:46:43+00:00",
   "query": "andy taylor duran duran",
   "in_suggest": true,
   "suggest": {
@@ -19218,48 +19262,52 @@
     "andy taylor",
     "andy taylor duran duran",
     "andy taylor cause of death",
-    "andy taylor death",
     "andy taylor net worth",
+    "andy taylor death",
     "andy taylor wife",
-    "andy taylor died",
-    "andy taylor songs",
+    "andy taylor duran duran cause of death",
     "andy taylor news",
-    "andy taylor duran duran cause of death"
+    "andy taylor died",
+    "andy taylor children"
    ],
    "who is andy taylor": [
     "who is andy taylor",
-    "who is andy taylor that died",
     "who is andy taylor from duran duran",
-    "who is andy taylor married to",
-    "who is andy taylor that passed away",
-    "who is andy taylor from duran duran married to",
     "who is andy taylor poker player",
+    "who is andy taylor from duran duran married to",
+    "who is andy taylor married to",
     "andy taylor's girlfriend",
     "who is andy taylor's wife",
-    "who is andy taylor and barney fife"
+    "who is andy taylor and barney fife",
+    "what is andy taylor's real name",
+    "what is andy taylor doing now"
    ],
    "andy taylor duran duran": [
     "andy taylor duran duran",
-    "andy taylor duran duran guitarist",
     "andy taylor duran duran cause of death",
-    "andy taylor duran duran death",
     "andy taylor duran duran net worth",
-    "andy taylor duran duran wife",
+    "andy taylor duran duran guitarist",
+    "andy taylor duran duran death",
+    "andy taylor duran duran prostate cancer",
     "andy taylor duran duran height",
     "andy taylor duran duran family",
-    "andy taylor duran duran songs",
-    "andy taylor duran duran dead"
+    "andy taylor duran duran images",
+    "andy taylor duran duran guitar"
    ]
   },
   "history": [
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "macys-thanksgiving-parade-postponed-2026": {
-  "time": "2026-11-26T16:44:10+00:00",
+  "time": "2026-11-27T16:46:44+00:00",
   "query": "macy's thanksgiving day parade postponed",
   "in_suggest": true,
   "suggest": {
@@ -19269,18 +19317,22 @@
     "macy's thanksgiving day parade postponed",
     "macy's thanksgiving day parade postponed 2026",
     "macy's thanksgiving day parade postponed before",
-    "macy's thanksgiving day parade postponed to saturday due to storm",
-    "macy's thanksgiving day parade postponed until saturday",
-    "macy's thanksgiving day parade postponed till saturday",
-    "macy's thanksgiving day parade postponed due to weather",
-    "macy's thanksgiving day parade postponed to saturday due to weather",
-    "macy's thanksgiving day parade postponed to saturday",
-    "macy's thanksgiving day parade postponed why"
+    "macy's thanksgiving day parade postponed why",
+    "macy's thanksgiving day parade cancelled",
+    "macy's thanksgiving day parade cancelled today",
+    "macy's thanksgiving day parade cancelled 2026",
+    "macy's thanksgiving day parade cancelled 2025",
+    "macy's thanksgiving day parade delayed",
+    "macy's thanksgiving day parade 2025 cancelled time"
    ]
   },
   "history": [
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
