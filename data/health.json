@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-27T14:31:48+00:00",
+ "checked": "2026-11-27T15:02:15+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -406,7 +406,7 @@
   },
   {
    "url": "/x/delta-flights-delays-atlanta-november-22-2026",
-   "at": "2026-11-27T08:47:05+00:00",
+   "at": "2026-11-27T15:02:09+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -562,7 +562,7 @@
   },
   {
    "url": "/x/florida-tornado-warnings-kings-point-delray-beach",
-   "at": "2026-11-27T08:47:11+00:00",
+   "at": "2026-11-27T15:02:15+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2410,7 +2410,7 @@
   },
   {
    "url": "/x/why-are-people-climbing-out-of-manholes",
-   "at": "2026-11-27T08:46:47+00:00",
+   "at": "2026-11-27T15:01:50+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2506,7 +2506,7 @@
   },
   {
    "url": "/x/why-are-people-saying-ohio-isnt-a-state",
-   "at": "2026-11-27T08:46:53+00:00",
+   "at": "2026-11-27T15:01:57+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2518,7 +2518,7 @@
   },
   {
    "url": "/x/why-are-people-saying-prepare-for-90-days",
-   "at": "2026-11-27T08:46:59+00:00",
+   "at": "2026-11-27T15:02:03+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
