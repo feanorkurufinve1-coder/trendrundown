@@ -1,6 +1,6 @@
 {
  "alaska-ranked-choice-voting": {
-  "time": "2026-11-26T20:46:40+00:00",
+  "time": "2026-11-27T21:03:29+00:00",
   "query": "how does alaska ranked choice voting work",
   "in_suggest": true,
   "suggest": {
@@ -55,10 +55,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -108,45 +104,45 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
  },
  "cyber-monday": {
-  "time": "2026-11-26T20:46:41+00:00",
+  "time": "2026-11-27T21:03:30+00:00",
   "query": "what is cyber monday",
   "in_suggest": true,
   "suggest": {
    "cyber monday": [
     "cyber monday",
-    "cyber monday 2026",
     "cyber monday deals",
+    "cyber monday 2026",
     "cyber monday deals 2026",
     "cyber monday vs black friday",
     "cyber monday amazon 2026",
-    "cyber monday tv deals",
     "cyber monday sales",
-    "cyber monday laptop deals",
-    "cyber monday amazon"
+    "cyber monday tv deals",
+    "cyber monday ps5 deals",
+    "cyber monday deals amazon"
    ],
    "what is cyber monday": [
     "what is cyber monday",
+    "what is cyber monday vs black friday",
     "what is cyber monday 2026",
     "what is cyber monday sale",
-    "what is cyber monday on amazon",
     "what is cyber monday for walmart",
     "what is cyber monday and black friday",
     "what is cyber monday deals",
     "what is cyber monday all about",
-    "what is cyber monday vs black friday",
+    "what is cyber monday on amazon",
     "what is cyber monday uk"
    ]
   },
   "history": [
-   [
-    "2026-11-13",
-    true
-   ],
    [
     "2026-11-14",
     true
@@ -198,11 +194,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "dane-cook-brother": {
-  "time": "2026-11-26T20:46:43+00:00",
+  "time": "2026-11-27T21:03:31+00:00",
   "query": "what happened to dane cook brother",
   "in_suggest": true,
   "suggest": {
@@ -240,8 +240,8 @@
    "dane cook brother": [
     "dane cook brother",
     "dane cook brother now",
-    "dane cook brother wife",
     "dane cook brother documentary",
+    "dane cook brother wife",
     "dane cook brother story",
     "dane cook brother darryl",
     "dane cook brother money",
@@ -251,10 +251,6 @@
    ]
   },
   "history": [
-   [
-    "2026-11-13",
-    true
-   ],
    [
     "2026-11-14",
     true
@@ -306,11 +302,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "designated-for-assignment": {
-  "time": "2026-11-26T20:46:44+00:00",
+  "time": "2026-11-27T21:03:33+00:00",
   "query": "what does designated for assignment mean",
   "in_suggest": true,
   "suggest": {
@@ -365,10 +365,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -419,11 +415,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "how-mlb-mvp-is-voted": {
-  "time": "2026-11-26T20:46:46+00:00",
+  "time": "2026-11-27T21:03:34+00:00",
   "query": "how is the mlb mvp voted",
   "in_suggest": true,
   "suggest": {
@@ -460,10 +460,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -514,11 +510,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "non-tender": {
-  "time": "2026-11-26T20:46:48+00:00",
+  "time": "2026-11-27T21:03:36+00:00",
   "query": "what does non-tender mean in baseball",
   "in_suggest": true,
   "suggest": {
@@ -569,10 +569,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -623,11 +619,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "qualifying-offer": {
-  "time": "2026-11-26T20:46:49+00:00",
+  "time": "2026-11-27T21:03:37+00:00",
   "query": "what is a qualifying offer in mlb",
   "in_suggest": true,
   "suggest": {
@@ -677,10 +677,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -731,16 +727,21 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "rule-5-draft": {
-  "time": "2026-11-26T20:46:51+00:00",
+  "time": "2026-11-27T21:03:38+00:00",
   "query": "what is the rule 5 draft",
   "in_suggest": true,
   "suggest": {
    "rule 5 draft": [
     "rule 5 draft",
+    "rule 5 draft mlb",
     "rule 5 draft 2026",
     "rule 5 draft eligibility",
     "rule 5 draft meaning",
@@ -748,8 +749,7 @@
     "rule 5 draft date",
     "rule 5 draft 2025",
     "rule 5 draft order",
-    "rule 5 draft deadline",
-    "rule 5 draft explained"
+    "rule 5 draft deadline"
    ],
    "what is rule 5 draft": [
     "what is rule 5 draft",
@@ -778,10 +778,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -832,11 +828,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "scott-colom": {
-  "time": "2026-11-26T20:46:51+00:00",
+  "time": "2026-11-27T21:03:39+00:00",
   "query": "who is scott colom",
   "in_suggest": true,
   "suggest": {
@@ -867,10 +867,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -921,11 +917,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "telerally": {
-  "time": "2026-11-26T20:46:53+00:00",
+  "time": "2026-11-27T21:03:40+00:00",
   "query": "what is a telerally",
   "in_suggest": true,
   "suggest": {
@@ -956,10 +956,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -1010,38 +1006,22 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "two-dan-sullivans-alaska": {
-  "time": "2026-11-26T20:46:54+00:00",
+  "time": "2026-11-27T21:03:41+00:00",
   "query": "why are there two dan sullivans on the alaska ballot",
   "in_suggest": true,
   "suggest": {
    "daniel j. sullivan jr.": [
-    "daniel j. sullivan jr. alaska",
-    "daniel j. sullivan jr. age",
-    "daniel j. sullivan jr. wikipedia",
-    "daniel j. sullivan jr. udc",
-    "daniel j. sullivan jr. website",
-    "daniel j. sullivan jr. wiki",
-    "daniel j. sullivan jr. party",
-    "daniel j. sullivan jr. related to dan sullivan",
-    "daniel j. sullivan jr. platform",
-    "daniel j. sullivan jr. reddit"
+    "daniel j. sullivan jr. alaska"
    ],
-   "who is daniel j. sullivan jr.": [
-    "who is daniel j. sullivan jr. alaska",
-    "who is daniel j sullivan jr",
-    "who is daniel j sullivan jr running in alaska",
-    "is daniel j sullivan jr a democrat",
-    "is daniel j sullivan jr a democrat or republican",
-    "is daniel j sullivan jr a real.person",
-    "is daniel j sullivan jr an independent",
-    "is daniel j sullivan jr a registered republican",
-    "where is daniel j sullivan jr now",
-    "why is daniel j sullivan jr running"
-   ],
+   "who is daniel j. sullivan jr.": [],
    "why are there two dan sullivans on the alaska ballot": [
     "why are there two dan sullivans on the alaska ballot",
     "is dan sullivan from alaska",
@@ -1051,10 +1031,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    false
-   ],
-   [
     "2026-11-14",
     false
    ],
@@ -1105,11 +1081,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "under-siege-netflix-true-story": {
-  "time": "2026-11-26T20:46:56+00:00",
+  "time": "2026-11-27T21:03:43+00:00",
   "query": "is under siege on netflix a true story",
   "in_suggest": true,
   "suggest": {
@@ -1146,10 +1126,6 @@
   },
   "history": [
    [
-    "2026-11-13",
-    true
-   ],
-   [
     "2026-11-14",
     true
    ],
@@ -1199,6 +1175,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
