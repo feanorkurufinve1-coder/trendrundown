@@ -18785,7 +18785,7 @@
   ]
  },
  "what-temperature-should-a-refrigerator-be": {
-  "time": "2026-11-26T13:52:49+00:00",
+  "time": "2026-11-27T13:59:24+00:00",
   "query": "what temperature should a refrigerator be",
   "in_suggest": true,
   "suggest": {
@@ -18842,18 +18842,22 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "when-does-the-boy-who-stole-billions-come-out": {
-  "time": "2026-11-26T13:52:51+00:00",
+  "time": "2026-11-27T13:59:26+00:00",
   "query": "when does the boy who stole billions come out",
   "in_suggest": false,
   "suggest": {
    "the boy who stole billions?": [
-    "the boy who stole billions trailer",
     "the boy who stole billions movie",
     "the boy who stole billions (2026)",
+    "the boy who stole billions trailer",
     "the boy who stole billions where to watch",
     "the boy who stole billions imdb"
    ],
@@ -18871,11 +18875,15 @@
    [
     "2026-11-26",
     false
+   ],
+   [
+    "2026-11-27",
+    false
    ]
   ]
  },
  "why-are-people-climbing-out-of-manholes": {
-  "time": "2026-11-26T13:52:53+00:00",
+  "time": "2026-11-27T13:59:27+00:00",
   "query": "why are people climbing out of manholes",
   "in_suggest": true,
   "suggest": {
@@ -18909,11 +18917,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "why-are-people-saying-ohio-isnt-a-state": {
-  "time": "2026-11-26T13:52:54+00:00",
+  "time": "2026-11-27T13:59:29+00:00",
   "query": "why are people saying ohio isn't a state",
   "in_suggest": true,
   "suggest": {
@@ -18932,11 +18944,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "why-are-people-saying-prepare-for-90-days": {
-  "time": "2026-11-26T13:52:56+00:00",
+  "time": "2026-11-27T13:59:30+00:00",
   "query": "why are people saying prepare for 90 days",
   "in_suggest": true,
   "suggest": {
@@ -18956,6 +18972,10 @@
   "history": [
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
@@ -19065,6 +19085,214 @@
   "history": [
    [
     "2026-11-26",
+    true
+   ]
+  ]
+ },
+ "how-many-episodes-of-pride-and-prejudice-netflix": {
+  "time": "2026-11-27T13:59:19+00:00",
+  "query": "how many episodes of pride and prejudice netflix",
+  "in_suggest": true,
+  "suggest": {
+   "pride and prejudice": [
+    "pride and prejudice",
+    "pride and prejudice 2005",
+    "pride and prejudice 2026",
+    "pride and prejudice cast",
+    "pride and prejudice 1995",
+    "pride and prejudice and zombies cast",
+    "pride and prejudice where to watch",
+    "pride and prejudice movie 1995",
+    "pride and prejudice book",
+    "pride and prejudice 2005 cast"
+   ],
+   "what is pride and prejudice": [
+    "what is pride and prejudice about",
+    "what is pride and prejudice streaming on",
+    "what is pride and prejudice book about",
+    "what is pride and prejudice and zombies about",
+    "what is pride and prejudice about movie",
+    "what is pride and prejudice rated",
+    "what is pride and prejudice by jane austen about",
+    "what is pride and prejudice 2005 on",
+    "what is pride and prejudice 2005 streaming on",
+    "what is pride and prejudice about no spoilers"
+   ],
+   "how many episodes of pride and prejudice netflix": [
+    "how many episodes of pride and prejudice netflix",
+    "how long will pride and prejudice be on netflix",
+    "cast of pride and prejudice netflix"
+   ],
+   "many episodes pride prejudice netflix": [
+    "how many episodes in netflix pride and prejudice",
+    "is pride and prejudice still on netflix",
+    "was pride and prejudice removed from netflix"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-27",
+    true
+   ]
+  ]
+ },
+ "how-to-self-clean-a-washing-machine": {
+  "time": "2026-11-27T13:59:21+00:00",
+  "query": "how to self clean a washing machine",
+  "in_suggest": true,
+  "suggest": {
+   "washing machine self-clean cycle": [
+    "washing machine self clean cycle",
+    "samsung washing machine self clean cycle",
+    "hotpoint washing machine self clean cycle",
+    "ge washing machine self clean cycle",
+    "beko washing machine self clean cycle",
+    "hotpoint washing machine self clean cycle inverter motor",
+    "lg washing machine self clean cycle",
+    "indesit washing machine self clean cycle",
+    "bosch washing machine self clean cycle",
+    "hotpoint washing machine self clean cycle inverter motor manual"
+   ],
+   "what is washing machine self-clean cycle": [
+    "what is washing machine self clean cycle",
+    "what is a washing machine clean cycle",
+    "samsung washing machine self clean cycle",
+    "hotpoint washing machine self clean cycle",
+    "ge washing machine self clean cycle",
+    "beko washing machine self clean cycle",
+    "hotpoint washing machine self clean cycle inverter motor",
+    "lg washing machine self clean cycle",
+    "indesit washing machine self clean cycle",
+    "bosch washing machine self clean cycle"
+   ],
+   "how to self clean a washing machine": [
+    "how to self clean a washing machine",
+    "how to self clean a washing machine samsung",
+    "how to auto clean a washing machine",
+    "best way to self clean a washing machine",
+    "how to self clean a laundry machine",
+    "how to self clean a hotpoint washing machine",
+    "how to self clean a ge washing machine",
+    "how to self clean a beko washing machine",
+    "how to self clean a lg washing machine",
+    "how to self clean a whirlpool washing machine"
+   ],
+   "self clean washing machine": [
+    "self clean washing machine",
+    "self clean washing machine do i need detergent",
+    "self clean washing machine samsung",
+    "self clean washing machine with vinegar",
+    "self clean washing machine ge",
+    "self clean washing machine meaning",
+    "self clean washing machine cycle",
+    "self clean washing machine lg",
+    "self clean washing machine with vinegar and baking soda",
+    "self clean washing machine detergent"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-27",
+    true
+   ]
+  ]
+ },
+ "what-is-the-my-moon-my-man-trend": {
+  "time": "2026-11-27T13:59:22+00:00",
+  "query": "what is the my moon my man trend",
+  "in_suggest": true,
+  "suggest": {
+   "my moon my man trend": [
+    "my moon my man trend",
+    "my moon my man trend tiktok",
+    "my moon my man trend meaning",
+    "my moon my man trend tiktok meaning",
+    "my moon my man trend song",
+    "my moon my man trend explained",
+    "my moon my man trending",
+    "my moon my man art trend",
+    "my moon my man animation trend",
+    "my moon my man meaning"
+   ],
+   "what is my moon my man trend": [
+    "what is my moon my man trend",
+    "is my moon my man trending",
+    "my moon my man trend tiktok",
+    "my moon my man meaning",
+    "can the moon change your mood"
+   ],
+   "what is the my moon my man trend": [
+    "what is the my moon my man trend",
+    "what is the my moon my man trend tiktok",
+    "is my moon my man trending",
+    "my moon my man meaning",
+    "can the moon change your mood"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-27",
+    true
+   ]
+  ]
+ },
+ "what-is-the-pirate-shop-token-in-fortnite": {
+  "time": "2026-11-27T13:59:23+00:00",
+  "query": "what is the pirate shop token in fortnite",
+  "in_suggest": true,
+  "suggest": {
+   "fortnite pirate shop token": [
+    "fortnite pirate shop token chance",
+    "fortnite pirate shop token odds",
+    "fortnite pirate ship token",
+    "fortnite pirate shop tokens",
+    "fortnite pirate shop token is it real",
+    "fortnite pirate shop token drop rate",
+    "fortnite pirate shop token explained",
+    "fortnite pirate shop token tracker",
+    "fortnite pirate shop token for sale",
+    "fortnite pirate shop token chest"
+   ],
+   "what is fortnite pirate shop token": [
+    "what is fortnite pirate shop token",
+    "what does fortnite pirate shop token do",
+    "is fortnite pirate shop token real",
+    "is fortnite pirate shop token in ranked",
+    "what does the new fortnite pirate ship token do",
+    "fortnite pirate shop token chance",
+    "fortnite pirate shop token odds",
+    "fortnite pirate shop token drop rate",
+    "fortnite pirate ship token compass",
+    "fortnite pirate shop token reddit"
+   ],
+   "what is the pirate shop token in fortnite": [
+    "what is the pirate shop token in fortnite",
+    "what is the pirate shop token in fortnite chance",
+    "what is the pirate shop token in fortnite do",
+    "what is the pirate shop token in fortnite and what does it do",
+    "what is the pirate shop token in fortnite rarity",
+    "what is the pirate shop token in fortnite odds",
+    "what is the pirate shop token in fortnite drop rate",
+    "pirate ship coin fortnite",
+    "what is the pirate shop access token in fortnite",
+    "what is the new pirate shop token in fortnite"
+   ],
+   "pirate shop token fortnite": [
+    "pirate shop token fortnite",
+    "pirate shop token fortnite chances",
+    "pirate ship token fortnite",
+    "pirate shop token fortnite odds",
+    "pirate shop token fortnite reddit",
+    "pirate shop token fortnite account",
+    "pirate shop token fortnite wiki",
+    "pirate shop token fortnite tracker",
+    "pirate shop token fortnite rarity",
+    "pirate shop token fortnite explained"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-27",
     true
    ]
   ]

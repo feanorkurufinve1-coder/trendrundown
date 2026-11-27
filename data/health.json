@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-27T13:30:16+00:00",
+ "checked": "2026-11-27T13:59:18+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -58,7 +58,7 @@
   },
   {
    "url": "/news",
-   "at": "2026-11-27T07:46:50+00:00",
+   "at": "2026-11-27T13:58:41+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -70,7 +70,7 @@
   },
   {
    "url": "/trends",
-   "at": "2026-11-27T07:46:56+00:00",
+   "at": "2026-11-27T13:58:47+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -82,7 +82,7 @@
   },
   {
    "url": "/explained",
-   "at": "2026-11-27T07:47:02+00:00",
+   "at": "2026-11-27T13:58:53+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -238,7 +238,7 @@
   },
   {
    "url": "/x/bay-area-waterspouts-tornado-warning",
-   "at": "2026-11-27T07:47:08+00:00",
+   "at": "2026-11-27T13:58:59+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -274,7 +274,7 @@
   },
   {
    "url": "/x/california-sues-openai",
-   "at": "2026-11-27T07:47:14+00:00",
+   "at": "2026-11-27T13:59:05+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -753,6 +753,18 @@
    "userCanonical": null
   },
   {
+   "url": "/x/how-many-episodes-of-pride-and-prejudice-netflix",
+   "at": "2026-11-27T13:58:16+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/how-mlb-mvp-is-voted",
    "at": "2026-11-27T10:18:21+00:00",
    "verdict": "NEUTRAL",
@@ -779,6 +791,18 @@
   {
    "url": "/x/how-to-rob-a-bank-true-story",
    "at": "2026-11-27T10:46:50+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
+   "url": "/x/how-to-self-clean-a-washing-machine",
+   "at": "2026-11-27T13:58:22+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1030,7 +1054,7 @@
   },
   {
    "url": "/x/is-trinity-netflix-based-on-a-true-story",
-   "at": "2026-11-27T07:47:26+00:00",
+   "at": "2026-11-27T13:59:18+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1510,7 +1534,7 @@
   },
   {
    "url": "/x/robert-pattinson-james-bond",
-   "at": "2026-11-27T07:47:20+00:00",
+   "at": "2026-11-27T13:59:12+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2181,6 +2205,18 @@
    "userCanonical": null
   },
   {
+   "url": "/x/what-is-the-my-moon-my-man-trend",
+   "at": "2026-11-27T13:58:28+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/what-is-the-needoh-lava-lamp",
    "at": "2026-11-27T10:16:48+00:00",
    "verdict": "NEUTRAL",
@@ -2195,6 +2231,18 @@
   {
    "url": "/x/what-is-the-odinforce",
    "at": "2026-11-27T10:16:54+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
+   "url": "/x/what-is-the-pirate-shop-token-in-fortnite",
+   "at": "2026-11-27T13:58:35+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2838,7 +2886,7 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 166,
+  "URL is unknown to Google": 170,
   "Crawled - currently not indexed": 65
  }
 }
