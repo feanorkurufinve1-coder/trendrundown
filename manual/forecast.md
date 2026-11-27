@@ -164,6 +164,9 @@
 Проверка: через 3–7 дней после даты сверить с Trends CSV и Search Console — угадали или нет, записать урок сюда.
 
 ## Уроки
+- 27 нояб, вечер (GSC: последний полный день 26 нояб — 0 кликов / 0 показов; health.json 27 нояб: в индексе 1 URL (/), 65 Crawled – not indexed, 166 неизвестны Google):
+  - По типам (страницы 23–25 нояб, 2–4 дня): тренды (jupiter-incident, cat-ears, kroger, odinforce, to-me-my-x-men, needoh, general-grant-thermostat), прогнозы (toos, focker-in-law, mr-irrelevant), вечные (phone-battery, d-in-fridge) — 0 показов; новых first_indexed с 18 нояб нет. Судить о типах по-прежнему не по чему.
+  - Радар 27 нояб: верх candidates — слухи без проверяемого источника («keep your kids home tomorrow» — нашлись только статьи 2021 г. и один местный арест 20 нояб; «roblox has 5 hours left» — только ролики YouTube, источник фразы не найден; «happy birthday on facebook» — не найдено ничего). Не писали. Темы дня найдены через Know Your Meme (опрос «мем ноября»: Pirate Shop Token, My Moon My Man), радар их не видел. «O algo» пропущен — мем вырос из этнической карикатуры.
 - 26 нояб, вечер (GSC: последний полный день 25 нояб — 1 клик / 1 показ, на главной; health.json 26 нояб: в индексе 1 URL (/), 65 Crawled – not indexed, 28 Discovered, 129 неизвестны Google; sitemap 224 отправлено / 0):
   - По типам (страницы 22–24 нояб, 2–4 дня): тренды (jupiter-incident, general-grant-thermostat, to-me-my-x-men, needoh, odinforce), обзор недели 22 нояб, прогнозы (toos, focker-in-law), вечные (phone-battery) — 0 показов; судить о типах по-прежнему нельзя.
   - Кластер «prepare / stock up / no power for 90 days» за 23–26 нояб вырос до ~40 новых подсказок; страница про 17 нояб их не ловит (другая формулировка) — сделана отдельная «prepare for 90 days». Новое: вирусные видео «люди вылезают из люков в Нью-Йорке» — свежие фото NYPD 26 нояб.

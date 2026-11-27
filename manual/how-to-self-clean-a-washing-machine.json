@@ -1,0 +1,46 @@
+{
+ "subject": "Washing machine self-clean cycle",
+ "kind": "other",
+ "query": "how to self clean a washing machine",
+ "title": "How to self clean a washing machine? Run an empty clean cycle",
+ "answer": "To self-clean a washing machine, empty the drum, choose the Self Clean, Tub Clean or Clean Washer cycle, add a washer-cleaner tablet or the cleaner your manual allows (never detergent), and start it with the door closed. Run it about once a month, or every 30 to 40 washes.",
+ "body": "Step by step:\n\n1. Empty the drum completely. Self-clean cycles run hot and long, and clothes left inside can be damaged.\n2. Pick the cycle. Most brands name it Self Clean, Tub Clean, Clean Washer or Drum Clean. If your washer has no such cycle, use the hottest, longest setting with an extra rinse.\n3. Add a cleaner only if your manual allows it. Usually that is a washer-cleaner tablet placed in the drum, or a measured amount of chlorine bleach in the bleach dispenser up to its fill line. Do not add laundry detergent; it makes suds that the cycle is designed to rinse away.\n4. Close the door and start. The cycle typically takes one to two hours.\n5. When it ends, wipe the door, the rubber door seal and the dispenser drawer, then leave the door and drawer slightly open so the inside can dry.\n\nHow often: manufacturers generally recommend once a month or every 30 to 40 loads. Samsung and LG washers show a reminder on the display when it is due. Clean more often if you wash mostly on cold, use liquid fabric softener, or notice a smell.\n\nWhat the cycle does not reach: the rubber gasket on a front loader, where hair and lint collect in the folds; the detergent drawer, which can be pulled out and rinsed in the sink; and on many front loaders a small drain-pump filter behind a panel at the bottom front. Cleaning the filter means draining some water onto the floor, so put down towels and follow your manual.\n\nOne safety rule: never mix bleach with vinegar, ammonia or another cleaner, and do not pour two products into the same cycle. The mix can release toxic gas. If you want to use vinegar, run it in a separate cycle.\n\nWhen to call a technician: if the washer still smells after two clean cycles, leaks, will not drain, or shows an error code that the manual's troubleshooting steps do not fix.",
+ "faq": [
+  {
+   "q": "Can I use vinegar to clean my washing machine?",
+   "a": "Many people do, but some manufacturers warn that frequent vinegar can wear rubber seals. Check your manual, and never mix vinegar with bleach."
+  },
+  {
+   "q": "How long does a washing machine self-clean cycle take?",
+   "a": "Usually one to two hours, depending on the brand and model."
+  },
+  {
+   "q": "Do I put detergent in a self-clean cycle?",
+   "a": "No. Use nothing, a washer-cleaner tablet, or the bleach amount your manual specifies."
+  },
+  {
+   "q": "Why does my washer still smell after cleaning?",
+   "a": "The smell often comes from the door seal, the detergent drawer or a clogged drain filter, which the cycle doesn't fully reach. Clean those by hand and leave the door open between loads."
+  }
+ ],
+ "links": [
+  [
+   "Samsung",
+   "How to use the Self Clean feature on your Samsung washer",
+   "https://www.samsung.com/ca/support/home-appliances/samsung-washer-clean/"
+  ],
+  [
+   "LG",
+   "Tub Clean cycle (help library)",
+   "https://lg.com/us/support/help-library/--20150635948425"
+  ],
+  [
+   "SlashGear",
+   "How Does The Self-Cleaning Feature Work On A Washing Machine?",
+   "https://www.slashgear.com/2260436/how-does-self-clean-washing-machine-work/"
+  ]
+ ],
+ "image_prompt": "Close-up of the inside of an empty stainless steel washing machine drum with clean water swirling and soap bubbles, no people, realistic photo style",
+ "made": "2026-11-27T13:56:00Z",
+ "first": "2026-11-27T13:56:00Z"
+}
