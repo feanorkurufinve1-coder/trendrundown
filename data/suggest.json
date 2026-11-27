@@ -15724,27 +15724,27 @@
   ]
  },
  "is-blade-runner-2099-a-sequel": {
-  "time": "2026-11-26T14:31:53+00:00",
+  "time": "2026-11-27T14:48:30+00:00",
   "query": "is blade runner 2099 a sequel",
   "in_suggest": true,
   "suggest": {
    "blade runner 2099": [
     "blade runner 2099",
-    "blade runner 2099 review",
     "blade runner 2099 cast",
+    "blade runner 2099 review",
     "blade runner 2099 rotten tomatoes",
+    "blade runner 2099 audience score",
     "blade runner 2099 release date",
     "blade runner 2099 imdb",
     "blade runner 2099 reddit",
-    "blade runner 2099 episodes",
-    "blade runner 2099 trailer",
-    "blade runner 2099 episode 1 recap"
+    "blade runner 2099 episode 1 recap",
+    "blade runner 2099 episodes"
    ],
    "what is blade runner 2099": [
     "what is blade runner 2099 about",
     "what is blade runner 2099 based on",
-    "what is blade runner 2099 going to be about",
     "what is blade runner 2099 rated",
+    "what is blade runner 2099 going to be about",
     "what genre is blade runner 2099",
     "what channel is blade runner 2099 on",
     "what streaming service is blade runner 2099 on",
@@ -15809,22 +15809,26 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "what-is-the-talk-to-me-doja-trend": {
-  "time": "2026-11-26T14:32:00+00:00",
+  "time": "2026-11-27T14:48:37+00:00",
   "query": "what is the talk to me doja trend",
   "in_suggest": true,
   "suggest": {
    "talk to me doja": [
     "talk to me doja",
     "talk to me doja gif",
-    "talk to me doja cat",
     "talk to me doja meme",
     "talk to me doja anime girl",
     "talk to me doja meme gif",
     "talk to me doja song",
+    "talk to me doja cat",
     "talk to me doja meaning",
     "talk to me doja trend",
     "talk to me doja anime"
@@ -15870,11 +15874,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "what-is-the-word-of-the-year-2026": {
-  "time": "2026-11-26T14:32:01+00:00",
+  "time": "2026-11-27T14:48:38+00:00",
   "query": "what is the word of the year 2026",
   "in_suggest": true,
   "suggest": {
@@ -15959,11 +15967,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "why-are-people-saying-gta-6-is-bad": {
-  "time": "2026-11-26T14:32:03+00:00",
+  "time": "2026-11-27T14:48:40+00:00",
   "query": "why are people saying gta 6 is bad",
   "in_suggest": true,
   "suggest": {
@@ -16032,11 +16044,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "why-wont-my-washing-machine-drain": {
-  "time": "2026-11-26T14:32:11+00:00",
+  "time": "2026-11-27T14:48:48+00:00",
   "query": "why won't my washing machine drain",
   "in_suggest": true,
   "suggest": {
@@ -16120,6 +16136,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
@@ -16318,21 +16338,21 @@
   ]
  },
  "is-trinity-netflix-based-on-a-true-story": {
-  "time": "2026-11-26T14:31:55+00:00",
+  "time": "2026-11-27T14:48:33+00:00",
   "query": "is trinity on netflix based on a true story",
   "in_suggest": false,
   "suggest": {
    "trinity": [
     "trinity rodman",
     "trinity health",
-    "trinity rodman and ben shelton",
     "trinity",
-    "trinity college",
     "trinity health mychart",
+    "trinity rodman and ben shelton",
+    "trinity college",
     "trinity meds",
     "trinity high school",
     "trinity university",
-    "trinity rodman mom"
+    "trinity mychart"
    ],
    "what is trinity": [
     "what is trinity",
@@ -16377,11 +16397,15 @@
    [
     "2026-11-26",
     false
+   ],
+   [
+    "2026-11-27",
+    false
    ]
   ]
  },
  "what-does-text-message-not-encrypted-mean": {
-  "time": "2026-11-26T14:31:58+00:00",
+  "time": "2026-11-27T14:48:35+00:00",
   "query": "what does text message not encrypted mean",
   "in_suggest": true,
   "suggest": {
@@ -16462,11 +16486,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "why-are-people-saying-remember-november-2026-is-coming": {
-  "time": "2026-11-26T14:32:06+00:00",
+  "time": "2026-11-27T14:48:42+00:00",
   "query": "why are people saying remember november 2026 is coming",
   "in_suggest": true,
   "suggest": {
@@ -16535,17 +16563,24 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "why-are-people-wearing-pajamas-to-sunrise-on-the-reaping": {
-  "time": "2026-11-26T14:32:08+00:00",
+  "time": "2026-11-27T14:48:45+00:00",
   "query": "why are people wearing pajamas to sunrise on the reaping",
-  "in_suggest": false,
+  "in_suggest": true,
   "suggest": {
    "pajama \"sunrise screenings\" of the hunger games: sunrise on the reaping": [],
    "what is pajama \"sunrise screenings\" of the hunger games: sunrise on the reaping": [],
-   "why are people wearing pajamas to sunrise on the reaping": [],
+   "why are people wearing pajamas to sunrise on the reaping": [
+    "why are people wearing pajamas to sunrise on the reaping",
+    "why is everyone wearing pajamas today"
+   ],
    "people wearing pajamas sunrise reaping": []
   },
   "history": [
@@ -16576,11 +16611,15 @@
    [
     "2026-11-26",
     false
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "why-wont-my-washing-machine-spin": {
-  "time": "2026-11-26T14:32:13+00:00",
+  "time": "2026-11-27T14:48:49+00:00",
   "query": "why won't my washing machine spin",
   "in_suggest": true,
   "suggest": {
@@ -16660,6 +16699,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
@@ -16781,7 +16824,7 @@
   ]
  },
  "is-the-november-full-moon-a-supermoon": {
-  "time": "2026-11-26T14:31:54+00:00",
+  "time": "2026-11-27T14:48:32+00:00",
   "query": "is the november full moon a supermoon",
   "in_suggest": true,
   "suggest": {
@@ -16824,11 +16867,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "what-does-huss-mean": {
-  "time": "2026-11-26T14:31:57+00:00",
+  "time": "2026-11-27T14:48:34+00:00",
   "query": "what does huss mean",
   "in_suggest": false,
   "suggest": {
@@ -16836,13 +16883,13 @@
     "huss huss huss",
     "huss huss huss meaning",
     "huss huss huss meme",
+    "huss",
     "huss valley codes",
     "huss valley",
-    "huss",
     "husson university",
     "huss huss huss original video",
-    "huss huss huss phonk",
-    "hussar"
+    "hussar",
+    "huss huss huss phonk"
    ],
    "what is huss": [
     "what is huss huss huss",
@@ -16893,13 +16940,17 @@
    [
     "2026-11-26",
     false
+   ],
+   [
+    "2026-11-27",
+    false
    ]
   ]
  },
  "why-are-people-saying-gta-6-is-woke": {
-  "time": "2026-11-26T14:32:04+00:00",
+  "time": "2026-11-27T14:48:41+00:00",
   "query": "why are people saying gta 6 is woke",
-  "in_suggest": true,
+  "in_suggest": false,
   "suggest": {
    "gta 6 review bombing": [
     "gta 6 review bombing",
@@ -16913,16 +16964,8 @@
     "is gta 6 worth it",
     "why is gta 6 rated m"
    ],
-   "why are people saying gta 6 is woke": [
-    "why are people saying gta 6 is woke",
-    "why does it say rockstar game services unavailable"
-   ],
-   "people saying gta 6 woke": [
-    "why are people saying gta 6 is woke",
-    "has rockstar said anything about gta 6",
-    "why does it say rockstar game services unavailable",
-    "what has rockstar said about gta 6"
-   ]
+   "why are people saying gta 6 is woke": [],
+   "people saying gta 6 woke": []
   },
   "history": [
    [
@@ -16948,28 +16991,31 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    false
    ]
   ]
  },
  "why-are-people-saying-rip-fiona": {
-  "time": "2026-11-26T14:32:07+00:00",
+  "time": "2026-11-27T14:48:44+00:00",
   "query": "why are people saying rip fiona",
   "in_suggest": false,
   "suggest": {
    "fiona the hippo": [
     "fiona the hippo",
+    "fiona the hippo who threw the hat",
     "fiona the hippo baby",
+    "fiona the hippo death",
+    "fiona the hippo age",
     "fiona the hippo sweatshirt",
     "fiona the hippo shirt",
-    "fiona the hippo death",
     "fiona the hippo balloon",
     "fiona the hippo died",
-    "fiona the hippo age",
-    "fiona the hippo ornament",
-    "fiona the hippo hat video"
+    "fiona the hippo what happened"
    ],
    "what is fiona the hippo": [
-    "what is fiona the hippo",
     "what is fiona the hippo brother name",
     "what is fiona the hippos mom's name",
     "what is fiona the hippos dad's name",
@@ -16978,7 +17024,8 @@
     "what zoo is fiona the hippo now",
     "what is so special about fiona the hippo",
     "what year was fiona the hippo born",
-    "what happened to fiona the hippo"
+    "what happened to fiona the hippo",
+    "who is fiona the hippo"
    ],
    "why are people saying rip fiona": [],
    "people saying rip fiona": []
@@ -17007,11 +17054,15 @@
    [
     "2026-11-26",
     false
+   ],
+   [
+    "2026-11-27",
+    false
    ]
   ]
  },
  "why-is-my-refrigerator-leaking-water-inside": {
-  "time": "2026-11-26T14:32:10+00:00",
+  "time": "2026-11-27T14:48:46+00:00",
   "query": "why is my refrigerator leaking water inside",
   "in_suggest": true,
   "suggest": {
@@ -17087,6 +17138,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
