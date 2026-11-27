@@ -18133,7 +18133,7 @@
   ]
  },
  "crowdstrike-zscaler-acquisition": {
-  "time": "2026-11-26T17:03:36+00:00",
+  "time": "2026-11-27T17:18:34+00:00",
   "query": "crowdstrike zscaler",
   "in_suggest": true,
   "suggest": {
@@ -18141,15 +18141,15 @@
    "what is crowdstrike acquisition of zscaler": [],
    "crowdstrike zscaler": [
     "crowdstrike zscaler",
-    "crowdstrike zscaler merger",
-    "crowdstrike zscaler acquisition",
-    "crowdstrike zscaler deal",
     "crowdstrike zscaler integration",
+    "crowdstrike zscaler acquisition",
     "crowdstrike zscaler partnership",
     "crowdstrike zscaler okta",
     "zscaler crowdstrike integration guide",
     "zscaler crowdstrike exclusions",
-    "zscaler crowdstrike posture check"
+    "zscaler crowdstrike posture check",
+    "zscaler crowdstrike zta score",
+    "zscaler crowdstrike zta"
    ]
   },
   "history": [
@@ -18168,11 +18168,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "takata-airbag-recall-honda-toyota-november-2026": {
-  "time": "2026-11-26T17:03:37+00:00",
+  "time": "2026-11-27T17:18:37+00:00",
   "query": "takata airbag recall",
   "in_suggest": true,
   "suggest": {
@@ -18180,13 +18184,13 @@
     "takata airbag recall",
     "takata airbag recall vehicle list",
     "takata airbag recall list",
-    "takata airbag recall 2026",
     "takata airbag recall toyota",
     "takata airbag recall check",
     "takata airbag recall honda",
     "takata airbag recall subaru",
     "takata airbag recall cars",
-    "takata airbag recall vehicle list toyota"
+    "takata airbag recall vehicle list toyota",
+    "takata airbag recall years"
    ],
    "what is takata airbag recall": [
     "what is takata airbag recall",
@@ -18213,11 +18217,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "tarik-skubal-mets-contract": {
-  "time": "2026-11-26T17:03:38+00:00",
+  "time": "2026-11-27T17:18:38+00:00",
   "query": "tarik skubal mets contract",
   "in_suggest": true,
   "suggest": {
@@ -18227,11 +18235,11 @@
     "tarik skubal stats",
     "tarik skubal age",
     "tarik skubal sued",
-    "tarik skubal jersey",
-    "tarik skubal mets",
     "tarik skubal lawsuit",
+    "tarik skubal ethnicity",
+    "tarik skubal mets",
     "tarik skubal trade",
-    "tarik skubal dodgers jersey"
+    "tarik skubal wife"
    ],
    "what is tarik skubal": [
     "what is tarik skubal contract with the dodgers",
@@ -18265,6 +18273,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
@@ -18934,7 +18946,7 @@
   ]
  },
  "caribbean-princess-outbreak-november-2026": {
-  "time": "2026-11-26T17:17:07+00:00",
+  "time": "2026-11-27T17:18:33+00:00",
   "query": "caribbean princess outbreak",
   "in_suggest": true,
   "suggest": {
@@ -18961,11 +18973,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "huawei-verdict-trade-secrets-bank-fraud": {
-  "time": "2026-11-26T17:17:08+00:00",
+  "time": "2026-11-27T17:18:35+00:00",
   "query": "huawei verdict",
   "in_suggest": true,
   "suggest": {
@@ -18986,11 +19002,15 @@
    [
     "2026-11-26",
     true
+   ],
+   [
+    "2026-11-27",
+    true
    ]
   ]
  },
  "pce-inflation-report-october-2026": {
-  "time": "2026-11-26T17:17:09+00:00",
+  "time": "2026-11-27T17:18:36+00:00",
   "query": "pce inflation report",
   "in_suggest": true,
   "suggest": {
@@ -18998,8 +19018,8 @@
    "what is pce inflation report for october 2026": [],
    "pce inflation report": [
     "pce inflation report",
-    "pce inflation report today",
     "pce inflation report date",
+    "pce inflation report today",
     "pce inflation report this week",
     "pce inflation report release date",
     "pce inflation report expectations",
@@ -19016,6 +19036,10 @@
    ],
    [
     "2026-11-26",
+    true
+   ],
+   [
+    "2026-11-27",
     true
    ]
   ]
