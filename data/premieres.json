@@ -1,5 +1,5 @@
 {
- "made": "2026-11-27T09:47:34+00:00",
+ "made": "2026-11-27T22:03:18+00:00",
  "about": "Премьеры сериалов и новых сезонов в США на 14 дней вперёд (TVmaze). new_series = совсем новый сериал. Сырьё для прогнозов «is X a true story», «X cast», «X season N release time».",
  "premieres": [
   {
@@ -79,7 +79,20 @@
    "premiered": "2022-09-17",
    "summary": "Bam, Redbird, Bibi, Batwing, and Buff are thrust into hilarious hijinks and draw-dropping action as they learn important lessons about teamwork, friendship, and so much more while helping Batman, Robin, and Batgirl defend Gotham.",
    "url": "https://www.tvmaze.com/shows/51042/batwheels",
-   "official": "https://play.max.com/show/452d85bb-bb46-4f16-bc58-26e5391d200d"
+   "official": "https://www.hbomax.com/show/452d85bb-bb46-4f16-bc58-26e5391d200d"
+  },
+  {
+   "date": "2026-11-27",
+   "show": "Shop What Happens",
+   "season": 2,
+   "new_series": false,
+   "type": "Reality",
+   "genres": [],
+   "network": "Peacock",
+   "premiered": "2025-08-11",
+   "summary": "Bravolebrities head from the Bravo Clubhouse to the Bravo Lounge for our brand-new shoppable chat fest, Shop What Happens.",
+   "url": "https://www.tvmaze.com/shows/96081/shop-what-happens",
+   "official": "https://www.peacocktv.com/stream-tv/shop-what-happens"
   },
   {
    "date": "2026-11-28",
@@ -445,6 +458,19 @@
    "summary": "Each week, former NFL pros and friends Ryan Fitzpatrick and Vince Wilfork will touch down in a new NFL city in search of unforgettable flavors, hidden gems and larger-than-life food challenges. After 17 seasons, nine teams and a career built on fierce competition, longtime NFL quarterback and football analyst Ryan Fitzpatrick is taking his competitive streak to a new arena. For two-time Super Bowl",
    "url": "https://www.tvmaze.com/shows/94915/men-v-food",
    "official": null
+  },
+  {
+   "date": "2026-12-08",
+   "show": "Celebrity Scares",
+   "season": 1,
+   "new_series": true,
+   "type": "Reality",
+   "genres": [],
+   "network": "YouTube",
+   "premiered": "2026-12-08",
+   "summary": "An unscripted, immersive horror-interview series that pairs genre legends and celebrities with premier haunted attractions for terrifying, raw conversations while navigating jump scares.",
+   "url": "https://www.tvmaze.com/shows/94966/celebrity-scares",
+   "official": "https://celebrityscares.com/"
   },
   {
    "date": "2026-12-08",
