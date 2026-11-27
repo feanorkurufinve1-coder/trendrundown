@@ -1,371 +1,252 @@
 {
- "made": "2026-11-26T21:32:48+00:00",
- "day": "2026-11-25",
+ "made": "2026-11-27T03:48:54+00:00",
+ "day": "2026-11-26",
  "about": "Всплески просмотров английской Википедии за вчера: views — просмотров вчера, before — максимум за 3 прошлых дня (null = статьи не было в топ-1000). Идеи для страниц «who is / what is»; проверять факты по новостям.",
  "spikes": [
   {
-   "article": "Miss Universe 2026",
-   "views": 394056,
-   "before": 59793,
-   "ratio": 6.6,
-   "url": "https://en.wikipedia.org/wiki/Miss_Universe_2026"
-  },
-  {
-   "article": "Ezra Frech",
-   "views": 260732,
+   "article": "Wu-Tang Clan",
+   "views": 147607,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Ezra_Frech"
+   "url": "https://en.wikipedia.org/wiki/Wu-Tang_Clan"
   },
   {
-   "article": "Dancing with the Stars (American TV series) season 35",
-   "views": 205438,
-   "before": 19216,
-   "ratio": 10.7,
-   "url": "https://en.wikipedia.org/wiki/Dancing_with_the_Stars_%28American_TV_series%29_season_35"
+   "article": "John Tuggle",
+   "views": 101935,
+   "before": 19469,
+   "ratio": 5.2,
+   "url": "https://en.wikipedia.org/wiki/John_Tuggle"
   },
   {
-   "article": "Jennifer Barreto",
-   "views": 149785,
+   "article": "Miranda Lambert",
+   "views": 98353,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Jennifer_Barreto"
+   "url": "https://en.wikipedia.org/wiki/Miranda_Lambert"
   },
   {
-   "article": "Andy Taylor (guitarist)",
-   "views": 135665,
+   "article": "Joe Milton",
+   "views": 75672,
+   "before": 7633,
+   "ratio": 9.9,
+   "url": "https://en.wikipedia.org/wiki/Joe_Milton"
+  },
+  {
+   "article": "Chad Smith",
+   "views": 69113,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Andy_Taylor_%28guitarist%29"
+   "url": "https://en.wikipedia.org/wiki/Chad_Smith"
   },
   {
-   "article": "Mike McCarthy",
-   "views": 128019,
+   "article": "Bono",
+   "views": 67105,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Mike_McCarthy"
+   "url": "https://en.wikipedia.org/wiki/Bono"
   },
   {
-   "article": "Aaron Rodgers",
-   "views": 120910,
-   "before": 16866,
-   "ratio": 7.2,
-   "url": "https://en.wikipedia.org/wiki/Aaron_Rodgers"
-  },
-  {
-   "article": "Martha Firestone Ford",
-   "views": 111793,
+   "article": "privacy policy",
+   "views": 62694,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Martha_Firestone_Ford"
+   "url": "https://en.wikipedia.org/wiki/privacy_policy"
   },
   {
-   "article": "Miss International 2026",
-   "views": 93312,
+   "article": "U2",
+   "views": 59174,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Miss_International_2026"
+   "url": "https://en.wikipedia.org/wiki/U2"
   },
   {
-   "article": "Daniella Karagach",
-   "views": 86573,
+   "article": "Mr. Irrelevant (film)",
+   "views": 50320,
+   "before": 11560,
+   "ratio": 4.4,
+   "url": "https://en.wikipedia.org/wiki/Mr._Irrelevant_%28film%29"
+  },
+  {
+   "article": "Blake Corum",
+   "views": 49112,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Daniella_Karagach"
+   "url": "https://en.wikipedia.org/wiki/Blake_Corum"
   },
   {
-   "article": "Blade Runner 2099",
-   "views": 86001,
-   "before": 24411,
-   "ratio": 3.5,
-   "url": "https://en.wikipedia.org/wiki/Blade_Runner_2099"
-  },
-  {
-   "article": "Iowa lead azide detonation",
-   "views": 78852,
+   "article": "Jahmyr Gibbs",
+   "views": 48964,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Iowa_lead_azide_detonation"
+   "url": "https://en.wikipedia.org/wiki/Jahmyr_Gibbs"
   },
   {
-   "article": "Tatyana Ali",
-   "views": 78391,
+   "article": "Dan Campbell",
+   "views": 41834,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Tatyana_Ali"
+   "url": "https://en.wikipedia.org/wiki/Dan_Campbell"
   },
   {
-   "article": "Ade Adepitan",
-   "views": 72731,
-   "before": 21813,
+   "article": "Simon Le Bon",
+   "views": 39752,
+   "before": 12203,
    "ratio": 3.3,
-   "url": "https://en.wikipedia.org/wiki/Ade_Adepitan"
+   "url": "https://en.wikipedia.org/wiki/Simon_Le_Bon"
   },
   {
-   "article": "Zyri",
-   "views": 72484,
+   "article": "Caleb Williams",
+   "views": 39612,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Zyri"
+   "url": "https://en.wikipedia.org/wiki/Caleb_Williams"
   },
   {
-   "article": "Raheem Sterling",
-   "views": 71889,
+   "article": "Survivor 51",
+   "views": 38549,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Raheem_Sterling"
+   "url": "https://en.wikipedia.org/wiki/Survivor_51"
   },
   {
-   "article": "Connor Wood (comedian)",
-   "views": 69185,
+   "article": "Ol' Dirty Bastard",
+   "views": 38357,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Connor_Wood_%28comedian%29"
+   "url": "https://en.wikipedia.org/wiki/Ol%27_Dirty_Bastard"
   },
   {
-   "article": "Duran Duran",
-   "views": 63746,
+   "article": "Tom Cruise filmography",
+   "views": 37927,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Duran_Duran"
+   "url": "https://en.wikipedia.org/wiki/Tom_Cruise_filmography"
   },
   {
-   "article": "Dancing with the Stars (American TV series)",
-   "views": 61956,
-   "before": 8582,
-   "ratio": 7.2,
-   "url": "https://en.wikipedia.org/wiki/Dancing_with_the_Stars_%28American_TV_series%29"
-  },
-  {
-   "article": "Bea Millan-Windorski",
-   "views": 61208,
-   "before": 11350,
-   "ratio": 5.4,
-   "url": "https://en.wikipedia.org/wiki/Bea_Millan-Windorski"
-  },
-  {
-   "article": "Pete Edochie",
-   "views": 61123,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Pete_Edochie"
-  },
-  {
-   "article": "William Clay Ford Sr.",
-   "views": 51367,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/William_Clay_Ford_Sr."
-  },
-  {
-   "article": "Maura Higgins",
-   "views": 48234,
-   "before": 7809,
-   "ratio": 6.2,
-   "url": "https://en.wikipedia.org/wiki/Maura_Higgins"
-  },
-  {
-   "article": "Pasha Pashkov",
-   "views": 47469,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Pasha_Pashkov"
-  },
-  {
-   "article": "Bahar Soomekh",
-   "views": 44717,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Bahar_Soomekh"
-  },
-  {
-   "article": "Rogue wave",
-   "views": 42320,
-   "before": 13474,
+   "article": "The Hunting Wives",
+   "views": 32718,
+   "before": 10716,
    "ratio": 3.1,
-   "url": "https://en.wikipedia.org/wiki/Rogue_wave"
+   "url": "https://en.wikipedia.org/wiki/The_Hunting_Wives"
   },
   {
-   "article": "Amber Glenn",
-   "views": 41586,
+   "article": "Tabancale language",
+   "views": 30617,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Amber_Glenn"
+   "url": "https://en.wikipedia.org/wiki/Tabancale_language"
   },
   {
-   "article": "White chocolate",
-   "views": 40234,
+   "article": "Method Man",
+   "views": 30484,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/White_chocolate"
+   "url": "https://en.wikipedia.org/wiki/Method_Man"
   },
   {
-   "article": "Mason Rudolph (American football)",
-   "views": 40140,
+   "article": "Luke Kuechly",
+   "views": 30367,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Mason_Rudolph_%28American_football%29"
+   "url": "https://en.wikipedia.org/wiki/Luke_Kuechly"
   },
   {
-   "article": "The Mosquito Bowl",
-   "views": 38202,
+   "article": "2008 Mumbai attacks",
+   "views": 30098,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/The_Mosquito_Bowl"
+   "url": "https://en.wikipedia.org/wiki/2008_Mumbai_attacks"
   },
   {
-   "article": "Sheila Ford Hamp",
-   "views": 36474,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Sheila_Ford_Hamp"
+   "article": "Norse Atlantic Airways",
+   "views": 29643,
+   "before": 7302,
+   "ratio": 4.1,
+   "url": "https://en.wikipedia.org/wiki/Norse_Atlantic_Airways"
   },
   {
-   "article": "Sabah FK (Azerbaijan)",
-   "views": 34591,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Sabah_FK_%28Azerbaijan%29"
+   "article": "Nick Rhodes",
+   "views": 29325,
+   "before": 9581,
+   "ratio": 3.1,
+   "url": "https://en.wikipedia.org/wiki/Nick_Rhodes"
   },
   {
-   "article": "Miss Universe",
-   "views": 33350,
+   "article": "Antonio Cipriano",
+   "views": 29147,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Miss_Universe"
+   "url": "https://en.wikipedia.org/wiki/Antonio_Cipriano"
   },
   {
-   "article": "Rylee Arnold",
-   "views": 33083,
+   "article": "RZA",
+   "views": 29063,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Rylee_Arnold"
+   "url": "https://en.wikipedia.org/wiki/RZA"
   },
   {
-   "article": "Veruschka",
-   "views": 32422,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Veruschka"
+   "article": "Judy Garland",
+   "views": 27872,
+   "before": 8698,
+   "ratio": 3.2,
+   "url": "https://en.wikipedia.org/wiki/Judy_Garland"
   },
   {
-   "article": "Bohr family",
-   "views": 31297,
+   "article": "Jared Goff",
+   "views": 27381,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Bohr_family"
+   "url": "https://en.wikipedia.org/wiki/Jared_Goff"
   },
   {
-   "article": "Zach Callison",
-   "views": 30918,
+   "article": "Huw Edwards",
+   "views": 25659,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Zach_Callison"
+   "url": "https://en.wikipedia.org/wiki/Huw_Edwards"
   },
   {
-   "article": "Devils Hole",
-   "views": 30842,
+   "article": "NFL on Thanksgiving Day",
+   "views": 25016,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Devils_Hole"
+   "url": "https://en.wikipedia.org/wiki/NFL_on_Thanksgiving_Day"
   },
   {
-   "article": "John Taylor (bass guitarist)",
-   "views": 27678,
+   "article": "The Edge",
+   "views": 24731,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/John_Taylor_%28bass_guitarist%29"
+   "url": "https://en.wikipedia.org/wiki/The_Edge"
   },
   {
-   "article": "Fred Rogers",
-   "views": 26999,
+   "article": "Matthew Stafford",
+   "views": 23292,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Fred_Rogers"
+   "url": "https://en.wikipedia.org/wiki/Matthew_Stafford"
   },
   {
-   "article": "William Clay Ford Jr.",
-   "views": 25871,
+   "article": "Pablo Hernández de Cos",
+   "views": 22369,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/William_Clay_Ford_Jr."
+   "url": "https://en.wikipedia.org/wiki/Pablo_Hern%C3%A1ndez_de_Cos"
   },
   {
-   "article": "Georgia Waddington",
-   "views": 25460,
+   "article": "The Power Station (band)",
+   "views": 21646,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Georgia_Waddington"
+   "url": "https://en.wikipedia.org/wiki/The_Power_Station_%28band%29"
   },
   {
-   "article": "Miss Universe 2025",
-   "views": 25238,
+   "article": "Nigel Starmer-Smith",
+   "views": 20194,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Miss_Universe_2025"
-  },
-  {
-   "article": "Mark Ballas",
-   "views": 24967,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Mark_Ballas"
-  },
-  {
-   "article": "Harvey S. Firestone Jr.",
-   "views": 24752,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Harvey_S._Firestone_Jr."
-  },
-  {
-   "article": "Clara Vegas",
-   "views": 24749,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Clara_Vegas"
-  },
-  {
-   "article": "Paula Yates",
-   "views": 24557,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Paula_Yates"
-  },
-  {
-   "article": "Carrie Ann Inaba",
-   "views": 23853,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Carrie_Ann_Inaba"
-  },
-  {
-   "article": "Edsel Ford",
-   "views": 23714,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Edsel_Ford"
-  },
-  {
-   "article": "Deportation of Kilmar Abrego Garcia",
-   "views": 23628,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Deportation_of_Kilmar_Abrego_Garcia"
-  },
-  {
-   "article": "John O'Hurley",
-   "views": 22787,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/John_O%27Hurley"
-  },
-  {
-   "article": "Henry Ford",
-   "views": 22625,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Henry_Ford"
+   "url": "https://en.wikipedia.org/wiki/Nigel_Starmer-Smith"
   }
  ]
 }
