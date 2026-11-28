@@ -1,99 +1,7 @@
 {
- "made": "2026-11-27T22:03:18+00:00",
+ "made": "2026-11-28T10:17:21+00:00",
  "about": "Премьеры сериалов и новых сезонов в США на 14 дней вперёд (TVmaze). new_series = совсем новый сериал. Сырьё для прогнозов «is X a true story», «X cast», «X season N release time».",
  "premieres": [
-  {
-   "date": "2026-11-27",
-   "show": "The Team: Michigan Football",
-   "season": 1,
-   "new_series": true,
-   "type": "Documentary",
-   "genres": [
-    "Sports"
-   ],
-   "network": "FOX",
-   "premiered": "2026-11-27",
-   "summary": "Featuring never-before-seen footage and firsthand accounts from Michigan greats including Fox NFL lead analyst and seven-time Super Bowl champion Tom Brady, legendary coach Jim Harbaugh, Pro Football Hall of Famer and 'Fox NFL Kickoff' analyst Charles Woodson, famed quarterback J.J. McCarthy, three-time national championship-winning head coach and ‘Fox Big Noon Kickoff' analyst Urban Meyer, NFL st",
-   "url": "https://www.tvmaze.com/shows/95664/the-team-michigan-football",
-   "official": null
-  },
-  {
-   "date": "2026-11-27",
-   "show": "Alan Carr's Great Big Bucket List",
-   "season": 1,
-   "new_series": true,
-   "type": "Reality",
-   "genres": [
-    "Comedy"
-   ],
-   "network": "Prime Video",
-   "premiered": "2026-11-27",
-   "summary": "Alan Carr's Great Big Bucket List pairs Alan Carr with his comic friends, including Jack Dee, Tom Allen and Joanne McNally and more, sending them on a mission to road-test the world's most popular bucket list activities. Across the series, our comics try as many experiences as possible - from the classic to the absurd - and debate whether each one deserves to stay on the Bucket List or never be sp",
-   "url": "https://www.tvmaze.com/shows/95442/alan-carrs-great-big-bucket-list",
-   "official": null
-  },
-  {
-   "date": "2026-11-27",
-   "show": "SpongeBob SquarePants",
-   "season": 18,
-   "new_series": false,
-   "type": "Animation",
-   "genres": [
-    "Comedy",
-    "Adventure",
-    "Fantasy"
-   ],
-   "network": "Nickelodeon",
-   "premiered": "1999-05-01",
-   "summary": "Come follow the adventures of the world's most lovable sponge and his starfish sidekick! Though they have the best intentions, SpongeBob and Patrick are always causing trouble… and plenty of laughs!When he's not at the Krusty Krab grilling up some epic Krabby Patties, SpongeBob can be found jellyfishing with Patrick, blowing bubbles, or annoying his favorite neighbor, Squidward!Bikini Bottom is ho",
-   "url": "https://www.tvmaze.com/shows/713/spongebob-squarepants",
-   "official": "http://www.nick.com/spongebob-squarepants/"
-  },
-  {
-   "date": "2026-11-27",
-   "show": "Soul Train Music Awards",
-   "season": 2026,
-   "new_series": false,
-   "type": "Award Show",
-   "genres": [
-    "Music"
-   ],
-   "network": "BET",
-   "premiered": "1987-03-23",
-   "summary": "The Soul Train Music Awards is an annual award show which previously aired in national television syndication, and honors the best in Black music and entertainment. It is produced by the makers of Soul Train, the program from which it takes its name, and features musical performances by various R&amp;B and Soul recording artists interspersed throughout the ceremonies. The special traditionally use",
-   "url": "https://www.tvmaze.com/shows/9207/soul-train-music-awards",
-   "official": "http://bet.com/shows/soul-train-awards.html"
-  },
-  {
-   "date": "2026-11-27",
-   "show": "Batwheels",
-   "season": 4,
-   "new_series": false,
-   "type": "Animation",
-   "genres": [
-    "Action",
-    "Adventure",
-    "Science-Fiction"
-   ],
-   "network": "HBO Max",
-   "premiered": "2022-09-17",
-   "summary": "Bam, Redbird, Bibi, Batwing, and Buff are thrust into hilarious hijinks and draw-dropping action as they learn important lessons about teamwork, friendship, and so much more while helping Batman, Robin, and Batgirl defend Gotham.",
-   "url": "https://www.tvmaze.com/shows/51042/batwheels",
-   "official": "https://www.hbomax.com/show/452d85bb-bb46-4f16-bc58-26e5391d200d"
-  },
-  {
-   "date": "2026-11-27",
-   "show": "Shop What Happens",
-   "season": 2,
-   "new_series": false,
-   "type": "Reality",
-   "genres": [],
-   "network": "Peacock",
-   "premiered": "2025-08-11",
-   "summary": "Bravolebrities head from the Bravo Clubhouse to the Bravo Lounge for our brand-new shoppable chat fest, Shop What Happens.",
-   "url": "https://www.tvmaze.com/shows/96081/shop-what-happens",
-   "official": "https://www.peacocktv.com/stream-tv/shop-what-happens"
-  },
   {
    "date": "2026-11-28",
    "show": "Salish's 12 Games of Christmas",
@@ -446,7 +354,7 @@
   },
   {
    "date": "2026-12-08",
-   "show": "Men v. Food",
+   "show": "Men vs. Food",
    "season": 1,
    "new_series": true,
    "type": "Reality",
@@ -456,7 +364,7 @@
    "network": "Discovery",
    "premiered": "2026-12-08",
    "summary": "Each week, former NFL pros and friends Ryan Fitzpatrick and Vince Wilfork will touch down in a new NFL city in search of unforgettable flavors, hidden gems and larger-than-life food challenges. After 17 seasons, nine teams and a career built on fierce competition, longtime NFL quarterback and football analyst Ryan Fitzpatrick is taking his competitive streak to a new arena. For two-time Super Bowl",
-   "url": "https://www.tvmaze.com/shows/94915/men-v-food",
+   "url": "https://www.tvmaze.com/shows/94915/men-vs-food",
    "official": null
   },
   {
