@@ -1,5 +1,5 @@
 {
- "made": "2026-11-28T05:47:34+00:00",
+ "made": "2026-11-28T06:03:00+00:00",
  "pages": 487,
  "summary": {
   "kind": {
@@ -34,7 +34,7 @@
    "person": {
     "pages": 64,
     "with_impr_%": 27,
-    "top3_%": 0,
+    "top3_%": 3,
     "clicks": 15,
     "clicks_per_page": 0.23
    },
@@ -55,7 +55,7 @@
    "term": {
     "pages": 191,
     "with_impr_%": 12,
-    "top3_%": 2,
+    "top3_%": 1,
     "clicks": 36,
     "clicks_per_page": 0.19
    },
@@ -164,7 +164,7 @@
    "who": {
     "pages": 69,
     "with_impr_%": 26,
-    "top3_%": 0,
+    "top3_%": 1,
     "clicks": 6,
     "clicks_per_page": 0.09
    },
@@ -185,18 +185,18 @@
   },
   "title_matches_top_query": {
    "False": {
-    "pages": 447,
-    "with_impr_%": 6,
+    "pages": 449,
+    "with_impr_%": 7,
     "top3_%": 0,
     "clicks": 33,
     "clicks_per_page": 0.07
    },
    "True": {
-    "pages": 40,
+    "pages": 38,
     "with_impr_%": 100,
-    "top3_%": 5,
+    "top3_%": 8,
     "clicks": 22,
-    "clicks_per_page": 0.55
+    "clicks_per_page": 0.58
    }
   }
  },
@@ -229,9 +229,9 @@
    "title_len": 59,
    "age_days": 22.5,
    "rival_exact": null,
-   "impr": 1559,
+   "impr": 1573,
    "clicks": 9,
-   "best_pos": 4.2,
+   "best_pos": 2,
    "title_matches_top_query": true,
    "top_queries": [
     "what happened to dane cook's brother",
@@ -248,9 +248,9 @@
    "title_len": 65,
    "age_days": 21.4,
    "rival_exact": null,
-   "impr": 1469,
+   "impr": 1246,
    "clicks": 6,
-   "best_pos": 10.5,
+   "best_pos": 9,
    "title_matches_top_query": true,
    "top_queries": [
     "when is cyber monday",
@@ -267,7 +267,7 @@
    "title_len": 58,
    "age_days": 6.4,
    "rival_exact": null,
-   "impr": 548,
+   "impr": 553,
    "clicks": 6,
    "best_pos": 8,
    "title_matches_top_query": true,
@@ -286,7 +286,7 @@
    "title_len": 68,
    "age_days": 21.7,
    "rival_exact": null,
-   "impr": 25,
+   "impr": 26,
    "clicks": 2,
    "best_pos": 3.5,
    "title_matches_top_query": false,
@@ -322,7 +322,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 59,
-   "age_days": 26.6,
+   "age_days": 26.7,
    "rival_exact": null,
    "impr": 157,
    "clicks": 1,
@@ -360,14 +360,14 @@
    "title_len": 54,
    "age_days": 14.6,
    "rival_exact": null,
-   "impr": 715,
+   "impr": 309,
    "clicks": 0,
-   "best_pos": 5,
+   "best_pos": 5.7,
    "title_matches_top_query": true,
    "top_queries": [
     "ligue 1",
     "what is ligue 1",
-    "ligue un"
+    "what's ligue 1"
    ]
   },
   {
@@ -398,7 +398,7 @@
    "title_len": 24,
    "age_days": 33.0,
    "rival_exact": null,
-   "impr": 188,
+   "impr": 178,
    "clicks": 0,
    "best_pos": 3.7,
    "title_matches_top_query": false,
@@ -425,25 +425,6 @@
     "what is tri series in cricket",
     "what is a tri series in cricket",
     "tri series means"
-   ]
-  },
-  {
-   "slug": "exhibition-game",
-   "title": "What is an exhibition game in basketball? A tune-up that doesn't count",
-   "kind": "term",
-   "source": "manual",
-   "q_word": "what",
-   "title_len": 70,
-   "age_days": 15.6,
-   "rival_exact": null,
-   "impr": 129,
-   "clicks": 0,
-   "best_pos": 2,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "what is an exhibition game in basketball",
-    "exhibition game basketball",
-    "exhibition game basketball meaning"
    ]
   },
   {
@@ -485,6 +466,25 @@
    ]
   },
   {
+   "slug": "exhibition-game",
+   "title": "What is an exhibition game in basketball? A tune-up that doesn't count",
+   "kind": "term",
+   "source": "manual",
+   "q_word": "what",
+   "title_len": 70,
+   "age_days": 15.6,
+   "rival_exact": null,
+   "impr": 85,
+   "clicks": 0,
+   "best_pos": 5.3,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "what is an exhibition game in basketball",
+    "exhibition game basketball",
+    "exhibition game basketball meaning"
+   ]
+  },
+  {
    "slug": "ali-g",
    "title": "Who is the Ali G character?",
    "kind": "other",
@@ -493,7 +493,7 @@
    "title_len": 27,
    "age_days": 30.9,
    "rival_exact": null,
-   "impr": 66,
+   "impr": 50,
    "clicks": 0,
    "best_pos": 5,
    "title_matches_top_query": false,
@@ -501,25 +501,6 @@
     "is ali g british",
     "where is ali g from",
     "when did ali g first appear on tv"
-   ]
-  },
-  {
-   "slug": "pro-and-tell-apple-event",
-   "title": "Pro and tell Apple event: Oct. 28, 2026 in Los Angeles, touchscreen MacBook Pro",
-   "kind": "event",
-   "source": "auto",
-   "q_word": "none",
-   "title_len": 79,
-   "age_days": 24.0,
-   "rival_exact": null,
-   "impr": 39,
-   "clicks": 0,
-   "best_pos": 7.9,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "pro and tell",
-    "pro and tell apple event",
-    "apple pro and tell"
    ]
   },
   {
@@ -598,25 +579,6 @@
    ]
   },
   {
-   "slug": "optical-networking",
-   "title": "What is optical networking?",
-   "kind": "term",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 27,
-   "age_days": 31.7,
-   "rival_exact": null,
-   "impr": 29,
-   "clicks": 0,
-   "best_pos": 56.7,
-   "title_matches_top_query": false,
-   "top_queries": [
-    "what is optical networking technology",
-    "optical network",
-    "what is an optical network"
-   ]
-  },
-  {
    "slug": "derby-della-madonnina",
    "title": "What is the Derby della Madonnina? Milan vs Inter at San Siro",
    "kind": "event",
@@ -625,13 +587,14 @@
    "title_len": 61,
    "age_days": 27.7,
    "rival_exact": null,
-   "impr": 29,
+   "impr": 30,
    "clicks": 0,
    "best_pos": 8.5,
    "title_matches_top_query": true,
    "top_queries": [
     "derby della madonnina",
-    "derby della madonnina meaning"
+    "derby della madonnina meaning",
+    "derby della madonnina laguppställning"
    ]
   },
   {
@@ -643,12 +606,13 @@
    "title_len": 23,
    "age_days": 29.6,
    "rival_exact": null,
-   "impr": 28,
+   "impr": 29,
    "clicks": 0,
-   "best_pos": 23.8,
+   "best_pos": 1,
    "title_matches_top_query": true,
    "top_queries": [
-    "jeffery simmons"
+    "jeffery simmons",
+    "csere"
    ]
   },
   {
@@ -671,25 +635,6 @@
    ]
   },
   {
-   "slug": "senior-secured-debt",
-   "title": "What is senior secured debt?",
-   "kind": "term",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 28,
-   "age_days": 30.4,
-   "rival_exact": null,
-   "impr": 22,
-   "clicks": 0,
-   "best_pos": 6,
-   "title_matches_top_query": false,
-   "top_queries": [
-    "senior secured lending",
-    "senior secured loans",
-    "senior secured loan"
-   ]
-  },
-  {
    "slug": "west-texas-intermediate",
    "title": "What is West Texas Intermediate crude?",
    "kind": "term",
@@ -706,6 +651,25 @@
     "west texas interm",
     "wti wiki",
     "wti stands for"
+   ]
+  },
+  {
+   "slug": "senior-secured-debt",
+   "title": "What is senior secured debt?",
+   "kind": "term",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 28,
+   "age_days": 30.4,
+   "rival_exact": null,
+   "impr": 21,
+   "clicks": 0,
+   "best_pos": 6,
+   "title_matches_top_query": false,
+   "top_queries": [
+    "senior secured lending",
+    "senior secured loans",
+    "senior secured loan"
    ]
   },
   {
@@ -736,9 +700,9 @@
    "title_len": 19,
    "age_days": 32.3,
    "rival_exact": null,
-   "impr": 19,
+   "impr": 18,
    "clicks": 0,
-   "best_pos": 25.1,
+   "best_pos": 25.4,
    "title_matches_top_query": true,
    "top_queries": [
     "aj dybantsa",
@@ -774,70 +738,13 @@
    "title_len": 21,
    "age_days": 30.9,
    "rival_exact": null,
-   "impr": 14,
+   "impr": 13,
    "clicks": 0,
    "best_pos": 10.6,
    "title_matches_top_query": false,
    "top_queries": [
     "philip rivers nc state",
     "philip rivers nc state coach"
-   ]
-  },
-  {
-   "slug": "james-reece",
-   "title": "Who is James Reece in The Terminal List?",
-   "kind": "other",
-   "source": "auto",
-   "q_word": "who",
-   "title_len": 40,
-   "age_days": 34.6,
-   "rival_exact": null,
-   "impr": 11,
-   "clicks": 0,
-   "best_pos": 9.5,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "terminal list reece",
-    "who is james reece in terminal list",
-    "reece terminal list"
-   ]
-  },
-  {
-   "slug": "wta-tennis",
-   "title": "What does WTA stand for in tennis? The women's tour explained",
-   "kind": "organization",
-   "source": "manual",
-   "q_word": "what",
-   "title_len": 61,
-   "age_days": 13.7,
-   "rival_exact": null,
-   "impr": 10,
-   "clicks": 0,
-   "best_pos": 60,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "wta tennis",
-    "wta",
-    "what is wta in tennis"
-   ]
-  },
-  {
-   "slug": "cesc-fabregas",
-   "title": "Who is Cesc Fabregas's coach? Como's manager",
-   "kind": "person",
-   "source": "auto",
-   "q_word": "who",
-   "title_len": 44,
-   "age_days": 33.7,
-   "rival_exact": null,
-   "impr": 10,
-   "clicks": 0,
-   "best_pos": 7,
-   "title_matches_top_query": false,
-   "top_queries": [
-    "como manager",
-    "como.manager",
-    "como's manager"
    ]
   },
   {
@@ -859,22 +766,22 @@
    ]
   },
   {
-   "slug": "dfb-pokal",
-   "title": "What is the DFB-Pokal?",
-   "kind": "event",
+   "slug": "optical-networking",
+   "title": "What is optical networking?",
+   "kind": "term",
    "source": "auto",
    "q_word": "what",
-   "title_len": 22,
-   "age_days": 31.5,
+   "title_len": 27,
+   "age_days": 31.7,
    "rival_exact": null,
    "impr": 8,
    "clicks": 0,
-   "best_pos": 8.5,
-   "title_matches_top_query": true,
+   "best_pos": 56.7,
+   "title_matches_top_query": false,
    "top_queries": [
-    "dfb-pokal",
-    "dfb pokal explained",
-    "dfb pokal"
+    "optical networking market",
+    "optical network",
+    "optical networking"
    ]
   },
   {
@@ -897,21 +804,20 @@
    ]
   },
   {
-   "slug": "wbc-super-middleweight-title",
-   "title": "What is the WBC super middleweight title?",
-   "kind": "term",
+   "slug": "pro-and-tell-apple-event",
+   "title": "Pro and tell Apple event: Oct. 28, 2026 in Los Angeles, touchscreen MacBook Pro",
+   "kind": "event",
    "source": "auto",
-   "q_word": "what",
-   "title_len": 41,
-   "age_days": 33.0,
+   "q_word": "none",
+   "title_len": 79,
+   "age_days": 24.0,
    "rival_exact": null,
    "impr": 7,
    "clicks": 0,
-   "best_pos": 9.5,
+   "best_pos": 6.3,
    "title_matches_top_query": true,
    "top_queries": [
-    "wbc super middleweight title",
-    "super middleweight title"
+    "pro and tell"
    ]
   },
   {
@@ -952,13 +858,51 @@
    ]
   },
   {
+   "slug": "james-reece",
+   "title": "Who is James Reece in The Terminal List?",
+   "kind": "other",
+   "source": "auto",
+   "q_word": "who",
+   "title_len": 40,
+   "age_days": 34.6,
+   "rival_exact": null,
+   "impr": 6,
+   "clicks": 0,
+   "best_pos": 13.5,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "terminal list reece",
+    "reece terminal list",
+    "james reece the terminal list"
+   ]
+  },
+  {
+   "slug": "cesc-fabregas",
+   "title": "Who is Cesc Fabregas's coach? Como's manager",
+   "kind": "person",
+   "source": "auto",
+   "q_word": "who",
+   "title_len": 44,
+   "age_days": 33.7,
+   "rival_exact": null,
+   "impr": 6,
+   "clicks": 0,
+   "best_pos": 7,
+   "title_matches_top_query": false,
+   "top_queries": [
+    "como manager",
+    "como.manager",
+    "como's manager"
+   ]
+  },
+  {
    "slug": "collin-sexton",
    "title": "Who is Collin Sexton?",
    "kind": "person",
    "source": "auto",
    "q_word": "who",
    "title_len": 21,
-   "age_days": 30.0,
+   "age_days": 30.1,
    "rival_exact": null,
    "impr": 6,
    "clicks": 0,
@@ -989,6 +933,25 @@
    ]
   },
   {
+   "slug": "generic-congressional-ballot",
+   "title": "What is the generic congressional ballot: party preference poll for 2026",
+   "kind": "term",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 72,
+   "age_days": 26.0,
+   "rival_exact": null,
+   "impr": 6,
+   "clicks": 0,
+   "best_pos": 6,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "what is the generic ballot",
+    "what is a generic congressional ballot",
+    "define generic ballot"
+   ]
+  },
+  {
    "slug": "last-man-standing-match",
    "title": "What is a Last Man Standing match in WWE? Rules and Crown Jewel 2026 bout",
    "kind": "term",
@@ -1005,6 +968,24 @@
     "wwe last man standing match rules",
     "last man standing rules wwe",
     "last man standing match rules wwe"
+   ]
+  },
+  {
+   "slug": "wta-tennis",
+   "title": "What does WTA stand for in tennis? The women's tour explained",
+   "kind": "organization",
+   "source": "manual",
+   "q_word": "what",
+   "title_len": 61,
+   "age_days": 13.7,
+   "rival_exact": null,
+   "impr": 5,
+   "clicks": 0,
+   "best_pos": 60,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "wta tennis",
+    "tennis wta"
    ]
   },
   {
@@ -1026,20 +1007,21 @@
    ]
   },
   {
-   "slug": "tommy-carr",
-   "title": "Who is Tommy Carr, Michigan quarterback?",
-   "kind": "person",
+   "slug": "wbc-super-middleweight-title",
+   "title": "What is the WBC super middleweight title?",
+   "kind": "term",
    "source": "auto",
-   "q_word": "who",
-   "title_len": 40,
-   "age_days": 32.8,
+   "q_word": "what",
+   "title_len": 41,
+   "age_days": 33.0,
    "rival_exact": null,
    "impr": 5,
    "clicks": 0,
-   "best_pos": 27.4,
+   "best_pos": 9.3,
    "title_matches_top_query": true,
    "top_queries": [
-    "tommy carr"
+    "wbc super middleweight title",
+    "super middleweight title"
    ]
   },
   {
@@ -1058,43 +1040,6 @@
    "top_queries": [
     "hnry stadium, wellington",
     "hnry stadium wellington"
-   ]
-  },
-  {
-   "slug": "ali-g-in-da-house",
-   "title": "What is Ali G in Da House?",
-   "kind": "product",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 26,
-   "age_days": 30.9,
-   "rival_exact": null,
-   "impr": 5,
-   "clicks": 0,
-   "best_pos": 4,
-   "title_matches_top_query": false,
-   "top_queries": [
-    "ali g in da usa",
-    "ali g in da house",
-    "ali g in da hood"
-   ]
-  },
-  {
-   "slug": "generic-congressional-ballot",
-   "title": "What is the generic congressional ballot: party preference poll for 2026",
-   "kind": "term",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 72,
-   "age_days": 26.0,
-   "rival_exact": null,
-   "impr": 5,
-   "clicks": 0,
-   "best_pos": 6,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "what is the generic ballot",
-    "what is a generic congressional ballot"
    ]
   },
   {
@@ -1171,6 +1116,25 @@
    ]
   },
   {
+   "slug": "ali-g-in-da-house",
+   "title": "What is Ali G in Da House?",
+   "kind": "product",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 26,
+   "age_days": 30.9,
+   "rival_exact": null,
+   "impr": 4,
+   "clicks": 0,
+   "best_pos": 4,
+   "title_matches_top_query": false,
+   "top_queries": [
+    "ali g in da usa",
+    "ali g in da house",
+    "ali g in da hood"
+   ]
+  },
+  {
    "slug": "ken-calvert",
    "title": "Who is Ken Calvert? Republican congressman in California's 40th District",
    "kind": "person",
@@ -1239,23 +1203,6 @@
    ]
   },
   {
-   "slug": "bryce-underwood",
-   "title": "Who is Bryce Underwood of Michigan?",
-   "kind": "person",
-   "source": "auto",
-   "q_word": "who",
-   "title_len": 35,
-   "age_days": 32.8,
-   "rival_exact": null,
-   "impr": 3,
-   "clicks": 0,
-   "best_pos": 13.3,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "bryce underwood"
-   ]
-  },
-  {
    "slug": "nate-eaton",
    "title": "Who is Nate Eaton?",
    "kind": "person",
@@ -1279,7 +1226,7 @@
    "source": "manual",
    "q_word": "what",
    "title_len": 69,
-   "age_days": 21.6,
+   "age_days": 21.7,
    "rival_exact": null,
    "impr": 3,
    "clicks": 0,
@@ -1305,6 +1252,23 @@
    "top_queries": [
     "is reminders of him based on a true story",
     "\"colleen hoover adaptation ‘reminders of you’ sets vanessa caswill as director\""
+   ]
+  },
+  {
+   "slug": "tommy-carr",
+   "title": "Who is Tommy Carr, Michigan quarterback?",
+   "kind": "person",
+   "source": "auto",
+   "q_word": "who",
+   "title_len": 40,
+   "age_days": 32.8,
+   "rival_exact": null,
+   "impr": 2,
+   "clicks": 0,
+   "best_pos": 12,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "tommy carr"
    ]
   },
   {
@@ -1342,6 +1306,42 @@
    ]
   },
   {
+   "slug": "dfb-pokal",
+   "title": "What is the DFB-Pokal?",
+   "kind": "event",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 22,
+   "age_days": 31.5,
+   "rival_exact": null,
+   "impr": 2,
+   "clicks": 0,
+   "best_pos": 70,
+   "title_matches_top_query": false,
+   "top_queries": [
+    "deutscher cup",
+    "bundesliga cup"
+   ]
+  },
+  {
+   "slug": "darius-acuff-jr",
+   "title": "Who is Darius Acuff Jr.? Sacramento Kings rookie guard, 2026 draft",
+   "kind": "person",
+   "source": "auto",
+   "q_word": "who",
+   "title_len": 66,
+   "age_days": 27.1,
+   "rival_exact": null,
+   "impr": 2,
+   "clicks": 0,
+   "best_pos": 47,
+   "title_matches_top_query": false,
+   "top_queries": [
+    "darius acuff jr drip",
+    "acuff"
+   ]
+  },
+  {
    "slug": "designated-for-assignment",
    "title": "What does designated for assignment mean? DFA in baseball",
    "kind": "term",
@@ -1365,7 +1365,7 @@
    "source": "manual",
    "q_word": "what",
    "title_len": 74,
-   "age_days": 21.6,
+   "age_days": 21.7,
    "rival_exact": null,
    "impr": 2,
    "clicks": 0,
@@ -1377,20 +1377,37 @@
    ]
   },
   {
-   "slug": "champions-league",
-   "title": "What is the Champions League format?",
+   "slug": "marine-corps-marathon",
+   "title": "What is the Marine Corps Marathon?",
    "kind": "event",
    "source": "auto",
    "q_word": "what",
-   "title_len": 36,
-   "age_days": 33.7,
+   "title_len": 34,
+   "age_days": 35.7,
    "rival_exact": null,
    "impr": 1,
    "clicks": 0,
-   "best_pos": 23,
+   "best_pos": 43,
    "title_matches_top_query": false,
    "top_queries": [
-    "champions league format explained"
+    "dc marine marathon route"
+   ]
+  },
+  {
+   "slug": "bryce-underwood",
+   "title": "Who is Bryce Underwood of Michigan?",
+   "kind": "person",
+   "source": "auto",
+   "q_word": "who",
+   "title_len": 35,
+   "age_days": 32.8,
+   "rival_exact": null,
+   "impr": 1,
+   "clicks": 0,
+   "best_pos": 10,
+   "title_matches_top_query": true,
+   "top_queries": [
+    "bryce underwood"
    ]
   },
   {
@@ -1428,23 +1445,6 @@
    ]
   },
   {
-   "slug": "darius-acuff-jr",
-   "title": "Who is Darius Acuff Jr.? Sacramento Kings rookie guard, 2026 draft",
-   "kind": "person",
-   "source": "auto",
-   "q_word": "who",
-   "title_len": 66,
-   "age_days": 27.1,
-   "rival_exact": null,
-   "impr": 1,
-   "clicks": 0,
-   "best_pos": 47,
-   "title_matches_top_query": true,
-   "top_queries": [
-    "acuff"
-   ]
-  },
-  {
    "slug": "alaska-ranked-choice-voting",
    "title": "How does Alaska ranked choice voting work? Peltola won outright",
    "kind": "law",
@@ -1460,21 +1460,6 @@
    "top_queries": [
     "alaska ranked choice"
    ]
-  },
-  {
-   "slug": "marine-corps-marathon",
-   "title": "What is the Marine Corps Marathon?",
-   "kind": "event",
-   "source": "auto",
-   "q_word": "what",
-   "title_len": 34,
-   "age_days": 35.7,
-   "rival_exact": null,
-   "impr": 0,
-   "clicks": 0,
-   "best_pos": null,
-   "title_matches_top_query": false,
-   "top_queries": []
   },
   {
    "slug": "interstate-395-bridge",
@@ -1732,6 +1717,21 @@
    "top_queries": []
   },
   {
+   "slug": "champions-league",
+   "title": "What is the Champions League format?",
+   "kind": "event",
+   "source": "auto",
+   "q_word": "what",
+   "title_len": 36,
+   "age_days": 33.7,
+   "rival_exact": null,
+   "impr": 0,
+   "clicks": 0,
+   "best_pos": null,
+   "title_matches_top_query": false,
+   "top_queries": []
+  },
+  {
    "slug": "real-betis",
    "title": "What is Real Betis?",
    "kind": "organization",
@@ -1783,7 +1783,7 @@
    "source": "auto",
    "q_word": "where",
    "title_len": 33,
-   "age_days": 33.6,
+   "age_days": 33.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2008,7 +2008,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 48,
-   "age_days": 30.6,
+   "age_days": 30.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2053,7 +2053,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 24,
-   "age_days": 30.0,
+   "age_days": 30.1,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2068,7 +2068,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 30,
-   "age_days": 30.0,
+   "age_days": 30.1,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2563,7 +2563,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 74,
-   "age_days": 25.2,
+   "age_days": 25.3,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2578,7 +2578,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 71,
-   "age_days": 25.2,
+   "age_days": 25.3,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -2743,7 +2743,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 53,
-   "age_days": 24.3,
+   "age_days": 24.4,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3088,7 +3088,7 @@
    "source": "auto",
    "q_word": "none",
    "title_len": 76,
-   "age_days": 23.2,
+   "age_days": 23.3,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3148,7 +3148,7 @@
    "source": "auto",
    "q_word": "none",
    "title_len": 69,
-   "age_days": 23.1,
+   "age_days": 23.2,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3373,7 +3373,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 78,
-   "age_days": 22.7,
+   "age_days": 22.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3538,7 +3538,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 60,
-   "age_days": 22.4,
+   "age_days": 22.5,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3553,7 +3553,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 76,
-   "age_days": 21.9,
+   "age_days": 22.0,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3958,7 +3958,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 80,
-   "age_days": 20.7,
+   "age_days": 20.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3973,7 +3973,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 76,
-   "age_days": 20.7,
+   "age_days": 20.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -3988,7 +3988,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 68,
-   "age_days": 20.7,
+   "age_days": 20.8,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4198,7 +4198,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 80,
-   "age_days": 20.1,
+   "age_days": 20.2,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4378,7 +4378,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 65,
-   "age_days": 19.1,
+   "age_days": 19.2,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4393,7 +4393,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 73,
-   "age_days": 19.0,
+   "age_days": 19.1,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4483,7 +4483,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 63,
-   "age_days": 18.2,
+   "age_days": 18.3,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4798,7 +4798,7 @@
    "source": "auto",
    "q_word": "what",
    "title_len": 66,
-   "age_days": 17.3,
+   "age_days": 17.4,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4918,7 +4918,7 @@
    "source": "manual",
    "q_word": "none",
    "title_len": 61,
-   "age_days": 14.5,
+   "age_days": 14.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4933,7 +4933,7 @@
    "source": "manual",
    "q_word": "none",
    "title_len": 66,
-   "age_days": 9.5,
+   "age_days": 9.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4948,7 +4948,7 @@
    "source": "manual",
    "q_word": "none",
    "title_len": 68,
-   "age_days": 10.5,
+   "age_days": 10.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -4993,7 +4993,7 @@
    "source": "manual",
    "q_word": "none",
    "title_len": 72,
-   "age_days": 10.5,
+   "age_days": 10.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5068,7 +5068,7 @@
    "source": "manual",
    "q_word": "none",
    "title_len": 72,
-   "age_days": 8.5,
+   "age_days": 8.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5098,7 +5098,7 @@
    "source": "manual",
    "q_word": "none",
    "title_len": 58,
-   "age_days": 6.5,
+   "age_days": 6.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5113,7 +5113,7 @@
    "source": "manual",
    "q_word": "none",
    "title_len": 70,
-   "age_days": 4.5,
+   "age_days": 4.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5128,7 +5128,7 @@
    "source": "manual",
    "q_word": "none",
    "title_len": 55,
-   "age_days": 15.5,
+   "age_days": 15.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5143,7 +5143,7 @@
    "source": "manual",
    "q_word": "none",
    "title_len": 63,
-   "age_days": 5.5,
+   "age_days": 5.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5173,7 +5173,7 @@
    "source": "manual",
    "q_word": "did",
    "title_len": 64,
-   "age_days": 15.5,
+   "age_days": 15.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5293,7 +5293,7 @@
    "source": "manual",
    "q_word": "none",
    "title_len": 65,
-   "age_days": 9.5,
+   "age_days": 9.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5308,7 +5308,7 @@
    "source": "manual",
    "q_word": "none",
    "title_len": 61,
-   "age_days": 5.5,
+   "age_days": 5.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5338,7 +5338,7 @@
    "source": "manual",
    "q_word": "is",
    "title_len": 70,
-   "age_days": 9.5,
+   "age_days": 9.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5353,7 +5353,7 @@
    "source": "manual",
    "q_word": "where",
    "title_len": 65,
-   "age_days": 19.6,
+   "age_days": 19.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5398,7 +5398,7 @@
    "source": "manual",
    "q_word": "none",
    "title_len": 66,
-   "age_days": 14.5,
+   "age_days": 14.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5458,7 +5458,7 @@
    "source": "manual",
    "q_word": "how",
    "title_len": 70,
-   "age_days": 21.6,
+   "age_days": 21.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5578,7 +5578,7 @@
    "source": "manual",
    "q_word": "is",
    "title_len": 57,
-   "age_days": 19.6,
+   "age_days": 19.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5623,7 +5623,7 @@
    "source": "manual",
    "q_word": "none",
    "title_len": 64,
-   "age_days": 14.5,
+   "age_days": 14.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5713,7 +5713,7 @@
    "source": "manual",
    "q_word": "is",
    "title_len": 61,
-   "age_days": 19.6,
+   "age_days": 19.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -5863,7 +5863,7 @@
    "source": "manual",
    "q_word": "why",
    "title_len": 67,
-   "age_days": 14.5,
+   "age_days": 14.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6013,7 +6013,7 @@
    "source": "manual",
    "q_word": "none",
    "title_len": 65,
-   "age_days": 12.5,
+   "age_days": 12.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6118,7 +6118,7 @@
    "source": "manual",
    "q_word": "none",
    "title_len": 65,
-   "age_days": 14.5,
+   "age_days": 14.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6133,7 +6133,7 @@
    "source": "manual",
    "q_word": "why",
    "title_len": 67,
-   "age_days": 15.5,
+   "age_days": 15.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6148,7 +6148,7 @@
    "source": "manual",
    "q_word": "none",
    "title_len": 69,
-   "age_days": 6.5,
+   "age_days": 6.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6238,7 +6238,7 @@
    "source": "manual",
    "q_word": "none",
    "title_len": 75,
-   "age_days": 6.5,
+   "age_days": 6.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6268,7 +6268,7 @@
    "source": "manual",
    "q_word": "none",
    "title_len": 66,
-   "age_days": 10.5,
+   "age_days": 10.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6328,7 +6328,7 @@
    "source": "manual",
    "q_word": "none",
    "title_len": 61,
-   "age_days": 15.5,
+   "age_days": 15.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6358,7 +6358,7 @@
    "source": "manual",
    "q_word": "none",
    "title_len": 69,
-   "age_days": 12.5,
+   "age_days": 12.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6373,7 +6373,7 @@
    "source": "manual",
    "q_word": "none",
    "title_len": 63,
-   "age_days": 15.5,
+   "age_days": 15.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6388,7 +6388,7 @@
    "source": "manual",
    "q_word": "none",
    "title_len": 68,
-   "age_days": 15.5,
+   "age_days": 15.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6403,7 +6403,7 @@
    "source": "manual",
    "q_word": "none",
    "title_len": 65,
-   "age_days": 4.5,
+   "age_days": 4.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6418,7 +6418,7 @@
    "source": "manual",
    "q_word": "none",
    "title_len": 64,
-   "age_days": 4.5,
+   "age_days": 4.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6478,7 +6478,7 @@
    "source": "manual",
    "q_word": "is",
    "title_len": 62,
-   "age_days": 19.6,
+   "age_days": 19.7,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6523,7 +6523,7 @@
    "source": "manual",
    "q_word": "none",
    "title_len": 58,
-   "age_days": 5.5,
+   "age_days": 5.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6538,7 +6538,7 @@
    "source": "manual",
    "q_word": "none",
    "title_len": 74,
-   "age_days": 8.5,
+   "age_days": 8.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -6598,7 +6598,7 @@
    "source": "manual",
    "q_word": "none",
    "title_len": 76,
-   "age_days": 8.5,
+   "age_days": 8.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,
@@ -7228,7 +7228,7 @@
    "source": "manual",
    "q_word": "who",
    "title_len": 69,
-   "age_days": 14.5,
+   "age_days": 14.6,
    "rival_exact": null,
    "impr": 0,
    "clicks": 0,

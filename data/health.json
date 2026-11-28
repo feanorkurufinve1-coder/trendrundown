@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-28T05:17:17+00:00",
+ "checked": "2026-11-28T06:03:00+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -25,7 +25,7 @@
   {
    "path": "https://trendrundown.com/sitemap-news.xml",
    "lastSubmitted": "2026-11-26T05:16:40.140Z",
-   "lastDownloaded": "2026-11-26T05:17:02.503Z",
+   "lastDownloaded": "2026-11-28T03:12:40.241Z",
    "isPending": false,
    "warnings": "0",
    "errors": "0",
@@ -886,7 +886,7 @@
   },
   {
    "url": "/x/iran-bahrain-radar-strike",
-   "at": "2026-11-27T23:47:26+00:00",
+   "at": "2026-11-28T06:03:00+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1210,9 +1210,9 @@
   },
   {
    "url": "/x/macys-thanksgiving-parade-postponed-2026",
-   "at": "2026-11-27T23:47:07+00:00",
+   "at": "2026-11-28T06:02:39+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "URL is unknown to Google",
+   "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -2614,7 +2614,7 @@
   },
   {
    "url": "/x/why-are-people-trying-to-move-the-bean",
-   "at": "2026-11-27T23:47:14+00:00",
+   "at": "2026-11-28T06:02:46+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2806,7 +2806,7 @@
   },
   {
    "url": "/x/why-is-my-washing-machine-dripping-water-inside",
-   "at": "2026-11-27T23:47:20+00:00",
+   "at": "2026-11-28T06:02:53+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2913,7 +2913,7 @@
    "userCanonical": "https://trendrundown.com/x/wta-tennis"
   }
  ],
- "sm_at": "2026-11-27T23:47:01+00:00",
+ "sm_at": "2026-11-28T06:02:32+00:00",
  "first_indexed": {
   "/x/cyber-monday": "2026-11-13T16:25:58+00:00",
   "/": "2026-11-13T16:25:58+00:00",
@@ -2922,8 +2922,8 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 170,
+  "URL is unknown to Google": 169,
   "Crawled - currently not indexed": 65,
-  "Discovered - currently not indexed": 3
+  "Discovered - currently not indexed": 4
  }
 }
