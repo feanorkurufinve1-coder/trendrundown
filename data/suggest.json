@@ -19133,7 +19133,7 @@
   ]
  },
  "what-temperature-should-a-refrigerator-be": {
-  "time": "2026-11-27T13:59:24+00:00",
+  "time": "2026-11-28T14:04:05+00:00",
   "query": "what temperature should a refrigerator be",
   "in_suggest": true,
   "suggest": {
@@ -19194,23 +19194,31 @@
    [
     "2026-11-27",
     true
+   ],
+   [
+    "2026-11-28",
+    true
    ]
   ]
  },
  "when-does-the-boy-who-stole-billions-come-out": {
-  "time": "2026-11-27T13:59:26+00:00",
+  "time": "2026-11-28T14:04:06+00:00",
   "query": "when does the boy who stole billions come out",
   "in_suggest": false,
   "suggest": {
    "the boy who stole billions?": [
+    "the boy who stole billions streaming",
+    "the boy who stole billions where to watch",
+    "the boy who stole billions review",
+    "the boy who stole billions prime video",
     "the boy who stole billions movie",
     "the boy who stole billions (2026)",
     "the boy who stole billions trailer",
-    "the boy who stole billions where to watch",
     "the boy who stole billions imdb"
    ],
    "what is the boy who stole billions?": [
     "the boy who stole billions",
+    "the boy who stole billions prime video",
     "the boy who stole billions trailer",
     "the boy who stole billions 2026",
     "the boy who stole billions imdb",
@@ -19227,11 +19235,15 @@
    [
     "2026-11-27",
     false
+   ],
+   [
+    "2026-11-28",
+    false
    ]
   ]
  },
  "why-are-people-climbing-out-of-manholes": {
-  "time": "2026-11-27T13:59:27+00:00",
+  "time": "2026-11-28T14:04:08+00:00",
   "query": "why are people climbing out of manholes",
   "in_suggest": true,
   "suggest": {
@@ -19269,11 +19281,15 @@
    [
     "2026-11-27",
     true
+   ],
+   [
+    "2026-11-28",
+    true
    ]
   ]
  },
  "why-are-people-saying-ohio-isnt-a-state": {
-  "time": "2026-11-27T13:59:29+00:00",
+  "time": "2026-11-28T14:04:10+00:00",
   "query": "why are people saying ohio isn't a state",
   "in_suggest": true,
   "suggest": {
@@ -19296,11 +19312,15 @@
    [
     "2026-11-27",
     true
+   ],
+   [
+    "2026-11-28",
+    true
    ]
   ]
  },
  "why-are-people-saying-prepare-for-90-days": {
-  "time": "2026-11-27T13:59:30+00:00",
+  "time": "2026-11-28T14:04:12+00:00",
   "query": "why are people saying prepare for 90 days",
   "in_suggest": true,
   "suggest": {
@@ -19324,6 +19344,10 @@
    ],
    [
     "2026-11-27",
+    true
+   ],
+   [
+    "2026-11-28",
     true
    ]
   ]
@@ -19450,21 +19474,21 @@
   ]
  },
  "how-many-episodes-of-pride-and-prejudice-netflix": {
-  "time": "2026-11-27T13:59:19+00:00",
+  "time": "2026-11-28T14:03:58+00:00",
   "query": "how many episodes of pride and prejudice netflix",
   "in_suggest": true,
   "suggest": {
    "pride and prejudice": [
     "pride and prejudice",
-    "pride and prejudice 2005",
     "pride and prejudice 2026",
+    "pride and prejudice 2005",
     "pride and prejudice cast",
     "pride and prejudice 1995",
     "pride and prejudice and zombies cast",
     "pride and prejudice where to watch",
     "pride and prejudice movie 1995",
-    "pride and prejudice book",
-    "pride and prejudice 2005 cast"
+    "pride and prejudice and zombies",
+    "pride and prejudice book"
    ],
    "what is pride and prejudice": [
     "what is pride and prejudice about",
@@ -19493,11 +19517,15 @@
    [
     "2026-11-27",
     true
+   ],
+   [
+    "2026-11-28",
+    true
    ]
   ]
  },
  "how-to-self-clean-a-washing-machine": {
-  "time": "2026-11-27T13:59:21+00:00",
+  "time": "2026-11-28T14:04:00+00:00",
   "query": "how to self clean a washing machine",
   "in_suggest": true,
   "suggest": {
@@ -19554,18 +19582,22 @@
    [
     "2026-11-27",
     true
+   ],
+   [
+    "2026-11-28",
+    true
    ]
   ]
  },
  "what-is-the-my-moon-my-man-trend": {
-  "time": "2026-11-27T13:59:22+00:00",
+  "time": "2026-11-28T14:04:02+00:00",
   "query": "what is the my moon my man trend",
   "in_suggest": true,
   "suggest": {
    "my moon my man trend": [
     "my moon my man trend",
-    "my moon my man trend tiktok",
     "my moon my man trend meaning",
+    "my moon my man trend tiktok",
     "my moon my man trend tiktok meaning",
     "my moon my man trend song",
     "my moon my man trend explained",
@@ -19593,19 +19625,23 @@
    [
     "2026-11-27",
     true
+   ],
+   [
+    "2026-11-28",
+    true
    ]
   ]
  },
  "what-is-the-pirate-shop-token-in-fortnite": {
-  "time": "2026-11-27T13:59:23+00:00",
+  "time": "2026-11-28T14:04:03+00:00",
   "query": "what is the pirate shop token in fortnite",
   "in_suggest": true,
   "suggest": {
    "fortnite pirate shop token": [
     "fortnite pirate shop token chance",
+    "fortnite pirate shop token",
     "fortnite pirate shop token odds",
     "fortnite pirate ship token",
-    "fortnite pirate shop tokens",
     "fortnite pirate shop token is it real",
     "fortnite pirate shop token drop rate",
     "fortnite pirate shop token explained",
@@ -19653,6 +19689,10 @@
   "history": [
    [
     "2026-11-27",
+    true
+   ],
+   [
+    "2026-11-28",
     true
    ]
   ]
@@ -19722,6 +19762,181 @@
   "history": [
    [
     "2026-11-27",
+    true
+   ]
+  ]
+ },
+ "can-you-wash-shoes-in-the-washing-machine": {
+  "time": "2026-11-28T14:03:57+00:00",
+  "query": "can you wash shoes in the washing machine",
+  "in_suggest": true,
+  "suggest": {
+   "washing shoes in a washing machine": [
+    "washing shoes in a washing machine",
+    "washing shoes in a laundry machine",
+    "can washing shoes in a washing machine damage it",
+    "washing tennis shoes in a washing machine",
+    "washing running shoes in a washing machine",
+    "washing shoes in a samsung washing machine",
+    "will washing shoes in a washing machine damage it",
+    "washing white shoes in a washing machine",
+    "washing shoes in washing machine reddit",
+    "washing shoes in washing machine settings"
+   ],
+   "what is washing shoes in a washing machine": [
+    "what setting to wash shoes in a washing machine",
+    "what is the best way to wash shoes in a washing machine",
+    "what to wash shoes in washing machine",
+    "what temperature wash shoes in washing machine",
+    "what cycle to wash shoes in washing machine",
+    "what mode to wash shoes in washing machine",
+    "what is the best way to wash tennis shoes in a washing machine",
+    "can washing shoes in a washing machine damage it",
+    "what setting is best for washing shoes in washing machine",
+    "is washing shoes in washing machine bad"
+   ],
+   "can you wash shoes in the washing machine": [
+    "can you wash shoes in the washing machine",
+    "can you wash shoes in the washing machine with clothes",
+    "can you wash shoes in the washing machine with other clothes",
+    "can you wash shoes in the washer machine",
+    "can you put shoes in the washing machine",
+    "should you wash shoes in the washing machine",
+    "can you clean shoes in the washing machine",
+    "can you put shoes in the washing machine and dryer",
+    "can you put shoes in the washing machine without a bag",
+    "can we wash shoes in the washing machine"
+   ],
+   "can you wash shoes washing machine": [
+    "can you wash shoes washing machine",
+    "can you put shoes washing machine",
+    "can you wash sneakers washing machine",
+    "can you wash trainers washing machine",
+    "can you wash shoes in washing machine with clothes",
+    "can you wash shoes in washing machine with other clothes",
+    "should you wash shoes in washing machine",
+    "do you wash shoes in washing machine",
+    "can we wash shoes in washing machine top loader",
+    "can we wash shoes in washing machine front loader"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-28",
+    true
+   ]
+  ]
+ },
+ "what-is-the-born-from-culture-trend": {
+  "time": "2026-11-28T14:04:01+00:00",
+  "query": "what is the born from culture trend",
+  "in_suggest": true,
+  "suggest": {
+   "born from culture trend": [
+    "born from culture trend",
+    "born from culture trend ai",
+    "born from culture viral trend"
+   ],
+   "what is born from culture trend": [],
+   "what is the born from culture trend": [
+    "what is the born from culture trend"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-28",
+    true
+   ]
+  ]
+ },
+ "why-are-people-saying-cillian-murphy-is-dr-doom": {
+  "time": "2026-11-28T14:04:09+00:00",
+  "query": "why are people saying cillian murphy is dr doom",
+  "in_suggest": true,
+  "suggest": {
+   "cillian murphy doctor doom theory": [
+    "cillian murphy doctor doom theory",
+    "does cillian murphy have any social media",
+    "what is cillian murphy known for",
+    "is cillian murphy in marvel"
+   ],
+   "what is cillian murphy doctor doom theory": [
+    "cillian murphy doctor doom theory",
+    "is cillian murphy in marvel",
+    "what is cillian murphy known for",
+    "how is cillian murphy in real life",
+    "is cillian murphy in the mask",
+    "does cillian murphy have any social media"
+   ],
+   "why are people saying cillian murphy is dr doom": [
+    "why are people saying cillian murphy is dr doom",
+    "is cillian murphy ill",
+    "is cillian murphy religious",
+    "is dr doom good or evil",
+    "is cillian murphy in marvel"
+   ],
+   "people saying cillian murphy dr doom": []
+  },
+  "history": [
+   [
+    "2026-11-28",
+    true
+   ]
+  ]
+ },
+ "will-there-be-an-mlb-lockout": {
+  "time": "2026-11-28T14:04:13+00:00",
+  "query": "will there be an mlb lockout",
+  "in_suggest": true,
+  "suggest": {
+   "mlb lockout 2026": [
+    "mlb lockout 2026",
+    "mlb lockout 2026 explained",
+    "mlb lockout 2026 date",
+    "mlb lockout 2026 predictions",
+    "mlb lockout 2026 or 2027",
+    "mlb lockout 2026 reddit",
+    "mlb lockout 2026 dodgers",
+    "mlb lockout 2026 27",
+    "mlb lockout 2026 schedule",
+    "mlb lockout 2026 impact dodgers"
+   ],
+   "what is mlb lockout 2026": [
+    "what is the mlb lockout 2026",
+    "mlb lockout years",
+    "when was the last mlb lockout",
+    "mlb lockout season",
+    "when was the mlb lockout",
+    "mlb password reset"
+   ],
+   "will there be an mlb lockout": [
+    "will there be an mlb lockout",
+    "will there be an mlb lockout next year",
+    "will there be an mlb lockout in 2027",
+    "will there be an mlb lockout in 2026",
+    "will there be an mlb lockout this year",
+    "will there be an mlb lockout kalshi",
+    "will there be an mlb lockout polymarket",
+    "will there actually be an mlb lockout",
+    "will there still be an mlb lockout",
+    "will there be an mlb strike in 2027"
+   ],
+   "will there be mlb lockout": [
+    "will there be mlb lockout",
+    "will there be mlb lockout in 2027",
+    "will there be mlb lockout next year",
+    "will there be mlb strike",
+    "will there be mlb strike in 2027",
+    "will there be a mlb lockout in 2026",
+    "will there be another mlb lockout",
+    "will there be an mlb lockout this year",
+    "will there be an mlb lockout polymarket",
+    "will there be an mlb lockout kalshi"
+   ]
+  },
+  "history": [
+   [
+    "2026-11-28",
     true
    ]
   ]

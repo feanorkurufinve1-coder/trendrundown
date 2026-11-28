@@ -309,6 +309,18 @@
    "userCanonical": null
   },
   {
+   "url": "/x/can-you-wash-shoes-in-the-washing-machine",
+   "at": "2026-11-28T14:02:06+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/caribbean-princess-outbreak-november-2026",
    "at": "2026-11-28T13:33:33+00:00",
    "verdict": "NEUTRAL",
@@ -478,7 +490,7 @@
   },
   {
    "url": "/x/does-a-refrigerator-need-its-own-circuit",
-   "at": "2026-11-28T07:46:53+00:00",
+   "at": "2026-11-28T14:02:32+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1918,7 +1930,7 @@
   },
   {
    "url": "/x/what-does-maxxing-mean",
-   "at": "2026-11-28T07:47:00+00:00",
+   "at": "2026-11-28T14:02:38+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1930,7 +1942,7 @@
   },
   {
    "url": "/x/what-does-microsoft-364-mean",
-   "at": "2026-11-28T07:47:06+00:00",
+   "at": "2026-11-28T14:02:45+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1942,7 +1954,7 @@
   },
   {
    "url": "/x/what-does-my-kid-mean-slang-guide",
-   "at": "2026-11-28T07:47:13+00:00",
+   "at": "2026-11-28T14:02:51+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1954,7 +1966,7 @@
   },
   {
    "url": "/x/what-does-refrigerator-coolant-smell-like",
-   "at": "2026-11-28T07:47:19+00:00",
+   "at": "2026-11-28T14:02:58+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -1990,7 +2002,7 @@
   },
   {
    "url": "/x/what-does-unc-mean",
-   "at": "2026-11-28T07:47:25+00:00",
+   "at": "2026-11-28T14:03:04+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2002,7 +2014,7 @@
   },
   {
    "url": "/x/what-is-a-ground-stop",
-   "at": "2026-11-28T07:47:32+00:00",
+   "at": "2026-11-28T14:03:10+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2014,7 +2026,7 @@
   },
   {
    "url": "/x/what-is-a-hip-pointer",
-   "at": "2026-11-28T07:47:38+00:00",
+   "at": "2026-11-28T14:03:17+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2026,7 +2038,7 @@
   },
   {
    "url": "/x/what-is-a-motion-to-refer",
-   "at": "2026-11-28T07:47:45+00:00",
+   "at": "2026-11-28T14:03:23+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2038,7 +2050,7 @@
   },
   {
    "url": "/x/what-is-a-motion-to-table",
-   "at": "2026-11-28T07:47:51+00:00",
+   "at": "2026-11-28T14:03:30+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2050,7 +2062,7 @@
   },
   {
    "url": "/x/what-is-a-privileged-resolution",
-   "at": "2026-11-28T07:47:57+00:00",
+   "at": "2026-11-28T14:03:36+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2062,7 +2074,7 @@
   },
   {
    "url": "/x/what-is-a-public-benefit-corporation",
-   "at": "2026-11-28T07:48:04+00:00",
+   "at": "2026-11-28T14:03:42+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2074,7 +2086,7 @@
   },
   {
    "url": "/x/what-is-a-quarter-quell",
-   "at": "2026-11-28T07:48:10+00:00",
+   "at": "2026-11-28T14:03:49+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2086,7 +2098,7 @@
   },
   {
    "url": "/x/what-is-a-safety-in-football",
-   "at": "2026-11-28T07:48:17+00:00",
+   "at": "2026-11-28T14:03:55+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Crawled - currently not indexed",
    "robotsTxtState": "ALLOWED",
@@ -2219,6 +2231,18 @@
   {
    "url": "/x/what-is-the-bearista-cup",
    "at": "2026-11-28T08:02:31+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
+   "url": "/x/what-is-the-born-from-culture-trend",
+   "at": "2026-11-28T14:02:13+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2471,6 +2495,18 @@
   {
    "url": "/x/why-are-people-saying-ao3-is-back",
    "at": "2026-11-28T08:03:28+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
+   "url": "/x/why-are-people-saying-cillian-murphy-is-dr-doom",
+   "at": "2026-11-28T14:02:19+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2901,6 +2937,18 @@
    "userCanonical": null
   },
   {
+   "url": "/x/will-there-be-an-mlb-lockout",
+   "at": "2026-11-28T14:02:25+00:00",
+   "verdict": "NEUTRAL",
+   "coverageState": "URL is unknown to Google",
+   "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
+   "indexingState": "INDEXING_STATE_UNSPECIFIED",
+   "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
+   "lastCrawlTime": null,
+   "googleCanonical": null,
+   "userCanonical": null
+  },
+  {
    "url": "/x/wta-tennis",
    "at": "2026-11-28T08:32:57+00:00",
    "verdict": "NEUTRAL",
@@ -2922,7 +2970,7 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 159,
+  "URL is unknown to Google": 163,
   "Crawled - currently not indexed": 65,
   "Discovered - currently not indexed": 14
  }
