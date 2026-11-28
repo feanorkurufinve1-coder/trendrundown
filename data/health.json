@@ -1,23 +1,23 @@
 {
  "v": 3,
- "checked": "2026-11-28T12:02:30+00:00",
+ "checked": "2026-11-28T12:17:19+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
    "lastSubmitted": "2026-11-26T05:16:40.259Z",
-   "lastDownloaded": "2026-11-26T05:17:02.902Z",
+   "lastDownloaded": "2026-11-28T08:31:15.837Z",
    "isPending": false,
    "warnings": "0",
    "errors": "0",
    "contents": [
     {
      "type": "web",
-     "submitted": "224",
+     "submitted": "239",
      "indexed": "0"
     },
     {
      "type": "image",
-     "submitted": "220",
+     "submitted": "235",
      "indexed": "0"
     }
    ]
@@ -886,7 +886,7 @@
   },
   {
    "url": "/x/iran-bahrain-radar-strike",
-   "at": "2026-11-28T06:03:00+00:00",
+   "at": "2026-11-28T12:17:19+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1210,7 +1210,7 @@
   },
   {
    "url": "/x/macys-thanksgiving-parade-postponed-2026",
-   "at": "2026-11-28T06:02:39+00:00",
+   "at": "2026-11-28T12:16:59+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2614,7 +2614,7 @@
   },
   {
    "url": "/x/why-are-people-trying-to-move-the-bean",
-   "at": "2026-11-28T06:02:46+00:00",
+   "at": "2026-11-28T12:17:06+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2806,7 +2806,7 @@
   },
   {
    "url": "/x/why-is-my-washing-machine-dripping-water-inside",
-   "at": "2026-11-28T06:02:53+00:00",
+   "at": "2026-11-28T12:17:12+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2913,7 +2913,7 @@
    "userCanonical": "https://trendrundown.com/x/wta-tennis"
   }
  ],
- "sm_at": "2026-11-28T06:02:32+00:00",
+ "sm_at": "2026-11-28T12:16:53+00:00",
  "first_indexed": {
   "/x/cyber-monday": "2026-11-13T16:25:58+00:00",
   "/": "2026-11-13T16:25:58+00:00",
