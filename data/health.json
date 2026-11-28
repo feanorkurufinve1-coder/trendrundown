@@ -1,6 +1,6 @@
 {
  "v": 3,
- "checked": "2026-11-28T11:32:08+00:00",
+ "checked": "2026-11-28T12:02:30+00:00",
  "sitemaps": [
   {
    "path": "https://trendrundown.com/sitemap.xml",
@@ -154,7 +154,7 @@
   },
   {
    "url": "/x/aaron-rodgers-released-steelers",
-   "at": "2026-11-28T05:47:28+00:00",
+   "at": "2026-11-28T12:02:23+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "Discovered - currently not indexed",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -214,9 +214,9 @@
   },
   {
    "url": "/x/andy-taylor-duran-duran-dies",
-   "at": "2026-11-28T05:47:34+00:00",
+   "at": "2026-11-28T12:02:30+00:00",
    "verdict": "NEUTRAL",
-   "coverageState": "Discovered - currently not indexed",
+   "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
    "indexingState": "INDEXING_STATE_UNSPECIFIED",
    "pageFetchState": "PAGE_FETCH_STATE_UNSPECIFIED",
@@ -850,7 +850,7 @@
   },
   {
    "url": "/x/i-play-rocky-true-story",
-   "at": "2026-11-28T05:46:56+00:00",
+   "at": "2026-11-28T12:01:51+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -862,7 +862,7 @@
   },
   {
    "url": "/x/internet-trends-this-week-2026-11-15",
-   "at": "2026-11-28T05:47:03+00:00",
+   "at": "2026-11-28T12:01:58+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -970,7 +970,7 @@
   },
   {
    "url": "/x/is-melania-the-series-the-same-as-the-movie",
-   "at": "2026-11-28T05:47:09+00:00",
+   "at": "2026-11-28T12:02:04+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -1558,7 +1558,7 @@
   },
   {
    "url": "/x/rikers-island-closure-plan-2032",
-   "at": "2026-11-28T05:46:50+00:00",
+   "at": "2026-11-28T12:01:45+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2230,7 +2230,7 @@
   },
   {
    "url": "/x/what-is-the-i-got-so-mad-meme",
-   "at": "2026-11-28T05:47:15+00:00",
+   "at": "2026-11-28T12:02:10+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2518,7 +2518,7 @@
   },
   {
    "url": "/x/why-are-people-saying-julia-stiles-went-to-juilliard",
-   "at": "2026-11-28T05:47:22+00:00",
+   "at": "2026-11-28T12:02:17+00:00",
    "verdict": "NEUTRAL",
    "coverageState": "URL is unknown to Google",
    "robotsTxtState": "ROBOTS_TXT_STATE_UNSPECIFIED",
@@ -2922,8 +2922,8 @@
  },
  "summary": {
   "Submitted and indexed": 1,
-  "URL is unknown to Google": 158,
+  "URL is unknown to Google": 159,
   "Crawled - currently not indexed": 65,
-  "Discovered - currently not indexed": 15
+  "Discovered - currently not indexed": 14
  }
 }
