@@ -1,0 +1,51 @@
+{
+ "subject": "Washing shoes in a washing machine",
+ "kind": "term",
+ "query": "can you wash shoes in the washing machine",
+ "title": "Can you wash shoes in the washing machine? Which ones and how",
+ "answer": "You can wash many canvas, cotton, nylon and polyester sneakers in a washing machine on a cold, gentle cycle with liquid detergent, inside a mesh bag and with a few towels. Leather, suede, rubber boots and cleats should not go in the machine, and no shoe should go in a hot dryer.",
+ "body": "Start with the label. Most shoes have a care tag inside the tongue; if it says hand wash only, or there is no tag and the maker's website says the same, clean them by hand. Some big sportswear makers, including Nike, advise against machine washing altogether and recommend a soft brush, mild soap and air drying, because tumbling can loosen glue and damage both shoe and drum.\n\nIf the shoes are machine-safe, prepare them first: take out the laces and insoles, knock off loose dirt, and scrub the soles with a brush. Put the shoes in a zippered mesh laundry bag or a pillowcase, and add two or three old towels to cushion them and keep them from banging around. Use the delicate or hand-wash cycle, cold water and a low or no-spin setting. Choose liquid detergent, and not much of it; Which? suggests about half a capful, because powder can stay trapped in the fabric. Laces can go in the same mesh bag; insoles usually do better wiped or washed by hand, since foam takes days to dry.\n\nDrying is where most shoes get ruined. Heat can shrink fabric, warp rubber and melt glue, so skip the radiator and the regular dryer. Stuff the shoes with paper towels or clean rags, change them as they get damp, and let the shoes air-dry in a ventilated spot out of strong direct sun, which can yellow white soles. Expect at least overnight, and sometimes two days. If your dryer has a drying rack accessory, a no-heat or low setting with the shoes on the rack is an option for canvas.\n\nWhen to stop: leather, suede, shoes with lights or electronics, glued-on decorations, and badly worn shoes with separating soles should be cleaned by hand or by a shoe repair or cleaning shop. Wash sneakers only now and then, not every week, since every wash weakens the materials.",
+ "faq": [
+  {
+   "q": "Can you put shoes in the dryer?",
+   "a": "It is safest not to. Heat can shrink, warp and unglue shoes. Air-dry them stuffed with paper towels; a no-heat setting with a dryer rack is the only reasonable machine option for canvas."
+  },
+  {
+   "q": "What setting should I use to wash shoes?",
+   "a": "The delicate or hand-wash cycle, cold water, and low or no spin, with a small amount of liquid detergent."
+  },
+  {
+   "q": "Can washing shoes damage the washing machine?",
+   "a": "It can if shoes bang around loose. A mesh bag or pillowcase plus a few towels keeps them cushioned and protects the drum."
+  },
+  {
+   "q": "Can you wash leather or suede shoes in the washer?",
+   "a": "No. Water and tumbling can crack leather and ruin suede. Clean them by hand with products made for those materials."
+  }
+ ],
+ "links": [
+  [
+   "Whirlpool",
+   "How to Wash Shoes in a Washing Machine",
+   "https://whirlpool.com/blog/washers-and-dryers/how-to-wash-shoes-in-washing-machine.html"
+  ],
+  [
+   "Which?",
+   "How to wash trainers: eight mistakes you might have been making",
+   "https://www.which.co.uk/news/article/how-to-wash-trainers-eight-mistakes-you-might-have-been-making-aTswE2j4OyLM"
+  ],
+  [
+   "CHOICE",
+   "How to clean shoes in the washing machine",
+   "https://www.choice.com.au/home-and-living/laundry-and-cleaning/washing-machines/articles/how-to-clean-shoes-in-the-washing-machine"
+  ],
+  [
+   "Nike",
+   "Can You Put Sneakers in the Washer?",
+   "https://www.nike.com/a/can-you-put-shoes-in-the-washer"
+  ]
+ ],
+ "image_prompt": "A pair of plain white canvas sneakers without laces drying on a wooden rack beside an open window with soft daylight, realistic photo style",
+ "made": "2026-11-28T14:05:00Z",
+ "first": "2026-11-28T14:05:00Z"
+}

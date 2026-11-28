@@ -1,0 +1,52 @@
+{
+ "subject": "MLB lockout 2026",
+ "kind": "event",
+ "query": "will there be an mlb lockout",
+ "title": "Will there be an MLB lockout? What happens after Dec. 1",
+ "answer": "An MLB lockout is widely expected: the league's collective bargaining agreement with the players' union expires at 11:59 p.m. ET on Dec. 1, 2026, and reporting says owners plan to lock players out starting Dec. 2 unless a deal is reached. As of late November, the two sides remained far apart over a salary cap.",
+ "body": "A lockout is the owners' version of a strike: when the labor contract expires, teams shut players out of work until a new deal is signed. Baseball's offseason would freeze almost immediately. During a lockout, teams cannot sign major league free agents, cannot make trades involving players on 40-man rosters, and cannot talk to those players at all; locked-out players also lose access to team facilities and medical staff. Salary arbitration hearings stop, and the Winter Meetings, set for Dec. 7-9 in San Diego, and the Rule 5 draft are expected to be affected. Minor league operations and signings of players not on 40-man rosters can continue.\n\nThe main fight is a salary cap. On Nov. 3, 2026, owners proposed a hard cap of $258.2 million with a $180.2 million floor, delayed until 2028, along with higher minimum salaries for 2027. The union, led by interim executive director Bruce Meyer, has refused a cap for decades and reportedly countered with a $300 million luxury tax threshold instead. Commissioner Rob Manfred has made clear that owners intend to lock out players when the contract expires, according to reporting in mid-November.\n\nThis has happened before. The last agreement expired on Dec. 1, 2021, owners locked players out on Dec. 2, and the lockout lasted 99 days, ending March 10, 2022. Opening Day was pushed back a week, but the full 162-game season was eventually played. Spring training games for 2027 are scheduled to begin Feb. 19, and the regular season on March 24, so the real deadline is late winter: talks would need to succeed by then to avoid lost games. Any forecast beyond that is speculation.",
+ "in_the_news": "MLB's labor deal expires at 11:59 p.m. ET on Monday, Dec. 1, 2026, and no agreement on a new one had been reported as of late November.",
+ "faq": [
+  {
+   "q": "When does the MLB CBA expire?",
+   "a": "At 11:59 p.m. Eastern time on Dec. 1, 2026. A lockout, if owners declare one, would begin Dec. 2."
+  },
+  {
+   "q": "Can MLB teams sign free agents during a lockout?",
+   "a": "No. Major league free agent signings and trades involving 40-man roster players stop until a new agreement is signed. Many teams and players try to finish deals before the deadline."
+  },
+  {
+   "q": "How long was the last MLB lockout?",
+   "a": "99 days, from Dec. 2, 2021, to March 10, 2022. Opening Day was delayed about a week, but no games were ultimately lost."
+  },
+  {
+   "q": "Will a lockout cancel the 2027 season?",
+   "a": "Not automatically. A lockout in December mostly freezes the offseason. Games are at risk only if no deal is reached before spring training and Opening Day on March 24, 2027."
+  }
+ ],
+ "links": [
+  [
+   "Yardbarker",
+   "5 things to know before MLB's CBA expires on Dec. 1",
+   "https://www.yardbarker.com/mlb/articles/5_things_to_know_before_mlbs_cba_expires_on_dec_1/s1_13132_44581730"
+  ],
+  [
+   "TSN (ESPN)",
+   "Will there be a lockout? A salary cap? MLB's labor battle explained",
+   "https://www.tsn.ca/mlb/article/will-there-be-a-lockout-a-salary-cap-mlbs-labor-battle-explained-n1-50370123/"
+  ],
+  [
+   "ESPN",
+   "What you need to know about MLB's looming labor battle",
+   "https://www.espn.com/mlb/story/_/id/47108752/"
+  ],
+  [
+   "TrendRundown",
+   "Does MLB have a salary cap?",
+   "https://trendrundown.com/x/does-mlb-have-a-salary-cap"
+  ]
+ ],
+ "image_prompt": "A single steel padlock and chain hanging on the gate of an empty baseball dugout, with a frosty empty green field behind it in pale winter light, no people, realistic photo style",
+ "made": "2026-11-28T14:05:00Z",
+ "first": "2026-11-28T14:05:00Z"
+}
