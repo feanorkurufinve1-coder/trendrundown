@@ -1,252 +1,280 @@
 {
- "made": "2026-11-27T22:34:16+00:00",
- "day": "2026-11-26",
+ "made": "2026-11-28T04:48:37+00:00",
+ "day": "2026-11-27",
  "about": "Всплески просмотров английской Википедии за вчера: views — просмотров вчера, before — максимум за 3 прошлых дня (null = статьи не было в топ-1000). Идеи для страниц «who is / what is»; проверять факты по новостям.",
  "spikes": [
   {
-   "article": "Wu-Tang Clan",
-   "views": 147607,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Wu-Tang_Clan"
-  },
-  {
-   "article": "John Tuggle",
-   "views": 101935,
-   "before": 19469,
-   "ratio": 5.2,
-   "url": "https://en.wikipedia.org/wiki/John_Tuggle"
-  },
-  {
-   "article": "Miranda Lambert",
-   "views": 98353,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Miranda_Lambert"
-  },
-  {
    "article": "Joe Milton",
-   "views": 75672,
-   "before": 7633,
-   "ratio": 9.9,
+   "views": 385182,
+   "before": 75672,
+   "ratio": 5.1,
    "url": "https://en.wikipedia.org/wiki/Joe_Milton"
   },
   {
-   "article": "Chad Smith",
-   "views": 69113,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Chad_Smith"
+   "article": "Marc Márquez",
+   "views": 86276,
+   "before": 11414,
+   "ratio": 7.6,
+   "url": "https://en.wikipedia.org/wiki/Marc_M%C3%A1rquez"
   },
   {
-   "article": "Bono",
-   "views": 67105,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Bono"
+   "article": "Alice Walker",
+   "views": 84827,
+   "before": 8553,
+   "ratio": 9.9,
+   "url": "https://en.wikipedia.org/wiki/Alice_Walker"
   },
   {
-   "article": "privacy policy",
-   "views": 62694,
+   "article": "Skeleton",
+   "views": 79571,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/privacy_policy"
+   "url": "https://en.wikipedia.org/wiki/Skeleton"
   },
   {
-   "article": "U2",
-   "views": 59174,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/U2"
-  },
-  {
-   "article": "Mr. Irrelevant (film)",
-   "views": 50320,
-   "before": 11560,
+   "article": "Drishyam: The Conclusion",
+   "views": 71627,
+   "before": 16184,
    "ratio": 4.4,
-   "url": "https://en.wikipedia.org/wiki/Mr._Irrelevant_%28film%29"
+   "url": "https://en.wikipedia.org/wiki/Drishyam%3A_The_Conclusion"
   },
   {
-   "article": "Blake Corum",
-   "views": 49112,
+   "article": "Google",
+   "views": 71241,
+   "before": 18650,
+   "ratio": 3.8,
+   "url": "https://en.wikipedia.org/wiki/Google"
+  },
+  {
+   "article": "P. J. Gallagher (comedian)",
+   "views": 62769,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Blake_Corum"
+   "url": "https://en.wikipedia.org/wiki/P._J._Gallagher_%28comedian%29"
   },
   {
-   "article": "Jahmyr Gibbs",
-   "views": 48964,
+   "article": "Josh Allen",
+   "views": 61088,
+   "before": 11762,
+   "ratio": 5.2,
+   "url": "https://en.wikipedia.org/wiki/Josh_Allen"
+  },
+  {
+   "article": "Aadarsha Kutumbam House No: 47 - AK47",
+   "views": 50305,
+   "before": 9165,
+   "ratio": 5.5,
+   "url": "https://en.wikipedia.org/wiki/Aadarsha_Kutumbam_House_No%3A_47_-_AK47"
+  },
+  {
+   "article": "Goo Goo Dolls",
+   "views": 49220,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Jahmyr_Gibbs"
+   "url": "https://en.wikipedia.org/wiki/Goo_Goo_Dolls"
   },
   {
-   "article": "Dan Campbell",
-   "views": 41834,
+   "article": "Adéla",
+   "views": 47489,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Dan_Campbell"
+   "url": "https://en.wikipedia.org/wiki/Ad%C3%A9la"
   },
   {
-   "article": "Simon Le Bon",
-   "views": 39752,
-   "before": 12203,
-   "ratio": 3.3,
-   "url": "https://en.wikipedia.org/wiki/Simon_Le_Bon"
-  },
-  {
-   "article": "Caleb Williams",
-   "views": 39612,
+   "article": "Elkie Brooks",
+   "views": 46937,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Caleb_Williams"
+   "url": "https://en.wikipedia.org/wiki/Elkie_Brooks"
   },
   {
-   "article": "Survivor 51",
-   "views": 38549,
+   "article": "Jennifer Lopez",
+   "views": 46607,
+   "before": 13432,
+   "ratio": 3.5,
+   "url": "https://en.wikipedia.org/wiki/Jennifer_Lopez"
+  },
+  {
+   "article": "John Rzeznik",
+   "views": 45059,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Survivor_51"
+   "url": "https://en.wikipedia.org/wiki/John_Rzeznik"
   },
   {
-   "article": "Ol' Dirty Bastard",
-   "views": 38357,
+   "article": "Gunmaaster G9",
+   "views": 41151,
+   "before": 8212,
+   "ratio": 5.0,
+   "url": "https://en.wikipedia.org/wiki/Gunmaaster_G9"
+  },
+  {
+   "article": "Neem Karoli Baba",
+   "views": 38193,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Ol%27_Dirty_Bastard"
+   "url": "https://en.wikipedia.org/wiki/Neem_Karoli_Baba"
   },
   {
-   "article": "Tom Cruise filmography",
-   "views": 37927,
+   "article": "Andy Reid",
+   "views": 37936,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Tom_Cruise_filmography"
+   "url": "https://en.wikipedia.org/wiki/Andy_Reid"
   },
   {
-   "article": "The Hunting Wives",
-   "views": 32718,
-   "before": 10716,
-   "ratio": 3.1,
-   "url": "https://en.wikipedia.org/wiki/The_Hunting_Wives"
-  },
-  {
-   "article": "Tabancale language",
-   "views": 30617,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Tabancale_language"
-  },
-  {
-   "article": "Method Man",
-   "views": 30484,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Method_Man"
-  },
-  {
-   "article": "Luke Kuechly",
-   "views": 30367,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Luke_Kuechly"
-  },
-  {
-   "article": "2008 Mumbai attacks",
-   "views": 30098,
-   "before": null,
-   "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/2008_Mumbai_attacks"
-  },
-  {
-   "article": "Norse Atlantic Airways",
-   "views": 29643,
-   "before": 7302,
+   "article": "Cris Collinsworth",
+   "views": 36755,
+   "before": 9036,
    "ratio": 4.1,
-   "url": "https://en.wikipedia.org/wiki/Norse_Atlantic_Airways"
+   "url": "https://en.wikipedia.org/wiki/Cris_Collinsworth"
   },
   {
-   "article": "Nick Rhodes",
-   "views": 29325,
-   "before": 9581,
+   "article": "Dick Van Dyke",
+   "views": 36068,
+   "before": 7296,
+   "ratio": 4.9,
+   "url": "https://en.wikipedia.org/wiki/Dick_Van_Dyke"
+  },
+  {
+   "article": "Foreskin",
+   "views": 34595,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Foreskin"
+  },
+  {
+   "article": "Julie Andrews",
+   "views": 33058,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Julie_Andrews"
+  },
+  {
+   "article": "2026 New Zealand general election",
+   "views": 32424,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/2026_New_Zealand_general_election"
+  },
+  {
+   "article": "1909 Chinese provincial elections",
+   "views": 32329,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/1909_Chinese_provincial_elections"
+  },
+  {
+   "article": "Patrick Mahomes",
+   "views": 31061,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Patrick_Mahomes"
+  },
+  {
+   "article": "Andrea Stewart-Cousins",
+   "views": 31058,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Andrea_Stewart-Cousins"
+  },
+  {
+   "article": "Jerry Jones",
+   "views": 31023,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Jerry_Jones"
+  },
+  {
+   "article": "Travis Kelce",
+   "views": 27874,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Travis_Kelce"
+  },
+  {
+   "article": "Justin Timberlake",
+   "views": 27551,
+   "before": 8836,
    "ratio": 3.1,
-   "url": "https://en.wikipedia.org/wiki/Nick_Rhodes"
+   "url": "https://en.wikipedia.org/wiki/Justin_Timberlake"
   },
   {
-   "article": "Antonio Cipriano",
-   "views": 29147,
+   "article": "Willem Dafoe",
+   "views": 25738,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Antonio_Cipriano"
+   "url": "https://en.wikipedia.org/wiki/Willem_Dafoe"
   },
   {
-   "article": "RZA",
-   "views": 29063,
+   "article": "Emmanuel Emegha",
+   "views": 24204,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/RZA"
+   "url": "https://en.wikipedia.org/wiki/Emmanuel_Emegha"
   },
   {
-   "article": "Judy Garland",
-   "views": 27872,
-   "before": 8698,
-   "ratio": 3.2,
-   "url": "https://en.wikipedia.org/wiki/Judy_Garland"
-  },
-  {
-   "article": "Jared Goff",
-   "views": 27381,
+   "article": "Brian Schottenheimer",
+   "views": 23977,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Jared_Goff"
+   "url": "https://en.wikipedia.org/wiki/Brian_Schottenheimer"
   },
   {
-   "article": "Huw Edwards",
-   "views": 25659,
+   "article": "Jack Lowden",
+   "views": 23400,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Huw_Edwards"
+   "url": "https://en.wikipedia.org/wiki/Jack_Lowden"
   },
   {
-   "article": "NFL on Thanksgiving Day",
-   "views": 25016,
+   "article": "Jake Elliott",
+   "views": 23396,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/NFL_on_Thanksgiving_Day"
+   "url": "https://en.wikipedia.org/wiki/Jake_Elliott"
   },
   {
-   "article": "The Edge",
-   "views": 24731,
+   "article": "Valentino Rossi",
+   "views": 22388,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/The_Edge"
+   "url": "https://en.wikipedia.org/wiki/Valentino_Rossi"
   },
   {
-   "article": "Matthew Stafford",
-   "views": 23292,
+   "article": "Mary Poppins (film)",
+   "views": 22299,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Matthew_Stafford"
+   "url": "https://en.wikipedia.org/wiki/Mary_Poppins_%28film%29"
   },
   {
-   "article": "Pablo Hernández de Cos",
-   "views": 22369,
+   "article": "2026 Players Championship Finals",
+   "views": 21990,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Pablo_Hern%C3%A1ndez_de_Cos"
+   "url": "https://en.wikipedia.org/wiki/2026_Players_Championship_Finals"
   },
   {
-   "article": "The Power Station (band)",
-   "views": 21646,
+   "article": "2026 MotoGP World Championship",
+   "views": 21367,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/The_Power_Station_%28band%29"
+   "url": "https://en.wikipedia.org/wiki/2026_MotoGP_World_Championship"
   },
   {
-   "article": "Nigel Starmer-Smith",
-   "views": 20194,
+   "article": "Joe Brady",
+   "views": 21000,
    "before": null,
    "ratio": null,
-   "url": "https://en.wikipedia.org/wiki/Nigel_Starmer-Smith"
+   "url": "https://en.wikipedia.org/wiki/Joe_Brady"
+  },
+  {
+   "article": "Harrison Butker",
+   "views": 20427,
+   "before": null,
+   "ratio": null,
+   "url": "https://en.wikipedia.org/wiki/Harrison_Butker"
   }
  ]
 }
